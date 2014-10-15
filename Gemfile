@@ -1,10 +1,11 @@
-#ruby=2.1.0
-#ruby-gemset=ncp
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-source 'https://rubygems.org'
-
-gem "middleman"
-gem "middleman-livereload"
-gem "middleman-blog"
-gem "liquid"
+gem "middleman", "~> 3.3.6"
+gem "middleman-blog", "~> 3.5.3"
 gem 'middleman-deploy', '~> 0.3.0'
+gem "liquid"
+
+# For feed.xml.builder
+gem "builder", "~> 3.0"
