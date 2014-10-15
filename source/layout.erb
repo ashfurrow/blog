@@ -5,6 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <%= stylesheet_link_tag "normalize", "bootstrap.min", "main" %>
   </head>
   <body>
     
@@ -21,5 +22,9 @@
       </ol>
 
     </aside>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/bootstrap.min.js"></script>
   </body>
 </html>
