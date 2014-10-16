@@ -86,6 +86,8 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  blog.layout = "blog_post"
 end
 
 activate :deploy do |deploy|

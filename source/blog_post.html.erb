@@ -3,20 +3,13 @@ pageable: true
 per_page: 10
 ---
 <% page_articles.each_with_index do |article, i| %>
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-  <div class="post-preview">
-    <a href="post.html">
-      <h2 class="post-title">
-          <%= link_to article.title, article %>
-      </h2>
-    </a>
-    <p class="post-meta"><%= article.date.strftime('%b %e') %></p>
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <h2><%= link_to article.title, article %> </h2>
+    <span><%= article.date.strftime('%b %e') %></span>
+    <!-- use article.summary(250) if you have Nokogiri available to show just
+         the first 250 characters -->
     <%= article.body %>
   </div>
-  <% if (i != page_articles.size - 1) %>
-    <hr>
-  <% end %>
-</div>
 <% end %>
 
 <!-- Pager -->
