@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <title>Ash Furrow<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog" %>
+    <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog", "syntax" %>
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -53,26 +53,39 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. --> 
-    <header class="intro-header image-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Ash Furrow</h1>
-                        <hr class="small">
-                        <span class="subheading">Exploring the Pain Points of Objective-C</span>
+    <header class="intro-header" id="image-header" style="background-image: url('/img/<%= is_blog_article? ? current_article.metadata[:page]['top_image'] || 'post-bg.jpg' : 'post-bg.jpg' %>')">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <%= 
+                  if is_blog_article?
+                    <<-eos
+                    <div class="post-heading">
+                      <h1>#{ current_article.title }</h1>
+                      <span class="meta">Posted on #{ current_article.date.strftime('%b %e') }</span>
                     </div>
-                </div>
-            </div>
-        </div>
+                    eos
+                  else 
+                    <<-eos
+                    <div class="site-heading">
+                      <h1>Ash Furrow</h1>
+                      <hr class="small">
+                      <span class="subheading">Exploring the Pain Points of Objective-C</span>
+                    </div>
+                    eos
+                  end
+                %>
+              </div>
+          </div>
+      </div>
     </header>
 
     <!-- Main Content -->
     <div id="main" class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <%= yield %>
-          </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <%= yield %>
+            </div>
         </div>
     </div>
 
@@ -85,7 +98,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="#">
+                            <a href="http://twitter.com/ashfurrow">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -93,23 +106,31 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="http://github.com/AshFurrow">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
+                        <li>
+                            <a href="http://notificationcenter.tv">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-microphone fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://photos.ashfurrow.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-camera-retro fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Content Licensed <a href="https://github.com/AshFurrow/blog">Apache</a></p>
                 </div>
             </div>
         </div>

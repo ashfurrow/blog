@@ -2,7 +2,10 @@
 # Blog settings
 ###
 
-# Time.zone = "UTC"
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+activate :syntax
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -91,6 +94,4 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch   = 'master'
 end

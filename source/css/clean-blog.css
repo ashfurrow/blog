@@ -201,9 +201,6 @@ hr.small {
 .intro-header .post-heading .meta a {
   color: white;
 }
-.intro-header.image-header {
-  background: url(../img/home-bg.jpg) no-repeat center top;
-}
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
     font-size: 55px;
