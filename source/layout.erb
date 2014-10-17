@@ -3,9 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>Ash Furrow<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title><%= data.site.name %><%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog", "syntax" %>
+
+    <!-- Meta stuff -->
+    <link rel="canonical" href="http://ashfurrow.com/"/>
+    <meta property="og:site_name" content="<%= data.site.name %>"/>
+    <meta property="og:title" content="Blog"/>
+    <meta property="og:url" content="http://ashfurrow.com/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="<%= data.site.description %>"/>
+    <meta property="og:image" content="<%= data.site.image %>"/>
+    <meta itemprop="name" content="Blog"/>
+    <meta itemprop="url" content="http://ashfurrow.com/"/>
+    <meta itemprop="description" content="<%= data.site.description %>"/>
+    <meta itemprop="thumbnailUrl" content="<%= data.site.image %>"/>
+    <link rel="image_src" href="<%= data.site.image %>" />
+    <meta itemprop="image" content="<%= data.site.image %>"/>
+    <meta name="description" content="<%= data.site.description %>" />
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -26,23 +42,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="/">Ash Furrow</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="/about.html">About</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="/portfolio.html">Portfolio</a>
                     </li>
                     <li>
-                        <a href="post.html">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="/speaking.html">Speaking</a>
                     </li>
                 </ul>
             </div>
@@ -68,9 +81,9 @@
                   else 
                     <<-eos
                     <div class="site-heading">
-                      <h1>Ash Furrow</h1>
+                      <h1>#{ data.site.name }</h1>
                       <hr class="small">
-                      <span class="subheading">Exploring the Pain Points of Objective-C</span>
+                      <span class="subheading">#{ data.site.subtitle }</span>
                     </div>
                     eos
                   end
