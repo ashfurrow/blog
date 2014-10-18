@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <title><%= html_title current_article %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog", "syntax", "custom" %>
+    <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog", "syntax", "fontcustom/fontcustom.css", "custom" %>
 
     <!-- Meta stuff -->
     <link rel="canonical" href="http://ashfurrow.com/"/>

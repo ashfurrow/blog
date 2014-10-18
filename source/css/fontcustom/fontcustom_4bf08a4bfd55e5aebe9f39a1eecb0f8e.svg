@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2014-10-18: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20141018 at Sat Oct 18 11:05:40 2014
+ By Ash Furrow
+Copyright (c) 2014, Ash Furrow
+</metadata>
+<defs>
+<font id="fontcustom" horiz-adv-x="512" >
+  <font-face 
+    font-family="fontcustom"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 9 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 445.44 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+F100-F100"
+  />
+    <missing-glyph />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" 
+d="M428.8 128h-53.7598l-53.7598 92.1602h107.52v-92.1602zM428.8 355.84h-186.88l-53.7598 92.1602h240.64v-92.1602zM332.8 128l42.2402 -70.4004l70.4004 -121.6h-110.08l-227.841 391.68l-15.3594 28.1602l-53.7598 92.1602h108.8l53.7598 -92.1602l30.7197 -53.7598z
+M92.1602 220.16h37.1201l53.7598 -92.1602h-90.8799v-192h-92.1602v506.88l92.1602 -158.72v-64z" />
+  </font>
+</defs></svg>
