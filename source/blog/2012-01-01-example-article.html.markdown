@@ -6,14 +6,9 @@ top_image: something.jpg
 category: something
 ---
 
-# Header 1
-
-## Header 2
-
-Something 
-----------------
-
 Something here.
+
+<!-- more -->
 
 ***
 

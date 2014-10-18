@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title><%= data.site.name %><%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title><%= html_title current_article %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-    <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog", "syntax" %>
+    <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog", "syntax", "custom" %>
 
     <!-- Meta stuff -->
     <link rel="canonical" href="http://ashfurrow.com/"/>
@@ -32,122 +32,13 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Ash Furrow</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/speaking.html">Speaking</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. --> 
-    <header class="intro-header" id="image-header" style="background-image: url('/img/<%= is_blog_article? ? current_article.metadata[:page]['top_image'] || 'post-bg.jpg' : 'post-bg.jpg' %>')">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <%= 
-                  if is_blog_article?
-                    <<-eos
-                    <div class="post-heading">
-                      <h1>#{ current_article.title }</h1>
-                      <span class="meta">Posted on #{ current_article.date.strftime('%b %e') }</span>
-                    </div>
-                    eos
-                  else 
-                    <<-eos
-                    <div class="site-heading">
-                      <h1>#{ data.site.name }</h1>
-                      <hr class="small">
-                      <span class="subheading">#{ data.site.subtitle }</span>
-                    </div>
-                    eos
-                  end
-                %>
-              </div>
-          </div>
-      </div>
-    </header>
+    <%= partial "nav" %>
 
     <!-- Main Content -->
-    <div id="main" class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <%= yield %>
-            </div>
-        </div>
-    </div>
-
-    <hr>
+    <%= yield %>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="http://twitter.com/ashfurrow">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://github.com/AshFurrow">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://notificationcenter.tv">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-microphone fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://photos.ashfurrow.com">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-camera-retro fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Content Licensed <a href="https://github.com/AshFurrow/blog">Apache</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <%= partial "footer" %>
 
     <!-- jQuery -->
     <%= javascript_include_tag 'jquery' %>

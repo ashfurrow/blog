@@ -84,11 +84,14 @@ GEM
     middleman-syntax (2.0.0)
       middleman-core (~> 3.2)
       rouge (~> 1.0)
+    mini_portile (0.6.0)
     minitest (5.4.2)
     multi_json (1.10.1)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     padrino-helpers (0.12.3)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.3)
@@ -137,4 +140,5 @@ DEPENDENCIES
   middleman-blog (~> 3.5.3)
   middleman-deploy (~> 0.3.0)
   middleman-syntax
+  nokogiri
   redcarpet

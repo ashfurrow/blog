@@ -16,9 +16,23 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
+  blog.summary_separator = "<!-- more -->"
+  blog.layout = "blog_post"
 end
 
 page "/feed.xml", layout: false
+
+helpers do
+  def html_title (current_article)
+    articleTitle = current_article.title unless current_article.nil?
+    if articleTitle 
+      data.site.name + ' - ' + articleTitle
+    else
+      data.site.name
+    end
+  end
+end
+
 
 ###
 # Compass
@@ -89,9 +103,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  blog.layout = "blog_post"
 end
 
 activate :deploy do |deploy|
+activate :directory_indexes
+
 end
