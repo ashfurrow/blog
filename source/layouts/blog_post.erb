@@ -14,17 +14,3 @@
     </div>
   </div>
 <% end %>
-
-<!-- Pager -->
-<ul class="pager">
-  <% if current_article.previous_article %>
-    <li class="next">
-        <p><%= link_to 'Previous Article', current_article.previous_article %></p>
-    </li>
-  <% end %>
-  <% if current_article.next_article %>
-    <li class="next">
-        <p><%= link_to 'Next Article', current_article.next_article %></p>
-    </li>
-  <% end %>
-</ul>
