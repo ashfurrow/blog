@@ -15,6 +15,8 @@ bundle exec middleman
 
 Then navigate to [http://0.0.0.0:4567](http://0.0.0.0:4567).
 
+You'll need your key/secret defined as environment variables "SITE_AWS_KEY" and "SITE_AWS_SECRET" to deploy. Also change your bucket settings in `config.rb`.
+
 Credits
 ----------------
 
@@ -27,5 +29,3 @@ Thanks to the following people and projects:
 - [middleman-syntax](https://github.com/middleman/middleman-syntax)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 - [This colour](http://www.colourlovers.com/color/398CCC/Walton)
-
-You'll need your key/secret defined as environment variables "SITE_AWS_KEY" and "SITE_AWS_SECRET" to deploy. Also change your bucket settings in `config.rb`.
