@@ -1,3 +1,6 @@
+require "lib/custom_helpers"
+helpers CustomHelpers
+
 ###
 # Blog settings
 ###
@@ -23,18 +26,6 @@ end
 activate :directory_indexes
 
 page "/feed.xml", layout: false
-
-helpers do
-  def html_title (current_article)
-    articleTitle = current_article.title unless current_article.nil?
-    if articleTitle 
-      data.site.name + ' - ' + articleTitle
-    else
-      data.site.name
-    end
-  end
-end
-
 
 ###
 # Compass
