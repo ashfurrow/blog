@@ -1,9 +1,7 @@
 ---
 title: Example Article
-date: 2012-01-01
-tags: example
-top_image: something.jpg
-category: something
+date: 2014-01-01
+top_image: something-bg.jpg
 ---
 
 Something here.
