@@ -25,7 +25,7 @@ Thanks to the following people and projects:
 - [Tom Creighton](https://twitter.com/ashfurrow/status/523393606431019008)
 - [Middleman](http://middlemanapp.com)
 - [Clean Blog Theme](http://startbootstrap.com/template-overviews/clean-blog/)
-- [middleman-sync](https://github.com/karlfreeman/middleman-sync)
+- [middleman-aws](https://github.com/alienfast/middleman-aws)
 - [middleman-syntax](https://github.com/middleman/middleman-syntax)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 - [This colour](http://www.colourlovers.com/color/398CCC/Walton)

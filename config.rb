@@ -100,14 +100,9 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-
-Fog.credentials = { :path_style => true }
-
-activate :sync do |sync|
-  sync.fog_provider = 'AWS' # Your storage provider
-  sync.fog_directory = 'staging.ashfurrow.com' # Your bucket name
-  sync.fog_region = 'us-east-1'
-  sync.aws_access_key_id = ENV['SITE_AWS_KEY']
-  sync.aws_secret_access_key = ENV['SITE_AWS_SECRET']
-  sync.existing_remote_files = 'keep' 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'staging.ashfurrow.com'
+  s3_sync.aws_access_key_id          = ENV['SITE_AWS_KEY']
+  s3_sync.aws_secret_access_key      = ENV['SITE_AWS_SECRET']
+  s3_sync.delete                     = false # We delete stray files by default.
 end
