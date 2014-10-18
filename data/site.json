@@ -5,6 +5,6 @@
 	"image": "http://static.ashfurrow.com/blog/siteimage.png",
 	"default_background_image": "default-bg.jpg",
 	"accent_color": "398CCC",
-	"normal_font": "'myriad-pro', Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif",
-	"accent_font": "Georgia,Times, 'Times New Roman',serif"
+	"normal_font": "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+	"accent_font": "Georgia,Times, 'Times New Roman',serif;"
 }
