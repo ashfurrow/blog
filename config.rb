@@ -20,6 +20,8 @@ activate :blog do |blog|
   blog.layout = "blog_post"
 end
 
+activate :directory_indexes
+
 page "/feed.xml", layout: false
 
 helpers do
@@ -87,6 +89,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'img'
 
+set :partials_dir, 'layouts'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -105,7 +109,14 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :deploy do |deploy|
-activate :directory_indexes
 
+Fog.credentials = { :path_style => true }
+
+activate :sync do |sync|
+  sync.fog_provider = 'AWS' # Your storage provider
+  sync.fog_directory = 'staging.ashfurrow.com' # Your bucket name
+  sync.fog_region = 'us-east-1'
+  sync.aws_access_key_id = ENV['SITE_AWS_KEY']
+  sync.aws_secret_access_key = ENV['SITE_AWS_SECRET']
+  sync.existing_remote_files = 'keep' 
 end
