@@ -3,6 +3,7 @@
 	"subtitle": "Exploring the Pain Points of Objective-C",
 	"description": "Learning and teaching about interesting topics in Objective-C. Sometimes I diverge to talk about design, photography, or what-have-you.",
 	"image": "http://static.ashfurrow.com/blog/siteimage.png",
+	"dark_image": "http://static.ashfurrow.com/blog/siteimage_dark.png",
 	"default_background_image": "default-bg.jpg",
 	"accent_color": "398CCC",
 	"normal_font": "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
