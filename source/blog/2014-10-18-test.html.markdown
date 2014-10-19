@@ -6,4 +6,6 @@ tags:
 
 This is a post. 
 
+[This](http://ashfurrow.com/) is a link.
+
 <!-- more -->
