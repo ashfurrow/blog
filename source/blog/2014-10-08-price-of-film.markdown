@@ -7,6 +7,8 @@ date: 2014-10-08 00:00
 
 <p>When I first tried film photography, it was a way to explore the medium. When I made the switch to primarily shoot analogue photography, it wasn’t really a decision I made as much as it was the direction of the course I was on. There wasn’t much I could do to affect it. </p>
 
+<!-- more -->
+
 <p>And when I started having to pay for film and development, it wasn’t really a <em>new</em> cost. Photography, even digital photography, has a cost. Your time to take a photo, to look at it later, consider editing it, editing, and sharing. That’s all a cost – time spent on every photo, which adds up. </p>
 
 <p>(Note: with digital, you take a lot more photos than with film, so there is some savings in your time to consider. It’s not a simple cost increase.)</p>
@@ -18,6 +20,4 @@ date: 2014-10-08 00:00
 <p>So the next time someone says that “digital is cheaper than film” or someone tries to defend film by saying “digital isn’t really cheaper than film, considering X Y and Z”, remember that these people are talking out their own asses. The costs are different for the different mediums, and which you choose is going to depend on your individual circumstances. Why are you taking this photograph? What do you want it to look like? Are there time constraints? Is the lighting suited to one medium or the other? And so on. </p>
 
 <p>Don’t shoot digital because someone says it’s better than film, and don’t shoot film because someone says it’s better than digital. Think for yourself. Try both and make up your own mind. Or stick with what you like because you like it – no need to justify yourself to others. </p></import>
-
-<!-- more -->
 

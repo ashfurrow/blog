@@ -5,6 +5,8 @@ date: 2014-07-05 00:00
 
 <import><p>A few weeks ago, I was talking with my friend <a href="http://twitter.com/ratkins">Robert</a> about Swift. He had a problem. He wanted to create a property of a class that is <em>not</em> an optional, but depends on <code>self</code> for its creation.</p>
 
+<!-- more -->
+
 <p>The issue revolves around <a href="http://ashfurrow.com/blog/swift-initializers">initializers in Swift</a>. If a property is not optional, it <em>must</em> be set <em>before</em> the super's initializer is called. However, in order to refer to <code>self</code>, the super initializer must be called <em>first</em>. It's a chicken-and-the-egg problem. I need to set my properties before calling <code>super.init()</code>, but in order to set my properties, I need to refer to <code>self</code>, which I can't do until I've already called <code>super.init()</code>. </p>
 
 <p>Hmmm. </p>
@@ -18,6 +20,4 @@ date: 2014-07-05 00:00
 </code></pre>
 
 <p>The downside, as I can see it, is that <code>@lazy</code> properties <em>must</em> be <code>var</code> and not <code>let</code>, so you lose some Swift-ness there. Still, it's better than having an optional type. </p></import>
-
-<!-- more -->
 

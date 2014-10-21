@@ -5,6 +5,9 @@ date: 2014-08-12 00:00
 
 <import><p>OK, OK, not <em>all</em> sharing is selfish, of course. A more accurate headline would have been <em>Sharing Can Be Selfish</em>, but I could have written <em>Four Mind-Blowing Reasons Why Sharing Makes You Rich</em>, so count your blessings.  </p>
 <p>So let's talk about the selfish benefits of sharing knowledge. To do so, we'll have to define what that actually means. </p>
+
+<!-- more -->
+
 <p><em>Sharing knowledge</em>. Hmm.</p>
 <p>I think that the benefits of sharing knowledge <em>for a price</em> are pretty clear: you get paid. This includes people who write books, professional scientists, and those creepy bastards at Experts Exchange. So for the sake of argument, let's limit our discussion to <em>freely</em> sharing knowledge. This would include, for example ...</p>
 <ul>
@@ -53,6 +56,3 @@ date: 2014-08-12 00:00
 <h2 id="conclusion">Conclusion</h2>
 <p>I've laid out the four main selfish reasons that it makes sense for you to share what you learn. Of course, not only does it help <em>you</em> when you share, it helps <em>everyone</em>. And if everyone gets better at this software development thingy, you'll get better, too. Rising tides lift all boats, after all. </p>
 <p>I've been a long-time advocate for sharing what we learn, <em>while we learn it</em>. The fact is that at the very moment you acquire some piece of knowledge, you have a unique state of mind. You are undergoing the mental process of transitioning from ignorance to understanding and, I believe, are uniquely qualified <em>in that moment</em> to teach others what you have just learned. You remember the exact state of mind you had before it "clicked" and can share the mental process that lead to that revelation. <em>Every</em> developer out there should have a blog where they write about things that they – until very recently – did not understand. </p></import>
-
-<!-- more -->
-

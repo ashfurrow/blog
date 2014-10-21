@@ -11,6 +11,8 @@ date: 2014-09-14 00:00
 
 <p>Let’s back up a minute. </p>
 
+<!-- more -->
+
 <p>There is a concept in psychology called the <a href="http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Dreyfus model of skill acquisition</a>. It’s awesome – I think about it a lot when teaching, because depending on my audience, I’ll present the same material differently. For example, beginners in a field tend to see things through a lens that polarizes solutions as “good” or “bad” depending on how those solutions adhere to principles taught by experts. Beginners adhere rigidly to these principles. As learners progress in their field – towards competence, proficiency, and expertise – they learn that knowledge is <em>not</em> absolute and that the things experts teach are only well-informed opinions. Solutions to problems aren’t “good” or “bad” based on how well they adhere to a principle, but rather how well they solve the problem. </p>
 
 <p>This is really useful to me as an educator. If I’m speaking to a beginner, confidently making generalizations will help them learn the fundamentals. Beginners need simplified models. Later, with intermediate students, I try not to make these generalizations because they’re no longer useful – I try and show them that what I teach is really just my opinion, and that they ought to question it. But if I try and tell someone that a fundamental principle is just an opinion too early, they won’t have confidence in what they’re learning. It’s a tricky balancing act.</p>
@@ -42,6 +44,4 @@ date: 2014-09-14 00:00
 <p>Instead of just saying “because of MVC”, I chose to give an opinion. Remember, that’s all rules are – opinions – and opinions, no matter how well-informed they are, should be questioned. <em>Especially</em> in our field, where the environment that opinions are formed in changes so quickly. </p>
 
 <p>I find helping developers learn and grow to be incredibly rewarding and I’m always trying to improve my teaching skills. If you’re a blogger or an OSS contributor or you answer questions on Stackoverflow, remember the Dreyfus model of skill acquisition. Sometimes a generalized rule is what a beginner needs, but eventually, those beginners are going to start challenging those generalizations, and <em>that is awesome</em>. <strong>Do not</strong> discourage this behaviour. </p></import>
-
-<!-- more -->
 

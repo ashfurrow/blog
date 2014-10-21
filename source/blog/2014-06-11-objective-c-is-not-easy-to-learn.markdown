@@ -7,6 +7,8 @@ date: 2014-06-11 00:00
 
 <p>There are many things that I disagree with about this article, but there is one in particular that I took offence to. </p>
 
+<!-- more -->
+
 <blockquote>
   <p>Objective-C is easier to learn than Swift.</p>
 </blockquote>
@@ -43,6 +45,4 @@ date: 2014-06-11 00:00
 <p>As educators, it's our job to put ourselves in the shoes of a beginner and see things through a newcomer's eyes. I don't see that happening in this article. </p>
 
 <p>Aaron Hillegass is an amazing developer and business person. I have admired and looked up to him, and the Big nerd Ranch, for a long time now. However, this post feels like it was written out of fear. I think that it is a disservice to iOS newcomers. </p></import>
-
-<!-- more -->
 

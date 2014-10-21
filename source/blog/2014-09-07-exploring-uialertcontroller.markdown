@@ -5,6 +5,8 @@ date: 2014-09-07 00:00
 
 <import><p>This morning, I was working on the <a href="https://github.com/AshFurrow/Moya/issues/39">sample app</a> for <a href="https://github.com/AshFurrow/Moya">Moya</a>, a network abstraction framework that I’ve built on top of <a href="https://github.com/Alamofire/Alamofire">Alamofire</a>. I needed a way to grab some user text input, so I turned to <code>UIAlertView</code>. Turns out that that’s deprecated in favour of <code>UIAlertController</code>. Hmm. </p>
 
+<!-- more -->
+
 <p>Looking around the internet, there weren’t very many examples of how to use this cool new class, and the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIAlertController_class/">documentation</a> was sparse at best. Let’s take a look at the high-level API and then get into some of the nitty-gritty. (I’m going to write this in Swift because I am not a <a href="http://t.co/Q2hvacChLu">dinosaur</a>.)</p>
 
 <p><code>UIAlertController</code> is a <code>UIViewController</code> subclass. This contrasts with <code>UIAlertView</code>, a <code>UIView</code> subclass. View controllers are (or at least, should be) the main unit of composition when writing iOS applications. It makes a lot of sense that Apple would replace alert views with alert view <em>controllers</em>. That’s cool. </p>
@@ -81,6 +83,4 @@ presentViewController(alertController, animated: true, completion: nil)
 <p>As we march forward into this brave new world of Swift, we need to reevaluate our approaches to familiar problems. Just because a solution that worked well in Objective-C might work OK in Swift doesn’t make it a solution <em>well</em> suited for use in Swift. As developers, we should keep an open mind about new ideas and experiment. The way I look at it is like this: right now, the community is pretty new at Swift. We’re racing in all different directions because <a href="http://robnapier.net/i-dont-know-swift">no one</a> really knows what the best practices are, yet. We need this expansion in all directions, even if a lot of those directions are going to turn out to be bad ideas. If we don’t throw it all against the wall, we won’t figure out what sticks. </p>
 
 <p>So next time you try and do something and get confused because Swift is unfamiliar, try all kinds of things. Could be you end up creating a brand new convention that’s adopted by the whole iOS community for years to come. </p></import>
-
-<!-- more -->
 

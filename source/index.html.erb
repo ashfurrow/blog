@@ -16,7 +16,8 @@ per_page: 10
                   <%= link_to article.title, article %>
               </h2>
               <p class="post-meta"><%= article.date.strftime('%B %e, %Y') %></p>
-              <%= article.summary %>      
+              <%= article.summary %> 
+              <p><a href="<%= article.url %>">Read more...</a></p>
             </div>
 
             <!-- Add hr between each article -->

@@ -7,6 +7,8 @@ date: 2014-09-10 00:00
 
 <p>But this is not a post discussing the Watch. Well, it is, sort of. I want to talk about the event itself. </p>
 
+<!-- more -->
+
 <p>Apple hyped the shit out of this. Their invitations were sent out indicating that this was going to be held at the Flint Center, where they announced the original Macintosh. It’s a bigger venue and it invokes bigger kinds of product announcements. OK, fine. </p>
 
 <p>Not only did Apple have a livestream (of sorts), they also had their very own <a href="http://www.apple.com/live/2014-sept-event/">liveblog</a> about the event. That’s a first. Whatever.</p>
@@ -44,6 +46,4 @@ date: 2014-09-10 00:00
 <p>So yesterday happened. Apple showed its cards, the whole of Twitter exploded in one giant nerdgasm, and I realized that they’re just a company like any other. </p>
 
 <p>And it broke my heart a little. </p></import>
-
-<!-- more -->
 

@@ -7,6 +7,8 @@ date: 2014-06-11 00:00
 
 <p>Since the last time I was at WWDC, I've pulished <a href="https://leanpub.com/iosfrp">two</a><a href="https://leanpub.com/your-first-ios-app">books</a>, a <a href="http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00IHZKDCU&amp;linkCode=as2&amp;tag=ashfur-20">second edition</a> to a book, started contributing to a number of <a href="https://github.com/ashfurrow/">open source projects</a>, wrote a tonne of <a href="http://www.teehanlax.com/blog/author/ash/">iOS 7 tutorials</a>, started another <a href="http://notificationcenter.tv">podcast</a>, and doubled my number of twitter followers. Basically, it was a busy year. </p>
 
+<!-- more -->
+
 <p>In hindsight, it shouldn't have come as such a surprise when I ran into a lot of people who knew who I was. The common refrain from the week was something like:</p>
 
 <blockquote>
@@ -23,6 +25,4 @@ date: 2014-06-11 00:00
 <p>So yeah. Last week was a big adjustment. I'm not used to attention in the real world, and it's a little uncomfortable to be honest. From a personal perspective, it's something that I think I'm going to have to get used to. And not all attention is desirable – I pissed off a lot of people last week with some strong opinions on Apple's new programming language. </p>
 
 <p>I think what I'm most concerned about is remaining authentic. I answer a lot of questions people have about collection views, ReactiveCocoa, and other topics I've written about. Usually over email or twitter. I always try and answer each question as best I can, but that obviously doesn't scale, and lately, I've been falling behind. It's going to be an interesting problem going forward, and I'm not quite sure what I'm going to do. </p></import>
-
-<!-- more -->
 

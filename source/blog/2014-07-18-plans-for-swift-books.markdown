@@ -5,6 +5,8 @@ date: 2014-07-18 00:00
 
 <import><p>So WWDC happened, and we were all blown away by Swift. Yay Swift! And one of my reactions afterward was "I want to write a book on this", because that's apparently what I do now. So I created <a href="https://leanpub.com/swift_book">this page</a> where you can register for updates when the book is launched. </p>
 
+<!-- more -->
+
 <p>Cool, cool. But why, people would ask me, am I writing a book when Apple has <em>two</em> ebooks on Swift already available, for free? Well, I had to think really hard about that. To be honest, I just wanted to write something cool – largely as an excuse to get really good at Swift. So I had to think hard about <em>why</em> I wanted to write about Swift, and after reading the Apple books and getting my hands dirty, it came down to this: Apple's resources are really good at describing the language, but it's not written as a resource for teaching practical knowledge. The book, while excellent, reads like a text book. </p>
 
 <p>I believe this is because Apple – like everyone else in the world – still lacks the kind of practical experience writing production-ready code in Swift. Even the Swift engineers don't know the kinds of new patterns that are going to emerge from the community over the coming months and years. </p>
@@ -24,6 +26,4 @@ date: 2014-07-18 00:00
 <p>So that's it. My initial thought to create a book in Swift has lead to an updated version of two existing books and writing a whole new one. I'm really, really excited about the next few months, if a little daunted by all the work I have to do. </p>
 
 <p>Oh, and one more thing. My friend over at <a href="http://objc.io">objc.io</a> are launching a book on <a href="http://www.objc.io/books/">functional programming in Swift</a> which you should also consider. It looks super-promising. Also, if you're looking for another Swift resource <em>now</em>, please do check out Daniel Steinberg's <a href="https://itunes.apple.com/ca/book/a-swift-kickstart/id891801923?mt=11">A Swift Kickstart</a> on the iBook store. </p></import>
-
-<!-- more -->
 

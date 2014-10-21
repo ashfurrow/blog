@@ -4,6 +4,9 @@ date: 2014-09-11 00:00
 ---
 
 <import><p>I've started a <a href="https://github.com/AnyoneCanLearn/AnyoneCanLearn">project</a> called "AnyoneCanLearn". You can read the information there for the goals and values and everything; this blog post isn't about promoting it or explaining it. It's about providing my motivation. </p>
+
+<!-- more -->
+
 <p>For a long time, I've been asked questions about iOS development. People email me or tweet at me all the time because they have questions about one of my books or open source projects. I love getting these emails and I try my best to respond to each one in a timely manner. Usually, though, if the question is novel, I'll suggest asking it on Stackoverflow. That way, others can benefit from the answer I put there. My common refrain has been "open source your question so they can open source the answer", and I've thought this was a good idea. </p>
 <p>The other day, <em>I</em> asked a question on Stackoverflow about a topic that I am a beginner in. And one of the comments struck a nerve with me. It was unconstructive and inflammatory, and it was from someone with over 60k reputation points on Stackoverflow. I felt pretty hurt, and I've grown thick skin. </p>
 <p>I put myself in the shoes of a beginner asking their first question online and imagined the kind of attitude that they'd get from developers. A friend on Twitter pointed out that it's even worse for women. And I got thinking. Wouldn't it be awesome if there were a place that provided resources for how to ask good questions? For how to answer questions with respect? And just generally how to make being a software developer a more awesome experience? </p>
@@ -14,6 +17,4 @@ date: 2014-09-11 00:00
 <p>What I had forgotten is that our community is vindictive. It is sadistic. It makes itself feel good by making others feel bad.</p>— Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/509666163799113728">September 10, 2014</a>
 </blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>After talking it over with my wife and some friends, I decided to pull the trigger. Maybe this will be a flash in the can and fizzle out, but I really do hope that it becomes something that helps learners and teachers contribute to their communities in more positive ways. </p></import>
-
-<!-- more -->
 

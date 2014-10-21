@@ -7,6 +7,8 @@ date: 2014-09-09 00:00
 
 <p>Many film photographers will insist that film has a different “feel” to it – that the images captured with it are inherently different from those captured on digital. I think they’re right, but that’s not the reason I choose to use film. </p>
 
+<!-- more -->
+
 <p>The premise is that you experience the world differently when you hold a camera in your hand. It’s something I believe most – probably all – photographers would agree on. Taking a walk by yourself is intrinsically different from taking a walk with a camera. You see things in new ways. You see things you wouldn’t have seen. You’re looking for them now. Everything feels different.</p>
 
 <p>So let’s accept that premise for this post – that being able to capture a photo changes the way you experience your surroundings. I think a logical extension of this premise is <em>how</em> you are able to capture a photo changes your experience in the same way <em>that</em> being able to capture a photo does. Let me explain. </p>
@@ -29,6 +31,4 @@ date: 2014-09-09 00:00
 <p>So here we get to the fun part. If the tools photographers use affect the way they see the world, it’s not unreasonable to assume that a photographer familiar with different media might prefer one medium over another. And it’s certainly reasonable to imagine a photographer whose preferences change over time. Maybe they prefer to walk around with digital one day and film the next. Or with T-Max 400 (black and white) film one day and Portra 400 (colour) the next. Don’t even get me started on the differences in the types of cameras in the same medium (digital SLRs, rangefinders, bodies with live-view screens (or EVFs), point-and-shoots, smartphones, the list goes on). </p>
 <p>So yeah. People ask me why I like shooting on film, and my answer is that film photography is inherently different from digital photography. The different tools affect how I see things. Sometimes I want to see things with film. Sometimes digital. It depends on my mood. </p>
 <p>It’s chic to make fun of people who prefer to write on typewriters, or in Moleskin notebooks, or in “distraction-free writing environments” (this post was itself written in <a href="http://www.iawriter.com/mac/">iA Writer</a>). But I don’t have a hard time believing people when they say that the types of tools they use affect how they produce their work. I’m going to continue to use film for <a href="https://www.youtube.com/watch?v=sjtphPVchJI">as long</a> as they keep manufacturing it. </p></import>
-
-<!-- more -->
 

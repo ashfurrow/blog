@@ -5,6 +5,8 @@ date: 2014-07-29 00:00
 
 <import><p>A few years ago (Jesus – has it been that long?), I wrote a blog post about being an "<a href="http://ashfurrow.com/blog/2012/04/the-joys-and-sorrows-of-being-an-almost-gamer">almost gamer</a>", in which I discussed something that John Siracusa brought up on Hypercritical. In his followup on the <a href="http://5by5.tv/hypercritical/66">subsequent episode</a>, he actually read my post, in part, and replied on air. </p>
 
+<!-- more -->
+
 <p>Basically, the idea is this: if you accept that video games are an art form, then it follows that they can be appreciated. However, due to limits skills necessary to gaming (like having good hand-eye coordination and a finely-developed 3D visuospatial sketchpad), there are many people in the world who can never appreciate this form of art. With practice, one can become a connoisseur of wines or films, because the skills necessary to appreciate those things – taste and sightedness/hearing – are very common. </p>
 
 <p>Anyway, I wrote the following. </p>
@@ -27,6 +29,3 @@ date: 2014-07-29 00:00
 <p>I don't know what's happened – two video games beaten in a row. Maybe John Siracusa was right when he insisted that I am a gamer. Maybe I had the skills all along, but my childhood self's short attention span or aversion to being defeated spoiled games for me at the time. Now as an adult, I'm finally able to keep going, even through the difficult parts, and complete them. On the other hand, though, maybe games have gotten easier. I retract that – games definitely have gotten easier. What I mean to say is that maybe I'm able to enjoy – and complete – video games now <em>because</em> they're easier. I don't know. </p>
 
 <p>So that's it. Two video games beaten on a brand-new <a href="https://twitter.com/ashfurrow/status/490441171999936512">gameboy</a>. I don't know what I'll play next. Maybe it'll be super-difficult and crush my spirits again, or maybe it'll be like <em>Pokémon Y</em> and <em>A Link Between Worlds</em> – not particularly difficult, but still enjoyable. We'll have to wait and see. </p></import>
-
-<!-- more -->
-
