@@ -10,36 +10,38 @@ per_page: 10
 <div id="main" class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <% page_articles.each_with_index do |article, i| %>
-              <div class="post-preview">
-                <h2 class="post-title">
-                    <%= link_to article.title, article %>
-                </h2>
-                <p class="post-meta"><%= article.date.strftime('%b %e') %></p>
-                <%= article.summary %>      
-              </div>
+          <% page_articles.each_with_index do |article, i| %>
+            <div class="post-preview">
+              <h2 class="post-title">
+                  <%= link_to article.title, article %>
+              </h2>
+              <p class="post-meta"><%= article.date.strftime('%B %e, %Y') %></p>
+              <%= article.summary %>      
+            </div>
 
-              <!-- Add hr between each article -->
-              <% if (i != page_articles.size - 1) %>
-                <hr>
-              <% end %>
+            <!-- Add hr between each article -->
+            <% if (i != page_articles.size - 1) %>
+              <hr>
             <% end %>
+          <% end %>
+
+          <hr />
+
+          <!-- Pager -->
+          <% if paginate %>
+            <ul class="pager">
+              <% if next_page %>
+                <li class="next">
+                    <%= link_to 'Next page', next_page %>
+                </li>
+              <% end %>
+              <% if prev_page %>
+                <li class="previous">
+                    <%= link_to 'Previous page', prev_page %>
+                </li>
+              <% end %>
+            </ul>
+          <% end %>
         </div>
     </div>
 </div>
-
-<!-- Pager -->
-<% if paginate %>
-  <ul class="pager">
-    <% if prev_page %>
-      <li class="next">
-          <p><%= link_to 'Previous page', prev_page %></p>
-      </li>
-    <% end %>
-    <% if next_page %>
-      <li class="next">
-          <p><%= link_to 'Next page', next_page %></p>
-      </li>
-    <% end %>
-  </ul>
-<% end %>

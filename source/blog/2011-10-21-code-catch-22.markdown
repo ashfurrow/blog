@@ -1,0 +1,16 @@
+---
+title: "Code Catch-22"
+date: 2011-10-21 00:00
+---
+
+<import><p>I've been reading through some of <a href="http://www.mikeash.com/pyblog" target="_blank">Mike Ash's blog posts</a>, and <a href="http://www.mikeash.com/pyblog/friday-qa-2011-10-14-whats-new-in-gcd.html" target="_blank">this one in particular got me really excited</a>. OK, so they <em>all</em> got me excited, but this one's really awesome. It discusses new features Apple added to Grand Central Dispatch in Lion and iOS 5.
+Previously, you created dispatch queues with the C function dispatch_queue_create(const char *label, dispatch_queue_attr_t attr), where attr was always NULL so Apple could "Add Support Later" for additional options. I figured this was typical C-style future-proofing <em>just in case</em>, but it looks like they were actually plannon on something.</p>
+<p>I won't get into the details, but sufficed to say, the new features are <em>awesome</em>. They've actually solved issues I've had with GCD and I can't wait to use them. (If you don't know how revolutionary dispatch queues and GCD are for a language based in C, imagine Lisp-level serenity with the ability to actually accomplish useful tasks).</p>
+<p>Here's the thing. This is a language feature designed so programmers don't have to know or think about threads in order to write concurrent programs. But in order to effectively use the new attribute options, you need to have an understanding of thread safety. It's kind of a catch-22.</p>
+<p>This isn't the only case. With the new Automatic Reference Counting Apple introduced into the LLVM 3.0 compiler, I don't have to write retain/release code because the <em>compiler does it for me</em>. They've written a compiler so that programmers don't have to know about manual memory management, but in order to use it properly, programmers have to adhere to naming conventions and protocols, so they end up having to <em>know about</em> retain/release even if they never use it.</p>
+<p>This is common outside of Objective-C, too. I guess this is why we had to learn things like assembler (or, some would argue, C) in school even if some of us were going to write Ruby for the rest of our lives. <em>Knowing</em> about low-level semantics is enough to write good <em>high-level</em> code, even if you never use that knowledge directly.</p>
+<p>For instance, if a programmer who knows about the implementation details of collections like lists, arrays, dictionaries/hash maps, and sets, then they can write more efficient code around them.</p>
+<p>All of programming is pretty much a catch-22, I guess. Nothing highlights this fact more than learning about new programmer language features.</p></import>
+
+<!-- more -->
+

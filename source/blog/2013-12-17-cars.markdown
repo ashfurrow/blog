@@ -1,0 +1,12 @@
+---
+title: "Cars"
+date: 2013-12-17 00:00
+---
+
+<import><p>There was an accident today at a fairly major intersection in Toronto. A car hit a fire hydrany in sub-zero temperatures. </p>
+<img src="/img/import/blog/cars/7A40C87F23494971A108B9B2B795691E.jpg" class="img-responsive"><p><a href="https://vine.co/v/h0hPem6eVrd">This vine</a> should show you everything you need to know about what this is a horrible situation. </p>
+
+<p>I use multiple modes of transportation. I walk, cycle, transit, and drive all over this city. In the age of multi-modal transportation being readily available and, I predict, soon the norm, it's getting harder and harder for me to justify the effort our society puts into owning cars. </p></import>
+
+<!-- more -->
+

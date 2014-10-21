@@ -1,0 +1,15 @@
+---
+title: "35mm Update"
+date: 2014-01-06 00:00
+---
+
+<import><p>I'm sad to report that the Newsstand app I wrote, <a href="http://35mm.io">35mm</a> is shutting down. </p>
+
+<p>It's unfortunate that we did not get more traction in the app store. It's really no one's fault – I think that the market really spoke on this one. People are wiling to put up with ads to see curated photography. We bet that they'd be willing to pay a buck a month to get rid of the ads, and we were wrong. </p>
+
+<p>It's sad, but it's also the end of a rewarding jounrey where all of us, Tom, Debbie, and myself, learned a lot. I'm proud of what we accomplished together and always will be. </p>
+
+<p>Onto bigger and better things. </p></import>
+
+<!-- more -->
+

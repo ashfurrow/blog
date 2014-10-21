@@ -1,0 +1,16 @@
+---
+title: "Quality"
+date: 2014-01-18 00:00
+---
+
+<import><p>I host an interview podcast called <a href="http://springboardshow.com">Springboard</a> for beginning and aspiring iOS developers. I love doing it, but lately I had been feeling a little bit like I'm phoning it in. I didn't look forward to recording as much as I used to. </p>
+<img src="/img/import/blog/quality/73B1AA1B5E8245D7AC8A02EF7E458725.jpg" class="img-responsive"><p>That's always been, for me, a sign that things need to change. I looked at what I was making, or rather, I listened to it, and I realized that I wasn't putting the same effort into my show anymore because I wasn't pleased with the quality of my product. The content and guests were great, but I was sounding a bit... rough.</p>
+
+<p>So, based on Dan Benjamin's <a href="http://www.podcastinghandbook.co/podcasting-equipment-guide">Podcasting Handbook</a>, I purchased a <a href="http://www.amazon.com/gp/product/B000JM46FY/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B000JM46FY&amp;linkCode=as2&amp;tag=ashfur-20">new microphone</a>. Now I know that equipiment isn't everything and it isn't going to help anything but the <em>sound</em> quality of Springboard, but I'm loving the way I sound when I record with it. It's motivating to know that my prowress as an audio engineer is now the limiting factor in the quality of my podcast. </p>
+
+<p>I'm switching from GarageBand to Logic Pro X for my recording software. I'll probably be ditching Piezo in favour of Audio Hijack Pro for recording, since I don't want my files double-compressed. </p>
+
+<p>(By the way, next week will be the last episode recorded with my old <a href="http://www.amazon.com/gp/product/B004MF39YS/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B004MF39YS&amp;linkCode=as2&amp;tag=ashfur-20">compressor mic</a>, so give it another episode for the difference in sound quality.)</p></import>
+
+<!-- more -->
+

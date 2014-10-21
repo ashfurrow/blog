@@ -1,0 +1,9 @@
+---
+title: "New Job"
+date: 2014-04-08 00:00
+---
+
+<import><p>Yesterday I started at <a href="https://artsy.net">Artsy</a> as a mobile developer. It's a great team doing great work for a great cause – to make the world of art more accessible. If you have any questions, please drop me a line!</p></import>
+
+<!-- more -->
+
