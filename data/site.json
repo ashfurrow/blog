@@ -1,7 +1,7 @@
 {
 	"name": "Ash Furrow",
 	"subtitle": "Exploring the Pain Points of iOS",
-	"description": "Learning and teaching about interesting topics in Objective-C. Sometimes I diverge to talk about design, photography, or what-have-you.",
+	"description": "Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.",
 	"image": "http://static.ashfurrow.com/blog/siteimage.png",
 	"dark_image": "http://static.ashfurrow.com/blog/siteimage_dark.png",
 	"default_background_image": "default-bg.jpg",

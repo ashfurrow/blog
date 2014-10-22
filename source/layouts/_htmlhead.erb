@@ -7,7 +7,7 @@
 <!-- Meta stuff -->
 <link rel="canonical" href="http://ashfurrow.com<%= current_resource.url %>"/>
 <meta property="og:site_name" content="<%= data.site.name %>"/>
-<meta property="og:title" content="Blog"/>
+<meta property="og:title" content="<%= html_title(current_article, current_resource) %>"/>
 <meta property="og:url" content="http://ashfurrow.com<%= current_resource.url %>"/>
 <meta property="og:type" content="website"/>
 <meta property="og:description" content="<%= data.site.description %>"/>
