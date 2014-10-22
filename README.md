@@ -1,21 +1,19 @@
 My Blog
 ================
 
-Work-in-progress for porting my [blog](http://ashfurrow.com) to [middleman](http://middlemanapp.com).
+My [blog](http://ashfurrow.com).
 
-Intructions
+Setup
 ----------------
 
 ```shell
 git clone https://github.com/AshFurrow/blog.git
 cd blog
 bundle install
-bundle exec middleman
+rake
 ```
 
 Then navigate to [http://0.0.0.0:4567](http://0.0.0.0:4567).
-
-You'll need your key/secret defined as environment variables "SITE_AWS_KEY" and "SITE_AWS_SECRET" to deploy. Also change your bucket settings in `config.rb`.
 
 Credits
 ----------------
