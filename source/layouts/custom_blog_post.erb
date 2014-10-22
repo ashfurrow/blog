@@ -1,5 +1,4 @@
 <% wrap_layout :layout do %>
-  <!-- Page Header -->
   <%= 
     locals = { :title => current_article.title, :subtitle => "", :style => "post-heading" }
     background_image = current_resource.metadata[:page]["background_image"]
@@ -11,5 +10,15 @@
 
   <div id="main">
     <%= yield %>
+
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="row">
+          <hr />
+          <%= partial("article_pager") %>
+        </div>
+      </div>
+    </div>
   </div>
+  <hr />
 <% end %>

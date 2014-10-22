@@ -1,10 +1,4 @@
 namespace :deploy do
-
-	desc "Build site locally"
-	task :build do
-		sh 'middleman build'
-	end
-
 	desc "Build and deploy to production"
 	task :publish do
 		sh 'middleman build'
@@ -21,6 +15,11 @@ namespace :deploy do
 	  sh 'middleman s3_sync --bucket=staging.ashfurrow.com'
 	end
 
+end
+
+desc "Build site locally"
+task :build do
+	sh 'middleman build'
 end
 
 desc "Start middleman server"
