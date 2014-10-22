@@ -1,12 +1,12 @@
-#main li a {
+.conainer li a {
   text-decoration: underline;
 }
 
-#main .pager li > a {
+.conainer .pager li > a {
   text-decoration: none;
 }
 
-#main li {
+.conainer li {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -35,3 +35,23 @@ iframe.twitter-tweet {
 blockquote > p:first-child {
 	margin-top: 0;
 }
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    background:  no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.image-bg-fixed-height {
+  background-color: #808080;
+  height: 250px;
+}
+@media only screen and (min-width: 768px) {
+  .image-bg-fixed-height {
+    height: 450px;
+  }
+}
+

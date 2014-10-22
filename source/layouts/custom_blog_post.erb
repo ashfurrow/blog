@@ -10,16 +10,6 @@
   %>
 
   <div id="main">
-    <div id="main" class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <article>
-            <%= yield %>
-          </article>
-          <hr>
-          <span class="meta">Posted on <%= current_article.date.strftime('%B %e, %Y') %></span>
-        </div>
-      </div>
-    </div>
+    <%= yield %>
   </div>
 <% end %>

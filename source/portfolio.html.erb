@@ -5,118 +5,120 @@ title: Portfolio
 <!-- Page Header -->
 <%= partial("header", :locals => { :title => "Portfolio", :subtitle => "", :background_image => "portfolio-bg.jpg" }) %>
 
-<div id="main" class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		<h2 id="apps">Apps</h2>
+<div id="main">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<h2 id="apps">Apps</h2>
 
-		<p>I've written several applications for the iOS App Store. Here's a selection of my favourites. </p>
+			<p>I've written several applications for the iOS App Store. Here's a selection of my favourites. </p>
 
-		<h3 id="500px">500px</h2>
+			<h3 id="500px">500px</h2>
 
-		<div class="under-header">
-			<%= image_tag '500px.png', :class => 'img-responsive', :alt => "500px" %>
-		</div>
-	
-		<p>I was hired in 2011 as the iOS developer at 500px. I architected and shipped the iPad application. I helped design new features, plan the product roadmap, and respond to customer support inquiries, all while continuing to ship an amazing product. </p><p>Eventually, the team grew, and I stepped up to fulfil the team's lead position. From there, I played a crucial role in the design and development of the iPhone application, which shipped late 2012. </p><p>500px is available on the <a href="https://itunes.apple.com/app/500px/id471965292">App Store</a>, where it has been downloaded by hundreds of thousands of users. </p>
+			<div class="under-header">
+				<%= image_tag '500px.png', :class => 'img-responsive', :alt => "500px" %>
+			</div>
+		
+			<p>I was hired in 2011 as the iOS developer at 500px. I architected and shipped the iPad application. I helped design new features, plan the product roadmap, and respond to customer support inquiries, all while continuing to ship an amazing product. </p><p>Eventually, the team grew, and I stepped up to fulfil the team's lead position. From there, I played a crucial role in the design and development of the iPhone application, which shipped late 2012. </p><p>500px is available on the <a href="https://itunes.apple.com/app/500px/id471965292">App Store</a>, where it has been downloaded by hundreds of thousands of users. </p>
 
-		<h3 id="krush">Krush</h3>
-		<div class="under-header">
-			<!-- <div class="row">
-			  <div class="col-md-4 col-md-offset-3"> -->
-			  	<%= image_tag 'krush.png', :class => 'img-responsive', :alt => "Krush" %>
-			  <!-- </div>
-			</div> -->
-		</div>
+			<h3 id="krush">Krush</h3>
+			<div class="under-header">
+				<!-- <div class="row">
+				  <div class="col-md-4 col-md-offset-3"> -->
+				  	<%= image_tag 'krush.png', :class => 'img-responsive', :alt => "Krush" %>
+				  <!-- </div>
+				</div> -->
+			</div>
 
-		<p>Krush is an application I developed while working with <a href="http://teehanlax.com">Teehan+Lax</a>. Designed from the ground-up as a mobile-first solution for people who identify with an outdoor sports lifestyle, Krush helps users connect with independent brands they wouldn't find anywhere else. </p>
+			<p>Krush is an application I developed while working with <a href="http://teehanlax.com">Teehan+Lax</a>. Designed from the ground-up as a mobile-first solution for people who identify with an outdoor sports lifestyle, Krush helps users connect with independent brands they wouldn't find anywhere else. </p>
 
-		<p>Krush employs some interesting <a href="http://www.teehanlax.com/blog/krush-ios-architecture/">architecture techniques</a>. It uses MVVM instead of MVC. ReactiveCocoa instead of imperative code. It was a blast to write and I learnt a tonne. </p>
+			<p>Krush employs some interesting <a href="http://www.teehanlax.com/blog/krush-ios-architecture/">architecture techniques</a>. It uses MVVM instead of MVC. ReactiveCocoa instead of imperative code. It was a blast to write and I learnt a tonne. </p>
 
-		<p>What made Krush interesting from a non-technical perspective was interacting with an existing userbase. Krush 2.0, which I helped to develop, was a rewrite of the existing application. Special care had to be taken in order to preserve the users' trust in the app.</p>
+			<p>What made Krush interesting from a non-technical perspective was interacting with an existing userbase. Krush 2.0, which I helped to develop, was a rewrite of the existing application. Special care had to be taken in order to preserve the users' trust in the app.</p>
 
-		<p>Available on the <a href="https://itunes.apple.com/us/app/krush-mobile/id624186892">App Store</a>.</p>
+			<p>Available on the <a href="https://itunes.apple.com/us/app/krush-mobile/id624186892">App Store</a>.</p>
 
-		<h3 id="35mm">35mm</h3>
-		<div class="under-header">
-			<%= image_tag '35mm.png', :class => 'img-responsive', :alt => "35mm" %>
-		</div>
+			<h3 id="35mm">35mm</h3>
+			<div class="under-header">
+				<%= image_tag '35mm.png', :class => 'img-responsive', :alt => "35mm" %>
+			</div>
 
-		<p>35mm was an amibitious project that I undertook in a team of two others: a designer and an editor. We aimed to change the world for photography-lovers by providing curated photography without advertisements. Although the project was not a success from a financial standpoint, I learnt a lot about writing Newsstand magazines for iOS, including architecting our own backend server in Node.js. </p><p>This project is no longer available on the App Store. </p>
-
-
-		<h3 id="c41">C-41</h3>
-
-		<p>C-41 is an open source project I made over the holiday break in 2013. It's a simple enough application that helps photographers develop film. The interesting parts are the tecnologies that underpin it.</p>
-
-		<p>C-41 uses a technique called Model-View-ViewModel in lieu of traditional Model-View-Controller. It serves also as an example of how to use ReactiveCocoa and functional reactive programming on iOS. It's also fully unit tested and uses continuous integration on Travis-CI.</p><p>It was a blast to build and is available from the <a href="https://itunes.apple.com/us/app/c-41/id789924103?mt=8">App Store</a>. The source is <a href="https://github.com/ashfurrow/c-41">fully open on GitHub</a>.</p>
+			<p>35mm was an amibitious project that I undertook in a team of two others: a designer and an editor. We aimed to change the world for photography-lovers by providing curated photography without advertisements. Although the project was not a success from a financial standpoint, I learnt a lot about writing Newsstand magazines for iOS, including architecting our own backend server in Node.js. </p><p>This project is no longer available on the App Store. </p>
 
 
-		<h3 id="storygram">storygram</h3>
-		<div class="under-header">
-			<%= image_tag 'storygram.png', :class => 'img-responsive', :alt => "storygram" %>
-		</div>
+			<h3 id="c41">C-41</h3>
 
-		<p>storygram is the product of a weekend of work that Tom Creighton and I did as participants in the Pixel Hack Day, organized by 500px. It was actually featured on <a href="http://thenextweb.com/apps/2012/01/06/instagram-meets-500px-with-the-new-ios-app-storygram/">The Next Web</a>, as well as the Great Canadian Apps section in the App Store. This app enables users to collect moments they've captured through Instagram to tell a comprehensive, compelling story, published on 500px.</p>
+			<p>C-41 is an open source project I made over the holiday break in 2013. It's a simple enough application that helps photographers develop film. The interesting parts are the tecnologies that underpin it.</p>
 
-		<p>Pursuant to Instagram's new Terms of Service, we were forced to shut down storygram late 2013. </p>
+			<p>C-41 uses a technique called Model-View-ViewModel in lieu of traditional Model-View-Controller. It serves also as an example of how to use ReactiveCocoa and functional reactive programming on iOS. It's also fully unit tested and uses continuous integration on Travis-CI.</p><p>It was a blast to build and is available from the <a href="https://itunes.apple.com/us/app/c-41/id789924103?mt=8">App Store</a>. The source is <a href="https://github.com/ashfurrow/c-41">fully open on GitHub</a>.</p>
 
-		<h2 id="opensource">Open Source</h2>
 
-		<p>In addition to the <a href="https://github.com/ashfurrow/c-41">C-41</a> app I mentioned above, I've highlighted some of my proudest contributions to the open source community below. </p>
+			<h3 id="storygram">storygram</h3>
+			<div class="under-header">
+				<%= image_tag 'storygram.png', :class => 'img-responsive', :alt => "storygram" %>
+			</div>
 
-		<h3 id="reactivecocoa2"><a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a></h3>
+			<p>storygram is the product of a weekend of work that Tom Creighton and I did as participants in the Pixel Hack Day, organized by 500px. It was actually featured on <a href="http://thenextweb.com/apps/2012/01/06/instagram-meets-500px-with-the-new-ios-app-storygram/">The Next Web</a>, as well as the Great Canadian Apps section in the App Store. This app enables users to collect moments they've captured through Instagram to tell a comprehensive, compelling story, published on 500px.</p>
 
-		<p>ReactiveCocoa is an Objective-C implementation of functional reactive programming for both iOS and OS X. As a repo collaborator, I've helped write and review pull requests, comment on the project roadmap, and promote the project in the community. </p>
+			<p>Pursuant to Instagram's new Terms of Service, we were forced to shut down storygram late 2013. </p>
 
-		<p>Most recently, I authored the <a href="http://reactivecocoa.io/philosophy.html">ReactiveCocoa.io Philosophy page</a> to help beginners understand the <em>why</em> of functional reactive programming. </p>
+			<h2 id="opensource">Open Source</h2>
 
-		<h3 id="functionalreactivepixels3"><a href="https://github.com/AshFurrow/FunctionalReactivePixels">Functional Reactive Pixels</a></h3>
+			<p>In addition to the <a href="https://github.com/ashfurrow/c-41">C-41</a> app I mentioned above, I've highlighted some of my proudest contributions to the open source community below. </p>
 
-		<p>Functional Reactive Pixels is a simple iOS application that uses the 500px iOS SDK in order to provide developers with an example of how to approach functional reactive programming on iOS. It is the source code that accompanies <a href="https://leanpub.com/iosfrp">my book</a>.</p>
+			<h3 id="reactivecocoa2"><a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a></h3>
 
-		<h3 id="afimagedownloader5"><a href="https://github.com/AshFurrow/AFImageDownloader">AFImageDownloader</a></h3>
+			<p>ReactiveCocoa is an Objective-C implementation of functional reactive programming for both iOS and OS X. As a repo collaborator, I've helped write and review pull requests, comment on the project roadmap, and promote the project in the community. </p>
 
-		<p>AFImageDownloader is something I wrote while at 500px. It downloads and, more importantly, decompresses JPEG binary data on a background thread using Core Graphics. This keeps the main thread free to render the user interface, ensuring a smooth interaction with the user. </p>
+			<p>Most recently, I authored the <a href="http://reactivecocoa.io/philosophy.html">ReactiveCocoa.io Philosophy page</a> to help beginners understand the <em>why</em> of functional reactive programming. </p>
 
-		<h3 id="500pxiossdk6"><a href="https://github.com/500px/500px-iOS-api">500px iOS SDK</a></h3>
+			<h3 id="functionalreactivepixels3"><a href="https://github.com/AshFurrow/FunctionalReactivePixels">Functional Reactive Pixels</a></h3>
 
-		<p>I wrote the 500px iOS SDK as a Friday afternoon hack project while working as the 500px Lead iOS Developer. It enables easier integration with the 500px API, encouraging more developers to use the service as a back end for the world's best photography. </p>
+			<p>Functional Reactive Pixels is a simple iOS application that uses the 500px iOS SDK in order to provide developers with an example of how to approach functional reactive programming on iOS. It is the source code that accompanies <a href="https://leanpub.com/iosfrp">my book</a>.</p>
 
-		<h2 id="education">Education</h2>
+			<h3 id="afimagedownloader5"><a href="https://github.com/AshFurrow/AFImageDownloader">AFImageDownloader</a></h3>
 
-		<p>I've contributed on the <a href="http://www.teehanlax.com/blog/author/ash/">Teehan+Lax</a> blog professionally; <a href="http://ashfurrow.com">this blog</a>, where I mix in personal and technical posts; <a href="http://www.objc.io/issue-5/collection-views-and-uidynamics.html">objc.io</a>; as well as the <a href="http://reactivecocoa.io/philosophy.html">ReactiveCocoa.io</a> website. </p>
+			<p>AFImageDownloader is something I wrote while at 500px. It downloads and, more importantly, decompresses JPEG binary data on a background thread using Core Graphics. This keeps the main thread free to render the user interface, ensuring a smooth interaction with the user. </p>
 
-		<h3 id="treehouse11courseoncoredata2014"><a href="http://teamtreehouse.com">Treehouse</a> Course on Core Data, 2014</h3>
+			<h3 id="500pxiossdk6"><a href="https://github.com/500px/500px-iOS-api">500px iOS SDK</a></h3>
 
-		<p>In March, 2014, I flew to Orlando to record a series of videos and screencasts to help users through building a diary app for iOS. The app uses Core Data in order to persist data between application launches.</p>
+			<p>I wrote the 500px iOS SDK as a Friday afternoon hack project while working as the 500px Lead iOS Developer. It enables easier integration with the 500px API, encouraging more developers to use the service as a back end for the world's best photography. </p>
 
-		<p>Currently on the <a href="http://teamtreehouse.com/roadmap">roadmap</a> to be released within the next few months. </p>
+			<h2 id="education">Education</h2>
 
-		<h3 id="functionalreactiveprogrammingonios4"><a href="https://leanpub.com/iosfrp">Functional Reactive Programming on iOS</a></h3>
+			<p>I've contributed on the <a href="http://www.teehanlax.com/blog/author/ash/">Teehan+Lax</a> blog professionally; <a href="http://ashfurrow.com">this blog</a>, where I mix in personal and technical posts; <a href="http://www.objc.io/issue-5/collection-views-and-uidynamics.html">objc.io</a>; as well as the <a href="http://reactivecocoa.io/philosophy.html">ReactiveCocoa.io</a> website. </p>
 
-		<p>(Self-Published, 2013) </p>
+			<h3 id="treehouse11courseoncoredata2014"><a href="http://teamtreehouse.com">Treehouse</a> Course on Core Data, 2014</h3>
 
-		<p>Details the benefits of functional problem-solving approaches to everyday iOS programming challenges. Breaks down complex theories into understandable chunks.</p>
+			<p>In March, 2014, I flew to Orlando to record a series of videos and screencasts to help users through building a diary app for iOS. The app uses Core Data in order to persist data between application launches.</p>
 
-		<h3 id="yourfirstiosapp13"><a href="https://leanpub.com/your-first-ios-app">Your First iOS App</a></h3>
+			<p>Currently on the <a href="http://teamtreehouse.com/roadmap">roadmap</a> to be released within the next few months. </p>
 
-		<p>(Self-Published, 2013) </p>
+			<h3 id="functionalreactiveprogrammingonios4"><a href="https://leanpub.com/iosfrp">Functional Reactive Programming on iOS</a></h3>
 
-		<p>Introduces iOS app development lifecycle to beginners to the platform.</p>
+			<p>(Self-Published, 2013) </p>
 
-		<h3 id="uicollectionviewthecompleteguide14"><a href="http://www.amazon.com/iOS-UICollectionView-Complete-Edition-Programming-ebook/dp/B00IHZKDCU/ref=sr_1_4?ie=UTF8&amp;qid=1394922982&amp;sr=8-4&amp;keywords=ash+furrow">UICollectionView: The Complete Guide</a></h3>
+			<p>Details the benefits of functional problem-solving approaches to everyday iOS programming challenges. Breaks down complex theories into understandable chunks.</p>
 
-		<p>(Addison-Wesley, 2013)</p>
+			<h3 id="yourfirstiosapp13"><a href="https://leanpub.com/your-first-ios-app">Your First iOS App</a></h3>
 
-		<p>Covers every aspect of using UICollectionView, including thorough code examples.</p>
+			<p>(Self-Published, 2013) </p>
 
-		<h3 id="beginningobjectivec15"><a href="http://www.amazon.com/Beginning-Objective-C-James-Dovey/dp/1430243686/ref=sr_1_6?ie=UTF8&amp;qid=1394922982&amp;sr=8-6&amp;keywords=ash+furrow">Beginning Objective-C</a></h3>
+			<p>Introduces iOS app development lifecycle to beginners to the platform.</p>
 
-		<p>(Apress, 2012) </p>
+			<h3 id="uicollectionviewthecompleteguide14"><a href="http://www.amazon.com/iOS-UICollectionView-Complete-Edition-Programming-ebook/dp/B00IHZKDCU/ref=sr_1_4?ie=UTF8&amp;qid=1394922982&amp;sr=8-4&amp;keywords=ash+furrow">UICollectionView: The Complete Guide</a></h3>
 
-		<p>Contributed chapters on Objective-C runtime, best practices, and threading.</p></div></div></div>
+			<p>(Addison-Wesley, 2013)</p>
 
-    </div>
-  </div>
+			<p>Covers every aspect of using UICollectionView, including thorough code examples.</p>
+
+			<h3 id="beginningobjectivec15"><a href="http://www.amazon.com/Beginning-Objective-C-James-Dovey/dp/1430243686/ref=sr_1_6?ie=UTF8&amp;qid=1394922982&amp;sr=8-6&amp;keywords=ash+furrow">Beginning Objective-C</a></h3>
+
+			<p>(Apress, 2012) </p>
+
+			<p>Contributed chapters on Objective-C runtime, best practices, and threading.</p></div></div></div>
+
+	    </div>
+	  </div>
+	</div>
 </div>
