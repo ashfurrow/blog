@@ -7,7 +7,7 @@ namespace :deploy do
 
 	desc "Build and deploy to production"
 	task :publish do
-		sh 'middlman build'
+		sh 'middleman build'
 		sh 'rake deploy:production'
 	end
 
