@@ -4,7 +4,6 @@ source 'http://rubygems.org'
 
 gem "middleman", "~> 3.3.6"
 gem "middleman-blog", "~> 3.5.3"
-gem "middleman-aws"
 gem "middleman-s3_sync"  
 gem "middleman-cloudfront"
 gem "middleman-syntax"
