@@ -1,7 +1,7 @@
 <meta charset="utf-8" />
 <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
 <title><%= html_title(current_article, current_resource) %></title>
-<%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+<%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
 <%= stylesheet_link_tag "normalize", "bootstrap", "clean-blog", "syntax", "fontcustom/fontcustom.css", "custom" %>
 
 <!-- Meta stuff -->
