@@ -21,7 +21,6 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
   blog.summary_separator = "<!-- more -->"
   blog.layout = "blog_post"
-  blog.sources = '{year}-{month}-{day}-{title}.html'
 end
 
 activate :directory_indexes
