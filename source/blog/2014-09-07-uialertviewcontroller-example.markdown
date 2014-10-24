@@ -13,9 +13,10 @@ date: 2014-09-07 00:00
 
 <p>Creating an alert view controller is pretty simple. Just use the initializer to create one and then present it to the user as you would present any other view controller. </p>
 
-<pre><code>let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .Alert)
+```swift
+let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .Alert)
 presentViewController(alertController, animated: true, completion: nil)
-</code></pre>
+```
 
 <p>Pretty straightforward. I’m using the <code>.Alert</code> preferred style, but you can use the <code>.ActionSheet</code> instead. I’m using this as a replacement for <code>UIAlertView</code>, so I’ll just discuss the alert style. </p>
 
@@ -24,13 +25,14 @@ presentViewController(alertController, animated: true, completion: nil)
 
 <p>Turns out if you want buttons, you’ve got to explicitly add them to the controller before presenting it. </p>
 
-<pre><code>let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -&gt; Void in
+```swift
+let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
 })
-let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -&gt; Void in
+let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
 }
 alertController.addAction(ok)
 alertController.addAction(cancel)
-</code></pre>
+```
 
 <p>This is <em>worlds</em> better than <code>UIAlertView</code>, despite being much more verbose. First of all, you can have multiple cancel or destructive buttons. You also specify individual closures to be executed when a button is pressed instead of some shitty delegate callback telling you which button <em>index</em> was pressed. (If anyone out there makes a <code>UIAlertController+Blocks</code> category, I will find you, and I <em>will</em> kill you.)</p>
 <img src="/img/import/blog/uialertviewcontroller-example/2A03E60C605A42789A6FAF704BB9A130.jpg" class="img-responsive"><p>If we added the above configuration to our code, we’d get the following. </p>
@@ -38,10 +40,11 @@ alertController.addAction(cancel)
 
 <p>What <em>I</em> needed, however, was user input. This was possible with <code>UIAlertView</code>, so it should be possible with <code>UIAlertController</code>, right? Well, kinda. There’s an encouraging instance method named <code>addTextFieldWithConfigurationHandler()</code>, but using it is not so straightforward. Let me show you what I mean. </p>
 
-<pre><code>alertController.addTextFieldWithConfigurationHandler { (textField) -&gt; Void in
+```swift
+alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
     // Here you can configure the text field (eg: make it secure, add a placeholder, etc)
 }
-</code></pre>
+```
 
 <p>Straightforward. Run the code, get the following.</p>
 <img src="/img/import/blog/uialertviewcontroller-example/9EA0E4E86AB54891A9A27BC24D1C8889.png" class="img-responsive"><p>The question now is this: how do you, in the closure for the “OK” button, access the contents of the text field?</p>
@@ -49,21 +52,24 @@ alertController.addAction(cancel)
 <img src="/img/import/blog/uialertviewcontroller-example/31715566B57649FF8B277A3063191734.png" class="img-responsive"><p>The other answer suggests storing the text field that’s passed into the configuration closure in a property on the presenting controller, which can later be accessed. That’s a <em>very</em> Objective-C way of solving this problem. </p>
 <p>So what do we do? Well, I’ve been writing Swift lately, and whenever I come across a problem like this, I think “if I had <a href="http://instagram.com/p/rWyQdUDBhH">five years of Swift experience</a>, what would <em>I</em> do?” My answer was the following. </p>
 <p>Let’s create a local variable, a <code>UITextField?</code> optional. In the configuration closure for the text field, assign the local variable to the text field that we’re passed in. Then we can access that local variable in our alert action closure. Sweet. The full implementation looks like this. </p>
-<pre><code>var inputTextField: UITextField?
+
+```swift
+var inputTextField: UITextField?
 let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .Alert)
-let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -&gt; Void in
+let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
     // Do whatever you want with inputTextField?.text
     println("\(inputTextField?.text)")
 })
-let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -&gt; Void in
+let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
 }
 alertController.addAction(ok)
 alertController.addAction(cancel)
-alertController.addTextFieldWithConfigurationHandler { (textField) -&gt; Void in
+alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
     inputTextField = textField
 }
 presentViewController(alertController, animated: true, completion: nil)
-</code></pre>
+```
+
 <p>I like this a lot. It avoids polluting our object with unnecessary properties, avoids memory leaks, and seems pretty “Swift”. I’ve created a <a href="https://github.com/AshFurrow/UIAlertController-Example">GitHub repo</a> that I’ll keep up to date with future betas, etc. </p>
 <img src="/img/import/blog/uialertviewcontroller-example/09B8BCEA8BBE48239C07298CD4112B53.jpg" class="img-responsive"><p>So yeah. The new <code>UIAlertController</code> has some great benefits:</p>
 
