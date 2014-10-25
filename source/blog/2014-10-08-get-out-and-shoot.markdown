@@ -4,10 +4,11 @@ date: 2014-10-08 00:00
 ---
 
 <import><p>Been in a bit of a rut lately. Lots of reasons – stress, working a lot, travel exhaustion, etc. I actually wrote an entirely different blog post about hopelessness yesterday, but it was kind of a downer, so I decided not to publish it. </p>
-<p>One thing that I've been trying to do is consistently get out and take photos. You can see this reflected in my pedometer. Basically the only exercise I get is walking around taking photos (my commute to work is pretty minimal). </p>
-<img src="/img/import/blog/get-out-and-shoot/5C3B545D15F148BEA8096FF3A45C9518.jpg" class="img-responsive">
 
 <!-- more -->
+
+<p>One thing that I've been trying to do is consistently get out and take photos. You can see this reflected in my pedometer. Basically the only exercise I get is walking around taking photos (my commute to work is pretty minimal). </p>
+<img src="/img/import/blog/get-out-and-shoot/5C3B545D15F148BEA8096FF3A45C9518.jpg" class="img-responsive">
 
 <p>Exercise is a pretty great antidepressant, and it seems to be working for me.</p>
 <p>Even in Italy last weekend, exhausted from a day of people, Ashley and I left the party early (about 10pm) and went back to the Airbnb to relax. On our way home, we saw some really cool photo opportunities, so after regaining our breath, we headed out again with a tripod and some cameras. Super-cool. </p>

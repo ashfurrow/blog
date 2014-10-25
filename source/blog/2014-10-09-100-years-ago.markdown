@@ -4,6 +4,9 @@ date: 2014-10-09 00:00
 ---
 
 <import><p>So obviously I’m kind of into photography (a friend used to say I’m obsessed, but now I’ve gotten him into it, too). I <em>love</em> photography. I love reading about it. I love doing it. I love thinking about it. Every aspect of making a photo, from conception to capture to constitution. </p>
+	
+<!-- more -->
+
 <p>People who follow this blog also know that I’m a fan of Leica. My favourite camera to use is my M3: completely analogue and mechanical. It has no light meter, no auto-focus or auto-exposure or auto-anything. I love it because the photos I create with it are an expression of exactly myself. </p>
 
 <div class="instagram-oembed">
@@ -11,9 +14,6 @@ date: 2014-10-09 00:00
     <img src="http://scontent-b.cdninstagram.com/hphotos-xaf1/l/t51.2885-15/10723729_738572892874558_1797414285_n.jpg" width="100%">
   </a>
 </div>
-
-<!-- more -->
-
 <p>This year, the Leica turned 100. To celebrate, Leica has created numerous celebratory products and this advertisement. </p>
 <div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="1920x1080" mozallowfullscreen="" allowfullscreen="" src="//player.vimeo.com/video/107622839?wmode=opaque&amp;api=1" width="1920" data-embed="true" webkitallowfullscreen="" frameborder="0" title="100" height="1080" class="embed-responsive-item"></iframe></div>
 <p>OK, fine, you watch it. And you probably think something like “jeez this company has its head up its own ass”, and you’re not wrong. But so does Apple, a company I suspect the majority of readers of this blog would defend. (I’m far from the first to make the Leica/Apple comparison.) </p>
