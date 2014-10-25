@@ -1,10 +1,4 @@
 namespace :deploy do
-	desc "Build and deploy to production"
-	task :publish do
-		sh 'middleman build'
-		sh 'rake deploy:production'
-	end
-
 	desc "Deployment to production"
 	task :production do
 	  sh 'middleman s3_sync --bucket=ashfurrow.com'
@@ -14,7 +8,20 @@ namespace :deploy do
 	task :staging do
 	  sh 'middleman s3_sync --bucket=staging.ashfurrow.com'
 	end
+end
 
+namespace :publish do
+  desc "Build and deploy to production"
+  task :production do
+    sh 'middleman build'
+    sh 'rake deploy:production'
+  end
+
+  desc "Build and deploy to staging"
+  task :production do
+    sh 'middleman build'
+    sh 'rake deploy:production'
+  end
 end
 
 desc "Build site locally"
