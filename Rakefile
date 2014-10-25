@@ -18,9 +18,9 @@ namespace :publish do
   end
 
   desc "Build and deploy to staging"
-  task :production do
+  task :staging do
     sh 'middleman build'
-    sh 'rake deploy:production'
+    sh 'rake deploy:staging'
   end
 end
 
