@@ -104,5 +104,4 @@ activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'staging.ashfurrow.com'
   s3_sync.aws_access_key_id          = ENV['SITE_AWS_KEY']
   s3_sync.aws_secret_access_key      = ENV['SITE_AWS_SECRET']
-  s3_sync.delete                     = false # We delete stray files by default.
 end
