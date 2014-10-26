@@ -26,6 +26,7 @@ end
 activate :directory_indexes
 
 page "/feed.xml", layout: false
+page "/feed.rss.xml", layout: false
 
 ###
 # Compass
