@@ -10,6 +10,8 @@ gem "middleman-syntax"
 gem "redcarpet"
 gem "liquid"
 gem "nokogiri"
+gem "therubyracer"
+gem "less"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"

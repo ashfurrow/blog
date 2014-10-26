@@ -98,6 +98,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  
+  activate :minify_css
+  activate :minify_javascript
 end
 
 activate :s3_sync do |s3_sync|

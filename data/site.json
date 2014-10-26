@@ -4,8 +4,5 @@
 	"description": "Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.",
 	"image": "http://static.ashfurrow.com/blog/siteimage.png",
 	"dark_image": "http://static.ashfurrow.com/blog/siteimage_dark.png",
-	"default_background_image": "http://static.ashfurrow.com/blog/backgrounds/default-bg.jpg",
-	"accent_color": "398CCC",
-	"normal_font": "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-	"accent_font": "Georgia,Times, 'Times New Roman',serif;"
+	"default_background_image": "http://static.ashfurrow.com/blog/backgrounds/default-bg.jpg"
 }

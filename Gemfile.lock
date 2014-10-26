@@ -17,6 +17,7 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorize (0.7.3)
+    commonjs (0.2.7)
     compass (1.0.1)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.1)
@@ -80,6 +81,9 @@ GEM
     ipaddress (0.8.0)
     json (1.8.1)
     kramdown (1.4.2)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    libv8 (3.16.14.7)
     liquid (2.6.1)
     listen (2.7.11)
       celluloid (>= 0.15.2)
@@ -155,6 +159,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.1.1)
+    ref (1.0.5)
     rouge (1.7.2)
     ruby-progressbar (1.6.0)
     sass (3.4.5)
@@ -168,6 +173,9 @@ GEM
     sprockets-sass (1.2.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -188,6 +196,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder (~> 3.0)
+  less
   liquid
   middleman (~> 3.3.6)
   middleman-blog (~> 3.5.3)
@@ -196,3 +205,4 @@ DEPENDENCIES
   middleman-syntax
   nokogiri
   redcarpet
+  therubyracer
