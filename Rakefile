@@ -15,6 +15,7 @@ namespace :publish do
   task :production do
     sh 'middleman build'
     sh 'rake deploy:production'
+    sh "s3cmd put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/*.xml s3://feed.ashfurrow.com/"
   end
 
   desc "Build and deploy to staging"
