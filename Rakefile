@@ -23,6 +23,13 @@ namespace :publish do
     sh 'middleman build'
     sh 'rake deploy:staging'
   end
+
+  desc "Build and deploy to both staging and production"
+  task :all do
+    sh 'middleman build'
+    sh 'rake deploy:staging'
+    sh 'rake deploy:production'
+  end
 end
 
 desc "Build site locally"
