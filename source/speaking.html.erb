@@ -67,11 +67,11 @@ class Talk
 end
 
 upcoming_talks = [
-  Talk.new("TBA", "Mobile Developer &amp; Business Day", "http://by.mdday.ru/", nil, nil, nil),
   Talk.new("TBA", "dotSwift", "http://www.dotswift.io", nil, nil, nil)
 ]
 
 past_talks = [
+  Talk.new("Teaching & Learning", "Mobile Developer &amp; Business Day", "http://by.mdday.ru/", "https://speakerdeck.com/ashfurrow/teaching-and-learning", nil, nil),
   Talk.new("Solving Problems with ReactiveCocoa and Swift", "MBLT Dev", "http://mbltdev.ru", "https://speakerdeck.com/ashfurrow/functional-reactive-programming-in-swift", nil, "https://github.com/AshFurrow/MBLTDev"),
   Talk.new("Idiomatic Swift", "Pragma Mark 2014", "http://pragmamark.org/events/pragma-conference-2014/", "https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way", nil, nil),
   Talk.new("Functional Programming in Swift", "NSSpain 2014", "http://nsspain.com/2014", "https://speakerdeck.com/ashfurrow/the-future-of-functional-programming-on-ios", nil, "https://github.com/AshFurrow/NSSpain2014"),
@@ -92,8 +92,10 @@ past_talks = [
 
 %>
 
+      <% if upcoming_talks.count > 0 %>
       <h3>Upcoming</h3>
       <ul><%= upcoming_talks.map { |talk| "<li>#{ talk.to_html }</li>\n" }.reduce(:+) %></ul>
+      <% end %>
 
       <h3>Past</h3>
 			<ul><%= past_talks.map { |talk| "<li>#{ talk.to_html }</li>\n" }.reduce(:+) %></ul>
