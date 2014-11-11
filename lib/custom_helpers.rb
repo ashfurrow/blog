@@ -17,7 +17,7 @@ module CustomHelpers
 
     if current_article
       doc = Nokogiri::HTML(current_article.body)
-      image = doc.xpath("//img").map { |img| img["src"] }.first
+      image ||= doc.xpath("//img").map { |img| img["src"] }.first
     end
 
     # Default image
