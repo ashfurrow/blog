@@ -68,3 +68,9 @@ blockquote > p:first-child {
   }
 }
 
+.container img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
