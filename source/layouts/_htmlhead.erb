@@ -1,3 +1,18 @@
+<%
+
+def opengraph_description 
+	if current_article
+		summary = current_article.metadata[:page]["summary"] or current_article.summary
+		description = Nokogiri::HTML(summary).xpath('//p').map { |paragraph|
+			"#{ paragraph.inner_text} "
+		}.reduce('', :+) 
+	end
+
+	description or data.site.description
+end
+
+%>
+
 <meta charset="utf-8" />
 <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
 <title><%= html_title(current_article, current_resource) %></title>
@@ -11,7 +26,7 @@
 <meta property="og:title" content="<%= html_title(current_article, current_resource) %>"/>
 <meta property="og:url" content="http://ashfurrow.com<%= current_resource.url %>"/>
 <meta property="og:type" content="website"/>
-<meta property="og:description" content="<%= data.site.description %>"/>
+<meta property="og:description" content="<%= opengraph_description %>"/>
 <meta property="og:image" content="<%= og_image(current_article, current_resource) %>"/>
 <meta itemprop="name" content="Blog"/>
 <meta itemprop="url" content="http://ashfurrow.com<%= current_resource.url %>"/>
