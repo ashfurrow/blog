@@ -1,4 +1,4 @@
-namespace :deploy do
+﻿namespace :deploy do
 	desc "Deployment to production"
 	task :production do
 	  sh 'middleman s3_sync --bucket=ashfurrow.com'
