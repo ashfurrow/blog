@@ -1,4 +1,4 @@
-language: ruby
+language: objective-c
 rvm:
 - 2.1.2
 before_install:
