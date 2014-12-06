@@ -34,7 +34,7 @@
     end
 
     if branch != 'master'
-      puts 'Skipping deploy for non-master branch commit; can only be deployed from master branch.'
+      puts "Skipping deploy for #{ branch }; can only be deployed from master branch."
       exit 0
     end
 
