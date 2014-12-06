@@ -1,0 +1,4 @@
+language: ruby
+
+script: 
+ - rake build --trace
