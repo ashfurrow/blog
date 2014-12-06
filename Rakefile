@@ -28,7 +28,7 @@
     
     abort 'Must be run on Travis' unless branch
     
-    if pull_request
+    if pull_request != 'false'
       puts 'Skipping deploy for pull request; can only be deployed from master branch.'
       exit 0 
     end
