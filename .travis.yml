@@ -6,7 +6,7 @@ before_install:
 - export LANGUAGE=en_US.UTF-8
 - export LC_ALL=en_US.UTF-8
 script:
-- middleman build
+- bundle exec middleman build
 env:
   global:
   - secure: NIFnh3i0Ll2B6iEdEoQYvzNXOCiEySq69mzW/bY76LLJ92JKFqjl9Aazr+cY09QdsPF+pY/CSr/oLNs9Fh+nOQn8bB8XlTpSJS7welKlGsmCZCByfT7RP+oM4KfUm5PJ9XgNi9584Xh/S4r36Z0VzEcza/zWcEtntr1CdkKH70w=
