@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+- 2.1.2
 before_install:
 - export LANG=en_US.UTF-8
 - export LANGUAGE=en_US.UTF-8
