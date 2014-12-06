@@ -29,3 +29,4 @@ Thanks to the following people and projects:
 - [middleman-syntax](https://github.com/middleman/middleman-syntax)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 - [This colour](http://www.colourlovers.com/color/398CCC/Walton)
+- [s3cmd](http://s3tools.org/)
