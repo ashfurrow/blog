@@ -6,9 +6,10 @@ env:
   - secure: NIFnh3i0Ll2B6iEdEoQYvzNXOCiEySq69mzW/bY76LLJ92JKFqjl9Aazr+cY09QdsPF+pY/CSr/oLNs9Fh+nOQn8bB8XlTpSJS7welKlGsmCZCByfT7RP+oM4KfUm5PJ9XgNi9584Xh/S4r36Z0VzEcza/zWcEtntr1CdkKH70w=
   - secure: Z/ANF7e4hNxb0ou6Kk6/G0sLO5G+Jv1r1586VIfiXgXGTiOgkkF/8jcjKl49ngbQiWWXFByupdGdjW9k8yi9Iy9goYeINzj+phO+UgdY3BJwOq0Fufd5E5/W9ppc+zAVFVXsjPzjjKNDZBURAq4uJ/J6oHEmd7FfzWUC6oktHMM=
 install:
-- sudo apt-get install s3cmd
+- sudo apt-get install python-support
 - bundle install
 script:
 - rake build
 after_success:
+- chmod a+x bin/s3cmd
 - rake deploy:travis
