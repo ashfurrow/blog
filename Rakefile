@@ -1,5 +1,3 @@
-#encoding: utf-8
-
 namespace :deploy do
 	desc "Deployment to production"
 	task :production do
@@ -37,7 +35,7 @@ end
 
 desc "Build site locally"
 task :build do
-	sh 'middleman build'
+	sh 'middleman build --verbose'
 end
 
 desc "Start middleman server"
