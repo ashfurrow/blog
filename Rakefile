@@ -8,6 +8,31 @@
 	task :staging do
 	  sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
 	end
+
+  desc "Deploys RSS and Atom feeds"
+  task :feeds do
+    sh "bundle exec s3cmd put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/*.xml s3://feed.ashfurrow.com/"
+  end
+
+  desc "Deploy if Travis environment variables are set correctly"
+  task :travis do
+    branch = ENV['TRAVIS_BRANCH']
+    pull_request = ENV['TRAVIS_PULL_REQUEST']
+    
+    abort 'Must be run on Travis' unless branch
+    
+    if pull_request
+      puts 'Skipping deploy for pull request; can only be deployed from master branch.'
+      exit 0 
+    end
+
+    if branch != 'master'
+      puts 'Skipping deploy for non-master branch commit; can only be deployed from master branch.'
+      exit 0
+    end
+
+    sh 'rake deploy:all'
+  end
 end
 
 namespace :publish do
@@ -15,7 +40,7 @@ namespace :publish do
   task :production do
     sh 'bundle exec middleman build'
     sh 'rake deploy:production'
-    sh "bundle exec s3cmd put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/*.xml s3://feed.ashfurrow.com/"
+    sh 'rake deploy:feeds'
   end
 
   desc "Build and deploy to staging"
@@ -29,7 +54,7 @@ namespace :publish do
     sh 'bundle exec middleman build'
     sh 'rake deploy:staging'
     sh 'rake deploy:production'
-    sh "bundle exec s3cmd put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/*.xml s3://feed.ashfurrow.com/"
+    sh 'rake deploy:feeds'
   end
 end
 
