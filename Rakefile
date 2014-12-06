@@ -14,6 +14,13 @@
     sh "bundle exec s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/*.xml s3://feed.ashfurrow.com/"
   end
 
+  desc "Deploys to staging, production, and syncs feeds"
+  task :all do
+    sh 'rake deploy:staging'
+    sh 'rake deploy:production'
+    sh 'rake deploy:feeds'
+  end
+
   desc "Deploy if Travis environment variables are set correctly"
   task :travis do
     branch = ENV['TRAVIS_BRANCH']
@@ -52,9 +59,7 @@ namespace :publish do
   desc "Build and deploy to both staging and production"
   task :all do
     sh 'bundle exec middleman build'
-    sh 'rake deploy:staging'
-    sh 'rake deploy:production'
-    sh 'rake deploy:feeds'
+    sh 'rake deploy:all'
   end
 end
 
