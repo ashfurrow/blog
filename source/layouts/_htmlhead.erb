@@ -18,7 +18,7 @@ end
 <title><%= html_title(current_article, current_resource) %></title>
 <%= feed_tag :atom, "http://feed.ashfurrow.com/feed.xml", title: "Atom Feed" %>
 <%= feed_tag :rss, "http://feed.ashfurrow.com/feed.rss.xml", title: "RSS Feed" %>
-<%= stylesheet_link_tag "bootstrap.min", "clean-blog", "syntax", "fontcustom/fontcustom.css", "custom" %>
+<%= stylesheet_link_tag "bootstrap.min", "clean-blog", "syntax", "fontcustom/fontcustom.css", "cntl.css", "custom" %>
 
 <!-- Meta stuff -->
 <link rel="canonical" href="http://ashfurrow.com<%= current_resource.url %>"/>

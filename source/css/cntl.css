@@ -1,0 +1,167 @@
+body {
+	font-family: Arial;
+}
+
+
+.cntl {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.cntl-center {
+	left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.cntl-bar {
+	position: absolute;
+	width: 10px;
+	top: 0;
+	bottom: 0;
+	background-color: #ccc;
+	box-shadow: inset 0px 0px 7px -2px #000;
+}
+
+
+.cntl-bar-fill {
+	background-color: #009ABB;
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	height:0;
+
+}
+
+.cntl-state {
+	position: relative;
+	width:100%;
+	min-height: 200px;
+	margin-bottom: 50px;
+}
+
+.cntl-state::after {
+	display:block;
+	content: ' ';
+	clear:both;
+}
+
+.cntl-icon {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background-color: #00313C;
+	border: solid 3px #009ABB;
+	box-shadow: 0px 0px 19px -9px #000;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	line-height: 80px;
+	font-size: 40px;
+	color: #fff;
+}
+
+.cntl-content {
+	width: 40%;
+	padding: 2%;
+	background-color: rgba(238, 238, 238, 0.25);
+	border-radius: 8px;
+	border-bottom: solid 3px #009ABB;
+	float:left;
+	opacity:0;
+	position:relative;
+	margin-left:-40%;
+}
+
+.cntl-state:nth-child(2n+2) .cntl-content {
+	float:right;
+	margin-right:-40%;
+}
+
+.cntl-image {
+	opacity:0;
+	width: 40%;
+	padding: 2%;
+}
+
+.cntl-state:nth-child(2n+1) .cntl-image {
+	float:right;
+}
+
+.cntl-image img {
+	width:100%;
+}
+
+.cntl-content h4 {
+	font-size:20px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+
+/*
+animations
+*/
+.cntl-bar-fill,.cntl-content,.cntl-image {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.cntl-state:nth-child(2n+2).cntl-animate .cntl-content {
+	margin-right:0%;
+}
+
+.cntl-animate .cntl-content {
+	opacity:1;
+	margin-left:0%;
+}
+
+.cntl-animate .cntl-image {
+	opacity:1;
+}
+
+
+
+
+/* mobile support */
+
+@media (max-width: 600px) {
+
+	.cntl-bar {
+		left:auto;
+		right: 37px;
+	}
+
+	.cntl-content {
+		width:80%;
+		float:none;
+	}
+	.cntl-state:nth-child(2n+2) .cntl-content {
+		margi-right:0%;
+		float:none;
+	}
+
+	.cntl-image {
+		width:80%;
+	}
+
+	.cntl-state:nth-child(2n+1) .cntl-image {
+		float:none;
+	}
+
+	.animate .cntl-content {
+		margin-left: 2%;
+	}
+
+	.cntl-icon {
+		left: auto;
+		right: 0;
+	}
+
+}
