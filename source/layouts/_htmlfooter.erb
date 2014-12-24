@@ -6,3 +6,34 @@
 
 <!-- Custom Theme JavaScript -->
 <%= javascript_include_tag 'clean-blog.min' %>
+
+<%=
+
+if current_resource.metadata[:page]["timeline"] == true
+		<<-eos
+    	#{javascript_include_tag 'jquery.cntl.min'}
+    	
+    	<script>
+				$(document).ready(function(e){
+					 
+					$('.cntl').cntl({
+					 
+						// The amount of "scroll padding" to allow 
+						// The more, the later the state will be revealed
+						revealbefore: 200,
+						 
+						// The animate class
+						// This class should have animation rules in css
+						anim_class: 'cntl-animate',
+						 
+						// A callback once the state has been revealed
+						onreveal: null
+					 
+					});
+				 
+				});
+			</script>
+    eos
+end
+
+%>
