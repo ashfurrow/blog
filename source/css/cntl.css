@@ -85,7 +85,8 @@
 }
 
 .cntl-image img {
-	width:100%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .cntl-content > p, .cntl-content > h3 {
@@ -154,6 +155,7 @@ animations
 	}
 
 	.cntl-image {
+		margin-top: 30px;
 		width:80%;
 	}
 
