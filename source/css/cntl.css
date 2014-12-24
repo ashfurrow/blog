@@ -1,9 +1,9 @@
 
 .cntl {
-	margin: 30px;
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	margin-top: 30px;
 }
 
 .cntl-center {
@@ -46,14 +46,14 @@
 
 .cntl-icon {
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	background-color: #020001;
 	position: absolute;
 	top: 0;
 	text-align: center;
-	line-height: 100px;
-	font-size: 32px;
+	line-height: 80px;
+	font-size: 24px;
 	color: #F9F9F9;
 }
 
@@ -74,9 +74,10 @@
 }
 
 .cntl-image {
+	position:relative;
+	float:left;
 	opacity:0;
 	width: 40%;
-	padding: 2%;
 }
 
 .cntl-state:nth-child(2n+1) .cntl-image {
@@ -87,25 +88,35 @@
 	width:100%;
 }
 
-.cntl-content h4 {
-	font-size:20px;
-	font-weight: normal;
-	margin-bottom: 10px;
+.cntl-content > p, .cntl-content > h3 {
+	margin: 10px 0 0 0;
+	margin-top: 10px;
+	line-height: 25px;
+	margin-top: 25px;
 }
 
-.cntl-content > p {
-	margin: 10px 0 0 0;
+.cntl-content > p:first-child, .cntl-content > h3:first-child {
+	margin: 0;
+	margin-top: 0px;
 }
 
 /*
 animations
 */
-.cntl-bar-fill,.cntl-content,.cntl-image {
+.cntl-bar-fill,.cntl-content {
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	transition: all 500ms ease;
+}
+
+.cntl-image {
+	-webkit-transition: all 500ms 250ms ease;
+	-moz-transition: all 500ms 250ms ease;
+	-o-transition: all 500ms 250ms ease;
+	-ms-transition: all 500ms 250ms ease;
+	transition: all 500ms 250ms ease;
 }
 
 .cntl-state:nth-child(2n+2).cntl-animate .cntl-content {
@@ -138,7 +149,7 @@ animations
 		float:none;
 	}
 	.cntl-state:nth-child(2n+2) .cntl-content {
-		margi-right:0%;
+		margin-right:0%;
 		float:none;
 	}
 
