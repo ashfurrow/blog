@@ -40,7 +40,9 @@ class Event
 
 	def formatted_heading
 		if @heading
-			"<h3>#{ @heading }</h3>"
+			id = @heading.gsub(/\s/, '-').downcase
+			id.gsub!(/[^a-zA-Z-]/, '')
+			"<h3 id='#{ id }'>#{ @heading }</h3>"
 		else
 			""
 		end
