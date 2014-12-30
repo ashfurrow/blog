@@ -1,12 +1,16 @@
 require "lib/custom_helpers"
+require "lib/add_links_to_navigation.rb"
+
 helpers CustomHelpers
+
+activate :add_links_to_navigation
 
 ###
 # Blog settings
 ###
 
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true
 
 activate :syntax
 

@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .container .pager li > a {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -73,4 +75,36 @@ blockquote > p:first-child {
   width: 100% \9;
   max-width: 100%;
   height: auto;
+}
+
+/* Let's make those little links a little prettier. */
+
+.header-link {
+  content: "#";
+  color: rgba(189,189,189,0.25);
+  font-weight: 400;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: @brand-primary;
+  }
+}
+
+.container {
+  .header-link {
+    position: absolute;
+    left:-0.5em;
+    /* The links don't fit on spall screens, so let's high them. */
+    @media only screen and (max-width: 768px) {
+      display:none;   
+    }
+  }
+
+  .cntl-content {
+    .header-link {
+      position: relative;
+      left: 0.3em;
+      display: inline;
+    }
+  }
 }
