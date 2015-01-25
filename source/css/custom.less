@@ -1,4 +1,5 @@
 @import "variables.less";
+@import "mixins.less";
 
 .container .pager li > a {
   margin-top: 10px;
@@ -108,3 +109,272 @@ blockquote > p:first-child {
     }
   }
 }
+
+/* Portfolio */
+
+.portfolio {
+  aside {
+    display: block;
+    color: white;
+    position: relative;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    p {
+      margin: 0px 0px;
+    }
+    h2 {
+      margin-top: 0px;
+    }
+
+    /* Extra small devices (phones, less than 768px) */
+    /* No media query since this is the default in Bootstrap */
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      height: 250px;
+      padding-top: auto;
+      padding-bottom: auto;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      height: 350px;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+      height: 450px;
+    }
+
+    figcaption {
+      display: block;
+      padding: 0px;
+      text-align: center;
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+      width: 70%;
+      display: block;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 768px) { 
+        position: absolute;
+        text-align: left;
+
+        &:before {
+          content:"";
+        }
+      }
+
+      &:before {
+        content:"";
+        color: white;
+        position: relative;
+        @media (min-width: 768px) { 
+          position: absolute;
+        }
+        left: auto;
+        bottom: auto;
+        top: auto;
+        right: auto;
+      }
+
+      &:after {
+        content:"";
+        color: white;
+        position: relative;
+        @media (min-width: 768px) { 
+          position: absolute;
+        }
+        left: auto;
+        bottom: auto;
+        top: auto;
+        right: auto;
+      }
+    }
+
+    /* Software */
+
+    #software_section {
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        right: 2em;
+        bottom: 2em;
+        width: 325px;
+        &:before {
+          width: 205px;
+          height: 94px;
+          top: 0em;
+          right: 105%;
+          background-image: url(/img/portfolio/software_callout_small.png);
+        }
+      }
+
+     /* Medium devices (desktops, 992px and up) */ 
+      @media (min-width: 992px) { 
+        right: 5em;
+        &:before {
+          width: 357px;
+          height:164px;
+          top: -3.6em;
+          background-image: url(/img/portfolio/software_callout.png);
+        }
+      }
+
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { 
+        right: 7em;
+        bottom: 5em;
+      }
+    }
+
+    /* Community */
+
+    #community_section {
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        right: 2em;
+        bottom: 2em;
+        width: 325px;
+        &:before {
+          width: 153px;
+          height: 79px;
+          top: 0em;
+          right: 105%;
+          background-image: url(/img/portfolio/community_callout_small.png);
+        }
+      }
+
+     /* Medium devices (desktops, 992px and up) */ 
+      @media (min-width: 992px) { 
+        right: 5em;
+        &:before {
+          width: 309px;
+          height: 205px;
+          top: -5.8em;
+          background-image: url(/img/portfolio/community_callout.png);
+        }
+      }
+
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { 
+        right: 7em;
+        bottom: 5em;
+      }
+    }
+
+    /* Education */
+
+    #education_section {
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        right: 2em;
+        top: 2em;
+        width: 325px;
+        &:before {
+          width: 192px;
+          height: 88px;
+          bottom: -2.1em;
+          right: 105%;
+          background-image: url(/img/portfolio/education_callout_small.png);
+        }
+      }
+
+     /* Medium devices (desktops, 992px and up) */ 
+      @media (min-width: 992px) { 
+        right: 5em;
+        &:before {
+          width: 357px;
+          height: 164px;
+          bottom: -5.8em;
+          background-image: url(/img/portfolio/education_callout.png);
+        }
+      }
+
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { 
+        right: 7em;
+        top: 5em;
+      }
+    }
+
+    /* Photography */
+
+    #photography_section {
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+
+      @media (min-width: 768px) { 
+        text-align: right;
+      }
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        left: 2em;
+        bottom: 2em;
+        width: 325px;
+        &:after {
+          width: 205px;
+          height: 94px;
+          top: 0em;
+          left: 105%;
+          background-image: url(/img/portfolio/photography_callout_small.png);
+        }
+      }
+
+     /* Medium devices (desktops, 992px and up) */ 
+      @media (min-width: 992px) { 
+        left: 1em;
+        &:after {
+          width: 357px;
+          height: 164px;
+          top: -3.8em;
+          background-image: url(/img/portfolio/photography_callout.png);
+        }
+      }
+
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { 
+        left: 4em;
+        bottom: 5em;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
