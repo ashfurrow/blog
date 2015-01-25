@@ -121,7 +121,12 @@ blockquote > p:first-child {
       vertical-align: top;
       display: inline-block;
       margin-top: 30px;
-      width: 49%; /* TODO: Why? */
+      width: 90%;
+      
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        width: 49%;
+      }
 
       text-align: left;
 
@@ -168,9 +173,24 @@ blockquote > p:first-child {
   }
 
   /* Community */
+
   #community_list {
     li {
-      margin: 0px 50px;
+      margin: 0px 10px;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      li {
+        margin: 0px 30px;
+      }
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      li {
+        margin: 0px 50px;
+      }
     }
   }
 
@@ -184,7 +204,12 @@ blockquote > p:first-child {
       margin: 0px;
       margin-top: 30px;
       padding: 0px;
-      width: 49%; /* TODO: Why? */
+      width: 90%;
+      
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        width: 49%;
+      }
 
       p {
         margin-left: 20px;
@@ -245,9 +270,16 @@ blockquote > p:first-child {
           background-image: url(/img/portfolio/exposure_hover.svg); height: 80px;
         }
       }
-      margin: 10px 50px;
       min-width: 70px;
       color: @gray-dark;
+    }
+
+    li {
+      margin: 10px 10px;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        margin: 10px 50px;
+      }
     }
   }
 
