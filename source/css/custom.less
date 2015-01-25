@@ -112,37 +112,82 @@ blockquote > p:first-child {
 
 /* Portfolio */
 
+/* Education */
 .portfolio {
-  li {
-    background: 0 0 no-repeat fixed;
-    vertical-align: middle;
-    position: relative;
-    div {
-      width: 70px; 
-      height: 70px; 
-      background-size: cover;
-    }
-    .instagram {
-      background-image: url(/img/portfolio/instagram.svg);
-      &:hover {
-        background-image: url(/img/portfolio/instagram_hover.svg);
+  #education_list {
+    li {
+      vertical-align: top;
+      display: inline-block;
+      margin-left: auto;
+      margin: 0px;
+      margin-top: 30px;
+      padding: 0px;
+      width: 49%; /* TODO: Why? */
+
+      p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+
+      text-align: left;
+      .icon {
+        opacity: 0.3;
+        color: black;
+        text-align: center;
+      }
+      .bitmap {
+        background-size: cover;
+        height: 60px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .treehouse {
+        background-image: url(/img/portfolio/treehouse.png);
+        width: 56px; 
+      }
+      .speaking {
+        background-image: url(/img/portfolio/speaking.png);
+        width: 56px; 
       }
     }
-    ._500px {
-      background-image: url(/img/portfolio/500px.svg);
-      &:hover {
-        background-image: url(/img/portfolio/500px_hover.svg);
+  }
+}
+
+/* Photography */
+.portfolio {
+  #photography_list {
+    li {
+      background: 0 0 no-repeat fixed;
+      vertical-align: middle;
+      position: relative;
+      div {
+        width: 70px; 
+        height: 70px; 
+        background-size: cover;
       }
-    }
-    .exposure {
-      background-image: url(/img/portfolio/exposure.svg); height: 80px;
-      &:hover {
-        background-image: url(/img/portfolio/exposure_hover.svg); height: 80px;
+      .instagram {
+        background-image: url(/img/portfolio/instagram.svg);
+        &:hover {
+          background-image: url(/img/portfolio/instagram_hover.svg);
+        }
       }
+      ._500px {
+        background-image: url(/img/portfolio/500px.svg);
+        &:hover {
+          background-image: url(/img/portfolio/500px_hover.svg);
+        }
+      }
+      .exposure {
+        background-image: url(/img/portfolio/exposure.svg); height: 80px;
+        &:hover {
+          background-image: url(/img/portfolio/exposure_hover.svg); height: 80px;
+        }
+      }
+      margin: 10px 50px;
+      min-width: 70px;
+      color: @gray-dark;
     }
-    margin: 10px 50px;
-    min-width: 70px;
-    color: @gray-dark;
   }
 }
 
