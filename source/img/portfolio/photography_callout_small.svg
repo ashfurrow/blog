@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="205px" height="94px" viewBox="0 0 205 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>photography_callout_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="After-GH-Comment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Site-+-Portfolio" sketch:type="MSLayerGroup" transform="translate(-523.000000, -7120.000000)">
+            <g id="Portfolio" transform="translate(48.000000, 695.000000)" sketch:type="MSShapeGroup">
+                <g id="Photography" transform="translate(0.000000, 6161.000000)">
+                    <g id="Callout" transform="translate(54.000000, 191.000000)">
+                        <g id="photography_callout_small" transform="translate(523.500000, 119.000000) scale(-1, -1) rotate(-180.000000) translate(-523.500000, -119.000000) translate(421.000000, 73.000000)">
+                            <circle id="Oval-1" fill="#FFFFFF" cx="196.711301" cy="8.37464707" r="7.5"></circle>
+                            <path d="M196.711301,8.37464707 L114.697158,91.2325175 L0.677930176,91.2325181" id="Path-2" stroke="#FFFFFF" stroke-width="4"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

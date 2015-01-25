@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="153px" height="79px" viewBox="0 0 153 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>community_callout_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="After-GH-Comment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Site-+-Portfolio" sketch:type="MSLayerGroup" transform="translate(-841.000000, -3951.000000)">
+            <g id="Portfolio" transform="translate(48.000000, 695.000000)" sketch:type="MSShapeGroup">
+                <g id="Community" transform="translate(0.000000, 2929.000000)">
+                    <g id="Callout" transform="translate(793.000000, 311.000000)">
+                        <g id="community_callout_small" transform="translate(76.500000, 54.500000) scale(1, -1) rotate(-180.000000) translate(-76.500000, -54.500000) translate(0.000000, 16.000000)">
+                            <circle id="Oval-1" fill="#FFFFFF" cx="145.495588" cy="8.32804577" r="7.5"></circle>
+                            <path d="M145.495588,8.32804577 L105.697158,76.2325175 L0.31799823,76.2325181" id="Path-2" stroke="#FFFFFF" stroke-width="4"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

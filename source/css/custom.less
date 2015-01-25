@@ -113,6 +113,41 @@ blockquote > p:first-child {
 /* Portfolio */
 
 .portfolio {
+  li {
+    background: 0 0 no-repeat fixed;
+    vertical-align: middle;
+    position: relative;
+    div {
+      width: 70px; 
+      height: 70px; 
+      background-size: cover;
+    }
+    .instagram {
+      background-image: url(/img/portfolio/instagram.svg);
+      &:hover {
+        background-image: url(/img/portfolio/instagram_hover.svg);
+      }
+    }
+    ._500px {
+      background-image: url(/img/portfolio/500px.svg);
+      &:hover {
+        background-image: url(/img/portfolio/500px_hover.svg);
+      }
+    }
+    .exposure {
+      background-image: url(/img/portfolio/exposure.svg); height: 80px;
+      &:hover {
+        background-image: url(/img/portfolio/exposure_hover.svg); height: 80px;
+      }
+    }
+    margin: 10px 50px;
+    min-width: 70px;
+    color: @gray-dark;
+  }
+}
+
+/* Section Headers */
+.portfolio {
   aside {
     display: block;
     color: white;
@@ -218,7 +253,7 @@ blockquote > p:first-child {
           height: 94px;
           top: 0em;
           right: 105%;
-          background-image: url(/img/portfolio/software_callout_small.png);
+          background-image: url(/img/portfolio/software_callout_small.svg);
         }
       }
 
@@ -229,7 +264,7 @@ blockquote > p:first-child {
           width: 357px;
           height:164px;
           top: -3.6em;
-          background-image: url(/img/portfolio/software_callout.png);
+          background-image: url(/img/portfolio/software_callout.svg);
         }
       }
 
@@ -257,7 +292,7 @@ blockquote > p:first-child {
           height: 79px;
           top: 0em;
           right: 105%;
-          background-image: url(/img/portfolio/community_callout_small.png);
+          background-image: url(/img/portfolio/community_callout_small.svg);
         }
       }
 
@@ -268,7 +303,7 @@ blockquote > p:first-child {
           width: 309px;
           height: 205px;
           top: -5.8em;
-          background-image: url(/img/portfolio/community_callout.png);
+          background-image: url(/img/portfolio/community_callout.svg);
         }
       }
 
@@ -296,7 +331,7 @@ blockquote > p:first-child {
           height: 88px;
           bottom: -2.1em;
           right: 105%;
-          background-image: url(/img/portfolio/education_callout_small.png);
+          background-image: url(/img/portfolio/education_callout_small.svg);
         }
       }
 
@@ -307,7 +342,7 @@ blockquote > p:first-child {
           width: 357px;
           height: 164px;
           bottom: -5.8em;
-          background-image: url(/img/portfolio/education_callout.png);
+          background-image: url(/img/portfolio/education_callout.svg);
         }
       }
 
@@ -339,7 +374,7 @@ blockquote > p:first-child {
           height: 94px;
           top: 0em;
           left: 105%;
-          background-image: url(/img/portfolio/photography_callout_small.png);
+          background-image: url(/img/portfolio/photography_callout_small.svg);
         }
       }
 
@@ -350,7 +385,7 @@ blockquote > p:first-child {
           width: 357px;
           height: 164px;
           top: -3.8em;
-          background-image: url(/img/portfolio/photography_callout.png);
+          background-image: url(/img/portfolio/photography_callout.svg);
         }
       }
 
