@@ -301,6 +301,15 @@ blockquote > p:first-child {
     }
     h2 {
       margin-top: 0px;
+      color: white;
+      a {
+        color: white;
+        border-bottom-color: white;
+        &:hover,
+        &:focus {
+          color: white;
+        }
+      }
     }
 
     /* Extra small devices (phones, less than 768px) */
@@ -375,7 +384,7 @@ blockquote > p:first-child {
 
     /* Software */
 
-    #software_section {
+    figcaption {
 
       /* Extra small devices (phones, less than 768px) */
       /* No media query since this is the default in Bootstrap */
@@ -390,7 +399,7 @@ blockquote > p:first-child {
           height: 94px;
           top: 0em;
           right: 105%;
-          background-image: url(/img/portfolio/software_callout_small.svg);
+          background-image: url(/img/portfolio/callout_small.svg);
         }
       }
 
@@ -401,7 +410,7 @@ blockquote > p:first-child {
           width: 357px;
           height:164px;
           top: -3.6em;
-          background-image: url(/img/portfolio/software_callout.svg);
+          background-image: url(/img/portfolio/callout.svg);
         }
       }
 
@@ -412,126 +421,6 @@ blockquote > p:first-child {
       }
     }
 
-    /* Community */
-
-    #community_section {
-
-      /* Extra small devices (phones, less than 768px) */
-      /* No media query since this is the default in Bootstrap */
-
-      /* Small devices (tablets, 768px and up) */
-      @media (min-width: 768px) { 
-        right: 2em;
-        bottom: 2em;
-        width: 325px;
-        &:before {
-          width: 153px;
-          height: 79px;
-          top: 0em;
-          right: 105%;
-          background-image: url(/img/portfolio/community_callout_small.svg);
-        }
-      }
-
-     /* Medium devices (desktops, 992px and up) */ 
-      @media (min-width: 992px) { 
-        right: 5em;
-        &:before {
-          width: 309px;
-          height: 205px;
-          top: -5.8em;
-          background-image: url(/img/portfolio/community_callout.svg);
-        }
-      }
-
-      /* Large devices (large desktops, 1200px and up) */
-      @media (min-width: 1200px) { 
-        right: 7em;
-        bottom: 5em;
-      }
-    }
-
-    /* Education */
-
-    #education_section {
-
-      /* Extra small devices (phones, less than 768px) */
-      /* No media query since this is the default in Bootstrap */
-
-      /* Small devices (tablets, 768px and up) */
-      @media (min-width: 768px) { 
-        right: 2em;
-        top: 2em;
-        width: 325px;
-        &:before {
-          width: 192px;
-          height: 88px;
-          bottom: -2.1em;
-          right: 105%;
-          background-image: url(/img/portfolio/education_callout_small.svg);
-        }
-      }
-
-     /* Medium devices (desktops, 992px and up) */ 
-      @media (min-width: 992px) { 
-        right: 5em;
-        &:before {
-          width: 357px;
-          height: 164px;
-          bottom: -5.8em;
-          background-image: url(/img/portfolio/education_callout.svg);
-        }
-      }
-
-      /* Large devices (large desktops, 1200px and up) */
-      @media (min-width: 1200px) { 
-        right: 7em;
-        top: 5em;
-      }
-    }
-
-    /* Photography */
-
-    #photography_section {
-
-      /* Extra small devices (phones, less than 768px) */
-      /* No media query since this is the default in Bootstrap */
-
-      @media (min-width: 768px) { 
-        text-align: right;
-      }
-
-      /* Small devices (tablets, 768px and up) */
-      @media (min-width: 768px) { 
-        left: 2em;
-        bottom: 2em;
-        width: 325px;
-        &:after {
-          width: 205px;
-          height: 94px;
-          top: 0em;
-          left: 105%;
-          background-image: url(/img/portfolio/photography_callout_small.svg);
-        }
-      }
-
-     /* Medium devices (desktops, 992px and up) */ 
-      @media (min-width: 992px) { 
-        left: 1em;
-        &:after {
-          width: 357px;
-          height: 164px;
-          top: -3.8em;
-          background-image: url(/img/portfolio/photography_callout.svg);
-        }
-      }
-
-      /* Large devices (large desktops, 1200px and up) */
-      @media (min-width: 1200px) { 
-        left: 4em;
-        bottom: 5em;
-      }
-    }
   }
 }
 
