@@ -7,6 +7,11 @@
   text-decoration: none;
 }
 
+#page_footer {
+  margin-top: 100px;
+}
+
+
 .container li a {
   text-decoration: underline;
 }
@@ -143,15 +148,11 @@ blockquote > p:first-child {
 
   h3 {
     .serif;
+    font-weight: 400;
     color: @gray-dark;
     font-size: 35px;
     text-align: left;
-    line-height: 45px;
-
-    /* Medium devices (desktops, 992px and up) */
-    @media (min-width: 992px) { 
-      font-size: 45px;
-    }
+    line-height: 35px;
   }
 
   .container {
@@ -257,6 +258,12 @@ blockquote > p:first-child {
     }
 
     li {
+      -webkit-transform: scale(0.7);
+      -moz-transform:    scale(0.7);
+      -ms-transform:     scale(0.7);
+      -o-transform:      scale(0.7);
+      transform:         scale(0.7);
+
       margin: 10px 10px;
       /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) { 
