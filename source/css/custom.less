@@ -132,20 +132,24 @@ blockquote > p:first-child {
   h2 {
     margin-top: 0px;
     color: white;
-    font-size: 45px;
     
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      font-size: 45px;
+    }
+
     /* Medium devices (desktops, 992px and up) */
     @media (min-width: 992px) { 
       font-size: 55px;
     }
 
-    .header-link {
+    .portfolio-header-link {
       color: transparent;
       padding-left: 15px;
     }
 
     &:hover {
-      .header-link {
+      .portfolio-header-link {
         color: white;
       }
     }
@@ -162,19 +166,19 @@ blockquote > p:first-child {
 
   .container {
     &:last-child {
-      padding-bottom: 90px;
+      padding-bottom: 50px;
 
       /* Extra small devices (phones, less than 768px) */
       /* No media query since this is the default in Bootstrap */
 
       /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) { 
-        padding-bottom: 200px;
+        padding-bottom: 80px;
       }
 
       /* Medium devices (desktops, 992px and up) */
       @media (min-width: 992px) { 
-        padding-bottom: 300px;
+        padding-bottom: 120px;
       }
     }
   }
@@ -403,19 +407,3 @@ blockquote > p:first-child {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
