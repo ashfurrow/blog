@@ -35,8 +35,9 @@ Thanks to the following people and projects:
 Photo Credits
 ----------------
 
-All banner (full-width) images on the site are my own unless noted below, used with permission.
+All banner (full-width) images on the site are my own unless noted below. 
 
 Photo | Photographer
 --- | ---
-"Software" banner on [Portfolio](http://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206) |
+"Software" banner on [Portfolio](http://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
+Blogging image on [Portfolio](http://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)

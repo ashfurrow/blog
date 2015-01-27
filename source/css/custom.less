@@ -48,6 +48,11 @@ iframe.twitter-tweet {
     margin-right: auto !important;
 }
 
+blockquote {
+  padding: 0px 30px;
+  line-height: 30px
+}
+
 blockquote > p:first-child {
 	margin-top: 0;
 }
@@ -114,59 +119,89 @@ blockquote > p:first-child {
 
 .portfolio {
 
-  /* Software */
+  h2 {
+    margin-top: 0px;
+    color: white;
+    font-size: 45px;
+    
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      font-size: 55px;
+    }
+
+    .header-link {
+      color: transparent;
+      padding-left: 15px;
+    }
+
+    &:hover {
+      .header-link {
+        color: white;
+      }
+    }
+  }
+
+  h3 {
+    .serif;
+    color: @gray-dark;
+    font-size: 35px;
+    text-align: left;
+    line-height: 45px;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      font-size: 45px;
+    }
+  }
+
+  .container {
+    &:last-child {
+      padding-bottom: 90px;
+    }
+  }
+
+  /* Software, Education */
   
-  #software_list {
+  #software_list, #education_list {
     li {
       vertical-align: top;
       display: inline-block;
-      margin-top: 30px;
-      width: 90%;
+      margin-top: 60px;
+      text-align: left;
       
+      h3 {
+        text-align: center;
+      }
+
       /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) { 
-        width: 49%;
-      }
-
-      text-align: left;
-
-      .content {
-        margin-top: 30px;
-      }
-
-      .icon {
-        display: block;
-        text-align: center;
-        height: 200px;
-        position: relative;
-        color: white;
-
-        img {
-          max-height: 200px;
+        h3 {
+          max-width: 60%;
+          text-align: left;
+          margin-bottom: 15px;
         }
 
         div {
-          position: absolute;
-          left: 0px;
-          right: 0px;
-          bottom: 0px;
-          top: 0%;
-
-          padding: 5% 0;
-
-        }
-
-        h3 {
-          padding: 10% 0;
-
-          margin: 0px;
-          font-size: 35px;
+          max-width: 50%;
+          margin-top: 30px;
         }
       }
 
+      img {
+        padding: 15px 0px;
+        max-width: 50%;
+        @media (min-width: 768px) {  
+          max-width: 40%;
+          float: right;
+        }
+      }
+
+      div {
+        margin-top: 15px;
+      }
+
       p {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-right: 40px;
         margin-top: 15px;
       }
     }
@@ -175,67 +210,18 @@ blockquote > p:first-child {
   /* Community */
 
   #community_list {
+    padding: 30px 0px;
     li {
       margin: 0px 10px;
-    }
 
-    /* Small devices (tablets, 768px and up) */
-    @media (min-width: 768px) { 
-      li {
-        margin: 0px 30px;
-      }
-    }
-
-    /* Medium devices (desktops, 992px and up) */
-    @media (min-width: 992px) { 
-      li {
-        margin: 0px 50px;
-      }
-    }
-  }
-
-  /* Education */
-
-  #education_list {
-    li {
-      vertical-align: top;
-      display: inline-block;
-      margin-left: auto;
-      margin: 0px;
-      margin-top: 30px;
-      padding: 0px;
-      width: 90%;
-      
       /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) { 
-        width: 49%;
+        margin: 0px 30px;
       }
 
-      p {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 15px;
-      }
-
-      text-align: left;
-      .icon {
-        opacity: 0.3;
-        color: black;
-        text-align: center;
-      }
-      .bitmap {
-        background-size: cover;
-        height: 60px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .treehouse {
-        background-image: url(/img/portfolio/treehouse.png);
-        width: 56px; 
-      }
-      .speaking {
-        background-image: url(/img/portfolio/speaking.png);
-        width: 56px; 
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: 992px) { 
+        margin: 0px 50px;
       }
     }
   }
@@ -247,31 +233,27 @@ blockquote > p:first-child {
       background: 0 0 no-repeat fixed;
       vertical-align: middle;
       position: relative;
-      div {
-        width: 70px; 
-        height: 70px; 
-        background-size: cover;
-      }
-      .instagram {
-        background-image: url(/img/portfolio/instagram.svg);
+
+      svg {
+        fill: @gray-dark;
         &:hover {
-          background-image: url(/img/portfolio/instagram_hover.svg);
+          fill: @brand-primary;
+
+          .dark-stroke {
+            stroke: @brand-primary;
+          }
+        }
+
+        .dark-stroke {
+          stroke: @gray-dark;
+        }
+
+        .white-stroke {
+          stroke: white;
         }
       }
-      ._500px {
-        background-image: url(/img/portfolio/500px.svg);
-        &:hover {
-          background-image: url(/img/portfolio/500px_hover.svg);
-        }
-      }
-      .exposure {
-        background-image: url(/img/portfolio/exposure.svg); height: 80px;
-        &:hover {
-          background-image: url(/img/portfolio/exposure_hover.svg); height: 80px;
-        }
-      }
+
       min-width: 70px;
-      color: @gray-dark;
     }
 
     li {
@@ -291,25 +273,13 @@ blockquote > p:first-child {
     position: relative;
     background: no-repeat center center scroll;
     background-size: cover;
-    margin-top: 90px;
+    margin-top: 135px;
     margin-bottom: 30px;
     padding-top: 50px;
     padding-bottom: 50px;
 
     p {
       margin: 0px 0px;
-    }
-    h2 {
-      margin-top: 0px;
-      color: white;
-      a {
-        color: white;
-        border-bottom-color: white;
-        &:hover,
-        &:focus {
-          color: white;
-        }
-      }
     }
 
     /* Extra small devices (phones, less than 768px) */
@@ -340,19 +310,19 @@ blockquote > p:first-child {
       /* Extra small devices (phones, less than 768px) */
       /* No media query since this is the default in Bootstrap */
       width: 70%;
-      display: block;
-      margin-top: auto;
-      margin-bottom: auto;
       margin-left: auto;
       margin-right: auto;
+
+      a {
+          &:hover,
+          &:focus {
+            color: white;
+          }
+      }
 
       @media (min-width: 768px) { 
         position: absolute;
         text-align: left;
-
-        &:before {
-          content:"";
-        }
       }
 
       &:before {
@@ -362,29 +332,10 @@ blockquote > p:first-child {
         @media (min-width: 768px) { 
           position: absolute;
         }
-        left: auto;
-        bottom: auto;
-        top: auto;
-        right: auto;
       }
 
-      &:after {
-        content:"";
-        color: white;
-        position: relative;
-        @media (min-width: 768px) { 
-          position: absolute;
-        }
-        left: auto;
-        bottom: auto;
-        top: auto;
-        right: auto;
-      }
-    }
 
-    /* Software */
-
-    figcaption {
+      /* Section Header Callouts */
 
       /* Extra small devices (phones, less than 768px) */
       /* No media query since this is the default in Bootstrap */
@@ -420,7 +371,6 @@ blockquote > p:first-child {
         bottom: 5em;
       }
     }
-
   }
 }
 
