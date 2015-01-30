@@ -294,9 +294,9 @@ struct FancyFeast: Food {
 
 This is a lot better. The different foods are responsible for doing their own thing to whatever consumer comes their way and the consumer itself is only responsible for things that are common to all food consumers: calorie count and water levels. 
 
-(We could have also opted to use and `inout` `FoodConsumer` parameter to pass in `&dave` and modify the struct itself. I prefer this immutable approach.)
+(We could have also opted to use an `inout` `FoodConsumer` parameter to pass in `&dave` and modify the struct itself. I prefer this immutable approach.)
 
-And how might we use this code? Well, we have a few options. Hers’s one that I like. 
+And how might we use this code? Well, we have a few options. Here’s one that I like. 
 
 ```swift
 extension Cat {
