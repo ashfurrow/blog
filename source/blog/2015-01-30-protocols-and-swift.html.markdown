@@ -242,7 +242,7 @@ OK, so `UITableView` sucks and like most things that suck in Objective-C, they�
 
 So, Swift programmers, you have a choice now. The next time you write a protocol and it needs `optional` functions, *don’t* just add `@objc` to the declaration. Split it out into multiple protocols like a responsible adult. There, that’s better. Your mother and I are so proud of you. 
 
-![We really art.](/img/blog/protocols-and-swift/proud.gif)
+![We really are.](/img/blog/protocols-and-swift/proud.gif)
 
 <hr />
 
