@@ -315,7 +315,7 @@ dave = dave.eat(wetFood, grams: 20) as Cat
 
 You get a lot more flexibility with this method, since you can have foods that don’t have calories (diet soda) or don’t have either calories or water (as far as I know, twist ties contain neither, but it’s possible that my cat knows something I do not). 
 
-![A sensible chuckle, indeed.](/img/blog/protocols-and-swift/eating.gif)
+![Om nom nom.](/img/blog/protocols-and-swift/eating.gif)
 
 This approach obviously isn’t suited for every case, but it is a useful tool to have at your disposal. 
 
