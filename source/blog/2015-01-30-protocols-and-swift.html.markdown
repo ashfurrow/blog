@@ -315,6 +315,8 @@ dave = dave.eat(wetFood, grams: 20) as Cat
 
 You get a lot more flexibility with this method, since you can have foods that don’t have calories (diet soda) or don’t have either calories or water (as far as I know, twist ties contain neither, but it’s possible that my cat knows something I do not). 
 
+(It would be nice to be able to extend the `FoodConsumer` protocol to add an `eat(Food)` method that could just call through for us, but Swift doesn't support such an extension. That's probably the reason we're calling `countElements(array)` to determine the number of elements in a collection, instead of having a function `count()` or whatever in a collection extension.)
+
 ![Om nom nom.](/img/blog/protocols-and-swift/eating.gif)
 
 This approach obviously isn’t suited for every case, but it is a useful tool to have at your disposal. 
