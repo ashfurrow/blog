@@ -1,6 +1,6 @@
 ---
 title: Protocols and Swift
-date: 2015-01-30 12:36:01 UTC
+date: 2015-02-01 13:00:00 UTC
 ---
 
 The other day I posed this (somewhat cryptic) question to Twitter: 
