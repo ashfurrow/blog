@@ -242,7 +242,7 @@ OK, so `UITableView` sucks and like most things that suck in Objective-C, they�
 
 So, Swift programmers, you have a choice now. The next time you write a protocol and it needs `optional` functions, *don’t* just add `@objc` to the declaration. Split it out into multiple protocols like a responsible adult. There, that’s better. Your mother and I are so proud of you. 
 
-![We really art.](/img/blog/protocols-and-swift/proud.gif)
+![We really are.](/img/blog/protocols-and-swift/proud.gif)
 
 <hr />
 
@@ -294,9 +294,9 @@ struct FancyFeast: Food {
 
 This is a lot better. The different foods are responsible for doing their own thing to whatever consumer comes their way and the consumer itself is only responsible for things that are common to all food consumers: calorie count and water levels. 
 
-(We could have also opted to use and `inout` `FoodConsumer` parameter to pass in `&dave` and modify the struct itself. I prefer this immutable approach.)
+(We could have also opted to use an `inout` `FoodConsumer` parameter to pass in `&dave` and modify the struct itself. I prefer this immutable approach.)
 
-And how might we use this code? Well, we have a few options. Hers’s one that I like. 
+And how might we use this code? Well, we have a few options. Here’s one that I like. 
 
 ```swift
 extension Cat {
