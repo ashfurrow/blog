@@ -6,6 +6,56 @@ og_image: /img/speaking.jpg
 <!-- Page Header -->
 <%= partial("header", :locals => { :title => "Speaking", :subtitle => "", :background_image => "http://static.ashfurrow.com/blog/backgrounds/speaking-bg.jpg" }) %>
 
+<%
+
+def talk_to_html(talk) 
+  talk_name = talk["name"]
+  conference = talk["conference"]
+  conference_url = talk["url"]
+  slides = talk["slides"]
+  video = talk["video"]
+  code = talk["code"]
+
+  html = "<em>#{ talk_name }</em>"
+
+  if talk_name == "TBA"
+    html = talk_name
+  end
+
+  if conference_url
+    html += " at <a href='#{ conference_url }'>#{ conference }</a>"
+  else 
+    html += " at #{ conference }"
+  end
+
+  if slides
+    html += " <a href='#{ slides }'><i class='fa fa-image'></i></a>"
+  end
+
+  if video
+    html += " <a href='#{ video }'><i class='fa fa-youtube-play'></i></a>"
+  end
+
+  if code
+    html += " <a href='#{ code }'><i class='fa fa-code'></i></a>"
+  end
+
+  html
+end
+
+def talks_to_html(talks, title)
+  if talks.count > 0
+    <<-EOS
+    <h3>#{title}</h3>
+    <ul>#{talks.map { |talk| "<li>#{ talk_to_html(talk) }</li>\n" }.reduce(:+)}</ul>
+    EOS
+  else
+    ""
+  end
+end
+
+%>
+
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -19,88 +69,8 @@ og_image: /img/speaking.jpg
 
       <p>If you're interested in having me speak, <a href="mailto:ash@ashfurrow.com">get in touch</a>.</p>
 
-<%
-
-class Talk 
-  attr_accessor :talk_name
-  attr_accessor :conference_name
-  attr_accessor :conference_link
-  attr_accessor :slides_link
-  attr_accessor :code_link
-  attr_accessor :video_link
-
-  def initialize (talk_name, conference_name, conference_link, slides_link, video_link, code_link)
-    @talk_name = talk_name
-    @conference_name = conference_name
-    @conference_link = conference_link
-    @slides_link = slides_link
-    @video_link = video_link
-    @code_link = code_link
-  end
-
-  def to_html
-    html = "<em>#{ @talk_name }</em>"
-
-    if @talk_name == "TBA"
-      html = @talk_name
-    end
-
-    if @conference_link
-      html += " at <a href='#{ @conference_link }'>#{ @conference_name }</a>"
-    else 
-      html += " at #{ @conference_name }"
-    end
-
-    if @slides_link
-      html += " <a href='#{ @slides_link }'><i class='fa fa-image'></i></a>"
-    end
-
-    if @video_link
-      html += " <a href='#{ @video_link }'><i class='fa fa-youtube-play'></i></a>"
-    end
-
-    if @code_link
-      html += " <a href='#{ @code_link }'><i class='fa fa-code'></i></a>"
-    end
-
-    html
-  end
-end
-
-upcoming_talks = [
-  Talk.new("TBA", "dotSwift", "http://www.dotswift.io", nil, nil, nil),
-  Talk.new("Catching up with Swift", "Philly Emerging Techology", "http://phillyemergingtech.com/sessions/catching-up-with-swift/", nil, nil, nil)
-]
-
-past_talks = [
-  Talk.new("Teaching & Learning", "Mobile Developer &amp; Business Day", "http://by.mdday.ru/", "https://speakerdeck.com/ashfurrow/teaching-and-learning", nil, nil),
-  Talk.new("Solving Problems with ReactiveCocoa and Swift", "MBLT Dev", "http://mbltdev.ru", "https://speakerdeck.com/ashfurrow/functional-reactive-programming-in-swift", nil, "https://github.com/AshFurrow/MBLTDev"),
-  Talk.new("Idiomatic Swift", "Pragma Mark 2014", "http://pragmamark.org/events/pragma-conference-2014/", "https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way", nil, nil),
-  Talk.new("Functional Programming in Swift", "NSSpain 2014", "http://nsspain.com/2014", "https://speakerdeck.com/ashfurrow/the-future-of-functional-programming-on-ios", nil, "https://github.com/AshFurrow/NSSpain2014"),
-  Talk.new("ReactiveCocoa", "Mobile Warsaw", "http://mobile-warsaw.pl", "https://speakerdeck.com/ashfurrow/reactivecocoa", nil, "https://github.com/AshFurrow/FunctionalReactiveDemo"),
-  Talk.new("Solving Problems the Swift Way", "GOTO Talk", "https://secure.trifork.com/cph-2014/freeevent/index.jsp?eventOID=6461", "https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way", nil, nil),
-  Talk.new("Solving Problems the Swift Way", "SwiftCrunch", "http://swiftcrunch.com", "https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way", "https://www.youtube.com/watch?v=LtrzZb5Jw0g", nil),
-  Talk.new("Introduction to ReactiveCocoa", "AltConf 2014", "http://www.altconf.com", "https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014", "https://www.youtube.com/watch?v=TlgUWYrQ0sc", "https://github.com/AshFurrow/FunctionalReactiveDemo"),
-  Talk.new("Introduction to ReactiveCocoa", "Mdevcon 2014", "http://mdevcon.com/posts/2014/01/09/ash-furrow", "https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014", nil, "https://github.com/AshFurrow/FunctionalReactiveDemo"),
-  Talk.new("ReactiveCocoa", "a local CocoaHeads meetup", "http://tacow.org", "https://speakerdeck.com/ashfurrow/uicollectionview", nil, "https://github.com/AshFurrow/FunctionalReactiveDemo"),
-  Talk.new("UICollectionView Basics", "a local CocoaHeads meetup", "http://tacow.org", "https://speakerdeck.com/ashfurrow/uicollectionview", nil, nil),
-  Talk.new("GitHub for Designers", "FITC Screens 2013", nil, "https://speakerdeck.com/ashfurrow/github-for-designers", nil, nil),
-  Talk.new("Effective Use of Open Source Software", "360|iDev 2013", nil, "https://speakerdeck.com/ashfurrow/effective-use-of-open-source-software", "http://vimeopro.com/360conferences/360idev-2013/video/75223577", nil),
-  Talk.new("Developers Should Learn Photography Blitz Talk", "NSNorth 2013", "http://nsnorth.ca/2013", "https://speakerdeck.com/ashfurrow/developers-should-learn-photography", nil, nil),
-  Talk.new("Objective-C Vitamins", "TechTalksTO", "http://techtalksto.com/post/40607791416/ash-furrow-presenting-accessibility-and-unit-testing", "https://speakerdeck.com/ashfurrow/objective-c-vitamins", "http://vimeo.com/58066095", nil),
-  Talk.new("500px for iPad: A Developer's Behing the Scenes", "FITC Screens 2012", "http://fitc.ca/presentation/500px-for-ipad-a-developers-behind-the-scenes", "https://speakerdeck.com/ashfurrow/500px-for-ipad-a-developers-behind-the-scenes", "http://vimeo.com/50451043", nil),
-  Talk.new("Designing Interfaces for iPhone", "Podcamp Toronto 2012", "http://podcamptoronto.com", "https://speakerdeck.com/ashfurrow/designing-interfaces-for-iphone", nil, nil)
-]
-
-%>
-
-      <% if upcoming_talks.count > 0 %>
-      <h3>Upcoming</h3>
-      <ul><%= upcoming_talks.map { |talk| "<li>#{ talk.to_html }</li>\n" }.reduce(:+) %></ul>
-      <% end %>
-
-      <h3>Past</h3>
-			<ul><%= past_talks.map { |talk| "<li>#{ talk.to_html }</li>\n" }.reduce(:+) %></ul>
+      <%= talks_to_html(data.talks.upcoming_talks, "Upcoming") %>
+      <%= talks_to_html(data.talks.past_talks, "Past") %>
     </div>
   </div>
 </div>
