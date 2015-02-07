@@ -1,0 +1,93 @@
+upcoming_talks:
+- name: Lessons from Swift in Production
+  conference: Istanbul Tech Talks
+  url: http://www.istanbultechtalks.com
+- name: Catching up with Swift
+  conference: Philly Emerging Technology
+  url: http://phillyemergingtech.com/sessions/catching-up-with-swift/
+- name: TBA
+  conference: UIKonf 2015
+  url: http://www.uikonf.com
+
+past_talks:
+- name: Production Swift
+  conference: dotSwift
+  url: http://www.dotswift.io
+  slides: https://speakerdeck.com/ashfurrow/production-swift
+- name: Teaching &amp; Learning
+  conference: Mobile Developer &amp; Business Day
+  url: http://by.mdday.ru/
+  slides: https://speakerdeck.com/ashfurrow/teaching-and-learning
+- name: Solving Problems with ReactiveCocoa and Swift
+  conference: MBLT Dev
+  url: http://mbltdev.ru
+  slides: https://speakerdeck.com/ashfurrow/functional-reactive-programming-in-swift
+  code: https://github.com/AshFurrow/MBLTDev
+- name: Idiomatic Swift
+  conference: Pragma Mark 2014
+  url: http://pragmamark.org/events/pragma-conference-2014/
+  slides: https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way
+- name: Functional Programming in Swift
+  conference: NSSpain 2014
+  url: http://nsspain.com/2014
+  slides: https://speakerdeck.com/ashfurrow/the-future-of-functional-programming-on-ios
+  code: https://github.com/AshFurrow/NSSpain2014
+- name: ReactiveCocoa
+  conference: Mobile Warsaw
+  url: http://mobile-warsaw.pl
+  slides: https://speakerdeck.com/ashfurrow/reactivecocoa
+  code: https://github.com/AshFurrow/FunctionalReactiveDemo
+- name: Solving Problems the Swift Way
+  conference: GOTO Talk
+  url: https://secure.trifork.com/cph-2014/freeevent/index.jsp?eventOID=6461
+  slides: https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way
+- name: Solving Problems the Swift Way
+  conference: SwiftCrunch
+  url: http://swiftcrunch.com
+  slides: https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way
+  video: https://www.youtube.com/watch?v=LtrzZb5Jw0g
+- name: Introduction to ReactiveCocoa
+  conference: AltConf 2014
+  url: http://www.altconf.com
+  slides: https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014
+  video: https://www.youtube.com/watch?v=TlgUWYrQ0sc
+  code: https://github.com/AshFurrow/FunctionalReactiveDemo
+- name: Introduction to ReactiveCocoa
+  conference: Mdevcon 2014
+  url: http://mdevcon.com/posts/2014/01/09/ash-furrow
+  slides: https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014
+  code: https://github.com/AshFurrow/FunctionalReactiveDemo
+- name: ReactiveCocoa
+  conference: Local CocoaHeads meetup
+  url: http://tacow.org
+  slides: https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014
+  code: https://github.com/AshFurrow/FunctionalReactiveDemo
+- name: UICollectionView Basics
+  conference: Local CocoaHeads meetup
+  url: http://tacow.org
+  slides: https://speakerdeck.com/ashfurrow/uicollectionview
+- name: GitHub for Designers
+  conference: FITC Screens 2013
+  slides: https://speakerdeck.com/ashfurrow/github-for-designers
+- name: Effective Use of Open Source Software
+  conference: 360|iDev 2013
+  slides: https://speakerdeck.com/ashfurrow/effective-use-of-open-source-software
+  video: http://vimeopro.com/360conferences/360idev-2013/video/75223577
+- name: Developers Should Learn Photography Blitz Talk
+  conference: NSNorth 2013
+  url: http://nsnorth.ca/2013
+  slides: https://speakerdeck.com/ashfurrow/developers-should-learn-photography
+- name: Objective-C Vitamins
+  conference: TechTalksTO
+  url: http://techtalksto.com/post/40607791416/ash-furrow-presenting-accessibility-and-unit-testing
+  slides: https://speakerdeck.com/ashfurrow/objective-c-vitamins
+  video: http://vimeo.com/58066095
+- name: "500px for iPad: A Developer's Behing the Scenes"
+  conference: FITC Screens 2012
+  url: http://fitc.ca/presentation/500px-for-ipad-a-developers-behind-the-scenes
+  slides: https://speakerdeck.com/ashfurrow/500px-for-ipad-a-developers-behind-the-scenes
+  video: http://vimeo.com/50451043
+- name: Designing Interfaces for iPhone
+  conference: Podcamp Toronto 2012
+  url: http://podcamptoronto.com
+  slides: https://speakerdeck.com/ashfurrow/designing-interfaces-for-iphone
