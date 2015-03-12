@@ -10,6 +10,16 @@ module CustomHelpers
     data.site.name
   end
 
+  def og_title (current_article, current_resource)
+    if current_resource
+      title = current_resource.metadata[:page]["title"]
+      return title unless title.nil?
+    elsif current_article
+      return current_article.title
+    end
+
+    data.site.name
+  end
     
   def og_image (current_article, current_resource)
     image = current_resource.metadata[:page]["og_image"]
