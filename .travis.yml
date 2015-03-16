@@ -11,7 +11,7 @@ install:
 - tar -xzvf v1.5.0-rc1.tar.gz
 - cd s3cmd-1.5.0-rc1 && sudo python setup.py install
 - s3cmd --version
-- bundle install
+- travis_retry bundle install
 script:
 - rake build
 after_success:
