@@ -2,14 +2,15 @@ upcoming_talks:
 - name: Lessons from Swift in Production
   conference: Istanbul Tech Talks
   url: http://www.istanbultechtalks.com
-- name: Catching up with Swift
-  conference: Philly Emerging Technology
-  url: http://phillyemergingtech.com/sessions/catching-up-with-swift/
-- name: TBA
+- name: Teaching &amp; Learning
   conference: UIKonf 2015
   url: http://www.uikonf.com
 
 past_talks:
+- name: Catching up with Swift
+  conference: Philly Emerging Technology
+  url: http://phillyemergingtech.com/sessions/catching-up-with-swift/
+  slides: https://speakerdeck.com/ashfurrow/catching-up-with-swift
 - name: Production Swift
   conference: dotSwift
   url: http://www.dotswift.io
