@@ -5,6 +5,9 @@ upcoming_talks:
 - name: Teaching &amp; Learning
   conference: UIKonf 2015
   url: http://www.uikonf.com
+- name: TBA
+  conference: AltConf 2015
+  url: http://www.altconf.com
 
 past_talks:
 - name: Catching up with Swift
