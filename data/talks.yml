@@ -1,7 +1,4 @@
 upcoming_talks:
-- name: Lessons from Swift in Production
-  conference: Istanbul Tech Talks
-  url: http://www.istanbultechtalks.com
 - name: Teaching &amp; Learning
   conference: UIKonf 2015
   url: http://www.uikonf.com
@@ -10,6 +7,10 @@ upcoming_talks:
   url: http://www.altconf.com
 
 past_talks:
+- name: Lessons from Swift in Production
+  conference: Istanbul Tech Talks
+  url: http://www.istanbultechtalks.com
+  slides: https://speakerdeck.com/ashfurrow/lessons-from-production-swift
 - name: Catching up with Swift
   conference: Philly Emerging Technology
   url: http://phillyemergingtech.com/sessions/catching-up-with-swift/
