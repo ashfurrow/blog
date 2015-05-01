@@ -1,7 +1,8 @@
 ---
 title: Technology Meets Art
 date: 2015-01-02 11:30:10 UTC
-header_image: /img/blog/technology-meets-art/header.jpg
+background_image: /img/blog/technology-meets-art/header.jpg
+background_image_source: https://500px.com/photo/51931684/the-moment-by-ash-furrow
 ---
 
 I've done a lot of photography over the Christmas holiday – and I don't mean that I've taken lots of photos. My wife and I have spent a lot of time walking all over Amsterdam, discussing plans for photos we wanted to make, visiting galleries, and developing film. It was just the kind of relaxing time-off that I needed to start off the new year fresh and ready-to-go. It was all kind of kicked off by a [really awesome Youtube series](https://www.youtube.com/playlist?list=PL4F918844C147182A) discussing the history of photography. 
