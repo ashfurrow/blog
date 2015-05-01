@@ -1,6 +1,23 @@
 @import "variables.less";
 @import "mixins.less";
 
+.header_image_link_container {
+  position: relative;
+
+  a {
+    text-decoration: none;
+
+    i {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: rgba(255,255,255,0.5);
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
 .container .pager li > a {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -109,7 +126,7 @@ blockquote > p:first-child {
 .container {
   .header-link {
     position: absolute;
-    left:-0.5em;
+    left:-0.25em;
     /* The links don't fit on spall screens, so let's high them. */
     @media only screen and (max-width: 768px) {
       display:none;   
@@ -122,6 +139,12 @@ blockquote > p:first-child {
       left: 0.3em;
       display: inline;
     }
+  }
+}
+
+.custom {
+  .header-link {
+    left: -0.75em !important;
   }
 }
 

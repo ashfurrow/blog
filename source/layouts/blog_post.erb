@@ -1,14 +1,7 @@
 <% wrap_layout :layout do %>
+
   <!-- Page Header -->
-  <%= 
-    locals = { :title => current_article.title, :subtitle => "", :style => "post-heading" }
-    background_image = current_resource.metadata[:page]["header_image"] 
-    background_image ||= current_resource.metadata[:page]["background_image"]
-    if background_image
-      locals.merge!({ :background_image => background_image })
-    end
-    partial("header", :locals => locals) 
-  %>
+  <%= partial("header", :locals => { :title => current_article.title, :subtitle => "", :style => "post-heading" }) %>
 
   <div class="container">
     <div class="row">

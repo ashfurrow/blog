@@ -1,9 +1,12 @@
 <%
 
 image_name = data.site.default_background_image
-if defined? background_image
-  image_name = background_image 
+custom_image = current_resource.metadata[:page]["background_image"]
+if custom_image && custom_image.length > 0
+  image_name = current_resource.metadata[:page]["background_image"]
 end
+
+background_image_source = current_resource.metadata[:page]["background_image_source"]
 
 header_style = "site-heading"
 if defined? style
@@ -27,6 +30,15 @@ else
       eos
 end
 
+image_source_element = ""
+if background_image_source
+  image_source_element = <<-eos
+  <div class="header_image_link_container">
+    <a href="#{background_image_source}"><i class="fa fa-picture-o"></i></a>
+  </div>
+  eos
+end
+
 %>
 
 <header class="intro-header" id="image-header" style="background-image: url('<%= image_name %>');">
@@ -37,4 +49,5 @@ end
       </div>
     </div>
   </div>
+  <%= image_source_element %>
 </header>

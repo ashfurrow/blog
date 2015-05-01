@@ -2,6 +2,7 @@
 title: Lessons Learned Travelling Europe
 date: 2014-11-16 11:16:06 UTC
 background_image: /img/blog/lessons-learned-travelling-europe/tower.jpg
+background_image_source: https://500px.com/photo/66654595/tour-by-ash-furrow
 ---
 
 Almost a year ago, my wife and I decided to move from Toronto to Amsterdam. Why? I can’t really remember anymore, but when people ask me I tell them we moved because we wanted to see more of the world and have an adventure. 
