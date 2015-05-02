@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~> 3.3.6"
-gem "middleman-blog", "~> 3.5.3"
+gem "middleman"
+gem "middleman-blog"
 gem "middleman-s3_sync"  
 gem "middleman-cloudfront"
 gem "middleman-syntax"
@@ -12,4 +12,4 @@ gem "therubyracer"
 gem "less"
 
 # For feed.xml.builder
-gem "builder", "~> 3.0"
+gem "builder"
