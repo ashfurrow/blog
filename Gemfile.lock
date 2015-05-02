@@ -195,11 +195,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  builder (~> 3.0)
+  builder
   less
   liquid
-  middleman (~> 3.3.6)
-  middleman-blog (~> 3.5.3)
+  middleman
+  middleman-blog
   middleman-cloudfront
   middleman-s3_sync
   middleman-syntax
