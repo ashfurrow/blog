@@ -29,6 +29,7 @@ Thanks to the following people and projects:
 - [middleman-syntax](https://github.com/middleman/middleman-syntax)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 - [This colour](http://www.colourlovers.com/color/398CCC/Walton)
+- [This colour scheme](http://www.colourlovers.com/palette/869489/Caribbean_Dusk)
 - [s3cmd](http://s3tools.org/)
 - [vertical timeline jquery thingy](http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html)
 
