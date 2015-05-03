@@ -1,4 +1,9 @@
 upcoming_talks:
+- name: Lessons from Swift in Production
+  conference: CocoaHeads Hamburg
+  url: http://www.meetup.com/CocoaHeads-Hamburg/events/221990648/
+  location: Hamburg, Germany
+  dates: May 7, 2015
 - name: Teaching &amp; Learning
   conference: UIKonf 2015
   url: http://www.uikonf.com
