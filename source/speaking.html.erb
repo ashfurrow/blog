@@ -7,70 +7,165 @@ og_image: /img/speaking.jpg
 <%= partial("header", :locals => { :title => "Speaking", :subtitle => "", :background_image => "http://static.ashfurrow.com/blog/backgrounds/speaking-bg.jpg" }) %>
 
 <%
-
-def talk_to_html(talk) 
+# <h3>Lessons from Production Swift</h3>
+# <p><i class="fa fa-quote-left"></i>Istanbul Tech Talks</p>
+# <p><i class="fa fa-map-marker"></i>Istanbul, Turkey</p>
+# <p><i class="fa fa-youtube-play"></i>Video recording</p>
+# <p><i class="fa fa-code"></i>Sample Code</p>
+# <p><i class="fa fa-file"></i>Slides</p>
+def talk_to_html(type, talk) 
   talk_name = talk["name"]
   conference = talk["conference"]
   conference_url = talk["url"]
+  location = talk["location"]
+  dates = talk["dates"]
   slides = talk["slides"]
   video = talk["video"]
   code = talk["code"]
 
-  html = "<em>#{ talk_name }</em>"
+  html = ""
 
-  if talk_name == "TBA"
-    html = talk_name
+  if type == :future
+    if conference_url
+      html += "<h3><a href=#{conference_url}'>#{conference}</a></h3>"
+    else
+      html += "<h3>#{conference}</h3>"
+    end
+  elsif type == :past
+    html += "<h3>#{talk_name}</h3>"
+    if conference_url
+      html += "<p><a href=#{conference_url}'><i class='fa fa-quote-left'></i>#{conference}</a></p>"
+    else
+      html += "<p><i class='fa fa-quote-left'></i>#{conference}</p>"
+    end
   end
 
-  if conference_url
-    html += " at <a href='#{ conference_url }'>#{ conference }</a>"
-  else 
-    html += " at #{ conference }"
+  if location
+    html += "<p><i class='fa fa-map-marker'></i>#{location}</p>"
   end
 
-  if slides
-    html += " <a href='#{ slides }'><i class='fa fa-image'></i></a>"
-  end
-
-  if video
-    html += " <a href='#{ video }'><i class='fa fa-youtube-play'></i></a>"
+  if dates
+    html += "<p><i class='fa fa-calendar'></i>#{dates}</p>"
   end
 
   if code
-    html += " <a href='#{ code }'><i class='fa fa-code'></i></a>"
+    html += "<p><a href='#{code}'><i class='fa fa-code'></i>Sample Code</a></p>"
+  end
+
+  if slides
+    html += "<p><a href='#{slides}'><i class='fa fa-file'></i>Slides</a></p>"
+  end
+
+  if video
+    html += "<p><a href='#{code}'><i class='fa fa-youtube-play'></i>Recorded Video</a></p>"
   end
 
   html
 end
 
-def talks_to_html(talks, title)
-  if talks.count > 0
-    <<-EOS
-    <h3>#{title}</h3>
-    <ul>#{talks.map { |talk| "<li>#{ talk_to_html(talk) }</li>\n" }.reduce(:+)}</ul>
+def columns(talks)
+  html = ""
+  (0..talks.count).step(2) do |i|
+   if i + 1 < talks.count
+    # We have 2 or more left
+    html += <<-EOS
+    <div class="container">
+      <div class="row">
+        <div class="conference col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1">
+          #{talks[i]}
+        </div>
+        <div class="conference col-lg-4 col-md-5">
+          #{talks[i+1]}
+        </div>
+      </div>
+    </div>
     EOS
-  else
-    ""
+   else
+    # This is our last one
+    html += <<-EOS
+    <div class="container">
+      <div class="row">
+        <div class="conference col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1">
+          #{talks[i]}
+        </div>
+      </div>
+    </div>
+    EOS
+   end
   end
+  html
 end
 
+def talks_to_html(type, talks)
+  if talks.count > 0
+    formatted_talks = talks.map { |talk| talk_to_html(type, talk) }
+    columns(formatted_talks)
+  else
+    # Just gonna assume we always have past talks ¯\_(ツ)_/¯
+    <<-EOS
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <p>No upcoming talks at this time.</p>
+          </div>
+        </div>
+      </div>
+    EOS
+  end
+end
 %>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <p>I love sharing knowledge – in the form of blog posts, podcasts, open source code, books – and over the past few years, I've grown really fond of speaking. I've gotten good at it, too.</p>
 
-			<%= image_tag 'speaking.jpg', :class => 'img-responsive', :alt => "Speaking at NSSpain 2014" %>
+<div class="speaking">
 
-      <p>Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. It's not enough to understand what you're doing if you don't understand <em>why</em> you're doing it.</p>
-      
-      <p>I love speaking because I love spreading what I love.</p>
+  <!-- Intro -->
 
-      <p>If you're interested in having me speak, <a href="mailto:ash@ashfurrow.com">get in touch</a>.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-      <%= talks_to_html(data.talks.upcoming_talks, "Upcoming") %>
-      <%= talks_to_html(data.talks.past_talks, "Past") %>
+        <p>I love sharing knowledge – in the form of blog posts, podcasts, open source code, books – and over the past few years, I've grown really fond of speaking. I've gotten good at it, too.</p>
+
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LtrzZb5Jw0g" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
+        </div>
+
+      </div>
     </div>
   </div>
+
+  <!-- Upcoming Talks -->
+
+  <aside style="background-image: url(/img/speaking/world.png);">
+    <h2>Coming Soon to a Conference Near You</h2>
+  </aside>
+
+  <%= talks_to_html(:future, data.talks.upcoming_talks) %>
+
+  <!-- Past Talks -->
+
+  <aside style="background-image: url(/img/speaking/pasttalks.jpg);">
+    <h2>Past Awesome Talks</h2>
+  </aside>
+
+  <%= talks_to_html(:past, data.talks.past_talks) %>
+
+  <!-- Get in touch -->
+
+  <aside style="background-image: url(/img/speaking/getintouch.jpg);">
+    <h2>Get in Touch</h2>
+  </aside>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <p>Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. It's not enough to understand what you're doing if you don't understand <em>why</em> you're doing it.</p>
+        
+        <p>If you're interested in having me speak, <a href="mailto:ash@ashfurrow.com">get in touch</a>.</p>
+
+      </div>
+    </div>
+  </div>
+
 </div>
