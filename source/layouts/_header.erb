@@ -2,7 +2,9 @@
 
 image_name = data.site.default_background_image
 custom_image = current_resource.metadata[:page]["background_image"]
-if custom_image && custom_image.length > 0
+if defined? background_image
+  image_name = background_image
+elsif custom_image && custom_image.length > 0
   image_name = current_resource.metadata[:page]["background_image"]
 end
 
