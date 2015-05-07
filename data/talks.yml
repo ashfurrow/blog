@@ -1,4 +1,7 @@
 upcoming_talks:
+- name: Lessons from Production Swift
+  conference: CocoaHeads Hamburg
+  url: http://www.meetup.com/CocoaHeads-Hamburg/events/221990648/
 - name: Teaching &amp; Learning
   conference: UIKonf 2015
   url: http://www.uikonf.com
