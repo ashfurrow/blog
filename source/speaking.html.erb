@@ -128,7 +128,7 @@ end
 
 def talks_to_html(type, talks)
   if talks.count > 0
-    formatted_talks = talks.map { |talk| talk_to_html(type, talk) }.reduce(:+)
+    formatted_talks = talks.select{ |talk| talk["hidden"] != true }.map { |talk| talk_to_html(type, talk) }.reduce(:+)
     # columns(formatted_talks)
     formatted_talks
   else
@@ -189,10 +189,12 @@ end
     <h2>Past Awesome Talks</h2>
   </aside>
 
-
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <p>Here's a list of selected talks I've given in the past.</p>
+
         <ul id="past-list">
 
           <%= talks_to_html(:past, data.talks.past_talks) %>

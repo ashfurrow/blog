@@ -14,9 +14,11 @@ past_talks:
 - name: Lessons from Swift in Production
   conference: CocoaHeads Hamburg
   url: http://www.meetup.com/CocoaHeads-Hamburg/events/221990648/
+  slides: https://speakerdeck.com/ashfurrow/lessons-from-production-swift
   location: Hamburg, Germany
   dates: May 7, 2015
   image: /img/speaking/productionswift.png
+  hidden: true
 - name: Lessons from Swift in Production
   conference: Istanbul Tech Talks
   url: http://www.istanbultechtalks.com
@@ -78,6 +80,7 @@ past_talks:
   dates: August 25, 2014
   location: Warsaw, Poland
   image: /img/speaking/reactivecocoa.png
+  hidden: true
 - name: Solving Problems the Swift Way
   conference: GOTO Talk
   url: https://secure.trifork.com/cph-2014/freeevent/index.jsp?eventOID=6461
@@ -85,6 +88,7 @@ past_talks:
   dates: August 21, 2014
   location: Copenhagen, Denmark
   image: /img/speaking/swift.png
+  hidden: true
 - name: Solving Problems the Swift Way
   conference: SwiftCrunch
   url: http://swiftcrunch.com
@@ -93,6 +97,7 @@ past_talks:
   dates: July 5, 2014
   location: Kraków, Poland
   image: /img/speaking/swift.png
+  hidden: true
 - name: Introduction to ReactiveCocoa
   conference: AltConf 2014
   url: http://www.altconf.com
@@ -102,6 +107,7 @@ past_talks:
   dates: June 2014
   location: San Francisco, America
   image: /img/speaking/reactivecocoa.png
+  hidden: true
 - name: Introduction to ReactiveCocoa
   conference: Mdevcon 2014
   url: http://mdevcon.com/posts/2014/01/09/ash-furrow
@@ -118,6 +124,7 @@ past_talks:
   dates: January, 2014
   location: Toronto, Canada
   image: /img/speaking/reactivecocoa.png
+  hidden: true
 - name: UICollectionView Basics
   conference: Local CocoaHeads meetup
   url: http://tacow.org
