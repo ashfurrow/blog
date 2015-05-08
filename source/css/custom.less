@@ -179,9 +179,133 @@ blockquote > p:first-child {
 
   h3 {
     margin-bottom: 5px;
-    margin-top: 30px;
+    margin-top: 28px;
     text-decoration: none;
     font-weight: 600;
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    h3 {
+      font-size: 20pt;
+    }
+  }
+
+  #future-list, #past-list {
+    padding: 0px;
+
+    li {
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 30px;
+      text-align: left;
+      
+      i {
+        width: 30px;
+        text-align: center;
+        position: relative;
+        left: 10px;
+      }
+
+      h3 {
+        margin-top: 0px;
+        padding-bottom: 5px;
+      }
+
+      p, div {
+        margin: 0px;
+      }
+
+      p {
+        padding-left: 30px;
+        text-indent: -30px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  #future-list {
+    li {
+      vertical-align: top;
+      width: 100%;
+      display: block;
+
+      /* Make sure that odd items don't end up on the right.  */
+      &:nth-child(2n+1) {    
+        clear: left;
+      }
+
+      h3 {
+        padding-right: 10px;
+      }
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      li {
+        float: left;
+        width: 50%;
+      }
+    }
+  }
+
+  #past-list {
+    padding: 0px;
+
+    li {
+      .details {
+        float: right;
+        width: 70%;
+        padding-left: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        .details {
+          padding-left: 20px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .image-container {
+        position: relative;
+
+        float: left;
+        padding: 0px;
+        padding-right: 10px;
+        height: 100%;
+        width: 30%;
+
+        a.mouseover-link {
+          display: none;
+
+          i {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: white;
+            padding-bottom: 10px;
+            padding-right: 40px;
+            color: white;
+          }
+        }
+
+        &:hover {
+          a.mouseover-link {
+            display: inline;
+          }
+        }
+      }
+    }
   }
 
   aside {
