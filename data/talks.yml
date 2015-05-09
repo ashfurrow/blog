@@ -4,11 +4,13 @@ upcoming_talks:
   url: http://www.uikonf.com
   location: Berlin, Germany
   dates: June 8–12, 2015
+  image: /img/speaking/uikonf.png
 - name: TBA
   conference: AltConf 2015
   url: http://www.altconf.com
   location: San Francisco, America
   dates: June 8–12, 2015
+  image: /img/speaking/altconf.png
 
 past_talks:
 - name: Lessons from Swift in Production

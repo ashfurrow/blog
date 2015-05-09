@@ -39,10 +39,15 @@ def talk_to_html(type, talk)
 
   html = "<li>"
 
-  if type == :past
-    # Image
-    html += "<div class='image-container'>"
-    img_tag = "<img src='#{image_source}' />"
+  # Image
+  html += "<div class='image-container'>"
+  img_tag = "<img src='#{image_source}' />"
+
+  # Kind of complex. Future talks' images always link to the conference.
+  # Past talks link to the slides, if they're available.
+  if type == :future
+    html += "<a href='#{conference_url}'>#{img_tag}</a>"
+  elsif type == :past
     if slides
       html += "<a href='#{slides}'>#{img_tag}</a>"
       if image_source != missing_image_source
@@ -51,10 +56,11 @@ def talk_to_html(type, talk)
     else
       html += img_tag
     end
-    html += "</div>"
   end
 
-  # Defails
+  html += "</div>"
+
+  # Details
   html += "<div class='details'>"
   if type == :future
     if conference_url
@@ -65,7 +71,7 @@ def talk_to_html(type, talk)
   elsif type == :past
     html += "<h3>#{talk_name}</h3>"
     if conference_url
-      html += "<p><a href=#{conference_url}'><i class='fa fa-quote-left'></i>#{conference}</a></p>"
+      html += "<p><a href='#{conference_url}'><i class='fa fa-quote-left'></i>#{conference}</a></p>"
     else
       html += "<p><i class='fa fa-quote-left'></i>#{conference}</p>"
     end
@@ -90,39 +96,6 @@ def talk_to_html(type, talk)
 
   html += "</li>"
 
-  html
-end
-
-def columns(talks)
-  html = ""
-  (0..talks.count).step(2) do |i|
-   if i + 1 < talks.count
-    # We have 2 or more left
-    html += <<-EOS
-    <div class="container">
-      <div class="row">
-        <div class="conference col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1">
-          #{talks[i]}
-        </div>
-        <div class="conference col-lg-4 col-md-5">
-          #{talks[i+1]}
-        </div>
-      </div>
-    </div>
-    EOS
-   else
-    # This is our last one
-    html += <<-EOS
-    <div class="container">
-      <div class="row">
-        <div class="conference col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1">
-          #{talks[i]}
-        </div>
-      </div>
-    </div>
-    EOS
-   end
-  end
   html
 end
 
@@ -173,12 +146,14 @@ end
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-        <ul id="future-list">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <ul>
 
           <%= talks_to_html(:future, data.talks.upcoming_talks) %>
 
         </ul>
+
       </div>
     </div>
   </div>
@@ -195,11 +170,12 @@ end
 
         <p>Here's a list of selected talks I've given in the past.</p>
 
-        <ul id="past-list">
+        <ul>
 
           <%= talks_to_html(:past, data.talks.past_talks) %>
           
         </ul>
+
       </div>
     </div>
   </div>
