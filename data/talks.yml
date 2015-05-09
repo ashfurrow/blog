@@ -1,103 +1,179 @@
 upcoming_talks:
-- name: Lessons from Production Swift
-  conference: CocoaHeads Hamburg
-  url: http://www.meetup.com/CocoaHeads-Hamburg/events/221990648/
 - name: Teaching &amp; Learning
   conference: UIKonf 2015
   url: http://www.uikonf.com
+  location: Berlin, Germany
+  dates: June 8–12, 2015
+  image: /img/speaking/uikonf.png
 - name: TBA
   conference: AltConf 2015
   url: http://www.altconf.com
+  location: San Francisco, America
+  dates: June 8–12, 2015
+  image: /img/speaking/altconf.png
 
 past_talks:
+- name: Lessons from Swift in Production
+  conference: CocoaHeads Hamburg
+  url: http://www.meetup.com/CocoaHeads-Hamburg/events/221990648/
+  slides: https://speakerdeck.com/ashfurrow/lessons-from-production-swift
+  location: Hamburg, Germany
+  dates: May 7, 2015
+  image: /img/speaking/productionswift.png
+  hidden: true
 - name: Lessons from Swift in Production
   conference: Istanbul Tech Talks
   url: http://www.istanbultechtalks.com
   slides: https://speakerdeck.com/ashfurrow/lessons-from-production-swift
+  dates: April 27, 2015
+  location: Istanbul, Turkey
+  image: /img/speaking/productionswift.png
 - name: Catching up with Swift
   conference: Philly Emerging Technology
   url: http://phillyemergingtech.com/sessions/catching-up-with-swift/
   slides: https://speakerdeck.com/ashfurrow/catching-up-with-swift
+  dates: April 7–8, 2015
+  location: Philadelphia, America
+  image: /img/speaking/catchingup.png
 - name: Production Swift
   conference: dotSwift
   url: http://www.dotswift.io
   slides: https://speakerdeck.com/ashfurrow/production-swift
   video: https://www.youtube.com/watch?v=oMn4sspgrkQ
+  dates: February 6, 2015
+  location: Paris, France
+  image: /img/speaking/dotswift.png
 - name: Teaching &amp; Learning
   conference: Mobile Developer &amp; Business Day
   url: http://by.mdday.ru/
   slides: https://speakerdeck.com/ashfurrow/teaching-and-learning
   video: https://www.youtube.com/watch?v=SMupslvj3UA
+  dates: November 7, 2014
+  location: Minsk, Belarus
+  image: /img/speaking/teaching.png
 - name: Solving Problems with ReactiveCocoa and Swift
   conference: MBLT Dev
   url: http://mbltdev.ru
   slides: https://speakerdeck.com/ashfurrow/functional-reactive-programming-in-swift
   code: https://github.com/AshFurrow/MBLTDev
+  dates: October 28, 2014
+  location: Moscow, Russia
+  image: /img/speaking/functionalreactive.png
 - name: Idiomatic Swift
   conference: Pragma Mark 2014
   url: http://pragmamark.org/events/pragma-conference-2014/
   slides: https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way
+  dates: October 3–4, 2014
+  location: Milan, Italy
+  image: /img/speaking/swift.png
 - name: Functional Programming in Swift
   conference: NSSpain 2014
   url: http://nsspain.com/2014
   slides: https://speakerdeck.com/ashfurrow/the-future-of-functional-programming-on-ios
   code: https://github.com/AshFurrow/NSSpain2014
+  dates: September 18–19, 2014
+  location: Logroño, Spain
+  image: /img/speaking/functional.png
 - name: ReactiveCocoa
   conference: Mobile Warsaw
   url: http://mobile-warsaw.pl
   slides: https://speakerdeck.com/ashfurrow/reactivecocoa
   code: https://github.com/AshFurrow/FunctionalReactiveDemo
+  dates: August 25, 2014
+  location: Warsaw, Poland
+  image: /img/speaking/reactivecocoa.png
+  hidden: true
 - name: Solving Problems the Swift Way
   conference: GOTO Talk
   url: https://secure.trifork.com/cph-2014/freeevent/index.jsp?eventOID=6461
   slides: https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way
+  dates: August 21, 2014
+  location: Copenhagen, Denmark
+  image: /img/speaking/swift.png
+  hidden: true
 - name: Solving Problems the Swift Way
   conference: SwiftCrunch
   url: http://swiftcrunch.com
   slides: https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way
   video: https://www.youtube.com/watch?v=LtrzZb5Jw0g
+  dates: July 5, 2014
+  location: Kraków, Poland
+  image: /img/speaking/swift.png
+  hidden: true
 - name: Introduction to ReactiveCocoa
   conference: AltConf 2014
   url: http://www.altconf.com
   slides: https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014
   video: https://www.youtube.com/watch?v=TlgUWYrQ0sc
   code: https://github.com/AshFurrow/FunctionalReactiveDemo
+  dates: June 2014
+  location: San Francisco, America
+  image: /img/speaking/reactivecocoa.png
+  hidden: true
 - name: Introduction to ReactiveCocoa
   conference: Mdevcon 2014
   url: http://mdevcon.com/posts/2014/01/09/ash-furrow
   slides: https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014
   code: https://github.com/AshFurrow/FunctionalReactiveDemo
+  dates: March 8, 2014
+  location: Amsterdam, The Netherlands
+  image: /img/speaking/reactivecocoa.png
 - name: ReactiveCocoa
   conference: Local CocoaHeads meetup
   url: http://tacow.org
   slides: https://speakerdeck.com/ashfurrow/reactivecocoa-at-mdevcon-2014
   code: https://github.com/AshFurrow/FunctionalReactiveDemo
+  dates: January, 2014
+  location: Toronto, Canada
+  image: /img/speaking/reactivecocoa.png
+  hidden: true
 - name: UICollectionView Basics
   conference: Local CocoaHeads meetup
   url: http://tacow.org
   slides: https://speakerdeck.com/ashfurrow/uicollectionview
+  dates: December 21, 2013
+  location: Toronto, Canada
+  image: /img/speaking/collectionview.png
 - name: GitHub for Designers
   conference: FITC Screens 2013
   slides: https://speakerdeck.com/ashfurrow/github-for-designers
+  dates: October 3, 2013
+  location: Toronto, Canada
+  image: /img/speaking/ghfordesigners.png
 - name: Effective Use of Open Source Software
   conference: 360|iDev 2013
   slides: https://speakerdeck.com/ashfurrow/effective-use-of-open-source-software
   video: http://vimeopro.com/360conferences/360idev-2013/video/75223577
+  dates: September 10, 2013
+  location: Denver, Colorado
+  image: /img/speaking/oss.png
 - name: Developers Should Learn Photography Blitz Talk
   conference: NSNorth 2013
   url: http://nsnorth.ca/2013
   slides: https://speakerdeck.com/ashfurrow/developers-should-learn-photography
+  dates: April 19–21, 2013
+  location: Ottawa, Canada
+  image: /img/speaking/photography.png
 - name: Objective-C Vitamins
   conference: TechTalksTO
   url: http://techtalksto.com/post/40607791416/ash-furrow-presenting-accessibility-and-unit-testing
   slides: https://speakerdeck.com/ashfurrow/objective-c-vitamins
   video: http://vimeo.com/58066095
+  dates: January 22, 2013
+  location: Toronto, Canada
+  image: /img/speaking/vitamins.png
 - name: "500px for iPad: A Developer's Behing the Scenes"
   conference: FITC Screens 2012
   url: http://fitc.ca/presentation/500px-for-ipad-a-developers-behind-the-scenes
   slides: https://speakerdeck.com/ashfurrow/500px-for-ipad-a-developers-behind-the-scenes
   video: http://vimeo.com/50451043
+  dates: September 27, 2012
+  location: Toronto, Canada
+  image: /img/speaking/500px.png
 - name: Designing Interfaces for iPhone
   conference: Podcamp Toronto 2012
   url: http://podcamptoronto.com
   slides: https://speakerdeck.com/ashfurrow/designing-interfaces-for-iphone
+  dates: February 22, 2012
+  location: Toronto, Canada
+  image: /img/speaking/interfaces.png
