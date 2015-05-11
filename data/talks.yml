@@ -11,6 +11,12 @@ upcoming_talks:
   location: San Francisco, America
   dates: June 8–12, 2015
   image: /img/speaking/altconf.png
+- name: TBA
+  conference: Pragma Mark 2015
+  url: http://pragmaconference.com
+  location: Florence, Italy
+  dates: October 9–10, 2015
+  image: /img/speaking/pragmamark.jpg
 
 past_talks:
 - name: Lessons from Swift in Production
