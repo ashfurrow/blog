@@ -64,7 +64,7 @@ def talk_to_html(type, talk)
   html += "<div class='details'>"
   if type == :future
     if conference_url
-      html += "<h3><a href=#{conference_url}'>#{conference}</a></h3>"
+      html += "<h3><a href='#{conference_url}'>#{conference}</a></h3>"
     else
       html += "<h3>#{conference}</h3>"
     end
