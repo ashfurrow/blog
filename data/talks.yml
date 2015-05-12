@@ -5,6 +5,12 @@ upcoming_talks:
   location: Berlin, Germany
   dates: June 8–12, 2015
   image: /img/speaking/uikonf.png
+- name: WWDC Swift Panel
+  conference: SF Swift Language User Group
+  dates: June 10, 2015
+  location: San Francisco, America
+  url: http://www.meetup.com/swift-language/events/222426718/
+  image: /img/speaking/slug.jpg
 - name: TBA
   conference: AltConf 2015
   url: http://www.altconf.com
