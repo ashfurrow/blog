@@ -23,6 +23,12 @@ upcoming_talks:
   location: Florence, Italy
   dates: October 9–10, 2015
   image: /img/speaking/pragmamark.jpg
+- name: TBA
+  conference: GOTO
+  url: http://gotocon.com/cph-2015/
+  location: Copenhagen, Denmark
+  dates: October 5–6, 2015
+  image: /img/speaking/goto.jpg
 
 past_talks:
 - name: Lessons from Swift in Production
