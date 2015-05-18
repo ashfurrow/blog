@@ -1,10 +1,4 @@
 upcoming_talks:
-- name: Teaching &amp; Learning
-  conference: UIKonf 2015
-  url: http://www.uikonf.com
-  location: Berlin, Germany
-  dates: June 8–12, 2015
-  image: /img/speaking/uikonf.png
 - name: WWDC Swift Panel
   conference: SF Swift Language User Group
   dates: June 10, 2015
@@ -31,6 +25,13 @@ upcoming_talks:
   image: /img/speaking/goto.jpg
 
 past_talks:
+- name: Teaching &amp; Learning
+  conference: UIKonf 2015
+  url: http://www.uikonf.com
+  location: Berlin, Germany
+  dates: May 18, 2015
+  image: /img/speaking/uikonf.png
+  slides: https://speakerdeck.com/ashfurrow/teaching-and-learning-1
 - name: Lessons from Swift in Production
   conference: CocoaHeads Hamburg
   url: http://www.meetup.com/CocoaHeads-Hamburg/events/221990648/
