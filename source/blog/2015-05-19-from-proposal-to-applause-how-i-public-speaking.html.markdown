@@ -24,7 +24,7 @@ Writing a proposal is something that I'm not great at. If you want to write an a
 
 I know some people submit multiple proposals to anonymous CFPs in the hopes that this "shotgun method" will yield at least one accepted talk. I don't really like this because I feel like if you do several proposals rather than just one, the quality of each can't help but suffer. I'd rather submit one good proposal than three mediocre ones. 
 
-One thing I like to do is keep the proposal as generic as possible without loosing meaning. Weeks or months can go by from my submitted proposal to the actual talk, and keeping my proposal vague lets my talk reflect the world as it exists when I give the talk, and not the world when I proposed it. 
+One thing I like to do is keep the proposal as generic as possible without losing meaning. Weeks or months can go by from my submitted proposal to the actual talk, and keeping my proposal vague lets my talk reflect the world as it exists when I give the talk, and not the world when I proposed it. 
 
 OK, so say I got accepted. Awesome! What now?
 
@@ -68,7 +68,7 @@ Or...
 
 I've seen (and given) so many programming talks that jump directly into the technical details – bypassing the context of _why_ what the audience is about to hear is important.
 
-There isn't just one way to structure a talk, but it's important that I structure it somehow. Jumping directly to details is a really easy way to loose my audience before I've even gotten to the third slide. 
+There isn't just one way to structure a talk, but it's important that I structure it somehow. Jumping directly to details is a really easy way to lose my audience before I've even gotten to the third slide. 
 
 I generally structure my talks in this format:
 
