@@ -1,8 +1,8 @@
 <!-- Pager -->
-<ul class="pager">
+<ul class="article_pager pager">
   <% if current_article.next_article %>
     <li class="next">
-        <%= link_to "#{current_article.next_article.title} &rarr;", current_article.next_article.url %>
+        <%= link_to "&rarr; #{current_article.next_article.title}", current_article.next_article.url %>
     </li>
   <% end %>
   <% if current_article.previous_article %>
