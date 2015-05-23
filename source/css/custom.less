@@ -23,10 +23,25 @@ code, pre {
   }
 }
 
-.container .pager li > a {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
+.container .pager li {
+  a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    width: 100%;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+
+    div {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }
 
 #page_footer {
