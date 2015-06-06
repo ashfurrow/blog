@@ -11,6 +11,11 @@ upcoming_talks:
   location: San Francisco, America
   dates: June 8–12, 2015
   image: /img/speaking/altconf.png
+- name: Mobiconf
+  url: http://2015.mobiconf.org/
+  location: Kraków, Poland
+  dates: October 1–2, 2015
+  image: /img/speaking/mobiconf.png
 - name: TBA
   conference: Pragma Mark 2015
   url: http://pragmaconference.com
