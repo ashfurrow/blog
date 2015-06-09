@@ -15,7 +15,7 @@ What _is_ important are the inferences we can draw from the individual announcem
 
 ### Shift Towards Engineering
 
-In my native land of Canada, the term "Engineer" is a  protected term, like "Judge" or "Doctor" – I can't just go out and claim to be a software engineer. I am (a lowly) software _developer_.  
+In my native land of Canada, the term "Engineer" is a  protected term, like "Judge" or "Doctor" – I can't just go out and claim to be a software engineer. I am a (lowly) software _developer_.  
 
 What separates engineering from developing? 
 
@@ -27,7 +27,7 @@ Software developers make code. Software engineers make products.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Apple seems to be pushing us from developing iOS apps to engineering them. Really exciting times.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/608049688760197122">June 8, 2015</a></blockquote>
 
-With their announcements of the tools and language features, Apple has shown an awareness of this distinction. For example, new projects include _two_ testing targets: one for unit tests, and one for UI tests. They've provided UI testing tools that are _freaking amazing_ and miles ahead of anything else I've seen for iOS.
+With their announcements of the tools and language features, Apple has shown an awareness of this distinction. For example, new Xcode projects include _two_ testing targets: one for unit tests, and one for UI tests. They've provided UI testing tools that are _freaking amazing_ and miles ahead of anything else I've seen for iOS.
 
 Apps have gotten much _much_ more complicated. When I started, on iOS 3, it was enough to build an app that ran when the user was looking at it. Now we have: background modes, push notifications, background network fetch, iCloud syncing, state restoration, Today widgets, WatchKit extensions, all of which need to work on iPhones with 3.5", 4", 4.7", and 5.5" _and_ iPads at _three_ different pixel densities.
 
