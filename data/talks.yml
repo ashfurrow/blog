@@ -37,6 +37,7 @@ past_talks:
   dates: May 18, 2015
   image: /img/speaking/uikonf.png
   slides: https://speakerdeck.com/ashfurrow/teaching-and-learning-1
+  video: https://www.youtube.com/watch?v=SjjvnrqDjpM&list=PLdr22uU_wISpW6XI1J0S7Lp-X8Km-HaQW&index=9&app=desktop
 - name: Lessons from Swift in Production
   conference: CocoaHeads Hamburg
   url: http://www.meetup.com/CocoaHeads-Hamburg/events/221990648/
