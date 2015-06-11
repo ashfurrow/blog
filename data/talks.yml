@@ -11,6 +11,12 @@ upcoming_talks:
   location: San Francisco, America
   dates: June 8–12, 2015
   image: /img/speaking/altconf.png
+- name: Lessons From Production Swift
+  conference: Brooklyn Swift
+  url: http://www.meetup.com/Brooklyn-Swift-Developers/events/223159208/
+  location: Brooklyn, America
+  dates: June 24, 2015
+  image: /img/speaking/brooklyn.png
 - name: Mobiconf
   url: http://2015.mobiconf.org/
   location: Kraków, Poland
