@@ -1,10 +1,4 @@
 upcoming_talks:
-- name: TBA
-  conference: AltConf 2015
-  url: http://www.altconf.com
-  location: San Francisco, America
-  dates: June 8–12, 2015
-  image: /img/speaking/altconf.png
 - name: Lessons From Production Swift
   conference: Brooklyn Swift
   url: http://www.meetup.com/Brooklyn-Swift-Developers/events/223159208/
@@ -28,8 +22,21 @@ upcoming_talks:
   location: Copenhagen, Denmark
   dates: October 5–6, 2015
   image: /img/speaking/goto.jpg
+- name: TBA
+  conference: Swift Summit
+  url: https://www.swiftsummit.com
+  location: San Francisco, America
+  dates: October 29–30, 2015
+  image: /img/speaking/swiftsummit.png
 
 past_talks:
+- name: Functional Reactive Awesome
+  conference: AltConf 2015
+  url: http://www.altconf.com
+  location: San Francisco, America
+  dates: June 12, 2015
+  image: /img/speaking/altconf.png
+  slides: https://speakerdeck.com/ashfurrow/functional-reactive-awesome
 - name: WWDC Swift Panel
   conference: SF Swift Language User Group
   dates: June 10, 2015
