@@ -5,7 +5,8 @@ upcoming_talks:
   location: Brooklyn, America
   dates: June 24, 2015
   image: /img/speaking/brooklyn.png
-- name: Mobiconf
+- name: TBA
+  conference: Mobiconf
   url: http://2015.mobiconf.org/
   location: Kraków, Poland
   dates: October 1–2, 2015
