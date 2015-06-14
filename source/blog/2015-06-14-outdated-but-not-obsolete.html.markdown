@@ -43,4 +43,4 @@ I absolutely think functional reactive programming is the future, but only in th
 
 As technologists, we often sit at the forefront of technological progression. We therefore have an obligation to think critically about the advances in technology that we enable. Not solely for the benefit of society – but for our own sake. It would be intellectually dishonest to always assume that every advance in technology is _only_ a good thing. That it _only_ has advantages. That it will _only_ make things better. 
 
-New technology always has advantages _and_ disadvantages that are not always priorities to _us_ but may be important to others. Technological advances carry far-reaching implications on our society. It's time we start acknowledging and being upfront about the drawbacks of what's new. 
+New technology always has advantages _and_ disadvantages that are not always priorities to _us_ but may be important to others. Technological advances carry far-reaching implications on our society. It's time we start acknowledging – and being upfront – about the drawbacks of what's new. 
