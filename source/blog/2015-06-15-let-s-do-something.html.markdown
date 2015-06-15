@@ -25,7 +25,7 @@ Other people noticed, too. And the tweets started.
 
 Which is good – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. But there's a way to be constructive when giving criticism, a way to make things better.
 
-One of my friends in particular were talking about how unfortunate the list was due to its lack of diversity, and before you knew it, they were complaining about the people on the list, not the list itself. 
+One of my friends in particular was talking about how unfortunate the list was due to its lack of diversity, and before you knew it, they were complaining about the people on the list, not the list itself. 
 
 It's pretty negative, I think, to get angry at people on a list (who didn't ask to be there) because the constituency of the list isn't diverse. 
 
