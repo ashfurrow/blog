@@ -21,15 +21,11 @@ Number four is, uhh, wow.
 
 I was ecstatic. But I did notice that most of the 52 members of the list were white dudes. 
 
-Other people noticed, too. And the tweets started.
+Other people noticed, too. 
 
-Which is good – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. But there's a way to be constructive when giving criticism, a way to make things better.
+Which is _awesome_ – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. And there's a way to be constructive when giving criticism, a way to make things better.
 
-One of my friends in particular was talking about how unfortunate the list was due to its lack of diversity, and before you knew it, they were complaining about the people on the list, not the list itself. 
-
-It's pretty negative, I think, to get angry at people on a list (who didn't ask to be there) because the constituency of the list isn't diverse. 
-
-So I tried something I've been doing more of lately; I tried to combat negativity with a positive attitude. 
+One of my friends in particular was talking about how unfortunate the list was due to its lack of diversity. I felt they were being a bit negative, and wanted to turn their negativity into a positive action.
 
 "Let's make a new list, a better list, of diverse industry awesome people!" 
 
