@@ -7,21 +7,13 @@ On my way down to San Francisco for WWDC, I saw a really cool tweet.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">52 people every <a href="https://twitter.com/hashtag/iOS?src=hash">#iOS</a> developer should follow on Twitter - great list by <a href="https://twitter.com/pawel_bialecki">@pawel_bialecki</a> <a href="https://t.co/yBKZPqdP0t">https://t.co/yBKZPqdP0t</a></p>&mdash; NatashaTheRobot (@NatashaTheRobot) <a href="https://twitter.com/NatashaTheRobot/status/607291623861547008">June 6, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Cool! So I took a look at [the list](https://medium.com/ios-os-x-development/52-people-every-ios-developer-should-follow-on-twitter-25ca8915369a) to see who was on it. The list started with some usual suspects, first was the CEO of Apple, then the creator of Swift, next the author of _the_ definitive book on Objective-C, then me. 
+Cool! So I check out the list and I'm pleased to discover that I'm actually included in it. Neat!
 
-_Me_. 
-
-Whoa!
-
-<!-- more -->
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/NatashaTheRobot">@NatashaTheRobot</a> <a href="https://twitter.com/pawel_bialecki">@pawel_bialecki</a> whoa! I did not expect to be number four on that list!</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/607294167446716417">June 6, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-Number four is, uhh, wow. 
-
-I was ecstatic. But I did notice that most of the 52 members of the list were white dudes. 
+But I did notice that most of the 52 members of the list were white dudes. 
 
 Other people noticed, too. 
+
+<!-- more -->
 
 Which is _awesome_ – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. And there's a way to be constructive when giving criticism, a way to make things better.
 
