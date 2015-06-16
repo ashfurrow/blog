@@ -21,6 +21,6 @@ I asked a friend, who was of the same mind, "let's make a new list, an awesome l
 
 My friend correctly pointed out the inappropriateness of me, a white dude, making a list of underrepresented iOS people. That's a great point. 
 
-But that doesn't mean the idea itself is bad. It means we need to make sure the actual voices of underrepresented people are heard, and not our own. 
+But that doesn't mean the idea of a new list is bad. It means we would need to make sure the actual voices of underrepresented people are heard, and not our own.
 
 Let's do something. Let's make a list of awesome people in iOS who aren't white dudes. Are there any people who are not  white cishet men out there who have some time to help make a list? You can stay totally anonymous and back out at any time. If you identify as a member of an underrepresented group in tech, [let me know](mailto:ash@ashfurrow.com) who you admire. 
