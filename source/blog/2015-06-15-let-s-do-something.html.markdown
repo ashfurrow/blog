@@ -15,11 +15,9 @@ Other people noticed, too.
 
 <!-- more -->
 
-People noticing this is _awesome_ – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. And there's a way to be constructive when giving criticism, a way to make things better.
+People noticing this is _awesome_ – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. 
 
-One of my friends was being quite negative, so I tried to turn that frustration into positive action.
-
-"Let's make a new list, an awesome list, of diverse industry awesome people!" 
+I asked a friend, who was of the same mind, "let's make a new list, an awesome list, of diverse industry awesome people!" 
 
 My friend correctly pointed out the inappropriateness of me, a white dude, making a list of underrepresented iOS people. That's a great point. 
 
