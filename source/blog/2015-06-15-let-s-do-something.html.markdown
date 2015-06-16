@@ -35,7 +35,7 @@ It must be exhausting. To experience all the problems of the tech world and then
 
 That's a lot of responsibility. 
 
-I think it's important to remind ourselves that some people just want to do their jobs, and that should be OK. It should be OK to just wants to make apps without having extra responsibilities to try and fix tech's problems. Responsibilities no one really places on white cishet men.
+I think it's important to remind ourselves that some people just want to do their jobs, and that should be OK. It should be OK to just want to make apps without having extra responsibilities to try and fix tech's problems. Responsibilities no one really places on white cishet men.
 
 It's unreasonable to require members of underrepresented groups to pull themselves out of the mess they're in without any help. We can't expect them to do it alone. 
 
