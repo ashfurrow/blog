@@ -15,7 +15,7 @@ Other people noticed, too.
 
 <!-- more -->
 
-Which is _awesome_ – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. And there's a way to be constructive when giving criticism, a way to make things better.
+People noticing this is _awesome_ – we need to be aware of the lack of diversity in our industry and our community and we should call out problems like this when we see them. And there's a way to be constructive when giving criticism, a way to make things better.
 
 One of my friends in particular was talking about how unfortunate the list was due to its lack of diversity. I felt they were being a bit negative, and wanted to turn their negativity into a positive action.
 
