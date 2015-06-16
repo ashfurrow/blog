@@ -39,4 +39,4 @@ I think it's important to remind ourselves that some people just want to do thei
 
 It's unreasonable to require members of underrepresented groups to pull themselves out of the mess they're in without any help. We can't expect them to do it alone. 
 
-So what I'm saying is, I want to make a list of awesome people in iOS who aren't white dudes. Are there any people who are not  white cishet men out there who have some time to help me make a list? You can stay totally anonymous and back out at any time. If you identify as a member of an underrepresented group in tech, [let me know](mailto:ash@ashfurrow.com) who you admire. 
+So what I'm saying is, I want to make a list of awesome people in iOS who aren't white dudes. Are there any people who are not  white cishet men out there who have some time to help make a list? You can stay totally anonymous and back out at any time. If you identify as a member of an underrepresented group in tech, [let me know](mailto:ash@ashfurrow.com) who you admire. 
