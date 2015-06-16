@@ -29,14 +29,12 @@ No joy. My friend said he was happy to signal boost members of underrepresented 
 
 I'm not sure how I feel about that. 
 
-I mean, think about it. You're in tech and you're a not a white cishet dude. Your life and your career are already more difficult than average, but now on top of that, some white dudes expect you to singlehandedly try to fix the diversity problem in tech _and then_ they'll signal boost you. 
-
-It must be exhausting. To experience all the problems of the tech world and then _also_ be expected to be a role model to every other member of ever underrepresented group who might someday get into tech. 
+It must be exhausting. To experience all the problems of the tech world and then _also_ be expected to lead the fight for diversity in your field. 
 
 That's a lot of responsibility. 
 
-I think it's important to remind ourselves that some people just want to do their jobs, and that should be OK. It should be OK to just want to make apps without having extra responsibilities to try and fix tech's problems. Responsibilities no one really places on white cishet men.
+I think it's important to remind ourselves that some people just want to do their jobs, and that should be OK. It should be OK to just want to make apps without having extra responsibilities to try and fix tech's problems.
 
-It's unreasonable to require members of underrepresented groups to pull themselves out of the mess they're in without any help. We can't expect them to do it alone. 
+It's unreasonable to require members of underrepresented groups to pull themselves out of the mess they're in without any help. 
 
-So what I'm saying is, I want to make a list of awesome people in iOS who aren't white dudes. Are there any people who are not  white cishet men out there who have some time to help make a list? You can stay totally anonymous and back out at any time. If you identify as a member of an underrepresented group in tech, [let me know](mailto:ash@ashfurrow.com) who you admire. 
+Let's do something about it. Let's make a list of awesome people in iOS who aren't white dudes. Are there any people who are not  white cishet men out there who have some time to help make a list? You can stay totally anonymous and back out at any time. If you identify as a member of an underrepresented group in tech, [let me know](mailto:ash@ashfurrow.com) who you admire. 
