@@ -44,6 +44,7 @@ past_talks:
   location: San Francisco, America
   url: http://www.meetup.com/swift-language/events/222426718/
   image: /img/speaking/slug.jpg
+  video: https://realm.io/news/apple-wwdc-2015-swift-panel-discussion/
   hidden: true
 - name: Teaching &amp; Learning
   conference: UIKonf 2015
