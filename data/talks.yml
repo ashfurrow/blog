@@ -1,10 +1,4 @@
 upcoming_talks:
-- name: Lessons From Production Swift
-  conference: Brooklyn Swift
-  url: http://www.meetup.com/Brooklyn-Swift-Developers/events/223159208/
-  location: Brooklyn, America
-  dates: June 24, 2015
-  image: /img/speaking/brooklyn.png
 - name: TBA
   conference: Mobiconf
   url: http://2015.mobiconf.org/
@@ -31,6 +25,13 @@ upcoming_talks:
   image: /img/speaking/swiftsummit.png
 
 past_talks:
+- name: Lessons From Production Swift
+  conference: Brooklyn Swift
+  url: http://www.meetup.com/Brooklyn-Swift-Developers/events/223159208/
+  location: Brooklyn, America
+  dates: June 24, 2015
+  image: /img/speaking/brooklyn.png
+  hidden: true
 - name: Functional Reactive Awesome
   conference: AltConf 2015
   url: http://www.altconf.com
