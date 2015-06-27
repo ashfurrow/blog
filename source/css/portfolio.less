@@ -1,0 +1,459 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* Portfolio & Speaking Page */
+
+.speaking {
+  .row {
+    padding-bottom: 0px;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+    margin-top: 28px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      font-size: 28px;
+    }
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    h3 {
+      font-size: 20pt;
+    }
+  }
+
+  ul {
+    padding: 0px;
+
+    li {
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 20px;
+      text-align: left;
+      
+      i {
+        width: 30px;
+        text-align: center;
+        position: relative;
+        left: 10px;
+      }
+
+      h3 {
+        margin-top: 0px;
+        padding-bottom: 5px;
+      }
+
+      p, div {
+        margin: 0px;
+      }
+
+      p {
+        padding-left: 30px;
+        text-indent: -30px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .details {
+        float: right;
+        width: 70%;
+        padding-left: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        margin-top: 30px;
+
+        .details {
+          padding-left: 20px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .image-container {
+        position: relative;
+
+        float: left;
+        padding: 0px;
+        padding-right: 10px;
+        height: 100%;
+        width: 30%;
+
+        a.mouseover-link {
+          display: none;
+
+          i {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: white;
+            padding-bottom: 10px;
+            padding-right: 40px;
+            color: white;
+          }
+        }
+
+        &:hover {
+          a.mouseover-link {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    background: no-repeat center center; 
+    background-attachment: scroll;
+    .background-cover;
+    color: white;
+    font-weight: 800;
+    padding: 80px 0;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      padding: 120px 0;
+      margin-bottom: 30px;
+      margin-top: 130px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 800;
+      margin: 0px;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 55px;
+      }
+    }
+
+    /* TODO: Cusotmize heights for different devices. */
+    /* Extra small devices (phones, less than 768px) */
+    /* No media query since this is the default in Bootstrap */
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      padding-top: auto;
+      padding-bottom: auto;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      padding-top: auto;
+      padding-bottom: auto;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+      padding-top: auto;
+      padding-bottom: auto;
+    }
+  }
+}
+
+.portfolio {
+
+  h2 {
+    margin-top: 0px;
+    color: white;
+    
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      font-size: 45px;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      font-size: 55px;
+    }
+
+    .portfolio-header-link {
+      color: transparent;
+      padding-left: 15px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    &:hover {
+      .portfolio-header-link {
+        color: white;
+      }
+    }
+  }
+
+  h3 {
+    .serif;
+    font-weight: 400;
+    color: @gray-dark;
+    font-size: 35px;
+    text-align: left;
+    line-height: 35px;
+  }
+
+  .container {
+    &:last-child {
+      padding-bottom: 50px;
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        padding-bottom: 80px;
+      }
+
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: 992px) { 
+        padding-bottom: 120px;
+      }
+    }
+  }
+
+  /* Software, Education */
+
+  #education_list {
+    li {
+      &:first-child {
+        margin-top: 20px !important;
+      }
+    }
+  }
+  
+  #software_list, #education_list {
+    li {
+      vertical-align: top;
+      display: inline-block;
+      margin-top: 30px;
+      text-align: left;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+      
+      h3 {
+        margin-top: 0px;
+        text-align: center;
+      }
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        h3 {
+          max-width: 60%;
+          text-align: left;
+          margin-bottom: 15px;
+        }
+
+        div {
+          max-width: 50%;
+          margin-top: 30px;
+        }
+      }
+
+      img {
+        padding: 15px 0px;
+        max-width: 100%;
+        @media (min-width: 768px) {  
+          max-width: 40%;
+          float: right;
+        }
+      }
+
+      div {
+        margin-top: 15px;
+      }
+
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  /* Community */
+
+  #community_list {
+    padding: 30px 0px;
+    li {
+      margin: 0px 10px;
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        margin: 0px 30px;
+      }
+
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: 992px) { 
+        margin: 0px 50px;
+      }
+    }
+  }
+
+  /* Photography */
+
+  #photography_list {
+    li {
+      background: 0 0 no-repeat fixed;
+      vertical-align: middle;
+      position: relative;
+
+      svg {
+        fill: @gray-dark;
+        &:hover {
+          fill: @brand-primary;
+
+          .dark-stroke {
+            stroke: @brand-primary;
+          }
+        }
+
+        .dark-stroke {
+          stroke: @gray-dark;
+        }
+
+        .white-stroke {
+          stroke: white;
+        }
+      }
+
+      min-width: 70px;
+    }
+
+    li {
+      -webkit-transform: scale(0.7);
+      -moz-transform:    scale(0.7);
+      -ms-transform:     scale(0.7);
+      -o-transform:      scale(0.7);
+      transform:         scale(0.7);
+
+      margin: 10px 10px;
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        margin: 10px 50px;
+      }
+    }
+  }
+
+  /* Section Headers */
+
+  aside {
+    display: block;
+    color: white;
+    position: relative;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    p {
+      margin: 0px 0px;
+    }
+
+    /* Extra small devices (phones, less than 768px) */
+    /* No media query since this is the default in Bootstrap */
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+      height: 250px;
+      padding-top: auto;
+      padding-bottom: auto;
+      margin-top: 200px;
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      height: 350px;
+      margin-top: 180px;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+      height: 450px;
+    }
+
+    figcaption {
+      display: block;
+      padding: 0px;
+      text-align: center;
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+
+      a {
+        &:hover,
+        &:focus {
+          color: white;
+        }
+      }
+
+      @media (min-width: 768px) { 
+        position: absolute;
+        text-align: left;
+      }
+
+      &:before {
+        content:"";
+        color: white;
+        position: relative;
+        @media (min-width: 768px) { 
+          position: absolute;
+        }
+      }
+
+
+      /* Section Header Callouts */
+
+      /* Extra small devices (phones, less than 768px) */
+      /* No media query since this is the default in Bootstrap */
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) { 
+        right: 2em;
+        bottom: 2em;
+        width: 325px;
+        &:before {
+          width: 205px;
+          height: 94px;
+          top: 0em;
+          right: 105%;
+          background-image: url(/img/portfolio/callout_small.svg);
+        }
+      }
+
+     /* Medium devices (desktops, 992px and up) */ 
+      @media (min-width: 992px) { 
+        right: 5em;
+        &:before {
+          width: 357px;
+          height:164px;
+          top: -3.6em;
+          background-image: url(/img/portfolio/callout.svg);
+        }
+      }
+
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { 
+        right: 7em;
+        bottom: 5em;
+      }
+    }
+  }
+}
