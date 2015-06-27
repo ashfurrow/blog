@@ -1,6 +1,7 @@
 ---
 title: "Swift Initializers"
 date: 2014-06-06 00:00
+link_to: swift
 ---
 
 <import><p>Swift, Apple's new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:</p>

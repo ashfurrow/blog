@@ -1,6 +1,7 @@
 ---
 title: "Functional Reactive Programming for GUIs"
 date: 2014-01-02 00:00
+link_to: iosfrp
 ---
 
 <import><p>I read a really interesting <a href="http://www.quora.com/Functional-Programming/What-are-some-false-beliefs-about-functional-programming-and-functional-programming-languages/answer/Tikhon-Jelvis?srid=YMS&amp;share=1">Quora answer</a> which corrects some myths surrounding functional programming. It's well-worth a read. </p>

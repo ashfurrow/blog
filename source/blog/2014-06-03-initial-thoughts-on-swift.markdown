@@ -1,6 +1,7 @@
 ---
 title: "Initial Thoughts on Swift"
 date: 2014-06-03 00:00
+link_to: swift
 ---
 
 <import><p>Yesterday, Apple announced a brand new programming language as a replacement for Objective-C called Swift. </p>

@@ -1,0 +1,25 @@
+<% abort 'No book specified' unless defined? book %>
+
+<% 
+
+image_source = "/img/marketing/#{book}.jpg"
+body = ''
+href = ''
+
+if book == 'swift' || book == 'collectionview'
+	body = "My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store."
+	href = 'http://leanpub.com/yourfirstswiftapp'
+elsif book == 'iosfrp' || book == 'frpswift'
+	body = "My book, aimed at intermediate iOS developers, explores the power and subtlety of functional reactive programming on iOS. Start building apps faster, safer, and with less frustration today!"
+	href = 'http://leanpub.com/iosfrp'
+end
+
+%>
+
+<div id="marketing">
+	<a href="<%= href %>"><img src='<%= image_source %>' /></a>
+	<a href="<%= href %>" class="visible-md visible-lg"><h3>Enjoyed my post? You'd love my book!</h3></a>
+	<a href="<%= href %>" class="visible-xs visible-sm"><h3>Enjoyed my post?</h3></a>
+	<p><%= body %></p>
+</div>
+<div class="clearfix"></div>

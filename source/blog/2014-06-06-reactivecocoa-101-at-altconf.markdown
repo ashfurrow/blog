@@ -1,6 +1,7 @@
 ---
 title: "ReactiveCocoa 101 at AltConf"
 date: 2014-06-06 00:00
+link_to: iosfrp
 ---
 
 <import><p>I had a great time this week presenting about ReactiveCocoa at <a href="http://www.altconf.com">AltConf</a>. Check out the video here. </p>

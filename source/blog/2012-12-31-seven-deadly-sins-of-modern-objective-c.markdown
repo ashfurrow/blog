@@ -1,6 +1,7 @@
 ---
 title: "Seven Deadly Sins of Modern Objective-C"
 date: 2012-12-31 00:00
+link_to: swift
 ---
 
 <import><p>I've had this post cooking for a long time, and I think it's ready to unveil. If you code Objective-C, this is going to offend you and that's good. If you aren't offended, then you don't care, and that's bad. </p>
