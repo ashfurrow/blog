@@ -1,6 +1,7 @@
 ---
 title: Swift Panel
 date: 2015-06-23 15:58:27 UTC
+link_to: swift
 ---
 
 A few weeks ago, during WWDC week, I was honoured to participate in a panel discussion with some awesome people at [Realm](https://realm.io/). The video of the discussion, and transcript, are [available online](https://realm.io/news/apple-wwdc-2015-swift-panel-discussion/).
