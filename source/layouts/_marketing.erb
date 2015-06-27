@@ -2,7 +2,6 @@
 
 <% 
 
-header = "Enjoyed my post? You'd love my book!"
 image_source = "/img/marketing/#{book}.jpg"
 body = ''
 href = ''
@@ -19,6 +18,7 @@ end
 
 <div id="marketing">
 	<a href="<%= href %>"><img src='<%= image_source %>' /></a>
-	<a href="<%= href %>"><h3><%= header %></h3></a>
-	<p class="clearfix"><%= body %></p>
+	<a href="<%= href %>" class="hidden-xs hidden-sm"><h3>Enjoyed my post? You'd love my book!</h3></a>
+	<a href="<%= href %>" class="visible-sm"><h3>Enjoyed my post?</h3></a>
+	<p><%= body %></p>
 </div>
