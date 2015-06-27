@@ -1,6 +1,7 @@
 ---
 title: "UICollectionView Example"
 date: 2012-09-19 00:00
+link_to: collectionview
 ---
 
 <import><p>We're going to take a look at the new <code>UICollectionView</code> class Apple introduced in iOS 6. It's used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px?</p>

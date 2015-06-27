@@ -1,6 +1,7 @@
 ---
 title: "Lazy Property Setup in Swift"
 date: 2014-07-05 00:00
+link_to: swift
 ---
 
 <import><p>A few weeks ago, I was talking with my friend <a href="http://twitter.com/ratkins">Robert</a> about Swift. He had a problem. He wanted to create a property of a class that is <em>not</em> an optional, but depends on <code>self</code> for its creation.</p>

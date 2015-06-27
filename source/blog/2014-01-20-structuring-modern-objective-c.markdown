@@ -1,6 +1,7 @@
 ---
 title: "Structuring Modern Objective-C"
 date: 2014-01-20 00:00
+link_to: swift
 ---
 
 <import><p>When learning a new skill, like a programming language, we often just mash together whatever works in order to get it running. Later, we'll return to these habits and re-evaluate, adopting best practices from the community and making better, more well-structured code. </p>

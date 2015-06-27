@@ -1,6 +1,7 @@
 ---
 title: "UICollectionView Example with UICollectionViewFlowLayout"
 date: 2013-02-05 00:00
+link_to: collectionview
 ---
 
 <import><p>I'm waiting for some friends to come into town tonight so I thought I might throw together a very <a href="https://github.com/AshFurrow/UICollectionViewFlowLayoutExample">basic <code>UICollectionViewFlowLayout</code> example</a>. </p>

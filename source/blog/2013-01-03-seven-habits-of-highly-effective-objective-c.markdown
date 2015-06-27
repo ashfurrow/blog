@@ -1,6 +1,7 @@
 ---
 title: "Seven Habits of Highly Effective Objective-C"
 date: 2013-01-03 00:00
+link_to: swift
 ---
 
 <import><p>I've gotten a lot of feedback from my <a href="http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c">Seven Deadly Sins of Modern Objective-C</a> article. Thank you so much for getting in touch! I'm going to be addressing the main feedback in a series of follow-up articles.</p>

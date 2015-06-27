@@ -1,6 +1,7 @@
 ---
 title: "Functional Programming in Swift"
 date: 2014-09-19 00:00
+link_to: frpswift
 ---
 
 <import><p>Yesterday, I gave a talk at <a href="http://nsspain.com/2014/">NSSpain</a> titled "The Future of Functional Programming in Swift". Slides are up <a href="https://speakerdeck.com/ashfurrow/the-future-of-functional-programming-on-ios">here</a> and the sample code is <a href="https://github.com/AshFurrow/NSSpain2014">on GitHub</a>.</p>

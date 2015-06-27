@@ -1,6 +1,7 @@
 ---
 title: "Weak/Strong Dance"
 date: 2013-10-23 00:00
+link_to: swift
 ---
 
 <import><p>Reader Chad Zeluff wrote in to me about a practice I've been following <a href="https://leanpub.com/iosfrp">in my book</a>.</p>

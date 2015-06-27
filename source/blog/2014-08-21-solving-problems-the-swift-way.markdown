@@ -1,6 +1,7 @@
 ---
 title: "Solving Problems the Swift Way"
 date: 2014-08-21 00:00
+link_to: swift
 ---
 
 <import><p>Recently, I was asked to speak at <a href="http://swiftcrunch.com">SwiftCrunch</a>, the first ever Swift hackathon. I gave a talk on solving problems using idiomatic Swift; that is, how do we solve problems "the Swift way"?</p>

@@ -1,6 +1,7 @@
 ---
 title: "How to Use NSFetchedResultsController with UICollectionView"
 date: 2012-09-19 00:00
+link_to: collectionview
 ---
 
 <import><p>If you're looking for how to get around the <code>NSInternalInconsistencyException</code> runtime exception with <code>UICollectionView</code>, I have an <a href="https://github.com/AshFurrow/UICollectionView-NSFetchedResultsController">example on GitHub</a> detailing how to queue updates from the <code>NSFetchedResultsControllerDelegate</code>.</p>
