@@ -168,3 +168,48 @@ blockquote > p:first-child {
     left: -0.75em !important;
   }
 }
+
+#marketing {
+  background-color: @gray-light;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  clear: both;
+
+  @media only screen and (min-width: 768px) {
+    padding: 40px;
+  }
+
+  img {
+    width: 40%;
+    padding-bottom: 20px;
+
+    @media only screen and (min-width: 768px) {
+    width: 20%;
+      padding-bottom: 0px;
+      padding-right: 20px;
+      float: left;
+    }
+  }
+
+  h3 {
+    font-size: 20pt;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0px;
+    .clearfix();
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: @gray-dark;
+    }
+  }
+}

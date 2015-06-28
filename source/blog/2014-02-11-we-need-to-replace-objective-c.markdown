@@ -1,6 +1,7 @@
 ---
 title: "We Need to Replace Objective-C"
 date: 2014-02-11 00:00
+link_to: swift
 ---
 
 <import><p>I thought that, in 2014, it was just taken for granted that Objective-C needs to be replaced. I thought that we were all on the same page.</p>

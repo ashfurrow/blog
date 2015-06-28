@@ -2,6 +2,7 @@
 title: Protocols and Swift
 date: 2015-02-01 13:00:00 UTC
 summary: "<p>The other day I posed this (somewhat cryptic) question to Twitter...</p>"
+link_to: swift
 ---
 
 The other day I posed this (somewhat cryptic) question to Twitter: 

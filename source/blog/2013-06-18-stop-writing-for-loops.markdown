@@ -1,6 +1,7 @@
 ---
 title: "Stop Writing For Loops"
 date: 2013-06-18 00:00
+link_to: swift
 ---
 
 <import><p>Most of the time, when we use a <code>for</code> loop, it's to iterate over some collection. Typically an array. We used to write things like this:</p>

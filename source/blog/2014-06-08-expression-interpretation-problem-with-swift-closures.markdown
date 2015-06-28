@@ -1,6 +1,7 @@
 ---
 title: "Expression Interpretation Problem with Swift Closures"
 date: 2014-06-08 00:00
+link_to: swift
 ---
 
 <import><p>I was working with <a href="http://twitter.com/nottombrown">someone</a> on an <a href="https://github.com/modocache/Quick">open-source testing framework for Swift</a> and we came across the following problem. If the last statement in a closure can be interpreted as an expression, then the Swift compiler will try and interpret that as the return value for that closure, which can conflict with an expected type. </p>

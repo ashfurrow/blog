@@ -1,6 +1,7 @@
 ---
 title: "Virtues of Modern Objective-C"
 date: 2013-12-31 00:00
+link_to: swift
 ---
 
 <import><p>Well, here we are again. Another New Year's Eve, another blog post list of changes to make in the new year. I thought I'd follow up <a href="http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c">last year's post</a> with a little more positive one about virtuous habits that we should all endeavour to integrate into our routines. </p>

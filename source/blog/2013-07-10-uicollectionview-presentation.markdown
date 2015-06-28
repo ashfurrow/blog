@@ -1,6 +1,7 @@
 ---
 title: "UICollectionView Presentation"
 date: 2013-07-10 00:00
+link_to: collectionview
 ---
 
 <import><p>I did a presentation on <code>UICollectionView</code> at <a href="http://tacow.org">TACOW</a> last night. The presentation is a little different than I normally do for a technical talk because I didn't go through the API, but rather focused on the three most important messages to remember when working with <code>UICollectionView</code>:</p>

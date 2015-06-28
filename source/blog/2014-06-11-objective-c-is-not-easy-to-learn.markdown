@@ -1,6 +1,7 @@
 ---
 title: "Objective-C is Not Easy to Learn"
 date: 2014-06-11 00:00
+link_to: swift
 ---
 
 <import><p>I read <a href="http://www.bignerdranch.com/blog/ios-developers-need-to-know-objective-c/">this blog post</a> by Aaron Hillegass this morning and was immediately disappointed. </p>

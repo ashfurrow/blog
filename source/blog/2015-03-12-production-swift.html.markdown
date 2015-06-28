@@ -4,6 +4,7 @@ date: 2015-03-12 21:40:53 UTC
 background_image: /img/blog/production-swift/header.jpg
 background_image_source: https://www.flickr.com/photos/97226415@N08/16300562689/in/faves-56453286@N04/
 summary: Before I left Europe, I gave a talk at <a href="http://www.dotswift.io">dotSwift</a>, one of the first conferences focusing exclusively on Apple's new programming language.
+link_to: swift
 ---
 
 Before I left Europe, I gave a talk at [dotSwift](http://www.dotswift.io), one of the first conferences focusing exclusively on Apple's new programming language. Well, the videos have bene posted, and I'm very happy with the results.

@@ -1,4 +1,5 @@
 <% wrap_layout :layout do %>
+<% link = current_resource.metadata[:page]["link_to"] %>
 
   <!-- Page Header -->
   <%= partial("header", :locals => { :title => current_article.title, :subtitle => "", :style => "post-heading" }) %>
@@ -12,8 +13,11 @@
         <hr>
         <span class="meta">Posted on <%= current_article.date.strftime('%B %e, %Y') %></span>
         <hr />
+        <% if link %>
+          <%= partial("marketing", :locals => { :book => link }) unless link.nil? %>
+          <hr />
+        <% end %>
         <%= partial("article_pager") %>
-        </ul>
       </div>
     </div>
   </div>

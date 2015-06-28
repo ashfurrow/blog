@@ -1,6 +1,7 @@
 ---
 title: "Exploring UIAlertController"
 date: 2014-09-07 00:00
+link_to: swift
 ---
 
 <import><p>This morning, I was working on the <a href="https://github.com/AshFurrow/Moya/issues/39">sample app</a> for <a href="https://github.com/AshFurrow/Moya">Moya</a>, a network abstraction framework that I’ve built on top of <a href="https://github.com/Alamofire/Alamofire">Alamofire</a>. I needed a way to grab some user text input, so I turned to <code>UIAlertView</code>. Turns out that that’s deprecated in favour of <code>UIAlertController</code>. Hmm. </p>

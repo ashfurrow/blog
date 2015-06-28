@@ -1,6 +1,7 @@
 ---
 title: "SwiftCrunch Hackathon"
 date: 2014-07-06 00:00
+link_to: swift
 ---
 
 <import><p>After WWDC, once Swift had been announced, I was contacted by some developers in Poland who wanted to organize the first ever Swift hackathon. Really neat idea – and they wondered if I was interested in giving the keynote. </p>
