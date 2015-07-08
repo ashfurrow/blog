@@ -70,6 +70,7 @@ past_talks:
   dates: April 27, 2015
   location: Istanbul, Turkey
   image: /img/speaking/productionswift.png
+  video: https://www.youtube.com/watch?v=zPbLYWmLPow
 - name: Catching up with Swift
   conference: Philly Emerging Technology
   url: http://phillyemergingtech.com/sessions/catching-up-with-swift/
