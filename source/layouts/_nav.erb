@@ -26,6 +26,10 @@
         <li>
           <%= link_to 'Speaking', '/speaking.html' %>
         </li>
+        <li>
+          <%= link_to 'Blog Feed', data.site.feed_link, id: 'feed_text_link' %>
+          <%= link_to '<i class="fa fa-rss-square"></i>', data.site.feed_link, id: 'feed_link' %>
+        </li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
