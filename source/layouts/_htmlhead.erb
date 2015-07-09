@@ -1,14 +1,14 @@
 <%
 
 def opengraph_description 
-	if current_article
-		summary = current_article.metadata[:page]["summary"] or current_article.summary
-		description = Nokogiri::HTML(summary).xpath('//p').map { |paragraph|
-			"#{ paragraph.inner_text} "
-		}.reduce('', :+) 
-	end
+  if current_article
+    summary = current_article.metadata[:page]["summary"] or current_article.summary
+    description = Nokogiri::HTML(summary).xpath('//p').map { |paragraph|
+        "#{ paragraph.inner_text} "
+    }.reduce('', :+) 
+  end
 
-	description or data.site.description
+  description or data.site.description
 end
 
 %>

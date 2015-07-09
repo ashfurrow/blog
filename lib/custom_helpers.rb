@@ -4,7 +4,7 @@ module CustomHelpers
       title = current_resource.metadata[:page]["title"]
       return title + ' - ' + data.site.name unless title.nil?
     elsif current_article
-      return (current_article.title + ' - ' + data.site.name)
+      return "#{current_article.title} - #{data.site.name}"
     end
 
     data.site.name
