@@ -7,10 +7,25 @@ code, pre {
   background-color: @gray-light;
 }
 
-#feed_link {
-  font-size: 200%; 
-  position: relative; 
-  top: -2px;
+.nav {
+  #feed_text_link {
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  #feed_link {
+    font-size: 16px;
+
+    display: none;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      display: inherit;
+    }
+  }
 }
 
 .header_image_link_container {
