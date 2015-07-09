@@ -177,6 +177,7 @@ past_talks:
   dates: December 21, 2013
   location: Toronto, Canada
   image: /img/speaking/collectionview.png
+  hidden: true
 - name: GitHub for Designers
   conference: FITC Screens 2013
   slides: https://speakerdeck.com/ashfurrow/github-for-designers
@@ -190,6 +191,7 @@ past_talks:
   dates: September 10, 2013
   location: Denver, Colorado
   image: /img/speaking/oss.png
+  hidden: true
 - name: Developers Should Learn Photography Blitz Talk
   conference: NSNorth 2013
   url: http://nsnorth.ca/2013
@@ -197,6 +199,7 @@ past_talks:
   dates: April 19–21, 2013
   location: Ottawa, Canada
   image: /img/speaking/photography.png
+  hidden: true
 - name: Objective-C Vitamins
   conference: TechTalksTO
   url: http://techtalksto.com/post/40607791416/ash-furrow-presenting-accessibility-and-unit-testing
@@ -220,3 +223,4 @@ past_talks:
   dates: February 22, 2012
   location: Toronto, Canada
   image: /img/speaking/interfaces.png
+  hidden: true
