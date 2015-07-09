@@ -98,6 +98,7 @@ past_talks:
   conference: MBLT Dev
   url: http://mbltdev.ru
   slides: https://speakerdeck.com/ashfurrow/functional-reactive-programming-in-swift
+  video: https://www.youtube.com/watch?v=tRCgBuJsNtg
   code: https://github.com/AshFurrow/MBLTDev
   dates: October 28, 2014
   location: Moscow, Russia
