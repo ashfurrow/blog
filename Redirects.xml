@@ -137,13 +137,4 @@
             <ReplaceKeyWith>feed.rss.xml</ReplaceKeyWith>
         </Redirect>
     </RoutingRule>
-    <RoutingRule>
-        <Condition>
-            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
-        </Condition>
-        <Redirect>
-            <HostName>ashfurrow.com</HostName>
-            <ReplaceKeyWith>404/#</ReplaceKeyWith>
-        </Redirect>
-    </RoutingRule>
 </RoutingRules>
