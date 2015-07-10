@@ -76,6 +76,17 @@ module CustomHelpers
       }.reduce('', :+).strip
     end
 
+       # If there is a resource, it is responsible for assigning a title.
+    if current_resource
+      url = current_resource.url
+
+      # Need to check if it's a numbered page.
+      if url =~ /\/page\/[0-9]+\//
+        page_number = url.split('/')[2]
+        description = "#{data.site.name}'s Blog – Page #{page_number}."
+      end
+    end
+
     description or data.site.description
   end
 
