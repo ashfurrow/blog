@@ -21,6 +21,15 @@
 <link rel="image_src" href="<%= data.site.dark_image %>" />
 <meta itemprop="image" content="<%= data.site.dark_image %>"/>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<%=
+
+if current_resource
+  if current_resource.metadata[:page]["noindex"] == true
+    "<meta name='robots' content='noindex' />"
+  end
+end
+
+%>
 
 <!-- Rich Snippets -->
 <script type="application/ld+json">
