@@ -1,18 +1,3 @@
-<%
-
-def opengraph_description 
-	if current_article
-		summary = current_article.metadata[:page]["summary"] or current_article.summary
-		description = Nokogiri::HTML(summary).xpath('//p').map { |paragraph|
-			"#{ paragraph.inner_text} "
-		}.reduce('', :+) 
-	end
-
-	description or data.site.description
-end
-
-%>
-
 <meta charset="utf-8" />
 <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
 <title><%= html_title(current_article, current_resource) %></title>
@@ -27,16 +12,48 @@ end
 <meta property="og:title" content="<%= og_title(current_article, current_resource) %>"/>
 <meta property="og:url" content="http://ashfurrow.com<%= current_resource.url %>"/>
 <meta property="og:type" content="website"/>
-<meta property="og:description" content="<%= opengraph_description %>"/>
+<meta property="og:description" content="<%= page_description %>"/>
 <meta property="og:image" content="<%= og_image_or_default(current_article, current_resource) %>"/>
 <meta itemprop="name" content="Blog"/>
 <meta itemprop="url" content="http://ashfurrow.com<%= current_resource.url %>"/>
-<meta itemprop="description" content="<%= data.site.description %>"/>
+<meta itemprop="description" content="<%= page_description %>"/>
 <meta itemprop="thumbnailUrl" content="<%= data.site.dark_image %>"/>
 <link rel="image_src" href="<%= data.site.dark_image %>" />
 <meta itemprop="image" content="<%= data.site.dark_image %>"/>
-<meta name="description" content="<%= data.site.description %>" />
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<%=
+
+if current_resource
+  if current_resource.metadata[:page]["noindex"] == true
+    "<meta name='robots' content='noindex' />"
+  end
+end
+
+%>
+
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+{ 
+  "@context" : "http://schema.org",
+  "@type" : "Person",
+  "name" : "Ash Furrow",
+  "url" : "http://ashfurrow.com",
+  "image" : "http://static.ashfurrow.com/ashfurrow_square.jpg",
+  "sameAs" : [ 
+    "http://twitter.com/ashfurrow",
+    "http://instagram.com/ashfurrow",
+    "http://github.com/ashfurrow"
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://ashfurrow.com",
+  "logo": "<%= data.site.image %>"
+}
+</script>
 
 <!-- Custom Fonts -->
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
