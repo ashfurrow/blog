@@ -83,4 +83,12 @@ task :server do
   Process.wait(middleman)
 end	
 
+desc "Create new blog article"
+task :article, :title do |task, args|
+  title = args[:title]
+  abort "You must specify a title." if title.nil? || title.length < 1
+
+  sh "bundle exec middleman article '#{title}'"
+end
+
 task :default => :server
