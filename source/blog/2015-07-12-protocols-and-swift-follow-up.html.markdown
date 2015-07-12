@@ -14,7 +14,7 @@ Well, Swift 2 has been in beta for a month now, and protocols are hot stuff.
 
 [Soroush Khanlou](http://www.twitter.com/khanlou) has written a [great post exploring protocols in Swift 2](http://khanlou.com/2015/06/protocol-oriented-networking/) that I'd highly recommend checking out. It explores a case for doing networking through protocol extensions. As the creator of a [hip and cool networking library](https://github.com/ashfurrow/Moya), it's an approach that I had not considered, and need to reflect on. I've always assumed Moya would be used with enums, but with Swift 2, it makes sense to reevaluate that assumption. 
 
-This brings up an important point that I've been yelling at you people for a year now: solving problems in Swift _is not_ the same as solving the same problems in Objective-C. 
+This brings up an important point that I've been yelling at you people for a year now: solving problems using Swift _is not_ the same as solving the same problems using Objective-C. 
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/LtrzZb5Jw0g" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
