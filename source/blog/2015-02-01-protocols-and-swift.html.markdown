@@ -275,9 +275,9 @@ struct Kibble: Food {
     let caloriesPerGram: Double = 40
 
     func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer {
-        var newConsuner = consumer
-        newConsuner.calorieCount += grams * caloriesPerGram
-        return newConsuner
+        var newConsumer = consumer
+        newConsumer.calorieCount += grams * caloriesPerGram
+        return newConsumer
     }
 }
 
@@ -286,10 +286,10 @@ struct FancyFeast: Food {
     let milliLitresWaterPerGram: Double = 0.2
 
     func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer {
-        var newConsuner = consumer
-        newConsuner.calorieCount += grams * caloriesPerGram
-        newConsuner.hydrationLevel += grams * milliLitresWaterPerGram
-        return newConsuner
+        var newConsumer = consumer
+        newConsumer.calorieCount += grams * caloriesPerGram
+        newConsumer.hydrationLevel += grams * milliLitresWaterPerGram
+        return newConsumer
     }
 }
 ```
