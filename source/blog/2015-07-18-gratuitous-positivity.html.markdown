@@ -21,7 +21,7 @@ So if people do open source because it makes them happy, then the joy that they 
 
 Turns out that the most important part of open source isn't the code, it's empathy. And it's difficult for empathy to thrive in a community that mainly communicates through text. 
 
-If someone makes a mistake, like opening a duplicate issue, it's important to be gentle. This is probably a beginner, and they probably didn't know that they should look for exisitng issues before opening one.
+If someone makes a mistake, like opening a duplicate issue, it's important to be gentle. This is probably a beginner, and they probably didn't know that they should look for existing issues before opening one.
 
 The problem of text-based communication is that there is no _tone_: beginners often _interpret_ the tone of messages from existing contributors to be negative. Well-intentioned library maintainers can inadvertently hurt a beginner's feelings.
 
