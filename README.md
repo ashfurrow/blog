@@ -41,6 +41,7 @@ Thanks to the following people and projects:
 - [This colour scheme](http://www.colourlovers.com/palette/869489/Caribbean_Dusk)
 - [s3cmd](http://s3tools.org/)
 - [vertical timeline jquery thingy](http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html)
+- [@CloudyConway](http://twitter.com/CloudyConway)
 
 Photo Credits
 ----------------
@@ -51,3 +52,4 @@ Photo | Photographer
 --- | ---
 "Software" banner on [Portfolio](http://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
 Blogging image on [Portfolio](http://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
+Several blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744))
