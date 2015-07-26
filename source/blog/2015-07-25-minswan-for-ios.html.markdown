@@ -54,7 +54,7 @@ Consider Bob. Bob is angry. He says:
 
 Sounds like Bob might be having a bad day.
 
-Alice sees Bob's comment and replies:
+Carol sees Bob's comment and replies:
 
 > That's not very kind, Bob.
 
