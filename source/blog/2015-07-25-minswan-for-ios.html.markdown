@@ -70,7 +70,9 @@ Think about how much happier you could be without a constant stream of negativit
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">For the last months I’ve been muting people who are too negative on Twitter, and it’s been great. Highly recommended.</p>&mdash; Chris Eidhof (@chriseidhof) <a href="https://twitter.com/chriseidhof/status/624158166830477312">July 23, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[Orta](http://twitter.com/orta) has said that "[friction gets followers](https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/)" – and that's true, but only if we let it. 
+[Orta](http://twitter.com/orta) has said that "[friction gets followers](https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/)" – and that's true, but only if we let it. He has some great specific suggestions here: 
+
+<script async class="speakerdeck-embed" data-slide="35" data-id="84143e0681d0483d8bdb6ecc94b75bbf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 Addressing negativity can be hard. It takes courage to tell someone that they're being hurtful. What's important is to keep the feedback confined to what was said, and not to the person saying it. 
 
