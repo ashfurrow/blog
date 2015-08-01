@@ -1,10 +1,6 @@
 require "lib/custom_helpers"
 require "lib/add_links_to_navigation.rb"
 
-helpers CustomHelpers
-
-activate :add_links_to_navigation
-
 ###
 # Blog settings
 ###
@@ -28,43 +24,39 @@ activate :blog do |blog|
   blog.layout = "blog_post"
 end
 
+###
+# Other settings
+###
+
+helpers CustomHelpers
+
 activate :directory_indexes
+activate :add_links_to_navigation
 
 page "/feed.xml", layout: false
 page "/feed.rss.xml", layout: false
 page "/sitemap.xml", layout: false
 
 set :css_dir, 'css'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'img'
-
 set :partials_dir, 'layouts'
 
+###
 # Build-specific configuration
+###
+
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
-  
   activate :minify_css
   activate :minify_javascript
 end
 
+###
+# Sync setup
+###
+
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'staging.ashfurrow.com'
+  s3_sync.bucket                     = 'staging.ashfurrow.com' # Plugin needs a default bucket, better use staging.
   s3_sync.aws_access_key_id          = ENV['SITE_AWS_KEY']
   s3_sync.aws_secret_access_key      = ENV['SITE_AWS_SECRET']
 end
