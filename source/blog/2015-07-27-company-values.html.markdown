@@ -1,5 +1,5 @@
 ---
-title: Campany Values
+title: Company Values
 date: 2015-07-27 15:36:24 UTC
 ---
 
