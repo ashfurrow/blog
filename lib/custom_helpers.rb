@@ -90,6 +90,26 @@ module CustomHelpers
     description or data.site.description
   end
 
+  # Wraps the given HTML in a row/wide col span, and places it outside the usual row/col span.
+  # Only meant to be used in a blog post.
+  def make_wide(html)
+    <<-EOS
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-10 col-lg-offset-1 col-md-12">
+
+#{ html }
+
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+EOS
+  end
+
 end
 
 class String
