@@ -6,7 +6,7 @@ require "lib/add_links_to_navigation.rb"
 ###
 
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true
+set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
 
 activate :syntax
 
