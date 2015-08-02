@@ -2,6 +2,8 @@ require 'cgi'
 require 'middleman-core'
 require 'nokogiri'
 
+# Used to add octothorpes to h2 and h3 tags that have id's.
+
 # Credit goes to the CocoaPods team in figuring out how to do this: https://github.com/CocoaPods/guides.cocoapods.org/blob/4913cffd1b1bf0b85cdfc33614cb5b2d6240ff02/lib/add_links_to_navigation.rb
 
 module AddLinksToNavigation
