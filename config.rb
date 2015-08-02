@@ -1,5 +1,6 @@
 require "lib/custom_helpers"
 require "lib/add_links_to_navigation.rb"
+require "lib/modify_widths.rb"
 
 ###
 # Blog settings
@@ -32,6 +33,7 @@ helpers CustomHelpers
 
 activate :directory_indexes
 activate :add_links_to_navigation
+activate :modify_widths
 
 page "/feed.xml", layout: false
 page "/feed.rss.xml", layout: false
