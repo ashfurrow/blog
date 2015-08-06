@@ -1,6 +1,7 @@
 ---
 title: Drawing
 date: 2015-08-05 20:09:09 UTC
+og_image: /img/blog/drawing/drawing3.jpg
 ---
 
 I've never been able to draw. When I was a kid, I would try but my drawings look terrible – nothing at all what I was trying to create. In middle school, I remember periodically checking a book out from the library titled "How to Draw Superheroes", but I gave up overtime. I just. Couldn't. Draw.
@@ -43,11 +44,11 @@ But then I looked, and whoa.
 
 So I kept at it. Added some broader details, then finer ones. It was going really well. I was just copying another drawing, but I was having fun. And I was drawing! _Me_! 
 
-[![First sketches](/img/blog/drawing/drawing2_small.jpg)](/img/blog/drawing/drawing2.jpg)
+[![Intermediate sketches](/img/blog/drawing/drawing2_small.jpg)](/img/blog/drawing/drawing2.jpg)
 
 About an hour in, my hand cramped, so I stopped. I took another photo, signed and dated my drawing, and reflected.
 
-[![First sketches](/img/blog/drawing/drawing3_small.jpg)](/img/blog/drawing/drawing3.jpg)
+[![Final sketch](/img/blog/drawing/drawing3_small.jpg)](/img/blog/drawing/drawing3.jpg)
 
 Yeah, it's not an objectively "good" drawing, but I don't really care about that. If you handed me this and asked if the person who drew it could draw, I'd say "of course."
 
