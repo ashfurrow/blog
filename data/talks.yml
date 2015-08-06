@@ -78,6 +78,7 @@ past_talks:
   dates: April 7–8, 2015
   location: Philadelphia, America
   image: /img/speaking/catchingup.png
+  video: http://www.infoq.com/presentations/swift
 - name: Production Swift
   conference: dotSwift
   url: http://www.dotswift.io
