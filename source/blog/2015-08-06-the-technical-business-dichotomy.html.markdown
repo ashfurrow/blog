@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/629051911933677
 
 It's a common trope in the software development world that non-technical people often dictate technical decisions which they are unqualified to make, with hilariously awful results. Programmers recount stories of their own experiences in this situation, and these stories become "I told you so" adages. 
 
-And even though reasonable programmers admit the that business needs to have input on technical decisions, we still feel like _we_ are the best gatekeepers of business' influence. After all, _we_ are the programmers. 
+And even though reasonable programmers admit that the business needs to have input on technical decisions, we still feel like _we_ are the best gatekeepers of business' influence. After all, _we_ are the programmers. 
 
 <!-- more -->
 
