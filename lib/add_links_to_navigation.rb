@@ -13,23 +13,19 @@ module AddLinksToNavigation
 
       app.after_render do |body, path, locs, template_class|
         
-        # There are multiple rendering calls and we want to get the one that renders the blog_post template. 
-        if (path.to_s.index "blog_post") != nil
+        # There are multiple rendering calls and we want to only execute this code once.
+        if (path.to_s.index "layout.erb") != nil
                             
           doc = Nokogiri::HTML(body)
           nodes = doc.css(".container h2[id], .container h3[id]")
           
-          if nodes.count > 0
             nodes.each do |header|
-              if header.attributes["id"]
-                id = header.attributes["id"].content.gsub(/[^a-zA-Z-]/, '')
-                header.attributes["id"].value = id
-                if header.parent['class'] == 'cntl-content'
-                  header.inner_html = header.inner_html + "<a class='header-link' href='\##{id}'>\#</a>"
-                else 
-                  header.inner_html = "<a class='header-link' href='\##{id}'>\#</a>" + header.inner_html
-                end
-              end
+            id = header.attributes["id"].content.gsub(/[^a-zA-Z-]/, '')
+            header.attributes["id"].value = id
+            if header.parent['class'] == 'cntl-content'
+              header.inner_html = header.inner_html + "<a class='header-link' href='\##{id}'>\#</a>"
+            else
+              header.inner_html = "<a class='header-link' href='\##{id}'>\#</a>" + header.inner_html
             end
 
             body = doc.to_s
