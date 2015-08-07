@@ -9,7 +9,11 @@ When I was interviewing at [Teehan+Lax](http://teehanlax.com), Jon Lax handed me
 
 <!-- more -->
 
+BEGIN_NARROW
+
 ![T+L Values Booklet](/img/blog/company-values/tl.jpg)
+
+END_NARROW
 
 I still have my booklet. It defines the values and also explains why they’re important. Jon would regularly refer back to these values when making decisions. 
 
