@@ -39,6 +39,7 @@ past_talks:
   dates: June 12, 2015
   image: /img/speaking/altconf.png
   slides: https://speakerdeck.com/ashfurrow/functional-reactive-awesome
+  video: https://realm.io/news/altconf-ash-furrow-functional-reactive-awesomeness-with-swift/
 - name: WWDC Swift Panel
   conference: SF Swift Language User Group
   dates: June 10, 2015
