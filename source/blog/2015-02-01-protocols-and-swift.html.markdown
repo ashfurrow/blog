@@ -147,6 +147,8 @@ unowned(unsafe) var dataSource: UITableViewDataSource?
 
 Ok, now how about that `UITableViewDataSource` protocol? 
 
+BEGIN_WIDE
+
 ```swift
 protocol UITableViewDataSource : NSObjectProtocol {
     
@@ -183,9 +185,13 @@ protocol UITableViewDataSource : NSObjectProtocol {
 }
 ```
 
+END_WIDE
+
 Yikes! I’ve included some of the comments from Apple’s header files to show you how complex this protocol is. For example, the “Moving/reordering” function determines if a given row can be moved, but is only invoked if the datasource *also* implements the final method in the protocol. One wonders why these two interdependent methods are so far apart in the header file. 
 
 If we were going to write a new, purely Swift `TableView` type, we’ll need a data source to get information about the content we’ll be displaying. By following Justin’s advice, it’s not hard to see how things could be rewritten (let’s assume we have Swift equivalent types for `NSIndexPath`, `UITableViewCell`, etc). 
+
+BEGIN_WIDE
 
 ```swift
 class TableView {
@@ -227,6 +233,8 @@ protocol TableViewIndexDataSource: class {
     func tableView(tableView: TableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int
 }
 ```
+
+END_WIDE
 
 I’m not saying that this is necessarily how I would actually write things – it’s only supposed to show you how dividing areas of concern into separate protocols makes things a lot more clear. 
 
