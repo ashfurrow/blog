@@ -31,6 +31,7 @@ past_talks:
   location: Brooklyn, America
   dates: June 24, 2015
   image: /img/speaking/brooklyn.png
+  video: https://vimeo.com/136057491
   hidden: true
 - name: Functional Reactive Awesome
   conference: AltConf 2015
