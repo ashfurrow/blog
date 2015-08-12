@@ -306,43 +306,20 @@
 
   #photography_list {
     li {
-      background: 0 0 no-repeat fixed;
       vertical-align: middle;
       position: relative;
-
-      svg {
-        fill: @gray-dark;
-        &:hover {
-          fill: @brand-primary;
-
-          .dark-stroke {
-            stroke: @brand-primary;
-          }
-        }
-
-        .dark-stroke {
-          stroke: @gray-dark;
-        }
-
-        .white-stroke {
-          stroke: white;
-        }
-      }
-
+      font-size: 48px;
       min-width: 70px;
-    }
-
-    li {
-      -webkit-transform: scale(0.7);
-      -moz-transform:    scale(0.7);
-      -ms-transform:     scale(0.7);
-      -o-transform:      scale(0.7);
-      transform:         scale(0.7);
 
       margin: 10px 10px;
       /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) { 
+        font-size: 60px;
         margin: 10px 50px;
+      }
+
+      a {
+        text-decoration: none;
       }
     }
   }

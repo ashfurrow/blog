@@ -3,7 +3,7 @@
 <title><%= html_title(current_article, current_resource) %></title>
 <%= feed_tag :atom, data.site.feed_link, title: "Atom Feed" %>
 <%= feed_tag :rss, data.site.feed_rss_link, title: "RSS Feed" %>
-<%= stylesheet_link_tag "bootstrap.min", "clean-blog", "syntax", "fontcustom/fontcustom.css", "cntl.css", "custom" %>
+<%= stylesheet_link_tag "bootstrap.min", "clean-blog", "syntax", "fontcustom.css", "cntl.css", "custom" %>
 
 <!-- Meta stuff -->
 <link rel="canonical" href="http://ashfurrow.com<%= current_resource.url %>"/>

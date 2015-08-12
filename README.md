@@ -42,6 +42,7 @@ Thanks to the following people and projects:
 - [s3cmd](http://s3tools.org/)
 - [vertical timeline jquery thingy](http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html)
 - [@CloudyConway](http://twitter.com/CloudyConway)
+- [IcoMoon](https://icomoon.io)
 
 Photo Credits
 ----------------
