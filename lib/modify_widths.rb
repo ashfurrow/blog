@@ -1,11 +1,10 @@
 require 'cgi'
 require 'middleman-core'
-require 'nokogiri'
 
 # Wraps the given HTML in a row/wide col span, and places it outside the usual row/col span.
 # Only meant to be used in a blog post.
 #
-# Usage: surround anything you want wider or narrower with BEGIN_(WIDE|NARROW) and END_(WIDE|NARROW).
+# Usage: surround anything you want wider or narrower with BEGIN_(WIDE|EXTRA_WIDE|NARROW) and END_(WIDE|EXTRA_WIDE|NARROW).
 # Example:
 #
 # BEGIN_WIDE
@@ -19,63 +18,13 @@ module ModifyWidths
   class << self
 
     def registered(app, options={})
+      app.after_render do |body, path, locs, template|
 
-      app.after_render do |body, path, locs, template_class|
-
-        wide_sizeclass = 'col-lg-10 col-lg-offset-1 col-md-12'
-        extra_wide_sizeclass = 'col-lg-12 col-md-12'
-        narrow_sizeclass = 'col-lg-6 col-lg-offset-3 col-md-12'
-
-        def make (sizeclass, contents)
-          <<-EOS
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="#{sizeclass}">
-              #{ contents }
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          EOS
-        end
-        
         # There are multiple rendering calls and we want to get the one that renders the blog_post template. 
         if (path.to_s.index "blog_post") != nil
-
-          wides = body.scan(/<p>BEGIN_WIDE<\/p>(.*?)<p>END_WIDE<\/p>/m).flatten
-
-          wides.each do |section|
-            body.gsub!(section, make(wide_sizeclass, section))
-          end
-
-          body.gsub!(/<p>(BEGIN|END)_WIDE<\/p>/, '')
-
-
-
-
-
-          extra_wides = body.scan(/<p>BEGIN_EXTRA_WIDE<\/p>(.*?)<p>END_EXTRA_WIDE<\/p>/m).flatten
-
-          extra_wides.each do |section|
-            body.gsub!(section, make(extra_wide_sizeclass, section))
-          end
-
-          body.gsub!(/<p>(BEGIN|END)_EXTRA_WIDE<\/p>/, '')
-
-
-
-
-          narrows = body.scan(/<p>BEGIN_NARROW<\/p>(.*?)<p>END_NARROW<\/p>/m).flatten
-
-          narrows.each do |section|
-            body.gsub!(section, modified = make(narrow_sizeclass, section))
-          end
-
-          body.gsub!(/<p>(BEGIN|END)_NARROW<\/p>/, '')
-
+          replace_with_size body, "WIDE", 'col-lg-10 col-lg-offset-1 col-md-12'
+          replace_with_size body, "EXTRA_WIDE", 'col-lg-12 col-md-12'
+          replace_with_size body, "NARROW", 'col-lg-6 col-lg-offset-3 col-md-12'
         end
         
         body
@@ -84,9 +33,34 @@ module ModifyWidths
 
     alias :included :registered
   end
-
 end
 
 ::Middleman::Extensions.register(:modify_widths) do
   ::ModifyWidths
+end
+
+def replace_with_size (body, block_delineator, size)
+  # Look for matching blocks
+  blocks = body.scan(/<p>BEGIN_#{block_delineator}<\/p>(.*?)<p>END_#{block_delineator}<\/p>/m).flatten
+
+  # Enumerate each block, breaking its contents out into their own, specially sized div.
+  blocks.each do |section|
+    modified = <<-EOS
+      </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+    </div> <!-- row -->
+
+    <div class="row">
+      <div class="#{size}">
+        #{ section }
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    EOS
+    body.gsub!(section, modified)
+  end
+
+  # Remove the block delineators
+  body.gsub!(/<p>(BEGIN|END)_#{block_delineator}<\/p>/, '')
 end
