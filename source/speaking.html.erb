@@ -10,6 +10,7 @@ description: I love sharing knowledge – in the form of blog posts, podcasts, o
 
 <%
 
+# This is an example of a "full" talk instance.
 # <li>
 #   <div class="image-container">
 #     <img src="/img/portfolio/blogging.jpg" />
@@ -104,10 +105,9 @@ end
 def talks_to_html(type, talks)
   if talks.count > 0
     formatted_talks = talks.select{ |talk| talk["hidden"] != true }.map { |talk| talk_to_html(type, talk) }.reduce(:+)
-    # columns(formatted_talks)
     formatted_talks
   else
-    # Just gonna assume we always have past talks ¯\_(ツ)_/¯
+    # Just gonna assume we always have past talks, error always says 'upcoming' ¯\_(ツ)_/¯
     <<-EOS
       <div class="container">
         <div class="row">
@@ -151,9 +151,7 @@ end
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
         <ul>
-
           <%= talks_to_html(:future, data.talks.upcoming_talks) %>
-
         </ul>
 
       </div>
@@ -173,9 +171,7 @@ end
         <p>Here's a list of selected talks I've given in the past.</p>
 
         <ul>
-
           <%= talks_to_html(:past, data.talks.past_talks) %>
-          
         </ul>
 
       </div>
@@ -193,7 +189,7 @@ end
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
         <p>Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. It's not enough to understand what you're doing if you don't understand <em>why</em> you're doing it.</p>
-        
+
         <p>If you're interested in having me speak, <a href="mailto:ash@ashfurrow.com">get in touch</a>.</p>
 
       </div>
