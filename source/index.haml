@@ -10,7 +10,7 @@ changefreq: daily
 
 .container
   .row
-    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+    %div[standard_width]
       - page_articles.each_with_index do |article, i|
         .post-preview
           %h2.post-title= link_to article.title, article
@@ -20,8 +20,8 @@ changefreq: daily
 
         -# Add hr between each article
         - if (i != page_articles.size - 1)
-          %hr
-      %hr
+          %hr/
+      %hr/
 
       / Pager
       - if paginate

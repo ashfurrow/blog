@@ -5,9 +5,9 @@
     .navbar-header.page-scroll
       %button.navbar-toggle{type: 'button', 'data-toggle' => 'collapse', 'data-target' => '#bs-example-navbar-collapse-1'}
         %span.sr-only Toggle Navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
+        / Hamburger
+        - 3.times do
+          %span.icon-bar
       %a.navbar-brand{ href: '/'} 
         %i.icon-site-logo
 

@@ -7,10 +7,10 @@
 %header.intro-header#image-header{style: "background-image: url('#{image_name}');"}
   .container
     .row
-      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 
+      %div[standard_width] 
         %div{class: (defined? style) ? style : 'site-heading' }
           %h1= title
-          - if subtitle.length > 0
+          - if (defined? subtitle) && subtitle.length > 0
             %hr.small/
             %span.subheading= subtitle
 

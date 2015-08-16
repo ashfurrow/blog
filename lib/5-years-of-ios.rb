@@ -1,3 +1,5 @@
+
+# This class could be extracted if we do another timeline.
 class Event 
   attr_accessor :year
   attr_accessor :heading

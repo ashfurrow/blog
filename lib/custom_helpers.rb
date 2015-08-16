@@ -1,4 +1,7 @@
 module CustomHelpers
+
+  # Meta stuff
+
   def html_title(current_article, current_resource)
     # If it's an article, generate only this way.
     if current_article
@@ -90,7 +93,32 @@ module CustomHelpers
     description or data.site.description
   end
 
+  # Divs' Widths
+
+  class Width
+    attr_accessor :html_class
+    attr_accessor :html_id
+
+    def initialize(html_class=nil, html_id=nil)
+      @html_class = html_class
+      @html_id = html_id
+    end
+
+    def id
+      html_id
+    end
+
+    def haml_object_ref
+      html_class
+    end
+  end
+
+  def standard_width(html_id=nil)
+    return Width.new "col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1", html_id
+  end
 end
+
+# Private helpers
 
 class String
   def makeAbsoluteURL!
