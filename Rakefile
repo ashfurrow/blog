@@ -1,14 +1,16 @@
-﻿namespace :deploy do
-	desc "Deployment to production"
-	task :production do
-	  sh 'bundle exec middleman s3_sync --bucket=ashfurrow.com'
-	end
+require 'rake'
 
-	desc "Deployment to staging"
-	task :staging do
-	  sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'    
+namespace :deploy do
+  desc "Deployment to production"
+  task :production do
+    sh 'bundle exec middleman s3_sync --bucket=ashfurrow.com'
+  end
+
+  desc "Deployment to staging"
+  task :staging do
+    sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
     sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
-	end
+  end
 
   desc "Deploys RSS and Atom feeds"
   task :feeds do
@@ -17,21 +19,21 @@
 
   desc "Deploys to staging, production, and syncs feeds"
   task :all do
-    sh 'rake deploy:staging'
-    sh 'rake deploy:production'
-    sh 'rake deploy:feeds'
+    Rake::Task['deploy:staging'].invoke
+    Rake::Task['deploy:production'].invoke
+    Rake::Task['deploy:feeds'].invoke
   end
 
   desc "Deploy if Travis environment variables are set correctly"
   task :travis do
     branch = ENV['TRAVIS_BRANCH']
     pull_request = ENV['TRAVIS_PULL_REQUEST']
-    
+
     abort 'Must be run on Travis' unless branch
-    
+
     if pull_request != 'false'
       puts 'Skipping deploy for pull request; can only be deployed from master branch.'
-      exit 0 
+      exit 0
     end
 
     if branch != 'master'
@@ -39,34 +41,34 @@
       exit 0
     end
 
-    sh 'rake deploy:all'
+    Rake::Task['deploy:all'].invoke
   end
 end
 
 namespace :publish do
   desc "Build and deploy to production"
   task :production do
-    sh 'bundle exec middleman build'
-    sh 'rake deploy:production'
-    sh 'rake deploy:feeds'
+    Rake::Task['build'].invoke
+    Rake::Task['deploy:production'].invoke
+    Rake::Task['deploy:feeds'].invoke
   end
 
   desc "Build and deploy to staging"
   task :staging do
-    sh 'bundle exec middleman build'
-    sh 'rake deploy:staging'
+    Rake::Task['build'].invoke
+    Rake::Task['deploy:staging'].invoke
   end
 
   desc "Build and deploy to both staging and production"
   task :all do
-    sh 'bundle exec middleman build'
-    sh 'rake deploy:all'
+    Rake::Task['build'].invoke
+    Rake::Task['deploy:all'].invoke
   end
 end
 
 desc "Build site locally"
 task :build do
-	sh 'bundle exec middleman build --verbose'
+  sh 'bundle exec middleman build --verbose'
 end
 
 desc "Start middleman server"
@@ -81,7 +83,7 @@ task :server do
   }
 
   Process.wait(middleman)
-end	
+end 
 
 desc "Create new blog article"
 task :article, :title do |task, args|
