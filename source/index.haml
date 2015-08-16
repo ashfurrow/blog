@@ -1,0 +1,32 @@
+---
+pageable: true
+per_page: 10
+priority: 0.75
+changefreq: daily
+---
+
+/ Page Header
+= partial :header, :locals => { title: data.site.name, subtitle: data.site.subtitle }
+
+.container
+  .row
+    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+      - page_articles.each_with_index do |article, i|
+        .post-preview
+          %h2.post-title= link_to article.title, article
+          %p.post-meta= article.date.strftime('%B %e, %Y')
+          = article.metadata[:page]["summary"] or article.summary
+          %p= link_to 'Read more...', article.url
+
+        -# Add hr between each article
+        - if (i != page_articles.size - 1)
+          %hr
+      %hr
+
+      / Pager
+      - if paginate
+        %ul.pager
+          - if next_page
+            %li.next= link_to 'Next page', next_page
+          - if prev_page
+            %li.previous= link_to 'Previous page', prev_page
