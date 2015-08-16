@@ -6,7 +6,7 @@ description: I've looked around for examples of software developer portfolios, a
 ---
 
 / Page Header
-= partial :header, locals: { title: 'Ash Furrow', subtitle: 'Awesome super-duper guy.', background_image: "http://static.ashfurrow.com/blog/backgrounds/portfolio-bg.jpg" }
+= partial :header, locals: { title: 'Ash Furrow', subtitle: 'Awesome super-duper guy.', background_image: 'http://static.ashfurrow.com/blog/backgrounds/portfolio-bg.jpg' }
 
 .portfolio
   .container
@@ -33,34 +33,34 @@ description: I've looked around for examples of software developer portfolios, a
         %ul#software_list.list-inline.text-center
           %li
             %h3 Artsy
-            %img{:src => "/img/portfolio/artsy.jpg"}/
+            %img{:src => '/img/portfolio/artsy.jpg'}/
             %div
               %p Since April 2014, I've worked for <a href='https://www.artsy.net'>Artsy</a>, a company with the ambitious goal of making art as popular as music. I work within a small team that makes a few different iOS apps, from the main consumer app to a custom-built auctions kiosk.
               %p Artsy encourages me to grow and learn, and to share that knowledge with others: most of my work is done in the open, and I often write articles for <a href='http://artsy.github.io'>Artsy's developer blog</a>
           %li
             %h3 35mm
-            %img{:src => "/img/portfolio/35mm.jpg"}/
+            %img{:src => '/img/portfolio/35mm.jpg'}/
             %div
               %p 35mm was an ambitious project that I undertook in a team of two others: a designer and an editor. We aimed to change the world for photography-lovers by providing curated photography without advertisements. Although the project was not a success from a financial standpoint, I learnt a lot about writing Newsstand magazines for iOS, including architecting our own backend server in Node.js.
               %p This project is no longer available on the App Store.
           %li
             %h3 500px
-            %img{:src => "/img/portfolio/500px.jpg"}/
+            %img{:src => '/img/portfolio/500px.jpg'}/
             %div
               %p In 2011, I began as the only iOS developer at 500px, architecting and shipping the iPad app. I helped design new features, plan the product roadmap, and respond to customer support inquiries, all while continuing to ship an amazing product.
               %p Eventually, the team grew, and I stepped up to fulfil the team's lead position. From there, I played a crucial role in the design and development of the iPhone application, which shipped late 2012. 500px is <a href='https://500px.com/apps/ipad'>available on the App Store</a>, where it has been downloaded by hundreds of thousands of users.
           %li
             %h3 Storygram
-            %img{:src => "/img/portfolio/storygram.jpg"}/
+            %img{:src => '/img/portfolio/storygram.jpg'}/
             %div
               %p Storygram is the product of a weekend of work that <a href='http://twitter.com/tomcreighton'>Tom Creighton</a> and I did as participants in the Pixel Hack Day, organized by 500px. It was actually featured on <a href='http://thenextweb.com/apps/2012/01/06/instagram-meets-500px-with-the-new-ios-app-storygram/'>The Next Web</a>, as well as the Great Canadian Apps section in the App Store. This app enabled users to collect moments they've captured through Instagram to tell a comprehensive, compelling story, published on 500px.
               %p Pursuant to Instagram's new Terms of Service, we were forced to shut down Storygram late 2013.
   / Community
-  %aside{:style => "background-image: url(/img/portfolio/community_header.jpg);"}
-    %figcaption#community{:name => "community"}
+  %aside{:style => 'background-image: url(/img/portfolio/community_header.jpg);'}
+    %figcaption#community{:name => 'community'}
       %h2 
         Community
-        %a.portfolio-header-link{:href => "#community"} #
+        %a.portfolio-header-link{:href => '#community'} #
       %div
         %p In my home region of Atlantic Canada, we have a saying: "rising tides lift all boats."
   .container
@@ -74,30 +74,30 @@ description: I've looked around for examples of software developer portfolios, a
 
         %blockquote
           See, in all our searching, the only thing we've found that makes the emptiness bearable is each other. —
-          %a{:href => "https://en.wikipedia.org/wiki/Contact_(1997_American_film)"} Contact (1997)
+          %a{:href => 'https://en.wikipedia.org/wiki/Contact_(1997_American_film)'} Contact (1997)
         
         %p I try and participate in the developer community by attending community events and meeting new people. I participate in various open source projects on GitHub and use StackOverflow to ask others for help (and to provide help to others). I co-host a podcast about the iOS world from a cultural perspective, and I encourage people to ask questions on Twitter.
        
         %ul#community_list.list-inline.text-center
           %li
-            %a{:href => "http://github.com/ashfurrow", :title => "GitHub"}
+            %a{:href => 'http://github.com/ashfurrow', :title => 'GitHub'}
               %i.fa.fa-github.fa-3x
           %li
-            %a{:href => "http://stackoverflow.com/users/516359/ash-furrow", :title => "Stack Overflow"}
+            %a{:href => 'http://stackoverflow.com/users/516359/ash-furrow', :title => 'Stack Overflow'}
               %i.fa.fa-stack-overflow.fa-3x
           %li
-            %a{:href => "http://notificationcenter.tv", :title => "Notification Center Podcast"}
+            %a{:href => 'http://notificationcenter.tv', :title => 'Notification Center Podcast'}
               %i.fa.fa-microphone.fa-3x
           %li
-            %a{:href => "http://twitter.com/ashfurrow", :title => "Twitter"}
+            %a{:href => 'http://twitter.com/ashfurrow', :title => 'Twitter'}
               %i.fa.fa-twitter.fa-3x
 
   / Education
-  %aside{:style => "background-image: url(/img/portfolio/education_header.jpg);"}
-    %figcaption#education{:name => "education"}
+  %aside{:style => 'background-image: url(/img/portfolio/education_header.jpg);'}
+    %figcaption#education{:name => 'education'}
       %h2
         Education
-        %a.portfolio-header-link{:href => "#education"} #
+        %a.portfolio-header-link{:href => '#education'} #
       %div
         %p I grew up wanting to become a teacher, and when I became a programmer, I achieved my dream.
   .container
@@ -106,43 +106,43 @@ description: I've looked around for examples of software developer portfolios, a
         %ul#education_list.list-inline.text-center
           %li
             %h3 Blogging
-            %img{:src => "/img/portfolio/blogging.jpg"}/
+            %img{:src => '/img/portfolio/blogging.jpg'}/
             %div
               %p I've been writing a developer-focused blog since 2011, now hosted here. At <a href='http://www.teehanlax.com/blog/author/ash/'>Teehan+Lax</a>, I began contributing to company blog as part of my job. I still do, now on <a href='http://artsy.github.io'>Artsy's developer blog</a>. I've also written posts for <a href='http://www.objc.io/contributors.html'>objc.io</a>.
               %p Blogging about has made me a better developer and a better writer.
           %li
             %h3 Treehouse Course
-            %img{:src => "/img/portfolio/treehouse.jpg"}/
+            %img{:src => '/img/portfolio/treehouse.jpg'}/
             %div
-              %p In March, 2014, <a href='http://teamtreehouse.com>Treehouse</a> invited me to Orlando to record a series of videos and screencasts to guide users through building a diary app for iOS. The app uses Core Data in order to persist data between application launches.
+              %p In March, 2014, <a href='http://teamtreehouse.com'>Treehouse</a> invited me to Orlando to record a series of videos and screencasts to guide users through building a diary app for iOS. The app uses Core Data in order to persist data between application launches.
               %p I've also given real-world workshops all over, from Toronto to Milan.
           %li
             %h3 Speaking
-            %img{:src => "/img/portfolio/speaking.jpg"}/
+            %img{:src => '/img/portfolio/speaking.jpg'}/
             %div
               %p I began speaking in the Toronto CocoaHeads group. After a while, I started submitting proposals to conferences, slowly building up experience. Not long after that, I started being invited to come speak at venues. I've spoken at local meetups in Warsaw and Copenhagen and at conferences from San Francisco to Minsk. Check out my <a href='/speaking'>speaking page</a> for more.
           %li
             %h3 Functional Reactive Programming on iOS
-            %img{:src => "/img/portfolio/frp.jpg"}/
+            %img{:src => '/img/portfolio/frp.jpg'}/
             %div
               %p I self-published <a href='http://leanpub.com/iosfrp/'><em>Functional Reactive Programming on iOS</em></a> in 2013 to detail the benefits of functional problem-solving approaches to everyday iOS programming challenges. The book breaks down large, complex theories into small, understandable chunks.
           %li
             %h3 UICollectionView: The Complete Guide
-            %img{:src => "/img/portfolio/collectionviews.png"}/
+            %img{:src => '/img/portfolio/collectionviews.png'}/
             .content
               %p <a href='http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00IHZKDCU&linkCode=as2&tag=ashfur-20&linkId=O4P4HCCUTMDXYEBT'><em>UICollectionView: The Complete Guide</em></a>, was published in 2013 by Addison-Wesley, and a second edition published the following year. It covers every aspect of using UICollectionView, including many thorough code examples.
           %li
             %h3 Your First Swift App
-            %img{:src => "/img/portfolio/yourfirstswiftapp.png"}/
+            %img{:src => '/img/portfolio/yourfirstswiftapp.png'}/
             .content
               %p <a href='http://leanpub.com/yourfirstswiftapp'><em>Your First Swift App</em></a> introduces readers to iOS: helping them with their first Xcode project to submitting to the App Store. The book is intended for people with some development experience, but no experience writing iOS apps.
 
   / Photography
-  %aside{:style => "background-image: url(/img/portfolio/photography_header.jpg);"}
-    %figcaption#photography{:name => "photography"}
+  %aside{:style => 'background-image: url(/img/portfolio/photography_header.jpg);'}
+    %figcaption#photography{:name => 'photography'}
       %h2
         Photography
-        %a.portfolio-header-link{:href => "#photography"} #
+        %a.portfolio-header-link{:href => '#photography'} #
       %div
         %p Beyond code, beyond writing, there is photography. It is my primary creative outlet.
   .container
@@ -152,13 +152,13 @@ description: I've looked around for examples of software developer portfolios, a
         %p My photography and my work as a software developer are closely related. Both help exercise different creative processes and I pay attention to what I learn. Often lessons about field can be applied to the other. You can see my work at the links below.
         %ul#photography_list.list-inline.text-center
           %li
-            %a{:href => "http://instagram.com/ashfurrow", :title => "Instagram"}
+            %a{:href => 'http://instagram.com/ashfurrow', :title => 'Instagram'}
               %i.icon-instagram
           %li
-            %a{:href => "http://500px.com/ashfurrow", :title => "500px"}
+            %a{:href => 'http://500px.com/ashfurrow', :title => '500px'}
               %i.icon-px
           %li
-            %a{:href => "http://photos.ashfurrow.com", :title => "Photo Blog"}
+            %a{:href => 'http://photos.ashfurrow.com', :title => 'Photo Blog'}
               %i.icon-exposure
   / Wrap up
   .container
@@ -167,15 +167,15 @@ description: I've looked around for examples of software developer portfolios, a
         %hr/
         %p
           When I began creating this portfolio, I didn't know what it was going to become. I started with an idea, explored the design space, and then created something rough.
-          %a{:href => "https://github.com/ashfurrow/blog/pull/39"} Iterating
+          %a{:href => 'https://github.com/ashfurrow/blog/pull/39'} Iterating
           based on
-          %a{:href => "https://github.com/ashfurrow/blog/issues/10"} feedback
+          %a{:href => 'https://github.com/ashfurrow/blog/issues/10'} feedback
           from others, I've really stretched my limbs a bit in the world of web design and development.
         %p
           If you want to know more about me or get in touch, you can check out my
-          %a{:href => "/about"} About
+          %a{:href => '/about'} About
           page. I've also documented my
-          %a{:href => "http://ashfurrow.com/blog/5-years-of-ios/"} first 5 years
+          %a{:href => 'http://ashfurrow.com/blog/5-years-of-ios/'} first 5 years
           doing iOS development.
 
 

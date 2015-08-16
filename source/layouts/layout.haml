@@ -4,11 +4,11 @@
     = partial :htmlhead
   %body
     / Navigation
-    = partial "nav"
+    = partial :nav
 
     / Main Content
     = yield
 
     / Footer
-    = partial "footer"
-    = partial "htmlfooter"
+    = partial :footer
+    = partial :htmlfooter
