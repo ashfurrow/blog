@@ -95,24 +95,6 @@ module CustomHelpers
 
   # Divs' Widths
 
-  class Width
-    attr_accessor :html_class
-    attr_accessor :html_id
-
-    def initialize(html_class=nil, html_id=nil)
-      @html_class = html_class
-      @html_id = html_id
-    end
-
-    def id
-      html_id
-    end
-
-    def haml_object_ref
-      html_class
-    end
-  end
-
   require 'haml'
 
   def standard_width_div
