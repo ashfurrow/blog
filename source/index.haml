@@ -26,6 +26,6 @@ changefreq: daily
       - if paginate
         %ul.pager
           - if next_page
-            %li.next= link_to 'Newer', next_page
+            %li.next= link_to 'Older', next_page
           - if prev_page
-            %li.previous= link_to 'Older', prev_page
+            %li.previous= link_to 'Newer', prev_page
