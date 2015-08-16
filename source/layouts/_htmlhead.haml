@@ -1,0 +1,64 @@
+%meta{charset: 'utf-8'}/
+%meta{content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible'}/
+
+%title= html_title(current_article, current_resource)
+
+= feed_tag :atom, data.site.feed_link, title: 'Atom Feed'
+= feed_tag :rss, data.site.feed_rss_link, title: 'RSS Feed'
+= stylesheet_link_tag 'bootstrap.min', 'clean-blog', 'syntax', 'fontcustom.css', 'cntl.css', 'custom'
+
+/ Device specifier
+%meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}/
+
+/ Meta stuff
+- this_url = "http://ashfurrow.com#{current_resource.url}"
+%link{rel: 'canonical', href: this_url}/
+%meta{itemprop: 'name', content: data.site.name}/
+%meta{itemprop: 'url', content: this_url}/
+%meta{itemprop: 'about', content: page_description}/
+%meta{itemprop: 'description', content: page_description}/
+%meta{itemprop: 'thumbnailUrl', content: data.site.dark_image}/
+
+/ Open Graph
+%meta{property: 'og:site_name', content: data.site.name}/
+%meta{property: 'og:title', content: og_title(current_article, current_resource)}/
+%meta{property: 'og:url', content: this_url}/
+%meta{property: 'og:type', content: 'website'}/
+%meta{property: 'og:description', content: page_description}/
+%meta{property: 'og:image', content: og_image_or_default(current_article, current_resource)}/
+
+/ Favicon, site icons, etc
+%link{rel: 'image_src', href: data.site.dark_image}
+%meta{itemprop: 'image', content: data.site.dark_image}/
+%link{rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon'}
+
+/ Search enginer index
+- if current_resource && current_resource.metadata[:page]['noindex'] == true
+  %meta{name: 'robots', content: 'noindex'}/
+
+/ Rich Snippets
+%script{type: 'application/ld+json'}
+  {
+  '@context' : 'http://schema.org',
+  '@type' : 'Person',
+  'name' : 'Ash Furrow',
+  'url' : 'http://ashfurrow.com',
+  'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
+  'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
+  }
+%script{type: 'application/ld+json'}
+  {
+  '@context': 'http://schema.org',
+  '@type': 'Organization',
+  'url': 'http://ashfurrow.com',
+  'logo': '#{data.site.image}'
+  }
+
+/ Custom Fonts
+%link{href: 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel: 'stylesheet', type: 'text/css'}
+%link{href: 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', rel: 'stylesheet', type: 'text/css'}
+%link{href: 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel: 'stylesheet', type: 'text/css'}
+
+/ Google Analytics
+:javascript
+  var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-9572240-3']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();

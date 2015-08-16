@@ -1,0 +1,6 @@
+/ jQuery, Bootstrap core, and custom theme
+= javascript_include_tag 'jquery.min', 'bootstrap.min', 'clean-blog.min'
+
+- if current_resource.metadata[:page]['timeline'] == true
+  = javascript_include_tag 'jquery.cntl.min'
+  = javascript_include_tag 'timeline'
