@@ -1,33 +1,39 @@
 %meta{charset: 'utf-8'}/
 %meta{content: 'IE=edge;chrome=1', 'http-equiv' => 'X-UA-Compatible'}/
 
-/ TODO: Clean this up
-
 %title= html_title(current_article, current_resource)
 
 = feed_tag :atom, data.site.feed_link, title: 'Atom Feed'
 = feed_tag :rss, data.site.feed_rss_link, title: 'RSS Feed'
 = stylesheet_link_tag 'bootstrap.min', 'clean-blog', 'syntax', 'fontcustom.css', 'cntl.css', 'custom'
 
-/ Meta stuff
-%link{href: "http://ashfurrow.com#{current_resource.url}", rel: 'canonical'}/
-%meta{content: 'width=device-width, initial-scale=1', name: 'viewport'}/
-%meta{content: data.site.name, property: 'og:site_name'}/
-%meta{content: og_title(current_article, current_resource), property: 'og:title'}/
-%meta{content: "http://ashfurrow.com#{current_resource.url}", property: 'og:url'}/
-%meta{content: 'website', property: 'og:type'}/
-%meta{content: page_description, property: 'og:description'}/
-%meta{content: og_image_or_default(current_article, current_resource), property: 'og:image'}/
-%meta{content: 'Blog', itemprop: 'name'}/
-%meta{content: "http://ashfurrow.com#{current_resource.url}", itemprop: 'url'}/
-%meta{content: page_description, itemprop: 'description'}/
-%meta{content: data.site.dark_image, itemprop: 'thumbnailUrl'}/
-%link{href: data.site.dark_image, rel: 'image_src'}
-%meta{content: data.site.dark_image, itemprop: 'image'}/
-%link{href: '/favicon.ico', rel: 'shortcut icon', type: 'image/x-icon'}
+/ Device specifier
+%meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}/
 
+/ Meta stuff
+- this_url = "http://ashfurrow.com#{current_resource.url}"
+%link{rel: 'canonical', href: this_url}/
+%meta{itemprop: 'name', content: data.site.name}/
+%meta{itemprop: 'url', content: this_url}/
+%meta{itemprop: 'description', content: page_description}/
+%meta{itemprop: 'thumbnailUrl', content: data.site.dark_image}/
+
+/ Open Graph
+%meta{property: 'og:site_name', content: data.site.name}/
+%meta{property: 'og:title', content: og_title(current_article, current_resource)}/
+%meta{property: 'og:url', content: this_url}/
+%meta{property: 'og:type', content: 'website'}/
+%meta{property: 'og:description', content: page_description}/
+%meta{property: 'og:image', content: og_image_or_default(current_article, current_resource)}/
+
+/ Favicon, site icons, etc
+%link{rel: 'image_src', href: data.site.dark_image}
+%meta{itemprop: 'image', content: data.site.dark_image}/
+%link{rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon'}
+
+/ Search enginer index
 - if current_resource && current_resource.metadata[:page]['noindex'] == true
-  %meta{content: 'noindex', name: 'robots'}/
+  %meta{name: 'robots', content: 'noindex'}/
 
 / Rich Snippets
 %script{type: 'application/ld+json'}
