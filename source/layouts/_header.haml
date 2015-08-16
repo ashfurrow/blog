@@ -7,7 +7,7 @@
 %header.intro-header#image-header{style: "background-image: url('#{image_name}');"}
   .container
     .row
-      %div[standard_width] 
+      - standard_width_div do
         %div{class: (defined? style) ? style : 'site-heading' }
           %h1= title
           - if (defined? subtitle) && subtitle.length > 0

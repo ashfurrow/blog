@@ -113,8 +113,12 @@ module CustomHelpers
     end
   end
 
-  def standard_width(html_id=nil)
-    return Width.new "col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1", html_id
+  require 'haml'
+
+  def standard_width_div
+    haml_tag :div, class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1' do
+      yield
+    end
   end
 end
 

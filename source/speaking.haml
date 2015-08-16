@@ -14,7 +14,7 @@ description: I love sharing knowledge – in the form of blog posts, podcasts, o
   / Intro
   .container
     .row
-      %div[standard_width]
+      - standard_width_div do
         %p I love sharing knowledge – in the form of blog posts, podcasts, open source code, books – and over the past few years, I've grown really fond of speaking. I've gotten good at it, too.
 
         .embed-responsive.embed-responsive-16by9
@@ -25,7 +25,7 @@ description: I love sharing knowledge – in the form of blog posts, podcasts, o
     %h2 Coming Soon to a Conference Near You
   .container
     .row
-      %div[standard_width]
+      - standard_width_div do
         %ul
           = Speaking::talks_to_html(:future, data.talks.upcoming_talks)
 
@@ -34,7 +34,7 @@ description: I love sharing knowledge – in the form of blog posts, podcasts, o
     %h2 Past Awesome Talks
   .container
     .row
-      %div[standard_width]
+      - standard_width_div do
         %ul
           = Speaking::talks_to_html(:past, data.talks.past_talks)
   
@@ -43,6 +43,6 @@ description: I love sharing knowledge – in the form of blog posts, podcasts, o
     %h2 Get in Touch
   .container
     .row
-      %div[standard_width]
+      - standard_width_div do
         %p Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. It's not enough to understand what you're doing if you don't understand <em>why</em> you're doing it.
         %p If you're interested in having me speak, <a href='mailto:ash@ashfurrow.com'>get in touch</a>.

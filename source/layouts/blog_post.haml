@@ -7,12 +7,12 @@
   .container
     %article
       .row
-        %div[standard_width]
+        - standard_width_div do
           = yield
           %hr/
           %span.meta= "Posted on #{current_article.date.strftime('%B %e, %Y')}"
     .row
-      %div[standard_width]
+      - standard_width_div do
         %hr/
         - if link_to
           = partial :marketing, :locals => { :book_name => link_to }

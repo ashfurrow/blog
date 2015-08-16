@@ -9,7 +9,7 @@ changefreq: daily
 
 .container
   .row
-    %div[standard_width]
+    - standard_width_div do
       - page_articles.each_with_index do |article, i|
         .post-preview
           %h2.post-title= link_to article.title, article
@@ -26,6 +26,6 @@ changefreq: daily
       - if paginate
         %ul.pager
           - if next_page
-            %li.next= link_to 'Next page', next_page
+            %li.next= link_to 'Newer', next_page
           - if prev_page
-            %li.previous= link_to 'Previous page', prev_page
+            %li.previous= link_to 'Older', prev_page
