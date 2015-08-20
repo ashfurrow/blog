@@ -66,12 +66,27 @@ code, pre {
   }
 }
 
+header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 #page_footer {
   margin-top: 20px;
 }
 
 .intro-header {
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     margin-bottom: 0px;
   }
 }
