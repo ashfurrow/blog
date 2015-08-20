@@ -2,7 +2,7 @@
   - link_to = current_resource.metadata[:page]['link_to']
 
   / Page Header
-  = partial :header, locals: { title: current_article.title, style: 'post-heading' }
+  = partial :header, locals: { title: current_article.title }
 
   .container
     %article
