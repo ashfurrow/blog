@@ -47,10 +47,13 @@ Thanks to the following people and projects:
 Photo Credits
 ----------------
 
-All banner (full-width) images on the site are my own unless noted below. 
+All banner (full-width) images on the site are my own unless they link to an external source. I release my photos under the same [license](/LICENSE) as this blog; the licenses of others' work vary.
+
+I'd like to highly the following contributors.
 
 Photo | Photographer
 --- | ---
+Main banner on [Portfio](http://ashfurrow.com/portfolio). | [Andrey Tochilin](https://twitter.com/Tochilin)
 "Software" banner on [Portfolio](http://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
 Blogging image on [Portfolio](http://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
 Several blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744))
