@@ -117,9 +117,6 @@ GEM
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
       tzinfo (>= 0.3.0)
-    middleman-cloudfront (0.1.0)
-      fog (~> 1.9)
-      middleman-core (~> 3.0)
     middleman-core (3.3.6)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -168,6 +165,7 @@ GEM
     rack (1.4.5)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -217,11 +215,11 @@ DEPENDENCIES
   liquid
   middleman
   middleman-blog
-  middleman-cloudfront
   middleman-s3_sync
   middleman-syntax
   nokogiri
   rack (= 1.4.5)
+  rake
   redcarpet
   therubyracer
 
