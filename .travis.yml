@@ -13,5 +13,6 @@ before_install:
 - s3cmd --version
 script:
 - rake build
+- rake test
 after_success:
 - rake deploy:travis
