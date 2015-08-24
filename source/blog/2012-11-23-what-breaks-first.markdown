@@ -3,7 +3,7 @@ title: "What Breaks First"
 date: 2012-11-23 00:00
 ---
 
-<import><p>Recently, I was under a large strain at work. I had never worked so hard in my life and at first, it was exhilarating. By the end, I was completely <a href="http://ashfurrow.com/blog/burnt-out">burnt out</a>. I'm still recovering from the trauma of working 70+ hours a week, but I'm trying to take time to reflect on the experience.</p>
+<p>Recently, I was under a large strain at work. I had never worked so hard in my life and at first, it was exhilarating. By the end, I was completely <a href="http://ashfurrow.com/blog/burnt-out">burnt out</a>. I'm still recovering from the trauma of working 70+ hours a week, but I'm trying to take time to reflect on the experience.</p>
 
 <p>I now have some pretty conclusive proof of my skills as a developer, which I'm pretty proud of. But what I'm really excited about was <em>how</em> I made decisions: intuition. When I had several choices, I didn't have to spend time evaluating my different options because I could <em>feel</em> which one would work. This is mostly, I think, thanks to have having done things the wrong ways in the past. </p>
 
@@ -15,7 +15,7 @@ date: 2012-11-23 00:00
 
 <p>So that's it. I'm working on improving my ability to focus in hectic situations and getting back into some creative outlets (like this blog post!). I'm going to Montreal tomorrow with some friends to take some photos, too. </p>
 
-<p>I've now been to the brink of burn out and I'm more familiar with my own limitations. In a lot of ways, I think I've grown as a person and a professional during the past two months, but it's  not an experience I ever want to repeat. </p></import>
+<p>I've now been to the brink of burn out and I'm more familiar with my own limitations. In a lot of ways, I think I've grown as a person and a professional during the past two months, but it's  not an experience I ever want to repeat. </p>
 
 <!-- more -->
 

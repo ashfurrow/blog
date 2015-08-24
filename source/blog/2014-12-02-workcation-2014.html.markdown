@@ -21,8 +21,11 @@ Because I was busy taking advantage of the opportunities to meet so many cool pe
 BEGIN_WIDE
 
 <div class="pixels-photo">
+
 <img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/91488677/8c887031bd4d268f9bbdf1a44807f14181b3ecdd/4.jpg" alt="Photograph Manhattan Skyline by Ash Furrow on 500px">
+
 <a href="https://500px.com/photo/91488677/manhattan-skyline-by-ash-furrow">Manhattan Skyline by Ash Furrow on 500px</a>
+
 </div>
 
 END_WIDE
@@ -74,6 +77,7 @@ We kept taking photos, travelling to a nearby settlement for some supplies and m
 <div class="pixels-photo">
   <img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/91489129/46e0cd98046054130cdafa0b04f161579090da7f/4.jpg" alt="Photograph Geothermal by Ash Furrow on 500px">
   <a href="https://500px.com/photo/91489129/geothermal-by-ash-furrow">Geothermal by Ash Furrow on 500px</a>
+
 </div>
 
 We slept that afternoon, since I got very little sleep on the flight over (and Ashley got none at all). We left the cabin after sunset, which is at about 4pm, and took more photos. Using a tripod, we got some really slick long exposures, even in the cold rain. 
@@ -81,8 +85,11 @@ We slept that afternoon, since I got very little sleep on the flight over (and A
 BEGIN_WIDE
 
 <div class="pixels-photo">
+
 <img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/91467567/b846e3a6ff4217b526dacfdfccfe23a9d6773557/4.jpg" alt="Photograph Tracks Home by Ash Furrow on 500px">
+
 <a href="https://500px.com/photo/91467567/tracks-home-by-ash-furrow">Tracks Home by Ash Furrow on 500px</a>
+
 </div>
 
 END_WIDE
@@ -114,8 +121,11 @@ We spent all day travelling the 140km to the crash site. It took so long because
 BEGIN_WIDE
 
 <div class="pixels-photo">
+
 <img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/91467565/8c31bb87006d70a77a4f0629494d86f619cdd08e/4.jpg" alt="Photograph Úlfljótsvatn Waterfall by Ash Furrow on 500px">
+
 <a href="https://500px.com/photo/91467565/%C3%9Alflj%C3%B3tsvatn-waterfall-by-ash-furrow">Úlfljótsvatn Waterfall by Ash Furrow on 500px</a>
+
 </div>
 
 END_WIDE
@@ -127,6 +137,7 @@ We travelled home, stopping for some more long exposures along the way. Snugglin
 <div class="pixels-photo">
   <img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/91489861/fcef680c08f83d0ecf792e6e88562aa1098dcb2a/4.jpg" alt="Photograph Mist by Ash Furrow on 500px">
   <a href="https://500px.com/photo/91489861/mist-by-ash-furrow">Mist by Ash Furrow on 500px</a>
+
 </div>
 
 The next day, we got up and took some more photos at sunrise, this time on the shores of the lake. We were headed for Gulfoss, another waterfall, but were going to stop at lots of places along the way. 
@@ -134,8 +145,11 @@ The next day, we got up and took some more photos at sunrise, this time on the s
 BEGIN_WIDE
 
 <div class="pixels-photo">
+
 <img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/91496049/314fba486d75dc7e26ac09d6cddfb4042601bcee/4.jpg" alt="Photograph Photographer in Iceland by Ashley Krista on 500px">
+
 <a href="https://500px.com/photo/91496049/photographer-in-iceland-by-ashley-krista">Photographer in Iceland by Ashley Krista on 500px</a>
+
 </div>
 
 END_WIDE
@@ -167,4 +181,5 @@ It had been an amazing two week trip. Ashley and I spent half of it apart and ha
 It was a fantastic journey filled with passion and longing, misery and triumphs. Our first real vacation in over a year lasted just a few days, but it was worth it. We hope to return to Iceland someday. Maybe someday soon. 
 
 <script type="text/javascript" src="https://500px.com/embed.js"></script>
+
 <script async="" defer="" src="//platform.instagram.com/en_US/embeds.js"></script>

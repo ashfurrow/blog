@@ -3,7 +3,7 @@ title: "Open(ish) Handset Alliance"
 date: 2012-09-15 00:00
 ---
 
-<import><p>A storm's a brewin' over in the Android world. I don't typically get involved in disputes within the Android community because it's none of my business and because I mostly don't know what I'm talking about. However, <a href="http://www.androidcentral.com/acer-forced-halt-device-launch-over-android-compliance-here-s-why">this is very interesting to me</a>. And you know what? Sometimes it's the people who aren't afraid of being ridiculed for their ignorance of the facts that point out the really obvious questions that no one else thinks of. </p>
+<p>A storm's a brewin' over in the Android world. I don't typically get involved in disputes within the Android community because it's none of my business and because I mostly don't know what I'm talking about. However, <a href="http://www.androidcentral.com/acer-forced-halt-device-launch-over-android-compliance-here-s-why">this is very interesting to me</a>. And you know what? Sometimes it's the people who aren't afraid of being ridiculed for their ignorance of the facts that point out the really obvious questions that no one else thinks of. </p>
 
 <p>So here we go.</p>
 
@@ -25,7 +25,7 @@ date: 2012-09-15 00:00
 
 <p>The OHA may be able to strong-arm OEMs with little-to-no offerings in the Android ecosystem like Acer, but with Samsung <a href="http://www.theverge.com/2012/8/8/3227506/idc-q2-2012-mobile-os-market-share">surpassing two thirds of Android marketshare</a>, it wouldn't surprise me to see Samsung pull out of the OHA soon. But we'll see.</p>
 
-<p>The OHA benefits consumers and hopefully Google has some teeth to enforce the rules on more than the likes of Acer. If Google wants Android to compete with iOS in the long-term, this is exactly the kind of strategy they need to maintain. </p></import>
+<p>The OHA benefits consumers and hopefully Google has some teeth to enforce the rules on more than the likes of Acer. If Google wants Android to compete with iOS in the long-term, this is exactly the kind of strategy they need to maintain. </p>
 
 <!-- more -->
 

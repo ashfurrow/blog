@@ -18,6 +18,7 @@ This brings up an important point that I've been yelling at you people for a yea
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/LtrzZb5Jw0g" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+
 </div>
 
 If all you're doing in Swift is writing Objective-C with Swift syntax, stop and reflect on your choices. Swift _isn't_ Objective-C – and thank god. The community has been dutifully exploring new ways to solve familiar problems – it's an exciting time! 

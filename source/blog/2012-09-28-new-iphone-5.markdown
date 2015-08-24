@@ -3,7 +3,9 @@ title: "New iPhone 5"
 date: 2012-09-28 00:00
 ---
 
-<import><img src="/img/import/blog/cyzijqn0kkn1ckusw9c0qvbxecayda/0BE4C7001AC14718990FE1EF3E538D19.jpg" class="img-responsive"><p>I'm pretty stoked.</p>
+<img src="/img/import/blog/cyzijqn0kkn1ckusw9c0qvbxecayda/0BE4C7001AC14718990FE1EF3E538D19.jpg" class="img-responsive" />
+
+<p>I'm pretty stoked.</p>
 
 <p>Thankfully, Paddy was there to document this great occasion.</p>
 
@@ -11,7 +13,7 @@ date: 2012-09-28 00:00
 
 <p>The one problem I'm having with the taller screen is applications that are still letterboxed. The keyboard has the black bar beneath it, which has the effect of raising the keyboard by 44 points (the height of a nav bar). </p>
 
-<p>So I have to mentally translate where my fingers touch to type in apps. The <em>really</em> frustrating thing is the space bar, since it's at the bottom. I wish that Apple had made the hit target for the spacebar extend <em>below</em> the frame of the application, since that's where I'm finding I'm tapping. I get a lot of sentenceswithwordsrunningtogether and it's a pain.</p></import>
+<p>So I have to mentally translate where my fingers touch to type in apps. The <em>really</em> frustrating thing is the space bar, since it's at the bottom. I wish that Apple had made the hit target for the spacebar extend <em>below</em> the frame of the application, since that's where I'm finding I'm tapping. I get a lot of sentenceswithwordsrunningtogether and it's a pain.</p>
 
 <!-- more -->
 

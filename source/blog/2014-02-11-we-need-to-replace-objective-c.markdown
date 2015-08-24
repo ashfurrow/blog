@@ -4,7 +4,7 @@ date: 2014-02-11 00:00
 link_to: swift
 ---
 
-<import><p>I thought that, in 2014, it was just taken for granted that Objective-C needs to be replaced. I thought that we were all on the same page.</p>
+<p>I thought that, in 2014, it was just taken for granted that Objective-C needs to be replaced. I thought that we were all on the same page.</p>
 
 <p>That's what I thought, but I was wrong. </p>
 
@@ -15,11 +15,17 @@ link_to: swift
 <p>The premise is that programming language abstraction increases over time. This isn't a hard pill to swallow; after all, we can see the progression pretty easily: </p>
 
 <ol>
+
 <li>Machine Code</li>
+
 <li>Assembly</li>
+
 <li>Procedural languages (C)</li>
+
 <li>Objective-oriented languages (C++)</li>
+
 <li>Virtual machines (Java, .Net, Ruby, etc)</li>
+
 </ol>
 
 <p>If you accept the premise that programming language abstraction increases over time, then consider where Objective-C is on our progression. Pointers. C-based APIs. No virtual machine. Ugh. </p>
@@ -38,6 +44,7 @@ link_to: swift
 
 <blockquote>
   <p>A new old thing is not really what we need. It seems absurd that 30 years after the Mac we still build the same applications the same ways. It seems absurd we still haven’t really caught up to Smalltalk.</p>
+
 </blockquote>
 
 <p>Exactly. </p>
@@ -45,16 +52,22 @@ link_to: swift
 <p>So what do I want in a language? Well, here are some things that <a href="http://5by5.tv/hypercritical/15">Siracusa points out</a>, augmented with some of my own suggestions:</p>
 
 <ol>
+
 <li>It shouldn't use pointers, structs, header files, anything C-based</li>
+
 <li>It should be a memory-managed language (No ARC, not retain/release, no Core Foundation)</li>
+
 <li>It should have native, unicode strings and native collections</li>
+
 <li>It should be concise</li>
+
 <li>It should have named parameters</li>
+
 </ol>
 
 <p>As long as, as iOS developers, we're one <code>NULL</code> pointer dereference away from a crash, we're a long way away from using a modern language. </p>
 
-<p><em>Update</em>: It's been pointed out that I don't actually state <em>why</em> Objective-C needs to be replaced. I'll be concise: eventually, if things continue without radical changes to Objective-C, writing apps in the language will seem as outdated as writing assembler does to us today. That will be a competitive disadvantage to Apple, which I don't want to see happen. </p></import>
+<p><em>Update</em>: It's been pointed out that I don't actually state <em>why</em> Objective-C needs to be replaced. I'll be concise: eventually, if things continue without radical changes to Objective-C, writing apps in the language will seem as outdated as writing assembler does to us today. That will be a competitive disadvantage to Apple, which I don't want to see happen. </p>
 
 <!-- more -->
 

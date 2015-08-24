@@ -3,21 +3,27 @@ title: "Site Stats for 2012"
 date: 2013-01-01 00:00
 ---
 
-<import><p>2012 has seen a lot of change for this blog. I made the switch away from a self-hosted Wordpress installation to Squarespace. I joined the <a href="http://fusionads.net">Fusion Ad network</a>. And I started writing, like, a lot.</p>
+<p>2012 has seen a lot of change for this blog. I made the switch away from a self-hosted Wordpress installation to Squarespace. I joined the <a href="http://fusionads.net">Fusion Ad network</a>. And I started writing, like, a lot.</p>
 
 <p>With all these changes, I thought I might share some site stats. First, here are my daily numbers:</p>
-<img src="/img/import/blog/site-stats-for-2012/8A6D81F4CF80438BAE9D136A63659A3A.png" class="img-responsive"><p>Kind of impressive, I think, is the ~20k-hits-in-one-day mark. That's when I wrote the <a href="http://ashfurrow.com/blog/2012/03/why-objective-c-is-hard">Why Objective-C is Hard to Learn</a> article. It got a lot of attention on Hacker News. </p>
+
+<img src="/img/import/blog/site-stats-for-2012/8A6D81F4CF80438BAE9D136A63659A3A.png" class="img-responsive" />
+
+<p>Kind of impressive, I think, is the ~20k-hits-in-one-day mark. That's when I wrote the <a href="http://ashfurrow.com/blog/2012/03/why-objective-c-is-hard">Why Objective-C is Hard to Learn</a> article. It got a lot of attention on Hacker News. </p>
 
 <p>The next, big spike around October came with the release of iOS 6. I strategically had written a series of <code>UICollectionView</code> tutorials and released them the day the NDA with Apple expired and I got a lot of attention for being the first to cover this new class. It even has lead to me writing an eBook on the topic, which is under way now. </p>
 
 <p>What's really cool is how all my traffic after that is above the zero line compared to the 20k hit day. If we look at the monthly trends of 2012, you can see a big difference after iOS 6 was released. </p>
-<img src="/img/import/blog/site-stats-for-2012/B6B281E82FB94CAFA6B51A90788352A5.png" class="img-responsive"><p>The increase in traffic seams to have stabilized — I'm seeing between four and seven hundred hits a day, and I couldn't be happier. </p>
+
+<img src="/img/import/blog/site-stats-for-2012/B6B281E82FB94CAFA6B51A90788352A5.png" class="img-responsive" />
+
+<p>The increase in traffic seams to have stabilized — I'm seeing between four and seven hundred hits a day, and I couldn't be happier. </p>
 
 <p>Thank you so much to everyone who has read this blog in 2012. I am so happy that you value my writing enough to spend your time reading what I have to write. I'm looking forward to a new year filled with more writing and better writing — I still have a long way to improve in order to achieve the level I aspire to. Don't ever think twice about getting in touch, either. I love to hear from you. </p>
 
 <p>Cheers, and Happy New Year,</p>
 
-<p>Ash</p></import>
+<p>Ash</p>
 
 <!-- more -->
 

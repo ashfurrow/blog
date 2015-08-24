@@ -3,13 +3,19 @@ title: "Objective-C Memory Deallocation Advice"
 date: 2011-10-07 00:00
 ---
 
-<import><p>Hey iOS nerd friends, I need your help.
+<p>Hey iOS nerd friends, I need your help.
 I fetched, store, and display models to the use in batches of twelve. A batch is represented by an NSArray instance and is stored in a cache which responds to low memory warnings by clearing out the batches no currently in use. The models themselves form a doubly-linked list (ie: each one has an __unsafe_unretained property to each previous and next). I navigate through the models this way sometimes, and through the "batches" way others.</p>
+
 <p>My problem is memory management. If I were building for iOS 5, I could use the zeroing-weak reference properties in the model class and not worry about it. But I'm not, so I have to. The two options I've thought of are:</p>
+
 <ul>
+
 <li>When releasing a batch from the cache, remove the references into and out of it.</li>
+
 </ul>
+
 <div>Something like:</div>
+
 <p><code> NSArray *keys = [sharedCache allKeys];
 for (NSString *key in keys)
 {
@@ -18,11 +24,17 @@ for (NSString *key in keys)
 [sharedCache removeObjectForKey:key];
 }
 </code></p>
+
 <div>And then not worry about zero-ing out the next/previous references individually within the batch.</div>
+
 <ul>
+
 <li>When dealloc'ing a model instance, use a static NSLock to remove the references to each model.</li>
+
 </ul>
+
 <div>Something like:</div>
+
 <p><code> static NSLock *deallocLock = nil;
 if (!deallocLock)
 deallocLock = [[NSLock alloc] init];
@@ -31,10 +43,14 @@ self.nextPhotoModel.previousPhotoModel = nil;
 self.previousPhotoModel.nextPhotoModel = nil;
 [deallocLock unlock];
 </code></p>
+
 <p>Which guarantees two neighbouring models in the list don't accidentally try to dereference one another while dealloc'ing.</p>
+
 <p>I don't like the first option because it leaves the possibility that two models within the batch will do something funky. I don't like the second option because locking in the dealloc method scares the shit out of me.</p>
+
 <p>I haven't implemented either of these solutions, yet. I'm currently getting infrequent crashes from my beta testers in the dealloc method of my model (trying to dereference a dangling pointer to previous/next).</p>
-<p>Any suggestions?</p></import>
+
+<p>Any suggestions?</p>
 
 <!-- more -->
 

@@ -3,7 +3,7 @@ title: "App.Net"
 date: 2012-10-09 00:00
 ---
 
-<import><p>So lsat week was pretty huge for <a href="https://alpha.app.net">App.net</a>. Tapbots, makes of the most stylish of iOS apps, released a Tweetbot lookalike named <a href="http://tapbots.com/software/netbot/">Netbot</a>. Along with an alpha of an OS X app named <a href="http://wedge.natestedman.com">Wedge</a>, I've found a spot of App.net in my day-to-day routine, as I'm sure many other nerds have.</p>
+<p>So lsat week was pretty huge for <a href="https://alpha.app.net">App.net</a>. Tapbots, makes of the most stylish of iOS apps, released a Tweetbot lookalike named <a href="http://tapbots.com/software/netbot/">Netbot</a>. Along with an alpha of an OS X app named <a href="http://wedge.natestedman.com">Wedge</a>, I've found a spot of App.net in my day-to-day routine, as I'm sure many other nerds have.</p>
 
 <p>I took a look at what was going on in my stream, and I decided that these discussions were worth participating in. </p>
 
@@ -13,7 +13,7 @@ date: 2012-10-09 00:00
 
 <p>If only they could just come out and call it "alpha", I'd be a lot happier.</p>
 
-<p>You can <a href="https://alpha.app.net/ashfurrow">follow me on App.net</a>.</p></import>
+<p>You can <a href="https://alpha.app.net/ashfurrow">follow me on App.net</a>.</p>
 
 <!-- more -->
 

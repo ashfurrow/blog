@@ -10,6 +10,7 @@ The talk for my [presentation at MBLTDev](http://ashfurrow.com/blog/reactivecoco
 
 <div class="embed-responsive embed-responsive-16by9">
 	<iframe width="560" height="315" src="//www.youtube.com/embed/tRCgBuJsNtg" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+
 </div>
 
 Here are the slides if you'd like to follow along. 

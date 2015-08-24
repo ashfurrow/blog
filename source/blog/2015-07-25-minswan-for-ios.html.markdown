@@ -68,7 +68,9 @@ If someone you follow is being a jerk, let them know. If they don't change, cons
 
 Think about how much happier you could be without a constant stream of negativity flowing into your brain!
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">For the last months I’ve been muting people who are too negative on Twitter, and it’s been great. Highly recommended.</p>&mdash; Chris Eidhof (@chriseidhof) <a href="https://twitter.com/chriseidhof/status/624158166830477312">July 23, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">For the last months I’ve been muting people who are too negative on Twitter, and it’s been great. Highly recommended.</p>&mdash; Chris Eidhof (@chriseidhof) <a href="https://twitter.com/chriseidhof/status/624158166830477312">July 23, 2015</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [Orta](http://twitter.com/orta) has said that "[friction gets followers](https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/)" – and that's true, but only if we let it. He has some great specific suggestions here: 
 
@@ -82,7 +84,9 @@ Addressing negativity can be hard. It takes courage to tell someone that they're
 
 Things like that. You can follow-up and ask if they're OK – maybe they just need someone to talk to. 
 
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Negativity is definitely contagious, but a small action can also change somebody&#39;s attitude.&#10;You never know :)</p>&mdash; Junior B. (@bontoJR) <a href="https://twitter.com/bontoJR/status/624207699090231297">July 23, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Negativity is definitely contagious, but a small action can also change somebody&#39;s attitude.&#10;You never know :)</p>&mdash; Junior B. (@bontoJR) <a href="https://twitter.com/bontoJR/status/624207699090231297">July 23, 2015</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 If that fails, try muting them for a week. You probably won't miss them as much as you'd think. If, after a week, you like your timeline better without them, then you know what to do.
 

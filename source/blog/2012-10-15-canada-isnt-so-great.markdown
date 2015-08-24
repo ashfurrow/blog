@@ -3,7 +3,7 @@ title: "Canada Isn't So Great"
 date: 2012-10-15 00:00
 ---
 
-<import><p>In the last year, I've made many American friends - mostly those who share a passion for mobile software development. </p>
+<p>In the last year, I've made many American friends - mostly those who share a passion for mobile software development. </p>
 
 <p>I've also worked with people from all corners of the globe - China, Russia, England, and Brazil to name a few. </p>
 
@@ -41,7 +41,7 @@ date: 2012-10-15 00:00
 
 <p>All while blantantly <a href="http://www.thestar.com/opinion/editorialopinion/article/1255830--stephen-harper-s-democracy-award-a-sad-joke-on-canadians">flaunting democracy</a>.</p>
 
-<p>The US has exported its conservatism to Canada. We're not better than the states; we're just a little behind the curve.</p></import>
+<p>The US has exported its conservatism to Canada. We're not better than the states; we're just a little behind the curve.</p>
 
 <!-- more -->
 

@@ -3,7 +3,7 @@ title: "Don't Be a Dick"
 date: 2012-12-10 00:00
 ---
 
-<import><p>As I write this, I'm sitting on a flight behind two men having an argument.</p>
+<p>As I write this, I'm sitting on a flight behind two men having an argument.</p>
 
 <p>One, an older person, is upset because the other man is using his
 GameBoy (original — such a hipster) and BlackBerry during takeoff even
@@ -27,6 +27,7 @@ lawyer and is speaking to a young engineer.</p>
   
   <p>Engineer: Well that explains it. Well-spoken, strong adherence to
   rules, but low technical knowledge.</p>
+
 </blockquote>
 
 <p>Now, in typical Canadian fashion, they've made up and are chatting amicably.</p>
@@ -39,7 +40,7 @@ use electronics is a little more personable than pointing to your iron
 ring.</p>
 
 <p>Dear nerds: normal people have normal sensibilities so try to squeeze
-in a few minutes of empathy in your day. Don't be a dick.</p></import>
+in a few minutes of empathy in your day. Don't be a dick.</p>
 
 <!-- more -->
 

@@ -4,7 +4,7 @@ date: 2012-09-19 00:00
 link_to: collectionview
 ---
 
-<import><p>We're going to take a look at the new <code>UICollectionView</code> class Apple introduced in iOS 6. It's used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px?</p>
+<p>We're going to take a look at the new <code>UICollectionView</code> class Apple introduced in iOS 6. It's used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px?</p>
 
 <p>I've got an example project completed and hosted <a href="https://github.com/AshFurrow/UICollectionViewExample">on github</a> that you can check out and play with. Don't forget to <a href="http://developers.500px.com/settings/applications?from=developers">register yourself with 500px</a> first to get a consumer key and consumer secret, or else the API won't work for you. Copy these into a text file because you'll need them later.</p>
 
@@ -13,12 +13,24 @@ link_to: collectionview
 <p>Create a new Xcode project using the "Master-Detail Application" template.</p>
 
 <p>Open the main Storyboard file. We're going to throw away the existing table view and replace it with a sexy new collection view. The easiest way to do that is to select the existing Master View Controller, shown below, and hit the delete key.</p>
-<img src="/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png" class="img-responsive"><p>Now that the Master View Controller is missing, we need to re-add it. Go to your Master View Controller's <code>.h</code> file and change it from inheriting from <code>UITableViewController</code> to <code>UICollectionViewController</code>. You'll get some compiler errors; ignore them for now.</p>
+
+<img src="/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png" class="img-responsive" />
+
+<p>Now that the Master View Controller is missing, we need to re-add it. Go to your Master View Controller's <code>.h</code> file and change it from inheriting from <code>UITableViewController</code> to <code>UICollectionViewController</code>. You'll get some compiler errors; ignore them for now.</p>
 
 <p>Drag a new <code>UICollectionViewController</code> form the library. Right click and drag from the Navigation Controller onto the collection view controller and select the "root view controller" outlet.</p>
-<img src="/img/import/blog/uicollectionview-example/BDF26DDF70744C57813ED87D31033FAF.png" class="img-responsive"><p>Right. Almost there. Open the identity inspector (⌘⎇3) and give the new UICollectionViewController the class name of your Master View Controller.</p>
-<img src="/img/import/blog/uicollectionview-example/3B0B5635D36F497B84851AA27A9494C7.png" class="img-responsive"><p>We'll worry about the segues later. For now, go to the <code>UICollectionViewController</code> subclass' <code>.m</code> file. We'll fix those compiler errors now.</p>
-<img src="/img/import/blog/uicollectionview-example/8A0115CB76E64B218DCD9E158D6AF93D.png" class="img-responsive"><p>It's always something with you, isn't it, Xcode? </p>
+
+<img src="/img/import/blog/uicollectionview-example/BDF26DDF70744C57813ED87D31033FAF.png" class="img-responsive" />
+
+<p>Right. Almost there. Open the identity inspector (⌘⎇3) and give the new UICollectionViewController the class name of your Master View Controller.</p>
+
+<img src="/img/import/blog/uicollectionview-example/3B0B5635D36F497B84851AA27A9494C7.png" class="img-responsive" />
+
+<p>We'll worry about the segues later. For now, go to the <code>UICollectionViewController</code> subclass' <code>.m</code> file. We'll fix those compiler errors now.</p>
+
+<img src="/img/import/blog/uicollectionview-example/8A0115CB76E64B218DCD9E158D6AF93D.png" class="img-responsive" />
+
+<p>It's always something with you, isn't it, Xcode? </p>
 
 <p>We're going to gut the contents of the master view controller that deal with the <code>tableView</code> property (which we replaced). For this example, I'm deleting the following method:</p>
 
@@ -40,12 +52,22 @@ link_to: collectionview
 <p>You'll also need to modify the <code>insertSections:withRowAnimation:</code> method calls, since <code>UICollectionView</code> doesn't have row animations; just remove the second part of the selector name.</p>
 
 <p>Once you deal with all of the transition, you have a an app that runs, but is empty. Let's fill it with beautiful photos.</p>
-<img src="/img/import/blog/uicollectionview-example/226450BE3A464F44B4A4B8706BDC0612.png" class="img-responsive"><p>We need a data model. Since we're smart, accomplished, and handsome developers, let's use Core Data. Create the following Core Data model.</p>
-<img src="/img/import/blog/uicollectionview-example/3E628B26764C4ACDA973588CAE0C2678.png" class="img-responsive"><p>All we need is a <code>photoRating</code> to sort by and <code>photoImageData</code> to display actual images, but let's add a <code>photoName</code> for the detail view.</p>
+
+<img src="/img/import/blog/uicollectionview-example/226450BE3A464F44B4A4B8706BDC0612.png" class="img-responsive" />
+
+<p>We need a data model. Since we're smart, accomplished, and handsome developers, let's use Core Data. Create the following Core Data model.</p>
+
+<img src="/img/import/blog/uicollectionview-example/3E628B26764C4ACDA973588CAE0C2678.png" class="img-responsive" />
+
+<p>All we need is a <code>photoRating</code> to sort by and <code>photoImageData</code> to display actual images, but let's add a <code>photoName</code> for the detail view.</p>
+
 <p>We need to configure the prototype cell used by the collection view. Create a new class, subclassing <code>UICollectionViewCell</code>, create a <code>UIImageView</code> outlet and appropriate instance methods to set the image.</p>
 
 <p>Go to the Storyboard and select the protoype cell in the collection view. In the identity inspector, set it's class to the <code>UICollectionView</code> subclass you just created. Add a <code>UIImageView</code> to the prototype cell and connect the outlet. </p>
-<img src="/img/import/blog/uicollectionview-example/2E0D5ECB395F41DEA921597398D5E79E.png" class="img-responsive"><p>Make sure to set the <code>Identifier</code> in the Storyboard or the collection view won't dequeue the proper class.</p>
+
+<img src="/img/import/blog/uicollectionview-example/2E0D5ECB395F41DEA921597398D5E79E.png" class="img-responsive" />
+
+<p>Make sure to set the <code>Identifier</code> in the Storyboard or the collection view won't dequeue the proper class.</p>
 
 <p>We need to queue up the updates from our <code>NSFetchedResultsController</code>, since <code>UICollectionView</code> can <em>only</em> perform batch updates (with animation). Serious oversight on Apple's here, in my opinion, since it makes using <code>NSFetchedRsultsController</code> with <code>UICollectionView</code> very sticky.</p>
 
@@ -205,6 +227,7 @@ link_to: collectionview
 <p>These methods should work for any <code>UICollectionView</code> and <code>NSFetchedResultsController</code> data.</p>
 
 <p>Now that the <code>NSFetchedResultsController</code> is hooked up the the <code>UICollectionView</code>, let's load some photos from 500px! </p>
+
 <p>Use the consumer key and consumer secret from when you <a href="http://developers.500px.com/settings/applications?from=developers">registered your application</a> earlier. Follow the directions in the <a href="https://github.com/500px/500px-iOS-api">iOS 500px SDK</a> to add the 500px SDK to your Xcode project. Make sure to follow the instructions in the SDKs <code>README</code> to set up your project to use the SDK.</p>
 
 <pre><code>[PXRequest setConsumerKey:@"your consumer key" consumerSecret:@"your consumer secret"];
@@ -247,10 +270,16 @@ link_to: collectionview
     return cell;
 }
 </code></pre>
-<img src="/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png" class="img-responsive"><p>I went to the liberty of adjusting the sizes to make things pretty - nice app! Let's connect the detail view controller now.</p>
+
+<img src="/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png" class="img-responsive" />
+
+<p>I went to the liberty of adjusting the sizes to make things pretty - nice app! Let's connect the detail view controller now.</p>
 
 <p>Open the Storyboard and right-click on the prototype cell. We'll be connecting the <code>selection</code> triggered segue to the detail view controller. Drag the circle beside <code>selection</code> to the detail view controller and choose "push" from the menu that appears.</p>
-<img src="/img/import/blog/uicollectionview-example/AF66949DE9D6407C8288A2B406292DB8.png" class="img-responsive"><p>Select the segue and make sure its identifier is set to "showDetail".</p>
+
+<img src="/img/import/blog/uicollectionview-example/AF66949DE9D6407C8288A2B406292DB8.png" class="img-responsive" />
+
+<p>Select the segue and make sure its identifier is set to "showDetail".</p>
 
 <p>Replace the <code>UILabel</code> with a <code>UIImageView</code>, change the <code>IBOutlet</code> in the header file, reconnect the outlet, and modify <code>configureView</code> to look like the following:</p>
 
@@ -279,9 +308,12 @@ link_to: collectionview
 </code></pre>
 
 <p>Run the app, tap on a photo, and you'll see the following:</p>
-<img src="/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png" class="img-responsive"><p>Sexy! </p>
 
-<p>If you have any questions, please let me know. Check out <a href="https://github.com/AshFurrow/UICollectionViewExample">the code</a> from GitHub and have fun!</p></import>
+<img src="/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png" class="img-responsive" />
+
+<p>Sexy! </p>
+
+<p>If you have any questions, please let me know. Check out <a href="https://github.com/AshFurrow/UICollectionViewExample">the code</a> from GitHub and have fun!</p>
 
 <!-- more -->
 

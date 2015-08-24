@@ -21,7 +21,7 @@
   - heading: WWDC 2010
     content:
     - WWDC was an amazing experience. From the city of San Francisco to the energy in the air – it was incredible. The trip really opened up my eyes to what else is out there in the world – it was the spark that drove me to keep travelling.
-    - The conference itself was amazing. The line for the keynote had as many people as are in my hometown. I made some friends in line – particularly <a href='http://twitter.com/philippec>Philippe Casgrain</a> and <a href='http://twitter.com/iKenndac'>Daniel Kennett</a>.
+    - The conference itself was amazing. The line for the keynote had as many people as are in my hometown. I made some friends in line – particularly <a href='http://twitter.com/philippec'>Philippe Casgrain</a> and <a href='http://twitter.com/iKenndac'>Daniel Kennett</a>.
     - iOS 4 and the iPhone 4 were announced. Xcode 4 was announced. GCD was ported to iOS (this was important to me, as I had recently learnt Haskell and used LINQ in .Net). I dove in.
     - "One presentation really stood out to me: Chris Parker giving his annual &quot;What's new in UIKit talk. I had never seen a professional developer care so much about design. In the labs, I was lucky enough to talk to him in-person."
     - Later that week, I visited the Design lab and got feedback on CoffeeTimer. It was the first time I had met a designer.
@@ -161,7 +161,7 @@
 
   - heading: New Publisher
     content:
-    - Noticing my expertise in iOS 6 APIs, and wanted to capitalize on developer interest in the subject, a new publisher approached me about writing a book for them. The book is now in its <a href='http://www.amazon.com/iOS-UICollectionView-Complete-Mobile-Programming-ebook/dp/B00CFLTD50/ref=sr_1_2?ie=UTF8&qid=1419356862&sr=8-2&keywords=uicollectionview'>second edition</a>.
+    - Noticing my expertise in iOS 6 APIs, and wanted to capitalize on developer interest in the subject, a new publisher approached me about writing a book for them. The book is now in its <a href='http://www.amazon.com/iOS-UICollectionView-Complete-Mobile-Programming-ebook/dp/B00CFLTD50/ref=sr_1_2?ie=UTF8&amp;qid=1419356862&amp;sr=8-2&amp;keywords=uicollectionview'>second edition</a>.
 
   - heading: Trouble at work
     content:
@@ -205,7 +205,7 @@
 
   - heading: Started Springboard
     content:
-    - "While still producing the first podcast I cohosted with Tom and Adam, I branched out into doing a podcast of my own: an interview show discussing the origins of experienced developers. I called it &quot;<a href='http://springboardshow.com'>Springboard</a>&quot;, a pun on the name of the iOS system that starts apps when you tap them."
+    - "While still producing the first podcast I cohosted with Tom and Adam, I branched out into doing a podcast of my own: an interview show discussing the origins of experienced developers. I called it <em><a href='http://springboardshow.com'>Springboard</a></em>, a pun on the name of the iOS system that starts apps when you tap them."
     - My goal was to help newcomers to iOS by letting them know that the kinds of cool developers they look up to were beginners once, too. By asking other developers to share their stories, and through careful use of inclusive language, Springboard grew to a height of over 5 000 active listeners.
     img_url: /img/blog/5-years-of-ios/springboard.jpg
 
@@ -309,7 +309,7 @@
 
   - heading: European conference tour
     content:
-    - Since I arrived in Amsterdam, I've been contacted by a bunch of conferences and meetup groups all based in Europe. I accepted as many as possible. My wife accompanied me on a lot of trips, giving us a great reason to see new places. I am so grateful for the opportunity to <a href='http://ashfurrow.com/blog/lessons-learned-travelling-europe/''>travel</a> and meet so, so many new friends.
+    - Since I arrived in Amsterdam, I've been contacted by a bunch of conferences and meetup groups all based in Europe. I accepted as many as possible. My wife accompanied me on a lot of trips, giving us a great reason to see new places. I am so grateful for the opportunity to <a href='http://ashfurrow.com/blog/lessons-learned-travelling-europe/'>travel</a> and meet so, so many new friends.
     img_url: /img/blog/5-years-of-ios/conferences.jpg
 
   - heading: Eidolon

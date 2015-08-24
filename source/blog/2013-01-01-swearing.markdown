@@ -3,13 +3,13 @@ title: "Swearing"
 date: 2013-01-01 00:00
 ---
 
-<import><p>Earlier tonight, I wrote a post that got some attention around the Objective-C community about <a href="http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c">things to avoid while writing modern Objective-C</a>. In it, I swore a lot, and needlessly so. It came off, I realize now, as wanting attention. That wasn't my goal, but it's how it appeared. </p>
+<p>Earlier tonight, I wrote a post that got some attention around the Objective-C community about <a href="http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c">things to avoid while writing modern Objective-C</a>. In it, I swore a lot, and needlessly so. It came off, I realize now, as wanting attention. That wasn't my goal, but it's how it appeared. </p>
 
 <p>I didn't get anyone else to proofread this article, and I'm sure my usual sources would have told me so, as many of you did. Thank you for letting me know that you didn't appreciate the excess swearing. It was weak writing and you were all right to tell me so. </p>
 
 <p>The article has been updated to reflect my intended message and tone.</p>
 
-<p>I want to improve as a writer, and the way to do so is to try, fail, and learn. I've learnt a lesson tonight, and I want to thank everyone for helping me.</p></import>
+<p>I want to improve as a writer, and the way to do so is to try, fail, and learn. I've learnt a lesson tonight, and I want to thank everyone for helping me.</p>
 
 <!-- more -->
 

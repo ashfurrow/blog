@@ -3,7 +3,7 @@ title: "Default Initializer Style"
 date: 2013-01-25 00:00
 ---
 
-<import><p>I just created a new class, subclassing <code>UITableViewCell</code>, and this is the initializer Xcode gave me:</p>
+<p>I just created a new class, subclassing <code>UITableViewCell</code>, and this is the initializer Xcode gave me:</p>
 
 <pre><code>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -29,7 +29,7 @@ date: 2013-01-25 00:00
 
 <p>Holy balls that's better. </p>
 
-<p>Am I crazy here? Or am I just the last sane developer left?</p></import>
+<p>Am I crazy here? Or am I just the last sane developer left?</p>
 
 <!-- more -->
 

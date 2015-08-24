@@ -3,12 +3,13 @@ title: "Working to change the world"
 date: 2012-09-15 00:00
 ---
 
-<import><blockquote>
+<blockquote>
   <p>Focusing on doing enormous good can make us feel justified in neglecting small acts of goodness.</p>
   
   <p>...</p>
   
   <p>It’s very hard to know what kind of impact you’re going to have in the world. The surest way to do great good is to focus first on doing good.</p>
+
 </blockquote>
 
 <p>Thanks to my friend Aaron for sharing <a href="http://www.johndcook.com/blog/2012/09/15/working-to-change-the-world/">this</a> with me on Facebook. </p>
@@ -19,7 +20,8 @@ date: 2012-09-15 00:00
 
 <blockquote>
   <p>Think globally; act within local scope.</p>
-</blockquote></import>
+
+</blockquote>
 
 <!-- more -->
 

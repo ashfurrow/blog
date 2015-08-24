@@ -3,18 +3,20 @@ title: "Think Twice, Publish once"
 date: 2012-09-10 00:00
 ---
 
-<import><p>Oh, look, a giant shit storm is brewing on the Internet. HP released a new, <a href="http://www.engadget.com/2012/09/10/hp-spectre-one-all-in-one-envy-20-envy-23-pavilion-20/">obvious knock-off</a> of the iMac.</p>
+<p>Oh, look, a giant shit storm is brewing on the Internet. HP released a new, <a href="http://www.engadget.com/2012/09/10/hp-spectre-one-all-in-one-envy-20-envy-23-pavilion-20/">obvious knock-off</a> of the iMac.</p>
 
 <p>Marco Arment is upset about the <a href="http://www.marco.org/2012/09/10/elephant">coverage The Verge</a> is giving the computer because their article doesn't draw attention to its obviousness knock-offness:</p>
 
 <blockquote>
   <p>Maintaining these relationships while retaining credibility isn’t always an easy choice for many sites, and many choose poorly.</p>
+
 </blockquote>
 
 <p>John Gruber <a href="http://daringfireball.net/linked/2012/09/10/marco-design">linked to</a> Marco's post, while adding the following:</p>
 
 <blockquote>
   <p>it’s about not pissing off the vocal anti-Apple contingent of their readerships</p>
+
 </blockquote>
 
 <p>Exactly. Why bother, after all?</p>
@@ -27,6 +29,7 @@ date: 2012-09-10 00:00
 
 <blockquote>
   <p>Obviously people rip off Apple. It is not news.</p>
+
 </blockquote>
 
 <p>The Verge reports <em>news</em> and <em>everyone knows</em> that everyone rips off Apple. The Verge has no stake in pissing off its readership, Gruber is right. However, The Verge isn't avoiding the issue out of a sense of appeasement; they just don't have a stake in this fight, so why bother?</p>
@@ -39,7 +42,7 @@ date: 2012-09-10 00:00
 
 <p>People will take things personally, and I would have thought that everyone in this situation would have realized that. Maybe next time we can all just cool off before hitting the "Publish" and needlessly hurting someone's feelings. </p>
 
-<p>Or maybe I'm just being too Canadian. Can't we all be friends?</p></import>
+<p>Or maybe I'm just being too Canadian. Can't we all be friends?</p>
 
 <!-- more -->
 

@@ -9,7 +9,11 @@ The other day I posed this (somewhat cryptic) question to Twitter:
 
 <!-- more -->
 
-<blockquote class="twitter-tweet" lang="en"><p>Best way for pure Swift objects to have optional conformance to some contract? Optional protocols/protocol members are <a href="https://twitter.com/objc">@objc</a>-only.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/560436119956115456">January 28, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en">
+
+<p>Best way for pure Swift objects to have optional conformance to some contract? Optional protocols/protocol members are <a href="https://twitter.com/objc">@objc</a>-only.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/560436119956115456">January 28, 2015</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I heard back from a lot of different people with a lot of different opinions. Most were confused by my necessarily terse question (it may have been better to post a longer, more detailed question on a medium that provides more than 140 characters). 
 
@@ -129,7 +133,11 @@ After playing around for a while, things seemed a bit hopeless. Eventually, I re
 
 Let’s revisit the high-level problem I’m trying to solve: I have two types and I want them to talk to each other *without coupling*. Justin Spahr-Summers, as usual, has an answer: 
 
-<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Split out the optional bits into one or more separate protocols that can be conformed to if desired.</p>&mdash; Justin Spahr-Summers (@jspahrsummers) <a href="https://twitter.com/jspahrsummers/status/560493854374113280">January 28, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en">
+
+<p><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Split out the optional bits into one or more separate protocols that can be conformed to if desired.</p>&mdash; Justin Spahr-Summers (@jspahrsummers) <a href="https://twitter.com/jspahrsummers/status/560493854374113280">January 28, 2015</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 OK, cool. I can see that being really useful for table views, for example. He even later [pointed out](https://twitter.com/jspahrsummers/status/560498081162993665) that was the case. So let’s take a break from `Cat` and `Food` and look at table views. How might they look in pure Swift?  
 

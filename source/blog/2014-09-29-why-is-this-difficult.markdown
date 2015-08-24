@@ -3,12 +3,14 @@ title: "Why is this Difficult?"
 date: 2014-09-29 00:00
 ---
 
-<import><p>Take a ride with me in the way-back machine. It was July in the year of 2014. Times were different – simpler – they didn’t even have iPhone 6’s! A team of documentarians had a goal to create a documentary about software and its cultural impacts on society. Pretty cool, huh? So they put it up for <a href="https://www.kickstarter.com/projects/appdocu/app-the-human-story">Crowdfunding</a> and easily reach their goal of $100,000. They actually reach 163% of their goal, and kudos to them. </p>
+<p>Take a ride with me in the way-back machine. It was July in the year of 2014. Times were different – simpler – they didn’t even have iPhone 6’s! A team of documentarians had a goal to create a documentary about software and its cultural impacts on society. Pretty cool, huh? So they put it up for <a href="https://www.kickstarter.com/projects/appdocu/app-the-human-story">Crowdfunding</a> and easily reach their goal of $100,000. They actually reach 163% of their goal, and kudos to them. </p>
 
 <!-- more -->
 
 <p>Now let’s return to the present. The bleak, terrible present. Another team of documentary filmmakers has another goal: deconstruct, raise awareness about, and help fix the gender gap in the software industry. No small feat! They too <a href="https://www.indiegogo.com/projects/code-debugging-the-gender-gap">ask for money</a> from the internet, but sadly, they’re not enjoying the success of the first documentary. They’re asking for less money, even, and they’ve yet to break even halfway with less than two weeks to go. Oh, no!</p>
+
 <div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="1280x720" mozallowfullscreen="" allowfullscreen="" src="//player.vimeo.com/video/104541710?wmode=opaque&amp;api=1" width="1280" data-embed="true" webkitallowfullscreen="" frameborder="0" title="CODE teaser" height="720" class="embed-responsive-item"></iframe></div>
+
 <p>How come? Why are we, as a software community, not giving them the start-up funds they need? Seriously, let’s examine this. </p>
 
 <p>The first documentary has a cool cast – lots of celebrities in our community, mostly white, mostly men – and knowing them by reputation, I know that they have cool stories. But I’ve <em>heard</em> those stories before. I’ve listened to the Grubers and the Marcos on their podcasts and blogs. I know how awesome apps are and that they can change the world. </p>
@@ -25,5 +27,5 @@ date: 2014-09-29 00:00
 
 <p><em>Code: Debugging the Gender Gap</em> is on a “fixed funding” project, meaning if they don’t reach their goal, they get nothing and all their backers get a refund. This <em>seriously needs to succeed</em>. Someday, I want to have kids, but do I want my daughter to grow up in our society, as it exists today? <em>Hell no</em>. Would you?</p>
 
-<p>I am literally begging you, <em>please</em> go <a href="https://www.indiegogo.com/projects/code-debugging-the-gender-gap">give these filmmakers some money</a>. <em>Please</em> go tell everyone you know about this project. They have less than two weeks to go, but we can still make this happen. </p></import>
+<p>I am literally begging you, <em>please</em> go <a href="https://www.indiegogo.com/projects/code-debugging-the-gender-gap">give these filmmakers some money</a>. <em>Please</em> go tell everyone you know about this project. They have less than two weeks to go, but we can still make this happen. </p>
 

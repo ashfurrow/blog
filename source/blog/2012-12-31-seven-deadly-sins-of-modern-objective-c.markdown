@@ -4,7 +4,7 @@ date: 2012-12-31 00:00
 link_to: swift
 ---
 
-<import><p>I've had this post cooking for a long time, and I think it's ready to unveil. If you code Objective-C, this is going to offend you and that's good. If you aren't offended, then you don't care, and that's bad. </p>
+<p>I've had this post cooking for a long time, and I think it's ready to unveil. If you code Objective-C, this is going to offend you and that's good. If you aren't offended, then you don't care, and that's bad. </p>
 
 <p>This list isn't about stylistic things like which line new braces go on (new ones, duh). This list is about potential problems with the code you're writing on an objective scale. So let's get started.</p>
 
@@ -84,7 +84,7 @@ link_to: swift
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>That's my list. We're all guilty of some Objective-C sins, I'm sure, but the important thing is to improve. We're at the dawn of a new year. Why not take this opportunity to reflect on why you've been so sinful and find ways to code more virtuously in the new year?</p></import>
+<p>That's my list. We're all guilty of some Objective-C sins, I'm sure, but the important thing is to improve. We're at the dawn of a new year. Why not take this opportunity to reflect on why you've been so sinful and find ways to code more virtuously in the new year?</p>
 
 <!-- more -->
 

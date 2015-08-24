@@ -3,8 +3,10 @@ title: "Some Thoughts on Crowdfunding with Indiegogo"
 date: 2013-04-06 00:00
 ---
 
-<import><p>My <a href="http://www.indiegogo.com/projects/your-first-ios-app/x/2700170">Indiegogo campaign</a> to raise money for my next book has reached its goal and I couldn't be happier. </p>
+<p>My <a href="http://www.indiegogo.com/projects/your-first-ios-app/x/2700170">Indiegogo campaign</a> to raise money for my next book has reached its goal and I couldn't be happier. </p>
+
 <div align="center"><div class="embed-responsive embed-responsive-16by9"><iframe src="http://www.indiegogo.com/project/360741/widget/2700170" width="224px" height="486px" frameborder="0" scrolling="no" class="embed-responsive-item"></iframe></div></div>
+
 <p>I've got a couple of thoughts that are worth sharing. First, a lot of people asked why Indiegogo and not Kickstarter. The answer is pretty simple: Kickstarter doesn't let you fundraise from Canada. I didn't mention this in the Indiegogo writeup because I wanted them to hopefully feature me on their front page (to date, they have not).</p>
 
 <p>People also wanted to contribute more. My perk contribution tiers were $9 for the book, $18 for early access, and $100 for a writeup in the book itself. Lots of people contributed $50, but didn't get anything extra for their contribution. In hindsight, I left a price umbrella of sorts. I'm still contemplating what I can do to thank people who contributed more than they had to to reach a park – I'm open to suggestions. </p>
@@ -15,7 +17,7 @@ date: 2013-04-06 00:00
 
 <p>If I had to do it all over again, I would not have launched on a Friday night and I would have included more perk levels – one at $50 and one at $250.</p>
 
-<p>I'm incredibly grateful for everyone who has helped out, either by contributing or helping to spread the word. You all rock. </p></import>
+<p>I'm incredibly grateful for everyone who has helped out, either by contributing or helping to spread the word. You all rock. </p>
 
 <!-- more -->
 

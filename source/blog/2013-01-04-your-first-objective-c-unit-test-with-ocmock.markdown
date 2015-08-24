@@ -3,10 +3,13 @@ title: "Your First Objective-C Unit Test with OCMock"
 date: 2013-01-04 00:00
 ---
 
-<import><p>I've been making a lot of noise about unit testing in Objective-C lately, so I thought I'd put my money where my mouth is and write a primer. This tutorial is going to take you through, step-by-step, how to write your first unit test.</p>
+<p>I've been making a lot of noise about unit testing in Objective-C lately, so I thought I'd put my money where my mouth is and write a primer. This tutorial is going to take you through, step-by-step, how to write your first unit test.</p>
 
 <p>I'm going to be writing tests for an open source 500px iOS SDK I wrote for the company. You can follow along by <a href="https://github.com/AshFurrow/500px-iOS-api/tree/before-unit-tests">downloading a tag of the repo I made before writing unit tests</a>. It only has integration tests right now, which we'll turn off. Open the <code>PXAPI</code> project, click "PXAPI" in the project bar to the right of the run/stop buttons, and click "Edit Scheme". Select "Test" in the left hand pane and deselect each individual test (but not the top-level "Tests").</p>
-<img src="/img/import/blog/your-first-objective-c-unit-test/14DAD99F83FE46A5AD96B86CA5D2230B.png" class="img-responsive"><p>We'll add the <a href="http://ocmock.org">OCMock</a> mock object toolkit. Follow their documentation to install it. </p>
+
+<img src="/img/import/blog/your-first-objective-c-unit-test/14DAD99F83FE46A5AD96B86CA5D2230B.png" class="img-responsive" />
+
+<p>We'll add the <a href="http://ocmock.org">OCMock</a> mock object toolkit. Follow their documentation to install it. </p>
 
 <p>Let's write some tests for <code>PXRequest</code>. </p>
 
@@ -205,6 +208,7 @@ date: 2013-01-04 00:00
 <p>In addition to calling <code>start</code>, we're also going to manually invoke the <code>NSURLConnectionDataDelegate</code> method <code>connection:didReceiveResponse:</code>. This means we'll need a response to pass in as the second parameter. That's where the <code>mockResponse</code> object comes in. We'll create a mock <code>NSHTTPURLResponse</code> that returns 404 when ask for its status code. This is how we will simulate the connection failure. </p>
 
 <p>That's it! That's a basic primer on how to begin unit testing your network code. There is a lot more subtlety to unit testing and I would suggest you check out the <a href="http://ocmock.org">OCMock Documentation</a>.</p>
+
 <style>
 .header, .content-wrapper
 {
@@ -214,7 +218,7 @@ date: 2013-01-04 00:00
 {
 width: 720px;
 }
-</style></import>
+</style>
 
 <!-- more -->
 

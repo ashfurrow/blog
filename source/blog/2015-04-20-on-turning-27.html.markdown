@@ -37,7 +37,9 @@ I've been gaining Twitter followers at a more-or-less constant rate for a while.
 
 Another effect of having people follow me is that they often read my tweets. For example, there was a period of time that I'd meet someone at an event who would introduce themselves by asking "hey, have you got you toilet fixed yet?" 
 
-<blockquote class="twitter-tweet" lang="en"><p>I have running water, a toilet, and almost a shower. Almost.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/457095589046792192">April 18, 2014</a></blockquote>
+<blockquote class="twitter-tweet" lang="en">
+
+<p>I have running water, a toilet, and almost a shower. Almost.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/457095589046792192">April 18, 2014</a></blockquote>
 
 In real life, I [shy away](http://staging.ashfurrow.com/blog/whelp./) from being recognized. When someone does recognize me, I try and downplay my significance. It's actually a bit self-flagellant – I'm afraid that people will I'm a braggart. I've been trying to find a good balance between "I don't matter at all" and "I'm actually the greatest thing since venture capitalism."
 
@@ -82,6 +84,7 @@ Could you guess which one got used more often? Yeah. So [I sold the DSLR](http:/
 <div class="pixels-photo">
   <p><img src="https://drscdn.500px.org/photo/64107489/m%3D900/b68e4c650e97116f1deb361a0c878e93" alt="Photograph A Herd of Birds by Ash Furrow on 500px"></p>
   <a href="https://500px.com/photo/64107489/a-herd-of-birds-by-ash-furrow">A Herd of Birds by Ash Furrow on 500px</a>
+
 </div>
 
 And in the Spring, I was really liking the photos I got. I was shooting some on film, too. I had stripped down my kit but was happier. 
@@ -93,6 +96,7 @@ Around the beginning of Summer, I ran out of my antidepressant medication. You s
 <div class="pixels-photo">
   <p><img src="https://drscdn.500px.org/photo/93256777/m%3D900/a683d7fdb7d74663dd99660414d1830d" alt="Photograph Go to Work by Ash Furrow on 500px"></p>
   <a href="https://500px.com/photo/93256777/go-to-work-by-ash-furrow">Go to Work by Ash Furrow on 500px</a>
+
 </div>
 
 And then I got back from Art Basel and wanted to develop some film. I forgot to check the expiry date on the chemicals and lost two rolls of photos. 
@@ -142,6 +146,7 @@ Unbeknownst to me (probably a situation crafted by Orta), I found myself not jus
 <div class="pixels-photo">
   <p><img src="https://drscdn.500px.org/photo/85057949/m%3D900/802594669cff3c829754bcbd0570d12f" alt="Photograph Up and Up by Ash Furrow on 500px"></p>
   <a href="https://500px.com/photo/85057949/up-and-up-by-ash-furrow">Up and Up by Ash Furrow on 500px</a>
+
 </div>
 
 After months of working in the open on small projects, mostly ones related to my work at Artsy, it was time to build a new app. Orta floated the idea of writing it in the open, and my reaction was "of course it should be open source", which is kind of when things started to click for me. 
@@ -171,8 +176,10 @@ A small, but important change. This is a phrase I borrowed from Orta because it 
 <div class="pixels-photo">
   <p><img src="https://drscdn.500px.org/photo/103866177/m%3D900/daa5f104936ddfa19f28d7f2440574ec" alt="Photograph How We Got Here by Ash Furrow on 500px"></p>
   <a href="https://500px.com/photo/103866177/how-we-got-here-by-ash-furrow">How We Got Here by Ash Furrow on 500px</a>
+
 </div>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
 <script type="text/javascript" src="https://500px.com/embed.js"></script>
+
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>

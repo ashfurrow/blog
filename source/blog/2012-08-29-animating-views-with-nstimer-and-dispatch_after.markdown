@@ -3,7 +3,7 @@ title: "Animating Views with NSTimer and dispatch_after"
 date: 2012-08-29 00:00
 ---
 
-<import><p>I wrote a component today that animates a small widget between a certain number of states every 4 seconds, with each state having a small pause following the transition.</p>
+<p>I wrote a component today that animates a small widget between a certain number of states every 4 seconds, with each state having a small pause following the transition.</p>
 
 <p>There are a few different ways to approach this problem, and I chose a method that's a little unconventional with a small downside, which I'll discuss. </p>
 
@@ -41,7 +41,7 @@ date: 2012-08-29 00:00
 
 <p>A drawback with this approach is that, like all GCD dispatching, you can't cancel the operation (if, say, the view controller this method belonged to was dismissed). We also incur a tiny memory deficit that each block object occupies before it is executed. However, since the number of state transitions is relatively small, neither of these problems is significant. We use a <code>__weak</code> variable to avoid having the blocks make a strong reference to the widget.</p>
 
-<p>Here we see two common methods for delaying the execution of some code in Objective-C. One is used for recurring invocations of a method, and the other is used for small delays of a fixed number of blocks to be executed. </p></import>
+<p>Here we see two common methods for delaying the execution of some code in Objective-C. One is used for recurring invocations of a method, and the other is used for small delays of a fixed number of blocks to be executed. </p>
 
 <!-- more -->
 

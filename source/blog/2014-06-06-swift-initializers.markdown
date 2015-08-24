@@ -4,12 +4,16 @@ date: 2014-06-06 00:00
 link_to: swift
 ---
 
-<import><p>Swift, Apple's new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:</p>
+<p>Swift, Apple's new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:</p>
 
 <ul>
+
 <li>Formalizing convenience and designated initializers.</li>
+
 <li>Formalizing sequence of operations for initializers.</li>
+
 <li>Enforcing language-level, compile-time enforcement of these new semantics.</li>
+
 </ul>
 
 <p>I'm going to cover each of these in depth, with examples. Let's dive in!</p>
@@ -136,7 +140,7 @@ link_to: swift
 
 <p>He indicated that they're working on building something into the language, since initializers are the preferred way to create instances (as opposed to factory class methods). For now, this works well if you need this kind of failing initializer pattern.</p>
 
-<p>Neat! Swift has really embraced the conventions that Cocoa and CocoaTouch developers already know and incorporated them into the language-level with compile-time checks. </p></import>
+<p>Neat! Swift has really embraced the conventions that Cocoa and CocoaTouch developers already know and incorporated them into the language-level with compile-time checks. </p>
 
 <!-- more -->
 

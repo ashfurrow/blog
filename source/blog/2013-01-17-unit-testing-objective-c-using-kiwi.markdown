@@ -3,7 +3,7 @@ title: "Unit Testing Objective-C Using Kiwi"
 date: 2013-01-17 00:00
 ---
 
-<import><p>I have released <a href="https://github.com/AshFurrow/AFImageDownloader">AFImageDownloader</a> to the open source community. It, asynchronously, downloads JPEGs from the Internet and decompresses them on a background queue. </p>
+<p>I have released <a href="https://github.com/AshFurrow/AFImageDownloader">AFImageDownloader</a> to the open source community. It, asynchronously, downloads JPEGs from the Internet and decompresses them on a background queue. </p>
 
 <pre><code>[AFImageDownloader imageDownloaderWithURLString:@"http://static.ashfurrow.com.s3.amazonaws.com/github/worked.jpg" autoStart:YES completion:^(UIImage *decompressedImage) {
     self.imageView.image = decompressedImage;
@@ -61,7 +61,7 @@ date: 2013-01-17 00:00
 });
 </code></pre>
 
-<p>I'm looking for any feedback you have about the code, the structure of the project, or the testing I've performed. </p></import>
+<p>I'm looking for any feedback you have about the code, the structure of the project, or the testing I've performed. </p>
 
 <!-- more -->
 
