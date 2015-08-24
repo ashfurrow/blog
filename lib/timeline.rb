@@ -30,7 +30,7 @@ class Event
   def formatted_heading
     if @heading
       id = @heading.downcase
-      id.gsub!(/[^a-zA-Z0-9-]/, '')
+      id.gsub!(/[^a-zA-Z0-9]/, '')
       "<h3 id='#{ id }'>#{ @heading }</h3>"
     else
       ""

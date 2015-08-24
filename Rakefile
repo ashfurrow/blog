@@ -95,15 +95,15 @@ end
 
 desc 'Runs html-proofer against current build/ directory.'
 task :test do
-  # sh 'htmlproof ./build --check_html --check_favicon --only_4xx --disable_external --alt_ignore'
   require 'html/proofer'
+
   puts 'Testing build/ directory.'
   HTML::Proofer.new('build/', {
     ext: '.html',
     check_html: true,
     check_favicon: true,
     disable_external: true,
-    empty_alt_ignore: true,
+    alt_ignore: [/.*/],
     parallel: { in_processes: 3},
     }).run
 end
