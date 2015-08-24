@@ -4,7 +4,7 @@ date: 2013-06-18 00:00
 link_to: swift
 ---
 
-<import><p>Most of the time, when we use a <code>for</code> loop, it's to iterate over some collection. Typically an array. We used to write things like this:</p>
+<p>Most of the time, when we use a <code>for</code> loop, it's to iterate over some collection. Typically an array. We used to write things like this:</p>
 
 <pre><code>for (NSInteger i = 0; i &lt; [array count]; i++) {
     id obj = array[i];
@@ -41,7 +41,7 @@ for (id obj in array) {
 
 <p>We used to have to use arrays because Objective-C didn't have blocks. We've left the dark ages and can now focus on what we're trying to accomplish instead of being mired in the minutia of how the computer works. </p>
 
-<p>EDIT: Several readers have pointed out the <a href="http://darkdust.net/writings/objective-c/nsarray-enumeration-performance">performance</a> <a href="http://stackoverflow.com/questions/4486622/when-to-use-enumerateobjectsusingblock-vs-for">gains</a> when using the different methods. Good point, and definitely worth a read. </p></import>
+<p>EDIT: Several readers have pointed out the <a href="http://darkdust.net/writings/objective-c/nsarray-enumeration-performance">performance</a> <a href="http://stackoverflow.com/questions/4486622/when-to-use-enumerateobjectsusingblock-vs-for">gains</a> when using the different methods. Good point, and definitely worth a read. </p>
 
 <!-- more -->
 

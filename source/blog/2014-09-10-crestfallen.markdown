@@ -3,7 +3,7 @@ title: "Crestfallen"
 date: 2014-09-10 00:00
 ---
 
-<import><p>So yesterday happened. <a href="http://www.apple.com/watch/">This</a> happened. Ugh. Whatever. Apple’s made bad decisions before and they’ve survived. </p>
+<p>So yesterday happened. <a href="http://www.apple.com/watch/">This</a> happened. Ugh. Whatever. Apple’s made bad decisions before and they’ve survived. </p>
 
 <p>But this is not a post discussing the Watch. Well, it is, sort of. I want to talk about the event itself. </p>
 
@@ -25,6 +25,7 @@ date: 2014-09-10 00:00
 
 <blockquote>
   <p>So now, the foundation of Apple is built on the best personal computers in the world, the Macintosh; the best tablets in the world with iPad; the best phones in the world with iPhone …; and now adding Watch. </p>
+
 </blockquote>
 
 <p>The foundation of Apple. The <em>foundation</em> of Apple. Really. You know how something becomes the foundation of a company? By being a unparalleled success. Like those iPods that you kind of failed to mention there. The Watch isn’t even launching this year and you’re saying that it is now part of the <em>foundation</em> of Apple? Right up there with iPhones? </p>
@@ -45,5 +46,5 @@ date: 2014-09-10 00:00
 
 <p>So yesterday happened. Apple showed its cards, the whole of Twitter exploded in one giant nerdgasm, and I realized that they’re just a company like any other. </p>
 
-<p>And it broke my heart a little. </p></import>
+<p>And it broke my heart a little. </p>
 

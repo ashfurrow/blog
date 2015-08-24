@@ -1,7 +1,9 @@
 ---
 title: "From Proposal to Applause: How I Public Speaking"
 date: 2015-05-19 07:58:09 UTC
-summary: "<p>Yesterday at <a href='http://uikonf.com'>UIKonf</a>, I gave a presentation on Teaching and Learning, which described the beginning of my own career (surrounding blogging), reasons why you should blog, and some first steps to get started. </p><p>It was well-received and after the talk, several people asked me to share how I prepare and present conferences talks. So here we are. </p>"
+summary: "<p>Yesterday at <a href='http://uikonf.com'>UIKonf</a>, I gave a presentation on Teaching and Learning, which described the beginning of my own career (surrounding blogging), reasons why you should blog, and some first steps to get started. </p>
+
+<p>It was well-received and after the talk, several people asked me to share how I prepare and present conferences talks. So here we are. </p>"
 link_to: swift
 ---
 

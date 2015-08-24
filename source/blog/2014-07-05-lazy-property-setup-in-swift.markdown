@@ -4,7 +4,7 @@ date: 2014-07-05 00:00
 link_to: swift
 ---
 
-<import><p>A few weeks ago, I was talking with my friend <a href="http://twitter.com/ratkins">Robert</a> about Swift. He had a problem. He wanted to create a property of a class that is <em>not</em> an optional, but depends on <code>self</code> for its creation.</p>
+<p>A few weeks ago, I was talking with my friend <a href="http://twitter.com/ratkins">Robert</a> about Swift. He had a problem. He wanted to create a property of a class that is <em>not</em> an optional, but depends on <code>self</code> for its creation.</p>
 
 <!-- more -->
 
@@ -20,5 +20,5 @@ link_to: swift
 }()
 </code></pre>
 
-<p>The downside, as I can see it, is that <code>@lazy</code> properties <em>must</em> be <code>var</code> and not <code>let</code>, so you lose some Swift-ness there. Still, it's better than having an optional type. </p></import>
+<p>The downside, as I can see it, is that <code>@lazy</code> properties <em>must</em> be <code>var</code> and not <code>let</code>, so you lose some Swift-ness there. Still, it's better than having an optional type. </p>
 

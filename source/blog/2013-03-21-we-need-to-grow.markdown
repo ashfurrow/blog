@@ -3,7 +3,7 @@ title: "We Need to Grow"
 date: 2013-03-21 00:00
 ---
 
-<import><p>I'm over half way to my funding goal on my <a href="http://indiegogo.com/projects/your-first-ios-app">Indiegogo project</a> to fund my next book. One of my primary goals in this project is to attract existing developers working with other languages and ecosystems into the iOS world. I believe that we are sitting at a crossroads between stagnation and evolution. We need diversification to continue growing. </p>
+<p>I'm over half way to my funding goal on my <a href="http://indiegogo.com/projects/your-first-ios-app">Indiegogo project</a> to fund my next book. One of my primary goals in this project is to attract existing developers working with other languages and ecosystems into the iOS world. I believe that we are sitting at a crossroads between stagnation and evolution. We need diversification to continue growing. </p>
 
 <p>Why?</p>
 
@@ -21,7 +21,7 @@ date: 2013-03-21 00:00
 
 <p>Sounds good to me.</p>
 
-<p>This project isn't just a book – it's a tool for making us better. Please help <a href="http://indiegogo.com/projects/your-first-ios-app">spread the word</a>. </p></import>
+<p>This project isn't just a book – it's a tool for making us better. Please help <a href="http://indiegogo.com/projects/your-first-ios-app">spread the word</a>. </p>
 
 <!-- more -->
 

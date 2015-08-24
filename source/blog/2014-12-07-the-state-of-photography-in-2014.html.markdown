@@ -61,7 +61,9 @@ During my recent [trip to Iceland](http://ashfurrow.com/blog/workcation-2014/), 
 <div class="pixels-photo">
   <p><img src="https://ppcdn.500px.org/91786937/90828c38f2fcf0a37787c6080d06d6ca786a4539/4.jpg" alt="Photograph Old Riverbed by Ash Furrow on 500px"></p>
   <a href="https://500px.com/photo/91786937/old-riverbed-by-ash-furrow">Old Riverbed by Ash Furrow on 500px</a>
+
 </div>
+
 <script type="text/javascript" src="https://500px.com/embed.js"></script>
 
 If I had eschewed my iPhone because it wasn’t a “real camera”, then I’d have never gotten a shot at all. 

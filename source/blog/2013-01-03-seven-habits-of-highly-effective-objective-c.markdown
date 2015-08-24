@@ -4,11 +4,12 @@ date: 2013-01-03 00:00
 link_to: swift
 ---
 
-<import><p>I've gotten a lot of feedback from my <a href="http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c">Seven Deadly Sins of Modern Objective-C</a> article. Thank you so much for getting in touch! I'm going to be addressing the main feedback in a series of follow-up articles.</p>
+<p>I've gotten a lot of feedback from my <a href="http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c">Seven Deadly Sins of Modern Objective-C</a> article. Thank you so much for getting in touch! I'm going to be addressing the main feedback in a series of follow-up articles.</p>
 
 <p>In this article, we're going to take a look at some virtuous habits that can make you a more productive developer. These are tips that I've compiled from my experience, and there are many, many more out there (as I'll talk about in number seven). So let's get started.</p>
 
 <h2 id="1usepragma">1. Use <code>#pragma</code>
+
 </h2>
 
 <p>The <code>#pragma</code> preprocessor directive is a useful tool for organizing code and <a href="http://nshipster.com/pragma/">other interesting things</a>. I use <code>#pragma</code> primarily to divide groups of methods within a class. For example:</p>
@@ -23,7 +24,10 @@ link_to: swift
 </code></pre>
 
 <p>When I open my jump bar's drop down for the file, It'll divide my methods with headers. Beginning the mark with a hyphen will also add a horizontal line to the drop down.</p>
-<img src="/img/import/blog/seven-habits-of-highly-effective-objective-c/198BD8E3B30B447F807F41D0E186F4A0.png" class="img-responsive"><p>This method works in headers and implementation files. It's a great way to keep your code organized into logical chunks and find things easier later on.</p>
+
+<img src="/img/import/blog/seven-habits-of-highly-effective-objective-c/198BD8E3B30B447F807F41D0E186F4A0.png" class="img-responsive" />
+
+<p>This method works in headers and implementation files. It's a great way to keep your code organized into logical chunks and find things easier later on.</p>
 
 <h2 id="2usecoredata">2. Use Core Data</h2>
 
@@ -94,7 +98,7 @@ link_to: swift
 
 <p>That sounds silly, I know. What I mean is that if you want to become really, really good, then you have to imbue every moment of your practice with that same attitude. </p>
 
-<p>If you enjoy Objective-C, then you should be following other developers on twitter and reading <a href="http://ashfurrow.com/blog/blog-resources">Objective-C blogs</a>. Surround yourself with opportunities to learn and you'll become a better developer. I know I have. </p></import>
+<p>If you enjoy Objective-C, then you should be following other developers on twitter and reading <a href="http://ashfurrow.com/blog/blog-resources">Objective-C blogs</a>. Surround yourself with opportunities to learn and you'll become a better developer. I know I have. </p>
 
 <!-- more -->
 

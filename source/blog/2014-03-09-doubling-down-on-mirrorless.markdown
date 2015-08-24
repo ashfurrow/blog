@@ -3,7 +3,7 @@ title: "Doubling Down on Mirrorless"
 date: 2014-03-09 00:00
 ---
 
-<import><p>I <a href="http://ashfurrow.com/blog/fuji-x100s-review">wrote recently</a> that I had purchased a Fuji X100S. At the time I reviewed the camera, I really liked it. In the weeks that followed, I've grown to love it. Since moving to Amsterdam I've taken it everywhere. Literally <em>everywhere</em> I go. </p>
+<p>I <a href="http://ashfurrow.com/blog/fuji-x100s-review">wrote recently</a> that I had purchased a Fuji X100S. At the time I reviewed the camera, I really liked it. In the weeks that followed, I've grown to love it. Since moving to Amsterdam I've taken it everywhere. Literally <em>everywhere</em> I go. </p>
 
 <p>Only once have I even brought out my 5D with my 50mm f/1.4 and 24-70 f/2.8 lenses. I just didn't need them because the X100S did everything I needed. </p>
 
@@ -13,7 +13,7 @@ date: 2014-03-09 00:00
 
 <p>So I sold my 5D and canon glass. </p>
 
-<p>Crazy I know, but the 5D has always been too much camera for me. I love shooting on primes, and the 35mm equivalent lens on the X100S is a great angle for me. Besides, when I need an interchangeable lens system, I have my Leica M6. Film, sure, but I've been shooting about 50/50 on film since I got here anyway. </p></import>
+<p>Crazy I know, but the 5D has always been too much camera for me. I love shooting on primes, and the 35mm equivalent lens on the X100S is a great angle for me. Besides, when I need an interchangeable lens system, I have my Leica M6. Film, sure, but I've been shooting about 50/50 on film since I got here anyway. </p>
 
 <!-- more -->
 

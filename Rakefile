@@ -66,6 +66,14 @@ namespace :publish do
   end
 end
 
+namespace :build do
+  desc 'Builds, then tests'
+  task :test do
+    Rake::Task['build'].invoke
+    Rake::Task['test'].invoke
+  end
+end
+
 desc "Build site locally"
 task :build do
   sh 'bundle exec middleman build --verbose'
@@ -83,7 +91,22 @@ task :server do
   }
 
   Process.wait(middleman)
-end 
+end
+
+desc 'Runs html-proofer against current build/ directory.'
+task :test do
+  require 'html/proofer'
+
+  puts 'Testing build/ directory.'
+  HTML::Proofer.new('build/', {
+    ext: '.html',
+    check_html: true,
+    check_favicon: true,
+    disable_external: true,
+    alt_ignore: [/.*/],
+    parallel: { in_processes: 3},
+    }).run
+end
 
 desc "Create new blog article"
 task :article, :title do |task, args|

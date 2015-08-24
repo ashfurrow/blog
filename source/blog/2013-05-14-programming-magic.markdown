@@ -3,7 +3,7 @@ title: "Programming Magic"
 date: 2013-05-14 00:00
 ---
 
-<import><p>When I was in university, every time I sat down to program I felt a rush of excitement and a sense of exploration. I would always learn something new, and things always felt new to me. </p>
+<p>When I was in university, every time I sat down to program I felt a rush of excitement and a sense of exploration. I would always learn something new, and things always felt new to me. </p>
 
 <p>By the time one programming language was beginning to feel old, I would start learning another for a new course or a new project. Eventually I settled on Objective-C and I've spent the past four years refining that knowledge. </p>
 
@@ -15,7 +15,7 @@ date: 2013-05-14 00:00
 
 <p>It's learning curve is steep, but the creators of the project are working on it. Every question I've asked about it has been promptly answered by one of them on StackOverflow. </p>
 
-<p>I would highly encourage you to check it out. I'm working on a series of new blog posts that'll help flatten out that curve. Stay tuned. </p></import>
+<p>I would highly encourage you to check it out. I'm working on a series of new blog posts that'll help flatten out that curve. Stay tuned. </p>
 
 <!-- more -->
 

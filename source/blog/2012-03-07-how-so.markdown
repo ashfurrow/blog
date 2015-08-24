@@ -3,29 +3,50 @@ title: "How So?"
 date: 2012-03-07 00:00
 ---
 
-<import><p>A trick I picked up from a friend: next time anyone makes any statement that
+<p>A trick I picked up from a friend: next time anyone makes any statement that
 </p>
+
 <ul>
+
 <li>sounds ridiculous</li>
+
 <li>is a boastful lie</li>
+
 <li>is a broad, but wholly unqualified, statement</li>
+
 </ul>
+
 <p>... all you have to do to get them to demonstrate how ridiculous they are is ask them one two-word sentence: "how so?"<!--more--></p>
+
 <p>"How so?" doesn't show your hand: it doesn't indicate that you disagree or agree or that you're disappointed or impressed. It shows that you're interested in learning more without letting them know that you think they're completely ridiculous.</p>
+
 <blockquote>
+
 <p>"This thing has completely changed my life!"</p>
+
 <p>"How so?"</p>
+
 </blockquote>
+
 <blockquote>
+
 <p>"We use an 'agile' software development methodology."</p>
+
 <p>"How so?"</p>
+
 </blockquote>
+
 <blockquote>
+
 <p>"Apple is going to completely fail in the next 3 years."</p>
+
 <p>"How so?"</p>
+
 </blockquote>
+
 <p>It is perfect.</p>
-<p>It doesn't even have to be something ridiculous. "How so?" works in any context that you want to indicate to the person you're conversing with that you want them to keep talking. It's been my conversational lubricant of choice for a while now, and I won't go anywhere without it.</p></import>
+
+<p>It doesn't even have to be something ridiculous. "How so?" works in any context that you want to indicate to the person you're conversing with that you want them to keep talking. It's been my conversational lubricant of choice for a while now, and I won't go anywhere without it.</p>
 
 <!-- more -->
 

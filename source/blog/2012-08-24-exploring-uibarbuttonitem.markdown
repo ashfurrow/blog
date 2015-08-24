@@ -3,8 +3,11 @@ title: "Exploring UIBarButtonItem"
 date: 2012-08-24 00:00
 ---
 
-<import><p>Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring.</p>
-<img src="/img/import/blog/exploring-uibarbuttonitem/36A0D5D3B0B24483B02E652F53987E58.png" class="img-responsive"><p>I've decided that the push notifications button should be red so more users tap on it. I think this design decision's a winner, so I'm not even going to run it by the designer first.</p>
+<p>Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring.</p>
+
+<img src="/img/import/blog/exploring-uibarbuttonitem/36A0D5D3B0B24483B02E652F53987E58.png" class="img-responsive" />
+
+<p>I've decided that the push notifications button should be red so more users tap on it. I think this design decision's a winner, so I'm not even going to run it by the designer first.</p>
 
 <p>However, after some light digging around in the code, I spent a lot of time learning more and more about <code>UIBarButtonItem</code> and I'm not really impressed. </p>
 
@@ -31,14 +34,26 @@ date: 2012-08-24 00:00
 <p>I can see the rationale behind this class; you supply a black and white image and the bar item renders it appropriately. As a developer, it seems really easy to use. Provide a simple image and your app looks like it belongs in the rest of UIKit. However, if you want to customize the appearance at all, welcome to a world of pain, as we'll see shortly.</p>
 
 <p>In the above screenshot, the image used to create the notifications <code>UIBarButtonItem</code> looks something like the following:</p>
-<img src="/img/import/blog/exploring-uibarbuttonitem/F8D3867C5BC4452DAC0C9BE2584016D8.png" class="img-responsive"><p><code>UIBarButtonItem</code> would take this image and figure out what it was <em>supposed</em> to look like, given the properties of the bar it was contained in. </p>
+
+<img src="/img/import/blog/exploring-uibarbuttonitem/F8D3867C5BC4452DAC0C9BE2584016D8.png" class="img-responsive" />
+
+<p><code>UIBarButtonItem</code> would take this image and figure out what it was <em>supposed</em> to look like, given the properties of the bar it was contained in. </p>
 
 <p>As another example, <code>UITabBar</code> renders images with a blue gradient and nice overlay depending on if its tab was selected:</p>
-<img src="/img/import/blog/exploring-uibarbuttonitem/A3390B33CC1D4BA6AF60B1A7EEF861B8.jpg" class="img-responsive"><p>Those tab bar buttons are all drawn using a single, black and white <code>png</code> and are re-rendered if they become selected, as "Songs" currently is.</p>
+
+<img src="/img/import/blog/exploring-uibarbuttonitem/A3390B33CC1D4BA6AF60B1A7EEF861B8.jpg" class="img-responsive" />
+
+<p>Those tab bar buttons are all drawn using a single, black and white <code>png</code> and are re-rendered if they become selected, as "Songs" currently is.</p>
 
 <p>If you want to circumvent the default appearence of the bar button item, then you can provide a custom view to be placed within the <code>UIBarButtonItem</code> without any custom drawing performed on it. The easiest way to do this is provide a <code>UIImageView</code> with your new custom image in it. For example, if I took the notification icon used above and replaced it with a red icon, I could achieve this effect in the 500px iPad app:</p>
-<img src="/img/import/blog/exploring-uibarbuttonitem/BEE259C5A030421CB65C5D8012123F70.png" class="img-responsive"><p>Using this new icon as a <code>UIImageView</code> custom view with <code>UIBarButtonItem</code>'s <code>initWithCustomView:</code> initializer, I'll get the following effect:</p>
-<img src="/img/import/blog/exploring-uibarbuttonitem/9E6BCEDFF1564134A3449996EDA4205B.png" class="img-responsive"><p>Awesome! I think this is a huge improvement. I can't wait to show it to Adam to see what he thinks.</p>
+
+<img src="/img/import/blog/exploring-uibarbuttonitem/BEE259C5A030421CB65C5D8012123F70.png" class="img-responsive" />
+
+<p>Using this new icon as a <code>UIImageView</code> custom view with <code>UIBarButtonItem</code>'s <code>initWithCustomView:</code> initializer, I'll get the following effect:</p>
+
+<img src="/img/import/blog/exploring-uibarbuttonitem/9E6BCEDFF1564134A3449996EDA4205B.png" class="img-responsive" />
+
+<p>Awesome! I think this is a huge improvement. I can't wait to show it to Adam to see what he thinks.</p>
 
 <p>Not so fast, however. I noticed that the notification popover no longer appears when I tap the button. What gives?!</p>
 
@@ -92,7 +107,7 @@ terminate called throwing an exception(lldb)
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>There are historical reasons for using this pattern to create standard icons, and it makes the job of developers easy if the look they're going for fits within the existing interface paradigm (ie: their app looks like it shipped with the user's device). However, for advanced customization, you'll have to break out some advanced techniques to convince <code>UIBarButtonItem</code> to behave. </p></import>
+<p>There are historical reasons for using this pattern to create standard icons, and it makes the job of developers easy if the look they're going for fits within the existing interface paradigm (ie: their app looks like it shipped with the user's device). However, for advanced customization, you'll have to break out some advanced techniques to convince <code>UIBarButtonItem</code> to behave. </p>
 
 <!-- more -->
 

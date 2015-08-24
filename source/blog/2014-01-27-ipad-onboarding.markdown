@@ -3,7 +3,7 @@ title: "iPad Onboarding"
 date: 2014-01-27 00:00
 ---
 
-<import><p>My parents were in town for the weekend and we went to the Apple Store to get them their first iPad, and, in fact, their first ever Apple product. Mom uses a laptop a lot for games and Facebook, but Dad doesn't really touch it. The iPad was a gift for his birthday; it was important to me that they get a really easy-to-use tablet and not some Samsung knock-off. </p>
+<p>My parents were in town for the weekend and we went to the Apple Store to get them their first iPad, and, in fact, their first ever Apple product. Mom uses a laptop a lot for games and Facebook, but Dad doesn't really touch it. The iPad was a gift for his birthday; it was important to me that they get a really easy-to-use tablet and not some Samsung knock-off. </p>
 
 <p>We got back to my apartment and mom unboxed the iPad. I was telling her all about how important the unboxing experience was to Apple when she surprised that it came with nearly a full charge. Good on Apple. That, however, is where the trouble started. </p>
 
@@ -12,15 +12,18 @@ date: 2014-01-27 00:00
 <p>I don't know how many times I had to type in their new password, but it was <em>way</em> too many. Here's the ideal onboarding experience for a new Apple ID:</p>
 
 <ul>
+
 <li>Create a new account, including a password.</li>
+
 <li>You're now signed into iCloud, the App Store, the iTunes Store, and everything.</li>
+
 </ul>
 
 <p>Instead, I had to repeatedly enter in the same password for iCloud, for the App Store (<em>several times</em>, including verifying the payment info). Downloading their first app was <em>way</em> harder than I expected. </p>
 
 <p>Apple's raised the bar in a lot of ways, but the first-run experience needs to get way better. I've helped both my parents and grandparents get set up with new iPads and both times I've been very disappointed. It's just not an experience that a novice iOS user can approach without getting frustrated. </p>
 
-<p>The account sign-in gaffe is an obvious oversight given how much attention Apple puts into the unboxing experience. </p></import>
+<p>The account sign-in gaffe is an obvious oversight given how much attention Apple puts into the unboxing experience. </p>
 
 <!-- more -->
 

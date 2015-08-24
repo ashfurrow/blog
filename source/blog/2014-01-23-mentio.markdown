@@ -3,9 +3,9 @@ title: "Mentio"
 date: 2014-01-23 00:00
 ---
 
-<import><p>Came across an interesting app called <a href="https://itunes.apple.com/ca/app/mentio-personal-media-wish/id796557338?mt=8&amp;uo=4&amp;at=1l3v6zC">Mentio</a> that serves as a wishlist for apps, movies, and albums. </p>
+<p>Came across an interesting app called <a href="https://itunes.apple.com/ca/app/mentio-personal-media-wish/id796557338?mt=8&amp;uo=4&amp;at=1l3v6zC">Mentio</a> that serves as a wishlist for apps, movies, and albums. </p>
 
-<p>It's really neat how it integrates in with the iTunes catalogue. I assume it's using affiliate links to make money somehow. What a novel idea. Wish I had thought of it. </p></import>
+<p>It's really neat how it integrates in with the iTunes catalogue. I assume it's using affiliate links to make money somehow. What a novel idea. Wish I had thought of it. </p>
 
 <!-- more -->
 

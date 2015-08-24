@@ -3,7 +3,7 @@ title: "Accessibility on iOS"
 date: 2012-11-18 00:00
 ---
 
-<import><p>I was invited to give a talk at the <a href="http://www.meetup.com/a11yTo/events/90075082/">Toronto Accessibility Meetup last night</a> about a developer's perspective on making software accessible. It was an amazing experience and I took a lot away from the conversations I had with the people there. </p>
+<p>I was invited to give a talk at the <a href="http://www.meetup.com/a11yTo/events/90075082/">Toronto Accessibility Meetup last night</a> about a developer's perspective on making software accessible. It was an amazing experience and I took a lot away from the conversations I had with the people there. </p>
 
 <p>I'm posting my script online, which I did deviate from quite a bit. However, these sum up my thoughts on accessibility.</p>
 
@@ -85,7 +85,7 @@ date: 2012-11-18 00:00
 
 <p>Making quality software is a measure of honour, and making software accessible is a measure of quality. Software developers need to recognize that there are other aspects of their interface exist beyond the visual. They need to understand how people use their software without the visual interface and they need to modify their apps to be congruent with these users' expectations.</p>
 
-<p>The biggest challenge in raising the quality of accessibility in iOS apps is educating developers about how and why they need to worry about it. </p></import>
+<p>The biggest challenge in raising the quality of accessibility in iOS apps is educating developers about how and why they need to worry about it. </p>
 
 <!-- more -->
 

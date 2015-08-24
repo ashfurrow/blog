@@ -9,6 +9,7 @@ I was browsing through Youtube when I saw this amazing video from 1940 explainin
 
 <div class="embed-responsive embed-responsive-4by3">
 	<iframe width="420" height="315" class="embed-responsive-item" src="//www.youtube.com/embed/N0mraHHyBrA" frameborder="0" allowfullscreen></iframe>
+
 </div>
 
 (Skip ahead to 1 minute if you don't like campy 1940's title credits music, but shame on you if you don't.)

@@ -3,7 +3,7 @@ title: "Passing NSManagedObject Instances Between Contexts with Ordered Relation
 date: 2012-08-24 00:00
 ---
 
-<import><p>Core Data is awesome. It's probably the most awesome thing about developing in Objective-C. Well, maybe not, but it's up there. However, it doesn't come without its frustrations.</p>
+<p>Core Data is awesome. It's probably the most awesome thing about developing in Objective-C. Well, maybe not, but it's up there. However, it doesn't come without its frustrations.</p>
 
 <p>Recently, a colleague and I were having trouble with the new iOS 5 Core Data child managed object contexts. To recap, all of your Core Data objects exist in a context that is specific to a thread. Access any properties of these objects whatsoever in a different thread can lead to a crash, and iOS 5 introduced a new way to create child contexts to perform operations in a background thread. Hurray!</p>
 
@@ -58,7 +58,7 @@ else
 
 <p>Something is fishy with <code>NSOrderedSet</code> and Core Data. We tried using both the generated Core Data accessors and setting the relationship preoprty to a newly created set, but both yielded similar results.</p>
 
-<p>If anyone has any hypothesis as to why this might have been happening, please do get in touch.</p></import>
+<p>If anyone has any hypothesis as to why this might have been happening, please do get in touch.</p>
 
 <!-- more -->
 

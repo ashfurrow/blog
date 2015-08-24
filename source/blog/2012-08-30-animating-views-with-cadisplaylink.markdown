@@ -3,13 +3,20 @@ title: "Animating Views with CADisplayLink"
 date: 2012-08-30 00:00
 ---
 
-<import><p>After <a href="http://ashfurrow.com/animating-views-with-nstimer-and-dispatchafter">yesterday's post</a> on animating views with <code>NSTimer</code> and <code>dispatch_after</code>, <a href="http://twitter.com/senior">Robin Senior</a> responded on twitter with the following question:</p>
+<p>After <a href="http://ashfurrow.com/animating-views-with-nstimer-and-dispatchafter">yesterday's post</a> on animating views with <code>NSTimer</code> and <code>dispatch_after</code>, <a href="http://twitter.com/senior">Robin Senior</a> responded on twitter with the following question:</p>
+
 <div align="center">
+
 <blockquote class="twitter-tweet" data-in-reply-to="240936328655691776">
+
 <p><a href="https://twitter.com/ashfurrow"><s>@</s><b>ashfurrow</b></a> why don't you use CADisplayLink for animating views?</p>— Robin Senior (@senior) <a href="https://twitter.com/senior/status/240990149893312512" data-datetime="2012-08-30T01:51:43+00:00">August 30, 2012</a>
+
 </blockquote>
+
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </div>
+
 <p>Good question. The answer is that I didn't know that <code>CADisplayLink</code> existed. So I did some reading up.</p>
 
 <p><a href="http://developer.apple.com/library/ios/#documentation/QuartzCore/Reference/CADisplayLink_ClassRef/Reference/Reference.html"><code>CADisplayLink</code></a> is this delightful little class that's used to synchronize drawing of views to the refresh rate of the device's screen. Super cool!</p>
@@ -38,7 +45,7 @@ date: 2012-08-30 00:00
 
 <p>Next time you animate a view between transitions, consider using <code>CADisplayLink</code>. Tip o' the hat to Rob for pointing it out.</p>
 
-<p><strong>Update:</strong> Robin sends along <a href="http://zearfoss.wordpress.com/2011/09/02/more-cadisplaylink/">this post</a> on how to use <code>CADisplayLink</code>, written by the author of this <a href="https://github.com/pzearfoss/CircleDraw">example on GitHub</a>. Good stuff.</p></import>
+<p><strong>Update:</strong> Robin sends along <a href="http://zearfoss.wordpress.com/2011/09/02/more-cadisplaylink/">this post</a> on how to use <code>CADisplayLink</code>, written by the author of this <a href="https://github.com/pzearfoss/CircleDraw">example on GitHub</a>. Good stuff.</p>
 
 <!-- more -->
 

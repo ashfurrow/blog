@@ -3,10 +3,11 @@ title: "The Dark Side of Perfectionism"
 date: 2012-09-11 00:00
 ---
 
-<import><p>On a recent episode of <a href="http://5by5.tv/b2w/83">Back to Work</a>, our friend Merlin Mann made the following remark, and it struck me so deeply that I stopped walking to work and rewound just to listen to it a few more times.</p>
+<p>On a recent episode of <a href="http://5by5.tv/b2w/83">Back to Work</a>, our friend Merlin Mann made the following remark, and it struck me so deeply that I stopped walking to work and rewound just to listen to it a few more times.</p>
 
 <blockquote>
   <p>The dark side of perfectionism is that you may not even start [your project] because you sense that it won't be perfect.</p>
+
 </blockquote>
 
 <p>Holy shit. For me, he really hit the nail on the head. After all, if it's not perfect, why bother.</p>
@@ -25,7 +26,7 @@ date: 2012-09-11 00:00
 
 <p>No artist ever created something a moving piece of art by first expecting it to be perfect. I suspect that many artists never create anything because perfection is their <a href="http://5by5.tv/b2w/70">expectation zero</a>.</p>
 
-<p>There is a difference between polish and perfection. I think that you can have a polished product that you feel personally invested in, even if you know it's less than perfect. Don't let obsessions with perfection stop you from doing <em>anything</em>.</p></import>
+<p>There is a difference between polish and perfection. I think that you can have a polished product that you feel personally invested in, even if you know it's less than perfect. Don't let obsessions with perfection stop you from doing <em>anything</em>.</p>
 
 <!-- more -->
 

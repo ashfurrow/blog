@@ -1,16 +1,20 @@
 language: ruby
 sudo: false
-cache: bundler
+cache:
+  bundler: true
+  directories:
+  - build/
 rvm:
 - 2.1.2
 env:
   global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - secure: NIFnh3i0Ll2B6iEdEoQYvzNXOCiEySq69mzW/bY76LLJ92JKFqjl9Aazr+cY09QdsPF+pY/CSr/oLNs9Fh+nOQn8bB8XlTpSJS7welKlGsmCZCByfT7RP+oM4KfUm5PJ9XgNi9584Xh/S4r36Z0VzEcza/zWcEtntr1CdkKH70w=
   - secure: Z/ANF7e4hNxb0ou6Kk6/G0sLO5G+Jv1r1586VIfiXgXGTiOgkkF/8jcjKl49ngbQiWWXFByupdGdjW9k8yi9Iy9goYeINzj+phO+UgdY3BJwOq0Fufd5E5/W9ppc+zAVFVXsjPzjjKNDZBURAq4uJ/J6oHEmd7FfzWUC6oktHMM=
 before_install:
 - pip install --user s3cmd
 - s3cmd --version
 script:
-- rake build
+- bundle exec rake build:test
 after_success:
-- rake deploy:travis
+- bundle exec rake deploy:travis

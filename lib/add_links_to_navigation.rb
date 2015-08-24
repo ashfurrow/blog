@@ -12,26 +12,26 @@ module AddLinksToNavigation
     def registered(app, options={})
 
       app.after_render do |body, path, locs, template_class|
-        
+
         # There are multiple rendering calls and we want to only execute this code once.
-        if (path.to_s.index "layout.erb") != nil
-                            
+        if (path.to_s.index "layout.haml") != nil
+
           doc = Nokogiri::HTML(body)
           nodes = doc.css(".container h2[id], .container h3[id]")
-          
-            nodes.each do |header|
-            id = header.attributes["id"].content.gsub(/[^a-zA-Z-]/, '')
-            header.attributes["id"].value = id
-            if header.parent['class'] == 'cntl-content'
-              header.inner_html = header.inner_html + "<a class='header-link' href='\##{id}'>\#</a>"
-            else
-              header.inner_html = "<a class='header-link' href='\##{id}'>\#</a>" + header.inner_html
-            end
 
-            body = doc.to_s
-          end         
+          nodes.each do |header|
+            id = header.attributes["id"].content
+
+            if header.parent['class'] == 'cntl-content'
+              header.inner_html = "#{header.inner_html} <a class='header-link' href='\##{id}'>\#</a>"
+            else
+              header.inner_html = "<a class='header-link' href='\##{id}'>\#</a> #{header.inner_html}"
+            end
+          end
+
+          body = doc.to_s
         end
-        
+
         body
       end
     end

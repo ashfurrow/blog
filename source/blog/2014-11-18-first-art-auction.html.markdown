@@ -14,8 +14,8 @@ Orta, dB, and I got a chance to talk shop about Artsy – the company’s goals 
 
 It was also great to work with some of my colleagues on the auctions team who I normally don’t get an opportunity to interact with. Everything went well and the auction kiosks’ software worked flawlessly.
 
-<img alt="Orta, Anna, and I" src="/img/blog/first-art-auction/ici-2.gif" class="img-responsive">
+<img alt="Orta, Anna, and I" src="/img/blog/first-art-auction/ici-2.gif" class="img-responsive" />
 
 That is not to say that the evening was completely without incident. We had had a problem at the last auction which re-presented itself last night that me [managed to fix](http://artsy.github.io/blog/2014/11/18/debugging-our-hardware-problem/). It was an exhilarating experience. 
 
-<img alt="Just me" src="/img/blog/first-art-auction/ici-3.gif" class="img-responsive">
+<img alt="Just me" src="/img/blog/first-art-auction/ici-3.gif" class="img-responsive" />

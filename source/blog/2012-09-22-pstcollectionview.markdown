@@ -3,7 +3,7 @@ title: "PSTCollectionView"
 date: 2012-09-22 00:00
 ---
 
-<import><p>Interesting <a href="https://github.com/steipete/PSTCollectionView">project over on GitHub</a> that aims to provide a drop-in, API-compatible replacement for <a href="http://ashfurrow.com/uicollectionview-example"><code>UICollectionView</code></a>, one piece of the new hawtness in iOS 6. It's still a work in progress and they're looking for help. </p>
+<p>Interesting <a href="https://github.com/steipete/PSTCollectionView">project over on GitHub</a> that aims to provide a drop-in, API-compatible replacement for <a href="http://ashfurrow.com/uicollectionview-example"><code>UICollectionView</code></a>, one piece of the new hawtness in iOS 6. It's still a work in progress and they're looking for help. </p>
 
 <p>iOS 6 is very interesting, since it drops support for the first generation iPad while maintaining support for the older iPhone 3GS, which can't even support all of iOS 6's features. There is nothing about <code>UICollectionView</code> that would prevent its use on iOS 5 except for the fact that it "requires" iOS 6. </p>
 
@@ -13,7 +13,7 @@ date: 2012-09-22 00:00
 
 <p>That's where <code>PSTCollectionView</code> comes in.</p>
 
-<p>I think that, moving forward, we may see a growing number of these types of open-source projects aiming to replicate user interface implemented in newer version of iOS which not available on older hardware. </p></import>
+<p>I think that, moving forward, we may see a growing number of these types of open-source projects aiming to replicate user interface implemented in newer version of iOS which not available on older hardware. </p>
 
 <!-- more -->
 

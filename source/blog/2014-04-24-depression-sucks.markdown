@@ -3,7 +3,7 @@ title: "Depression Sucks"
 date: 2014-04-24 00:00
 ---
 
-<import><p>So yeah. I <a href="http://ashfurrow.com/blog/amsterdam-update">blogged</a> earlier this week about a lot of things, including how I was tapering off my medication. </p>
+<p>So yeah. I <a href="http://ashfurrow.com/blog/amsterdam-update">blogged</a> earlier this week about a lot of things, including how I was tapering off my medication. </p>
 
 <p>Mmhmm. </p>
 
@@ -25,7 +25,7 @@ date: 2014-04-24 00:00
 
 <p>This past weekend has reminded me of that time. I find myself questioning weather or not I was ready to take this step. On the one hand, I wanted to stop taking medication because I felt that it had helped me get through the roughest patch – to get enough energy to fight depression using <a href="http://www.amazon.com/gp/product/0898621283/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0898621283&amp;linkCode=as2&amp;tag=ashfur-20">self-talk</a> techniques and meditation. On the other hand, maybe halving my dose of the second drug came too soon. I haven't been diligent about meditating since moving to Amsterdam, so I really need to get back on that. </p>
 
-<p>I'm going to give it some more time, since I am getting better as time moves forward. However, going from my half dose down to nothing is going to be really, really hard. Since I have a lot of travelling in May and June, I might leave that next step for July. We'll see. </p></import>
+<p>I'm going to give it some more time, since I am getting better as time moves forward. However, going from my half dose down to nothing is going to be really, really hard. Since I have a lot of travelling in May and June, I might leave that next step for July. We'll see. </p>
 
 <!-- more -->
 

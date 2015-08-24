@@ -4,7 +4,7 @@ date: 2014-06-08 00:00
 link_to: swift
 ---
 
-<import><p>I was working with <a href="http://twitter.com/nottombrown">someone</a> on an <a href="https://github.com/modocache/Quick">open-source testing framework for Swift</a> and we came across the following problem. If the last statement in a closure can be interpreted as an expression, then the Swift compiler will try and interpret that as the return value for that closure, which can conflict with an expected type. </p>
+<p>I was working with <a href="http://twitter.com/nottombrown">someone</a> on an <a href="https://github.com/modocache/Quick">open-source testing framework for Swift</a> and we came across the following problem. If the last statement in a closure can be interpreted as an expression, then the Swift compiler will try and interpret that as the return value for that closure, which can conflict with an expected type. </p>
 
 <p>Let's take a look at an example. </p>
 
@@ -34,6 +34,7 @@ link_to: swift
 
 <blockquote>
   <p>Cannot convert the expression's type '()' to type 'Bool'</p>
+
 </blockquote>
 
 <p>Interesting. It took us a few minutes to understand what was going on. The invocation of <code>a</code> returned a <code>Bool</code>, so the compiler was inferring that the closure should return a <code>Bool</code>, too, leading to a type-mismatch. Remember that the last expression in a closure is interpreted as an implicit return statement. So the compiler was interpreting this as follows. </p>
@@ -58,7 +59,7 @@ link_to: swift
 }
 </code></pre>
 
-<p>Interesting. I've filed a radar about it and I expect it'll be fixed soon. </p></import>
+<p>Interesting. I've filed a radar about it and I expect it'll be fixed soon. </p>
 
 <!-- more -->
 

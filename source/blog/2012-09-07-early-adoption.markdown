@@ -3,7 +3,7 @@ title: "Early Adoption"
 date: 2012-09-07 00:00
 ---
 
-<import><p>There's been a lot written over the past few months about Twitter being a total dick by <a href="https://dev.twitter.com/blog/changes-coming-to-twitter-api">cutting off it's old API</a>, <a href="http://mashable.com/2012/08/16/twitter-api-big-changes/">killing off third party developers</a>, and <a href="http://news.cnet.com/8301-1023_3-57507980-93/twitter-said-to-be-tossing-twitter-for-mac-app/">"sunsetting" the Twitter for Mac app</a>. It feels like Twitter is out to get us geeks, who were the early adopters of this platform. We feel that we gave Twitter the content that attracted the mass of users it is now using to grow, a growth they feel necessitates cutting off the experience we all have come to enjoy.</p>
+<p>There's been a lot written over the past few months about Twitter being a total dick by <a href="https://dev.twitter.com/blog/changes-coming-to-twitter-api">cutting off it's old API</a>, <a href="http://mashable.com/2012/08/16/twitter-api-big-changes/">killing off third party developers</a>, and <a href="http://news.cnet.com/8301-1023_3-57507980-93/twitter-said-to-be-tossing-twitter-for-mac-app/">"sunsetting" the Twitter for Mac app</a>. It feels like Twitter is out to get us geeks, who were the early adopters of this platform. We feel that we gave Twitter the content that attracted the mass of users it is now using to grow, a growth they feel necessitates cutting off the experience we all have come to enjoy.</p>
 
 <p>I'm under no delusions that they owe us anything; Dan and Marco <a href="http://5by5.tv/buildanalyze/92">discussed this recently</a> on their podcast. However, I do feel that they are being <a href="http://5by5.tv/hypercritical/83">dishonourable</a>, a sentiment I believe is being felt by most geeks on Twitter.</p>
 
@@ -19,7 +19,7 @@ date: 2012-09-07 00:00
 
 <p>Let's take a look at my completely self-serving example of photographers: Flickr once dominated the online photo-sharing market but recently, 500px (my employer), is the complete new hawtness. Lots of people still use Flickr and it's be no means <em>dead</em>, but the specialists (pro photographers) and the hobbyists (amateurs like myself) are using 500px because it serves our needs better. Flick is still around because people use it to upload their ten thousand shitty vacation shots. I know what service <em>I'd</em> rather use, and I know which company <em>I'd</em> rather work for. </p>
 
-<p>So that's it. Twitter, for us, is dying. If there is sufficient demand, something will come along to fill the void it is leaving in our lives. I don't think Twitter will die, but I don't think that means a competing service won't flourish; we can all be happy there for a few years before the rest of the world ruins it for us, again.</p></import>
+<p>So that's it. Twitter, for us, is dying. If there is sufficient demand, something will come along to fill the void it is leaving in our lives. I don't think Twitter will die, but I don't think that means a competing service won't flourish; we can all be happy there for a few years before the rest of the world ruins it for us, again.</p>
 
 <!-- more -->
 

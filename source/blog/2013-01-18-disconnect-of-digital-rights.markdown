@@ -3,7 +3,7 @@ title: "Disconnect of Digital Rights"
 date: 2013-01-18 00:00
 ---
 
-<import><p>I read an interesting article on <a href="http://www.thephoblographer.com/2013/01/17/getty-google-struck-a-deal-people-are-not-happy/">The Phoblographer</a> this morning on a new debacle, similar to the Instagram ToS uproar. Basically, Google has licensed hundreds of images from iStock Photo and Getty Images for use in Google Docs. The problem is, no one told the photographers that they images would be available for download at very high resolutions and without any attribution.</p>
+<p>I read an interesting article on <a href="http://www.thephoblographer.com/2013/01/17/getty-google-struck-a-deal-people-are-not-happy/">The Phoblographer</a> this morning on a new debacle, similar to the Instagram ToS uproar. Basically, Google has licensed hundreds of images from iStock Photo and Getty Images for use in Google Docs. The problem is, no one told the photographers that they images would be available for download at very high resolutions and without any attribution.</p>
 
 <p>It seems strange to me that two tech companies, Instagram and Google, didn't totally see this coming. Really, though, you make <em>software</em>, one of the world's most valuable things that's stolen on the Internet, and you don't see a problem here?</p>
 
@@ -11,7 +11,7 @@ date: 2013-01-18 00:00
 
 <p>Software developers: the next time you develop a feature or a product that might be <em>perceived</em> by content creators as ripping them off, think about a) should you even make this? and b) how can you design it so that the correct message is inferred. </p>
 
-<p>I'm really surprised that these software makers didn't put themselves in the shoes of photographers. </p></import>
+<p>I'm really surprised that these software makers didn't put themselves in the shoes of photographers. </p>
 
 <!-- more -->
 

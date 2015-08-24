@@ -3,7 +3,7 @@ title: "Challenging Established Dogma"
 date: 2014-09-14 00:00
 ---
 
-<import><p>I’ve been a longtime believer in the power of challenging established dogma and authority. Just ask my mom – she’ll tell you what a little pest I was growing up. </p>
+<p>I’ve been a longtime believer in the power of challenging established dogma and authority. Just ask my mom – she’ll tell you what a little pest I was growing up. </p>
 
 <p>When I was young, my grandmother was a huge influence on me and encouraged me to question the authoritative aspects of society. Later, I met a high school teacher who introduced me to literary critical theory, which kind of sparked everything about who I am today. </p>
 
@@ -23,6 +23,7 @@ date: 2014-09-14 00:00
   <p>I was reading your blog post here: <a href="http://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell">http://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell</a> - and had a question. You mention it would be "very, very bad" to make the UITableViewCell the delegate/dataSource of the UICollectionView, but you give no reasons. Why?! (but seriously, I am very curious - what are your reasons for that declaration?)</p>
   
   <p>I look forward to hearing from you!</p>
+
 </blockquote>
 
 <p>What an excellent question. </p>
@@ -39,9 +40,10 @@ date: 2014-09-14 00:00
   <p>Why does this matter? Well, MVC isn’t something extra to be added to app code. It’s a framework that restricts what we can do. It’s certainly possible to write an entire app using a single file, or only a few classes, but we don’t do that because it makes it hard for us to reason about what code lives where. It may be more convenient or faster to write code using fewer, larger files, but maintaining this code is very time-intensive. So we use MVC to restrict how we structure code. </p>
   
   <p>Sometimes, it’s convenient or even necessary to break the rules of a framework like MVC, but we should only do so as a last resort, with solid justification, and proper documentation about our reasoning. </p>
+
 </blockquote>
 
 <p>Instead of just saying “because of MVC”, I chose to give an opinion. Remember, that’s all rules are – opinions – and opinions, no matter how well-informed they are, should be questioned. <em>Especially</em> in our field, where the environment that opinions are formed in changes so quickly. </p>
 
-<p>I find helping developers learn and grow to be incredibly rewarding and I’m always trying to improve my teaching skills. If you’re a blogger or an OSS contributor or you answer questions on Stackoverflow, remember the Dreyfus model of skill acquisition. Sometimes a generalized rule is what a beginner needs, but eventually, those beginners are going to start challenging those generalizations, and <em>that is awesome</em>. <strong>Do not</strong> discourage this behaviour. </p></import>
+<p>I find helping developers learn and grow to be incredibly rewarding and I’m always trying to improve my teaching skills. If you’re a blogger or an OSS contributor or you answer questions on Stackoverflow, remember the Dreyfus model of skill acquisition. Sometimes a generalized rule is what a beginner needs, but eventually, those beginners are going to start challenging those generalizations, and <em>that is awesome</em>. <strong>Do not</strong> discourage this behaviour. </p>
 

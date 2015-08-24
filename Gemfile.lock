@@ -16,6 +16,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    colored (1.2)
     colorize (0.7.3)
     commonjs (0.2.7)
     compass (1.0.1)
@@ -31,6 +32,8 @@ GEM
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     erubis (2.7.0)
+    ethon (0.7.4)
+      ffi (>= 1.3.0)
     excon (0.40.0)
     execjs (2.2.2)
     ffi (1.9.6)
@@ -76,6 +79,14 @@ GEM
     hitimes (1.2.2)
     hooks (0.4.0)
       uber (~> 0.0.4)
+    html-proofer (2.3.0)
+      addressable (~> 2.3)
+      colored (~> 1.2)
+      mercenary (~> 0.3.2)
+      nokogiri (~> 1.5)
+      parallel (~> 1.3)
+      typhoeus (~> 0.7)
+      yell (~> 2.0)
     i18n (0.6.11)
     inflecto (0.0.2)
     ipaddress (0.8.0)
@@ -90,6 +101,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     map (6.5.5)
+    mercenary (0.3.5)
     middleman (3.3.6)
       coffee-script (~> 2.2)
       compass (>= 1.0.0, < 2.0.0)
@@ -105,9 +117,6 @@ GEM
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
       tzinfo (>= 0.3.0)
-    middleman-cloudfront (0.1.0)
-      fog (~> 1.9)
-      middleman-core (~> 3.0)
     middleman-core (3.3.6)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -151,10 +160,12 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.3)
       activesupport (>= 3.1)
+    parallel (1.6.1)
     pmap (1.0.1)
     rack (1.4.5)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -181,6 +192,8 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
+    typhoeus (0.7.3)
+      ethon (>= 0.7.4)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.9)
@@ -190,23 +203,25 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.6)
+    yell (2.0.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   builder
+  html-proofer
   less
   liquid
   middleman
   middleman-blog
-  middleman-cloudfront
   middleman-s3_sync
   middleman-syntax
   nokogiri
   rack (= 1.4.5)
+  rake
   redcarpet
   therubyracer
 
 BUNDLED WITH
-   1.10.3
+   1.10.6

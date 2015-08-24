@@ -3,23 +3,36 @@ title: "1 Simple Tip for Designing Better iPhone Apps"
 date: 2012-09-07 00:00
 ---
 
-<import><p>A friend of mine tweeted an <a href="http://sixrevisions.com/mobile/design-iphone-apps-better/">article</a> this morning that caught my eye:</p>
+<p>A friend of mine tweeted an <a href="http://sixrevisions.com/mobile/design-iphone-apps-better/">article</a> this morning that caught my eye:</p>
+
 <div align="center">
+
 <blockquote class="twitter-tweet">
+
 <p>For the iOS devs out there: 5 simple tips for designing better iPhone apps <a href="http://t.co/JvZ6MCEc" title="http://sixrevisions.com/mobile/design-iphone-apps-better/">sixrevisions.com/mobile/design-…</a> via @<a href="https://twitter.com/sixrevisions">sixrevisions</a></p>— Caroline McGregor (@carolinemcgrgr) <a href="https://twitter.com/carolinemcgrgr/status/244055598981844992" data-datetime="2012-09-07T12:52:43+00:00">September 7, 2012</a>
+
 </blockquote>
+
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </div>
+
 <p>I'm not a designer, but I've designed a few apps and feel I've got an eye for good design, so this really piqued my interested. What could these tips be?</p>
 
 <p>Well, let me enumerate them:</p>
 
 <ol>
+
 <li>Use wireframes</li>
+
 <li>Tap targets should be 44pt minimum</li>
+
 <li>Have one primary goal per screen</li>
+
 <li>Avoid default button styles</li>
+
 <li>Add extra views when there is lots of information</li>
+
 </ol>
 
 <p>All great tips, but hmm... they sound pretty familiar. </p>
@@ -40,7 +53,7 @@ date: 2012-09-07 00:00
 
 <p>I'm not kidding.</p>
 
-<p>If you care at all about making better apps, stop looking for a shortcut. Invest a few hours to read a whopping 184 pages and I guarantee you that your apps will improve.</p></import>
+<p>If you care at all about making better apps, stop looking for a shortcut. Invest a few hours to read a whopping 184 pages and I guarantee you that your apps will improve.</p>
 
 <!-- more -->
 

@@ -3,8 +3,9 @@ title: "Rewards"
 date: 2012-02-12 00:00
 ---
 
-<import><p>This is why people contribute to open source software.</p>
-<img src="/img/import/blog/2012/02/rewards/D44EF0D9370D4D9FB8AA25F4573EECFF.png" class="img-responsive"></import>
+<p>This is why people contribute to open source software.</p>
+
+<img src="/img/import/blog/2012/02/rewards/D44EF0D9370D4D9FB8AA25F4573EECFF.png" class="img-responsive" />
 
 <!-- more -->
 

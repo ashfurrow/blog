@@ -3,7 +3,7 @@ title: "How to Stop Shipping Code with TODO Comments"
 date: 2012-08-27 00:00
 ---
 
-<import><p>If you use Xcode, you've probably used or seen the <code>TODO</code> comment. It looks something like this:</p>
+<p>If you use Xcode, you've probably used or seen the <code>TODO</code> comment. It looks something like this:</p>
 
 <pre><code>//TODO: this isn't the most efficient. Refactor.
 -(void)someMethod {
@@ -42,9 +42,12 @@ fi
 </code></pre>
 
 <p>Just copy and paste it into a new Build Script, added through the target detail view in Xcode:</p>
-<img src="/img/import/blog/how-to-stop-shipping-code-with-todo-comments/CAE77EC0DCEA4032947915A76A1A1196.png" class="img-responsive"><p>You'll never ship an accidental snaffoo again because your build <em>will break</em> instead. While you're developing, you'll still have access to the <code>TODO</code>s as warnings, so you can navigate to them easily in the Issue Navigator.</p>
 
-<p>I'm integrating it into my work flow and I'll report back on how it works out.</p></import>
+<img src="/img/import/blog/how-to-stop-shipping-code-with-todo-comments/CAE77EC0DCEA4032947915A76A1A1196.png" class="img-responsive" />
+
+<p>You'll never ship an accidental snaffoo again because your build <em>will break</em> instead. While you're developing, you'll still have access to the <code>TODO</code>s as warnings, so you can navigate to them easily in the Issue Navigator.</p>
+
+<p>I'm integrating it into my work flow and I'll report back on how it works out.</p>
 
 <!-- more -->
 

@@ -4,7 +4,7 @@ date: 2014-06-11 00:00
 link_to: swift
 ---
 
-<import><p>I read <a href="http://www.bignerdranch.com/blog/ios-developers-need-to-know-objective-c/">this blog post</a> by Aaron Hillegass this morning and was immediately disappointed. </p>
+<p>I read <a href="http://www.bignerdranch.com/blog/ios-developers-need-to-know-objective-c/">this blog post</a> by Aaron Hillegass this morning and was immediately disappointed. </p>
 
 <p>There are many things that I disagree with about this article, but there is one in particular that I took offence to. </p>
 
@@ -12,12 +12,14 @@ link_to: swift
 
 <blockquote>
   <p>Objective-C is easier to learn than Swift.</p>
+
 </blockquote>
 
 <p>Really? Come on now. That's just silly. </p>
 
 <blockquote>
   <p>Objective-C is a really simple little extension to C.</p>
+
 </blockquote>
 
 <p>I'm disappointed by this statement, because it is simply not true. Objective-C is a <a href="http://ashfurrow.com/blog/2012/03/why-objective-c-is-hard">massive pain in the ass to learn</a>. It's a mix of language (with "weird" syntax), runtime (all that arcane knowledge), and frameworks (massive ones). Swift obviates the difficult with the first two, which is awesome. </p>
@@ -45,5 +47,5 @@ link_to: swift
 
 <p>As educators, it's our job to put ourselves in the shoes of a beginner and see things through a newcomer's eyes. I don't see that happening in this article. </p>
 
-<p>Aaron Hillegass is an amazing developer and business person. I have admired and looked up to him, and the Big nerd Ranch, for a long time now. However, this post feels like it was written out of fear. I think that it is a disservice to iOS newcomers. </p></import>
+<p>Aaron Hillegass is an amazing developer and business person. I have admired and looked up to him, and the Big nerd Ranch, for a long time now. However, this post feels like it was written out of fear. I think that it is a disservice to iOS newcomers. </p>
 

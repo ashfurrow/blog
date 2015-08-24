@@ -17,6 +17,7 @@ So if people do open source because it makes them happy, then the joy that they 
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/e_-qV8waPVM" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
+
 </div>
 
 Turns out that the most important part of open source isn't the code, it's empathy. And it's difficult for empathy to thrive in a community that mainly communicates through text. 
