@@ -1,6 +1,8 @@
 language: ruby
 sudo: false
-cache: bundler
+cache:
+- bundler
+- pip
 rvm:
 - 2.1.2
 env:
