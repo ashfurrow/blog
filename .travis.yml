@@ -12,7 +12,6 @@ before_install:
 - pip install --user s3cmd
 - s3cmd --version
 script:
-- rake build
-- rake test
+- rake build:test
 after_success:
 - rake deploy:travis

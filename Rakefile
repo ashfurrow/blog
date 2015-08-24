@@ -103,7 +103,7 @@ task :test do
     check_html: true,
     check_favicon: true,
     disable_external: true,
-    alt_ignore: [/.*/],
+    empty_alt_ignore: true,
     parallel: { in_processes: 3},
     }).run
 end
