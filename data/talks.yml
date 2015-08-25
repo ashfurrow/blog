@@ -97,6 +97,7 @@ past_talks:
   dates: November 7, 2014
   location: Minsk, Belarus
   image: /img/speaking/teaching.png
+  hidden: true
 - name: Solving Problems with ReactiveCocoa and Swift
   conference: MBLT Dev
   url: http://mbltdev.ru
