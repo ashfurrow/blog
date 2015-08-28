@@ -33,7 +33,7 @@ namespace :deploy do
     end
 
     if branch != ENV['BRANCH_NAME']
-      puts "Skipping deploy for #{ branch }; can only be deployed from #{BRANCH_NAME} branch."
+      puts "Skipping deploy for #{ branch }; can only be deployed from #{ENV['BRANCH_NAME']} branch."
       exit 0
     end
 
