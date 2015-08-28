@@ -4,7 +4,7 @@ require 'middleman-gh-pages'
 # This is the branch to deploy _to_.
 ENV['BRANCH_NAME'] = 'master' unless ENV['BRANCH_NAME'].nil? == false
 
-invalidated_cnd = false
+invalidated_cdn = false
 
 namespace :deploy do
   desc "Deployment to production, invalidate CDN."
@@ -42,9 +42,9 @@ namespace :deploy do
 
   desc 'Post-depoy tasks: invalidating the CDN.'
   task :post_deploy do
-    if invalidated_cnd == false
+    if invalidated_cdn == false
       sh 'middleman cdn'
-      invalidated_cnd = true
+      invalidated_cdn = true
     end
   end
 end
@@ -80,7 +80,7 @@ task :test do
     disable_external: true,
     alt_ignore: [/.*/],
     parallel: { in_processes: 3},
-    }).run
+  }).run
 end
 
 desc "Create new blog article"
