@@ -1,32 +1,22 @@
 require 'rake'
 
+ENV['BRANCH_NAME'] = 'master' unless ENV['BRANCH_NAME'].nil? == false
+
 invalidated_cnd = false
 
 namespace :deploy do
   desc "Deployment to production"
   task :production do
-    sh 'bundle exec middleman s3_sync --bucket=ashfurrow.com'
-    Rake::Task['post_deploy'].invoke
-  end
+    # Keep this in here to avoid polluting my tasks.
+    require 'middleman-gh-pages'
 
-  desc "Deployment to staging"
-  task :staging do
-    sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
-    sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
+    Rake::Task['deploy'].invoke
     Rake::Task['post_deploy'].invoke
   end
 
   desc "Deploys RSS and Atom feeds"
   task :feeds do
     sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
-    Rake::Task['post_deploy'].invoke
-  end
-
-  desc "Deploys to staging, production, and syncs feeds"
-  task :all do
-    Rake::Task['deploy:staging'].invoke
-    Rake::Task['deploy:production'].invoke
-    Rake::Task['deploy:feeds'].invoke
     Rake::Task['post_deploy'].invoke
   end
 
@@ -38,16 +28,16 @@ namespace :deploy do
     abort 'Must be run on Travis' unless branch
 
     if pull_request != 'false'
-      puts 'Skipping deploy for pull request; can only be deployed from master branch.'
+      puts 'Skipping deploy for pull request; can only be deployed from merged branch.'
       exit 0
     end
 
-    if branch != 'master'
-      puts "Skipping deploy for #{ branch }; can only be deployed from master branch."
+    if branch != ENV['BRANCH_NAME']
+      puts "Skipping deploy for #{ branch }; can only be deployed from #{BRANCH_NAME} branch."
       exit 0
     end
 
-    Rake::Task['deploy:all'].invoke
+    Rake::Task['deploy:production'].invoke
     Rake::Task['post_deploy'].invoke
   end
 
@@ -57,35 +47,6 @@ namespace :deploy do
       sh 'middleman cdn'
       invalidated_cnd = true
     end
-  end
-end
-
-namespace :publish do
-  desc "Build and deploy to production"
-  task :production do
-    Rake::Task['build'].invoke
-    Rake::Task['deploy:production'].invoke
-    Rake::Task['deploy:feeds'].invoke
-  end
-
-  desc "Build and deploy to staging"
-  task :staging do
-    Rake::Task['build'].invoke
-    Rake::Task['deploy:staging'].invoke
-  end
-
-  desc "Build and deploy to both staging and production"
-  task :all do
-    Rake::Task['build'].invoke
-    Rake::Task['deploy:all'].invoke
-  end
-end
-
-namespace :build do
-  desc 'Builds, then tests'
-  task :test do
-    Rake::Task['build'].invoke
-    Rake::Task['test'].invoke
   end
 end
 
