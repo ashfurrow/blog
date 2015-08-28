@@ -4,6 +4,9 @@ require 'middleman-gh-pages'
 # This is the branch to deploy _to_.
 ENV['BRANCH_NAME'] = 'master' unless ENV['BRANCH_NAME'].nil? == false
 
+# Allow dirty commits.
+ENV['ALLOW_DIRTY'] = 'true'
+
 invalidated_cnd = false
 
 namespace :deploy do
