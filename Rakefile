@@ -4,6 +4,8 @@ require 'middleman-gh-pages'
 # This is the branch to deploy _to_.
 ENV['BRANCH_NAME'] = 'master' unless ENV['BRANCH_NAME'].nil? == false
 
+ENV['REMOTE_URL'] = 'https://github.com/ashfurrow/ashfurrow.github.io.git'
+
 invalidated_cdn = false
 
 namespace :deploy do

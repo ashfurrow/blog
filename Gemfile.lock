@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ashfurrow/middleman-gh-pages.git
-  revision: dfad123f5ffa574d6c278e65d4af3826d79dede7
+  revision: 94fd8d3121947c22cd9099fe02bed899a55122fb
   specs:
     middleman-gh-pages (0.0.3)
       rake (> 0.9.3)
