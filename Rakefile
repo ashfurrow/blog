@@ -1,5 +1,6 @@
 require 'rake'
 
+# This is the branch to deploy _to_.
 ENV['BRANCH_NAME'] = 'master' unless ENV['BRANCH_NAME'].nil? == false
 
 invalidated_cnd = false
@@ -32,8 +33,8 @@ namespace :deploy do
       exit 0
     end
 
-    if branch != ENV['BRANCH_NAME']
-      puts "Skipping deploy for #{ branch }; can only be deployed from #{ENV['BRANCH_NAME']} branch."
+    if branch != 'source'
+      puts "Skipping deploy for #{ branch }; can only be deployed from source branch."
       exit 0
     end
 
