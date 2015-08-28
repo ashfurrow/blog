@@ -1,4 +1,5 @@
 require 'rake'
+require 'middleman-gh-pages'
 
 # This is the branch to deploy _to_.
 ENV['BRANCH_NAME'] = 'master' unless ENV['BRANCH_NAME'].nil? == false
@@ -6,11 +7,8 @@ ENV['BRANCH_NAME'] = 'master' unless ENV['BRANCH_NAME'].nil? == false
 invalidated_cnd = false
 
 namespace :deploy do
-  desc "Deployment to production"
+  desc "Deployment to production, invalidate CDN."
   task :production do
-    # Keep this in here to avoid polluting my tasks.
-    require 'middleman-gh-pages'
-
     Rake::Task['deploy'].invoke
     Rake::Task['post_deploy'].invoke
   end
