@@ -9,7 +9,7 @@ Setup
 ----------------
 
 ```shell
-git clone https://github.com/ashfurrow/blog.git
+git clone https://github.com/ashfurrow/ashfurrow.github.io.gitgit
 cd blog
 bundle install
 rake
