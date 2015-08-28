@@ -1,0 +1,8 @@
+name: Ash Furrow
+subtitle: iOS, Design, Photography
+description: Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.
+image: /img/siteimage.png
+dark_image: /img/siteimage_dark.png
+default_background_image: /img/backgrounds/default.jpg
+feed_link: //feed.ashfurrow.com/feed.xml
+feed_rss_link: //feed.ashfurrow.com/feed.rss.xml

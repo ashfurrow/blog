@@ -13,6 +13,4 @@ gem 'nokogiri'
 gem 'therubyracer'
 gem 'less'
 gem 'html-proofer'
-
-# For feed.xml.builder
 gem 'builder'

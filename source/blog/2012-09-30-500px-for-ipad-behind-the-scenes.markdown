@@ -7,7 +7,7 @@ date: 2012-09-30 00:00
 
 <p>The 500px iPad app is my greatest professional accomplishment (so far, anyway). This isn't just the story of the last year of iOS development at 500px, this is the story of the last year <em>of my life</em>. </p>
 
-<p>The script and slides (in Keynote and <a href="http://static.ashfurrow.com/github/screens12.pdf">PDF</a>) are <a href="https://github.com/AshFurrow/500px-Behind-The-Scenes">available on GitHub</a>. The slides are mainly ornamental; reading the script or watching the <a href="https://vimeo.com/50451043">video</a> below is the best way to get the information.</p>
+<p>The script and <a href="https://speakerdeck.com/ashfurrow/500px-for-ipad-a-developers-behind-the-scenes">slides</a> are <a href="https://github.com/AshFurrow/500px-Behind-The-Scenes">available on GitHub</a>. The slides are mainly ornamental; reading the script or watching the <a href="https://vimeo.com/50451043">video</a> below is the best way to get the information.</p>
 
 <div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="640x360" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/50451043?wmode=opaque&amp;api=1" width="640" data-embed="true" webkitallowfullscreen="" frameborder="0" height="360" class="embed-responsive-item"></iframe></div>
 

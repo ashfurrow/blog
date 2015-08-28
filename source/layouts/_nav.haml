@@ -8,7 +8,7 @@
         / Hamburger
         - 3.times do
           %span.icon-bar
-      %a.navbar-brand{ href: '/'} 
+      %a.navbar-brand{ href: '/'}
         %i.icon-site-logo
 
     / Collect the nav links, forms, and other content for toggling
@@ -19,5 +19,5 @@
         %li= link_to 'Portfolio', '/portfolio.html'
         %li= link_to 'Speaking', '/speaking.html'
         %li
-          = link_to 'Blog Feed', data.site.feed_link, id: 'feed_text_link'
-          = link_to '<i class="fa fa-rss-square"></i>', data.site.feed_link, id: 'feed_link'
+          = link_to 'Blog Feed', data.site.feed_link, id: 'feed_text_link', relative: false
+          = link_to '<i class="fa fa-rss-square"></i>', data.site.feed_link, id: 'feed_link', relative: false

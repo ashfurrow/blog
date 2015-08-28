@@ -9,6 +9,7 @@ require "lib/modify_widths.rb"
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
 set :haml, ugly: true, format: :html5
+set :relative_links, true
 
 activate :syntax
 
@@ -73,6 +74,8 @@ activate :cdn do |cdn|
     base_urls: [
       'http://ashfurrow.com',
       'https://ashfurrow.com',
+      'http://staging.ashfurrow.com',
+      'https://staging.ashfurrow.com'
     ]
   }
 end
