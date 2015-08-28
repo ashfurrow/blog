@@ -19,7 +19,9 @@ before_install:
 - git config --global user.name "Ash Furrow (via Travis)"
 - pip install --user s3cmd
 - s3cmd --version
+- mkdir build
 script:
+- bundle exec rake prepare_git_remote_in_build_dir
 - bundle exec rake build
 - bundle exec rake test
 after_success:
