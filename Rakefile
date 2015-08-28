@@ -6,20 +6,20 @@ namespace :deploy do
   desc "Deployment to production"
   task :production do
     sh 'bundle exec middleman s3_sync --bucket=ashfurrow.com'
-    Rake::Task['post_deploy'].invoke
+    Rake::Task['deploy:post_deploy'].invoke
   end
 
   desc "Deployment to staging"
   task :staging do
     sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
     sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
-    Rake::Task['post_deploy'].invoke
+    Rake::Task['deploy:post_deploy'].invoke
   end
 
   desc "Deploys RSS and Atom feeds"
   task :feeds do
     sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
-    Rake::Task['post_deploy'].invoke
+    Rake::Task['deploy:post_deploy'].invoke
   end
 
   desc "Deploys to staging, production, and syncs feeds"
@@ -27,7 +27,7 @@ namespace :deploy do
     Rake::Task['deploy:staging'].invoke
     Rake::Task['deploy:production'].invoke
     Rake::Task['deploy:feeds'].invoke
-    Rake::Task['post_deploy'].invoke
+    Rake::Task['deploy:post_deploy'].invoke
   end
 
   desc "Deploy if Travis environment variables are set correctly"
@@ -48,7 +48,7 @@ namespace :deploy do
     end
 
     Rake::Task['deploy:all'].invoke
-    Rake::Task['post_deploy'].invoke
+    Rake::Task['deploy:post_deploy'].invoke
   end
 
   desc 'Post-depoy tasks: invalidating the CDN.'
