@@ -9,6 +9,7 @@ require "lib/modify_widths.rb"
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
 set :haml, ugly: true, format: :html5
+set :relative_links, true
 
 activate :syntax
 
@@ -58,8 +59,23 @@ end
 # Sync setup
 ###
 
+# Push to S3
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'staging.ashfurrow.com' # Plugin needs a default bucket, better use staging.
   s3_sync.aws_access_key_id          = ENV['SITE_AWS_KEY']
   s3_sync.aws_secret_access_key      = ENV['SITE_AWS_SECRET']
+end
+
+# Invalidate Cloudflare
+activate :cdn do |cdn|
+  # Credentials stored in CLOUDFLARE_CLIENT_API_KEY and CLOUDFLARE_EMAIL env variables.
+  cdn.cloudflare = {
+    zone: 'ashfurrow.com',
+    base_urls: [
+      'http://ashfurrow.com',
+      'https://ashfurrow.com',
+      'http://staging.ashfurrow.com',
+      'https://staging.ashfurrow.com'
+    ]
+  }
 end

@@ -5,7 +5,7 @@ date: 2013-01-17 00:00
 
 <p>I have released <a href="https://github.com/AshFurrow/AFImageDownloader">AFImageDownloader</a> to the open source community. It, asynchronously, downloads JPEGs from the Internet and decompresses them on a background queue. </p>
 
-<pre><code>[AFImageDownloader imageDownloaderWithURLString:@"http://static.ashfurrow.com.s3.amazonaws.com/github/worked.jpg" autoStart:YES completion:^(UIImage *decompressedImage) {
+<pre><code>[AFImageDownloader imageDownloaderWithURLString:@"http://static.ashfurrow.com./github/worked.jpg" autoStart:YES completion:^(UIImage *decompressedImage) {
     self.imageView.image = decompressedImage;
 }];
 </code></pre>
