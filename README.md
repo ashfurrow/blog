@@ -35,6 +35,7 @@ Thanks to the following people and projects:
 - [Middleman](http://middlemanapp.com)
 - [Clean Blog Theme](http://startbootstrap.com/template-overviews/clean-blog/)
 - [middleman-s3_sync](https://github.com/fredjean/middleman-s3_sync)
+- [middleman-cdn](https://github.com/leighmcculloch/middleman-cdn)
 - [middleman-syntax](https://github.com/middleman/middleman-syntax)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 - [This colour](http://www.colourlovers.com/color/398CCC/Walton)

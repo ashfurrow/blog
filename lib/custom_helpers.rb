@@ -89,9 +89,21 @@ module CustomHelpers
     description or data.site.description
   end
 
-  # Divs' Widths
-
   require 'haml'
+
+  # Per-page customizations
+
+  def custom_stylesheet_link_tag (current_resource)
+    stylesheet = current_resource.metadata[:page]['stylesheet']
+    stylesheet_link_tag stylesheet unless stylesheet.nil?
+  end
+
+  def custom_javascript_link_tag (current_resource)
+    javascript = current_resource.metadata[:page]['javascript']
+    javascript_include_tag(javascript) unless javascript.nil?
+  end
+
+  # Divs' Widths
 
   def standard_width_div
     haml_tag :div, class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1' do
