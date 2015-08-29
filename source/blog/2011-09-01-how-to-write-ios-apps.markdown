@@ -36,7 +36,7 @@ API calls can be done dozens of different ways. I can't tell you which way is be
 
 ### CoreGraphics & CoreAnimation
 
-If you're not #importing <QuartzCore/QuartzCore.h> in your precompiled header file yet, your apps probably look fine. But they probably look like _every other app_, too. Also, if you don't know what a pch file is, google it. It's important.
+If you're not `#import`ing `<QuartzCore/QuartzCore.h>` in your precompiled header file yet, your apps probably look fine. But they probably look like _every other app_, too. Also, if you don't know what a pch file is, google it. It's important.
 
 If you want to make your shiny app intuitive and easy to use, you need CoreGraphics and CoreAnimation. If you _don't_ want to make your apps intuitive and easy to use, I hear OpenOffice&nbsp;is looking for some Java developers.
 
