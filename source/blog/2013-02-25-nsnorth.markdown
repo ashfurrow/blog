@@ -3,13 +3,12 @@ title: "NSNorth"
 date: 2013-02-25 00:00
 ---
 
-<p>Just a reminder that I'll be attending <a href="http://nsnorth.ca">NSNorth</a> in April. </p>
+Just a reminder that I'll be attending [NSNorth](http://nsnorth.ca) in April.
 
-<p>The topics are more high-level than nitty-gritty, but that's good. Every conference can't be a WWDC-inspired technical tour. </p>
+The topics are more high-level than nitty-gritty, but that's good. Every conference can't be a WWDC-inspired technical tour.
 
-<p>There's a good speaker line-up, including my friend <a href="https://twitter.com/jasonbrennan">Jason</a>. </p>
+There's a good speaker line-up, including my friend [Jason](https://twitter.com/jasonbrennan).
 
-<p>Definitely worth the trip to Ottawa if you're available. </p>
+Definitely worth the trip to Ottawa if you're available.
 
 <!-- more -->
-

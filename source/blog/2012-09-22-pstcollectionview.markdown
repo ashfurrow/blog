@@ -3,17 +3,16 @@ title: "PSTCollectionView"
 date: 2012-09-22 00:00
 ---
 
-<p>Interesting <a href="https://github.com/steipete/PSTCollectionView">project over on GitHub</a> that aims to provide a drop-in, API-compatible replacement for <a href="http://ashfurrow.com/uicollectionview-example"><code>UICollectionView</code></a>, one piece of the new hawtness in iOS 6. It's still a work in progress and they're looking for help. </p>
+Interesting [project over on GitHub](https://github.com/steipete/PSTCollectionView) that aims to provide a drop-in, API-compatible replacement for [`UICollectionView`](http://ashfurrow.com/uicollectionview-example), one piece of the new hawtness in iOS 6. It's still a work in progress and they're looking for help.
 
-<p>iOS 6 is very interesting, since it drops support for the first generation iPad while maintaining support for the older iPhone 3GS, which can't even support all of iOS 6's features. There is nothing about <code>UICollectionView</code> that would prevent its use on iOS 5 except for the fact that it "requires" iOS 6. </p>
+iOS 6 is very interesting, since it drops support for the first generation iPad while maintaining support for the older iPhone 3GS, which can't even support all of iOS 6's features. There is nothing about `UICollectionView` that would prevent its use on iOS 5 except for the fact that it "requires" iOS 6.
 
-<p>Huh.</p>
+Huh.
 
-<p>It's kind of frustrating as an app developer who wants to continue to support iOS 5 and the first generation iPad to do so at the sustantial cost of writing his own grid view library.</p>
+It's kind of frustrating as an app developer who wants to continue to support iOS 5 and the first generation iPad to do so at the sustantial cost of writing his own grid view library.
 
-<p>That's where <code>PSTCollectionView</code> comes in.</p>
+That's where `PSTCollectionView` comes in.
 
-<p>I think that, moving forward, we may see a growing number of these types of open-source projects aiming to replicate user interface implemented in newer version of iOS which not available on older hardware. </p>
+I think that, moving forward, we may see a growing number of these types of open-source projects aiming to replicate user interface implemented in newer version of iOS which not available on older hardware.
 
 <!-- more -->
-

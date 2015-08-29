@@ -3,7 +3,6 @@ title: "Velocity"
 date: 2013-09-20 00:00
 ---
 
-<p>My friends over at <a href="http://lickability.com">Lickability</a> have released their new app for iOS 7, called <a href="http://velocityapp.com">Velocity</a>. Velocity works be presenting one word at a time <a href="http://appadvice.com/review/quickadvice-velocity">faster than your inner voice can keep up with</a>, so you train yourself to read faster and faster. Go check it out on the <a href="https://itunes.apple.com/us/app/id675410630?mt=8&amp;uo=4&amp;at=10l4Vh">App Store</a>. </p>
+My friends over at [Lickability](http://lickability.com) have released their new app for iOS 7, called [Velocity](http://velocityapp.com). Velocity works be presenting one word at a time [faster than your inner voice can keep up with](http://appadvice.com/review/quickadvice-velocity), so you train yourself to read faster and faster. Go check it out on the [App Store](https://itunes.apple.com/us/app/id675410630?mt=8&uo=4&at=10l4Vh).
 
 <!-- more -->
-

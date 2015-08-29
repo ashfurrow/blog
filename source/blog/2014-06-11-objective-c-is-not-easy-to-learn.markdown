@@ -4,48 +4,43 @@ date: 2014-06-11 00:00
 link_to: swift
 ---
 
-<p>I read <a href="http://www.bignerdranch.com/blog/ios-developers-need-to-know-objective-c/">this blog post</a> by Aaron Hillegass this morning and was immediately disappointed. </p>
+I read [this blog post](http://www.bignerdranch.com/blog/ios-developers-need-to-know-objective-c/) by Aaron Hillegass this morning and was immediately disappointed.
 
-<p>There are many things that I disagree with about this article, but there is one in particular that I took offence to. </p>
+There are many things that I disagree with about this article, but there is one in particular that I took offence to.
 
-<!-- more -->
+<!-- more -->> Objective-C is easier to learn than Swift.
 
-<blockquote>
-  <p>Objective-C is easier to learn than Swift.</p>
+Really? Come on now. That's just silly.
 
-</blockquote>
+> Objective-C is a really simple little extension to C.
 
-<p>Really? Come on now. That's just silly. </p>
+I'm disappointed by this statement, because it is simply not true. Objective-C is a [massive pain in the ass to learn](http://ashfurrow.com/blog/2012/03/why-objective-c-is-hard). It's a mix of language (with "weird" syntax), runtime (all that arcane knowledge), and frameworks (massive ones). Swift obviates the difficult with the first two, which is awesome.
 
-<blockquote>
-  <p>Objective-C is a really simple little extension to C.</p>
+Let's consider a simple example.
 
-</blockquote>
+```
+NSLog(@"Hello, world!");
+```
 
-<p>I'm disappointed by this statement, because it is simply not true. Objective-C is a <a href="http://ashfurrow.com/blog/2012/03/why-objective-c-is-hard">massive pain in the ass to learn</a>. It's a mix of language (with "weird" syntax), runtime (all that arcane knowledge), and frameworks (massive ones). Swift obviates the difficult with the first two, which is awesome. </p>
+OK, so let's take a look at this. Why is `NS` there? Why not just `log`? And why is there an `@` sign in front of the string? That's bizarre! Why doesn't `NSLog` conform to standard Objective-C syntax?
 
-<p>Let's consider a simple example. </p>
+Pedantic? Maybe. But I'm not the one claiming Objective-C is easier to learn than Swift. Let's take a look at another example. I want an array, called `array`, of the numbers 1 to 5. Let's contrast.
 
-<pre><code>NSLog(@"Hello, world!");
-</code></pre>
+```
+NSArray *array = @[@(1), @(2), @(3), @(4), @(5)];
+```
 
-<p>OK, so let's take a look at this. Why is <code>NS</code> there? Why not just <code>log</code>? And why is there an <code>@</code> sign in front of the string? That's bizarre! Why doesn't <code>NSLog</code> conform to standard Objective-C syntax? </p>
+Holy shit. Why is that asterisk there? (Yeah, explain pointers to a newcomer to programming. Have fun.) Again, what's with all these `@` signs?! It makes no sense! Why doesn't this look more like the following?
 
-<p>Pedantic? Maybe. But I'm not the one claiming Objective-C is easier to learn than Swift. Let's take a look at another example. I want an array, called <code>array</code>, of the numbers 1 to 5. Let's contrast. </p>
+```
+var array = [1...5]
+```
 
-<pre><code> NSArray *array = @[@(1), @(2), @(3), @(4), @(5)];
-</code></pre>
+But then, that's Swift.
 
-<p>Holy shit. Why is that asterisk there? (Yeah, explain pointers to a newcomer to programming. Have fun.) Again, what's with all these <code>@</code> signs?! It makes no sense! Why doesn't this look more like the following?</p>
+I'll tolerate people saying that "Swift is complex", either because it's unfamiliar or whatever reason you have. But come on. Objective-C being easier to learn? Give me a break.
 
-<pre><code>var array = [1...5]
-</code></pre>
+As educators, it's our job to put ourselves in the shoes of a beginner and see things through a newcomer's eyes. I don't see that happening in this article.
 
-<p>But then, that's Swift. </p>
-
-<p>I'll tolerate people saying that "Swift is complex", either because it's unfamiliar or whatever reason you have. But come on. Objective-C being easier to learn? Give me a break. </p>
-
-<p>As educators, it's our job to put ourselves in the shoes of a beginner and see things through a newcomer's eyes. I don't see that happening in this article. </p>
-
-<p>Aaron Hillegass is an amazing developer and business person. I have admired and looked up to him, and the Big nerd Ranch, for a long time now. However, this post feels like it was written out of fear. I think that it is a disservice to iOS newcomers. </p>
+Aaron Hillegass is an amazing developer and business person. I have admired and looked up to him, and the Big nerd Ranch, for a long time now. However, this post feels like it was written out of fear. I think that it is a disservice to iOS newcomers.
 

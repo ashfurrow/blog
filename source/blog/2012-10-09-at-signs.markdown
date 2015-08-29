@@ -3,20 +3,14 @@ title: "At Signs"
 date: 2012-10-09 00:00
 ---
 
-<p>This weeks' <a href="http://nshipster.com/at-compiler-directives/">NSHipster</a> does not disappoint.</p>
+This weeks' [NSHipster](http://nshipster.com/at-compiler-directives/) does not disappoint.
 
-<blockquote>
-  <p>So if we were to go code-watching for the elusive Objective-C species, what would we look for? That’s right:</p>
-  
-  <ul>
-  <li>Square brackets</li>
-  <li>Ridiculously-long method names</li>
-  <li>@’s</li>
-  </ul>
+> So if we were to go code-watching for the elusive Objective-C species, what would we look for? That’s right:
+> 
+> - Square brackets
+> - Ridiculously-long method names
+> - @’s
 
-</blockquote>
-
-<p>I'm convinced the reason I can't bring myself to dive into Python is how goddamn short all the variable names are.</p>
+I'm convinced the reason I can't bring myself to dive into Python is how goddamn short all the variable names are.
 
 <!-- more -->
-

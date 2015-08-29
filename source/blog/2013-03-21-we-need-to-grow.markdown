@@ -3,25 +3,24 @@ title: "We Need to Grow"
 date: 2013-03-21 00:00
 ---
 
-<p>I'm over half way to my funding goal on my <a href="http://indiegogo.com/projects/your-first-ios-app">Indiegogo project</a> to fund my next book. One of my primary goals in this project is to attract existing developers working with other languages and ecosystems into the iOS world. I believe that we are sitting at a crossroads between stagnation and evolution. We need diversification to continue growing. </p>
+I'm over half way to my funding goal on my [Indiegogo project](http://indiegogo.com/projects/your-first-ios-app) to fund my next book. One of my primary goals in this project is to attract existing developers working with other languages and ecosystems into the iOS world. I believe that we are sitting at a crossroads between stagnation and evolution. We need diversification to continue growing.
 
-<p>Why?</p>
+Why?
 
-<p>I sit behind an iMac all day and I happily code iOS apps. It's all I know. I'm sure I'm not alone. We specialize in iOS because we want to be great at it. </p>
+I sit behind an iMac all day and I happily code iOS apps. It's all I know. I'm sure I'm not alone. We specialize in iOS because we want to be great at it.
 
-<p>The problem is, we sit a little <em>too</em> close. We lose perspective. We don't know the right kinds of questions to ask. </p>
+The problem is, we sit a little _too_ close. We lose perspective. We don't know the right kinds of questions to ask.
 
-<p>We <em>need</em> new developers with other perspectives in our community because <em>they</em> will ask the right kind of questions. For example, they'll ask "why doesn't Objective-C have a package manager?" And then they'll <a href="http://cocoapods.org">make one</a>. </p>
+We _need_ new developers with other perspectives in our community because _they_ will ask the right kind of questions. For example, they'll ask "why doesn't Objective-C have a package manager?" And then they'll [make one](http://cocoapods.org).
 
-<p>A more diverse iOS developer community will make us better by forcing us to re-evaluate our assumptions. Things change, especially in the tech world. If we want to keep from stagnating, it's incredibly important to constantly question <em>everything</em> we know. </p>
+A more diverse iOS developer community will make us better by forcing us to re-evaluate our assumptions. Things change, especially in the tech world. If we want to keep from stagnating, it's incredibly important to constantly question _everything_ we know.
 
-<p>But that's impossible to do on our own. We need the help of iOS newcomers to force us to ask the uncomfortable questions we don't want to know the answers to. As Shunryu Suzuki wrote, "In the beginner's mind there are many possibilities, in the expert's mind there are few."</p>
+But that's impossible to do on our own. We need the help of iOS newcomers to force us to ask the uncomfortable questions we don't want to know the answers to. As Shunryu Suzuki wrote, "In the beginner's mind there are many possibilities, in the expert's mind there are few."
 
-<p>We'll get better tools. We'll get broader perspectives. We'll grow instead of dying. </p>
+We'll get better tools. We'll get broader perspectives. We'll grow instead of dying.
 
-<p>Sounds good to me.</p>
+Sounds good to me.
 
-<p>This project isn't just a book – it's a tool for making us better. Please help <a href="http://indiegogo.com/projects/your-first-ios-app">spread the word</a>. </p>
+This project isn't just a book&nbsp;– it's a tool for making us better. Please help [spread the word](http://indiegogo.com/projects/your-first-ios-app).
 
 <!-- more -->
-

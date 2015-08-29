@@ -3,9 +3,9 @@ title: "How (not) to do iOS Push Notifications"
 date: 2012-01-08 00:00
 ---
 
-<img src="/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/6049F94729C4426AB7D1842467C6D6BE.png" class="img-responsive" />
+ ![](/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/6049F94729C4426AB7D1842467C6D6BE.png)
 
-<p>In iOS 4, Apple introduced push notifications and Android fanboys switched from the "iOS sucks because it doesn't have push notifications" gear to "iOS sucks because it copied Android and now has push notifications." While most Apple developers were happy about the new push notification service, a few companies sat at the back of the Presidio trying to contain their excitement about all the ways they could fuck this up.<!--more--></p>
+In iOS 4, Apple introduced push notifications and Android fanboys switched from the "iOS sucks because it doesn't have push notifications" gear to "iOS sucks because it copied Android and now has push notifications." While most Apple developers were happy about the new push notification service, a few companies sat at the back of the&nbsp;Presidio trying to contain their excitement about all the ways they could fuck this up.<!--more-->
 
 <dl>
 
@@ -52,9 +52,4 @@ date: 2012-01-08 00:00
 
 <dt><br></dt>
 
-</dl>
-
-<img src="/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/83B73FC21B7F4A21830274D2F887A9ED.png" class="img-responsive" />
-
-<!-- more -->
-
+</dl> ![](/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/83B73FC21B7F4A21830274D2F887A9ED.png)<!-- more -->

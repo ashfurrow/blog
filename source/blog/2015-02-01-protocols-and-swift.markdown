@@ -9,9 +9,7 @@ The other day I posed this (somewhat cryptic) question to Twitter:
 
 <!-- more -->
 
-<blockquote class="twitter-tweet" lang="en">
-
-<p>Best way for pure Swift objects to have optional conformance to some contract? Optional protocols/protocol members are <a href="https://twitter.com/objc">@objc</a>-only.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/560436119956115456">January 28, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>Best way for pure Swift objects to have optional conformance to some contract? Optional protocols/protocol members are <a href="https://twitter.com/objc">@objc</a>-only.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/560436119956115456">January 28, 2015</a></blockquote>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -133,9 +131,7 @@ After playing around for a while, things seemed a bit hopeless. Eventually, I re
 
 Let’s revisit the high-level problem I’m trying to solve: I have two types and I want them to talk to each other *without coupling*. Justin Spahr-Summers, as usual, has an answer: 
 
-<blockquote class="twitter-tweet" lang="en">
-
-<p><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Split out the optional bits into one or more separate protocols that can be conformed to if desired.</p>&mdash; Justin Spahr-Summers (@jspahrsummers) <a href="https://twitter.com/jspahrsummers/status/560493854374113280">January 28, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Split out the optional bits into one or more separate protocols that can be conformed to if desired.</p>&mdash; Justin Spahr-Summers (@jspahrsummers) <a href="https://twitter.com/jspahrsummers/status/560493854374113280">January 28, 2015</a></blockquote>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

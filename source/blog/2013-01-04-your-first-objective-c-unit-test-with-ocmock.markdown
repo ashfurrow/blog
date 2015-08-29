@@ -3,21 +3,22 @@ title: "Your First Objective-C Unit Test with OCMock"
 date: 2013-01-04 00:00
 ---
 
-<p>I've been making a lot of noise about unit testing in Objective-C lately, so I thought I'd put my money where my mouth is and write a primer. This tutorial is going to take you through, step-by-step, how to write your first unit test.</p>
+I've been making a lot of noise about unit testing in Objective-C lately, so I thought I'd put my money where my mouth is and write a primer. This tutorial is going to take you through, step-by-step, how to write your first unit test.
 
-<p>I'm going to be writing tests for an open source 500px iOS SDK I wrote for the company. You can follow along by <a href="https://github.com/AshFurrow/500px-iOS-api/tree/before-unit-tests">downloading a tag of the repo I made before writing unit tests</a>. It only has integration tests right now, which we'll turn off. Open the <code>PXAPI</code> project, click "PXAPI" in the project bar to the right of the run/stop buttons, and click "Edit Scheme". Select "Test" in the left hand pane and deselect each individual test (but not the top-level "Tests").</p>
+I'm going to be writing tests for an open source 500px iOS SDK I wrote for the company. You can follow along by [downloading a tag of the repo I made before writing unit tests](https://github.com/AshFurrow/500px-iOS-api/tree/before-unit-tests). It only has integration tests right now, which we'll turn off. Open the `PXAPI` project, click "PXAPI" in the project bar to the right of the run/stop buttons, and click "Edit Scheme". Select "Test" in the left hand pane and deselect each individual test (but not the top-level "Tests").
 
-<img src="/img/import/blog/your-first-objective-c-unit-test/14DAD99F83FE46A5AD96B86CA5D2230B.png" class="img-responsive" />
+ ![](/img/import/blog/your-first-objective-c-unit-test/14DAD99F83FE46A5AD96B86CA5D2230B.png)
 
-<p>We'll add the <a href="http://ocmock.org">OCMock</a> mock object toolkit. Follow their documentation to install it. </p>
+We'll add the [OCMock](http://ocmock.org) mock object toolkit. Follow their documentation to install it.
 
-<p>Let's write some tests for <code>PXRequest</code>. </p>
+Let's write some tests for `PXRequest`.
 
-<p>The first thing you need to do when writing unit tests for network code is make a private instance method in the class you're testing that will create all of your <code>NSURLConnection</code> objects. This is how we will replace real url connection objects with our own, stubbed versions. </p>
+The first thing you need to do when writing unit tests for network code is make a private instance method in the class you're testing that will create all of your `NSURLConnection` objects. This is how we will replace real url connection objects with our own, stubbed versions.
 
-<p>The old code looked like this:</p>
+The old code looked like this:
 
-<pre><code>#pragma mark - Public Instance Methods
+```
+#pragma mark - Public Instance Methods
 
 -(void)start
 {
@@ -39,11 +40,12 @@ date: 2013-01-04 00:00
 
     [PXRequest addRequestToInProgressMutableSet:self];
 }
-</code></pre>
+```
 
-<p>Let's change it to look like this, instead.</p>
+Let's change it to look like this, instead.
 
-<pre><code>#pragma mark - Private Instance Methods
+```
+#pragma mark - Private Instance Methods
 
 -(NSURLConnection *)urlConnectionForURLRequest:(NSURLRequest *)request
 {
@@ -71,13 +73,14 @@ date: 2013-01-04 00:00
 
     [PXRequest addRequestToInProgressMutableSet:self];
 }
-</code></pre>
+```
 
-<p>Notice how we call an instance method in order to generate a url connection. We're going to generate a partial mock instance that will return a different value. </p>
+Notice how we call an instance method in order to generate a url connection. We're going to generate a partial mock instance that will return a different value.
 
-<p>Create a <code>SenTestCase</code> class to test the <code>PXRequest</code> class. In the implementation file, we need to tell the compiler that there is a method named <code>urlConnectionForRequest:</code>.</p>
+Create a `SenTestCase` class to test the `PXRequest` class. In the implementation file, we need to tell the compiler that there is a method named `urlConnectionForRequest:`.
 
-<pre><code>#import "PXRequest.h"
+```
+#import "PXRequest.h"
 #import "OCMock.h"
 #import "PXPXRequestTests.h"
 
@@ -91,13 +94,14 @@ date: 2013-01-04 00:00
 @implementation PXPXRequestTests
 
 @end
-</code></pre>
+```
 
-<p>We're adding the custom, private initializer <code>initWithURLRequest:completion:</code> because we only want to test the <code>PXRequest</code> class. The class methods to create ’PXRequest’s are all contained in another file. We'll test those separately, later.</p>
+We're adding the custom, private initializer `initWithURLRequest:completion:` because we only want to test the `PXRequest` class. The class methods to create ’PXRequest’s are all contained in another file. We'll test those separately, later.
 
-<p>Great. Let's write our first test. This will make sure that the <code>start</code> method starts the URL connection instance. </p>
+Great. Let's write our first test. This will make sure that the `start` method starts the URL connection instance.
 
-<pre><code>-(void)testURLConnectionStart
+```
+-(void)testURLConnectionStart
 {
     NSURLRequest *dummyURLRequest = [NSURLRequest requestWithURL:
         [NSURL URLWithString:@"http://example.com"]];
@@ -115,57 +119,64 @@ date: 2013-01-04 00:00
 
     [mockConnection verify];
 }
-</code></pre>
+```
 
-<p>I'm going to go through this example one line at a time. </p>
+I'm going to go through this example one line at a time.
 
-<p>First, in order to create an instance of <code>PXRequest</code>, we'll need some URL request. We'll just create a dummy one.</p>
+First, in order to create an instance of `PXRequest`, we'll need some URL request. We'll just create a dummy one.
 
-<pre><code>NSURLRequest *dummyURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
-</code></pre>
+```
+NSURLRequest *dummyURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
+```
 
-<p>Now we need to create an object to test. </p>
+Now we need to create an object to test.
 
-<pre><code>PXRequest *requestUnderTest = [[PXRequest alloc] initWithURLRequest:dummyURLRequest completion:nil];
-</code></pre>
+```
+PXRequest *requestUnderTest = [[PXRequest alloc] initWithURLRequest:dummyURLRequest completion:nil];
+```
 
-<p>Everything until now has been standard Objective-C and you should be comfortable with it. The next line gets a little tricky.</p>
+Everything until now has been standard Objective-C and you should be comfortable with it. The next line gets a little tricky.
 
-<pre><code>id mockConnection = [OCMockObject niceMockForClass:[NSURLConnection class]];
+```
+id mockConnection = [OCMockObject niceMockForClass:[NSURLConnection class]];
     [[mockConnection expect] start];
-</code></pre>
+```
 
-<p>What we've done is create a mock connection. It mocks <code>NSURLConnection</code>. We're going to tell it to expect the <code>start</code> method to be called. We're making it a "nice" mock so that other methods can be invoked on it, too. You can use the <code>mockForClass:</code> instead, if you want stricter tests.</p>
+What we've done is create a mock connection. It mocks `NSURLConnection`. We're going to tell it to expect the `start` method to be called. We're making it a "nice" mock so that other methods can be invoked on it, too. You can use the `mockForClass:` instead, if you want stricter tests.
 
-<p>So now we have a mock <code>NSURLConnection</code> instance that expects <code>start</code> to be called on it. We need some way to "give" this mock object to our <code>requestUnderTest</code>. We're going to do that using a partial mock. This is a special kind of mock object. We can stub out methods that will be called and replace them with our own return values. Any methods we don't stub out will be passed onto the original instance.</p>
+So now we have a mock `NSURLConnection` instance that expects `start` to be called on it. We need some way to "give" this mock object to our `requestUnderTest`. We're going to do that using a partial mock. This is a special kind of mock object. We can stub out methods that will be called and replace them with our own return values. Any methods we don't stub out will be passed onto the original instance.
 
-<p>We're going to stub the <code>urlConnectionForURLRequest:</code> method.</p>
+We're going to stub the `urlConnectionForURLRequest:` method.
 
-<pre><code>id partialRequestMock = (PXRequest *)[OCMockObject partialMockForObject:requestUnderTest];
+```
+id partialRequestMock = (PXRequest *)[OCMockObject partialMockForObject:requestUnderTest];
 [[[partialRequestMock stub] andReturn:mockConnection] urlConnectionForURLRequest:OCMOCK_ANY];
-</code></pre>
+```
 
-<p>We're telling the partial mock that when <code>urlConnectionForURLRequest:</code> is called with any parameter, return <code>mockConnection</code>.</p>
+We're telling the partial mock that when `urlConnectionForURLRequest:` is called with any parameter, return `mockConnection`.
 
-<p>You should read the code from the start, then after "stub", from the back: "stub ’urlConnectionForURLRequest:’and return ’mockConnection’."</p>
+You should read the code from the start, then after "stub", from the back: "stub ’urlConnectionForURLRequest:’and return ’mockConnection’."
 
-<p>Now lets run the test. </p>
+Now lets run the test.
 
-<pre><code>[partialRequestMock start];
-</code></pre>
+```
+[partialRequestMock start];
+```
 
-<p>This is the method we want to test. It will call <code>urlConnectionForURLRequest:</code>, which we've replaced with our own implementation. Now we want to make sure that calling this method actually called <code>start</code> on the connection. That's what the last line is for.</p>
+This is the method we want to test. It will call `urlConnectionForURLRequest:`, which we've replaced with our own implementation. Now we want to make sure that calling this method actually called `start` on the connection. That's what the last line is for.
 
-<pre><code>[mockConnection verify];
-</code></pre>
+```
+[mockConnection verify];
+```
 
-<p>Calling this method verifies that all the expected methods have been called. If they haven't, your test will fail here.</p>
+Calling this method verifies that all the expected methods have been called. If they haven't, your test will fail here.
 
-<p>Let's do another test. This time, let's test to make sure our completion block is invoked when there is a failure. First, we need to make sure that the <code>connection:didReceiveResponse:</code> method only calls <code>statusCode</code> on the url response once, since we OCMock only handles each <code>expect</code> call once. </p>
+Let's do another test. This time, let's test to make sure our completion block is invoked when there is a failure. First, we need to make sure that the `connection:didReceiveResponse:` method only calls `statusCode` on the url response once, since we OCMock only handles each `expect` call once.
 
-<p>That refactoring is very minor. Onto the test!</p>
+That refactoring is very minor. Onto the test!
 
-<pre><code>-(void)testCompletionBlockIsCalledOnConnectionFailure
+```
+-(void)testCompletionBlockIsCalledOnConnectionFailure
 {
     __block BOOL completionBlockInvoked = NO;
 
@@ -199,15 +210,15 @@ date: 2013-01-04 00:00
     [mockConnection verify];
     STAssertTrue(completionBlockInvoked, @"Completion block was not invoked when connection failed.");
 }
-</code></pre>
+```
 
-<p>First, we declared a <code>__block</code> variable to record if the completion block is invoked at all. In the completion block, we assert that the arguments to the block are what we expect. Arguably, this could go in its own test depending on how granular you want to test. </p>
+First, we declared a `__block` variable to record if the completion block is invoked at all. In the completion block, we assert that the arguments to the block are what we expect. Arguably, this could go in its own test depending on how granular you want to test.
 
-<p>Next, we create a mock connection, just like last time, except now we tell it to also expect a call to <code>cancel</code>.</p>
+Next, we create a mock connection, just like last time, except now we tell it to also expect a call to `cancel`.
 
-<p>In addition to calling <code>start</code>, we're also going to manually invoke the <code>NSURLConnectionDataDelegate</code> method <code>connection:didReceiveResponse:</code>. This means we'll need a response to pass in as the second parameter. That's where the <code>mockResponse</code> object comes in. We'll create a mock <code>NSHTTPURLResponse</code> that returns 404 when ask for its status code. This is how we will simulate the connection failure. </p>
+In addition to calling `start`, we're also going to manually invoke the `NSURLConnectionDataDelegate` method `connection:didReceiveResponse:`. This means we'll need a response to pass in as the second parameter. That's where the `mockResponse` object comes in. We'll create a mock `NSHTTPURLResponse` that returns 404 when ask for its status code. This is how we will simulate the connection failure.
 
-<p>That's it! That's a basic primer on how to begin unit testing your network code. There is a lot more subtlety to unit testing and I would suggest you check out the <a href="http://ocmock.org">OCMock Documentation</a>.</p>
+That's it! That's a basic primer on how to begin unit testing your network code. There is a lot more subtlety to unit testing and I would suggest you check out the [OCMock Documentation](http://ocmock.org).
 
 <style>
 .header, .content-wrapper
@@ -218,7 +229,4 @@ date: 2013-01-04 00:00
 {
 width: 720px;
 }
-</style>
-
-<!-- more -->
-
+</style><!-- more -->

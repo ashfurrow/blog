@@ -4,80 +4,84 @@ date: 2012-09-19 00:00
 link_to: collectionview
 ---
 
-<p>We're going to take a look at the new <code>UICollectionView</code> class Apple introduced in iOS 6. It's used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px?</p>
+We're going to take a look at the new `UICollectionView` class Apple introduced in iOS 6. It's used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px?
 
-<p>I've got an example project completed and hosted <a href="https://github.com/AshFurrow/UICollectionViewExample">on github</a> that you can check out and play with. Don't forget to <a href="http://developers.500px.com/settings/applications?from=developers">register yourself with 500px</a> first to get a consumer key and consumer secret, or else the API won't work for you. Copy these into a text file because you'll need them later.</p>
+I've got an example project completed and hosted [on github](https://github.com/AshFurrow/UICollectionViewExample) that you can check out and play with. Don't forget to [register yourself with 500px](http://developers.500px.com/settings/applications?from=developers) first to get a consumer key and consumer secret, or else the API won't work for you. Copy these into a text file because you'll need them later.
 
-<p>Xcode might introduce a new template for collection view apps, but in the mean time, we'll have to modify an existing project that uses <code>UITableView</code>.</p>
+Xcode might introduce a new template for collection view apps, but in the mean time, we'll have to modify an existing project that uses `UITableView`.
 
-<p>Create a new Xcode project using the "Master-Detail Application" template.</p>
+Create a new Xcode project using the "Master-Detail Application" template.
 
-<p>Open the main Storyboard file. We're going to throw away the existing table view and replace it with a sexy new collection view. The easiest way to do that is to select the existing Master View Controller, shown below, and hit the delete key.</p>
+Open the main Storyboard file. We're going to throw away the existing table view and replace it with a sexy new collection view. The easiest way to do that is to select the existing Master View Controller, shown below, and hit the delete key.
 
-<img src="/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png)
 
-<p>Now that the Master View Controller is missing, we need to re-add it. Go to your Master View Controller's <code>.h</code> file and change it from inheriting from <code>UITableViewController</code> to <code>UICollectionViewController</code>. You'll get some compiler errors; ignore them for now.</p>
+Now that the Master View Controller is missing, we need to re-add it. Go to your Master View Controller's `.h` file and change it from inheriting from `UITableViewController` to `UICollectionViewController`. You'll get some compiler errors; ignore them for now.
 
-<p>Drag a new <code>UICollectionViewController</code> form the library. Right click and drag from the Navigation Controller onto the collection view controller and select the "root view controller" outlet.</p>
+Drag a new `UICollectionViewController` form the library. Right click and drag from the Navigation Controller onto the collection view controller and select the "root view controller" outlet.
 
-<img src="/img/import/blog/uicollectionview-example/BDF26DDF70744C57813ED87D31033FAF.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/BDF26DDF70744C57813ED87D31033FAF.png)
 
-<p>Right. Almost there. Open the identity inspector (⌘⎇3) and give the new UICollectionViewController the class name of your Master View Controller.</p>
+Right. Almost there. Open the identity inspector (⌘⎇3) and give the new UICollectionViewController the class name of your Master View Controller.
 
-<img src="/img/import/blog/uicollectionview-example/3B0B5635D36F497B84851AA27A9494C7.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/3B0B5635D36F497B84851AA27A9494C7.png)
 
-<p>We'll worry about the segues later. For now, go to the <code>UICollectionViewController</code> subclass' <code>.m</code> file. We'll fix those compiler errors now.</p>
+We'll worry about the segues later. For now, go to the `UICollectionViewController` subclass' `.m` file. We'll fix those compiler errors now.
 
-<img src="/img/import/blog/uicollectionview-example/8A0115CB76E64B218DCD9E158D6AF93D.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/8A0115CB76E64B218DCD9E158D6AF93D.png)
 
-<p>It's always something with you, isn't it, Xcode? </p>
+It's always something with you, isn't it, Xcode?
 
-<p>We're going to gut the contents of the master view controller that deal with the <code>tableView</code> property (which we replaced). For this example, I'm deleting the following method:</p>
+We're going to gut the contents of the master view controller that deal with the `tableView` property (which we replaced). For this example, I'm deleting the following method:
 
-<pre><code>- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-</code></pre>
+```
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+```
 
-<p>Everywhere else you see <code>tableView</code> cuasing a problem, replace it with <code>collectionView</code>. The two classes behave almost identically, so it'll be an easy conversion.</p>
+Everywhere else you see `tableView` cuasing a problem, replace it with `collectionView`. The two classes behave almost identically, so it'll be an easy conversion.
 
-<p>The only problem I had was</p>
+The only problem I had was
 
-<pre><code>[self.collectionView indexPathForSelectedRow];
-</code></pre>
+```
+[self.collectionView indexPathForSelectedRow];
+```
 
-<p><code>UICollectionView</code> doesn't have the method <code>indexPathForSelectedRow</code>, so replace that line with the following:</p>
+`UICollectionView` doesn't have the method `indexPathForSelectedRow`, so replace that line with the following:
 
-<pre><code>[[self.collectionView indexPathsForSelectedItems] lastObject];
-</code></pre>
+```
+[[self.collectionView indexPathsForSelectedItems] lastObject];
+```
 
-<p>You'll also need to modify the <code>insertSections:withRowAnimation:</code> method calls, since <code>UICollectionView</code> doesn't have row animations; just remove the second part of the selector name.</p>
+You'll also need to modify the `insertSections:withRowAnimation:` method calls, since `UICollectionView` doesn't have row animations; just remove the second part of the selector name.
 
-<p>Once you deal with all of the transition, you have a an app that runs, but is empty. Let's fill it with beautiful photos.</p>
+Once you deal with all of the transition, you have a an app that runs, but is empty. Let's fill it with beautiful photos.
 
-<img src="/img/import/blog/uicollectionview-example/226450BE3A464F44B4A4B8706BDC0612.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/226450BE3A464F44B4A4B8706BDC0612.png)
 
-<p>We need a data model. Since we're smart, accomplished, and handsome developers, let's use Core Data. Create the following Core Data model.</p>
+We need a data model. Since we're smart, accomplished, and handsome developers, let's use Core Data. Create the following Core Data model.
 
-<img src="/img/import/blog/uicollectionview-example/3E628B26764C4ACDA973588CAE0C2678.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/3E628B26764C4ACDA973588CAE0C2678.png)
 
-<p>All we need is a <code>photoRating</code> to sort by and <code>photoImageData</code> to display actual images, but let's add a <code>photoName</code> for the detail view.</p>
+All we need is a `photoRating` to sort by and `photoImageData` to display actual images, but let's add a `photoName` for the detail view.
 
-<p>We need to configure the prototype cell used by the collection view. Create a new class, subclassing <code>UICollectionViewCell</code>, create a <code>UIImageView</code> outlet and appropriate instance methods to set the image.</p>
+We need to configure the prototype cell used by the collection view. Create a new class, subclassing `UICollectionViewCell`, create a `UIImageView` outlet and appropriate instance methods to set the image.
 
-<p>Go to the Storyboard and select the protoype cell in the collection view. In the identity inspector, set it's class to the <code>UICollectionView</code> subclass you just created. Add a <code>UIImageView</code> to the prototype cell and connect the outlet. </p>
+Go to the Storyboard and select the protoype cell in the collection view. In the identity inspector, set it's class to the `UICollectionView` subclass you just created. Add a `UIImageView` to the prototype cell and connect the outlet.
 
-<img src="/img/import/blog/uicollectionview-example/2E0D5ECB395F41DEA921597398D5E79E.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/2E0D5ECB395F41DEA921597398D5E79E.png)
 
-<p>Make sure to set the <code>Identifier</code> in the Storyboard or the collection view won't dequeue the proper class.</p>
+Make sure to set the `Identifier` in the Storyboard or the collection view won't dequeue the proper class.
 
-<p>We need to queue up the updates from our <code>NSFetchedResultsController</code>, since <code>UICollectionView</code> can <em>only</em> perform batch updates (with animation). Serious oversight on Apple's here, in my opinion, since it makes using <code>NSFetchedRsultsController</code> with <code>UICollectionView</code> very sticky.</p>
+We need to queue up the updates from our `NSFetchedResultsController`, since `UICollectionView` can _only_ perform batch updates (with animation). Serious oversight on Apple's here, in my opinion, since it makes using `NSFetchedRsultsController` with `UICollectionView` very sticky.
 
-<p>You basically need to cache the updates to the sections and objects individually until the fetched results controller is finished with the updates. This is because of the <a href="https://ash-furrow.squarespace.com/blog/how-to-use-nsfetchedresultscontroller-with-uicollectionview">limitations imposed on <code>UICollectionView</code></a>.</p>
+You basically need to cache the updates to the sections and objects individually until the fetched results controller is finished with the updates. This is because of the [limitations imposed on `UICollectionView`](https://ash-furrow.squarespace.com/blog/how-to-use-nsfetchedresultscontroller-with-uicollectionview).
 
-<p><em>Note</em>: We're using batch updates because we are inserting more than one cell at a time, and we want that nice animation when adding each individual cell. You could call <code>reloadData</code> once all the results are loaded, but you wouldn't have any animations, which are part of the delight of <code>NSCollectionVIew</code>. </p>
+_Note_: We're using batch updates because we are inserting more than one cell at a time, and we want that nice animation when adding each individual cell. You could call `reloadData` once all the results are loaded, but you wouldn't have any animations, which are part of the delight of `NSCollectionVIew`.
 
-<p>Creating the <code>NSFetchedResultsController</code> is almost the exact same as the project template:</p>
+Creating the `NSFetchedResultsController` is almost the exact same as the project template:
 
-<pre><code>- (NSFetchedResultsController *)fetchedResultsController
+```
+- (NSFetchedResultsController *)fetchedResultsController
 {
     if (_fetchedResultsController != nil) {
         return _fetchedResultsController;
@@ -104,7 +108,7 @@ link_to: collectionview
     self.fetchedResultsController = aFetchedResultsController;
 
     NSError *error = nil;
-    if (![self.fetchedResultsController performFetch:&amp;error]) {
+    if (![self.fetchedResultsController performFetch:&error]) {
          // Replace this implementation with code to handle the error appropriately.
          // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
@@ -112,12 +116,13 @@ link_to: collectionview
     }
 
     return _fetchedResultsController;
-}    
-</code></pre>
+}
+```
 
-<p>Create two <code>NSMutableArray</code> instance variables and instantiate them in <code>viewDidLoad</code>. Implement the following <code>NSFetchedResultsControllerDelegate</code> methods.</p>
+Create two `NSMutableArray` instance variables and instantiate them in `viewDidLoad`. Implement the following `NSFetchedResultsControllerDelegate` methods.
 
-<pre><code>- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id &lt;NSFetchedResultsSectionInfo&gt;)sectionInfo
+```
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
            atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
 {
 
@@ -158,13 +163,14 @@ link_to: collectionview
     }
     [_objectChanges addObject:change];
 }
-</code></pre>
+```
 
-<p>These two methods queue the updates to the collection view. The following method waits for the fetched results controller to be finished before dequeuing those updates and applying them to our collection view.</p>
+These two methods queue the updates to the collection view. The following method waits for the fetched results controller to be finished before dequeuing those updates and applying them to our collection view.
 
-<pre><code>- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+```
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
-    if ([_sectionChanges count] &gt; 0)
+    if ([_sectionChanges count] > 0)
     {
         [self.collectionView performBatchUpdates:^{
 
@@ -190,7 +196,7 @@ link_to: collectionview
         } completion:nil];
     }
 
-    if ([_objectChanges count] &gt; 0 &amp;&amp; [_sectionChanges count] == 0)
+    if ([_objectChanges count] > 0 && [_sectionChanges count] == 0)
     {
         [self.collectionView performBatchUpdates:^{
 
@@ -222,15 +228,16 @@ link_to: collectionview
     [_sectionChanges removeAllObjects];
     [_objectChanges removeAllObjects];
 }
-</code></pre>
+```
 
-<p>These methods should work for any <code>UICollectionView</code> and <code>NSFetchedResultsController</code> data.</p>
+These methods should work for any `UICollectionView` and `NSFetchedResultsController` data.
 
-<p>Now that the <code>NSFetchedResultsController</code> is hooked up the the <code>UICollectionView</code>, let's load some photos from 500px! </p>
+Now that the `NSFetchedResultsController` is hooked up the the `UICollectionView`, let's load some photos from 500px!
 
-<p>Use the consumer key and consumer secret from when you <a href="http://developers.500px.com/settings/applications?from=developers">registered your application</a> earlier. Follow the directions in the <a href="https://github.com/500px/500px-iOS-api">iOS 500px SDK</a> to add the 500px SDK to your Xcode project. Make sure to follow the instructions in the SDKs <code>README</code> to set up your project to use the SDK.</p>
+Use the consumer key and consumer secret from when you [registered your application](http://developers.500px.com/settings/applications?from=developers) earlier. Follow the directions in the [iOS 500px SDK](https://github.com/500px/500px-iOS-api) to add the 500px SDK to your Xcode project. Make sure to follow the instructions in the SDKs `README` to set up your project to use the SDK.
 
-<pre><code>[PXRequest setConsumerKey:@"your consumer key" consumerSecret:@"your consumer secret"];
+```
+[PXRequest setConsumerKey:@"your consumer key" consumerSecret:@"your consumer secret"];
 
 [PXRequest requestForPhotoFeature:PXAPIHelperPhotoFeaturePopular completion:^(NSDictionary *results, NSError *error) {
     if (error)
@@ -256,11 +263,12 @@ link_to: collectionview
         });
     }
 }];
-</code></pre>
+```
 
-<p>The fetched results controller will take care of that magic for us. We just need to configure our cells.</p>
+The fetched results controller will take care of that magic for us. We just need to configure our cells.
 
-<pre><code>- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+```
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     AFCollectionViewCell *cell = (AFCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
 
@@ -269,21 +277,21 @@ link_to: collectionview
 
     return cell;
 }
-</code></pre>
+```
+ ![](/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png)
 
-<img src="/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png" class="img-responsive" />
+I went to the liberty of adjusting the sizes to make things pretty - nice app! Let's connect the detail view controller now.
 
-<p>I went to the liberty of adjusting the sizes to make things pretty - nice app! Let's connect the detail view controller now.</p>
+Open the Storyboard and right-click on the prototype cell. We'll be connecting the `selection` triggered segue to the detail view controller. Drag the circle beside `selection` to the detail view controller and choose "push" from the menu that appears.
 
-<p>Open the Storyboard and right-click on the prototype cell. We'll be connecting the <code>selection</code> triggered segue to the detail view controller. Drag the circle beside <code>selection</code> to the detail view controller and choose "push" from the menu that appears.</p>
+ ![](/img/import/blog/uicollectionview-example/AF66949DE9D6407C8288A2B406292DB8.png)
 
-<img src="/img/import/blog/uicollectionview-example/AF66949DE9D6407C8288A2B406292DB8.png" class="img-responsive" />
+Select the segue and make sure its identifier is set to "showDetail".
 
-<p>Select the segue and make sure its identifier is set to "showDetail".</p>
+Replace the `UILabel` with a `UIImageView`, change the `IBOutlet` in the header file, reconnect the outlet, and modify `configureView` to look like the following:
 
-<p>Replace the <code>UILabel</code> with a <code>UIImageView</code>, change the <code>IBOutlet</code> in the header file, reconnect the outlet, and modify <code>configureView</code> to look like the following:</p>
-
-<pre><code>- (void)configureView
+```
+- (void)configureView
 {
     // Update the user interface for the detail item.
 
@@ -293,11 +301,12 @@ link_to: collectionview
         self.title = [self.detailItem valueForKey:@"photoName"];
     }
 }
-</code></pre>
+```
 
-<p>In the master view controller, <code>prepareForSegue:sender:</code> should look like the following:</p>
+In the master view controller, `prepareForSegue:sender:` should look like the following:
 
-<pre><code>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+```
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] lastObject];
@@ -305,15 +314,14 @@ link_to: collectionview
         [[segue destinationViewController] setDetailItem:object];
     }
 }
-</code></pre>
+```
 
-<p>Run the app, tap on a photo, and you'll see the following:</p>
+Run the app, tap on a photo, and you'll see the following:
 
-<img src="/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png" class="img-responsive" />
+ ![](/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png)
 
-<p>Sexy! </p>
+Sexy!
 
-<p>If you have any questions, please let me know. Check out <a href="https://github.com/AshFurrow/UICollectionViewExample">the code</a> from GitHub and have fun!</p>
+If you have any questions, please let me know. Check out [the code](https://github.com/AshFurrow/UICollectionViewExample) from GitHub and have fun!
 
 <!-- more -->
-

@@ -3,13 +3,12 @@ title: "Committed"
 date: 2013-03-13 00:00
 ---
 
-<p>I've been using <a href="https://itunes.apple.com/ca/app/committed/id560767719?mt=12">Committed</a> by <a href="https://twitter.com/justin">Justin Williams</a> for about a week now and I love it. </p>
+I've been using [Committed](https://itunes.apple.com/ca/app/committed/id560767719?mt=12) by [Justin Williams](https://twitter.com/justin) for about a week now and I love it.
 
-<p>Committed posts OS X notifications about commits made to GitHub repos. This is <em>way</em> better than the constant deluge of emails GitHub can send you. </p>
+Committed posts OS X notifications about commits made to GitHub repos. This is _way_ better than the constant deluge of emails GitHub can send you.
 
-<p>It also does a great job of handling organizations. I'm a member of quite a few, so it's a nice touch. </p>
+It also does a great job of handling organizations. I'm a member of quite a few, so it's a nice touch.
 
-<p>Check it out in the <a href="https://itunes.apple.com/ca/app/committed/id560767719?mt=12">App Store</a>.</p>
+Check it out in the [App Store](https://itunes.apple.com/ca/app/committed/id560767719?mt=12).
 
 <!-- more -->
-

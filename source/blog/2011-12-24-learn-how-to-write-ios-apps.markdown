@@ -3,16 +3,15 @@ title: "Learn How to Write iOS Apps"
 date: 2011-12-24 00:00
 ---
 
-<p>My friend contacted me on twitter and asked for advice on different sources on how to learn iOS apps. Since this paragraph will already exceed 140 characters, I'm posting here, instead.
-(Obviously, reading this blog regularly is a great way to <a href="http://ashfurrow.com/2011/09/how-to-write-ios-apps/">pick up some iOS development tricks</a>)</p>
+My friend contacted me on twitter and asked for advice on different sources on how to learn iOS apps. Since this paragraph will already exceed 140 characters, I'm posting here, instead. (Obviously, reading this blog regularly is a great way to [pick up some iOS development tricks](http://ashfurrow.com/2011/09/how-to-write-ios-apps/))
 
-<p>To get started, some people buy a book or find some good online tutorials. I tried both approaches, and the online tutorials were definitely better. I found <a href="http://www.stanford.edu/class/cs193p/cgi-bin/drupal/" target="_blank">Stanford's class on iPhone Development</a>, available <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=473757255" target="_blank">for free on iTunesU</a>, to be a great place to start. However, watching lectures is time-consuming and, frankly, boring. If I was going to learn now, here is the approach I'd take.<!--more--></p>
+To get started, some people buy a book or find some good online tutorials. I tried both approaches, and the online tutorials were definitely better. I found [Stanford's class on iPhone Development](http://www.stanford.edu/class/cs193p/cgi-bin/drupal/), available [for free on iTunesU](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=473757255), to be a great place to start. However, watching lectures is time-consuming and, frankly, boring. If I was going to learn now, here is the approach I'd take.<!--more-->
 
-<p>I'd use a top-down/bottom-up strategy to learn both the implementation details of writing Objective-C/CocoaTouch while also getting a handle on the high-level aspects of the platform. Learning them both would make it more obvious how they fit together.</p>
+I'd use a top-down/bottom-up strategy to learn both the implementation details of writing Objective-C/CocoaTouch while also getting a handle on the high-level aspects of the platform. Learning them both would make it more obvious how they fit together.
 
-<p>You need to know some high-level stuff, particularly application lifecycle. Apple's documentation, listed below, is a good place to start. If you want to write iOS apps, you're probably already an iOS user, so you're familiar with user conventions. Reading the HIG is still a good idea. It's not long - 90 pages with lots of pictures.</p>
+You need to know some high-level stuff, particularly application lifecycle. Apple's documentation, listed below, is a good place to start. If you want to write iOS apps, you're probably already an iOS user, so you're familiar with user conventions. Reading the HIG is still a good idea. It's not long - 90 pages with lots of pictures.
 
-<p>Resources for getting started:</p>
+Resources for getting started:
 
 <dl>
 
@@ -38,7 +37,7 @@ date: 2011-12-24 00:00
 
 </dl>
 
-<p>I find that following certain blogs or just looking through archives to be really helpful. Objective-C isn't just another language; it has a set of conventions that work very differently from standard C, Java, or .Net code. Immersing yourself in these blogs is a great way to become familiar with the language and the runtime.</p>
+I find that following certain blogs or just looking through archives to be really helpful. Objective-C isn't just another language; it has a set of conventions that work very differently from standard C, Java, or .Net code. Immersing yourself in these blogs is a great way to become familiar with the language and the runtime.
 
 <dl>
 
@@ -56,7 +55,6 @@ date: 2011-12-24 00:00
 
 </dl>
 
-<p>That's about all I can say - I learn best by trying, identifying a problem or shortcoming in my understanding, and then fixing it. Hopefully you'll be on your way in no time. If anyone ever has a question or comment, please feel free to <a href="http://twitter.com/#!/ashfurrow" target="_blank">contact me via twitter</a>.</p>
+That's about all I can say - I learn best by trying, identifying a problem or shortcoming in my understanding, and then fixing it. Hopefully you'll be on your way in no time. If anyone ever has a question or comment, please feel free to [contact me via twitter](http://twitter.com/#!/ashfurrow).
 
 <!-- more -->
-

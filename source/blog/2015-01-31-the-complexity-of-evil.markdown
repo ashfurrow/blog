@@ -82,9 +82,7 @@ It’s tragic that our education system and media have created a world where peo
 
 It doesn’t even necessarily have to be with real-life people or situations – kids can relate to all kinds of characters if we let them.
 
-<blockquote class="twitter-tweet" lang="en">
-
-<p>4 y.o: Why is Darth Vader mean?&#10;&#10;Me: For complex reasons it took 3 prequels to explain&#10;&#10;4: I think it’s because his underwear are too tight</p>&mdash; Exploding Unicorn (@XplodingUnicorn) <a href="https://twitter.com/XplodingUnicorn/status/554876781548036097">January 13, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>4 y.o: Why is Darth Vader mean?&#10;&#10;Me: For complex reasons it took 3 prequels to explain&#10;&#10;4: I think it’s because his underwear are too tight</p>&mdash; Exploding Unicorn (@XplodingUnicorn) <a href="https://twitter.com/XplodingUnicorn/status/554876781548036097">January 13, 2015</a></blockquote>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

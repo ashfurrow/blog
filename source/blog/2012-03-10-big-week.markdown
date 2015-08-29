@@ -3,23 +3,20 @@ title: "Big Week"
 date: 2012-03-10 00:00
 ---
 
-<p>Huge week! The new iPad announcement occurred Wednesday and look which app Apple has installed on the new iPads to show off their new retina displays:</p>
+Huge week! The new iPad announcement occurred Wednesday and look which app Apple has installed on the new iPads to show off their new retina displays:
 
-<img src="/img/import/blog/2012/03/big-week/9BEDB728D8304083801D9192F859378B.jpg" class="img-responsive" />
+ ![](/img/import/blog/2012/03/big-week/9BEDB728D8304083801D9192F859378B.jpg)
 
-<p>My friend <a href="http://nearthespeedoflight.com/" target="_blank">Jason</a> sent me the photo, taken by <a href="http://www.theverge.com/2012/3/7/2852352/new-ipad-hands-on-photos#3098162" target="_blank">The Verge</a>, and I honestly didn't notice at first. Literally every iPad I ever see has that icon, so it didn't occur to me that these are the iPad's Apple has painstakingly prepared to show off their bitching new screen.<!--more--></p>
+My friend [Jason](http://nearthespeedoflight.com/)&nbsp;sent me the photo, taken by [The Verge](http://www.theverge.com/2012/3/7/2852352/new-ipad-hands-on-photos#3098162), and I honestly didn't notice at first. Literally every iPad I ever see has that icon, so it didn't occur to me that these are the iPad's Apple has painstakingly prepared to show off their bitching new screen.<!--more-->
 
-<p>Last night, Adam sent over these screenshots:</p>
+Last night, Adam sent over these screenshots:
 
-<img src="/img/import/blog/2012/03/big-week/AB029910707C44B28D1CD52C334527E9.jpg" class="img-responsive" />
+ ![](/img/import/blog/2012/03/big-week/AB029910707C44B28D1CD52C334527E9.jpg) ![](/img/import/blog/2012/03/big-week/AAAE5CAA4AC54EB483D44FCFE49F2EED.jpg)
 
-<img src="/img/import/blog/2012/03/big-week/AAAE5CAA4AC54EB483D44FCFE49F2EED.jpg" class="img-responsive" />
+Badass. I'm &nbsp;working with &nbsp;and the two of us have built an iPad app that is featured on the new iPads and on the app store beside the likes of Facebook, Twitter, Tweetbot, Skype, and Flipboard is kind of amazing.
 
-<p>Badass. I'm  working with  and the two of us have built an iPad app that is featured on the new iPads and on the app store beside the likes of Facebook, Twitter, Tweetbot, Skype, and Flipboard is kind of amazing.</p>
+I couldn't be happier.
 
-<p>I couldn't be happier.</p>
-
-<p>Now that my secret project at work is wrapped up, I'm looking forward to getting back into iOS. We've got a clear idea of exactly what we need to do to make an <em>even better</em> app, and I can't wait to realize our plans.</p>
+Now that my secret project at work is wrapped up, I'm looking forward to getting back into iOS. We've got a clear idea of exactly what we need to do to make an _even better_&nbsp;app, and I can't wait to realize our plans.
 
 <!-- more -->
-
