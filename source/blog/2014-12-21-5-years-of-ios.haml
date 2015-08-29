@@ -2,7 +2,8 @@
 title: 5 Years of iOS
 date: 2014-12-21 20:50:18 UTC
 background_image: /img/blog/5-years-of-ios/header.jpg
-timeline: true
+javascript: timeline
+stylesheet: timeline
 link_to: swift
 ---
 
@@ -25,10 +26,10 @@ link_to: swift
 
   <p>BEGIN_EXTRA_WIDE</p>
 
-.cntl
-  %span.cntl-bar.cntl-center
-    %span.cntl-bar-fill
-  .cntl-states
+.timeline
+  %span.timeline-bar.timeline-center
+    %span.timeline-bar-fill
+  .timeline-states
     = Timeline::PrintEvents(data.five_years)
 :markdown
 

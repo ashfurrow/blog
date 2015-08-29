@@ -1,19 +1,20 @@
+/* Adapted from http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html */
 
-.cntl {
+.timeline {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
 	margin-top: 30px;
 }
 
-.cntl-center {
+.timeline-center {
 	left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
 }
 
-.cntl-bar {
+.timeline-bar {
 	position: absolute;
 	width: 10px;
 	top: 0;
@@ -21,7 +22,7 @@
 	background-color: #7E7C7D;
 }
 
-.cntl-bar-fill {
+.timeline-bar-fill {
 	background-color: #398CCC;
 	position: absolute;
 	left:0;
@@ -31,20 +32,20 @@
 
 }
 
-.cntl-state {
+.timeline-state {
 	position: relative;
 	width: 100%;
 	min-height: 200px;
 	margin-bottom: 50px;
 }
 
-.cntl-state::after {
+.timeline-state::after {
 	display:block;
 	content: ' ';
 	clear:both;
 }
 
-.cntl-icon {
+.timeline-icon {
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
@@ -57,7 +58,7 @@
 	color: #F9F9F9;
 }
 
-.cntl-content {
+.timeline-content {
 	width: 40%;
 	padding: 2%;
 	background-color: rgba(189,189,189,0.25);
@@ -68,35 +69,35 @@
 	margin-left:-40%;
 }
 
-.cntl-state:nth-child(2n+2) .cntl-content {
+.timeline-state:nth-child(2n+2) .timeline-content {
 	float:right;
 	margin-right:-40%;
 }
 
-.cntl-image {
+.timeline-image {
 	position:relative;
 	float:left;
 	opacity:0;
 	width: 40%;
 }
 
-.cntl-state:nth-child(2n+1) .cntl-image {
+.timeline-state:nth-child(2n+1) .timeline-image {
 	float:right;
 }
 
-.cntl-image img {
+.timeline-image img {
     margin-left:auto;
     margin-right:auto;
 }
 
-.cntl-content > p, .cntl-content > h3 {
+.timeline-content > p, .timeline-content > h3 {
 	margin: 10px 0 0 0;
 	margin-top: 10px;
 	line-height: 25px;
 	margin-top: 25px;
 }
 
-.cntl-content > p:first-child, .cntl-content > h3:first-child {
+.timeline-content > p:first-child, .timeline-content > h3:first-child {
 	margin: 0;
 	margin-top: 0px;
 }
@@ -104,7 +105,7 @@
 /*
 animations
 */
-.cntl-bar-fill,.cntl-content {
+.timeline-bar-fill, .timeline-content {
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -112,7 +113,7 @@ animations
 	transition: all 500ms ease;
 }
 
-.cntl-image {
+.timeline-image {
 	-webkit-transition: all 500ms 250ms ease;
 	-moz-transition: all 500ms 250ms ease;
 	-o-transition: all 500ms 250ms ease;
@@ -120,56 +121,53 @@ animations
 	transition: all 500ms 250ms ease;
 }
 
-.cntl-state:nth-child(2n+2).cntl-animate .cntl-content {
+.timeline-state:nth-child(2n+2).timeline-animate .timeline-content {
 	margin-right:0%;
 }
 
-.cntl-animate .cntl-content {
+.timeline-animate .timeline-content {
 	opacity:1;
 	margin-left:0%;
 }
 
-.cntl-animate .cntl-image {
+.timeline-animate .timeline-image {
 	opacity:1;
 }
 
 
-
-
-/* mobile support */
+/* Mobile Support */
 
 @media (max-width: 600px) {
 
-	.cntl-bar {
+	.timeline-bar {
 		left:auto;
 		right: 37px;
 	}
 
-	.cntl-content {
+	.timeline-content {
 		width:80%;
 		float:none;
 	}
-	.cntl-state:nth-child(2n+2) .cntl-content {
+	.timeline-state:nth-child(2n+2) .timeline-content {
 		margin-right:0%;
 		float:none;
 	}
 
-	.cntl-image {
+	.timeline-image {
 		margin-top: 30px;
 		width:80%;
 	}
 
-	.cntl-state:nth-child(2n+1) .cntl-image {
+	.timeline-state:nth-child(2n+1) .timeline-image {
 		float:none;
 	}
 
-	.animate .cntl-content {
+	.animate .timeline-content {
 		margin-left: 2%;
 	}
 
-	.cntl-icon {
+	.timeline-icon {
 		left: auto;
 		right: 0;
 	}
-
 }

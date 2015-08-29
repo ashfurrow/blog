@@ -13,7 +13,7 @@ class Event
 
   def formatted_date
     if @year
-      "<div class='cntl-icon cntl-center'>#{@year}</div>"
+      "<div class='timeline-icon timeline-center'>#{@year}</div>"
     else
       ""
     end
@@ -21,7 +21,7 @@ class Event
 
   def formatted_image
     if @image_url
-      "<div class='cntl-image'><img src='#{ @image_url }'></div>"
+      "<div class='timeline-image'><img src='#{ @image_url }'></div>"
     else
       ""
     end
@@ -47,9 +47,9 @@ class Event
 
   def to_html
     <<-eos
-      <div class="cntl-state">
+      <div class="timeline-state">
         #{ formatted_date }
-        <div class="cntl-content">
+        <div class="timeline-content">
           #{ formatted_heading }
           #{ formatted_content }
         </div>

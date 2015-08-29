@@ -6,7 +6,8 @@
 = feed_tag :atom, data.site.feed_link, title: 'Atom Feed'
 = feed_tag :rss, data.site.feed_rss_link, title: 'RSS Feed'
 = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'
-= stylesheet_link_tag 'clean-blog', 'syntax', 'fontcustom.css', 'cntl.css', 'custom'
+= stylesheet_link_tag 'clean-blog', 'syntax', 'fontcustom.css', 'custom'
+= custom_stylesheet_link_tag current_resource
 
 / Device specifier
 %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}/
