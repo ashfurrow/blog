@@ -9,7 +9,7 @@ The 500px iPad app is my greatest professional accomplishment (so far, anyway). 
 
 The script and [slides](https://speakerdeck.com/ashfurrow/500px-for-ipad-a-developers-behind-the-scenes) are [available on GitHub](https://github.com/AshFurrow/500px-Behind-The-Scenes). The slides are mainly ornamental; reading the script or watching the [video](https://vimeo.com/50451043) below is the best way to get the information.
 
-<iframe data-image-dimensions="640x360" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/50451043?wmode=opaque&amp;api=1" width="640" data-embed="true" webkitallowfullscreen="" frameborder="0" height="360" class="embed-responsive-item"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="640x360" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/50451043?wmode=opaque&amp;api=1" width="640" data-embed="true" webkitallowfullscreen="" frameborder="0" height="360" class="embed-responsive-item"></iframe></div>
 
 Unfortunately, the camera we were recording on stopped after 30 minutes, but I'm still proud to present the talk I have.
 

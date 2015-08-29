@@ -15,7 +15,14 @@ There's nothing wrong with this at all - I think the most important thing about 
 
 A common conversation I have with salespeople is something likech:
 
-> Salesperson: "You just moved to Toronto? That's great!" Me: "We love it here." Salesperson: "So you're looking around at our sales racks. What do you do for a living?" Me: "I'm a software developer." Salesperson: "Oh."
+> Salesperson: "You just moved to Toronto? That's great!" 
+> 
+> Me: "We love it here." 
+>
+> Salesperson: "So you're looking around at our sales racks. What do you do for a living?" 
+> 
+> Me: "I'm a software developer." 
+> Salesperson: "Oh."
 
 I think they're used to people who come in who _have_ to &nbsp;dress up, where I _choose_ to. Most days, anyways. This week was particularly hard on me, so I tended to wake up late and throw on whatever I could.
 

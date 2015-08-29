@@ -51,9 +51,10 @@ It might not seem like a big deal, but this didn't take up hardly any extra time
 
 **Update** : Ryder Mackay points to another performance improvement:
 
-> [<s>@</s> **ashfurrow**](https://twitter.com/ashfurrow) consider using -predicateWithSubstitutionVariables: to avoid expensive format string parsing: [stackoverflow.com/a/7713512/1034…](http://t.co/mXRmjFrg "http://stackoverflow.com/a/7713512/1034477")
-> 
-> — Ryder Mackay (@rydermackay) [September 2, 2012](https://twitter.com/rydermackay/status/242393643154022400)<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-in-reply-to="242382610611978240">
+	<p><a href="https://twitter.com/ashfurrow"><s>@</s><b>ashfurrow</b></a> consider using -predicateWithSubstitutionVariables: to avoid expensive format string parsing: <a href="http://t.co/mXRmjFrg" title="http://stackoverflow.com/a/7713512/1034477">stackoverflow.com/a/7713512/1034…</a></p>— Ryder Mackay (@rydermackay) <a href="https://twitter.com/rydermackay/status/242393643154022400" data-datetime="2012-09-02T22:48:42+00:00">September 2, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Nice! We can create the predicate once and then save it for later to avoid having to parse the format string (a not-inexpensive operation).
 

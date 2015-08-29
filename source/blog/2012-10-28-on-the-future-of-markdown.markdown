@@ -11,11 +11,10 @@ Jeff Atwood wants to unify these flavours under one name with one spec and a tes
 
 Unfortunately, John Gruber has been less than receptive towards the plan.
 
-> @ [briandigital](https://twitter.com/briandigital) If you liked the original, which I created dictatorially, what makes you think you’d like a sequel from by a committee?
-> 
-> — John Gruber (@gruber) [October 26, 2012](https://twitter.com/gruber/status/261650083689426945)<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>> @ [codinghorror](https://twitter.com/codinghorror) When you tell me to jump, should I ask “How high?”
-> 
-> — John Gruber (@gruber) [October 27, 2012](https://twitter.com/gruber/status/262287246953164800)<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-in-reply-to="261636014383185921">
+  <p>@<a href="https://twitter.com/briandigital">briandigital</a> If you liked the original, which I created dictatorially, what makes you think you’d like a sequel from by a committee?</p>— John Gruber (@gruber) <a href="https://twitter.com/gruber/status/261650083689426945" data-datetime="2012-10-26T02:06:55+00:00">October 26, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 What I find interesting about all this is that, until now, I didn't really have a problem with Gruber having complete control over Markdown. I mean, it'd be unlikely that he would make a change that would adversely effect my ability to access (and write) things like this blog, right?
 

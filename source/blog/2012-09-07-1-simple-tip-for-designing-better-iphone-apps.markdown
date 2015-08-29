@@ -5,9 +5,10 @@ date: 2012-09-07 00:00
 
 A friend of mine tweeted an [article](http://sixrevisions.com/mobile/design-iphone-apps-better/) this morning that caught my eye:
 
-> For the iOS devs out there: 5 simple tips for designing better iPhone apps [sixrevisions.com/mobile/design-…](http://t.co/JvZ6MCEc "http://sixrevisions.com/mobile/design-iphone-apps-better/") via @ [sixrevisions](https://twitter.com/sixrevisions)
-> 
-> — Caroline McGregor (@carolinemcgrgr) [September 7, 2012](https://twitter.com/carolinemcgrgr/status/244055598981844992)<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+	<p>For the iOS devs out there: 5 simple tips for designing better iPhone apps <a href="http://t.co/JvZ6MCEc" title="http://sixrevisions.com/mobile/design-iphone-apps-better/">sixrevisions.com/mobile/design-…</a> via @<a href="https://twitter.com/sixrevisions">sixrevisions</a></p>— Caroline McGregor (@carolinemcgrgr) <a href="https://twitter.com/carolinemcgrgr/status/244055598981844992" data-datetime="2012-09-07T12:52:43+00:00">September 7, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I'm not a designer, but I've designed a few apps and feel I've got an eye for good design, so this really piqued my interested. What could these tips be?
 

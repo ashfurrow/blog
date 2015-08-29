@@ -13,6 +13,11 @@ It wasn't _difficult_ to add that button. All the developer's had to do was give
 
 **Update** : My friend [Jason](http://twitter.com/jasonbrennan) wrote in to tell me it was actually Nevan Mrgan who suggested the idea last November, an idea to which Tapbots credited him.
 
+<blockquote class="twitter-tweet">
+  <p>Half-baked idea: iOS apps that display a photo-picking sheet, "Take Photo", "Choose Existing"? Add 3rd option, "Last Photo Taken". 95% case.</p>— Neven Mrgan (@mrgan) <a href="https://twitter.com/mrgan/status/133311995125575681" data-datetime="2011-11-06T22:37:11+00:00">November 6, 2011</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 > Half-baked idea: iOS apps that display a photo-picking sheet, "Take Photo", "Choose Existing"? Add 3rd option, "Last Photo Taken". 95% case.
 > 
 > — Neven Mrgan (@mrgan) [November 6, 2011](https://twitter.com/mrgan/status/133311995125575681)<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
