@@ -20,7 +20,8 @@ module AddLinksToNavigation
           nodes = doc.css(".container h2[id], .container h3[id]")
 
           nodes.each do |header|
-            id = header.attributes["id"].content
+            id = header.attributes['id'].content.gsub('\'', '')
+            header.attributes['id'].content = id
 
             if header.parent['class'] == 'cntl-content'
               header.inner_html = "#{header.inner_html} <a class='header-link' href='\##{id}'>\#</a>"
