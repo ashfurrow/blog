@@ -3,30 +3,34 @@ title: "Getting Started with CocoaPods"
 date: 2013-09-10 00:00
 ---
 
-<p>CocoaPods is an open source library management tool for Objective-C (both iOS and OS X). This article is going to briefly take you through how to get started. This is meant t0 be a quick-fire demo – check out the <a href="http://docs.cocoapods.org/guides/getting_started.html">Getting Started</a> guide for more details.</p>
+CocoaPods is an open source library management tool for Objective-C (both iOS and OS X). This article is going to briefly take you through how to get started. This is meant t0 be a quick-fire demo – check out the [Getting Started](http://docs.cocoapods.org/guides/getting_started.html) guide for more details.
 
-<p>A CocoaPod (singular) is a specification for a library, usually open source. CocoaPods (plural) is the tool for managing these specs.</p>
+A CocoaPod (singular) is a specification for a library, usually open source. CocoaPods (plural) is the tool for managing these specs.
 
-<p>First, you'll need to install CocoaPods. That's pretty easy since CocoaPods is a Ruby Gem, and all Macs ship with Ruby. Open a terminal and type the following (it'll ask you for your password):</p>
+First, you'll need to install CocoaPods. That's pretty easy since CocoaPods is a Ruby Gem, and all Macs ship with Ruby. Open a terminal and type the following (it'll ask you for your password):
 
-<pre><code>sudo gem install cocoapods
-</code></pre>
+```
+sudo gem install cocoapods
+```
 
-<p>That'll install CocoaPods on your machine.</p>
+That'll install CocoaPods on your machine.
 
-<p>Next, you'll need an Xcode project that you want to integrate. Use <code>cd</code> to navigate to the working directory of your app. </p>
+Next, you'll need an Xcode project that you want to integrate. Use `cd` to navigate to the working directory of your app.
 
-<pre><code>cd ~/Desktop/Demo
-</code></pre>
+```
+cd ~/Desktop/Demo
+```
 
-<p>Next, type the following command:</p>
+Next, type the following command:
 
-<pre><code>pod init
-</code></pre>
+```
+pod init
+```
 
-<p>This command creates an empty Podfile for you. Open it in a text editor. It'll look like the following.</p>
+This command creates an empty Podfile for you. Open it in a text editor. It'll look like the following.
 
-<pre><code># Uncomment this line to define a global platform for your project
+```
+# Uncomment this line to define a global platform for your project
 # platform :ios, "6.0"
 
 target "Demo" do
@@ -36,11 +40,12 @@ end
 target "DemoTests" do
 
 end
-</code></pre>
+```
 
-<p>Uncomment the second line to specify the platform (iOS) and the version (6). For your target (the first target), enter <code>pod "SVProgressHUD", "0.9"</code>.</p>
+Uncomment the second line to specify the platform (iOS) and the version (6). For your target (the first target), enter `pod "SVProgressHUD", "0.9"`.
 
-<pre><code>platform :ios, "6.0"
+```
+platform :ios, "6.0"
 
 target "Demo" do
 
@@ -51,16 +56,18 @@ end
 target "DemoTests" do
 
 end
-</code></pre>
+```
 
-<p>Save the file and return to the text editor. Enter the following command. </p>
+Save the file and return to the text editor. Enter the following command.
 
-<pre><code>pod install
-</code></pre>
+```
+pod install
+```
 
-<p>This will produce the following output.</p>
+This will produce the following output.
 
-<pre><code>&gt; pod install
+```
+> pod install
 Analyzing dependencies
 Downloading dependencies
 Installing SVProgressHUD (0.9)
@@ -68,26 +75,24 @@ Generating Pods project
 Integrating client project
 
 [!] From now on use `Demo.xcworkspace`.
-</code></pre>
+```
 
-<p>Follow the last line's instruction and close your Xcode project and open the Xcode Workspace file that's been created for you. An Xcode workspace is like a folder for Xcode projects. Your Pods project contains all of the libraries (pods).</p>
+Follow the last line's instruction and close your Xcode project and open the Xcode Workspace file that's been created for you. An Xcode workspace is like a folder for Xcode projects. Your Pods project contains all of the libraries (pods).
 
-<img src="/img/import/blog/getting-started-with-cocoapods-demo/C8A836A432F647E4BB3410FF4C499EA1.png" class="img-responsive" />
+ ![](/img/import/blog/getting-started-with-cocoapods-demo/C8A836A432F647E4BB3410FF4C499EA1.png)
 
-<p>Cool. </p>
+Cool.
 
-<p>Now we need to import the <code>SVProgressHUD.h</code> header. Since it's in another Xcode project, make sure to use angle brackets. </p>
+Now we need to import the `SVProgressHUD.h` header. Since it's in another Xcode project, make sure to use angle brackets.
 
-<pre><code>#import &lt;SVProgressHUD.h&gt;
-</code></pre>
+```
+#import <SVProgressHUD.h>
+```
 
-<p>That's it! We can now use our library. We've successfully integrated CocoaPods into our project. For each library you want to use, write <code>pod "POD_NAME", "POD_VERSION"</code> in your Podfile and re-run <code>pod install</code>. </p>
+That's it! We can now use our library. We've successfully integrated CocoaPods into our project. For each library you want to use, write `pod "POD_NAME", "POD_VERSION"` in your Podfile and re-run `pod install`.
 
-<p>There's an <a href="https://github.com/kattrali/cocoapods-xcode-plugin">Xcode plugin</a> for CocoaPods if you're not into the command line. </p>
+There's an [Xcode plugin](https://github.com/kattrali/cocoapods-xcode-plugin) for CocoaPods if you're not into the command line.
 
-<p>I gave a talk this morning on effectively using open source software. The slides are below. </p>
+I gave a talk this morning on effectively using open source software. The slides are below.
 
-<script async class="speakerdeck-embed" data-id="bb7fb4c0fc510130bc6b32c793acd495" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- more -->
-
+<script async class="speakerdeck-embed" data-id="bb7fb4c0fc510130bc6b32c793acd495" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><!-- more -->

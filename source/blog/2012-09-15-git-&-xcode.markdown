@@ -3,16 +3,15 @@ title: "Git &amp; Xcode"
 date: 2012-09-15 00:00
 ---
 
-<p>I got a new MacBook Air from work yesterday. The command line tools of Xcode weren't transferred over from my old machine, so when I typed <code>git status</code>, nothing happened.</p>
+I got a new MacBook Air from work yesterday. The command line tools of Xcode weren't transferred over from my old machine, so when I typed `git status`, nothing happened.
 
-<p>Hrm.</p>
+Hrm.
 
-<p><a href="http://twitter.com/ndfred">Frédéric Sagnes</a> sent me <a href="http://www.cocoanetics.com/2012/07/you-dont-need-the-xcode-command-line-tools/">this Cocoanetics</a> article explaining how git is contained <em>inside Xcode</em> and you don't need to install the command line tools at all. Further, the git version in Xcode is <em>newer</em> than the one in the command line tools.</p>
+[Frédéric Sagnes](http://twitter.com/ndfred) sent me [this Cocoanetics](http://www.cocoanetics.com/2012/07/you-dont-need-the-xcode-command-line-tools/) article explaining how git is contained _inside Xcode_ and you don't need to install the command line tools at all. Further, the git version in Xcode is _newer_ than the one in the command line tools.
 
-<p>Enter the following command into the Terminal to get the latest and great git version that Xcode is running itself.</p>
+Enter the following command into the Terminal to get the latest and great git version that Xcode is running itself.
 
-<pre><code>echo alias "git=xcrun git" &gt;&gt; ~/.bashrc
-</code></pre>
-
+```
+echo alias "git=xcrun git" >> ~/.bashrc
+```
 <!-- more -->
-

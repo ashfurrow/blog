@@ -3,17 +3,16 @@ title: "VoiceOver Crashes my App"
 date: 2013-01-26 00:00
 ---
 
-<p>I'm working on a small app and I loaded it into my iPhone to perform my due diligence with VoiceOver testing. It was there I discovered that my app actually crashes!</p>
+I'm working on a small app and I loaded it into my iPhone to perform my due diligence with VoiceOver testing. It was there I discovered that my app actually crashes!
 
-<p>Only when using VoiceOver.</p>
+Only when using VoiceOver.
 
-<p>Hmm. Shit. </p>
+Hmm. Shit.
 
-<p>Turns out it's only when using <code>UITableView</code>'s sexy new <code>dequeueReusableCellWithIdentifier:forIndexPath:</code> with pre-registered classes. Somehow, VoiceOver is interfering with this process and calling this method will crash your app when VoiceOver is turned on.</p>
+Turns out it's only when using `UITableView`'s sexy new `dequeueReusableCellWithIdentifier:forIndexPath:` with pre-registered classes. Somehow, VoiceOver is interfering with this process and calling this method will crash your app when VoiceOver is turned on.
 
-<p>For the mean time, avoid the new table view methods. Fall back to the old "try to dequeue, create if nil" approach. </p>
+For the mean time, avoid the new table view methods. Fall back to the old "try to dequeue, create if nil" approach.
 
-<p>Golf clap, Apple. Golf. Clap.</p>
+Golf clap, Apple. Golf. Clap.
 
 <!-- more -->
-

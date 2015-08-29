@@ -3,11 +3,10 @@ title: "Your First iOS App"
 date: 2013-06-05 00:00
 ---
 
-<p>I finished writing my book. The <a href="http://yourfirstiosapp.com">first chapter is available online, for free</a>.</p>
+I finished writing my book. The [first chapter is available online, for free](http://yourfirstiosapp.com).
 
-<p>If you like it, <a href="https://leanpub.com/your-first-ios-app/">you should go buy it</a>. Better yet, buy it, and then tell all your friends about it. </p>
+If you like it, [you should go buy it](https://leanpub.com/your-first-ios-app/). Better yet, buy it, and then tell all your friends about it.
 
-<p>Sorry to be all pitchy, but I worked really hard on this and it'd be super-awesome if it made a big splash. And sorry for apologising – I'm Canadian, after all. </p>
+Sorry to be all pitchy, but I worked really hard on this and it'd be super-awesome if it made a big splash. And sorry for apologising – I'm Canadian, after all.
 
 <!-- more -->
-

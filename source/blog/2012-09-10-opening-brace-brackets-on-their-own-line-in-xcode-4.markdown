@@ -3,88 +3,70 @@ title: "Opening Brace Brackets on Their Own Line in Xcode 4"
 date: 2012-09-10 00:00
 ---
 
-<p>If you're like me, you like your brace backets on their own lines, like this:</p>
+If you're like me, you like your brace backets on their own lines, like this:
 
-<pre><code>if (condition)
+```
+if (condition)
 {
     statements
 }
-</code></pre>
+```
 
-<p>If you're even more like me, you make heavy use of Xcode's autocomplete and snippets, like the following:</p>
+If you're even more like me, you make heavy use of Xcode's autocomplete and snippets, like the following:
 
-<img src="/img/import/blog/opening-brace-brackets-on-their-own-line-in-xcode-4/EB56DB5A74DD42C390BEDBDC90529BDB.png" class="img-responsive" />
+ ![](/img/import/blog/opening-brace-brackets-on-their-own-line-in-xcode-4/EB56DB5A74DD42C390BEDBDC90529BDB.png)
 
-<p>And finally, if you're <em>just</em> like me, you get really disappointed when this happens:</p>
+And finally, if you're _just_ like me, you get really disappointed when this happens:
 
-<pre><code>if (condition) {
+```
+if (condition) {
     statements
 }
-</code></pre>
+```
 
-<p>What the hell, Xcode? Even the project templates have brace brackets on their own lines. What gives?</p>
+What the hell, Xcode? Even the project templates have brace brackets on their own lines. What gives?
 
-<p>Thanks to <a href="http://stackoverflow.com/questions/5324622/how-to-change-autocomplete-braces-in-xcode-4">some research</a>, I found the <a href="http://forrst.com/posts/Put_that_where_it_might_belong_Xcode-PNL">file</a> you need to edit. The problem is, Xcode is now distributed through the Mac App Store, so the steps are a little different. Here's what you do.</p>
+Thanks to [some research](http://stackoverflow.com/questions/5324622/how-to-change-autocomplete-braces-in-xcode-4), I found the [file](http://forrst.com/posts/Put_that_where_it_might_belong_Xcode-PNL) you need to edit. The problem is, Xcode is now distributed through the Mac App Store, so the steps are a little different. Here's what you do.
 
-<ol>
+1. Open the terminal. 
+2. Type `cd /Applications/Xcode.app/Contents/PlugIns/IDECodeSnippetLibrary.ideplugin/Contents/Resources` and hit Enter.
+3. We're editing `SystemCodeSnippets.codesnippets`, but let's make a backup first. Type `sudo cp SystemCodeSnippets.codesnippets SystemCodeSnippets.codesnippets.backup` and hit Enter.
+4. Use your text editor of choice to open the file as the root user.
+  - Using vim, the command is `sudo vim SystemCodeSnippets.codesnippets`
+  - Using anything else, like TextMake, it's `sudo open -a TextMate SystemCodeSnippets.codesnippets`
+5. 
 
-<li>Open the terminal. </li>
+Do a "Find" for the word "condition" and you should find almost all the instance of the snippets you want to modify. It'll look like this:
 
-<li>Type <code>cd /Applications/Xcode.app/Contents/PlugIns/IDECodeSnippetLibrary.ideplugin/Contents/Resources</code> and hit Enter.</li>
+```
+<key>IDECodeSnippetVersion</key>
+    <integer>1</integer>
+   <key>IDECodeSnippetCompletionPrefix</key>
+    <string>if</string>
+    <key>IDECodeSnippetContents</key>
+    <string>if (&lt;#condition#&gt;) {
+&lt;#statements#&gt;
+}</string>
+```
 
-<li>We're editing <code>SystemCodeSnippets.codesnippets</code>, but let's make a backup first. Type <code>sudo cp SystemCodeSnippets.codesnippets SystemCodeSnippets.codesnippets.backup</code> and hit Enter.</li>
+Just put a new line before the opening brace bracket.
 
-<li>Use your text editor of choice to open the file as the root user.
-<ul>
-
-<li>Using vim, the command is <code>sudo vim SystemCodeSnippets.codesnippets</code>
-
-</li>
-
-<li>Using anything else, like TextMake, it's <code>sudo open -a TextMate SystemCodeSnippets.codesnippets</code>
-
-</li>
-
-</ul>
-
-</li>
-
-<li>
-
-<p>Do a "Find" for the word "condition" and you should find almost all the instance of the snippets you want to modify. It'll look like this:</p>
-
-<pre><code>    &lt;key&gt;IDECodeSnippetVersion&lt;/key&gt;
-    &lt;integer&gt;1&lt;/integer&gt;
-   &lt;key&gt;IDECodeSnippetCompletionPrefix&lt;/key&gt;
-    &lt;string&gt;if&lt;/string&gt;
-    &lt;key&gt;IDECodeSnippetContents&lt;/key&gt;
-    &lt;string&gt;if (&amp;lt;#condition#&amp;gt;) {
-&amp;lt;#statements#&amp;gt;
-}&lt;/string&gt;
-</code></pre>
-
-<p>Just put a new line before the opening brace bracket.</p>
-
-<pre><code>    &lt;key&gt;IDECodeSnippetVersion&lt;/key&gt;
-    &lt;integer&gt;1&lt;/integer&gt;
-    &lt;key&gt;IDECodeSnippetCompletionPrefix&lt;/key&gt;
-    &lt;string&gt;if&lt;/string&gt;
-    &lt;key&gt;IDECodeSnippetContents&lt;/key&gt;
-    &lt;string&gt;if (&amp;lt;#condition#&amp;gt;)
+```
+<key>IDECodeSnippetVersion</key>
+    <integer>1</integer>
+    <key>IDECodeSnippetCompletionPrefix</key>
+    <string>if</string>
+    <key>IDECodeSnippetContents</key>
+    <string>if (&lt;#condition#&gt;)
 {
-&amp;lt;#statements#&amp;gt;
-}&lt;/string&gt;
-</code></pre>
+&lt;#statements#&gt;
+}</string>
+```
 
-<p>This will find all the if statements and most loops; search for the text "forin" to modify the fast enumeration snippet.</p>
+This will find all the if statements and most loops; search for the text "forin" to modify the fast enumeration snippet.
 
-</li>
+Save the file and restart Xcode. That's it!
 
-</ol>
-
-<p>Save the file and restart Xcode. That's it!</p>
-
-<p><strong>Update</strong>: My friend Zev is maintaining an up-to-date version of <code>SystemCodeSnippets.codesnippets</code> for the latest Xcode version <a href="https://github.com/sveinungkb/ios-convenience">on GitHub</a>. Go check it out.</p>
+**Update** : My friend Zev is maintaining an up-to-date version of `SystemCodeSnippets.codesnippets` for the latest Xcode version [on GitHub](https://github.com/sveinungkb/ios-convenience). Go check it out.
 
 <!-- more -->
-

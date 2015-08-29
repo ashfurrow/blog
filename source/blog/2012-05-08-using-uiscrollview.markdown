@@ -3,9 +3,8 @@ title: "Using UIScrollView"
 date: 2012-05-08 00:00
 ---
 
-<p>I'm giving a talk tonight at <a href="http://tacow.org/">TACOW</a>, the Toronto Cocoa and WebObjects Developers Group. The talk is on <code>UIScrollView</code> and the presentation materials, including all sample code, is available <a href="http://static.ashfurrow.com/blog/ScrollViewMaterials.zip">here</a>. The PDF version is available <a href="http://static.ashfurrow.com/blog/Tacow%20Presentation.pdf">by itself</a>, if you're on a mobile browser. <!--more--></p>
+I'm giving a talk tonight at [TACOW](http://tacow.org/), the Toronto Cocoa and WebObjects Developers Group. The talk is on `UIScrollView` and the presentation materials, including all sample code, is available [here](http://static.ashfurrow.com/blog/ScrollViewMaterials.zip). The PDF version is available [by itself](http://static.ashfurrow.com/blog/Tacow%20Presentation.pdf), if you're on a mobile browser. <!--more-->
 
-<p>The sample code is completed - no exercises left to the user :)</p>
+The sample code is completed - no exercises left to the user :)
 
 <!-- more -->
-

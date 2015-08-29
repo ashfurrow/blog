@@ -3,29 +3,22 @@ title: "Thoughtbot Playbook"
 date: 2014-01-07 00:00
 ---
 
-<p><a href="http://thoughtbot.com">Thoughtbot</a>, a well-respected digital agency, has released their <a href="http://playbook.thoughtbot.com">playbook</a>, which is tremendously kind of them and indicative of the open-source collaboration that they're known for. </p>
+[Thoughtbot](http://thoughtbot.com), a well-respected digital agency, has released their [playbook](http://playbook.thoughtbot.com), which is tremendously kind of them and indicative of the open-source collaboration that they're known for.
 
-<p>On hybrid app solutions:</p>
+On hybrid app solutions:
 
-<blockquote>
-  <p>We don't take on Titanium or PhoneGap projects because of:</p>
-  
-  <p>Cost: ...</p>
-  
-  <p>Early access to upgrades: ...</p>
-  
-  <p>Quality: ...</p>
+> We don't take on Titanium or PhoneGap projects because of:
+> 
+> Cost: ...
+> 
+> Early access to upgrades: ...
+> 
+> Quality: ...
 
-</blockquote>
+On usability:
 
-<p>On usability:</p>
+> Usability is the measure of how easy it is for a user to reach an outcome.
 
-<blockquote>
-  <p>Usability is the measure of how easy it is for a user to reach an outcome. </p>
-
-</blockquote>
-
-<p>There are also some great, great pieces of advice discussing pair-programming, code reviews, effetive use of git, and more. Read the whole thing if you can. </p>
+There are also some great, great pieces of advice discussing pair-programming, code reviews, effetive use of git, and more. Read the whole thing if you can.
 
 <!-- more -->
-

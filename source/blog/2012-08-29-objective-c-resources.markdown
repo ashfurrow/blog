@@ -3,41 +3,23 @@ title: "Objective-C Resources"
 date: 2012-08-29 00:00
 ---
 
-<p>I had a reader contact me this week looking for a list of blogs that <em>I</em> follow for Objective-C advice. I had to dig through my Google Reader list for a while to come up with a filtered list, since some good resources like my friend <a href="http://nearthespeedoflight.com">Jason's blog</a>, are great developer resources, but also serve as personal blogs. I think my site, as it exists today, would also fall into this "in-between" category, though I'm hoping to move it towards stricter technical material</p>
+I had a reader contact me this week looking for a list of blogs that _I_ follow for Objective-C advice. I had to dig through my Google Reader list for a while to come up with a filtered list, since some good resources like my friend [Jason's blog](http://nearthespeedoflight.com), are great developer resources, but also serve as personal blogs. I think my site, as it exists today, would also fall into this "in-between" category, though I'm hoping to move it towards stricter technical material
 
-<p>This list is anything but complete, but I thought I'd publish a succinct set of resources with helpful Objective-C advice.</p>
+This list is anything but complete, but I thought I'd publish a succinct set of resources with helpful Objective-C advice.
 
-<ul>
+- [http://speirs.org](http://speirs.org)
+- [http://mattgemmell.com](http://mattgemmell.com)
+- [http://www.mikeash.com/pyblog/](http://www.mikeash.com/pyblog/)
+- [http://nshipster.com](http://nshipster.com)
+- [http://www.objectivesee.com](http://www.objectivesee.com)
+- [http://www.fruitstandsoftware.com/blog/](http://www.fruitstandsoftware.com/blog/)
+- of course,&nbsp; [https://developer.apple.com/news/](https://developer.apple.com/news/)
 
-<li><a href="http://speirs.org">http://speirs.org</a></li>
+These are older and less frequently updated, but still good:
 
-<li><a href="http://mattgemmell.com">http://mattgemmell.com</a></li>
+- [http://www.cimgf.com](http://www.cimgf.com)
+- [http://cocoawithlove.com](http://cocoawithlove.com)
 
-<li><a href="http://www.mikeash.com/pyblog/">http://www.mikeash.com/pyblog/</a></li>
-
-<li><a href="http://nshipster.com">http://nshipster.com</a></li>
-
-<li><a href="http://www.objectivesee.com">http://www.objectivesee.com</a></li>
-
-<li><a href="http://www.fruitstandsoftware.com/blog/">http://www.fruitstandsoftware.com/blog/</a></li>
-
-<li>of course, <a href="https://developer.apple.com/news/">https://developer.apple.com/news/</a>
-
-</li>
-
-</ul>
-
-<p>These are older and less frequently updated, but still good:</p>
-
-<ul>
-
-<li><a href="http://www.cimgf.com">http://www.cimgf.com</a></li>
-
-<li><a href="http://cocoawithlove.com">http://cocoawithlove.com</a></li>
-
-</ul>
-
-<p>If you have any resources you find helpful, please get in touch on <a href="http://twitter.com/ashfurrow">twitter</a> and let me know.</p>
+If you have any resources you find helpful, please get in touch on [twitter](http://twitter.com/ashfurrow) and let me know.
 
 <!-- more -->
-

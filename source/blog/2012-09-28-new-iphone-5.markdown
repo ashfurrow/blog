@@ -3,17 +3,16 @@ title: "New iPhone 5"
 date: 2012-09-28 00:00
 ---
 
-<img src="/img/import/blog/cyzijqn0kkn1ckusw9c0qvbxecayda/0BE4C7001AC14718990FE1EF3E538D19.jpg" class="img-responsive" />
+ ![](/img/import/blog/cyzijqn0kkn1ckusw9c0qvbxecayda/0BE4C7001AC14718990FE1EF3E538D19.jpg)
 
-<p>I'm pretty stoked.</p>
+I'm pretty stoked.
 
-<p>Thankfully, Paddy was there to document this great occasion.</p>
+Thankfully, Paddy was there to document this great occasion.
 
-<p>I really like the new iPhone. The taller form factor is actually pretty nice.</p>
+I really like the new iPhone. The taller form factor is actually pretty nice.
 
-<p>The one problem I'm having with the taller screen is applications that are still letterboxed. The keyboard has the black bar beneath it, which has the effect of raising the keyboard by 44 points (the height of a nav bar). </p>
+The one problem I'm having with the taller screen is applications that are still letterboxed. The keyboard has the black bar beneath it, which has the effect of raising the keyboard by 44 points (the height of a nav bar).
 
-<p>So I have to mentally translate where my fingers touch to type in apps. The <em>really</em> frustrating thing is the space bar, since it's at the bottom. I wish that Apple had made the hit target for the spacebar extend <em>below</em> the frame of the application, since that's where I'm finding I'm tapping. I get a lot of sentenceswithwordsrunningtogether and it's a pain.</p>
+So I have to mentally translate where my fingers touch to type in apps. The _really_ frustrating thing is the space bar, since it's at the bottom. I wish that Apple had made the hit target for the spacebar extend _below_ the frame of the application, since that's where I'm finding I'm tapping. I get a lot of sentenceswithwordsrunningtogether and it's a pain.
 
 <!-- more -->
-

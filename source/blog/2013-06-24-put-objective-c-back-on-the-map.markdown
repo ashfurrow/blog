@@ -3,11 +3,10 @@ title: "Put Objective-C Back On The Map"
 date: 2013-06-24 00:00
 ---
 
-<p>I've partnered with the good folks down at <a href="https://www.cueup.com/">Cue</a> to organize a <a href="https://objectivechackathon.appspot.com">distributed Objective-C hackathon</a> this weekend. </p>
+I've partnered with the good folks down at [Cue](https://www.cueup.com/) to organize a [distributed Objective-C hackathon](https://objectivechackathon.appspot.com) this weekend.
 
-<p>"But Ash", you're thinking, "you're teaching a course this weekend!" </p>
+"But Ash", you're thinking, "you're teaching a course this weekend!"
 
-<p>Yes I am. And all of my students will be committing to open source Objective-C. Huzzah!</p>
+Yes I am. And all of my students will be committing to open source Objective-C. Huzzah!
 
 <!-- more -->
-

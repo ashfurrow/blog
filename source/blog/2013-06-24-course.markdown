@@ -3,9 +3,8 @@ title: "Course"
 date: 2013-06-24 00:00
 ---
 
-<p>I'm teaching a course this weekend in iOS Development. It'll be heavily derived from my <a href="http://yourfirstiosapp.com">recent book</a>. </p>
+I'm teaching a course this weekend in iOS Development. It'll be heavily derived from my [recent book](http://yourfirstiosapp.com).
 
-<p><a href="http://iosapps.eventbrite.com">Check out the course</a>.</p>
+[Check out the course](http://iosapps.eventbrite.com).
 
 <!-- more -->
-

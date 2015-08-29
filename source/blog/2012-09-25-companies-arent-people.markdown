@@ -3,20 +3,16 @@ title: "Companies Aren't People"
 date: 2012-09-25 00:00
 ---
 
-<p>God I hate <a href="http://www.guardian.co.uk/technology/blog/2012/sep/20/apple-google-maps-headache">tabloid reporting</a>.</p>
+God I hate [tabloid reporting](http://www.guardian.co.uk/technology/blog/2012/sep/20/apple-google-maps-headache).
 
-<blockquote>
-  <p>Google, I hear from roundabout sources, is enjoying the bad press Apple is suffering.</p>
+> Google, I hear from roundabout sources, is enjoying the bad press Apple is suffering.
 
-</blockquote>
+Google isn't a person! It's not _enjoying_ anything!
 
-<p>Google isn't a person! It's not <em>enjoying</em> anything! </p>
+A "well placed source" could be anyone. Who knows if they know what the fuck is going on.
 
-<p>A "well placed source" could be anyone. Who knows if they know what the fuck is going on. </p>
+Facts are that we don't know who severed the Google Maps integration in iOS 6 or for what reason.
 
-<p>Facts are that we don't know who severed the Google Maps integration in iOS 6 or for what reason. </p>
-
-<p>Companies aren't people; they don't experience joy, schadenfreude, or orgasmic pleasure at their rivals' discomfort. Stop personifying corporations. </p>
+Companies aren't people; they don't experience joy, schadenfreude, or orgasmic pleasure at their rivals' discomfort. Stop personifying corporations.
 
 <!-- more -->
-

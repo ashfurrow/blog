@@ -4,21 +4,22 @@ date: 2013-03-14 00:00
 link_to: collectionview
 ---
 
-<p>So you want to put a collection view inside of a table view cell, eh? Sounds easy, right? Well, to do it right requires a little bit of work. We want a clear separation of concerns so that the <code>UITableViewCell</code> isn't acting as the data source or delegate for the <code>UICollectionView</code> (because that would be very, very bad). You can follow along by downloading the <a href="https://github.com/AshFurrow/AFTabledCollectionView">sample code</a>.</p>
+So you want to put a collection view inside of a table view cell, eh? Sounds easy, right? Well, to do it right requires a little bit of work. We want a clear separation of concerns so that the `UITableViewCell` isn't acting as the data source or delegate for the `UICollectionView` (because that would be very, very bad). You can follow along by downloading the [sample code](https://github.com/AshFurrow/AFTabledCollectionView).
 
-<p>We're going to build a view hierarchy like the one below. Each <code>UITableViewCell</code> will contain a <code>UICollectionView</code> instead in its <code>contentView</code>. (For reasons we'll get into momentarily, this collection view needs to be a custom subclass.) Each collection view contains a certain number of cells, defined by its datasource. </p>
+We're going to build a view hierarchy like the one below. Each `UITableViewCell` will contain a `UICollectionView` instead in its `contentView`. (For reasons we'll get into momentarily, this collection view needs to be a custom subclass.) Each collection view contains a certain number of cells, defined by its datasource.
 
-<img src="/img/import/blog/putting-a-uicollectionview-in-a-uitableviewcell/AFE11F3C86B04CDF9EDB1F080C6668EB.png" class="img-responsive" />
+ ![](/img/import/blog/putting-a-uicollectionview-in-a-uitableviewcell/AFE11F3C86B04CDF9EDB1F080C6668EB.png)
 
-<p>Each collection view will have the same data source and delegate as the table view, necessitating the requirement to use a custom <code>UICollectionView</code> subclass. </p>
+Each collection view will have the same data source and delegate as the table view, necessitating the requirement to use a custom `UICollectionView` subclass.
 
-<img src="/img/import/blog/putting-a-uicollectionview-in-a-uitableviewcell/E26436B73EEE4D06A38646AEDAFC9692.png" class="img-responsive" />
+ ![](/img/import/blog/putting-a-uicollectionview-in-a-uitableviewcell/E26436B73EEE4D06A38646AEDAFC9692.png)
 
-<p>The diagram should show you that the tricky part here is going to be getting the <code>UICollectionView</code> to see the view controller as the delegate. That's fine, we'll just subclass <code>UICollectionView</code> to get it to have an <code>index</code> property. Subclassing <code>UICollectionView</code> isn't common, but it's perfectly acceptable here.</p>
+The diagram should show you that the tricky part here is going to be getting the `UICollectionView` to see the view controller as the delegate. That's fine, we'll just subclass `UICollectionView` to get it to have an `index` property. Subclassing `UICollectionView` isn't common, but it's perfectly acceptable here.
 
-<p>Adding the collection view to the cell is very strait forward. We'll create an instance of <code>AFCollectionView</code> using a standard <code>UICollectionViewFlowLayout</code> in our cell's designated initializer. </p>
+Adding the collection view to the cell is very strait forward. We'll create an instance of `AFCollectionView` using a standard `UICollectionViewFlowLayout` in our cell's designated initializer.
 
-<pre><code>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+```
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (!(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) return nil;
 
@@ -34,31 +35,34 @@ link_to: collectionview
 
     return self;
 }
-</code></pre>
+```
 
-<p>We'll adjust the side of the collection view to fill the cell in <code>layoutSubviews</code>. </p>
+We'll adjust the side of the collection view to fill the cell in `layoutSubviews`.
 
-<pre><code>-(void)layoutSubviews
+```
+-(void)layoutSubviews
 {
     [super layoutSubviews];
 
     self.collectionView.frame = self.contentView.bounds;
 }
-</code></pre>
+```
 
-<p>Next, we'll set up our model in the view controller. We'll use <code>UIColor</code>s because they're easy. Each cell will display a different, random colour. </p>
+Next, we'll set up our model in the view controller. We'll use `UIColor`s because they're easy. Each cell will display a different, random colour.
 
-<p>This model is going to represent the table view <em>and</em> each collection view. We'll use an array; each object represents a table cell. These objects are themselves arrays, with each of their objects representing a collection view cell.</p>
+This model is going to represent the table view _and_ each collection view. We'll use an array; each object represents a table cell. These objects are themselves arrays, with each of their objects representing a collection view cell.
 
-<pre><code>-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+```
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.colorArray.count;
 }
-</code></pre>
+```
 
-<p>Next we'll implement our <code>UICollectionViewDataSource</code> methods.</p>
+Next we'll implement our `UICollectionViewDataSource` methods.
 
-<pre><code>-(NSInteger)collectionView:(AFIndexedCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+```
+-(NSInteger)collectionView:(AFIndexedCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     NSArray *collectionViewArray = self.colorArray[collectionView.index];
     return collectionViewArray.count;
@@ -73,21 +77,23 @@ link_to: collectionview
 
     return cell;
 }
-</code></pre>
+```
 
-<p>You'll see we're using the <code>index</code> property of the collection view to determine the appropriate model to use. Notice that the view controller doesn't retain references to any of the collection views – they belong to the <code>UITableViewCell</code>s only. This is great, since they'll be re-used and save memory.</p>
+You'll see we're using the `index` property of the collection view to determine the appropriate model to use. Notice that the view controller doesn't retain references to any of the collection views – they belong to the `UITableViewCell`s only. This is great, since they'll be re-used and save memory.
 
-<p>But where is the <code>index</code> getting set? We'll need to do that, too.</p>
+But where is the `index` getting set? We'll need to do that, too.
 
-<pre><code>-(void)tableView:(UITableView *)tableView willDisplayCell:(AFTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+```
+-(void)tableView:(UITableView *)tableView willDisplayCell:(AFTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell setCollectionViewDataSourceDelegate:self index:indexPath.row];
 }
-</code></pre>
+```
 
-<p>The only thing left to do is "remember" the content offset of each cell as we end displaying it to reset it when we begin displaying it again. I we don't do this, newly displayed collection views will have non-zero content offsets and returning collection views will be in different positions. We'll use an <code>NSMutableDictionary</code> to remember the content offsets.</p>
+The only thing left to do is "remember" the content offset of each cell as we end displaying it to reset it when we begin displaying it again. I we don't do this, newly displayed collection views will have non-zero content offsets and returning collection views will be in different positions. We'll use an `NSMutableDictionary` to remember the content offsets.
 
-<pre><code>-(void)tableView:(UITableView *)tableView willDisplayCell:(AFTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+```
+-(void)tableView:(UITableView *)tableView willDisplayCell:(AFTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell setCollectionViewDataSourceDelegate:self index:indexPath.row];
     NSInteger index = cell.collectionView.index;
@@ -103,13 +109,11 @@ link_to: collectionview
     self.contentOffsetDictionary[[@(index) stringValue]] = 
         @(horizontalOffset);
 }
-</code></pre>
+```
+ ![](/img/import/blog/putting-a-uicollectionview-in-a-uitableviewcell/1DA58865F87F4E9696A16088F491E04D.png)
 
-<img src="/img/import/blog/putting-a-uicollectionview-in-a-uitableviewcell/1DA58865F87F4E9696A16088F491E04D.png" class="img-responsive" />
+That's it. Not a lot of code, but to do it right, it requires a little bit of planning ahead. You can [download the entire sample code on GitHub](https://github.com/AshFurrow/AFTabledCollectionView).
 
-<p>That's it. Not a lot of code, but to do it right, it requires a little bit of planning ahead. You can <a href="https://github.com/AshFurrow/AFTabledCollectionView">download the entire sample code on GitHub</a>.</p>
-
-<p>If you've enjoyed this tutorial, and I sincerely hope you have, then I'd recommend my ebook, <a href="http://click.linksynergy.com/fs-bin/click?id=3JVIZPzOhac&amp;subid=&amp;offerid=145238.1&amp;type=10&amp;tmpid=3559&amp;RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fios-uicollectionview-the-complete-guide-9780133410945"><code>UICollectionView</code>: The Complete Guide</a>. In the book, I go into far more detail on every aspect of using <code>UICollectionView</code>. You can pre-order it now and get access to all the draft chapters immediately. </p>
+If you've enjoyed this tutorial, and I sincerely hope you have, then I'd recommend my ebook, [`UICollectionView`: The Complete Guide](http://click.linksynergy.com/fs-bin/click?id=3JVIZPzOhac&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fios-uicollectionview-the-complete-guide-9780133410945). In the book, I go into far more detail on every aspect of using `UICollectionView`. You can pre-order it now and get access to all the draft chapters immediately.
 
 <!-- more -->
-
