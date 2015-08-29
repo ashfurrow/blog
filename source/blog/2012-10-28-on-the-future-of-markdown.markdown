@@ -13,6 +13,11 @@ Unfortunately, John Gruber has been less than receptive towards the plan.
 
 <blockquote class="twitter-tweet" data-in-reply-to="261636014383185921">
   <p>@<a href="https://twitter.com/briandigital">briandigital</a> If you liked the original, which I created dictatorially, what makes you think you’d like a sequel from by a committee?</p>— John Gruber (@gruber) <a href="https://twitter.com/gruber/status/261650083689426945" data-datetime="2012-10-26T02:06:55+00:00">October 26, 2012</a>
+<blockquote class="twitter-tweet" data-in-reply-to="261636014383185921">
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</blockquote>
+  <p>@<a href="https://twitter.com/briandigital">briandigital</a> If you liked the original, which I created dictatorially, what makes you think you’d like a sequel from by a committee?</p>— John Gruber (@gruber) <a href="https://twitter.com/gruber/status/261650083689426945" data-datetime="2012-10-26T02:06:55+00:00">October 26, 2012</a>
 </blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
