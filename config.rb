@@ -22,7 +22,7 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page/{num}"
-  blog.summary_separator = "<!-- more -->"
+  blog.summary_separator = /<!-- more -->/
   blog.new_article_template = "new_article.markdown.erb"
   blog.layout = "blog_post"
 end
