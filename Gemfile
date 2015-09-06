@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'rack'
 gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-s3_sync'

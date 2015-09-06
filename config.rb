@@ -56,7 +56,7 @@ configure :build do
   activate :minify_javascript
 
   # Refer to javascript, css assets with build-secific filenames.
-  activate :asset_hash, ignore: /^img\/.*/
+  activate :asset_hash, ignore: [/^img\/.*/, /^fonts\/.*/]
 end
 
 ###
@@ -80,14 +80,15 @@ activate :cdn do |cdn|
   cdn.cloudflare = {
     zone: 'ashfurrow.com',
     base_urls: [
-      "http://#{bucket}",
-      "https://#{bucket}"
+      "http://ashfurrow.com",
+      "https://ashfurrow.com"
     ]
   }
 end
 
 # After pushing, apply caching headers and invalidate any changed files.
 after_s3_sync do |files_by_status|
+  yield if bucket.start_with? 'staging'
 
   # Cache all CSS, JS, and images for a year.
   directories = ['css', 'javascripts', 'img']
@@ -104,4 +105,3 @@ after_s3_sync do |files_by_status|
   # Invalidate CDN.
   cdn_invalidate(files_by_status[:updated])
 end
-
