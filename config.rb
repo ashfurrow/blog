@@ -36,7 +36,6 @@ helpers CustomHelpers
 activate :directory_indexes
 activate :add_links_to_navigation
 activate :modify_widths
-activate :asset_hash
 
 page "/feed.xml", layout: false
 page "/feed.rss.xml", layout: false
