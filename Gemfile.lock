@@ -311,6 +311,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ansi
   builder
   html-proofer
   less

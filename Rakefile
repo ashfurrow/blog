@@ -1,6 +1,7 @@
 require 'rake'
 
 namespace :deploy do
+
   desc "Deployment to production"
   task :production do
     sh 'bundle exec middleman s3_sync --bucket=ashfurrow.com'
@@ -9,6 +10,8 @@ namespace :deploy do
   desc "Deployment to staging"
   task :staging do
     sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
+
+    # Add any staging-only files.
     sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
   end
 

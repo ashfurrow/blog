@@ -1,6 +1,7 @@
-require "lib/custom_helpers"
-require "lib/add_links_to_navigation.rb"
-require "lib/modify_widths.rb"
+require 'lib/custom_helpers'
+require 'lib/add_links_to_navigation.rb'
+require 'lib/modify_widths.rb'
+require 'ansi/code'
 
 ###
 # Blog settings
@@ -69,22 +70,38 @@ activate :s3_sync do |s3_sync|
   s3_sync.aws_secret_access_key      = ENV['SITE_AWS_SECRET']
 end
 
+def bucket
+  Middleman::S3Sync.s3_sync_options.bucket
+end
+
 # Invalidate Cloudflare
 activate :cdn do |cdn|
   # Credentials stored in CLOUDFLARE_CLIENT_API_KEY and CLOUDFLARE_EMAIL env variables.
   cdn.cloudflare = {
     zone: 'ashfurrow.com',
     base_urls: [
-      'http://ashfurrow.com',
-      'https://ashfurrow.com',
-      'http://staging.ashfurrow.com',
-      'https://staging.ashfurrow.com'
+      "http://#{bucket}",
+      "https://#{bucket}"
     ]
   }
 end
 
-# After pushing, invalidate any changed files
+# After pushing, apply caching headers and invalidate any changed files.
 after_s3_sync do |files_by_status|
+
+  # Cache all CSS, JS, and images for a year.
+  directories = ['css', 'javascripts', 'img']
+  files_to_cache = (files_by_status[:updated] + files_by_status[:created]).select do |file|
+    directories.include? file.split('/').first
+  end
+
+  if files_to_cache.length > 0
+    urls = files_to_cache.map { |file| "s3://#{bucket}/#{file}" }.join(' ')
+    puts ANSI.green{'Setting cache headers.'}
+    puts `s3cmd --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --add-header='Cache-Control:max-age=31536000, public' modify #{urls}`
+  end
+
+  # Invalidate CDN.
   cdn_invalidate(files_by_status[:updated])
 end
 
