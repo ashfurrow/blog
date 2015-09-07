@@ -37,6 +37,8 @@ Thanks to the following people and projects:
 - [middleman-s3_sync](https://github.com/fredjean/middleman-s3_sync)
 - [middleman-cdn](https://github.com/leighmcculloch/middleman-cdn)
 - [middleman-syntax](https://github.com/middleman/middleman-syntax)
+- [middleman-inliner](https://github.com/kaiinui/middleman-inliner)
+- [loadCSS](https://github.com/filamentgroup/loadCSS)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 - [This colour](http://www.colourlovers.com/color/398CCC/Walton)
 - [This colour scheme](http://www.colourlovers.com/palette/869489/Caribbean_Dusk)
