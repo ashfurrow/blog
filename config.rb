@@ -13,6 +13,7 @@ set :haml, ugly: true, format: :html5
 set :relative_links, true
 
 activate :syntax
+activate :inliner
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
