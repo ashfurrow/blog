@@ -8,7 +8,8 @@
 = stylesheet_inline_tag 'critical'
 = javascript_inline_tag 'loadCSS'
 :javascript
-  loadCSS( "#{url_for '/css/all.css'}" );
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '#{url_for "/css/all.css"}' );
 %noscript
   = stylesheet_link_tag 'all'
 
