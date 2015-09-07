@@ -322,7 +322,6 @@ DEPENDENCIES
   middleman-s3_sync
   middleman-syntax
   nokogiri
-  rack
   rake
   redcarpet
   therubyracer
