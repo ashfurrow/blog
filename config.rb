@@ -88,20 +88,21 @@ end
 
 # After pushing, apply caching headers and invalidate any changed files.
 after_s3_sync do |files_by_status|
-  yield if bucket.start_with? 'staging'
 
-  # Cache all CSS, JS, and images for a year.
-  directories = ['css', 'javascripts', 'img']
-  files_to_cache = (files_by_status[:updated] + files_by_status[:created]).select do |file|
-    directories.include? file.split('/').first
+  if bucket.start_with?('staging') == false
+    # Cache all CSS, JS, and images for a year.
+    directories = ['css', 'javascripts', 'img']
+    files_to_cache = (files_by_status[:updated] + files_by_status[:created]).select do |file|
+      directories.include? file.split('/').first
+    end
+
+    if files_to_cache.length > 0
+      urls = files_to_cache.map { |file| "s3://#{bucket}/#{file}" }.join(' ')
+      puts ANSI.green{'Setting cache headers.'}
+      puts `s3cmd --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --add-header='Cache-Control:max-age=31536000, public' modify #{urls}`
+    end
+
+    # Invalidate CDN.
+    cdn_invalidate(files_by_status[:updated])
   end
-
-  if files_to_cache.length > 0
-    urls = files_to_cache.map { |file| "s3://#{bucket}/#{file}" }.join(' ')
-    puts ANSI.green{'Setting cache headers.'}
-    puts `s3cmd --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --add-header='Cache-Control:max-age=31536000, public' modify #{urls}`
-  end
-
-  # Invalidate CDN.
-  cdn_invalidate(files_by_status[:updated])
 end
