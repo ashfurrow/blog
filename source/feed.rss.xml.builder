@@ -4,7 +4,7 @@ xml.rss :version => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom" do
   xml.channel do
     site_url = "http://ashfurrow.com/"
 
-    xml.tag! 'atom:link', :href => "http://ashfurrow.com/feed.xml", :rel => "self", :type => "application/rss+xml" 
+    xml.tag! 'atom:link', :href => "http://ashfurrow.com/feed.rss.xml", :rel => "self", :type => "application/rss+xml"
 
     xml.title "Ash Furrow"
     xml.description data.site.description
