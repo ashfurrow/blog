@@ -24,13 +24,15 @@ License
 
 This [work](http://purl.org/dc/dcmitype/Text) by [Ash Furrow](http://ashfurrow.com/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-Code I've written is [licensed](/LICENSE) under MIT; other components such as [Bootstrap](http://getbootstrap.com) or the [original blog theme](http://startbootstrap.com/template-overviews/clean-blog/) have the own licenses.
+Code I've written is [licensed](/LICENSE) under MIT. Other components such as [Bootstrap](http://getbootstrap.com) or the [original blog theme](http://startbootstrap.com/template-overviews/clean-blog/) have the own licenses.
 
 Credits
 -------
 
 Thanks to the following people and projects:
 
+- [Orta Therox](https://twitter.com/orta)
+- [Katarina Batina](https://twitter.com/katarinabatina)
 - [Tom Creighton](https://twitter.com/ashfurrow/status/523393606431019008)
 - [Middleman](http://middlemanapp.com)
 - [Clean Blog Theme](http://startbootstrap.com/template-overviews/clean-blog/)
