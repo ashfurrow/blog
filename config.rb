@@ -92,7 +92,7 @@ after_s3_sync do |files_by_status|
 
   if bucket.start_with?('staging') == false
     # Cache all CSS, JS, and images for a year.
-    directories = ['css', 'javascripts', 'img']
+    directories = ['css', 'javascripts', 'img', 'fonts']
     files_to_cache = (files_by_status[:updated] + files_by_status[:created]).select do |file|
       directories.include? file.split('/').first
     end
