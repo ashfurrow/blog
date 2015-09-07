@@ -85,6 +85,7 @@ activate :cdn do |cdn|
       "https://ashfurrow.com"
     ]
   }
+  cdn.filter = /.+.*/
 end
 
 # After pushing, apply caching headers and invalidate any changed files.
