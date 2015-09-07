@@ -111,6 +111,24 @@
     </RoutingRule>
     <RoutingRule>
         <Condition>
+            <KeyPrefixEquals>feed.rss.xml</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>feed.ashfurrow.com</HostName>
+            <ReplaceKeyWith>feed.rss.xml</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>feed.xml</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>feed.ashfurrow.com</HostName>
+            <ReplaceKeyWith>feed.xml</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
             <KeyPrefixEquals>blog?format=rss</KeyPrefixEquals>
             <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
         </Condition>
