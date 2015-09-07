@@ -3,7 +3,8 @@ upcoming_talks:
   conference: iOSoho
   url: http://www.meetup.com/iOSoho/events/224796318/
   dates: September 14, 2015
-  image: http://photos1.meetupstatic.com/photos/event/8/c/c/global_295262252.jpeg
+  image: /img/speaking/iosoho.jpg
+  location: New York, America
 - name: TBA
   conference: Mobiconf
   url: http://2015.mobiconf.org/
