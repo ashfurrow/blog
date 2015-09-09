@@ -89,6 +89,10 @@ module CustomHelpers
     description or data.site.description
   end
 
+  def removeRelativeImageSources(body)
+    body.gsub('src="/img/', 'src="http://ashfurrow.com/img/') unless body.nil?
+  end
+
   require 'haml'
 
   # Divs' Widths
