@@ -26,8 +26,8 @@ This [work](http://purl.org/dc/dcmitype/Text) by [Ash Furrow](http://ashfurrow.c
 
 Code I've written is [licensed](/LICENSE) under MIT. Other components such as [Bootstrap](http://getbootstrap.com) or the [original blog theme](http://startbootstrap.com/template-overviews/clean-blog/) have the own licenses.
 
-Credits
--------
+Thanks
+------
 
 Thanks to the following people and projects:
 
@@ -48,6 +48,7 @@ Thanks to the following people and projects:
 - [vertical timeline jquery thingy](http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html)
 - [@CloudyConway](http://twitter.com/CloudyConway)
 - [IcoMoon](https://icomoon.io)
+- [CloudFlare](http://cloudflare.com)
 
 Photo Credits
 -------------

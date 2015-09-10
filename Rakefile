@@ -17,7 +17,25 @@ namespace :deploy do
 
   desc "Deploys RSS and Atom feeds"
   task :feeds do
+    require 'cloudflare'
+    # Push the generated feeds to the feeds.ashfurrow.com bucket.
     sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
+
+    # Invalidate the CDN.
+    cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
+    ['http://ashfurrow.com', 'https://ashfurrow.com'].each do |base_url|
+      ['feed.xml', 'feed.rss.xml'].each do |feed|
+        feed_url = "#{base_url}/#{feed}"
+        puts "Invalidating #{feed_url} ... "
+        begin
+          cloudflare.zone_file_purge(base_url, feed_url)
+        rescue => e
+          abort "Error invalidating Cloudflare object at #{feed_url}: #{e}"
+        end
+      end
+    end
+
+    puts "Feeds deployed."
   end
 
   desc "Deploys to staging, production, and syncs feeds"
