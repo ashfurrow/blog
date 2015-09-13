@@ -11,6 +11,9 @@ xml.urlset 'xmlns' => "http://www.sitemaps.org/schemas/sitemap/0.9", 'xmlns:imag
       image_url = og_image(page)
 
       if image_url
+        # URLs for images must be absolute
+        image_url.prepend('http://ashfurrow.com') unless image_url.start_with? 'http://'
+
         xml.tag! 'image:image' do |image|
           image.tag! 'image:loc', image_url
         end
