@@ -29,7 +29,7 @@ past_talks:
   conference: iOSoho
   url: http://www.meetup.com/iOSoho/events/224796318/
   dates: September 14, 2015
-  image: /img/speaking/iosoho.png
+  image: iosoho.png
   location: New York, America
   slides: https://speakerdeck.com/ashfurrow/emerging-best-practices-in-swift
 - name: Lessons From Production Swift
