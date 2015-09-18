@@ -18,8 +18,8 @@ module Speaking
   #   </div>
   # </li>
 
-  def self.talk_to_html(type, talk) 
-    missing_image_source = '/img/speaking/missing_image.png'
+  def self.talk_to_html(type, talk)
+    missing_image_source = 'missing_image.png'
 
     talk_name = talk["name"]
     conference = talk["conference"]
@@ -36,7 +36,7 @@ module Speaking
 
     # Image
     html += "<div class='image-container'>"
-    img_tag = "<img src='#{image_source}' />"
+    img_tag = "<img src='/img/speaking/talks/#{image_source}' />"
 
     # Kind of complex. Future talks' images always link to the conference.
     # Past talks link to the slides, if they're available.
