@@ -41,3 +41,22 @@ jQuery(document).ready(function($) {
       });
   }
 });
+
+// Speaking page, makes slides images retina.
+$(function () {
+
+  if (window.devicePixelRatio > 1) {
+    var images = $(".speaking ul img");
+
+    for(var i = 0; i < images.length; i++) {
+
+      // Compute retina name.
+      var imageType = images[i].src.substr(-4);
+      var imageName = images[i].src.substr(0, images[i].src.length - 4);
+      imageName += "@2x" + imageType;
+
+      // Replace source.
+      images[i].src = imageName;
+    }
+  }
+});
