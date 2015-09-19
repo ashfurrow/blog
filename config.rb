@@ -105,6 +105,20 @@ after_s3_sync do |files_by_status|
     end
 
     # Invalidate CDN.
-    cdn_invalidate(files_by_status[:updated])
+    updated_files = files_by_status[:updated]
+    if updated_files.length > 50
+      require 'cloudflare'
+      cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
+      ['http://ashfurrow.com', 'https://ashfurrow.com'].each do |base_url|
+        begin
+          puts "Invalidating zone #{base_url} ... "
+          cloudflare.fpurge_ts(base_url)
+        rescue => e
+          abort "Error invalidating Cloudflare zone #{base_url}: #{e}"
+        end
+      end
+    else
+      cdn_invalidate(files_by_status[:updated])
+    end
   end
 end

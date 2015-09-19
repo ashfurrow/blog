@@ -1,0 +1,62 @@
+---
+title: Books
+priority: 0.75
+background_image: /img/books/background.jpg
+description: Something here.
+---
+
+/ Page Header
+= partial :header, locals: { title: 'Books', subtitle: 'Something about books.', background_image: '/img/books/background.jpg' }
+
+.books
+  .container
+    .row
+      - standard_width_div do
+        %ul#books_list.list-inline.text-center
+          %li
+            .title
+              %a.title-link{href:'https://leanpub.com/yourfirstswiftapp/'}
+                %h2 Your First Swift App
+            %a{href:'https://leanpub.com/yourfirstswiftapp/'}
+              %img{src: '/img/books/yourfirstswiftapp.png'}/
+            %div
+              :markdown
+                An introduction to building iOS apps with Swift, this is the third edition of a book I originally kickstarted in 2013. It introduces readers to the fundamental concepts of building their first iOS application, through the process of building _my_ first app.
+
+                From the very first Xcode project to the App Store submission process, the book covers tasks that are common in iOS application, like table views, user interaction, and even Core Data. The book instructs readers on the _process_ of development, not only on specific syntax or APIs. This gives readers the tools they need to continue to learn and grow towards becoming accomplished iOS developers.
+          %hr/
+          %li
+            .title
+              %a.title-link{href:'https://leanpub.com/iosfrp'}
+                %h2 Functional Reactive Programming on iOS
+            %a{href:'https://leanpub.com/iosfrp'}
+              %img{src: '/img/books/iosfrp.jpg'}/
+            %div
+              :markdown
+                Functional reactive programming is declarative programming paradigm used to simplify complex, asynchronous tasks. You can read about the history of FRP, and its philosophy on the [ReactiveCocoa website](http://reactivecocoa.io/philosophy.html).
+
+                In this book, I introduce readers to ReactiveCocoa, an FRP framework for Objective-C. The book first covers the philosophy of functional programming, then guides readers into real code examples. ReactiveCocoa is used through the remainder of the book guides readers through implementing real-world use of FRP. Finally, we discuss Model View ViewModel, a way to structure code with FRP that increases testability and code reuse.
+          %hr/
+          %li
+            .title
+              %a.title-link{href:'http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00IHZKDCU&linkCode=as2&tag=ashfur-20&linkId=GUX5WHOORCNFA32C'}
+                %h2 UICollectionView: The Complete Guide
+            %a{href:'http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00IHZKDCU&linkCode=as2&tag=ashfur-20&linkId=GUX5WHOORCNFA32C'}
+              %img{src: '/img/books/uicollectionview.jpg'}/
+            %div
+              :markdown
+                I've worked with Addison-Wesley to publish two editions of this book to date, which describe in complete detail how to effectively use collection views in iOS applications to build unique, immersive experiences. Unlike many technical books, mine covers the how _and_ the why of using this technology.
+
+  / Wrap up
+  .container
+    .row
+      - standard_width_div do
+        %hr/
+        :markdown
+          In addition to writing books for iOS developers, I sometimes provide technical review for other books. I've collaborated on the following books:
+
+          - [Swift for the Really Imatient](http://amzn.to/1V1U57p)
+          - [Build iOS Games with Sprite Kit](http://amzn.to/1gBpAr0)
+          - [Not yet released]
+
+          I appreciate every reader who buys my work – it really helps pay off those student loans 😅.
