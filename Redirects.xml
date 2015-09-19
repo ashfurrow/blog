@@ -137,13 +137,4 @@
             <ReplaceKeyWith>feed.rss.xml</ReplaceKeyWith>
         </Redirect>
     </RoutingRule>
-    <RoutingRule>
-        <Condition>
-            <KeyPrefixEquals>books</KeyPrefixEquals>
-        </Condition>
-        <Redirect>
-            <HostName>leanpub.com</HostName>
-            <ReplaceKeyWith>iosfrp</ReplaceKeyWith>
-        </Redirect>
-    </RoutingRule>
 </RoutingRules>

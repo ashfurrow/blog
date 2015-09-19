@@ -10,12 +10,12 @@
     color: white;
 
     /* Small devices (tablets, 768px and up) */
-    @media (min-width: 768px) { 
+    @media (min-width: 768px) {
       font-size: 45px;
     }
 
     /* Medium devices (desktops, 992px and up) */
-    @media (min-width: 992px) { 
+    @media (min-width: 992px) {
       font-size: 55px;
     }
 
@@ -71,34 +71,7 @@
     }
   }
 
-  #books_list {
-    a.title-link {
-      text-decoration: none;
-      &:hover{
-        text-decoration: underline;
-        color: @gray-dark;
-      }
-    }
-
-    img {
-      max-height: 200px;
-
-      /* Small devices (tablets, 768px and up) */
-      @media (min-width: 768px) {
-        max-height: inherit;
-      }
-    }
-
-    .title {
-      display: block;
-
-      h3 {
-        display: inline;
-      }
-    }
-  }
-
-  #software_list, #education_list, #books_list {
+  #software_list, #education_list {
     li {
       vertical-align: top;
       display: inline-block;
