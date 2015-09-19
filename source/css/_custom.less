@@ -1,6 +1,12 @@
 @import "variables.less";
 @import "mixins.less";
 
+/* GitHub logo is slightly too low. */
+.fa-github::before {
+  position: relative;
+  top: -1px;
+}
+
 code, pre {
   color: @brand-primary;
   background-color: @gray-light;
