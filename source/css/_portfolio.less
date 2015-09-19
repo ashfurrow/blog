@@ -71,7 +71,34 @@
     }
   }
 
-  #software_list, #education_list {
+  #books_list {
+    a.title-link {
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+        color: @gray-dark;
+      }
+    }
+
+    img {
+      max-height: 200px;
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        max-height: inherit;
+      }
+    }
+
+    .title {
+      display: block;
+
+      h3 {
+        display: inline;
+      }
+    }
+  }
+
+  #software_list, #education_list, #books_list {
     li {
       vertical-align: top;
       display: inline-block;

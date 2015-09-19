@@ -1,0 +1,58 @@
+---
+title: Books
+priority: 0.75
+background_image: /img/books/background.jpg
+description: Something here.
+---
+
+/ Page Header
+= partial :header, locals: { title: 'Books', subtitle: 'Something about books.', background_image: '/img/books/background.jpg' }
+
+.portfolio
+  .container
+    .row
+      - standard_width_div do
+        %ul#books_list.list-inline.text-center
+          %li
+            .title
+              %a.title-link{href:'https://leanpub.com/yourfirstswiftapp/'}
+                %h3 Your First Swift App
+            %a{href:'https://leanpub.com/yourfirstswiftapp/'}
+              %img{src: '/img/books/yourfirstswiftapp.png'}/
+            %div
+              :markdown
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          %li
+            .title
+              %a.title-link{href:'https://leanpub.com/iosfrp'}
+                %h3 Functional Reactive Programming on iOS
+            %a{href:'https://leanpub.com/iosfrp'}
+              %img{src: '/img/books/iosfrp.jpg'}/
+            %div
+              :markdown
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          %li
+            .title
+              %a.title-link{href:'http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00IHZKDCU&linkCode=as2&tag=ashfur-20&linkId=GUX5WHOORCNFA32C'}
+                %h3 UICollectionView: The Complete Guide
+            %a{href:'http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00IHZKDCU&linkCode=as2&tag=ashfur-20&linkId=GUX5WHOORCNFA32C'}
+              %img{src: '/img/books/uicollectionview.jpg'}/
+            %div
+              :markdown
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  / Wrap up
+  .container
+    .row
+      - standard_width_div do
+        :markdown
+
+          ----------------
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
