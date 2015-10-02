@@ -1,11 +1,5 @@
 upcoming_talks:
 - name: TBA
-  conference: Mobiconf
-  url: http://2015.mobiconf.org/
-  location: Kraków, Poland
-  dates: October 1–2, 2015
-  image: mobiconf.png
-- name: TBA
   conference: Pragma Mark 2015
   url: http://pragmaconference.com
   location: Florence, Italy
@@ -25,6 +19,13 @@ upcoming_talks:
   image: swiftsummit.png
 
 past_talks:
+- name: Evolution of Asynchronous Programming on iOS
+  conference: Mobiconf
+  url: http://2015.mobiconf.org/
+  location: Kraków, Poland
+  dates: October 1–2, 2015
+  image: mobiconf.png
+  slides: https://speakerdeck.com/ashfurrow/evolution-of-asynchronous-programming-on-ios
 - name: Emerging Best Practices in Swift
   conference: iOSoho
   url: http://www.meetup.com/iOSoho/events/224796318/
