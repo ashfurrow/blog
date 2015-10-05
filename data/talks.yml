@@ -6,12 +6,6 @@ upcoming_talks:
   dates: October 9–10, 2015
   image: pragmamark.jpg
 - name: TBA
-  conference: GOTO
-  url: http://gotocon.com/cph-2015/
-  location: Copenhagen, Denmark
-  dates: October 5–6, 2015
-  image: goto.jpg
-- name: TBA
   conference: Swift Summit
   url: https://www.swiftsummit.com
   location: San Francisco, America
@@ -19,6 +13,13 @@ upcoming_talks:
   image: swiftsummit.png
 
 past_talks:
+- name: Emerging Best Practices in Swift
+  conference: GOTO
+  url: http://gotocon.com/cph-2015/
+  location: Copenhagen, Denmark
+  dates: October 5–6, 2015
+  image: goto.png
+  slides: https://speakerdeck.com/ashfurrow/emerging-best-practices-in-swift-1
 - name: Evolution of Asynchronous Programming on iOS
   conference: Mobiconf
   url: http://2015.mobiconf.org/
@@ -33,6 +34,7 @@ past_talks:
   image: iosoho.png
   location: New York, America
   slides: https://speakerdeck.com/ashfurrow/emerging-best-practices-in-swift
+  hidden: true
 - name: Lessons From Production Swift
   conference: Brooklyn Swift
   url: http://www.meetup.com/Brooklyn-Swift-Developers/events/223159208/
