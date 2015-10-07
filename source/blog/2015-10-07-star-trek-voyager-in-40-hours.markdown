@@ -13,7 +13,7 @@ Now, all TV has good episodes and bad episodes. We only wanted to watch the good
 
 A lot of Star Trek fans dislike _Voyager_. After _TNG_ resurrected the franchise in the late Eighties, things looked good for Star Trek, but TNG was plagued by a lot of problems. Fundamentally, two sets of writers were battling for control of the series – one group wanted to write interpersonal dramas, and another group wanted to write planet-of-the-week romps. Once _TNG_ ended, the first group went on to write _DS9_, the space soap opera, and the second group wrote Voyager. 
 
-So that's how Voyager got its (somewhat deserved) reputation as a bit campy. It's even somewhat loathed by nerds. But I would agree with Wu, who pointed out that _Voyager_'s "hit rate" is higher than _TNG_'s. Pick any random episode, and it's more likely to be a good one. Additionally, it's episodic nature makes it easy to drop in for an episode or two, unlike _DS9_. 
+So that's how Voyager got its (somewhat deserved) reputation as a bit campy. It's even a bit loathed by nerds. But I would agree with Wu, who pointed out that _Voyager_'s "hit rate" is higher than _TNG_'s. Pick any random episode, and it's more likely to be a good one. Additionally, it's episodic nature makes it easy to drop in for an episode or two, unlike _DS9_. 
 
 ![Scene from _Timeless_.](/img/blog/2015-10-07-star-trek-voyager-in-40-hours/crash.jpg)
 
