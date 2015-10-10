@@ -1,11 +1,5 @@
 upcoming_talks:
 - name: TBA
-  conference: Pragma Mark 2015
-  url: http://pragmaconference.com
-  location: Florence, Italy
-  dates: October 9–10, 2015
-  image: pragmamark.jpg
-- name: TBA
   conference: Swift Summit
   url: https://www.swiftsummit.com
   location: San Francisco, America
@@ -13,6 +7,12 @@ upcoming_talks:
   image: swiftsummit.png
 
 past_talks:
+- name: Loosely Held Strong Convictions
+  conference: Pragma Mark 2015
+  url: http://pragmaconference.com
+  location: Florence, Italy
+  dates: October 9–10, 2015
+  image: pragmamark.png
 - name: Emerging Best Practices in Swift
   conference: GOTO
   url: http://gotocon.com/cph-2015/
