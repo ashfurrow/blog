@@ -7,6 +7,11 @@ upcoming_talks:
   image: swiftsummit.png
 
 past_talks:
+- name: Functional Reactive Awesome
+  conference: Cornell CS5356
+  url: https://github.com/Cornell-CS5356-Fall2015/cs5356/blob/master/course/08-mobile/lecture.md#guest-lecturer
+  dates: October 14, 2015
+  hidden: true
 - name: Loosely Held Strong Convictions
   conference: Pragma Mark 2015
   url: http://pragmaconference.com
