@@ -20,7 +20,7 @@ That's not the case in Swift. Swift has a very clear, specific sequence of opera
 
 Let's take an object A. We'll define it as follows.
 
-```
+```swift
 class A {
     var x: Int
     init(x: Int) {
@@ -33,7 +33,7 @@ Notice that A does _not_ have a superclass, so it cannot call a `super.init()` f
 
 OK, so now let's subclass A with a new class named B.
 
-```
+```swift
 class B: A {
     var y: Int
     init(x: Int, y: Int) {
@@ -47,7 +47,7 @@ This is a departure from Objective-C where `[super init]` would typically be cal
 
 But there's one more hitch. Say that we want to make sure that `x` is always set to a value computed by a method in our class? We can't call a method on B until we call super's init. We'd actually write something like this.
 
-```
+```swift
 class B: A {
     var y: Int
     init(x: Int, y: Int) {
@@ -66,7 +66,7 @@ That's right. If you want to access a superclass' property,you _must_ do so _aft
 
 In general, a Swift object initializer looks like the following:
 
-```
+```swift
 init(/*parameters*/) {
     // set own properties, if necessary
     // call super.init()
@@ -78,7 +78,7 @@ init(/*parameters*/) {
 
 Swift formalizes the common Objective-C pattern of designated initializers into something checked at compile-time. This is actually really, really cool. Let's take a look at a new class hierarchy.
 
-```
+```swift
 class A {
     var x: Int
     convenience init() {
@@ -94,7 +94,7 @@ class A {
 
 Let's take a look at a subclass. This is where things get interesting.
 
-```
+```swift
 class B: A {
     var y: Int
     convenience init() {
@@ -116,7 +116,7 @@ Convenience initializers in a subclass may _only_ call other initializers in _th
 
 Swift departs from Objective-C initializers. Consider the old style initializer.
 
-```
+```objc
 -(instancetype)init {
     self = [super init];
     if (self) {
@@ -130,9 +130,9 @@ There are a few distinctive parts to a classic Objective-C initializer. First, y
 
 In contrast, Swift initializers are very straightforward. Initializers don't return `self`, so you don't need to return `self`. Cool! However, this has a implication. In Objective-C, if initialization fails, we can return `nil` in order to indicate that failure. Since Swift initializers don't return a reference to `self`, this approach is not possible.
 
-I spoke with an Apple engineer at the Swift Lab at WWDC and asked about the pattern. He indicated that this was not currently possible. Instead, we should use factory methods that return an _optional_ type.
+I spoke with an Apple engineer at the Swift Lab at WWDC and asked about the pattern. He indicated that this was not currently possible. Instead, we should use factory methods that return an _optional_ type. (**Update**: see the [note](#update) at the end of this post.)
 
-```
+```swift
 class A {
     class func anything() -> A? {
         return A()
@@ -144,4 +144,20 @@ He indicated that they're working on building something into the language, since
 
 Neat! Swift has really embraced the conventions that Cocoa and CocoaTouch developers already know and incorporated them into the language-level with compile-time checks.
 
-<!-- more -->
+---
+
+### Update
+
+Swift 1.1 introduced the concept of [_failable initializers_](https://developer.apple.com/swift/blog/?id=17): `init` methods that return an optional. These can be specified by placing a `?` after the `init` keyword.
+
+```swift
+class Image {
+    init?(filename: String) {
+        ...
+    }
+}
+```
+
+Inside the `init?`, you can `return nil` to define a failing initialization, or assign `self = whatever` to indicate success. 
+
+Be careful about calling through to a failable initializer inside of a regular one – a non-failing initializer _must not fail_. The compiler will force you either to force-unwrap the call to `super.init()` or to change your initializer to _also_ be failable. Neat!
