@@ -329,16 +329,89 @@ dave = dave.eat(wetFood, grams: 20) as Cat
 
 You get a lot more flexibility with this method, since you can have foods that don’t have calories (diet soda) or don’t have either calories or water (as far as I know, twist ties contain neither, but it’s possible that my cat knows something I do not). 
 
-(It would be nice to be able to extend the `FoodConsumer` protocol to add an `eat(Food)` method that could just call through for us, but Swift doesn't support such an extension – at least [not yet](https://github.com/ksm/SwiftInFlux#moving-functionality-from-global-functions-to-methods).)
+(It would be nice to be able to extend the `FoodConsumer` protocol to add an `eat(Food)` method that could just call through for us, but Swift doesn't support such an extension – at least [not yet](https://github.com/ksm/SwiftInFlux#moving-functionality-from-global-functions-to-methods).) (**Update**: this is actually now possible! See the [note](#update) at the end of this article.)
 
 ![Om nom nom.](/img/blog/protocols-and-swift/eating.gif)
 
 This approach obviously isn’t suited for every case, but it is a useful tool to have at your disposal. 
 
-<hr />
+---
 
 Remember that the general problem is “how do I get different types to talk to one another without coupling?” 
 
 The answer is “it depends.”
 
 Swift and Objective-C are interoperable, but are still fundamentally different languages. One prefers static typing and the other is dynamic. Solutions that work well in one aren’t necessarily going to work well in the other. However  natural it is for us to try and use Objective-C solutions to solve Swift problems, we should always be on the lookout for new or better ways to solve problems. If something is difficult in Swift (and it’s not related to constant compiler crashes), it’s likely that you’re trying to use it in a way it is not intended to be used. Pay attention to the friction you experience when writing Swift – if something feels overly difficult, there probably is a better way. 
+
+---
+
+### Update
+
+Since Swift 2, it's bee possible to provide protocol extensions that solve this problem even more elegantly. Even a naïve improvement would be to provide an extension on `FoodConsumer`.
+
+```swift
+extension FoodConsumer {
+    func eat(food: Food, grams: Double) -> Self {
+        food.beConsumedBy(self, grams: grams)
+        return self
+    }
+}
+```
+
+And then remove the `Cat` extension. The complete new code looks like the following. 
+
+```swift
+protocol FoodConsumer {
+    var calorieCount: Double { get set }
+    var hydrationLevel: Double { get set }
+}
+
+protocol Food {
+    func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer
+}
+
+extension FoodConsumer {
+    func eat(food: Food, grams: Double) -> Self {
+        food.beConsumedBy(self, grams: grams)
+        return self
+    }
+}
+
+
+struct Cat: FoodConsumer {
+    var calorieCount: Double = 0
+    var hydrationLevel: Double = 0
+}
+
+struct Kibble: Food {
+    let caloriesPerGram: Double = 40
+
+    func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer {
+        var newConsumer = consumer
+        newConsumer.calorieCount += grams * caloriesPerGram
+        return newConsumer
+    }
+}
+
+struct FancyFeast: Food {
+    let caloriesPerGram: Double = 80
+    let milliLitresWaterPerGram: Double = 0.2
+
+    func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer {
+        var newConsumer = consumer
+        newConsumer.calorieCount += grams * caloriesPerGram
+        newConsumer.hydrationLevel += grams * milliLitresWaterPerGram
+        return newConsumer
+    }
+}
+
+
+let catFood = Kibble()
+let wetFood = FancyFeast()
+var dave = Cat()
+
+dave = dave.eat(catFood, grams: 30)
+dave = dave.eat(wetFood, grams: 20)
+```
+
+Very cool! We no longer need to force cast the return value of `dave.eat()` to be `Cat` because of the `eat` function's use of `Self` as a return type. Brilliant!
