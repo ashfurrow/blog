@@ -60,13 +60,24 @@ code, pre {
 
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) {
-      width: 45%;
+      width: inherit;
     }
 
     div {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+  }
+}
+
+.container .article_pager li {
+  a {
+    /* Make pagers on articles half width */
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      width: 45%;
     }
   }
 }
