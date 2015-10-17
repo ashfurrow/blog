@@ -15,13 +15,13 @@ In iOS, a view controller is an object that controls a view hierarchy. Views are
 
 A view controller has a `view` property, which is the root of it's view hierarchy. That view has subviews, which the controller can also reference directly. As a concrete example, let's take a look at the built-in system stopwatch example:
 
- ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/2D45925D5D0D4415AD04B0697EF838DF.png)
+![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/2D45925D5D0D4415AD04B0697EF838DF.png)
 
 The controller's view is everything on the screen, below the status bar at the top and above the tab bar at the bottom. However, the view controller also has references to the Start and Reset buttons, the labels indicating the lapsed time to the user, and the table view of the laps.
 
 I was careful to specify where on the screen that controller's view was present; specifically, the view is _above_ the tab bar. That's because the tab bar is a view that belongs to another, special kind of view controller that belongs to the system: a tab bar controller. The view controller representing the stopwatch is one of the tab bar controller's child view controllers.
 
- ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/EC87F23A25274175B83A06630EDFABFB.png)
+![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/EC87F23A25274175B83A06630EDFABFB.png)
 
 The blue stopwatch controller is a child of the yellow tab bar controller.
 
@@ -33,13 +33,13 @@ In iOS 5, Apple provided new containment view controller APIs that made writing 
 
 In iOS 4 and earlier, a view hierarchy might look like the following.
 
- ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/1EA3627758A3487791BD14E0CF65502B.png)
+![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/1EA3627758A3487791BD14E0CF65502B.png)
 
 This is a pedagogical example, certainly, but the 500px app has some view controllers with references to dozens and dozens of subviews. It makes writing code with a clear separation of concern impossible and debugging that code stressfully difficult.
 
-In iOS 5, we can delineate exactly which view controller is responsible for which views. Like gentlemen.
+In iOS 5, we can delineate exactly which view controller is responsible for which views. Excellent!
 
- ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/24979633EED54A5D9C25EFB6023C9EA6.png)
+![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/24979633EED54A5D9C25EFB6023C9EA6.png)
 
 Sexy! Notice that the parent view controller doesn't even need a reference to the child view controller's view; it can access it indirectly via `self.subviewcontroller.view`.
 
@@ -63,13 +63,13 @@ How so?
 
 Well, the `frame` of a view is defined as the smallest bounding box of that view with respect to it's parents coordinate system, including any transformations applied to that view. Let's look at an example:
 
- ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/B8B143BB6681476794386EFDB88201A7.png)
+![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/B8B143BB6681476794386EFDB88201A7.png)
 
 Here you can see that the bounds size and the frame size are completely different.
 
-This is very important: a view's frame is the position and size with respect to&nbsp;_its parent's coordinate system_. A view's bounds is the position and size with respect to&nbsp;_its own_&nbsp;coordinate system.
+This is very important: a view's frame is the position and size with respect to _its parent's coordinate system_. A view's bounds is the position and size with respect to _its own_ coordinate system.
 
-This means that relying on&nbsp;self.view.bounds.size&nbsp;will reliably get you the size of a view controller's view. We'll discuss origin in a moment.
+This means that relying on `self.view.bounds.size` will reliably get you the size of a view controller's view. We'll discuss origin in a moment.
 
 If you were in the blue view controller above and tried to add a subview to your view hierarchy, and you used frame to have the view take up the entire screen, you'd end up with weird results.
 
@@ -78,13 +78,13 @@ hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
 hotNewSubview.frame = self.view.bounds; //Better, but still not good
 ```
 
-Why is setting the subview's&nbsp;frame&nbsp;to the&nbsp;bounds&nbsp;rect still not a good idea?
+Why is setting the subview's `frame` to the `bounds` rect still not a good idea?
 
-The origins of a bounds is not always zero. Remember I said that the bounds origin is the origin of the view with respect to it's own coordinate system, so in the majority of cases, the bounds origin is&nbsp;(0, 0). But not always.
+The origins of a bounds is not always zero. Remember I said that the bounds origin is the origin of the view with respect to it's own coordinate system, so in the majority of cases, the bounds origin is `(0, 0)`. But not always.
 
-A transform on the view's coordinate system will affect its origin. You'll see this mostly with scroll views; scroll up by 10 points, and your bounds origin is now&nbsp;(0, -10). This not only affects scroll views, but also scroll view subclasses, the most famous of which is&nbsp;UITableView.
+A transform on the view's coordinate system will affect its origin. You'll see this mostly with scroll views; scroll up by 10 points, and your bounds origin is now `(0, -10)`. This not only affects scroll views, but also scroll view subclasses, the most famous of which is `UITableView`.
 
-What's that? iOS has a built-in view controller for table views? And you say if I rely on&nbsp;self.view.bounds&nbsp;as a rect that covers my entire visible view, that I'm doing it completely wrong?
+What's that? iOS has a built-in view controller for table views? And you say if I rely on `self.view.bounds` as a rect that covers my entire visible view, that I'm doing it completely wrong?
 
 Yes I am.
 
@@ -92,7 +92,9 @@ So what's the answer? How do you avoid this?
 
 Don't be lazy.
 
-Objective-C developers often use&nbsp;self.view.frame&nbsp;or&nbsp;self.view.bounds&nbsp;to create a new subview that takes up the entire visible space. Instead of just copying these&nbsp;CGRect&nbsp;values over wholesale, create your own&nbsp;CGRects. Let's review:
+Objective-C developers often use `self.view.frame` or `self.view.bounds` to create a new subview that takes up the entire visible space. Instead of just copying these `CGRect` values over wholesale, create your own  `CGRect`s. 
+
+Let's review:
 
 ```
 hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
@@ -106,6 +108,4 @@ A little more typing, sure, but this is Objective-C. We don't eschew verbosity. 
 
 This problem is not really all that bad, since you'll mostly be OK. Mostly. And hey, we've all written code that's not great. I just looked through the 500px codebase and I've found several occurrences of this, mostly to get my view's size.
 
-So the takeaway is, know what you're doing. If you don't know, learn. View hierarchies are a&nbsp;_huge_&nbsp;part of making amazing apps. Make sure that you completely understand&nbsp; [views](http://developer.apple.com/library/iOS/#documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/WindowsandViews/WindowsandViews.html)&nbsp;and their&nbsp; [coordinate systems](http://developer.apple.com/library/ios/#documentation/general/conceptual/Devpedia-CocoaApp/CoordinateSystem.html).
-
-<!-- more -->
+So the takeaway is, know what you're doing. If you don't know, learn. View hierarchies are a _huge_ part of making amazing apps. Make sure that you completely understand [views](http://developer.apple.com/library/iOS/#documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/WindowsandViews/WindowsandViews.html) and their [coordinate systems](http://developer.apple.com/library/ios/#documentation/general/conceptual/Devpedia-CocoaApp/CoordinateSystem.html).
