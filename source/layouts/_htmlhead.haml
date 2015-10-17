@@ -60,8 +60,6 @@
 :javascript
   loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
   loadCSS( '#{url_for "/css/all.css"}' );
-%noscript
-  = stylesheet_link_tag 'all'
 
 / Google Analytics
 :javascript
@@ -72,3 +70,7 @@
 
   ga('create', 'UA-9572240-3', 'auto');
   ga('send', 'pageview');
+
+/ Backup to load styles not from javascript.
+%noscript
+  = stylesheet_link_tag 'all'
