@@ -34,7 +34,7 @@ It's always something with you, isn't it, Xcode?
 
 We're going to gut the contents of the master view controller that deal with the `tableView` property (which we replaced). For this example, I'm deleting the following method:
 
-```
+```objc
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 ```
 
@@ -42,13 +42,13 @@ Everywhere else you see `tableView` cuasing a problem, replace it with `collecti
 
 The only problem I had was
 
-```
+```objc
 [self.collectionView indexPathForSelectedRow];
 ```
 
 `UICollectionView` doesn't have the method `indexPathForSelectedRow`, so replace that line with the following:
 
-```
+```objc
 [[self.collectionView indexPathsForSelectedItems] lastObject];
 ```
 
@@ -80,7 +80,7 @@ _Note_: We're using batch updates because we are inserting more than one cell at
 
 Creating the `NSFetchedResultsController` is almost the exact same as the project template:
 
-```
+```objc
 - (NSFetchedResultsController *)fetchedResultsController
 {
     if (_fetchedResultsController != nil) {
@@ -121,9 +121,11 @@ Creating the `NSFetchedResultsController` is almost the exact same as the projec
 
 Create two `NSMutableArray` instance variables and instantiate them in `viewDidLoad`. Implement the following `NSFetchedResultsControllerDelegate` methods.
 
-```
-- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
-           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
+```objc
+- (void)controller:(NSFetchedResultsController *)controller 
+    didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
+    atIndex:(NSUInteger)sectionIndex 
+    forChangeType:(NSFetchedResultsChangeType)type
 {
 
     NSMutableDictionary *change = [NSMutableDictionary new];
@@ -140,9 +142,11 @@ Create two `NSMutableArray` instance variables and instantiate them in `viewDidL
     [_sectionChanges addObject:change];
 }
 
-- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
-       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
-      newIndexPath:(NSIndexPath *)newIndexPath
+- (void)controller:(NSFetchedResultsController *)controller 
+    didChangeObject:(id)anObject
+    atIndexPath:(NSIndexPath *)indexPath 
+    forChangeType:(NSFetchedResultsChangeType)type
+    newIndexPath:(NSIndexPath *)newIndexPath
 {
 
     NSMutableDictionary *change = [NSMutableDictionary new];
@@ -167,7 +171,7 @@ Create two `NSMutableArray` instance variables and instantiate them in `viewDidL
 
 These two methods queue the updates to the collection view. The following method waits for the fetched results controller to be finished before dequeuing those updates and applying them to our collection view.
 
-```
+```objc
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     if ([_sectionChanges count] > 0)
@@ -236,7 +240,7 @@ Now that the `NSFetchedResultsController` is hooked up the the `UICollectionView
 
 Use the consumer key and consumer secret from when you [registered your application](http://developers.500px.com/settings/applications?from=developers) earlier. Follow the directions in the [iOS 500px SDK](https://github.com/500px/500px-iOS-api) to add the 500px SDK to your Xcode project. Make sure to follow the instructions in the SDKs `README` to set up your project to use the SDK.
 
-```
+```objc
 [PXRequest setConsumerKey:@"your consumer key" consumerSecret:@"your consumer secret"];
 
 [PXRequest requestForPhotoFeature:PXAPIHelperPhotoFeaturePopular completion:^(NSDictionary *results, NSError *error) {
@@ -267,7 +271,7 @@ Use the consumer key and consumer secret from when you [registered your applicat
 
 The fetched results controller will take care of that magic for us. We just need to configure our cells.
 
-```
+```objc
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     AFCollectionViewCell *cell = (AFCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
@@ -278,6 +282,7 @@ The fetched results controller will take care of that magic for us. We just need
     return cell;
 }
 ```
+
  ![](/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png)
 
 I went to the liberty of adjusting the sizes to make things pretty - nice app! Let's connect the detail view controller now.
@@ -290,7 +295,7 @@ Select the segue and make sure its identifier is set to "showDetail".
 
 Replace the `UILabel` with a `UIImageView`, change the `IBOutlet` in the header file, reconnect the outlet, and modify `configureView` to look like the following:
 
-```
+```objc
 - (void)configureView
 {
     // Update the user interface for the detail item.
@@ -305,7 +310,7 @@ Replace the `UILabel` with a `UIImageView`, change the `IBOutlet` in the header 
 
 In the master view controller, `prepareForSegue:sender:` should look like the following:
 
-```
+```objc
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
@@ -320,8 +325,6 @@ Run the app, tap on a photo, and you'll see the following:
 
  ![](/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png)
 
-Sexy!
+Looks great!
 
 If you have any questions, please let me know. Check out [the code](https://github.com/AshFurrow/UICollectionViewExample) from GitHub and have fun!
-
-<!-- more -->
