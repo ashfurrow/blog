@@ -3,15 +3,9 @@
 
 %title= html_title(current_article, current_resource)
 
+/ Feed Tags
 = feed_tag :atom, data.site.feed_link, title: 'Atom Feed'
 = feed_tag :rss, data.site.feed_rss_link, title: 'RSS Feed'
-= stylesheet_inline_tag 'critical'
-= javascript_inline_tag 'loadCSS'
-:javascript
-  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
-  loadCSS( '#{url_for "/css/all.css"}' );
-%noscript
-  = stylesheet_link_tag 'all'
 
 / Device specifier
 %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}/
@@ -59,6 +53,15 @@
   'url': 'http://ashfurrow.com',
   'logo': '#{data.site.image}'
   }
+
+/ Site JS
+= stylesheet_inline_tag 'critical'
+= javascript_inline_tag 'loadCSS'
+:javascript
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '#{url_for "/css/all.css"}' );
+%noscript
+  = stylesheet_link_tag 'all'
 
 / Google Analytics
 :javascript
