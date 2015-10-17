@@ -33,6 +33,38 @@ code, pre {
   }
 }
 
+.container.archive {
+
+  ol {
+    padding-left: 0px;
+    line-height: 35px;
+  }
+
+  li.month {
+    padding-top: 30px;
+  }
+
+  li {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      color: @brand-primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .post-meta {
+    color: @gray;
+    display: inline;
+  }
+}
+
 .header_image_link_container {
   position: relative;
 
@@ -60,13 +92,24 @@ code, pre {
 
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) {
-      width: 45%;
+      width: inherit;
     }
 
     div {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+  }
+}
+
+.container .article_pager li {
+  a {
+    /* Make pagers on articles half width */
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      width: 45%;
     }
   }
 }

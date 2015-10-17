@@ -1,5 +1,4 @@
 ---
-pageable: true
 per_page: 10
 changefreq: daily
 ---
@@ -23,9 +22,5 @@ changefreq: daily
       %hr/
 
       / Pager
-      - if paginate
-        %ul.pager
-          - if next_page
-            %li.next= link_to 'Older', next_page
-          - if prev_page
-            %li.previous= link_to 'Newer', prev_page
+      %ul.pager
+        %li.previous= link_to 'Older Posts', '/blog'
