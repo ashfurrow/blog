@@ -137,4 +137,12 @@
             <ReplaceKeyWith>feed.rss.xml</ReplaceKeyWith>
         </Redirect>
     </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>page/</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>blog/</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
 </RoutingRules>
