@@ -18,6 +18,7 @@ past_talks:
   location: Florence, Italy
   dates: October 9–10, 2015
   image: pragmamark.png
+  slides: https://speakerdeck.com/ashfurrow/loosely-held-strong-convictions
 - name: Emerging Best Practices in Swift
   conference: GOTO
   url: http://gotocon.com/cph-2015/
