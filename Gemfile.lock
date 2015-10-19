@@ -178,7 +178,7 @@ GEM
     kramdown (1.8.0)
     less (2.6.0)
       commonjs (~> 0.2.7)
-    libv8 (3.16.14.7)
+    libv8 (3.16.14.13)
     liquid (2.6.1)
     listen (3.0.3)
       rb-fsevent (>= 0.9.3)
