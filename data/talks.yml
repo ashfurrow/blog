@@ -26,6 +26,7 @@ past_talks:
   dates: October 5–6, 2015
   image: goto.png
   slides: https://speakerdeck.com/ashfurrow/emerging-best-practices-in-swift-1
+  video: https://www.youtube.com/watch?v=YsUTuwpbURA
 - name: Evolution of Asynchronous Programming on iOS
   conference: Mobiconf
   url: http://2015.mobiconf.org/
