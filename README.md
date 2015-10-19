@@ -15,6 +15,8 @@ bundle install
 rake
 ```
 
+(If things go wrong installing dependencies, [check this link out](https://github.com/cowboyd/therubyracer/issues/359#issuecomment-121931643).)
+
 Then navigate to [http://0.0.0.0:4567](http://0.0.0.0:4567).
 
 License
