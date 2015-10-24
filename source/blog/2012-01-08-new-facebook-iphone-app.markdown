@@ -3,7 +3,9 @@ title: "New Facebook iPhone App"
 date: 2012-01-08 00:00
 ---
 
-Facebook had a decent iOS app. It wasn't great, and you couldn't do everything you could on the mobile site, but it worked reasonably well and it was nicely designed. They recently updated to a "better" version that lets you do everything you can on the mobile site, but it has the unfortunate distinction of &nbsp;completely sucking.&nbsp;<!--more-->Facebook apparently fell victim to one of the classic blunders, which is [Write Once, Run Everywhere](http://www.readwriteweb.com/mobile/2011/09/how-facebook-mobile-was-design.php). They got greedy and thought that they could stuff their entire app in a little UIWebView, write some fancy HTML5, and then no one would be the wiser. Well, they really fucked _that_ up.
+Facebook had a decent iOS app. It wasn't great, and you couldn't do everything you could on the mobile site, but it worked reasonably well and it was nicely designed. They recently updated to a "better" version that lets you do everything you can on the mobile site, but it has the unfortunate distinction of &nbsp;completely sucking.&nbsp;
+
+Facebook apparently fell victim to one of the classic blunders, which is [Write Once, Run Everywhere](http://www.readwriteweb.com/mobile/2011/09/how-facebook-mobile-was-design.php). They got greedy and thought that they could stuff their entire app in a little UIWebView, write some fancy HTML5, and then no one would be the wiser. Well, they really fucked _that_ up.
 
 The transition to/from the message detail page is hilarious. As you pop from a message detail to the list, you can see the message detail grow to fill the space no longer occupied by the keyboard as it disappears. Rule of thumb: after you tap a "back" button, the view you're moving away from shouldn't change. It's incredibly distracting and shows that whoever wrote that code has no idea what `contentInset` is (when they find out, it's going to almost certainly blow their mind).
 

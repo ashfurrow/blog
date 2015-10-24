@@ -3,7 +3,9 @@ title: "RE: Objective-C Sucks!"
 date: 2012-03-10 00:00
 ---
 
-[Michael Robinson](https://twitter.com/#!/pagesofinterest) pointed me to a site where people submit and vote on [reasons Objective-C sucks](http://amplicate.com/hate/objective-c). I found the [following list](http://amplicate.com/hate/objective-c/2212673-a-few-reasons-why-i-think-objective-c-is-not-good/) representative of most of the ramblings there:<!--more-->
+[Michael Robinson](https://twitter.com/#!/pagesofinterest) pointed me to a site where people submit and vote on [reasons Objective-C sucks](http://amplicate.com/hate/objective-c). I found the [following list](http://amplicate.com/hate/objective-c/2212673-a-few-reasons-why-i-think-objective-c-is-not-good/) representative of most of the ramblings there:
+
+
 
 > A few reasons why I think Objective C is not good enough:
 > 

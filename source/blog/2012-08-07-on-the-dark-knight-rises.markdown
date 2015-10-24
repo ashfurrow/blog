@@ -5,7 +5,9 @@ date: 2012-08-07 00:00
 
 I just returned home from watching _The Dark Knight Rises_, the completion to Christopher Nolan's Dark Knight Trilogy. I had hoped, even though time and again I'm shown that the third act of a trilogy never lives up to expectations, that this time would be different.
 
-Oops.<!--more-->
+Oops.
+
+
 
 Christopher Nolan disappointed us in his usual manner, with a series of non-sequiturs and instances of disregard for the linear nature of time which, when glossed over for the sake of enjoying the _action_, provide an otherwise thrilling experience. He certainly did not fail to live up to his reputation. However, I'm more than a little disappointed by the script's disrespect for the art of storytelling.
 

@@ -3,7 +3,9 @@ title: "Democratize All of the Things"
 date: 2011-11-27 00:00
 ---
 
-John Gruber discussed last week on his podcast, [The Talk Show](http://5by5.tv/talkshow), about the democratization of services thanks to the Internet. His specific example was the news publishing industry; their former monopoly on classified advertisements that once supplied them with unparalleled profits has been replaced with the likes of Craigslist. The Internet has democratized the advertisement industry so that anyone can post an ad online for a very low cost, or even for free.<!--more-->In other ways, too, the Internet has democratized things. Denizens of the Internet can now communicate instantly across continents and oceans for free. This was unheard of twenty years ago when the phone company held a monopoly on the communication medium, telephone lines.
+John Gruber discussed last week on his podcast, [The Talk Show](http://5by5.tv/talkshow), about the democratization of services thanks to the Internet. His specific example was the news publishing industry; their former monopoly on classified advertisements that once supplied them with unparalleled profits has been replaced with the likes of Craigslist. The Internet has democratized the advertisement industry so that anyone can post an ad online for a very low cost, or even for free.
+
+In other ways, too, the Internet has democratized things. Denizens of the Internet can now communicate instantly across continents and oceans for free. This was unheard of twenty years ago when the phone company held a monopoly on the communication medium, telephone lines.
 
 The Internet is democratizing more than just industries that existed before its widespread adoption; I read an interesting post this morning about solving a computationally difficult problem by [paying someone 50 cents to do it for you via the Mechanical Turk project](http://code.recollect.com/post/13372390010/mechanical-turk-unshredder). You would be laughed at 15 years ago for offering someone 50 cents to solve a very simple jigsaw (or even asking someone for 50 cents in return for the work).
 

@@ -5,7 +5,9 @@ date: 2012-05-02 00:00
 
 My friend Tom published an interesting post this morning about [copying the _wrong_ part of idea](http://tomcreighton.com/2012/05/cloning-the-ios-ecosystem/). The post is based on something stupid someone commented on Hacker News, and I want to expand on that a little bit.
 
-Let's talk about people saying stupid things on Hacker News. <!--more-->
+Let's talk about people saying stupid things on Hacker News. 
+
+
 
 This isn't the typical "people say stupid things online" problem because people on Hacker News are genuinely smart; their reasoning skills are top-notch and they're obviously capable of rational thought. What comments on Hacker News lack is _empathy_.
 

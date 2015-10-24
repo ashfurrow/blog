@@ -3,7 +3,9 @@ title: "iPhone Contextual Mute Switch"
 date: 2012-01-14 00:00
 ---
 
-Andy Ihnatko has a fantastically thoughtful article on how [the iPhone's "mute" switch's behaviour is disingenuous](http://ihnatko.com/2012/01/14/daring-fireball-on-the-behavior-of-the-iphone-mute-switch/). It's a good read and, even though I disagree with him, I appreciate the thought he put into the argument: a mute button should, you know, mute sounds. All of the them. The iPhone's actually mutes all sounds _except_&nbsp;for Alarm Clock alarms.<!--more-->His argument uses two examples:
+Andy Ihnatko has a fantastically thoughtful article on how [the iPhone's "mute" switch's behaviour is disingenuous](http://ihnatko.com/2012/01/14/daring-fireball-on-the-behavior-of-the-iphone-mute-switch/). It's a good read and, even though I disagree with him, I appreciate the thought he put into the argument: a mute button should, you know, mute sounds. All of the them. The iPhone's actually mutes all sounds _except_&nbsp;for Alarm Clock alarms.
+
+His argument uses two examples:
 
 > Case “A”: he Mutes his phone before a movie. He forgets to reset it afterward. His morning wakeup alarm vibrates instead of making air horn noises, so he oversleeps. He’s late for work, and misses an important meeting.
 > 

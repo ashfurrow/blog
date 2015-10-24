@@ -3,7 +3,9 @@ title: "Blog Theme Update"
 date: 2012-01-08 00:00
 ---
 
-So I've updated my blog theme. It's been an incremental change since I began fiddling with the CSS a month ago. The biggest change, however, is turning commenting off.<!--more-->For reference, a stock install of this theme looks like this:&nbsp;
+So I've updated my blog theme. It's been an incremental change since I began fiddling with the CSS a month ago. The biggest change, however, is turning commenting off.
+
+For reference, a stock install of this theme looks like this:&nbsp;
 
  ![](/img/import/blog/2012/01/blog-theme-update/E6BD8164D3DD441ABD6012EB463037D0.png)
 

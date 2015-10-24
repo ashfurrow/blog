@@ -5,7 +5,9 @@ date: 2012-06-27 00:00
 
 It's now been a year to the day since my wife and I (and our two cats) packed everything we own into a Ford Explorer and drove 15 hours to Toronto. I think that it is important to look back at the move, examine our motivations and the consequences of moving to Toronto.
 
-<!--more-->
+
+
+
 
 (Note: this is a reflective piece and I switch between first-person singular _I_ and plural _we_ to delineate my perspective from that which I share with my wife.)
 

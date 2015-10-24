@@ -5,7 +5,9 @@ date: 2012-01-08 00:00
 
  ![](/img/import/blog/2012/01/google-on-ios-sucks/0183EA0B90D44155BA24D4F96382012C.png)
 
-Let's be honest: Google isn't known for making things really pretty. They're a company of academics who, it is my sincere belief, hire interns to do all of their design for them. There are a few basic things that they get wrong in their Mobile Safari web search that are frankly&nbsp;embarrassing&nbsp;for them.<!--more-->The most frustrating thing about search with Google on your iPhone is that search doesn't really work. You're laughing, I know, but it's true. If you're searching for something longer than a few words, your text is obscured by the "clear text" button in the text field.
+Let's be honest: Google isn't known for making things really pretty. They're a company of academics who, it is my sincere belief, hire interns to do all of their design for them. There are a few basic things that they get wrong in their Mobile Safari web search that are frankly&nbsp;embarrassing&nbsp;for them.
+
+The most frustrating thing about search with Google on your iPhone is that search doesn't really work. You're laughing, I know, but it's true. If you're searching for something longer than a few words, your text is obscured by the "clear text" button in the text field.
 
 That alone isn't that bad. However, heaven forbid you'd like to change the text at the end of your search query because it is impossible. I'm not being hyperbolic here, it is literally impossible to do and you have to erase your entire query string and start over.
 

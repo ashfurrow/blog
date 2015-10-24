@@ -3,7 +3,9 @@ title: "Optimizing Core Data Saves"
 date: 2011-12-23 00:00
 ---
 
-I recently transitioned from keeping data models in memory to persisting them to disc using Core Data. [There are a lot of good reasons to do this](http://ashfurrow.com/2011/12/when-should-i-transition-to-core-data/). This article discusses the finer points of optimizing an application for important data from an external API, storing it in Core Data, and displaying it to the user without adversely affecting performance of the app.<!--more-->
+I recently transitioned from keeping data models in memory to persisting them to disc using Core Data. [There are a lot of good reasons to do this](http://ashfurrow.com/2011/12/when-should-i-transition-to-core-data/). This article discusses the finer points of optimizing an application for important data from an external API, storing it in Core Data, and displaying it to the user without adversely affecting performance of the app.
+
+
 
 The existing set was fairly elegant; synchronous API fetches were performed in a background thread and invoked using another layer whose responsibility it was to make these calls asynchronous. View controllers accessed this middle layer and provided GCD blocks as callbacks to be executed when the API fetches were complete. The view controllers didn't touch any GCD code and the callbacks were all performed on the main queue.
 

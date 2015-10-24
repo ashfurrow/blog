@@ -3,7 +3,9 @@ title: "So I bought a Camera"
 date: 2012-04-26 00:00
 ---
 
-After blogging [quite a while ago](http://ashfurrow.com/2012/02/effort-to-improved-skill-ratio-and-expertise/) about how much I _do not_ want to get into photography, I find myself a few months into picking up this new and rewarding hobby. <!--more-->
+After blogging [quite a while ago](http://ashfurrow.com/2012/02/effort-to-improved-skill-ratio-and-expertise/) about how much I _do not_ want to get into photography, I find myself a few months into picking up this new and rewarding hobby. 
+
+
 
 > Tom pointed out that I can get a used DSLR on the Internet for pretty cheap, and indeed I can. I pondered it for a few weeks before deciding not to get into photography; I do _not_ need another hobby to spend my valuable time and money on.
 

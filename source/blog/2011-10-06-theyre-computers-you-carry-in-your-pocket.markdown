@@ -3,7 +3,9 @@ title: "They're Computers you Carry in your Pocket"
 date: 2011-10-06 00:00
 ---
 
-I'd like you to put yourself back in 2004 for a minute. "Smartphone" was a&nbsp;relatively&nbsp;new term and usually referred to Blackberries. Most people who had a "smartphone" were business people with corporate accounts with their cell providers, who only charged them $40 for 10MB of text-only email.<!--more-->Paul Graham was making his predictions that Apple would enter the smartphone market, and that they'd dominate in it. Microsoft had just released Windows XP Service Pack 2, which could be ordered over the mail for free. That's how I got mine because downloading the 200MB update would take too long over dial-up.
+I'd like you to put yourself back in 2004 for a minute. "Smartphone" was a&nbsp;relatively&nbsp;new term and usually referred to Blackberries. Most people who had a "smartphone" were business people with corporate accounts with their cell providers, who only charged them $40 for 10MB of text-only email.
+
+Paul Graham was making his predictions that Apple would enter the smartphone market, and that they'd dominate in it. Microsoft had just released Windows XP Service Pack 2, which could be ordered over the mail for free. That's how I got mine because downloading the 200MB update would take too long over dial-up.
 
 Apps were things you ordered in a restaurant. I got my first ever iPod - a 4GB mini. And it could hold _so much music_.
 

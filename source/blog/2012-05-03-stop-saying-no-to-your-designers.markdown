@@ -3,7 +3,9 @@ title: "Stop Saying 'No' to Your Designers"
 date: 2012-05-03 00:00
 ---
 
-So many times while building the 500px iPad app, Adam (our app designer) would suggest something and I'd hesitate. Not because his suggestion was a bad idea, but because it would be hard to implement.<!--more-->
+So many times while building the 500px iPad app, Adam (our app designer) would suggest something and I'd hesitate. Not because his suggestion was a bad idea, but because it would be hard to implement.
+
+
 
 Well, not hard, just harder than absolutely necessary. Eventually I'd cave and do it anyway and it would look awesome.
 
