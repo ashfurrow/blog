@@ -3,7 +3,9 @@ title: "Solar System Simulator Update"
 date: 2011-12-04 00:00
 ---
 
-I've just [submitted an update](http://twitter.com/#!/ashfurrow/status/143108457879453697) to my iOS app, the [Solar System Simulator](http://itunes.apple.com/us/app/solar-system-simulation/id407799974?mt=8&ls=1). This update addresses a few minor issues (very minor - the last update was from March) as well as adding additional languages. Specifically, the app now supports English, German, Russian, Portuguese, Spanish, and Japanese.<!--more-->Finding translators for localizing the app turned out to be the easy part. I asked around on twitter and (with some retweet love - thank you all so much!), I got the following fabulous translators:
+I've just [submitted an update](http://twitter.com/#!/ashfurrow/status/143108457879453697) to my iOS app, the [Solar System Simulator](http://itunes.apple.com/us/app/solar-system-simulation/id407799974?mt=8&ls=1). This update addresses a few minor issues (very minor - the last update was from March) as well as adding additional languages. Specifically, the app now supports English, German, Russian, Portuguese, Spanish, and Japanese.
+
+Finding translators for localizing the app turned out to be the easy part. I asked around on twitter and (with some retweet love - thank you all so much!), I got the following fabulous translators:
 
 - Carlos M.
 - [Vasco](https://twitter.com/#!/va5co)

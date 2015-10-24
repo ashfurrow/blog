@@ -3,7 +3,9 @@ title: "Why I Enjoy iOS Development"
 date: 2011-02-24 00:00
 ---
 
-I had a prospective employer recently ask me why I enjoyed writing iOS apps and why I didn't just make web apps. There are really a lot of aspects to this very loaded question, but the answer I gave him was a pretty good one: on the web, there are standards, but they aren't necessarily followed. There are conventions, but they are often ignored. There are even hard and fast rules, which turn out to be flexible.<!--more-->
+I had a prospective employer recently ask me why I enjoyed writing iOS apps and why I didn't just make web apps. There are really a lot of aspects to this very loaded question, but the answer I gave him was a pretty good one: on the web, there are standards, but they aren't necessarily followed. There are conventions, but they are often ignored. There are even hard and fast rules, which turn out to be flexible.
+
+
 
 Developing iOS applications is like having a conversation between the user and the OS/frameworks. You have conventions, rules, and expectations clearly defined and published by one player: Apple. They say what goes and what doesn't. This means, as a user, you know what to expect. It also means, as a developer, you know how to do things.
 

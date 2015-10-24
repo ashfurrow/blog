@@ -3,7 +3,9 @@ title: "Overview of Windows 8 Metro App Development"
 date: 2011-12-10 00:00
 ---
 
-My employer, the fabulous [500px](http://500px.com/), was invited by Microsoft to attend a three-day workshop on writing Metro-style apps for Windows 8. Since this is a new mobile development field, and mobile is kind of my thing, I jumped at the opportunity to get it straight from the horse's mouth.<!--more-->
+My employer, the fabulous [500px](http://500px.com/), was invited by Microsoft to attend a three-day workshop on writing Metro-style apps for Windows 8. Since this is a new mobile development field, and mobile is kind of my thing, I jumped at the opportunity to get it straight from the horse's mouth.
+
+
 
 ## Metro
 

@@ -3,7 +3,9 @@ title: "Contributing Again"
 date: 2012-08-06 00:00
 ---
 
-I made my first sizeable contribution to the Open Source community over the past week or so. It's been interesting.<!--more-->
+I made my first sizeable contribution to the Open Source community over the past week or so. It's been interesting.
+
+
 
 Usually, I scheme ways to make money off the code I'm writing. Also, I need to believe in what I'm making or I won't be motivated.
 

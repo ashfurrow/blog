@@ -3,7 +3,9 @@ title: "A Look at Chupa, The 'Mobile Developer's Resource'"
 date: 2012-01-18 00:00
 ---
 
-I got an (unsolicited) email from [Chupa](http://www.chupamobile.com/products/details/277/Get+more+AppStore+ratings+with+recurring+UIAlert/) this morning asking to participate in their competition to win ten grand. Doesn't sound like a scam at all does it? Boy was I surprised...<!--more-->Basically, you write different libraries and sell them on their site. I assume they get a cut somehow. Not a _bad_&nbsp;idea, but kind of a crooked one when you look at what's available. After 30 seconds of browsing the iOS library, I found [this gem](http://www.chupamobile.com/products/details/277/Get+more+AppStore+ratings+with+recurring+UIAlert/):
+I got an (unsolicited) email from [Chupa](http://www.chupamobile.com/products/details/277/Get+more+AppStore+ratings+with+recurring+UIAlert/) this morning asking to participate in their competition to win ten grand. Doesn't sound like a scam at all does it? Boy was I surprised...
+
+Basically, you write different libraries and sell them on their site. I assume they get a cut somehow. Not a _bad_&nbsp;idea, but kind of a crooked one when you look at what's available. After 30 seconds of browsing the iOS library, I found [this gem](http://www.chupamobile.com/products/details/277/Get+more+AppStore+ratings+with+recurring+UIAlert/):
 
  ![](/img/import/blog/2012/01/a-look-at-chupa/97F3741FD4134E4191D8A98C56EF94A1.jpg)
 

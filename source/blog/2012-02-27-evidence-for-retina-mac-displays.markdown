@@ -3,7 +3,9 @@ title: "Evidence for Retina Mac Displays"
 date: 2012-02-27 00:00
 ---
 
-Speaking of evidence for Retina Mac displays, I noticed this in the `NSWindow.h` header:<!--more-->
+Speaking of evidence for Retina Mac displays, I noticed this in the `NSWindow.h` header:
+
+
 
 > `backingScaleFactor`Returns the backing scale factor.
 > 

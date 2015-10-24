@@ -9,7 +9,9 @@ Not a view.
 
 A view _controller_.
 
-<!--more-->
+
+
+
 
 In iOS, a view controller is an object that controls a view hierarchy. Views are nested within one another to be rendered to the user, who can then interact with them. Those interactions represent changes the user wants to make to the data, stored in model objects. The view controller's responsibility is to mediate the interaction between the models and the views (it does so via different mechanisms, of which Cocoa and Cocoa Touch provide a healthy variety of). In essence, that's the MVC framework.
 

@@ -5,7 +5,9 @@ date: 2012-06-23 00:00
 
 I've had this post on my mind for a while now. Since earlier this year, I've been developing (heh) my photography skills and it's been an interesting exercise. Photography exists, for me, between art and science. It isn't enough to know the physics of light and the mechanism of the camera to evoke an emotional reaction to my photos. Photography is a form of creative expression that I'm growing more and more fond of as I get better at it.
 
-Coming from the perspective of a skilled practitioner of my field (software development) to an area where I'm just beginning has been very interesting. I can tell when the questions I ask have obvious, objective answers and when they have subjective answers which are informed by opinion and experience. It's been a really interesting period of time for me, since I'm more used to giving answers than asking the questions. <!--more-->
+Coming from the perspective of a skilled practitioner of my field (software development) to an area where I'm just beginning has been very interesting. I can tell when the questions I ask have obvious, objective answers and when they have subjective answers which are informed by opinion and experience. It's been a really interesting period of time for me, since I'm more used to giving answers than asking the questions. 
+
+
 
 One thing I noticed, as a beginner, is I'm willing to make the mistakes and violate the rules that experienced photographers would avoid. The 37Signals blog had a related article last month [discussing the same thing](http://37signals.com/svn/posts/3179-you-only-get-one-chance-to-be-a-beginner):
 

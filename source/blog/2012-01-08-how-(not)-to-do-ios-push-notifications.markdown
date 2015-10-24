@@ -5,7 +5,9 @@ date: 2012-01-08 00:00
 
  ![](/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/6049F94729C4426AB7D1842467C6D6BE.png)
 
-In iOS 4, Apple introduced push notifications and Android fanboys switched from the "iOS sucks because it doesn't have push notifications" gear to "iOS sucks because it copied Android and now has push notifications." While most Apple developers were happy about the new push notification service, a few companies sat at the back of the&nbsp;Presidio trying to contain their excitement about all the ways they could fuck this up.<!--more-->
+In iOS 4, Apple introduced push notifications and Android fanboys switched from the "iOS sucks because it doesn't have push notifications" gear to "iOS sucks because it copied Android and now has push notifications." While most Apple developers were happy about the new push notification service, a few companies sat at the back of the&nbsp;Presidio trying to contain their excitement about all the ways they could fuck this up.
+
+
 
 <dl>
 

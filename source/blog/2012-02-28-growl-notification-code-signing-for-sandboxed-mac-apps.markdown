@@ -3,7 +3,9 @@ title: "Growl Notification Code Signing for Sandboxed Mac Apps"
 date: 2012-02-28 00:00
 ---
 
-I've spent the past few weeks writing a small Mac app, a first for me. The transition from Cocoa Touch to Cocoa has been ... interesting. Easy in many ways, but unexpected in others. I'm submitting this to the Mac App Store, so I'm using sandboxing and code signing. Everything was going fine until Xcode 4.3 was crashing whenever I tried to validate by archive. Something like `-[DVTFilePath compare:]: unrecognized selector sent to instance`.<!--more-->I googled the problem and I wasn't alone. Using third-party frameworks seems to cause the crash. That's OK, because I can use [`codesign` and `productbuild`](http://hartcw.com/francis/building-for-the-mac-app-store/) to package the app together myself and submit using [Application Loader](https://itunesconnect.apple.com/apploader/ApplicationLoader_2.5.1.dmg).
+I've spent the past few weeks writing a small Mac app, a first for me. The transition from Cocoa Touch to Cocoa has been ... interesting. Easy in many ways, but unexpected in others. I'm submitting this to the Mac App Store, so I'm using sandboxing and code signing. Everything was going fine until Xcode 4.3 was crashing whenever I tried to validate by archive. Something like `-[DVTFilePath compare:]: unrecognized selector sent to instance`.
+
+I googled the problem and I wasn't alone. Using third-party frameworks seems to cause the crash. That's OK, because I can use [`codesign` and `productbuild`](http://hartcw.com/francis/building-for-the-mac-app-store/) to package the app together myself and submit using [Application Loader](https://itunesconnect.apple.com/apploader/ApplicationLoader_2.5.1.dmg).
 
 But then I got a validation error; I wasn't signing Growl.framework with the same provisioning profile as the bundle. Uh oh.
 

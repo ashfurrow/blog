@@ -3,7 +3,9 @@ title: "Apple Installer UI Question"
 date: 2011-02-26 00:00
 ---
 
-I re-installed the OS on my iMac recently; it'd been two years and it needed it. For some reason, Xcode didn't backup my Xcode install. This is probably a good thing, since dev environments can be tricky in the best of situations.<!--more-->Anyways, I'm reinstalling Xcode while listening to some music and cleaning the apartment. I come back to my machine to check the progress, and I get this dialogue box:
+I re-installed the OS on my iMac recently; it'd been two years and it needed it. For some reason, Xcode didn't backup my Xcode install. This is probably a good thing, since dev environments can be tricky in the best of situations.
+
+Anyways, I'm reinstalling Xcode while listening to some music and cleaning the apartment. I come back to my machine to check the progress, and I get this dialogue box:
 
  ![](/img/import/blog/2011/02/apple-installer-ui-question/2A63361E33D54FF49765E5D451EFB2A0.png)
 

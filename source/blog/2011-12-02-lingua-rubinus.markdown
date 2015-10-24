@@ -3,7 +3,9 @@ title: "Lingua Rubinus"
 date: 2011-12-02 00:00
 ---
 
-I've been writing iOS apps for two years, now. Before that, I had experience in ASP.Net &nbsp;3.5 with a C# codebehind. I've also done some open source C coding as part of my honours thesis. For the most part, I've been living in a world of native application development with only academic pursuits of server-centric languages such as PHP with almost no exposure to the frameworks used to write server software.<!--more-->That's my fault, of course. At any point, I can choose to pick up a language, but I've got a (great) job writing iOS apps and in my spare time, I write iOS apps. They're kind of my thing, I guess. But there's a problem.
+I've been writing iOS apps for two years, now. Before that, I had experience in ASP.Net &nbsp;3.5 with a C# codebehind. I've also done some open source C coding as part of my honours thesis. For the most part, I've been living in a world of native application development with only academic pursuits of server-centric languages such as PHP with almost no exposure to the frameworks used to write server software.
+
+That's my fault, of course. At any point, I can choose to pick up a language, but I've got a (great) job writing iOS apps and in my spare time, I write iOS apps. They're kind of my thing, I guess. But there's a problem.
 
 Most software I deal with, and most software developers I know, deal in Ruby. Well, Rails. You know what I mean. Most APIs I use have documentation with code examples ... written in Ruby. It's everywhere and, while I know the basic Ruby syntax, I'm not familiar with the Rails framework.
 

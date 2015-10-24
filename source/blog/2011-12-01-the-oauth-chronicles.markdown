@@ -3,7 +3,9 @@ title: "The OAuth Chronicles"
 date: 2011-12-01 00:00
 ---
 
-I write iOS apps. Which is to say, I write native apps that run on, you know, actual hardware. iOS also implies Cocoa Touch and the Cocoa networking libraries (which suck). Not really awful, just really bad. Enter OAuth.<!--more-->
+I write iOS apps. Which is to say, I write native apps that run on, you know, actual hardware. iOS also implies Cocoa Touch and the Cocoa networking libraries (which suck). Not really awful, just really bad. Enter OAuth.
+
+
 
 OAuth is a a three-legged authentication framework that is designed to give users maximum control over what data third-party applications have access to without giving their password to anyone but the first-party service. Sounds awesome, right? It is! _If_ you're writing server applications.
 

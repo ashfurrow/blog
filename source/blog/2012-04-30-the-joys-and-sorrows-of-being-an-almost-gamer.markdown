@@ -7,7 +7,9 @@ John Siracusa of [Hypercritical](http://5by5.tv/hypercritical/) has spent the la
 
 It's an interesting argument, and I agree with him.
 
-<!--more-->
+
+
+
 
 I've played a lot of video games in my life, mostly as a kid. I've never really considered myself a gamer, though.
 

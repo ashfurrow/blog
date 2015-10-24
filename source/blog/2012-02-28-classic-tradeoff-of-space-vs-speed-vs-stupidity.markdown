@@ -3,7 +3,9 @@ title: "Classic Tradeoff of Space vs Speed vs Stupidity"
 date: 2012-02-28 00:00
 ---
 
-I'm working on a Mac App that uses a series of png files as frames in an animation. Why not an animated gif? Because they have no alpha channel. I draw the appropriate frame in drawRect: and wanted to create a "drop shadow" effect behind each image that is the image, inverted and offset by 1 pixel downwards. My initial attempt looked like the following.<!--more-->[gist id=1935770]
+I'm working on a Mac App that uses a series of png files as frames in an animation. Why not an animated gif? Because they have no alpha channel. I draw the appropriate frame in drawRect: and wanted to create a "drop shadow" effect behind each image that is the image, inverted and offset by 1 pixel downwards. My initial attempt looked like the following.
+
+[gist id=1935770]
 
 What's wrong with this? About everything. It's _very_ CPU-intensive. About 6% of my late-model MacBook Pro. `NSImage` instances returned with `imageNamed:` are cached by the runtime, so it won't cause a bottleneck in terms of disk I/O, but the images from the CoreImage filter are not and are recomputed at every frame.
 

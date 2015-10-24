@@ -3,7 +3,9 @@ title: "OS X Lion Adjustments"
 date: 2011-09-03 00:00
 ---
 
-When I'm at work, I still use Snow Leopard (for a number of legitimate reasons). When I come home, I use Lion. And it's a little jarring. Just like when iPhone OS 3 came out and introduced spotlight and when I used someone else's iPod Touch with iPhone OS 2, it wasn't there. When my established workflow changes, it bothers me. In Snow Leopard and all previous versions of OS X with spotlight, search for a word like "lexicographical" would bring up (at the top) a dictionary entry for the word, followed by any documents, emails, and browser history with that word in it.<!--more-->
+When I'm at work, I still use Snow Leopard (for a number of legitimate reasons). When I come home, I use Lion. And it's a little jarring. Just like when iPhone OS 3 came out and introduced spotlight and when I used someone else's iPod Touch with iPhone OS 2, it wasn't there. When my established workflow changes, it bothers me. In Snow Leopard and all previous versions of OS X with spotlight, search for a word like "lexicographical" would bring up (at the top) a dictionary entry for the word, followed by any documents, emails, and browser history with that word in it.
+
+
 
 In Lion, spotlighting "lexicographical" brings up the same results, but the dictionary definition is all the way at the bottom. Before, I could hit "enter" after entring the word I want defined and it would open the dictionary. But now I have to actually use my mouse to click on the word. Why?
 

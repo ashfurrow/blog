@@ -3,7 +3,9 @@ title: "Apple Rejecting iOS Apps with Dropbox Integration"
 date: 2012-05-02 00:00
 ---
 
-It looks like Apple is [rejecting](http://www.macstories.net/stories/11-13-and-the-dropbox-sdk/) some apps which contain Dropbox integration. Why? The mobile authentication page accessible from the app has a link to the normal authentication page, which has a link which eventually leads to a place you can buy a Dropbox subscription (not via Apple's In-App Purchase mechanism). This ostensibly violates Apple's rules, so the apps were rejected. <!--more-->
+It looks like Apple is [rejecting](http://www.macstories.net/stories/11-13-and-the-dropbox-sdk/) some apps which contain Dropbox integration. Why? The mobile authentication page accessible from the app has a link to the normal authentication page, which has a link which eventually leads to a place you can buy a Dropbox subscription (not via Apple's In-App Purchase mechanism). This ostensibly violates Apple's rules, so the apps were rejected. 
+
+
 
 This rule has been around for a while now and, at first glance, it looks like Apple is starting to enforce it more rigorously. Internet nerds are running around screaming about Walled Gardens and anticompetitiveness and iCloud lock-in.
 

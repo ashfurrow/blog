@@ -3,7 +3,9 @@ title: "Society, Health, and the Politics of Being Fat"
 date: 2012-03-24 00:00
 ---
 
-First, let me state clearly and loudly: this is a reflective essay. If you disagree, fine, tweet at me, but nothing on this blog has ever been anything more than my opinion.<!--more-->
+First, let me state clearly and loudly: this is a reflective essay. If you disagree, fine, tweet at me, but nothing on this blog has ever been anything more than my opinion.
+
+
 
 ## A Loaded Term
 

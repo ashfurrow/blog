@@ -7,7 +7,9 @@ I have a profound appreciation for well-designed things, and I feel this appreci
 
 So what sparked this appreciation? Certainly, a lot of credit for refining that appreciation should go out to the talented designers I've met in Toronto. But I don't think that was the spark.
 
-Tonight, I realized what it was.<!--more-->
+Tonight, I realized what it was.
+
+
 
 Portal.
 

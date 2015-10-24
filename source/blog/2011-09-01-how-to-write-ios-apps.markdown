@@ -8,7 +8,9 @@ Well, how to write good ones, anyways. This article describes how _programmers_ 
 - Developers, even good ones, aren't necessarily good at design. In fact, most developers kind of probably suck at it. Get help from a friend.
 - _Reading_ the [HIG](http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html) shouldn't be confused with _understanding_ the HIG. Anyone can read 90 pages of dense Applese but that doesn't mean a thing unless you understand _why_ they made the recommendations they did.
 
-Why should you listen to me? Well, I'm no expert in writing iOS apps. No, wait. Yes I am. I taught a course at my university on the topic. Let's carry on, then.<!--more-->
+Why should you listen to me? Well, I'm no expert in writing iOS apps. No, wait. Yes I am. I taught a course at my university on the topic. Let's carry on, then.
+
+
 
 ### Objective-C
 

@@ -3,7 +3,9 @@ title: "Apple Rumours (TV, iPad 3, Retina Macs)"
 date: 2012-02-20 00:00
 ---
 
-Last Summer I predicted that there would be no iPad 3 that Fall and that there would be no iPhone 5 - that any new iPhone would be only an incremental upgrade to the iPhone 4. I was right on both accounts and I attribute the rumours to wishful thinking by tech bloggers. Those same tech bloggers are back and this time, they're talking TV.<!--more-->Apple rumour sites seem to get so lost in the cycle of linking to one another that a cyclical, masturbatory frenzy really can't help itself from forming. They got so lost in [mystery case manufactures](http://www.geek.com/articles/mobile/iphone-5-case-leaks-show-3g-like-body-20110727/) and feeding off one another that it was no longer "will there be an iPhone 5?" but rather "what will the iPhone 5 be like?" Teardrop shape? Oval home button? 4" display? LTE?
+Last Summer I predicted that there would be no iPad 3 that Fall and that there would be no iPhone 5 - that any new iPhone would be only an incremental upgrade to the iPhone 4. I was right on both accounts and I attribute the rumours to wishful thinking by tech bloggers. Those same tech bloggers are back and this time, they're talking TV.
+
+Apple rumour sites seem to get so lost in the cycle of linking to one another that a cyclical, masturbatory frenzy really can't help itself from forming. They got so lost in [mystery case manufactures](http://www.geek.com/articles/mobile/iphone-5-case-leaks-show-3g-like-body-20110727/) and feeding off one another that it was no longer "will there be an iPhone 5?" but rather "what will the iPhone 5 be like?" Teardrop shape? Oval home button? 4" display? LTE?
 
 Jesus.
 

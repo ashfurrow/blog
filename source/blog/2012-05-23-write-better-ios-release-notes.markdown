@@ -5,7 +5,9 @@ date: 2012-05-23 00:00
 
 My boss [tweeted](https://twitter.com/oleggutsol/status/205413845114691584) a screenshot of the [Things](http://culturedcode.com/things/) 1.8.5 iOS update, which I have included below. I remarked on twitter to them that this is an example of why developers should not be the ones to write the "what's new in this version" copy for iOS app updates. They replied that the developers didn't write the release notes, but instead it was the testers that did.
 
-Let's talk about how we can improve the release notes for iOS apps.<!--more-->
+Let's talk about how we can improve the release notes for iOS apps.
+
+
 
  ![](/img/import/blog/2012/05/write-better-ios-release-notes/3166C2DA16E943E78DF92507D5FB1012.jpg)
 

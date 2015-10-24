@@ -3,7 +3,9 @@ title: "iTunes UI Fail"
 date: 2011-03-30 00:00
 ---
 
-I've never particularly liked iTunes. I've tried Amarok and Clementine for the mac, but neither works well or works well with my iPhone.<!--more-->The other day I was deleting some old crap from my iTunes library. There are a lot of video game music remixes and bits of movie soundtracks that I haven't listened to since my heyday with Fedora 5. I was deleting files willy nilly with iTunes when i got to this dialogue:
+I've never particularly liked iTunes. I've tried Amarok and Clementine for the mac, but neither works well or works well with my iPhone.
+
+The other day I was deleting some old crap from my iTunes library. There are a lot of video game music remixes and bits of movie soundtracks that I haven't listened to since my heyday with Fedora 5. I was deleting files willy nilly with iTunes when i got to this dialogue:
 
  ![](/img/import/blog/2011/03/itunes-ui-fail/8EFCFD7D5E9D476693143FBD53443944.png)
 

@@ -9,6 +9,8 @@ date: 2011-12-23 00:00
 > 
 > When Google contacts me, they treat me like a human that wants to grow, learn, and expand beyond the walls of the company, not just inside it. I don't want to play politics. I want to build cool stuff, make money, and learn something new every day. You don't give me that, so I'm leaving.
 
-<!--more-->I had a similar experience earlier this year. I left. Now I'm making cool things and solving interesting problems. I have complete control over my environment and I see how my efforts are directly impacting the company.
+
+
+I had a similar experience earlier this year. I left. Now I'm making cool things and solving interesting problems. I have complete control over my environment and I see how my efforts are directly impacting the company.
 
 <!-- more -->
