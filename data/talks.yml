@@ -1,12 +1,13 @@
 upcoming_talks:
-- name: TBA
+
+past_talks:
+- name: Emerging Best Practices in Swift
   conference: Swift Summit
   url: https://www.swiftsummit.com
   location: San Francisco, America
   dates: October 29–30, 2015
   image: swiftsummit.png
-
-past_talks:
+  slides: https://speakerdeck.com/ashfurrow/emerging-best-practices-in-swift-2
 - name: Functional Reactive Awesome
   conference: Cornell CS5356
   url: https://github.com/Cornell-CS5356-Fall2015/cs5356/blob/master/course/08-mobile/lecture.md#guest-lecturer
