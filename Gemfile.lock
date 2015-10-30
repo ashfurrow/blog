@@ -179,7 +179,7 @@ GEM
     less (2.6.0)
       commonjs (~> 0.2.7)
     libv8 (3.16.14.13)
-    liquid (2.6.1)
+    liquid (3.0.6)
     listen (3.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
