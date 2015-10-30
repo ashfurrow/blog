@@ -95,20 +95,12 @@ module Speaking
   end
 
   def self.talks_to_html(type, talks)
-    if talks.count > 0
+    if talks &&  talks.count > 0
       formatted_talks = talks.select{ |talk| talk["hidden"] != true }.map { |talk| talk_to_html(type, talk) }.reduce(:+)
       formatted_talks
     else
       # Just gonna assume we always have past talks, error always says 'upcoming' ¯\_(ツ)_/¯
-      <<-EOS
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <p>No upcoming talks at this time.</p>
-            </div>
-          </div>
-        </div>
-      EOS
+      "<p>No upcoming talks at this time.</p>"
     end
   end
 end
