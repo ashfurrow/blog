@@ -6,6 +6,8 @@ link_to: collectionview
 
 So you want to put a collection view inside of a table view cell, eh? Sounds easy, right? Well, to do it right requires a little bit of work. We want a clear separation of concerns so that the `UITableViewCell` isn't acting as the data source or delegate for the `UICollectionView` (because that would be very, very bad). You can follow along by downloading the [sample code](https://github.com/AshFurrow/AFTabledCollectionView).
 
+<!-- more -->
+
 We're going to build a view hierarchy like the one below. Each `UITableViewCell` will contain a `UICollectionView` instead in its `contentView`. (For reasons we'll get into momentarily, this collection view needs to be a custom subclass.) Each collection view contains a certain number of cells, defined by its datasource.
 
  ![](/img/import/blog/putting-a-uicollectionview-in-a-uitableviewcell/AFE11F3C86B04CDF9EDB1F080C6668EB.png)
@@ -18,7 +20,7 @@ The diagram should show you that the tricky part here is going to be getting the
 
 Adding the collection view to the cell is very strait forward. We'll create an instance of `AFCollectionView` using a standard `UICollectionViewFlowLayout` in our cell's designated initializer.
 
-```
+```objc
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (!(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) return nil;
@@ -39,7 +41,7 @@ Adding the collection view to the cell is very strait forward. We'll create an i
 
 We'll adjust the side of the collection view to fill the cell in `layoutSubviews`.
 
-```
+```objc
 -(void)layoutSubviews
 {
     [super layoutSubviews];
@@ -52,7 +54,7 @@ Next, we'll set up our model in the view controller. We'll use `UIColor`s becaus
 
 This model is going to represent the table view _and_ each collection view. We'll use an array; each object represents a table cell. These objects are themselves arrays, with each of their objects representing a collection view cell.
 
-```
+```objc
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.colorArray.count;
@@ -61,7 +63,7 @@ This model is going to represent the table view _and_ each collection view. We'l
 
 Next we'll implement our `UICollectionViewDataSource` methods.
 
-```
+```objc
 -(NSInteger)collectionView:(AFIndexedCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     NSArray *collectionViewArray = self.colorArray[collectionView.index];
@@ -83,7 +85,7 @@ You'll see we're using the `index` property of the collection view to determine 
 
 But where is the `index` getting set? We'll need to do that, too.
 
-```
+```objc
 -(void)tableView:(UITableView *)tableView willDisplayCell:(AFTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell setCollectionViewDataSourceDelegate:self index:indexPath.row];
@@ -92,7 +94,7 @@ But where is the `index` getting set? We'll need to do that, too.
 
 The only thing left to do is "remember" the content offset of each cell as we end displaying it to reset it when we begin displaying it again. I we don't do this, newly displayed collection views will have non-zero content offsets and returning collection views will be in different positions. We'll use an `NSMutableDictionary` to remember the content offsets.
 
-```
+```objc
 -(void)tableView:(UITableView *)tableView willDisplayCell:(AFTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell setCollectionViewDataSourceDelegate:self index:indexPath.row];
@@ -115,5 +117,3 @@ The only thing left to do is "remember" the content offset of each cell as we en
 That's it. Not a lot of code, but to do it right, it requires a little bit of planning ahead. You can [download the entire sample code on GitHub](https://github.com/AshFurrow/AFTabledCollectionView).
 
 If you've enjoyed this tutorial, and I sincerely hope you have, then I'd recommend my ebook, [`UICollectionView`: The Complete Guide](http://click.linksynergy.com/fs-bin/click?id=3JVIZPzOhac&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fios-uicollectionview-the-complete-guide-9780133410945). In the book, I go into far more detail on every aspect of using `UICollectionView`. You can pre-order it now and get access to all the draft chapters immediately.
-
-<!-- more -->
