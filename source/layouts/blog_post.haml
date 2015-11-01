@@ -1,5 +1,5 @@
 = wrap_layout :layout do
-  - link_to = current_resource.metadata[:page]['link_to']
+  - marketing_link = current_resource.metadata[:page]['link_to']
 
   / Page Header
   = partial :header, locals: { title: current_article.title }
@@ -14,7 +14,7 @@
     .row
       - standard_width_div do
         %hr/
-        - if link_to
-          = partial :marketing, :locals => { :book_name => link_to }
+        - if marketing_link
+          = partial :marketing, :locals => { :book_name => marketing_link }
           %hr/
         = partial :article_pager

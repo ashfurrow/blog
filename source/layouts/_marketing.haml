@@ -3,11 +3,11 @@
 - book = Book.new book_name
 
 %div#book-link
-  %a{href: book.href}
+  %a{href: book.href, onclick: "trackMaretingLink('#{book.book_name}')"}
     %img{src: "/img/marketing/#{book.book_name}.jpg"}
-  %a.visible-md.visible-lg{href: book.href}
+  %a.visible-md.visible-lg{href: book.href, onclick: "trackMaretingLink('#{book.book_name}')"}
     %h3 Enjoyed my post? You'd love my book!
-  %a.visible-xs.visible-sm{href: book.href}
+  %a.visible-xs.visible-sm{href: book.href, onclick: "trackMaretingLink('#{book.book_name}')"}
     %h3 Enjoyed my post?
   %p= book.body
 %div.clearfix

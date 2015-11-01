@@ -41,3 +41,7 @@ jQuery(document).ready(function($) {
       });
   }
 });
+
+var trackMaretingLink = function(link) {
+   ga('send', 'event', 'marketing', link);
+}

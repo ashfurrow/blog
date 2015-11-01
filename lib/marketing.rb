@@ -6,7 +6,7 @@ class Book
   def initialize(book_name)
     @book_name = book_name
     if book_name == 'swift'
-      @href = 'http://leanpub.com/yourfirstswiftapp/publish/in_progress'
+      @href = 'http://leanpub.com/yourfirstswiftapp'
       @body = 'My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.'
     elsif book_name == 'collectionview'
       @href = 'http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00IHZKDCU&linkCode=as2&tag=ashfur-20&linkId=T2MHOE5AYIWQTV3G'
