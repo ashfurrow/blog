@@ -208,8 +208,8 @@ var collectionViewOffset: CGFloat {
         return collectionView.contentOffset.x
     }
 
-    set(newOffset) {
-        collectionView.contentOffset.x = newOffset
+    set {
+        collectionView.contentOffset.x = newValue
     }
 }
 ```

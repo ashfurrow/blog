@@ -4,6 +4,10 @@ date: 2013-03-14 00:00
 link_to: collectionview
 ---
 
+**Update**: I've re-written this tutorial using storyboards and Swift – [check it out](/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/)!
+
+---
+
 So you want to put a collection view inside of a table view cell, eh? Sounds easy, right? Well, to do it right requires a little bit of work. We want a clear separation of concerns so that the `UITableViewCell` isn't acting as the data source or delegate for the `UICollectionView` (because that would be very, very bad). You can follow along by downloading the [sample code](https://github.com/AshFurrow/AFTabledCollectionView).
 
 <!-- more -->
