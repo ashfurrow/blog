@@ -166,7 +166,7 @@ override func tableView(tableView: UITableView,
 
 END_WIDE
 
-OK awesome! But now we have a problem. We've told the collection view to use `self` as a delete and datasource, but we don't conform to those protocols yet. No worry, let's add an extension to `ViewController`. 
+OK awesome! But now we have a problem. We've told the collection view to use `self` as a delegate and datasource, but we don't conform to those protocols yet. No worry, let's add an extension to `ViewController`. 
 
 BEGIN_WIDE
 
