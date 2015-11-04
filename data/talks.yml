@@ -20,6 +20,7 @@ past_talks:
   dates: October 9–10, 2015
   image: pragmamark.png
   slides: https://speakerdeck.com/ashfurrow/loosely-held-strong-convictions
+  video: https://www.youtube.com/watch?v=hlLhtWLghGA
 - name: Emerging Best Practices in Swift
   conference: GOTO
   url: http://gotocon.com/cph-2015/
