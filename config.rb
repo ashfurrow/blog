@@ -116,7 +116,7 @@ after_s3_sync do |files_by_status|
         abort "Error invalidating Cloudflare zone: #{e}"
       end
     else
-      cdn_invalidate(files_by_status[:updated])
+      cdn_invalidate(updated_files)
     end
   end
 end
