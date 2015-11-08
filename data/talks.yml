@@ -133,6 +133,7 @@ past_talks:
   dates: October 3–4, 2014
   location: Milan, Italy
   image: swift.png
+  hidden: true
 - name: Functional Programming in Swift
   conference: NSSpain 2014
   url: http://nsspain.com/2014
@@ -166,7 +167,6 @@ past_talks:
   dates: July 5, 2014
   location: Kraków, Poland
   image: swift.png
-  hidden: true
 - name: Introduction to ReactiveCocoa
   conference: AltConf 2014
   url: http://www.altconf.com
