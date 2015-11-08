@@ -15,7 +15,7 @@ I was impressed when, recently in a taxi, I saw this information displayed visua
 
 To display a model of such a complex system in a way that a human can interpret at-a-glance while driving is no small feat; the user interface is quite impressive. I realized that its metaphors were applicable to people, too. Specifically, to me.
 
-I have a finite amount of energy that comes from different places. Throughout the day – typically – I spend energy from my "battery" to interact with others. This is [introversion vs extroversion](TODO) on a fundamental level. But [I am neither](TODO).
+I have a finite amount of energy that comes from different places. Throughout the day – typically – I spend energy from my "battery" to interact with others. This is [introversion vs extroversion](http://themetapicture.com/how-to-interact-with-the-introverted/) on a fundamental level. But [I am neither](http://ashfurrow.com/blog/ambiversion/).
 
 Sometimes, spending time with people isn't a cost; sometimes it doesn't take energy. Sometimes, like an extrovert, I _get_ energy from others. Similar to regenerative braking on hybrid cars, I can use the energy from others to recharge my battery.
 
