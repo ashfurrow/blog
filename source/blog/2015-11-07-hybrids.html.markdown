@@ -1,6 +1,7 @@
 ---
 title: Hybrids
 date: 2015-11-07 23:09:28 UTC
+og_image: /img/blog/hybrids/me.jpg
 ---
 
 Consider hybrid cars: they have two motors with independent power sources, but everything interoperates in a really clever way. For example, speed and acceleration will determine if using the electric motor or the gasoline engine – or both – is most efficient.

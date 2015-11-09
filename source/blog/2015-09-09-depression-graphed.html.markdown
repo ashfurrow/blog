@@ -3,6 +3,7 @@ title: Depression, Graphed
 date: 2015-09-09 20:19:47 UTC
 background_image: /img/blog/depression-graphed/background.png
 background_image_source: https://twitter.com/CloudyConway/status/641574774423089152
+og_image: /img/blog/depression-graphed/graph7.png
 ---
 
 A while ago, I cam across a two-part series of drawings which discussed depression ([Part I](http://hyperboleandahalf.blogspot.nl/2011/10/adventures-in-depression.html) & [Part II](http://hyperboleandahalf.blogspot.nl/2013/05/depression-part-two.html)). I related to a lot of the themes Allie Brosh depicted from her own struggles with depression. I got really excited when I found [her book](http://amzn.to/1McmNmt).

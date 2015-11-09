@@ -3,6 +3,7 @@ title: Thoughts on the MacBook
 date: 2015-11-09 02:12:18 UTC
 background_image: /img/blog/running-xcode-on-an-ipad/background.png
 background_image_source: https://twitter.com/CloudyConway/status/659154558044786688
+og_image: /img/blog/running-xcode-on-an-ipad/bag.jpg
 ---
 
 For my day-to-day bag, I like to carry my camera with me. I use small rangefinder cameras, so I don't need a large camera bag. However, my 15" Retina MacBook Pro doesn't fit in a small bag, so it needs its own separate carrier. For the past few years, I've been looking for a suitable solution: a bag that has room for a 15" laptop, but is no bigger than needed for a camera (one that's _just_ too big to fit in a laptop case).

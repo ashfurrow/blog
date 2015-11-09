@@ -1,6 +1,7 @@
 ---
 title: Star Trek Voyager in 40 Hours
 date: 2015-10-07 15:41:00 UTC
+og_image: /img/blog/2015-10-07-star-trek-voyager-in-40-hours/crash.jpg
 ---
 
 _Star Trek Voyager_ is one of the best pieces of science fiction television ever. After listening to [Brianna Wu discuss it on _Unjustly Maligned_](https://www.theincomparable.com/ump/16/), my wife and I decided to go back and watch it through again. 
