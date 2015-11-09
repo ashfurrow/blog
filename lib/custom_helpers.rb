@@ -50,12 +50,20 @@ module CustomHelpers
     # Default image
     image ||= data.site.dark_image
 
+    if image[0] == '/'
+      image = "http://ashfurrow#{image}"
+    end
+
     image
   end
 
   def og_image(current_resource)
     image = current_resource.metadata[:page]["og_image"]
     image ||= current_resource.metadata[:page]["background_image"]
+
+    if image && image[0] == '/'
+      image = "http://ashfurrow#{image}"
+    end
 
     image
   end
