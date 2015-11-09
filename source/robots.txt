@@ -1,3 +1,6 @@
 Sitemap: http://ashfurrow.com/sitemap.xml
 User-agent: *
 Disallow: /404/
+
+User-agent: Twitterbot
+Disallow:
