@@ -71,6 +71,15 @@ module CustomHelpers
     image
   end
 
+  def twitter_card_type(current_resource)
+    if current_resource.metadata[:page]["og_image"]
+      'summary_large_image'
+    else
+      'summary'
+    end
+
+  end
+
   def page_description
     # Default to any description in the frontmatter of the resource.
     description = current_resource.metadata[:page]["description"]

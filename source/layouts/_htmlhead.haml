@@ -27,6 +27,13 @@
 %meta{property: 'og:description', content: page_description}/
 %meta{property: 'og:image', content: og_image_or_default(current_article, current_resource)}/
 
+/ Twitter Cards
+%meta{property: 'twitter:card', content: twitter_card_type(current_resource)}
+%meta{property: 'twitter:site', content: '@ashfurrow'}
+%meta{property: 'twitter:title', content: og_title(current_article, current_resource)}
+%meta{property: 'twitter:description', content: page_description}
+%meta{property: 'twitter:image', content: og_image_or_default(current_article, current_resource)}
+
 / Favicon, site icons, etc
 %link{rel: 'image_src', href: data.site.dark_image}
 %meta{itemprop: 'image', content: data.site.dark_image}/
