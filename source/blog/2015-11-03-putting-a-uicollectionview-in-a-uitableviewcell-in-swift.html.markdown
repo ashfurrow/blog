@@ -2,6 +2,7 @@
 title: Putting a UICollectionView in a UITableViewCell in Swift
 date: 2015-11-03 19:14:09 UTC
 link_to: swift
+og_image: /img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/layout.png
 ---
 
 A few years ago, I wrote this post on [putting a collection view inside a table view cell](http://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell/). Collection views were still pretty new and there wasn't a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog's traffic. 
