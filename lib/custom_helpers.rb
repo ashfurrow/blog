@@ -40,12 +40,15 @@ module CustomHelpers
   end
 
   def og_image_or_default(current_article, current_resource)
-    image = og_image(current_resource)
+
+    image = current_resource.metadata[:page]["og_image"]
 
     if current_article
       doc = Nokogiri::HTML(current_article.body)
       image ||= doc.xpath("//img").map { |img| img["src"] }.first
     end
+
+    image ||= current_resource.metadata[:page]["background_image"]
 
     # Default image
     image ||= data.site.dark_image
@@ -57,7 +60,7 @@ module CustomHelpers
     image
   end
 
-  def og_image(current_resource)
+  def og_image_or_background(current_resource)
     image = current_resource.metadata[:page]["og_image"]
     image ||= current_resource.metadata[:page]["background_image"]
 

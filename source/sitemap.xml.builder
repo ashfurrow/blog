@@ -8,7 +8,7 @@ xml.urlset 'xmlns' => "http://www.sitemaps.org/schemas/sitemap/0.9", 'xmlns:imag
       xml.lastmod Date.today.to_time.iso8601
       xml.changefreq page.data.changefreq || "monthly"
 
-      image_url = og_image(page)
+      image_url = og_image_or_background(page)
 
       if image_url
         # URLs for images must be absolute
