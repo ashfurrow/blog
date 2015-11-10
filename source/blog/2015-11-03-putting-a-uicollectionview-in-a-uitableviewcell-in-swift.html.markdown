@@ -103,10 +103,13 @@ func setCollectionViewDataSourceDelegate
     collectionView.delegate = dataSourceDelegate
     collectionView.dataSource = dataSourceDelegate
     collectionView.tag = row
+    collectionView.reloadData()
 }
 ```
 
 END_WIDE
+
+(**Update**: Thanks to [a reader's feedback](https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell/issues/1), I've added a call to `reloadData()` – take a look at their GitHub issue for a discussion why.)
 
 The `D` type conforms to both the datasource and delegate protocols. Cool. And we set the collection view's `tag` property – awesome. 
 
