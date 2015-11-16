@@ -43,7 +43,7 @@ The other day, I was reading over my site, looking for things to spruce it up, a
 
 I knew then that community participation was important, but I've since reflected on what that actually means. I've now [articulated my definition of _good_ community participation](http://ashfurrow.com/blog/minswan-for-ios/) and have worked to adhere to its principles.
  
-To a large degree, I think this has been a natural progression of my existing ideas and background. I already believed [open source by default](http://code.dblock.org/2015/02/09/becoming-open-source-by-default.html) but now I've taken time to reflect on [why its important to me](https://www.artsy.net/article/remy-ferber-open-sourcing-company-culture-at-artsy).
+To a large degree, I think this has been a natural progression of my existing ideas and background. I already believed in [open source by default](http://code.dblock.org/2015/02/09/becoming-open-source-by-default.html) but now I've taken time to reflect on [why its important to me](https://www.artsy.net/article/remy-ferber-open-sourcing-company-culture-at-artsy).
 
 But this shift has also been absorbed via osmosis from my peers and mentors, a few of whom I even have the pleasure of calling "colleagues."
 
