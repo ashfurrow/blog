@@ -25,7 +25,7 @@ So I'll make it easy for you. Click this button and try whichever FRP framework 
 
 <script>
 
-var libraries = ['mxcl/PromiseKit', 'BoltsFramework/Bolts-iOS', 'ReactiveX/RxSwift', 'ReactiveCocoa/ReactiveCocoa']
+var libraries = ['mxcl/PromiseKit', 'BoltsFramework/Bolts-iOS', 'ReactiveX/RxSwift', 'ReactiveCocoa/ReactiveCocoa', 'SwiftBond/Bond', 'JensRavens/Interstellar']
 
 function goToRandomLibrary() {
 	var index = Math.floor(Math.random() * libraries.length);
