@@ -25,17 +25,17 @@ So I'll make it easy for you. Click this button and try whichever FRP framework 
 
 <script>
 
-var libraries = ['mxcl/PromiseKit', 'BoltsFramework/Bolts-iOS', 'ReactiveX/RxSwift', 'ReactiveCocoa/ReactiveCocoa', 'SwiftBond/Bond', 'JensRavens/Interstellar']
+var libraries = ['PromiseKit', 'Bolts-iOS', 'RxSwift', 'ReactiveCocoa', 'Bond', 'Interstellar']
 
 function goToRandomLibrary() {
 	var index = Math.floor(Math.random() * libraries.length);
-	window.location.href = 'https://github.com/' + libraries[index];
+	window.location.href = 'https://cocoapods.org/pods/' + libraries[index];
 }
 
 </script>
 
 <input type="button" onclick="goToRandomLibrary()" value="Go" class="btn btn-default center-block" />
 
-(If you have suggestions for other FRP libraries to recommend, [send a pull request](https://github.com/ashfurrow/blog).)
+(If you have suggestions for other FRP libraries to recommend, [send a pull request](https://github.com/ashfurrow/blog/edit/master/source/blog/2015-11-18-reactivecocoa-vs-rxswift.html.markdown).)
 
 Remember, ideas matter more than implementations. The _idea_ of reactive programming is far more important than any implementation – try different frameworks and form an opinion for yourself.
