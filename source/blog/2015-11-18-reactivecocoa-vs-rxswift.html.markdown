@@ -25,7 +25,7 @@ So I'll make it easy for you. Click this button and try whichever FRP framework 
 
 <script>
 
-var libraries = ['PromiseKit', 'Bolts', 'RxSwift', 'ReactiveCocoa', 'Bond', 'Interstellar']
+var libraries = ['PromiseKit', 'Bolts', 'RxSwift', 'ReactiveCocoa', 'Bond', 'Interstellar','ReactiveKit']
 
 function goToRandomLibrary() {
 	var index = Math.floor(Math.random() * libraries.length);
