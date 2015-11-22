@@ -106,7 +106,7 @@ after_s3_sync do |files_by_status|
 
     # Invalidate CDN.
     updated_files = files_by_status[:updated]
-    if updated_files.length > 90
+    if updated_files.length > 40
       begin
         require 'cloudflare'
         cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
