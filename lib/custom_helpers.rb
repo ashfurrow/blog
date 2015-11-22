@@ -54,7 +54,7 @@ module CustomHelpers
     image ||= data.site.dark_image
 
     if image[0] == '/'
-      image = "http://ashfurrow#{image}"
+      image = "https://ashfurrow#{image}"
     end
 
     image
@@ -65,7 +65,7 @@ module CustomHelpers
     image ||= current_resource.metadata[:page]["background_image"]
 
     if image && image[0] == '/'
-      image = "http://ashfurrow#{image}"
+      image = "https://ashfurrow#{image}"
     end
 
     image
