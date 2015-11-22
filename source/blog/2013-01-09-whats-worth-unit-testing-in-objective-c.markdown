@@ -25,7 +25,7 @@ The interactions between the view and the controller aren't really testable usin
 
 The highlighted orange box above shows where Unit Tests will be the most effective: models and networking code.
 
-You can easily [test networking code](http://ashfurrow.com/blog/your-first-objective-c-unit-test) to verify and codify your assumptions about it when you first write it. If your models are thin, then you might get away without testing them at all. However, those models are created and modified somewhere, so make sure to test that code (which again, shouldn't really be in the view or controller).
+You can easily [test networking code](https://ashfurrow.com/blog/your-first-objective-c-unit-test) to verify and codify your assumptions about it when you first write it. If your models are thin, then you might get away without testing them at all. However, those models are created and modified somewhere, so make sure to test that code (which again, shouldn't really be in the view or controller).
 
 So that's it: Unit Test models and networking code. Use UAT to test the rest, if it's worth your time. Maybe manual testing the views and controllers would fit better into your work flow, especially for smaller apps. Finally, document whatever Unit Testing and UAT does _not_ test, so you can be sure to manually test it before you ship.
 

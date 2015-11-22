@@ -3,7 +3,7 @@ title: "objc_msgSend Is Not Your Bottleneck"
 date: 2013-02-04 00:00
 ---
 
-I got a lot of feedback from dot-syntax-haters over my [Seven Deadly Sins](http://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c) post. They argued that, compared to direct instance variable access, dot syntax – and, implicitly, message-passing – are an order of magnitude slower.
+I got a lot of feedback from dot-syntax-haters over my [Seven Deadly Sins](https://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c) post. They argued that, compared to direct instance variable access, dot syntax – and, implicitly, message-passing – are an order of magnitude slower.
 
 Well, they're right. Not that it matters much.
 

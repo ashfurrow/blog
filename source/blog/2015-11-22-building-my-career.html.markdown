@@ -66,7 +66,7 @@ I mean, you _could_ argue that all that matters in software engineering is the q
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">In contrast to communities like Ruby that are hostile to terrible programmers while remaining inclusive toward terrible people</p>&mdash; GonzoHacker (@GonzoHacker) <a href="https://twitter.com/GonzoHacker/status/667787890445844481">November 20, 2015</a></blockquote> 
 
-[As I wrote recently](http://ashfurrow.com/blog/being-polite-in-open-source/), being inclusive in open source isn't just something you should do because you have a heart, it's something you should do if you want a successful community. The quality of a project's code can _come from_ the quality of its culture.
+[As I wrote recently](https://ashfurrow.com/blog/being-polite-in-open-source/), being inclusive in open source isn't just something you should do because you have a heart, it's something you should do if you want a successful community. The quality of a project's code can _come from_ the quality of its culture.
 
 So that's my career goal: make the world a better place by making the Internet a nicer place to contribute to open source. And I can do that at Artsy.
 

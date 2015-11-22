@@ -51,7 +51,7 @@ Nice iPad App, Twitter! Innovative accordion-style navigation stack! And look! T
 
  ![](/img/import/blog/2012/01/how-to-design-ios-apps/95F2C6064EC6481DAF6303862EE38C32.png)
 
-Facebook's new iPhone app is [pretty shitty](http://ashfurrow.com/2012/01/new-facebook-iphone-app/), but they did introduce a really neat top-level navigation system: the key window appears to slide to the right to reveal a navigation menu underneath it. Cool!
+Facebook's new iPhone app is [pretty shitty](https://ashfurrow.com/2012/01/new-facebook-iphone-app/), but they did introduce a really neat top-level navigation system: the key window appears to slide to the right to reveal a navigation menu underneath it. Cool!
 
 Wherever possible, avoid using transparent .png's to achieve some effect. The system can hardware accelerate your app's graphics a lot easier if they're using a CAGradientLayer and not some UIImageView instance.
 

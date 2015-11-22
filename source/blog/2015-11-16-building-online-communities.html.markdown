@@ -41,7 +41,7 @@ CocoaPods' message is really that while the [Cocoa Core Competencies](https://de
 
 The other day, I was reading over my site, looking for things to spruce it up, and I ended up making a [change](https://github.com/ashfurrow/blog/commit/05f4c8af7a3037fe7d555e67a6a3d8e3593ae04e#diff-4fd6f0e1381366f10be0d96003f6fdabL100) on my portfolio. I still had [my original thoughts on community participation](https://github.com/ashfurrow/blog/pull/39), which were good but unrefined.
 
-I knew then that community participation was important, but I've since reflected on what that actually means. I've now [articulated my definition of _good_ community participation](http://ashfurrow.com/blog/minswan-for-ios/) and have worked to adhere to its principles.
+I knew then that community participation was important, but I've since reflected on what that actually means. I've now [articulated my definition of _good_ community participation](https://ashfurrow.com/blog/minswan-for-ios/) and have worked to adhere to its principles.
  
 To a large degree, I think this has been a natural progression of my existing ideas and background. I already believed in [open source by default](http://code.dblock.org/2015/02/09/becoming-open-source-by-default.html) but now I've taken time to reflect on [why its important to me](https://www.artsy.net/article/remy-ferber-open-sourcing-company-culture-at-artsy).
 

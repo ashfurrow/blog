@@ -18,7 +18,7 @@ There are two options. First, you can create a protocol that has all of your mod
 
 Not _terrible_, but it's messy just for the sake of getting managed object mocks to work. I don't like having two code paths for testing and the actual runtime – it defeats the purpose of unit testing in the first place.
 
-The other option is to create an entire Core Data stack just for testing, and reset it frequently. This is the approach I took on a [recent project](http://ashfurrow.com/blog/c-41) and I quite like the results.
+The other option is to create an entire Core Data stack just for testing, and reset it frequently. This is the approach I took on a [recent project](https://ashfurrow.com/blog/c-41) and I quite like the results.
 
 ```
 static ASHRecipe *recipe;

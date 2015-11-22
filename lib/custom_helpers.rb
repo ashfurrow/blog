@@ -110,7 +110,7 @@ module CustomHelpers
   end
 
   def removeRelativeImageSources(body)
-    body.gsub('src="/img/', 'src="http://ashfurrow.com/img/') unless body.nil?
+    body.gsub('src="/img/', 'src="https://ashfurrow.com/img/') unless body.nil?
   end
 
   require 'haml'

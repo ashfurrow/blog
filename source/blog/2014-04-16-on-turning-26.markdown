@@ -21,13 +21,13 @@ Midsummer, I got into film photography with the help of a coworker, Brendan. He 
 
  ![](/img/import/blog/on-turning-26/76212DE36078433F822C2B5CD40058AB.jpg)
 
-Eventually, I [sold](http://ashfurrow.com/blog/doubling-down-on-mirrorless) my DSLR and went mirror less full-time, using a Fuji X100S as my digital camera. I shoot mostly film now, developing it myself. I expect in a year from now, I'll be planning on buying a used Leica M 240. We'll see.
+Eventually, I [sold](https://ashfurrow.com/blog/doubling-down-on-mirrorless) my DSLR and went mirror less full-time, using a Fuji X100S as my digital camera. I shoot mostly film now, developing it myself. I expect in a year from now, I'll be planning on buying a used Leica M 240. We'll see.
 
 In the Fall of 2013, I was sent down on Teehan+Lax business to assist one of their clients, [Prismatic](http://getprismatic.com) build their [iOS app](http://www.teehanlax.com/story/prismatic/). This turned out to be a critical moment for me, since I was introduced to [Aria Haghighi](https://twitter.com/aria42), their CTO. He and his team use a functional language called Clojure to build some seriously awesome stuff. They take that same approach to building iOS apps, too. I learnt a tonne. Most importantly, Aria gave me the advice that if you duplicate more than two lines of code, there is probably a better abstraction to assist what you're doing. It's advice that I took to heart.
 
 Let's see. I look around and see what I've done with my life in the past year, and I'm thinking it's pretty OK. Not fantastic, but OK.
 
-See what I did there? I actually have a lot to be proud of. Above is what's called negative self-talk and it's a big part of my past year here on this Earth. I have [depression](http://ashfurrow.com/blog/depression) and over the past year, my progress has more or less stagnated. I was making some great progress with medication. I told my parents about it –&nbsp;hell, I told the world about it. But then progress slowed. I started the negative self-talk again.
+See what I did there? I actually have a lot to be proud of. Above is what's called negative self-talk and it's a big part of my past year here on this Earth. I have [depression](https://ashfurrow.com/blog/depression) and over the past year, my progress has more or less stagnated. I was making some great progress with medication. I told my parents about it –&nbsp;hell, I told the world about it. But then progress slowed. I started the negative self-talk again.
 
 Depression is an inflammatory illness, and it became hella inflamed when last December, Ashley and I decided to move to Amsterdam. Our lives have been upside down and I've managed to hang in there, so I'd say that I'm doing pretty good. Great, even.
 
@@ -39,7 +39,7 @@ Things are looking up.
 
  ![](/img/import/blog/on-turning-26/61EE6DC47AAE47DA8A375269C494C6D1.jpg)
 
-What else happened ... oh, I had that kerfuffle with my [job](http://ashfurrow.com/blog/job-hunt). I ended up in Paris because our apartment was under renovation. Last week I started working with a group of really talented people at [Artsy](http://artsy.net). And that pretty much brings us up to where I am now.
+What else happened ... oh, I had that kerfuffle with my [job](https://ashfurrow.com/blog/job-hunt). I ended up in Paris because our apartment was under renovation. Last week I started working with a group of really talented people at [Artsy](http://artsy.net). And that pretty much brings us up to where I am now.
 
 At the moment, I feel a little lost. I'm still fighting depression, and things didn't turn out at all how I thought they would in Amsterdam. However, I love where I ended up, so how can I be angry or disappointed with the circumstances that lead me here?
 

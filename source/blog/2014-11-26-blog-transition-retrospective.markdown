@@ -3,7 +3,7 @@ title: Blog Transition Retrospective
 date: 2014-11-26 23:38:58 UTC
 ---
 
-About a month ago, I wrote about [transitioning from Squarespace to my own maintained site](http://ashfurrow.com/blog/fresh-coat-of-paint/). A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3. 
+About a month ago, I wrote about [transitioning from Squarespace to my own maintained site](https://ashfurrow.com/blog/fresh-coat-of-paint/). A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3. 
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ I used `irb` to experiment with [Nokogiri](http://www.nokogiri.org), an XML/HTML
 
 The next step is the one I looked forward to the least: DNS transition. At a high-level, I understand the purpose and use of DNS. At a low-level, I find it terrifying to use. Some entries need a `.` after the host name (for whatever reason). You don’t know if you’ve broken something for at least ten or twenty minutes. When you do break something, it takes another ten or twenty minutes again for fixes to propagate throughout the Internet. 
 
-I also have my email set up through my own domain name (I host on [FastMail](http://ashfurrow.com/blog/switching-from-gmail-to-fastmail/)), so I need specific DNS entries to authenticate my FastMail outgoing mail as legitimately being from the `ashfurrow.com` domain; I *really* don’t want to mess those up (because I don’t remember how to set them up lolol – make sure to document this kind of thing, people).
+I also have my email set up through my own domain name (I host on [FastMail](https://ashfurrow.com/blog/switching-from-gmail-to-fastmail/)), so I need specific DNS entries to authenticate my FastMail outgoing mail as legitimately being from the `ashfurrow.com` domain; I *really* don’t want to mess those up (because I don’t remember how to set them up lolol – make sure to document this kind of thing, people).
 
 The problem was that, using a non-Amazon DNS service like Hover with S3 hosting, my site *must* have a `www.` prefix, which is unacceptable to me. The problem is a combination of limitations on S3 and the DNS system: a DNS entry pointing to a “naked” domain (non-`www.` prefixed) *must* use an IP address and not another domain name. My S3 bucket doesn’t have a necessarily fixed IP address. The only solution is to use Amazon’s Route53 service – it keeps DNS entries up-to-date with S3 endpoints’ IP addresses any time they change. Super cool.  
 

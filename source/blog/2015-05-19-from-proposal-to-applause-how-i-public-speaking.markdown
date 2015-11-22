@@ -176,7 +176,7 @@ Whenever I give an answer, I try to reinforce the context that it comes from. I 
 
 ## Post-Talk
 
-After the talk is done, I post the slides to [speakerdeck](http://speakerdeck.com) and tweet a link. If I'm smart, I've uploaded them and composed the tweet just before the talk so that it's ready to go as soon as I'm done. I also update my (newly redesigned) [speaking page](http://ashfurrow.com/speaking/) to point to the slides. 
+After the talk is done, I post the slides to [speakerdeck](http://speakerdeck.com) and tweet a link. If I'm smart, I've uploaded them and composed the tweet just before the talk so that it's ready to go as soon as I'm done. I also update my (newly redesigned) [speaking page](https://ashfurrow.com/speaking/) to point to the slides. 
 
 Eventually, hopefully, a video recording of my talk is published. I watch it and take notes on ways to improve my talk next time. 
 

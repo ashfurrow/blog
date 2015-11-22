@@ -18,7 +18,7 @@ You need to learn Objective-C. Go mess with MonoTouch or whatever if you want. T
 
 By the way, you better love Model-View-Controller. I mean _love_ it like you want to marry it and raise a whole family of models, views, and controllers with it. If you don't like to use it, go back to C. We're _civilized_ here..
 
-The next step is to try to write an app. Anything you want - but remember this is only an _attempt_. You don't want your first attempt to become something you [have to maintain years later](http://ashfurrow.com/index.php/projects/coffeetimer/).
+The next step is to try to write an app. Anything you want - but remember this is only an _attempt_. You don't want your first attempt to become something you [have to maintain years later](https://ashfurrow.com/index.php/projects/coffeetimer/).
 
 ### UIKit
 

@@ -5,7 +5,7 @@ link_to: swift
 og_image: /img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/layout.png
 ---
 
-A few years ago, I wrote this post on [putting a collection view inside a table view cell](http://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell/). Collection views were still pretty new and there wasn't a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog's traffic. 
+A few years ago, I wrote this post on [putting a collection view inside a table view cell](https://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell/). Collection views were still pretty new and there wasn't a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog's traffic. 
 
 Since Swift was announced, I've been getting regular requests to rewrite my tutorial in Swift. Which brings us to today's topic. 
 
@@ -291,6 +291,6 @@ Of course, you can find all the code in a [demo project on GitHub](https://githu
 
 ---
 
-When I wrote the [original tutorial](http://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell/) in 2013, I did things differently. Since then, I've learned and gained experience, and the tools have changed. In Swift, we write fewer lines of code because code is more expressive. I've also chosen to use Storyboards to set up the user interface, something I avoided two and a half years ago.
+When I wrote the [original tutorial](https://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell/) in 2013, I did things differently. Since then, I've learned and gained experience, and the tools have changed. In Swift, we write fewer lines of code because code is more expressive. I've also chosen to use Storyboards to set up the user interface, something I avoided two and a half years ago.
 
 Not only has Swift made this tutorial more easy to code, it's made it more easy _to teach_. There's so much less boilerplate I need to explain in order to accomplish our goal. As much as I love to learn new things in Swift, teaching others in Swift is just as satisfying. 
