@@ -5,7 +5,7 @@ background_image: /img/blog/blog-infrastructure/background.png
 background_image_source: https://twitter.com/CloudyConway/status/640181721326059520
 ---
 
-My blog's current incarnation's birthday is approaching – it's been nearly a year since I [put a fresh coat of paint](http://ashfurrow.com/blog/fresh-coat-of-paint/) on an otherwise boring-looking site. In order to design and build it, I had to [master some basics of web development](http://ashfurrow.com/blog/blog-transition-retrospective/). After its launch, I've not stopped learning and improving it.
+My blog's current incarnation's birthday is approaching – it's been nearly a year since I [put a fresh coat of paint](https://ashfurrow.com/blog/fresh-coat-of-paint/) on an otherwise boring-looking site. In order to design and build it, I had to [master some basics of web development](https://ashfurrow.com/blog/blog-transition-retrospective/). After its launch, I've not stopped learning and improving it.
 
 At times, I've gone a bit overboard, but I've been able to justify the time and energy because it's been educational. My blog has been a good side project to learn new things on. It's something I care about, but updates to it are almost certainly never urgent. It's a low-risk thing I'm motivated to work on.
 

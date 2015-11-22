@@ -23,7 +23,7 @@ namespace :deploy do
 
     # Invalidate the CDN.
     cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
-    ['http://ashfurrow.com', 'https://ashfurrow.com'].each do |base_url|
+    ['http://feed.ashfurrow.com', 'https://feed.ashfurrow.com', 'http://ashfurrow.com', 'https://ashfurrow.com'].each do |base_url|
       ['feed.xml', 'feed.rss.xml'].each do |feed|
         feed_url = "#{base_url}/#{feed}"
         puts "Invalidating #{feed_url} ... "

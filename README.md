@@ -3,7 +3,7 @@
 My Blog
 =======
 
-My [blog](http://ashfurrow.com).
+My [blog](https://ashfurrow.com/).
 
 Setup
 -----
@@ -22,7 +22,7 @@ License
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
-This [work](http://purl.org/dc/dcmitype/Text) by [Ash Furrow](http://ashfurrow.com/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+This [work](http://purl.org/dc/dcmitype/Text) by [Ash Furrow](https://ashfurrow.com/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 Code I've written is [licensed](/LICENSE) under MIT. Other components such as [Bootstrap](http://getbootstrap.com) or the [original blog theme](http://startbootstrap.com/template-overviews/clean-blog/) have the own licenses.
 
@@ -59,9 +59,9 @@ I'd like to highly the following contributors.
 
 Photo | Photographer
 --- | ---
-Main banner on [Portfio](http://ashfurrow.com/portfolio). | [Andrey Tochilin](https://twitter.com/Tochilin)
-"Software" banner on [Portfolio](http://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
-Blogging image on [Portfolio](http://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
+Main banner on [Portfio](https://ashfurrow.com/portfolio). | [Andrey Tochilin](https://twitter.com/Tochilin)
+"Software" banner on [Portfolio](https://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
+Blogging image on [Portfolio](https://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
 Several blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744))
 
 Server Setup

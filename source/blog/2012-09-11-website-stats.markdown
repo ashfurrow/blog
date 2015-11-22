@@ -13,6 +13,6 @@ This isn't the astronomical increase it appears to be, since Google analytics do
 
 Still! It's nice to know on my worst day _now_, I'm getting more viewers than on my best day of the previous year. Onwards and upwards!
 
-If you ever have suggestions for improvements or articles you'd like me to write, please [get in touch](http://ashfurrow.com/about/).
+If you ever have suggestions for improvements or articles you'd like me to write, please [get in touch](https://ashfurrow.com/about/).
 
 <!-- more -->

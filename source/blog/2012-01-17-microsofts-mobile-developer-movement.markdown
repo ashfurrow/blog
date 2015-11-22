@@ -9,7 +9,7 @@ I received an email from Microsoft this afternoon ( [online version](http://view
 
  ![](/img/import/blog/2012/01/microsofts-mobile-developer-movement/17BEE8D7B0A543259045DE4FE10EB8E2.gif)
 
-Microsoft is offering [rewards](http://www.developermovement.com/rewards-general/?wt.mc_id=can_dpe-DeveloperMovement-en_em_RewardsGeneral)&nbsp;for publishing "quality" apps. As I [covered previously](http://ashfurrow.com/2011/12/overview-of-metro-apps/), they're trying to temp existing .Net developers to write mobile apps by making sure that developing these apps is as easy as possible. That's a totally laudable goal! However, they're also trying to bribe developers into making apps for them, and&nbsp;frankly I'm not interested.
+Microsoft is offering [rewards](http://www.developermovement.com/rewards-general/?wt.mc_id=can_dpe-DeveloperMovement-en_em_RewardsGeneral)&nbsp;for publishing "quality" apps. As I [covered previously](https://ashfurrow.com/2011/12/overview-of-metro-apps/), they're trying to temp existing .Net developers to write mobile apps by making sure that developing these apps is as easy as possible. That's a totally laudable goal! However, they're also trying to bribe developers into making apps for them, and&nbsp;frankly I'm not interested.
 
 Publish an app? Get a set of Beats headphones! _Two_ apps? Free Xbox! Three apps? You've hit the jackpot with publicity across Microsoft's Canadian Developer Blogs!
 

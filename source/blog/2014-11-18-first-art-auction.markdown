@@ -10,7 +10,7 @@ Last night I experienced my [first ever art auction](https://artsy.net/feature/i
 
 ![Orta, dB, and I](/img/blog/first-art-auction/ici-1.gif)
 
-Orta, dB, and I got a chance to talk shop about Artsy – the company’s goals and strategies for achieving them. Being a remote worker, I miss out on a lot of hallway conversations. I even got to talk to Orta a bit about the art world, something I’m reading more about, and how my directive to [do good in the world](http://ashfurrow.com/blog/job-hunt/) fits in with helping people buy art. It’s something that I’m still reading up on, thinking about, and discussing with my colleagues – I hope to have some coherent thoughts to put in a blog post soon. 
+Orta, dB, and I got a chance to talk shop about Artsy – the company’s goals and strategies for achieving them. Being a remote worker, I miss out on a lot of hallway conversations. I even got to talk to Orta a bit about the art world, something I’m reading more about, and how my directive to [do good in the world](https://ashfurrow.com/blog/job-hunt/) fits in with helping people buy art. It’s something that I’m still reading up on, thinking about, and discussing with my colleagues – I hope to have some coherent thoughts to put in a blog post soon. 
 
 It was also great to work with some of my colleagues on the auctions team who I normally don’t get an opportunity to interact with. Everything went well and the auction kiosks’ software worked flawlessly.
 

@@ -3,7 +3,7 @@ title: "Depression Sucks"
 date: 2014-04-24 00:00
 ---
 
-So yeah. I [blogged](http://ashfurrow.com/blog/amsterdam-update) earlier this week about a lot of things, including how I was tapering off my medication.
+So yeah. I [blogged](https://ashfurrow.com/blog/amsterdam-update) earlier this week about a lot of things, including how I was tapering off my medication.
 
 Mmhmm.
 
