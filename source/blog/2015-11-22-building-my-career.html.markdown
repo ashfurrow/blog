@@ -19,7 +19,7 @@ BEGIN_NARROW
 
 END_NARROW
 
-Back in the summer, I talked with [dB](https://twitter.com/dblockdotorg) about what I'd like to do next and I heard form him what he'd like to see from me. I'm really excited about what's coming next! And scared! I'm supposed to be scared, right?
+Back in the summer, I talked with [dB](https://twitter.com/dblockdotorg) about what I'd like to do next and I heard from him what he'd like to see from me. I'm really excited about what's coming next! And scared! I'm supposed to be scared, right?
 
 Backtracking a bit, you might have noticed a shift about a year ago in my writing: I got less angry. _A lot_ less angry. The anger was, to some degree, a symptom of my [depression](https://twitter.com/girlziplocked/status/664824688435027968), and finding a good psychiatrist last October probably helped a lot. But I also realized that by being angry, I was pushing away those around me with my toxic attitude.
 
