@@ -363,6 +363,8 @@ extension FoodConsumer {
 
 And then remove the `Cat` extension. The complete new code looks like the following. 
 
+BEGIN_WIDE
+
 ```swift
 protocol FoodConsumer {
     var calorieCount: Double { get set }
@@ -415,5 +417,7 @@ var dave = Cat()
 dave = dave.eat(catFood, grams: 30)
 dave = dave.eat(wetFood, grams: 20)
 ```
+
+END_WIDE
 
 Very cool! We no longer need to force cast the return value of `dave.eat()` to be `Cat` because of the `eat` function's use of `Self` as a return type. Brilliant!
