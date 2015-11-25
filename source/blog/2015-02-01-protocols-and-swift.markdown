@@ -347,13 +347,16 @@ Swift and Objective-C are interoperable, but are still fundamentally different l
 
 ### Update
 
-Since Swift 2, it's bee possible to provide protocol extensions that solve this problem even more elegantly. Even a naïve improvement would be to provide an extension on `FoodConsumer`.
+Since Swift 2, it's bee possible to provide protocol extensions that solve this problem even more elegantly. Even a naïve improvement would be to provide an extension on `FoodConsumer`. In order to do this, we need to be a little smarter about how we define the `Food` protocol.
 
 ```swift
+protocol Food {
+    func beConsumedBy<T: FoodConsumer>(consumer: T, grams: Double) -> T
+}
+
 extension FoodConsumer {
     func eat(food: Food, grams: Double) -> Self {
-        food.beConsumedBy(self, grams: grams)
-        return self
+        return food.beConsumedBy(self, grams: grams)
     }
 }
 ```
@@ -367,13 +370,12 @@ protocol FoodConsumer {
 }
 
 protocol Food {
-    func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer
+    func beConsumedBy<T: FoodConsumer>(consumer: T, grams: Double) -> T
 }
 
 extension FoodConsumer {
     func eat(food: Food, grams: Double) -> Self {
-        food.beConsumedBy(self, grams: grams)
-        return self
+        return food.beConsumedBy(self, grams: grams)
     }
 }
 
@@ -386,7 +388,7 @@ struct Cat: FoodConsumer {
 struct Kibble: Food {
     let caloriesPerGram: Double = 40
 
-    func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer {
+    func beConsumedBy<T: FoodConsumer>(consumer: T, grams: Double) -> T {
         var newConsumer = consumer
         newConsumer.calorieCount += grams * caloriesPerGram
         return newConsumer
@@ -397,7 +399,7 @@ struct FancyFeast: Food {
     let caloriesPerGram: Double = 80
     let milliLitresWaterPerGram: Double = 0.2
 
-    func beConsumedBy(consumer: FoodConsumer, grams: Double) -> FoodConsumer {
+    func beConsumedBy<T: FoodConsumer>(consumer: T, grams: Double) -> T {
         var newConsumer = consumer
         newConsumer.calorieCount += grams * caloriesPerGram
         newConsumer.hydrationLevel += grams * milliLitresWaterPerGram
