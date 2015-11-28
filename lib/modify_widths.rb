@@ -24,7 +24,7 @@ module ModifyWidths
         if (path.to_s.index "blog_post") != nil
           replace_with_size body, "WIDE", 'col-lg-10 col-lg-offset-1 col-md-12'
           replace_with_size body, "EXTRA_WIDE", 'col-lg-12 col-md-12'
-          replace_with_size body, "NARROW", 'col-lg-6 col-lg-offset-3 col-md-12'
+          replace_with_size body, "NARROW", 'col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3'
         end
         
         body
