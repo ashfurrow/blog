@@ -183,7 +183,16 @@ iframe.twitter-tweet {
 
 blockquote {
   padding: 0px 30px;
-  line-height: 30px
+  margin: 40px 0px;
+  font-style: none;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0px 45px;
+    
+    p {
+      font-size: 24px;
+    }
+  }
 }
 
 blockquote > p:first-child {
