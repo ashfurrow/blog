@@ -1,4 +1,10 @@
 upcoming_talks:
+- name: Something about FRP I'm secure
+  conference: SINFO23
+  url: http://sinfo.org/
+  location: Lisbon, Portugal
+  dates: February 2016
+  image: sinfo.png
 
 past_talks:
 - name: Emerging Best Practices in Swift
