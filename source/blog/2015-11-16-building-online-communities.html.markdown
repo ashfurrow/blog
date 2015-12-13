@@ -51,7 +51,7 @@ One thing in particular that's had a large impact is Justin Searls' talk [_The S
 
 BEGIN_WIDE
 
-<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="///www.youtube.com/embed/e_-qV8waPVM" frameborder="0" allowfullscreen></iframe></div>
+YOUTUBE e_-qV8waPVM
 
 END_WIDE
 

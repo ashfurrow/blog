@@ -5,7 +5,7 @@ date: 2013-04-06 00:00
 
 My [Indiegogo campaign](http://www.indiegogo.com/projects/your-first-ios-app/x/2700170) to raise money for my next book has reached its goal and I couldn't be happier.
 
-<iframe src="http://www.indiegogo.com/project/360741/widget/2700170" width="224px" height="486px" frameborder="0" scrolling="no" class="embed-responsive-item"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe src="http://www.indiegogo.com/project/360741/widget/2700170" frameborder="0" scrolling="no" class="embed-responsive-item"></iframe></div>
 
 I've got a couple of thoughts that are worth sharing. First, a lot of people asked why Indiegogo and not Kickstarter. The answer is pretty simple: Kickstarter doesn't let you fundraise from Canada. I didn't mention this in the Indiegogo writeup because I wanted them to hopefully feature me on their front page (to date, they have not).
 

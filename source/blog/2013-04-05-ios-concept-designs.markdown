@@ -5,7 +5,7 @@ date: 2013-04-05 00:00
 
 Here is yet another iOS 7 concept video. I want to talk about it a little bit, so give it a watch (mute your speakers first).
 
-<iframe data-image-dimensions="640x360" allowfullscreen="" src="http://www.youtube.com/embed/JdW4qNeFkBk?feature=oembed&amp;wmode=opaque&amp;enablejsapi=1" width="640" data-embed="true" frameborder="0" height="360" class="embed-responsive-item"></iframe>
+YOUTUBE JdW4qNeFkBk
 
 Here's the thing: iOS doesn't need a lot of what this designer is showing off. Quick access to bluetooth settings and airplane mode? No one needs _quick access_ to airplane mode. Widgets? Please. Double-tapping home screen icons is a terribad idea.
 

@@ -1,6 +1,7 @@
 require 'lib/custom_helpers'
 require 'lib/add_links_to_navigation.rb'
 require 'lib/modify_widths.rb'
+require 'lib/embed.rb'
 require 'ansi/code'
 
 ###
@@ -38,6 +39,7 @@ helpers CustomHelpers
 activate :directory_indexes
 activate :add_links_to_navigation
 activate :modify_widths
+activate :embed
 
 page "/feed.xml", layout: false
 page "/feed.rss.xml", layout: false

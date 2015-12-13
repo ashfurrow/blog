@@ -5,7 +5,7 @@ date: 2013-04-09 00:00
 
 Today my coworkers in the [Teehan+Lax Labs](http://www.teehanlax.com/labs/) group launched [Google Street View Hyperlapse](http://www.teehanlax.com/labs/hyperlapse/) that you should totally check out.
 
-<iframe data-image-dimensions="1280x720" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/63653873?wmode=opaque&amp;api=1" width="1280" data-embed="true" webkitallowfullscreen="" frameborder="0" height="720" class="embed-responsive-item"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="1280x720" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/63653873?wmode=opaque&amp;api=1" width="1280" data-embed="true" webkitallowfullscreen="" frameborder="0" height="720" class="embed-responsive-item"></iframe></div>
 
 Imagine programmatically stitching together hours of Google Street View imagery to create moving time-lapse videos. Amazing.
 

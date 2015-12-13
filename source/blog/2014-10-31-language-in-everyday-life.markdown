@@ -13,7 +13,7 @@ Earlier today, I saw this video on [twitter](https://twitter.com/dwiskus/status/
 > 
 > This video does a great job of explaining why using psychological terminology as metaphors may be hurting those around you.
 
-<div class="embed-responsive embed-responsive-16by9"><iframe src="//www.youtube.com/embed/8pK5FuptsSQ" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe></div>
+YOUTUBE 8pK5FuptsSQ
 
 Pretty straightforward. There are terms out there that are offensive to people who identify as members of groups that those terms describe. The terms are offensive primarily because they connote negativity beyond the meaning of the word. 
 

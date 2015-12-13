@@ -12,4 +12,4 @@ What's really key – fundamental to both my presentation and my belief about Sw
 
 So here's my presentation. My slides are [online](https://speakerdeck.com/ashfurrow/solving-problems-the-swift-way-swiftcrunch), too. Please send any feedback you've got!
 
-<iframe src="//www.youtube.com/embed/LtrzZb5Jw0g?wmode=opaque&amp;enablejsapi=1" height="480" width="854" scrolling="no" frameborder="0" allowfullscreen="" class="embed-responsive-item"></iframe>
+YOUTUBE LtrzZb5Jw0g
