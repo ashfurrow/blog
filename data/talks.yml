@@ -20,6 +20,7 @@ past_talks:
   dates: October 29–30, 2015
   image: swiftsummit.png
   slides: https://speakerdeck.com/ashfurrow/emerging-best-practices-in-swift-2
+  video: http://www.skilled.io/ashfurrow/discovering-best-practices-in-swift
 - name: Functional Reactive Awesome
   conference: Cornell CS5356
   url: https://github.com/Cornell-CS5356-Fall2015/cs5356/blob/master/course/08-mobile/lecture.md#guest-lecturer
