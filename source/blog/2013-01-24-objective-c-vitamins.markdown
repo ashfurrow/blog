@@ -5,7 +5,7 @@ date: 2013-01-24 00:00
 
 This week, I gave a talk at [Tech Talks TO](http://techtalksto.com/post/40607791416/ash-furrow-presenting-accessibility-and-unit-testing) discussing the "vitamins" that the Objective-C community needs to grow up to be big and strong. Er, I mean to become a stable and mature platform.
 
-<div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="640x360" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/58066095?wmode=opaque&amp;api=1" width="640" data-embed="true" webkitallowfullscreen="" frameborder="0" height="360" class="embed-responsive-item"></iframe></div>
+<div class="embed-responsive embed-responsive-16by9"><iframe mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/58066095?wmode=opaque&amp;api=1" data-embed="true" webkitallowfullscreen="" frameborder="0" class="embed-responsive-item"></iframe></div>
 
 Slides are also available as a [direct PDF download](http://static.ashfurrow.com/blog/vitamins.pdf) in case anyone is interested.
 

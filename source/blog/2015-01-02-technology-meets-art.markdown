@@ -13,7 +13,7 @@ The series was produced by the [George Eastman House](http://www.eastmanhouse.or
 
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" class="embed-responsive-item" src="//www.youtube.com/embed/videoseries?list=PL4F918844C147182A" frameborder="0" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/videoseries?list=PL4F918844C147182A" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Photography is a very broad term, and the videos highlight some of the more significant advances in photographic technology, which include:

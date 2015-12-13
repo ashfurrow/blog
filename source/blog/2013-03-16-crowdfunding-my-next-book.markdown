@@ -11,6 +11,6 @@ Sample code is going to be available on GitHub. Backers at the "Assistant Editor
 
 [Go back me](http://www.indiegogo.com/projects/your-first-ios-app/x/2700170)!
 
-<div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" src="http://www.indiegogo.com/project/360741/widget/2700170?wmode=opaque" data-embed="true" frameborder="0" class="embed-responsive-item"></iframe></div>
+<div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" src="//www.indiegogo.com/project/360741/widget/2700170?wmode=opaque" data-embed="true" frameborder="0" class="embed-responsive-item"></iframe></div>
 
 <!-- more -->

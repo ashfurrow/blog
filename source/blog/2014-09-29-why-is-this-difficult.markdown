@@ -9,7 +9,7 @@ Take a ride with me in the way-back machine. It was July in the year of 2014. Ti
 
 Now let’s return to the present. The bleak, terrible present. Another team of documentary filmmakers has another goal: deconstruct, raise awareness about, and help fix the gender gap in the software industry. No small feat! They too [ask for money](https://www.indiegogo.com/projects/code-debugging-the-gender-gap) from the internet, but sadly, they’re not enjoying the success of the first documentary. They’re asking for less money, even, and they’ve yet to break even halfway with less than two weeks to go. Oh, no!
 
-<div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="1280x720" mozallowfullscreen="" allowfullscreen="" src="//player.vimeo.com/video/104541710?wmode=opaque&amp;api=1" width="1280" data-embed="true" webkitallowfullscreen="" frameborder="0" title="CODE teaser" height="720" class="embed-responsive-item"></iframe></div>
+<div class="embed-responsive embed-responsive-16by9"><iframe mozallowfullscreen="" allowfullscreen="" src="//player.vimeo.com/video/104541710?wmode=opaque&amp;api=1" data-embed="true" webkitallowfullscreen="" frameborder="0" title="CODE teaser" class="embed-responsive-item"></iframe></div>
 
 How come? Why are we, as a software community, not giving them the start-up funds they need? Seriously, let’s examine this.
 

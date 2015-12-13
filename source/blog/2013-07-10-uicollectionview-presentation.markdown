@@ -14,5 +14,5 @@ I didn't go over the minutiae of how to use them because there is the documentat
 
 The files, including the demo code, are [available for download](http://static.ashfurrow.com/blog/uicollectionview.zip). License is MIT.
 
-<div class="embed-responsive embed-responsive-16by9"><iframe data-image-dimensions="640x360" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/70055414?wmode=opaque&amp;api=1" width="640" data-embed="true" webkitallowfullscreen="" frameborder="0" height="360" class="embed-responsive-item"></iframe></div>
+<div class="embed-responsive embed-responsive-16by9"><iframe mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/70055414?wmode=opaque&amp;api=1" data-embed="true" webkitallowfullscreen="" frameborder="0" class="embed-responsive-item"></iframe></div>
 <!-- more -->
