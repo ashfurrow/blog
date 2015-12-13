@@ -7,5 +7,5 @@ I've been fortunate enough to have been given an opportunity to write about iOS 
 
 There are also some great articles over at [Double Encore](http://www.doubleencore.com/2013/09/essential-ios-7-developers-guide/) you should check out.
 
-<iframe src="http://readlists.com/f6a95991/embed?wmode=opaque" width="450" data-embed="true" frameborder="0" height="600" class="embed-responsive-item"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe src="http://readlists.com/f6a95991/embed?wmode=opaque" data-embed="true" frameborder="0" class="embed-responsive-item"></iframe></div>
 <!-- more -->

@@ -13,7 +13,7 @@ People who follow this blog also know that I’m a fan of Leica. My favourite ca
 
 This year, the Leica turned 100. To celebrate, Leica has created numerous celebratory products and this advertisement.
 
-<iframe data-image-dimensions="1920x1080" mozallowfullscreen="" allowfullscreen="" src="//player.vimeo.com/video/107622839?wmode=opaque&amp;api=1" width="1920" data-embed="true" webkitallowfullscreen="" frameborder="0" title="100" height="1080" class="embed-responsive-item"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe mozallowfullscreen="" allowfullscreen="" src="//player.vimeo.com/video/107622839?wmode=opaque&amp;api=1" data-embed="true" webkitallowfullscreen="" frameborder="0" title="100" class="embed-responsive-item"></iframe></div>
 
 OK, fine, you watch it. And you probably think something like “jeez this company has its head up its own ass”, and you’re not wrong. But so does Apple, a company I suspect the majority of readers of this blog would defend. (I’m far from the first to make the Leica/Apple comparison.)
 

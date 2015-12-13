@@ -9,10 +9,7 @@ link_to: swift
 
 Before I left Europe, I gave a talk at [dotSwift](http://www.dotswift.io), one of the first conferences focusing exclusively on Apple's new programming language. Well, the videos have bene posted, and I'm very happy with the results.
 
-<div class="embed-responsive embed-responsive-16by9">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/oMn4sspgrkQ" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
-
-</div>
+YOUTUBE oMn4sspgrkQ
 
 I'm very proud of this talk; I had planned and organized it weeks in advance, and I practice over and over. There are still some flaws with my delivery, but I'm very excited to have this as a new yardstick by which to measure my other presentations. 
 

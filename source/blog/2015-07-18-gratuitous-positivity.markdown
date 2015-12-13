@@ -15,10 +15,7 @@ So if people do open source because it makes them happy, then the joy that they 
 
 [Justin Searls ](http://twitter.com/searls) has a great presentation called [The Social Coding Contract](https://www.youtube.com/watch?v=e_-qV8waPVM) that I'd highly recommend.
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/e_-qV8waPVM" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
-
-</div>
+YOUTUBE e_-qV8waPVM
 
 Turns out that the most important part of open source isn't the code, it's empathy. And it's difficult for empathy to thrive in a community that mainly communicates through text. 
 

@@ -7,5 +7,5 @@ Some coworkers and I spent a few weeks exploring how to represent calendar data 
 
 And we love it so much we made a video.
 
-<iframe data-image-dimensions="1280x720" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/69623560?wmode=opaque&amp;api=1" width="1280" data-embed="true" webkitallowfullscreen="" frameborder="0" height="720" class="embed-responsive-item"></iframe>
+<div class="embed-responsive embed-responsive-16by9"><iframe mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/69623560?wmode=opaque&amp;api=1" data-embed="true" webkitallowfullscreen="" frameborder="0" class="embed-responsive-item"></iframe></div>
 <!-- more -->

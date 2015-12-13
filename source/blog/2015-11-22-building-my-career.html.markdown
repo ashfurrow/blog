@@ -81,9 +81,7 @@ All while discussing it with team members and team leads. Getting an idea out in
 
 BEGIN_WIDE
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/hlLhtWLghGA" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
-</div>
+YOUTUBE hlLhtWLghGA
 
 END_WIDE
 

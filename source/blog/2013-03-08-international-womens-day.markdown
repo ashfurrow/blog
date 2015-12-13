@@ -7,13 +7,13 @@ Today is [International Women's Day](http://www.internationalwomensday.com), who
 
 However, not everyone agrees. Not everyone understands the implications of feminism – that it's not about disempowering men, but rather about empowering women.
 
-<iframe data-image-dimensions="640x360" allowfullscreen="" src="http://www.youtube.com/embed/X6p5AZp7r_Q?feature=oembed&amp;wmode=opaque&amp;enablejsapi=1" width="640" data-embed="true" frameborder="0" height="360" class="embed-responsive-item"></iframe>
+YOUTUBE X6p5AZp7r_Q
 
 In this video, Anita Sarkeesian shows how biased video game storytelling is in favour of the objectification of women. This isn't about taking away from male video game characters – it's about pointing out how video games, which are played during crucial developmental years of a child's life, reinforce the concept that women are objects to be acted upon.
 
 Men benefit from the feminist movement as well.
 
-<iframe data-image-dimensions="640x360" allowfullscreen="" src="http://www.youtube.com/embed/td1PbsV6B80?feature=oembed&amp;wmode=opaque&amp;enablejsapi=1" width="640" data-embed="true" frameborder="0" height="360" class="embed-responsive-item"></iframe>
+YOUTUBE td1PbsV6B80
 
 In this vide, Tony Porter describes his "man box" theory: a collection of stereotypes and expected behaviours _of men_. It really sucks to live outside this box. If the box weren't there – if feminism was successful and these expectations were lifted – it would make mens' lives easier, too.
 

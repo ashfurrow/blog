@@ -11,7 +11,7 @@ In Copenhagen, I gave a rendition of my [Solving Problems the Swift Way](https:/
 
  ![](/img/import/blog/copenhagenwarsaw-tour/13228BFEEAB14B77B9D6C2ACBEF52CA2.jpg)
 
-The following week, we went to Warsaw and I gave a talk on [ReactiveCocoa](https://www.youtube.com/watch?v=TlgUWYrQ0sc) at [Mobile Warsaw](http://mobile-warsaw.pl/). Really cool venue – sort of an outdoor cafe that got pretty chilly later in the evening. [Robb Böhnke](tweetbot:///user_profile/ceterum_censeo) was also presenting and gave an inspiring talk about iOS accessiblilty.
+The following week, we went to Warsaw and I gave a talk on [ReactiveCocoa](https://www.youtube.com/watch?v=TlgUWYrQ0sc) at [Mobile Warsaw](http://mobile-warsaw.pl/). Really cool venue – sort of an outdoor cafe that got pretty chilly later in the evening. [Robb Böhnke](https://twitter.com/ceterum_censeo) was also presenting and gave an inspiring talk about iOS accessiblilty.
 
  ![](/img/import/blog/copenhagenwarsaw-tour/DC7C1080615B4F91A3BAB9C194010BE2.jpg)
 

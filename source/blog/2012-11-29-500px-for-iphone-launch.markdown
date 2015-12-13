@@ -3,7 +3,7 @@ title: "500px for iPhone Launch"
 date: 2012-11-29 00:00
 ---
 
- ![](/img/import/blog/bd52zm3crnqbbtb0af0nd1jyr39pov/B2CEC540C0804C9185F26A00B96923F5.jpg)
+![](/img/import/blog/bd52zm3crnqbbtb0af0nd1jyr39pov/B2CEC540C0804C9185F26A00B96923F5.jpg)
 
 Yesterday, the iOS team at 500px revealed [500px for iPhone](http://500px.com/iPhone), and we couldn't be prouder of it.
 
@@ -15,7 +15,7 @@ Mark Shannon has a [terrific review of our app](http://mkshft.ca/blog/archives/a
 
 We also had the opportunity to do a Google Hangout and answer questions about the app. Everything from support questions, design considerations, implementation details, and future plans was discussed. It was great to get in front of our community and show off what we had worked on. I love it when users contact me directly, and for the first time, I was able to contact them.
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/ppMe_a_CDXg?fs=1&amp;feature=oembed&amp;wmode=opaque&amp;enablejsapi=1" frameborder="0" allowfullscreen="" class="embed-responsive-item"></iframe>
+YOUTUBE ppMe_a_CDXg
 
 I love working at a place where the best interests of our users are our best interests. We aren't trying to make our site appealing to advertisers; we don't have ads. We make an awesome product and people pay us for it. We make it better so more people will pay. It's awesome.
 

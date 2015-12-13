@@ -16,10 +16,7 @@ Well, Swift 2 has been in beta for a month now, and protocols are hot stuff.
 
 This brings up an important point that I've been yelling at you people for a year now: solving problems using Swift _is not_ the same as solving the same problems using Objective-C. 
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/LtrzZb5Jw0g" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
-
-</div>
+YOUTUBE LtrzZb5Jw0g
 
 If all you're doing in Swift is writing Objective-C with Swift syntax, stop and reflect on your choices. Swift _isn't_ Objective-C – and thank god. The community has been dutifully exploring new ways to solve familiar problems – it's an exciting time! 
 
