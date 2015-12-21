@@ -43,7 +43,7 @@ This isn't new, and it certainly shouldn't be news. Think about it: Trudeau has 
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I share the pride of our community as we welcomed refugees from Syria to Fredericton @fredairport <a href="https://twitter.com/hashtag/WelcomeRefugees?src=hash">#WelcomeRefugees</a> <a href="https://t.co/CQtUKDDtCQ">pic.twitter.com/CQtUKDDtCQ</a></p>&mdash; Matt DeCourcey (@MattDeCourcey) <a href="https://twitter.com/MattDeCourcey/status/678312666335678465">December 19, 2015</a></blockquote>
 
-Don't get me wrong – I really am ecstatic that Canada is welcoming refugees. And our society says that it's acceptable for Trudeau et al are using refugees to their advantage. Politicians use stunts like this all the time – instead of kissing babies, Trudeau is helping refugees' children into their new winter coats. 
+Don't get me wrong – I really am ecstatic that Canada is welcoming refugees. And our society says that it's acceptable that Trudeau et al are using refugees to their advantage. Politicians use stunts like this all the time – instead of kissing babies, Trudeau is helping refugees' children into their new winter coats. 
 
 There is a definite line between refugees being _used_ and refugees being _exploited_. The question is, then, where is that line?
 
