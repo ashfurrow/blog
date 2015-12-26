@@ -14,6 +14,23 @@ body {
   }
 }
 
+/* Sets up ligatures for fonts. See http://utility-opentype.kennethormandy.com for more info. */
+body {
+  /* Gracefully degrade to `font-feature-settings` to
+  * avoid disrupting the OpenType feature cascade
+  * when possible. */
+  @supports not (font-variant-ligatures: common-ligatures) {
+    font-feature-settings: "liga";
+  }
+
+  /* IE doesn’t support @supports; explicitly use
+  * the prefixed version. */
+  -ms-font-feature-settings: "liga";
+
+  /* Best case scenario, just use `font-variant-*`. */
+  font-variant-ligatures: common-ligatures;
+}
+
 // -- Typography
 
 p {
