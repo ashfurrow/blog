@@ -76,7 +76,12 @@ code, pre {
   }
 
   li.month {
-    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      padding-bottom: 45px;
+    }
   }
 
   li {
@@ -169,9 +174,9 @@ header {
 }
 
 /* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
-.intro-header {
+.blog-previews {
   @media (min-width: 768px) {
-    margin-bottom: 90px;
+    margin-top: 40px; // this 40 + the header's 50 margin = 90, the inter-item distance.
   }
 }
 
