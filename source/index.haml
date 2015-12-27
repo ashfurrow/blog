@@ -7,7 +7,7 @@ changefreq: daily
 = partial :header, locals: { title: data.site.name, subtitle: data.site.subtitle }
 
 .container
-  .row
+  .row.blog-previews
     - standard_width_div do
       - page_articles.each_with_index do |article, i|
         .post-preview

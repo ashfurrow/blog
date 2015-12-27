@@ -15,6 +15,29 @@ p.readmore {
       color: @brand-primary;
     }
   }
+
+  font-style: italic;
+}
+
+/* Special styling for post previews on main blog page. */
+.post-preview {
+  p {
+    // Instead of 30px 0.
+    margin: 20px 0;
+  }
+
+  h2 {
+    // Instead of bootstrap default.
+    margin: 0;
+  }
+}
+
+/* Space out article previews on main blog page. */
+.blog-previews {
+  hr {
+    margin: 45px 0px;
+    border-color: transparent;
+  }
 }
 
 /* Make code look nice. */
@@ -145,9 +168,10 @@ header {
   margin-top: 20px;
 }
 
+/* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
 .intro-header {
-  @media (max-width: 768px) {
-    margin-bottom: 0px;
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
   }
 }
 
