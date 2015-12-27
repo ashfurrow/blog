@@ -489,7 +489,7 @@ p {
 }
 
 p a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h1,

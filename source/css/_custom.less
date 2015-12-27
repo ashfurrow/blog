@@ -7,6 +7,17 @@
   top: -1px;
 }
 
+/* 'Read more' links on the main blog page. */
+p.readmore {
+  a {
+    color: @gray-dark;
+    &:hover {
+      color: @brand-primary;
+    }
+  }
+}
+
+/* Make code look nice. */
 code, pre {
   color: @brand-primary;
   background-color: @gray-light;
@@ -140,10 +151,6 @@ header {
   }
 }
 
-.container li a {
-  text-decoration: underline;
-}
-
 .container li {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -182,12 +189,14 @@ iframe.twitter-tweet {
 }
 
 blockquote {
-  padding: 0px 30px;
+  padding: 0px 15px;
+  padding-left: 30px;
   margin: 40px 0px;
   font-style: none;
 
   @media only screen and (min-width: 768px) {
-    padding: 0px 45px;
+    padding: 0px 30px;
+    padding-left: 45px;
     
     p {
       font-size: 24px;
@@ -298,7 +307,7 @@ blockquote > p:first-child {
     &:hover,
     &:focus {
       text-decoration: underline;
-      color: @gray-dark;
+      color: @brand-primary;
     }
   }
 }
