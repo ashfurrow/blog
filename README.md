@@ -55,7 +55,7 @@ Photo Credits
 
 All banner (full-width) images on the site are my own unless they link to an external source. I release my photos under the same [license](/LICENSE) as this blog; the licenses of others' work vary.
 
-I'd like to highly the following contributors.
+I'd like to thank the following contributors.
 
 Photo | Photographer
 --- | ---
