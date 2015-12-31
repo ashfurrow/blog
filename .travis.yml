@@ -15,6 +15,7 @@ env:
 before_install:
 - pip install --user s3cmd
 - s3cmd --version
+- echo $TRAVIS_COMMIT_RANGE
 script:
 - bundle exec rake build:test
 after_success:
