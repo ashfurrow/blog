@@ -22,8 +22,7 @@ module Embed
 
         # There are multiple rendering calls and we want to get the one that renders the blog_post template. 
         if (path.to_s.index "blog_post") != nil
-          embed = '<div class="embed-responsive embed-responsive-16by9"><iframe src="//www.youtube.com/embed/\1" frameborder="0" allowfullscreen></iframe></div>'
-          body.gsub!(/^<p>YOUTUBE ([^#\&\?<]+)<\/p>$/, embed)
+          body.embed_youtube!
         end
         
         body
@@ -36,4 +35,11 @@ end
 
 ::Middleman::Extensions.register(:embed) do
   ::Embed
+end
+
+class String
+  def embed_youtube!
+    embed = '<div class="embed-responsive embed-responsive-16by9"><iframe src="//www.youtube.com/embed/\1" frameborder="0" allowfullscreen></iframe></div>'
+    replace self.gsub(/<p>YOUTUBE ([^#\&\?<]+)<\/p>/, embed)
+  end
 end

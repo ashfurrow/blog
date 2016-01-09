@@ -109,8 +109,20 @@ module CustomHelpers
     description or data.site.description
   end
 
-  def removeRelativeImageSources(body)
-    body.gsub('src="/img/', 'src="https://ashfurrow.com/img/') unless body.nil?
+  # Takes raw HTML rendered from post and turns it into something consumable by feeds.
+  def prepare_feed_content (body)
+    # Expand any relative URLs
+    body.gsub!('src="/img/', 'src="https://ashfurrow.com/img/') unless body.nil?
+
+    # Embed any YouTube videos
+    require('lib/embed.rb')
+    body.embed_youtube!
+
+    # Remove width modifiers
+    require('lib/modify_widths.rb')
+    body.replace_width_modifiers_with! ''
+
+    body
   end
 
   require 'haml'
