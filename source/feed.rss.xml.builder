@@ -14,7 +14,7 @@ xml.rss :version => "2.0", "xmlns:atom" => "http://www.w3.org/2005/Atom" do
       xml.item do
         xml.title post.title
         xml.link URI.join(site_url, post.url)
-        xml.description removeRelativeImageSources(post.body)
+        xml.description prepare_feed_content(post.body)
         xml.pubDate Time.parse(post.date.to_time.to_s).rfc822()
         xml.guid URI.join(site_url, post.url)
       end
