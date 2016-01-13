@@ -66,4 +66,4 @@ At first, saying no might feel weird and uncomfortable, but with enough practice
 
 As an undergraduate, I struggled with saying no. I was stressed all the time, my grades suffered, I hated myself.
 
-After years of practice and thoughtfulness, the projects I agree to work on are meaningful, rewarding, and they never feel like obligations. Arguably, saying no is one of my most important professional skills.
+After years of practice and thoughtfulness, the projects I agree to work on are meaningful, rewarding, and they never feel like obligations. Arguably, saying no is one of my most valuable professional skills.
