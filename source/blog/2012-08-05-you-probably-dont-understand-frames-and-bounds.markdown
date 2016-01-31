@@ -1,5 +1,5 @@
 ---
-title: "You Probably Don't Understand frames and bounds"
+title: "I Totally Didn't Understand Frames and Bounds"
 date: 2012-08-05 00:00
 ---
 
