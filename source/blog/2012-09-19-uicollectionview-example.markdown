@@ -12,7 +12,7 @@ Xcode might introduce a new template for collection view apps, but in the mean t
 
 Create a new Xcode project using the "Master-Detail Application" template.
 
-Open the main Storyboard file. We're going to throw away the existing table view and replace it with a sexy new collection view. The easiest way to do that is to select the existing Master View Controller, shown below, and hit the delete key.
+Open the main Storyboard file. We're going to throw away the existing table view and replace it with a great new collection view. The easiest way to do that is to select the existing Master View Controller, shown below, and hit the delete key.
 
  ![](/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png)
 

@@ -43,7 +43,7 @@ In iOS 5, we can delineate exactly which view controller is responsible for whic
 
 ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/24979633EED54A5D9C25EFB6023C9EA6.png)
 
-Sexy! Notice that the parent view controller doesn't even need a reference to the child view controller's view; it can access it indirectly via `self.subviewcontroller.view`.
+Nice! Notice that the parent view controller doesn't even need a reference to the child view controller's view; it can access it indirectly via `self.subviewcontroller.view`.
 
 Now, there are some guidelines developers should abide by. These aren't enforced, necessarily, but following some established standards will make your life easier.
 
