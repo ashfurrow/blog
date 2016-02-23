@@ -5,14 +5,15 @@ upcoming_talks:
   location: Tokyo, Japan
   dates: March 2–4, 2016
   image: tryswift.png
-- name: Something about FRP I'm secure
+
+past_talks:
+- name: Scaling iOS Development with FRP
   conference: SINFO23
   url: http://sinfo.org/
   location: Lisbon, Portugal
-  dates: February 2016
+  dates: February 23, 2016
   image: sinfo.png
-
-past_talks:
+  slides: https://speakerdeck.com/ashfurrow/scaling-ios-development-with-frp
 - name: Emerging Best Practices in Swift
   conference: Swift Summit
   url: https://www.swiftsummit.com
