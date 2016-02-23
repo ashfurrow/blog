@@ -7,7 +7,7 @@ upcoming_talks:
   image: tryswift.png
 
 past_talks:
-- name: Scaling iOS Development with FRP
+- name: Scaling iOS Development Using FRP
   conference: SINFO23
   url: http://sinfo.org/
   location: Lisbon, Portugal
