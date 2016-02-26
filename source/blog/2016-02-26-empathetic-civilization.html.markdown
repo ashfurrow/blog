@@ -11,7 +11,7 @@ Well, [some science happened](http://qz.com/622749/teens-do-better-in-science-wh
 
 <!-- more -->
 
-So what's up? Well, [they](https://www.sciencedaily.com/releases/2016/02/160211141337.htm) divided some 10th-grade students into three groups, who read three different different descriptions of Curie, Einstein, and Faraday. The first group _only_ read about the scientists' accomplishments; the second group read about the scientists' personal struggles against sexism, classism, and Nazis; and the third group read about the scientists' _intellectual_ struggles of how difficult it was to accomplish their respective achievements. 
+So what's up? Well, [they](https://www.sciencedaily.com/releases/2016/02/160211141337.htm) divided some 10th-grade students into three groups, who read three different different descriptions of Curie, Einstein, and Faraday. The first group _only_ read about the scientists' accomplishments; the second group read about the scientists' personal struggles against sexism, classism, and Nazis; and the third group read about the scientists' _intellectual_ struggles of how difficult it was to accomplish their respective achievements. In other words, the second two groups were shown how similar the scientists were to themselves – they were shown to _empathize_ with the scientists.
 
 Then they measures the students' science grades.
 
@@ -29,7 +29,7 @@ Normalizing struggle helped students learn. But more than that, the students who
 
 Think about that: not only is this an effective means of improving academic performance, but it's _more_ effective the more it's needed. As far as bang-for-buck analysis of educational tools go, this is a no-brainer!
 
-But consider the last nugget: students who _only_ learned of the achievements of these scientists _got worse_. That's remarkable – it suggests that not only does normalizing struggle _help_ students, but failing to do so actually _harms_ students. The implications are striking: not only is empathetic this approach an effective way of helping students, but the educational status quo actually does more harm than good.
+But consider the last nugget: students who _only_ learned of the achievements of these scientists _got worse_. That's remarkable – it suggests that not only does normalizing struggle _help_ students, but failing to do so actually _harms_ students. The implications are striking: not only is this empathetic approach to education an effective way of helping students, but the educational status quo actually does more harm than good.
 
 ---
 
