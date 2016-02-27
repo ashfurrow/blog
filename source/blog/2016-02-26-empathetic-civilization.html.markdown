@@ -25,7 +25,7 @@ END_WIDE
 
 Wow. There's a lot to break down here, so let's do this!
 
-Normalizing struggle helped students learn. But more than that, the students who needed the mot help got the most out of this experience. 
+Normalizing struggle helped students learn. But more than that, the students who needed the most help got the most out of this experience.
 
 Think about that: not only is this an effective means of improving academic performance, but it's _more_ effective the more it's needed. As far as bang-for-buck analysis of educational tools go, this is a no-brainer!
 
