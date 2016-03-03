@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/ffi/ffi.git
+  revision: d94b923c1f574ff63743f0a3eefc917da03386b9
+  branch: elcapt
+  specs:
+    ffi (1.9.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -51,7 +58,6 @@ GEM
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     fastly (1.2.0)
-    ffi (1.9.10)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.33.0)
@@ -315,6 +321,7 @@ DEPENDENCIES
   ansi
   builder
   cloudflare
+  ffi!
   html-proofer
   less
   liquid
