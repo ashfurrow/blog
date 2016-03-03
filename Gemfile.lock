@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ffi/ffi.git
-  revision: d94b923c1f574ff63743f0a3eefc917da03386b9
+  revision: 250ed0d3ccc77c397fd46b65d94b6b502feb850f
   branch: elcapt
   specs:
     ffi (1.9.10)
