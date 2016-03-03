@@ -38,9 +38,9 @@
 / Favicon, site icons, etc
 %link{rel: 'image_src', href: data.site.dark_image}
 %meta{itemprop: 'image', content: data.site.dark_image}/
-%link{rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon'}
-%link{rel: 'apple-touch-icon', href: '/apple-touch-icon.png'}
-%link{rel: 'mask-icon', href: '/favicon.svg', color: '#398CCC'}
+%link{rel: 'shortcut icon', href: url_for('/favicon.ico'), type: 'image/x-icon'}
+%link{rel: 'apple-touch-icon', href: url_for('/apple-touch-icon.png')}
+%link{rel: 'mask-icon', href: url_for('/favicon.svg'), color: '#398CCC'}
 
 
 / Search enginer index
