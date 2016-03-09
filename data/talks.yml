@@ -1,12 +1,13 @@
 upcoming_talks:
-- name: TBA
+
+past_talks:
+- name: An Artsy Testing Tour
   conference: try! Swift
   url: http://www.tryswiftconf.com/en
   location: Tokyo, Japan
   dates: March 2–4, 2016
   image: tryswift.png
-
-past_talks:
+  slides: https://speakerdeck.com/ashfurrow/an-artsy-testing-tour
 - name: Scaling iOS Development Using FRP
   conference: SINFO23
   url: http://sinfo.org/
