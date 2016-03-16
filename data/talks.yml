@@ -52,6 +52,7 @@ past_talks:
   dates: October 1–2, 2015
   image: mobiconf.png
   slides: https://speakerdeck.com/ashfurrow/evolution-of-asynchronous-programming-on-ios
+  video: https://youtube.com/watch?v=FZHBk1XMvEA
 - name: Emerging Best Practices in Swift
   conference: iOSoho
   url: http://www.meetup.com/iOSoho/events/224796318/
