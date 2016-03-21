@@ -102,7 +102,6 @@
     <RoutingRule>
         <Condition>
             <KeyPrefixEquals>blog?format=RSS</KeyPrefixEquals>
-            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
         </Condition>
         <Redirect>
             <HostName>feed.ashfurrow.com</HostName>
@@ -130,7 +129,6 @@
     <RoutingRule>
         <Condition>
             <KeyPrefixEquals>blog?format=rss</KeyPrefixEquals>
-            <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
         </Condition>
         <Redirect>
             <HostName>feed.ashfurrow.com</HostName>
