@@ -8,7 +8,7 @@ A few weeks ago, I was talking with my friend [Robert](http://twitter.com/ratkin
 
 <!-- more -->
 
-The issue revolves around [initializers in Swift](https://ashfurrow.com/blog/swift-initializers). If a property is not optional, it _must_ be set _before_ the super's initializer is called. However, in order to refer to `self`, the super initializer must be called _first_. It's a chicken-and-the-egg problem. I need to set my properties before calling `super.init()`, but in order to set my properties, I need to refer to `self`, which I can't do until I've already called `super.init()`.
+The issue revolves around [initializers in Swift](/blog/swift-initializers). If a property is not optional, it _must_ be set _before_ the super's initializer is called. However, in order to refer to `self`, the super initializer must be called _first_. It's a chicken-and-the-egg problem. I need to set my properties before calling `super.init()`, but in order to set my properties, I need to refer to `self`, which I can't do until I've already called `super.init()`.
 
 Hmmm.
 

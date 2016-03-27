@@ -17,7 +17,7 @@ Here are some practices that I've noticed have made me uncomfortable, but in pra
 
 Our first example is declarative programming. I've noticed that some experienced developers tend to shy away from mutating instance state and instead rely on immutable objects.
 
-Declarative programming abstracts _how_ computers achieve goals and instead focuses on _what_ needs to be done, instead. It's the difference between using a [for loop and an enumerate function](https://ashfurrow.com/blog/stop-writing-for-loops).
+Declarative programming abstracts _how_ computers achieve goals and instead focuses on _what_ needs to be done, instead. It's the difference between using a [for loop and an enumerate function](/blog/stop-writing-for-loops).
 
 Objective-C is an abomination (I love it anyway). It's a message-oriented language masquerading as an object-oriented language build on top of C, an imperative language. Ugh. Needless to say, abstracting common things in Objective-C can get hairy, but it's getter easier with things like blocks and object literals.
 
@@ -61,7 +61,7 @@ It's also hard because Xcode's autocomplete will not help you with methods like 
 
 # Unit Testing
 
-Apple made a big push for unit testing in Xcode 5, even if it seems half-hearted (still no mocking framework? Hello, [Kiwi](https://github.com/allending/Kiwi)). I've [talked before](https://ashfurrow.com/blog/objective-c-vitamins) about about the benefits of unit testing.
+Apple made a big push for unit testing in Xcode 5, even if it seems half-hearted (still no mocking framework? Hello, [Kiwi](https://github.com/allending/Kiwi)). I've [talked before](/blog/objective-c-vitamins) about about the benefits of unit testing.
 
 Unit testing is about testing the smallest unit of composable code. In order to unit test effectively, you need to write smaller chunks of code that are easier to test than larger ones.
 

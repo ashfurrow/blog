@@ -8,13 +8,15 @@ I read [this blog post](http://www.bignerdranch.com/blog/ios-developers-need-to-
 
 There are many things that I disagree with about this article, but there is one in particular that I took offence to.
 
-<!-- more -->> Objective-C is easier to learn than Swift.
+<!-- more -->
+
+> Objective-C is easier to learn than Swift.
 
 Really? Come on now. That's just silly.
 
 > Objective-C is a really simple little extension to C.
 
-I'm disappointed by this statement, because it is simply not true. Objective-C is a [massive pain in the ass to learn](https://ashfurrow.com/blog/2012/03/why-objective-c-is-hard). It's a mix of language (with "weird" syntax), runtime (all that arcane knowledge), and frameworks (massive ones). Swift obviates the difficult with the first two, which is awesome.
+I'm disappointed by this statement, because it is simply not true. Objective-C is a [massive pain in the ass to learn](/blog/why-objective-c-is-hard-to-learn). It's a mix of language (with "weird" syntax), runtime (all that arcane knowledge), and frameworks (massive ones). Swift obviates the difficult with the first two, which is awesome.
 
 Let's consider a simple example.
 

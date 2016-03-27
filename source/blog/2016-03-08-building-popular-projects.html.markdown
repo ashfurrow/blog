@@ -65,7 +65,7 @@ Amazing, that is an awesome pledge, count me in.
 
 The necessary implication of having a code of conduct is actually enforcing it. This is a serious responsibility, so take it seriously. But here's a tip: the easiest way to _avoid_ having to enforce a CoC is to prevent situations where the CoC would be need to be enforced. Seems kind of obvious, eh? Here are some steps:
 
-- Through example, set a high bar for behaviour. Use [gratuitous positivity](https://ashfurrow.com/blog/gratuitous-positivity/).
+- Through example, set a high bar for behaviour. Use [gratuitous positivity](/blog/gratuitous-positivity/).
 - On contentious issues, offer to moderate a Google Hangout where people can speak face-to-face (and are more likely to be empathetic).
 - Intervene in discussions where a heated argument is brewing, and remind everyone of the CoC.
 
@@ -73,7 +73,7 @@ There are probably resources useful for OSS maintainers on enforcing a CoC, but 
 
 ### A Positive Attitude
 
-I've written about [positivity in open source before](https://ashfurrow.com/blog/minswan-for-ios/) and [gratuitous positivity](https://ashfurrow.com/blog/gratuitous-positivity/): a positive attitude is a great way to attract contributors and then keep them contributing. Remember, your library need a community of contributors to help your make your idea popular.
+I've written about [positivity in open source before](/blog/minswan-for-ios/) and [gratuitous positivity](/blog/gratuitous-positivity/): a positive attitude is a great way to attract contributors and then keep them contributing. Remember, your library need a community of contributors to help your make your idea popular.
 
 ### Contributor Guidelines
 

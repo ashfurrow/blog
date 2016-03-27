@@ -1,5 +1,5 @@
 ---
-title: "New Job"
+title: "Got a New Job"
 date: 2011-08-26 00:00
 ---
 

@@ -4,7 +4,7 @@ date: 2013-01-03 00:00
 link_to: swift
 ---
 
-I've gotten a lot of feedback from my [Seven Deadly Sins of Modern Objective-C](https://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c) article. Thank you so much for getting in touch! I'm going to be addressing the main feedback in a series of follow-up articles.
+I've gotten a lot of feedback from my [Seven Deadly Sins of Modern Objective-C](/blog/seven-deadly-sins-of-modern-objective-c) article. Thank you so much for getting in touch! I'm going to be addressing the main feedback in a series of follow-up articles.
 
 In this article, we're going to take a look at some virtuous habits that can make you a more productive developer. These are tips that I've compiled from my experience, and there are many, many more out there (as I'll talk about in number seven). So let's get started.
 
@@ -100,6 +100,6 @@ Practice alone isn't enough: you have to be purposeful in your effort to improve
 
 That sounds silly, I know. What I mean is that if you want to become really, really good, then you have to imbue every moment of your practice with that same attitude.
 
-If you enjoy Objective-C, then you should be following other developers on twitter and reading [Objective-C blogs](https://ashfurrow.com/blog/blog-resources). Surround yourself with opportunities to learn and you'll become a better developer. I know I have.
+If you enjoy Objective-C, then you should be following other developers on twitter and reading [Objective-C blogs](/blog/list-of-cocoa-programming-blogs). Surround yourself with opportunities to learn and you'll become a better developer. I know I have.
 
 <!-- more -->

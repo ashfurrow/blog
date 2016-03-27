@@ -3,7 +3,7 @@ title: "Designing"
 date: 2013-02-04 00:00
 ---
 
-When I wrote the [whisky app](https://ashfurrow.com/blog/whiskey-list) I wrote about last week, I mentioned that [the icon](http://dribbble.com/shots/922178-Whiskey-List) was took the longest time. In reality, it was the hardest thing for me to do. However, it's a lot better than any of my previous attempts at icon design (or even design in general).
+When I wrote the [whisky app](/blog/whiskey-list) I wrote about last week, I mentioned that [the icon](http://dribbble.com/shots/922178-Whiskey-List) was took the longest time. In reality, it was the hardest thing for me to do. However, it's a lot better than any of my previous attempts at icon design (or even design in general).
 
  ![](/img/import/blog/designing/13E2577B36E54C039448B5C0F643A39F.png)
 

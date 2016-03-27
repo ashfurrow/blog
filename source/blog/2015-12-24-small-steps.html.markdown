@@ -19,6 +19,6 @@ But we went, and it was great! It was so cool to put _some_ energy into going to
 
 Think of depression like [nuclear ignition](https://en.wikipedia.org/wiki/National_Ignition_Facility). Fusion takes _a lot_ of energy, and usually you end up spending more energy than you harness. But the other night was different.
 
-Enjoying a night out to the movies sounds like a small step, [and it is](https://ashfurrow.com/blog/depression-graphed/), but it's also a necessary one if I want to get back to feeling like myself full-time. Watching _The Force Awakens_ inspired a new hope for my recovery.
+Enjoying a night out to the movies sounds like a small step, [and it is](/blog/depression-graphed/), but it's also a necessary one if I want to get back to feeling like myself full-time. Watching _The Force Awakens_ inspired a new hope for my recovery.
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

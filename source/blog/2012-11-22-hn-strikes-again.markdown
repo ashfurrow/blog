@@ -11,7 +11,7 @@ OK, fellas, calm down. Let's take a moment to enumerate some facts about privile
 
 1. We're all on computers _right now_ so obviously we're already insanely privileged among the world's population. 
 2. It's not unreasonable to bring up point 1 because we often forget how lucky we all are. However...
-3. Just because someone is privileged [does not mean that their problems aren't real](https://ashfurrow.com/blog/the-distress-of-the-privileged). No one's problems should be dismissed as "first world" because they're still real problems _to them_.
+3. Just because someone is privileged [does not mean that their problems aren't real](/blog/the-distress-of-the-privileged). No one's problems should be dismissed as "first world" because they're still real problems _to them_.
 
 This isn't the first time I've seen people try to bring up the topic of privilege on Hacker News. It's a tricky subject in general, and I understand why failing to contextualizing a discussion about it would lead to the kind of heated debate we see here.
 

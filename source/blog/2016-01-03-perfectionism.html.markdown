@@ -5,7 +5,7 @@ background_image: /img/blog/perfectionism/background.png
 background_image_source: https://twitter.com/CloudyConway/status/682821645908766720
 ---
 
-I always thought that perfectionism is a compulsion to do things perfectly, and I guess that's true. And you know how the phrase "Haha my greatest weakness is that I'm a perfectionist" is a [common thing people say in job interviews](https://ashfurrow.com/blog/the-dark-side-of-perfectionism/)? That's pretty messed up, eh?
+I always thought that perfectionism is a compulsion to do things perfectly, and I guess that's true. And you know how the phrase "Haha my greatest weakness is that I'm a perfectionist" is a [common thing people say in job interviews](/blog/the-dark-side-of-perfectionism/)? That's pretty messed up, eh?
 
 <!-- more -->
 

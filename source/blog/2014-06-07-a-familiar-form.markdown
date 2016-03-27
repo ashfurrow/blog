@@ -5,7 +5,7 @@ date: 2014-06-07 00:00
 
 Last week, Apple introduced a brand new programming language for iOS and OS X development, called Swift. During WWDC, I attended every Swift presentation and spent time in the labs chatting with the engineers responsible for this new language. While I've had less than a week's exposure to this new language, I have some thoughts.
 
-Generally, [I'm impressed](https://ashfurrow.com/blog/initial-thoughts-on-swift). Swift is the kind of radical departure from the existing Objective-C language that I was [hoping for](https://ashfurrow.com/blog/we-need-to-replace-objective-c). Sure, it's a radical departure, but is it radical enough?
+Generally, [I'm impressed](/blog/initial-thoughts-on-swift). Swift is the kind of radical departure from the existing Objective-C language that I was [hoping for](/blog/we-need-to-replace-objective-c). Sure, it's a radical departure, but is it radical enough?
 
 Swift gets rid of a lot of cruft of Objective-C syntax while keeping some of its key features, like named parameters, around. But it also keeps around things that aren't _necessarily_ a good thing. Let's take a look at a basic example.
 
