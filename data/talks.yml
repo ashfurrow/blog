@@ -1,10 +1,4 @@
 upcoming_talks:
-- name: iOS Checkup
-  conference: MCE
-  url: http://2016.mceconf.com
-  location: Warsaw, Poland
-  dates: April 21–23, 2016
-  image: mce.png
 
 past_talks:
 - name: An Artsy Testing Tour

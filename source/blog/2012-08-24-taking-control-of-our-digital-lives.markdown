@@ -7,7 +7,7 @@ Within a week's span of one another, my work backup drive and my home iMac's SSD
 
 Luckily, I use an external drive at home to store my photos and I use Time Machine to keep my main drive (only 120GB) backed up. All my data is safe (\*grammar nerds: fuck you).
 
-In addition to all that, my [Wordpress install](/moved-away-from-wordpress) got hacked.
+In addition to all that, my [Wordpress install](https://ashfurrow.com/moved-away-from-wordpress) got hacked.
 
 These issues have lead to some questions I began asking myself. The data on these drives matter to me. My blog matters to me. So why am I taking such risks?
 

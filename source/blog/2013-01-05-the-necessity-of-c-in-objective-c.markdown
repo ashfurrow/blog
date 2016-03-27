@@ -3,7 +3,7 @@ title: "The Necessity of C in Objective-C"
 date: 2013-01-05 00:00
 ---
 
-When I wrote my [Seven Deadly Sins of Modern Objective-C](/blog/seven-deadly-sins-of-modern-objective-c) article last week, I got a lot of feedback about the "Unnecessarily-C APIs" point and I wanted to take a closer look at what I meant.
+When I wrote my [Seven Deadly Sins of Modern Objective-C](https://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c) article last week, I got a lot of feedback about the "Unnecessarily-C APIs" point and I wanted to take a closer look at what I meant.
 
 First, some reader feedback. John Randolph wrote me to explain why the Keychain API on iOS is C-based: low-level systems apps on OS X still need to access the keychain but may not link against Foundation (that is, they're entirely C-based apps). When Apple ported over Keychain from OS X, they didn't bother writing an Objective-C wrapper for their C-based Keychain API.
 

@@ -13,7 +13,7 @@ But what is good?
 
 _Why_ do children draw? Because it's fun. It has value to them not because of the finished drawing, but because the act of drawing itself – the act of self-expression – is a fulfilling process. As adults, why do we ignore this value? Why do we only value art based on its appearance or market price? On what a drawing or painting or photograph _looks_ like? 
 
-I've [realized](/blog/art-for-your-own-sake/) that I don't really care about my _photographs_, that I actually only care about my _photography_. The photos I make are valuable _only_ in their relation to the process of creating them. 
+I've [realized](https://ashfurrow.com/blog/art-for-your-own-sake/) that I don't really care about my _photographs_, that I actually only care about my _photography_. The photos I make are valuable _only_ in their relation to the process of creating them. 
 
 This gets to the heart of my problem: we place emphasis primarily on the _skill_ involved in making art. This has been true throughout art history, like when [pointillism](http://arthistory.net/artstyles/pointillism/pointillism1.html) was first shunned by mainstream art critics because it didn't accurately reflect the way the world _actually looked_. 
 

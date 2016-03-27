@@ -3,7 +3,7 @@ title: "Animating Views with CADisplayLink"
 date: 2012-08-30 00:00
 ---
 
-After [yesterday's post](/animating-views-with-nstimer-and-dispatchafter) on animating views with `NSTimer` and `dispatch_after`, [Robin Senior](http://twitter.com/senior) responded on twitter with the following question:
+After [yesterday's post](https://ashfurrow.com/animating-views-with-nstimer-and-dispatchafter) on animating views with `NSTimer` and `dispatch_after`, [Robin Senior](http://twitter.com/senior) responded on twitter with the following question:
 
 <blockquote class="twitter-tweet" data-in-reply-to="240936328655691776">
 	<p><a href="https://twitter.com/ashfurrow"><s>@</s><b>ashfurrow</b></a> why don't you use CADisplayLink for animating views?</p>— Robin Senior (@senior) <a href="https://twitter.com/senior/status/240990149893312512" data-datetime="2012-08-30T01:51:43+00:00">August 30, 2012</a>

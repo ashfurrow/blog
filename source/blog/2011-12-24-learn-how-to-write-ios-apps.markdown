@@ -3,7 +3,7 @@ title: "Learn How to Write iOS Apps"
 date: 2011-12-24 00:00
 ---
 
-My friend contacted me on twitter and asked for advice on different sources on how to learn iOS apps. Since this paragraph will already exceed 140 characters, I'm posting here, instead. (Obviously, reading this blog regularly is a great way to [pick up some iOS development tricks](/blog/how-to-write-ios-apps/))
+My friend contacted me on twitter and asked for advice on different sources on how to learn iOS apps. Since this paragraph will already exceed 140 characters, I'm posting here, instead. (Obviously, reading this blog regularly is a great way to [pick up some iOS development tricks](https://ashfurrow.com/2011/09/how-to-write-ios-apps/))
 
 To get started, some people buy a book or find some good online tutorials. I tried both approaches, and the online tutorials were definitely better. I found [Stanford's class on iPhone Development](http://www.stanford.edu/class/cs193p/cgi-bin/drupal/), available [for free on iTunesU](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=473757255), to be a great place to start. However, watching lectures is time-consuming and, frankly, boring. If I was going to learn now, here is the approach I'd take.
 

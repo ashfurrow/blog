@@ -25,6 +25,6 @@ What I find fascinating is that the author has had to fine-tune their algorithms
 
 [![Beautiful work](/img/blog/cloudy-conway/second.png)](https://twitter.com/CloudyConway/status/622258687592239105)
 
-I've seen [other computer-generated artworks](/blog/google-street-view-photography/), but they've mostly been curated by a human. Cloudy Conway excites me because it is autonomous; it creates beauty from organized chaos through a computer simulation. 
+I've seen [other computer-generated artworks](https://ashfurrow.com/blog/google-street-view-photography/), but they've mostly been curated by a human. Cloudy Conway excites me because it is autonomous; it creates beauty from organized chaos through a computer simulation. 
 
 You can read more about the bot's development [on the authors blog](http://www.vexorian.com/2015/05/cloudy-conway.html). For a regular infusion of beautiful images into your timeline, [follow @CloudyConway](https://twitter.com/CloudyConway/). 

@@ -3,7 +3,7 @@ title: "So I bought a Camera"
 date: 2012-04-26 00:00
 ---
 
-After blogging [quite a while ago](/blog/effort-to-improved-skill-ratio-and-expertise/) about how much I _do not_ want to get into photography, I find myself a few months into picking up this new and rewarding hobby. 
+After blogging [quite a while ago](https://ashfurrow.com/blog/effort-to-improved-skill-ratio-and-expertise/) about how much I _do not_ want to get into photography, I find myself a few months into picking up this new and rewarding hobby. 
 
 
 

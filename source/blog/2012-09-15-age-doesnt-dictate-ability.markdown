@@ -11,6 +11,6 @@ Jared Erondu's story about having to _hide_ his age because he feared people wou
 
 I know people who are more responsible at the age of 16 than most adults would ever be. And I know people who are 50 who act like children. So why has our society institutionalized the concept of judging someone based on their age?
 
-I'm very interested in this topic, especially given the ramifications of [the Internet](/blog/democratize-all-of-the-things). I would highly recommend the book _[The Case Against Adolescence](http://www.amazon.com/gp/product/188495670X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=188495670X&linkCode=as2&tag=ashfur-20)_ if you'd like to learn more about the history of adolescence and the motivations behind those who institutionalized the concept.
+I'm very interested in this topic, especially given the ramifications of [the Internet](https://ashfurrow.com/2011/11/democratize-all-of-the-things). I would highly recommend the book _[The Case Against Adolescence](http://www.amazon.com/gp/product/188495670X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=188495670X&linkCode=as2&tag=ashfur-20)_ if you'd like to learn more about the history of adolescence and the motivations behind those who institutionalized the concept.
 
 <!-- more -->

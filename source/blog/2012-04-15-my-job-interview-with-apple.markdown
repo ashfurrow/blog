@@ -17,7 +17,7 @@ I didn't know if I wanted to work for Apple, or if I was willing to pick my life
 
 ## The Process
 
-The recruiter contacted me after reading my article on why [Objective-C is Hard to Learn](/blog/why-objective-c-is-hard-to-learn/), which had cruised to the top of Hacker News that week. Two telephone screenings and a few weeks later, I had a flight booked to visit with Apple in Cupertino.
+The recruiter contacted me after reading my article on why [Objective-C is Hard to Learn](https://ashfurrow.com/2012/03/why-objective-c-is-hard/), which had cruised to the top of Hacker News that week. Two telephone screenings and a few weeks later, I had a flight booked to visit with Apple in Cupertino.
 
 I was asked all sorts of questions. Things that tested my hard skills, soft skills, all sorts of things. I was asked questions you only learn the answers to after years of experience. I was asked questions you only know the answer to if you paid close attention in algorithm design class at university. I was asked questions I knew the answer to off the top of my head and questions I couldn't answer at all, even questions they knew I couldn't possibly answer, but they wanted to see how I approached them.
 

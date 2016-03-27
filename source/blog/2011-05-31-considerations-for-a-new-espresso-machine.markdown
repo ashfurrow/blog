@@ -3,7 +3,7 @@ title: "Considerations for a New Espresso Machine"
 date: 2011-05-31 00:00
 ---
 
-I'm considering my options for buying a [new espresso machine](/blog/new-espresso-machine/) when I move. There are two main factors weighing in on my decision: heating type and group head. I'm settled on a semi-auto machine; that is, unless my friend Nick convinces me to join the La Pavoni club. There are several different ways an espresso machine can heat the water before it pushes it through the portafilter to make espresso or to steam milk.
+I'm considering my options for buying a [new espresso machine](https://ashfurrow.com/index.php/2011/05/new-espresso-machine/) when I move. There are two main factors weighing in on my decision: heating type and group head. I'm settled on a semi-auto machine; that is, unless my friend Nick convinces me to join the La Pavoni club. There are several different ways an espresso machine can heat the water before it pushes it through the portafilter to make espresso or to steam milk.
 
 ### Thermoblock
 
