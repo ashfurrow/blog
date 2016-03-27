@@ -7,7 +7,7 @@ Eric Portelance [tweeted this morning](https://twitter.com/eportelance/status/24
 
 > A leather texture, for example, definitely creates a certain environment and state of mind when you’re using it. I don’t think there is right and wrong, or good and bad here.
 
-Exactly. Like anything in design, there is [tasteful use of skeuomorphism](https://ashfurrow.com/skeu-it) and then there is [going too far](http://skeu.it). Too much of anything can be bad.
+Exactly. Like anything in design, there is [tasteful use of skeuomorphism](/skeu-it) and then there is [going too far](http://skeu.it). Too much of anything can be bad.
 
 Apple has arguably optimized for the first-time user experience of their apps, but their use of skeuomorphism has a purpose. I think many nerds who are upset about skeuomorphism aren't taking that purpose into account.
 
