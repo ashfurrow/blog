@@ -7,7 +7,7 @@ date: 2011-05-29 00:00
 
 When I got married, my wife and I asked our good friend [Lauren Vail](http://twitter.com/#!/laurenevail) to say a few words about her friendship with us. She took this opportunity to call me a coffee snob. Well-played.
 
-I was on [CoffeeGeek](http://coffeegeek.com/) looking for reviews on different espresso machines to be considered in my [upcoming purchase](https://ashfurrow.com/index.php/2011/05/new-espresso-machine/) (a financially dangerous activity) when [this article](http://coffeegeek.com/opinions/markprince/04-29-2011) was on the front page.
+I was on [CoffeeGeek](http://coffeegeek.com/) looking for reviews on different espresso machines to be considered in my [upcoming purchase](/blog/new-espresso-machine/) (a financially dangerous activity) when [this article](http://coffeegeek.com/opinions/markprince/04-29-2011) was on the front page.
 
 It describes, essentially, a massive amount of effort that a company has put into new portafilter baskets. These are the baskets within which coffee grinders are placed to have high-pressure water run through them to produce espresso.
 

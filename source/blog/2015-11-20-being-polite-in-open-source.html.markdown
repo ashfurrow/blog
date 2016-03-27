@@ -51,6 +51,6 @@ The next time you're commenting on a bug, consider that bugs are mostly neutral 
 
 I found an [amazing Hacker News comment](https://news.ycombinator.com/item?id=10598037) describing ways to be a delightful OSS contributor; a lot of their advice surrounds the problem areas outlined by the study.
 
-We can be [nicer open source contributors](https://ashfurrow.com/blog/minswan-for-ios/), and we can make nicer open source communities.
+We can be [nicer open source contributors](/blog/minswan-for-ios/), and we can make nicer open source communities.
 
 Not _just_ for the sake of being nice, but _also_ because it's correlated with quick issue turnaround and project health. It's a win-win.

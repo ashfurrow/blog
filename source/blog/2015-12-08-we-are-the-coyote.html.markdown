@@ -23,6 +23,6 @@ Think about it: consider the coyote as the part of yourself that is always chasi
 
 "The coyote is always more humiliated than harmed by his failures."
 
-We all struggle to be happy, but [pursuit of happiness itself will always be fruitless](https://ashfurrow.com/blog/you-never-arrive/). The coyote _could_ stop chasing the Road Runner, but it's all he's ever known. But unlike the coyote, _we do_ have a choice. We can stop, and we can realize that [most of our pain is self-inflicted](http://www.huffingtonpost.com/susan-bernstein/dont-shoot-the-second-arr_b_5102701.html). We have a choice the coyote does not, and it would be a shame not to take the wiser path – to stop _chasing_ happiness and maybe you'll actually catch it.
+We all struggle to be happy, but [pursuit of happiness itself will always be fruitless](/blog/you-never-arrive/). The coyote _could_ stop chasing the Road Runner, but it's all he's ever known. But unlike the coyote, _we do_ have a choice. We can stop, and we can realize that [most of our pain is self-inflicted](http://www.huffingtonpost.com/susan-bernstein/dont-shoot-the-second-arr_b_5102701.html). We have a choice the coyote does not, and it would be a shame not to take the wiser path – to stop _chasing_ happiness and maybe you'll actually catch it.
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

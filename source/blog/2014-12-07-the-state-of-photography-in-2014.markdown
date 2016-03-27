@@ -54,9 +54,9 @@ At this point, I had everything: my dream kit. But the progression of my skills 
 
 Once again tricked into thinking I could buy my way into happiness, I bought a Fuji X100S (mainly because it was more portable). Shortly after that, I moved to Amsterdam and experienced an explosion of photographic output. I literally didn’t leave the apartment without a camera for the first month; and for that first month, the *only* camera I had was my X100S. My Canon 5D gathered dust while I took great photos with my Fuji *because I actually brought it with me*. All of my DSLRs and all of my lenses stayed home, even during our trip to Paris, because it was way more convenient to take the smaller rangefinder than the DSLR. 
 
-I [sold the 5D](https://ashfurrow.com/blog/doubling-down-on-mirrorless/) and all of its lenses. I didn’t need them – I was creating better photos with an inferior camera. And I didn’t care. 
+I [sold the 5D](/blog/doubling-down-on-mirrorless/) and all of its lenses. I didn’t need them – I was creating better photos with an inferior camera. And I didn’t care. 
 
-During my recent [trip to Iceland](https://ashfurrow.com/blog/workcation-2014/), my only digital camera suddenly stopped working. So I used my iPhone and I got the shot. 
+During my recent [trip to Iceland](/blog/workcation-2014/), my only digital camera suddenly stopped working. So I used my iPhone and I got the shot. 
 
 <div class="pixels-photo">
   <p><img src="https://ppcdn.500px.org/91786937/90828c38f2fcf0a37787c6080d06d6ca786a4539/4.jpg" alt="Photograph Old Riverbed by Ash Furrow on 500px"></p>
