@@ -17,23 +17,23 @@ Here are some practices that I've noticed have made me uncomfortable, but in pra
 
 Our first example is declarative programming. I've noticed that some experienced developers tend to shy away from mutating instance state and instead rely on immutable objects.
 
-Declarative programming abstracts _how_ computers achieve goals and instead focuses on _what_ needs to be done, instead. It's the difference between using a [for loop and an enumerate function](/blog/stop-writing-for-loops).
+Declarative programming abstracts _how_ computers achieve goals and instead focuses on _what_ needs to be done, instead. It's the difference between using a [for loop and an enumerate function](https://ashfurrow.com/blog/stop-writing-for-loops).
 
 Objective-C is an abomination (I love it anyway). It's a message-oriented language masquerading as an object-oriented language build on top of C, an imperative language. Ugh. Needless to say, abstracting common things in Objective-C can get hairy, but it's getter easier with things like blocks and object literals.
 
 With the extreme of declarative programming, you would declare the entire behaviour of your application at startup and just let it run until completion.
 
-## Why I Started Using Declarative Programming
+## Why I Started Using It
 
 Declarative programming removes mutable state, leading to fewer runtime errors and behavioural problems. It also made my code easier to test, either with functional, integration, or unit tests (more on unit testing later). It freed me from the minutiae of how computers work, leaving that tedium up to the compiler. For most applications, the performance hit is trivial and not worthy of consideration.
 
-## Why It Was Hard to Declarative Programming
+## Why It Was Hard to Adopt
 
 It was hard to get into declarative programming because it stripped away everything I was used to and left me with tools I was unfamiliar with. My coding efficiency plummeted in the short term. It seemed like prematurely optimizing my code. It was uncomfortable.
 
 However, I'd still recommend [trying it out](http://labs.teehanlax.com/project/upcoming).
 
-## Declarative Programming Resources
+## Resources
 
 I've [written](http://www.teehanlax.com/blog/reactivecocoa/) [about](http://www.teehanlax.com/blog/getting-started-with-reactivecocoa/) ReactiveCocoa, or [RAC](https://github.com/ReactiveCocoa/ReactiveCocoa), before.
 
@@ -47,13 +47,13 @@ I've seen a lot of smart people favour the dot-syntax expression for more than j
 
 In the middle of the spectrum, which I like, is the use of dot-syntax for [idempotent values](https://github.com/github/objective-c-conventions#expressions). That means things like `UIApplication.sharedApplication` or `array.count` but not `array.removeLastObject`.
 
-## Why I Started Using Dot-Syntax
+## Why I Started Using It
 
 It's a lot harder to argue that you should use dot-syntax in all idempotent cases. The best case I've heard for it is that it doesn't require knowledge of the header file declaration of the property/method. It's just always dot-syntax.
 
 The trend is leaning toward using dot-syntax more and more for properties. Newcomers to iOS and OS X hardly even know about the dot-syntax war. In my opinion, this doesn't matter as much as long as you're relentlessly consistent.
 
-## Why It Was Hard to Dot-Syntax
+## Why It Was Hard to Adopt
 
 Mostly, it was hard to adopt because I had a habit of calling methods the classical way. Like declarative programming, it's uncomfortable.
 
@@ -61,15 +61,15 @@ It's also hard because Xcode's autocomplete will not help you with methods like 
 
 # Unit Testing
 
-Apple made a big push for unit testing in Xcode 5, even if it seems half-hearted (still no mocking framework? Hello, [Kiwi](https://github.com/allending/Kiwi)). I've [talked before](/blog/objective-c-vitamins) about about the benefits of unit testing.
+Apple made a big push for unit testing in Xcode 5, even if it seems half-hearted (still no mocking framework? Hello, [Kiwi](https://github.com/allending/Kiwi)). I've [talked before](https://ashfurrow.com/blog/objective-c-vitamins) about about the benefits of unit testing.
 
 Unit testing is about testing the smallest unit of composable code. In order to unit test effectively, you need to write smaller chunks of code that are easier to test than larger ones.
 
-## Why I Started Unit Testing
+## Why I Started Using It
 
 The value of unit testing is two-fold. First, I've got automated tests that improved my confidence when making changes to an existing codebase. Second, I have my code in smaller chunks, hopefully with more abstractions, since that's what is easier to write unit tests against. Leaner, cleaner code is definitely a benefit I don't think anyone would argue with.
 
-## Why It Was Hard to Adopt Unit Testing
+## Why It Was Hard to Adopt
 
 As mentioned earlier, Objective-C is a quagmire of object- and message-orientation with a dash of imperative C thrown in. It's harder to test imperative code compared to object-oriented code.
 
@@ -81,19 +81,19 @@ Autolayout has been around in iOS since iOS 6, and even longer on OS X. It's a w
 
 It promised to be a magical land where programming layouts was easy and springs and struts (auto resizing masks) were a thing of the past. The reality was that it introduced problems of its own, and Autolayout's interface was non-intuitive for many developers.
 
-## Why I Want to Start Using Autolayout
+## Why I Want to Start Using It
 
 Full disclosure: I'm no Autolayout ninja. I've only been using it in a few personal projects, in part because how hard it is to get started. However, I see it's benefits.
 
 Declaring your interface is preferable to managing it yourself because you have less code to maintain. Autolayout lets you express interface layouts that were just not possible using springs and struts.
 
-## Why It Will Be Hard to Adopt Autolayout
+## Why It Will Be Hard to Adopt
 
 Springs and struts are familiar, while Autolayout is new and uncomfortable. Doing simple things like vertically centring a view within its superview is difficult in Autolayout because it abstracts so much away.
 
 It's just never seems like a good time to switch over the Autolayout. But then, it never will. I've just got to bite the bullet.
 
-## Dot-Syntax Resources
+## Resources
 
 Check out Justin Williams' [Achieving Zen with Autolayout](http://carpeaqua.com/autolayout/) page.
 

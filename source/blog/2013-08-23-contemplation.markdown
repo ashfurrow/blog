@@ -3,7 +3,7 @@ title: "Contemplation"
 date: 2013-08-23 00:00
 ---
 
-About [a month ago](/blog/film), I blogged about starting to use film in my photography. I thought I'd reflect a little on how that's been going for me.
+About [a month ago](https://ashfurrow.com/blog/film), I blogged about starting to use film in my photography. I thought I'd reflect a little on how that's been going for me.
 
 Things have been really taking off for me on film. I've had a bunch of rolls of film developed and I like the results. Not the photos, but the results. Not all the pictures turned out, but that's a little bit of the point. I bought a film camera to slow down and think more about what I'm doing. I can definitely see the difference in shots where I stopped to think about everything first.
 

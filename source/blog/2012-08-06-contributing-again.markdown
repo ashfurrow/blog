@@ -13,7 +13,7 @@ In reality, my schemes almost never make me money; I've learnt that the easiest 
 
 But that doesn't mean I can't contribute.
 
-I [hate OAuth](/blog/the-oauth-chronicles/) with the fiery and eternal hatred of a thousand burning stars, and I know other Objective-C developers do, too. I've also heard from coworkers that developers are looking for a drop-in API library to the 500px API service.
+I [hate OAuth](https://ashfurrow.com/2011/12/oauth_sucks/) with the fiery and eternal hatred of a thousand burning stars, and I know other Objective-C developers do, too. I've also heard from coworkers that developers are looking for a drop-in API library to the 500px API service.
 
 So I [wrote one](https://github.com/AshFurrow/500px-iOS-api/).
 

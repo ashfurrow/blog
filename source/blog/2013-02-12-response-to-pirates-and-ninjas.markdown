@@ -3,7 +3,7 @@ title: "Response to Pirates and Ninjas"
 date: 2013-02-12 00:00
 ---
 
-Igor Elland has a [good response](http://igor.elland.me/post/42939258554/pirate-versus-ninja) to my [Pirates and Ninjas](/blog/pirates-and-ninjas) article. The argument is that not only is a pirate life not a fit for me, but it's not a fit for anyone.
+Igor Elland has a [good response](http://igor.elland.me/post/42939258554/pirate-versus-ninja) to my [Pirates and Ninjas](https://ashfurrow.com/blog/pirates-and-ninjas) article. The argument is that not only is a pirate life not a fit for me, but it's not a fit for anyone.
 
 > Sure we have the billion dollar valuation here and there, but that’s the lottery mentality taking over your good sense. Don’t let it.
 
