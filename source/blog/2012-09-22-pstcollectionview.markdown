@@ -3,7 +3,7 @@ title: "PSTCollectionView"
 date: 2012-09-22 00:00
 ---
 
-Interesting [project over on GitHub](https://github.com/steipete/PSTCollectionView) that aims to provide a drop-in, API-compatible replacement for [`UICollectionView`](/uicollectionview-example), one piece of the new hawtness in iOS 6. It's still a work in progress and they're looking for help.
+Interesting [project over on GitHub](https://github.com/steipete/PSTCollectionView) that aims to provide a drop-in, API-compatible replacement for [`UICollectionView`](/blog/uicollectionview-example), one piece of the new hawtness in iOS 6. It's still a work in progress and they're looking for help.
 
 iOS 6 is very interesting, since it drops support for the first generation iPad while maintaining support for the older iPhone 3GS, which can't even support all of iOS 6's features. There is nothing about `UICollectionView` that would prevent its use on iOS 5 except for the fact that it "requires" iOS 6.
 
