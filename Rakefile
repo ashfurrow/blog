@@ -122,7 +122,6 @@ task :test do
   HTML::Proofer.new('build/', {
     ext: '.html',
     check_html: true,
-    check_favicon: true,
     disable_external: true,
     alt_ignore: [/.*/],
     parallel: { in_processes: 3},

@@ -53,7 +53,7 @@ BEGIN_WIDE
 
 END_WIDE
 
-I don't really know where to go from here. I want to make 2016 a year where we all stop being so needlessly hard on ourselves. But I don't know how. Two and a half years ago, when [I wrote about my depression](https://ashfurrow.com/blog/depression/) for the first time, I said:
+I don't really know where to go from here. I want to make 2016 a year where we all stop being so needlessly hard on ourselves. But I don't know how. Two and a half years ago, when [I wrote about my depression](/blog/depression/) for the first time, I said:
 
 BEGIN_WIDE
 

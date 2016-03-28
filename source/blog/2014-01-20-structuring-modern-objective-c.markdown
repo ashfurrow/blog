@@ -28,7 +28,7 @@ Stop. Right now.
 
 Don't declare instance variables and _please_ don't declare them in headers. Instead, you should be declaring them as _properties_, and then _accessing_ them through message-passing or dot syntax.
 
-I've [covered before](https://ashfurrow.com/blog/objc_msgsend-is-not-your-bottleneck/) how accessing properties through instance variables doesn't give you any discernible benefits. In fact, accessing them through getters/setters has a few advantages.
+I've [covered before](/blog/objc_msgsend-is-not-your-bottleneck/) how accessing properties through instance variables doesn't give you any discernible benefits. In fact, accessing them through getters/setters has a few advantages.
 
 - Consistency: you no longer have to guess if a getter/setter's side-effects, if any, are going to be invoked because they always will be.
 - Debugging: you're able to easily set breakpoints on getters/setters instead of making watchpoints on instance variable addresses at runtime.
