@@ -27,5 +27,5 @@ Technology changed that. We invented the phonograph, and then the 8-track, and t
 
 The art world is _hella intimidating_. It's _unbelievably_ unapproachable for lay people like me. And that _sucks_. And that's why the work I'm doing at Artsy matters. I want to make it suck less, because I believe in the importance of art, even if I'm not a sophisticated appreciator yet.
 
-When I set out in my [job hunt](/blog/job-hunt) earlier this year, my most important criterion was that the company had to _do good in the world_. I feel like I've really found that here. It's why I'm excited to go to work in the mornings, even in the darker days of my depression. I feel like I'm making a positive change in the world, and that's something that neither salary nor anti-depressants can give me. I feel motivated to work because it's intrinsically important.
+When I set out in my [job hunt](https://ashfurrow.com/blog/job-hunt) earlier this year, my most important criterion was that the company had to _do good in the world_. I feel like I've really found that here. It's why I'm excited to go to work in the mornings, even in the darker days of my depression. I feel like I'm making a positive change in the world, and that's something that neither salary nor anti-depressants can give me. I feel motivated to work because it's intrinsically important.
 

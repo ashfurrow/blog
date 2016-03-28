@@ -3,7 +3,7 @@ title: "Depressive Funk"
 date: 2014-02-12 00:00
 ---
 
-I've been under considerable stress lately. The [move](/blog/moving-to-amsterdam) has certainly been the key factor, but I've also bitten off a bit more than I can chew in personal projects (and I've got a "hard out" at work – a deadline of Friday that is unmovable due to the fact that I'm leaving T+L).
+I've been under considerable stress lately. The [move](https://ashfurrow.com/blog/moving-to-amsterdam) has certainly been the key factor, but I've also bitten off a bit more than I can chew in personal projects (and I've got a "hard out" at work – a deadline of Friday that is unmovable due to the fact that I'm leaving T+L).
 
 I've felt myself slipping back into a depressive funk, and I don't like it.
 

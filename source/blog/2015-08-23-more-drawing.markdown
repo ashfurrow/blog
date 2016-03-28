@@ -3,7 +3,7 @@ title: More Drawing
 date: 2015-08-23 19:45:37 UTC
 ---
 
-A few weeks ago, I blogged about [drawing](/blog/drawing/) and how it had never been something I thought I could do, but in fact it is. Since then, I've been making time nearly every day to draw or sketch something. I've been following a few tutorials from the internet, and have now got a [book](http://amzn.to/1PwDPtg). My technique seems to be improving, but more importantly, I'm having _a tonne_ of fun. 
+A few weeks ago, I blogged about [drawing](https://ashfurrow.com/blog/drawing/) and how it had never been something I thought I could do, but in fact it is. Since then, I've been making time nearly every day to draw or sketch something. I've been following a few tutorials from the internet, and have now got a [book](http://amzn.to/1PwDPtg). My technique seems to be improving, but more importantly, I'm having _a tonne_ of fun. 
 
 <!-- more -->
 
@@ -23,7 +23,7 @@ It seems like a slight juxtaposition – I'm examining the individual objects ar
 
 Composition is no longer the primary thing I'm interested in when I'm walking out and about – it's also shape, proportion, line. 
 
-I had originally written how I wanted to [photograph less and draw more](/blog/photograph-less-draw-more/) in order to improve my photography. I had tried sketching some on my iPad, but nothing really came of my interest in sketching until a few weeks ago. Until I actually put a pencil to paper. 
+I had originally written how I wanted to [photograph less and draw more](https://ashfurrow.com/blog/photograph-less-draw-more/) in order to improve my photography. I had tried sketching some on my iPad, but nothing really came of my interest in sketching until a few weeks ago. Until I actually put a pencil to paper. 
 
 It was the tactile nature of actually using a drawing pencil to textured paper that lead to a revelation: that I could enjoy drawing for its own sake. My efforts had stalled on the iPad because the device is incapable of reproducing the the experience _I_ personally needed so I could recognize the intrinsic pleasure of drawing.
 

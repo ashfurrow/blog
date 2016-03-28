@@ -80,7 +80,7 @@ In [Part II](http://hyperboleandahalf.blogspot.nl/2013/05/depression-part-two.ht
 > 
 > [Brain throwing hate]: "I HATE SUN! I HATE PURPLE! I HATE ME!"
 
-This last weekend – Labour Day weekend – was very flat for me. I spent most of my long weekend staring at the ceiling, sometimes a wall. I threw myself at some [work on my website](/blog/blog-infrastructure/) as a distraction, but it didn't really help. 
+This last weekend – Labour Day weekend – was very flat for me. I spent most of my long weekend staring at the ceiling, sometimes a wall. I threw myself at some [work on my website](https://ashfurrow.com/blog/blog-infrastructure/) as a distraction, but it didn't really help. 
 
 I'm bouncing back, but it's slow. Last night on my way from work, _all_ I could feel was anger. This morning on my way to work, I yelled at a taxi driver who had cut me off. He looked scared, like he was afraid I was going to open his car door and hurt him. I didn't like that. I don't want to be someone that people are afraid of.
 

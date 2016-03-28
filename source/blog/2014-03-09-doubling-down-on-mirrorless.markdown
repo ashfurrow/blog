@@ -3,7 +3,7 @@ title: "Doubling Down on Mirrorless"
 date: 2014-03-09 00:00
 ---
 
-I [wrote recently](/blog/fuji-x100s-review) that I had purchased a Fuji X100S. At the time I reviewed the camera, I really liked it. In the weeks that followed, I've grown to love it. Since moving to Amsterdam I've taken it everywhere. Literally _everywhere_ I go.
+I [wrote recently](https://ashfurrow.com/blog/fuji-x100s-review) that I had purchased a Fuji X100S. At the time I reviewed the camera, I really liked it. In the weeks that followed, I've grown to love it. Since moving to Amsterdam I've taken it everywhere. Literally _everywhere_ I go.
 
 Only once have I even brought out my 5D with my 50mm f/1.4 and 24-70 f/2.8 lenses. I just didn't need them because the X100S did everything I needed.
 

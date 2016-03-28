@@ -3,7 +3,7 @@ title: "What Breaks First"
 date: 2012-11-23 00:00
 ---
 
-Recently, I was under a large strain at work. I had never worked so hard in my life and at first, it was exhilarating. By the end, I was completely [burnt out](/blog/burnt-out). I'm still recovering from the trauma of working 70+ hours a week, but I'm trying to take time to reflect on the experience.
+Recently, I was under a large strain at work. I had never worked so hard in my life and at first, it was exhilarating. By the end, I was completely [burnt out](https://ashfurrow.com/blog/burnt-out). I'm still recovering from the trauma of working 70+ hours a week, but I'm trying to take time to reflect on the experience.
 
 I now have some pretty conclusive proof of my skills as a developer, which I'm pretty proud of. But what I'm really excited about was _how_ I made decisions: intuition. When I had several choices, I didn't have to spend time evaluating my different options because I could _feel_ which one would work. This is mostly, I think, thanks to have having done things the wrong ways in the past.
 

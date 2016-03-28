@@ -5,7 +5,7 @@ background_image: /img/blog/empathetic-civilization/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/702573726831927297
 ---
 
-A few months ago, I wrote about [normalizing struggle](/blog/normalizing-struggle/) a discussion of failure and a call-to-action for everyone to be more open about that fact that they struggle (because _everyone_ does).
+A few months ago, I wrote about [normalizing struggle](https://ashfurrow.com/blog/normalizing-struggle/) a discussion of failure and a call-to-action for everyone to be more open about that fact that they struggle (because _everyone_ does).
 
 Well, [some science happened](http://qz.com/622749/teens-do-better-in-science-when-they-know-einstein-and-curie-also-struggled/) and it more than validates my viewpoint. 
 

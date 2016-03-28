@@ -42,7 +42,7 @@ But if you're thoughtful about what you agree to do – if you manage your time 
 
 Carelessly saying yes is a really bad habit. It's bad for your reputation, personally and professionally. But that's not the worst consequence.
 
-Eventually, you will hit a wall that no amount of self-starterishness and willpower can overcome. At that point, nothing in your life will make you happy. _Nothing_. The tech industry calls this "burnout", but I prefer the clinical term, "depression", and [depression sucks](/blog/depression-graphed/).
+Eventually, you will hit a wall that no amount of self-starterishness and willpower can overcome. At that point, nothing in your life will make you happy. _Nothing_. The tech industry calls this "burnout", but I prefer the clinical term, "depression", and [depression sucks](https://ashfurrow.com/blog/depression-graphed/).
 
 Managing your time is essential if you're going to avoid burnout: all you need is to be aware of your capacity and existing commitments. Then, when asked to do something, it's a matter of some simple calculus: do you have the time?
 

@@ -9,7 +9,7 @@ With all these changes, I thought I might share some site stats. First, here are
 
  ![](/img/import/blog/site-stats-for-2012/8A6D81F4CF80438BAE9D136A63659A3A.png)
 
-Kind of impressive, I think, is the ~20k-hits-in-one-day mark. That's when I wrote the [Why Objective-C is Hard to Learn](/blog/why-objective-c-is-hard-to-learn) article. It got a lot of attention on Hacker News.
+Kind of impressive, I think, is the ~20k-hits-in-one-day mark. That's when I wrote the [Why Objective-C is Hard to Learn](https://ashfurrow.com/blog/2012/03/why-objective-c-is-hard) article. It got a lot of attention on Hacker News.
 
 The next, big spike around October came with the release of iOS 6. I strategically had written a series of `UICollectionView` tutorials and released them the day the NDA with Apple expired and I got a lot of attention for being the first to cover this new class. It even has lead to me writing an eBook on the topic, which is under way now.
 

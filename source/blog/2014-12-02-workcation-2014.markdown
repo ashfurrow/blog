@@ -4,7 +4,7 @@ date: 2014-12-02 08:19:29 UTC
 background_image: /img/blog/workcation-2014/background.jpg
 ---
 
-As I mentioned in a [previous post](/blog/lessons-learned-travelling-europe/), I’ve travelled a lot this year, and I’ve just returned home with my wife from our last trip of 2014. It was a whopper: a two-week jaunt starting and ending in Amsterdam and stretching through three other countries. It started a bit over two weeks ago when I left for New York and my wife Ashley left for Nova Scotia to visit her family. We met up a week later in Halifax, drove to my hometown in New Brunswick for a few days’ visit with my family, then back to Halifax for a flight to Reykjavik for a three-day vacation in Iceland. Phew!
+As I mentioned in a [previous post](https://ashfurrow.com/blog/lessons-learned-travelling-europe/), I’ve travelled a lot this year, and I’ve just returned home with my wife from our last trip of 2014. It was a whopper: a two-week jaunt starting and ending in Amsterdam and stretching through three other countries. It started a bit over two weeks ago when I left for New York and my wife Ashley left for Nova Scotia to visit her family. We met up a week later in Halifax, drove to my hometown in New Brunswick for a few days’ visit with my family, then back to Halifax for a flight to Reykjavik for a three-day vacation in Iceland. Phew!
 
 <!-- more -->
 
@@ -12,7 +12,7 @@ I’m a photographer and will have a post on my [photo blog](http://photos.ashfu
 
 ## New York City
 
-I visited New York City for a week to meet with [Artsy](http://artsy.net). (I was there for meetings; if I were there to work, then I’d have needed a visa. Since I didn’t have a visa, I must have been there just for meetings.) I got to experience my [first art auction](/blog/first-art-auction/), meet some friends I knew only online, hang out with my super-cool colleagues, and prepare for moving to NYC in February. 
+I visited New York City for a week to meet with [Artsy](http://artsy.net). (I was there for meetings; if I were there to work, then I’d have needed a visa. Since I didn’t have a visa, I must have been there just for meetings.) I got to experience my [first art auction](https://ashfurrow.com/blog/first-art-auction/), meet some friends I knew only online, hang out with my super-cool colleagues, and prepare for moving to NYC in February. 
 
 I stayed in Lower Manhattan near Battery Park and walked twenty minutes up to Artsy’s office at Broadway and Canal. Artsy have just opened up a second floor of the building, which is super-exciting. I got to have coffee with some awesome coworkers and soak in the company culture. After a week of being in the office, I’m more excited than ever to work at Artsy. The company has an ambitious and laudable goal, an awesome culture, and really smart people. It’s the kind of company that I hope to start myself someday. 
 
@@ -46,7 +46,7 @@ BEGIN_NARROW
 
 END_NARROW
 
-Something I’ve wanted to photograph for a few years is the graveyard behind my old house. Most of my shots are on film, so I don’t have many yet. It was a really interesting experience. I’ve reflected a lot about death and dying, especially with my <a href="/blog/depression-sucks/">depression</a> and my grandmother’s illness earlier this year (she’s fine!). Walking through a field specifically set aside in order to bury peoples’ remains, (nominally) “forever”, is weird. It’s just really really weird. Not creepy – just strange. I’ve concluded that cemeteries are more for the living than for the dead. 
+Something I’ve wanted to photograph for a few years is the graveyard behind my old house. Most of my shots are on film, so I don’t have many yet. It was a really interesting experience. I’ve reflected a lot about death and dying, especially with my <a href="https://ashfurrow.com/blog/depression-sucks/">depression</a> and my grandmother’s illness earlier this year (she’s fine!). Walking through a field specifically set aside in order to bury peoples’ remains, (nominally) “forever”, is weird. It’s just really really weird. Not creepy – just strange. I’ve concluded that cemeteries are more for the living than for the dead. 
 
 The next day, we have some goodbyes and begin our nighttime drive back to Halifax, 600km away, to sleep at Ashley’s dad’s house for the night. We weren’t expecting to get to see him or her stepmom, but left Woodstock early due to the weather. It was great to see the two of them again, and the next day, we got to meet with our friend Lauren before flying to Reykjavik. 
 

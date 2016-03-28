@@ -5,7 +5,7 @@ background_image: /img/blog/gratuitous-positivity/background.png
 background_image_source: https://twitter.com/CloudyConway/status/622099424156778497
 ---
 
-Working in the open source community can be a fulfilling experience. Helping others is fulfilling, after all. There are also [material benefits](/blog/sharing-is-selfish/) to open source participation, but I'd wager most open source contributors volunteer because they enjoy it. 
+Working in the open source community can be a fulfilling experience. Helping others is fulfilling, after all. There are also [material benefits](https://ashfurrow.com/blog/sharing-is-selfish/) to open source participation, but I'd wager most open source contributors volunteer because they enjoy it. 
 
 So if people do open source because it makes them happy, then the joy that they experience is important. Happiness drives open source, and by extension, the entire tech industry. We need to protect it, and help it grow. 
 

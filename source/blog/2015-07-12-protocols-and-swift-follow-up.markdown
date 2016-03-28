@@ -4,7 +4,7 @@ date: 2015-07-12 22:51:11 UTC
 link_to: swift
 ---
 
-Earlier this year, I wrote a [GIF-laden and rambling post about protocols in Swift](/blog/protocols-and-swift/). It described a new approach to using Swift protocols in a more idiomatic way than just using Objective-C techniques.
+Earlier this year, I wrote a [GIF-laden and rambling post about protocols in Swift](https://ashfurrow.com/blog/protocols-and-swift/). It described a new approach to using Swift protocols in a more idiomatic way than just using Objective-C techniques.
 
 Well, Swift 2 has been in beta for a month now, and protocols are hot stuff. 
 

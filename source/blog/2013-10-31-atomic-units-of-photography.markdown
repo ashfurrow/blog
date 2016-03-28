@@ -13,7 +13,7 @@ In retrospect, I was dealing with individual pixels as the atomic unit of a phot
 
 Now I look at photos as a whole, not as a collection of pixels. I still use Lightroom to make adjustments, and it's still fun to play. However, I'm not obsessed with how changes are going to have an effect on the individual pixels. I'm thinking more in terms of the big picture, no pun intended. I'm using the histogram a lot more instead of looking at individual pixels. It's been an interesting transition.
 
-My [transition to film](/blog/film) has had a lot to do with this personal revelation. Let's take the following two photos, for instance. One was taken with my Canon 5D and the other with my Leica M6, a film camera. I edited them both in Lightroom, but the digital photo was edited a few months ago, when I was still focusing on pixels. I'm not sure which one is better, but they're different, for sure.
+My [transition to film](https://ashfurrow.com/blog/film) has had a lot to do with this personal revelation. Let's take the following two photos, for instance. One was taken with my Canon 5D and the other with my Leica M6, a film camera. I edited them both in Lightroom, but the digital photo was edited a few months ago, when I was still focusing on pixels. I'm not sure which one is better, but they're different, for sure.
 
  ![](/img/import/blog/atomic-units-of-photography/19598DFEE827464EBDA40E3FEDCEDAA7.jpg) ![](/img/import/blog/atomic-units-of-photography/3E0FC331D383463E98D4446017DD608B.jpg)
 
