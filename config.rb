@@ -83,6 +83,7 @@ activate :cdn do |cdn|
   # Credentials stored in CLOUDFLARE_CLIENT_API_KEY and CLOUDFLARE_EMAIL env variables.
   cdn.cloudflare = {
     zone: 'ashfurrow.com',
+    invalidate_zone_for_many_files: true,
     base_urls: [
       "http://ashfurrow.com",
       "https://ashfurrow.com"
