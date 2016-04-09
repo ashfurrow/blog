@@ -49,7 +49,12 @@ article li a {
 code, pre {
   color: @brand-primary;
   background-color: @gray-light;
-  font-size: 18px;
+  font-size: 14px;
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .nav {
