@@ -15,6 +15,7 @@ past_talks:
   dates: March 2–4, 2016
   image: tryswift.png
   slides: https://speakerdeck.com/ashfurrow/an-artsy-testing-tour
+  video: https://realm.io/news/tryswift-ash-furrow-artsy-testing-tour/
 - name: Scaling iOS Development Using FRP
   conference: SINFO23
   url: http://sinfo.org/
