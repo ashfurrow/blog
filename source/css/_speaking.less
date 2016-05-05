@@ -59,8 +59,15 @@
         text-indent: -30px;
       }
 
+      /* Links here are different from in articles. */
       a {
         text-decoration: none;
+        color: @gray-dark;
+
+        &:hover {
+          text-decoration: underline;
+          color: @brand-primary;
+        }
       }
 
       .details {

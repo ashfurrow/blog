@@ -1,5 +1,5 @@
 ---
-title: "From Proposal to Applause: How I Public Speaking"
+title: "From Proposal to Applause: How I do Public Speaking"
 date: 2015-05-19 07:58:09 UTC
 summary: "<p>Yesterday at <a href='http://uikonf.com'>UIKonf</a>, I gave a presentation on Teaching and Learning, which described the beginning of my own career (surrounding blogging), reasons why you should blog, and some first steps to get started. </p><p>It was well-received and after the talk, several people asked me to share how I prepare and present conferences talks. So here we are. </p>"
 link_to: swift
@@ -176,7 +176,7 @@ Whenever I give an answer, I try to reinforce the context that it comes from. I 
 
 ## Post-Talk
 
-After the talk is done, I post the slides to [speakerdeck](http://speakerdeck.com) and tweet a link. If I'm smart, I've uploaded them and composed the tweet just before the talk so that it's ready to go as soon as I'm done. I also update my (newly redesigned) [speaking page](https://ashfurrow.com/speaking/) to point to the slides. 
+After the talk is done, I post the slides to [speakerdeck](http://speakerdeck.com) and tweet a link. If I'm smart, I've uploaded them and composed the tweet just before the talk so that it's ready to go as soon as I'm done. I also update my (newly redesigned) [speaking page](/speaking/) to point to the slides. 
 
 Eventually, hopefully, a video recording of my talk is published. I watch it and take notes on ways to improve my talk next time. 
 

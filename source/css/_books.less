@@ -11,10 +11,10 @@
       h2 {
         .serif;
         font-weight: 400;
-        color: @gray-dark;
         text-align: left;
         font-size: 25px;
         line-height: 25px;
+
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 35px;
@@ -22,10 +22,11 @@
       }
 
       a.title-link {
+        color: @gray-dark;
         text-decoration: none;
         &:hover{
+          color: @brand-primary;
           text-decoration: underline;
-          color: @gray-dark;
         }
       }
 

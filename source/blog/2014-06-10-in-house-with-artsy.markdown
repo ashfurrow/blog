@@ -3,7 +3,7 @@ title: "In-House with Artsy"
 date: 2014-06-10 00:00
 ---
 
-A few months ago, I [started a new job](https://ashfurrow.com/blog/new-job-1) at [Artsy](https://artsy.net). Artsy is based in New York and I've been working remotely from Amsterdam.
+A few months ago, I [started a new job](/blog/new-job) at [Artsy](https://artsy.net). Artsy is based in New York and I've been working remotely from Amsterdam.
 
 We took advantage of me being in America for WWDC to have me come to New York for a week and work in-house. It's only Tuesday but it's already been a great experience.
 

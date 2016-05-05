@@ -19,7 +19,7 @@ This is really useful to me as an educator. If I’m speaking to a beginner, con
 
 So anyway, I came to the realization that I am part of “the man” of iOS developers – pushing my dogma wherever I write – when a reader wrote in with a question. (I am publishing their question here anonymously with their permission.)
 
-> I was reading your blog post here: [https://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell](https://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell) - and had a question. You mention it would be "very, very bad" to make the UITableViewCell the delegate/dataSource of the UICollectionView, but you give no reasons. Why?! (but seriously, I am very curious - what are your reasons for that declaration?)
+> I was reading your blog post here: [/blog/putting-a-uicollectionview-in-a-uitableviewcell](/blog/putting-a-uicollectionview-in-a-uitableviewcell) - and had a question. You mention it would be "very, very bad" to make the UITableViewCell the delegate/dataSource of the UICollectionView, but you give no reasons. Why?! (but seriously, I am very curious - what are your reasons for that declaration?)
 > 
 > I look forward to hearing from you!
 

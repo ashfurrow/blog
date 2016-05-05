@@ -4,7 +4,7 @@ date: 2013-12-31 00:00
 link_to: swift
 ---
 
-Well, here we are again. Another New Year's Eve, another blog post list of changes to make in the new year. I thought I'd follow up [last year's post](https://ashfurrow.com/blog/seven-deadly-sins-of-modern-objective-c) with a little more positive one about virtuous habits that we should all endeavour to integrate into our routines.
+Well, here we are again. Another New Year's Eve, another blog post list of changes to make in the new year. I thought I'd follow up [last year's post](/blog/seven-deadly-sins-of-modern-objective-c) with a little more positive one about virtuous habits that we should all endeavour to integrate into our routines.
 
 These are habits that anyone, whether you're a beginner or an expert, or a old-world C developer or a [third-wave Objective-C'ist](https://speakerdeck.com/mattt/third-wave-objective-c), can use to help themselves become a more proficient coder.
 

@@ -1,18 +1,29 @@
 upcoming_talks:
-- name: TBA
+
+past_talks:
+- name: iOS Checkup
+  conference: MCE
+  url: http://2016.mceconf.com
+  location: Warsaw, Poland
+  dates: April 21–23, 2016
+  image: mce.png
+  slides: https://speakerdeck.com/ashfurrow/ios-checkup
+- name: An Artsy Testing Tour
   conference: try! Swift
   url: http://www.tryswiftconf.com/en
   location: Tokyo, Japan
   dates: March 2–4, 2016
   image: tryswift.png
-- name: Something about FRP I'm secure
+  slides: https://speakerdeck.com/ashfurrow/an-artsy-testing-tour
+  video: https://realm.io/news/tryswift-ash-furrow-artsy-testing-tour/
+- name: Scaling iOS Development Using FRP
   conference: SINFO23
   url: http://sinfo.org/
   location: Lisbon, Portugal
-  dates: February 2016
+  dates: February 23, 2016
   image: sinfo.png
-
-past_talks:
+  slides: https://speakerdeck.com/ashfurrow/scaling-ios-development-with-frp
+  video: https://youtu.be/HzaolohDWnE
 - name: Emerging Best Practices in Swift
   conference: Swift Summit
   url: https://www.swiftsummit.com
@@ -49,6 +60,7 @@ past_talks:
   dates: October 1–2, 2015
   image: mobiconf.png
   slides: https://speakerdeck.com/ashfurrow/evolution-of-asynchronous-programming-on-ios
+  video: https://youtube.com/watch?v=FZHBk1XMvEA
 - name: Emerging Best Practices in Swift
   conference: iOSoho
   url: http://www.meetup.com/iOSoho/events/224796318/

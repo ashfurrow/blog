@@ -1,6 +1,7 @@
 require 'lib/custom_helpers'
 require 'lib/add_links_to_navigation.rb'
 require 'lib/modify_widths.rb'
+require 'lib/embed.rb'
 require 'ansi/code'
 
 ###
@@ -38,6 +39,7 @@ helpers CustomHelpers
 activate :directory_indexes
 activate :add_links_to_navigation
 activate :modify_widths
+activate :embed
 
 page "/feed.xml", layout: false
 page "/feed.rss.xml", layout: false
@@ -57,7 +59,8 @@ configure :build do
   activate :minify_javascript
 
   # Refer to javascript, css assets with build-secific filenames.
-  activate :asset_hash, ignore: [/^img\/.*/, /^fonts\/.*/]
+  activate :asset_hash, ignore: [/^img\/.*/, /^fonts\/.*/, /^[^\/]*$/]
+  # Last one is for root-directory favicons, etc.
 end
 
 ###
@@ -105,18 +108,6 @@ after_s3_sync do |files_by_status|
     end
 
     # Invalidate CDN.
-    updated_files = files_by_status[:updated]
-    if updated_files.length > 40
-      begin
-        require 'cloudflare'
-        cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
-        puts "Invalidating zone... "
-        cloudflare.fpurge_ts('ashfurrow.com')
-      rescue => e
-        abort "Error invalidating Cloudflare zone: #{e}"
-      end
-    else
-      cdn_invalidate(updated_files)
-    end
+    cdn_invalidate files_by_status[:updated]
   end
 end

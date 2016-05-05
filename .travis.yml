@@ -1,7 +1,8 @@
 language: ruby
 sudo: false
 cache:
-  bundler: true
+- bundler
+- pip
 rvm:
 - 2.1.2
 env:
@@ -14,6 +15,7 @@ env:
 before_install:
 - pip install --user s3cmd
 - s3cmd --version
+- echo $TRAVIS_COMMIT_RANGE
 script:
 - bundle exec rake build:test
 after_success:

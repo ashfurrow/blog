@@ -8,7 +8,7 @@ Yesterday, Apple announced a brand new programming language as a replacement for
 
  ![](/img/import/blog/initial-thoughts-on-swift/256261AB37274AD2862C86F6D0F196E4.png)
 
-Super cool. I [wrote](https://ashfurrow.com/blog/we-need-to-replace-objective-c) about replacing Objective-C a few months ago, and I'm glad to see this update from Apple. Here was my list of criteria for a "good" replacement:
+Super cool. I [wrote](/blog/we-need-to-replace-objective-c) about replacing Objective-C a few months ago, and I'm glad to see this update from Apple. Here was my list of criteria for a "good" replacement:
 
 1. It shouldn't use pointers, structs, header files, anything C-based
 2. It should be a memory-managed language (No ARC, not retain/release, no Core Foundation)

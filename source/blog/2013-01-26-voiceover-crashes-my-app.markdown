@@ -9,7 +9,7 @@ Only when using VoiceOver.
 
 Hmm. Shit.
 
-Turns out it's only when using `UITableView`'s sexy new `dequeueReusableCellWithIdentifier:forIndexPath:` with pre-registered classes. Somehow, VoiceOver is interfering with this process and calling this method will crash your app when VoiceOver is turned on.
+Turns out it's only when using `UITableView`'s new `dequeueReusableCellWithIdentifier:forIndexPath:` with pre-registered classes. Somehow, VoiceOver is interfering with this process and calling this method will crash your app when VoiceOver is turned on.
 
 For the mean time, avoid the new table view methods. Fall back to the old "try to dequeue, create if nil" approach.
 

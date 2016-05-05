@@ -7,11 +7,11 @@ Last week, my wife and I returned from a trip to Copenhagen, then Warsaw. I spok
 
 <!-- more -->
 
-In Copenhagen, I gave a rendition of my [Solving Problems the Swift Way](https://ashfurrow.com/blog/solving-problems-the-swift-way) presentation at a [GotoNight](https://secure.trifork.com/cph-2014/freeevent/index.jsp?eventOID=6461). Great attendance with some excellent questions. Really nice city – we stayed at an Airbnb very close to the city centre.
+In Copenhagen, I gave a rendition of my [Solving Problems the Swift Way](/blog/solving-problems-the-swift-way) presentation at a [GotoNight](https://secure.trifork.com/cph-2014/freeevent/index.jsp?eventOID=6461). Great attendance with some excellent questions. Really nice city – we stayed at an Airbnb very close to the city centre.
 
  ![](/img/import/blog/copenhagenwarsaw-tour/13228BFEEAB14B77B9D6C2ACBEF52CA2.jpg)
 
-The following week, we went to Warsaw and I gave a talk on [ReactiveCocoa](https://www.youtube.com/watch?v=TlgUWYrQ0sc) at [Mobile Warsaw](http://mobile-warsaw.pl/). Really cool venue – sort of an outdoor cafe that got pretty chilly later in the evening. [Robb Böhnke](tweetbot:///user_profile/ceterum_censeo) was also presenting and gave an inspiring talk about iOS accessiblilty.
+The following week, we went to Warsaw and I gave a talk on [ReactiveCocoa](https://www.youtube.com/watch?v=TlgUWYrQ0sc) at [Mobile Warsaw](http://mobile-warsaw.pl/). Really cool venue – sort of an outdoor cafe that got pretty chilly later in the evening. [Robb Böhnke](https://twitter.com/ceterum_censeo) was also presenting and gave an inspiring talk about iOS accessiblilty.
 
  ![](/img/import/blog/copenhagenwarsaw-tour/DC7C1080615B4F91A3BAB9C194010BE2.jpg)
 

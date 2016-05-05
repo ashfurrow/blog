@@ -5,7 +5,7 @@ background_image: /img/blog/gratuitous-positivity/background.png
 background_image_source: https://twitter.com/CloudyConway/status/622099424156778497
 ---
 
-Working in the open source community can be a fulfilling experience. Helping others is fulfilling, after all. There are also [material benefits](https://ashfurrow.com/blog/sharing-is-selfish/) to open source participation, but I'd wager most open source contributors volunteer because they enjoy it. 
+Working in the open source community can be a fulfilling experience. Helping others is fulfilling, after all. There are also [material benefits](/blog/sharing-is-selfish/) to open source participation, but I'd wager most open source contributors volunteer because they enjoy it. 
 
 So if people do open source because it makes them happy, then the joy that they experience is important. Happiness drives open source, and by extension, the entire tech industry. We need to protect it, and help it grow. 
 
@@ -15,10 +15,7 @@ So if people do open source because it makes them happy, then the joy that they 
 
 [Justin Searls ](http://twitter.com/searls) has a great presentation called [The Social Coding Contract](https://www.youtube.com/watch?v=e_-qV8waPVM) that I'd highly recommend.
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/e_-qV8waPVM" frameborder="0" class="embed-responsive-item" allowfullscreen></iframe>
-
-</div>
+YOUTUBE e_-qV8waPVM
 
 Turns out that the most important part of open source isn't the code, it's empathy. And it's difficult for empathy to thrive in a community that mainly communicates through text. 
 

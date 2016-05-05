@@ -3,7 +3,7 @@ title: "Home-Grown Fredericton Entrepreneur"
 date: 2011-10-10 00:00
 ---
 
-Follow-up: [Start Up New Brunswick](https://ashfurrow.com/index.php/2011/10/start-up-new-brunswick/)I don't know Dylan Mitchell, third-year Kinesiology student at UNB, but I [read about him in a recent Daily Gleaner article](http://dailygleaner.canadaeast.com/rss/article/1446613). Basically, he had an idea for a coffee-related iPhone app and hired a few programmers from Bangladesh and India to write the code for him. (Forget the fact that the Gleaner never ran a story on _me_ when _I_ wrote my own coffee-related app.) Let's concentrate on what the article concludes with: "Mitchell is a home-grown Fredericton entrepreneur."
+Follow-up: [Start Up New Brunswick](/blog/start-up-new-brunswick/) I don't know Dylan Mitchell, third-year Kinesiology student at UNB, but I [read about him in a recent Daily Gleaner article](http://dailygleaner.canadaeast.com/rss/article/1446613). Basically, he had an idea for a coffee-related iPhone app and hired a few programmers from Bangladesh and India to write the code for him. (Forget the fact that the Gleaner never ran a story on _me_ when _I_ wrote my own coffee-related app.) Let's concentrate on what the article concludes with: "Mitchell is a home-grown Fredericton entrepreneur."
 
 He certainly is.
 
