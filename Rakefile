@@ -19,7 +19,7 @@ namespace :deploy do
     sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
 
     # Add any staging-only files.
-    perform_s3_cmd "s3cmd put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
+    perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
   end
 
   desc "Deploys RSS and Atom feeds"
