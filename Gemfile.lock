@@ -356,6 +356,7 @@ DEPENDENCIES
   ffi!
   html-proofer
   httparty
+  json
   less
   liquid
   middleman (< 4)

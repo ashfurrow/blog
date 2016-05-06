@@ -4,7 +4,7 @@ require 'json'
 
 
 def perform_s3_cmd (cmd)
-  sh "s3cmd #{cmd} --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET "
+  sh "s3cmd #{cmd} --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET"
 end
 
 namespace :deploy do
