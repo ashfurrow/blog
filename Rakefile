@@ -1,4 +1,11 @@
 require 'rake'
+require 'httparty'
+require 'json'
+
+
+def perform_s3_cmd (cmd)
+  sh "s3cmd #{cmd} --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET"
+end
 
 namespace :deploy do
 
@@ -12,14 +19,14 @@ namespace :deploy do
     sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
 
     # Add any staging-only files.
-    sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
+    perform_s3_cmd "s3cmd put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
   end
 
   desc "Deploys RSS and Atom feeds"
   task :feeds do
     require 'cloudflare'
     # Push the generated feeds to the feeds.ashfurrow.com bucket.
-    sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
+    perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
 
     # Invalidate the CDN.
     cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
@@ -38,11 +45,21 @@ namespace :deploy do
     puts "Feeds deployed."
   end
 
+  desc "Fetches IP addresses and updates bucket policy"
+  task :update_s3_permissions do
+    Rake::Task['update_ips_to_whitelist'].invoke
+
+    puts "Updating bucket policy."
+    perform_s3_cmd "setpolicy Permissions.json s3://ashfurrow.com"
+    puts "Done."
+  end
+
   desc "Deploys to staging, production, and syncs feeds"
   task :all do
     Rake::Task['deploy:staging'].invoke
     Rake::Task['deploy:production'].invoke
     Rake::Task['deploy:feeds'].invoke
+    Rake::Task['deploy:update_s3_permissions'].invoke
   end
 
   desc "Deploy if Travis environment variables are set correctly"
@@ -85,6 +102,25 @@ namespace :publish do
     Rake::Task['build'].invoke
     Rake::Task['deploy:all'].invoke
   end
+end
+
+desc 'Updates Permissions.json to the latest Cloudflare datacentre IP addresses'
+task :update_ips_to_whitelist do
+  puts 'Fetching new IP addresses...'
+
+  response = HTTParty.get('https://api.cloudflare.com/client/v4/ips')
+  ipv4_addrs = response.parsed_response['result']['ipv4_cidrs']
+
+  if ipv4_addrs.nil? 
+    abort 'IP Address fetch failed.'
+  else
+    permissions_file_name = 'Permissions.json'
+    permissions = JSON.parse(File.read(permissions_file_name))
+    permissions['Statement'].each { |s| s['Condition']['NotIpAddress']['aws:SourceIp'] = ipv4_addrs }
+    File.open(permissions_file_name, 'w') { |file| file.write(JSON.pretty_generate(permissions)) }
+  end
+
+  puts 'Updated Permissions.json file.'
 end
 
 namespace :build do
