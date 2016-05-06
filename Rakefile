@@ -59,6 +59,7 @@ namespace :deploy do
     Rake::Task['deploy:staging'].invoke
     Rake::Task['deploy:production'].invoke
     Rake::Task['deploy:feeds'].invoke
+    Rake::Task['deploy:update_s3_permissions'].invoke
   end
 
   desc "Deploy if Travis environment variables are set correctly"
