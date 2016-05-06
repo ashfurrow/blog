@@ -1,4 +1,6 @@
 require 'rake'
+require 'httparty'
+require 'json'
 
 namespace :deploy do
 
@@ -37,6 +39,8 @@ namespace :deploy do
 
     puts "Feeds deployed."
   end
+
+
 
   desc "Deploys to staging, production, and syncs feeds"
   task :all do
@@ -85,6 +89,23 @@ namespace :publish do
     Rake::Task['build'].invoke
     Rake::Task['deploy:all'].invoke
   end
+end
+
+desc 'Updates Permissions.json to the latest Cloudflare datacentre IP addresses'
+task :update_ips_to_whitelist do
+  response = HTTParty.get('https://api.cloudflare.com/client/v4/ips')
+  ipv4_addrs = response.parsed_response['result']['ipv4_cidrs']
+
+  if ipv4_addrs.nil? 
+    abort 'IP Address fetch failed.'
+  else
+    permissions_file_name = 'Permissions.json'
+    permissions = JSON.parse(File.read(permissions_file_name))
+    permissions['Statement'].each { |s| s['Condition']['NotIpAddress']['aws:SourceIp'] = ipv4_addrs }
+    File.open(permissions_file_name, 'w') { |file| file.write(JSON.pretty_generate(permissions)) }
+  end
+
+  puts 'Updated Permissions.json file.'
 end
 
 namespace :build do

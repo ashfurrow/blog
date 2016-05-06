@@ -355,6 +355,7 @@ DEPENDENCIES
   cloudflare
   ffi!
   html-proofer
+  httparty
   less
   liquid
   middleman (< 4)
