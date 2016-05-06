@@ -2,6 +2,11 @@ require 'rake'
 require 'httparty'
 require 'json'
 
+
+def perform_s3_cmd (cmd)
+  sh "s3cmd #{cmd} --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET "
+end
+
 namespace :deploy do
 
   desc "Deployment to production"
@@ -14,14 +19,14 @@ namespace :deploy do
     sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
 
     # Add any staging-only files.
-    sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
+    perform_s3_cmd "s3cmd put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
   end
 
   desc "Deploys RSS and Atom feeds"
   task :feeds do
     require 'cloudflare'
     # Push the generated feeds to the feeds.ashfurrow.com bucket.
-    sh "s3cmd put --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
+    perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
 
     # Invalidate the CDN.
     cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
@@ -40,7 +45,14 @@ namespace :deploy do
     puts "Feeds deployed."
   end
 
+  desc "Fetches IP addresses and updates bucket policy"
+  task :update_s3_permissions do
+    Rake::Task['update_ips_to_whitelist'].invoke
 
+    puts "Updating bucket policy."
+    perform_s3_cmd "setpolicy Permissions.json s3://ashfurrow.com"
+    puts "Done."
+  end
 
   desc "Deploys to staging, production, and syncs feeds"
   task :all do
@@ -93,6 +105,8 @@ end
 
 desc 'Updates Permissions.json to the latest Cloudflare datacentre IP addresses'
 task :update_ips_to_whitelist do
+  puts 'Fetching new IP addresses...'
+
   response = HTTParty.get('https://api.cloudflare.com/client/v4/ips')
   ipv4_addrs = response.parsed_response['result']['ipv4_cidrs']
 
