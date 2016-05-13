@@ -37,7 +37,7 @@ There are some things that were just so strange to me as an iOS developer. For e
 
 And running the tests was _so fast_. From command line to completing the whole test suite took, like, two seconds. I could've easily setup [rerun](https://github.com/alexch/rerun) or [grunt](http://gruntjs.com) to automate tests so whenever I changed a file, the tests related to _just that file_ would be re-run. Can you imagine how cool that would be, if Xcode could just give you a constant reassurance that things are still working, that you've not broken anything? Or even that what you intended to break is indeed broken in the way you expect it to be? 
 
-(Side note: Orta and I have talked with other developers about creating something like this, but it's a very large project.)
+(Side note: Orta and I have talked with other developers about [creating something like this](https://github.com/artsy/mobile/issues/26), but it's a very large project.)
 
 We iOS developers are stuck manually invoking tests, which need to be compiled then be installed in the simulator then be launched then be attached to then blah blah blah. I have always agreed that shortening the run/debug cycle is important, but yesterday, I got to experience near-instantaneous feedback. 
 
