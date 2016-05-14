@@ -116,7 +116,7 @@ task :update_ips_to_whitelist do
   else
     permissions_file_name = 'Permissions.json'
     permissions = JSON.parse(File.read(permissions_file_name))
-    permissions['Statement'].each { |s| s['Condition']['NotIpAddress']['aws:SourceIp'] = ipv4_addrs }
+    permissions['Statement'].first['Condition']['NotIpAddress']['aws:SourceIp'] = ipv4_addrs
     File.open(permissions_file_name, 'w') { |file| file.write(JSON.pretty_generate(permissions)) }
   end
 

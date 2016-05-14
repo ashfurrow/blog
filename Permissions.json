@@ -1,10 +1,11 @@
 {
   "Statement": [
     {
-      "Action": [
-        "s3:GetObject"
-      ],
       "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": "s3:GetObject",
       "Resource": "arn:aws:s3:::ashfurrow.com/*",
       "Condition": {
         "NotIpAddress": {
@@ -26,12 +27,20 @@
             "131.0.72.0/22"
           ]
         }
-      },
-      "Principal": {
-        "AWS": [
-          "*"
-        ]
       }
+    },
+    {
+      "Action": [
+        "s3:*"
+      ],
+      "Effect": "Allow",
+      "Principal": {
+        "CanonicalUser": "3c29af7a47f3185dea91066ecd820ee7b1c5acde064b21d2f5b61b3b2f8c78fa"
+      },
+      "Resource": [
+        "arn:aws:s3:::ashfurrow.com",
+        "arn:aws:s3:::ashfurrow.com/*"
+      ]
     }
   ]
 }
