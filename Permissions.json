@@ -34,13 +34,8 @@
         "s3:*"
       ],
       "Effect": "Allow",
-      "Principal": {
-        "CanonicalUser": "3c29af7a47f3185dea91066ecd820ee7b1c5acde064b21d2f5b61b3b2f8c78fa"
-      },
-      "Resource": [
-        "arn:aws:s3:::ashfurrow.com",
-        "arn:aws:s3:::ashfurrow.com/*"
-      ]
+      "Principal": {"AWS":"arn:aws:iam::243135559143:user/travis"},
+      "Resource": "arn:aws:s3:::ashfurrow.com/*"
     }
   ]
 }

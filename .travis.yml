@@ -8,10 +8,10 @@ rvm:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: NIFnh3i0Ll2B6iEdEoQYvzNXOCiEySq69mzW/bY76LLJ92JKFqjl9Aazr+cY09QdsPF+pY/CSr/oLNs9Fh+nOQn8bB8XlTpSJS7welKlGsmCZCByfT7RP+oM4KfUm5PJ9XgNi9584Xh/S4r36Z0VzEcza/zWcEtntr1CdkKH70w=
-  - secure: Z/ANF7e4hNxb0ou6Kk6/G0sLO5G+Jv1r1586VIfiXgXGTiOgkkF/8jcjKl49ngbQiWWXFByupdGdjW9k8yi9Iy9goYeINzj+phO+UgdY3BJwOq0Fufd5E5/W9ppc+zAVFVXsjPzjjKNDZBURAq4uJ/J6oHEmd7FfzWUC6oktHMM=
-  - secure: NDuniFItF6IsyzluCur3vazH8KNqjcywOXL+E7U2hcqoTM1DGw1Wsg7Tq5IGz3So0PihuB3cUkPk3+iSIFrd0zNkpoXzqb00D8AgKYyiORXuK26TQJMmjj6kxVgZNEgUltUWIQJ2MSBpc7Ty1zuEMosjJzOZofFU/H4HT2x1tLk=
-  - secure: li670kY4vppyEssMpEwlIfs15RZPZVN1kV6dil/9mjwBK0slW1nhB1EbleZx/+2uYdTIFCvl/C86xFys6lGCJxlR4LBzW0JyYcj1Ot43AexV/VyEMqDDBxGVClh3dIQwvupoGw1pjVSkYbLyLj1OKNuzmzlchm6E3N1lj4u78GI=
+  - secure: ABzkzaTKYxaqVxsi5K5kpJ72YT6XNX27wKOQ2aJAqCX7oA4ZezxrUXqv5PSM+NGLC2owT7SUHedl1A3gUwv9D2HEgwlw91jgd20WuPcC+q3KTiBvta7k88itPQAAg+mjJyjJDwernbxxxh4HxXrWb0DYDmow5uHrs+gJV0kg58k=
+  - secure: JqVjtvrOk08YUItJfsW+w2plbwloaxwZnHcS5Qy/FfLNwDVfTVvGYXyhZMBQ7AshhoALKpq1sTGbxCUtMl5i7pNTi3zlEYYc5aRQOrFrU9kC0RCQVkGjH/cOg3yo3ojoIHP3OxcRyBOp/fZwRTuqCRCs8vzkJ/hDr9d+XN1ehto=
+  - secure: lWW2xGabQUcWvceL5j7Y3J0HR9U0XOrxFB5YwG5vBD17NRDlgvWjjoTDcaoxbj6uSvoaAL74u8qIbG18GMddHwnrOf1HsRLkcZllmYuB35k4uabpg+GhILLMOhEpeqNZY40WwbTL2a65XisI+/85FNVDYAkr+QAAqMRkwmgpdX0=
+  - secure: IsDkRKlzH15FkwBvJGqZYPrnhpRyWAxkjiUM/I7Hl6GHRTlL/1qBUBx2BfN0tWa76QXuHHZxx2BpSgiqRVmcSYtIlH0a94d6EGwAlJsQT0leacH4r9TTYAltACC/CKyxddG61toaNQASOoTxe5d0b6y1r96kv3EjA+hiu2pFnXo=
 before_install:
 - pip install --user s3cmd
 - s3cmd --version
