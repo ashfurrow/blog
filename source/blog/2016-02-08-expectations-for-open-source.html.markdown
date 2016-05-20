@@ -13,7 +13,7 @@ So imagine my surprise when I saw them tweet this.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Do not start an open source project if you need praise, warmth and love from your fellow human beings.&quot;<a href="https://t.co/JTBeashRvq">https://t.co/JTBeashRvq</a></p>&mdash; Daniel Doubrovkine (@dblockdotorg) <a href="https://twitter.com/dblockdotorg/status/696412200618037248">February 7, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-But but but! _I've_ started open source projects! And part of why I like open source is _because of_ the warmth and love I get form my fellow human beings. And maybe a little praise too I guess. 
+But but but! _I've_ started open source projects! And part of why I like open source is _because of_ the warmth and love I get from my fellow human beings. And maybe a little praise too I guess. 
 
 So after an initial knee-jerk "no no that can't be right", I took a deeper look and it's kind of obvious; I conceded the statement's truth after only a moment's consideration. Open source _definitely_ has assholes and _definitely_ has trolls, and _how quickly_ I dismissed this statement betrays what a sheltered I life I have online. People aren't jerks to me _because of_ my gender, or my skin colour, for example. Open source has regular trolls, but it also has [problems specific to open source](http://geekfeminism.wikia.com/wiki/FLOSS#Issues).
 
