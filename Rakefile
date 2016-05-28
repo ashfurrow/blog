@@ -178,10 +178,42 @@ task :article, :title do |task, args|
 
   image_path = full_path.gsub(/^source/, "")
   image_filename = "#{image_path}/background.jpg"
+  image_details = fetch_cloudy_conway
+
+  puts "Writing background image file: source/#{image_filename}"
+  File.open("source/#{image_filename}", 'w') { |file| file.puts image_details[1] }
+
+  puts 'Applying article template frontmatter.'
   new_article_filename = output.scan(/source.*/)[0]
   contents = File.read(new_article_filename)
   contents.gsub!(/background_image: /, "background_image: #{image_filename}")
+  contents.gsub!(/background_image_source: /, "background_image_source: #{image_details[0]}")
   File.open(new_article_filename, 'w') { |file| file.puts contents }
 end
 
 task :default => :server
+
+def fetch_cloudy_conway
+  require 'net/http'
+  require 'uri'
+  require 'twitter'
+
+  puts 'Fetching latest @CloudyConway image...'
+
+  client = Twitter::REST::Client.new do |config|
+    config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
+    config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
+    config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
+    config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
+  end
+
+  tweet = client.user_timeline('CloudyConway').first.media.first
+  tweet_url = tweet.expanded_url
+  puts "Retrieved tweet: #{tweet_url}"
+  image_url = tweet.media_url
+  large_image_url = URI.parse(image_url.to_s + ":large")
+  response = Net::HTTP.get_response large_image_url
+  puts "Retrieved image data: #{large_image_url}"
+
+  [tweet_url, response.body]
+end
