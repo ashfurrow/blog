@@ -169,7 +169,12 @@ task :article, :title do |task, args|
   title = args[:title]
   abort "You must specify a title." if title.nil? || title.length < 1
 
-  sh "bundle exec middleman article '#{title}'"
+  output = `bundle exec middleman article '#{title}'`
+  # output is something like 'create  source/blog/2016-05-28-testing-testing.html.markdown'
+  dir_name = output.scan(/[0-9]{4}-[0-9]{2}-[0-9]{2}.*\.html\.markdown/)[0][11...-14]
+  full_path = "source/img/blog/#{dir_name}"
+  sh "mkdir #{full_path}"
+  sh "open #{full_path}"
 end
 
 task :default => :server
