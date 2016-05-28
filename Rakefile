@@ -173,8 +173,15 @@ task :article, :title do |task, args|
   # output is something like 'create  source/blog/2016-05-28-testing-testing.html.markdown'
   dir_name = output.scan(/[0-9]{4}-[0-9]{2}-[0-9]{2}.*\.html\.markdown/)[0][11...-14]
   full_path = "source/img/blog/#{dir_name}"
-  sh "mkdir #{full_path}"
+  sh "mkdir #{full_path}" unless File.exists? full_path
   sh "open #{full_path}"
+
+  image_path = full_path.gsub(/^source/, "")
+  image_filename = "#{image_path}/background.jpg"
+  new_article_filename = output.scan(/source.*/)[0]
+  contents = File.read(new_article_filename)
+  contents.gsub!(/background_image: /, "background_image: #{image_filename}")
+  File.open(new_article_filename, 'w') { |file| file.puts contents }
 end
 
 task :default => :server
