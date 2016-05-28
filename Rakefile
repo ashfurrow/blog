@@ -213,13 +213,14 @@ def fetch_cloudy_conway
     config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
   end
 
-  tweet = client.user_timeline('CloudyConway').first.media.first
-  tweet_url = tweet.expanded_url
-  puts "Retrieved tweet: #{tweet_url}"
-  image_url = tweet.media_url
+  tweet = client.favorites(count: 100).select { |t| t.user.screen_name == "CloudyConway" }.first
+  tweet ||= client.user_timeline('CloudyConway').first
+  media = tweet.media.first
+  puts "Retrieved tweet: #{tweet.url}"
+  image_url = media.media_url
   large_image_url = URI.parse(image_url.to_s + ":large")
   response = Net::HTTP.get_response large_image_url
   puts "Retrieved image data: #{large_image_url}"
 
-  [tweet_url, response.body]
+  [tweet.url, response.body]
 end
