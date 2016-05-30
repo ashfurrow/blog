@@ -42,7 +42,7 @@ AWS is super-popular, but managing it is so infamously unfriendly that there's a
 
 The post has some great suggestions, like using a random, pre-configured port for BitTorrent Sync, and allowing incoming connections only on that one port and port 80 for administration. However, there are a few aspects to the post I think can be improved upon:
 
-1. <p>The post recommends opening port 80 to the entire internet, exposing the BitTorrent Sync dashboard (and consequently, access to your files [?]) to anyone who provides the username and password, which are [stored on the server in plaintext](http://help.getsync.com/hc/en-us/articles/204762689-Running-Sync-in-configuration-mode#overview).</p><p>Further complicating this problem is the fact that to administer BitTorrent Sync, you send your username and password to the server over port 80 _unencrypted_, so anyone monitoring your traffic can see the auth details in plaintext [?]. Yikes.</p>
+1. <p>The post recommends opening port 80 to the entire internet, exposing the BitTorrent Sync dashboard (and consequently, access to your files [?]) to anyone who provides the username and password, which are <a href="http://help.getsync.com/hc/en-us/articles/204762689-Running-Sync-in-configuration-mode#overview">stored on the server in plaintext</a>.</p><p>Further complicating this problem is the fact that to administer BitTorrent Sync, you send your username and password to the server over port 80 <em>unencrypted</em>, so anyone monitoring your traffic can see the auth details in plaintext [?]. Yikes.</p>
 
 1. The server syncs your files _in plaintext_, so an attacker who gains access to the server, or an NSA employee issuing a subpoena to Amazon for your instance's filesystem [?], now has all your files. 
 
