@@ -1,8 +1,8 @@
 ---
-title: Dropping Dropbox
+title: Securing a BitTorrent Sync EC2 Instance
 date: 2016-05-30 16:23:22 UTC
-og_image: /img/blog/dropping-dropbox/dashboard.png
-background_image: /img/blog/dropping-dropbox/background.jpg
+og_image: /img/blog/bittorrent-sync/dashboard.png
+background_image: /img/blog/bittorrent-sync/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/737279203532541952
 ---
 
@@ -80,7 +80,7 @@ When you first create your EC2 instance, you're given a certificate to log into 
 
 First, configure your security group in EC2 to restrict port 80 access to `127.0.0.1/0` (instead of `0.0.0.0/0`, which means "anyone").
 
-![Security Policy](/img/blog/dropping-dropbox/security.png)
+![Security Policy](/img/blog/bittorrent-sync/security.png)
 
 Then open a terminal and use the following command:
 
@@ -90,7 +90,7 @@ ssh -i path/to/your/certificate.pem -N -L  9000:ec2-XX-XXX-XXX-XXX.compute-1.ama
 
 This command redirects traffic from port 9000 locally over the SSH tunnel to port 80 on `ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com` on the other side of the tunnel. Modify `path/to/your/certificate.pem` to point to your actual EC2 certificate that was created when you launched the instance, and change `ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com` to be the public DNS of the instance.
 
-![Dashboard accessed through SSH tunnelling](/img/blog/dropping-dropbox/dashboard.png)
+![Dashboard accessed through SSH tunnelling](/img/blog/bittorrent-sync/dashboard.png)
 
 Run the command and go to `localhost:9000` on your computer. With BitTorrent Sync is running on the EC2 instance, you'll be prompted for your username and password to access the dashboard. Since all the traffic is routed over the SSH tunnel, no one can sniff out the plaintext credentials.
 
@@ -101,3 +101,7 @@ After you have your initial, encrypted sync folder set up, you could configure B
 It sucks that all this setup is necessary to use BitTorrent Sync on an EC2 instance, and it sucks that it costs money. Dropbox is easier and more convenient, and has a free plan that's pretty enticing for most users. If you've read this far, you probably take security seriously and don't want the NSA snooping on your sync'd files. To me, it's worth it. 
 
 While I was critical of BitTorrent Sync's documentation, it _is_ a step in the right direction, and I hope they continue to make setup easier. As for AWS, there are other solutions like [DigitalOcean](https://www.digitalocean.com) that might be easier. Cloud server administration is a lot simpiler than it used to be, and combined with cool services like BitTorrent Sync, I hope we can all take a step towards and end-to-end encrypted future.
+
+---
+
+Thanks to [Jeremy Beker](‪https://twitter.com/gothmog‬), [Aaron Vegh](https://twitter.com/aaronvegh), [Orta Therox](https://twitter.com/orta), and of course [my wife](https://twitter.com/ashleykrista) for their help proofreading this post.
