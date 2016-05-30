@@ -16,7 +16,7 @@ From my perspective, the company has been acting suspiciously for a while. Appoi
 
 I've been trying to move away from online services that allow easy mass surveillance. For example, I started in 2012, when I [moved off of Gmail](https://ashfurrow.com/blog/switching-from-gmail-to-fastmail/). It's not been easy, I think in part because services that are popular are typically ad-supported – viewing your data is how they sell ads to you – this implies a lack of end-to-end encryption, and security in general. I've been tolerating Dropbox because it's so _damm_ convenient, but the kernel extension was the last straw, so I [asked for alternatives](https://twitter.com/ashfurrow/status/736936037876895744). 
 
-The solution that appealed to me the most was [BitTorrent Sync](https://getsync.com). It's closed source (boo) but offers a good compromise between security and convenience. I decided to give it a try, and in the process I ran into confusing documentation and advice that would make me _less_ secure than using Dropbox. It really sucks that in order to _securely_ do something as commonplace as syncing files, you have to be pretty tech savvy. While I'm continuing to evaluate it for a sync solution (I haven't moved off Dropbox yet), I'm hoping this post will be a resource for anyone who wants to use BitTorrent Sync securely.
+The solution that appealed to me the most was [BitTorrent Sync](https://getsync.com). It's closed source (boo) but on its face, offers a good compromise between security and convenience. I decided to give it a try, and in the process I ran into confusing documentation and tutorials that would make me _less_ secure than using Dropbox. It really sucks that in order to _securely_ do something as commonplace as syncing files, you have to be pretty tech savvy. While I'm continuing to evaluate it for a sync solution (I'm not yet ready to commit to BitTorrent Sync), I'm hoping this post will be a resource for anyone who wants to use BitTorrent Sync securely.
 
 (But I'm hopeful that next month we'll see Apple show us some awesome end-to-end encryption features for iCloud Drive, too.)
 
@@ -24,7 +24,7 @@ I am not a security expert, so I've marked the aspects of this post that I'm not
 
 ## Overview
 
-Okay, so BitTorrent Sync is a service that runs on computers and synchronizes files across them using BitTorrent. Cool. Their site isn't clear on this, but you [need to buy a license](https://getsync.com/features#compare) to sync across multiple devices. It's $40/year, but has a 30-day trial (that they only tell you about after you download the app). Yeah, documentation needs some work.
+Okay, so BitTorrent Sync is a service that runs on computers and synchronizes files across them using BitTorrent. Cool. All of the posts I read on setting up BitTorrent Sync on a server used features available only with a [purchased license at at $40/year](https://getsync.com/features#compare), with a 30-day trial. This actually _introduces_ security problems when used with all the setup instructions I've found; one of my two recommendations in this post is to _not_ use these features on your server. I'll get to that later.
 
 BitTorrent Sync is a really impressive service that provides a _tonne_ of awesome features. I'm probably not going to use most of them, but crucially, it provides secure syncing of files across computers and smartphones.
 
@@ -50,11 +50,13 @@ These problems can be pretty easily mitigated. First, though, I need to explain 
 
 ## BitTorrent Sync
 
-The first time you start their app, you create an _identity_. Under the hood, BitTorrent Sync creates an [X.509 certificate](http://help.getsync.com/hc/en-us/articles/205451005) that's used to identify you and authenticate with computers you want to sync with, like your home desktop, work laptop, and smartphone. Nice. To link a new device to your identity, you use [a key in text or QR code format](http://help.getsync.com/hc/en-us/articles/205457815-Sync-Private-Identity-Linking-My-Devices). 
+What has confused me the most about BitTorrent Sync is that I approached it as a Dropbox replacement, but that's not its primary use case. Instead, it's about syncing individual folders with different people, not necessarily across one person's different devices. To have everything "just work", you need a license to share identities across devices. If you want a Dropbox-style sync solution with _one_ folder, then you don't need a license – just add the sync folders manually on all your devices.
 
-Your identity syncs folders across devices. Unlike Dropbox where you have one big folder, BitTorrent Sync lets you have many folders with different permission/sharing settings. Any machine with your identity has access to all your files, unencrypted.
+The first time you start their app, you create an _identity_. Under the hood, BitTorrent Sync creates an [X.509 certificate](http://help.getsync.com/hc/en-us/articles/205451005) that's used to identify you and authenticate with computers you want to sync with, if you use the licensed features. Nice. To link a new device to your identity, you use [a key in text or QR code format](http://help.getsync.com/hc/en-us/articles/205457815-Sync-Private-Identity-Linking-My-Devices). 
 
-The blog post I linked to suggests adding your identity to your new EC2 instance. I'm not sure this is wise, because an attacker who gains access to the instance now has your files. The process of adding the instance to your identity over unencrypted HTTP traffic also opens up concerns (I think the X.509 certificates mitigate this concern though [?]). My solution to this problem is to use _encrypted folders_.
+Your identity can sync folders across devices. Any machine with your identity has access to all your files, unencrypted. This is a security problem if you share your identity with your sync server...
+
+The blog post I linked to suggests adding your identity to your new EC2 instance. I'm not sure this is wise, because an attacker who gains access to the instance now has your files. My solution to this problem is to _not_ use my identity, but instead use _encrypted folders_.
 
 ## Encrypted folders
 
@@ -91,6 +93,8 @@ This command redirects traffic from port 9000 locally over the SSH tunnel to por
 ![Dashboard accessed through SSH tunnelling](/img/blog/dropping-dropbox/dashboard.png)
 
 Run the command and go to `localhost:9000` on your computer. With BitTorrent Sync is running on the EC2 instance, you'll be prompted for your username and password to access the dashboard. Since all the traffic is routed over the SSH tunnel, no one can sniff out the plaintext credentials.
+
+After you have your initial, encrypted sync folder set up, you could configure BitTorent Sync to not provide a web UI. It will continue to sync your encrypted folder, but not provide _any_ configuration capabilities to the outside world. Since I'm still messing around with it, I haven't done this yet. 
 
 ## Wrap Up
 
