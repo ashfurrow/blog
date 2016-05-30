@@ -19,6 +19,15 @@ p.readmore {
   font-style: italic;
 }
 
+/* Make multi-parapgrah list items have a regular bottom margin. */
+li {
+  p {
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 /* Need to give links the same treatment in lists as we do in paragraphs. */
 article li a {
   color: @brand-primary;
