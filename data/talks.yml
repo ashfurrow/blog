@@ -8,6 +8,7 @@ past_talks:
   dates: April 21–23, 2016
   image: mce.png
   slides: https://speakerdeck.com/ashfurrow/ios-checkup
+  video: https://www.youtube.com/watch?v=NqnDbND1Bm0
 - name: An Artsy Testing Tour
   conference: try! Swift
   url: http://www.tryswiftconf.com/en
