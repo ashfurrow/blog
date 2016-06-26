@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/dbgrandi/danger-proselint
+  revision: 3c9f2edf5f9708b9473720515f9c125573352585
+  ref: 3c9f2edf5f9708b9473720515f9c125573352585
+  specs:
+    danger-proselint (0.0.1)
+      danger
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,6 +26,7 @@ GEM
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     chunky_png (1.3.5)
+    claide (1.0.0)
     cloudflare (2.0.3)
       json (~> 1)
     coffee-script (2.4.1)
@@ -38,10 +47,21 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    cork (0.1.0)
+      colored (~> 1.2)
     curb (0.9.1)
     curb-fu (0.6.2)
       curb (>= 0.5.4.0)
       rack-test (>= 0.2.0)
+    danger (0.8.3)
+      claide (~> 1.0)
+      colored (~> 1.2)
+      cork (~> 0.1)
+      faraday (~> 0)
+      git (~> 1)
+      octokit (~> 4.2)
+      redcarpet (~> 3.3)
+      terminal-table (~> 1)
     erubis (2.7.0)
     ethon (0.7.4)
       ffi (>= 1.3.0)
@@ -51,6 +71,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     fastly (1.2.3)
     ffi (1.9.10)
+    ffi-aspell (1.1.0)
+      ffi
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.38.0)
@@ -181,6 +203,7 @@ GEM
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
     formatador (0.2.5)
+    git (1.3.0)
     haml (4.0.7)
       tilt
     hike (1.2.3)
@@ -214,6 +237,12 @@ GEM
     maxcdn (0.2.1)
       curb-fu (~> 0.6.2)
       signet (~> 0.5.1)
+    mdspell (0.2.0)
+      ffi-aspell (~> 1.1)
+      kramdown (~> 1.8)
+      mixlib-cli (~> 1.5)
+      mixlib-config (~> 2.2)
+      rainbow (~> 2.0)
     mercenary (0.3.5)
     middleman (3.4.1)
       coffee-script (~> 2.2)
@@ -274,11 +303,15 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mixlib-cli (1.6.0)
+    mixlib-config (2.2.1)
     multi_json (1.12.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    octokit (4.3.0)
+      sawyer (~> 0.7.0, >= 0.5.3)
     padrino-helpers (0.12.6)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.6)
@@ -289,6 +322,7 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rainbow (2.1.0)
     rake (10.4.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -297,11 +331,14 @@ GEM
       builder
       nokogiri (>= 1.4.1)
       trollop
-    redcarpet (3.3.3)
+    redcarpet (3.3.4)
     ref (2.0.0)
     rouge (1.7.2)
     ruby-progressbar (1.8.1)
     sass (3.4.21)
+    sawyer (0.7.0)
+      addressable (>= 2.3.5, < 2.5)
+      faraday (~> 0.8, < 0.10)
     signet (0.5.1)
       addressable (>= 2.2.3)
       faraday (>= 0.9.0.rc5)
@@ -317,6 +354,7 @@ GEM
     sprockets-sass (1.3.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    terminal-table (1.6.0)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
@@ -347,11 +385,14 @@ DEPENDENCIES
   ansi
   builder
   cloudflare
+  danger
+  danger-proselint!
   html-proofer
   httparty
   json
   less
   liquid
+  mdspell
   middleman (< 4)
   middleman-blog
   middleman-cdn
