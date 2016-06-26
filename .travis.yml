@@ -18,5 +18,6 @@ before_install:
 - echo $TRAVIS_COMMIT_RANGE
 script:
 - bundle exec rake build:test
+- bundle exec danger
 after_success:
 - bundle exec rake deploy:travis
