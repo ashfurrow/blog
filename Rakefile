@@ -2,6 +2,11 @@ require 'rake'
 require 'httparty'
 require 'json'
 
+desc "Initial setup"
+task :bootstrap do
+  puts 'Installing dependencies...'
+  puts `bundle install --without distribution`
+end
 
 def perform_s3_cmd (cmd)
   sh "s3cmd #{cmd} --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET"

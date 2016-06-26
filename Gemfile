@@ -8,11 +8,6 @@ gem 'middleman-cdn'
 gem 'middleman-syntax'
 gem 'middleman-inliner'
 
-gem 'danger'
-gem 'danger-proselint', :git => "https://github.com/dbgrandi/danger-proselint", :ref => "3c9f2edf5f9708b9473720515f9c125573352585"
-gem 'mdspell'
-gem 'html-proofer'
-
 gem 'httparty'
 gem 'json'
 gem 'cloudflare'
@@ -24,3 +19,11 @@ gem 'less'
 gem 'builder'
 gem 'ansi'
 gem 'ffi', :git=> 'https://github.com/ffi/ffi.git', :branch => 'elcapt'
+
+
+group :distribution do
+  gem 'danger'
+  gem 'danger-proselint', :git => "https://github.com/dbgrandi/danger-proselint", :ref => "3c9f2edf5f9708b9473720515f9c125573352585"
+  gem 'mdspell'
+  gem 'html-proofer'
+end
