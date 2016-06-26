@@ -68,5 +68,5 @@ markdown_files = (modified_files + added_files).select do |line|
   line.start_with?("source/blog") && line.end_with?(".markdown")
 end
 
-proselint.lint_files markdown_files
+prose.lint_files markdown_files
 check_spelling markdown_files
