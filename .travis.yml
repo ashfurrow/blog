@@ -16,6 +16,12 @@ env:
   - secure: lWW2xGabQUcWvceL5j7Y3J0HR9U0XOrxFB5YwG5vBD17NRDlgvWjjoTDcaoxbj6uSvoaAL74u8qIbG18GMddHwnrOf1HsRLkcZllmYuB35k4uabpg+GhILLMOhEpeqNZY40WwbTL2a65XisI+/85FNVDYAkr+QAAqMRkwmgpdX0=
   - secure: IsDkRKlzH15FkwBvJGqZYPrnhpRyWAxkjiUM/I7Hl6GHRTlL/1qBUBx2BfN0tWa76QXuHHZxx2BpSgiqRVmcSYtIlH0a94d6EGwAlJsQT0leacH4r9TTYAltACC/CKyxddG61toaNQASOoTxe5d0b6y1r96kv3EjA+hiu2pFnXo=
 
+addons:
+  apt:
+    packages:
+      - aspell
+      - aspell-en
+
 before_install:
   - pip install --user s3cmd
   - s3cmd --version
