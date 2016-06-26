@@ -1,10 +1,13 @@
 language: ruby
+
 sudo: false
+
 cache:
-- bundler
-- pip
-rvm:
-- 2.1.2
+  - bundler
+  - pip
+
+rvm: 2.1.2
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
@@ -12,12 +15,15 @@ env:
   - secure: JqVjtvrOk08YUItJfsW+w2plbwloaxwZnHcS5Qy/FfLNwDVfTVvGYXyhZMBQ7AshhoALKpq1sTGbxCUtMl5i7pNTi3zlEYYc5aRQOrFrU9kC0RCQVkGjH/cOg3yo3ojoIHP3OxcRyBOp/fZwRTuqCRCs8vzkJ/hDr9d+XN1ehto=
   - secure: lWW2xGabQUcWvceL5j7Y3J0HR9U0XOrxFB5YwG5vBD17NRDlgvWjjoTDcaoxbj6uSvoaAL74u8qIbG18GMddHwnrOf1HsRLkcZllmYuB35k4uabpg+GhILLMOhEpeqNZY40WwbTL2a65XisI+/85FNVDYAkr+QAAqMRkwmgpdX0=
   - secure: IsDkRKlzH15FkwBvJGqZYPrnhpRyWAxkjiUM/I7Hl6GHRTlL/1qBUBx2BfN0tWa76QXuHHZxx2BpSgiqRVmcSYtIlH0a94d6EGwAlJsQT0leacH4r9TTYAltACC/CKyxddG61toaNQASOoTxe5d0b6y1r96kv3EjA+hiu2pFnXo=
+
 before_install:
-- pip install --user s3cmd
-- s3cmd --version
-- echo $TRAVIS_COMMIT_RANGE
+  - pip install --user s3cmd
+  - s3cmd --version
+  - echo $TRAVIS_COMMIT_RANGE
+
 script:
-- bundle exec rake build:test
-- bundle exec danger
+  - bundle exec rake build:test
+  - bundle exec danger
+
 after_success:
-- bundle exec rake deploy:travis
+  - bundle exec rake deploy:travis
