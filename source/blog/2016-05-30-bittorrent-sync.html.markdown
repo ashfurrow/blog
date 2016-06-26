@@ -104,4 +104,4 @@ While I was critical of BitTorrent Sync's documentation, it _is_ a step in the r
 
 ---
 
-Thanks to [Jeremy Beker](‪https://twitter.com/gothmog‬), [Aaron Vegh](https://twitter.com/aaronvegh), [Orta Therox](https://twitter.com/orta), and of course [my wife](https://twitter.com/ashleykrista) for their help proofreading this post.
+Thanks to [Jeremy Beker](https://twitter.com/gothmog‬), [Aaron Vegh](https://twitter.com/aaronvegh), [Orta Therox](https://twitter.com/orta), and of course [my wife](https://twitter.com/ashleykrista) for their help proofreading this post.
