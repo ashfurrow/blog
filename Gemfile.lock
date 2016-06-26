@@ -1,9 +1,8 @@
 GIT
   remote: https://github.com/dbgrandi/danger-proselint
-  revision: 3c9f2edf5f9708b9473720515f9c125573352585
-  ref: 3c9f2edf5f9708b9473720515f9c125573352585
+  revision: 35a22b334a05a7baa7815677f0e3c4e01b0d281e
   specs:
-    danger-proselint (0.0.1)
+    danger-prose (1.0.0)
       danger
 
 GIT
@@ -381,7 +380,7 @@ DEPENDENCIES
   builder
   cloudflare
   danger
-  danger-proselint!
+  danger-prose!
   ffi!
   html-proofer
   httparty
