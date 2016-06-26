@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/dbgrandi/danger-proselint
+  revision: 3c9f2edf5f9708b9473720515f9c125573352585
+  ref: 3c9f2edf5f9708b9473720515f9c125573352585
+  specs:
+    danger-proselint (0.0.1)
+      danger
+
+GIT
   remote: https://github.com/ffi/ffi.git
   revision: 250ed0d3ccc77c397fd46b65d94b6b502feb850f
   branch: elcapt
@@ -46,15 +54,18 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    cork (0.1.0)
+      colored (~> 1.2)
     curb (0.9.1)
     curb-fu (0.6.2)
       curb (>= 0.5.4.0)
       rack-test (>= 0.2.0)
-    danger (0.8.2)
-      claide
+    danger (0.8.3)
+      claide (~> 1.0)
       colored (~> 1.2)
-      faraday
-      git
+      cork (~> 0.1)
+      faraday (~> 0)
+      git (~> 1)
       octokit (~> 4.2)
       redcarpet (~> 3.3)
       terminal-table (~> 1)
@@ -66,6 +77,8 @@ GEM
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     fastly (1.2.3)
+    ffi-aspell (1.1.0)
+      ffi
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.38.0)
@@ -230,6 +243,12 @@ GEM
     maxcdn (0.2.1)
       curb-fu (~> 0.6.2)
       signet (~> 0.5.1)
+    mdspell (0.2.0)
+      ffi-aspell (~> 1.1)
+      kramdown (~> 1.8)
+      mixlib-cli (~> 1.5)
+      mixlib-config (~> 2.2)
+      rainbow (~> 2.0)
     mercenary (0.3.5)
     middleman (3.4.1)
       coffee-script (~> 2.2)
@@ -290,6 +309,8 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mixlib-cli (1.6.0)
+    mixlib-config (2.2.1)
     multi_json (1.12.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -307,6 +328,7 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rainbow (2.1.0)
     rake (10.4.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -315,7 +337,7 @@ GEM
       builder
       nokogiri (>= 1.4.1)
       trollop
-    redcarpet (3.3.3)
+    redcarpet (3.3.4)
     ref (2.0.0)
     rouge (1.7.2)
     ruby-progressbar (1.8.1)
@@ -370,12 +392,14 @@ DEPENDENCIES
   builder
   cloudflare
   danger
+  danger-proselint!
   ffi!
   html-proofer
   httparty
   json
   less
   liquid
+  mdspell
   middleman (< 4)
   middleman-blog
   middleman-cdn
