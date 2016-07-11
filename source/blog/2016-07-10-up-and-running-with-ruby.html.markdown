@@ -37,7 +37,7 @@ And Aeryn uses Danger, including [Rubocop](https://github.com/bbatsov/rubocopp),
 
 So three new Ruby projects completed in as many days. Like I said, intense!
 
-I struggled. A lot. When I couldn't figure something out on my own, I asked for help. Orta offered a lot of [proactive advice](https://github.com/Moya/Aeryn/pull/9#discussion_r69395068) and used metaphors from Objective-C development to help explain concepts. Automated tools like [Rubocop](https://github.com/bbatsov/rubocop) were really helpful at showing me how to write idiomatic Ruby.
+I struggled. A lot. When I couldn't figure something out on my own, I [asked for help](https://twitter.com/ashfurrow/status/749367814369214464). Orta offered a lot of [proactive advice](https://github.com/Moya/Aeryn/pull/9#discussion_r69395068) and used metaphors from Objective-C development to help explain concepts. Automated tools like [Rubocop](https://github.com/bbatsov/rubocop) were really helpful at showing me how to write idiomatic Ruby.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I still have much to learn. <a href="https://t.co/kl2FQUHv03">pic.twitter.com/kl2FQUHv03</a></p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/750844591331500032">July 7, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
