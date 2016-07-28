@@ -189,10 +189,7 @@ task :article, :title do |task, args|
 
   puts "Writing background image file: #{image_source_path}"
   File.open(image_source_path, 'w') { |file| file.puts image_details[1] }
-
-  # Images from CloudyConway are typically 1023 wide, and a variable height. We'll cap the height at 400.
-  puts 'Resizing to 400x1023'
-  sh "sips --cropToHeightWidth 400 1023 #{image_source_path}"
+  puts 'Please resize the image.'
 
   puts 'Applying article template frontmatter.'
   new_article_filename = output.scan(/source.*/)[0]
