@@ -228,3 +228,18 @@ def fetch_cloudy_conway
 
   [tweet.url, response.body]
 end
+
+def git_branch_name
+  `git rev-parse --abbrev-ref HEAD`
+end
+
+task :pr do
+  branch_name = git_branch_name
+  if branch_name == 'master'
+    puts 'On master branch, not PRing.'
+    exit 1
+  end
+
+  `git push -u origin #{branch_name}`
+  `open https://github.com/ashfurrow/blog/pull/new/ashfurrow:master...#{branch_name}` 
+end
