@@ -26,6 +26,7 @@ before_install:
   - pip install --user s3cmd
   - s3cmd --version
   - echo $TRAVIS_COMMIT_RANGE
+  - cp .proselintrc ~/
 
 script:
   - bundle exec rake build:test
