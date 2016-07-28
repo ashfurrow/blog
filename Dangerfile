@@ -1,9 +1,9 @@
 # Sometimes it's a README fix, or something like that - which isn't relevant for
 # including in a project's CHANGELOG for example
-declared_trivial = pr_title.include? "#trivial"
+declared_trivial = github.pr_title.include? "#trivial"
 
 # Make it more obvious that a PR is a work in progress and shouldn't be merged yet
-warn("PR is classed as Draft") if pr_title.include? "[Draft]"
+warn("PR is classed as Draft") if github.pr_title.include? "[Draft]"
 
 # From https://github.com/artsy/artsy.github.io/blob/source/Dangerfile
 
@@ -25,7 +25,7 @@ def check_spelling(files, ignored_words = [])
     return
   end
 
-  markdown_files = files ? Dir.glob(files) : (modified_files + added_files)
+  markdown_files = files ? Dir.glob(files) : (git.modified_files + git.added_files)
   markdown_files.select! do |line| line.end_with?(".markdown") end
 
   result_texts = Hash[markdown_files.uniq.collect { |md| [md, `mdspell #{md} -r`.strip] }]
@@ -64,7 +64,7 @@ end
 
 
 # Look through all changed Markdown files
-markdown_files = (modified_files + added_files).select do |line|
+markdown_files = (git.modified_files + git.added_files).select do |line|
   line.start_with?("source/blog") && line.end_with?(".markdown")
 end
 
