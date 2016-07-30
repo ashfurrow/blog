@@ -62,14 +62,3 @@ configure :build do
   activate :asset_hash, ignore: [/^img\/.*/, /^fonts\/.*/, /^[^\/]*$/]
   # Last one is for root-directory favicons, etc.
 end
-
-###
-# Sync setup
-###
-
-# Push to S3
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'staging.ashfurrow.com' # Plugin needs a default bucket, better use staging.
-  s3_sync.aws_access_key_id          = ENV['SITE_AWS_KEY']
-  s3_sync.aws_secret_access_key      = ENV['SITE_AWS_SECRET']
-end

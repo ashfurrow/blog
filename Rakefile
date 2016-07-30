@@ -23,14 +23,6 @@ namespace :deploy do
     cdn.fpurge_ts 'ashfurrow.com'
   end
 
-  desc "Deployment to staging"
-  task :staging do
-    sh 'bundle exec middleman s3_sync --bucket=staging.ashfurrow.com'
-
-    # Add any staging-only files.
-    perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' staging-only/* s3://staging.ashfurrow.com/"
-  end
-
   desc "Deploys RSS and Atom feeds"
   task :feeds do
     # Push the generated feeds to the feeds.ashfurrow.com bucket.
@@ -51,9 +43,8 @@ namespace :deploy do
     puts "Feeds deployed."
   end
 
-  desc "Deploys to staging, production, and syncs feeds"
+  desc "Deploys to production and syncs feeds"
   task :all do
-    Rake::Task['deploy:staging'].invoke
     Rake::Task['deploy:fetch_gh_pages'].invoke
     Rake::Task['deploy:gh_pages'].invoke
     Rake::Task['deploy:feeds'].invoke
@@ -111,18 +102,6 @@ namespace :publish do
     Rake::Task['build'].invoke
     Rake::Task['deploy:production'].invoke
     Rake::Task['deploy:feeds'].invoke
-  end
-
-  desc "Build and deploy to staging"
-  task :staging do
-    Rake::Task['build'].invoke
-    Rake::Task['deploy:staging'].invoke
-  end
-
-  desc "Build and deploy to both staging and production"
-  task :all do
-    Rake::Task['build'].invoke
-    Rake::Task['deploy:all'].invoke
   end
 end
 
