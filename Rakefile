@@ -85,6 +85,8 @@ namespace :deploy do
     head = `git log --pretty="%h" -n1`.chomp
 
     Dir.chdir('build') do
+      `cp feed.rss.xml feed`
+      `cp feed.rss.xml index.php/feed`
       if `git status --porcelain`.chomp.empty?
         puts 'No changes made.'
       else
