@@ -36,6 +36,12 @@ before_install:
   - eval `ssh-agent -s`
   - ssh-add deploy_key
 
+  # Setup deploy directory.
+  - mkdir build
+  - cd build; git init
+  - cd build; git remote add origin https://github.com/ashfurrow/ashfurrow.github.io.git
+  - cd build; git pull origin master 
+
   # Configure git.
   - git config --global user.name "Travis CI"
   - git config --global user.email "ash@ashfurrow.com"
