@@ -48,7 +48,8 @@ before_install:
 
 script:
   - bundle exec rake build:test
-  - bundle exec danger
+  # Disabled until I can finish updating to Danger 2.0 in #225.
+  # - bundle exec danger
 
 after_success:
   - bundle exec rake deploy:travis
