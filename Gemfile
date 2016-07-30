@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'middleman', '< 4'
 gem 'middleman-blog'
-gem 'middleman-s3_sync'
-gem 'middleman-cdn'
 gem 'middleman-syntax'
 gem 'middleman-inliner'
 
