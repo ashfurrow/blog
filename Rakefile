@@ -14,9 +14,13 @@ end
 
 namespace :deploy do
 
-  desc "Deployment to production"
-  task :production do
-    sh 'bundle exec middleman s3_sync --bucket=ashfurrow.com'
+  def cdn
+    require 'cloudflare'
+    ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
+  end
+
+  task :invalidate do
+    cdn.fpurge_ts 'ashfurrow.com'
   end
 
   desc "Deployment to staging"
@@ -29,18 +33,15 @@ namespace :deploy do
 
   desc "Deploys RSS and Atom feeds"
   task :feeds do
-    require 'cloudflare'
     # Push the generated feeds to the feeds.ashfurrow.com bucket.
     perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
 
-    # Invalidate the CDN.
-    cloudflare = ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
     ['http://feed.ashfurrow.com', 'https://feed.ashfurrow.com', 'http://ashfurrow.com', 'https://ashfurrow.com'].each do |base_url|
       ['feed.xml', 'feed.rss.xml'].each do |feed|
         feed_url = "#{base_url}/#{feed}"
         puts "Invalidating #{feed_url} ... "
         begin
-          cloudflare.zone_file_purge(base_url, feed_url)
+          cdn.zone_file_purge(base_url, feed_url)
         rescue => e
           abort "Error invalidating Cloudflare object at #{feed_url}: #{e}"
         end
@@ -50,21 +51,13 @@ namespace :deploy do
     puts "Feeds deployed."
   end
 
-  desc "Fetches IP addresses and updates bucket policy"
-  task :update_s3_permissions do
-    Rake::Task['update_ips_to_whitelist'].invoke
-
-    puts "Updating bucket policy."
-    perform_s3_cmd "setpolicy Permissions.json s3://ashfurrow.com"
-    puts "Done."
-  end
-
   desc "Deploys to staging, production, and syncs feeds"
   task :all do
     Rake::Task['deploy:staging'].invoke
-    Rake::Task['deploy:production'].invoke
+    Rake::Task['deploy:fetch_gh_pages'].invoke
+    Rake::Task['deploy:gh_pages'].invoke
     Rake::Task['deploy:feeds'].invoke
-    Rake::Task['deploy:update_s3_permissions'].invoke
+    Rake::Task['deploy:invalidate'].invoke
   end
 
   desc "Deploy if Travis environment variables are set correctly"
@@ -85,6 +78,30 @@ namespace :deploy do
     end
 
     Rake::Task['deploy:all'].invoke
+  end
+
+  task :fetch_gh_pages do
+    Dir.mkdir('build') unless Dir.exist?('build')
+    Dir.chdir('build') do
+      `git init`
+      remote_exists = (`git remote | grep origin`).chomp.length > 0
+      `git remote add origin https://github.com/ashfurrow/ashfurrow.github.io.git` unless remote_exists
+      `git pull origin master`
+    end
+  end
+
+  task :gh_pages do
+    head = `git log --pretty="%h" -n1`.chomp
+
+    Dir.chdir('build') do
+      if `git status --porcelain`.chomp.empty?
+        puts 'No changes made.'
+      else
+        message = ["Site updated to #{head}", suffix].compact.join("\n\n")
+        `git add . ; git commit -m \"#{message}\"`
+        `git push origin master`
+      end
+    end
   end
 end
 
@@ -107,25 +124,6 @@ namespace :publish do
     Rake::Task['build'].invoke
     Rake::Task['deploy:all'].invoke
   end
-end
-
-desc 'Updates Permissions.json to the latest Cloudflare datacentre IP addresses'
-task :update_ips_to_whitelist do
-  puts 'Fetching new IP addresses...'
-
-  response = HTTParty.get('https://api.cloudflare.com/client/v4/ips')
-  ipv4_addrs = response.parsed_response['result']['ipv4_cidrs']
-
-  if ipv4_addrs.nil? 
-    abort 'IP Address fetch failed.'
-  else
-    permissions_file_name = 'Permissions.json'
-    permissions = JSON.parse(File.read(permissions_file_name))
-    permissions['Statement'].first['Condition']['NotIpAddress']['aws:SourceIp'] = ipv4_addrs
-    File.open(permissions_file_name, 'w') { |file| file.write(JSON.pretty_generate(permissions)) }
-  end
-
-  puts 'Updated Permissions.json file.'
 end
 
 namespace :build do
@@ -228,28 +226,4 @@ def fetch_cloudy_conway
   puts "Retrieved image data: #{large_image_url}"
 
   [tweet.url, response.body]
-end
-
-task :fetch_gh_pages do
-  Dir.mkdir('build') unless Dir.exist?('build')
-  Dir.chdir('build') do
-    `git init`
-    remote_exists = (`git remote | grep origin`).chomp.length > 0
-    `git remote add origin https://github.com/ashfurrow/ashfurrow.github.io.git` unless remote_exists
-    `git pull origin master`
-  end
-end
-
-task :deploy_to_gh_pages do
-  head = `git log --pretty="%h" -n1`.chomp
-
-  Dir.chdir('build') do
-    if `git status --porcelain`.chomp.empty?
-      puts 'No changes made.'
-    else
-      message = ["Site updated to #{head}", suffix].compact.join("\n\n")
-      `git add . ; git commit -m \"#{message}\"`
-      `git push origin master`
-    end
-  end
 end
