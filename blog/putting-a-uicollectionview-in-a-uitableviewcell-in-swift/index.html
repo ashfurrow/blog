@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Putting a UICollectionView in a UITableViewCell in Swift - Ash Furrow</title>
+<!-- Feed Tags -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<!-- Device specifier -->
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Meta stuff -->
+<link href="https://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/" itemprop="url">
+<meta content="A few years ago, I wrote this post on putting a collection view inside a table view cell. Collection views were still pretty new and there wasn’t a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog’s traffic.  Since Swift was announced, I’ve been getting regular requests to rewrite my tutorial in Swift. Which brings us to today’s topic." itemprop="about">
+<meta content="A few years ago, I wrote this post on putting a collection view inside a table view cell. Collection views were still pretty new and there wasn’t a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog’s traffic.  Since Swift was announced, I’ve been getting regular requests to rewrite my tutorial in Swift. Which brings us to today’s topic." itemprop="description">
+<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<!-- Open Graph -->
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="Putting a UICollectionView in a UITableViewCell in Swift" property="og:title">
+<meta content="https://ashfurrow.com/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="A few years ago, I wrote this post on putting a collection view inside a table view cell. Collection views were still pretty new and there wasn’t a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog’s traffic.  Since Swift was announced, I’ve been getting regular requests to rewrite my tutorial in Swift. Which brings us to today’s topic." property="og:description">
+<meta content="https://ashfurrow.com/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/layout.png" property="og:image">
+<!-- Twitter Cards -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="Putting a UICollectionView in a UITableViewCell in Swift" name="twitter:title">
+<meta content="A few years ago, I wrote this post on putting a collection view inside a table view cell. Collection views were still pretty new and there wasn’t a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog’s traffic.  Since Swift was announced, I’ve been getting regular requests to rewrite my tutorial in Swift. Which brings us to today’s topic." name="twitter:description">
+<meta content="https://ashfurrow.com/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/layout.png" name="twitter:image">
+<!-- Favicon, site icons, etc -->
+<link href="/img/siteimage_dark.png" rel="image_src">
+<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!-- Favicons, generated from https://realfavicongenerator.net/ -->
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<!-- Search enginer index -->
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+{
+'@context' : 'http://schema.org',
+'@type' : 'Person',
+'name' : 'Ash Furrow',
+'url' : 'https://ashfurrow.com',
+'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
+'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
+}
+</script>
+<script type="application/ld+json">
+{
+'@context': 'http://schema.org',
+'@type': 'Organization',
+'url': 'https://ashfurrow.com',
+'logo': '/img/siteimage.png'
+}
+</script>
+<!-- Style-specific Javascripts -->
+<style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:992px) {
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid>.navbar-header,
+.container-fluid>.navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid>.navbar-header,
+  .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    float: left;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #404040;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: #808080;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+.post-preview>.post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+body {
+  webkit-tap-highlight-color: #398ccc;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_text_link {
+    display: none;
+  }
+}
+
+.nav #feed_link {
+  font-size: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 40px;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"),url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"),url('/fonts/icomoon.woff?-ar0ypv') format("woff"),url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script>
+<script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script>
+<script>
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '../../css/all-8659dfce.css' );
+</script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-9572240-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Backup to load styles not from javascript. -->
+<noscript>
+<link href="/css/all-8659dfce.css" rel="stylesheet">
+</noscript>
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle Navigation</span>
+<!-- Hamburger -->
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">
+<i class="icon-site-logo"></i>
+</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a id="feed_text_link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
+<a id="feed_link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');">
+<div class="header-dimmer"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-heading">
+<h1>Putting a UICollectionView in a UITableViewCell in Swift</h1>
+</div>
+</div>
+</div>
+</div>
+<!-- If a background image source was specified, link to it. -->
+</header>
+
+<div class="container">
+<article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>A few years ago, I wrote this post on <a href="/blog/putting-a-uicollectionview-in-a-uitableviewcell/">putting a collection view inside a table view cell</a>. Collection views were still pretty new and there wasn’t a lot written about them, so my post got pretty popular. It now accounts for over a fifth of my entire blog’s traffic. </p>
+
+<p>Since Swift was announced, I’ve been getting regular requests to rewrite my tutorial in Swift. Which brings us to today’s topic. </p>
+
+
+
+<p>Having a collection view within a table view cell has become a common design pattern used in apps like Spotify, the App Store, and even the <a href="http://artsy.net/iphone">Artsy app</a>. It’s useful for having a vertical list of things (the table view), with each containing a horizontal list (the collection view). </p>
+
+<p>(Like most things in programming, a little upfront planning can save a lot of work down the road, so let’s think about what we want to do first.)</p>
+
+<p>If we step back and think about this from a user interface perspective, it’ll give us a hint at how we can structure our code, too. </p>
+
+<p><img alt="UI layout" src="/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/layout.png"></p>
+
+<p>So the collection view cells sit within the collection view (just like they normally do). And each collection view fills an entire table view cell (an entire row of the table view). And then the table view cells are inside the table view (again, just like normal). </p>
+
+<p>OK, cool. The only thing that’s odd here is the collection view <em>inside</em> of a table view cell. That’s pretty unusual, but since they’re all <code>UIView</code>s, it’s totally possible. The difficult part is “connecting” the collection views to a data source. </p>
+
+<p>There are two basic approaches here. You can store the information needed for the collection view data source in the table view cell, or you can keep it in the view controller and find a way to distinguish between the collection views. The first option sounds easiest, but it violates <a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html">Model-View-Controller</a>, which says that views should not have direct access to models. Let’s take the second approach, since it adheres more closely to MVC. </p>
+
+<p>So our view controller is going to act as a datasource and delegate for both the table view, and <em>every</em> collection view.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          
+
+<p><img alt="Code structure" src="/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/diagram.png"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Often, a collection view’s data source is its view controller. The problem is that we only have <em>one</em> view controller but <em>many</em> collection views. We need some way to distinguish between a collection view on the first row, and one on the second row, and third, and fourth…</p>
+
+<p>We need a way to store which table view cell a collection view is in. Since my table view only has one section, I really only need to know which <em>row</em> my collection view is in. A row is just an <code>Int</code>. </p>
+
+<p>As luck would have it, <code>UIView</code> has a useful property: <code>tag</code>. The documentation describes <code>tag</code> as the following.</p>
+
+<blockquote>
+<p>An integer that you can use to identify view objects in your application.</p>
+</blockquote>
+
+<p>This will be <em>perfect</em> for storing which row the collection view is in.</p>
+
+<p>OK, so it sounds like we’ve got a plan with three components: a view controller class, a table view cell class, and a storyboard to glue everything together. Let’s do it!</p>
+
+<p>So you’ll need to have a table view setup – drag a “Table View Controller” onto the storyboard. Create a swift file with a <code>UITableViewController</code> subclass and set the custom class property in the storyboard to use this new class. </p>
+
+<p>Next, configure your table view cell: give it a reuse identifier (I used “Cell”) and a custom height if you want to (I used 88pt). Also create a new swift file for your <code>UITableViewCell</code> subclass and set the prototype cell’s custom class.</p>
+
+<p>Drag a collection view onto the cell (Xcode will make it a subview of the cell’s content view). Resize it to fill the entire cell and hit “add missing constraints” to make autolayout do its magic. Your view hierarchy should be will look something like this:</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          
+
+<p><img alt="Storyboard hierarchy" src="/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/hierarchy.png"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>All that’s left to do is configure the collection view. I set its size, spacing, and content insets to make the cells vertically centred. I also set its scroll direction to “horizontal”, unchecked “Shows Horizontal Indicator”, and set its background colour to white.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          
+
+<p><img alt="Collection geometry view configuration" src="/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/config.png"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Finally, I set the reuse identifier of the collection view cell to “Cell” (it needs to be something). And that’s it for our storyboard configuration. On to the code!</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          
+
+<p><img alt="Completed storyboard" src="/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/viewController.png"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Now that we have our interface set up and configured, it’s time for the code. Open the file with our <code>UITableViewCell</code> subclass. We’re going to add one property: a reference to its collection view. </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">TableViewCell</span><span class="p">:</span> <span class="kt">UITableViewCell</span> <span class="p">{</span>
+
+    <span class="k">@IBOutlet</span> <span class="kd">private</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="o">!</span>
+
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Make sure to connect this collection view outlet to the cell’s collection view in the storyboard.</p>
+
+<p>This is a standard <code>IBOutlet</code>, except I marked it as private. This is to create a separation of concerns – our view controller shouldn’t be accessing the collection view through the table view cell. </p>
+
+<p>Instead, we’ll create a function to set the delegate, datasource, and row number on the collection view. Swift’s handling of a type with multiple protocols is a bit weird, but this is the function.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">func</span> <span class="n">setCollectionViewDataSourceDelegate</span>
+    <span class="o">&lt;</span><span class="kt">D</span><span class="p">:</span> <span class="kd">protocol</span><span class="o">&lt;</span><span class="kt">UICollectionViewDataSource</span><span class="p">,</span> <span class="kt">UICollectionViewDelegate</span><span class="o">&gt;&gt;</span>
+    <span class="p">(</span><span class="nv">dataSourceDelegate</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">forRow</span> <span class="nv">row</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="n">collectionView</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="n">dataSourceDelegate</span>
+    <span class="n">collectionView</span><span class="o">.</span><span class="n">dataSource</span> <span class="o">=</span> <span class="n">dataSourceDelegate</span>
+    <span class="n">collectionView</span><span class="o">.</span><span class="n">tag</span> <span class="o">=</span> <span class="n">row</span>
+    <span class="n">collectionView</span><span class="o">.</span><span class="nf">reloadData</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>(<strong>Update</strong>: Thanks to <a href="https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell/issues/1">a reader’s feedback</a>, I’ve added a call to <code>reloadData()</code> – take a look at their GitHub issue for a discussion why.)</p>
+
+<p>The <code>D</code> type conforms to both the datasource and delegate protocols. Cool. And we set the collection view’s <code>tag</code> property – awesome. </p>
+
+<p>OK so the next thing we need to do is set up our view controller and get it to display some of our becollectioned table view cells. I’m going to set a property on our view controller to be equal to some random generated data.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UITableViewController</span> <span class="p">{</span>
+
+    <span class="k">let</span> <span class="nv">model</span><span class="p">:</span> <span class="p">[[</span><span class="kt">UIColor</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">generateRandomData</span><span class="p">()</span>
+
+    <span class="o">...</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>The <code>model</code> property is an array of arrays of <code>UIColor</code>. This seems pretty weird at first, but let’s think about it. Each table row has an entry in the outer array, and each row <em>also</em> needs an array of things for the collection view cells. So we have an array of arrays. The <code>UIColor</code> part is used to set the background colour of the collection view cells. </p>
+
+<p>(Note: If you want to see how to generate random colours, <a href="https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell/blob/master/Table%20View%20in%20a%20Collection%20View/Helpers.swift">check it out here</a>.)</p>
+
+<p>Next we have the bare necessities to display some table view cells. </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+    <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">count</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+    <span class="n">cellForRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span> <span class="p">{</span>
+
+    <span class="k">let</span> <span class="nv">cell</span> <span class="o">=</span> <span class="n">tableView</span><span class="o">.</span><span class="nf">dequeueReusableCellWithIdentifier</span><span class="p">(</span><span class="s">"Cell"</span><span class="p">,</span> 
+        <span class="nv">forIndexPath</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">cell</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Very straightforward. Now we just need to set the collection view’s delegate/datasource and row number. We can do this with a different <code>UITableViewDelegate</code> function, one that is called <em>just before</em> the cell is about to be displayed.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+    <span class="n">willDisplayCell</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> 
+    <span class="n">forRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="n">guard</span> <span class="k">let</span> <span class="nv">tableViewCell</span> <span class="o">=</span> <span class="n">cell</span> <span class="k">as</span><span class="p">?</span> <span class="kt">TableViewCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+
+    <span class="n">tableViewCell</span><span class="o">.</span><span class="nf">setCollectionViewDataSourceDelegate</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">forRow</span><span class="p">:</span> <span class="n">indexPath</span><span class="o">.</span><span class="n">row</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>OK awesome! But now we have a problem. We’ve told the collection view to use <code>self</code> as a delegate and datasource, but we don’t conform to those protocols yet. No worry, let’s add an extension to <code>ViewController</code>. </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UICollectionViewDelegate</span><span class="p">,</span> <span class="kt">UICollectionViewDataSource</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> 
+        <span class="n">numberOfItemsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+
+        <span class="k">return</span> <span class="n">model</span><span class="p">[</span><span class="n">collectionView</span><span class="o">.</span><span class="n">tag</span><span class="p">]</span><span class="o">.</span><span class="n">count</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> 
+        <span class="n">cellForItemAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span> <span class="p">{</span>
+
+        <span class="k">let</span> <span class="nv">cell</span> <span class="o">=</span> <span class="n">collectionView</span><span class="o">.</span><span class="nf">dequeueReusableCellWithReuseIdentifier</span><span class="p">(</span><span class="s">"Cell"</span><span class="p">,</span> 
+            <span class="nv">forIndexPath</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span>
+
+        <span class="n">cell</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="n">model</span><span class="p">[</span><span class="n">collectionView</span><span class="o">.</span><span class="n">tag</span><span class="p">][</span><span class="n">indexPath</span><span class="o">.</span><span class="n">item</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">cell</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Super! In both of these methods, we use the <code>collectionView.tag</code> property to determine which of the outer arrays to access. That gives us our list of colours for the collection view. Based on that list, we can return the number of items in the collection view, or a configured cell to display. Neat!</p>
+
+<p>(I know we’re accessing the <code>tag</code> property here, but we’re doing it <em>directly</em> on the collection view instead of through the table view cell. I admit that it’s still a <a href="https://en.wikipedia.org/wiki/Leaky_abstraction">leaky abstraction</a>, but this is a demonstration of the basic principles.)</p>
+
+<p>(Also note that we’re not actually implementing any delegate functions yet. This depends on your codebase, but a <code>cellForItemAtIndexPath</code> implementation would go here.)</p>
+
+<p>OK cool. We can build and run our app and we see everything looks fine. </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          
+
+<p><img alt="Working app" src="/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/screenshot.png"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>But does it <em>feel</em> fine? Something is wrong, but what is it? Well, remember that the table view cells are being reused, so our collection views are being reused too. When they are, they’re starting off already scrolled instead of at the beginning of the collection view. </p>
+
+<p>What we want is to have our interface “remember” where each of the collection views was scrolled to. This would let us scroll new collection views to the beginning, and scroll reused collection views to wherever they were left off. </p>
+
+<p>Let’s use a computed property on the <code>TableViewCell</code> class. </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="k">var</span> <span class="nv">collectionViewOffset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span>
+    <span class="k">get</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">collectionView</span><span class="o">.</span><span class="n">contentOffset</span><span class="o">.</span><span class="n">x</span>
+    <span class="p">}</span>
+
+    <span class="k">set</span> <span class="p">{</span>
+        <span class="n">collectionView</span><span class="o">.</span><span class="n">contentOffset</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">newValue</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Nice. OK, now we just need to use the property.</p>
+
+<p>Returning to our view controller, we can modify the <code>willDisplayCell</code> function and add another function. These will retrieve and set the collection view offsets. </p>
+
+<p>First create a new dictionary to store the offests, corresponding to their rows.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UITableViewController</span> <span class="p">{</span>
+
+    <span class="k">let</span> <span class="nv">model</span><span class="p">:</span> <span class="p">[[</span><span class="kt">UIColor</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">generateRandomData</span><span class="p">()</span>
+    <span class="k">var</span> <span class="nv">storedOffsets</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">]()</span>
+
+    <span class="o">...</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Now we can store and retrieve the offsets stored here. If an offset hasn’t been recorded yet, we will use <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID72">Swift’s coalesce</a> operator to default to <code>0</code>, the beginning of the collection view.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+    <span class="n">willDisplayCell</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> 
+    <span class="n">forRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="n">guard</span> <span class="k">let</span> <span class="nv">tableViewCell</span> <span class="o">=</span> <span class="n">cell</span> <span class="k">as</span><span class="p">?</span> <span class="kt">TableViewCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+
+    <span class="n">tableViewCell</span><span class="o">.</span><span class="nf">setCollectionViewDataSourceDelegate</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">forRow</span><span class="p">:</span> <span class="n">indexPath</span><span class="o">.</span><span class="n">row</span><span class="p">)</span>
+    <span class="n">tableViewCell</span><span class="o">.</span><span class="n">collectionViewOffset</span> <span class="o">=</span> <span class="n">storedOffsets</span><span class="p">[</span><span class="n">indexPath</span><span class="o">.</span><span class="n">row</span><span class="p">]</span> <span class="p">??</span> <span class="mi">0</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+    <span class="n">didEndDisplayingCell</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> 
+    <span class="n">forRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="n">guard</span> <span class="k">let</span> <span class="nv">tableViewCell</span> <span class="o">=</span> <span class="n">cell</span> <span class="k">as</span><span class="p">?</span> <span class="kt">TableViewCell</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+
+    <span class="n">storedOffsets</span><span class="p">[</span><span class="n">indexPath</span><span class="o">.</span><span class="n">row</span><span class="p">]</span> <span class="o">=</span> <span class="n">tableViewCell</span><span class="o">.</span><span class="n">collectionViewOffset</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Awesome! Let’s see how it looks in action.</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          
+
+<p><img alt="Working app animation" src="/img/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/animation.gif"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Of course, you can find all the code in a <a href="https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell">demo project on GitHub</a>. If you have suggestions or questions, just <a href="https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell/issues/new">open an issue</a> on the repo and I’ll get back to you.</p>
+
+<hr>
+
+<p>When I wrote the <a href="/blog/putting-a-uicollectionview-in-a-uitableviewcell/">original tutorial</a> in 2013, I did things differently. Since then, I’ve learned and gained experience, and the tools have changed. In Swift, we write fewer lines of code because code is more expressive. I’ve also chosen to use Storyboards to set up the user interface, something I avoided two and a half years ago.</p>
+
+<p>Not only has Swift made this tutorial more easy to code, it’s made it more easy <em>to teach</em>. There’s so much less boilerplate I need to explain in order to accomplish our goal. As much as I love to learn new things in Swift, teaching others in Swift is just as satisfying. </p>
+
+<hr>
+<span class="meta">Posted on November  3, 2015</span>
+</div>
+</div>
+</article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<div id="book-link">
+<a href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<img src="/img/marketing/swift.jpg">
+</a>
+<a class="visible-md visible-lg" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<h3>Enjoyed my post? You'd love my book!</h3>
+</a>
+<a class="visible-xs visible-sm" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<h3>Enjoyed my post?</h3>
+</a>
+<p>My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.</p>
+</div>
+<div class="clearfix"></div>
+
+<hr>
+<!-- Pager -->
+<ul class="pager article_pager">
+<li class="next">
+<a href="/blog/hybrids/"><div>Hybrids</div>
+</a>
+</li>
+<li class="previous">
+<a href="/blog/getting-happy-with-email/"><div>Getting Happy with Email</div>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<hr id="page_footer">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li>
+<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="copyright text-muted">
+This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/javascripts/all-07769a87.js"></script>
+</body>
+</html>

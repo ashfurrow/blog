@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Blog Transition Retrospective - Ash Furrow</title>
+<!-- Feed Tags -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<!-- Device specifier -->
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Meta stuff -->
+<link href="https://ashfurrow.com/blog/blog-transition-retrospective/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/blog-transition-retrospective/" itemprop="url">
+<meta content="About a month ago, I wrote about transitioning from Squarespace to my own maintained site. A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3." itemprop="about">
+<meta content="About a month ago, I wrote about transitioning from Squarespace to my own maintained site. A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3." itemprop="description">
+<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<!-- Open Graph -->
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="Blog Transition Retrospective" property="og:title">
+<meta content="https://ashfurrow.com/blog/blog-transition-retrospective/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="About a month ago, I wrote about transitioning from Squarespace to my own maintained site. A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3." property="og:description">
+<meta content="https://ashfurrow.com/img/blog/blog-transition-retrospective/cost.png" property="og:image">
+<!-- Twitter Cards -->
+<meta content="summary" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="Blog Transition Retrospective" name="twitter:title">
+<meta content="About a month ago, I wrote about transitioning from Squarespace to my own maintained site. A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3." name="twitter:description">
+<meta content="https://ashfurrow.com/img/blog/blog-transition-retrospective/cost.png" name="twitter:image">
+<!-- Favicon, site icons, etc -->
+<link href="/img/siteimage_dark.png" rel="image_src">
+<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!-- Favicons, generated from https://realfavicongenerator.net/ -->
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<!-- Search enginer index -->
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+{
+'@context' : 'http://schema.org',
+'@type' : 'Person',
+'name' : 'Ash Furrow',
+'url' : 'https://ashfurrow.com',
+'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
+'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
+}
+</script>
+<script type="application/ld+json">
+{
+'@context': 'http://schema.org',
+'@type': 'Organization',
+'url': 'https://ashfurrow.com',
+'logo': '/img/siteimage.png'
+}
+</script>
+<!-- Style-specific Javascripts -->
+<style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:992px) {
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid>.navbar-header,
+.container-fluid>.navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid>.navbar-header,
+  .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    float: left;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #404040;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: #808080;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+.post-preview>.post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+body {
+  webkit-tap-highlight-color: #398ccc;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_text_link {
+    display: none;
+  }
+}
+
+.nav #feed_link {
+  font-size: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 40px;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"),url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"),url('/fonts/icomoon.woff?-ar0ypv') format("woff"),url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script>
+<script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script>
+<script>
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '../../css/all-8659dfce.css' );
+</script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-9572240-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Backup to load styles not from javascript. -->
+<noscript>
+<link href="/css/all-8659dfce.css" rel="stylesheet">
+</noscript>
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle Navigation</span>
+<!-- Hamburger -->
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">
+<i class="icon-site-logo"></i>
+</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a id="feed_text_link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
+<a id="feed_link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');">
+<div class="header-dimmer"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-heading">
+<h1>Blog Transition Retrospective</h1>
+</div>
+</div>
+</div>
+</div>
+<!-- If a background image source was specified, link to it. -->
+</header>
+
+<div class="container">
+<article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>About a month ago, I wrote about <a href="/blog/fresh-coat-of-paint/">transitioning from Squarespace to my own maintained site</a>. A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3. </p>
+
+
+
+<h2 id="idea">
+<a class="header-link" href="#idea">#</a> Idea</h2>
+
+<p>To recap, the idea for building my own site was simple. I had been burned using Wordpress and had switched to Squarespace a few years ago because I didn’t want the hassle of maintaining my own site. Squarespace is great and I still recommend it to anyone who asks what to use. However, in the time between when I started to use it and a month ago, two things happened: I learned a lot about front-end web development, and the tools available really matured. <em>My</em> circumstances were such that creating and maintaining a static site hosted on S3 and built using open source tools would be the best choice <em>for me</em>. </p>
+
+<h2 id="setup">
+<a class="header-link" href="#setup">#</a> Setup</h2>
+
+<p>So I started simply: a <a href="http://middlemanapp.com">Middleman</a> installation using their built-in blogging engine. I picked a <a href="http://startbootstrap.com/template-overviews/clean-blog/">clean bootstrap template</a> and a <a href="http://www.colourlovers.com/color/398CCC/Walton">nice highlight colour</a>. I put the site on <a href="https://github.com/AshFurrow/blog">GitHub</a> because there is no reason to keep it private. And then the fun started. </p>
+
+<p>I played with the design of the original template and then added my own touches: the logo in the upper-lefthand corner, custom background images from my own photography collection, some customization of the basic layout, etc. It was actually very easy to do most of the things I wanted to. </p>
+
+<p>I focused on getting a basic site with sample content first – just to see if my idea of hosting my own site without a lot of hassle was feasible. I would worry about migrating existing content and transitioning the DNS later, since I knew they would be a challenge for me. If I could get invested in the new site by doing the easy stuff upfront, then I would be too invested to lose steam when the hard parts came. </p>
+
+<p>As I built a more and more complex site, I had to expand outside my comfort zone a bit. For example, to get the kind of code-highlighting I wanted (that I always wanted on Squarespace), I had to use a <a href="https://github.com/ashfurrow/blog/blob/c18f2dc7cab2fb6085fb2a1a476d425553f5c2c8/config.rb#L8-L9">custom markdown formatter</a>. I wasn’t – and am not currently – experienced in writing production-worthy ruby code, but I tried my best to apply the ruby mantra: Don’t Repeat Yourself. I even got to use some interesting rubyisms like <code>unless</code> and <code>or</code>. </p>
+
+<p>Something else I insisted on was automation: deploying had to be one-step. The site for <a href="http://notificationcenter.tv">my podcast</a> is hosted with Middleman, but the deploy process is arduous enough for me to not look forward to creating content. Through <a href="https://github.com/ashfurrow/blog/blob/c18f2dc7cab2fb6085fb2a1a476d425553f5c2c8/Rakefile">judicious use of <code>rake</code></a>, I was able to accomplish a one-step deploy. Once I was happy with he visuals on the site, as well as the extensibility of the template I had modified, I set up a staging environment and started deploying to it. </p>
+
+<h2 id="content-migration">
+<a class="header-link" href="#content-migration">#</a> Content Migration</h2>
+
+<p>Now that the site was on staging and I verified it was being served by Amazon S3 properly, I needed to migrate content from Squarespace to Middleman. Squarespace has an export feature (it’s one of the reasons I chose it in the first place) which outputs a giant XML file that is Wordpress-compatible. That’s cool for Wordpress, but I’m rolling my own shit here. </p>
+
+<p>I used <code>irb</code> to experiment with <a href="http://www.nokogiri.org">Nokogiri</a>, an XML/HTML parsing library for ruby. I had to learn some basics of xpath querying, but I managed to write a <a href="https://gist.github.com/ashfurrow/ea1e354fba72bb4cc533">half-decent script</a> to process the giant XML file of 400+ blog posts into 400+ markdown files that Middleman can understand. I didn’t stop there, though. Since all of the images were still stored on Squarespace’s CDN, I had to download them, gave them a unique filename, and store them locally for Middleman to access through the modified HTML contents of each post. </p>
+
+<blockquote>
+<p>Note: I do <em>not</em> intend this to be used as-is by anyone. It’s released under the “IDGAF” license and is <em>only</em> meant to be used as a demonstration of how someone with nearly no ruby experience can still make something useful. </p>
+</blockquote>
+
+<h2 id="dns-transition">
+<a class="header-link" href="#dns-transition">#</a> DNS Transition</h2>
+
+<p>The next step is the one I looked forward to the least: DNS transition. At a high-level, I understand the purpose and use of DNS. At a low-level, I find it terrifying to use. Some entries need a <code>.</code> after the host name (for whatever reason). You don’t know if you’ve broken something for at least ten or twenty minutes. When you do break something, it takes another ten or twenty minutes again for fixes to propagate throughout the Internet. </p>
+
+<p>I also have my email set up through my own domain name (I host on <a href="/blog/switching-from-gmail-to-fastmail/">FastMail</a>), so I need specific DNS entries to authenticate my FastMail outgoing mail as legitimately being from the <code>ashfurrow.com</code> domain; I <em>really</em> don’t want to mess those up (because I don’t remember how to set them up lolol – make sure to document this kind of thing, people).</p>
+
+<p>The problem was that, using a non-Amazon DNS service like Hover with S3 hosting, my site <em>must</em> have a <code>www.</code> prefix, which is unacceptable to me. The problem is a combination of limitations on S3 and the DNS system: a DNS entry pointing to a “naked” domain (non-<code>www.</code> prefixed) <em>must</em> use an IP address and not another domain name. My S3 bucket doesn’t have a necessarily fixed IP address. The only solution is to use Amazon’s Route53 service – it keeps DNS entries up-to-date with S3 endpoints’ IP addresses any time they change. Super cool.  </p>
+
+<blockquote class="twitter-tweet" lang="en">
+<p>Trying to navigate the apparently-unending 3-letter-acronymmed components of AWS. <a href="http://t.co/1Zl2yiRxak">pic.twitter.com/1Zl2yiRxak</a></p>— Julian Lepinski (@JulianLepinski) <a href="https://twitter.com/JulianLepinski/status/526423574039781376">October 26, 2014</a>
+</blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Transitioning to Route53 was actually <em>very easy</em>. I felt totally confident after the first few records, and really dig AWS’ modern approach to DNS. </p>
+
+<h2 id="cost">
+<a class="header-link" href="#cost">#</a> Cost</h2>
+
+<p>One of the most common questions I got when I switched from Squarespace to static S3 hosting was about the cost: how much would I be paying to host my site on S3? Well, let’s take a look at things. </p>
+
+<p>Squarespace’s <a href="http://squarespace.com/pricing/">pricing</a> is pretty good. It’s $8/month for the standard plan and $16/month if you want access to a full e-commerce feature (which I don’t need) and their developer platform (which I was unwilling to pay for on principle). You can get different discounts from any one of the literally millions of podcasts that Squarespace sponsors and if you sign up for a year then you get an additional 10% off. So I was paying about $7/month for something that I felt constrained by. I could pay $14/month for something that I would feel slightly less constrained by, but that wasn’t much better to me (learning how to customize Squarespace’s templates is not a transferrable skill; learning how to use Bootstrap properly is). </p>
+
+<p>Let’s compare with AWS. My bill so far this November is actually exactly $10, which includes hosting several GIFs for various GitHub repos and blog posts on other sites (all served from CloudFront), as well as all podcasts episodes for a few different shows I’ve had over the years. Note that I haven’t published a <a href="http://www.notificationcenter.tv">Notification Center</a> episode in that time, so the lion’s share of this $10 figure is <em>just</em> my site. </p>
+
+<p><img alt="November-to-date AWS costs" src="/img/blog/blog-transition-retrospective/cost.png"></p>
+
+<p>The site itself is hosted on S3 while the common banner images (not the custom ones used on individual posts, but the 5 or so default ones) are hosted through Amazon’s CloundFront CDN so that my friends in Australia will stop whining about slow loading times. 
+<img alt="November-to-date AWS cost breakdown" src="/img/blog/blog-transition-retrospective/breakdown.png"></p>
+
+<p>As you can see, even putting just some common images behind CloudFront constituted a significant cost. </p>
+
+<p>To give you an idea of the traffic I get on my blog, here’s the Google Analytics page views since I moved to Middleman. </p>
+
+<p><img alt="Google Analytics since the transition" src="/img/blog/blog-transition-retrospective/analytics.png"></p>
+
+<p>So I’m pretty happy about the cost. Maybe a little more than I was paying with Squarespace, but I didn’t switch for the cost: I switched to have more control over my site, which has been a great success. </p>
+
+<h2 id="issues">
+<a class="header-link" href="#issues">#</a> Issues</h2>
+
+<p>The migration was generally smooth but not without a few small issues. Because of a mess up I made with the migration script, a few URLs for generated Middleman posts are incorrect (ones where the title didn’t match the slug – usually due to a typo in the original title). There are also issues with the date format: my original Wordpress installation had blog posts in a format of <code>/blog/year/month/title</code>, but I started using the <code>.htaccess</code> file to redirect new ones to <code>/blog/title</code>. Squarespace allowed me to redirect all old Wordpress links (in either format) to new content, but S3 only allows 50 redirects total, including wildcards like my 404 page and my feed redirect. So I just redirected some high-traffic posts. </p>
+
+<p>It’s not ideal, but I can live with it.  Those older articles don’t really concern me too much – Google will re-crawl the blog and I don’t think many people have links to my content going back that far. If they do, the content is probably outdated anyway. </p>
+
+<p>If I were doing this professionally, I would’ve done more thorough testing. </p>
+
+<p><img alt="Google Webmaster tools warning" src="/img/blog/blog-transition-retrospective/404s.png"></p>
+
+<p>Speaking of my feed, I did have a few issues. Middleman’s blog template produces an Atom feed; I thought that if that feed was at the same location as the old RSS (or had a 301 redirect), then everything would be fine. Turns out that most reader clients don’t expect a previously RSS feed to suddenly become an Atom one. Oops. </p>
+
+<p>So I created a new feed in the RSS format and, thanks to Orta’s suggestion, set up hosting at <code>feed.ashfurrow.com</code> – something I can control through DNS that’s separate from whatever blogging engine I might use in the future. A few redirects and meta-tag changes later, and everyone got caught up on my feed. At worst, some readers didn’t see my transition post for a few days and saw the final 5 posts on Squarespace duplicated in their feeds, which a few people did contact me about, but wasn’t easily avoidable. </p>
+
+<h2 id="future">
+<a class="header-link" href="#future">#</a> Future</h2>
+
+<p>There are still some issues I want to get done for me to consider the new site at a “1.0” – mostly surrounding the <a href="/speaking">Speaking</a> and <a href="/portfolio">Portfolio</a> pages. I moved to Middleman to have control over the design. Now that I do, it’s time to put that to good use and knock it out of the park. That said, I’d take <a href="https://github.com/ashfurrow/blog/labels/design%20help%20wanted">design feedback</a> on either page. </p>
+
+<p>Hosting on GitHub has a few benefits, too. The repo for this blog doesn’t really get much traffic, but I know of a few people who have used ideas or techniques from my approach to make their owns sites. And if they see something I could improve on, they let me know. Win-win. </p>
+
+<p>If you want to see me write about some topic, answer a question, update an old article, or even fix a typo, feel free to <a href="http://github.com/ashfurrow/blog/issues/new">open an issue</a> and I’ll take a look. </p>
+
+<p>I was wary of using CloudFront to put a CDN in front of my blog, opting instead to just have some large resources like common background images distributed through a CDN. Being behind CloudFront means that when I update my site, invalidations have to be made to update endpoints’ caches around the world. Not a huge deal, but when I finish a blog post and publish it, I’d like to be able to tweet it right away without having to wait for CDN invalidations to propagate. I’ll probably move it over to CloudFront and try it out – maybe I’m being overly cautious. If you have experience with this, I’d love to hear from you. </p>
+
+<p>I mentioned earlier that I wanted one-step deploys for my site. To deploy to both staging and production, and to update the RSS and Atom feeds on their own bucket, I only have to type <code>rake publish:all</code>. That still seems like a lot of work to me. I’d love a sort of zero-step deploy, and when I was talking to Chris Eidhof about how they host <a href="http://objc.io">objc.io</a>, he said that they do something like that. I’m planning on setting up Travis on my blog’s repo and whenever it builds on the <code>master</code> branch, Travis can do the <code>rake publish:production</code> for me (if the build has no errors). By using Travis’ <a href="http://docs.travis-ci.com/user/environment-variables/">encrypted environment variables</a>, I wouldn’t need to have any AWS credentials in the clear. </p>
+
+<p>Deploying through Travis would have a few cool advantages. Primarily, it would let me only push changes to GitHub from my computer, and not also push all changes to the site (like when I changed my <code>head</code> metadata tags – I had to re-upload nearly every page). Travis’ internet connection is probably a lot faster than mine. I can also see me adopting a really snazzy workflow of creating blog posts on branches and creating pull requests to get any feedback I need from friends and colleagues. When I’m satisfied, I can merge the pull request and Travis will take care of publishing. </p>
+
+<h2 id="conclusion">
+<a class="header-link" href="#conclusion">#</a> Conclusion</h2>
+
+<p>From a personal perspective, I feel like the transition from Squarespace to Middleman was a success: I accomplished my goal of having more control over my site without burdening myself with a heavy maintenance cost. From a technical perspective, things are a bit murkier, but still generally awesome. While there are some outstanding 404’s that I’ve decided not to address, and existing RSS subscribers missed out on my feed for a few days, I only got a few complaints. </p>
+
+<p>When people ask me where to host their site, my default answer is still Squarespace. It’s a fantastic resource that offers a lot for a very low price. I was happy with it for over two years and only moved away from it because I wanted more creative control over the design aspects of my site.</p>
+
+<p>So while the transition was necessary and ultimately successful, I feel like I did it at the right time: once the tools were mature and once I was familiar enough with using them.</p>
+
+<hr>
+<span class="meta">Posted on November 26, 2014</span>
+</div>
+</div>
+</article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<!-- Pager -->
+<ul class="pager article_pager">
+<li class="next">
+<a href="/blog/workcation-2014/"><div>Workcation 2014</div>
+</a>
+</li>
+<li class="previous">
+<a href="/blog/reactivecocoa-and-swift/"><div>ReactiveCocoa and Swift</div>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<hr id="page_footer">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li>
+<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="copyright text-muted">
+This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/javascripts/all-07769a87.js"></script>
+</body>
+</html>

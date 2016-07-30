@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Exploring UIAlertController - Ash Furrow</title>
+<!-- Feed Tags -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<!-- Device specifier -->
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Meta stuff -->
+<link href="https://ashfurrow.com/blog/uialertviewcontroller-example/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/uialertviewcontroller-example/" itemprop="url">
+<meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." itemprop="about">
+<meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." itemprop="description">
+<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<!-- Open Graph -->
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="Exploring UIAlertController" property="og:title">
+<meta content="https://ashfurrow.com/blog/uialertviewcontroller-example/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." property="og:description">
+<meta content="https://ashfurrow.com/img/import/blog/uialertviewcontroller-example/C47E5C761A24426CB34230DBB2A7AF7C.png" property="og:image">
+<!-- Twitter Cards -->
+<meta content="summary" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="Exploring UIAlertController" name="twitter:title">
+<meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." name="twitter:description">
+<meta content="https://ashfurrow.com/img/import/blog/uialertviewcontroller-example/C47E5C761A24426CB34230DBB2A7AF7C.png" name="twitter:image">
+<!-- Favicon, site icons, etc -->
+<link href="/img/siteimage_dark.png" rel="image_src">
+<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!-- Favicons, generated from https://realfavicongenerator.net/ -->
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<!-- Search enginer index -->
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+{
+'@context' : 'http://schema.org',
+'@type' : 'Person',
+'name' : 'Ash Furrow',
+'url' : 'https://ashfurrow.com',
+'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
+'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
+}
+</script>
+<script type="application/ld+json">
+{
+'@context': 'http://schema.org',
+'@type': 'Organization',
+'url': 'https://ashfurrow.com',
+'logo': '/img/siteimage.png'
+}
+</script>
+<!-- Style-specific Javascripts -->
+<style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:992px) {
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid>.navbar-header,
+.container-fluid>.navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid>.navbar-header,
+  .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    float: left;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #404040;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: #808080;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+.post-preview>.post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+body {
+  webkit-tap-highlight-color: #398ccc;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_text_link {
+    display: none;
+  }
+}
+
+.nav #feed_link {
+  font-size: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 40px;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"),url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"),url('/fonts/icomoon.woff?-ar0ypv') format("woff"),url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script>
+<script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script>
+<script>
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '../../css/all-8659dfce.css' );
+</script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-9572240-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Backup to load styles not from javascript. -->
+<noscript>
+<link href="/css/all-8659dfce.css" rel="stylesheet">
+</noscript>
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle Navigation</span>
+<!-- Hamburger -->
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">
+<i class="icon-site-logo"></i>
+</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a id="feed_text_link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
+<a id="feed_link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');">
+<div class="header-dimmer"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-heading">
+<h1>Exploring UIAlertController</h1>
+</div>
+</div>
+</div>
+</div>
+<!-- If a background image source was specified, link to it. -->
+</header>
+
+<div class="container">
+<article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>This morning, I was working on the <a href="https://github.com/AshFurrow/Moya/issues/39">sample app</a> for <a href="https://github.com/AshFurrow/Moya">Moya</a>, a network abstraction framework that I’ve built on top of <a href="https://github.com/Alamofire/Alamofire">Alamofire</a>. I needed a way to grab some user text input, so I turned to <code>UIAlertView</code>. Turns out that that’s deprecated in favour of <code>UIAlertController</code>. Hmm.</p>
+
+
+
+<p>Looking around the internet, there weren’t very many examples of how to use this cool new class, and the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIAlertController_class/">documentation</a> was sparse at best. Let’s take a look at the high-level API and then get into some of the nitty-gritty. (I’m going to write this in Swift because I am not a <a href="http://t.co/Q2hvacChLu">dinosaur</a>.)</p>
+
+<p><code>UIAlertController</code> is a <code>UIViewController</code> subclass. This contrasts with <code>UIAlertView</code>, a <code>UIView</code> subclass. View controllers are (or at least, should be) the main unit of composition when writing iOS applications. It makes a lot of sense that Apple would replace alert views with alert view <em>controllers</em>. That’s cool.</p>
+
+<p>Creating an alert view controller is pretty simple. Just use the initializer to create one and then present it to the user as you would present any other view controller.</p>
+<pre><code class="highlight swift"><span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
+<span class="nf">presentViewController</span><span class="p">(</span><span class="n">alertController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre>
+
+<p>Pretty straightforward. I’m using the <code>.Alert</code> preferred style, but you can use the <code>.ActionSheet</code> instead. I’m using this as a replacement for <code>UIAlertView</code>, so I’ll just discuss the alert style.</p>
+
+<p>If you ran this code, you’d be presented with something like the following (on beta 7).</p>
+
+<p><img src="/img/import/blog/uialertviewcontroller-example/C47E5C761A24426CB34230DBB2A7AF7C.png"></p>
+
+<p>Weird. The title is there, but the message is not present. There are also no buttons, so you can’t dismiss the controller. It’s there until you relaunch your app. Sucky.</p>
+
+<p>Turns out if you want buttons, you’ve got to explicitly add them to the controller before presenting it.</p>
+<pre><code class="highlight swift"><span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">})</span>
+<span class="k">let</span> <span class="nv">cancel</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Cancel"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Cancel</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">}</span> 
+<span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">ok</span><span class="p">)</span> <span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">cancel</span><span class="p">)</span> 
+</code></pre>
+
+<p>This is <em>worlds</em> better than <code>UIAlertView</code>, despite being much more verbose. First of all, you can have multiple cancel or destructive buttons. You also specify individual closures to be executed when a button is pressed instead of some shitty delegate callback telling you which button <em>index</em> was pressed. (If anyone out there makes a <code>UIAlertController+Blocks</code> category, I will find you, and I <em>will</em> kill you.)</p>
+
+<p><img src="/img/import/blog/uialertviewcontroller-example/2A03E60C605A42789A6FAF704BB9A130.jpg"></p>
+
+<p>If we added the above configuration to our code, we’d get the following.</p>
+
+<p><img src="/img/import/blog/uialertviewcontroller-example/08BE65FFF6E243CAAD311D4115EC75B6.png"></p>
+
+<p>Way better. Weird that the message is now showing up. Maybe it’s a bug, or maybe it’s intended behaviour. Apple, you so cray cray. Anyway, you should also notice that the “OK” and “Cancel” buttons have been styled and positioned according to iOS conventions. Neato.</p>
+
+<p>What <em>I</em> needed, however, was user input. This was possible with <code>UIAlertView</code>, so it should be possible with <code>UIAlertController</code>, right? Well, kinda. There’s an encouraging instance method named <code>addTextFieldWithConfigurationHandler()</code>, but using it is not so straightforward. Let me show you what I mean.</p>
+<pre><code class="highlight swift"><span class="n">alertController</span><span class="o">.</span><span class="n">addTextFieldWithConfigurationHandler</span> <span class="p">{</span> <span class="p">(</span><span class="n">textField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
+    <span class="c1">// Here you can configure the text field (eg: make it secure, add a placeholder, etc) 
+</span><span class="p">}</span> 
+</code></pre>
+
+<p>Straightforward. Run the code, get the following.</p>
+
+<p><img src="/img/import/blog/uialertviewcontroller-example/9EA0E4E86AB54891A9A27BC24D1C8889.png"></p>
+
+<p>The question now is this: how do you, in the closure for the “OK” button, access the contents of the text field?</p>
+
+<p><img src="/img/import/blog/uialertviewcontroller-example/0E7A01300D2F49C6947664D55AC91803.gif"></p>
+
+<p>There is no way for you to directly access the text field from the closure invoked when a button is pressed. <a href="http://stackoverflow.com/questions/24172593/access-input-from-uialertcontroller">This</a> StackOverflow question has two possible answers. You can access the <code>textFields</code> array on the controller (assuming that the order of that array is the same as the order which you added the text fields), but this causes a reference cycle (the alert action has a strong reference to the alert view controller, which has a strong reference to the alert action). This <em>does</em> cause a memory leak for each controller that you present.</p>
+
+<p><img src="/img/import/blog/uialertviewcontroller-example/31715566B57649FF8B277A3063191734.png"></p>
+
+<p>The other answer suggests storing the text field that’s passed into the configuration closure in a property on the presenting controller, which can later be accessed. That’s a <em>very</em> Objective-C way of solving this problem.</p>
+
+<p>So what do we do? Well, I’ve been writing Swift lately, and whenever I come across a problem like this, I think “if I had <a href="http://instagram.com/p/rWyQdUDBhH">five years of Swift experience</a>, what would <em>I</em> do?” My answer was the following.</p>
+
+<p>Let’s create a local variable, a <code>UITextField?</code> optional. In the configuration closure for the text field, assign the local variable to the text field that we’re passed in. Then we can access that local variable in our alert action closure. Sweet. The full implementation looks like this.</p>
+<pre><code class="highlight swift"><span class="k">var</span> <span class="nv">inputTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">?</span>
+
+<span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
+<span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
+    <span class="c1">// Do whatever you want with inputTextField?.text 
+</span>    <span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">inputTextField</span><span class="p">?</span><span class="o">.</span><span class="n">text</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="k">let</span> <span class="nv">cancel</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Cancel"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Cancel</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">}</span> 
+
+<span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">ok</span><span class="p">)</span> 
+<span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">cancel</span><span class="p">)</span> 
+
+<span class="n">alertController</span><span class="o">.</span><span class="n">addTextFieldWithConfigurationHandler</span> <span class="p">{</span> <span class="p">(</span><span class="n">textField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
+    <span class="n">inputTextField</span> <span class="o">=</span> <span class="n">textField</span> 
+<span class="p">}</span> 
+
+<span class="nf">presentViewController</span><span class="p">(</span><span class="n">alertController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> 
+
+</code></pre>
+
+<p>I like this a lot. It avoids polluting our object with unnecessary properties, avoids memory leaks, and seems pretty “Swift”. I’ve created a <a href="https://github.com/AshFurrow/UIAlertController-Example">GitHub repo</a> that I’ll keep up to date with future betas, etc.</p>
+
+<p><img src="/img/import/blog/uialertviewcontroller-example/09B8BCEA8BBE48239C07298CD4112B53.jpg"></p>
+
+<p>So yeah. The new <code>UIAlertController</code> has some great benefits:</p>
+
+<ul>
+<li>It’s explicit</li>
+<li>It conforms to iOS composability conventions</li>
+<li>It’s got a clear API</li>
+<li>It’s reusable in different contexts (iWatch vs iWatch mini)</li>
+</ul>
+
+<p>The drawbacks are:</p>
+
+<ul>
+<li>It’s unfamiliar</li>
+</ul>
+
+<p>As we march forward into this brave new world of Swift, we need to reevaluate our approaches to familiar problems. Just because a solution that worked well in Objective-C might work OK in Swift doesn’t make it a solution <em>well</em> suited for use in Swift. As developers, we should keep an open mind about new ideas and experiment. The way I look at it is like this: right now, the community is pretty new at Swift. We’re racing in all different directions because <a href="http://robnapier.net/i-dont-know-swift">no one</a> really knows what the best practices are, yet. We need this expansion in all directions, even if a lot of those directions are going to turn out to be bad ideas. If we don’t throw it all against the wall, we won’t figure out what sticks.</p>
+
+<p>So next time you try and do something and get confused because Swift is unfamiliar, try all kinds of things. Could be you end up creating a brand new convention that’s adopted by the whole iOS community for years to come.</p>
+
+<hr>
+<span class="meta">Posted on September  7, 2014</span>
+</div>
+</div>
+</article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<div id="book-link">
+<a href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<img src="/img/marketing/swift.jpg">
+</a>
+<a class="visible-md visible-lg" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<h3>Enjoyed my post? You'd love my book!</h3>
+</a>
+<a class="visible-xs visible-sm" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<h3>Enjoyed my post?</h3>
+</a>
+<p>My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.</p>
+</div>
+<div class="clearfix"></div>
+
+<hr>
+<!-- Pager -->
+<ul class="pager article_pager">
+<li class="next">
+<a href="/blog/shooting-film/"><div>Shooting Film</div>
+</a>
+</li>
+<li class="previous">
+<a href="/blog/copenhagenwarsaw-tour/"><div>Copenhagen/Warsaw Tour</div>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<hr id="page_footer">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li>
+<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="copyright text-muted">
+This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/javascripts/all-07769a87.js"></script>
+</body>
+</html>

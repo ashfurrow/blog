@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>iOS Developer Discomfort - Ash Furrow</title>
+<!-- Feed Tags -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<!-- Device specifier -->
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Meta stuff -->
+<link href="https://ashfurrow.com/blog/ios-developer-discomfort/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/ios-developer-discomfort/" itemprop="url">
+<meta content="Over the past year or so, I’ve noticed some trends in the code that’s developed by some of the people I respect. People I look up to – people that I know are hella smart. The code that these people put out is often seen as esoteric. Strange even." itemprop="about">
+<meta content="Over the past year or so, I’ve noticed some trends in the code that’s developed by some of the people I respect. People I look up to – people that I know are hella smart. The code that these people put out is often seen as esoteric. Strange even." itemprop="description">
+<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<!-- Open Graph -->
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="iOS Developer Discomfort" property="og:title">
+<meta content="https://ashfurrow.com/blog/ios-developer-discomfort/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="Over the past year or so, I’ve noticed some trends in the code that’s developed by some of the people I respect. People I look up to – people that I know are hella smart. The code that these people put out is often seen as esoteric. Strange even." property="og:description">
+<meta content="https://ashfurrow.com/img/siteimage_dark.png" property="og:image">
+<!-- Twitter Cards -->
+<meta content="summary" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="iOS Developer Discomfort" name="twitter:title">
+<meta content="Over the past year or so, I’ve noticed some trends in the code that’s developed by some of the people I respect. People I look up to – people that I know are hella smart. The code that these people put out is often seen as esoteric. Strange even." name="twitter:description">
+<meta content="https://ashfurrow.com/img/siteimage_dark.png" name="twitter:image">
+<!-- Favicon, site icons, etc -->
+<link href="/img/siteimage_dark.png" rel="image_src">
+<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!-- Favicons, generated from https://realfavicongenerator.net/ -->
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<!-- Search enginer index -->
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+{
+'@context' : 'http://schema.org',
+'@type' : 'Person',
+'name' : 'Ash Furrow',
+'url' : 'https://ashfurrow.com',
+'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
+'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
+}
+</script>
+<script type="application/ld+json">
+{
+'@context': 'http://schema.org',
+'@type': 'Organization',
+'url': 'https://ashfurrow.com',
+'logo': '/img/siteimage.png'
+}
+</script>
+<!-- Style-specific Javascripts -->
+<style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:992px) {
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid>.navbar-header,
+.container-fluid>.navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid>.navbar-header,
+  .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    float: left;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #404040;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: #808080;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+.post-preview>.post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+body {
+  webkit-tap-highlight-color: #398ccc;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_text_link {
+    display: none;
+  }
+}
+
+.nav #feed_link {
+  font-size: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 40px;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"),url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"),url('/fonts/icomoon.woff?-ar0ypv') format("woff"),url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script>
+<script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script>
+<script>
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '../../css/all-8659dfce.css' );
+</script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-9572240-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Backup to load styles not from javascript. -->
+<noscript>
+<link href="/css/all-8659dfce.css" rel="stylesheet">
+</noscript>
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle Navigation</span>
+<!-- Hamburger -->
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">
+<i class="icon-site-logo"></i>
+</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a id="feed_text_link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
+<a id="feed_link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');">
+<div class="header-dimmer"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-heading">
+<h1>iOS Developer Discomfort</h1>
+</div>
+</div>
+</div>
+</div>
+<!-- If a background image source was specified, link to it. -->
+</header>
+
+<div class="container">
+<article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>Over the past year or so, I’ve noticed some trends in the code that’s developed by some of the people I respect. People I look up to – people that I know are hella smart.</p>
+
+<p>The code that these people put out is often seen as esoteric. Strange even.</p>
+
+<p>When I first saw some of the approaches, which I’ll outline below, I was uncomfortable. Things didn’t feel natural. The abstractions that I was so used to working in were useless to me in the new world.</p>
+
+<p>Smart people like these don’t often propose new solutions to solved problems just because it’s fun. They propose new solutions when they have <em>better</em> solutions. Let’s take a look.</p>
+
+<p>Here are some practices that I’ve noticed have made me uncomfortable, but in practice have helped me become a better developer.</p>
+
+<h1 id="declarative-programming">Declarative Programming</h1>
+
+<p>Our first example is declarative programming. I’ve noticed that some experienced developers tend to shy away from mutating instance state and instead rely on immutable objects.</p>
+
+<p>Declarative programming abstracts <em>how</em> computers achieve goals and instead focuses on <em>what</em> needs to be done, instead. It’s the difference between using a <a href="/blog/stop-writing-for-loops">for loop and an enumerate function</a>.</p>
+
+<p>Objective-C is an abomination (I love it anyway). It’s a message-oriented language masquerading as an object-oriented language build on top of C, an imperative language. Ugh. Needless to say, abstracting common things in Objective-C can get hairy, but it’s getter easier with things like blocks and object literals.</p>
+
+<p>With the extreme of declarative programming, you would declare the entire behaviour of your application at startup and just let it run until completion.</p>
+
+<h2 id="why-i-started-using-declarative-programming">
+<a class="header-link" href="#why-i-started-using-declarative-programming">#</a> Why I Started Using Declarative Programming</h2>
+
+<p>Declarative programming removes mutable state, leading to fewer runtime errors and behavioural problems. It also made my code easier to test, either with functional, integration, or unit tests (more on unit testing later). It freed me from the minutiae of how computers work, leaving that tedium up to the compiler. For most applications, the performance hit is trivial and not worthy of consideration.</p>
+
+<h2 id="why-it-was-hard-to-declarative-programming">
+<a class="header-link" href="#why-it-was-hard-to-declarative-programming">#</a> Why It Was Hard to Declarative Programming</h2>
+
+<p>It was hard to get into declarative programming because it stripped away everything I was used to and left me with tools I was unfamiliar with. My coding efficiency plummeted in the short term. It seemed like prematurely optimizing my code. It was uncomfortable.</p>
+
+<p>However, I’d still recommend <a href="http://labs.teehanlax.com/project/upcoming">trying it out</a>.</p>
+
+<h2 id="declarative-programming-resources">
+<a class="header-link" href="#declarative-programming-resources">#</a> Declarative Programming Resources</h2>
+
+<p>I’ve <a href="http://www.teehanlax.com/blog/reactivecocoa/">written</a> <a href="http://www.teehanlax.com/blog/getting-started-with-reactivecocoa/">about</a> ReactiveCocoa, or <a href="https://github.com/ReactiveCocoa/ReactiveCocoa">RAC</a>, before.</p>
+
+<p>If you’re interested in getting started in RAC, read my articles above or check out the <a href="http://nshipster.com/reactivecocoa/">NSHipster</a> entry. Also, everyone should read Rob Rix’s <a href="https://github.com/robrix/Postmodern-Programming/blob/master/Postmodern%20Programming.md">Postmodern Programming</a>.</p>
+
+<h1 id="dot-syntax-accessing">Dot-Syntax Accessing</h1>
+
+<p>Dot-syntax is a message-passing syntax in Objective-C that turns <code>obj.property</code> into <code>[obj property]</code> under the hood. The compiler doesn’t care either way, but people get in <a href="http://qualitycoding.org/dot-notation/">flame</a> <a href="http://qualitycoding.org/dot-notation-wins/">wars</a> over the difference.</p>
+
+<p>I’ve seen a lot of smart people favour the dot-syntax expression for more than just properties, however. You can call any method with zero-arity (no arguments) with dot-syntax. Or you could eschew it completely.</p>
+
+<p>In the middle of the spectrum, which I like, is the use of dot-syntax for <a href="https://github.com/github/objective-c-conventions#expressions">idempotent values</a>. That means things like <code>UIApplication.sharedApplication</code> or <code>array.count</code> but not <code>array.removeLastObject</code>.</p>
+
+<h2 id="why-i-started-using-dot-syntax">
+<a class="header-link" href="#why-i-started-using-dot-syntax">#</a> Why I Started Using Dot-Syntax</h2>
+
+<p>It’s a lot harder to argue that you should use dot-syntax in all idempotent cases. The best case I’ve heard for it is that it doesn’t require knowledge of the header file declaration of the property/method. It’s just always dot-syntax.</p>
+
+<p>The trend is leaning toward using dot-syntax more and more for properties. Newcomers to iOS and OS X hardly even know about the dot-syntax war. In my opinion, this doesn’t matter as much as long as you’re relentlessly consistent.</p>
+
+<h2 id="why-it-was-hard-to-dot-syntax">
+<a class="header-link" href="#why-it-was-hard-to-dot-syntax">#</a> Why It Was Hard to Dot-Syntax</h2>
+
+<p>Mostly, it was hard to adopt because I had a habit of calling methods the classical way. Like declarative programming, it’s uncomfortable.</p>
+
+<p>It’s also hard because Xcode’s autocomplete will not help you with methods like <code>UIColor.clearColor</code> when using the dot-syntax. Boo.</p>
+
+<h1 id="unit-testing">Unit Testing</h1>
+
+<p>Apple made a big push for unit testing in Xcode 5, even if it seems half-hearted (still no mocking framework? Hello, <a href="https://github.com/allending/Kiwi">Kiwi</a>). I’ve <a href="/blog/objective-c-vitamins">talked before</a> about about the benefits of unit testing.</p>
+
+<p>Unit testing is about testing the smallest unit of composable code. In order to unit test effectively, you need to write smaller chunks of code that are easier to test than larger ones.</p>
+
+<h2 id="why-i-started-unit-testing">
+<a class="header-link" href="#why-i-started-unit-testing">#</a> Why I Started Unit Testing</h2>
+
+<p>The value of unit testing is two-fold. First, I’ve got automated tests that improved my confidence when making changes to an existing codebase. Second, I have my code in smaller chunks, hopefully with more abstractions, since that’s what is easier to write unit tests against. Leaner, cleaner code is definitely a benefit I don’t think anyone would argue with.</p>
+
+<h2 id="why-it-was-hard-to-adopt-unit-testing">
+<a class="header-link" href="#why-it-was-hard-to-adopt-unit-testing">#</a> Why It Was Hard to Adopt Unit Testing</h2>
+
+<p>As mentioned earlier, Objective-C is a quagmire of object- and message-orientation with a dash of imperative C thrown in. It’s harder to test imperative code compared to object-oriented code.</p>
+
+<p>Additionally, with the Model-View-Controller paradigm on iOS, it’s hard to reliably unit test anything but your models. There’s little point to unit testing your view code, since it relies on UIKit (unless you feel like mocking all of UIKit out), and the view controller often bloom to be thousands of lines long. That makes it hard to suss out testable control logic from view-manipulation code. Then again, separating these from one another is kind of the point of unit testing.</p>
+
+<h1 id="autolayout">Autolayout</h1>
+
+<p>Autolayout has been around in iOS since iOS 6, and even longer on OS X. It’s a way to declare (there’s that word again) your layout’s constraints and have them satisfied for you by UIKit at runtime.</p>
+
+<p>It promised to be a magical land where programming layouts was easy and springs and struts (auto resizing masks) were a thing of the past. The reality was that it introduced problems of its own, and Autolayout’s interface was non-intuitive for many developers.</p>
+
+<h2 id="why-i-want-to-start-using-autolayout">
+<a class="header-link" href="#why-i-want-to-start-using-autolayout">#</a> Why I Want to Start Using Autolayout</h2>
+
+<p>Full disclosure: I’m no Autolayout ninja. I’ve only been using it in a few personal projects, in part because how hard it is to get started. However, I see it’s benefits.</p>
+
+<p>Declaring your interface is preferable to managing it yourself because you have less code to maintain. Autolayout lets you express interface layouts that were just not possible using springs and struts.</p>
+
+<h2 id="why-it-will-be-hard-to-adopt-autolayout">
+<a class="header-link" href="#why-it-will-be-hard-to-adopt-autolayout">#</a> Why It Will Be Hard to Adopt Autolayout</h2>
+
+<p>Springs and struts are familiar, while Autolayout is new and uncomfortable. Doing simple things like vertically centring a view within its superview is difficult in Autolayout because it abstracts so much away.</p>
+
+<p>It’s just never seems like a good time to switch over the Autolayout. But then, it never will. I’ve just got to bite the bullet.</p>
+
+<h2 id="dot-syntax-resources">
+<a class="header-link" href="#dot-syntax-resources">#</a> Dot-Syntax Resources</h2>
+
+<p>Check out Justin Williams’ <a href="http://carpeaqua.com/autolayout/">Achieving Zen with Autolayout</a> page.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Why do these coding practices make one uncomfortable? Certainly they’re new, and change is always awkward. However, even small changes can make a big difference.</p>
+
+<p>After recently working in-house with a client who prioritized a declarative programming approach in their code, I found myself exhausted. I spent the whole week fully taxed – never reaching <a href="http://en.wikipedia.org/wiki/Flow_(psychology)">flow state</a>. Soon after starting, though, I saw the value in their approach.</p>
+
+<p>Change is hard. Maybe the iOS community will resist declarative programming, as has the web development community for two decades. Maybe ReactiveCocoa will stay on the fringes of Objective-C development as ReactiveExtensions has with .Net and Lisp has with web development.</p>
+
+<p>Maybe not.</p>
+
+<p>We’re in a golden age of tools – anyone can choose any tool that suits their task best – and the are concrete advantages of the approaches I’ve listed above. It makes one consider if some slight, temporary discomfort might be worth the gains in the long run.</p>
+
+<p>If you avoid something just because it’s unfamiliar or it disagrees with your currently held best practices, you’re doing yourself a disservice by turning down an opportunity to rid yourself of ignorance. You’re going to learn something new – either that you were right all along or that you still have more to learn.</p>
+
+
+
+<hr>
+<span class="meta">Posted on October  2, 2013</span>
+</div>
+</div>
+</article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<!-- Pager -->
+<ul class="pager article_pager">
+<li class="next">
+<a href="/blog/launch-anxiety/"><div>Launch Anxiety</div>
+</a>
+</li>
+<li class="previous">
+<a href="/blog/ckrono-one/"><div>ckrono one</div>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<hr id="page_footer">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li>
+<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="copyright text-muted">
+This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/javascripts/all-07769a87.js"></script>
+</body>
+</html>

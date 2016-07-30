@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Securing a BitTorrent Sync EC2 Instance - Ash Furrow</title>
+<!-- Feed Tags -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<!-- Device specifier -->
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Meta stuff -->
+<link href="https://ashfurrow.com/blog/bittorrent-sync/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/bittorrent-sync/" itemprop="url">
+<meta content="Dropbox is a jewel of the Y-Combinator industrial complex: a successful company that provides software as a service to ordinary people. They even allegedly turned down an acquisition offer from Steve Jobs. Their success is no small feat, but sadly it appears that they had to make a deal with the devil to achieve so much.  From my perspective, the company has been acting suspiciously for a while. Appointing George W. Bush’s Secretary of State to their Board was a big red flag. It inspired a whole Drop Dropbox movement. I’ve been uneasy about Dropbox, but when they announced they’d be integrating in with my operating system’s kernel, I decided to move away from them." itemprop="about">
+<meta content="Dropbox is a jewel of the Y-Combinator industrial complex: a successful company that provides software as a service to ordinary people. They even allegedly turned down an acquisition offer from Steve Jobs. Their success is no small feat, but sadly it appears that they had to make a deal with the devil to achieve so much.  From my perspective, the company has been acting suspiciously for a while. Appointing George W. Bush’s Secretary of State to their Board was a big red flag. It inspired a whole Drop Dropbox movement. I’ve been uneasy about Dropbox, but when they announced they’d be integrating in with my operating system’s kernel, I decided to move away from them." itemprop="description">
+<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<!-- Open Graph -->
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="Securing a BitTorrent Sync EC2 Instance" property="og:title">
+<meta content="https://ashfurrow.com/blog/bittorrent-sync/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="Dropbox is a jewel of the Y-Combinator industrial complex: a successful company that provides software as a service to ordinary people. They even allegedly turned down an acquisition offer from Steve Jobs. Their success is no small feat, but sadly it appears that they had to make a deal with the devil to achieve so much.  From my perspective, the company has been acting suspiciously for a while. Appointing George W. Bush’s Secretary of State to their Board was a big red flag. It inspired a whole Drop Dropbox movement. I’ve been uneasy about Dropbox, but when they announced they’d be integrating in with my operating system’s kernel, I decided to move away from them." property="og:description">
+<meta content="https://ashfurrow.com/img/blog/bittorrent-sync/dashboard.png" property="og:image">
+<!-- Twitter Cards -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="Securing a BitTorrent Sync EC2 Instance" name="twitter:title">
+<meta content="Dropbox is a jewel of the Y-Combinator industrial complex: a successful company that provides software as a service to ordinary people. They even allegedly turned down an acquisition offer from Steve Jobs. Their success is no small feat, but sadly it appears that they had to make a deal with the devil to achieve so much.  From my perspective, the company has been acting suspiciously for a while. Appointing George W. Bush’s Secretary of State to their Board was a big red flag. It inspired a whole Drop Dropbox movement. I’ve been uneasy about Dropbox, but when they announced they’d be integrating in with my operating system’s kernel, I decided to move away from them." name="twitter:description">
+<meta content="https://ashfurrow.com/img/blog/bittorrent-sync/dashboard.png" name="twitter:image">
+<!-- Favicon, site icons, etc -->
+<link href="/img/siteimage_dark.png" rel="image_src">
+<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!-- Favicons, generated from https://realfavicongenerator.net/ -->
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<!-- Search enginer index -->
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+{
+'@context' : 'http://schema.org',
+'@type' : 'Person',
+'name' : 'Ash Furrow',
+'url' : 'https://ashfurrow.com',
+'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
+'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
+}
+</script>
+<script type="application/ld+json">
+{
+'@context': 'http://schema.org',
+'@type': 'Organization',
+'url': 'https://ashfurrow.com',
+'logo': '/img/siteimage.png'
+}
+</script>
+<!-- Style-specific Javascripts -->
+<style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:992px) {
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid>.navbar-header,
+.container-fluid>.navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid>.navbar-header,
+  .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    float: left;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #404040;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: #808080;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+.post-preview>.post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+body {
+  webkit-tap-highlight-color: #398ccc;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_text_link {
+    display: none;
+  }
+}
+
+.nav #feed_link {
+  font-size: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 40px;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"),url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"),url('/fonts/icomoon.woff?-ar0ypv') format("woff"),url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script>
+<script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script>
+<script>
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '../../css/all-8659dfce.css' );
+</script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-9572240-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Backup to load styles not from javascript. -->
+<noscript>
+<link href="/css/all-8659dfce.css" rel="stylesheet">
+</noscript>
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle Navigation</span>
+<!-- Hamburger -->
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">
+<i class="icon-site-logo"></i>
+</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a id="feed_text_link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
+<a id="feed_link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/blog/bittorrent-sync/background.jpg');">
+<div class="header-dimmer"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-heading">
+<h1>Securing a BitTorrent Sync EC2 Instance</h1>
+</div>
+</div>
+</div>
+</div>
+<!-- If a background image source was specified, link to it. -->
+<div class="header_image_link_container">
+<a href="https://twitter.com/CloudyConway/status/737279203532541952">
+<i class="fa fa-picture-o"></i>
+</a>
+</div>
+</header>
+
+<div class="container">
+<article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>Dropbox is a jewel of the Y-Combinator industrial complex: a successful company that provides software as a service to ordinary people. They even allegedly <a href="http://techcrunch.com/2011/10/18/dropbox-said-no-to-nine-digits-acquisition-offer-from-apple-steve-jobs/">turned down an acquisition offer from Steve Jobs</a>. Their success is no small feat, but sadly it appears that they had to make a deal with the devil to achieve so much. </p>
+
+<p>From my perspective, the company has been acting suspiciously for a while. Appointing <a href="http://bits.blogs.nytimes.com/2014/04/18/protests-continue-against-dropbox-after-appointing-condoleezza-rice-to-board/">George W. Bush’s Secretary of State to their Board</a> was a big red flag. It inspired a whole <a href="http://www.drop-dropbox.com/">Drop Dropbox</a> movement. I’ve been uneasy about Dropbox, but when they announced they’d be integrating in with my <a href="https://blogs.dropbox.com/tech/2016/05/going-deeper-with-project-infinite/">operating system’s kernel</a>, I decided to move away from them. </p>
+
+
+
+<p></p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">Things I don’t want: <a href="https://twitter.com/hashtag/Dropbox?src=hash">#Dropbox</a> up in my kernel. <a href="https://t.co/p4LV87cKYy">pic.twitter.com/p4LV87cKYy</a></p>— Dusty (@duspom) <a href="https://twitter.com/duspom/status/735263193497505792">May 25, 2016</a>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I’ve been trying to move away from online services that allow easy mass surveillance. For example, I started in 2012, when I <a href="https://ashfurrow.com/blog/switching-from-gmail-to-fastmail/">moved off of Gmail</a>. It’s not been easy, I think in part because services that are popular are typically ad-supported – viewing your data is how they sell ads to you – this implies a lack of end-to-end encryption, and security in general. I’ve been tolerating Dropbox because it’s so <em>damm</em> convenient, but the kernel extension was the last straw, so I <a href="https://twitter.com/ashfurrow/status/736936037876895744">asked for alternatives</a>. </p>
+
+<p>The solution that appealed to me the most was <a href="https://getsync.com">BitTorrent Sync</a>. It’s closed source (boo) but on its face, offers a good compromise between security and convenience. I decided to give it a try, and in the process I ran into confusing documentation and tutorials that would make me <em>less</em> secure than using Dropbox. It really sucks that in order to <em>securely</em> do something as commonplace as syncing files, you have to be pretty tech savvy. While I’m continuing to evaluate it for a sync solution (I’m not yet ready to commit to BitTorrent Sync), I’m hoping this post will be a resource for anyone who wants to use BitTorrent Sync securely.</p>
+
+<p>(But I’m hopeful that next month we’ll see Apple show us some awesome end-to-end encryption features for iCloud Drive, too.)</p>
+
+<p>I am not a security expert, so I’ve marked the aspects of this post that I’m not 100% sure of with [?] so that I can be honest about what I know. If you can verify – or correct – something I’m unsure of, please <a href="https://github.com/ashfurrow/blog/issues/new">let me know</a> or <a href="https://github.com/ashfurrow/blog/compare">send a correction</a>. My hope is that this post can evolve to be somewhat authoritative instructions on how to securely sync files across devices, aimed at people who are computer savvy but maybe not familiar with server administration and security (like me).</p>
+
+<h2 id="overview">
+<a class="header-link" href="#overview">#</a> Overview</h2>
+
+<p>Okay, so BitTorrent Sync is a service that runs on computers and synchronizes files across them using BitTorrent. Cool. All of the posts I read on setting up BitTorrent Sync on a server used features available only with a <a href="https://getsync.com/features#compare">purchased license at at $40/year</a>, with a 30-day trial. This actually <em>introduces</em> security problems when used with all the setup instructions I’ve found; one of my two recommendations in this post is to <em>not</em> use these features on your server. I’ll get to that later.</p>
+
+<p>BitTorrent Sync is a really impressive service that provides a <em>tonne</em> of awesome features. I’m probably not going to use most of them, but crucially, it provides secure syncing of files across computers and smartphones.</p>
+
+<p>The BitTorrent protocol is inherently decentralized, so naturally syncing with BitTorrent is decentralized too. If you have two computers online, and add a file to one, then it’ll get transferred to the other over a secure, encrypted connection [?]. But consider the following scenario:</p>
+
+<ol>
+<li>Computer A is on, B is off.</li>
+<li>Add a file to A.</li>
+<li>Turn A off.</li>
+<li>Turn B on.</li>
+<li>The file isn’t sync’d to B, because A isn’t online to send it.</li>
+</ol>
+
+<p>The solution to this is to have a computer that’s running BitTorrent Sync that’s always on. Unless you have a home server or colocated machine, you’re going to have to use a virtual server. That’s where Amazon Web Services comes in.</p>
+
+<p>AWS is super-popular, but managing it is so infamously unfriendly that there’s a <a href="https://www.expeditedssl.com/aws-in-plain-english">AWS in Plain English</a> site to help. We’re going to use EC2, their virtual server service. The best blog post I found to help this is <a href="http://meltingice.net/2015/07/27/how-to-run-bittorrent-sync-on-aws/">here</a>, and it’s an excellent reference on how to set up BitTorrent Sync on a new EC2 instance (basically a virtual server). You get a year of free service from AWS, and after that it’s about $10/month (when billed hourly – you can save money by <a href="https://aws.amazon.com/ec2/pricing/">billing monthly or yearly</a>). </p>
+
+<p>The post has some great suggestions, like using a random, pre-configured port for BitTorrent Sync, and allowing incoming connections only on that one port and port 80 for administration. However, there are a few aspects to the post I think can be improved upon:</p>
+
+<ol>
+<li>
+<p>The post recommends opening port 80 to the entire internet, exposing the BitTorrent Sync dashboard (and consequently, access to your files [?]) to anyone who provides the username and password, which are <a href="http://help.getsync.com/hc/en-us/articles/204762689-Running-Sync-in-configuration-mode#overview">stored on the server in plaintext</a>.</p>
+<p>Further complicating this problem is the fact that to administer BitTorrent Sync, you send your username and password to the server over port 80 <em>unencrypted</em>, so anyone monitoring your traffic can see the auth details in plaintext [?]. Yikes.</p>
+</li>
+<li><p>The server syncs your files <em>in plaintext</em>, so an attacker who gains access to the server, or an NSA employee issuing a subpoena to Amazon for your instance’s filesystem [?], now has all your files. </p></li>
+</ol>
+
+<p>These problems can be pretty easily mitigated. First, though, I need to explain a bit more about how BitTorrent Sync works.</p>
+
+<h2 id="bittorrent-sync">
+<a class="header-link" href="#bittorrent-sync">#</a> BitTorrent Sync</h2>
+
+<p>What has confused me the most about BitTorrent Sync is that I approached it as a Dropbox replacement, but that’s not its primary use case. Instead, it’s about syncing individual folders with different people, not necessarily across one person’s different devices. To have everything “just work”, you need a license to share identities across devices. If you want a Dropbox-style sync solution with <em>one</em> folder, then you don’t need a license – just add the sync folders manually on all your devices.</p>
+
+<p>The first time you start their app, you create an <em>identity</em>. Under the hood, BitTorrent Sync creates an <a href="http://help.getsync.com/hc/en-us/articles/205451005">X.509 certificate</a> that’s used to identify you and authenticate with computers you want to sync with, if you use the licensed features. Nice. To link a new device to your identity, you use <a href="http://help.getsync.com/hc/en-us/articles/205457815-Sync-Private-Identity-Linking-My-Devices">a key in text or QR code format</a>. </p>
+
+<p>Your identity can sync folders across devices. Any machine with your identity has access to all your files, unencrypted. This is a security problem if you share your identity with your sync server…</p>
+
+<p>The blog post I linked to suggests adding your identity to your new EC2 instance. I’m not sure this is wise, because an attacker who gains access to the instance now has your files. My solution to this problem is to <em>not</em> use my identity, but instead use <em>encrypted folders</em>.</p>
+
+<h2 id="encrypted-folders">
+<a class="header-link" href="#encrypted-folders">#</a> Encrypted folders</h2>
+
+<p>An <a href="http://help.getsync.com/hc/en-us/articles/207370466">encrypted folder</a> is the perfect solution to this problem, and in fact, the docs recommend using encrypted folders for syncing with virtual private servers (which are <a href="https://www.quora.com/Is-there-any-benefit-of-EC2-over-VPS-offered-by-dedicated-server-providers">similar to EC2 instances</a>). So let’s do it!</p>
+
+<p>An encrypted folder is just like a regular folder that BitTorrent Sync synchronizes across devices, except that it adds encryption to the file contents it syncs. But encrypted folders separates the encryption keys for syncing the files and the keys for decrypting the files once they’re sync’d. Your <em>identity</em> automatically has access to the decryption key. </p>
+
+<p>So my solution was <strong>not adding my identity to the EC2 instance</strong>. Instead, I gave it the “Encrypted Key” to sync with (under the share menu for the folder). This lets the EC2 instance securely sync the files <em>without</em> having access to the decrypted version of the files. Nice. </p>
+
+<p>If an attacker (or Amazon) gains access to the instance, they don’t have access to my BitTorrent Sync identity and they don’t have access to my files in plaintext form. Awesome.</p>
+
+<p>Encrypted folders does a <em>tonne</em> to help security on my instance, but it’s not my only concern with the setup instructions I found. Remember, administering the server over HTTP without encryption means an attack could sniff out my username and password from my traffic [?], so what’s to be done?</p>
+
+<h2 id="ssh-tunnelling">
+<a class="header-link" href="#ssh-tunnelling">#</a> SSH Tunnelling</h2>
+
+<p>The blog post suggests opening port 80 to the entire internet, so anyone can access the BitTorrent Sync dashboard (provided they have your password, which they can sniff). I’d recommend limiting HTTP traffic over port 80 to <em>just</em> the instance itself, so that no one from the outside world can access it at all.</p>
+
+<p>But <em>you’re</em> in the outside world, right? So how do you access the dashboard? You use something called SSH tunnelling.</p>
+
+<p>When you first create your EC2 instance, you’re given a certificate to log into the machine over SSH. What I’m suggesting is to use SSH tunnelling with that certificate to redirect all traffic to your personal computer <em>over</em> the SSH tunnel to the instance, where it’ll be accessing itself locally. Basically, I want to go to <code>localhost:9000</code> on my laptop and have SSH redirect traffic over an encrypted tunnel <em>to</em> the instance, where it’ll try to access itself (the instance) on port 80. </p>
+
+<p>First, configure your security group in EC2 to restrict port 80 access to <code>127.0.0.1/0</code> (instead of <code>0.0.0.0/0</code>, which means “anyone”).</p>
+
+<p><img alt="Security Policy" src="/img/blog/bittorrent-sync/security.png"></p>
+
+<p>Then open a terminal and use the following command:</p>
+<pre><code class="highlight shell">ssh -i path/to/your/certificate.pem -N -L  9000:ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com:80 ubuntu@ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com
+</code></pre>
+
+<p>This command redirects traffic from port 9000 locally over the SSH tunnel to port 80 on <code>ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com</code> on the other side of the tunnel. Modify <code>path/to/your/certificate.pem</code> to point to your actual EC2 certificate that was created when you launched the instance, and change <code>ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com</code> to be the public DNS of the instance.</p>
+
+<p><img alt="Dashboard accessed through SSH tunnelling" src="/img/blog/bittorrent-sync/dashboard.png"></p>
+
+<p>Run the command and go to <code>localhost:9000</code> on your computer. With BitTorrent Sync is running on the EC2 instance, you’ll be prompted for your username and password to access the dashboard. Since all the traffic is routed over the SSH tunnel, no one can sniff out the plaintext credentials.</p>
+
+<p>After you have your initial, encrypted sync folder set up, you could configure BitTorent Sync to not provide a web UI. It will continue to sync your encrypted folder, but not provide <em>any</em> configuration capabilities to the outside world. Since I’m still messing around with it, I haven’t done this yet. </p>
+
+<h2 id="wrap-up">
+<a class="header-link" href="#wrap-up">#</a> Wrap Up</h2>
+
+<p>It sucks that all this setup is necessary to use BitTorrent Sync on an EC2 instance, and it sucks that it costs money. Dropbox is easier and more convenient, and has a free plan that’s pretty enticing for most users. If you’ve read this far, you probably take security seriously and don’t want the NSA snooping on your sync’d files. To me, it’s worth it. </p>
+
+<p>While I was critical of BitTorrent Sync’s documentation, it <em>is</em> a step in the right direction, and I hope they continue to make setup easier. As for AWS, there are other solutions like <a href="https://www.digitalocean.com">DigitalOcean</a> that might be easier. Cloud server administration is a lot simpiler than it used to be, and combined with cool services like BitTorrent Sync, I hope we can all take a step towards and end-to-end encrypted future.</p>
+
+<hr>
+
+<p>Thanks to <a href="https://twitter.com/gothmog%E2%80%AC">Jeremy Beker</a>, <a href="https://twitter.com/aaronvegh">Aaron Vegh</a>, <a href="https://twitter.com/orta">Orta Therox</a>, and of course <a href="https://twitter.com/ashleykrista">my wife</a> for their help proofreading this post.</p>
+
+<hr>
+<span class="meta">Posted on May 30, 2016</span>
+</div>
+</div>
+</article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<!-- Pager -->
+<ul class="pager article_pager">
+<li class="next">
+<a href="/blog/dropping-dropbox/"><div>Dropping Dropbox</div>
+</a>
+</li>
+<li class="previous">
+<a href="/blog/adulterated-objective-c/"><div>Adulterated Objective-C</div>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<hr id="page_footer">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li>
+<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="copyright text-muted">
+This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/javascripts/all-07769a87.js"></script>
+</body>
+</html>

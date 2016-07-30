@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/ashfurrow
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ashfurrow.com
+  * I am ashfurrow (https://keybase.io/ashfurrow) on keybase.
+  * I have a public key with fingerprint 006F 20AD 6193 CAC3 2413  6FF3 DDB3 AF9C 765E 0680
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019ad1a7ec42d7cb2c66db8209353740ba1bdd02812e2abfe7c51b11d9597b107b0a",
+            "fingerprint": "006f20ad6193cac324136ff3ddb3af9c765e0680",
+            "host": "keybase.io",
+            "key_id": "ddb3af9c765e0680",
+            "kid": "01019ad1a7ec42d7cb2c66db8209353740ba1bdd02812e2abfe7c51b11d9597b107b0a",
+            "uid": "17809d05295bfde945d1336006e84800",
+            "username": "ashfurrow"
+        },
+        "service": {
+            "hostname": "ashfurrow.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1454628109,
+    "expire_in": 157680000,
+    "prev": "4ec5ae560b25305ecd19b9003307907172657cd95931206ddbce7e96a681bda2",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJZSFRRGB7byImBdpDA4NJiYXbO3e/QAllBUDSFidoyne3qZXTudGfG
+hYgihVbCTDEqEKQiM5G2lxBzxBoqZaKHHirLotR8iSyyjepcqZfosfNyOP/5vu//
+v4+/xzfR403bU5jaXVtYfyXtQeJM3JN/vd+3V8A2rRL8e4UQG79YKWXRWDBkUcEv
+AAiggShEGiOySDWCRaKqFOsiMCRF0mSAEcSUAlGHIhMRNplGFIghpIZiaBgCDQMk
+ZAumFS5mTsSxwjFXFqimCBBVoSERRCRRhpJqmhKlWEKmQTRVYUDVASeW2FGXwYfD
+KMpyLJvX+CM4Pt4/8P957vi4HNR0YFCgiIaCTcoMWaFQklRug+myDty+8ShzwqiM
+cTSKlphxx7ErhH3ZAi+XW4S5ybpW/obkELuMsyOOHbOJXcq/SmKxSNTvUmNVERdb
+wXDwt0oQW2HKk+SMcuZELTss+CFHkpjlykJZkVXuCBjZAquMWA4LWi5C0Xg2/Lh9
+WDmXlBlREFNUgEVFAgojFBrYAECSgGYADWqiqmjEjUKCIlB5zIRpzFCRqvPUkCi4
+vvaEba4t8TlRMdeMWsVhFIs7TNjX3bVjkifN65kyeYK7Yh5v+vQ/i7d+2VRP3dYV
+63/0vcjq9A7tODmrdVIyN5TKzWxoqtZvHx1LDJ44lj+/6PHDFe/Ngx86zj1t67qp
+Xfz0c9MNdO+hE39z/nhtqi9dvNRrz952/9GWnaHmXcnS4nmlF4fOrepfO3xrTbIT
+TDzQqrJDI41LTnWmpIGhgtMtjyu25xW1p3zDOfGejVfb8yqnZKw50N20+Zp9b9Hb
+6hY4++ucwrFbc18OpDf7yGDGjMW059vAneTM768Dee/id7MaaFvX6O2amiXSmVeD
+ixufH144rTEXFkyTE3D5l0DmSMadbvQV2/vJ52cbtgcOfj47IXHhwtIxfeFox5PV
+yY76dUfyV/Z+/7htQeBybd0vQcdJ5w==
+=eUwc
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ashfurrow
+
+==================================================================
+
+

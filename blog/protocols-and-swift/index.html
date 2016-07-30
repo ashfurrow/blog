@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Protocols and Swift - Ash Furrow</title>
+<!-- Feed Tags -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<!-- Device specifier -->
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Meta stuff -->
+<link href="https://ashfurrow.com/blog/protocols-and-swift/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/protocols-and-swift/" itemprop="url">
+<meta content="The other day I posed this (somewhat cryptic) question to Twitter..." itemprop="about">
+<meta content="The other day I posed this (somewhat cryptic) question to Twitter..." itemprop="description">
+<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<!-- Open Graph -->
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="Protocols and Swift" property="og:title">
+<meta content="https://ashfurrow.com/blog/protocols-and-swift/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="The other day I posed this (somewhat cryptic) question to Twitter..." property="og:description">
+<meta content="https://ashfurrow.com/img/blog/protocols-and-swift/cat.gif" property="og:image">
+<!-- Twitter Cards -->
+<meta content="summary" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="Protocols and Swift" name="twitter:title">
+<meta content="The other day I posed this (somewhat cryptic) question to Twitter..." name="twitter:description">
+<meta content="https://ashfurrow.com/img/blog/protocols-and-swift/cat.gif" name="twitter:image">
+<!-- Favicon, site icons, etc -->
+<link href="/img/siteimage_dark.png" rel="image_src">
+<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!-- Favicons, generated from https://realfavicongenerator.net/ -->
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<!-- Search enginer index -->
+<!-- Rich Snippets -->
+<script type="application/ld+json">
+{
+'@context' : 'http://schema.org',
+'@type' : 'Person',
+'name' : 'Ash Furrow',
+'url' : 'https://ashfurrow.com',
+'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
+'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
+}
+</script>
+<script type="application/ld+json">
+{
+'@context': 'http://schema.org',
+'@type': 'Organization',
+'url': 'https://ashfurrow.com',
+'logo': '/img/siteimage.png'
+}
+</script>
+<!-- Style-specific Javascripts -->
+<style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:992px) {
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid>.navbar-header,
+.container-fluid>.navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid>.navbar-header,
+  .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    float: left;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  color: #404040;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+p a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 20px;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: #808080;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+.post-preview>.post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #398ccc;
+}
+
+body {
+  webkit-tap-highlight-color: #398ccc;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_text_link {
+    display: none;
+  }
+}
+
+.nav #feed_link {
+  font-size: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav #feed_link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 40px;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"),url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"),url('/fonts/icomoon.woff?-ar0ypv') format("woff"),url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script>
+<script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script>
+<script>
+  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+  loadCSS( '../../css/all-8659dfce.css' );
+</script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-9572240-3', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Backup to load styles not from javascript. -->
+<noscript>
+<link href="/css/all-8659dfce.css" rel="stylesheet">
+</noscript>
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle Navigation</span>
+<!-- Hamburger -->
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">
+<i class="icon-site-logo"></i>
+</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a id="feed_text_link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
+<a id="feed_link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');">
+<div class="header-dimmer"></div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="post-heading">
+<h1>Protocols and Swift</h1>
+</div>
+</div>
+</div>
+</div>
+<!-- If a background image source was specified, link to it. -->
+</header>
+
+<div class="container">
+<article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>The other day I posed this (somewhat cryptic) question to Twitter: </p>
+
+
+
+<blockquote class="twitter-tweet" lang="en">
+<p>Best way for pure Swift objects to have optional conformance to some contract? Optional protocols/protocol members are <a href="https://twitter.com/objc">@objc</a>-only.</p>— Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/560436119956115456">January 28, 2015</a>
+</blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I heard back from a lot of different people with a lot of different opinions. Most were confused by my necessarily terse question (it may have been better to post a longer, more detailed question on a medium that provides more than 140 characters). </p>
+
+<p>I shared my <a href="https://github.com/ashfurrow/Moya/issues/95#issuecomment-71834677">actual question</a> and with help from other developers, I found an <a href="https://github.com/ashfurrow/Moya/pull/96">answer</a> for my specific case. </p>
+
+<p>So, hooray I guess? But something about the answer seemed unsatisfactory to me. It is too specific for the general case, so I thought I’d dig deeper to see if I could figure out something better. </p>
+
+<p>So let’s back it up a bit. </p>
+
+<p>Here’s the problem: you have two types that want to talk to each other. If you directly reference the type of one from within the other, you’ve just tightly coupled the two types together — and any software engineer worth their salt knows that Coupling is Bad. </p>
+
+<p>Most modern languages have a way to deal with this problem. In Objective-C — and indeed, in Swift — we call them protocols. As a high level concept, protocols are like contracts. If a type conforms to a protocol, it has essentially signed a contract to implement the methods specified in that protocol. Revisiting our earlier problem of the two types that want to talk to each other, we can use protocols so that they remain blissfully unaware of one another. All they care about is the protocol. Let’s look at a concrete, <em>incredibly pedagogical</em> example. </p>
+
+<p>Say we want to model some animals and food. Animals eat food. We can have each animal type be aware of all the different food types, but that would tightly couple the types together. Instead, we can use the following <code>Food</code> protocol. </p>
+<pre><code class="highlight swift"><span class="kd">protocol</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Then, we can define our <code>Cat</code> type. </p>
+<pre><code class="highlight swift"><span class="kd">struct</span> <span class="kt">Cat</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">calorieCount</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">eat</span><span class="p">(</span><span class="nv">food</span><span class="p">:</span> <span class="kt">Food</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">calorieCount</span> <span class="o">+=</span> <span class="n">food</span><span class="o">.</span><span class="n">caloriesPerGram</span> <span class="o">*</span> <span class="n">grams</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Nice. </p>
+
+<p><img alt="Ode to Spot" src="/img/blog/protocols-and-swift/cat.gif"></p>
+
+<p>In order to feed our cat, we need a type that conforms to the <code>Food</code> protocol. </p>
+<pre><code class="highlight swift"><span class="kd">struct</span> <span class="kt">Kibble</span><span class="p">:</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">40</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Super. Using the two together is really easy:</p>
+<pre><code class="highlight swift"><span class="k">let</span> <span class="nv">catFood</span> <span class="o">=</span> <span class="kt">Kibble</span><span class="p">()</span>
+<span class="k">var</span> <span class="nv">dave</span> <span class="o">=</span> <span class="kt">Cat</span><span class="p">()</span>
+
+<span class="n">dave</span><span class="o">.</span><span class="nf">eat</span><span class="p">(</span><span class="n">catFood</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
+</code></pre>
+
+<p>Awesome. Note that we’re using pure Swift types – none of that Objective-C cruft. </p>
+
+<p><img alt="This is my actual cat, Dave." src="/img/blog/protocols-and-swift/play.gif"></p>
+
+<p>(I know that this is fundamental stuff that you probably already know, but it’s important to make sure we’re on the same page before we continue.)</p>
+
+<p>Here’s the problem I ran into: in a pure Swift environment, I want to have <em>optional methods</em> in my protocol so that objects that conform to it may opt-in to certain functionality. It turns out that this is really really hard. </p>
+
+<p>Let’s revisit our example of the cat and the food. Cats – turns out – have not evolved to eat kibble; they rely on moisture from their food to hydrate themselves. (That’s why kitties often have problems with urinary tract infections – they’re dehydrated.) Some foods, like canned cat food, have moisture. Some foods, like kibble, have none. Since I believe this difference is fundamental enough to different foods, I’d like to expand my protocol to have an <em>optional</em> amount of moisture. That way all the foods that don’t have any moisture don’t have to bother implementing those part of the protocol. Easy, right? </p>
+<pre><code class="highlight swift"><span class="kd">protocol</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+    <span class="kd">optional</span> <span class="k">var</span> <span class="nv">milliLitresWaterPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Er, no, actually. This code produces a compiler error advising you that the <code>’optional’ keyword can only be a applied to members of an @objc protocol</code>. Huh, that’s weird. </p>
+
+<p><img alt="omg swift" src="/img/blog/protocols-and-swift/cry.gif"></p>
+
+<p>Fine, so we put <code>@objc</code> at the beginning of our protocol declaration. </p>
+<pre><code class="highlight swift"><span class="k">@objc</span> <span class="kd">protocol</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+    <span class="kd">optional</span> <span class="k">var</span> <span class="nv">milliLitresWaterPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>But then we run into another problem: Swift structs, like <code>Kibble</code>, cannot conform to Objective-C protocols. </p>
+
+<p>It seems like quite the pickle. I <em>want</em> to use all the cool awesome new Swift features, but my solution requires the use of legacy Objective-C. So what do I do? </p>
+
+<p>I tried creating a second protocol and <em>asking</em> if the <code>food</code> parameter conformed to it, like so. </p>
+<pre><code class="highlight swift"><span class="kd">protocol</span> <span class="kt">WetFood</span><span class="p">:</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">milliLitresWaterPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">Cat</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">calorieCount</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">var</span> <span class="nv">hydrationLevels</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">eat</span><span class="p">(</span><span class="nv">food</span><span class="p">:</span> <span class="kt">Food</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">calorieCount</span> <span class="o">+=</span> <span class="n">food</span><span class="o">.</span><span class="n">caloriesPerGram</span> <span class="o">*</span> <span class="n">grams</span>
+
+        <span class="k">if</span> <span class="k">let</span> <span class="nv">wetFood</span> <span class="o">=</span> <span class="n">food</span> <span class="k">as</span><span class="p">?</span> <span class="kt">WetFood</span> <span class="p">{</span>
+            <span class="c1">// do something here
+</span>        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>But the compiler still errors: <code>Cannot downcast from ‘Food’ to non-@objc protocol type ‘WetFood’</code>. Swift protocols are just not designed to be used in this way.</p>
+
+<p><img alt="Whomp whomp." src="/img/blog/protocols-and-swift/sad.gif"></p>
+
+<p></p>
+<hr>
+
+<p>After playing around for a while, things seemed a bit hopeless. Eventually, I realized that I was trying to solve a Swift problem using Objective-C methodology – something that can only lead to tears. I’ve been saying for a while that we need to reevaluate our approaches to familiar problems with Swift, and it was time to follow my own advice. </p>
+
+<p>Let’s revisit the high-level problem I’m trying to solve: I have two types and I want them to talk to each other <em>without coupling</em>. Justin Spahr-Summers, as usual, has an answer: </p>
+
+<blockquote class="twitter-tweet" lang="en">
+<p><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Split out the optional bits into one or more separate protocols that can be conformed to if desired.</p>— Justin Spahr-Summers (@jspahrsummers) <a href="https://twitter.com/jspahrsummers/status/560493854374113280">January 28, 2015</a>
+</blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>OK, cool. I can see that being really useful for table views, for example. He even later <a href="https://twitter.com/jspahrsummers/status/560498081162993665">pointed out</a> that was the case. So let’s take a break from <code>Cat</code> and <code>Food</code> and look at table views. How might they look in pure Swift?  </p>
+
+<p>The table view delegate/datasource protocols have always mystified me – no one has ever given me a satisfactory rule  dividing what is a datasource method from what is a delegate method. The datasource protocol alone has eleven methods, all but two of which are <code>optional</code>. </p>
+
+<p>The methods are <code>optional</code> because the creators of <code>UITableView</code> wanted the behaviour to be opt-in (hey, just like our <code>Food</code> example!). By having <code>optional</code> components of their contract, table views behave differently. If you don’t implement the methods to reorder the table view, it doesn’t show the reordering controls (for example). </p>
+
+<p>So let’s take Justin’s advice. </p>
+
+<p>Imagine Apple has hired you to rewrite <code>UITableView</code> in pure Swift. Let’s start with the existing protocol implementation. Currently, <code>UITableView</code> has an optional <code>dataSource</code> property. </p>
+<pre><code class="highlight swift"><span class="kd">unowned(unsafe)</span> <span class="k">var</span> <span class="nv">dataSource</span><span class="p">:</span> <span class="kt">UITableViewDataSource</span><span class="p">?</span>
+</code></pre>
+
+<p>Ok, now how about that <code>UITableViewDataSource</code> protocol? </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">protocol</span> <span class="kt">UITableViewDataSource</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span>
+
+
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">cellForRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span>
+
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">numberOfSectionsInTableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span>
+
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">titleForHeaderInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span> 
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">titleForFooterInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span>
+
+    <span class="c1">// Editing
+</span>
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">canEditRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+
+    <span class="c1">// Moving/reordering
+</span>
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">canMoveRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+
+    <span class="c1">// Index
+</span>
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">sectionIndexTitlesForTableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyObject</span><span class="p">]</span><span class="o">!</span> 
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">sectionForSectionIndexTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">atIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> 
+
+    <span class="c1">// Data manipulation - insert and delete support
+</span>
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">commitEditingStyle</span> <span class="nv">editingStyle</span><span class="p">:</span> <span class="kt">UITableViewCellEditingStyle</span><span class="p">,</span> <span class="n">forRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span>
+
+    <span class="c1">// Data manipulation - reorder / moving support
+</span>
+    <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">moveRowAtIndexPath</span> <span class="nv">sourceIndexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">,</span> <span class="n">toIndexPath</span> <span class="nv">destinationIndexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Yikes! I’ve included some of the comments from Apple’s header files to show you how complex this protocol is. For example, the “Moving/reordering” function determines if a given row can be moved, but is only invoked if the datasource <em>also</em> implements the final method in the protocol. One wonders why these two interdependent methods are so far apart in the header file. </p>
+
+<p>If we were going to write a new, purely Swift <code>TableView</code> type, we’ll need a data source to get information about the content we’ll be displaying. By following Justin’s advice, it’s not hard to see how things could be rewritten (let’s assume we have Swift equivalent types for <code>NSIndexPath</code>, <code>UITableViewCell</code>, etc). </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">TableView</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">numberOfSections</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">weak</span> <span class="k">var</span> <span class="nv">dataSource</span><span class="p">:</span> <span class="kt">TableViewDataSource</span><span class="p">?</span>
+    <span class="k">weak</span> <span class="k">var</span> <span class="nv">titlesDataSource</span><span class="p">:</span> <span class="kt">TableViewTitlesDataSource</span><span class="p">?</span>
+    <span class="k">weak</span> <span class="k">var</span> <span class="nv">editingDataSource</span><span class="p">:</span> <span class="kt">TableViewEditingDataSource</span><span class="p">?</span>
+    <span class="k">weak</span> <span class="k">var</span> <span class="nv">reorderingDataSource</span><span class="p">:</span> <span class="kt">TableViewReorderingDataSource</span><span class="p">?</span>
+    <span class="k">weak</span> <span class="k">var</span> <span class="nv">indexSataSource</span><span class="p">:</span> <span class="kt">TableViewIndexDataSource</span><span class="p">?</span>
+
+    <span class="c1">// TODO: Finish re-implementing UITableView
+</span><span class="p">}</span>
+
+<span class="kd">protocol</span> <span class="kt">TableViewDataSource</span><span class="p">:</span> <span class="kd">class</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span>
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">cellForRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TableViewCell</span>
+<span class="p">}</span>
+
+<span class="kd">protocol</span> <span class="kt">TableViewTitlesDataSource</span><span class="p">:</span> <span class="kd">class</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">titleForHeaderInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span>
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">titleForFooterInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span>
+<span class="p">}</span>
+
+<span class="kd">protocol</span> <span class="kt">TableViewEditingDataSource</span><span class="p">:</span> <span class="kd">class</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">canEditRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">commitEditingStyle</span> <span class="nv">editingStyle</span><span class="p">:</span> <span class="kt">TableViewCell</span><span class="o">.</span><span class="kt">EditingStyle</span><span class="p">,</span> <span class="n">forRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">protocol</span> <span class="kt">TableViewReorderingDataSource</span><span class="p">:</span> <span class="kd">class</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">canMoveRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span>
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">moveRowAtIndexPath</span> <span class="nv">sourceIndexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span> <span class="n">toIndexPath</span> <span class="nv">destinationIndexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">protocol</span> <span class="kt">TableViewIndexDataSource</span><span class="p">:</span> <span class="kd">class</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">sectionIndexTitlesForTableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span><span class="o">!</span>
+    <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">TableView</span><span class="p">,</span> <span class="n">sectionForSectionIndexTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">atIndex</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span>
+<span class="p">}</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>I’m not saying that this is necessarily how I would actually write things – it’s only supposed to show you how dividing areas of concern into separate protocols makes things a lot more clear. </p>
+
+<p>First, we moved the section count into the <code>TableView</code> type itself. All we need to populate the table view is to give it an object that conforms to the <code>TableViewDataSource</code> protocol. </p>
+
+<p>Extending behaviour is very easy: you want to have cell reordering in your table view? Then set the table view’s <code>reorderingDataSource</code> property to something that will handle reordering. You want titles? Go ahead and use <code>TableViewTitlesDataSource</code>. And so on. </p>
+
+<p>Sure, you’ll probably have only one object that conforms to all the protocols you need (and be honest – it’s probably a <a href="http://chris.eidhof.nl/posts/lighter-uiviewcontrollers.html">view controller</a>, isn’t it?). But the power of this technique is <em>not</em> that we can divide the various data sources into different objects. Instead, the advantage is that we don’t have additional semantic coupling between functions in the protocol. <em>Of course</em> <code>canMoveRowAtIndexPath</code> can only be called if <code>moveRowAtIndexPath</code> is also implemented – they’re <em>in the same protocol</em>. </p>
+
+<p>(Of course, <code>UITableViewDelegate</code> could benefit from a similar rewriting, but as it contains no fewer than thirty three functions – <em>all optional</em> – I will leave that as an exercise for the reader.)</p>
+
+<p>(Also note that the <code>: class</code> suffix of the protocols. This specifies that the protocols may only be conformed to by classes and not structs or enums – those two types cannot be weakly referenced.)</p>
+
+<p>OK, so <code>UITableView</code> sucks and like most things that suck in Objective-C, they’re way better in Swift. So what? </p>
+
+<p>So, Swift programmers, you have a choice now. The next time you write a protocol and it needs <code>optional</code> functions, <em>don’t</em> just add <code>@objc</code> to the declaration. Split it out into multiple protocols like a responsible adult. There, that’s better. Your mother and I are so proud of you. </p>
+
+<p><img alt="We really are." src="/img/blog/protocols-and-swift/proud.gif"></p>
+
+<p></p>
+<hr>
+
+<p>But wait – what about my first example? With the cat and the food and everything? What do we do there? Well, just like my Twitter question the other day, the answer isn’t so simple. </p>
+
+<p>Remember, the <em>problem</em> isn’t “I need optional protocol functions blah blah blah” – those are a means to an end. The problem is “I need two types to talk to one another without coupling.” Let’s solve this problem the Swift way: with protocols. </p>
+
+<p>(Wait, weren’t we just using protocols? Didn’t protocols get us into this mess? Yes, but protocols are like XML – if they don’t solve your problem, then you’re not using enough of them.)</p>
+
+<p>Our problem before is that the <code>Cat</code> struct didn’t know if the <code>Food</code> it was passed in contained water it should keep track of. Not all foods have water in them, after all. But wait a second – everything that consumes food has a current calorie count and hydration. Let’s flip things around: instead of making the <code>Cat</code> responsible for updating its state when it eats something, let’s make the <code>Food</code> responsible for updating the state of whatever is consuming it. </p>
+<pre><code class="highlight swift"><span class="kd">protocol</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">calorieCount</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span>
+    <span class="k">var</span> <span class="nv">hydrationLevel</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">protocol</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">beConsumedBy</span><span class="p">(</span><span class="nv">consumer</span><span class="p">:</span> <span class="kt">FoodConsumer</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FoodConsumer</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">Cat</span><span class="p">:</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">calorieCount</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">var</span> <span class="nv">hydrationLevel</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">Kibble</span><span class="p">:</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">40</span>
+
+    <span class="kd">func</span> <span class="nf">beConsumedBy</span><span class="p">(</span><span class="nv">consumer</span><span class="p">:</span> <span class="kt">FoodConsumer</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">newConsumer</span> <span class="o">=</span> <span class="n">consumer</span>
+        <span class="n">newConsumer</span><span class="o">.</span><span class="n">calorieCount</span> <span class="o">+=</span> <span class="n">grams</span> <span class="o">*</span> <span class="n">caloriesPerGram</span>
+        <span class="k">return</span> <span class="n">newConsumer</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">FancyFeast</span><span class="p">:</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">80</span>
+    <span class="k">let</span> <span class="nv">milliLitresWaterPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">0.2</span>
+
+    <span class="kd">func</span> <span class="nf">beConsumedBy</span><span class="p">(</span><span class="nv">consumer</span><span class="p">:</span> <span class="kt">FoodConsumer</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">newConsumer</span> <span class="o">=</span> <span class="n">consumer</span>
+        <span class="n">newConsumer</span><span class="o">.</span><span class="n">calorieCount</span> <span class="o">+=</span> <span class="n">grams</span> <span class="o">*</span> <span class="n">caloriesPerGram</span>
+        <span class="n">newConsumer</span><span class="o">.</span><span class="n">hydrationLevel</span> <span class="o">+=</span> <span class="n">grams</span> <span class="o">*</span> <span class="n">milliLitresWaterPerGram</span>
+        <span class="k">return</span> <span class="n">newConsumer</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>This is a lot better. The different foods are responsible for doing their own thing to whatever consumer comes their way and the consumer itself is only responsible for things that are common to all food consumers: calorie count and water levels. </p>
+
+<p>(We could have also opted to use an <code>inout</code> <code>FoodConsumer</code> parameter to pass in <code>&amp;dave</code> and modify the struct itself. I prefer this immutable approach.)</p>
+
+<p>And how might we use this code? Well, we have a few options. Here’s one that I like. </p>
+<pre><code class="highlight swift"><span class="kd">extension</span> <span class="kt">Cat</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">eat</span><span class="p">(</span><span class="nv">food</span><span class="p">:</span> <span class="kt">Food</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">food</span><span class="o">.</span><span class="nf">beConsumedBy</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="n">grams</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">catFood</span> <span class="o">=</span> <span class="kt">Kibble</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">wetFood</span> <span class="o">=</span> <span class="kt">FancyFeast</span><span class="p">()</span>
+<span class="k">var</span> <span class="nv">dave</span> <span class="o">=</span> <span class="kt">Cat</span><span class="p">()</span>
+
+<span class="n">dave</span> <span class="o">=</span> <span class="n">dave</span><span class="o">.</span><span class="nf">eat</span><span class="p">(</span><span class="n">catFood</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span> <span class="k">as</span> <span class="kt">Cat</span>
+<span class="n">dave</span> <span class="o">=</span> <span class="n">dave</span><span class="o">.</span><span class="nf">eat</span><span class="p">(</span><span class="n">wetFood</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span> <span class="k">as</span> <span class="kt">Cat</span>
+</code></pre>
+
+<p>You get a lot more flexibility with this method, since you can have foods that don’t have calories (diet soda) or don’t have either calories or water (as far as I know, twist ties contain neither, but it’s possible that my cat knows something I do not). </p>
+
+<p>(It would be nice to be able to extend the <code>FoodConsumer</code> protocol to add an <code>eat(Food)</code> method that could just call through for us, but Swift doesn’t support such an extension – at least <a href="https://github.com/ksm/SwiftInFlux#moving-functionality-from-global-functions-to-methods">not yet</a>.) (<strong>Update</strong>: this is actually now possible! See the <a href="#update">note</a> at the end of this article.)</p>
+
+<p><img alt="Om nom nom." src="/img/blog/protocols-and-swift/eating.gif"></p>
+
+<p>This approach obviously isn’t suited for every case, but it is a useful tool to have at your disposal. </p>
+
+<hr>
+
+<p>Remember that the general problem is “how do I get different types to talk to one another without coupling?” </p>
+
+<p>The answer is “it depends.”</p>
+
+<p>Swift and Objective-C are interoperable, but are still fundamentally different languages. One prefers static typing and the other is dynamic. Solutions that work well in one aren’t necessarily going to work well in the other. However  natural it is for us to try and use Objective-C solutions to solve Swift problems, we should always be on the lookout for new or better ways to solve problems. If something is difficult in Swift (and it’s not related to constant compiler crashes), it’s likely that you’re trying to use it in a way it is not intended to be used. Pay attention to the friction you experience when writing Swift – if something feels overly difficult, there probably is a better way. </p>
+
+<hr>
+
+<h3 id="update">
+<a class="header-link" href="#update">#</a> Update</h3>
+
+<p>Since Swift 2, it’s bee possible to provide protocol extensions that solve this problem even more elegantly. Even a naïve improvement would be to provide an extension on <code>FoodConsumer</code>. In order to do this, we need to be a little smarter about how we define the <code>Food</code> protocol.</p>
+<pre><code class="highlight swift"><span class="kd">protocol</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="n">beConsumedBy</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">FoodConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">consumer</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span>
+<span class="p">}</span>
+
+<span class="kd">extension</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">eat</span><span class="p">(</span><span class="nv">food</span><span class="p">:</span> <span class="kt">Food</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">food</span><span class="o">.</span><span class="nf">beConsumedBy</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="n">grams</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>And then remove the <code>Cat</code> extension. The complete new code looks like the following. </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+<pre><code class="highlight swift"><span class="kd">protocol</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">calorieCount</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span>
+    <span class="k">var</span> <span class="nv">hydrationLevel</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">protocol</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="n">beConsumedBy</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">FoodConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">consumer</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span>
+<span class="p">}</span>
+
+<span class="kd">extension</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">eat</span><span class="p">(</span><span class="nv">food</span><span class="p">:</span> <span class="kt">Food</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">food</span><span class="o">.</span><span class="nf">beConsumedBy</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="n">grams</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="kd">struct</span> <span class="kt">Cat</span><span class="p">:</span> <span class="kt">FoodConsumer</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">calorieCount</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">var</span> <span class="nv">hydrationLevel</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">Kibble</span><span class="p">:</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">40</span>
+
+    <span class="kd">func</span> <span class="n">beConsumedBy</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">FoodConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">consumer</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">newConsumer</span> <span class="o">=</span> <span class="n">consumer</span>
+        <span class="n">newConsumer</span><span class="o">.</span><span class="n">calorieCount</span> <span class="o">+=</span> <span class="n">grams</span> <span class="o">*</span> <span class="n">caloriesPerGram</span>
+        <span class="k">return</span> <span class="n">newConsumer</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">FancyFeast</span><span class="p">:</span> <span class="kt">Food</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">caloriesPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">80</span>
+    <span class="k">let</span> <span class="nv">milliLitresWaterPerGram</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">0.2</span>
+
+    <span class="kd">func</span> <span class="n">beConsumedBy</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">FoodConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">consumer</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">newConsumer</span> <span class="o">=</span> <span class="n">consumer</span>
+        <span class="n">newConsumer</span><span class="o">.</span><span class="n">calorieCount</span> <span class="o">+=</span> <span class="n">grams</span> <span class="o">*</span> <span class="n">caloriesPerGram</span>
+        <span class="n">newConsumer</span><span class="o">.</span><span class="n">hydrationLevel</span> <span class="o">+=</span> <span class="n">grams</span> <span class="o">*</span> <span class="n">milliLitresWaterPerGram</span>
+        <span class="k">return</span> <span class="n">newConsumer</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="k">let</span> <span class="nv">catFood</span> <span class="o">=</span> <span class="kt">Kibble</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">wetFood</span> <span class="o">=</span> <span class="kt">FancyFeast</span><span class="p">()</span>
+<span class="k">var</span> <span class="nv">dave</span> <span class="o">=</span> <span class="kt">Cat</span><span class="p">()</span>
+
+<span class="n">dave</span> <span class="o">=</span> <span class="n">dave</span><span class="o">.</span><span class="nf">eat</span><span class="p">(</span><span class="n">catFood</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">dave</span> <span class="o">=</span> <span class="n">dave</span><span class="o">.</span><span class="nf">eat</span><span class="p">(</span><span class="n">wetFood</span><span class="p">,</span> <span class="nv">grams</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>
+</code></pre>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Very cool! We no longer need to force cast the return value of <code>dave.eat()</code> to be <code>Cat</code> because of the <code>eat</code> function’s use of <code>Self</code> as a return type. Brilliant!</p>
+
+<hr>
+<span class="meta">Posted on February  1, 2015</span>
+</div>
+</div>
+</article>
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<div id="book-link">
+<a href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<img src="/img/marketing/swift.jpg">
+</a>
+<a class="visible-md visible-lg" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<h3>Enjoyed my post? You'd love my book!</h3>
+</a>
+<a class="visible-xs visible-sm" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
+<h3>Enjoyed my post?</h3>
+</a>
+<p>My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.</p>
+</div>
+<div class="clearfix"></div>
+
+<hr>
+<!-- Pager -->
+<ul class="pager article_pager">
+<li class="next">
+<a href="/blog/production-swift/"><div>Production Swift</div>
+</a>
+</li>
+<li class="previous">
+<a href="/blog/the-complexity-of-evil/"><div>The Complexity of Evil</div>
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<hr id="page_footer">
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li>
+<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+<li>
+<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class="copyright text-muted">
+This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/javascripts/all-07769a87.js"></script>
+</body>
+</html>
