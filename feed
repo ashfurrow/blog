@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://ashfurrow.com/feed.rss.xml" rel="self" type="application/rss+xml"/>
+    <title>Ash Furrow</title>
+    <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
+    <link>https://ashfurrow.com/</link>
+    <item>
+      <title>Up and Running with Ruby</title>
+      <link>https://ashfurrow.com/blog/up-and-running-with-ruby/</link>
+      <description>&lt;p&gt;Ruby has always kind of intimidated me. Largely I think because I cut my teeth on Java, C++, C#, which are static-ish and Ruby&amp;rsquo;s decidedly dynamic. And by the time I started writing Objective-C, even it had &lt;a href="https://ashfurrow.com/blog/adulterated-objective-c/"&gt;started evolving to be less dynamic&lt;/a&gt;. Ruby – and frameworks written in Ruby – involve &lt;em&gt;so much magic&lt;/em&gt; that&amp;rsquo;s always kind of scared me away.&lt;/p&gt;
+
+
+
+&lt;p&gt;Working at Artsy has exposed me to Ruby in a lot of ways: a lot of the Artsy backend projects I&amp;rsquo;m interested in use Ruby; I&amp;rsquo;ve helped out with CocoaPods and other developer tools that happen to be written in Ruby; and now when I go to write a new tool, Ruby is the language I use because I have so many colleagues to help me. &lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve gotten a &lt;em&gt;tonne&lt;/em&gt; more competent in Ruby since I &lt;a href="https://ashfurrow.com/blog/lingua-rubinus/"&gt;complained about my lack of literacy in 2011&lt;/a&gt;. Since starting at Artsy, I&amp;rsquo;ve published &lt;a href="https://rubygems.org/profiles/ashfurrow"&gt;six Ruby gems&lt;/a&gt; and I&amp;rsquo;ve contributed to lots of other projects.&lt;/p&gt;
+
+&lt;p&gt;After a recent crunch writing Swift, I needed a change of pace. I found some great projects to dig into with Ruby and I&amp;rsquo;ve learnt &lt;em&gt;so much&lt;/em&gt;. It was kind of intense – packed over a long weekend – but I made sure to take lots of breaks and do non-programming things. Oh, and to reflect on what I&amp;rsquo;ve learnt. Which brings us to this blog post.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://danger.systems"&gt;Danger&lt;/a&gt; is a tool from &lt;a href="https://twitter.com/orta"&gt;Orta Therox&lt;/a&gt; and &lt;a href="https://twitter.com/krausefx"&gt;Felix Krause&lt;/a&gt;. I remember talking to Orta about ways to codify and automate team culture, and the next thing I knew the two of them had made something really awesome. Basically, Danger is a tool that runs as part of continuous integration which comments on pull requests if it notices any problems. You should definitely check out &lt;a href="http://artsy.github.io/blog/2016/07/03/handling-big-projects/"&gt;this post detailing Danger&amp;rsquo;s development&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using Danger has a number of advantages, here are my favourites:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It saves the project maintainer time.&lt;/li&gt;
+&lt;li&gt;It prevents overlooked problems from being accidentally merged.&lt;/li&gt;
+&lt;li&gt;It softens the emotional impact of criticism (since it&amp;rsquo;s automated and not from a person).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Super cool! Orta&amp;rsquo;s been integrating Danger into as many repositories as he can – open source projects and Artsy ones. So I kind of got pulled into it too, and now use Danger on a lot of my own projects. Open source ones like &lt;a href="https://github.com/Moya/Moya"&gt;Moya&lt;/a&gt; but also personal projects like this &lt;a href="https://github.com/ashfurrow/blog"&gt;blog&lt;/a&gt;. For example, Danger now runs my new blog posts through &lt;a href="https://github.com/amperser/proselint"&gt;proselint&lt;/a&gt; and lets me know about spelling/grammar mistakes, awkward wording, mixed metaphors, unintentional sexism – all kinds of stuff.&lt;/p&gt;
+
+&lt;p&gt;I decided that if prose was worth linting with Danger, Swift code probably was too. Danger was designed with plugins as first-class citizens, and with the example &lt;a href="https://github.com/dbgrandi/danger-prose"&gt;&lt;code&gt;danger-proselint&lt;/code&gt;&lt;/a&gt; plugin by &lt;a href="https://twitter.com/dbgrandi"&gt;Dave Grandinetti&lt;/a&gt;, I wrote &lt;a href="https://github.com/ashfurrow/danger-swiftlint"&gt;&lt;code&gt;danger-swiftlint&lt;/code&gt;&lt;/a&gt;. Copying Dave&amp;rsquo;s repo was a great way to start because I had a blueprint of what to build, and just had to add the finer details. I really got into unit testing with Rspec, too.&lt;/p&gt;
+
+&lt;p&gt;So I had built a Danger plugin in Ruby and felt pretty good about myself. Later, when I added Danger to &lt;a href="https://github.com/Moya/Moya/pull/521#issuecomment-229961410"&gt;Moya&lt;/a&gt;, &lt;a href="https://github.com/Moya/Moya/pull/521#issuecomment-229961410"&gt;Orta suggested&lt;/a&gt; that I have Danger point out when new contributors should be invited to our organization (inviting new members after their first PR is a &lt;a href="https://github.com/Moya/contributors"&gt;cornerstone of Moya&amp;rsquo;s community guidelines&lt;/a&gt;). That&amp;rsquo;s a great idea, but since I was having so much fun with Ruby, I thought: what if I just automated the whole invitation process?&lt;/p&gt;
+
+&lt;p&gt;A quick DuckDuckGo search later, and I found that GitHub has some &lt;a href="https://developer.github.com/webhooks/configuring/"&gt;awesome documentation&lt;/a&gt; on their WebHooks API, including a sample server written in Sinatra, a lightweight web framework for Ruby. From there, and a few tutorials, I experimented and slowly built &lt;a href="https://github.com/Moya/Aeryn"&gt;Aeryn&lt;/a&gt;. Building a new Ruby project from scratch was the next step up from copying an existing codebase and modifying it, like I did with &lt;code&gt;danger-swiftlint&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Aeryn is really cool: new contributors get invited to join our organization and are sent a friendly message with details. This happens whenever someone has their first pull request merged. The project is fully unit tested, has been built so other organizations can use it out-of-the-box, and is easily deployable to free Heroku accounts.&lt;/p&gt;
+
+&lt;p&gt;And Aeryn uses Danger, including &lt;a href="https://github.com/bbatsov/rubocopp"&gt;Rubocop&lt;/a&gt;, a Ruby static analyzer. This led to &lt;em&gt;another&lt;/em&gt; Danger plugin called &lt;a href="https://github.com/ashfurrow/danger-rubocop"&gt;&lt;code&gt;danger-rubocop&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So three new Ruby projects completed in as many days. Like I said, intense!&lt;/p&gt;
+
+&lt;p&gt;I struggled. A lot. When I couldn&amp;rsquo;t figure something out on my own, I &lt;a href="https://twitter.com/ashfurrow/status/749367814369214464"&gt;asked for help&lt;/a&gt;. Orta offered a lot of &lt;a href="https://github.com/Moya/Aeryn/pull/9#discussion_r69395068"&gt;proactive advice&lt;/a&gt; and used metaphors from Objective-C development to help explain concepts. Automated tools like &lt;a href="https://github.com/bbatsov/rubocop"&gt;Rubocop&lt;/a&gt; were really helpful at showing me how to write idiomatic Ruby.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;I still have much to learn. &lt;a href="https://t.co/kl2FQUHv03"&gt;pic.twitter.com/kl2FQUHv03&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ash Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/750844591331500032"&gt;July 7, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s been really fun diving into a different community, where I&amp;rsquo;m inexperienced. I&amp;rsquo;ve felt angry when things don&amp;rsquo;t work the way I expect them to, and I&amp;rsquo;ve felt gleeful when some things work on the first try. It&amp;rsquo;s all part of the learning process. &lt;/p&gt;
+
+&lt;p&gt;I am glad to have been knocked back on my ass: more experienced developers tend to forget what it&amp;rsquo;s like to be a beginner, and this was a nice, small reminder. Having empathy for beginners is crucial to writing learning resources, and now that I have more free time, that&amp;rsquo;s something I definitely want to start doing again.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 10 Jul 2016 19:32:45 -0400</pubDate>
+      <guid>https://ashfurrow.com/blog/up-and-running-with-ruby/</guid>
+    </item>
+    <item>
+      <title>Status Update</title>
+      <link>https://ashfurrow.com/blog/status-update/</link>
+      <description>&lt;p&gt;A while ago, Artsy&amp;rsquo;s CTO &lt;a href="https://twitter.com/dblockdotorg"&gt;dB&lt;/a&gt; read a book and told &lt;a href="https://twitter.com/orta"&gt;Orta&lt;/a&gt; that he should really read it too. Orta read it, and then recommended it to me. I&amp;rsquo;ve read it, and now I&amp;rsquo;m recommending it to you.&lt;/p&gt;
+
+&lt;p&gt;The book is titled &lt;a href="http://amzn.to/293CXls"&gt;&lt;em&gt;Status Update&lt;/em&gt;&lt;/a&gt; written by Alice E. Marwick. It examines the topic of social status within Silicon Valley and throughout social media. And if you&amp;rsquo;re a software developer, you really need to read it.&lt;/p&gt;
+
+
+
+&lt;p&gt;The best summary is this headline from an Amazon review: &amp;ldquo;All the right people hate it.&amp;rdquo; I can see why.&lt;/p&gt;
+
+&lt;p&gt;When I started the book, I thought it would talk about &amp;ldquo;social media&amp;rdquo; the same way that people on CNN do: not really understanding it from a participant&amp;rsquo;s perspective. To the contrary, the book demonstrates a keen awareness of what social media is and how it works, and just presents it in an accessible way.&lt;/p&gt;
+
+&lt;p&gt;A lot of norms that I&amp;rsquo;ve always just taken for granted about life on the internet have histories that I had never heard explained thoroughly before. It was really cool to be taken back through the history of the tech industry by someone willing to cut through Silicon Valley&amp;rsquo;s over-the-top rhetoric. &lt;/p&gt;
+
+&lt;p&gt;The central core of the book is really an in-depth breakdown of status-seeking techniques within the tech world. But it&amp;rsquo;s not just a description of status, it&amp;rsquo;s a deconstruction: who can participate in these status-seeking activities? Who benefits from them, and who doesn&amp;rsquo;t? How are society&amp;rsquo;s existing power structures around gender and race represented? How are they reinforced?&lt;/p&gt;
+
+&lt;p&gt;The book has given me a lot to think about – it&amp;rsquo;s well worth a read.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 29 Jun 2016 17:30:26 -0400</pubDate>
+      <guid>https://ashfurrow.com/blog/status-update/</guid>
+    </item>
+    <item>
+      <title>Swift Playgrounds &amp; Creativity</title>
+      <link>https://ashfurrow.com/blog/swift-playgrounds-creativity/</link>
+      <description>&lt;p&gt;I saw a blog post making its way around iOS developer networks last week. It was retweeted and included in newsletters, but I kept avoiding it because I was afraid what it was going to say would bother me. And here we are.&lt;/p&gt;
+
+
+
+&lt;p&gt;The post is titled &lt;a href="https://blog.hipolabs.com/swift-playgrounds-should-we-teach-coding-or-creativity-3dcc6a288816#.qns30ips2"&gt;&lt;em&gt;Swift Playgrounds: Should we teach coding, or creativity?&lt;/em&gt;&lt;/a&gt; and it argues that Swift Playgrounds only teach kids how to &lt;em&gt;code&lt;/em&gt;, and not how to &lt;em&gt;create&lt;/em&gt;. The author describes their own experience first learning to program when they were ten using HyperCard. They believe that constraints like a blank canvas and no tutorials provided a better atmosphere for them to learn to create. They also describe the knowledge gained from inspecting other HyperCard stacks, to learn by example. &lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a not-uncommon programmer origin story. If you&amp;rsquo;re a programmer today and your family could afford a Mac when you were growing up, then it might even be your origin story.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start with the author&amp;rsquo;s description of Swift Playgrounds:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It’s an iPad app that’s meant to make it easier for children and teens to get into coding and learn the fundamentals of Swift using real time feedback and gorgeous visuals.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A more generous description might be &amp;ldquo;it&amp;rsquo;s an app meant to make learning to program easier&amp;rdquo; (not just for children and teens). And I&amp;rsquo;m at a loss to describe why real time feedback or gorgeous visuals would be a bad thing.  &lt;/p&gt;
+
+&lt;p&gt;Swift Playgrounds don&amp;rsquo;t start with a blank canvas because (I suspect) not many people thrive in the blank canvas learning environment. But they still welcome the blank canvas learners, because you can always create a new, blank playground.&lt;/p&gt;
+
+&lt;p&gt;Besides, it&amp;rsquo;s premature to base an opinion of Swift Playgrounds on the impression of their first beta. In fact, the educational materials included with Swift Playgrounds even draw attention to the fact that they&amp;rsquo;re not yet complete. And Apple has also built a means for any educator to distribute their own materials, which is really exciting!&lt;/p&gt;
+
+&lt;p&gt;There is every indication that Swift Playgrounds will support a variety of teaching techniques and learning styles, including the style that the author used to learn to code.&lt;/p&gt;
+
+&lt;p&gt;To explain why their method of learning to code is the best for fostering creativity, the author quotes a plausible hypothesis:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[&amp;hellip;] &lt;a href="http://www.ted.com/talks/ken_robinson_changing_education_paradigms"&gt;experts like Sir Ken Robinson&lt;/a&gt; think that creativity can be facilitated through the right tools and exercises.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I agree with this: creativity is something that can be encouraged or discouraged through educational resources. And then the author spends most of the blog post detailing how great their experience learning to program with HyperCard was.&lt;/p&gt;
+
+&lt;p&gt;But here&amp;rsquo;s the thing.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s no reason to assume HyperCard in 1993 is the right tool – or that learning it without tutorials is the best exercise – to foster creativity. &lt;/p&gt;
+
+&lt;p&gt;What made HyperCard so great for the author?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You had to work hard to learn&lt;/p&gt;
+
+&lt;p&gt;[&amp;hellip;]&lt;/p&gt;
+
+&lt;p&gt;In my experience, this is the best way to learn&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It sounds like the author is claiming that learning should be hard work. That it should be difficult. Which really is to say, learning should be less accessible. Swift Playgrounds reduce the incidental complexity of learning to code, and there&amp;rsquo;s nothing essential about being limited to starting with only a blank canvas.&lt;/p&gt;
+
+&lt;p&gt;Lots of people learn best in the environment the author had, but lots of people don&amp;rsquo;t. Swift Playgrounds and other resources open up learning to code to a broader audience; they make it easier for people with different learning styles to learn to code.&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t get me wrong: teaching yourself to program is great – it&amp;rsquo;s how I learned to program, too! But not everyone thrives in that environment. We can&amp;rsquo;t even say for certain that people who learned to program on their own wouldn&amp;rsquo;t have done just as well – or better – with education resources like Swift Playgrounds.&lt;/p&gt;
+
+&lt;p&gt;The author suggests that learning things like variables and loops and functions is best done in way that resembles how &lt;em&gt;they&lt;/em&gt; learned them. But that&amp;rsquo;s not likely because a) that&amp;rsquo;s largely been the only way to learn to code since we invented programming, and we probably didn&amp;rsquo;t get coding education right on the first try, and b) not enough people the author&amp;rsquo;s age actually ever learned to program. We need more developers and &lt;a href="https://www.whitehouse.gov/blog/2013/12/09/don-t-just-play-your-phone-program-it"&gt;we need higher coding literacy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Not everyone who learns math becomes John Conway, not everyone who learns guitar becomes Eddie Van Halen, and not everyone who learns programming will become Donald Knuth. Swift Playgrounds are a tool to teach &lt;em&gt;anyone&lt;/em&gt; how to code.&lt;/p&gt;
+
+&lt;p&gt;Different people learn different ways, and the Swift Playgrounds educational tools can &lt;em&gt;only broaden&lt;/em&gt; access to programming education. Immersive educational resources built atop Swift Playgrounds can be distributed by educators, and learners can share or live stream their experiences with friends. And of course, the blank canvas of fresh playgrounds isn&amp;rsquo;t going away. &lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Apple showing Swift Playgrounds used side-by-side with Messages. What a neat idea! &lt;a href="https://t.co/AsgJYnhqRp"&gt;pic.twitter.com/AsgJYnhqRp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ash Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/742751104224645121"&gt;June 14, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;As a developer, I&amp;rsquo;m really excited to see the impact that Swift Playgrounds will make in programming education. As an author, I&amp;rsquo;m even more excited to participate in it.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 26 Jun 2016 12:35:02 -0400</pubDate>
+      <guid>https://ashfurrow.com/blog/swift-playgrounds-creativity/</guid>
+    </item>
+    <item>
+      <title>UICollectionView: Unjustly Maligned</title>
+      <link>https://ashfurrow.com/blog/uicollectionview-unjustly-maligned/</link>
+      <description>&lt;p&gt;When iOS 6 launched, I was so excited because Apple added a new class to UIKit: UICollectionView. At the time, I was working at 500px, so displaying photos in a grid was like 80% of my job. Understandably, I was excited.&lt;/p&gt;
+
+&lt;p&gt;Sadly, collection views are one of the most unjustly maligned classes in UIKit. They have a reputation for being difficult to work with, but I think that if people&amp;rsquo;s expectations of collection views were more informed, they might see collection views for what they are: a flexible, high-performance way to display collections of data.&lt;/p&gt;
+
+
+
+&lt;hr&gt;
+
+&lt;p&gt;Developers tend to feel let-down or frustrated when they use collection views, because they expect them to be too much like UITableView. But collection views solve a different problem from table views, so it’s not realistic to expect them to behave similarly.&lt;/p&gt;
+
+&lt;p&gt;UICollectionView was created to fit a need that developers had: we wanted to display data in a way that was more customizable than UITableView. But Apple wasn&amp;rsquo;t interested in making a &lt;em&gt;slightly more&lt;/em&gt; customizable UITableView – pragmatically, the class is already too complex. So instead, they made something &lt;em&gt;completely customizable&lt;/em&gt;, which consequently doesn’t do as much out of the box.&lt;/p&gt;
+
+&lt;p&gt;We shouldn&amp;rsquo;t judge UICollectionView by how familiar it feels compared to UITableView. Collection views solve a very different problem from table views, and when we ignore that, we miss out on all the awesome stuff that collection views &lt;em&gt;let&lt;/em&gt; us do. &lt;/p&gt;
+
+&lt;p&gt;This post is a story of how collection views helped me implement a really challenging user interface.&lt;/p&gt;
+
+&lt;p&gt;Orta and I were looking over the design spec for a major new feature of the Artsy app, but we had a problem. Our designer had an awesome design that we didn’t know how to implement. The idea was that the user is looking at a list of lots in an auction, and we want to make sure that the &lt;em&gt;current&lt;/em&gt; lot is always visible. When the user scrolled, the current lot would stick to the top or bottom of the view as the rest of the lots scrolled beneath it. Kind of like UITableView section headers, but in both directions.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img alt="Implemented design" src="https://ashfurrow.com/img/blog/uicollectionview-unjustly-maligned/implemented.gif" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;We weren&amp;rsquo;t quite sure how to implement this, so we let the team know it was a big question mark. But in our haste to estimate how long it would take to build this feature, we jumped to the conclusion that this would be built atop a UITableView. It didn’t occur to either of us that there might be a better, non-UITableView option. For a minimal viable auctions app, it wasn’t strictly needed, and was a big question mark in terms of time, so we put it at the end, if we had time.&lt;/p&gt;
+
+&lt;p&gt;A month later, I was speaking at MCE in Warsaw. I had a bit of jet lag and while I didn’t get much sleep, I had an idea about how easily to implement the design: UICollectionView. See, the list of lots in an auction could easily be a flow layout. It’s actually not much code to customize UICollectionViewFlowLayout’s existing look. We can rely on the superclass to do a lot of the work for us, and only have to handle the “always visible” custom cell.&lt;/p&gt;
+
+&lt;p&gt;I took a few hours to get a proof of concept, and after some polish, submitted a &lt;a href="https://github.com/artsy/eigen/pull/1411/files"&gt;pull request demonstrating my idea&lt;/a&gt; (and a &lt;a href="https://github.com/artsy/eigen/pull/1424"&gt;later PR adding tests&lt;/a&gt;). The entire UICollectionViewFlowLayout subclass – where I customized the layout – was under a hundred lines of code. &lt;/p&gt;
+
+&lt;p&gt;Orta was impressed with the simplicity of the solution and asked if collection views could be a used to solve a different, difficult-to-implement design we had had problems with. I agreed to take a look.&lt;/p&gt;
+
+&lt;p&gt;On the main auction view, iPhone users swipe left and right to traverse forward and backwards through the auction&amp;rsquo;s lots. On larger screens, we have space to show a preview of the next (and reminder of the previous) lot.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img alt="Design spec gif" src="https://ashfurrow.com/img/blog/uicollectionview-unjustly-maligned/spec.gif" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;Our efforts so far had been frustrating – this kind of interface is difficult to build from scratch with UIScrollView. Complicating things was how the lot view controllers themselves were displayed: UIPageViewController, an infamously opaque API.&lt;/p&gt;
+
+&lt;p&gt;The first thing I did was to get a plain collection view on the screen and &lt;a href="https://github.com/artsy/eigen/pull/1516/files#diff-77077322ef8ed66b1339d23acd77f762R61"&gt;hook it up to the UIPageViewController&lt;/a&gt;. Next, I added some cells, each with a label displaying their index path (good tip for debugging). Using the scroll view delegate of UIPageViewController, I kept the scroll view&amp;rsquo;s content offset matched to the collection view&amp;rsquo;s. I experimented a bit until I had a decent understanding of how UIPageViewController works. Matching everything took some time (&lt;a href="https://github.com/artsy/eigen/pull/1516"&gt;GitHub&lt;/a&gt;), but it&amp;rsquo;s not the cool part of this story. &lt;/p&gt;
+
+&lt;p&gt;Let’s talk about the collection view layout.&lt;/p&gt;
+
+&lt;p&gt;My approach to this layout started the same as my approach to the lot list layout: rely on existing UICollectionViewFlowLayout behaviour and customize it. The well-commented layout file was 323 lines long; I &lt;a href="https://github.com/artsy/eigen/pull/1516"&gt;submitted a PR a few days later&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The layout (&lt;a href="https://github.com/artsy/eigen/blob/05d2f381f479340adb01ad845045e41756fd2883/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift"&gt;PR version&lt;/a&gt; &amp;amp; &lt;a href="https://github.com/artsy/eigen/blob/7ac7620c77b4aff306853d13c0cecf4044b4f4d2/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift"&gt;current version&lt;/a&gt;) works by displaying only three cells: the &amp;ldquo;current&amp;rdquo; cell that rests in the middle, one previous cell on the left, and next cell on the right. The previous and next cells are smaller, and only have their edges visible. &lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a problem with showing the previous and next cells, though: if you scroll to the previous cell, &lt;em&gt;its&lt;/em&gt; previous cell will be visible for a few frames as it slides into place to become the &amp;ldquo;new&amp;rdquo; previous cell. I&amp;rsquo;d normally just add two more cells to the collection view (a previous previous and a next next), but the UIPageViewController behaviour I was matching really worked best with only three cells. &lt;/p&gt;
+
+&lt;p&gt;Instead, I created an enum upfront and &lt;a href="https://github.com/artsy/eigen/blob/05d2f381f479340adb01ad845045e41756fd2883/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift#L142-L152"&gt;figured out&lt;/a&gt; which role each cell would play (in left-to-right order: previous underflow, previous, current, next, and next overflow). All the math &lt;code&gt;switch&lt;/code&gt;es on this enum. Based on which direction the user is scrolling, we can know both a cell&amp;rsquo;s &amp;ldquo;at rest&amp;rdquo; layout and its &amp;ldquo;destination&amp;rdquo; layout. Knowing both the beginning and end will be very helpful later.&lt;/p&gt;
+
+&lt;p&gt;After I determined the cell&amp;rsquo;s position, I retrieved its aspect ratio from a custom delegate method. The aspect ratio is important because we need to display the left and right edges of the previous and next lots. A portrait image fitting inside a landscape cell will be centred, with its side edges too far inside the cell to be visible for the user. Next I set up a pipeline of two methods: &lt;a href="https://github.com/artsy/eigen/blob/05d2f381f479340adb01ad845045e41756fd2883/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift#L191"&gt;one&lt;/a&gt; to calculate a cell&amp;rsquo;s &lt;em&gt;size&lt;/em&gt; and &lt;a href="https://github.com/artsy/eigen/blob/05d2f381f479340adb01ad845045e41756fd2883/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift#L235-L288"&gt;another&lt;/a&gt; to calculate its position. Each function return values both at-rest and at destination of the cell. The current cell is bigger, so give it 300x300 size at rest, and make everything else 200x200. But! Remember to apply the aspect ratio to the cell&amp;rsquo;s dimension.&lt;/p&gt;
+
+&lt;p&gt;Now that I have the current sizes of the cells at rest and at the destinations, I use that information (combined with the scroll direction) to calculate the &lt;code&gt;center.x&lt;/code&gt; values for each cell at its rest and its destination. You need to know a cell&amp;rsquo;s size first, because you can calculate its position.&lt;/p&gt;
+
+&lt;p&gt;At this point, I know that the size and position of every cell at rest and at its destination, and I can interpolate between those values. &lt;a href="https://en.wikipedia.org/wiki/Linear_interpolation"&gt;Linear interpolation&lt;/a&gt; is the mathematic formula to take two values &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;, and a percentage &lt;code&gt;r&lt;/code&gt;, to calculate the value at &lt;code&gt;r&lt;/code&gt;% between &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;. &lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="highlight swift"&gt;&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;interpolateFrom&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;CGFloat&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;CGFloat&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;ratio&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;CGFloat&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="kt"&gt;CGFloat&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;// abs() is optional, but ideal for my use case.
+&lt;/span&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nf"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ratio&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;p&gt;I can calculate the percentage that the user has scrolled based on the collection view&amp;rsquo;s &lt;code&gt;contentSize.width&lt;/code&gt; compared to its &lt;code&gt;contentOffset.x&lt;/code&gt;. After all the upfront calculations, which store their values in a series of &lt;code&gt;typealias&lt;/code&gt;&amp;rsquo;d tuples, it&amp;rsquo;s an easy matter to interpolate between their at-rest and destination size and position. And then we &lt;a href="https://github.com/artsy/eigen/blob/05d2f381f479340adb01ad845045e41756fd2883/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift#L70-L73"&gt;tell&lt;/a&gt; the collection view to re-do these calculations every time the scroll view is scrolled. &lt;/p&gt;
+
+&lt;p&gt;(That means the layout is doing the computations for at-rest and destination geometry &lt;em&gt;every&lt;/em&gt; frame of the transition, even if their at-rest and destination position and size don&amp;rsquo;t change, which is wasteful. I made a &lt;a href="https://github.com/artsy/eigen/blob/05d2f381f479340adb01ad845045e41756fd2883/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift#L190"&gt;comment&lt;/a&gt; to look at caching those values&amp;hellip;)&lt;/p&gt;
+
+&lt;p&gt;Oh, I forgot to mention that the whole thing &lt;em&gt;also&lt;/em&gt; has to resize in a neat animation that squishes the centre cell and pushes the previous and next ones away. Since we had the existing infrastructure of the layout pipeline, adding in an additional variable was straightforward (&lt;a href="https://github.com/artsy/eigen/pull/1506"&gt;PR&lt;/a&gt;). &lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img alt="Finished product gif" src="https://ashfurrow.com/img/blog/uicollectionview-unjustly-maligned/finished.gif" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;I wanted to make sure that the layout was easy to maintain for my team, so I laid things out logically and added comments to explain everything. Understanding the file&amp;rsquo;s &lt;a href="https://github.com/artsy/eigen/blob/7ac7620c77b4aff306853d13c0cecf4044b4f4d2/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift"&gt;current version&lt;/a&gt; doesn&amp;rsquo;t require anything more than a basic familiarity with collection view flow layouts.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Collection views were a familiar, at-hand tool for me, but don&amp;rsquo;t think this was an easy job. It took a lot of work. But it demonstrates that collection views can be used to create immersive interfaces, both simple and complex.&lt;/p&gt;
+
+&lt;p&gt;UICollectionView is an unjustly maligned class, avoided by developers because of it&amp;rsquo;s complexity when compared to UITableView. But developers forget that collection views solve a very different problem. And with all the further enhancements that iOS 10 brings, I&amp;rsquo;ll need to update &lt;a href="http://amzn.to/1S6eWUt"&gt;my book&lt;/a&gt; 😉&lt;/p&gt;
+</description>
+      <pubDate>Sat, 18 Jun 2016 21:18:29 -0400</pubDate>
+      <guid>https://ashfurrow.com/blog/uicollectionview-unjustly-maligned/</guid>
+    </item>
+    <item>
+      <title>Dropping Dropbox</title>
+      <link>https://ashfurrow.com/blog/dropping-dropbox/</link>
+      <description>&lt;p&gt;Over the weekend, I &lt;a href="https://ashfurrow.com/blog/bittorrent-sync/"&gt;lamented the death of Dropbox&lt;/a&gt;. Well, they&amp;rsquo;re not &lt;em&gt;dead&lt;/em&gt;, just dead &lt;em&gt;to me&lt;/em&gt;. I discussed setting up &lt;a href="https://getsync.com"&gt;BitTorrent Sync&lt;/a&gt; and some of the security problems with common setup tutorials, and got some great feedback. A few people pointed to &lt;a href="https://www.sync.com/?_sync_refer=a140360"&gt;Sync&lt;/a&gt; (referral link), which after investigating, I&amp;rsquo;m pleased to say is awesome and has become my Dropbox replacement. &lt;/p&gt;
+
+
+
+&lt;p&gt;My goal online is to minimize the surface area I expose to internet mass surveillance. An absolutist approach would be to only use open source software, with keys that I generate, and on a server that I physically control. That&amp;rsquo;s just&amp;hellip; way too much work. The reason that Dropbox is so popular is that it&amp;rsquo;s so convenient, and I was hoping to get something &lt;em&gt;like&lt;/em&gt; Dropbox in terms of convenience, but with a reduced risk of being surveilled. &lt;/p&gt;
+
+&lt;p&gt;And this is why I like Sync: it&amp;rsquo;s premise is really simple. It&amp;rsquo;s a folder, and that folder syncs. Oh, and it&amp;rsquo;s end-to-end encrypted. &lt;/p&gt;
+
+&lt;p&gt;Nice.&lt;/p&gt;
+
+&lt;p&gt;Their site is really targeted at normal users who are looking for a turn-key encrypted sync product, which makes a lot of sense. For us nerds who want to know the more technical details, they &lt;a href="https://www.sync.com/pdf/sync-privacy.pdf"&gt;have a white paper&lt;/a&gt; available. It explains a lot of the technical decisions and implementation details of an end-to-end encrypted sync solution that supports web access. I&amp;rsquo;d recommend reading it, but the tl;dr is that the web interface is a completely client-side app. It downloads your encrypted data and encrypted keys from their servers, uses your password&amp;rsquo;s BCRYPT hash to decrypt the keys, and then uses the keys to decrypt your data. At no point are the plaintext keys or data on their server, which is easy to verify by looking at the browser&amp;rsquo;s source code and network activity.&lt;/p&gt;
+
+&lt;p&gt;Like BitTorrent Sync, Sync is a commercial product, so there&amp;rsquo;s some amount of trust that you&amp;rsquo;re putting in them. That&amp;rsquo;s part of the compromise I mentioned earlier, and Sync is the right level of compromise for me. &lt;/p&gt;
+
+&lt;p&gt;Oh, and they&amp;rsquo;re based in Toronto, so there&amp;rsquo;s a bit of patriotism involved for me (and the fact that it&amp;rsquo;s not America).&lt;/p&gt;
+
+&lt;p&gt;My requirements for a Dropbox replacement were: a folder that securely syncs, that I can access on my phone, and that I can selectively share with others. Sync gets everything right. I&amp;rsquo;d &lt;a href="https://www.sync.com/?_sync_refer=a140360"&gt;recommend trying them out&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 01 Jun 2016 14:17:40 -0400</pubDate>
+      <guid>https://ashfurrow.com/blog/dropping-dropbox/</guid>
+    </item>
+    <item>
+      <title>Securing a BitTorrent Sync EC2 Instance</title>
+      <link>https://ashfurrow.com/blog/bittorrent-sync/</link>
+      <description>&lt;p&gt;Dropbox is a jewel of the Y-Combinator industrial complex: a successful company that provides software as a service to ordinary people. They even allegedly &lt;a href="http://techcrunch.com/2011/10/18/dropbox-said-no-to-nine-digits-acquisition-offer-from-apple-steve-jobs/"&gt;turned down an acquisition offer from Steve Jobs&lt;/a&gt;. Their success is no small feat, but sadly it appears that they had to make a deal with the devil to achieve so much. &lt;/p&gt;
+
+&lt;p&gt;From my perspective, the company has been acting suspiciously for a while. Appointing &lt;a href="http://bits.blogs.nytimes.com/2014/04/18/protests-continue-against-dropbox-after-appointing-condoleezza-rice-to-board/"&gt;George W. Bush&amp;rsquo;s Secretary of State to their Board&lt;/a&gt; was a big red flag. It inspired a whole &lt;a href="http://www.drop-dropbox.com/"&gt;Drop Dropbox&lt;/a&gt; movement. I&amp;rsquo;ve been uneasy about Dropbox, but when they announced they&amp;rsquo;d be integrating in with my &lt;a href="https://blogs.dropbox.com/tech/2016/05/going-deeper-with-project-infinite/"&gt;operating system&amp;rsquo;s kernel&lt;/a&gt;, I decided to move away from them. &lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Things I don&amp;rsquo;t want: &lt;a href="https://twitter.com/hashtag/Dropbox?src=hash"&gt;#Dropbox&lt;/a&gt; up in my kernel. &lt;a href="https://t.co/p4LV87cKYy"&gt;pic.twitter.com/p4LV87cKYy&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dusty (@duspom) &lt;a href="https://twitter.com/duspom/status/735263193497505792"&gt;May 25, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been trying to move away from online services that allow easy mass surveillance. For example, I started in 2012, when I &lt;a href="https://ashfurrow.com/blog/switching-from-gmail-to-fastmail/"&gt;moved off of Gmail&lt;/a&gt;. It&amp;rsquo;s not been easy, I think in part because services that are popular are typically ad-supported – viewing your data is how they sell ads to you – this implies a lack of end-to-end encryption, and security in general. I&amp;rsquo;ve been tolerating Dropbox because it&amp;rsquo;s so &lt;em&gt;damm&lt;/em&gt; convenient, but the kernel extension was the last straw, so I &lt;a href="https://twitter.com/ashfurrow/status/736936037876895744"&gt;asked for alternatives&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;The solution that appealed to me the most was &lt;a href="https://getsync.com"&gt;BitTorrent Sync&lt;/a&gt;. It&amp;rsquo;s closed source (boo) but on its face, offers a good compromise between security and convenience. I decided to give it a try, and in the process I ran into confusing documentation and tutorials that would make me &lt;em&gt;less&lt;/em&gt; secure than using Dropbox. It really sucks that in order to &lt;em&gt;securely&lt;/em&gt; do something as commonplace as syncing files, you have to be pretty tech savvy. While I&amp;rsquo;m continuing to evaluate it for a sync solution (I&amp;rsquo;m not yet ready to commit to BitTorrent Sync), I&amp;rsquo;m hoping this post will be a resource for anyone who wants to use BitTorrent Sync securely.&lt;/p&gt;
+
+&lt;p&gt;(But I&amp;rsquo;m hopeful that next month we&amp;rsquo;ll see Apple show us some awesome end-to-end encryption features for iCloud Drive, too.)&lt;/p&gt;
+
+&lt;p&gt;I am not a security expert, so I&amp;rsquo;ve marked the aspects of this post that I&amp;rsquo;m not 100% sure of with [?] so that I can be honest about what I know. If you can verify – or correct – something I&amp;rsquo;m unsure of, please &lt;a href="https://github.com/ashfurrow/blog/issues/new"&gt;let me know&lt;/a&gt; or &lt;a href="https://github.com/ashfurrow/blog/compare"&gt;send a correction&lt;/a&gt;. My hope is that this post can evolve to be somewhat authoritative instructions on how to securely sync files across devices, aimed at people who are computer savvy but maybe not familiar with server administration and security (like me).&lt;/p&gt;
+
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Okay, so BitTorrent Sync is a service that runs on computers and synchronizes files across them using BitTorrent. Cool. All of the posts I read on setting up BitTorrent Sync on a server used features available only with a &lt;a href="https://getsync.com/features#compare"&gt;purchased license at at $40/year&lt;/a&gt;, with a 30-day trial. This actually &lt;em&gt;introduces&lt;/em&gt; security problems when used with all the setup instructions I&amp;rsquo;ve found; one of my two recommendations in this post is to &lt;em&gt;not&lt;/em&gt; use these features on your server. I&amp;rsquo;ll get to that later.&lt;/p&gt;
+
+&lt;p&gt;BitTorrent Sync is a really impressive service that provides a &lt;em&gt;tonne&lt;/em&gt; of awesome features. I&amp;rsquo;m probably not going to use most of them, but crucially, it provides secure syncing of files across computers and smartphones.&lt;/p&gt;
+
+&lt;p&gt;The BitTorrent protocol is inherently decentralized, so naturally syncing with BitTorrent is decentralized too. If you have two computers online, and add a file to one, then it&amp;rsquo;ll get transferred to the other over a secure, encrypted connection [?]. But consider the following scenario:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Computer A is on, B is off.&lt;/li&gt;
+&lt;li&gt;Add a file to A.&lt;/li&gt;
+&lt;li&gt;Turn A off.&lt;/li&gt;
+&lt;li&gt;Turn B on.&lt;/li&gt;
+&lt;li&gt;The file isn&amp;rsquo;t sync&amp;rsquo;d to B, because A isn&amp;rsquo;t online to send it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The solution to this is to have a computer that&amp;rsquo;s running BitTorrent Sync that&amp;rsquo;s always on. Unless you have a home server or colocated machine, you&amp;rsquo;re going to have to use a virtual server. That&amp;rsquo;s where Amazon Web Services comes in.&lt;/p&gt;
+
+&lt;p&gt;AWS is super-popular, but managing it is so infamously unfriendly that there&amp;rsquo;s a &lt;a href="https://www.expeditedssl.com/aws-in-plain-english"&gt;AWS in Plain English&lt;/a&gt; site to help. We&amp;rsquo;re going to use EC2, their virtual server service. The best blog post I found to help this is &lt;a href="http://meltingice.net/2015/07/27/how-to-run-bittorrent-sync-on-aws/"&gt;here&lt;/a&gt;, and it&amp;rsquo;s an excellent reference on how to set up BitTorrent Sync on a new EC2 instance (basically a virtual server). You get a year of free service from AWS, and after that it&amp;rsquo;s about $10/month (when billed hourly – you can save money by &lt;a href="https://aws.amazon.com/ec2/pricing/"&gt;billing monthly or yearly&lt;/a&gt;). &lt;/p&gt;
+
+&lt;p&gt;The post has some great suggestions, like using a random, pre-configured port for BitTorrent Sync, and allowing incoming connections only on that one port and port 80 for administration. However, there are a few aspects to the post I think can be improved upon:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The post recommends opening port 80 to the entire internet, exposing the BitTorrent Sync dashboard (and consequently, access to your files [?]) to anyone who provides the username and password, which are &lt;a href="http://help.getsync.com/hc/en-us/articles/204762689-Running-Sync-in-configuration-mode#overview"&gt;stored on the server in plaintext&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Further complicating this problem is the fact that to administer BitTorrent Sync, you send your username and password to the server over port 80 &lt;em&gt;unencrypted&lt;/em&gt;, so anyone monitoring your traffic can see the auth details in plaintext [?]. Yikes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The server syncs your files &lt;em&gt;in plaintext&lt;/em&gt;, so an attacker who gains access to the server, or an NSA employee issuing a subpoena to Amazon for your instance&amp;rsquo;s filesystem [?], now has all your files. &lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These problems can be pretty easily mitigated. First, though, I need to explain a bit more about how BitTorrent Sync works.&lt;/p&gt;
+
+&lt;h2 id="bittorrent-sync"&gt;BitTorrent Sync&lt;/h2&gt;
+
+&lt;p&gt;What has confused me the most about BitTorrent Sync is that I approached it as a Dropbox replacement, but that&amp;rsquo;s not its primary use case. Instead, it&amp;rsquo;s about syncing individual folders with different people, not necessarily across one person&amp;rsquo;s different devices. To have everything &amp;ldquo;just work&amp;rdquo;, you need a license to share identities across devices. If you want a Dropbox-style sync solution with &lt;em&gt;one&lt;/em&gt; folder, then you don&amp;rsquo;t need a license – just add the sync folders manually on all your devices.&lt;/p&gt;
+
+&lt;p&gt;The first time you start their app, you create an &lt;em&gt;identity&lt;/em&gt;. Under the hood, BitTorrent Sync creates an &lt;a href="http://help.getsync.com/hc/en-us/articles/205451005"&gt;X.509 certificate&lt;/a&gt; that&amp;rsquo;s used to identify you and authenticate with computers you want to sync with, if you use the licensed features. Nice. To link a new device to your identity, you use &lt;a href="http://help.getsync.com/hc/en-us/articles/205457815-Sync-Private-Identity-Linking-My-Devices"&gt;a key in text or QR code format&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Your identity can sync folders across devices. Any machine with your identity has access to all your files, unencrypted. This is a security problem if you share your identity with your sync server&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;The blog post I linked to suggests adding your identity to your new EC2 instance. I&amp;rsquo;m not sure this is wise, because an attacker who gains access to the instance now has your files. My solution to this problem is to &lt;em&gt;not&lt;/em&gt; use my identity, but instead use &lt;em&gt;encrypted folders&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id="encrypted-folders"&gt;Encrypted folders&lt;/h2&gt;
+
+&lt;p&gt;An &lt;a href="http://help.getsync.com/hc/en-us/articles/207370466"&gt;encrypted folder&lt;/a&gt; is the perfect solution to this problem, and in fact, the docs recommend using encrypted folders for syncing with virtual private servers (which are &lt;a href="https://www.quora.com/Is-there-any-benefit-of-EC2-over-VPS-offered-by-dedicated-server-providers"&gt;similar to EC2 instances&lt;/a&gt;). So let&amp;rsquo;s do it!&lt;/p&gt;
+
+&lt;p&gt;An encrypted folder is just like a regular folder that BitTorrent Sync synchronizes across devices, except that it adds encryption to the file contents it syncs. But encrypted folders separates the encryption keys for syncing the files and the keys for decrypting the files once they&amp;rsquo;re sync&amp;rsquo;d. Your &lt;em&gt;identity&lt;/em&gt; automatically has access to the decryption key. &lt;/p&gt;
+
+&lt;p&gt;So my solution was &lt;strong&gt;not adding my identity to the EC2 instance&lt;/strong&gt;. Instead, I gave it the &amp;ldquo;Encrypted Key&amp;rdquo; to sync with (under the share menu for the folder). This lets the EC2 instance securely sync the files &lt;em&gt;without&lt;/em&gt; having access to the decrypted version of the files. Nice. &lt;/p&gt;
+
+&lt;p&gt;If an attacker (or Amazon) gains access to the instance, they don&amp;rsquo;t have access to my BitTorrent Sync identity and they don&amp;rsquo;t have access to my files in plaintext form. Awesome.&lt;/p&gt;
+
+&lt;p&gt;Encrypted folders does a &lt;em&gt;tonne&lt;/em&gt; to help security on my instance, but it&amp;rsquo;s not my only concern with the setup instructions I found. Remember, administering the server over HTTP without encryption means an attack could sniff out my username and password from my traffic [?], so what&amp;rsquo;s to be done?&lt;/p&gt;
+
+&lt;h2 id="ssh-tunnelling"&gt;SSH Tunnelling&lt;/h2&gt;
+
+&lt;p&gt;The blog post suggests opening port 80 to the entire internet, so anyone can access the BitTorrent Sync dashboard (provided they have your password, which they can sniff). I&amp;rsquo;d recommend limiting HTTP traffic over port 80 to &lt;em&gt;just&lt;/em&gt; the instance itself, so that no one from the outside world can access it at all.&lt;/p&gt;
+
+&lt;p&gt;But &lt;em&gt;you&amp;rsquo;re&lt;/em&gt; in the outside world, right? So how do you access the dashboard? You use something called SSH tunnelling.&lt;/p&gt;
+
+&lt;p&gt;When you first create your EC2 instance, you&amp;rsquo;re given a certificate to log into the machine over SSH. What I&amp;rsquo;m suggesting is to use SSH tunnelling with that certificate to redirect all traffic to your personal computer &lt;em&gt;over&lt;/em&gt; the SSH tunnel to the instance, where it&amp;rsquo;ll be accessing itself locally. Basically, I want to go to &lt;code&gt;localhost:9000&lt;/code&gt; on my laptop and have SSH redirect traffic over an encrypted tunnel &lt;em&gt;to&lt;/em&gt; the instance, where it&amp;rsquo;ll try to access itself (the instance) on port 80. &lt;/p&gt;
+
+&lt;p&gt;First, configure your security group in EC2 to restrict port 80 access to &lt;code&gt;127.0.0.1/0&lt;/code&gt; (instead of &lt;code&gt;0.0.0.0/0&lt;/code&gt;, which means &amp;ldquo;anyone&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Security Policy" src="https://ashfurrow.com/img/blog/bittorrent-sync/security.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then open a terminal and use the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="highlight shell"&gt;ssh -i path/to/your/certificate.pem -N -L  9000:ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com:80 ubuntu@ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This command redirects traffic from port 9000 locally over the SSH tunnel to port 80 on &lt;code&gt;ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com&lt;/code&gt; on the other side of the tunnel. Modify &lt;code&gt;path/to/your/certificate.pem&lt;/code&gt; to point to your actual EC2 certificate that was created when you launched the instance, and change &lt;code&gt;ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com&lt;/code&gt; to be the public DNS of the instance.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Dashboard accessed through SSH tunnelling" src="https://ashfurrow.com/img/blog/bittorrent-sync/dashboard.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Run the command and go to &lt;code&gt;localhost:9000&lt;/code&gt; on your computer. With BitTorrent Sync is running on the EC2 instance, you&amp;rsquo;ll be prompted for your username and password to access the dashboard. Since all the traffic is routed over the SSH tunnel, no one can sniff out the plaintext credentials.&lt;/p&gt;
+
+&lt;p&gt;After you have your initial, encrypted sync folder set up, you could configure BitTorent Sync to not provide a web UI. It will continue to sync your encrypted folder, but not provide &lt;em&gt;any&lt;/em&gt; configuration capabilities to the outside world. Since I&amp;rsquo;m still messing around with it, I haven&amp;rsquo;t done this yet. &lt;/p&gt;
+
+&lt;h2 id="wrap-up"&gt;Wrap Up&lt;/h2&gt;
+
+&lt;p&gt;It sucks that all this setup is necessary to use BitTorrent Sync on an EC2 instance, and it sucks that it costs money. Dropbox is easier and more convenient, and has a free plan that&amp;rsquo;s pretty enticing for most users. If you&amp;rsquo;ve read this far, you probably take security seriously and don&amp;rsquo;t want the NSA snooping on your sync&amp;rsquo;d files. To me, it&amp;rsquo;s worth it. &lt;/p&gt;
+
+&lt;p&gt;While I was critical of BitTorrent Sync&amp;rsquo;s documentation, it &lt;em&gt;is&lt;/em&gt; a step in the right direction, and I hope they continue to make setup easier. As for AWS, there are other solutions like &lt;a href="https://www.digitalocean.com"&gt;DigitalOcean&lt;/a&gt; that might be easier. Cloud server administration is a lot simpiler than it used to be, and combined with cool services like BitTorrent Sync, I hope we can all take a step towards and end-to-end encrypted future.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Thanks to &lt;a href="https://twitter.com/gothmog‬"&gt;Jeremy Beker&lt;/a&gt;, &lt;a href="https://twitter.com/aaronvegh"&gt;Aaron Vegh&lt;/a&gt;, &lt;a href="https://twitter.com/orta"&gt;Orta Therox&lt;/a&gt;, and of course &lt;a href="https://twitter.com/ashleykrista"&gt;my wife&lt;/a&gt; for their help proofreading this post.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 30 May 2016 12:23:22 -0400</pubDate>
+      <guid>https://ashfurrow.com/blog/bittorrent-sync/</guid>
+    </item>
+  </channel>
+</rss>
