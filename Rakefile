@@ -27,19 +27,6 @@ namespace :deploy do
   task :feeds do
     # Push the generated feeds to the feeds.ashfurrow.com bucket.
     perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
-
-    ['http://feed.ashfurrow.com', 'https://feed.ashfurrow.com', 'http://ashfurrow.com', 'https://ashfurrow.com'].each do |base_url|
-      ['feed.xml', 'feed.rss.xml'].each do |feed|
-        feed_url = "#{base_url}/#{feed}"
-        puts "Invalidating #{feed_url} ... "
-        begin
-          cdn.zone_file_purge(base_url, feed_url)
-        rescue => e
-          abort "Error invalidating Cloudflare object at #{feed_url}: #{e}"
-        end
-      end
-    end
-
     puts "Feeds deployed."
   end
 
