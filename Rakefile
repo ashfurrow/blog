@@ -177,6 +177,8 @@ task :article, :title do |task, args|
   contents.gsub!(/background_image: /, "background_image: #{image_filename}")
   contents.gsub!(/background_image_source: /, "background_image_source: #{image_details[0]}")
   File.open(new_article_filename, 'w') { |file| file.puts contents }
+
+  sh "open -a 'iA Writer' #{new_article_filename}"
 end
 
 task :default => :server
