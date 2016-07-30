@@ -86,11 +86,11 @@ namespace :deploy do
 
     Dir.chdir('build') do
       `cp feed.rss.xml feed`
-      `cp feed.rss.xml index.php/feed`
+      `cp feed.rss.xml index.php/`
       if `git status --porcelain`.chomp.empty?
         puts 'No changes made.'
       else
-        message = ["Site updated to #{head}", suffix].compact.join("\n\n")
+        message = "Site updated to #{head}"
         `git add . ; git commit -m \"#{message}\"`
         `git push origin master`
       end
