@@ -229,3 +229,27 @@ def fetch_cloudy_conway
 
   [tweet.url, response.body]
 end
+
+task :fetch_gh_pages do
+  Dir.mkdir('build') unless Dir.exist?('build')
+  Dir.chdir('build') do
+    `git init`
+    remote_exists = (`git remote | grep origin`).chomp.length > 0
+    `git remote add origin https://github.com/ashfurrow/ashfurrow.github.io.git` unless remote_exists
+    `git pull origin master`
+  end
+end
+
+task :deploy_to_gh_pages do
+  head = `git log --pretty="%h" -n1`.chomp
+
+  Dir.chdir('build') do
+    if `git status --porcelain`.chomp.empty?
+      puts 'No changes made.'
+    else
+      message = ["Site updated to #{head}", suffix].compact.join("\n\n")
+      `git add . ; git commit -m \"#{message}\"`
+      `git push origin master`
+    end
+  end
+end
