@@ -39,7 +39,7 @@ before_install:
   # Setup deploy directory.
   - mkdir build
   - cd build; git init
-  - cd build; git remote add origin https://github.com/ashfurrow/ashfurrow.github.io.git
+  - cd build; git remote add origin git@github.com:ashfurrow/ashfurrow.github.io.git
   - cd build; git pull origin master 
 
   # Configure git.
