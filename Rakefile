@@ -31,11 +31,8 @@ namespace :deploy do
   end
 
   desc "Deploys to production and syncs feeds"
-  task :all do
-    Rake::Task['deploy:fetch_gh_pages'].invoke
-    Rake::Task['deploy:gh_pages'].invoke
-    Rake::Task['deploy:feeds'].invoke
-    Rake::Task['deploy:invalidate'].invoke
+  task :all => [:fetch_gh_pages, :gh_pages, :feeds, :invalidate] do
+    puts 'Deploy all succeeded.'
   end
 
   desc "Deploy if Travis environment variables are set correctly"
