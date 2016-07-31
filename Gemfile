@@ -20,7 +20,7 @@ gem 'ffi', :git=> 'https://github.com/ffi/ffi.git', :branch => 'elcapt'
 
 
 group :distribution do
-  gem 'danger'
+  gem 'danger', '2.0.1'
   gem 'danger-prose'
   gem 'html-proofer'
 end

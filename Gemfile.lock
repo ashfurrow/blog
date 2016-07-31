@@ -51,7 +51,7 @@ GEM
       sass (>= 3.2, < 3.5)
     cork (0.1.0)
       colored (~> 1.2)
-    danger (2.1.0)
+    danger (2.0.1)
       claide (~> 1.0)
       claide-plugins (> 0.9.0)
       colored (~> 1.2)
@@ -207,7 +207,7 @@ DEPENDENCIES
   ansi
   builder
   cloudflare
-  danger
+  danger (= 2.0.1)
   danger-prose
   ffi!
   html-proofer
