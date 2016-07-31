@@ -5,7 +5,7 @@ background_image: /img/blog/stargate-sg-1-in-50-hours/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/759432930317967361
 ---
 
-I'v e written before about one of my favourite science fiction shows, [Star Trek Voyager](/blog/star-trek-voyager-in-40-hours/). I really liked the format of that post, where I break the show down into bitesized chunks, so I decided to do it again with _Stargate SG-1_.
+I've written before about one of my favourite science fiction shows, [Star Trek Voyager](/blog/star-trek-voyager-in-40-hours/). I really liked the format of that post, where I break the show down into bitesized chunks, so I decided to do it again with _Stargate SG-1_.
 
 What I love about _SG-1_ is that the characters aren't from the 23rd century, and they're not from Kobol and the Twelve Colonies, and they're not from a galaxy far, far away. They're people _now_ with the strengths and flaws of _us_ as we exist _today_. Well technically as we existed in the late 90s, but still. It's so easy to relate to the characters because they're so much closer to us as an audience. 
 
