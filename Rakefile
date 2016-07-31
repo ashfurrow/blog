@@ -150,10 +150,7 @@ task :article, :title do |task, args|
 
   puts "Writing background image file: #{image_source_path}"
   File.open(image_source_path, 'w') { |file| file.puts image_details[1] }
-
-  # Images from CloudyConway are typically 1023 wide, and a variable height. We'll cap the height at 400.
-  puts 'Resizing to 400x1023'
-  sh "sips --cropToHeightWidth 400 1023 #{image_source_path}"
+  puts 'Please resize the image.'
 
   puts 'Applying article template frontmatter.'
   new_article_filename = output.scan(/source.*/)[0]
@@ -191,4 +188,19 @@ def fetch_cloudy_conway
   puts "Retrieved image data: #{large_image_url}"
 
   [tweet.url, response.body]
+end
+
+def git_branch_name
+  `git rev-parse --abbrev-ref HEAD`
+end
+
+task :pr do
+  branch_name = git_branch_name
+  if branch_name == 'master'
+    puts 'On master branch, not PRing.'
+    exit 1
+  end
+
+  `git push -u origin #{branch_name}`
+  `open https://github.com/ashfurrow/blog/pull/new/ashfurrow:master...#{branch_name}` 
 end
