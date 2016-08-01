@@ -4,10 +4,93 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2016-07-31T21:00:29+00:00</updated>
+  <updated>2016-08-01T18:22:58+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Blogging Workshop Notes</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/blogging-workshop-notes/"/>
+    <id>https://ashfurrow.com/blog/blogging-workshop-notes/</id>
+    <published>2016-08-01T18:22:58+00:00</published>
+    <updated>2016-08-01T18:22:58+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;This week, at Artsy&amp;rsquo;s offsite, Orta and I are leading a workshop named &amp;ldquo;Bootstrap your Blog!&amp;rdquo; where we&amp;rsquo;ll try to get participants most of the way towards their first blog post. This advice is widely applicable, so I thought I&amp;rsquo;d share it here. &lt;/p&gt;
+
+
+
+&lt;p&gt;Here&amp;rsquo;s the introductory email we sent participants.&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Hello team! Orta and I are super-excited you&amp;rsquo;re coming to our &amp;ldquo;Bootstrap your Blog&amp;rdquo; workshop at Artsy&amp;rsquo;s offsite! Here&amp;rsquo;s a brief intro describing the workshop and a small bit of necessary preparation.&lt;/p&gt;
+
+&lt;p&gt;Our workshop&amp;rsquo;s goal is to get you most of the way towards writing your first blog post. We&amp;rsquo;ll be describing what a good blog post is, how to write one, and most importantly: how to recognize when to write a blog post.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need to bring an idea to blog about. This idea should be something you care about – the more you care, the easier it&amp;rsquo;ll be to blog. It can be related to Artsy, or not, as long as you care about it. Try to think of something you&amp;rsquo;ve recently learned, or were surprised by, and bring that idea with you.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re recommending you use pencil and paper, which suits the offsite a little better than computers. We&amp;rsquo;ll have materials, but you&amp;rsquo;re welcome to use a laptop or tablet if that&amp;rsquo;s more comfortable.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re really looking forward to this because we both believe in a world where everyone benefits when we all share our experiences. It&amp;rsquo;s exciting and rewarding to be there as you take your first steps into that world, but remember that the most important thing is that you enjoy yourself. Have fun!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+&lt;p&gt;The email is meant to be encouraging without applying too much pressure. People get caught up in the details of writing and that can be discouraging. Instead, I&amp;rsquo;ve tried to frame our introduction as a learning exercise so that making mistakes, or not completing a blog post, are totally acceptable. I write half blog posts all the time and they never get published, and that&amp;rsquo;s okay.&lt;/p&gt;
+
+&lt;p&gt;Here are the main points we&amp;rsquo;re going to cover in the actual workshop.&lt;/p&gt;
+
+&lt;h2 id="how-to-recognize-when-to-blog"&gt;How to recognize when to blog?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Blogging is easiest and most effective when the blogger &lt;em&gt;cares&lt;/em&gt; about the subject.&lt;/li&gt;
+&lt;li&gt;The more you care about the subject, the more you should blog about it.&lt;/li&gt;
+&lt;li&gt;If you learn something, if something wasn&amp;rsquo;t immediately obvious to you, if something surprised you, write down a few notes. You probably won&amp;rsquo;t remember this later, but these little things can turn out to be the most important part of your post.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="what-is-a-good-blog-post"&gt;What is a good blog post?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A good blog post is usually short, even a few paragraphs can be effective.&lt;/li&gt;
+&lt;li&gt;A good blog post usually tells a story. The better storytelling, the better the blog post.&lt;/li&gt;
+&lt;li&gt;Blog posts, like all stories, usually follow the &lt;a href="https://en.wikipedia.org/wiki/Hero%27s_journey"&gt;Hero&amp;rsquo;s Journey&lt;/a&gt; (and you&amp;rsquo;re the hero!). Here are 5 good steps for a blog post:
+
+&lt;ol&gt;
+&lt;li&gt;The Ordinary World&lt;/li&gt;
+&lt;li&gt;The Call to Adventure&lt;/li&gt;
+&lt;li&gt;The Ordeal&lt;/li&gt;
+&lt;li&gt;The Reward&lt;/li&gt;
+&lt;li&gt;The Return&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;The story your blog posts should tell is &lt;em&gt;your&lt;/em&gt; story. Since &lt;em&gt;you&amp;rsquo;re&lt;/em&gt; the best person to tell your story, don&amp;rsquo;t worry about blogging something that another blogger has already discussed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="how-to-start-writing-a-post"&gt;How to start writing a post?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start with a stream of consciousness process. Either:
+
+&lt;ul&gt;
+&lt;li&gt;Stream an outline of the story and fill in details later.&lt;/li&gt;
+&lt;li&gt;Stream a story and organize it later.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Starting is the hardest part.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="miscellaneous-advice"&gt;Miscellaneous advice&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Worry about where to put it, formatting, etc &lt;em&gt;last&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;As a medium, blogs are not printed on paper. They exist on the web, and can be corrected. Don&amp;rsquo;t worry too much about publishing something less than perfect.&lt;/li&gt;
+&lt;li&gt;Orta and I can help you get set up putting your blog post online when we get back to New York. Just worry about the content :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And that&amp;rsquo;s it! Remember to relax, take it easy, and remember: your blog doesn&amp;rsquo;t need to be perfect, it just needs to be yours.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Stargate SG-1 in 50 Hours</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/stargate-sg-1-in-50-hours/"/>
@@ -363,76 +446,6 @@
 &lt;p&gt;The central core of the book is really an in-depth breakdown of status-seeking techniques within the tech world. But it&amp;rsquo;s not just a description of status, it&amp;rsquo;s a deconstruction: who can participate in these status-seeking activities? Who benefits from them, and who doesn&amp;rsquo;t? How are society&amp;rsquo;s existing power structures around gender and race represented? How are they reinforced?&lt;/p&gt;
 
 &lt;p&gt;The book has given me a lot to think about – it&amp;rsquo;s well worth a read.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Swift Playgrounds &amp; Creativity</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/swift-playgrounds-creativity/"/>
-    <id>https://ashfurrow.com/blog/swift-playgrounds-creativity/</id>
-    <published>2016-06-26T16:35:02+00:00</published>
-    <updated>2016-06-26T16:35:02+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;I saw a blog post making its way around iOS developer networks last week. It was retweeted and included in newsletters, but I kept avoiding it because I was afraid what it was going to say would bother me. And here we are.&lt;/p&gt;
-
-
-
-&lt;p&gt;The post is titled &lt;a href="https://blog.hipolabs.com/swift-playgrounds-should-we-teach-coding-or-creativity-3dcc6a288816#.qns30ips2"&gt;&lt;em&gt;Swift Playgrounds: Should we teach coding, or creativity?&lt;/em&gt;&lt;/a&gt; and it argues that Swift Playgrounds only teach kids how to &lt;em&gt;code&lt;/em&gt;, and not how to &lt;em&gt;create&lt;/em&gt;. The author describes their own experience first learning to program when they were ten using HyperCard. They believe that constraints like a blank canvas and no tutorials provided a better atmosphere for them to learn to create. They also describe the knowledge gained from inspecting other HyperCard stacks, to learn by example. &lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a not-uncommon programmer origin story. If you&amp;rsquo;re a programmer today and your family could afford a Mac when you were growing up, then it might even be your origin story.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s start with the author&amp;rsquo;s description of Swift Playgrounds:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It’s an iPad app that’s meant to make it easier for children and teens to get into coding and learn the fundamentals of Swift using real time feedback and gorgeous visuals.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A more generous description might be &amp;ldquo;it&amp;rsquo;s an app meant to make learning to program easier&amp;rdquo; (not just for children and teens). And I&amp;rsquo;m at a loss to describe why real time feedback or gorgeous visuals would be a bad thing.  &lt;/p&gt;
-
-&lt;p&gt;Swift Playgrounds don&amp;rsquo;t start with a blank canvas because (I suspect) not many people thrive in the blank canvas learning environment. But they still welcome the blank canvas learners, because you can always create a new, blank playground.&lt;/p&gt;
-
-&lt;p&gt;Besides, it&amp;rsquo;s premature to base an opinion of Swift Playgrounds on the impression of their first beta. In fact, the educational materials included with Swift Playgrounds even draw attention to the fact that they&amp;rsquo;re not yet complete. And Apple has also built a means for any educator to distribute their own materials, which is really exciting!&lt;/p&gt;
-
-&lt;p&gt;There is every indication that Swift Playgrounds will support a variety of teaching techniques and learning styles, including the style that the author used to learn to code.&lt;/p&gt;
-
-&lt;p&gt;To explain why their method of learning to code is the best for fostering creativity, the author quotes a plausible hypothesis:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;[&amp;hellip;] &lt;a href="http://www.ted.com/talks/ken_robinson_changing_education_paradigms"&gt;experts like Sir Ken Robinson&lt;/a&gt; think that creativity can be facilitated through the right tools and exercises.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I agree with this: creativity is something that can be encouraged or discouraged through educational resources. And then the author spends most of the blog post detailing how great their experience learning to program with HyperCard was.&lt;/p&gt;
-
-&lt;p&gt;But here&amp;rsquo;s the thing.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s no reason to assume HyperCard in 1993 is the right tool – or that learning it without tutorials is the best exercise – to foster creativity. &lt;/p&gt;
-
-&lt;p&gt;What made HyperCard so great for the author?&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;You had to work hard to learn&lt;/p&gt;
-
-&lt;p&gt;[&amp;hellip;]&lt;/p&gt;
-
-&lt;p&gt;In my experience, this is the best way to learn&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It sounds like the author is claiming that learning should be hard work. That it should be difficult. Which really is to say, learning should be less accessible. Swift Playgrounds reduce the incidental complexity of learning to code, and there&amp;rsquo;s nothing essential about being limited to starting with only a blank canvas.&lt;/p&gt;
-
-&lt;p&gt;Lots of people learn best in the environment the author had, but lots of people don&amp;rsquo;t. Swift Playgrounds and other resources open up learning to code to a broader audience; they make it easier for people with different learning styles to learn to code.&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t get me wrong: teaching yourself to program is great – it&amp;rsquo;s how I learned to program, too! But not everyone thrives in that environment. We can&amp;rsquo;t even say for certain that people who learned to program on their own wouldn&amp;rsquo;t have done just as well – or better – with education resources like Swift Playgrounds.&lt;/p&gt;
-
-&lt;p&gt;The author suggests that learning things like variables and loops and functions is best done in way that resembles how &lt;em&gt;they&lt;/em&gt; learned them. But that&amp;rsquo;s not likely because a) that&amp;rsquo;s largely been the only way to learn to code since we invented programming, and we probably didn&amp;rsquo;t get coding education right on the first try, and b) not enough people the author&amp;rsquo;s age actually ever learned to program. We need more developers and &lt;a href="https://www.whitehouse.gov/blog/2013/12/09/don-t-just-play-your-phone-program-it"&gt;we need higher coding literacy&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Not everyone who learns math becomes John Conway, not everyone who learns guitar becomes Eddie Van Halen, and not everyone who learns programming will become Donald Knuth. Swift Playgrounds are a tool to teach &lt;em&gt;anyone&lt;/em&gt; how to code.&lt;/p&gt;
-
-&lt;p&gt;Different people learn different ways, and the Swift Playgrounds educational tools can &lt;em&gt;only broaden&lt;/em&gt; access to programming education. Immersive educational resources built atop Swift Playgrounds can be distributed by educators, and learners can share or live stream their experiences with friends. And of course, the blank canvas of fresh playgrounds isn&amp;rsquo;t going away. &lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Apple showing Swift Playgrounds used side-by-side with Messages. What a neat idea! &lt;a href="https://t.co/AsgJYnhqRp"&gt;pic.twitter.com/AsgJYnhqRp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ash Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/742751104224645121"&gt;June 14, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;As a developer, I&amp;rsquo;m really excited to see the impact that Swift Playgrounds will make in programming education. As an author, I&amp;rsquo;m even more excited to participate in it.&lt;/p&gt;
 </content>
   </entry>
 </feed>
