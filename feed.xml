@@ -4,10 +4,42 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2016-08-01T18:22:58+00:00</updated>
+  <updated>2016-08-03T15:25:51+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Asking for Help in Open Source</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/asking-for-help-in-open-source/"/>
+    <id>https://ashfurrow.com/blog/asking-for-help-in-open-source/</id>
+    <published>2016-08-03T15:25:51+00:00</published>
+    <updated>2016-08-03T15:25:51+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;(Note: this post isn&amp;rsquo;t addressed to or aimed at anyone in particular, it&amp;rsquo;s just general advice. I&amp;rsquo;ve &lt;a href="/blog/how-to-ask-for-developer-help"&gt;written about this before&lt;/a&gt;, but it&amp;rsquo;s time for a refresher.)&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m going to start by addressing the elephant in the open source room: licensing. I could quote any open source license here and point out that it says &amp;ldquo;software provided without warranty&amp;rdquo; or &amp;ldquo;software provided as-is&amp;rdquo; or whatever else that really means &amp;ldquo;I don&amp;rsquo;t owe you tech support.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;m not going to do that, because I don&amp;rsquo;t believe it.&lt;/p&gt;
+
+
+
+&lt;p&gt;When I write open source and publish it, and then you use it, I don&amp;rsquo;t &lt;em&gt;legally&lt;/em&gt; owe you anything, but I &lt;em&gt;do&lt;/em&gt; owe you something. Maintainers get to benefit from developers using our code, because they&amp;rsquo;ll find bugs and recommend feature requests and we get to benefit from all that too. Maintainers benefit when our code gets used, and I think there&amp;rsquo;s a reciprocal nature to that relationship.&lt;/p&gt;
+
+&lt;p&gt;As part of that relationship, maintainers are responsible for acknowledging bug reports and giving advice to solve problems. We don&amp;rsquo;t owe anyone technical support or bug fixes, but if we spend a few minutes to point you in the right direction for a fix, we can benefit too. We&amp;rsquo;ll ask you to submit a pull request adding a feature or fixing a bug or clarifying some documentation. That&amp;rsquo;s the sort of social contract that exists in open source.&lt;/p&gt;
+
+&lt;p&gt;But this is a &lt;em&gt;reciprocal&lt;/em&gt; relationship, which means you owe us too. You should be kind, provide steps to reproduce a bug, details about a feature you&amp;rsquo;ve requested, that kind of stuff. One more thing you owe us is to respect the project&amp;rsquo;s communication norms.&lt;/p&gt;
+
+&lt;p&gt;For example, if you find a bug, open an issue. If you have a feature request, open an issue. If you have a question, open an issue.&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t tweet or email contributors with this stuff. Open an issue, if they don&amp;rsquo;t answer within a reasonable amount of time, maybe send them a link to the issue.&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t just to keep my inbox manageable, you should do this for your own sake: chances are there are other people watching the issues that can help you faster than I can. Your issue will probably get answered faster than I can answer an email or tweet.&lt;/p&gt;
+
+&lt;p&gt;Open source is big, it&amp;rsquo;s many-to-many, and when you email or tweet at me, that really limits how many people can benefit from my response. &lt;a href="https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/"&gt;Being nice is nice&lt;/a&gt;, so be nice.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Blogging Workshop Notes</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/blogging-workshop-notes/"/>
@@ -420,32 +452,6 @@
 &lt;p&gt;It&amp;rsquo;s been really fun diving into a different community, where I&amp;rsquo;m inexperienced. I&amp;rsquo;ve felt angry when things don&amp;rsquo;t work the way I expect them to, and I&amp;rsquo;ve felt gleeful when some things work on the first try. It&amp;rsquo;s all part of the learning process. &lt;/p&gt;
 
 &lt;p&gt;I am glad to have been knocked back on my ass: more experienced developers tend to forget what it&amp;rsquo;s like to be a beginner, and this was a nice, small reminder. Having empathy for beginners is crucial to writing learning resources, and now that I have more free time, that&amp;rsquo;s something I definitely want to start doing again.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Status Update</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/status-update/"/>
-    <id>https://ashfurrow.com/blog/status-update/</id>
-    <published>2016-06-29T21:30:26+00:00</published>
-    <updated>2016-06-29T21:30:26+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;A while ago, Artsy&amp;rsquo;s CTO &lt;a href="https://twitter.com/dblockdotorg"&gt;dB&lt;/a&gt; read a book and told &lt;a href="https://twitter.com/orta"&gt;Orta&lt;/a&gt; that he should really read it too. Orta read it, and then recommended it to me. I&amp;rsquo;ve read it, and now I&amp;rsquo;m recommending it to you.&lt;/p&gt;
-
-&lt;p&gt;The book is titled &lt;a href="http://amzn.to/293CXls"&gt;&lt;em&gt;Status Update&lt;/em&gt;&lt;/a&gt; written by Alice E. Marwick. It examines the topic of social status within Silicon Valley and throughout social media. And if you&amp;rsquo;re a software developer, you really need to read it.&lt;/p&gt;
-
-
-
-&lt;p&gt;The best summary is this headline from an Amazon review: &amp;ldquo;All the right people hate it.&amp;rdquo; I can see why.&lt;/p&gt;
-
-&lt;p&gt;When I started the book, I thought it would talk about &amp;ldquo;social media&amp;rdquo; the same way that people on CNN do: not really understanding it from a participant&amp;rsquo;s perspective. To the contrary, the book demonstrates a keen awareness of what social media is and how it works, and just presents it in an accessible way.&lt;/p&gt;
-
-&lt;p&gt;A lot of norms that I&amp;rsquo;ve always just taken for granted about life on the internet have histories that I had never heard explained thoroughly before. It was really cool to be taken back through the history of the tech industry by someone willing to cut through Silicon Valley&amp;rsquo;s over-the-top rhetoric. &lt;/p&gt;
-
-&lt;p&gt;The central core of the book is really an in-depth breakdown of status-seeking techniques within the tech world. But it&amp;rsquo;s not just a description of status, it&amp;rsquo;s a deconstruction: who can participate in these status-seeking activities? Who benefits from them, and who doesn&amp;rsquo;t? How are society&amp;rsquo;s existing power structures around gender and race represented? How are they reinforced?&lt;/p&gt;
-
-&lt;p&gt;The book has given me a lot to think about – it&amp;rsquo;s well worth a read.&lt;/p&gt;
 </content>
   </entry>
 </feed>
