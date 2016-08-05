@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/ffi/ffi.git
-  revision: 250ed0d3ccc77c397fd46b65d94b6b502feb850f
-  branch: elcapt
-  specs:
-    ffi (1.9.10)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,6 +65,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday-http-cache (1.3.0)
       faraday (~> 0.8)
+    ffi (1.9.14)
     git (1.3.0)
     haml (4.0.7)
       tilt
@@ -94,7 +88,7 @@ GEM
     kramdown (1.10.0)
     less (2.6.0)
       commonjs (~> 0.2.7)
-    libv8 (3.16.14.13)
+    libv8 (3.16.14.15)
     liquid (3.0.6)
     listen (3.0.7)
       rb-fsevent (>= 0.9.3)
@@ -139,14 +133,15 @@ GEM
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
-    mini_portile2 (2.0.0)
+    mini_portile2 (2.1.0)
     minitest (5.8.4)
     multi_json (1.12.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     nap (1.1.0)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     open4 (1.3.4)
@@ -157,6 +152,7 @@ GEM
     padrino-support (0.12.6)
       activesupport (>= 3.1)
     parallel (1.6.1)
+    pkg-config (1.1.7)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -209,7 +205,6 @@ DEPENDENCIES
   cloudflare
   danger (= 2.0.1)
   danger-prose
-  ffi!
   html-proofer
   httparty
   json

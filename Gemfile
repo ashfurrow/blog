@@ -16,7 +16,6 @@ gem 'therubyracer'
 gem 'less'
 gem 'builder'
 gem 'ansi'
-gem 'ffi', :git=> 'https://github.com/ffi/ffi.git', :branch => 'elcapt'
 
 
 group :distribution do
