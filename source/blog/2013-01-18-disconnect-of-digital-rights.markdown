@@ -1,6 +1,7 @@
 ---
 title: "Disconnect of Digital Rights"
 date: 2013-01-18 00:00
+index: true
 ---
 
 I read an interesting article on [The Phoblographer](http://www.thephoblographer.com/2013/01/17/getty-google-struck-a-deal-people-are-not-happy/) this morning on a new debacle, similar to the Instagram ToS uproar. Basically, Google has licensed hundreds of images from iStock Photo and Getty Images for use in Google Docs. The problem is, no one told the photographers that they images would be available for download at very high resolutions and without any attribution.

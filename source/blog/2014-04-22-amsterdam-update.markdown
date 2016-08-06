@@ -1,6 +1,7 @@
 ---
 title: "Amsterdam Update"
 date: 2014-04-22 00:00
+index: true
 ---
 
 I've been living in Amsterdam for two months now, so I thought it might be time to do a little update.

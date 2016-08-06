@@ -1,6 +1,7 @@
 ---
 title: "RIM's Relationship with Indie Developers"
 date: 2011-02-26 00:00
+index: true
 ---
 
 I read this [interesting and in-depth](http://blog.jamiemurai.com/2011/02/you-win-rim/) article yesterday about a student who tried to develop an app for RIM's new [PlayBook](http://us.blackberry.com/playbook-tablet/) tablet. It's a little long, but if you have a few minutes this fine Saturday morning, it's very funny well worth a read.&nbsp;No one of the problems getting set up is worth a whole blog post, but all of them are. The author also has experience designing iOS and Android apps, so he takes time to contrast the ease with which you can get up and running on those platforms compared to this one. Remember, the Playbook [doesn't actually exist yet](http://www.loopinsight.com/2011/02/16/rim-needs-to-shut-up-and-ship/);&nbsp;they're asking developers to make applications for a platform that doesn't exist, and they're not making it easy.

@@ -1,6 +1,7 @@
 ---
 title: "Scoffing at 'Historic' Buildings"
 date: 2011-03-18 00:00
+index: true
 ---
 
 Read [this article](http://dailygleaner.canadaeast.com/rss/article/1390082?utm_source=twitterfeed&utm_medium=twitter) in the Gleaner this morning about closing a small, small school in Douglas. It's the oldest continually operated school in Canada since opening in 1873. They don't want it to close because it's historic, as well as the usual arguments about smaller class sizes, etc. Let's focus on their history argument ...

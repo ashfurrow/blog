@@ -1,6 +1,7 @@
 ---
 title: "Why I Enjoy iOS Development"
 date: 2011-02-24 00:00
+index: true
 ---
 
 I had a prospective employer recently ask me why I enjoyed writing iOS apps and why I didn't just make web apps. There are really a lot of aspects to this very loaded question, but the answer I gave him was a pretty good one: on the web, there are standards, but they aren't necessarily followed. There are conventions, but they are often ignored. There are even hard and fast rules, which turn out to be flexible.

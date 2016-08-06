@@ -1,6 +1,7 @@
 ---
 title: "Age Doesn't Dictate Ability"
 date: 2012-09-15 00:00
+index: true
 ---
 
 This morning I read an interesting article written by Jared Erondu entitled _[You're Young. I'm 18. So what?](http://theindustry.cc/2012/09/14/youre-young-im-18-so-what/)._ It was a fascinating read detailing his long history with entrepreneurship and a struggle to be taken seriously in an adult world.

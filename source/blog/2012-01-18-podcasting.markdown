@@ -1,6 +1,7 @@
 ---
 title: "Podcasting"
 date: 2012-01-18 00:00
+index: true
 ---
 
 Why on Earth did it take me so long to get into podcasting? Obviously I'm not shy about putting my opinions on the Internet and don't care if no one reads them, so it's not that.

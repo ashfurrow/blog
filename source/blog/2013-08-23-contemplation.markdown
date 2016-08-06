@@ -1,6 +1,7 @@
 ---
 title: "Contemplation"
 date: 2013-08-23 00:00
+index: true
 ---
 
 About [a month ago](/blog/film), I blogged about starting to use film in my photography. I thought I'd reflect a little on how that's been going for me.

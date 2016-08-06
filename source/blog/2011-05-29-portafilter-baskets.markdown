@@ -1,6 +1,7 @@
 ---
 title: "Portafilter Baskets"
 date: 2011-05-29 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/05/portafilter-baskets/4CC31DC5F5574778BFDA66F452C06F17.jpg)

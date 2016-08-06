@@ -1,6 +1,7 @@
 ---
 title: "Google Street View Hyperlapse"
 date: 2013-04-09 00:00
+index: true
 ---
 
 Today my coworkers in the [Teehan+Lax Labs](http://www.teehanlax.com/labs/) group launched [Google Street View Hyperlapse](http://www.teehanlax.com/labs/hyperlapse/) that you should totally check out.

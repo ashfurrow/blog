@@ -1,6 +1,7 @@
 ---
 title: "Science of Happiness"
 date: 2014-04-25 00:00
+index: true
 ---
 
 This morning I watched a very interested [TED Talk on happiness](http://www.ted.com/talks/dan_gilbert_asks_why_are_we_happy), which is obviously very relative to me given yesterday's blog post.

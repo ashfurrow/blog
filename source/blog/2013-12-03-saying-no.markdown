@@ -1,6 +1,7 @@
 ---
 title: "Saying No"
 date: 2013-12-03 00:00
+index: true
 ---
 
 Hello my name is Ash and I have a problem. I love saying "yes." I love telling people I can do what they ask. I love the satisfaction I get out of starting a new project. I love the thrill, the excitement, everything.

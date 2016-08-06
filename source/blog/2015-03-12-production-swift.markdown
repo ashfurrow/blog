@@ -1,6 +1,7 @@
 ---
 title: Production Swift
 date: 2015-03-12 21:40:53 UTC
+index: true
 background_image: /img/blog/production-swift/header.jpg
 background_image_source: https://www.flickr.com/photos/97226415@N08/16300562689/in/faves-56453286@N04/
 summary: Before I left Europe, I gave a talk at <a href="http://www.dotswift.io">dotSwift</a>, one of the first conferences focusing exclusively on Apple's new programming language.

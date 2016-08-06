@@ -1,6 +1,7 @@
 ---
 title: "Obsession with JFK"
 date: 2011-02-22 00:00
+index: true
 ---
 
 So I've been doing research into men's style. I'm not talking trends or "what's in" (that's why I called it "style" and not "fashion"). I'm talking about basics: how to properly iron a shirt, take care of leather, the history of pocket square (it was the Greeks!), and so on.

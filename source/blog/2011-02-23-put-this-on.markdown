@@ -1,6 +1,7 @@
 ---
 title: "Put This On"
 date: 2011-02-23 00:00
+index: true
 ---
 
 Yesterday evening, I wrote a post about what are essentially [style-snobs](/blog/obsession-with-jfk/). Jason Brennan [asked](http://nearthespeedoflight.com/article/ash_furrow_on_style) if I read something called [Put This On](http://putthison.com/). I hadn't, but I've been reading through it now :)

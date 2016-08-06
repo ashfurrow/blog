@@ -1,6 +1,7 @@
 ---
 title: "Fate and Be There"
 date: 2013-01-15 00:00
+index: true
 ---
 
 There is a saying among photojournalists that's called "f/8 and be there" that I discussed with a coworker earlier today. The expression means that the most important part of photojournalism is to capture clear photos and be somewhere where and when photos need to be captured.

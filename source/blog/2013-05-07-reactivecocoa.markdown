@@ -1,6 +1,7 @@
 ---
 title: "ReactiveCocoa"
 date: 2013-05-07 00:00
+index: true
 ---
 
 A few weeks ago, I wrote an overview of [ReactiveCocoa](http://www.teehanlax.com/blog/reactivecocoa/), the hottest newest hottest thing in the Objective-C community.

@@ -1,6 +1,7 @@
 ---
 title: "Should You Use ARC When Learning Objective-C?"
 date: 2013-01-14 00:00
+index: true
 ---
 
 The answer is `YES`.

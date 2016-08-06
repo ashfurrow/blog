@@ -1,6 +1,7 @@
 ---
 title: "Update!"
 date: 2011-07-07 00:00
+index: true
 ---
 
 So, Ashley and I made it to Toronto and that's when we kind of disappeared from online. That's because we didn't have Internet for a week and when we finally got it we were still busy furnishing our sweet place. So what's happened in the past two weeks? I got a job at a company here in Toronto called Keek. It's a tech startup and I'm doing iOS stuff, and I work midtown at Eglinton & Yonge. My subway commute is about 20-25 minutes from my door to my desk. I'm still settling into my job, but I think it's going to be a right fit for me.

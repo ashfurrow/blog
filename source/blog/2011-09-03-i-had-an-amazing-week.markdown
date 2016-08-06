@@ -1,6 +1,7 @@
 ---
 title: "I had an Amazing Week"
 date: 2011-09-03 00:00
+index: true
 ---
 
 This week was _so busy_! On Monday, I started my [new job](/blog/got-a-new-job/) at [500px](http://500px.com/). In the first five days, I've written more lines of code than in the past two months. I finally feel fulfilled in my work again.&nbsp;My efforts even made a [sneak preview](http://instagr.am/p/L4F4h/) online. Thursday night while I was washing dishes, I wrote an article on [how to write good iOS apps](/blog/how-to-write-ios-apps/). I did this sort of frustration with other iOS devs I've worked with and terrible iOS code I've seen on GitHub. There are "iOS Developers" out there who just don't get it. You can't just pick up the language and go; you have to adjust to the way of doing things in CocoaTouch. But I digress.

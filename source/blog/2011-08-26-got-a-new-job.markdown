@@ -1,6 +1,7 @@
 ---
 title: "Got a New Job"
 date: 2011-08-26 00:00
+index: true
 ---
 
 I've been unhappy at my job for a while, despite some great coworkers. The problems &nbsp;really boil down to unmet expectations - I wasn't doing much active development. Even though I pushed for a more active role on the team, I felt unfulfilled and decided to look for a new job. I gave notice Tuesday and was told I could go home right away.

@@ -1,6 +1,7 @@
 ---
 title: Language in Everyday Life
 date: 2014-10-31 17:03 UTC
+index: true
 ---
 
 We need to talk about language. Certainly, in our industry, but also in our society. 

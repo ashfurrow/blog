@@ -1,6 +1,7 @@
 ---
 title: "How to Upgrade an iOS App for the iPhone 5 Screen"
 date: 2012-09-19 00:00
+index: true
 ---
 
 Creating a new project with Xcode 4.5 will automatically add support for the iPhone 5's larger screen. However, it's not immediately obvious how to _add_ support for the larger screen. Let's jump right in.

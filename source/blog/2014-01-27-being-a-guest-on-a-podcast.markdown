@@ -1,6 +1,7 @@
 ---
 title: "Being a Guest on a Podcast"
 date: 2014-01-27 00:00
+index: true
 ---
 
 I was participating in a discussion on the [Podcasting Handbook](http://www.podcastinghandbook.co/blog/2014/1/23/topic-suggestions) about topic suggestions and suggested "how to be a guest on a podcast". Dan Benjamin replied that, in fact, 5by5 already has [such a page](http://5by5.tv/guest).

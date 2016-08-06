@@ -1,6 +1,7 @@
 ---
 title: MINSWAN for iOS
 date: 2015-07-25 16:05:21 UTC
+index: true
 background_image: "/img/blog/minswan-for-ios/background.png"
 background_image_source: https://twitter.com/CloudyConway/status/623429079748972544
 ---

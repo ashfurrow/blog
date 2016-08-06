@@ -1,6 +1,7 @@
 ---
 title: "Copenhagen/Warsaw Tour"
 date: 2014-09-05 00:00
+index: true
 ---
 
 Last week, my wife and I returned from a trip to Copenhagen, then Warsaw. I spoke at two meetups in the cities, got to visit some new places, and take some photos. It was a really great trip.

@@ -1,6 +1,7 @@
 ---
 title: Drawing
 date: 2015-08-05 20:09:09 UTC
+index: true
 og_image: /img/blog/drawing/drawing3_medium.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "iTunes UI Fail"
 date: 2011-03-30 00:00
+index: true
 ---
 
 I've never particularly liked iTunes. I've tried Amarok and Clementine for the mac, but neither works well or works well with my iPhone.

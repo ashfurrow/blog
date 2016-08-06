@@ -1,6 +1,7 @@
 ---
 title: Securing a BitTorrent Sync EC2 Instance
 date: 2016-05-30 16:23:22 UTC
+index: true
 og_image: /img/blog/bittorrent-sync/dashboard.png
 background_image: /img/blog/bittorrent-sync/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/737279203532541952

@@ -1,6 +1,7 @@
 ---
 title: "Whiz Kids Know Better"
 date: 2012-01-11 00:00
+index: true
 ---
 
 I read an interesting article this morning on how sentors' support of SOPA and PROTECT-IP is based on a [fundamental misunderstanding of the technology involved](http://danwin.com/2012/01/the-sopa-debate-and-how-its-affected-by-congresss-understanding-of-child-porn/). It's an interesting read and includes a video of a senator asking if Google can come up with a filter for child pornography, then why can't it detect copyright infringement?&nbsp;

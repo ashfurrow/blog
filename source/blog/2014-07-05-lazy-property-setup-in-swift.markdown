@@ -1,6 +1,7 @@
 ---
 title: "Lazy Property Setup in Swift"
 date: 2014-07-05 00:00
+index: true
 link_to: swift
 ---
 

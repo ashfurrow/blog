@@ -1,6 +1,7 @@
 ---
 title: "storygram"
 date: 2011-12-22 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/12/storygram/3519D34D024E4D4D8B320A00FB140F44.png)

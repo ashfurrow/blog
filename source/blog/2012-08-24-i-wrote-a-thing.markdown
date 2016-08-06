@@ -1,6 +1,7 @@
 ---
 title: "I Wrote a Thing"
 date: 2012-08-24 00:00
+index: true
 ---
 
  ![](/img/import/blog/i-wrote-a-thing/114F5918DD174C38AD7400C04A472497.jpg)

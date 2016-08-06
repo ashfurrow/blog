@@ -1,6 +1,7 @@
 ---
 title: "What's Worth Unit Testing in Objective-C?"
 date: 2013-01-09 00:00
+index: true
 ---
 
 So the big question is, "what is worth Unit Testing in Objective-C?"

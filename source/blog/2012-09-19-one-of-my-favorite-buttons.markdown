@@ -1,6 +1,7 @@
 ---
 title: "One of my favorite buttons"
 date: 2012-09-19 00:00
+index: true
 ---
 
 [Great article](http://fuckjetpacks.com/read/one_of_my_favorite_buttons) discussing the "Use Last Photo Taken" button in Tweetbot (hat tip to [David Gillis](https://twitter.com/davegillis) for tweeting this).

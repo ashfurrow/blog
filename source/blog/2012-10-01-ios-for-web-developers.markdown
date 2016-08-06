@@ -1,6 +1,7 @@
 ---
 title: "iOS for Web Developers"
 date: 2012-10-01 00:00
+index: true
 ---
 
 I was asked by a reader on Twitter to do an article describing Objective-C for web developers. This is a _huge_ topic, so rather than try to teach you everything, I'm going to point out some similarities and differences between writing web apps and writing iOS apps.

@@ -1,6 +1,7 @@
 ---
 title: "On Apple's Priorities"
 date: 2013-07-25 00:00
+index: true
 ---
 
 So the Apple Developer portal continues to be [down](/blog/apple-dev-center-breach). The company has created a [status page](https://developer.apple.com/support/system-status/) where we can check when the individual systems come back online.

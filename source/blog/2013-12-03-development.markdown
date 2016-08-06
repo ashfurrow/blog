@@ -1,6 +1,7 @@
 ---
 title: "Development"
 date: 2013-12-03 00:00
+index: true
 ---
 
 I've been developing my own film recently. I'm not great at it yet – still getting the hang of it – but it's going well. I'm really enjoying being so connected to the photographic process.

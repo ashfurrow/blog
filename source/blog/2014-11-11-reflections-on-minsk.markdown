@@ -1,6 +1,7 @@
 ---
 title: Reflections on Minsk
 date: 2014-11-11 16:02:09 UTC
+index: true
 background_image: /img/blog/minsk/header.jpg
 og_image: /img/blog/minsk/library.jpg
 summary: "<p>A few months ago, Yana Poteeva emailed me about a prospective speaking opportunity in Minsk, Belarus. I was already planning to visit Moscow a few weeks prior to the Minsk conference date, so this would be a second trip to a Russian-speaking country in as many weeks, but I thought it would still be really cool to visit Minsk.</p>"

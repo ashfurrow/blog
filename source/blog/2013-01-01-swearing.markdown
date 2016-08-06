@@ -1,6 +1,7 @@
 ---
 title: "Swearing"
 date: 2013-01-01 00:00
+index: true
 ---
 
 Earlier tonight, I wrote a post that got some attention around the Objective-C community about [things to avoid while writing modern Objective-C](/blog/seven-deadly-sins-of-modern-objective-c). In it, I swore a lot, and needlessly so. It came off, I realize now, as wanting attention. That wasn't my goal, but it's how it appeared.

@@ -1,6 +1,7 @@
 ---
 title: "Make it Awesome"
 date: 2014-01-21 00:00
+index: true
 ---
 
 I've long been believer in the idea that the best marketing you can do for a product is to ensure the quality of that product. Make something awesome and people will buy it, provided there's a market for that product.

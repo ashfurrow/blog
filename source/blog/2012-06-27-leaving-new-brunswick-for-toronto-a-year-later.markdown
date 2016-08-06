@@ -1,6 +1,7 @@
 ---
 title: "Leaving New Brunswick for Toronto: A Year Later"
 date: 2012-06-27 00:00
+index: true
 ---
 
 It's now been a year to the day since my wife and I (and our two cats) packed everything we own into a Ford Explorer and drove 15 hours to Toronto. I think that it is important to look back at the move, examine our motivations and the consequences of moving to Toronto.

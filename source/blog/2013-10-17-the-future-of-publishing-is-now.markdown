@@ -1,6 +1,7 @@
 ---
 title: "The Future of Publishing Is Now"
 date: 2013-10-17 00:00
+index: true
 ---
 
 [Interesting article](http://www.robertnewman.com/the-future-of-publishing-is-now/) I read this morning about the future of publishing and publishers.

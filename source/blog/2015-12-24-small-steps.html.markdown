@@ -1,6 +1,7 @@
 ---
 title: Small Steps
 date: 2015-12-24 16:37:01 UTC
+index: true
 background_image: /img/blog/small-steps/background.png
 background_image_source: https://twitter.com/CloudyConway/status/679989899114708992
 ---

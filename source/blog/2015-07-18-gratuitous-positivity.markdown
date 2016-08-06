@@ -1,6 +1,7 @@
 ---
 title: Gratuitous Positivity
 date: 2015-07-18 23:13:24 UTC
+index: true
 background_image: /img/blog/gratuitous-positivity/background.png
 background_image_source: https://twitter.com/CloudyConway/status/622099424156778497
 ---

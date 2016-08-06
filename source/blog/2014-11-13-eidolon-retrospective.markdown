@@ -1,6 +1,7 @@
 ---
 title: Eidolon Retrospective
 date: 2014-11-13 14:49:48 UTC
+index: true
 link_to: swift
 ---
 

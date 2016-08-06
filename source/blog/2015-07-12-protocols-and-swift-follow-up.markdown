@@ -1,6 +1,7 @@
 ---
 title: Protocols and Swift Follow-up
 date: 2015-07-12 22:51:11 UTC
+index: true
 link_to: swift
 ---
 

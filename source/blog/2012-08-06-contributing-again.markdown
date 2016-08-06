@@ -1,6 +1,7 @@
 ---
 title: "Contributing Again"
 date: 2012-08-06 00:00
+index: true
 ---
 
 I made my first sizeable contribution to the Open Source community over the past week or so. It's been interesting.

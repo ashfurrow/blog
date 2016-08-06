@@ -1,6 +1,7 @@
 ---
 title: "Apple Rumours (TV, iPad 3, Retina Macs)"
 date: 2012-02-20 00:00
+index: true
 ---
 
 Last Summer I predicted that there would be no iPad 3 that Fall and that there would be no iPhone 5 - that any new iPhone would be only an incremental upgrade to the iPhone 4. I was right on both accounts and I attribute the rumours to wishful thinking by tech bloggers. Those same tech bloggers are back and this time, they're talking TV.

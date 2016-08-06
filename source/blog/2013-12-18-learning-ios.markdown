@@ -1,6 +1,7 @@
 ---
 title: "Learning iOS"
 date: 2013-12-18 00:00
+index: true
 ---
 
 For the holidays, I've halfed the price of my book, [Your First iOS App](https://leanpub.com/your-first-ios-app/). Use the coupon code 'holidays' to get it for five bucks.

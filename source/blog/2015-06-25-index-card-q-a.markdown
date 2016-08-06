@@ -1,6 +1,7 @@
 ---
 title: Index Card Q&amp;A
 date: 2015-06-25 18:21:17 UTC
+index: true
 ---
 
 The other day, I read a [really interesting blog post](http://blog.valerieaurora.org/2015/06/23/ban-boring-mike-based-qa-sessions-and-use-index-cards-instead/) discussing Q&amp;A sessions after presentations. I highly recommend reading the article, but the gist is that you get audience members to write questions anonymously on index cards, instead of asking them in front of the rest of the audience. 

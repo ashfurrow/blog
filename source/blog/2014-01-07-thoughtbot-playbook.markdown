@@ -1,6 +1,7 @@
 ---
 title: "Thoughtbot Playbook"
 date: 2014-01-07 00:00
+index: true
 ---
 
 [Thoughtbot](http://thoughtbot.com), a well-respected digital agency, has released their [playbook](http://playbook.thoughtbot.com), which is tremendously kind of them and indicative of the open-source collaboration that they're known for.

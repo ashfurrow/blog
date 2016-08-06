@@ -1,6 +1,7 @@
 ---
 title: Hooray For Us
 date: 2015-12-20 23:19:29 UTC
+index: true
 ---
 
 So Canada's been really excited, eh? We've got a new, dreamy prime minister and [some shockingly awesome policies](http://www.nationalobserver.com/2015/12/07/news/canada-shocks-cop21-big-new-climate-commitment) to match. One of the things we've been _most_ excited about is that Canada has welcomed its first Syrian refugees.

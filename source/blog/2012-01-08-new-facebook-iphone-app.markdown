@@ -1,6 +1,7 @@
 ---
 title: "New Facebook iPhone App"
 date: 2012-01-08 00:00
+index: true
 ---
 
 Facebook had a decent iOS app. It wasn't great, and you couldn't do everything you could on the mobile site, but it worked reasonably well and it was nicely designed. They recently updated to a "better" version that lets you do everything you can on the mobile site, but it has the unfortunate distinction of &nbsp;completely sucking.&nbsp;

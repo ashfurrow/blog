@@ -1,6 +1,7 @@
 ---
 title: "Fear of Missing Out"
 date: 2013-12-03 00:00
+index: true
 ---
 
 I've been thinking a lot about my anxiety lately, and I think that the root of it all is a fear of missing out. On what? On anything. That lost opportunity. The one that got away. That fear – that I might be missing out on something – has caused me a great deal of anxiety in my life so far, and I've grown tired of it. So I've decided not to let it bother me anymore.

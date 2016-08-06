@@ -1,6 +1,7 @@
 ---
 title: "Creating Software"
 date: 2011-07-30 00:00
+index: true
 ---
 
 I read Paul Graham's essay " [Hackers and Painters](http://www.paulgraham.com/hp.html)" the other day and was in awe. It was as as though someone peaked into my head and took my collection of opinions on software development to organize them into an eloquent essay. It's not that I haven't given the topic of the artful nature of software development thought; I wrote a [blog post](http://blogs.unb.ca/ash-furrow/2010/12/13/programming-as-art/) about it last year at UNB.

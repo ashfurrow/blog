@@ -1,6 +1,7 @@
 ---
 title: "Design for Hackers"
 date: 2013-01-29 00:00
+index: true
 ---
 
  ![](/img/import/blog/design-for-hackers/83F3BF4B375246B98A3AC929613D7F1D.jpg)

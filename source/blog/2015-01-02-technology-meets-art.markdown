@@ -1,6 +1,7 @@
 ---
 title: Technology Meets Art
 date: 2015-01-02 11:30:10 UTC
+index: true
 background_image: /img/blog/technology-meets-art/header.jpg
 background_image_source: https://500px.com/photo/51931684/the-moment-by-ash-furrow
 ---

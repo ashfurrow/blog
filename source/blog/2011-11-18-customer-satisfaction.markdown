@@ -1,6 +1,7 @@
 ---
 title: "Customer Satisfaction"
 date: 2011-11-18 00:00
+index: true
 ---
 
 The first lesson I learned about business was to keep the customer happy. If the customer was happy, then you would get paid. Another lesson I learned, years later, was that when making software, your customers weren't necessarily your users. I've worked, among other places, for various businesses over the past few years: a .Net shop writing entreprise software for corporations as large as Thompson Reuters, a small contractor shop, a "disruptive, pre-revenue social media startup" (what a clustermess that turned out to be), and presently&nbsp; [500px](http://500px.com/), a startup that allows features photographers' best works. In working for such a variety of shops, the lesson I mentioned have a sort of&nbsp;corollary: in software development, you make decisions that are in the best interests of your customer, not necessarily the user.

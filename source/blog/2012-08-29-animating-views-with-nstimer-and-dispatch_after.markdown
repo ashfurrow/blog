@@ -1,6 +1,7 @@
 ---
 title: "Animating Views with NSTimer and dispatch_after"
 date: 2012-08-29 00:00
+index: true
 ---
 
 I wrote a component today that animates a small widget between a certain number of states every 4 seconds, with each state having a small pause following the transition.

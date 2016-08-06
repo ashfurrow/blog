@@ -1,6 +1,7 @@
 ---
 title: "Tech Talks TO January"
 date: 2013-01-15 00:00
+index: true
 ---
 
 I'll be giving a talk next Tuesday evening at [Tech Talks TO](http://techtalksto.com/post/40607791416/ash-furrow-presenting-accessibility-and-unit-testing).

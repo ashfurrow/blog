@@ -1,6 +1,7 @@
 ---
 title: "Why I Don't Watch 'Big Bang Theory'"
 date: 2012-01-05 00:00
+index: true
 ---
 
 Matt Gemmell [tweeted](https://twitter.com/#!/mattgemmell/status/154934455969136641) a [link about why he can't bear to watch](http://inagist.com/mattgemmell/154934455969136641/) " _[Big Bang Theory](http://www.google.ca/url?sa=t&rct=j&q=imdb%20big%20bang%20theory&source=web&cd=1&ved=0CBwQFjAA&url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F&ei=rd4FT9nLE-bz0gHR1aBT&usg=AFQjCNFrtMaa7gT6E-4qqWGs8AG8w0Q0SQ&sig2=3S1p55ndDsZaEX8T1tfrqA)_." It's certainly a valid criticism of the show, but to each their own. Some people might enjoy that kind of comedy; I won't call it an objectively _bad_&nbsp;show, but I can't stand to watch it, either.

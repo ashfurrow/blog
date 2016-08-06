@@ -1,6 +1,7 @@
 ---
 title: "Americano"
 date: 2011-09-10 00:00
+index: true
 ---
 
 > Americano. noun ( pl. Americanos ) a drink of espresso diluted with hot water.

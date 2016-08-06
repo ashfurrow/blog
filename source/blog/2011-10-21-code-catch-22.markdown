@@ -1,6 +1,7 @@
 ---
 title: "Code Catch-22"
 date: 2011-10-21 00:00
+index: true
 ---
 
 I've been reading through some of [Mike Ash's blog posts](http://www.mikeash.com/pyblog), and [this one in particular got me really excited](http://www.mikeash.com/pyblog/friday-qa-2011-10-14-whats-new-in-gcd.html). OK, so they _all_&nbsp;got me excited, but this one's really awesome. It discusses new features Apple added to Grand Central Dispatch in Lion and iOS 5. Previously, you created dispatch queues with the C function dispatch\_queue\_create(const char \*label, dispatch\_queue\_attr\_t attr), where attr was always NULL so Apple could "Add Support Later" for additional options. I figured this was typical C-style future-proofing _just in case_, but it looks like they were actually plannon on something.

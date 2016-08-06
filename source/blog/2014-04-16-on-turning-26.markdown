@@ -1,6 +1,7 @@
 ---
 title: "On Turning 26"
 date: 2014-04-16 00:00
+index: true
 ---
 
 My friend and colleague [Orta](http://twitter.com/orta) does a series of blog posts on his [site](https://orta.github.io) whenever his birthday rolls around. I haven't written anything self-reflective for a while, so I thought I'd do the same. This post isn't really _for_ you – I feel it's for me.

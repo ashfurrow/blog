@@ -1,6 +1,7 @@
 ---
 title: "Opening Brace Brackets on Their Own Line in Xcode 4"
 date: 2012-09-10 00:00
+index: true
 ---
 
 If you're like me, you like your brace backets on their own lines, like this:

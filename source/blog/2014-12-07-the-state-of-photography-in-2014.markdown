@@ -1,6 +1,7 @@
 ---
 title: The State of Photography in 2014
 date: 2014-12-07 21:46:13 UTC
+index: true
 background_image: /img/blog/the-state-of-photography-in-2014/background.jpg
 background_image_source: https://500px.com/photo/63919867/leica-lady-by-ash-furrow
 og_image: /img/blog/the-state-of-photography-in-2014/og.jpg

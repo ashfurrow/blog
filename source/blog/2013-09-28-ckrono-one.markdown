@@ -1,6 +1,7 @@
 ---
 title: "ckrono one"
 date: 2013-09-28 00:00
+index: true
 ---
 
 Neat little iOS app for timing done by my friend [Hannes](https://twitter.com/hsch_).

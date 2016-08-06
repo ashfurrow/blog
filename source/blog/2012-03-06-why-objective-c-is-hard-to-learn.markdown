@@ -1,6 +1,7 @@
 ---
 title: "Why Objective-C is Hard to Learn"
 date: 2012-03-06 00:00
+index: true
 ---
 
 As an active member of "The Internet" and vocal Objective-C coder, I get a lot of questions surrounding the language. They're often framed around thinking about learning the language or trying to write an app, but they also usually involve a phrase like "Objective-C looks really hard" or "what are all those minus signs about?" Both of these are pretty good questions, and I'd like to address why someone might be more hesitant to jump into iOS or OS X development compared to, say, Ruby or Java.

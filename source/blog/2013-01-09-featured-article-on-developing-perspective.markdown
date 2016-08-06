@@ -1,6 +1,7 @@
 ---
 title: "Featured Article on Developing Perspective"
 date: 2013-01-09 00:00
+index: true
 ---
 
 David Smith featured the [article I wrote](/blog/seven-deadly-sins-of-modern-objective-c), as well as [Brent Simmons'](http://inessential.com/2012/12/31/coders_in_the_hands_of_an_angry_god) follow up posts, yesterday on [his podcast](http://developingperspective.com/2013/01/08/103/).

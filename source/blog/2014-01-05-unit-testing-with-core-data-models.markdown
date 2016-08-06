@@ -1,6 +1,7 @@
 ---
 title: "Unit Testing with Core Data Models"
 date: 2014-01-05 00:00
+index: true
 link_to: iosfrp
 ---
 

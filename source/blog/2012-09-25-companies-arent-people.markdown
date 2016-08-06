@@ -1,6 +1,7 @@
 ---
 title: "Companies Aren't People"
 date: 2012-09-25 00:00
+index: true
 ---
 
 God I hate [tabloid reporting](http://www.guardian.co.uk/technology/blog/2012/sep/20/apple-google-maps-headache).

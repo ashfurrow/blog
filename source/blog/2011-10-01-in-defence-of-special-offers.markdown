@@ -1,6 +1,7 @@
 ---
 title: "In Defence of 'Special Offers'"
 date: 2011-10-01 00:00
+index: true
 ---
 
 Amazon had a busy week - new tablet, new kindles, and a new, agressive pricing strategy for both. Marco Arment&nbsp;and John Gruber&nbsp;both have pretty in-depth analyses of what this new pricing means and how much of a change it is from Amazon's previous Kindle strategy. In the past, you could buy a Kindle 3 or, if you wanted to save a few bucks on it, buy one with advertisements that display on the screensaver. Within the new pricing model, you buy the Kindle with "Special Offers" or, if you don't minding spending a few bucks on it, buy one with no ads. It's a shift in terms of marketing strategy in both the title ("Advertisements" are now "Special Offers") and pricing (the cheaper, ad-based Kindle is the default).

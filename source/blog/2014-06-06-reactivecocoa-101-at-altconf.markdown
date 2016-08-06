@@ -1,6 +1,7 @@
 ---
 title: "ReactiveCocoa 101 at AltConf"
 date: 2014-06-06 00:00
+index: true
 link_to: iosfrp
 ---
 

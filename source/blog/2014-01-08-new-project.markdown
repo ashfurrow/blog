@@ -1,6 +1,7 @@
 ---
 title: "New Project"
 date: 2014-01-08 00:00
+index: true
 ---
 
 Since finishing [C-41](/blog/c-41), I've been feeling a bit on an open source kick. To that end, and mostly for fun, I've started another project in the open. This one also uses ReactiveCocoa and MVVM, but it's a game. My first game, actually.

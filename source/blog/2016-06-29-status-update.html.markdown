@@ -1,6 +1,7 @@
 ---
 title: Status Update
 date: 2016-06-29 21:30:26 UTC
+index: true
 background_image: /img/blog/status-update/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/747614405211336704
 ---

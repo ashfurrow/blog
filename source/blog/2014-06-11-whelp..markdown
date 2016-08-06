@@ -1,6 +1,7 @@
 ---
 title: "Whelp."
 date: 2014-06-11 00:00
+index: true
 ---
 
 Last week, I attended WWDC in San Francisco. I was in the Bay Area for two weeks in all and spent a lot of time meeting people I know from the Internet.

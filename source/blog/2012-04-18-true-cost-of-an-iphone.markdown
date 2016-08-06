@@ -1,6 +1,7 @@
 ---
 title: "True Cost of an iPhone"
 date: 2012-04-18 00:00
+index: true
 ---
 
 Here's a [pretty snazzy infographic](http://www.mbaonline.com/cost-of-iphone/) detailing the complete lifetime of an iPhone, from design to production to use to waste. 

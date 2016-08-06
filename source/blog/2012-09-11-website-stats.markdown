@@ -1,6 +1,7 @@
 ---
 title: "Website Stats"
 date: 2012-09-11 00:00
+index: true
 ---
 
 (I'll try not to get too meta, here.)

@@ -1,6 +1,7 @@
 ---
 title: "Let's Steal Other Developers' Best Ideas"
 date: 2016-05-12 23:41:10 UTC
+index: true
 background_image: /img/blog/lets-steal-other-developers-best-ideas/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/728333617999564800
 ---

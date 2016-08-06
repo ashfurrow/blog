@@ -1,6 +1,7 @@
 ---
 title: "AFActivityIndicatorView"
 date: 2012-10-08 00:00
+index: true
 ---
 
 I had some fun this evening re-implementing `UIActivityIndicatorView`, a commonly used class in iOS. These are used to denote to the user that something is happening, but in situations where a progress bar is inappropriate or just too gauche. The code for my implementation is [up on GitHub](https://github.com/AshFurrow/AFActivityIndicatorView).

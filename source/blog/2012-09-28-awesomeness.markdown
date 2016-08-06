@@ -1,6 +1,7 @@
 ---
 title: "Awesomeness"
 date: 2012-09-28 00:00
+index: true
 ---
 
 Really [great article](http://sethgodin.typepad.com/seths_blog/2012/09/coming-from-a-loud-place.html) over on Seth Godin's blog.

@@ -1,6 +1,7 @@
 ---
 title: "Cameras with Phones In Them"
 date: 2013-01-08 00:00
+index: true
 ---
 
 A week ago or so, my friend [Justin Watt](https://twitter.com/wattjustin) posted the following to his Facebook wall:

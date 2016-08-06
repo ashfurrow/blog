@@ -1,6 +1,7 @@
 ---
 title: "Default Initializer Style"
 date: 2013-01-25 00:00
+index: true
 ---
 
 I just created a new class, subclassing `UITableViewCell`, and this is the initializer Xcode gave me:

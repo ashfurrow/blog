@@ -1,6 +1,7 @@
 ---
 title: "Transience of Culture"
 date: 2011-12-28 00:00
+index: true
 ---
 
 Ashley and I went to the Royal Ontario Museum today. It was an&nbsp;extraordinary&nbsp;experience - I hadn't been to a museum since I was a kid and was blown away. I really enjoyed the Greek, Roman, and Japanese exhibits, but we also went to the special Mayan exhibit, which was quite packed. What I really took away from this experience, upon reflection, is the transience of culture. Our society exists as it does at _this_ moment for _just_ this moment. It is constantly changing, and looking back at ancient cultures _in the aggregate_,&nbsp;spanning centuries or even&nbsp;millennia, is awe-inspiring to me.

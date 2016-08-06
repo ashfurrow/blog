@@ -1,6 +1,7 @@
 ---
 title: Blogging Workshop Notes
 date: 2016-08-01 18:22:58 UTC
+index: true
 background_image: /img/blog/blogging-workshop-notes/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/760122178721484800
 ---

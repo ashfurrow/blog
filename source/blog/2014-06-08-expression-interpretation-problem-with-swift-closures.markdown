@@ -1,6 +1,7 @@
 ---
 title: "Expression Interpretation Problem with Swift Closures"
 date: 2014-06-08 00:00
+index: true
 link_to: swift
 ---
 

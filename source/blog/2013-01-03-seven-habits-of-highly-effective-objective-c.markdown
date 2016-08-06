@@ -1,6 +1,7 @@
 ---
 title: "Seven Habits of Highly Effective Objective-C"
 date: 2013-01-03 00:00
+index: true
 link_to: swift
 ---
 

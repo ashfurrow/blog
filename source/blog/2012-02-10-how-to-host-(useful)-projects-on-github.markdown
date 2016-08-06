@@ -1,6 +1,7 @@
 ---
 title: "How to Host (Useful) Projects on GitHub"
 date: 2012-02-10 00:00
+index: true
 ---
 
 So you're some young hotshot developer who's written _the_ framework&nbsp;that's going to completely change the way everyone makes software. _Of course_&nbsp;you're going to host it on GitHub so everyone can find it, fork it, make pull requests, and you can be famous on the Internet. But it's not enough to just make a framework; you need an demo project showing off your stuff. It needs to use the framework you've written and demonstrate _how easy_ it is to use, how _performant_ it is, and how to _incorporate it into an existing project_. That last point is key and, in my experience, the deciding factor in the decision of developers to use your project.

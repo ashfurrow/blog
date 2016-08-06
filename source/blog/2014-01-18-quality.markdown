@@ -1,6 +1,7 @@
 ---
 title: "Quality"
 date: 2014-01-18 00:00
+index: true
 ---
 
 I host an interview podcast called [Springboard](http://springboardshow.com) for beginning and aspiring iOS developers. I love doing it, but lately I had been feeling a little bit like I'm phoning it in. I didn't look forward to recording as much as I used to.

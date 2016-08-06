@@ -1,6 +1,7 @@
 ---
 title: "UITableView ShrinkTo"
 date: 2011-05-21 00:00
+index: true
 ---
 
 <object style="float: right; break: none;" width="425" height="349" value="http://www.youtube.com/v/Xak3xqGKvqc?fs=1&amp;hl=en_GB"><param name="allowFullScreen" value="true">

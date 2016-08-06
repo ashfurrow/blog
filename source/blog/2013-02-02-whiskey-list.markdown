@@ -1,6 +1,7 @@
 ---
 title: "Whiskey List"
 date: 2013-02-02 00:00
+index: true
 ---
 
 I had some time off between jobs recently, and I really like Scotch, so I decided to spend some time throwing together an app to help me keep track of tasting notes of all the whiskies I like. I treated it partially as a challenge to use `UICollectionView`, on which I'm writing a short book, and also to see how quickly I can develop it.

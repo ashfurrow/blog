@@ -1,6 +1,7 @@
 ---
 title: "How to Use NSFetchedResultsController with UICollectionView"
 date: 2012-09-19 00:00
+index: true
 link_to: collectionview
 ---
 

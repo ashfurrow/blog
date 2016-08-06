@@ -1,6 +1,7 @@
 ---
 title: "Mindful Eating"
 date: 2014-01-09 00:00
+index: true
 ---
 
 Neuroscientist Sandra Aamodt has a great TED talk on dieting and eating.

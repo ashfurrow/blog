@@ -1,6 +1,7 @@
 ---
 title: "Solving Problems the Swift Way"
 date: 2014-08-21 00:00
+index: true
 link_to: swift
 ---
 

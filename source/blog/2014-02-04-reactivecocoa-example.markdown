@@ -1,6 +1,7 @@
 ---
 title: "ReactiveCocoa Example"
 date: 2014-02-04 00:00
+index: true
 link_to: iosfrp
 ---
 

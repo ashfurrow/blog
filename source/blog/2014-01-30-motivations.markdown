@@ -1,6 +1,7 @@
 ---
 title: "Motivations"
 date: 2014-01-30 00:00
+index: true
 ---
 
 It's worth revisiting [this video](http://www.youtube.com/watch?v=t02iJn5Ypio#t=41m12s) from a few years ago where Eric Schmidt talks about the Ice Cream Sandwich release of Android.

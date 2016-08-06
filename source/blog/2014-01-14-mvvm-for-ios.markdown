@@ -1,6 +1,7 @@
 ---
 title: "MVVM for iOS"
 date: 2014-01-14 00:00
+index: true
 link_to: iosfrp
 ---
 

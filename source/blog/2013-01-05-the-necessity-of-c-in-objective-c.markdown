@@ -1,6 +1,7 @@
 ---
 title: "The Necessity of C in Objective-C"
 date: 2013-01-05 00:00
+index: true
 ---
 
 When I wrote my [Seven Deadly Sins of Modern Objective-C](/blog/seven-deadly-sins-of-modern-objective-c) article last week, I got a lot of feedback about the "Unnecessarily-C APIs" point and I wanted to take a closer look at what I meant.

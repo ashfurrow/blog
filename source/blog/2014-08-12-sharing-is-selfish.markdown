@@ -1,6 +1,7 @@
 ---
 title: "Sharing is Selfish"
 date: 2014-08-12 00:00
+index: true
 ---
 
 OK, OK, not _all_ sharing is selfish, of course. A more accurate headline would have been _Sharing Can Be Selfish_, but I could have written _Four Mind-Blowing Reasons Why Sharing Makes You Rich_, so count your blessings.

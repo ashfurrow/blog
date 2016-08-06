@@ -1,6 +1,7 @@
 ---
 title: Cloudy Conway
 date: 2015-07-18 15:47:03 UTC
+index: true
 og_image: /img/blog/cloudy-conway/first.png
 background_image_source: https://instagram.com/p/z5XLgZDBnR/
 ---

@@ -1,6 +1,7 @@
 ---
 title: MVVM is Exceptionally OK
 date: 2015-12-21 16:09:28 UTC
+index: true
 background_image: /img/blog/mvvm-is-exceptionally-ok/background.png
 background_image_source: https://twitter.com/CloudyConway/status/678384591930048512
 ---

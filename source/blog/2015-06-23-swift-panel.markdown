@@ -1,6 +1,7 @@
 ---
 title: Swift Panel
 date: 2015-06-23 15:58:27 UTC
+index: true
 link_to: swift
 ---
 

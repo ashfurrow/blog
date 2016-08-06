@@ -1,6 +1,7 @@
 ---
 title: "Passing NSManagedObject Instances Between Contexts with Ordered Relationships"
 date: 2012-08-24 00:00
+index: true
 ---
 
 Core Data is awesome. It's probably the most awesome thing about developing in Objective-C. Well, maybe not, but it's up there. However, it doesn't come without its frustrations.

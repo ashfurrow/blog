@@ -1,6 +1,7 @@
 ---
 title: Building My Career
 date: 2015-11-22 14:57:11 UTC
+index: true
 background_image: /img/blog/building-my-career/background.jpg
 background_image_source: https://500px.com/photo/85057949/up-and-up-by-ash-furrow
 ---

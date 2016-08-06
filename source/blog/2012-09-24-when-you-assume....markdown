@@ -1,6 +1,7 @@
 ---
 title: "When You Assume..."
 date: 2012-09-24 00:00
+index: true
 ---
 
 Over at the [Cult of Mac](http://www.cultofmac.com/192350/how-apples-obsession-with-google-is-hurting-apple/), there's an article describing how Apple's obsession with Google is hurting Apple.

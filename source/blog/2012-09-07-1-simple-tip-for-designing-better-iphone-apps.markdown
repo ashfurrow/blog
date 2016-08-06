@@ -1,6 +1,7 @@
 ---
 title: "1 Simple Tip for Designing Better iPhone Apps"
 date: 2012-09-07 00:00
+index: true
 ---
 
 A friend of mine tweeted an [article](http://sixrevisions.com/mobile/design-iphone-apps-better/) this morning that caught my eye:

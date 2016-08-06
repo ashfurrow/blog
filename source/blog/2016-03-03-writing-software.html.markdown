@@ -1,6 +1,7 @@
 ---
 title: Writing Software
 date: 2016-03-03 03:26:27 UTC
+index: true
 og_image: /img/blog/writing-software/hamilton.jpg
 background_image: /img/blog/writing-software/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/705122483943432197

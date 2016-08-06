@@ -1,6 +1,7 @@
 ---
 title: Asking for Help in Open Source
 date: 2016-08-03 15:25:51 UTC
+index: true
 background_image: /img/blog/asking-for-help-in-open-source/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/760207993040502786
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Don't Use UISwipeGestureRecognizer"
 date: 2013-05-22 00:00
+index: true
 ---
 
 Your job as an app developer is to craft a meaningful and delightful user experience. One of the best ways to accomplish this goal is to provide feedback _as_ a user performs some gesture.

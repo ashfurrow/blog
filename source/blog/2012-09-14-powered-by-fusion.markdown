@@ -1,6 +1,7 @@
 ---
 title: "Powered By Fusion"
 date: 2012-09-14 00:00
+index: true
 ---
 
 I'm very happy to announce that I've been added to the [Fusion Ad Network](http://fusionads.net)'s list of publishers. This network includes some of my favourite tech writers, including [Stephen Hackett](http://512pixels.net), [Matt Gemmell](http://mattgemmell.com), and [Shawn Blanc](http://shawnblanc.net).

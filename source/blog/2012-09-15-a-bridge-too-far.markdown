@@ -1,6 +1,7 @@
 ---
 title: "A Bridge Too Far"
 date: 2012-09-15 00:00
+index: true
 ---
 
 Turns out, Google has a [Java-to-Objective-C converter](http://www.theregister.co.uk/2012/09/15/google_j2objc_tool/).

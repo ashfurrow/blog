@@ -1,6 +1,7 @@
 ---
 title: "How to Design iOS Apps"
 date: 2012-01-17 00:00
+index: true
 ---
 
 When designing iOS applications, there are two routes you can take: you can either strictly adhere to Apple's look-and-feel, or go out and do your own thing. In this post, I'm going to discuss each option, their pros and cons, and why you should adhere to either one or the other.

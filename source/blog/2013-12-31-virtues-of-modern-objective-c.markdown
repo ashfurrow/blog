@@ -1,6 +1,7 @@
 ---
 title: "Virtues of Modern Objective-C"
 date: 2013-12-31 00:00
+index: true
 link_to: swift
 ---
 

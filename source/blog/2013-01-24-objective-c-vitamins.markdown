@@ -1,6 +1,7 @@
 ---
 title: "Objective-C Vitamins"
 date: 2013-01-24 00:00
+index: true
 ---
 
 This week, I gave a talk at [Tech Talks TO](http://techtalksto.com/post/40607791416/ash-furrow-presenting-accessibility-and-unit-testing) discussing the "vitamins" that the Objective-C community needs to grow up to be big and strong. Er, I mean to become a stable and mature platform.

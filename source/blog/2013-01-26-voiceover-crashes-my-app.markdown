@@ -1,6 +1,7 @@
 ---
 title: "VoiceOver Crashes my App"
 date: 2013-01-26 00:00
+index: true
 ---
 
 I'm working on a small app and I loaded it into my iPhone to perform my due diligence with VoiceOver testing. It was there I discovered that my app actually crashes!

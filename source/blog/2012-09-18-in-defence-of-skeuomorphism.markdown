@@ -1,6 +1,7 @@
 ---
 title: "In Defence of Skeuomorphism"
 date: 2012-09-18 00:00
+index: true
 ---
 
 Eric Portelance [tweeted this morning](https://twitter.com/eportelance/status/248069041254715393) a fascinating interview with a former Apple designer who [defends Apple's recent uses of skeuomorphism](http://www.fastcodesign.com/1670796/a-former-iphone-ui-designer-defends-apples-fake-leather-design-philosophy).

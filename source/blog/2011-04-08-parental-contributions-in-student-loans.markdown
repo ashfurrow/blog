@@ -1,6 +1,7 @@
 ---
 title: "Parental Contributions in Student Loans"
 date: 2011-04-08 00:00
+index: true
 ---
 
 On March 22, the NB Conservative government undid a huge step forward for New Brunswick. They re-introduced the parental contribution calculation for provincial student loans after the previous government had taken the progressive move to remove it, setting a precedent which other provinces soon followed. It's really a shame that when something actually moves forward or changes in NB, you can' be sure that the Torries are hard at work to regress us backwards. Yesterday, when [I visited the Legislature](/blog/visit-to-the-legislature/), the Minister for Post-Secondary Education, Training, and Labour Martine Coulombe, and&nbsp;Wes McLean both talked about how parents should be expected to contribute to their children's post-secondary education. Let's think about that for a second.

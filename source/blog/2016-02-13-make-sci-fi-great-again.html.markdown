@@ -1,6 +1,7 @@
 ---
 title: Make Sci-fi Great Again
 date: 2016-02-13 17:14:12 UTC
+index: true
 background_image: /img/blog/make-sci-fi-great-again/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/698497319394738176
 ---

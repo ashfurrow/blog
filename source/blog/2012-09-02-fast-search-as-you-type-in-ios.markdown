@@ -1,6 +1,7 @@
 ---
 title: "Fast Search-As-You-Type in iOS"
 date: 2012-09-02 00:00
+index: true
 ---
 
 Today I was writing a new feature for a client involving search-as-you-type. Searching in iOS, according to the [HIG](http://developer.apple.com/library/ios/#DOCUMENTATION/UserExperience/Conceptual/MobileHIG/UEBestPractices/UEBestPractices.html#//apple_ref/doc/uid/TP40006556-CH20-SW14), should be "quick and rewarding", so I wanted to make sure I get this right.

@@ -1,6 +1,7 @@
 ---
 title: "The Magazine"
 date: 2012-10-16 00:00
+index: true
 ---
 
 I'm very excited about [The Magainze](http://the-magazine.org). I enjoy reading the types of articles it features, and in fact, I want to write one myself.

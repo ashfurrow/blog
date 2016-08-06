@@ -1,6 +1,7 @@
 ---
 title: "Phrenology"
 date: 2012-10-12 00:00
+index: true
 ---
 
 This is a really interesting piece from The Guardian discussing [society and its acceptance of fat people](http://www.guardian.co.uk/lifeandstyle/2006/jul/09/healthandwellbeing.features).

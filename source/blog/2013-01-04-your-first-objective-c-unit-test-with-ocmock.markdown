@@ -1,6 +1,7 @@
 ---
 title: "Your First Objective-C Unit Test with OCMock"
 date: 2013-01-04 00:00
+index: true
 ---
 
 I've been making a lot of noise about unit testing in Objective-C lately, so I thought I'd put my money where my mouth is and write a primer. This tutorial is going to take you through, step-by-step, how to write your first unit test.

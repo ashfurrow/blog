@@ -1,6 +1,7 @@
 ---
 title: Now, and Forever?
 date: 2015-09-03 01:51:36 UTC
+index: true
 background_image: /img/blog/now-and-forever/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/639227005922361344
 ---

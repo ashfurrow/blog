@@ -1,6 +1,7 @@
 ---
 title: "Effort-to-Improved-Skill Ratio and Expertise"
 date: 2012-02-07 00:00
+index: true
 ---
 
 When I expressed an interest in learning more about photography, my coworkers and photographers Tom and Adam were helpful in filling in different areas of the craft I didn't know about. Things like aperture and its relation to shutter speed, different styles of lenses, etc. Tom pointed out that I can get a used DSLR on the Internet for pretty cheap, and indeed I can.&nbsp;I pondered it for a few weeks before deciding not to get into photography; I do&nbsp;_not_&nbsp;need another hobby to spend my valuable time and money on. As I was thinking about getting into photography, and speaking with different photographers on our team, it got me thinking about skills and the time investment we make into developing them.

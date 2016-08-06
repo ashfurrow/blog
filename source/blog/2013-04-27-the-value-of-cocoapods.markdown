@@ -1,6 +1,7 @@
 ---
 title: "The Value of CocoaPods"
 date: 2013-04-27 00:00
+index: true
 ---
 
 Lately, I've been exploring more of the open source community and examining how it is interacted with by the Objective-C community. I think that iOS and OS X developers tend to be afflicted by the "not invented here" syndrome, which is ironic considering Objective-C's creators originally intended for compiled objects to be bought and sold as commodities.

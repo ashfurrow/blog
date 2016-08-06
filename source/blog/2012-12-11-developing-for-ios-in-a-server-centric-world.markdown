@@ -1,6 +1,7 @@
 ---
 title: "Developing for iOS in a Server-Centric World"
 date: 2012-12-11 00:00
+index: true
 ---
 
 I came across a really interesting article about the [surprises of designing an iPhone app](http://jackg.org/iphone-design). It includes a lot of sage advice, but a few things _really_ struck out at me.

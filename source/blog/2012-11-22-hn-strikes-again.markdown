@@ -1,6 +1,7 @@
 ---
 title: "HN Strikes Again"
 date: 2012-11-22 00:00
+index: true
 ---
 
 I swore off Hacker News comments a few months ago it's been wonderful. Yesterday, however, I was linked to [this post](http://news.ycombinator.com/item?id=4811922) and told to read the comments; I found the experience quite illuminating.

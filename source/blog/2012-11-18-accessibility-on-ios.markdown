@@ -1,6 +1,7 @@
 ---
 title: "Accessibility on iOS"
 date: 2012-11-18 00:00
+index: true
 ---
 
 I was invited to give a talk at the [Toronto Accessibility Meetup last night](http://www.meetup.com/a11yTo/events/90075082/) about a developer's perspective on making software accessible. It was an amazing experience and I took a lot away from the conversations I had with the people there.

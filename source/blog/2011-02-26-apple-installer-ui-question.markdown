@@ -1,6 +1,7 @@
 ---
 title: "Apple Installer UI Question"
 date: 2011-02-26 00:00
+index: true
 ---
 
 I re-installed the OS on my iMac recently; it'd been two years and it needed it. For some reason, Xcode didn't backup my Xcode install. This is probably a good thing, since dev environments can be tricky in the best of situations.

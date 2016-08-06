@@ -1,6 +1,7 @@
 ---
 title: "On Fear"
 date: 2014-03-20 00:00
+index: true
 ---
 
 Canadian astronaut Chris Hadfield gave a [TED talk](http://www.ted.com/talks/chris_hadfield_what_i_learned_from_going_blind_in_space?awesm=on.ted.com_g075A&utm_content=awesm-bookmarklet&utm_campaign=&utm_medium=on.ted.com-facebook-share&utm_source=direct-on.ted.com) on fear. I highly recommend it.

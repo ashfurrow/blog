@@ -1,6 +1,7 @@
 ---
 title: "Film"
 date: 2013-07-30 00:00
+index: true
 ---
 
 I've been getting into film photography lately after using only digital for my entire stint as a hobby photographer.

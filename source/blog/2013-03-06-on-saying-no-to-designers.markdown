@@ -1,6 +1,7 @@
 ---
 title: "On Saying No to Designers"
 date: 2013-03-06 00:00
+index: true
 ---
 
 I wrote a while ago about [saying no to designers](/blog/stop-saying-no-to-your-designers) and how I had learned not to do it anymore. I pointed out that well-designed apps just don't happen – they take the hard work and collaboration of designers and developers to realize something great.

@@ -1,6 +1,7 @@
 ---
 title: "Krush"
 date: 2014-01-27 00:00
+index: true
 ---
 
 I've been working on a project at Teehan+Lax for a few months now, and I'm ready to share it with you readers. It's called [Krush](https://itunes.apple.com/ca/app/krush-mobile/id624186892?mt=8&uo=4&at=1l3v6zC) and it's a curated product-gathering app for the surf/skate/snowboard crowd. It's geared toward helping small, indie brands gain recognition within that community.

@@ -1,6 +1,7 @@
 ---
 title: "How to Stop Shipping Code with TODO Comments"
 date: 2012-08-27 00:00
+index: true
 ---
 
 If you use Xcode, you've probably used or seen the `TODO` comment. It looks something like this:

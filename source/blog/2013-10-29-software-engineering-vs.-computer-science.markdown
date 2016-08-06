@@ -1,6 +1,7 @@
 ---
 title: "Software Engineering vs. Computer Science"
 date: 2013-10-29 00:00
+index: true
 ---
 
 I went to university for a degree in Computer Science. However, what I do throughout my day-to-day seems an awful lot like software engineering. However, in Canada, "Engineer" is a protected term. I can't legally call myself a software engineer, even if that's effectively what I'm doing.

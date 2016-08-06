@@ -1,6 +1,7 @@
 ---
 title: "Atomic Units of Photography"
 date: 2013-10-31 00:00
+index: true
 ---
 
  ![](/img/import/blog/atomic-units-of-photography/3303F8015D3E4D4C8231B8AA3DE437B5.jpg)

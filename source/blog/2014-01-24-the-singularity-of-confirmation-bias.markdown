@@ -1,6 +1,7 @@
 ---
 title: "The Singularity of Confirmation Bias"
 date: 2014-01-24 00:00
+index: true
 ---
 
 "The Singularity" – that supposed future event when computers achieve sentience – came up at lunch the other day, and I rolled me eyes. Ray Kurzweil's ideas about the future of machines and society are, in my opinion, far-fetched, but he has some believers. The thing is he's so often correct in his predictions.

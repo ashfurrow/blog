@@ -1,6 +1,7 @@
 ---
 title: "My WWDC 2012 Predictions"
 date: 2012-01-13 00:00
+index: true
 ---
 
 WWDC 2012 is coming up and I thought I'd compile a list of what I think Apple is going to showcase in their keynote.&nbsp;

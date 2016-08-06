@@ -1,6 +1,7 @@
 ---
 title: We Are the Coyote
 date: 2015-12-08 16:21:57 UTC
+index: true
 ---
 
 I saw [this](https://twitter.com/andrey_butov/status/674237455911006209) tweeted earlier, and it really resonated with me.

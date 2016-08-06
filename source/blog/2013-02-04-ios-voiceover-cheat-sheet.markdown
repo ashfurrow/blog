@@ -1,6 +1,7 @@
 ---
 title: "iOS VoiceOver Cheat Sheet"
 date: 2013-02-04 00:00
+index: true
 ---
 
 Grey Raiz has a [very nice VoiceOver cheat sheet](http://www.raizlabs.com/blog/2012/12/18/ios-voiceover-getting-started-guide/). Every app developer should read this and bookmark it.

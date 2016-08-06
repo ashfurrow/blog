@@ -1,6 +1,7 @@
 ---
 title: ReactiveCocoa with Swift
 date: 2014-10-28 08:55 UTC
+index: true
 background_image: /img/blog/reactivecocoa-with-swift/background.jpg
 link_to: frpswift
 ---

@@ -1,6 +1,7 @@
 ---
 title: "New Espresso Tamper"
 date: 2011-06-05 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/06/new-espresso-tamper/B5A03B15D5BA41D188B9E7AEB0E479E0.jpg)

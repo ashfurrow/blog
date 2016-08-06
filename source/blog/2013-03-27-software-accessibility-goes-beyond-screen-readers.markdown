@@ -1,6 +1,7 @@
 ---
 title: "Software Accessibility Goes Beyond Screen Readers"
 date: 2013-03-27 00:00
+index: true
 ---
 
 Software accessibility is about more than just making software accessible to people who can't see. Visual impairments are common, so making software accessible to users using screen readers, like VoiceOver on iOS, is key. However, lots of other impairments exist and it's important to take that into consideration when designing your software.

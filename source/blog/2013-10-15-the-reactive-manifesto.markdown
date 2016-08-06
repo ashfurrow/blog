@@ -1,6 +1,7 @@
 ---
 title: "The Reactive Manifesto"
 date: 2013-10-15 00:00
+index: true
 link_to: swift
 ---
 

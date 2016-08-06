@@ -1,6 +1,7 @@
 ---
 title: "Democratize All of the Things"
 date: 2011-11-27 00:00
+index: true
 ---
 
 John Gruber discussed last week on his podcast, [The Talk Show](http://5by5.tv/talkshow), about the democratization of services thanks to the Internet. His specific example was the news publishing industry; their former monopoly on classified advertisements that once supplied them with unparalleled profits has been replaced with the likes of Craigslist. The Internet has democratized the advertisement industry so that anyone can post an ad online for a very low cost, or even for free.

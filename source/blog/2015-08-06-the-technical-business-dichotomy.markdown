@@ -1,6 +1,7 @@
 ---
 title: The Technical/Business Dichotomy
 date: 2015-08-06 22:50:59 UTC
+index: true
 background_image: /img/blog/technical-business/background.png
 background_image_source: https://twitter.com/CloudyConway/status/629051911933677569
 ---

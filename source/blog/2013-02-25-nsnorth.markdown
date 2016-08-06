@@ -1,6 +1,7 @@
 ---
 title: "NSNorth"
 date: 2013-02-25 00:00
+index: true
 ---
 
 Just a reminder that I'll be attending [NSNorth](http://nsnorth.ca) in April.

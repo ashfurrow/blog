@@ -1,6 +1,7 @@
 ---
 title: Letting Things Lapse
 date: 2016-02-09 18:46:11 UTC
+index: true
 og_image: 
 background_image: /img/blog/letting-things-lapse/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/696628912013623296

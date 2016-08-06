@@ -1,6 +1,7 @@
 ---
 title: "Writing"
 date: 2011-09-24 00:00
+index: true
 ---
 
 Writing is magical thing that I've enjoyed, since I was a kid. I've always been creative, but I struggled at creating in a freeform environment. What I mean is that writing gave me the building blocks to be creative where drawing, which I tried but struggled with, gave me only a blank piece of paper. Writing starts with words and you put some words with some other words, following syntax and grammar, and you have a sentence. Combine those and you have a paragraph. Or a sonnet, or lyric. Writing gave me building blocks to work with and that's probably why I enjoyed it in the same way that I enjoyed playing with LEGO. I was creating something out of other things.

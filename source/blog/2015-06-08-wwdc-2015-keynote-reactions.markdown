@@ -1,6 +1,7 @@
 ---
 title: WWDC 2015 Keynote Reactions
 date: 2015-06-08 23:41:42 UTC
+index: true
 ---
 
 Today kicked off WWDC 2015 with two exciting keynotes: the "Keynote" keynote, and the State of the Union keynote, which is really meant for developers. Why the keynote of an event named "World Wide Developer's Conference" would be targeted at journalists is a topic for another time. 

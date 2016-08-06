@@ -1,6 +1,7 @@
 ---
 title: "The Master Branch"
 date: 2012-10-04 00:00
+index: true
 ---
 
 I've got a new podcast, called [The Master Branch](http://themasterbranch.com/), with Tom and Adam that's worth checking out. Same great stuff as before, exciting new format.

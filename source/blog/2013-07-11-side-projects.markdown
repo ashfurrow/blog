@@ -1,6 +1,7 @@
 ---
 title: "Side Projects"
 date: 2013-07-11 00:00
+index: true
 ---
 
 I just read a [really interesting article about side projects](http://blog.joshlong.me/no-such-thing-as-side-projects).

@@ -1,6 +1,7 @@
 ---
 title: Colpitts Men's Wear Sale
 date: 2011-03-10 00:00
+index: true
 ---
 
 I was driving Ashley home from her March Break trip to Nova Scotia (I met her mother halfway in Amherst) and we decided to make a stop in Moncton. We were walking around Champlain Place when I saw Colpitts Men's Wear. I had never been in before, but as luck would have it, they're having a sale. It reminded me a lot of [Peter Roberts](http://www.peterrobertsformen.com/index.html), downtown Fredericton.

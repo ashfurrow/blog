@@ -1,6 +1,7 @@
 ---
 title: "360iDev"
 date: 2013-05-21 00:00
+index: true
 ---
 
  ![](/img/import/blog/360idev/A4BC2C0C85A74565A84E56689C82C466.png)

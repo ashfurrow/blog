@@ -1,6 +1,7 @@
 ---
 title: "Pirates and Ninjas"
 date: 2013-02-10 00:00
+index: true
 ---
 
 Let's consider two different, awesome occupations: pirates and ninjas.

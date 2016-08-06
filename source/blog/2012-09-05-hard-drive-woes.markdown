@@ -1,6 +1,7 @@
 ---
 title: "Hard Drive Woes"
 date: 2012-09-05 00:00
+index: true
 ---
 
 This is the third hard drive I've had fail on me in the last six weeks. Two of them have been SSD's and one was a backup drive. I've lost an entire morning's worth of work while OS X re-downloads to a new drive I just purchased. 

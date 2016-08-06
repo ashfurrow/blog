@@ -1,6 +1,7 @@
 ---
 title: "Get out and Shoot"
 date: 2014-10-08 00:00
+index: true
 ---
 
 Been in a bit of a rut lately. Lots of reasons – stress, working a lot, travel exhaustion, etc. I actually wrote an entirely different blog post about hopelessness yesterday, but it was kind of a downer, so I decided not to publish it.

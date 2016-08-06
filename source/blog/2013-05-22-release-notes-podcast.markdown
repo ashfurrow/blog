@@ -1,6 +1,7 @@
 ---
 title: "Release Notes Podcast"
 date: 2013-05-22 00:00
+index: true
 ---
 
 Go check out [Release Notes](http://releasenotes.tv), a new podcast for iOS from a pair of pretty smart dudes.

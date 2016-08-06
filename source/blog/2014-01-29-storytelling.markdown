@@ -1,6 +1,7 @@
 ---
 title: "Storytelling"
 date: 2014-01-29 00:00
+index: true
 ---
 
 I was reminded today by my friend [Eric](http://twitter.com/akaoka) of Ira Glass' advice on storytelling. I'll let it speak for itself.

@@ -1,6 +1,7 @@
 ---
 title: "This is Canada: We Don't Ban Books"
 date: 2011-05-24 00:00
+index: true
 ---
 
 An [Ontario parent](http://www.markdalestandard.com/ArticleDisplay.aspx?e=3129702) has apparently discovered that High School actually does sometimes try and prepare students for real life. In this case, the school board has Timothy Findley's [The Wars](http://en.wikipedia.org/wiki/The_Wars) on its optional curriculum. That means it's not required reading for all students, but teachers may elect to use it in the classroom. Some parents have found the material in the book disturbing and labeled it "inappropriate to be presented to a class of young people." They want the book banned.

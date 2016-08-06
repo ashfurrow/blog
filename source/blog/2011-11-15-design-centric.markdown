@@ -1,6 +1,7 @@
 ---
 title: "Design-Centric"
 date: 2011-11-15 00:00
+index: true
 ---
 
 I was asked yesterday if I was a designer and I honestly stuttered, answering "no." I'm not, in fact, a designer. I don't know how to properly use Photoshop to mock up user interfaces. At best, my mockups are either low-fidelity pen-and-paper or pre-made widgets in OmniGraffle. However, I _have_&nbsp;designed apps.

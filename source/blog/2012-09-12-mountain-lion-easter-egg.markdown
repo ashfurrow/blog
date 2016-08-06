@@ -1,6 +1,7 @@
 ---
 title: "Mountain Lion Easter Egg"
 date: 2012-09-12 00:00
+index: true
 ---
 
 I was downloading the new iOS 6 SDK today, which takes a while. I wanted to check out the state of the download, and sorted my Downloads folder by "Date Modified." The download, which was still in progress, looked like the following:

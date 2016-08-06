@@ -1,6 +1,7 @@
 ---
 title: "Breaking the Rules"
 date: 2012-06-23 00:00
+index: true
 ---
 
 I've had this post on my mind for a while now. Since earlier this year, I've been developing (heh) my photography skills and it's been an interesting exercise. Photography exists, for me, between art and science. It isn't enough to know the physics of light and the mechanism of the camera to evoke an emotional reaction to my photos. Photography is a form of creative expression that I'm growing more and more fond of as I get better at it.

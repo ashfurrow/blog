@@ -1,6 +1,7 @@
 ---
 title: "Bad News"
 date: 2014-03-01 00:00
+index: true
 ---
 
 I heard the news recently that my grandmother is sick in the hospital, and the news isn't good. It's got me thinking a lot. My paternal grandmother passed away when I was a kid. It was hard on me.

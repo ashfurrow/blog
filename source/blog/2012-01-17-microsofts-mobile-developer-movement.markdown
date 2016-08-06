@@ -1,6 +1,7 @@
 ---
 title: "Microsoft's Mobile Developer Movement"
 date: 2012-01-17 00:00
+index: true
 ---
 
 I received an email from Microsoft this afternoon ( [online version](http://view.email.microsoftemail.com/?j=fe87157471610c747c&m=fed4157075660c7d&ls=fe21177271640d757c1176)) prompting me to "Join the developer movement" and create a Windows Mobile app. The email encouraged me to "start something" and "be an early bird, not an angry bird." It even offered a discounted App Hub membership. I would find this insulting if it weren't so funny. Microsoft is asking me to "join" a movement towards mobile software development in 2012 after I've _been_ developing mobile apps for years. Huh.

@@ -1,6 +1,7 @@
 ---
 title: "Start Up New Brunswick"
 date: 2011-10-28 00:00
+index: true
 ---
 
 Ashley and I attended the&nbsp;5th Annual East Coast Toronto Alumni Reception downtown last night and had a fantastic time. It's always great to catch up with former classmates and administrators, but we also got to meet some new (to us) faces. We heard remarks from Dr. Currie and Dr. Campbell, who spoke on the future of New Brunswick and UNB. I had the opportunity to speak with Dr. Campbell afterwards and we had a great chat. He told me about a new incubator project at the University, the&nbsp; [Pond-Deshpande Centre for Innovation and Entrepreneurship](http://blogs.unb.ca/newsroom/2011/10/20/unb-received-5-million-from-two-prominent-alumni-to-establish-entrepreneurship-and-innovation-centre/). This is _exactly_&nbsp;the kind of thing New Brunswick needs and I applaud everyone involved in making this happen.

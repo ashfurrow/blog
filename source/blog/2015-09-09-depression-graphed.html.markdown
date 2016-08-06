@@ -1,6 +1,7 @@
 ---
 title: Depression, Graphed
 date: 2015-09-09 20:19:47 UTC
+index: true
 background_image: /img/blog/depression-graphed/background.png
 background_image_source: https://twitter.com/CloudyConway/status/641574774423089152
 og_image: /img/blog/depression-graphed/graph7.png

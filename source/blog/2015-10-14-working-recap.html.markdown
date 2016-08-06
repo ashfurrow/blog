@@ -1,6 +1,7 @@
 ---
 title: Working Recap
 date: 2015-10-14 13:00:00 UTC
+index: true
 background_image: /img/blog/2015-10-13-working-recap/background.jpg
 background_image_source: https://twitter.com/Oshianna2U/status/653655660949733376
 ---

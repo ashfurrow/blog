@@ -1,6 +1,7 @@
 ---
 title: "Putting a UICollectionView in a UITableViewCell"
 date: 2013-03-14 00:00
+index: true
 link_to: collectionview
 ---
 

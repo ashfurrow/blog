@@ -1,6 +1,7 @@
 ---
 title: Company Values
 date: 2015-07-27 15:36:24 UTC
+index: true
 ---
 
 I didn’t realize it at the time, but the ultimate reason I decided to leave 500px was the lack of company values. Decisions were being made based only on what was convenient at the time – never consistently and never using the same thought-process. As an employee, it was chaotic and fostered a hostile work environment.

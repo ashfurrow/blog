@@ -1,6 +1,7 @@
 ---
 title: "How (not) to do iOS Push Notifications"
 date: 2012-01-08 00:00
+index: true
 ---
 
  ![](/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/6049F94729C4426AB7D1842467C6D6BE.png)

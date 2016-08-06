@@ -1,6 +1,7 @@
 ---
 title: "Getting Started with CocoaPods"
 date: 2013-09-10 00:00
+index: true
 ---
 
 CocoaPods is an open source library management tool for Objective-C (both iOS and OS X). This article is going to briefly take you through how to get started. This is meant t0 be a quick-fire demo – check out the [Getting Started](http://docs.cocoapods.org/guides/getting_started.html) guide for more details.

@@ -1,6 +1,7 @@
 ---
 title: "Espresso Grinder Woes"
 date: 2011-07-14 00:00
+index: true
 ---
 
 Fact: [Coffee Geek](http://coffeegeek.com/) is an amazing website but a dangerous one.

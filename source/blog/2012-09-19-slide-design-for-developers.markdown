@@ -1,6 +1,7 @@
 ---
 title: "Slide Design for Developers"
 date: 2012-09-19 00:00
+index: true
 ---
 
 As I worry about my approaching [FITC presentation](http://www.fitc.ca/events/presentations/presentation.cfm?event=134&presentation_id=2044), I'm pretty ecstatic to have Adam working on the slides for the presentation. A real designer - this presentation is really going to stand out.

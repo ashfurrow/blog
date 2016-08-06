@@ -1,6 +1,7 @@
 ---
 title: Workcation 2014
 date: 2014-12-02 08:19:29 UTC
+index: true
 background_image: /img/blog/workcation-2014/background.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Cars"
 date: 2013-12-17 00:00
+index: true
 ---
 
 There was an accident today at a fairly major intersection in Toronto. A car hit a fire hydrany in sub-zero temperatures.

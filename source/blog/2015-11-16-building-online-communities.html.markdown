@@ -1,6 +1,7 @@
 ---
 title: Building Online Communities
 date: 2015-11-16 00:44:46 UTC
+index: true
 background_image: /img/blog/building-online-communities/background.png
 background_image_source: https://twitter.com/CloudyConway/status/665704240350932992
 ---

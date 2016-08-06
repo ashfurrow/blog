@@ -1,6 +1,7 @@
 ---
 title: Adulterated Objective-C
 date: 2016-05-20 19:40:05 UTC
+index: true
 background_image: /img/blog/adulterated-objective-c/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/698282495708676097
 ---

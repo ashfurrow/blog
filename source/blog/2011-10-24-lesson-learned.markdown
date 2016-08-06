@@ -1,6 +1,7 @@
 ---
 title: "Lesson Learned"
 date: 2011-10-24 00:00
+index: true
 ---
 
 On Friday, I submitted version 1.1 of the [500px iPad app](http://500px.com/ipad) to Apple for approval. I was confident enough in the binary I submitted that it might be bug free, but I also sent it out to beta testers. I figured, hey, if something turns up over the weekend, I'll reject the binary and resubmit Monday, but if not, then I'm ahead 3 days in the approval process. Then this happened:

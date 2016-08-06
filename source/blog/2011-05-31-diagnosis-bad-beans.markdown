@@ -1,6 +1,7 @@
 ---
 title: "Diagnosis: Bad Beans"
 date: 2011-05-31 00:00
+index: true
 ---
 
 I got up yesterday and made an espresso. Just a straight espresso - no milk or anything. As I sat down to savour it and took my first sip, disappointment washed over my face; I looked down at a truly awful cup of espresso.&nbsp;

@@ -1,6 +1,7 @@
 ---
 title: Teaching &amp; Learning
 date: 2014-11-07 09:32 UTC
+index: true
 ---
 
 I just gave a well-received talk at the [Mobile Developer & Business Day](http://by.mdday.ru/) about teaching and learning here in Minsk. There were some great questions and interesting conversations following the presentation.

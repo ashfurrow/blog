@@ -1,6 +1,7 @@
 ---
 title: "On The Future of Markdown"
 date: 2012-10-28 00:00
+index: true
 ---
 
 I love Markdown. I write this blog in it and I use it all over the web, especially on GitHub and Stack Overflow.

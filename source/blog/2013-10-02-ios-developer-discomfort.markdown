@@ -1,6 +1,7 @@
 ---
 title: "iOS Developer Discomfort"
 date: 2013-10-02 00:00
+index: true
 ---
 
 Over the past year or so, I've noticed some trends in the code that's developed by some of the people I respect. People I look up to – people that I know are hella smart.

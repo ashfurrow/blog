@@ -1,6 +1,7 @@
 ---
 title: "Core Data Course"
 date: 2014-05-06 00:00
+index: true
 ---
 
 I'm really excited to tell you all about my new [Core Data Course](http://teamtreehouse.com/library/build-a-diary-app-using-core-data) at [Treehouse](http://teamtreehouse.com).

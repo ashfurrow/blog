@@ -1,6 +1,7 @@
 ---
 title: "The Pixar Theory"
 date: 2013-07-12 00:00
+index: true
 ---
 
 I've just read something profound – a [theory](http://jonnegroni.com/2013/07/11/the-pixar-theory/) which posits that every Pixar movie exists within the same universe. Every. Single. One.

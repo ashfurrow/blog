@@ -1,6 +1,7 @@
 ---
 title: Getting Happy with Email
 date: 2015-10-31 03:24:28 UTC
+index: true
 background_image: /img/blog/getting-happy-with-email/background.png
 background_image_source: https://twitter.com/CloudyConway/status/659744137206480896
 ---

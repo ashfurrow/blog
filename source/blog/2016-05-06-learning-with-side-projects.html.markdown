@@ -1,6 +1,7 @@
 ---
 title: Learning with Side Projects
 date: 2016-05-06 13:58:14 UTC
+index: true
 background_image: /img/blog/learning-with-side-projects/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/727959731785113602
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Maurice Sendak, 83, Passes Away"
 date: 2012-05-08 00:00
+index: true
 ---
 
 Children's author Maurice Sendak passed away today. Among other things, he wrote _Where the Wild Things Are_, which was my favourite book as a child.

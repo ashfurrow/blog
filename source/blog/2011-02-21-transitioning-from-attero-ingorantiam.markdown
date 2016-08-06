@@ -1,6 +1,7 @@
 ---
 title: "Transitioning from 'Attero Ingorantiam'"
 date: 2011-02-21 00:00
+index: true
 ---
 
 EDIT: I love how my main reason for transitioning was because my old blog was hard to spell, and in this post's title, I messed it up myself :P So I retired my [old blog](http://atteroignorantiam.blogspot.com) after a lot of thought and pestering from my friend [Ian](http://ianbishop.tumblr.com/).

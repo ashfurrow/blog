@@ -1,6 +1,7 @@
 ---
 title: "Drink Coffee to Slow Down"
 date: 2012-10-28 00:00
+index: true
 ---
 
 This week, I read an excellent article on [slowing down](http://www.goodbytes.be/blog/article/life-moves-pretty-fast.-here-are-5-things-you-can-do-to-slow-down). The author posits that life moves very quickly, especially when you're in the computer industry. Things never seem to slow down long enough to catch your breath.

@@ -1,6 +1,7 @@
 ---
 title: "Coffee Tool"
 date: 2012-01-10 00:00
+index: true
 ---
 
 We got one of [these bad boys](http://www.amazon.com/gp/product/B004QDYM9M/ref=as_li_ss_tl?ie=UTF8&tag=ashfur-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B004QDYM9M) at work a few weeks ago for our Rancilio Silvia. If you have an espresso machine, care at all about your coffee, and don't want to burn your hand every time you wipe off the group, you owe it to yourself to buy one. As the guy who cleans the espresso machine at work, it's a godsend.&nbsp;

@@ -1,6 +1,7 @@
 ---
 title: "Optimizing Core Data Saves"
 date: 2011-12-23 00:00
+index: true
 ---
 
 I recently transitioned from keeping data models in memory to persisting them to disc using Core Data. [There are a lot of good reasons to do this](/blog/when-should-i-transition-to-core-data/). This article discusses the finer points of optimizing an application for important data from an external API, storing it in Core Data, and displaying it to the user without adversely affecting performance of the app.

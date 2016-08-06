@@ -1,6 +1,7 @@
 ---
 title: Diffused Responsibility
 date: 2015-09-21 19:00:24 UTC
+index: true
 ---
 
 A few years ago, I had a colleague that attended Google I/O. This was when Google Glass was still a Big Deal, before the creepy gadget joined the fitness tracker and bluetooth headset at the bottoms of junk drawers.

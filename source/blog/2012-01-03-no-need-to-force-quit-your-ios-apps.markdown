@@ -1,6 +1,7 @@
 ---
 title: "No Need To Force-Quit Your iOS Apps"
 date: 2012-01-03 00:00
+index: true
 ---
 
 There's a very technically in-depth piece by Fraser Speirs about how [force-quitting recent apps on your iPhone, iPod Touch, or iPad is useless](http://speirs.org/blog/2012/1/2/misconceptions-about-ios-multitasking.html). While quitting those apps (or rather, removing them from the recently-used list) is harmless, it's something that the user is worried about; it's a kind of cognitive friction imposed by the design of iOS' multitasking user interface.

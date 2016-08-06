@@ -1,6 +1,7 @@
 ---
 title: "Reflections on Art Basel 2014"
 date: 2014-06-23 00:00
+index: true
 ---
 
 My employer, [Artsy](http://artsy.net), sent me to the world's largest [art fair](https://www.artbasel.com) last week. It was my first art fair, and let me tell you, I was quite overwhelmed. Three hundred art galleries, each with many different artworks. Two stories of an exhibition centre, plus another floor for art that "transcended the limitations of typical art fairs", plus another warehouse for performance art, plus an entire design show.

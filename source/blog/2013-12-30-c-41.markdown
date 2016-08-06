@@ -1,6 +1,7 @@
 ---
 title: "C-41"
 date: 2013-12-30 00:00
+index: true
 ---
 
 My latest app, C-41, is [available](https://github.com/AshFurrow/C-41) as an open source project on GitHub. I'll be submitting it to Apple for approval this week.

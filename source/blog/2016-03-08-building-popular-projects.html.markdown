@@ -1,6 +1,7 @@
 ---
 title: Building Popular Projects
 date: 2016-03-08 02:42:36 UTC
+index: true
 background_image: /img/blog/building-oss-frameworks/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/706465122202603522
 ---

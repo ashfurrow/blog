@@ -1,6 +1,7 @@
 ---
 title: "Replacing Objective-C and Cocoa"
 date: 2014-02-12 00:00
+index: true
 ---
 
 Steve Streza has a [follow up post](http://informalprotocol.com/2014/02/replacing-cocoa/) to my post [yesterday](/blog/we-need-to-replace-objective-c) about replacing Objective-C. It's a great read and goes into a lot of depth about what we should look for in a replacement.

@@ -1,6 +1,7 @@
 ---
 title: "Toroid Milk Frothing Pitcher"
 date: 2012-01-17 00:00
+index: true
 ---
 
 I brought a shitty old Breville milk frothing pitcher into work when Evgeny and Oleg bought the office a Rocky/Silvia combo (awesome!). The milk pitcher doesn't have a spout, is way too large, and everyone's been dissatisfied with it. Last week, I bought a [Toroid 12oz milk pitcher](http://www.amazon.com/gp/product/B0054SCEZC/ref=as_li_ss_tl?ie=UTF8&tag=ashfur-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B0054SCEZC), and the results have been fantastic.

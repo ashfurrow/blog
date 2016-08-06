@@ -1,6 +1,7 @@
 ---
 title: "Depression Sucks"
 date: 2014-04-24 00:00
+index: true
 ---
 
 So yeah. I [blogged](/blog/amsterdam-update) earlier this week about a lot of things, including how I was tapering off my medication.

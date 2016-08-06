@@ -1,6 +1,7 @@
 ---
 title: "Taking Control of our Digital Lives"
 date: 2012-08-24 00:00
+index: true
 ---
 
 Within a week's span of one another, my work backup drive and my home iMac's SSD drives failed. Completely and without warning. The backup drive isn't a big deal, since all my work is on git or dropbox. However, my home machine was rendered completely useless as I returned home to edit my vacation photos.

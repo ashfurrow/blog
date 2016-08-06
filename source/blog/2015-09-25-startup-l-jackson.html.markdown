@@ -1,6 +1,7 @@
 ---
 title: Startup L. Jackson
 date: 2015-09-25 16:28:22 UTC
+index: true
 ---
 
 This morning, I came across an [article](http://recode.net/2015/09/24/is-twitter-tech-parody-persona-startup-l-jackson-the-banksy-of-silicon-valley/) discussing the anonymous parody Twitter account named [Startup L. Jackson](https://twitter.com/StartupLJackson). A funny account with pithy, on-point remarks on the state of Silicon Valley. 

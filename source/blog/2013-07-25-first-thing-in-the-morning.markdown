@@ -1,6 +1,7 @@
 ---
 title: "First Thing in the Morning"
 date: 2013-07-25 00:00
+index: true
 ---
 
 I just read this, er, _interesting_ tweet.

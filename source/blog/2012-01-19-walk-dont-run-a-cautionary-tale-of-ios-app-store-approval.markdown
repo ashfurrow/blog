@@ -1,6 +1,7 @@
 ---
 title: "Walk, Don't Run: A Cautionary Tale of iOS App Store Approval"
 date: 2012-01-19 00:00
+index: true
 ---
 
 Mid December, due to a combination of the pressures imposed by a holiday iTunesConnect shutdown and a desire to get a new version of the app approved before Christmas, I shipped a version of the 500px iPad app that actually introduced _more_ bugs than the version it was replacing. Compounding the issue, after the holidays were over, I submitted rushed the new update _again_, which was not properly tested on the original iPad hardware. This update took only 3 days to be approved, but the update that fixed _that_, 1.3.3, took 12 days to get through the approval process.

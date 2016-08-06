@@ -1,6 +1,7 @@
 ---
 title: "The Rest of My Life"
 date: 2012-10-06 00:00
+index: true
 ---
 
 [This article](http://prog21.dadgum.com/154.html) made the rounds this week. It asks the question: "do you want to be programming when you're 50?"

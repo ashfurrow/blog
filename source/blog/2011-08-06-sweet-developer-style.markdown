@@ -1,6 +1,7 @@
 ---
 title: "Sweet Developer Style"
 date: 2011-08-06 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/08/dev-style/94012CB4AF9341E18B9333A8FD85DFA3.png)

@@ -1,6 +1,7 @@
 ---
 title: "Notification Center"
 date: 2014-02-02 00:00
+index: true
 ---
 
  ![](/img/import/blog/notification-center/638949BC34F44390BEFFE14B28549654.jpg)

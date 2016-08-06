@@ -1,6 +1,7 @@
 ---
 title: "Three Weeks"
 date: 2013-02-22 00:00
+index: true
 ---
 
 So I've been at [Teehan+Lax](http://www.teehanlax.com) now for three weeks, and while I'm still in the honeymoon phase, I can confidently say that I've made the right choice.

@@ -1,6 +1,7 @@
 ---
 title: "The Journey Is The Reward"
 date: 2013-03-04 00:00
+index: true
 ---
 
 I read an article from Hacker News this morning discussing _The Shawshank Redemption_ and its [parallels to working in a startup](http://statspotting.com/a-lesson-from-the-shawshank-redemption/).

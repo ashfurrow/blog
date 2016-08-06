@@ -1,6 +1,7 @@
 ---
 title: "Learning Lisp"
 date: 2011-08-14 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/08/lisp/FE077BA4D21541C58237F58C6610E20F.png)

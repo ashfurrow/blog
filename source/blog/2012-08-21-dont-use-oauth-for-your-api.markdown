@@ -1,6 +1,7 @@
 ---
 title: "Don't Use OAuth for your API"
 date: 2012-08-21 00:00
+index: true
 ---
 
 UPDATE some fine folks have pointed out on Hacker News that I'm mistaken on my points. My sincerest apologies; I am not a security expert and was drawing from my own experiences as an app developer instead of well-researched facts. Thanks to the commenters (the polite ones, anyway) who pointed out my factual inaccuracies. As a reward, here is a picture of my cat:

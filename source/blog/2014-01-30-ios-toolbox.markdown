@@ -1,6 +1,7 @@
 ---
 title: "iOS Toolbox"
 date: 2014-01-30 00:00
+index: true
 ---
 
 I've been meaning to write a post like this one for a while, and I'm glad someone else did it so I can just link to it, instead :)

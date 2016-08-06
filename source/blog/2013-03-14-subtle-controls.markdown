@@ -1,6 +1,7 @@
 ---
 title: "Subtle Controls"
 date: 2013-03-14 00:00
+index: true
 ---
 
 Recently, I developed two open source UIKit controls you can easily use in your apps. They are called [TLTiltHighlightView](https://github.com/TeehanLax/TLTiltHighlightView) and [TLTiltSlider](https://github.com/TeehanLax/TLTiltSlider). I call them "tilt" becuase they adjust their appearance depending on how you hold your device.

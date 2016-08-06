@@ -1,6 +1,7 @@
 ---
 title: "Swift Initializers"
 date: 2014-06-06 00:00
+index: true
 link_to: swift
 ---
 

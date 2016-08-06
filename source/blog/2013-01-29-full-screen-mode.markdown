@@ -1,6 +1,7 @@
 ---
 title: "Full Screen Mode"
 date: 2013-01-29 00:00
+index: true
 ---
 
 So I recently [left my job](/blog/moving-on) earlier this month, which means that I also left my maxed out MacBook Pro and 27" Cinema display. I've been working, and writing a book, on my 13" MacBook Air.

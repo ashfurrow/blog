@@ -1,6 +1,7 @@
 ---
 title: "Some Thoughts on Crowdfunding with Indiegogo"
 date: 2013-04-06 00:00
+index: true
 ---
 
 My [Indiegogo campaign](http://www.indiegogo.com/projects/your-first-ios-app/x/2700170) to raise money for my next book has reached its goal and I couldn't be happier.

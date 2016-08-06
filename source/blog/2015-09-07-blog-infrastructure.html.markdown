@@ -1,6 +1,7 @@
 ---
 title: Blog Infrastructure
 date: 2015-09-07 16:27:55 UTC
+index: true
 background_image: /img/blog/blog-infrastructure/background.png
 background_image_source: https://twitter.com/CloudyConway/status/640181721326059520
 ---

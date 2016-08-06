@@ -1,6 +1,7 @@
 ---
 title: Dropping Dropbox
 date: 2016-06-01 18:17:40 UTC
+index: true
 background_image: /img/blog/dropping-dropbox/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/737620064803934208
 ---

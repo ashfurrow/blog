@@ -1,6 +1,7 @@
 ---
 title: "Bad Ideas"
 date: 2013-12-04 00:00
+index: true
 ---
 
 I wrote a [blog article](/blog/calling-bs-on-flow-state) recently that called BS on the idea that developers absolutely require no distractions in order to be efficient at their jobs.

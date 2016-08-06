@@ -1,6 +1,7 @@
 ---
 title: Normalizing Struggle
 date: 2016-01-03 17:28:57 UTC
+index: true
 background_image: /img/blog/normalizing-struggle/background.png
 background_image_source: https://twitter.com/CloudyConway/status/682934079445188608
 ---

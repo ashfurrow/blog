@@ -1,6 +1,7 @@
 ---
 title: "On Heroes and Schedules"
 date: 2013-11-27 00:00
+index: true
 ---
 
 Yesterday I found myself reading a very interesting Twitter conversation between Steve Streza, Jordan Kay, and Jonathan Wright. I chimed in in response to this:

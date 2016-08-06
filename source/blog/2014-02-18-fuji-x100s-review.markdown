@@ -1,6 +1,7 @@
 ---
 title: "Fuji X100S Review"
 date: 2014-02-18 00:00
+index: true
 ---
 
 So I bought a new camera the other day.

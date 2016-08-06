@@ -1,6 +1,7 @@
 ---
 title: "Course"
 date: 2013-06-24 00:00
+index: true
 ---
 
 I'm teaching a course this weekend in iOS Development. It'll be heavily derived from my [recent book](http://yourfirstiosapp.com).
