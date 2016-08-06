@@ -1,6 +1,7 @@
 ---
 title: "The Distress of the Privileged"
 date: 2012-09-22 00:00
+index: true
 ---
 
 This week, I read a [really interesting article](http://weeklysift.com/2012/09/10/the-distress-of-the-privileged/) discussing the "distress of the privileged." In summary, as society shifts power away from those who have it in favour of more equitable power distribution, those formerly of privilege feel persecuted. Whether or not this sense of persecution is _more important_ than the plight of the under privileged is unimportant; the fact is that these feelings _are real_, and if the left fails to recognize them at all, it can be counterproductive to the goal of rebalancing power.

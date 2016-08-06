@@ -1,6 +1,7 @@
 ---
 title: "Functional Reactive Programming on iOS"
 date: 2013-10-21 00:00
+index: true
 ---
 
  ![](/img/import/blog/functional-reactive-programming-on-ios/52557A47E4BA43BE81BAD1DEFADFF6D3.png)

@@ -1,6 +1,7 @@
 ---
 title: "Identity"
 date: 2013-02-04 00:00
+index: true
 ---
 
 I think what we make can define us. I say "can" because we can choose not to let it. I've become acutely aware of this choice.

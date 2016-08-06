@@ -1,6 +1,7 @@
 ---
 title: "500px for iPad: Behind The Scenes"
 date: 2012-09-30 00:00
+index: true
 ---
 
 I had the distinct pleasure to present a talk at the [FITC Screens](http://www.fitc.ca/events/about/?event=134). It's the first non-academic conference I've ever presented at, and it was an exhilerating experience.

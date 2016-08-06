@@ -1,6 +1,7 @@
 ---
 title: "Depression"
 date: 2013-06-27 00:00
+index: true
 ---
 
 Stephen Fry [recently blogged](http://www.stephenfry.com/2013/06/24/only-the-lonely/) about his struggles with depression. Wil Wheaton has [done the same](http://wilwheaton.net/2012/09/depression-lies/). More and more often, people are beginning to discuss their mental illness openly, ignoring the shame and stigma that society has historically put on the mentally ill.

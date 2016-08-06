@@ -1,6 +1,7 @@
 ---
 title: "Professional Site"
 date: 2011-02-21 00:00
+index: true
 ---
 
 A few months ago, my friend [Nick](http://blog.nickhoward.ca/) suggested using WordPress for my website, since iWeb wasn't exactly cutting it. I decided not to, since WordPress is blogging software.

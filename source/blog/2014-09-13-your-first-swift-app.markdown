@@ -1,6 +1,7 @@
 ---
 title: "Your First Swift App"
 date: 2014-09-13 00:00
+index: true
 ---
 
 This morning I launched my new Swift book, _[Your First Swift App](https://leanpub.com/yourfirstswiftapp/)_. It's a work-in-progress that will be updated as I write more chapters; currently, the first three of eleven are finished. All of the code is [available on GitHub](https://github.com/AshFurrow/yourfirstswiftapp) and will be updated as I go. Anyone who bought the [older version](https://leanpub.com/your-first-ios-app) for iOS 6/7 with Objective-C should have already received a coupon for a free copy of the Swift version.

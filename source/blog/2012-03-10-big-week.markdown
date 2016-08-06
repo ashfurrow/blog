@@ -1,6 +1,7 @@
 ---
 title: "Big Week"
 date: 2012-03-10 00:00
+index: true
 ---
 
 Huge week! The new iPad announcement occurred Wednesday and look which app Apple has installed on the new iPads to show off their new retina displays:

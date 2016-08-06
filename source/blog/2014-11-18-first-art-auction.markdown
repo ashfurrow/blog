@@ -1,6 +1,7 @@
 ---
 title: First Art Auction
 date: 2014-11-18 16:15:39 UTC
+index: true
 background_image: /img/blog/first-art-auction/bidding.jpg
 ---
 

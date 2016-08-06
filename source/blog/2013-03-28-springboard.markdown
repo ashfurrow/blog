@@ -1,6 +1,7 @@
 ---
 title: "Springboard"
 date: 2013-03-28 00:00
+index: true
 ---
 
 I've launched a new podcast: [Springboard](http://springboardshow.com). It's a show for newcomers to iOS software development.

@@ -1,6 +1,7 @@
 ---
 title: "The Internet has Made Me Bad at Reading"
 date: 2012-01-12 00:00
+index: true
 ---
 
 The Internet has made me really bad at reading. There's always such an abundance of things I _could_&nbsp;read that I need to selectively filter what I choose to (because my time, like everyone's, is finite and valuable). The unfortunate reality is that I find myself reading _more_&nbsp;articles, but only skimming them.&nbsp;

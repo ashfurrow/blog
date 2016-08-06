@@ -1,6 +1,7 @@
 ---
 title: Ambiversion
 date: 2015-07-13 10:00:00 UTC-4
+index: true
 background_image: "/img/blog/ambiversion/background.jpg"
 summary: "<p>My sister posted <a href='http://www.buzzfeed.com/lukebailey/ambiverts-for-the-silver#.qnmeb9ynLZ'>this Buzzfeed listicle</a> on Facebook. Normally these aren't my bag, but the headline caught me &quot;21 Signs You Might Actually Be An Ambivert&quot;.</p>"
 ---

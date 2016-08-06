@@ -1,6 +1,7 @@
 ---
 title: "On Apple's Use of armv7s in Xcode 4.5 Projects"
 date: 2012-09-19 00:00
+index: true
 ---
 
 From the " [don't release code until you've tested it](http://wanderingcoder.net/2012/09/16/no-armv7s-til-tested/) department":

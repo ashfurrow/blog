@@ -1,6 +1,7 @@
 ---
 title: ReactiveCocoa and Swift
 date: 2014-11-21 15:16:25 UTC
+index: true
 link_to: frpswift
 ---
 

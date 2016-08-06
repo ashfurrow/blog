@@ -1,6 +1,7 @@
 ---
 title: "Office Moms"
 date: 2013-01-30 00:00
+index: true
 ---
 
 Lauren Bacon has a [great article](http://qz.com/47154/tech-companies-stop-hiring-women-to-be-the-office-mom/) discussing offices hiring women to be an "office mom."

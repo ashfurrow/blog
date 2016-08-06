@@ -1,6 +1,7 @@
 ---
 title: "International Women's Day"
 date: 2013-03-08 00:00
+index: true
 ---
 
 Today is [International Women's Day](http://www.internationalwomensday.com), whose theme this year is "gaining momentum." While geek culture and the IT workplace are still rife with an abundance of sexist attitudes and practices, I have seen more and more individuals stand up to them lately. It's inspiring to see such positive change happen in your own community.

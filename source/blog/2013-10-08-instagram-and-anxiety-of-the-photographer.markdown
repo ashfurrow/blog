@@ -1,6 +1,7 @@
 ---
 title: "Instagram and Anxiety of the Photographer"
 date: 2013-10-08 00:00
+index: true
 ---
 
 [Interesting editorial](http://petapixel.com/2013/10/07/instagram-anxiety-photographer-part/) over at PetaPixel. It discusses the history of photography, from the late 19th century to the present, drawing parallels between artists' early objections to photography as art and photographers objections to iPhoneography as photography.

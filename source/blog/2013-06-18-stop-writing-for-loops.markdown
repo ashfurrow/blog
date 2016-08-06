@@ -1,6 +1,7 @@
 ---
 title: "Stop Writing For Loops"
 date: 2013-06-18 00:00
+index: true
 link_to: swift
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Every Inch an iPad"
 date: 2012-11-14 00:00
+index: true
 ---
 
 Here's an [interesting Stack Overflow question](http://stackoverflow.com/questions/13248493/detect-ipad-mini-in-html5) from a web developer trying to differentiate between an iPad 2 and an iPad mini.

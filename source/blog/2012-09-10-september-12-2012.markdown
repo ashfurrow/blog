@@ -1,6 +1,7 @@
 ---
 title: "September 12, 2012"
 date: 2012-09-10 00:00
+index: true
 ---
 
 Coincidentally, my iPhone 4 started acting up yesterday. Conspiracy!

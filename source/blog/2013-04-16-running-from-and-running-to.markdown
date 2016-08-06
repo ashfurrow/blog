@@ -1,6 +1,7 @@
 ---
 title: "Running From and Running To"
 date: 2013-04-16 00:00
+index: true
 ---
 
 I listened to the [latest episode of my friend's podcast](http://attentionsurplus.ca/post/47081847903/taking-the-leap) the other day and its story really resounded with me. The episode tells the tale of a man who left his life behind to explore India and how that didn't really work out very well for him.

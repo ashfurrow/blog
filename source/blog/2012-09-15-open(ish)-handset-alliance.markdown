@@ -1,6 +1,7 @@
 ---
 title: "Open(ish) Handset Alliance"
 date: 2012-09-15 00:00
+index: true
 ---
 
 A storm's a brewin' over in the Android world. I don't typically get involved in disputes within the Android community because it's none of my business and because I mostly don't know what I'm talking about. However, [this is very interesting to me](http://www.androidcentral.com/acer-forced-halt-device-launch-over-android-compliance-here-s-why). And you know what? Sometimes it's the people who aren't afraid of being ridiculed for their ignorance of the facts that point out the really obvious questions that no one else thinks of.

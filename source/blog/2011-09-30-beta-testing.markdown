@@ -1,6 +1,7 @@
 ---
 title: "Beta Testing"
 date: 2011-09-30 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/09/beta-testing/AF9EAE37AA0646C88547E14AD4F6E6ED.png)

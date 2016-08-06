@@ -1,6 +1,7 @@
 ---
 title: "New Job Clarification"
 date: 2014-01-03 00:00
+index: true
 ---
 
 I wanted to clarify something from my [moving to Amsterdam](/blog/moving-to-amsterdam) post that I left purposefully ambiguous at the time.

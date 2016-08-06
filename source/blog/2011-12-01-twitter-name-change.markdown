@@ -1,6 +1,7 @@
 ---
 title: "Twitter Name Change"
 date: 2011-12-01 00:00
+index: true
 ---
 
 So I've pulled the trigger on changing my twitter handle. This hit me kind of hard, which I was honestly expecting.

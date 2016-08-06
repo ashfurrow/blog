@@ -1,6 +1,7 @@
 ---
 title: "Scientists Make Gasoline From Air"
 date: 2012-10-20 00:00
+index: true
 ---
 
 [Huh](http://www.escapistmagazine.com/news/view/120241-British-Scientists-Make-Gasoline-From-Air).

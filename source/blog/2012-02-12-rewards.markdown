@@ -1,6 +1,7 @@
 ---
 title: "Rewards"
 date: 2012-02-12 00:00
+index: true
 ---
 
 This is why people contribute to open source software.

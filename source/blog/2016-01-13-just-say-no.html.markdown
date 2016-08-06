@@ -1,6 +1,7 @@
 ---
 title: Just Say No
 date: 2016-01-13 19:42:08 UTC
+index: true
 background_image: /img/blog/just-say-no/background.png
 background_image_source: https://twitter.com/CloudyConway/status/687081303594897408
 ---

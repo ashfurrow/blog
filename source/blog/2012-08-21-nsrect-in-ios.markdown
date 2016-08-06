@@ -1,6 +1,7 @@
 ---
 title: "NSRect in iOS?"
 date: 2012-08-21 00:00
+index: true
 ---
 
 So, Cocoa and Cocoa Touch are cousins and share a lot of the same underpinnings. You'll see the same type of C struct used for view geometry (a point with x and y, and a size with width and height). On iOS, this is CGRect and on OS X, this is NSRect. Same struct, different name.

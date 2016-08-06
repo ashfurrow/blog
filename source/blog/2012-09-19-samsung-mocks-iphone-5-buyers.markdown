@@ -1,6 +1,7 @@
 ---
 title: "Samsung mocks iPhone 5 Buyers"
 date: 2012-09-19 00:00
+index: true
 ---
 
 Great article on [The Verge](http://www.theverge.com/2012/9/19/3358132/samsung-mock-iphone-5-commercial) discussing Samsung's latest Galaxy S3 ad, which mocks Apple users.

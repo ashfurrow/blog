@@ -1,6 +1,7 @@
 ---
 title: "Switching from GMail to FastMail"
 date: 2012-03-01 00:00
+index: true
 ---
 
 I'm beginning a switch from GMail to my own hosted IMAP service at [FastMail.fm](http://www.fastmail.fm/?STKI=7977317). This represents a larger shift in my online presence that began over a year ago. It started with a move away from Blogger to my own hosted WordPress blog, and is representative of my desire to have more control over my data. "Control" isn't the right word - I am becoming more selective over who I choose to allow access to my data.

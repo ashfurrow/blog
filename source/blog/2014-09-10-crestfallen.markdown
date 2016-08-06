@@ -1,6 +1,7 @@
 ---
 title: "Crestfallen"
 date: 2014-09-10 00:00
+index: true
 ---
 
 So yesterday happened. [This](http://www.apple.com/watch/) happened. Ugh. Whatever. Apple’s made bad decisions before and they’ve survived.

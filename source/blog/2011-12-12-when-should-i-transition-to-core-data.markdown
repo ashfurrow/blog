@@ -1,6 +1,7 @@
 ---
 title: "When Should I Transition to Core Data?"
 date: 2011-12-12 00:00
+index: true
 ---
 
 Let's take it as read that if you're a seasoned Cocoa Developer and you're considering using Core Data in your project, you probably should be using Core Data.

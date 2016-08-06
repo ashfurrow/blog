@@ -1,6 +1,7 @@
 ---
 title: "What Breaks First"
 date: 2012-11-23 00:00
+index: true
 ---
 
 Recently, I was under a large strain at work. I had never worked so hard in my life and at first, it was exhilarating. By the end, I was completely [burnt out](/blog/burnt-out). I'm still recovering from the trauma of working 70+ hours a week, but I'm trying to take time to reflect on the experience.

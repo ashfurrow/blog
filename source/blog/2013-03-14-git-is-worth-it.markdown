@@ -1,6 +1,7 @@
 ---
 title: "Git is Worth It"
 date: 2013-03-14 00:00
+index: true
 ---
 
 I've been thinking a lot about git lately. Git is a pretty fabulous distributed source control system. It's awesome, but it's also a little complicated. Hopefully, I can convince you that using git is worth it.

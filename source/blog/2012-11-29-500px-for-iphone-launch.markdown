@@ -1,6 +1,7 @@
 ---
 title: "500px for iPhone Launch"
 date: 2012-11-29 00:00
+index: true
 ---
 
 ![](/img/import/blog/bd52zm3crnqbbtb0af0nd1jyr39pov/B2CEC540C0804C9185F26A00B96923F5.jpg)

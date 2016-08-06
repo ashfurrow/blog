@@ -1,6 +1,7 @@
 ---
 title: "Change the World"
 date: 2011-11-01 00:00
+index: true
 ---
 
 Two years ago, as part of a few groups I was involved with, I organized a series of student talks for the university community. One of them was presented by [Jason Brennan](http://nearthespeedoflight.com/about), who spoke on iOS development. I was planning on spending that Christmas break to learn something new, but it was that talk that convinced me to learn iOS specifically. In addition to extolling the virtues of Objective-C and Cocoa Touch, Jason talked about changing the world, saying something to the effect of "if you're not writing software to change the world, get out, because you're doing it wrong." At the time I thought it was effective presentation rhetoric (that's a compliment). Looking back, maybe not.

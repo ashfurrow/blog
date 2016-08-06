@@ -1,6 +1,7 @@
 ---
 title: "Replacing Delegates with ReactiveCocoa"
 date: 2014-02-03 00:00
+index: true
 link_to: iosfrp
 ---
 

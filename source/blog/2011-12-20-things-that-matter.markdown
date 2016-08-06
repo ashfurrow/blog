@@ -1,6 +1,7 @@
 ---
 title: "Things That Matter"
 date: 2011-12-20 00:00
+index: true
 ---
 
 I came across a job listing at [Tumblr for an iOS Engineer](http://tumblr.theresumator.com/apply/WnPaaV/IOS-Engineer.html?source=Tumblr+Jobs+Page). Tumblr can be really picky about what developers they choose to hire, and this is the criteria they've come up with.

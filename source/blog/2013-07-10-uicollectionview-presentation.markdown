@@ -1,6 +1,7 @@
 ---
 title: "UICollectionView Presentation"
 date: 2013-07-10 00:00
+index: true
 link_to: collectionview
 ---
 

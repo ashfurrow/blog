@@ -1,6 +1,7 @@
 ---
 title: "Springboard is a Success"
 date: 2013-04-06 00:00
+index: true
 ---
 
  ![](/img/import/blog/springboard-is-a-success/8037E5355A074F369732CFF7B8F77486.png)

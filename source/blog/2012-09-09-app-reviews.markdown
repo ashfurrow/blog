@@ -1,6 +1,7 @@
 ---
 title: "App Reviews"
 date: 2012-09-09 00:00
+index: true
 ---
 
  ![](/img/import/blog/app-reviews/AD674B13436F42919A69EC2BB287DC09.png)

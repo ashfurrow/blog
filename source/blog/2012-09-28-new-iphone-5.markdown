@@ -1,6 +1,7 @@
 ---
 title: "New iPhone 5"
 date: 2012-09-28 00:00
+index: true
 ---
 
  ![](/img/import/blog/cyzijqn0kkn1ckusw9c0qvbxecayda/0BE4C7001AC14718990FE1EF3E538D19.jpg)

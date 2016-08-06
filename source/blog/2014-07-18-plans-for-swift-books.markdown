@@ -1,6 +1,7 @@
 ---
 title: "Plans for Swift Books"
 date: 2014-07-18 00:00
+index: true
 ---
 
 So WWDC happened, and we were all blown away by Swift. Yay Swift! And one of my reactions afterward was "I want to write a book on this", because that's apparently what I do now. So I created [this page](https://leanpub.com/swift_book) where you can register for updates when the book is launched.

@@ -1,6 +1,7 @@
 ---
 title: Being Polite in Open Source
 date: 2015-11-20 00:48:45 UTC
+index: true
 background_image: /img/blog/being-polite-in-open-source/background.png
 background_image_source: https://twitter.com/CloudyConway/status/667425825248145409
 ---

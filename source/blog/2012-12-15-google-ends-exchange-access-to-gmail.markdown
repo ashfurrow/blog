@@ -1,6 +1,7 @@
 ---
 title: "Google Ends Exchange Access to GMail"
 date: 2012-12-15 00:00
+index: true
 ---
 
 Earlier this year, I made the switch away from [GMail to FastMail](/blog/switching-from-gmail-to-fastmail), a pay service for email. My objection at the time was regarging control of my data and I noticed how GMail had never let me down in the past.

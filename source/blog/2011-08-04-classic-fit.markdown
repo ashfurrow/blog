@@ -1,6 +1,7 @@
 ---
 title: "Classic Fit"
 date: 2011-08-04 00:00
+index: true
 ---
 
 One of my favourite things about Toronto is the nice selection of men's wear stores. I'm finding now that, with more selection, I'm finding more and more that fits me. Clothing is following a&nbsp;relatively&nbsp;recent trend of getting slimmer (especially shirts and suits). Clothes seem to now come in one of two varieties: _modern fit_ and _classic fit_. Unfortunately, modern fit seems to becoming the norm, since clothes that don't specify one or the other are usually &nbsp;modern fit.

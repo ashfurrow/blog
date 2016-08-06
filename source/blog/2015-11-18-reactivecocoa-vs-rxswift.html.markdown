@@ -1,6 +1,7 @@
 ---
 title: ReactiveCocoa vs RxSwift
 date: 2015-11-18 18:27:08 UTC
+index: true
 background_image: /img/blog/reactivecocoa-vs-rxswift/background.png
 background_image_source: https://twitter.com/CloudyConway/status/660238972912803841
 ---

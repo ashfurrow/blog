@@ -1,6 +1,7 @@
 ---
 title: "The OAuth Chronicles"
 date: 2011-12-01 00:00
+index: true
 ---
 
 I write iOS apps. Which is to say, I write native apps that run on, you know, actual hardware. iOS also implies Cocoa Touch and the Cocoa networking libraries (which suck). Not really awful, just really bad. Enter OAuth.

@@ -1,6 +1,7 @@
 ---
 title: "iOS Japan Tax Thing"
 date: 2012-02-12 00:00
+index: true
 ---
 
 For a long time I excluded Japan in my list of countries I sell apps to; it's a simple process in iTunesConnect. I did this because, two years ago, I read something funny about Japan and "extra forms" or something and I decided this was easier. I changed my mind six months ago, which didn't really _change_&nbsp;anything since none of my apps were in Japanese.

@@ -1,6 +1,7 @@
 ---
 title: "Migrating to iOS 7"
 date: 2013-07-17 00:00
+index: true
 ---
 
 Gruber said it right the other day. The time to start thinking about iOS 7 was a month ago.

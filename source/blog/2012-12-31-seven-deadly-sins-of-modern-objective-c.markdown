@@ -1,6 +1,7 @@
 ---
 title: "Seven Deadly Sins of Modern Objective-C"
 date: 2012-12-31 00:00
+index: true
 link_to: swift
 ---
 

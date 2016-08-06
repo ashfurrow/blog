@@ -1,6 +1,7 @@
 ---
 title: "Objective-C Singleton Macro"
 date: 2011-04-01 00:00
+index: true
 ---
 
 My friend [Paddy](http://twitter.com/#!/tapi) showed me an awesome macro for generating single classes, shown [here](http://pastebin.com/yfgc28dR). You'd use it like:

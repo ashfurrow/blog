@@ -1,6 +1,7 @@
 ---
 title: "Long Live Film"
 date: 2013-09-13 00:00
+index: true
 ---
 
 Here's a trailer for an interesting, upcoming documentary. I'm really looking forward to it.

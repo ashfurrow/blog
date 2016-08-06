@@ -1,6 +1,7 @@
 ---
 title: "Evidence for Retina Mac Displays"
 date: 2012-02-27 00:00
+index: true
 ---
 
 Speaking of evidence for Retina Mac displays, I noticed this in the `NSWindow.h` header:

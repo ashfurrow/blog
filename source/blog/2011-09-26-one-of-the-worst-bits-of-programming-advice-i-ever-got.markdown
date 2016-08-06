@@ -1,6 +1,7 @@
 ---
 title: "One of the Worst Bits of Programming Advice I ever Got"
 date: 2011-09-26 00:00
+index: true
 ---
 
 (EDIT: wow my wordpress theme needs work. Sorry for the overflow!) I read this article on [avoiding class names that end in "-er"](http://objology.blogspot.com/2011/09/one-of-best-bits-of-programming-advice.html?spref=tw) this morning. Things like "Helper", "Controller", and so on (not nouns like "Number").

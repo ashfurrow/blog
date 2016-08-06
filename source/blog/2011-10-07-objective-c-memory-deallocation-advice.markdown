@@ -1,6 +1,7 @@
 ---
 title: "Objective-C Memory Deallocation Advice"
 date: 2011-10-07 00:00
+index: true
 ---
 
 Hey iOS nerd friends, I need your help. I fetched, store, and display models to the use in batches of twelve. A batch is represented by an NSArray instance and is stored in a cache which responds to low memory warnings by clearing out the batches no currently in use. The models themselves form a doubly-linked list (ie: each one has an \_\_unsafe\_unretained property to each previous and next). I navigate through the models this way sometimes, and through the "batches" way others.

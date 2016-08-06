@@ -1,6 +1,7 @@
 ---
 title: Apple Watch
 date: 2015-05-29 00:37:11 UTC
+index: true
 ---
 
 Since its announcement, I've been a skeptic of the Apple Watch. However, except for some reactions from the initial watch event, I stopped talking publicly about it. Not because I thought I was wrong, but because talking shit about the watch would serve no point. 

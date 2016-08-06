@@ -1,6 +1,7 @@
 ---
 title: Outdated but not Obsolete
 date: 2015-06-14 18:39:53 UTC
+index: true
 ---
 
 While in San Francisco last week, I had a great conversation with a friend. Actually, I had a lot of those, but this one in particular got me thinking. 

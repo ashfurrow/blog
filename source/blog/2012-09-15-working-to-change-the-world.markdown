@@ -1,6 +1,7 @@
 ---
 title: "Working to change the world"
 date: 2012-09-15 00:00
+index: true
 ---
 
 > Focusing on doing enormous good can make us feel justified in neglecting small acts of goodness.

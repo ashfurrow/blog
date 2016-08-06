@@ -1,6 +1,7 @@
 ---
 title: "Singular"
 date: 2011-10-03 00:00
+index: true
 ---
 
 Just when Tech Crunch couldn't possibly lose the remaining, tiny shred of respect I might have found for it, it publishes [this article discussing the "Singularity University"](http://techcrunch.com/2010/12/12/maybe-there-is-hope-for-silicon-valley-and-the-world-after-all/) founded two years ago by "futurist" Ray Kurzweil and X Prize founder Peter Diamandis. That's right. The man who seems to believe that Moore's Law is a **real law** has founded a university. No word on their accreditation.

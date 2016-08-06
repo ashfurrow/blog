@@ -1,6 +1,7 @@
 ---
 title: "Unit Testing Objective-C Using Kiwi"
 date: 2013-01-17 00:00
+index: true
 ---
 
 I have released [AFImageDownloader](https://github.com/AshFurrow/AFImageDownloader) to the open source community. It, asynchronously, downloads JPEGs from the Internet and decompresses them on a background queue.

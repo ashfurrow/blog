@@ -1,6 +1,7 @@
 ---
 title: Fresh Coat of Paint
 date: 2014-10-22 11:56 UTC
+index: true
 background_image: /img/blog/fresh-coat-of-paint/Fresh-Coat-of-Paint.jpg
 background_image_source: https://500px.com/photo/43500268/the-hurricane-iii-by-ash-furrow
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Fixing Xcode Brace Behaviour"
 date: 2013-03-15 00:00
+index: true
 ---
 
 My friend [Zev](https://alpha.app.net/zev) maintains a [great library](https://github.com/ZevEisenberg/ios-convenience) for fixing Xcode's code snippets behaviour to put new brace brackets on their own line.

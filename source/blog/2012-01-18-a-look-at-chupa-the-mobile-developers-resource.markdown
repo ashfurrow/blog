@@ -1,6 +1,7 @@
 ---
 title: "A Look at Chupa, The 'Mobile Developer's Resource'"
 date: 2012-01-18 00:00
+index: true
 ---
 
 I got an (unsolicited) email from [Chupa](http://www.chupamobile.com/products/details/277/Get+more+AppStore+ratings+with+recurring+UIAlert/) this morning asking to participate in their competition to win ten grand. Doesn't sound like a scam at all does it? Boy was I surprised...

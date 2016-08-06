@@ -1,6 +1,7 @@
 ---
 title: The Wrong Binary
 date: 2016-02-11 23:41:12 UTC
+index: true
 background_image: /img/blog/the-wrong-binary/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/697609940140224513
 ---

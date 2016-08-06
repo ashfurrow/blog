@@ -1,6 +1,7 @@
 ---
 title: "100 Years Ago"
 date: 2014-10-09 00:00
+index: true
 ---
 
 So obviously I’m kind of into photography (a friend used to say I’m obsessed, but now I’ve gotten him into it, too). I _love_ photography. I love reading about it. I love doing it. I love thinking about it. Every aspect of making a photo, from conception to capture to constitution.

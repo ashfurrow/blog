@@ -1,6 +1,7 @@
 ---
 title: "I Totally Didn't Understand Frames and Bounds"
 date: 2012-08-05 00:00
+index: true
 ---
 
 I was thinking about the overall architecture of iOS apps the other day, and it struck me just how much Cocoa Touch enforces use of the Model-View-Controller paradigm. Not just _encourages_, but actively enforces. A good example is your application delegate; by the time your app finishes launching, it's your app delegate's responsibility to make sure that the window your app is in has a root view controller.

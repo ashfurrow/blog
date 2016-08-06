@@ -1,6 +1,7 @@
 ---
 title: "Research &amp; Development"
 date: 2012-02-20 00:00
+index: true
 ---
 
 The Government of Canada provides a [tax credit](http://www.cra-arc.gc.ca/sred/) for companies performing research and development. Last week, I had an interview with a gentleman who had me detail all of the research and development I had done in 2011 for 500px. (After hearing I'd be interviewed on this topic, my reaction was identical to the other developers' there: "well that's all I do is research and development." Indeed, after my interview, the interviewer had run out of time for the and had to reschedule another appointment for everyone else.)

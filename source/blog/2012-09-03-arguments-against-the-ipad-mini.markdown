@@ -1,6 +1,7 @@
 ---
 title: "Arguments Against the iPad Mini"
 date: 2012-09-03 00:00
+index: true
 ---
 
 David Chartier [writes](http://davidchartier.com/nexus-7-thoughts-mid-sized-tablets):

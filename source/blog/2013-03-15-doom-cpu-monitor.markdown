@@ -1,6 +1,7 @@
 ---
 title: "Doom CPU Monitor"
 date: 2013-03-15 00:00
+index: true
 ---
 
 My friend [Tom Creigton](https://twitter.com/tomcreighton) and I threw together a small little OS X app that monitors your CPU. The more you're pushing your processor, the bloodier the guy from the Doom video game gets.

@@ -1,6 +1,7 @@
 ---
 title: "Committed"
 date: 2013-03-13 00:00
+index: true
 ---
 
 I've been using [Committed](https://itunes.apple.com/ca/app/committed/id560767719?mt=12) by [Justin Williams](https://twitter.com/justin) for about a week now and I love it.

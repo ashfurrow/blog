@@ -1,6 +1,7 @@
 ---
 title: "Disquiet Developers"
 date: 2012-10-12 00:00
+index: true
 ---
 
 A fantastic article made the rounds this week discussing the [mindset of programmers](http://edu.mkrecny.com/thoughts/be-nice-to-programmers):

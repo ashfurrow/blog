@@ -1,6 +1,7 @@
 ---
 title: "Learn How to Write iOS Apps"
 date: 2011-12-24 00:00
+index: true
 ---
 
 My friend contacted me on twitter and asked for advice on different sources on how to learn iOS apps. Since this paragraph will already exceed 140 characters, I'm posting here, instead. (Obviously, reading this blog regularly is a great way to [pick up some iOS development tricks](/blog/how-to-write-ios-apps/))

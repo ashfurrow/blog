@@ -1,6 +1,7 @@
 ---
 title: "Mathematics: An Expose of my Childhood"
 date: 2011-02-22 00:00
+index: true
 ---
 
 When I was in the beginning of grade school, a mixture of numerology and [confirmation bias](http://youarenotsosmart.com/2010/06/23/confirmation-bias/) tricked me into being really great at math. Let me explain.

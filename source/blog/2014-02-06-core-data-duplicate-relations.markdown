@@ -1,6 +1,7 @@
 ---
 title: "Core Data Duplicate Relations"
 date: 2014-02-06 00:00
+index: true
 ---
 
 I tweeted yesterday that I was having a problem with Core Data. A pretty serious problem. I have two entities, A and B, and A has a to-many relationship with B. Ever since I implemented a [background managed object context](http://www.teehanlax.com/blog/krush-ios-architecture/), We've been seeing very intermittent bugs with duplicate entries in the A->B relationship.

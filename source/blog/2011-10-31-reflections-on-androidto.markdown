@@ -1,6 +1,7 @@
 ---
 title: "Reflections on AndroidTO"
 date: 2011-10-31 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/10/reflections-on-androidto/EC27B3D9E44448A0B05F08D4C69E5AE7.jpg)

@@ -1,6 +1,7 @@
 ---
 title: "Google on iOS Sucks"
 date: 2012-01-08 00:00
+index: true
 ---
 
  ![](/img/import/blog/2012/01/google-on-ios-sucks/0183EA0B90D44155BA24D4F96382012C.png)

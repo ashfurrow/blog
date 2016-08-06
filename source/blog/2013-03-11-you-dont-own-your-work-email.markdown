@@ -1,6 +1,7 @@
 ---
 title: "You Don't Own Your Work Email"
 date: 2013-03-11 00:00
+index: true
 ---
 
 I'm having a good chuckle this morning over a bunch of Harvard professors up-in-arms over the university administration [searching their email accounts](http://www.nytimes.com/2013/03/11/us/harvard-e-mail-search-stuns-faculty-members.html?pagewanted=all&_r=0).

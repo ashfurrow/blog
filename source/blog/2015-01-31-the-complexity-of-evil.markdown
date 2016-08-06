@@ -1,6 +1,7 @@
 ---
 title: The Complexity of Evil
 date: 2015-01-31 11:34:53 UTC
+index: true
 summary: "<p>Alan Rickman, one of the most talented actors alive today, often plays villains: Professor Snape, Hans Gruber, Tybalt, etc. What I admire about his portrayals is the gravitas with which he approaches these characters. He understands that no one is one-dimensional or &quot;just evil.&quot; Instead, people are complex creatures with histories and beliefs and motivations that sometimes make them do evil things.</p>"
 ---
 

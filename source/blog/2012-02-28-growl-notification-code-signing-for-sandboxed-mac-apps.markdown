@@ -1,6 +1,7 @@
 ---
 title: "Growl Notification Code Signing for Sandboxed Mac Apps"
 date: 2012-02-28 00:00
+index: true
 ---
 
 I've spent the past few weeks writing a small Mac app, a first for me. The transition from Cocoa Touch to Cocoa has been ... interesting. Easy in many ways, but unexpected in others. I'm submitting this to the Mac App Store, so I'm using sandboxing and code signing. Everything was going fine until Xcode 4.3 was crashing whenever I tried to validate by archive. Something like `-[DVTFilePath compare:]: unrecognized selector sent to instance`.

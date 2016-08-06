@@ -1,6 +1,7 @@
 ---
 title: "iOS 6 Installed on 100 Million Devices in Five Days"
 date: 2012-09-24 00:00
+index: true
 ---
 
 [Whoa](http://www.apple.com/pr/library/2012/09/24iPhone-5-First-Weekend-Sales-Top-Five-Million.html).

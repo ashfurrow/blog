@@ -1,6 +1,7 @@
 ---
 title: "UICollectionView Example with UICollectionViewFlowLayout"
 date: 2013-02-05 00:00
+index: true
 link_to: collectionview
 ---
 

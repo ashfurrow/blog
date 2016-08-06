@@ -1,6 +1,7 @@
 ---
 title: "Skyfall"
 date: 2012-11-11 00:00
+index: true
 ---
 
 I went with some friends last night to see _Skyfall_, the latest 007 movie. It was _fantastic_ and you really need to go see it.

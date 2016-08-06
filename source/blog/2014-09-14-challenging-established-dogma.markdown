@@ -1,6 +1,7 @@
 ---
 title: "Challenging Established Dogma"
 date: 2014-09-14 00:00
+index: true
 ---
 
 I’ve been a longtime believer in the power of challenging established dogma and authority. Just ask my mom – she’ll tell you what a little pest I was growing up.

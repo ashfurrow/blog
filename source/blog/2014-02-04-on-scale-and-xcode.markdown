@@ -1,6 +1,7 @@
 ---
 title: "On Scale and Xcode"
 date: 2014-02-04 00:00
+index: true
 ---
 
 Brent Simmons has a [write up](http://inessential.com/2014/02/03/apology) apologizing for a tweet he wrote the other night, which I retweeted.

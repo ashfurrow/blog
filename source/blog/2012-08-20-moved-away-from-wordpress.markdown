@@ -1,6 +1,7 @@
 ---
 title: "Moved Away From Wordpress"
 date: 2012-08-20 00:00
+index: true
 ---
 
 Last night I switched my website away from Wordpress, which I had been self-hosting for two years. While I've had fun administering my own site and customizing it&nbsp;_just so_, it had become too tedious.

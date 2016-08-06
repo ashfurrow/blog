@@ -1,6 +1,7 @@
 ---
 title: "Use Old Style iPhone Simulator"
 date: 2011-04-18 00:00
+index: true
 ---
 
 I'm writing the labs for the iPhone course I'm teaching next week and the machines on campus use an older version of Xcode. Since I'm on a newer version, when I take a screenshot of the simulator it's of an iPhone 4. I need to make sure that the students see in the labs exactly what's on the screen.

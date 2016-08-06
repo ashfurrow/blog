@@ -1,6 +1,7 @@
 ---
 title: "iOS Concept Designs"
 date: 2013-04-05 00:00
+index: true
 ---
 
 Here is yet another iOS 7 concept video. I want to talk about it a little bit, so give it a watch (mute your speakers first).

@@ -1,6 +1,7 @@
 ---
 title: Starfleet Propaganda
 date: 2015-07-15 19:07:17 UTC
+index: true
 ---
 
 My wife and I have been enjoying re-watching our favourite episodes of Star Trek Voyager (we're calling it "Voyager: Greatest Hits"). We really enjoy the story, characters, and of course the impressive leadership of Janeway (the best captain in the Star Trek cannon). 

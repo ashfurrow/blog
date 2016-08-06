@@ -1,6 +1,7 @@
 ---
 title: "Moving to Amsterdam"
 date: 2013-12-20 00:00
+index: true
 ---
 
 My wife and I have always wanted to move to Europe. Always – as long as I can remember.

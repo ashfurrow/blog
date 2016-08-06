@@ -1,6 +1,7 @@
 ---
 title: "Crashlytics"
 date: 2012-01-19 00:00
+index: true
 ---
 
 As the sole iOS Developer at 500px, I have to stay on top of everything with regards to the app: requesting design assets from Adam, fixing bugs, providing support to users, and developing new features. I leverage a few third-party tools (like&nbsp; [TestFlight](http://testflightapp.com)) to make my job easier. However, [Crashlytics](http://www.crashlytics.com/)&nbsp;beats them all. Combined. It is second only to Xcode in terms of how important it is to creating iOS apps.

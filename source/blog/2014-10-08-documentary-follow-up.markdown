@@ -1,6 +1,7 @@
 ---
 title: "Documentary Follow-Up"
 date: 2014-10-08 00:00
+index: true
 ---
 
 Really happy to share the news that the [documentary](https://www.indiegogo.com/projects/code-debugging-the-gender-gap) on the gender gap in the software scene that I [blogged about](/blog/why-is-this-difficult) recently got funded today. Really awesome news.

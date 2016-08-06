@@ -1,6 +1,7 @@
 ---
 title: "Designing Interfaces for iPhone"
 date: 2012-02-26 00:00
+index: true
 ---
 
  ![](/img/import/blog/2012/02/designing-interfaces-for-iphone/A49871E0DC6544ADB32226D10F5714E9.jpg)

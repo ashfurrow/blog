@@ -1,6 +1,7 @@
 ---
 title: "Early Mornings"
 date: 2011-03-01 00:00
+index: true
 ---
 
  ![](/img/import/blog/2011/03/early-mornings/330EBB69DC6F4AC3A9E89618A20C3799.jpg)

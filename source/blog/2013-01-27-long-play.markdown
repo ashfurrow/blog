@@ -1,6 +1,7 @@
 ---
 title: "Long Play"
 date: 2013-01-27 00:00
+index: true
 ---
 
 My friend Adam Shutsa and I have been toying with the idea of an OS X app we'd like to build that lets you listen to albums entirely at once (ie: not select individual songs). The designs for it are below.

@@ -1,6 +1,7 @@
 ---
 title: "Fastmail/Dreamhost SPF &amp; DKIM"
 date: 2012-03-10 00:00
+index: true
 ---
 
 My boss pointed out that, with my new email provider, GMail is displaying a weird message in the "from" field:

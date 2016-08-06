@@ -1,6 +1,7 @@
 ---
 title: "Software Developer Hiring Techniques"
 date: 2012-01-08 00:00
+index: true
 ---
 
 This week, an article by 37signals made its way around the Hacker Newswire that explained why [they don't hire programmers based on riddles, puzzles, or other "parlor [sic] tricks"](http://37signals.com/svn/posts/3071-why-we-dont-hire-programmers-based-on-puzzles-api-quizzes-math-riddles-or-other-parlor-tricks)&nbsp;(sic because parlour has a 'u' in it - the Queen says so). It's worth a read and, as someone who went through the job hunting experience last year (twice), it's quite enjoyable.

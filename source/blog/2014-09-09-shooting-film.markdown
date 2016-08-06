@@ -1,6 +1,7 @@
 ---
 title: "Shooting Film"
 date: 2014-09-09 00:00
+index: true
 ---
 
 I’ve been blogging recently about photography, and a few readers have asked me questions about the tools that I use to make photos. I think it’s an idea worth exploring, and I’d like to explain (not justify) my reasoning for relying on film photography.

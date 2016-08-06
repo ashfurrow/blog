@@ -1,6 +1,7 @@
 ---
 title: "Initial Thoughts on Swift"
 date: 2014-06-03 00:00
+index: true
 link_to: swift
 ---
 

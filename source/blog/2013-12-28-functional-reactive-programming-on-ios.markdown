@@ -1,6 +1,7 @@
 ---
 title: "Functional Reactive Programming on iOS"
 date: 2013-12-28 00:00
+index: true
 ---
 
 I've (finally) finished my book on ReactiveCocoa, [Functional Reactive Programming on iOS](https://leanpub.com/iosfrp). If you were ever interested in learning about ReactiveCocoa but didn't know where to start, here you go.

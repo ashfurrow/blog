@@ -1,6 +1,7 @@
 ---
 title: "The Problem with Hacker News"
 date: 2012-05-02 00:00
+index: true
 ---
 
 My friend Tom published an interesting post this morning about [copying the _wrong_ part of idea](http://tomcreighton.com/2012/05/cloning-the-ios-ecosystem/). The post is based on something stupid someone commented on Hacker News, and I want to expand on that a little bit.

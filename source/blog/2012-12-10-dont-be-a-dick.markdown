@@ -1,6 +1,7 @@
 ---
 title: "Don't Be a Dick"
 date: 2012-12-10 00:00
+index: true
 ---
 
 As I write this, I'm sitting on a flight behind two men having an argument.

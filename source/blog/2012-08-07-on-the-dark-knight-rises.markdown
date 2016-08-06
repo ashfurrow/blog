@@ -1,6 +1,7 @@
 ---
 title: "On 'The Dark Knight Rises'"
 date: 2012-08-07 00:00
+index: true
 ---
 
 I just returned home from watching _The Dark Knight Rises_, the completion to Christopher Nolan's Dark Knight Trilogy. I had hoped, even though time and again I'm shown that the third act of a trilogy never lives up to expectations, that this time would be different.

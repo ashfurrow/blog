@@ -1,6 +1,7 @@
 ---
 title: "App.Net"
 date: 2012-10-09 00:00
+index: true
 ---
 
 So lsat week was pretty huge for [App.net](https://alpha.app.net). Tapbots, makes of the most stylish of iOS apps, released a Tweetbot lookalike named [Netbot](http://tapbots.com/software/netbot/). Along with an alpha of an OS X app named [Wedge](http://wedge.natestedman.com), I've found a spot of App.net in my day-to-day routine, as I'm sure many other nerds have.

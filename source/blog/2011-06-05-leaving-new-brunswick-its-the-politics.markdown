@@ -1,6 +1,7 @@
 ---
 title: "Leaving New Brunswick: It's the Politics"
 date: 2011-06-05 00:00
+index: true
 ---
 
 A few weeks ago, I participated in Fredericton's [Super Mega Cybersocial](http://www.cybersocial.org/index.php?option=com_lyftenbloggie&view=entry&year=2011&month=05&day=26&id=8%3Alast-of-the-season&Itemid=5) discussing the IT industry in New Brunswick. I detailed a few things that companies should be doing to attract and retain young talent, but I side-stepped one issue altogether. You see, even before Ashley and I knew where she was going to grad school, we had already decided that we wouldn't be staying in New Brunswick at all. The politics of this province had a lot to do with that decision, and I thought I'd expand on those points here. Let's take three recent news stories I picked from the CBC completely non-randomly.

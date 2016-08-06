@@ -1,6 +1,7 @@
 ---
 title: "Of My Recent Successes"
 date: 2011-10-19 00:00
+index: true
 ---
 
 Recently, I blogged about [Code Idols](/blog/code-idols/) and how I look up to [Instapaper](http://www.instapaper.com/u) creator [Marco Arment](http://www.marco.org/). Well, just this last weekend, we at&nbsp; [500px](http://500px.com/) released [our new iPad app](http://500px.com/ipad)&nbsp;to tremendous applause. It had been 7 weeks in the making and a lot of fun. Already, within 4 days of launching, we were at the #34 spot for free iPad apps. _All of them_.

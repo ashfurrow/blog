@@ -1,6 +1,7 @@
 ---
 title: "Unnecessary Code Indentation"
 date: 2011-05-17 00:00
+index: true
 ---
 
 If you know me or read my blog or follow me on twitter, you'll know that I have ... particularities. I like things a certain way and, while I don't believe in forcing my way of doing things onto others, when I do things, I do them&nbsp;conscientiously. Since first year when a sage [upper year student](https://twitter.com/#!/njdoyle) showed me how to avoid unnecessary indentation in my code, it's something I've tried to do. I won't correct existing code since it doesn't improve performance, but I structure my code to avoid superfluous tabstops. Following [Apple's example](http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocAllocInit.html), we write a custom initializer of an Objective-C object like the following:

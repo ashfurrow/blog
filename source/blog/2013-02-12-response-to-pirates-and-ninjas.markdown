@@ -1,6 +1,7 @@
 ---
 title: "Response to Pirates and Ninjas"
 date: 2013-02-12 00:00
+index: true
 ---
 
 Igor Elland has a [good response](http://igor.elland.me/post/42939258554/pirate-versus-ninja) to my [Pirates and Ninjas](/blog/pirates-and-ninjas) article. The argument is that not only is a pirate life not a fit for me, but it's not a fit for anyone.

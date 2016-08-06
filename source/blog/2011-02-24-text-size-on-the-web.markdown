@@ -1,6 +1,7 @@
 ---
 title: "Text Size on the Web"
 date: 2011-02-24 00:00
+index: true
 ---
 
 I'm a particular guy when it comes to my computer and how I interact with it. I have a .vimrc file that I've spent a lot of time curating, and of course I always use [zenburn](http://slinky.imukuppi.org/zenburnpage/) for any text editor I use (curse you, texmaker, for not giving users a customizable background colour!). I even used this scheme for my [last blog](http://atteroignorantiam.blogspot.com). Computer screens aren't sheets of paper, and I generally prefer white-on-black. I also like my font size **readable**. When I'm in a terminal, I set the default font size to about 16 so I can actually see what I'm coding. I can do this because it doesn't break any formatting from bash.

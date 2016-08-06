@@ -1,6 +1,7 @@
 ---
 title: "Apple Dev Center Breach"
 date: 2013-07-24 00:00
+index: true
 ---
 
 The Apple developer portal has been down since last Thursday. With iOS 7 imminent, the timing couldn't be worse.

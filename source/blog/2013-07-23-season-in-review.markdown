@@ -1,6 +1,7 @@
 ---
 title: "Season in Review"
 date: 2013-07-23 00:00
+index: true
 ---
 
 I am not a sportsfan, but I enjoy solving interesting problems with creative people. That's why I'm very excited to show off [Season in Review](http://labs.teehanlax.com/project/season-in-review), the latest T+L Labs project I've been working on.

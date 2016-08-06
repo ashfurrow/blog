@@ -1,6 +1,7 @@
 ---
 title: Kintsugi for Code
 date: 2016-02-01 03:53:45 UTC
+index: true
 og_image: /img/blog/kintsugi-for-code/kintsugi.jpg
 background_image: /img/blog/kintsugi-for-code/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/693472561968058369

@@ -1,6 +1,7 @@
 ---
 title: "Developing Taste"
 date: 2012-10-25 00:00
+index: true
 ---
 
 Ira Glass discusses developing taste in this [kinetic tyopgraphy video](http://vimeo.com/24715531).

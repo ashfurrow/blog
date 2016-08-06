@@ -1,6 +1,7 @@
 ---
 title: "Second-Guessing Culture"
 date: 2013-02-25 00:00
+index: true
 ---
 
 I read a [really interesting article](http://blog.prettylittlestatemachine.com/blog/2013/02/20/what-your-culture-really-says/) describing how seemingly positive points about a company's culture can actually be hiding negative, dysfunctional aspects of an atmosphere.

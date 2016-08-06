@@ -1,6 +1,7 @@
 ---
 title: "Site Stats for 2012"
 date: 2013-01-01 00:00
+index: true
 ---
 
 2012 has seen a lot of change for this blog. I made the switch away from a self-hosted Wordpress installation to Squarespace. I joined the [Fusion Ad network](http://fusionads.net). And I started writing, like, a lot.

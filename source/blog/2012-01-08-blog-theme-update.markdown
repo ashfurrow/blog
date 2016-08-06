@@ -1,6 +1,7 @@
 ---
 title: "Blog Theme Update"
 date: 2012-01-08 00:00
+index: true
 ---
 
 So I've updated my blog theme. It's been an incremental change since I began fiddling with the CSS a month ago. The biggest change, however, is turning commenting off.

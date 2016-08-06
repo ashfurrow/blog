@@ -1,6 +1,7 @@
 ---
 title: "A Familiar Form"
 date: 2014-06-07 00:00
+index: true
 ---
 
 Last week, Apple introduced a brand new programming language for iOS and OS X development, called Swift. During WWDC, I attended every Swift presentation and spent time in the labs chatting with the engineers responsible for this new language. While I've had less than a week's exposure to this new language, I have some thoughts.

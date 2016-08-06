@@ -1,6 +1,7 @@
 ---
 title: "NSEnumeratorLinq"
 date: 2013-02-25 00:00
+index: true
 ---
 
 Anton Bukov has done a great job [replicating the LINQ framework in the Foundation](https://github.com/k06a/NSEnumeratorLinq) collections classes.

@@ -1,6 +1,7 @@
 ---
 title: "Feels"
 date: 2014-06-01 00:00
+index: true
 ---
 
 It's been a while since I've written on here, in part because I've been busy at work, in part because I've been on other writing assignments, and in part because my depression has gotten the better of me since adjusting my medication a few months ago.

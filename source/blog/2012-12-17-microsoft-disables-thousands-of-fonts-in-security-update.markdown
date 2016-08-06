@@ -1,6 +1,7 @@
 ---
 title: "Microsoft Disables Thousands of Fonts in Security Update"
 date: 2012-12-17 00:00
+index: true
 ---
 
 Microsoft issued a security update to Windows, labeled "high priority", which has [disabled many, many fonts](http://www.theregister.co.uk/2012/12/17/windows_security_update_kills_fonts/) installed on PCs. Designers are crying bloody murder.

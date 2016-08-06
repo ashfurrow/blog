@@ -1,6 +1,7 @@
 ---
 title: "Exploring NSOrderedSet in Core Data"
 date: 2012-08-31 00:00
+index: true
 ---
 
 iOS 5 introduced a new, exciting feature in Core Data: ordered, to-many relationships. Previously, all relationships were unordered and necessitated the use of an intermediate entity to describe ordering. This new feature allows developers to specify that objects in a to-many relationship have an intrinsic ordering to them, which is very exciting.

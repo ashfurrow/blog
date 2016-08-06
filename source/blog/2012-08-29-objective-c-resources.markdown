@@ -1,6 +1,7 @@
 ---
 title: "Objective-C Resources"
 date: 2012-08-29 00:00
+index: true
 ---
 
 I had a reader contact me this week looking for a list of blogs that _I_ follow for Objective-C advice. I had to dig through my Google Reader list for a while to come up with a filtered list, since some good resources like my friend [Jason's blog](http://nearthespeedoflight.com), are great developer resources, but also serve as personal blogs. I think my site, as it exists today, would also fall into this "in-between" category, though I'm hoping to move it towards stricter technical material

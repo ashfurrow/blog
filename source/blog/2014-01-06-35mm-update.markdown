@@ -1,6 +1,7 @@
 ---
 title: "35mm Update"
 date: 2014-01-06 00:00
+index: true
 ---
 
 I'm sad to report that the Newsstand app I wrote, [35mm](http://35mm.io) is shutting down.

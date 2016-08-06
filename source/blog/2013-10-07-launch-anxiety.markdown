@@ -1,6 +1,7 @@
 ---
 title: "Launch Anxiety"
 date: 2013-10-07 00:00
+index: true
 ---
 
 I'm on the verge of launching a new app with some friends ( [hint hint](http://35mm.io)) – this app is special. Not only did I build the iOS app, which I generally rock at, but I also built the backend app, which I kinda suck at.

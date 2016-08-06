@@ -1,6 +1,7 @@
 ---
 title: "Objective-C is Not Easy to Learn"
 date: 2014-06-11 00:00
+index: true
 link_to: swift
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "My Useful GitHub Project"
 date: 2012-08-23 00:00
+index: true
 ---
 
 A while ago, I posted a how-to guide on [hosting useful projects on GitHub](/blog/how-to-host-(useful)-projects-on-github/). The post centred around the idea that you should make your code easy to integrate into an existing project and supply a demo project that is neither too tightly, nor too loosely, coupled to the project a developer would be using.

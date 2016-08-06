@@ -1,6 +1,7 @@
 ---
 title: "Go Outside and Meet People"
 date: 2012-09-12 00:00
+index: true
 ---
 
 I attended the [Toronto Area Cocoa and WebObjects Developers Group](http://tacow.org) meeting last night and had a great time, as I always do. It's such a great experience to meet with other people as invested in the iOS and OS X ecosystem as I am; they all offer their own unique perspectives on familiar concepts. What a fantastic time.

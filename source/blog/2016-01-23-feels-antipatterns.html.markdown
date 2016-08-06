@@ -1,6 +1,7 @@
 ---
 title: Feels Antipatterns
 date: 2016-01-23 18:13:02 UTC
+index: true
 background_image: /img/blog/feels-antipatterns/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/689973022514638851
 ---

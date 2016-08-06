@@ -1,6 +1,7 @@
 ---
 title: "What Developers Want"
 date: 2011-12-23 00:00
+index: true
 ---
 
 [From a commenter over at Hacker News](http://news.ycombinator.com/item?id=3386167):

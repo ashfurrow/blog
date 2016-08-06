@@ -1,6 +1,7 @@
 ---
 title: "Belief"
 date: 2013-07-04 00:00
+index: true
 ---
 
 When I first moved to Toronto in 2011, I worked for a small startup. The pay was decent, but more than that, I believed that we were doing something really cool. Over the next two months, however, that belief was eroded by incompetent management.

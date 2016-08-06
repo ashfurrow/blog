@@ -1,6 +1,7 @@
 ---
 title: "Responsibility"
 date: 2013-04-26 00:00
+index: true
 ---
 
 Since I was little, I've always wanted to be a teacher. In university, I did a lot of tutoring, but after a Summer doing research, I decided that a career in academia was not for me.

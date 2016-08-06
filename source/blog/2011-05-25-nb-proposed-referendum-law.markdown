@@ -1,6 +1,7 @@
 ---
 title: "NB Proposed Referendum Law"
 date: 2011-05-25 00:00
+index: true
 ---
 
 I was reading a CBC article this morning detailing the Conservative's [proposed referendum law](http://www.cbc.ca/news/canada/new-brunswick/story/2011/05/25/nb-referendum-bill-549.html?ref=rss). The article is generally favourable of the PC plan and failed to emphasize how seriously the law's failings would negatively impact NB. I'm generally a fan of direct democracy, but it has to be _informed_ democracy. A committee on Legislative Democracy in 2005 suggested using referenda in New Brunswick, but stressed the importance of having yes/no committees. Each committee would campaign and inform voters about the pros and cons of each side. Without them, we'll have a public voting on their knee-jerk reaction. Budget cuts, I guess.

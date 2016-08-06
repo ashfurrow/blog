@@ -1,6 +1,7 @@
 ---
 title: "Character"
 date: 2012-10-21 00:00
+index: true
 ---
 
 I [posted earlier](https://alpha.app.net/ashfurrow/post/1124726) about my disppointment that there is a scammy faux lock screen app in the top grossing list on the iOS App Store. This developer is taking advantage of people and making what I can only assume is fat stacks of cash in the process.

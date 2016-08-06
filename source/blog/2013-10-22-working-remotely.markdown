@@ -1,6 +1,7 @@
 ---
 title: "Working Remotely"
 date: 2013-10-22 00:00
+index: true
 ---
 
 37signals has [produced a video](https://37signals.com/svn/posts/3657-37signals-works-remotely) describing their company culture of working remotely. It's interesting and worth a watch, and I'll discuss why it's interesting to me in a moment.

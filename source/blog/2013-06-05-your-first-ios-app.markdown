@@ -1,6 +1,7 @@
 ---
 title: "Your First iOS App"
 date: 2013-06-05 00:00
+index: true
 ---
 
 I finished writing my book. The [first chapter is available online, for free](http://yourfirstiosapp.com).

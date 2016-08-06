@@ -1,6 +1,7 @@
 ---
 title: Sadness
 date: 2015-06-21 15:47:08 UTC
+index: true
 ---
 
 In the summer between my first and second year at university, my girlfriend Ashley and I sat down in the shitty living room of my shitty sublet and watched a new episode of Doctor Who. The episode's name was [_Blink_](http://www.imdb.com/title/tt1000252/?ref_=ttqt_qt_tt), and it is a fantastic piece of television – for many reasons. 

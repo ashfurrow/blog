@@ -1,6 +1,7 @@
 ---
 title: "Checklists for Creative Work"
 date: 2013-07-12 00:00
+index: true
 ---
 
 My coworker Eric wrote a great article entitled [Checklists for Creative Work](http://www.teehanlax.com/blog/checklists-for-creative-work/).

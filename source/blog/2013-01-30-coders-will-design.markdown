@@ -1,6 +1,7 @@
 ---
 title: "Coders Will Design"
 date: 2013-01-30 00:00
+index: true
 ---
 
 David Cole has a [good argument](https://medium.com/design-startups/6c423fc5ccef) for building better tools that enable designers to realize their ideas with code.

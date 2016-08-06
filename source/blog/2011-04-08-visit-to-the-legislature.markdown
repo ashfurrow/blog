@@ -1,6 +1,7 @@
 ---
 title: "Visit to the Legislature"
 date: 2011-04-08 00:00
+index: true
 ---
 
 Yesterday I visited the NB Legislature to attend the debate on a Liberal motion that commits the government to providing accessible post-secondary education. The motion was a lot of fluff and doesn't hold the government accountable to anything, but it'll be nice to wave it in the faces of the Torries if they ever have an inkling to save money by leaning on students. The visit itself was awful. When I got to the Legislature, there was a lot of confusion about why I was there. In a veritable "WTF?", security finally discerned that I wanted to go to the gallery. If I didn't have people who had done this before tell me what to expect, I'm sure my confusion could have been mistaken for apprehension and I'd have been tazed or something.

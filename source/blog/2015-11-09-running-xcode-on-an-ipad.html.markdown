@@ -1,6 +1,7 @@
 ---
 title: Thoughts on the MacBook
 date: 2015-11-09 02:12:18 UTC
+index: true
 background_image: /img/blog/running-xcode-on-an-ipad/background.png
 background_image_source: https://twitter.com/CloudyConway/status/659154558044786688
 og_image: /img/blog/running-xcode-on-an-ipad/bag.jpg

@@ -1,6 +1,7 @@
 ---
 title: "Anyone Can Learn"
 date: 2014-09-11 00:00
+index: true
 ---
 
 I've started a [project](https://github.com/AnyoneCanLearn/AnyoneCanLearn) called "AnyoneCanLearn". You can read the information there for the goals and values and everything; this blog post isn't about promoting it or explaining it. It's about providing my motivation.

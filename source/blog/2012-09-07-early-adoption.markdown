@@ -1,6 +1,7 @@
 ---
 title: "Early Adoption"
 date: 2012-09-07 00:00
+index: true
 ---
 
 There's been a lot written over the past few months about Twitter being a total dick by [cutting off it's old API](https://dev.twitter.com/blog/changes-coming-to-twitter-api), [killing off third party developers](http://mashable.com/2012/08/16/twitter-api-big-changes/), and ["sunsetting" the Twitter for Mac app](http://news.cnet.com/8301-1023_3-57507980-93/twitter-said-to-be-tossing-twitter-for-mac-app/). It feels like Twitter is out to get us geeks, who were the early adopters of this platform. We feel that we gave Twitter the content that attracted the mass of users it is now using to grow, a growth they feel necessitates cutting off the experience we all have come to enjoy.

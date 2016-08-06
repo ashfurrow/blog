@@ -1,6 +1,7 @@
 ---
 title: "2013 So Far"
 date: 2013-10-02 00:00
+index: true
 ---
 
 2013 has been an interesting year for me. The year was born out of the ruins of a relationship with my old employer, who I had previously admired. I gave my letter of resignation my first day back after the Christmas holidays.

@@ -1,6 +1,7 @@
 ---
 title: "A Culture of Denial"
 date: 2013-01-16 00:00
+index: true
 ---
 
 I read a very insightful article this morning about Aaron Swartz's suicide and the [culture of denial in the tech world](http://psychcentral.com/blog/archives/2013/01/15/aaron-swartz-a-culture-of-denial-depression-suicide-in-tech/). One of the key takeaways from the article is that there still exists a stigma around mental illness.

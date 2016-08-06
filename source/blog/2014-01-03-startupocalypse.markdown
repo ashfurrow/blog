@@ -1,6 +1,7 @@
 ---
 title: "Startupocalypse"
 date: 2014-01-03 00:00
+index: true
 ---
 
 Startups. The industry seems to have a love-hate relationship with them. I've worked in a few, and am returning to the startup world next month.

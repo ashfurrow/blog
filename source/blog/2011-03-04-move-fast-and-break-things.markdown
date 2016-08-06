@@ -1,6 +1,7 @@
 ---
 title: "Move Fast and Break Things"
 date: 2011-03-04 00:00
+index: true
 ---
 
 When I was in Rochester, NY for the ICPC Regional Programming Competition last Fall, one of the coders from Facebook gave the participants a talk discussing the company. Part of their development philosophy is "move fast and break things." While everyone hates when facebook breaks with the latest update, and innovation should be tempered by caution, I really like the philosophy. It turns out it's something that comes directly from [Mark Zuckerburg](http://www.geek.com/articles/news/mark-zuckerberg-says-you-need-to-move-fast-and-break-things-2009102/); he believes that it fosters innovation. I'm inclined to agree.

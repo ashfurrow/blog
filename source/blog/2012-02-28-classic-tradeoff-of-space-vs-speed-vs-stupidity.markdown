@@ -1,6 +1,7 @@
 ---
 title: "Classic Tradeoff of Space vs Speed vs Stupidity"
 date: 2012-02-28 00:00
+index: true
 ---
 
 I'm working on a Mac App that uses a series of png files as frames in an animation. Why not an animated gif? Because they have no alpha channel. I draw the appropriate frame in drawRect: and wanted to create a "drop shadow" effect behind each image that is the image, inverted and offset by 1 pixel downwards. My initial attempt looked like the following.

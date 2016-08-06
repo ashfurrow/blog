@@ -1,6 +1,7 @@
 ---
 title: "Calling BS on Flow State"
 date: 2013-12-01 00:00
+index: true
 ---
 
 I read a [really interesting](http://blogs.msdn.com/b/eric_brechner/archive/2013/12/01/the-flow-fallacy.aspx) article this morning on _flow state_, that magical state of mind for developers where you're insanely productive and whip out tonnes of code. The author refers to it as nirvana, and he's right.

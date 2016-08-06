@@ -1,6 +1,7 @@
 ---
 title: "Killing the Crunch Mode Antipattern"
 date: 2014-01-23 00:00
+index: true
 ---
 
 I read a really great article on [crunch mode](http://chadfowler.com/blog/2014/01/22/the-crunch-mode-antipattern/) today. It discusses what crunch and why it's dumb. (I know I made a resolution to be more positive on this blog, but there are few things that turn my stomach more than the stupidity of crunch mode.)

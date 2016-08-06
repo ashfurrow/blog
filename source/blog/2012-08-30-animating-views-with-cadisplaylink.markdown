@@ -1,6 +1,7 @@
 ---
 title: "Animating Views with CADisplayLink"
 date: 2012-08-30 00:00
+index: true
 ---
 
 After [yesterday's post](/blog/animating-views-with-nstimer-and-dispatch_after/) on animating views with `NSTimer` and `dispatch_after`, [Robin Senior](http://twitter.com/senior) responded on twitter with the following question:

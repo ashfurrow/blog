@@ -1,6 +1,7 @@
 ---
 title: Self Care Cheat Sheet
 date: 2015-07-12 22:26:24 UTC
+index: true
 ---
 
 The other day, [this article on self care](http://eponis.tumblr.com/post/113798088670/everything-is-awful-and-im-not-okay-questions-to) floated across my timeline. I took a look and it looks like a very useful tool for anyone struggling with depression. 

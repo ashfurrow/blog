@@ -1,6 +1,7 @@
 ---
 title: "Price of Film"
 date: 2014-10-08 00:00
+index: true
 ---
 
 If your electricity bill increased, would you pay it? Probably. I mean, most people would. The increase in price wouldn’t spark a decision about whether or not you should continue to have a electric connection at home. It is just a fact of contemporary life.

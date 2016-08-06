@@ -1,6 +1,7 @@
 ---
 title: Canadian Survival Guide for Manhattan
 date: 2015-08-15 19:40:55 UTC
+index: true
 background_image: /img/blog/canadian-survival-guide-for-manhattan/background.png
 background_image_source: https://twitter.com/CloudyConway/status/632528646847209472
 ---

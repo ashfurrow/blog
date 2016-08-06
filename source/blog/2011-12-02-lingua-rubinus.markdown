@@ -1,6 +1,7 @@
 ---
 title: "Lingua Rubinus"
 date: 2011-12-02 00:00
+index: true
 ---
 
 I've been writing iOS apps for two years, now. Before that, I had experience in ASP.Net &nbsp;3.5 with a C# codebehind. I've also done some open source C coding as part of my honours thesis. For the most part, I've been living in a world of native application development with only academic pursuits of server-centric languages such as PHP with almost no exposure to the frameworks used to write server software.

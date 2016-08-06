@@ -1,6 +1,7 @@
 ---
 title: "Dissecting the Usability of Internet Surveys"
 date: 2011-04-09 00:00
+index: true
 ---
 
 Ashley sent me a [survey](http://cup.ca/survey) for the Canadian University Press&nbsp;because she knew that I'd appreciate tearing it apart on my blog. I'm looking forward to our life together. First off, we have this gem:

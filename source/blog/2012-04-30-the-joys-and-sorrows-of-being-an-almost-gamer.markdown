@@ -1,6 +1,7 @@
 ---
 title: "The Joys and Sorrows of Being an Almost-Gamer"
 date: 2012-04-30 00:00
+index: true
 ---
 
 John Siracusa of [Hypercritical](http://5by5.tv/hypercritical/) has spent the last two episodes, [64](http://5by5.tv/hypercritical/64) and [65](http://5by5.tv/hypercritical/65) discussing gaming as an art form. He draws the conclusion that hard-core video games (not, say, Angry Birds) are a form of art but are novel in that they require skill to appreciate. Unlike wine tasting or film appreciation, some people will never have the hand-eye coordination to appreciate games like Portal.

@@ -1,6 +1,7 @@
 ---
 title: "iOS Toronto Accessible Slides"
 date: 2012-11-21 00:00
+index: true
 ---
 
 I gave a talk last night at [iOS Toronto](http://www.meetup.com/iOSToronto/) and had a great time. It's nice to get away from the computer and spend time with what my friend describes as "our people."

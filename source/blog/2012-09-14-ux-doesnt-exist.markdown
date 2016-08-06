@@ -1,6 +1,7 @@
 ---
 title: "UX Doesn't Exist"
 date: 2012-09-14 00:00
+index: true
 ---
 
 I went to the [FITC Screens](http://www.fitc.ca) Sneak Peek event tonight. It was as much out of interest in mobile design and development as it was research for the presentation I'm giving at the conference in two weeks (omg - only two weeks! Ugh!).

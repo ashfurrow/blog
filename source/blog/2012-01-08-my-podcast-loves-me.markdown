@@ -1,6 +1,7 @@
 ---
 title: "My Podcast Loves Me"
 date: 2012-01-08 00:00
+index: true
 ---
 
 It's no small secret that I'm hilarious. Since starting at 500px, I've worked with people who are also hilarious, so we started a podcast! It's called " [--force](http://dashdashforce.me/)" (like you do on the command line) since it's ostensibly about what it takes to work at a startup. ( [iTunes link](http://itunes.apple.com/us/podcast//id486218686))

@@ -1,6 +1,7 @@
 ---
 title: "Functional Reactive Programming for GUIs"
 date: 2014-01-02 00:00
+index: true
 link_to: iosfrp
 ---
 

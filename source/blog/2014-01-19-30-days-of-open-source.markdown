@@ -1,6 +1,7 @@
 ---
 title: "30 Days of Open Source"
 date: 2014-01-19 00:00
+index: true
 ---
 
 I don't make New Year's resolutions; they're pointless and only lead to disappointment. Instead, I like to challenge myself, and over the Christmas break, I did just that.

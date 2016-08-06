@@ -1,6 +1,7 @@
 ---
 title: Expectations for Open Source
 date: 2016-02-08 01:04:27 UTC
+index: true
 background_image: /img/blog/expectations-for-open-source/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/696114194584899584
 ---

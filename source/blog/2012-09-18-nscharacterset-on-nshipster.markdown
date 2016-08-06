@@ -1,6 +1,7 @@
 ---
 title: "NSCharacterSet on NSHipster"
 date: 2012-09-18 00:00
+index: true
 ---
 
 I really enjoyed [this week's NSHipster](http://nshipster.com/nscharacterset/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NSHipster+%28NSHipster%29). It discusses the uses, and misuses, of `NSCharacterSet` as well as a few other obscure-ish string-related classes.

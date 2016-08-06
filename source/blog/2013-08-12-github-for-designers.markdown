@@ -1,6 +1,7 @@
 ---
 title: "GitHub for Designers"
 date: 2013-08-12 00:00
+index: true
 ---
 
 I'll be presenting a talk at [FITC SCREENS](http://fitc.ca/screens) this October in Toronto about using GitHub as a designer. It's going to go over a high-level of what git is and how to use it when working with a product team.

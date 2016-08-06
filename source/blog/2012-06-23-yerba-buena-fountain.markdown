@@ -1,6 +1,7 @@
 ---
 title: "Yerba Buena Fountain"
 date: 2012-06-23 00:00
+index: true
 ---
 
 I took this photo at WWDC 2012 with my (new at the time) Sony point-and-shoot. It was over a year before I even thought of buying a DSLR and I hadn't done any research into serious photography.

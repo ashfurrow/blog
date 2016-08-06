@@ -1,6 +1,7 @@
 ---
 title: "Twitter Cuts IFTTT's Balls Off"
 date: 2012-09-20 00:00
+index: true
 ---
 
 I just got an interesting form email from the CEO of [IFTTT](https://ifttt.com), which read, in part, as follows.

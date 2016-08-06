@@ -1,6 +1,7 @@
 ---
 title: "Readability 2.0"
 date: 2014-01-23 00:00
+index: true
 ---
 
 My friends at Readability have released the 2.0 version of their reading application. You can download it from the [App Store](https://itunes.apple.com/us/app/readability/id460156587?mt=8&uo=4&at=1l3v6zC).

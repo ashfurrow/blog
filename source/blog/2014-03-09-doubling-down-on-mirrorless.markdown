@@ -1,6 +1,7 @@
 ---
 title: "Doubling Down on Mirrorless"
 date: 2014-03-09 00:00
+index: true
 ---
 
 I [wrote recently](/blog/fuji-x100s-review) that I had purchased a Fuji X100S. At the time I reviewed the camera, I really liked it. In the weeks that followed, I've grown to love it. Since moving to Amsterdam I've taken it everywhere. Literally _everywhere_ I go.

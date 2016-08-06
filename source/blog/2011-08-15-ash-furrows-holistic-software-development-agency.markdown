@@ -1,6 +1,7 @@
 ---
 title: "Ash Furrow's Holistic Software Development Agency"
 date: 2011-08-15 00:00
+index: true
 ---
 
 Douglas Adams, timeless writer, authored a book I titled "Dirk Gently's Holistic Detective Agency." In it, a private detective named Dirk investigates mysteries beyond the understanding of people who fail to recognize what he calls the "fundamental interconnectedness of all things." By widening his focus to beyond only what appears to be connected to the case, he is able to solve the mysteries (and squeeze a few etra pounds out of his clients' wallets). If you're in the business of software, you can take [whatever approach you want](/blog/creating-software/). Remember that your approach defines you as a professional.

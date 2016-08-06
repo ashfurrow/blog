@@ -1,6 +1,7 @@
 ---
 title: "NSNorth"
 date: 2013-01-15 00:00
+index: true
 ---
 
 I'm going to be attending the [NSNorth](http://nsnorth.ca) conference this April in Ottawa.

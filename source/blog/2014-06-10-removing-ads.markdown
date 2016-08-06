@@ -1,6 +1,7 @@
 ---
 title: "Removing Ads"
 date: 2014-06-10 00:00
+index: true
 ---
 
 For the past few years, I've been running this blog with small advertisements on the side (or above if you're on mobile). I've decided to remove them.

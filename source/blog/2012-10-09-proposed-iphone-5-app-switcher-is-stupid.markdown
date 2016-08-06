@@ -1,6 +1,7 @@
 ---
 title: "Proposed iPhone 5 App Switcher is Stupid"
 date: 2012-10-09 00:00
+index: true
 ---
 
 I saw [this article](http://www.theverge.com/2012/10/4/3451322/rethinking-the-app-switcher-for-the-iphone-5-mockups) tweeted by someone last week. The idea is that with the iPhone 5's taller screen, we can "fix" the multitask bar.

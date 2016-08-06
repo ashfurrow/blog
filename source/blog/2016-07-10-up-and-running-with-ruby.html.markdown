@@ -1,6 +1,7 @@
 ---
 title: Up and Running with Ruby
 date: 2016-07-10 23:32:45 UTC
+index: true
 background_image: /img/blog/up-and-running-with-ruby/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/748397745938010112
 ---

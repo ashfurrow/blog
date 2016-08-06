@@ -1,6 +1,7 @@
 ---
 title: Photography Workflows
 date: 2016-07-24 16:31:27 UTC
+index: true
 background_image: /img/blog/photography-workflows/background.jpg
 background_image_source: https://www.instagram.com/p/lkPbtOjBqt/
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Cold War &amp; Fiction"
 date: 2011-09-23 00:00
+index: true
 ---
 
 I was born in 1988 and, growing up, had no idea of the important political events that were unfolding in the world at the time. The first time that something from outside my hometown of 5 000 people really affected me was September 11th. I was in grade 8. I knew that there had been a "Cold War" but didn't know what it meant. In television shows, people would use the term "nuclear bomb" but I didn't understand the fear it instilled. As I grew older, I started consuming more adult media but it was too late; the words just didn't drive the same impact as I could tell they were meant to.

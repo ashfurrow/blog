@@ -1,6 +1,7 @@
 ---
 title: "Functional Programming in Swift"
 date: 2014-09-19 00:00
+index: true
 link_to: frpswift
 ---
 

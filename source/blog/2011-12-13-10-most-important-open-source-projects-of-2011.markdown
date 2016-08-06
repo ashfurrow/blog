@@ -1,6 +1,7 @@
 ---
 title: "10 Most Important Open Source Projects of 2011"
 date: 2011-12-13 00:00
+index: true
 ---
 
 [Interesting article](https://www.linux.com/news/featured-blogs/196:zonker/524082:the-10-most-important-open-source-projects-of-2011). I found the following quite illuminating:

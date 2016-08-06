@@ -1,6 +1,7 @@
 ---
 title: "Photographic Rut"
 date: 2014-09-05 00:00
+index: true
 ---
 
 Lately, I've been feeling like I'm in a bit of a photographic rut. Not taking as many photos, not developing them as quickly, and not posting anything when I do. It's been going on since about April, which is a shame. This past week, though, I've made an effort to get out there and take some photos. It's been hard, since I've been sick for the past four days, but fresh air helps, even if it's just a ten-minute stroll around the block. And I always make sure I have a camera with me.

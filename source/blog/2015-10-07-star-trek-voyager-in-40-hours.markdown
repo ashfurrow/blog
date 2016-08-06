@@ -1,6 +1,7 @@
 ---
 title: Star Trek Voyager in 40 Hours
 date: 2015-10-07 15:41:00 UTC
+index: true
 og_image: /img/blog/2015-10-07-star-trek-voyager-in-40-hours/crash.jpg
 ---
 

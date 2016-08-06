@@ -1,6 +1,7 @@
 ---
 title: Lessons Learned Travelling Europe
 date: 2014-11-16 11:16:06 UTC
+index: true
 background_image: /img/blog/lessons-learned-travelling-europe/tower.jpg
 background_image_source: https://500px.com/photo/66654595/tour-by-ash-furrow
 ---

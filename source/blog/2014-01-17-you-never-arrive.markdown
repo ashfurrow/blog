@@ -1,6 +1,7 @@
 ---
 title: "You Never Arrive"
 date: 2014-01-17 00:00
+index: true
 ---
 
 Someone asked me today what the best advice I ever received was, and after some thought, I came up with this: You never arrive.

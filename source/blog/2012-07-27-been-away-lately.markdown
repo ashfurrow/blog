@@ -1,6 +1,7 @@
 ---
 title: "Been Away Lately"
 date: 2012-07-27 00:00
+index: true
 ---
 
 Regular readers of my blog may have noticed that I haven't posted lately. Mostly, this has been because photography has taken up most of creative energy (outside of my job, anyway). Additionally, after contributing a few chapters to [a book on Objective-C](http://www.amazon.com/gp/product/1430243686/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1430243686&linkCode=as2&tag=ashfur-20) was pretty taxing on me as a writer. 

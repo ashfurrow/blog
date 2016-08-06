@@ -1,6 +1,7 @@
 ---
 title: "Hierarchy of Needs"
 date: 2014-01-14 00:00
+index: true
 ---
 
 So there's Maslow's " [hierarchy of needs](http://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs)", right? They list basic needs, like food and water, at the bottom and list complex needs, like self-actualization, at the top. As a developer, I believe that I need to be concerned with mainly complex needs in order to be the most productive, and the most happy.

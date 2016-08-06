@@ -1,6 +1,7 @@
 ---
 title: "Two Years of Indie App Sales"
 date: 2011-12-22 00:00
+index: true
 ---
 
 It's been two years since I decided to start developing iOS apps and wrote Coffee Timer, the app I was sure would sweep the App Store (it didn't). At the time, I couldn't afford a new Intel Mac, so all my development was done on my then fiancées MacBook and my first generation iPod Touch. Here is a graph representing sales of paid apps over the past two years.

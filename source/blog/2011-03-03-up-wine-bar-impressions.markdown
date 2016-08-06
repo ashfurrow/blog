@@ -1,6 +1,7 @@
 ---
 title: "Up Wine Bar Impressions"
 date: 2011-03-03 00:00
+index: true
 ---
 
 Ashley and I found a deal on [Snaggit.ca](http://snaggit.ca/) last week for Up Wine Bar's ( [web](http://upwinebar.ca/) | [twitter](http://twitter.com/#!/upwinebar)) first wine tasting. We had a great time, and I thought I'd give my impressions of the evening. First, the space is great - it's a relaxing. The decor is modern with sort of French accents and brick. It only holds about 30 people, and all the surfaces are hard, so echoes were a problem. One group of guests were very noisy, and wouldn't be quiet so we could all hear what our host, Doug, was trying to tell us about the wines. Some drapes or other soft surfaces would help to dampen the noise.

@@ -1,6 +1,7 @@
 ---
 title: "iOS Community Growing Pains"
 date: 2014-01-07 00:00
+index: true
 ---
 
 I read a really interesting article this morning about [developing for iOS 7 and beyond](http://www.schukin.com/developing-for-ios-8/).

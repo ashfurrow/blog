@@ -1,6 +1,7 @@
 ---
 title: "New Espresso Machine"
 date: 2011-05-29 00:00
+index: true
 ---
 
 This post entirely describes a [first-world problem](http://twitter.com/#!/search?q=%23firstworldproblem). I've been into espresso for about two years now; I'm pretty happy with where I am in terms of palette and equipment with one exception: my machine.

@@ -1,6 +1,7 @@
 ---
 title: "Exploring UIAlertController"
 date: 2014-09-07 00:00
+index: true
 link_to: swift
 ---
 

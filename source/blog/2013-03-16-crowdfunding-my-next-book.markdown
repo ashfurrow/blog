@@ -1,6 +1,7 @@
 ---
 title: "Crowdfunding my Next Book"
 date: 2013-03-16 00:00
+index: true
 ---
 
 I've decided to crowdfund my next book on [Indigogo](http://www.indiegogo.com/projects/your-first-ios-app/x/2700170) and I'm super pumped!

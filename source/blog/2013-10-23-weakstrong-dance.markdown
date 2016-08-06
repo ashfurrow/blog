@@ -1,6 +1,7 @@
 ---
 title: "Weak/Strong Dance"
 date: 2013-10-23 00:00
+index: true
 link_to: swift
 ---
 

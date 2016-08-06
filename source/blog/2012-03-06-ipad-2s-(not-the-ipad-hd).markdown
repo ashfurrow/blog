@@ -1,6 +1,7 @@
 ---
 title: "iPad 2S (not the iPad HD)"
 date: 2012-03-06 00:00
+index: true
 ---
 
 There's a big Apple event tomorrow to announce the new iPad. From the [rumours](http://www.macrumors.com/2012/03/04/ipad-3-parts-put-together-on-video-ipad-2-smart-cover-still-works/), it'll be almost identical to the iPad 2 except with a "retina" display and possibly a better camera. Which is why I believe that it will be announced as the "iPad 2S"

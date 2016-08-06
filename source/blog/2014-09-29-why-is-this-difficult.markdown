@@ -1,6 +1,7 @@
 ---
 title: "Why is this Difficult?"
 date: 2014-09-29 00:00
+index: true
 ---
 
 Take a ride with me in the way-back machine. It was July in the year of 2014. Times were different – simpler – they didn’t even have iPhone 6’s! A team of documentarians had a goal to create a documentary about software and its cultural impacts on society. Pretty cool, huh? So they put it up for [Crowdfunding](https://www.kickstarter.com/projects/appdocu/app-the-human-story) and easily reach their goal of $100,000. They actually reach 163% of their goal, and kudos to them.

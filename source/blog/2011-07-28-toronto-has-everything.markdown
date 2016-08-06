@@ -1,6 +1,7 @@
 ---
 title: "Toronto has Everything"
 date: 2011-07-28 00:00
+index: true
 ---
 
 Ashley and I are still getting used to a lot, including being secluded from our friends and Family out East and the demands of my new job. One thing we're quickly getting used to is the&nbsp;accessibility&nbsp;of almost anything we could possibly want.

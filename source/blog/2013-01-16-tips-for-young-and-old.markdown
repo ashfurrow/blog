@@ -1,6 +1,7 @@
 ---
 title: "Tips for Young and Old"
 date: 2013-01-16 00:00
+index: true
 ---
 
 Stuart Hall has a good roundup of [tips for developing iOS apps](http://stuartkhall.com/posts/ios-development-tips-i-would-want-if-i-was-starting-out-today). While he's targeted newcomers to the platform with the post, experienced practioners of iOS development would do well to read the list over and re-examine any assumptions they made earlier in their practice. Maybe some of those assumptions are still valid, but maybe some of the reasoning behind them has since become irrelevant.

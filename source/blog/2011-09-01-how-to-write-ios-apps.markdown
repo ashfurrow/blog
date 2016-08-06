@@ -1,6 +1,7 @@
 ---
 title: "How to Write iOS Apps"
 date: 2011-09-01 00:00
+index: true
 ---
 
 Well, how to write good ones, anyways. This article describes how _programmers_ can make good iOS apps. It kind of assumes they can design them, too. However, I recently realized two things:

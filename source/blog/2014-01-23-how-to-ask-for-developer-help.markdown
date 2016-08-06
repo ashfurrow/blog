@@ -1,6 +1,7 @@
 ---
 title: "How to Ask for Developer Help"
 date: 2014-01-23 00:00
+index: true
 ---
 
 I've written four books and dozens of tutorials and sample code projects, so I get a bit of questions from readers over email. I love hearing from people and getting questions, and I make it very easy to get in touch with me.

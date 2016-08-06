@@ -1,6 +1,7 @@
 ---
 title: "Kopi Luwak"
 date: 2012-08-24 00:00
+index: true
 ---
 
  ![](/img/import/blog/kopi-luwak/3535D310E659479F8D9AA05C2C592BBF.jpg)

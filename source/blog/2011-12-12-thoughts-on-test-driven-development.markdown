@@ -1,6 +1,7 @@
 ---
 title: "Thoughts on Test-Driven Development"
 date: 2011-12-12 00:00
+index: true
 ---
 
 I read an article this morning on [Test-Driven Development](http://codesheriff.blogspot.com/2011/11/excuse-5-frequent-refactoring-excuse.html), or TDD. TDD is the software development paradigm that dictates that you don't write any code without first writing tests for that code; that way, you'll know when you're done (all the tests pass).

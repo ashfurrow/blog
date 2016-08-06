@@ -1,6 +1,7 @@
 ---
 title: "Canada Isn't So Great"
 date: 2012-10-15 00:00
+index: true
 ---
 
 In the last year, I've made many American friends - mostly those who share a passion for mobile software development.

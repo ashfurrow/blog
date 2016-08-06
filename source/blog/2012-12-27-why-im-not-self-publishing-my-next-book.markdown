@@ -1,6 +1,7 @@
 ---
 title: "Why I'm Not Self-Publishing My Next Book"
 date: 2012-12-27 00:00
+index: true
 ---
 
 Last Summer, I co-authored my [first book](http://www.amazon.com/gp/product/1430243686/ref=as_li_ss_tl?ie=UTF8&tag=ashfur-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1430243686). I was ecstatic to be asked to join the principle author, [Jim Dovey](https://twitter.com/alanquatermain), to write chapters introducing readers to the Foundation classes, etc. A month after the book was released, I'm still frustrated with the publisher, Apress, for a number of reasons I won't discuss here. However, I had decided to write another book — an eBook — and to self-publish it.

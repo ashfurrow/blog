@@ -1,6 +1,7 @@
 ---
 title: "Job Hunt"
 date: 2014-03-16 00:00
+index: true
 ---
 
 As I announced on twitter this morning, my job in Amsterdam hasn't worked out. I don't like going into details on these matters, but it suffices to say that I feel like I'm not a good fit for them. Knowing what I know now, I would not have accepted an offer from this company (I hadn't – and won't – name them).

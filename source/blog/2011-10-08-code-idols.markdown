@@ -1,6 +1,7 @@
 ---
 title: "Code Idols"
 date: 2011-10-08 00:00
+index: true
 ---
 
 I've been programming professionally for a few years now. While I have been, I've done everything I can do to help my aspirations of being awesome at writing software. In internships, I've sat at the proverbial feet of code gurus who were happy to dispense their wisdom. In time, I learned that their wisdom was mostly informed opinion and, if I got good enough, someday my opinions could be as well informed as theirs were. My interests in areas of software development drifted, as did the programmers I idolized. Some were coworkers or professors and some were bloggers or open source contributors. I had my test-driven development faze where I hung on Robert Martin's every tweet. There was my infatuation with Linq, near the end of my .Net days, which eventually led to a revival in functional programming in the form of Clojure. And who could forget C and my long nights with the [C89-compliant codebase](http://code.google.com/p/odin-ii/) I contributed to?

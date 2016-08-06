@@ -1,6 +1,7 @@
 ---
 title: "Code is Beautiful"
 date: 2011-03-16 00:00
+index: true
 ---
 
 A [classmate of mine](http://twitter.com/#!/nanoinfinity) wrote an interesting blog post yesterday about how [Code is Beautiful](http://philenotfound.blogspot.com/2011/03/code-is-beautiful.html).

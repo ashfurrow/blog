@@ -1,6 +1,7 @@
 ---
 title: Perfectionism
 date: 2016-01-03 23:54:16 UTC
+index: true
 background_image: /img/blog/perfectionism/background.png
 background_image_source: https://twitter.com/CloudyConway/status/682821645908766720
 ---

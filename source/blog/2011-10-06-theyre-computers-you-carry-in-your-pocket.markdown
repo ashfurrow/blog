@@ -1,6 +1,7 @@
 ---
 title: "They're Computers you Carry in your Pocket"
 date: 2011-10-06 00:00
+index: true
 ---
 
 I'd like you to put yourself back in 2004 for a minute. "Smartphone" was a&nbsp;relatively&nbsp;new term and usually referred to Blackberries. Most people who had a "smartphone" were business people with corporate accounts with their cell providers, who only charged them $40 for 10MB of text-only email.

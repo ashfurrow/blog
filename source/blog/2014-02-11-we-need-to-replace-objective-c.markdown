@@ -1,6 +1,7 @@
 ---
 title: "We Need to Replace Objective-C"
 date: 2014-02-11 00:00
+index: true
 link_to: swift
 ---
 

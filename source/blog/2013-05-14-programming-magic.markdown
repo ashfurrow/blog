@@ -1,6 +1,7 @@
 ---
 title: "Programming Magic"
 date: 2013-05-14 00:00
+index: true
 ---
 
 When I was in university, every time I sat down to program I felt a rush of excitement and a sense of exploration. I would always learn something new, and things always felt new to me.

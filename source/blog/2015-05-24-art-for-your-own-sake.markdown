@@ -1,6 +1,7 @@
 ---
 title: Art for Your Own Sake
 date: 2015-05-24 14:37:17 UTC
+index: true
 background_image: /img/blog/art-for-your-own-sake/header.jpg
 background_image_source: https://500px.com/photo/109691453/at-the-beach-by-ash-furrow
 summary: "There are a lot of photographers out there – ones I really respect – who recommend shooting on <a href='http://erickimphotography.com/blog/2013/04/19/3-reasons-why-you-should-shoot-with-one-camera-and-one-lens/'>one camera, using one lens</a>. The reasons they often cite are definitely compelling."

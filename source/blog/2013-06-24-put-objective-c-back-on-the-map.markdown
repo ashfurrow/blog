@@ -1,6 +1,7 @@
 ---
 title: "Put Objective-C Back On The Map"
 date: 2013-06-24 00:00
+index: true
 ---
 
 I've partnered with the good folks down at [Cue](https://www.cueup.com/) to organize a [distributed Objective-C hackathon](https://objectivechackathon.appspot.com) this weekend.

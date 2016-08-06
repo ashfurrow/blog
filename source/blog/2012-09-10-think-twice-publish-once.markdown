@@ -1,6 +1,7 @@
 ---
 title: "Think Twice, Publish once"
 date: 2012-09-10 00:00
+index: true
 ---
 
 Oh, look, a giant shit storm is brewing on the Internet. HP released a new, [obvious knock-off](http://www.engadget.com/2012/09/10/hp-spectre-one-all-in-one-envy-20-envy-23-pavilion-20/) of the iMac.

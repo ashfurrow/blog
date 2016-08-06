@@ -1,6 +1,7 @@
 ---
 title: "Amsterdam First Impressions"
 date: 2014-02-23 00:00
+index: true
 ---
 
 My wife and I landed in Amsterdam last Monday, so we've been here about a week. I thought it would be nice to do a "first impressions" of the city, the atmosphere, and the work environment.

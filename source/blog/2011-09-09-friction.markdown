@@ -1,6 +1,7 @@
 ---
 title: "Friction"
 date: 2011-09-09 00:00
+index: true
 ---
 
 One of the first things you learn in Human-Computer Interaction is that software is used by people to help them accomplish some task. That's why we call them users, because they're _using_&nbsp;software. That is the primary goal of any piece of software, to help complete a task. A word processor helps a user write a document. An mp3 player helps a user listen to their music. A web browser lets a user access the Internet. And so on.

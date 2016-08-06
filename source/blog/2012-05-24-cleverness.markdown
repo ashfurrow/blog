@@ -1,6 +1,7 @@
 ---
 title: "Cleverness"
 date: 2012-05-24 00:00
+index: true
 ---
 
 I have a profound appreciation for well-designed things, and I feel this appreciation helps me write better software. Naturally, this wasn't always the case. No one really teaches you why design matter in school, and even in the software industry of New Brunswick, there was nary a designer to be found.

@@ -1,6 +1,7 @@
 ---
 title: Swift Playgrounds & Creativity
 date: 2016-06-26 16:35:02 UTC
+index: true
 og_image: /img/blog/swift-playgrounds-creativity/playground.jpg
 background_image: /img/blog/swift-playgrounds-creativity/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/747033594598678528

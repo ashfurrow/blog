@@ -1,6 +1,7 @@
 ---
 title: "Site Change"
 date: 2011-09-24 00:00
+index: true
 ---
 
 I re-ordered the links at the top of my site today.

@@ -1,6 +1,7 @@
 ---
 title: "FITC Screens Presentation"
 date: 2012-08-08 00:00
+index: true
 ---
 
 I'm presenting a talk at the FITC Screens conference this September in Toronto; it's a "developer's behind the scenes" presentation of the 500px iPad app, and you should totally [check it out](http://www.fitc.ca/events/presentations/presentation.cfm?event=134&presentation_id=2044).

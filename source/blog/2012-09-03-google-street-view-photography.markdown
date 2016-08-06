@@ -1,6 +1,7 @@
 ---
 title: "Google Street View Photography"
 date: 2012-09-03 00:00
+index: true
 ---
 
 My friend [Sam](https://twitter.com/nanoinfinity) linked to a [really interesting project](http://9-eyes.com) that [Jon Rafman](http://jonrafman.com) has done to collection Google Street View images as a work of artful photography.

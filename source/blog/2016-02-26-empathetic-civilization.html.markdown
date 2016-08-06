@@ -1,6 +1,7 @@
 ---
 title: Empathetic Civilization
 date: 2016-02-26 15:42:17 UTC
+index: true
 background_image: /img/blog/empathetic-civilization/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/702573726831927297
 ---

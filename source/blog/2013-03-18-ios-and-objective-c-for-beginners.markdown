@@ -1,6 +1,7 @@
 ---
 title: "iOS and Objective-C for Beginners"
 date: 2013-03-18 00:00
+index: true
 ---
 
 My friend [Andrey](https://twitter.com/tochilin) helped me record this video for my [Indiegogo](http://www.indiegogo.com/projects/your-first-ios-app/x/2700170) campaign. Check it out.

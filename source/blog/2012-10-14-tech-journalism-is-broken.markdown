@@ -1,6 +1,7 @@
 ---
 title: "Tech Journalism is Broken"
 date: 2012-10-14 00:00
+index: true
 ---
 
 [Poignant piece](http://stupidiswinning.tumblr.com/post/33563734252/tech-journalism-is-broken) over on _Stupid is Winning_.

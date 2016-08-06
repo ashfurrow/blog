@@ -1,6 +1,7 @@
 ---
 title: "The Dark Side of Perfectionism"
 date: 2012-09-11 00:00
+index: true
 ---
 
 On a recent episode of [Back to Work](http://5by5.tv/b2w/83), our friend Merlin Mann made the following remark, and it struck me so deeply that I stopped walking to work and rewound just to listen to it a few more times.

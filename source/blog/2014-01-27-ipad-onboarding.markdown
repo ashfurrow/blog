@@ -1,6 +1,7 @@
 ---
 title: "iPad Onboarding"
 date: 2014-01-27 00:00
+index: true
 ---
 
 My parents were in town for the weekend and we went to the Apple Store to get them their first iPad, and, in fact, their first ever Apple product. Mom uses a laptop a lot for games and Facebook, but Dad doesn't really touch it. The iPad was a gift for his birthday; it was important to me that they get a really easy-to-use tablet and not some Samsung knock-off.

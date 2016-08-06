@@ -1,6 +1,7 @@
 ---
 title: More on Sketching
 date: 2015-07-04 23:41:22 UTC
+index: true
 ---
 
 I've heard that everyone is born a sketcher – that we all drawn as children – until we reach a certain age. Then we realize that our drawings aren't accurate. That they don't reflect reality. That we lack the skill to produce something "good." 

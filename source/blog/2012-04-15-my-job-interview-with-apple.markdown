@@ -1,6 +1,7 @@
 ---
 title: "My Job Interview With Apple"
 date: 2012-04-15 00:00
+index: true
 ---
 
 5 weeks ago I was contacted by an Apple recruiter about a job opportunity working on the front-end of Siri. I love to my job at 500px and my life here in Toronto, but when the most valuable company in the history of economics asks if you'd like to chat, it's not really a question. It's a formality. 

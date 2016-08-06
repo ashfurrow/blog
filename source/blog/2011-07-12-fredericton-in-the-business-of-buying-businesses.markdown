@@ -1,6 +1,7 @@
 ---
 title: "Fredericton: In the Business of Buying Businesses"
 date: 2011-07-12 00:00
+index: true
 ---
 
 While It's been three weeks since I left New Brunswick, I'm still keeping up to date on news around the province. I came across &nbsp;a Gleaner article this morning entitled " [City gets hands on northside strip bar](http://dailygleaner.canadaeast.com/rss/article/1422766?utm_source=twitterfeed&utm_medium=twitter)" and was intrigued. I mean, props to the Gleaner for their article title that totally _went there_ and everything, but I was more interested in the idea that Fredericton spent half a million dollars to buy land that a strip bar was on. Hmmm ... The cynic in me immediately thought maybe the city bought the bar to shut it down, but I wanted to give the article a fair read-over. Apparently the land was purchased by the city for "future development", whatever that means. In the end, the issues I had with the deal were as follows:

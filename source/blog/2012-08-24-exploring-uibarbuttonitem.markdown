@@ -1,6 +1,7 @@
 ---
 title: "Exploring UIBarButtonItem"
 date: 2012-08-24 00:00
+index: true
 ---
 
 Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring.

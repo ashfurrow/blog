@@ -1,6 +1,7 @@
 ---
 title: "ShareKit Sucks: A Rant"
 date: 2012-01-19 00:00
+index: true
 ---
 
 God I am so done with [ShareKit](http://getsharekit.com/). I've never used Three20, so it may only be the _second_&nbsp;biggest steaming pile of shit on the Internet, but either way it sucks so hard. Using it is like banging your face in with a hammer. A hammer made of crushed dreams and melted iced cream that's been refrozen.

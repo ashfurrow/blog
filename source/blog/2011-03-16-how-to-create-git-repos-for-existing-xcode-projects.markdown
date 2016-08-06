@@ -1,6 +1,7 @@
 ---
 title: "How to Create Git Repos for Existing Xcode Projects"
 date: 2011-03-16 00:00
+index: true
 ---
 
 UPDATE: Apparently just initializing an empty repository in the project directory is enough; Xcode autodetects it for you. It be nice if something to that effect was in the documentation. Thanks to Jason for that ( [details here](http://nearthespeedoflight.com/article/creating_a_git_repository_for_an_existing_xcode_project)). Open the project directory in a terminal and type the following:

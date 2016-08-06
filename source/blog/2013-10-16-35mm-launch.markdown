@@ -1,6 +1,7 @@
 ---
 title: "35mm Launch"
 date: 2013-10-16 00:00
+index: true
 ---
 
  ![](/img/import/blog/35mm-launch/504A5859A1E1495D8BBEE98DBE7009F5.png)

@@ -1,6 +1,7 @@
 ---
 title: "UICollectionView: The Complete Guide"
 date: 2013-04-25 00:00
+index: true
 ---
 
 My second book, [UICollectionView: The Complete Guide](http://www.informit.com/store/ios-uicollectionview-the-complete-guide-9780133410945) ( [Kindle](http://www.amazon.com/gp/product/B00CFLTD50/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00CFLTD50&linkCode=as2&tag=ashfur-20)) was released this week.

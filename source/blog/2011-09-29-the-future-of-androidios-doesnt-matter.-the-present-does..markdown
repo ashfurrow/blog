@@ -1,6 +1,7 @@
 ---
 title: "The Future of Android/iOS Doesn't Matter. The Present Does."
 date: 2011-09-29 00:00
+index: true
 ---
 
 I met an Android fan over the weekend - nice guy with a math degree. We got along fine :) I brought up the topic of Android vs. iOS and we had a good talk. Two of his main points were the following:

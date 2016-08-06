@@ -1,6 +1,7 @@
 ---
 title: "Fix iOS 6 SDK Linker Error"
 date: 2012-09-19 00:00
+index: true
 ---
 
 If you download the latest Xcode 4.5 with iOS 6 SDK, existing projects no longer compile. A common one might be the Google Analytics library; it will give the following error:

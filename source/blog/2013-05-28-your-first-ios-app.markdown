@@ -1,6 +1,7 @@
 ---
 title: "Your First iOS App"
 date: 2013-05-28 00:00
+index: true
 ---
 
 So I finished my awesome crowdfunded, stick-it-to-the-man, self-published book. Whew! 208 pages of pure iOS goodness.

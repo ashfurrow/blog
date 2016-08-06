@@ -1,6 +1,7 @@
 ---
 title: Steven Universe and Masculinity
 date: 2016-07-27 20:49:14 UTC
+index: true
 background_image: /img/blog/steven-universe-and-masculinity/background.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "SwiftCrunch Hackathon"
 date: 2014-07-06 00:00
+index: true
 link_to: swift
 ---
 

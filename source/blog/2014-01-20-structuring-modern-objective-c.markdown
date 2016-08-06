@@ -1,6 +1,7 @@
 ---
 title: "Structuring Modern Objective-C"
 date: 2014-01-20 00:00
+index: true
 link_to: swift
 ---
 
