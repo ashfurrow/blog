@@ -1,0 +1,12 @@
+---
+---
+
+/ Page Header
+= partial :header, locals: { title: 'Search', background_image: '/img/uicollectionview/background.jpg' }
+
+.container
+  .row
+    - standard_width_div do
+      %input.search-box#search{type: 'text'}
+
+      %ul.search-results
