@@ -8,8 +8,9 @@
  * Note from Ash: I've heavily removed things; see their original for more.
  */
 
-var index;
-var map;
+var lunrIndex = null;
+var lunrData  = null;
+var lunrMap  = null;
 
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
@@ -43,29 +44,42 @@ jQuery(document).ready(function($) {
       });
   }
 
-  $.getJSON('/search.json', function(data){
-    console.log(data);
-    index = lunr.Index.load(data.index);
-    map = data.map;
-
-    $("#search").bind("keyup", function(){
-      $(".search-results").empty();
-      if ($(this).val() < 2) return;
-      var query = $(this).val();
-      
-      var results = index.search(query);
-      $.each(results, function(index, result){
-        console.log(results, map[result.ref]);
-        $(".search-results").append(
-          '<li class="result-item">' +
-            '<a href="' + result.ref + '">' + map[result.ref].title + '</a>' +
-          '</li>'
-        );
-      });
-    });
+  // Download search json and set up.
+  $.ajax({
+    url: '/search.json',
+    cache: false,
+    method: 'GET',
+    success: function(data) {
+      console.log('downloaded JSON');
+      setupSearch(data);
+    }
   });
 });
 
 var trackMaretingLink = function(link) {
    ga('send', 'event', 'marketing', link);
+}
+
+// Setup lunr index and callback for search-as-you-type. 
+function setupSearch(lunrData) {
+  console.log('Creating search index.');
+  lunrIndex = lunr.Index.load(lunrData.index);
+  lunrMap = lunrData.docs;
+  
+  $("#search").bind("keyup", function(){
+    $(".search-results").empty();
+    
+    var query = $(this).val();
+
+    if (query < 2) { return; }
+
+    $.each(lunrIndex.search(query), function(index, result) {
+      page = lunrMap[result.ref];
+      $(".search-results").append(
+        '<li class="result-item">' +
+          '<a href="' + page.url + '">' + page.title + '</a>' +
+        '</li>'
+      );
+    });
+  });
 }

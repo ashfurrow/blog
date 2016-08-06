@@ -15,7 +15,6 @@ set :relative_links, true
 
 activate :syntax
 activate :inliner
-activate :lunr
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -29,6 +28,17 @@ activate :blog do |blog|
   blog.summary_separator = /<!-- more -->/
   blog.new_article_template = "new_article.markdown.erb"
   blog.layout = "blog_post"
+end
+
+activate :search do |search|
+
+  search.resources = ['blog/', '/index.html', 'about/', 'books/', 'portfolio/', 'speaking/']
+
+  search.fields = {
+    title:   {boost: 100, store: true, required: true},
+    content: {boost: 50},
+    url:     {index: false, store: true},
+  }
 end
 
 ###

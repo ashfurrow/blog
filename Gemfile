@@ -5,7 +5,7 @@ gem 'middleman', '< 4'
 gem 'middleman-blog'
 gem 'middleman-syntax'
 gem 'middleman-inliner'
-gem 'middleman-lunr'
+gem 'middleman-search'
 
 gem 'httparty'
 gem 'json'
