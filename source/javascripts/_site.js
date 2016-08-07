@@ -62,6 +62,9 @@ var trackMaretingLink = function(link) {
 }
 
 // Setup lunrjs index and callback for search-as-you-type. 
+// Using jQuery isn't required here, but it makes things easier. We use it to
+// bind to events, search the DOM based on classes and ids, as well as to 
+// manipulate the DOM by unwrapping and removing elements.
 function setupSearch(lunrData) {
   console.log('Creating search index.');
   // Set up the index, store it and the map in two vars defined up top.
