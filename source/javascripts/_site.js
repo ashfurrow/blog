@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
   // Download search json and set up.
   $.ajax({
     url: '/search.json',
-    cache: false,
+    cache: true,
     method: 'GET',
     success: function(data) {
       console.log('Downloaded Search JSON.');
@@ -73,21 +73,26 @@ function setupSearch(lunrData) {
 
     var query = $(this).val();
 
-    if (query < 2) { return; }
+    if (query.length <= 2) { return; }
 
     var options = { year: "numeric", month: "long", day: "numeric" };
+    var results = lunrIndex.search(query)
 
-    $.each(lunrIndex.search(query), function(index, result) {
-      page = lunrMap[result.ref];
-      date = new Date(page.date.match(/\d{4}-\d{2}-\d{2}/)).toLocaleDateString("en-US", options);
-      $(".search-results").append(
-        '<div class="result">' +
-          '<a href="' + page.url + '">' + 
-            page.title +
-          '</a> &nbsp; ' +
-          '<div class="post-meta">' + date + '</div>' +
-        '</div>'
-      );
-    });
+    if (results.length == 0) {
+      $(".search-results").append('<p>No results.</p>');
+    } else {
+      $.each(results, function(index, result) {
+        page = lunrMap[result.ref];
+        date = new Date(page.date.match(/\d{4}-\d{2}-\d{2}/)).toLocaleDateString("en-US", options);
+        $(".search-results").append(
+          '<div class="result">' +
+            '<a href="' + page.url + '">' + 
+              page.title +
+            '</a> &nbsp; ' +
+            '<div class="post-meta">' + date + '</div>' +
+          '</div>'
+        );
+      });
+    }
   }).keyup();
 }
