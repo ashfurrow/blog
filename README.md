@@ -70,4 +70,4 @@ Server Setup
 
 The site is served from S3, but through CloudFlare's CDN. The CDN caches everything on edges. These edges respect the caching header set on individual files. CloudFlare also sets a browser cache expiration of 30 minutes for all content (if a longer one is not specified, see below).
 
-[After deploying](https://github.com/ashfurrow/blog/blob/f84ffd2b623a8aa244d2d252400b0d58ba9179bf/config.rb#L93-L104), new or modified files in the `javascripts`, `css`, `img`, and `fonts` directories have one year cache expirations set. Afterward, Cloudflare's cached content is invalidated. Users are served fresh css and javascript after changes made to those files because middleman [uses hashes for those resources](https://github.com/ashfurrow/blog/blob/f09370070b062b5319cab2852b8c4cc46095358d/config.rb#L59); updated css/javascript will be stored in a differently named file.
+[After deploying](https://github.com/ashfurrow/blog/blob/69d11af382a7e271718ca7e5e6abc4d7c49c8550/Rakefile#L68-L80) to [github.com/ashfurrow/ashfurrow.github.io](https://github.com/ashfurrow/ashfurrow.github.io), Cloudflare's cached content is invalidated. 
