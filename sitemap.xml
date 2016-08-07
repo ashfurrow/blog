@@ -3577,6 +3577,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/</loc>
+    <lastmod>2016-08-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://ashfurrow.com/img/blog/static-site-search-with-middleman-and-lunrjs/background.jpg</image:loc>
+    </image:image>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://ashfurrow.com/books/</loc>
     <lastmod>2016-08-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>

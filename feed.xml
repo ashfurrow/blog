@@ -4,10 +4,72 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2016-08-03T15:25:51+00:00</updated>
+  <updated>2016-08-07T15:03:06+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Static Site Search with Middleman and lunrjs</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/"/>
+    <id>https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/</id>
+    <published>2016-08-07T15:03:06+00:00</published>
+    <updated>2016-08-07T15:03:06+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;A few months ago, &lt;a href="https://github.com/ashfurrow/blog/issues/213"&gt;someone opened an issue&lt;/a&gt; asking for a site search on my blog. Neat idea, it wasn&amp;rsquo;t high on my list of priorities at the time, but maybe I&amp;rsquo;d get to it someday.&lt;/p&gt;
+
+&lt;p&gt;Well, today&amp;rsquo;s the day 🎉&lt;/p&gt;
+
+&lt;p&gt;(Note: The original &amp;ldquo;the day&amp;rdquo; was two weeks ago but I had given up in frustration.)&lt;/p&gt;
+
+
+
+&lt;p&gt;Search is an interesting problem. Most search engines run on servers and not the browser client. This site, just like all static sites like those built with &lt;a href="https://middlemanapp.com"&gt;Middleman&lt;/a&gt;, is generated on a computer before being served statically. It&amp;rsquo;s a faster, easier, and more secure way of serving web pages that don&amp;rsquo;t need dynamism, but it does mean that you can&amp;rsquo;t run server code when a page is fetched.&lt;/p&gt;
+
+&lt;p&gt;Running search on servers makes sense for DuckDuckGo and Google because their search engines are trying to cover the whole internet. But for a site like mine, a client-side search engine written in Javascript can be a suitable solution.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://lucene.apache.org/solr/"&gt;Solr&lt;/a&gt; is an open source search engine. &lt;a href="http://lunrjs.com"&gt;lunrjs&lt;/a&gt; is a Javascript-based search engine, which claims to be:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A bit like Solr, but much smaller and not as bright.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Lovely. I think the sun-vs-moon metaphor for server-vs-client search engines is really apt.&lt;/p&gt;
+
+&lt;p&gt;There are a few Middleman extensions that integrate lunrjs search into static sites, but I couldn&amp;rsquo;t get any to work for me because I didn&amp;rsquo;t understand how they worked. I ended up &lt;a href="https://github.com/256dpi/middleman-lunr/blob/5c49621007e003da0b748ec8bd34bfc7b11240d2/lib/middleman-lunr/indexer.rb#L23-L64"&gt;reading the source code&lt;/a&gt; of one to understand &lt;em&gt;exactly&lt;/em&gt; how it worked. Even then, I couldn&amp;rsquo;t get things right. It turns out that I didn&amp;rsquo;t know enough Javascript to use a Javascript-based search engine. Not yet anyway.&lt;/p&gt;
+
+&lt;p&gt;I submitted a &lt;a href="https://github.com/ashfurrow/blog/pull/232"&gt;work-in-progress pull request&lt;/a&gt; and gave up again.&lt;/p&gt;
+
+&lt;p&gt;After a little break and some food, I went back and looked into a different extension. Actually it was the original extension I tried but I couldn&amp;rsquo;t get it working. I understood what it was doing on the Ruby side, and concentrated just on the Javascript. After looking up some jQuery syntax, I had something that worked.&lt;/p&gt;
+
+&lt;p&gt;Some fiddling with CSS and lining things up, &lt;a href="https://github.com/ashfurrow/blog/pull/233"&gt;I had a ready PR&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;a href="/search"&gt;&lt;img alt="Screenshot of site search" src="https://ashfurrow.com/img/blog/static-site-search-with-middleman-and-lunrjs/screenshot.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;Site search stumped me for weeks. Distinct from search engines in general, server-side static site search is a very interesting problem in its own right. Ruby code uses Javascript to generate a search engine index of the content of my entire site. Then client-side Javascript downloads that index and uses lunrjs to run queries against it. It crosses the dynamic-to-static barrier, which isn&amp;rsquo;t something many other features of static sites need to do.&lt;/p&gt;
+
+&lt;p&gt;After submitting the pull request, I realized I had been working into the late evening, that I&amp;rsquo;d had a beer or two, and that maybe pushing code to production wasn&amp;rsquo;t the best thing to do. I pinged Orta on the pull request and asked for a second opinion. It can never hurt to have someone double-check things for you.&lt;/p&gt;
+
+&lt;p&gt;Things checked out, and &lt;a href="/search"&gt;search is here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/ashfurrow/blog/pull/233"&gt;The pull request is here&lt;/a&gt;, so feel free to comment on anything that you&amp;rsquo;d like clarification on or that you have a suggestion about. I&amp;rsquo;m sure there are ways this could be more idiomatically done.&lt;/p&gt;
+
+&lt;p&gt;Writing new features into software can be overwhelming, and stepping back for a break is usually the right answer. It&amp;rsquo;s okay to give up if things are getting frustrating, and it&amp;rsquo;s okay to ask for help.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;PARTY TIP: At the end of the day, just try your hardest to be nice.&lt;/p&gt;&amp;mdash; ANDREW W.K. (@AndrewWK) &lt;a href="https://twitter.com/AndrewWK/status/722843678994219009"&gt;April 20, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;We&amp;rsquo;re all in this together.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Asking for Help in Open Source</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/asking-for-help-in-open-source/"/>
@@ -400,58 +462,6 @@
 &lt;p&gt;The only thing that matters about your photos is that you like enjoy them.&lt;/p&gt;
 
 &lt;p&gt;Tools, workflows, none of it matters except in the context of making you happy. Maybe that&amp;rsquo;ll be my answer the next time someone expresses disbelief or confusion about how I shoot: it makes me happy, and that&amp;rsquo;s all that matters.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Up and Running with Ruby</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/up-and-running-with-ruby/"/>
-    <id>https://ashfurrow.com/blog/up-and-running-with-ruby/</id>
-    <published>2016-07-10T23:32:45+00:00</published>
-    <updated>2016-07-10T23:32:45+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Ruby has always kind of intimidated me. Largely I think because I cut my teeth on Java, C++, C#, which are static-ish and Ruby&amp;rsquo;s decidedly dynamic. And by the time I started writing Objective-C, even it had &lt;a href="https://ashfurrow.com/blog/adulterated-objective-c/"&gt;started evolving to be less dynamic&lt;/a&gt;. Ruby – and frameworks written in Ruby – involve &lt;em&gt;so much magic&lt;/em&gt; that&amp;rsquo;s always kind of scared me away.&lt;/p&gt;
-
-
-
-&lt;p&gt;Working at Artsy has exposed me to Ruby in a lot of ways: a lot of the Artsy backend projects I&amp;rsquo;m interested in use Ruby; I&amp;rsquo;ve helped out with CocoaPods and other developer tools that happen to be written in Ruby; and now when I go to write a new tool, Ruby is the language I use because I have so many colleagues to help me. &lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve gotten a &lt;em&gt;tonne&lt;/em&gt; more competent in Ruby since I &lt;a href="https://ashfurrow.com/blog/lingua-rubinus/"&gt;complained about my lack of literacy in 2011&lt;/a&gt;. Since starting at Artsy, I&amp;rsquo;ve published &lt;a href="https://rubygems.org/profiles/ashfurrow"&gt;six Ruby gems&lt;/a&gt; and I&amp;rsquo;ve contributed to lots of other projects.&lt;/p&gt;
-
-&lt;p&gt;After a recent crunch writing Swift, I needed a change of pace. I found some great projects to dig into with Ruby and I&amp;rsquo;ve learnt &lt;em&gt;so much&lt;/em&gt;. It was kind of intense – packed over a long weekend – but I made sure to take lots of breaks and do non-programming things. Oh, and to reflect on what I&amp;rsquo;ve learnt. Which brings us to this blog post.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://danger.systems"&gt;Danger&lt;/a&gt; is a tool from &lt;a href="https://twitter.com/orta"&gt;Orta Therox&lt;/a&gt; and &lt;a href="https://twitter.com/krausefx"&gt;Felix Krause&lt;/a&gt;. I remember talking to Orta about ways to codify and automate team culture, and the next thing I knew the two of them had made something really awesome. Basically, Danger is a tool that runs as part of continuous integration which comments on pull requests if it notices any problems. You should definitely check out &lt;a href="http://artsy.github.io/blog/2016/07/03/handling-big-projects/"&gt;this post detailing Danger&amp;rsquo;s development&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Using Danger has a number of advantages, here are my favourites:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It saves the project maintainer time.&lt;/li&gt;
-&lt;li&gt;It prevents overlooked problems from being accidentally merged.&lt;/li&gt;
-&lt;li&gt;It softens the emotional impact of criticism (since it&amp;rsquo;s automated and not from a person).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Super cool! Orta&amp;rsquo;s been integrating Danger into as many repositories as he can – open source projects and Artsy ones. So I kind of got pulled into it too, and now use Danger on a lot of my own projects. Open source ones like &lt;a href="https://github.com/Moya/Moya"&gt;Moya&lt;/a&gt; but also personal projects like this &lt;a href="https://github.com/ashfurrow/blog"&gt;blog&lt;/a&gt;. For example, Danger now runs my new blog posts through &lt;a href="https://github.com/amperser/proselint"&gt;proselint&lt;/a&gt; and lets me know about spelling/grammar mistakes, awkward wording, mixed metaphors, unintentional sexism – all kinds of stuff.&lt;/p&gt;
-
-&lt;p&gt;I decided that if prose was worth linting with Danger, Swift code probably was too. Danger was designed with plugins as first-class citizens, and with the example &lt;a href="https://github.com/dbgrandi/danger-prose"&gt;&lt;code&gt;danger-proselint&lt;/code&gt;&lt;/a&gt; plugin by &lt;a href="https://twitter.com/dbgrandi"&gt;Dave Grandinetti&lt;/a&gt;, I wrote &lt;a href="https://github.com/ashfurrow/danger-swiftlint"&gt;&lt;code&gt;danger-swiftlint&lt;/code&gt;&lt;/a&gt;. Copying Dave&amp;rsquo;s repo was a great way to start because I had a blueprint of what to build, and just had to add the finer details. I really got into unit testing with Rspec, too.&lt;/p&gt;
-
-&lt;p&gt;So I had built a Danger plugin in Ruby and felt pretty good about myself. Later, when I added Danger to &lt;a href="https://github.com/Moya/Moya/pull/521#issuecomment-229961410"&gt;Moya&lt;/a&gt;, &lt;a href="https://github.com/Moya/Moya/pull/521#issuecomment-229961410"&gt;Orta suggested&lt;/a&gt; that I have Danger point out when new contributors should be invited to our organization (inviting new members after their first PR is a &lt;a href="https://github.com/Moya/contributors"&gt;cornerstone of Moya&amp;rsquo;s community guidelines&lt;/a&gt;). That&amp;rsquo;s a great idea, but since I was having so much fun with Ruby, I thought: what if I just automated the whole invitation process?&lt;/p&gt;
-
-&lt;p&gt;A quick DuckDuckGo search later, and I found that GitHub has some &lt;a href="https://developer.github.com/webhooks/configuring/"&gt;awesome documentation&lt;/a&gt; on their WebHooks API, including a sample server written in Sinatra, a lightweight web framework for Ruby. From there, and a few tutorials, I experimented and slowly built &lt;a href="https://github.com/Moya/Aeryn"&gt;Aeryn&lt;/a&gt;. Building a new Ruby project from scratch was the next step up from copying an existing codebase and modifying it, like I did with &lt;code&gt;danger-swiftlint&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Aeryn is really cool: new contributors get invited to join our organization and are sent a friendly message with details. This happens whenever someone has their first pull request merged. The project is fully unit tested, has been built so other organizations can use it out-of-the-box, and is easily deployable to free Heroku accounts.&lt;/p&gt;
-
-&lt;p&gt;And Aeryn uses Danger, including &lt;a href="https://github.com/bbatsov/rubocopp"&gt;Rubocop&lt;/a&gt;, a Ruby static analyzer. This led to &lt;em&gt;another&lt;/em&gt; Danger plugin called &lt;a href="https://github.com/ashfurrow/danger-rubocop"&gt;&lt;code&gt;danger-rubocop&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;So three new Ruby projects completed in as many days. Like I said, intense!&lt;/p&gt;
-
-&lt;p&gt;I struggled. A lot. When I couldn&amp;rsquo;t figure something out on my own, I &lt;a href="https://twitter.com/ashfurrow/status/749367814369214464"&gt;asked for help&lt;/a&gt;. Orta offered a lot of &lt;a href="https://github.com/Moya/Aeryn/pull/9#discussion_r69395068"&gt;proactive advice&lt;/a&gt; and used metaphors from Objective-C development to help explain concepts. Automated tools like &lt;a href="https://github.com/bbatsov/rubocop"&gt;Rubocop&lt;/a&gt; were really helpful at showing me how to write idiomatic Ruby.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;I still have much to learn. &lt;a href="https://t.co/kl2FQUHv03"&gt;pic.twitter.com/kl2FQUHv03&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ash Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/750844591331500032"&gt;July 7, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s been really fun diving into a different community, where I&amp;rsquo;m inexperienced. I&amp;rsquo;ve felt angry when things don&amp;rsquo;t work the way I expect them to, and I&amp;rsquo;ve felt gleeful when some things work on the first try. It&amp;rsquo;s all part of the learning process. &lt;/p&gt;
-
-&lt;p&gt;I am glad to have been knocked back on my ass: more experienced developers tend to forget what it&amp;rsquo;s like to be a beginner, and this was a nice, small reminder. Having empathy for beginners is crucial to writing learning resources, and now that I have more free time, that&amp;rsquo;s something I definitely want to start doing again.&lt;/p&gt;
 </content>
   </entry>
 </feed>
