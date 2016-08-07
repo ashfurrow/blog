@@ -7,6 +7,9 @@
 .container
   .row
     - standard_width_div do
-      %input.form-control#search{type: 'text', placeholder: 'Search for...'}
+      .input-group.margin-bottom-sm
+        %input.form-control#search{type: 'text', placeholder: 'Search for...'}
+        .input-group-addon#search-result-group
+          %i.fa.fa-circle-o-notch.fa-spin.fa-fw
 
       .search-results

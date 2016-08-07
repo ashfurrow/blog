@@ -69,8 +69,4 @@ set :partials_dir, 'layouts'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-
-  # Refer to javascript, css assets with build-secific filenames.
-  activate :asset_hash, ignore: [/^img\/.*/, /^fonts\/.*/, /^[^\/]*$/]
-  # Last one is for root-directory favicons, etc.
 end

@@ -64,7 +64,10 @@ function setupSearch(lunrData) {
   console.log('Creating search index.');
   lunrIndex = lunr.Index.load(lunrData.index);
   lunrMap = lunrData.docs;
-  
+
+  $('#search').unwrap();
+  $('#search-result-group').remove();
+
   $("#search").bind("keyup", function(){
     $(".search-results").empty();
 
@@ -86,5 +89,5 @@ function setupSearch(lunrData) {
         '</div>'
       );
     });
-  });
+  }).keyup();
 }
