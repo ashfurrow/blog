@@ -1,6 +1,7 @@
 ---
 title: "In-House with Artsy"
 date: 2014-06-10 00:00
+index: true
 ---
 
 A few months ago, I [started a new job](/blog/new-job) at [Artsy](https://artsy.net). Artsy is based in New York and I've been working remotely from Amsterdam.

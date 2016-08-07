@@ -28,6 +28,33 @@ li {
   }
 }
 
+/* Search. */
+
+.search-results {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  a {
+    color: @brand-primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .result {
+
+    padding-left: 0px;
+    line-height: 35px;
+
+    .post-meta {
+      color: @gray;
+      display: inline;
+    }
+  }
+}
+
 /* Need to give links the same treatment in lists as we do in paragraphs. */
 article li a {
   color: @brand-primary;
@@ -67,7 +94,7 @@ code, pre {
 }
 
 .nav {
-  #feed_text_link {
+  .text-link {
 
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) {
@@ -75,7 +102,7 @@ code, pre {
     }
   }
 
-  #feed_link {
+  .icon-link {
     font-size: 16px;
 
     display: none;

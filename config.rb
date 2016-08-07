@@ -30,6 +30,18 @@ activate :blog do |blog|
   blog.layout = "blog_post"
 end
 
+activate :search do |search|
+
+  search.resources = ['blog/']
+
+  search.fields = {
+    title:   {boost: 100, store: true, required: true},
+    date:    {index: false, store: true},
+    content: {boost: 50},
+    url:     {index: false, store: true},
+  }
+end
+
 ###
 # Other settings
 ###
@@ -57,8 +69,4 @@ set :partials_dir, 'layouts'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-
-  # Refer to javascript, css assets with build-secific filenames.
-  activate :asset_hash, ignore: [/^img\/.*/, /^fonts\/.*/, /^[^\/]*$/]
-  # Last one is for root-directory favicons, etc.
 end

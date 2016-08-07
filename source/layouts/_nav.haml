@@ -20,5 +20,8 @@
         %li= link_to 'Portfolio', '/portfolio/'
         %li= link_to 'Speaking', '/speaking/'
         %li
-          = link_to 'Blog Feed', data.site.feed_link, id: 'feed_text_link', relative: false
-          = link_to '<i class="fa fa-rss-square"></i>', data.site.feed_link, id: 'feed_link', relative: false
+          = link_to 'Search', '/search', class: 'text-link'
+          = link_to '<i class="fa fa-search"></i>', '/search', class: 'icon-link'
+        %li
+          = link_to 'Blog Feed', data.site.feed_link, relative: false, class: 'text-link'
+          = link_to '<i class="fa fa-rss-square"></i>', data.site.feed_link, relative: false,  class: 'icon-link'

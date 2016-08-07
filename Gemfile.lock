@@ -122,6 +122,10 @@ GEM
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
     middleman-inliner (1.0.1)
+    middleman-search (0.8.0)
+      middleman-core (>= 3.2)
+      nokogiri (~> 1.6)
+      therubyracer (~> 0.12.2)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -213,6 +217,7 @@ DEPENDENCIES
   middleman (< 4)
   middleman-blog
   middleman-inliner
+  middleman-search
   middleman-syntax
   nokogiri
   rake
