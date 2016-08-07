@@ -8,9 +8,14 @@ noindex: true
 .container
   .row
     - standard_width_div do
+      / Input group is a bootstrap element we use for adding a spinner addon.
       .input-group.margin-bottom-sm
+        / This is the search box itself.
         %input.form-control#search{type: 'text', placeholder: 'Search for...'}
+
+        / This is the spinner addon, removed using Javascript once the index is downloaded.
         .input-group-addon#search-result-group
           %i.fa.fa-circle-o-notch.fa-spin.fa-fw
 
+      / Search results are added inside this div, styled in _custom.less.
       .search-results

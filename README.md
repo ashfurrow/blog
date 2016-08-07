@@ -80,3 +80,4 @@ Search is done using lunrjs through the [middleman-search plugin](https://github
 - Activation and configuration.
 - Inclusion in `all.js` sprockets file.
 - jQuery to connect the search box to lunrjs.
+- Set up for search box and results.
