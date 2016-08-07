@@ -28,6 +28,28 @@ li {
   }
 }
 
+.search-results {
+  a {
+    color: @brand-primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .result {
+
+    padding-left: 0px;
+    line-height: 35px;
+
+    .post-meta {
+      color: @gray;
+      display: inline;
+    }
+  }
+}
+
 /* Need to give links the same treatment in lists as we do in paragraphs. */
 article li a {
   color: @brand-primary;

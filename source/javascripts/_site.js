@@ -9,7 +9,6 @@
  */
 
 var lunrIndex = null;
-var lunrData  = null;
 var lunrMap  = null;
 
 // Navigation Scripts to Show Header on Scroll-Up
@@ -50,7 +49,7 @@ jQuery(document).ready(function($) {
     cache: false,
     method: 'GET',
     success: function(data) {
-      console.log('downloaded JSON');
+      console.log('Downloaded Search JSON.');
       setupSearch(data);
     }
   });
@@ -68,17 +67,23 @@ function setupSearch(lunrData) {
   
   $("#search").bind("keyup", function(){
     $(".search-results").empty();
-    
+
     var query = $(this).val();
 
     if (query < 2) { return; }
 
+    var options = { year: "numeric", month: "long", day: "numeric" };
+
     $.each(lunrIndex.search(query), function(index, result) {
       page = lunrMap[result.ref];
+      date = new Date(page.date.match(/\d{4}-\d{2}-\d{2}/)).toLocaleDateString("en-US", options);
       $(".search-results").append(
-        '<li class="result-item">' +
-          '<a href="' + page.url + '">' + page.title + '</a>' +
-        '</li>'
+        '<div class="result">' +
+          '<a href="' + page.url + '">' + 
+            page.title +
+          '</a> &nbsp; ' +
+          '<div class="post-meta">' + date + '</div>' +
+        '</div>'
       );
     });
   });

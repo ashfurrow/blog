@@ -32,10 +32,11 @@ end
 
 activate :search do |search|
 
-  search.resources = ['blog/', '/index.html', 'about/', 'books/', 'portfolio/', 'speaking/']
+  search.resources = ['blog/']
 
   search.fields = {
     title:   {boost: 100, store: true, required: true},
+    date:    {index: false, store: true},
     content: {boost: 50},
     url:     {index: false, store: true},
   }
