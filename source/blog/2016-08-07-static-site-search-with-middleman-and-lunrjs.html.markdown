@@ -27,7 +27,7 @@ There are a few Middleman extensions that integrate lunrjs search into static si
 
 I submitted a [work-in-progress pull request](https://github.com/ashfurrow/blog/pull/232) and gave up again.
 
-After a little break and some food, I went back and looked into a different extension. Actually it was the original extension I tried but I couldn't get it working. I understood what it was doing on the Ruby side, and concentrated just on the Javascript. After Googleing some jQuery syntax, I had something that worked.
+After a little break and some food, I went back and looked into a different extension. Actually it was the original extension I tried but I couldn't get it working. I understood what it was doing on the Ruby side, and concentrated just on the Javascript. After looking up some jQuery syntax, I had something that worked.
 
 Some fiddling with CSS and lining things up, [I had a ready PR](https://github.com/ashfurrow/blog/pull/233).
 
