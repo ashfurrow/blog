@@ -29,7 +29,7 @@
 
 
 
-&lt;p&gt;One thing I&amp;rsquo;ve added recently, that&amp;rsquo;s super-important to me, is to entrust a certain certificate. Blue Coat is a company that creates &lt;a href="https://en.wikipedia.org/wiki/Blue_Coat_Systems#Controversy"&gt;internet surveillance and censorship software&lt;/a&gt; and Semantic gave them an intermediate CA certificate. That means they can sign arbitrary certificates that you&amp;rsquo;re computer will trust (because your computer trusts Semantic, and Semantic trusts Blue Coat). &lt;/p&gt;
+&lt;p&gt;One thing I&amp;rsquo;ve added recently, that&amp;rsquo;s super-important to me, is to untrust a certain certificate. Blue Coat is a company that creates &lt;a href="https://en.wikipedia.org/wiki/Blue_Coat_Systems#Controversy"&gt;internet surveillance and censorship software&lt;/a&gt; and Semantic gave them an intermediate CA certificate. That means they can sign arbitrary certificates that you&amp;rsquo;re computer will trust (because your computer trusts Semantic, and Semantic trusts Blue Coat). &lt;/p&gt;
 
 
 
@@ -37,7 +37,7 @@
 
 
 
-&lt;p&gt;I&amp;rsquo;m not really into the idea of my computer trusting a company like Blue Coat, so I &lt;a href="https://blog.filippo.io/untrusting-an-intermediate-ca-on-os-x/"&gt;follow the instructions&lt;/a&gt; to entrust this certificate. I highly recommend you do, too.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not really into the idea of my computer trusting a company like Blue Coat, so I &lt;a href="https://blog.filippo.io/untrusting-an-intermediate-ca-on-os-x/"&gt;follow the instructions&lt;/a&gt; to untrust this certificate. I highly recommend you do, too.&lt;/p&gt;
 
 &lt;p&gt;And I recommend you document everything you do to make your computer awesome! &lt;/p&gt;
 </content>
