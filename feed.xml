@@ -91,7 +91,7 @@
 
 &lt;p&gt;Things checked out, and &lt;a href="/search"&gt;search is here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://github.com/ashfurrow/blog/pull/233"&gt;The pull request is here&lt;/a&gt;, so feel free to comment on anything that you&amp;rsquo;d like clarification on or that you have a suggestion about. I&amp;rsquo;m sure there are ways this could be more idiomatically done.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/ashfurrow/blog/pull/233"&gt;The pull request is here&lt;/a&gt;, so feel free to comment on anything that you&amp;rsquo;d like clarification on or that you have a suggestion about. I&amp;rsquo;m sure there are ways this could be more idiomatically done. (&lt;strong&gt;Update&lt;/strong&gt;: I&amp;rsquo;ve &lt;a href="https://github.com/ashfurrow/blog/pull/237"&gt;added documentation&lt;/a&gt; to all the code and linked to the relevant code &lt;a href="https://github.com/ashfurrow/blog"&gt;in the readme&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;Writing new features into software can be overwhelming, and stepping back for a break is usually the right answer. It&amp;rsquo;s okay to give up if things are getting frustrating, and it&amp;rsquo;s okay to ask for help.&lt;/p&gt;
 
