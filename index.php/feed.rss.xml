@@ -6,6 +6,36 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Fresh macOS Setup</title>
+      <link>https://ashfurrow.com/blog/fresh-macos-setup/</link>
+      <description>&lt;p&gt;There are a bunch of things I do when I re-install macOS on a computer, or when I begin working on a new computer. I don&amp;rsquo;t do this often, so it&amp;rsquo;s easy to forget the steps. So I &lt;a href="https://gist.github.com/ashfurrow/3865eed417a5fbe8402708e2c706eea6"&gt;documented everything in a gist&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;p&gt;I used to keep these steps in Notes.app but figured they should be public anyway (open source by default, right?) so here we are.&lt;/p&gt;
+
+
+
+&lt;script src="https://gist.github.com/ashfurrow/3865eed417a5fbe8402708e2c706eea6.js"&gt;&lt;/script&gt;
+
+
+
+&lt;p&gt;One thing I&amp;rsquo;ve added recently, that&amp;rsquo;s super-important to me, is to entrust a certain certificate. Blue Coat is a company that creates &lt;a href="https://en.wikipedia.org/wiki/Blue_Coat_Systems#Controversy"&gt;internet surveillance and censorship software&lt;/a&gt; and Semantic gave them an intermediate CA certificate. That means they can sign arbitrary certificates that you&amp;rsquo;re computer will trust (because your computer trusts Semantic, and Semantic trusts Blue Coat). &lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;BlueCoat now has a CA signed by Symantec &lt;a href="https://t.co/8OXmtpT6eX"&gt;https://t.co/8OXmtpT6eX&lt;/a&gt;&lt;br&gt;&lt;br&gt;Here&amp;rsquo;s how to untrust it &lt;a href="https://t.co/NDlbqKqqld"&gt;https://t.co/NDlbqKqqld&lt;/a&gt; &lt;a href="https://t.co/mBD68nrVsD"&gt;pic.twitter.com/mBD68nrVsD&lt;/a&gt;&lt;/p&gt;&amp;mdash; Filippo Valsorda (@FiloSottile) &lt;a href="https://twitter.com/FiloSottile/status/735940720931012608"&gt;May 26, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;I&amp;rsquo;m not really into the idea of my computer trusting a company like Blue Coat, so I &lt;a href="https://blog.filippo.io/untrusting-an-intermediate-ca-on-os-x/"&gt;follow the instructions&lt;/a&gt; to entrust this certificate. I highly recommend you do, too.&lt;/p&gt;
+
+&lt;p&gt;And I recommend you document everything you do to make your computer awesome! &lt;/p&gt;
+</description>
+      <pubDate>Tue, 09 Aug 2016 14:24:52 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/fresh-macos-setup/</guid>
+    </item>
+    <item>
       <title>Static Site Search with Middleman and lunrjs</title>
       <link>https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/</link>
       <description>&lt;p&gt;A few months ago, &lt;a href="https://github.com/ashfurrow/blog/issues/213"&gt;someone opened an issue&lt;/a&gt; asking for a site search on my blog. Neat idea, it wasn&amp;rsquo;t high on my list of priorities at the time, but maybe I&amp;rsquo;d get to it someday.&lt;/p&gt;
@@ -404,38 +434,6 @@
 </description>
       <pubDate>Wed, 27 Jul 2016 20:49:14 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/steven-universe-and-masculinity/</guid>
-    </item>
-    <item>
-      <title>Photography Workflows</title>
-      <link>https://ashfurrow.com/blog/photography-workflows/</link>
-      <description>&lt;p&gt;So it happened again, I saw something cool and took out my camera, and someone exclaimed &amp;ldquo;wow, film! Who uses film anymore?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Well, I do. Actually, plenty of people do.&lt;/p&gt;
-
-
-
-&lt;p&gt;This is okay, it&amp;rsquo;s a fair question. Film is &lt;em&gt;definitely&lt;/em&gt; not mainstream, so it&amp;rsquo;s a curiosity. I&amp;rsquo;m really fine with people expressing surprise at something so unusual to them. But then the follow-up question comes: &amp;ldquo;why don&amp;rsquo;t you just use digital?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;I know the person is trying to understand, and not trying to make me feel bad or anything, but it gets a bit annoying. I&amp;rsquo;ve &lt;a href="https://ashfurrow.com/blog/development/"&gt;blogged&lt;/a&gt; &lt;a href="https://ashfurrow.com/blog/shooting-film/"&gt;before&lt;/a&gt; &lt;a href="https://ashfurrow.com/blog/the-state-of-photography-in-2014/"&gt;about&lt;/a&gt; shooting film, and explaining it over and over gets tedious. I have to fight my initial frustration and remember that the person asking the question is probably genuinely curious.&lt;/p&gt;
-
-&lt;p&gt;I shoot on film because I like it. I &lt;a href="https://www.instagram.com/p/lmlVJ3jBrA/"&gt;develop&lt;/a&gt; my own film, mostly black and white, and then I scan them on a &lt;a href="http://amzn.to/2am4Czb"&gt;flatbed scanner&lt;/a&gt;. So I get to shoot on film but edit digitally in Lightroom. &lt;/p&gt;
-
-&lt;p&gt;Yeah, &lt;em&gt;Lightroom&lt;/em&gt;. I dodge and burn digitally, I clone stamp, I use the clarity slider. It&amp;rsquo;s not a contradiction, it&amp;rsquo;s fun.&lt;/p&gt;
-
-&lt;p&gt;I want to learn how to print photos from negatives, so I&amp;rsquo;m taking a workshop to learn. But I don&amp;rsquo;t need to, my workflow works for me. Shooting film is fun, and editing digitally is fun too. &lt;/p&gt;
-
-&lt;p&gt;I really have to emphasize that I don&amp;rsquo;t care so much about my photos as I do about my photography. The photos are the end result, but the photography is the process, and &lt;em&gt;that&lt;/em&gt; is what I&amp;rsquo;m all about.&lt;/p&gt;
-
-&lt;p&gt;So here&amp;rsquo;s a hot take:&lt;/p&gt;
-
-&lt;p&gt;The only thing that matters about your photography is that you enjoy it.&lt;/p&gt;
-
-&lt;p&gt;The only thing that matters about your photos is that you like enjoy them.&lt;/p&gt;
-
-&lt;p&gt;Tools, workflows, none of it matters except in the context of making you happy. Maybe that&amp;rsquo;ll be my answer the next time someone expresses disbelief or confusion about how I shoot: it makes me happy, and that&amp;rsquo;s all that matters.&lt;/p&gt;
-</description>
-      <pubDate>Sun, 24 Jul 2016 16:31:27 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/photography-workflows/</guid>
     </item>
   </channel>
 </rss>
