@@ -43,7 +43,7 @@ After submitting the pull request, I realized I had been working into the late e
 
 Things checked out, and [search is here](/search).
 
-[The pull request is here](https://github.com/ashfurrow/blog/pull/233), so feel free to comment on anything that you'd like clarification on or that you have a suggestion about. I'm sure there are ways this could be more idiomatically done.
+[The pull request is here](https://github.com/ashfurrow/blog/pull/233), so feel free to comment on anything that you'd like clarification on or that you have a suggestion about. I'm sure there are ways this could be more idiomatically done. (**Update**: I've [added documentation](https://github.com/ashfurrow/blog/pull/237) to all the code and linked to the relevant code [in the readme](https://github.com/ashfurrow/blog).)
 
 Writing new features into software can be overwhelming, and stepping back for a break is usually the right answer. It's okay to give up if things are getting frustrating, and it's okay to ask for help.
 
