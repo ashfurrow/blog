@@ -30,10 +30,15 @@ activate :blog do |blog|
   blog.layout = "blog_post"
 end
 
+# Activate the middleman-search extension and customize it.
 activate :search do |search|
-
+  # I only want to search blog articles, not about/ or books/ or anything.
   search.resources = ['blog/']
 
+  # Search fields are indexed by default, but not stored. Storing takes up 
+  # space, so we should only store what is needed to render search results: the
+  # title, the date, and the URL. We'll index the content but no store it.
+  # Additionally, we apply a "boost" to the title and content fields. 
   search.fields = {
     title:   {boost: 100, store: true, required: true},
     date:    {index: false, store: true},

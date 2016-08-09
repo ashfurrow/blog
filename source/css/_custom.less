@@ -31,9 +31,11 @@ li {
 /* Search. */
 
 .search-results {
+  /* Gives us some nice spacing. */
   margin-top: 20px;
   margin-bottom: 30px;
 
+  /* Links are article titles, we only underline on hover. */
   a {
     color: @brand-primary;
     text-decoration: none;
@@ -42,12 +44,13 @@ li {
       text-decoration: underline;
     }
   }
-
+  
+  /* An individual search result. */
   .result {
-
     padding-left: 0px;
     line-height: 35px;
 
+    /* Make the date look faded and cool. */
     .post-meta {
       color: @gray;
       display: inline;
