@@ -17,7 +17,7 @@ gem 'therubyracer'
 gem 'less'
 gem 'builder'
 gem 'ansi'
-
+gem 'twitter'
 
 group :distribution do
   gem 'danger', '2.0.1'
