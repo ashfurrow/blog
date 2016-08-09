@@ -862,11 +862,14 @@ Licensed MIT
 </header><div class="container">
 <div class="row">
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Input group is a bootstrap element we use for adding a spinner addon. See: http://getbootstrap.com/components/#input-groups -->
 <div class="input-group margin-bottom-sm">
-<input class="form-control" id="search" placeholder="Search for..." type="text"><div class="input-group-addon" id="search-result-group">
+<!-- This is the search box itself. -->
+<input class="form-control" id="search" placeholder="Search for..." type="text"><!-- This is the spinner addon, removed using Javascript once the index is downloaded. --><!-- We use a FontAwesome spinner, see: http://fontawesome.io/examples/#animated --><div class="input-group-addon" id="search-result-group">
 <i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
 </div>
 </div>
+<!-- Search results are added inside this div, styled in _custom.less. -->
 <div class="search-results"></div>
 </div>
 </div>
