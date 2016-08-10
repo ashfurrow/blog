@@ -60,12 +60,13 @@ namespace :deploy do
   end
 
   task :fetch_gh_pages do
-    Dir.mkdir('build') unless Dir.exist?('build')
+    unless Dir.exist?('build')
+      `git clone -b gh-pages https://github.com/ashfurrow/blog.git build`
+    end
+
     Dir.chdir('build') do
-      `git init`
-      remote_exists = (`git remote | grep origin`).chomp.length > 0
-      `git remote add origin https://github.com/ashfurrow/ashfurrow.github.io.git` unless remote_exists
-      `git pull origin master`
+      `git checkout gh-pages`
+      `git pull origin gh-pages`
     end
   end
 
@@ -79,7 +80,7 @@ namespace :deploy do
       message = "Site updated to #{head}."
       `git add .`
       `git commit --allow-empty -m \"#{message}\"`
-      `git push origin master`
+      `git push origin gh-pages`
     end
   end
 end

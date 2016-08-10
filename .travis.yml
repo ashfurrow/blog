@@ -40,12 +40,7 @@ before_install:
   - ssh-add deploy_key
 
   # Setup deploy directory.
-  - mkdir build 
-  - cd build
-  -   git init
-  -   git remote add origin git@github.com:ashfurrow/ashfurrow.github.io.git
-  -   git pull origin master
-  -   cd .. 
+  - git clone -b gh-pages git@github.com:ashfurrow/blog build
 
   # Configure git.
   - git config --global user.name "Travis CI"
