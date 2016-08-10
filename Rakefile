@@ -14,13 +14,17 @@ end
 
 namespace :deploy do
 
-  def cdn
-    require 'cloudflare'
-    ::CloudFlare::connection(ENV['CLOUDFLARE_CLIENT_API_KEY'], ENV['CLOUDFLARE_EMAIL'])
-  end
+  CLOUDFLARE_ZONE_ID = 'cbd7eb9c9ccb4c9a8d84e2000dea93bf'
 
   task :invalidate do
-    cdn.fpurge_ts 'ashfurrow.com'
+    # Documented at https://api.cloudflare.com/#zone-purge-all-files
+    sh <<-EOS
+      curl -X DELETE "https://api.cloudflare.com/client/v4/zones/#{CLOUDFLARE_ZONE_ID}/purge_cache" \
+      -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
+      -H "X-Auth-Key: $CLOUDFLARE_CLIENT_API_KEY" \
+      -H "Content-Type: application/json" \
+      --data '{"purge_everything":true}'
+      EOS
   end
 
   desc "Deploys RSS and Atom feeds"

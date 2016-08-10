@@ -9,7 +9,6 @@ gem 'middleman-search'
 
 gem 'httparty'
 gem 'json'
-gem 'cloudflare'
 gem 'redcarpet'
 gem 'liquid'
 gem 'nokogiri'
