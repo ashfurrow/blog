@@ -70,7 +70,7 @@ Server Setup
 
 The site is served from S3, but through CloudFlare's CDN. The CDN caches everything on edges. These edges respect the caching header set on individual files. CloudFlare also sets a browser cache expiration of 30 minutes for all content (if a longer one is not specified, see below).
 
-[After deploying](https://github.com/ashfurrow/blog/blob/69d11af382a7e271718ca7e5e6abc4d7c49c8550/Rakefile#L68-L80) to [github.com/ashfurrow/ashfurrow.github.io](https://github.com/ashfurrow/ashfurrow.github.io), Cloudflare's cached content is invalidated.
+[After deploying](https://github.com/ashfurrow/blog/tree/master/Rakefile#L68-L80) to the gh-pages branch, Cloudflare's cached content is invalidated.
 
 Search
 ------
