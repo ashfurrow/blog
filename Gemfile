@@ -8,6 +8,7 @@ gem 'middleman-inliner'
 gem 'middleman-search'
 
 gem 'httparty'
+gem 'slim'
 gem 'json'
 gem 'redcarpet'
 gem 'liquid'
