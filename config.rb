@@ -3,6 +3,7 @@ require 'lib/add_links_to_navigation.rb'
 require 'lib/modify_widths.rb'
 require 'lib/embed.rb'
 require 'ansi/code'
+require 'slim'
 
 ###
 # Blog settings
@@ -10,8 +11,9 @@ require 'ansi/code'
 
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
-set :haml, ugly: true, format: :html5
 set :relative_links, true
+
+Slim::Engine.disable_option_validator!
 
 activate :syntax
 activate :inliner

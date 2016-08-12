@@ -10,7 +10,7 @@ priority: 0.25
 
 .container.archive
   .row
-    - standard_width_div do
+    = standard_width_div do
       %ol.months
         - page_articles.group_by {|a| a.date.year }.map{ |year, items| [year, items.group_by{|a| a.date.month}] }.each do |year, months|
           %li
