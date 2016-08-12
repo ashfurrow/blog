@@ -9,12 +9,12 @@
       .row
         == standard_width_div do
           == yield
-          hr/
+          hr
           span.meta="Posted on #{current_article.date.strftime('%B %e, %Y')}"
     .row
       == standard_width_div do
-        hr/
+        hr
         - if marketing_link
           == partial :marketing, :locals => { :book_name => marketing_link }
-          hr/
+          hr
         == partial :article_pager

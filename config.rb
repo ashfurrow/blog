@@ -13,7 +13,8 @@ set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
 set :relative_links, true
 
-Slim::Engine.disable_option_validator! # TODO: hr and img tags?
+# Disables useless slim warning.
+Slim::Engine.disable_option_validator!
 
 activate :syntax
 activate :inliner

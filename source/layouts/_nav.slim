@@ -3,7 +3,7 @@ nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
 
     / Brand and toggle get grouped for better mobile display
     .navbar-header.page-scroll
-      button.navbar-toggle type: 'button', 'data-toggle' => 'collapse', 'data-target' => '#bs-example-navbar-collapse-1' 
+      button.navbar-toggle type='button' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' 
         span.sr-only Toggle Navigation
         / Hamburger
         - 3.times do
@@ -14,14 +14,14 @@ nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       ul.nav.navbar-nav.navbar-right
-        li= link_to 'Blog', '/'
-        li= link_to 'About', '/about/'
-        li= link_to 'Books', '/books/'
-        li= link_to 'Portfolio', '/portfolio/'
-        li= link_to 'Speaking', '/speaking/'
+        li =link_to 'Blog', '/'
+        li =link_to 'About', '/about/'
+        li =link_to 'Books', '/books/'
+        li =link_to 'Portfolio', '/portfolio/'
+        li =link_to 'Speaking', '/speaking/'
         li
-          = link_to 'Search', '/search', class: 'text-link'
-          = link_to '<i class="fa fa-search"></i>', '/search', class: 'icon-link'
+          =link_to 'Search', '/search', class: 'text-link'
+          =link_to '<i class="fa fa-search"></i>', '/search', class: 'icon-link'
         li
           = link_to 'Blog Feed', data.site.feed_link, relative: false, class: 'text-link'
           = link_to '<i class="fa fa-rss-square"></i>', data.site.feed_link, relative: false,  class: 'icon-link'
