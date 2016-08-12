@@ -61,7 +61,7 @@ meta name='msapplication-TileImage' content='/mstile-144x144.png'
 meta name='theme-color' content='#398ccc' 
 
 / Search enginer index
-- if current_resource && current_resource.metadata[:page]['noindex']
+- if current_resource && current_resource.metadata[:page][:noindex]
   meta name='robots' content='noindex' /
 
 / Rich Snippets

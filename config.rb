@@ -19,7 +19,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = "{title}.html"
 
-  blog.summary_separator = /(READMORE)/
+  blog.summary_separator = /\(READMORE\)/
   blog.new_article_template = "new_article.markdown.erb"
   blog.layout = "partials/_blog_post"
 end

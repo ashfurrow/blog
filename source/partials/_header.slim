@@ -1,8 +1,8 @@
-- image_name = current_resource.metadata[:page]['background_image']
+- image_name = current_resource.metadata[:page][:background_image]
 - image_name ||= (background_image if defined? background_image)
 - image_name ||= data.site.default_background_image
 
-- background_image_source = current_resource.metadata[:page]['background_image_source']
+- background_image_source = current_resource.metadata[:page][:background_image_source]
 
 header.intro-header style="background-image: url('#{image_name}');"
   .header-dimmer
