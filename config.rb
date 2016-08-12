@@ -4,15 +4,16 @@ require 'lib/modify_widths.rb'
 require 'lib/embed.rb'
 require 'ansi/code'
 require 'slim'
+require 'less'
 
 ###
 # Blog settings
 ###
 
-set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
+# set :markdown_engine, :redcarpet
+# set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
 set :relative_links, true
-set :slim
+set :slim, :layout_engine => :slim
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -53,13 +54,12 @@ helpers CustomHelpers
 
 activate :syntax
 activate :directory_indexes
+activate :sprockets
 # activate :add_links_to_navigation
 # activate :modify_widths
 # activate :embed
 
-page "/feed.xml", layout: false
-page "/feed.rss.xml", layout: false
-page "/sitemap.xml", layout: false
+page "/*.xml", layout: false
 
 set :css_dir, 'css'
 set :js_dir, 'javascripts'

@@ -1,3 +1,3 @@
-//= require "_site"
-//= require "_timeline"
+//= require "site"
+//= require "timeline"
 //= require lunr.min
