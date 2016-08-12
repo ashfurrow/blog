@@ -87,10 +87,6 @@ script type='application/ld+json'
 = stylesheet_link_tag '/css/all'
 = javascript_include_tag 'typekit'
 
-/ TODO: I don't need most of these most of the time, should limit stylesheets to specific pages.
-- ['site', 'custom'].each do |c| # , 'timeline', 'portfolio', 'speaking', 'books'
-  = stylesheet_link_tag "/css/#{c}.css"
-
 / TODO: Fix this
 / = stylesheet_inline_tag 'critical'
 / = javascript_inline_tag 'typekit'

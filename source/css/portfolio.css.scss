@@ -1,5 +1,5 @@
-@import "variables.less";
-@import "mixins.less";
+@import "variables";
+@import "mixins";
 
 /* Portfolio */
 
@@ -40,9 +40,9 @@
   }
 
   h3 {
-    .serif;
+    @include serif;
     font-weight: 400;
-    color: @gray-dark;
+    color: $gray-dark;
     font-size: 35px;
     text-align: left;
     line-height: 35px;

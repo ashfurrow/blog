@@ -1,5 +1,5 @@
-@import "variables.less";
-@import "mixins.less";
+@import "variables";
+@import "mixins";
 
 .books {
   #books_list {
@@ -9,7 +9,7 @@
       text-align: left;
 
       h2 {
-        .serif;
+        @include serif;
         font-weight: 400;
         text-align: left;
         font-size: 25px;
@@ -22,10 +22,10 @@
       }
 
       a.title-link {
-        color: @gray-dark;
+        color: $gray-dark;
         text-decoration: none;
         &:hover{
-          color: @brand-primary;
+          color: $brand-primary;
           text-decoration: underline;
         }
       }

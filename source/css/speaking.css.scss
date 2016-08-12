@@ -1,5 +1,5 @@
-@import "variables.less";
-@import "mixins.less";
+@import "variables";
+@import "mixins";
 
 /* Speaking Page */
 
@@ -62,11 +62,11 @@
       /* Links here are different from in articles. */
       a {
         text-decoration: none;
-        color: @gray-dark;
+        color: $gray-dark;
 
         &:hover {
           text-decoration: underline;
-          color: @brand-primary;
+          color: $brand-primary;
         }
       }
 
@@ -125,7 +125,7 @@
   aside {
     background: no-repeat center center; 
     background-attachment: scroll;
-    .background-cover;
+    @include background-cover;
     color: white;
     font-weight: 800;
     padding: 80px 0;

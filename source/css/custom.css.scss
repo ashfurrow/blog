@@ -1,5 +1,5 @@
-@import "variables.less";
-@import "mixins.less";
+@import "variables";
+@import "mixins";
 
 /* GitHub logo is slightly too low. */
 .fa-github::before {
@@ -10,9 +10,9 @@
 /* 'Read more' links on the main blog page. */
 p.readmore {
   a {
-    color: @gray-dark;
+    color: $gray-dark;
     &:hover {
-      color: @brand-primary;
+      color: $brand-primary;
     }
   }
 
@@ -37,7 +37,7 @@ li {
 
   /* Links are article titles, we only underline on hover. */
   a {
-    color: @brand-primary;
+    color: $brand-primary;
     text-decoration: none;
 
     &:hover {
@@ -52,7 +52,7 @@ li {
 
     /* Make the date look faded and cool. */
     .post-meta {
-      color: @gray;
+      color: $gray;
       display: inline;
     }
   }
@@ -60,7 +60,7 @@ li {
 
 /* Need to give links the same treatment in lists as we do in paragraphs. */
 article li a {
-  color: @brand-primary;
+  color: $brand-primary;
 }
 
 /* Special styling for post previews on main blog page. */
@@ -86,8 +86,8 @@ article li a {
 
 /* Make code look nice. */
 code, pre {
-  color: @brand-primary;
-  background-color: @gray-light;
+  color: $brand-primary;
+  background-color: $gray-light;
   font-size: 14px;
 
   /* Small devices (tablets, 768px and up) */
@@ -140,7 +140,7 @@ code, pre {
 
     a {
       text-decoration: none;
-      color: @brand-primary;
+      color: $brand-primary;
 
       &:hover {
         text-decoration: underline;
@@ -149,7 +149,7 @@ code, pre {
   }
 
   .post-meta {
-    color: @gray;
+    color: $gray;
     display: inline;
   }
 }
@@ -331,7 +331,7 @@ blockquote > p:first-child {
   &:hover,
   &:focus {
     text-decoration: none;
-    color: @brand-primary;
+    color: $brand-primary;
   }
 }
 
@@ -356,7 +356,7 @@ blockquote > p:first-child {
 }
 
 #book-link {
-  background-color: @gray-light;
+  background-color: $gray-light;
   width: 100%;
   padding: 20px;
   margin-bottom: 10px;
@@ -386,7 +386,7 @@ blockquote > p:first-child {
 
   p {
     margin: 0px;
-    .clearfix();
+    @include clearfix();
   }
 
   a {
@@ -395,7 +395,7 @@ blockquote > p:first-child {
     &:hover,
     &:focus {
       text-decoration: underline;
-      color: @brand-primary;
+      color: $brand-primary;
     }
   }
 }

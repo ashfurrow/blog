@@ -4,7 +4,6 @@ require 'lib/modify_widths.rb'
 require 'lib/embed.rb'
 require 'ansi/code'
 require 'slim'
-require 'less'
 
 ###
 # Blog settings

@@ -22,7 +22,6 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     colored (1.2)
-    commonjs (0.2.7)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.2)
@@ -87,8 +86,6 @@ GEM
     i18n (0.7.0)
     json (1.8.3)
     kramdown (1.11.1)
-    less (2.6.0)
-      commonjs (~> 0.2.7)
     libv8 (3.16.14.15)
     liquid (3.0.6)
     listen (3.0.8)
@@ -226,7 +223,6 @@ DEPENDENCIES
   html-proofer
   httparty
   json
-  less
   liquid
   middleman
   middleman-blog

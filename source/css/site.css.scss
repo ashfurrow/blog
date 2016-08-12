@@ -1,12 +1,12 @@
-@import "variables.less";
-@import "mixins.less";
+@import "variables";
+@import "mixins";
 
 // Global Components
 
 body {
-  .serif;
+  @include serif;
   font-size: 16px;
-  color: @gray-dark;
+  color: $gray-dark;
 
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
@@ -23,7 +23,7 @@ body {
     font-feature-settings: "liga";
   }
 
-  /* IE doesn’t support @supports; explicitly use
+  /* IE doesn’t support $supports; explicitly use
   * the prefixed version. */
   -ms-font-feature-settings: "liga";
 
@@ -38,7 +38,7 @@ p {
   margin: 30px 0;
   a {
     text-decoration: none;
-    color: @brand-primary;
+    color: $brand-primary;
     &:hover {
       text-decoration: underline;
     }
@@ -51,15 +51,15 @@ h3,
 h4,
 h5,
 h6 {
-  .sans-serif;
-  .heavy;
+  @include sans-serif;
+  @include heavy;
 }
 
 a {
-  color: @gray-dark;
+  color: $gray-dark;
   &:hover,
   &:focus {
-    color: @brand-primary;
+    color: $brand-primary;
   }
 }
 
@@ -71,7 +71,7 @@ a img {
 }
 
 blockquote {
-  color: @gray;
+  color: $gray;
   font-style: italic;
 }
 
@@ -90,16 +90,16 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-  .sans-serif;
+  @include sans-serif;
   .navbar-brand {
-    .heavy;
+    @include heavy;
   }
   .nav {
     li {
       a {
         text-transform: uppercase;
         font-size: 12px;
-        .heavy;
+        @include heavy;
         letter-spacing: 1px;
       }
     }
@@ -112,7 +112,7 @@ hr.small {
       padding: 20px;
       &:hover,
       &:focus {
-        color: @white-faded;
+        color: $white-faded;
       }
     }
     .nav {
@@ -122,7 +122,7 @@ hr.small {
           padding: 20px;
           &:hover,
           &:focus {
-            color: @white-faded;
+            color: $white-faded;
           }
         }
       }
@@ -144,25 +144,25 @@ hr.small {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
       top: -61px;
-      background-color: fade(white, 90%);
+      background-color: lighten(white, 90%);
       border-bottom: 1px solid darken(white, 5%);
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
       transition: transform 0.3s;
       .navbar-brand {
-        color: @gray-dark;
+        color: $gray-dark;
         &:hover,
         &:focus {
-          color: @brand-primary;
+          color: $brand-primary;
         }
       }
       .nav {
         li {
           a {
-            color: @gray-dark;
+            color: $gray-dark;
             &:hover,
             &:focus {
-              color: @brand-primary;
+              color: $brand-primary;
             }
           }
         }
@@ -183,9 +183,9 @@ hr.small {
 
 .intro-header {
   background: no-repeat center center; 
-  background-color: @gray;
+  background-color: $gray;
   background-attachment: scroll;
-  .background-cover;
+  @include background-cover;
   // NOTE: Background images are set within the HTML using inline CSS!
   margin-bottom: 20px;
   .site-heading,
@@ -208,8 +208,8 @@ hr.small {
       font-size: 24px;
       line-height: 1.1;
       display: block;
-      .sans-serif;
-      .light;
+      @include sans-serif;
+      @include light;
       margin: 10px 0 0;
     }
     @media only screen and (min-width: 768px) {
@@ -228,12 +228,12 @@ hr.small {
       display: block;
     }
     .subheading {
-      .sans-serif;
+      @include sans-serif;
       font-size: 24px;
       margin: 10px 0 30px;
     }
     .meta {
-      .serif;
+      @include serif;
       font-style: italic;
       font-size: 20px;
       a {
@@ -255,11 +255,11 @@ hr.small {
 
 .post-preview {
   > a {
-    color: @gray-dark;
+    color: $gray-dark;
     &:hover,
     &:focus {
       text-decoration: none;
-      color: @brand-primary;
+      color: $brand-primary;
     }
     > .post-title {
       font-size: 30px;
@@ -271,7 +271,7 @@ hr.small {
     }
   }
   > .post-meta {
-    color: @gray;
+    color: $gray;
     font-size: 18px;
     font-style: italic;
     margin: 0;
@@ -290,7 +290,7 @@ hr.small {
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
-  .heavy;
+  @include heavy;
 }
 
 .caption {
@@ -320,8 +320,8 @@ footer {
 // Button Styles
 
 .btn {
-  .sans-serif;
-  .heavy;
+  @include sans-serif;
+  @include heavy;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
@@ -337,8 +337,8 @@ footer {
 .btn-default {
   &:hover,
   &:focus {
-    background-color: @brand-primary;
-    border: 1px solid @brand-primary;
+    background-color: $brand-primary;
+    border: 1px solid $brand-primary;
     color: white;
   }
 }
@@ -352,8 +352,8 @@ footer {
   li {
     > a,
     > span {
-      .sans-serif;
-      .heavy;
+      @include sans-serif;
+      @include heavy;
       text-transform: uppercase;
       font-size: 14px;
       letter-spacing: 1px;
@@ -365,8 +365,8 @@ footer {
     > a:hover,
     > a:focus {
       color: white;
-      background-color: @brand-primary;
-      border: 1px solid @brand-primary;
+      background-color: $brand-primary;
+      border: 1px solid $brand-primary;
     }
   }
 
@@ -375,8 +375,8 @@ footer {
     > a:hover,
     > a:focus,
     > span {
-      color: @gray;
-      background-color: @gray-dark;
+      color: $gray;
+      background-color: $gray-dark;
       cursor: not-allowed;
     }
   }
@@ -387,13 +387,13 @@ footer {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: @brand-primary;
+  background: $brand-primary;
 }
 
 ::selection {
   color: white;
   text-shadow: none;
-  background: @brand-primary;
+  background: $brand-primary;
 }
 
 img::selection {
@@ -407,5 +407,5 @@ img::-moz-selection {
 }
 
 body {
-  webkit-tap-highlight-color: @brand-primary;
+  webkit-tap-highlight-color: $brand-primary;
 }
