@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/687081303594897
 
 In the autumn of 2009, a young undergraduate student named _me_ had taken on too many commitments. _Way_ too many. In addition to a full course load, I was working two part time jobs, tutoring, leading a student association, and was (no joke) the Research in Motion "campus ambassador." Too bad I was driving myself crazy. What was the problem? Well, whenever someone asked me if I was interested in doing something, I'd say "yes."
 
-<!-- more -->
+(READMORE)
 
 Partially because I was interested in doing that thing, and partially because I didn't want to disappoint them.
 

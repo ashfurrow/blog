@@ -8,7 +8,7 @@ background_image_source: https://twitter.com/CloudyConway/status/747033594598678
 
 I saw a blog post making its way around iOS developer networks last week. It was retweeted and included in newsletters, but I kept avoiding it because I was afraid what it was going to say would bother me. And here we are.
 
-<!-- more -->
+(READMORE)
 
 The post is titled [_Swift Playgrounds: Should we teach coding, or creativity?_](https://blog.hipolabs.com/swift-playgrounds-should-we-teach-coding-or-creativity-3dcc6a288816#.qns30ips2) and it argues that Swift Playgrounds only teach kids how to _code_, and not how to _create_. The author describes their own experience first learning to program when they were ten using HyperCard. They believe that constraints like a blank canvas and no tutorials provided a better atmosphere for them to learn to create. They also describe the knowledge gained from inspecting other HyperCard stacks, to learn by example. 
 

@@ -9,7 +9,7 @@ A while ago, Artsy's CTO [dB](https://twitter.com/dblockdotorg) read a book and 
 
 The book is titled [_Status Update_](http://amzn.to/293CXls) written by Alice E. Marwick. It examines the topic of social status within Silicon Valley and throughout social media. And if you're a software developer, you really need to read it.
 
-<!-- more -->
+(READMORE)
 
 The best summary is this headline from an Amazon review: "All the right people hate it." I can see why.
 

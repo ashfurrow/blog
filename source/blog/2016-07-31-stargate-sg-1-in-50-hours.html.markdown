@@ -11,7 +11,7 @@ What I love about _SG-1_ is that the characters aren't from the 23rd century, an
 
 One of the largest villains in the first season is a goddamn _US Senator_ who thinks the whole Stargate program is too expensive and wants to shut it down to save money. That would totally happen! 
 
-<!-- more -->
+(READMORE)
 
 What damaged _SG-1_'s reputation more than anything was its timing. [Sci-fi isn't fun anymore](https://ashfurrow.com/blog/make-sci-fi-great-again/), and Stargate happened just as sci-fi was transitioning to the dystopian stories we have today. If Stargate had been a few years earlier, or Battlestar: Galactica had been a few years later, I think _SG-1_ would enjoy a much nicer reputation than it does today.
 

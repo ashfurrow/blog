@@ -14,12 +14,13 @@ require 'middleman-core'
 # END_WIDE
 #
 # This is a simple regex-based text replacement that happens at the end of the rendering pipeline.
-module ModifyWidths
-  class << self
+module Middleman
+  class ModifyWidths < Extension
 
-    def registered(app, options={})
+    def initialize(app, options_hash={}, &block)
+      super
+
       app.after_render do |body, path, locs, template|
-
         # There are multiple rendering calls and we want to get the one that renders the blog_post template. 
         if (path.to_s.index "blog_post") != nil
           body.replace_width_modifiers_with_size! 'WIDE', 'col-lg-10 col-lg-offset-1 col-md-12'
@@ -30,14 +31,10 @@ module ModifyWidths
         body
       end
     end
-
-    alias :included :registered
   end
 end
 
-::Middleman::Extensions.register(:modify_widths) do
-  ::ModifyWidths
-end
+::Middleman::Extensions.register(:modify_widths, ::Middleman::ModifyWidths)
 
 class String
   def self.Pattern(block_delineator)

@@ -1,0 +1,52 @@
+// Mixins
+
+@mixin transition-all()
+{
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@mixin background-cover()
+{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+@mixin serif()
+{
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+}
+
+@mixin sans-serif()
+{
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@mixin heavy()
+{
+  font-weight: 700;
+}
+
+@mixin light()
+{
+  // 400 is the default weight, but it's helpful to have this in case we want to change it later.
+  font-weight: 400;
+}
+
+
+@mixin clearfix()
+{
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+

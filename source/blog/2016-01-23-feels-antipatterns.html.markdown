@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/689973022514638
 
 We developers spend a lot of time thinking about what good and bad code looks like, but we don't often take time to discuss what good and bad code _feels_ like.
 
-<!-- more -->
+(READMORE)
 
 If we did, I think that we could recognize the quality of code more easily. Consider that we can describe spaghetti code in terms of what it looks like, and we can teach that to new developers. That way they can recognize it and avoid making mistakes. But if we discussed what spaghetti code _felt_ like, new developers could watch out for those feelings and develop an intuition about what spaghetti code feels like and why it's a bad idea.
 

@@ -1,0 +1,401 @@
+@import "_variables";
+@import "_mixins";
+
+/* GitHub logo is slightly too low. */
+.fa-github::before {
+  position: relative;
+  top: -1px;
+}
+
+/* 'Read more' links on the main blog page. */
+p.readmore {
+  a {
+    color: $gray-dark;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+
+  font-style: italic;
+}
+
+/* Make multi-parapgrah list items have a regular bottom margin. */
+li {
+  p {
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* Search. */
+
+.search-results {
+  /* Gives us some nice spacing. */
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  /* Links are article titles, we only underline on hover. */
+  a {
+    color: $brand-primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  /* An individual search result. */
+  .result {
+    padding-left: 0px;
+    line-height: 35px;
+
+    /* Make the date look faded and cool. */
+    .post-meta {
+      color: $gray;
+      display: inline;
+    }
+  }
+}
+
+/* Need to give links the same treatment in lists as we do in paragraphs. */
+article li a {
+  color: $brand-primary;
+}
+
+/* Special styling for post previews on main blog page. */
+.post-preview {
+  p {
+    // Instead of 30px 0.
+    margin: 20px 0;
+  }
+
+  h2 {
+    // Instead of bootstrap default.
+    margin: 0;
+  }
+}
+
+/* Space out article previews on main blog page. */
+.blog-previews {
+  hr {
+    margin: 45px 0px;
+    border-color: transparent;
+  }
+}
+
+/* Make code look nice. */
+code, pre {
+  color: $brand-primary;
+  background-color: $gray-light;
+  font-size: 14px;
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.nav {
+  .text-link {
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .icon-link {
+    font-size: 16px;
+
+    display: none;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      display: inherit;
+    }
+  }
+}
+
+.container.archive {
+
+  ol {
+    padding-left: 0px;
+    line-height: 35px;
+  }
+
+  li.month {
+    padding-bottom: 30px;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      padding-bottom: 45px;
+    }
+  }
+
+  li {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      color: $brand-primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .post-meta {
+    color: $gray;
+    display: inline;
+  }
+}
+
+.header_image_link_container {
+  position: relative;
+
+  a {
+    text-decoration: none;
+
+    i {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: rgba(255,255,255,0.5);
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.container .pager li {
+  a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    width: 100%;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      width: inherit;
+    }
+
+    div {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.container .article_pager li {
+  a {
+    /* Make pagers on articles half width */
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#page_footer {
+  margin-top: 20px;
+}
+
+/* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
+.blog-previews {
+  @media (min-width: 768px) {
+    margin-top: 40px; // this 40 + the header's 50 margin = 90, the inter-item distance.
+  }
+}
+
+.container li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.under-header {
+	padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+.intro-header .site-heading h1,
+.intro-header .page-heading h1 {
+    font-size: 40px;
+  }
+
+  .intro-header .site-heading .subheading, .intro-header .page-heading .subheading {
+    font-size: 20px;
+  }
+}
+
+.meta {
+  color: #808080;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe.twitter-tweet {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Adds top/bottom spacing to embedded videos */
+
+.embed-responsive {
+  margin: 15px 0px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 30px 0px;
+  }
+}
+
+blockquote {
+  padding: 0px 15px;
+  padding-left: 30px;
+  margin: 40px 0px;
+  font-style: none;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0px 30px;
+    padding-left: 45px;
+    
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+blockquote > p:first-child {
+	margin-top: 0;
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    background:  no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.image-bg-fixed-height {
+  background-color: #808080;
+  height: 250px;
+}
+@media only screen and (min-width: 768px) {
+  .image-bg-fixed-height {
+    height: 450px;
+  }
+}
+
+.container img {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Let's make those little links a little prettier. */
+
+.header-link {
+  content: "#";
+  color: rgba(189,189,189,0.25);
+  font-weight: 400;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $brand-primary;
+  }
+}
+
+.container {
+  .header-link {
+    position: absolute;
+    left:-0.25em;
+    /* The links don't fit on spall screens, so let's high them. */
+    @media only screen and (max-width: 768px) {
+      display:none;
+    }
+  }
+
+  /* On timeline posts, we want the link to the right of the header. */
+  .timeline-content {
+    .header-link {
+      position: relative;
+      left: 0.3em;
+      display: inline;
+    }
+  }
+}
+
+#book-link {
+  background-color: $gray-light;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  clear: both;
+
+  @media only screen and (min-width: 768px) {
+    padding: 40px;
+  }
+
+  img {
+    width: 40%;
+    padding-bottom: 20px;
+
+    @media only screen and (min-width: 768px) {
+    width: 20%;
+      padding-bottom: 0px;
+      padding-right: 20px;
+      float: left;
+    }
+  }
+
+  h3 {
+    font-size: 20pt;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0px;
+    @include clearfix();
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $brand-primary;
+    }
+  }
+}

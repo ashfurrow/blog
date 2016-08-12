@@ -1,0 +1,20 @@
+== wrap_layout :layout do
+  - marketing_link = current_resource.metadata[:page][:link_to]
+
+  / Page Header
+  == partial 'partials/_header', locals: { title: current_article.title }
+
+  .container
+    article
+      .row
+        == standard_width_div do
+          == yield
+          hr
+          span.meta="Posted on #{current_article.date.strftime('%B %e, %Y')}"
+    .row
+      == standard_width_div do
+        hr
+        - if marketing_link
+          == partial 'partials/_marketing', :locals => { :book_name => marketing_link }
+          hr
+        == partial 'partials/_article_pager'

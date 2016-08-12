@@ -28,9 +28,10 @@ module CustomHelpers
     data.site.name
   end
 
+
   def og_title(current_article, current_resource)
     if current_resource
-      title = current_resource.metadata[:page]["title"]
+      title = current_resource.metadata[:page][:title]
       return title unless title.nil?
     elsif current_article
       return current_article.title
@@ -129,9 +130,7 @@ module CustomHelpers
 
   # Divs' Widths
 
-  def standard_width_div
-    haml_tag :div, class: 'col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1' do
-      yield
-    end
+  def standard_width_div(&block)
+    "<div class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'>#{yield}</div>"
   end
 end

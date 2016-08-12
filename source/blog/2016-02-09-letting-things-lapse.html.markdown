@@ -12,7 +12,7 @@ I know this because of my experience getting my first few jobs writing iOS softw
 
 So you can imagine the mixed emotions I have about choosing not to renew my account.
 
-<!-- more -->
+(READMORE)
 
 BEGIN_NARROW
 

@@ -43,18 +43,20 @@ jQuery(document).ready(function($) {
       });
   }
 
-  // Download search index and then set up search.
-  // jQuery provides nicer syntax for this async download. 
-  $.ajax({
-    url: '/search.json',
-    cache: true,
-    method: 'GET',
-    success: function(data) {
-      // Callback for success: log it and set up our search.
-      console.log('Downloaded Search JSON.');
-      setupSearch(data);
-    }
-  });
+  if (document.location.href.match(/search/)) {
+    // Download search index and then set up search.
+    // jQuery provides nicer syntax for this async download. 
+    $.ajax({
+      url: '/search.json',
+      cache: true,
+      method: 'GET',
+      success: function(data) {
+        // Callback for success: log it and set up our search.
+        console.log('Downloaded Search JSON.');
+        setupSearch(data);
+      }
+    });
+  }
 });
 
 var trackMaretingLink = function(link) {

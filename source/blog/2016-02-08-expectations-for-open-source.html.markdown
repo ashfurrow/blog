@@ -9,7 +9,7 @@ There's kind of an unwritten rule in startups, that you pretty much _have_ to fo
 
 So imagine my surprise when I saw them tweet this.
 
-<!-- more -->
+(READMORE)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Do not start an open source project if you need praise, warmth and love from your fellow human beings.&quot;<a href="https://t.co/JTBeashRvq">https://t.co/JTBeashRvq</a></p>&mdash; Daniel Doubrovkine (@dblockdotorg) <a href="https://twitter.com/dblockdotorg/status/696412200618037248">February 7, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

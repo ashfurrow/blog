@@ -9,7 +9,7 @@ Last week, I was getting some weird behaviour from an Artsy websocket API. The A
 
 Then yesterday happened.
 
-<!-- more -->
+(READMORE)
 
 I’ve been working on a new feature for Artsy’s iOS app ([GitHub](https://github.com/artsy/eigen)) which accesses our API using [GraphQL](http://graphql.org). This is a pretty new technology that allows server APIs to be defined in such a way that makes writing queries expressive and type-safe. It’s _really_ cool.
 

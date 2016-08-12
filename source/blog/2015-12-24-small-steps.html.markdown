@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/679989899114708
 
 So the other night, I saw Steve Streza tweet about the new _Star Wars_ film, specifically about JJ Abrams' style in directing the film. 
 
-<!-- more -->
+(READMORE)
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">JJ’s Star Trek is to lens flares as JJ’s Star Wars is to film grain.</p>&mdash; Sith Streza (@SteveStreza) <a href="https://twitter.com/SteveStreza/status/679457433639628800">December 23, 2015</a></blockquote>
 

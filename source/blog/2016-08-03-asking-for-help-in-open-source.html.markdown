@@ -11,7 +11,7 @@ So I'm going to start by addressing the elephant in the open source room: licens
 
 But I'm not going to do that, because I don't believe it.
 
-<!-- more -->
+(READMORE)
 
 When I write open source and publish it, and then you use it, I don't _legally_ owe you anything, but I _do_ owe you something. Maintainers get to benefit from developers using our code, because they'll find bugs and recommend feature requests and we get to benefit from all that too. Maintainers benefit when our code gets used, and I think there's a reciprocal nature to that relationship.
 

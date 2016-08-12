@@ -3,6 +3,7 @@ require 'lib/add_links_to_navigation.rb'
 require 'lib/modify_widths.rb'
 require 'lib/embed.rb'
 require 'ansi/code'
+require 'slim'
 
 ###
 # Blog settings
@@ -10,24 +11,17 @@ require 'ansi/code'
 
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
-set :haml, ugly: true, format: :html5
 set :relative_links, true
-
-activate :syntax
-activate :inliner
+set :slim, :layout_engine => :slim
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
   blog.permalink = "{title}.html"
 
-  # Enable pagination
-  blog.paginate = true
-  blog.per_page = 10
-  blog.page_link = "page/{num}"
-  blog.summary_separator = /<!-- more -->/
+  blog.summary_separator = /\(READMORE\)/
   blog.new_article_template = "new_article.markdown.erb"
-  blog.layout = "blog_post"
+  blog.layout = "partials/_blog_post"
 end
 
 # Activate the middleman-search extension and customize it.
@@ -43,7 +37,7 @@ activate :search do |search|
     title:   {boost: 100, store: true, required: true},
     date:    {index: false, store: true},
     content: {boost: 50},
-    url:     {index: false, store: true},
+    url:     {index: false, store: true}
   }
 end
 
@@ -53,19 +47,19 @@ end
 
 helpers CustomHelpers
 
+activate :syntax
 activate :directory_indexes
+activate :sprockets
+activate :inliner
 activate :add_links_to_navigation
 activate :modify_widths
 activate :embed
 
-page "/feed.xml", layout: false
-page "/feed.rss.xml", layout: false
-page "/sitemap.xml", layout: false
+page "/*.xml", layout: false
 
 set :css_dir, 'css'
 set :js_dir, 'javascripts'
 set :images_dir, 'img'
-set :partials_dir, 'layouts'
 
 ###
 # Build-specific configuration

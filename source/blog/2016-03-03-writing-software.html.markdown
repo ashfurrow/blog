@@ -8,7 +8,7 @@ background_image_source: https://twitter.com/CloudyConway/status/705122483943432
 
 Rome wasn't built in a day, so the saying goes, but it _was_ built. That may not seem impressive until you consider the scope of Roman accomplishments in the context of their limited technology. 
 
-<!-- more -->
+(READMORE)
 
 Here's an [aqueduct the Romans built](https://en.wikipedia.org/wiki/Aqueduct_of_Segovia). It's still standing in Spain. 
 

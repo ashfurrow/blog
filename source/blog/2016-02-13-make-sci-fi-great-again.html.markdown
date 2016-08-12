@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/698497319394738
 
 When I was growing up, _Star Trek The Next Generation_ was in syndication, _Voyager_ was still new, and when I got home from school I could catch the final twenty minutes of _Stargate: SG-1_. I watched a lot of sci-fi TV growing up, and there was a good variety of it to watch. There were hopeful what-may-be shows like _TNG_, modern-day romps like _SG-1_, and exposés on humanity's undoing like _The X-Files_. I wasn't old enough to watch _The X-Files_ and other darker shows, and as a consequence, sci-fi always had a sort of optimism about it.
 
-<!-- more -->
+(READMORE)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">stargate too, though that makes more sense<br><br>is there no middle ground between &quot;ragtag crew of misfits&quot; and &quot;99% human military operation&quot;</p>&mdash; ♥❤ eevee ❤♥ (@eevee) <a href="https://twitter.com/eevee/status/653841429861527552">October 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

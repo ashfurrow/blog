@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/682821645908766
 
 I always thought that perfectionism is a compulsion to do things perfectly, and I guess that's true. And you know how the phrase "Haha my greatest weakness is that I'm a perfectionist" is a [common thing people say in job interviews](/blog/the-dark-side-of-perfectionism/)? That's pretty messed up, eh?
 
-<!-- more -->
+(READMORE)
 
 Like, this is a _compulsion_ we're talking about. It's not just an affinity for perfection, but an _irresistible urge_ to be nothing less than perfect. If someone has a compulsion to constantly wash their hands, we say that they should talk to someone. But if someone has a compulsion to be perfect all the time, we give them a job because _awww yissss perfection_.
 

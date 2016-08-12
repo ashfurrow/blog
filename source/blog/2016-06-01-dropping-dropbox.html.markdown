@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/737620064803934
 
 Over the weekend, I [lamented the death of Dropbox](https://ashfurrow.com/blog/bittorrent-sync/). Well, they're not _dead_, just dead _to me_. I discussed setting up [BitTorrent Sync](https://getsync.com) and some of the security problems with common setup tutorials, and got some great feedback. A few people pointed to [Sync](https://www.sync.com/?_sync_refer=a140360) (referral link), which after investigating, I'm pleased to say is awesome and has become my Dropbox replacement. 
 
-<!-- more -->
+(READMORE)
 
 My goal online is to minimize the surface area I expose to internet mass surveillance. An absolutist approach would be to only use open source software, with keys that I generate, and on a server that I physically control. That's just... way too much work. The reason that Dropbox is so popular is that it's so convenient, and I was hoping to get something _like_ Dropbox in terms of convenience, but with a reduced risk of being surveilled. 
 

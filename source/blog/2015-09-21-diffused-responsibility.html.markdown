@@ -7,7 +7,7 @@ A few years ago, I had a colleague that attended Google I/O. This was when Googl
 
 My colleague asked a panel of Google engineers and product managers to describe how they juggle ethical dilemmas encountered during product development. Their answer was that Google did not have a designated ethicist, but instead relies on each individual engineer to make ethical decisions. 
 
-<!-- more -->
+(READMORE)
 
 I guess they figure the result of many small ethical decisions will naturally produce an ethical product. I guess they figured the overwhelming white dude Google employee demographic was qualified to answer any and all ethical questions. 
 

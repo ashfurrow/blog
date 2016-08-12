@@ -8,7 +8,7 @@ background_image_source: https://twitter.com/CloudyConway/status/693472561968058
 
 Have you ever heard of [wabi-sabi](https://en.wikipedia.org/wiki/Wabi-sabi)? It's a complex idea from Japanese culture that surrounds the appreciation of the impermanent and the imperfect. I heard about it a few years ago, and finally took a deeper look by reading [Wabi-Sabi for Artists, Designers, Poets & Philosophers](http://amzn.to/1nymvMd).
 
-<!-- more -->
+(READMORE)
 
 I was reading [the book's follow-up on](http://amzn.to/1nH66FX) the subway here in New York, when someone approached and asked about wabi-sabi. We got chatting and he sent me the following video.
 

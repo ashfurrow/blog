@@ -14,7 +14,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.link "rel" => "alternate", "href" => URI.join(site_url, article.url)
       xml.id URI.join(site_url, article.url)
       xml.published article.date.to_time.iso8601
-      xml.updated (article.metadata[:page]["updated"] || article.date).to_time.iso8601
+      xml.updated (article.metadata[:page][:updated] || article.date).to_time.iso8601
       xml.author { xml.name "Ash Furrow" }
       xml.content prepare_feed_content(article.body), "type" => "html"
     end

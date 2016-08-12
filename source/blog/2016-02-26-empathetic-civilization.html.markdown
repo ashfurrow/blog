@@ -9,7 +9,7 @@ A few months ago, I wrote about [normalizing struggle](/blog/normalizing-struggl
 
 Well, [some science happened](http://qz.com/622749/teens-do-better-in-science-when-they-know-einstein-and-curie-also-struggled/) and it more than validates my viewpoint. 
 
-<!-- more -->
+(READMORE)
 
 So what's up? Well, [they](https://www.sciencedaily.com/releases/2016/02/160211141337.htm) divided some 10th-grade students into three groups, who read three different different descriptions of Curie, Einstein, and Faraday. The first group _only_ read about the scientists' accomplishments; the second group read about the scientists' personal struggles against sexism, classism, and Nazis; and the third group read about the scientists' _intellectual_ struggles of how difficult it was to accomplish their respective achievements. In other words, the second two groups were shown how similar the scientists were to themselves – they were shown to _empathize_ with the scientists.
 

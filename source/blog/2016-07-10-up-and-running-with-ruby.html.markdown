@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/748397745938010
 
 Ruby has always kind of intimidated me. Largely I think because I cut my teeth on Java, C++, C#, which are static-ish and Ruby's decidedly dynamic. And by the time I started writing Objective-C, even it had [started evolving to be less dynamic](https://ashfurrow.com/blog/adulterated-objective-c/). Ruby – and frameworks written in Ruby – involve _so much magic_ that's always kind of scared me away.
 
-<!-- more -->
+(READMORE)
 
 Working at Artsy has exposed me to Ruby in a lot of ways: a lot of the Artsy backend projects I'm interested in use Ruby; I've helped out with CocoaPods and other developer tools that happen to be written in Ruby; and now when I go to write a new tool, Ruby is the language I use because I have so many colleagues to help me. 
 

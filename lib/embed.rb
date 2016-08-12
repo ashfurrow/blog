@@ -14,12 +14,13 @@ require 'middleman-core'
 # <div class="embed-responsive embed-responsive-16by9"><iframe src="//www.youtube.com/embed/aLvJ1mqlM98" frameborder="0" allowfullscreen></iframe></div>
 #
 # Sweet.
-module Embed
-  class << self
+module Middleman
+  class Embed < Extension
 
-    def registered(app, options={})
+    def initialize(app, options_hash={}, &block)
+      super
+
       app.after_render do |body, path, locs, template|
-
         # There are multiple rendering calls and we want to get the one that renders the blog_post template. 
         if (path.to_s.index "blog_post") != nil
           body.embed_youtube!
@@ -28,14 +29,10 @@ module Embed
         body
       end
     end
-
-    alias :included :registered
   end
 end
 
-::Middleman::Extensions.register(:embed) do
-  ::Embed
-end
+::Middleman::Extensions.register(:embed, ::Middleman::Embed)
 
 class String
   def embed_youtube!

@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/659744137206480
 
 A while ago, I realized that I was deeply unhappy with my email setup. I got hundreds of emails a day, and dealing with them all took a lot of time and energy. So I decided to do something about it. 
 
-<!-- more -->
+(READMORE)
 
 Let's start with the easy changes I made – simple steps that didn't require a lot of mental work.
 

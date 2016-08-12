@@ -9,7 +9,7 @@ So it happened again, I saw something cool and took out my camera, and someone e
 
 Well, I do. Actually, plenty of people do.
 
-<!-- more -->
+(READMORE)
 
 This is okay, it's a fair question. Film is _definitely_ not mainstream, so it's a curiosity. I'm really fine with people expressing surprise at something so unusual to them. But then the follow-up question comes: "why don't you just use digital?"
 

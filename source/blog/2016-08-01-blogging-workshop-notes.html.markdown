@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/760122178721484
 
 This week, at Artsy's offsite, Orta and I are leading a workshop named "Bootstrap your Blog!" where we'll try to get participants most of the way towards their first blog post. This advice is widely applicable, so I thought I'd share it here. 
 
-<!-- more -->
+(READMORE)
 
 Here's the introductory email we sent participants.
 

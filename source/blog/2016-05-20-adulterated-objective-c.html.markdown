@@ -9,7 +9,7 @@ There’s been a lot of discussion lately surrounding the efficacy of Swift. Bre
 
 However, I feel the need to point out that there are a lot of iOS developers out there who don’t use those tools, or may not even be aware of them. Consequently, they may not share Brent Simmons’ frustration at their absence.
 
-<!-- more -->
+(READMORE)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">What am I doing wrong such that Swift&#39;s lack of dynamism doesn&#39;t seem to be hindering me in the slightest?</p>&mdash; Bryan Irace (@irace) <a href="https://twitter.com/irace/status/732051171498700800">May 16, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

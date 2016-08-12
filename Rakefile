@@ -104,7 +104,7 @@ end
 
 desc "Build site locally"
 task :build do
-  sh 'bundle exec middleman build --verbose --no-clean'
+  sh 'bundle exec middleman build --verbose --no-clean --no-parallel'
 end
 
 desc "Start middleman server"
@@ -123,12 +123,11 @@ end
 
 desc 'Runs html-proofer against current build/ directory.'
 task :test do
-  require 'html/proofer'
+  require 'html-proofer'
 
   puts 'Testing build/ directory.'
-  HTML::Proofer.new('build/', {
+  HTMLProofer.check_directory('build/', {
     ext: '.html',
-    check_html: true,
     disable_external: true,
     alt_ignore: [/.*/],
     parallel: { in_processes: 3},
