@@ -28,6 +28,7 @@ module CustomHelpers
     data.site.name
   end
 
+  # TODO: This isn't working right.
   def og_title(current_article, current_resource)
     if current_resource
       title = current_resource.metadata[:page]["title"]
