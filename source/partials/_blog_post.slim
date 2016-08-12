@@ -2,7 +2,7 @@
   - marketing_link = current_resource.metadata[:page]['link_to']
 
   / Page Header
-  == partial 'partials/header', locals: { title: current_article.title }
+  == partial 'partials/_header', locals: { title: current_article.title }
 
   .container
     article
@@ -15,6 +15,6 @@
       == standard_width_div do
         hr
         - if marketing_link
-          == partial 'partials/marketing', :locals => { :book_name => marketing_link }
+          == partial 'partials/_marketing', :locals => { :book_name => marketing_link }
           hr
-        == partial 'partials/article_pager'
+        == partial 'partials/_article_pager'

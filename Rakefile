@@ -128,7 +128,6 @@ task :test do
   puts 'Testing build/ directory.'
   HTML::Proofer.new('build/', {
     ext: '.html',
-    check_html: true,
     disable_external: true,
     alt_ignore: [/.*/],
     parallel: { in_processes: 3},

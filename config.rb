@@ -25,7 +25,7 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
   blog.summary_separator = /<!-- more -->/
   blog.new_article_template = "new_article.markdown.erb"
-  blog.layout = "blog_post"
+  blog.layout = "partials/_blog_post"
 end
 
 # Activate the middleman-search extension and customize it.
