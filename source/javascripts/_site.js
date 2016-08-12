@@ -43,18 +43,19 @@ jQuery(document).ready(function($) {
       });
   }
 
+  // TODO: Don't need to download this on every page lol.
   // Download search index and then set up search.
   // jQuery provides nicer syntax for this async download. 
-  $.ajax({
-    url: '/search.json',
-    cache: true,
-    method: 'GET',
-    success: function(data) {
-      // Callback for success: log it and set up our search.
-      console.log('Downloaded Search JSON.');
-      setupSearch(data);
-    }
-  });
+  // $.ajax({
+  //   url: '/search.json',
+  //   cache: true,
+  //   method: 'GET',
+  //   success: function(data) {
+  //     // Callback for success: log it and set up our search.
+  //     console.log('Downloaded Search JSON.');
+  //     setupSearch(data);
+  //   }
+  // });
 });
 
 var trackMaretingLink = function(link) {

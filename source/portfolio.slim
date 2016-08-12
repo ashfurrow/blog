@@ -1,0 +1,189 @@
+---
+title: Portfolio
+priority: 0.75
+og_image: /img/portfolio/background.jpg
+description: I've looked around for examples of software developer portfolios, and mostly I've just found people advocating that developers should have one (while providing very few answers as to what it should be or look like). What is a developer portfolio, anyway? Is it a resumé? Is it list of accomplishments? Is it a list at all?
+---
+
+/! Page Header
+= partial :header, locals: { title: 'Ash Furrow', subtitle: 'Awesome super-duper guy.', background_image: '/img/portfolio/background.jpg' }
+
+.portfolio
+  .container
+    .row
+      = standard_width_div do
+        markdown:
+
+          | I’ve looked around for examples of software developer portfolios, and mostly I’ve just found people advocating that developers should have one (while providing very few answers as to what it should be or look like). What is a developer portfolio, anyway? Is it a resumé? Is it list of accomplishments? Is it a list at all?
+
+          | The freedom of the web and availability of high-quality, open source tools like Bootstrap have encouraged me to grow beyond the role of a “iOS” developer. I decided that my portfolio should be something important to me, something that shows what matters.
+
+          | I make a lot of things. A lot of those things are software. A lot of them aren’t. Let’s start from the top.
+
+  /! Software
+  aside style: 'background-image: url(/img/portfolio/software_header.jpg);' 
+    figcaption#software name: 'software' 
+      h2
+        | Software
+        a.portfolio-header-link href:'#software' > #
+      div
+        p Great software is software nobody notices. I write meaningful software with this aspiration.
+
+  .container
+    .row
+      = standard_width_div do
+
+        markdown:
+          | I've been writing iOS apps since 2009, when I was still in university. Since then, most significant software I’ve written has been on the iOS platform. I do, however, have an interest in web technologies, and have built the site you’re currently reading.
+
+        ul#software_list.list-inline.text-center
+          li
+            h3 Artsy
+            img src: '/img/portfolio/artsy.jpg' /
+            div
+              markdown:
+                | Since April 2014, I’ve worked for [Artsy](https://www.artsy.net), a company with the ambitious goal of making art as popular as music. I work within a small team that makes a few different iOS apps, from the main consumer app to a custom-built auctions kiosk.
+
+                | Artsy encourages me to grow and learn, and to share what I learn with others; all of my work is [done in the open](https://github.com/ashfurrow), and I write articles for [Artsy’s developer blog](http://artsy.github.io).
+
+          li
+            h3 35mm
+            img src: '/img/portfolio/35mm.jpg' /
+            div
+              markdown:
+
+                | 35mm was an ambitious project that I undertook with a team of two others: a designer and an editor. We aimed to change the world for photography-lovers by providing curated photography without advertisements. Although the project was not a success from a financial standpoint, I learnt a lot about writing Newsstand magazines for iOS, including architecting our own backend server in Node.js.
+
+                | This project is no longer available.
+
+          li
+            h3 500px
+            img src: '/img/portfolio/500px.jpg' /
+            div
+              markdown:
+
+                | In 2011, I began as the only iOS developer at 500px, architecting and shipping the iPad app. I helped design new features, plan the product roadmap, and respond to customer support inquiries, all while continuing to ship an amazing product.
+
+                | Eventually, the team grew, and I stepped up to become a team lead. From there, I played a crucial role in the design and development of the iPhone app, which shipped late 2012. 500px is [available on the App Store](https://500px.com/apps/ipad), where it has been downloaded by hundreds of thousands of photography lovers.
+
+  /! Community
+  aside style: 'background-image: url(/img/portfolio/community_header.jpg);' 
+    figcaption#community name: 'community' 
+      h2
+        | Community
+        a.portfolio-header-link href: '#community' > #
+      div
+        p In my home region of Atlantic Canada, we have a saying: “rising tides lift all boats.”
+  .container
+    .row
+      = standard_width_div do
+        markdown:
+          | Since I was a teenager, I’ve been fascinated with open source software. Not just the software itself, but the communities surrounding different projects. No one individual can accomplish what a community can – people can always accomplish more if they work together.
+
+          | Today, I try to practice “radical openness” – the idea that unless there is a good reason to keep something secret, then you should share it.
+
+          | At Artsy, we call it “open source by default.” At Teehan+Lax, we called it “creating more value than you capture.” Before that, I didn’t really have a name for it. It was just what I did.
+
+          | > See, in all our searching, the only thing we’ve found that makes the emptiness bearable is each other. —[Contact (1997)](https://en.wikipedia.org/wiki/Contact_(1997_American_film))
+
+          | I take a lot of pride in helping others and in contributing to the developer community, and I’ve tried to set a higher standard for [my own behaviour](https://ashfurrow.com/blog/minswan-for-ios/). In addition to leading [open source communities online](https://github.com/Moya), I organize a [Saturday morning Peer Lab](http://artsy.github.io/blog/2015/08/10/peer-lab/) and volunteer with [Coalition for Queens](http://c4q.nyc).
+
+        ul#community_list.list-inline.text-center
+          li
+            a href: 'http://github.com/ashfurrow', title: 'GitHub' 
+              i.fa.fa-github.fa-3x
+          li
+            a href: 'http://stackoverflow.com/users/516359/ash-furrow', title: 'Stack Overflow' 
+              i.fa.fa-stack-overflow.fa-3x
+          li
+            a href: 'http://twitter.com/ashfurrow', title: 'Twitter' 
+              i.fa.fa-twitter.fa-3x
+
+  /! Education
+  aside style: 'background-image: url(/img/portfolio/education_header.jpg);' 
+    figcaption#education name: 'education' 
+      h2
+        | Education
+        a.portfolio-header-link href: '#education' > #
+      div
+        p I grew up wanting to become a teacher, and when I became a programmer, I achieved my dream.
+  .container
+    .row
+      = standard_width_div do
+        ul#education_list.list-inline.text-center
+          li
+            h3 Blogging
+            img src: '/img/portfolio/blogging.jpg' /
+            div
+              markdown:
+
+                | I’ve been writing a developer-focused blog since 2011, now hosted here. At [Teehan+Lax](http://www.teehanlax.com/blog/author/ash/), I began contributing to company blog as part of my job. I still do, now on [Artsy’s developer blog](http://artsy.github.io). I’ve also written posts for [objc.io](http://www.objc.io/contributors/).
+
+                | Blogging about has made me [a better developer and a better writer](https://www.youtube.com/watch?v=SjjvnrqDjpM).
+          li
+            h3 Workshops
+            img src: '/img/portfolio/treehouse.jpg' /
+            div
+              markdown:
+
+                | In March, 2014, [Treehouse](http://teamtreehouse.com) invited me to Orlando to record a series of videos and screencasts to guide students through using Core Data to build a diary app for iOS.
+
+                | I’ve also given in-person workshops on subjects ranging from the basics of iOS development to functional reactive programming in Swift.
+          li
+            h3 Speaking
+            img src: '/img/portfolio/speaking.jpg' /
+            div
+              markdown:
+                | I began speaking in the Toronto CocoaHeads group. Eventually, I started submitting proposals to conferences. Today, I’ve spoken all over the world on a variety of subjects relating to iOS development.
+
+                | Check out my [speaking page](/speaking) for more.
+          li
+            h3 Books
+            img src: '/img/portfolio/books.jpg' /
+            div
+              markdown:
+                | Since 2012, I’ve written a number of books on iOS development (both with publishers and self-published). Like with blogging, writing is a very satisfying activity. I enjoy planning a route to take a reader on, considering what to teach them (and when), and turning my ideas into educational resources.
+
+                | [Check out my books page](/books) for a complete reference.
+
+  /! Photography
+  aside style: 'background-image: url(/img/portfolio/photography_header.jpg);' 
+    figcaption#photography name: 'photography' 
+      h2
+        | Photography
+        a.portfolio-header-link href: '#photography' > #
+      div
+        p Beyond code, beyond writing, there is photography. It is my primary creative outlet.
+  .container
+    .row
+      = standard_width_div do
+        markdown:
+
+          | Since 2011, I have developed an increasingly intense interest in photography. Working to improve my skills, I’ve explored the medium and come to love shooting on film most of all. I now shoot and process my film at home – mostly black and white – and I want to explore darkroom printing next.
+
+          | My photography and my work as a software developer are closely related. Both help exercise different creative processes and I pay attention to what I learn. Often, lessons about field can be applied to the other. You can see my work at the links below.
+
+        ul#photography_list.list-inline.text-center
+          li
+            a href: 'http://instagram.com/ashfurrow', title: 'Instagram' 
+              i.icon-instagram
+          li
+            a href: 'http://photos.ashfurrow.com', title: 'Photo Blog' 
+              i.icon-exposure
+          li
+            a href: 'http://500px.com/ashfurrow', title: '500px' 
+              i.icon-px
+
+  /! Wrap up
+  hr style: 'margin-top: 130px;' 
+
+  .container
+    .row
+      = standard_width_div do
+        markdown:
+
+          | When I began creating this portfolio, I didn’t know what it was going to become. I started with an idea, explored the design space, and then created something rough.
+
+          | [Iterating](https://github.com/ashfurrow/blog/pull/39) based on [feedback](https://github.com/ashfurrow/blog/issues/10) from others, I’ve really stretched my limbs a bit in the world of web design and development.
+
+          | If you want to know more about me or get in touch, you can check out my [About](/about) page. I’ve also documented my [first 5 years](https://ashfurrow.com/blog/5-years-of-ios/) doing iOS development.

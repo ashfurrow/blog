@@ -1,0 +1,52 @@
+---
+title: Speaking
+og_image: /img/speaking/background.jpg
+priority: 0.75
+description: I love sharing knowledge – in the form of blog posts, podcasts, open source code, books – and over the past few years, I’ve grown really fond of speaking. I’ve gotten good at it, too.
+---
+
+/! Pager Header
+= partial :header, locals: { title: 'Speaking', background_image: '/img/speaking/background.jpg' }
+
+- require('lib/speaking.rb')
+
+.speaking
+  /! Intro
+  .container
+    .row
+      = standard_width_div do
+        markdown:
+          | I love sharing knowledge – in the form of blog posts, podcasts, open source code, books – and over the past few years, I’ve grown really fond of speaking. I’ve gotten good at it, too.
+
+          | <div class="embed-responsive embed-responsive-16by9"
+            | <iframe width="560" height="315" src="https://www.youtube.com/embed/YsUTuwpbURA" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe
+          | </div
+
+  /! Upcoming Talks
+  aside style:'background-image: url(/img/speaking/world.jpg);' 
+    h2 Coming Soon to a Conference Near You
+  .container
+    .row
+      = standard_width_div do
+        ul
+          = Speaking::talks_to_html(:future, data.talks.upcoming_talks)
+
+  /! Past Talks
+  aside style:'background-image: url(/img/speaking/pasttalks.jpg);' 
+    h2 Past Awesome Talks
+  .container
+    .row
+      = standard_width_div do
+        ul
+          = Speaking::talks_to_html(:past, data.talks.past_talks)
+
+  /! Get in touch
+  aside style:'background-image: url(/img/speaking/getintouch.jpg);' 
+    h2 Get in Touch
+  .container
+    .row
+      = standard_width_div do
+        markdown:
+          | Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. Understanding _what_ you’re doing is poitnless if you don’t understand _why_ you’re doing it.
+
+          | If you’re interested in having me speak, [get in touch](mailto:ash@ashfurrow.com).
