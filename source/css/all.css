@@ -1,11 +1,11 @@
 /*
- *= require site
- *= require custom
- *= require customfont
- *= require font-awesome.min
- *= require syntax
- *= require timeline
- *= require portfolio
- *= require speaking
- *= require books
+ *= require _site
+ *= require _custom
+ *= require _customfont
+ *= require _font-awesome.min
+ *= require _syntax
+ *= require _timeline
+ *= require _portfolio
+ *= require _speaking
+ *= require _books
  */
