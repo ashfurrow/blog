@@ -9,8 +9,8 @@ require 'slim'
 # Blog settings
 ###
 
-# set :markdown_engine, :redcarpet
-# set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
 set :relative_links, true
 set :slim, :layout_engine => :slim
 
