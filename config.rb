@@ -58,7 +58,7 @@ activate :sprockets do |c|
 end
 # activate :add_links_to_navigation
 # activate :modify_widths
-# activate :embed
+activate :embed
 
 page "/*.xml", layout: false
 
