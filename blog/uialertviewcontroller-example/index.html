@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Blog">
+<html itemscope="" itemtype="http://schema.org/Blog">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <title>Exploring UIAlertController - Ash Furrow</title>
-<!-- Feed Tags --><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
-<!-- Device specifier --><meta content="width=device-width, initial-scale=1" name="viewport">
-<!-- Meta stuff --><link href="https://ashfurrow.com/blog/uialertviewcontroller-example/" rel="canonical">
+<meta content="width=device-width initial-scale=1" name="viewport">
+<link href="https://ashfurrow.com/blog/uialertviewcontroller-example/" rel="canonical">
 <meta content="Ash Furrow" itemprop="name">
 <meta content="https://ashfurrow.com/blog/uialertviewcontroller-example/" itemprop="url">
 <meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." itemprop="about">
 <meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." itemprop="description">
 <meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
-<!-- Open Graph --><meta content="Ash Furrow" property="og:site_name">
+<meta content="Ash Furrow" property="og:site_name">
 <meta content="Exploring UIAlertController" property="og:title">
 <meta content="https://ashfurrow.com/blog/uialertviewcontroller-example/" property="og:url">
 <meta content="website" property="og:type">
 <meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." property="og:description">
 <meta content="https://ashfurrow.com/img/import/blog/uialertviewcontroller-example/C47E5C761A24426CB34230DBB2A7AF7C.png" property="og:image">
-<!-- Twitter Cards --><meta content="summary" name="twitter:card">
+<meta content="summary" name="twitter:card">
 <meta content="@ashfurrow" name="twitter:site">
 <meta content="@ashfurrow" name="twitter:creator">
 <meta content="Exploring UIAlertController" name="twitter:title">
 <meta content="This morning, I was working on the sample app for Moya, a network abstraction framework that I’ve built on top of Alamofire. I needed a way to grab some user text input, so I turned to UIAlertView. Turns out that that’s deprecated in favour of UIAlertController. Hmm." name="twitter:description">
 <meta content="https://ashfurrow.com/img/import/blog/uialertviewcontroller-example/C47E5C761A24426CB34230DBB2A7AF7C.png" name="twitter:image">
-<!-- Favicon, site icons, etc --><link href="/img/siteimage_dark.png" rel="image_src">
+<link href="/img/siteimage_dark.png" rel="image_src">
 <meta content="/img/siteimage_dark.png" itemprop="image">
-<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
-<!-- Favicons, generated from https://realfavicongenerator.net/ --><link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
 <link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
 <link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
 <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
@@ -47,23 +47,7 @@
 <meta content="#da532c" name="msapplication-TileColor">
 <meta content="/mstile-144x144.png" name="msapplication-TileImage">
 <meta content="#398ccc" name="theme-color">
-<!-- Search enginer index --><!-- Rich Snippets --><script type="application/ld+json">
-{
-'@context' : 'http://schema.org',
-'@type' : 'Person',
-'name' : 'Ash Furrow',
-'url' : 'https://ashfurrow.com',
-'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
-'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
-}
-</script><script type="application/ld+json">
-{
-'@context': 'http://schema.org',
-'@type': 'Organization',
-'url': 'https://ashfurrow.com',
-'logo': '/img/siteimage.png'
-}
-</script><!-- Style-specific Javascripts --><style type="text/css">html {
+<script type="application/ld+json">{  '@context' ='http://schema.org',  '@type' ='Person',  'name' ='Ash Furrow',  'url' ='https://ashfurrow.com',  'image' ='http://static.ashfurrow.com/ashfurrow_square.jpg',  'sameAs' =[ 'http://twitter.com/ashfurrow' 'http://instagram.com/ashfurrow' 'http://github.com/ashfurrow' ]}</script><script type="application/ld+json">{  '@context'='http://schema.org',  '@type'='Organization',  'url'='https://ashfurrow.com',  'logo'='/img/siteimage.png'}</script><style type="text/css">html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -787,146 +771,107 @@ header {
 
 .fa-rss-square:before {
   content: "\f143";
-}</style>
-<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script><script type="text/javascript">/*!
+}
+</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,o,r){i=a[c],i&&(o=e.createElement("style"),o.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(o),e.documentElement.className+=" wf-cached"),r=t[n],t[n]=function(e,l,d,m){if("string"==typeof l&&l.indexOf(s)>-1){try{d=new XMLHttpRequest,d.open("GET",l,!0),d.onreadystatechange=function(){try{4==d.readyState&&(m=d.responseText.replace(/url\(\//g,"url("+s+"/"),m!==i&&(a[c]=m))}catch(e){o&&(o.innerHTML="")}},d.send(null)}catch(e){}t[n]=r}return r.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,o=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},o.parentNode.insertBefore(s,o)}(document);</script><script type="text/javascript">/*!
 loadCSS: load a CSS file asynchronously.
 [c]2015 @scottjehl, Filament Group, Inc.
 Licensed MIT
 */
-!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>
-  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
-  loadCSS( '../../css/all.css' );
-</script><!-- Google Analytics --><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-  ga('create', 'UA-9572240-3', 'auto');
-  ga('send', 'pageview');
-</script><!-- Backup to load styles not from javascript. -->
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+loadCSS('/css/all.css');</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9572240-3', 'auto');
+ga('send', 'pageview');</script>
 </head>
 <body>
-<noscript>
-<link href="/css/all.css" rel="stylesheet">
-</noscript>
-
-
-
-<!-- Navigation -->
+<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header page-scroll">
-<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
-<span class="sr-only">Toggle Navigation</span>
-<!-- Hamburger -->
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="/">
-<i class="icon-site-logo"></i>
-</a>
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
 </div>
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right">
 <li><a href="/">Blog</a></li>
 <li><a href="/about/">About</a></li>
 <li><a href="/books/">Books</a></li>
 <li><a href="/portfolio/">Portfolio</a></li>
 <li><a href="/speaking/">Speaking</a></li>
 <li>
-<a class="text-link" href="/search">Search</a>
-<a class="icon-link" href="/search"><i class="fa fa-search"></i></a>
+<a href="/search" class="text-link">Search</a><a href="/search" class="icon-link"><i class="fa fa-search"></i></a>
 </li>
 <li>
-<a class="text-link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
-<a class="icon-link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+<a href="//feed.ashfurrow.com/feed.xml" class="text-link">Blog Feed</a><a href="//feed.ashfurrow.com/feed.xml" class="icon-link"><i class="fa fa-rss-square"></i></a>
 </li>
-</ul>
-</div>
-</div>
-</nav><!-- Main Content --><!-- Page Header --><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class="post-heading">
-<h1>Exploring UIAlertController</h1>
-</div>
-</div>
-</div>
-</div>
-<!-- If a background image source was specified, link to it. -->
-</header><div class="container">
-<article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</ul></div>
+</div></nav><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
+<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Exploring UIAlertController</h1></div></div></div></div></header><div class="container">
+<article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>This morning, I was working on the <a href="https://github.com/AshFurrow/Moya/issues/39">sample app</a> for <a href="https://github.com/AshFurrow/Moya">Moya</a>, a network abstraction framework that I’ve built on top of <a href="https://github.com/Alamofire/Alamofire">Alamofire</a>. I needed a way to grab some user text input, so I turned to <code>UIAlertView</code>. Turns out that that’s deprecated in favour of <code>UIAlertController</code>. Hmm.</p>
 
-
+<p></p>
 
 <p>Looking around the internet, there weren’t very many examples of how to use this cool new class, and the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIAlertController_class/">documentation</a> was sparse at best. Let’s take a look at the high-level API and then get into some of the nitty-gritty. (I’m going to write this in Swift because I am not a <a href="http://t.co/Q2hvacChLu">dinosaur</a>.)</p>
 
 <p><code>UIAlertController</code> is a <code>UIViewController</code> subclass. This contrasts with <code>UIAlertView</code>, a <code>UIView</code> subclass. View controllers are (or at least, should be) the main unit of composition when writing iOS applications. It makes a lot of sense that Apple would replace alert views with alert view <em>controllers</em>. That’s cool.</p>
 
 <p>Creating an alert view controller is pretty simple. Just use the initializer to create one and then present it to the user as you would present any other view controller.</p>
-<pre><code class="highlight swift"><span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
 <span class="nf">presentViewController</span><span class="p">(</span><span class="n">alertController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
 </code></pre>
-
 <p>Pretty straightforward. I’m using the <code>.Alert</code> preferred style, but you can use the <code>.ActionSheet</code> instead. I’m using this as a replacement for <code>UIAlertView</code>, so I’ll just discuss the alert style.</p>
 
 <p>If you ran this code, you’d be presented with something like the following (on beta 7).</p>
 
-<p><img src="/img/import/blog/uialertviewcontroller-example/C47E5C761A24426CB34230DBB2A7AF7C.png"></p>
+<p><img src="/img/import/blog/uialertviewcontroller-example/C47E5C761A24426CB34230DBB2A7AF7C.png" alt="C47e5c761a24426cb34230dbb2a7af7c"></p>
 
 <p>Weird. The title is there, but the message is not present. There are also no buttons, so you can’t dismiss the controller. It’s there until you relaunch your app. Sucky.</p>
 
 <p>Turns out if you want buttons, you’ve got to explicitly add them to the controller before presenting it.</p>
-<pre><code class="highlight swift"><span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">})</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">})</span>
 <span class="k">let</span> <span class="nv">cancel</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Cancel"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Cancel</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">}</span> 
 <span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">ok</span><span class="p">)</span> <span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">cancel</span><span class="p">)</span> 
 </code></pre>
-
 <p>This is <em>worlds</em> better than <code>UIAlertView</code>, despite being much more verbose. First of all, you can have multiple cancel or destructive buttons. You also specify individual closures to be executed when a button is pressed instead of some shitty delegate callback telling you which button <em>index</em> was pressed. (If anyone out there makes a <code>UIAlertController+Blocks</code> category, I will find you, and I <em>will</em> kill you.)</p>
 
-<p><img src="/img/import/blog/uialertviewcontroller-example/2A03E60C605A42789A6FAF704BB9A130.jpg"></p>
+<p><img src="/img/import/blog/uialertviewcontroller-example/2A03E60C605A42789A6FAF704BB9A130.jpg" alt="2a03e60c605a42789a6faf704bb9a130"></p>
 
 <p>If we added the above configuration to our code, we’d get the following.</p>
 
-<p><img src="/img/import/blog/uialertviewcontroller-example/08BE65FFF6E243CAAD311D4115EC75B6.png"></p>
+<p><img src="/img/import/blog/uialertviewcontroller-example/08BE65FFF6E243CAAD311D4115EC75B6.png" alt="08be65fff6e243caad311d4115ec75b6"></p>
 
 <p>Way better. Weird that the message is now showing up. Maybe it’s a bug, or maybe it’s intended behaviour. Apple, you so cray cray. Anyway, you should also notice that the “OK” and “Cancel” buttons have been styled and positioned according to iOS conventions. Neato.</p>
 
 <p>What <em>I</em> needed, however, was user input. This was possible with <code>UIAlertView</code>, so it should be possible with <code>UIAlertController</code>, right? Well, kinda. There’s an encouraging instance method named <code>addTextFieldWithConfigurationHandler()</code>, but using it is not so straightforward. Let me show you what I mean.</p>
-<pre><code class="highlight swift"><span class="n">alertController</span><span class="o">.</span><span class="n">addTextFieldWithConfigurationHandler</span> <span class="p">{</span> <span class="p">(</span><span class="n">textField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
-    <span class="c1">// Here you can configure the text field (eg: make it secure, add a placeholder, etc) 
-</span><span class="p">}</span> 
+<pre class="highlight swift"><code><span class="n">alertController</span><span class="o">.</span><span class="n">addTextFieldWithConfigurationHandler</span> <span class="p">{</span> <span class="p">(</span><span class="n">textField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
+    <span class="c1">// Here you can configure the text field (eg: make it secure, add a placeholder, etc) </span>
+<span class="p">}</span> 
 </code></pre>
-
 <p>Straightforward. Run the code, get the following.</p>
 
-<p><img src="/img/import/blog/uialertviewcontroller-example/9EA0E4E86AB54891A9A27BC24D1C8889.png"></p>
+<p><img src="/img/import/blog/uialertviewcontroller-example/9EA0E4E86AB54891A9A27BC24D1C8889.png" alt="9ea0e4e86ab54891a9a27bc24d1c8889"></p>
 
 <p>The question now is this: how do you, in the closure for the “OK” button, access the contents of the text field?</p>
 
-<p><img src="/img/import/blog/uialertviewcontroller-example/0E7A01300D2F49C6947664D55AC91803.gif"></p>
+<p><img src="/img/import/blog/uialertviewcontroller-example/0E7A01300D2F49C6947664D55AC91803.gif" alt="0e7a01300d2f49c6947664d55ac91803"></p>
 
 <p>There is no way for you to directly access the text field from the closure invoked when a button is pressed. <a href="http://stackoverflow.com/questions/24172593/access-input-from-uialertcontroller">This</a> StackOverflow question has two possible answers. You can access the <code>textFields</code> array on the controller (assuming that the order of that array is the same as the order which you added the text fields), but this causes a reference cycle (the alert action has a strong reference to the alert view controller, which has a strong reference to the alert action). This <em>does</em> cause a memory leak for each controller that you present.</p>
 
-<p><img src="/img/import/blog/uialertviewcontroller-example/31715566B57649FF8B277A3063191734.png"></p>
+<p><img src="/img/import/blog/uialertviewcontroller-example/31715566B57649FF8B277A3063191734.png" alt="31715566b57649ff8b277a3063191734"></p>
 
 <p>The other answer suggests storing the text field that’s passed into the configuration closure in a property on the presenting controller, which can later be accessed. That’s a <em>very</em> Objective-C way of solving this problem.</p>
 
 <p>So what do we do? Well, I’ve been writing Swift lately, and whenever I come across a problem like this, I think “if I had <a href="http://instagram.com/p/rWyQdUDBhH">five years of Swift experience</a>, what would <em>I</em> do?” My answer was the following.</p>
 
 <p>Let’s create a local variable, a <code>UITextField?</code> optional. In the configuration closure for the text field, assign the local variable to the text field that we’re passed in. Then we can access that local variable in our alert action closure. Sweet. The full implementation looks like this.</p>
-<pre><code class="highlight swift"><span class="k">var</span> <span class="nv">inputTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">?</span>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">inputTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">?</span>
 
 <span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
 <span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
-    <span class="c1">// Do whatever you want with inputTextField?.text 
-</span>    <span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">inputTextField</span><span class="p">?</span><span class="o">.</span><span class="n">text</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="c1">// Do whatever you want with inputTextField?.text </span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">inputTextField</span><span class="p">?</span><span class="o">.</span><span class="n">text</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
 <span class="p">})</span>
 <span class="k">let</span> <span class="nv">cancel</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Cancel"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Cancel</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">}</span> 
 
@@ -940,10 +885,9 @@ Licensed MIT
 <span class="nf">presentViewController</span><span class="p">(</span><span class="n">alertController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> 
 
 </code></pre>
-
 <p>I like this a lot. It avoids polluting our object with unnecessary properties, avoids memory leaks, and seems pretty “Swift”. I’ve created a <a href="https://github.com/AshFurrow/UIAlertController-Example">GitHub repo</a> that I’ll keep up to date with future betas, etc.</p>
 
-<p><img src="/img/import/blog/uialertviewcontroller-example/09B8BCEA8BBE48239C07298CD4112B53.jpg"></p>
+<p><img src="/img/import/blog/uialertviewcontroller-example/09B8BCEA8BBE48239C07298CD4112B53.jpg" alt="09b8bcea8bbe48239c07298cd4112b53"></p>
 
 <p>So yeah. The new <code>UIAlertController</code> has some great benefits:</p>
 
@@ -961,83 +905,30 @@ Licensed MIT
 <p>As we march forward into this brave new world of Swift, we need to reevaluate our approaches to familiar problems. Just because a solution that worked well in Objective-C might work OK in Swift doesn’t make it a solution <em>well</em> suited for use in Swift. As developers, we should keep an open mind about new ideas and experiment. The way I look at it is like this: right now, the community is pretty new at Swift. We’re racing in all different directions because <a href="http://robnapier.net/i-dont-know-swift">no one</a> really knows what the best practices are, yet. We need this expansion in all directions, even if a lot of those directions are going to turn out to be bad ideas. If we don’t throw it all against the wall, we won’t figure out what sticks.</p>
 
 <p>So next time you try and do something and get confused because Swift is unfamiliar, try all kinds of things. Could be you end up creating a brand new convention that’s adopted by the whole iOS community for years to come.</p>
-
 <hr>
 <span class="meta">Posted on September  7, 2014</span>
-</div>
-</div>
-</article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</div></div></article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <hr>
 <div id="book-link">
-<a href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
-<img src="/img/marketing/swift.jpg"></a>
-<a class="visible-md visible-lg" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
-<h3>Enjoyed my post? You'd love my book!</h3>
-</a>
-<a class="visible-xs visible-sm" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
-<h3>Enjoyed my post?</h3>
-</a>
-<p>My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.</p>
+<a href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')"><img src="/img/marketing/swift.jpg"></a><a class="visible-md visible-lg" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')"><h3>Enjoyed my post? You'd love my book!</h3></a><a class="visible-xs visible-sm" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')"><h3>Enjoyed my post?</h3></a><p>My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.</p>
 </div>
 <div class="clearfix"></div>
-
 <hr>
-<!-- Pager --><ul class="pager article_pager">
-<li class="next">
-<a href="/blog/shooting-film/"><div>Shooting Film</div>
-</a>
-</li>
-<li class="previous">
-<a href="/blog/photographic-rut/"><div>Photographic Rut</div>
-</a>
-</li>
+<ul class="pager article_pager">
+<li class="next"><a href="/blog/shooting-film/"><div>Shooting Film</div></a></li>
+<li class="previous"><a href="/blog/copenhagenwarsaw-tour/"><div>Copenhagen/Warsaw Tour</div></a></li>
 </ul>
+</div></div>
 </div>
-</div>
-</div>
-
-<!-- Footer -->
 <hr id="page_footer">
-<footer><div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<footer><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <ul class="list-inline text-center">
-<li>
-<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
+<li><a href="https://twitter.com/ashfurrow" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="https://github.com/ashfurrow" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://photos.ashfurrow.com" title="Photo Blog"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-picture-o fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://instagram.com/ashfurrow" title="Instagram"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
 </ul>
-<p class="copyright text-muted">
-This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
-</p>
-</div>
-</div>
-</div>
-</footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
+<p class="copyright text-muted"> This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+</div></div></div></footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
 </body>
 </html>

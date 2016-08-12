@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Blog">
+<html itemscope="" itemtype="http://schema.org/Blog">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <title>Swift Initializers - Ash Furrow</title>
-<!-- Feed Tags --><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
-<!-- Device specifier --><meta content="width=device-width, initial-scale=1" name="viewport">
-<!-- Meta stuff --><link href="https://ashfurrow.com/blog/swift-initializers/" rel="canonical">
+<meta content="width=device-width initial-scale=1" name="viewport">
+<link href="https://ashfurrow.com/blog/swift-initializers/" rel="canonical">
 <meta content="Ash Furrow" itemprop="name">
 <meta content="https://ashfurrow.com/blog/swift-initializers/" itemprop="url">
 <meta content="Swift, Apple’s new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:" itemprop="about">
 <meta content="Swift, Apple’s new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:" itemprop="description">
 <meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
-<!-- Open Graph --><meta content="Ash Furrow" property="og:site_name">
+<meta content="Ash Furrow" property="og:site_name">
 <meta content="Swift Initializers" property="og:title">
 <meta content="https://ashfurrow.com/blog/swift-initializers/" property="og:url">
 <meta content="website" property="og:type">
 <meta content="Swift, Apple’s new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:" property="og:description">
 <meta content="https://ashfurrow.com/img/siteimage_dark.png" property="og:image">
-<!-- Twitter Cards --><meta content="summary" name="twitter:card">
+<meta content="summary" name="twitter:card">
 <meta content="@ashfurrow" name="twitter:site">
 <meta content="@ashfurrow" name="twitter:creator">
 <meta content="Swift Initializers" name="twitter:title">
 <meta content="Swift, Apple’s new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:" name="twitter:description">
 <meta content="https://ashfurrow.com/img/siteimage_dark.png" name="twitter:image">
-<!-- Favicon, site icons, etc --><link href="/img/siteimage_dark.png" rel="image_src">
+<link href="/img/siteimage_dark.png" rel="image_src">
 <meta content="/img/siteimage_dark.png" itemprop="image">
-<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
-<!-- Favicons, generated from https://realfavicongenerator.net/ --><link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
 <link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
 <link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
 <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
@@ -47,23 +47,7 @@
 <meta content="#da532c" name="msapplication-TileColor">
 <meta content="/mstile-144x144.png" name="msapplication-TileImage">
 <meta content="#398ccc" name="theme-color">
-<!-- Search enginer index --><!-- Rich Snippets --><script type="application/ld+json">
-{
-'@context' : 'http://schema.org',
-'@type' : 'Person',
-'name' : 'Ash Furrow',
-'url' : 'https://ashfurrow.com',
-'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
-'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
-}
-</script><script type="application/ld+json">
-{
-'@context': 'http://schema.org',
-'@type': 'Organization',
-'url': 'https://ashfurrow.com',
-'logo': '/img/siteimage.png'
-}
-</script><!-- Style-specific Javascripts --><style type="text/css">html {
+<script type="application/ld+json">{  '@context' ='http://schema.org',  '@type' ='Person',  'name' ='Ash Furrow',  'url' ='https://ashfurrow.com',  'image' ='http://static.ashfurrow.com/ashfurrow_square.jpg',  'sameAs' =[ 'http://twitter.com/ashfurrow' 'http://instagram.com/ashfurrow' 'http://github.com/ashfurrow' ]}</script><script type="application/ld+json">{  '@context'='http://schema.org',  '@type'='Organization',  'url'='https://ashfurrow.com',  'logo'='/img/siteimage.png'}</script><style type="text/css">html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -787,80 +771,44 @@ header {
 
 .fa-rss-square:before {
   content: "\f143";
-}</style>
-<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script><script type="text/javascript">/*!
+}
+</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,o,r){i=a[c],i&&(o=e.createElement("style"),o.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(o),e.documentElement.className+=" wf-cached"),r=t[n],t[n]=function(e,l,d,m){if("string"==typeof l&&l.indexOf(s)>-1){try{d=new XMLHttpRequest,d.open("GET",l,!0),d.onreadystatechange=function(){try{4==d.readyState&&(m=d.responseText.replace(/url\(\//g,"url("+s+"/"),m!==i&&(a[c]=m))}catch(e){o&&(o.innerHTML="")}},d.send(null)}catch(e){}t[n]=r}return r.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,o=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},o.parentNode.insertBefore(s,o)}(document);</script><script type="text/javascript">/*!
 loadCSS: load a CSS file asynchronously.
 [c]2015 @scottjehl, Filament Group, Inc.
 Licensed MIT
 */
-!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>
-  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
-  loadCSS( '../../css/all.css' );
-</script><!-- Google Analytics --><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-  ga('create', 'UA-9572240-3', 'auto');
-  ga('send', 'pageview');
-</script><!-- Backup to load styles not from javascript. -->
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+loadCSS('/css/all.css');</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9572240-3', 'auto');
+ga('send', 'pageview');</script>
 </head>
 <body>
-<noscript>
-<link href="/css/all.css" rel="stylesheet">
-</noscript>
-
-
-
-<!-- Navigation -->
+<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header page-scroll">
-<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
-<span class="sr-only">Toggle Navigation</span>
-<!-- Hamburger -->
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="/">
-<i class="icon-site-logo"></i>
-</a>
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
 </div>
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right">
 <li><a href="/">Blog</a></li>
 <li><a href="/about/">About</a></li>
 <li><a href="/books/">Books</a></li>
 <li><a href="/portfolio/">Portfolio</a></li>
 <li><a href="/speaking/">Speaking</a></li>
 <li>
-<a class="text-link" href="/search">Search</a>
-<a class="icon-link" href="/search"><i class="fa fa-search"></i></a>
+<a href="/search" class="text-link">Search</a><a href="/search" class="icon-link"><i class="fa fa-search"></i></a>
 </li>
 <li>
-<a class="text-link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
-<a class="icon-link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+<a href="//feed.ashfurrow.com/feed.xml" class="text-link">Blog Feed</a><a href="//feed.ashfurrow.com/feed.xml" class="icon-link"><i class="fa fa-rss-square"></i></a>
 </li>
-</ul>
-</div>
-</div>
-</nav><!-- Main Content --><!-- Page Header --><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class="post-heading">
-<h1>Swift Initializers</h1>
-</div>
-</div>
-</div>
-</div>
-<!-- If a background image source was specified, link to it. -->
-</header><div class="container">
-<article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</ul></div>
+</div></nav><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
+<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Swift Initializers</h1></div></div></div></div></header><div class="container">
+<article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>Swift, Apple’s new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:</p>
 
 <ul>
@@ -878,18 +826,17 @@ Licensed MIT
 <p>That’s not the case in Swift. Swift has a very clear, specific sequence of operations that are done in initializers. Let’s start with some basic examples are work our way up to a general case.</p>
 
 <p>Let’s take an object A. We’ll define it as follows.</p>
-<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>Notice that A does <em>not</em> have a superclass, so it cannot call a <code>super.init()</code> function as it does not exist.</p>
 
 <p>OK, so now let’s subclass A with a new class named B.</p>
-<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
@@ -897,11 +844,10 @@ Licensed MIT
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>This is a departure from Objective-C where <code>[super init]</code> would typically be called <em>first</em> before anything else. Not so in Swift. You are responsible for ensuring that <em>your</em> instance variables are in a consistent state before you do <em>anything else</em>, including calling methods (which includes your superclass’ initializer). Neato.</p>
 
 <p>But there’s one more hitch. Say that we want to make sure that <code>x</code> is always set to a value computed by a method in our class? We can’t call a method on B until we call super’s init. We’d actually write something like this.</p>
-<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
@@ -914,22 +860,20 @@ Licensed MIT
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>That’s right. If you want to access a superclass’ property,you <em>must</em> do so <em>after</em> calling <code>super.init()</code> in order to give the superclass a chance to set them first.</p>
 
 <p>In general, a Swift object initializer looks like the following:</p>
-<pre><code class="highlight swift"><span class="nf">init</span><span class="p">(</span><span class="cm">/*parameters*/</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// set own properties, if necessary
-</span>    <span class="c1">// call super.init()
-</span>    <span class="c1">// set superclass' properties, if necessary
-</span><span class="p">}</span>
+<pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="cm">/*parameters*/</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// set own properties, if necessary</span>
+    <span class="c1">// call super.init()</span>
+    <span class="c1">// set superclass' properties, if necessary</span>
+<span class="p">}</span>
 </code></pre>
-
 <h2 id="convenience-and-designated-initializers">
 <a class="header-link" href="#convenience-and-designated-initializers">#</a> Convenience and Designated Initializers</h2>
 
 <p>Swift formalizes the common Objective-C pattern of designated initializers into something checked at compile-time. This is actually really, really cool. Let’s take a look at a new class hierarchy.</p>
-<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="n">convenience</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
@@ -939,11 +883,10 @@ Licensed MIT
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p><code>init(x: Int)</code> is the designated initializer for this class and all other initializers in A <em>must</em> have the <code>convenience</code>. Convenience initializers can call other convenience initializers, or the designated initializer.</p>
 
 <p>Let’s take a look at a subclass. This is where things get interesting.</p>
-<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="n">convenience</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
@@ -957,14 +900,13 @@ Licensed MIT
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>Convenience initializers in a subclass may <em>only</em> call other initializers in <em>their own class</em>. Only the designated initializer may call an initializer on the superclass.</p>
 
 <h2 id="missing-objective-c-style-semantics">
 <a class="header-link" href="#missing-objective-c-style-semantics">#</a> Missing Objective-C-Style Semantics</h2>
 
 <p>Swift departs from Objective-C initializers. Consider the old style initializer.</p>
-<pre><code class="highlight objective_c"><span class="k">-</span><span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="p">{</span>
+<pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="p">{</span>
     <span class="n">self</span> <span class="o">=</span> <span class="p">[</span><span class="n">super</span> <span class="nf">init</span><span class="p">];</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">self</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// setup
@@ -972,19 +914,17 @@ Licensed MIT
     <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>There are a few distinctive parts to a classic Objective-C initializer. First, you need to assign <code>self</code> to something, either your superclass’ initializer or another initializer on <code>self</code>. Then we check if the reference to <code>self</code> is valid (maybe the initializer that <em>we</em> called returned <code>nil</code>). We do some setup, then we must return <code>self</code>.</p>
 
 <p>In contrast, Swift initializers are very straightforward. Initializers don’t return <code>self</code>, so you don’t need to return <code>self</code>. Cool! However, this has a implication. In Objective-C, if initialization fails, we can return <code>nil</code> in order to indicate that failure. Since Swift initializers don’t return a reference to <code>self</code>, this approach is not possible.</p>
 
 <p>I spoke with an Apple engineer at the Swift Lab at WWDC and asked about the pattern. He indicated that this was not currently possible. Instead, we should use factory methods that return an <em>optional</em> type. (<strong>Update</strong>: see the <a href="#update">note</a> at the end of this post.)</p>
-<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="kd">class</span> <span class="kd">func</span> <span class="nf">anything</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">A</span><span class="p">?</span> <span class="p">{</span>
         <span class="k">return</span> <span class="kt">A</span><span class="p">()</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>He indicated that they’re working on building something into the language, since initializers are the preferred way to create instances (as opposed to factory class methods). For now, this works well if you need this kind of failing initializer pattern.</p>
 
 <p>Neat! Swift has really embraced the conventions that Cocoa and CocoaTouch developers already know and incorporated them into the language-level with compile-time checks.</p>
@@ -994,93 +934,39 @@ Licensed MIT
 <a class="header-link" href="#update">#</a> Update</h3>
 
 <p>Swift 1.1 introduced the concept of <a href="https://developer.apple.com/swift/blog/?id=17"><em>failable initializers</em></a>: <code>init</code> methods that return an optional. These can be specified by placing a <code>?</code> after the <code>init</code> keyword.</p>
-<pre><code class="highlight swift"><span class="kd">class</span> <span class="kt">Image</span> <span class="p">{</span>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Image</span> <span class="p">{</span>
     <span class="nf">init</span><span class="p">?(</span><span class="nv">filename</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
         <span class="o">...</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>Inside the <code>init?</code>, you can <code>return nil</code> to define a failing initialization, or assign <code>self = whatever</code> to indicate success. </p>
 
 <p>Be careful about calling through to a failable initializer inside of a regular one – a non-failing initializer <em>must not fail</em>. The compiler will force you either to force-unwrap the call to <code>super.init()</code> or to change your initializer to <em>also</em> be failable. Neat!</p>
-
 <hr>
 <span class="meta">Posted on June  6, 2014</span>
-</div>
-</div>
-</article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</div></div></article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <hr>
 <div id="book-link">
-<a href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
-<img src="/img/marketing/swift.jpg"></a>
-<a class="visible-md visible-lg" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
-<h3>Enjoyed my post? You'd love my book!</h3>
-</a>
-<a class="visible-xs visible-sm" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')">
-<h3>Enjoyed my post?</h3>
-</a>
-<p>My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.</p>
+<a href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')"><img src="/img/marketing/swift.jpg"></a><a class="visible-md visible-lg" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')"><h3>Enjoyed my post? You'd love my book!</h3></a><a class="visible-xs visible-sm" href="http://leanpub.com/yourfirstswiftapp" onclick="trackMaretingLink('swift')"><h3>Enjoyed my post?</h3></a><p>My book takes beginners on the journey of building their first full iOS app. I detail everything from opening Xcode for the first time, to building the app, to even submitting to the App Store.</p>
 </div>
 <div class="clearfix"></div>
-
 <hr>
-<!-- Pager --><ul class="pager article_pager">
-<li class="next">
-<a href="/blog/a-familiar-form/"><div>A Familiar Form</div>
-</a>
-</li>
-<li class="previous">
-<a href="/blog/initial-thoughts-on-swift/"><div>Initial Thoughts on Swift</div>
-</a>
-</li>
+<ul class="pager article_pager">
+<li class="next"><a href="/blog/a-familiar-form/"><div>A Familiar Form</div></a></li>
+<li class="previous"><a href="/blog/initial-thoughts-on-swift/"><div>Initial Thoughts on Swift</div></a></li>
 </ul>
+</div></div>
 </div>
-</div>
-</div>
-
-<!-- Footer -->
 <hr id="page_footer">
-<footer><div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<footer><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <ul class="list-inline text-center">
-<li>
-<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
+<li><a href="https://twitter.com/ashfurrow" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="https://github.com/ashfurrow" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://photos.ashfurrow.com" title="Photo Blog"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-picture-o fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://instagram.com/ashfurrow" title="Instagram"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
 </ul>
-<p class="copyright text-muted">
-This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
-</p>
-</div>
-</div>
-</div>
-</footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
+<p class="copyright text-muted"> This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+</div></div></div></footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
 </body>
 </html>

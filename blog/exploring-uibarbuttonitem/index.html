@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Blog">
+<html itemscope="" itemtype="http://schema.org/Blog">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <title>Exploring UIBarButtonItem - Ash Furrow</title>
-<!-- Feed Tags --><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
-<!-- Device specifier --><meta content="width=device-width, initial-scale=1" name="viewport">
-<!-- Meta stuff --><link href="https://ashfurrow.com/blog/exploring-uibarbuttonitem/" rel="canonical">
+<meta content="width=device-width initial-scale=1" name="viewport">
+<link href="https://ashfurrow.com/blog/exploring-uibarbuttonitem/" rel="canonical">
 <meta content="Ash Furrow" itemprop="name">
 <meta content="https://ashfurrow.com/blog/exploring-uibarbuttonitem/" itemprop="url">
 <meta content="Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring." itemprop="about">
 <meta content="Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring." itemprop="description">
 <meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
-<!-- Open Graph --><meta content="Ash Furrow" property="og:site_name">
+<meta content="Ash Furrow" property="og:site_name">
 <meta content="Exploring UIBarButtonItem" property="og:title">
 <meta content="https://ashfurrow.com/blog/exploring-uibarbuttonitem/" property="og:url">
 <meta content="website" property="og:type">
 <meta content="Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring." property="og:description">
 <meta content="https://ashfurrow.com/img/import/blog/exploring-uibarbuttonitem/36A0D5D3B0B24483B02E652F53987E58.png" property="og:image">
-<!-- Twitter Cards --><meta content="summary" name="twitter:card">
+<meta content="summary" name="twitter:card">
 <meta content="@ashfurrow" name="twitter:site">
 <meta content="@ashfurrow" name="twitter:creator">
 <meta content="Exploring UIBarButtonItem" name="twitter:title">
 <meta content="Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring." name="twitter:description">
 <meta content="https://ashfurrow.com/img/import/blog/exploring-uibarbuttonitem/36A0D5D3B0B24483B02E652F53987E58.png" name="twitter:image">
-<!-- Favicon, site icons, etc --><link href="/img/siteimage_dark.png" rel="image_src">
+<link href="/img/siteimage_dark.png" rel="image_src">
 <meta content="/img/siteimage_dark.png" itemprop="image">
-<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
-<!-- Favicons, generated from https://realfavicongenerator.net/ --><link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
 <link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
 <link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
 <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
@@ -47,23 +47,7 @@
 <meta content="#da532c" name="msapplication-TileColor">
 <meta content="/mstile-144x144.png" name="msapplication-TileImage">
 <meta content="#398ccc" name="theme-color">
-<!-- Search enginer index --><!-- Rich Snippets --><script type="application/ld+json">
-{
-'@context' : 'http://schema.org',
-'@type' : 'Person',
-'name' : 'Ash Furrow',
-'url' : 'https://ashfurrow.com',
-'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
-'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
-}
-</script><script type="application/ld+json">
-{
-'@context': 'http://schema.org',
-'@type': 'Organization',
-'url': 'https://ashfurrow.com',
-'logo': '/img/siteimage.png'
-}
-</script><!-- Style-specific Javascripts --><style type="text/css">html {
+<script type="application/ld+json">{  '@context' ='http://schema.org',  '@type' ='Person',  'name' ='Ash Furrow',  'url' ='https://ashfurrow.com',  'image' ='http://static.ashfurrow.com/ashfurrow_square.jpg',  'sameAs' =[ 'http://twitter.com/ashfurrow' 'http://instagram.com/ashfurrow' 'http://github.com/ashfurrow' ]}</script><script type="application/ld+json">{  '@context'='http://schema.org',  '@type'='Organization',  'url'='https://ashfurrow.com',  'logo'='/img/siteimage.png'}</script><style type="text/css">html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -787,83 +771,47 @@ header {
 
 .fa-rss-square:before {
   content: "\f143";
-}</style>
-<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script><script type="text/javascript">/*!
+}
+</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,o,r){i=a[c],i&&(o=e.createElement("style"),o.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(o),e.documentElement.className+=" wf-cached"),r=t[n],t[n]=function(e,l,d,m){if("string"==typeof l&&l.indexOf(s)>-1){try{d=new XMLHttpRequest,d.open("GET",l,!0),d.onreadystatechange=function(){try{4==d.readyState&&(m=d.responseText.replace(/url\(\//g,"url("+s+"/"),m!==i&&(a[c]=m))}catch(e){o&&(o.innerHTML="")}},d.send(null)}catch(e){}t[n]=r}return r.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,o=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},o.parentNode.insertBefore(s,o)}(document);</script><script type="text/javascript">/*!
 loadCSS: load a CSS file asynchronously.
 [c]2015 @scottjehl, Filament Group, Inc.
 Licensed MIT
 */
-!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>
-  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
-  loadCSS( '../../css/all.css' );
-</script><!-- Google Analytics --><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-  ga('create', 'UA-9572240-3', 'auto');
-  ga('send', 'pageview');
-</script><!-- Backup to load styles not from javascript. -->
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+loadCSS('/css/all.css');</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9572240-3', 'auto');
+ga('send', 'pageview');</script>
 </head>
 <body>
-<noscript>
-<link href="/css/all.css" rel="stylesheet">
-</noscript>
-
-
-
-<!-- Navigation -->
+<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header page-scroll">
-<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
-<span class="sr-only">Toggle Navigation</span>
-<!-- Hamburger -->
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="/">
-<i class="icon-site-logo"></i>
-</a>
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
 </div>
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right">
 <li><a href="/">Blog</a></li>
 <li><a href="/about/">About</a></li>
 <li><a href="/books/">Books</a></li>
 <li><a href="/portfolio/">Portfolio</a></li>
 <li><a href="/speaking/">Speaking</a></li>
 <li>
-<a class="text-link" href="/search">Search</a>
-<a class="icon-link" href="/search"><i class="fa fa-search"></i></a>
+<a href="/search" class="text-link">Search</a><a href="/search" class="icon-link"><i class="fa fa-search"></i></a>
 </li>
 <li>
-<a class="text-link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
-<a class="icon-link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+<a href="//feed.ashfurrow.com/feed.xml" class="text-link">Blog Feed</a><a href="//feed.ashfurrow.com/feed.xml" class="icon-link"><i class="fa fa-rss-square"></i></a>
 </li>
-</ul>
-</div>
-</div>
-</nav><!-- Main Content --><!-- Page Header --><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class="post-heading">
-<h1>Exploring UIBarButtonItem</h1>
-</div>
-</div>
-</div>
-</div>
-<!-- If a background image source was specified, link to it. -->
-</header><div class="container">
-<article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</ul></div>
+</div></nav><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
+<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Exploring UIBarButtonItem</h1></div></div></div></div></header><div class="container">
+<article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring.</p>
 
-<p><img src="/img/import/blog/exploring-uibarbuttonitem/36A0D5D3B0B24483B02E652F53987E58.png"></p>
+<p><img src="/img/import/blog/exploring-uibarbuttonitem/36A0D5D3B0B24483B02E652F53987E58.png" alt="36a0d5d3b0b24483b02e652f53987e58"></p>
 
 <p>I’ve decided that the push notifications button should be red so more users tap on it. I think this design decision’s a winner, so I’m not even going to run it by the designer first.</p>
 
@@ -896,23 +844,23 @@ Licensed MIT
 
 <p>In the above screenshot, the image used to create the notifications <code>UIBarButtonItem</code> looks something like the following:</p>
 
-<p><img src="/img/import/blog/exploring-uibarbuttonitem/F8D3867C5BC4452DAC0C9BE2584016D8.png"></p>
+<p><img src="/img/import/blog/exploring-uibarbuttonitem/F8D3867C5BC4452DAC0C9BE2584016D8.png" alt="F8d3867c5bc4452dac0c9be2584016d8"></p>
 
 <p><code>UIBarButtonItem</code> would take this image and figure out what it was <em>supposed</em> to look like, given the properties of the bar it was contained in.</p>
 
 <p>As another example, <code>UITabBar</code> renders images with a blue gradient and nice overlay depending on if its tab was selected:</p>
 
-<p><img src="/img/import/blog/exploring-uibarbuttonitem/A3390B33CC1D4BA6AF60B1A7EEF861B8.jpg"></p>
+<p><img src="/img/import/blog/exploring-uibarbuttonitem/A3390B33CC1D4BA6AF60B1A7EEF861B8.jpg" alt="A3390b33cc1d4ba6af60b1a7eef861b8"></p>
 
 <p>Those tab bar buttons are all drawn using a single, black and white <code>png</code> and are re-rendered if they become selected, as “Songs” currently is.</p>
 
 <p>If you want to circumvent the default appearence of the bar button item, then you can provide a custom view to be placed within the <code>UIBarButtonItem</code> without any custom drawing performed on it. The easiest way to do this is provide a <code>UIImageView</code> with your new custom image in it. For example, if I took the notification icon used above and replaced it with a red icon, I could achieve this effect in the 500px iPad app:</p>
 
-<p><img src="/img/import/blog/exploring-uibarbuttonitem/BEE259C5A030421CB65C5D8012123F70.png"></p>
+<p><img src="/img/import/blog/exploring-uibarbuttonitem/BEE259C5A030421CB65C5D8012123F70.png" alt="Bee259c5a030421cb65c5d8012123f70"></p>
 
 <p>Using this new icon as a <code>UIImageView</code> custom view with <code>UIBarButtonItem</code>’s <code>initWithCustomView:</code> initializer, I’ll get the following effect:</p>
 
-<p><img src="/img/import/blog/exploring-uibarbuttonitem/9E6BCEDFF1564134A3449996EDA4205B.png"></p>
+<p><img src="/img/import/blog/exploring-uibarbuttonitem/9E6BCEDFF1564134A3449996EDA4205B.png" alt="9e6bcedff1564134a3449996eda4205b"></p>
 
 <p>Awesome! I think this is a huge improvement. I can’t wait to show it to Adam to see what he thinks.</p>
 
@@ -923,7 +871,7 @@ Licensed MIT
 <p>Huh.</p>
 
 <p>The solution is to replace the <code>UIImageView</code> as the custom view for the bar button item with a <code>UIButton</code> which <em>contains</em> the image. All I need to do is add the target/action previously assigned to the bar button item to the <code>UIButton</code> and set the <code>UIButton</code>’s <code>showsTouchWhenHighlighted</code> property to <code>YES</code> to get the standard glow applied when the user touches it. This isn’t a hard change, and I even wrote a convenient category method on <code>UIBarButtonItem</code>:</p>
-<pre><code class="highlight plaintext">+ (id)barButtonWithImage:(UIImage *)image style:(UIBarButtonItemStyle)style target:(id)target action:(SEL)action
+<pre class="highlight plaintext"><code>+ (id)barButtonWithImage:(UIImage *)image style:(UIBarButtonItemStyle)style target:(id)target action:(SEL)action
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
@@ -938,26 +886,22 @@ Licensed MIT
     return barButtonItem;
 }
 </code></pre>
-
 <p>Sure, I take some liberties with the size of the button (I wouldn’t publish this to GitHub), but I know that it’ll suit our needs perfectly. I drop it into my Xcode project and hit the play button and try out my app.</p>
 
 <p>Crash.</p>
 
 <p>Well well well. Whenever I tap the notifications button, my app crashes!</p>
-<pre><code class="highlight plaintext">2012-08-24 11:42:02.688 500px[72157:c07] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[UIAccessibilityBundle view]: unrecognized selector sent to instance 0x92438c0'
+<pre class="highlight plaintext"><code>2012-08-24 11:42:02.688 500px[72157:c07] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[UIAccessibilityBundle view]: unrecognized selector sent to instance 0x92438c0'
 *** First throw call stack:
 (0x2b13022 0x22becd6 0x2b14cbd 0x2a79ed0 0x2a79cb2 0x18c21fe 0xa44a4 0x2b14e99 0x142414e 0x14240e6 0x14caade 0x14cafa7 0x14ca266 0x14493c0 0x14495e6 0x142fdc4 0x1423634 0x3c2fef5 0x2ae7195 0x2a4bff2 0x2a4a8da 0x2a49d84 0x2a49c9b 0x3c2e7d8 0x3c2e88a 0x1421626 0x683dc 0x2f15)
 terminate called throwing an exception(lldb)
 </code></pre>
-
 <p>Wow, thanks Xcode. As usual, super helpful stack trace. But no worries; since I follow <a href="http://www.fruitstandsoftware.com">Michael Fey’s blog</a>, I know about a useful tip for <a href="http://www.fruitstandsoftware.com/blog/2012/08/quick-and-easy-debugging-of-unrecognized-selector-sent-to-instance/">debugging these types of errors</a> and I find the line that’s crashing my app:</p>
-<pre><code class="highlight plaintext">[self.pushNotificationsPopoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+<pre class="highlight plaintext"><code>[self.pushNotificationsPopoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 </code></pre>
-
 <p>Everything appears to be fine… wait! There it is! I was using <code>sender</code> to present the popover, but now the sender isn’t a <code>UIBarButtonItem</code> anymore, it’s my custom <code>UIButton</code>! Fuck! Well, not a hard change; I’ll just create a new instance variable in my view controller and use it to present my popover:</p>
-<pre><code class="highlight plaintext">[self.pushNotificationsPopoverController presentPopoverFromBarButtonItem:notificationBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+<pre class="highlight plaintext"><code>[self.pushNotificationsPopoverController presentPopoverFromBarButtonItem:notificationBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 </code></pre>
-
 <p>Finally, everything works. I’ve got my slick new red notification button, which responds to touches, and it doesn’t even crash my app. Not bad.</p>
 
 <p>It would have been a lot easier if, say, <code>UIBarButtonItem</code> wasn’t such a fucking enigma of pain and sublcassed <code>UIView</code> like any other self-respecting member of UIKit, but I digress.</p>
@@ -967,70 +911,26 @@ terminate called throwing an exception(lldb)
 
 <p>There are historical reasons for using this pattern to create standard icons, and it makes the job of developers easy if the look they’re going for fits within the existing interface paradigm (ie: their app looks like it shipped with the user’s device). However, for advanced customization, you’ll have to break out some advanced techniques to convince <code>UIBarButtonItem</code> to behave.</p>
 
-
-
+<p></p>
 <hr>
 <span class="meta">Posted on August 24, 2012</span>
-</div>
-</div>
-</article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</div></div></article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <hr>
-<!-- Pager --><ul class="pager article_pager">
-<li class="next">
-<a href="/blog/how-to-stop-shipping-code-with-todo-comments/"><div>How to Stop Shipping Code with TODO Comments</div>
-</a>
-</li>
-<li class="previous">
-<a href="/blog/my-useful-github-project/"><div>My Useful GitHub Project</div>
-</a>
-</li>
+<ul class="pager article_pager">
+<li class="next"><a href="/blog/how-to-stop-shipping-code-with-todo-comments/"><div>How to Stop Shipping Code with TODO Comments</div></a></li>
+<li class="previous"><a href="/blog/my-useful-github-project/"><div>My Useful GitHub Project</div></a></li>
 </ul>
+</div></div>
 </div>
-</div>
-</div>
-
-<!-- Footer -->
 <hr id="page_footer">
-<footer><div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<footer><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <ul class="list-inline text-center">
-<li>
-<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
+<li><a href="https://twitter.com/ashfurrow" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="https://github.com/ashfurrow" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://photos.ashfurrow.com" title="Photo Blog"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-picture-o fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://instagram.com/ashfurrow" title="Instagram"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
 </ul>
-<p class="copyright text-muted">
-This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
-</p>
-</div>
-</div>
-</div>
-</footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
+<p class="copyright text-muted"> This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+</div></div></div></footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
 </body>
 </html>

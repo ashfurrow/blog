@@ -10,7 +10,7 @@
       <link>https://ashfurrow.com/blog/fresh-macos-setup/</link>
       <description>&lt;p&gt;There are a bunch of things I do when I re-install macOS on a computer, or when I begin working on a new computer. I don&amp;rsquo;t do this often, so it&amp;rsquo;s easy to forget the steps. So I &lt;a href="https://gist.github.com/ashfurrow/3865eed417a5fbe8402708e2c706eea6"&gt;documented everything in a gist&lt;/a&gt;.&lt;/p&gt;
 
-
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I used to keep these steps in Notes.app but figured they should be public anyway (open source by default, right?) so here we are.&lt;/p&gt;
 
@@ -44,7 +44,7 @@
 
 &lt;p&gt;(Note: The original &amp;ldquo;the day&amp;rdquo; was two weeks ago but I had given up in frustration.)&lt;/p&gt;
 
-
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Search is an interesting problem. Most search engines run on servers and not the browser client. This site, just like all static sites like those built with &lt;a href="https://middlemanapp.com"&gt;Middleman&lt;/a&gt;, is generated on a computer before being served statically. It&amp;rsquo;s a faster, easier, and more secure way of serving web pages that don&amp;rsquo;t need dynamism, but it does mean that you can&amp;rsquo;t run server code when a page is fetched.&lt;/p&gt;
 
@@ -68,7 +68,7 @@
 
 
 
-&lt;p&gt;&lt;a href="/search"&gt;&lt;img alt="Screenshot of site search" src="https://ashfurrow.com/img/blog/static-site-search-with-middleman-and-lunrjs/screenshot.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="/search"&gt;&lt;img src="https://ashfurrow.com/img/blog/static-site-search-with-middleman-and-lunrjs/screenshot.jpg" alt="Screenshot of site search" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -102,7 +102,7 @@
 
 &lt;p&gt;But I&amp;rsquo;m not going to do that, because I don&amp;rsquo;t believe it.&lt;/p&gt;
 
-
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;When I write open source and publish it, and then you use it, I don&amp;rsquo;t &lt;em&gt;legally&lt;/em&gt; owe you anything, but I &lt;em&gt;do&lt;/em&gt; owe you something. Maintainers get to benefit from developers using our code, because they&amp;rsquo;ll find bugs and recommend feature requests and we get to benefit from all that too. Maintainers benefit when our code gets used, and I think there&amp;rsquo;s a reciprocal nature to that relationship.&lt;/p&gt;
 
@@ -126,7 +126,7 @@
       <link>https://ashfurrow.com/blog/blogging-workshop-notes/</link>
       <description>&lt;p&gt;This week, at Artsy&amp;rsquo;s offsite, Orta and I are leading a workshop named &amp;ldquo;Bootstrap your Blog!&amp;rdquo; where we&amp;rsquo;ll try to get participants most of the way towards their first blog post. This advice is widely applicable, so I thought I&amp;rsquo;d share it here. &lt;/p&gt;
 
-
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the introductory email we sent participants.&lt;/p&gt;
 
@@ -209,7 +209,7 @@
 
 &lt;p&gt;One of the largest villains in the first season is a goddamn &lt;em&gt;US Senator&lt;/em&gt; who thinks the whole Stargate program is too expensive and wants to shut it down to save money. That would totally happen! &lt;/p&gt;
 
-
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;What damaged &lt;em&gt;SG-1&lt;/em&gt;&amp;rsquo;s reputation more than anything was its timing. &lt;a href="https://ashfurrow.com/blog/make-sci-fi-great-again/"&gt;Sci-fi isn&amp;rsquo;t fun anymore&lt;/a&gt;, and Stargate happened just as sci-fi was transitioning to the dystopian stories we have today. If Stargate had been a few years earlier, or Battlestar: Galactica had been a few years later, I think &lt;em&gt;SG-1&lt;/em&gt; would enjoy a much nicer reputation than it does today.&lt;/p&gt;
 
@@ -402,7 +402,7 @@
       <link>https://ashfurrow.com/blog/steven-universe-and-masculinity/</link>
       <description>&lt;p&gt;Discussion of masculinity in feminism forums online usually centres around &lt;a href="http://geekfeminism.wikia.com/wiki/Toxic_masculinity"&gt;&lt;em&gt;toxic masculinity&lt;/em&gt;&lt;/a&gt;, defined as &amp;ldquo;the socially-constructed attitudes that describe the masculine gender role as violent, unemotional, sexually aggressive, and so forth.&amp;rdquo; It&amp;rsquo;s important to discuss toxic masculinity, and a lot has been said on the topic. But I&amp;rsquo;m &lt;em&gt;really&lt;/em&gt; excited about a &lt;a href="https://www.youtube.com/channel/UCHiwtz2tCEfS17N9A-WoSSw"&gt;new web series&lt;/a&gt; that analyzes positive expressions of masculinity in pop culture.&lt;/p&gt;
 
-
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;If you need an introduction to toxic masculinity and its negative affects on society, check out the video below.&lt;/p&gt;
 

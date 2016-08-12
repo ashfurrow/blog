@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Blog">
+<html itemscope="" itemtype="http://schema.org/Blog">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <title>UICollectionView Example - Ash Furrow</title>
-<!-- Feed Tags --><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
-<!-- Device specifier --><meta content="width=device-width, initial-scale=1" name="viewport">
-<!-- Meta stuff --><link href="https://ashfurrow.com/blog/uicollectionview-example/" rel="canonical">
+<meta content="width=device-width initial-scale=1" name="viewport">
+<link href="https://ashfurrow.com/blog/uicollectionview-example/" rel="canonical">
 <meta content="Ash Furrow" itemprop="name">
 <meta content="https://ashfurrow.com/blog/uicollectionview-example/" itemprop="url">
 <meta content="We’re going to take a look at the new UICollectionView class Apple introduced in iOS 6. It’s used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px? I’ve got an example project completed and..." itemprop="about">
 <meta content="We’re going to take a look at the new UICollectionView class Apple introduced in iOS 6. It’s used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px? I’ve got an example project completed and..." itemprop="description">
 <meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
-<!-- Open Graph --><meta content="Ash Furrow" property="og:site_name">
+<meta content="Ash Furrow" property="og:site_name">
 <meta content="UICollectionView Example" property="og:title">
 <meta content="https://ashfurrow.com/blog/uicollectionview-example/" property="og:url">
 <meta content="website" property="og:type">
 <meta content="We’re going to take a look at the new UICollectionView class Apple introduced in iOS 6. It’s used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px? I’ve got an example project completed and..." property="og:description">
 <meta content="https://ashfurrow.com/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png" property="og:image">
-<!-- Twitter Cards --><meta content="summary" name="twitter:card">
+<meta content="summary" name="twitter:card">
 <meta content="@ashfurrow" name="twitter:site">
 <meta content="@ashfurrow" name="twitter:creator">
 <meta content="UICollectionView Example" name="twitter:title">
 <meta content="We’re going to take a look at the new UICollectionView class Apple introduced in iOS 6. It’s used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px? I’ve got an example project completed and..." name="twitter:description">
 <meta content="https://ashfurrow.com/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png" name="twitter:image">
-<!-- Favicon, site icons, etc --><link href="/img/siteimage_dark.png" rel="image_src">
+<link href="/img/siteimage_dark.png" rel="image_src">
 <meta content="/img/siteimage_dark.png" itemprop="image">
-<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon">
-<!-- Favicons, generated from https://realfavicongenerator.net/ --><link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
 <link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
 <link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
 <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
@@ -47,23 +47,7 @@
 <meta content="#da532c" name="msapplication-TileColor">
 <meta content="/mstile-144x144.png" name="msapplication-TileImage">
 <meta content="#398ccc" name="theme-color">
-<!-- Search enginer index --><!-- Rich Snippets --><script type="application/ld+json">
-{
-'@context' : 'http://schema.org',
-'@type' : 'Person',
-'name' : 'Ash Furrow',
-'url' : 'https://ashfurrow.com',
-'image' : 'http://static.ashfurrow.com/ashfurrow_square.jpg',
-'sameAs' : [ 'http://twitter.com/ashfurrow', 'http://instagram.com/ashfurrow', 'http://github.com/ashfurrow' ]
-}
-</script><script type="application/ld+json">
-{
-'@context': 'http://schema.org',
-'@type': 'Organization',
-'url': 'https://ashfurrow.com',
-'logo': '/img/siteimage.png'
-}
-</script><!-- Style-specific Javascripts --><style type="text/css">html {
+<script type="application/ld+json">{  '@context' ='http://schema.org',  '@type' ='Person',  'name' ='Ash Furrow',  'url' ='https://ashfurrow.com',  'image' ='http://static.ashfurrow.com/ashfurrow_square.jpg',  'sameAs' =[ 'http://twitter.com/ashfurrow' 'http://instagram.com/ashfurrow' 'http://github.com/ashfurrow' ]}</script><script type="application/ld+json">{  '@context'='http://schema.org',  '@type'='Organization',  'url'='https://ashfurrow.com',  'logo'='/img/siteimage.png'}</script><style type="text/css">html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -787,80 +771,44 @@ header {
 
 .fa-rss-square:before {
   content: "\f143";
-}</style>
-<script type="text/javascript">!function(e,t,n,a,c,s,i,r,o){i=a[c],i&&(r=e.createElement("style"),r.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(r),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,l,m,d){if("string"==typeof l&&l.indexOf(s)>-1){try{m=new XMLHttpRequest,m.open("GET",l,!0),m.onreadystatechange=function(){try{4==m.readyState&&(d=m.responseText.replace(/url\(\//g,"url("+s+"/"),d!==i&&(a[c]=d))}catch(e){r&&(r.innerHTML="")}},m.send(null)}catch(p){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,r=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},r.parentNode.insertBefore(s,r)}(document);</script><script type="text/javascript">/*!
+}
+</style>
+<script type="text/javascript">!function(e,t,n,a,c,s,i,o,r){i=a[c],i&&(o=e.createElement("style"),o.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(o),e.documentElement.className+=" wf-cached"),r=t[n],t[n]=function(e,l,d,m){if("string"==typeof l&&l.indexOf(s)>-1){try{d=new XMLHttpRequest,d.open("GET",l,!0),d.onreadystatechange=function(){try{4==d.readyState&&(m=d.responseText.replace(/url\(\//g,"url("+s+"/"),m!==i&&(a[c]=m))}catch(e){o&&(o.innerHTML="")}},d.send(null)}catch(e){}t[n]=r}return r.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,o=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},o.parentNode.insertBefore(s,o)}(document);</script><script type="text/javascript">/*!
 loadCSS: load a CSS file asynchronously.
 [c]2015 @scottjehl, Filament Group, Inc.
 Licensed MIT
 */
-!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>
-  loadCSS( '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
-  loadCSS( '../../css/all.css' );
-</script><!-- Google Analytics --><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-  ga('create', 'UA-9572240-3', 'auto');
-  ga('send', 'pageview');
-</script><!-- Backup to load styles not from javascript. -->
+!function(e){"use strict";e.loadCSS=function(t,n,l){var o,r=e.document.createElement("link");if(n)o=n;else if(e.document.querySelectorAll){var s=e.document.querySelectorAll("style,link[rel=stylesheet],script");o=s[s.length-1]}else o=e.document.getElementsByTagName("script")[0];var i=e.document.styleSheets;return r.rel="stylesheet",r.href=t,r.media="only x",o.parentNode.insertBefore(r,n?o:o.nextSibling),r.onloadcssdefined=function(e){for(var t,n=0;n<i.length;n++)i[n].href&&i[n].href===r.href&&(t=!0);t?e():setTimeout(function(){r.onloadcssdefined(e)})},r.onloadcssdefined(function(){r.media=l||"all"}),r}}(this);</script><script>loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+loadCSS('/css/all.css');</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9572240-3', 'auto');
+ga('send', 'pageview');</script>
 </head>
 <body>
-<noscript>
-<link href="/css/all.css" rel="stylesheet">
-</noscript>
-
-
-
-<!-- Navigation -->
+<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header page-scroll">
-<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
-<span class="sr-only">Toggle Navigation</span>
-<!-- Hamburger -->
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="/">
-<i class="icon-site-logo"></i>
-</a>
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
 </div>
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right">
 <li><a href="/">Blog</a></li>
 <li><a href="/about/">About</a></li>
 <li><a href="/books/">Books</a></li>
 <li><a href="/portfolio/">Portfolio</a></li>
 <li><a href="/speaking/">Speaking</a></li>
 <li>
-<a class="text-link" href="/search">Search</a>
-<a class="icon-link" href="/search"><i class="fa fa-search"></i></a>
+<a href="/search" class="text-link">Search</a><a href="/search" class="icon-link"><i class="fa fa-search"></i></a>
 </li>
 <li>
-<a class="text-link" href="//feed.ashfurrow.com/feed.xml">Blog Feed</a>
-<a class="icon-link" href="//feed.ashfurrow.com/feed.xml"><i class="fa fa-rss-square"></i></a>
+<a href="//feed.ashfurrow.com/feed.xml" class="text-link">Blog Feed</a><a href="//feed.ashfurrow.com/feed.xml" class="icon-link"><i class="fa fa-rss-square"></i></a>
 </li>
-</ul>
-</div>
-</div>
-</nav><!-- Main Content --><!-- Page Header --><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
-<div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-<div class="post-heading">
-<h1>UICollectionView Example</h1>
-</div>
-</div>
-</div>
-</div>
-<!-- If a background image source was specified, link to it. -->
-</header><div class="container">
-<article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</ul></div>
+</div></nav><header class="intro-header" style="background-image: url('/img/backgrounds/default.jpg');"><div class="header-dimmer"></div>
+<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>UICollectionView Example</h1></div></div></div></div></header><div class="container">
+<article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>We’re going to take a look at the new <code>UICollectionView</code> class Apple introduced in iOS 6. It’s used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px?</p>
 
 <p>I’ve got an example project completed and hosted <a href="https://github.com/AshFurrow/UICollectionViewExample">on github</a> that you can check out and play with. Don’t forget to <a href="http://developers.500px.com/settings/applications?from=developers">register yourself with 500px</a> first to get a consumer key and consumer secret, or else the API won’t work for you. Copy these into a text file because you’ll need them later.</p>
@@ -871,47 +819,44 @@ Licensed MIT
 
 <p>Open the main Storyboard file. We’re going to throw away the existing table view and replace it with a great new collection view. The easiest way to do that is to select the existing Master View Controller, shown below, and hit the delete key.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/D64FDC4D8F644D60A15675757BC8EA95.png" alt="D64fdc4d8f644d60a15675757bc8ea95"></p>
 
 <p>Now that the Master View Controller is missing, we need to re-add it. Go to your Master View Controller’s <code>.h</code> file and change it from inheriting from <code>UITableViewController</code> to <code>UICollectionViewController</code>. You’ll get some compiler errors; ignore them for now.</p>
 
 <p>Drag a new <code>UICollectionViewController</code> form the library. Right click and drag from the Navigation Controller onto the collection view controller and select the “root view controller” outlet.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/BDF26DDF70744C57813ED87D31033FAF.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/BDF26DDF70744C57813ED87D31033FAF.png" alt="Bdf26ddf70744c57813ed87d31033faf"></p>
 
 <p>Right. Almost there. Open the identity inspector (⌘⎇3) and give the new UICollectionViewController the class name of your Master View Controller.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/3B0B5635D36F497B84851AA27A9494C7.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/3B0B5635D36F497B84851AA27A9494C7.png" alt="3b0b5635d36f497b84851aa27a9494c7"></p>
 
 <p>We’ll worry about the segues later. For now, go to the <code>UICollectionViewController</code> subclass’ <code>.m</code> file. We’ll fix those compiler errors now.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/8A0115CB76E64B218DCD9E158D6AF93D.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/8A0115CB76E64B218DCD9E158D6AF93D.png" alt="8a0115cb76e64b218dcd9e158d6af93d"></p>
 
 <p>It’s always something with you, isn’t it, Xcode?</p>
 
 <p>We’re going to gut the contents of the master view controller that deal with the <code>tableView</code> property (which we replaced). For this example, I’m deleting the following method:</p>
-<pre><code class="highlight objective_c"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">commitEditingStyle</span><span class="p">:(</span><span class="n">UITableViewCellEditingStyle</span><span class="p">)</span><span class="nv">editingStyle</span> <span class="nf">forRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">commitEditingStyle</span><span class="p">:(</span><span class="n">UITableViewCellEditingStyle</span><span class="p">)</span><span class="nv">editingStyle</span> <span class="nf">forRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
 </code></pre>
-
 <p>Everywhere else you see <code>tableView</code> cuasing a problem, replace it with <code>collectionView</code>. The two classes behave almost identically, so it’ll be an easy conversion.</p>
 
 <p>The only problem I had was</p>
-<pre><code class="highlight objective_c"><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathForSelectedRow</span><span class="p">];</span>
+<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathForSelectedRow</span><span class="p">];</span>
 </code></pre>
-
 <p><code>UICollectionView</code> doesn’t have the method <code>indexPathForSelectedRow</code>, so replace that line with the following:</p>
-<pre><code class="highlight objective_c"><span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathsForSelectedItems</span><span class="p">]</span> <span class="nf">lastObject</span><span class="p">];</span>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathsForSelectedItems</span><span class="p">]</span> <span class="nf">lastObject</span><span class="p">];</span>
 </code></pre>
-
 <p>You’ll also need to modify the <code>insertSections:withRowAnimation:</code> method calls, since <code>UICollectionView</code> doesn’t have row animations; just remove the second part of the selector name.</p>
 
 <p>Once you deal with all of the transition, you have a an app that runs, but is empty. Let’s fill it with beautiful photos.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/226450BE3A464F44B4A4B8706BDC0612.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/226450BE3A464F44B4A4B8706BDC0612.png" alt="226450be3a464f44b4a4b8706bdc0612"></p>
 
 <p>We need a data model. Since we’re smart, accomplished, and handsome developers, let’s use Core Data. Create the following Core Data model.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/3E628B26764C4ACDA973588CAE0C2678.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/3E628B26764C4ACDA973588CAE0C2678.png" alt="3e628b26764c4acda973588cae0c2678"></p>
 
 <p>All we need is a <code>photoRating</code> to sort by and <code>photoImageData</code> to display actual images, but let’s add a <code>photoName</code> for the detail view.</p>
 
@@ -919,7 +864,7 @@ Licensed MIT
 
 <p>Go to the Storyboard and select the protoype cell in the collection view. In the identity inspector, set it’s class to the <code>UICollectionView</code> subclass you just created. Add a <code>UIImageView</code> to the prototype cell and connect the outlet.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/2E0D5ECB395F41DEA921597398D5E79E.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/2E0D5ECB395F41DEA921597398D5E79E.png" alt="2e0d5ecb395f41dea921597398d5e79e"></p>
 
 <p>Make sure to set the <code>Identifier</code> in the Storyboard or the collection view won’t dequeue the proper class.</p>
 
@@ -930,7 +875,7 @@ Licensed MIT
 <p><em>Note</em>: We’re using batch updates because we are inserting more than one cell at a time, and we want that nice animation when adding each individual cell. You could call <code>reloadData</code> once all the results are loaded, but you wouldn’t have any animations, which are part of the delight of <code>NSCollectionVIew</code>.</p>
 
 <p>Creating the <code>NSFetchedResultsController</code> is almost the exact same as the project template:</p>
-<pre><code class="highlight objective_c"><span class="k">-</span> <span class="p">(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="n">fetchedResultsController</span>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="n">fetchedResultsController</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">_fetchedResultsController</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">_fetchedResultsController</span><span class="p">;</span>
@@ -946,13 +891,13 @@ Licensed MIT
 
     <span class="c1">// Edit the sort key as appropriate.
 </span>    <span class="n">NSSortDescriptor</span> <span class="o">*</span><span class="n">sortDescriptor</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSSortDescriptor</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithKey</span><span class="p">:</span><span class="s">@"photoName"</span> <span class="nf">ascending</span><span class="p">:</span><span class="nb">NO</span><span class="p">];</span>
-    <span class="n">NSArray</span> <span class="o">*</span><span class="n">sortDescriptors</span> <span class="o">=</span> <span class="err">@</span><span class="p">[</span><span class="nf">sortDescriptor</span><span class="p">];</span>
+    <span class="n">NSArray</span> <span class="o">*</span><span class="n">sortDescriptors</span> <span class="o">=</span> <span class="p">@[</span><span class="n">sortDescriptor</span><span class="p">];</span>
 
     <span class="p">[</span><span class="n">fetchRequest</span> <span class="nf">setSortDescriptors</span><span class="p">:</span><span class="n">sortDescriptors</span><span class="p">];</span>
 
     <span class="c1">// Edit the section name key path and cache name if appropriate.
 </span>    <span class="c1">// nil for section name key path means "no sections".
-</span>    <span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="n">aFetchedResultsController</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSFetchedResultsController</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithFetchRequest</span><span class="p">:</span><span class="n">fetchRequest</span> <span class="nf">managedObjectContext</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">managedObjectContext</span> <span class="nf">sectionNameKeyPath</span><span class="p">:</span><span class="nb">nil</span> <span class="nf">cacheName</span><span class="p">:</span><span class="s">@"Master"</span><span class="p">];</span>
+</span>    <span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="n">aFetchedResultsController</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSFetchedResultsController</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithFetchRequest</span><span class="p">:</span><span class="n">fetchRequest</span> <span class="nf">managedObjectContext</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">managedObjectContext</span> <span class="n">sectionNameKeyPath</span><span class="o">:</span><span class="nb">nil</span> <span class="n">cacheName</span><span class="o">:</span><span class="s">@"Master"</span><span class="p">];</span>
     <span class="n">aFetchedResultsController</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="n">self</span><span class="p">;</span>
     <span class="n">self</span><span class="p">.</span><span class="n">fetchedResultsController</span> <span class="o">=</span> <span class="n">aFetchedResultsController</span><span class="p">;</span>
 
@@ -967,9 +912,8 @@ Licensed MIT
     <span class="k">return</span> <span class="n">_fetchedResultsController</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>Create two <code>NSMutableArray</code> instance variables and instantiate them in <code>viewDidLoad</code>. Implement the following <code>NSFetchedResultsControllerDelegate</code> methods.</p>
-<pre><code class="highlight objective_c"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controller</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span> 
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controller</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span> 
     <span class="nf">didChangeSection</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">NSFetchedResultsSectionInfo</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">sectionInfo</span>
     <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">sectionIndex</span> 
     <span class="nf">forChangeType</span><span class="p">:(</span><span class="n">NSFetchedResultsChangeType</span><span class="p">)</span><span class="nv">type</span>
@@ -979,10 +923,10 @@ Licensed MIT
 
     <span class="k">switch</span><span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">case</span> <span class="n">NSFetchedResultsChangeInsert</span><span class="p">:</span>
-            <span class="n">change</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">type</span><span class="p">)]</span> <span class="o">=</span> <span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">sectionIndex</span><span class="p">)];</span>
+            <span class="n">change</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">type</span><span class="p">)]</span> <span class="o">=</span> <span class="p">@[</span><span class="err">@</span><span class="p">(</span><span class="n">sectionIndex</span><span class="p">)];</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="k">case</span> <span class="n">NSFetchedResultsChangeDelete</span><span class="p">:</span>
-            <span class="n">change</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">type</span><span class="p">)]</span> <span class="o">=</span> <span class="err">@</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">sectionIndex</span><span class="p">)];</span>
+            <span class="n">change</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">type</span><span class="p">)]</span> <span class="o">=</span> <span class="p">@[</span><span class="err">@</span><span class="p">(</span><span class="n">sectionIndex</span><span class="p">)];</span>
             <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
 
@@ -1009,15 +953,14 @@ Licensed MIT
             <span class="n">change</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">type</span><span class="p">)]</span> <span class="o">=</span> <span class="n">indexPath</span><span class="p">;</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="k">case</span> <span class="n">NSFetchedResultsChangeMove</span><span class="p">:</span>
-            <span class="n">change</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">type</span><span class="p">)]</span> <span class="o">=</span> <span class="err">@</span><span class="p">[</span><span class="n">indexPath</span><span class="p">,</span> <span class="nf">newIndexPath</span><span class="p">];</span>
+            <span class="n">change</span><span class="p">[</span><span class="err">@</span><span class="p">(</span><span class="n">type</span><span class="p">)]</span> <span class="o">=</span> <span class="p">@[</span><span class="n">indexPath</span><span class="p">,</span> <span class="n">newIndexPath</span><span class="p">];</span>
             <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="p">[</span><span class="n">_objectChanges</span> <span class="nf">addObject</span><span class="p">:</span><span class="n">change</span><span class="p">];</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>These two methods queue the updates to the collection view. The following method waits for the fetched results controller to be finished before dequeuing those updates and applying them to our collection view.</p>
-<pre><code class="highlight objective_c"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controllerDidChangeContent</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controllerDidChangeContent</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">([</span><span class="n">_sectionChanges</span> <span class="nf">count</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
     <span class="p">{</span>
@@ -1027,20 +970,20 @@ Licensed MIT
             <span class="p">{</span>
                 <span class="p">[</span><span class="n">change</span> <span class="nf">enumerateKeysAndObjectsUsingBlock</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSNumber</span> <span class="o">*</span><span class="n">key</span><span class="p">,</span> <span class="n">id</span> <span class="n">obj</span><span class="p">,</span> <span class="n">BOOL</span> <span class="o">*</span><span class="n">stop</span><span class="p">)</span> <span class="p">{</span>
 
-                    <span class="n">NSFetchedResultsChangeType</span> <span class="n">type</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="nf">unsignedIntegerValue</span><span class="p">]</span><span class="err">;</span>
+                    <span class="n">NSFetchedResultsChangeType</span> <span class="n">type</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="nf">unsignedIntegerValue</span><span class="p">];</span>
                     <span class="k">switch</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span>
                     <span class="p">{</span>
                         <span class="k">case</span> <span class="n">NSFetchedResultsChangeInsert</span><span class="p">:</span>
-                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">insertSections</span><span class="p">:[</span><span class="n">NSIndexSet</span> <span class="nf">indexSetWithIndex</span><span class="p">:[</span><span class="n">obj</span> <span class="nf">unsignedIntegerValue</span><span class="p">]]]</span><span class="err">;</span>
-                            <span class="k">break</span><span class="err">;</span>
+                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">insertSections</span><span class="p">:[</span><span class="n">NSIndexSet</span> <span class="nf">indexSetWithIndex</span><span class="p">:[</span><span class="n">obj</span> <span class="nf">unsignedIntegerValue</span><span class="p">]]];</span>
+                            <span class="k">break</span><span class="p">;</span>
                         <span class="k">case</span> <span class="n">NSFetchedResultsChangeDelete</span><span class="p">:</span>
-                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">deleteSections</span><span class="p">:[</span><span class="n">NSIndexSet</span> <span class="nf">indexSetWithIndex</span><span class="p">:[</span><span class="n">obj</span> <span class="nf">unsignedIntegerValue</span><span class="p">]]]</span><span class="err">;</span>
-                            <span class="k">break</span><span class="err">;</span>
+                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">deleteSections</span><span class="p">:[</span><span class="n">NSIndexSet</span> <span class="nf">indexSetWithIndex</span><span class="p">:[</span><span class="n">obj</span> <span class="nf">unsignedIntegerValue</span><span class="p">]]];</span>
+                            <span class="k">break</span><span class="p">;</span>
                         <span class="k">case</span> <span class="n">NSFetchedResultsChangeUpdate</span><span class="p">:</span>
-                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">reloadSections</span><span class="p">:[</span><span class="n">NSIndexSet</span> <span class="nf">indexSetWithIndex</span><span class="p">:[</span><span class="n">obj</span> <span class="nf">unsignedIntegerValue</span><span class="p">]]]</span><span class="err">;</span>
-                            <span class="k">break</span><span class="err">;</span>
+                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">reloadSections</span><span class="p">:[</span><span class="n">NSIndexSet</span> <span class="nf">indexSetWithIndex</span><span class="p">:[</span><span class="n">obj</span> <span class="nf">unsignedIntegerValue</span><span class="p">]]];</span>
+                            <span class="k">break</span><span class="p">;</span>
                     <span class="p">}</span>
-                <span class="p">}]</span><span class="err">;</span>
+                <span class="p">}];</span>
             <span class="p">}</span>
         <span class="p">}</span> <span class="nf">completion</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
     <span class="p">}</span>
@@ -1053,23 +996,23 @@ Licensed MIT
             <span class="p">{</span>
                 <span class="p">[</span><span class="n">change</span> <span class="nf">enumerateKeysAndObjectsUsingBlock</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSNumber</span> <span class="o">*</span><span class="n">key</span><span class="p">,</span> <span class="n">id</span> <span class="n">obj</span><span class="p">,</span> <span class="n">BOOL</span> <span class="o">*</span><span class="n">stop</span><span class="p">)</span> <span class="p">{</span>
 
-                    <span class="n">NSFetchedResultsChangeType</span> <span class="n">type</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="nf">unsignedIntegerValue</span><span class="p">]</span><span class="err">;</span>
+                    <span class="n">NSFetchedResultsChangeType</span> <span class="n">type</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="nf">unsignedIntegerValue</span><span class="p">];</span>
                     <span class="k">switch</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span>
                     <span class="p">{</span>
                         <span class="k">case</span> <span class="n">NSFetchedResultsChangeInsert</span><span class="p">:</span>
-                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">insertItemsAtIndexPaths</span><span class="p">:</span><span class="err">@</span><span class="p">[</span><span class="nf">obj</span><span class="p">]]</span><span class="err">;</span>
-                            <span class="k">break</span><span class="err">;</span>
+                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">insertItemsAtIndexPaths</span><span class="p">:@[</span><span class="n">obj</span><span class="p">]];</span>
+                            <span class="k">break</span><span class="p">;</span>
                         <span class="k">case</span> <span class="n">NSFetchedResultsChangeDelete</span><span class="p">:</span>
-                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">deleteItemsAtIndexPaths</span><span class="p">:</span><span class="err">@</span><span class="p">[</span><span class="nf">obj</span><span class="p">]]</span><span class="err">;</span>
-                            <span class="k">break</span><span class="err">;</span>
+                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">deleteItemsAtIndexPaths</span><span class="p">:@[</span><span class="n">obj</span><span class="p">]];</span>
+                            <span class="k">break</span><span class="p">;</span>
                         <span class="k">case</span> <span class="n">NSFetchedResultsChangeUpdate</span><span class="p">:</span>
-                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">reloadItemsAtIndexPaths</span><span class="p">:</span><span class="err">@</span><span class="p">[</span><span class="nf">obj</span><span class="p">]]</span><span class="err">;</span>
-                            <span class="k">break</span><span class="err">;</span>
+                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">reloadItemsAtIndexPaths</span><span class="p">:@[</span><span class="n">obj</span><span class="p">]];</span>
+                            <span class="k">break</span><span class="p">;</span>
                         <span class="k">case</span> <span class="n">NSFetchedResultsChangeMove</span><span class="p">:</span>
-                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">moveItemAtIndexPath</span><span class="p">:</span><span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="nf">toIndexPath</span><span class="p">:</span><span class="n">obj</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="err">;</span>
-                            <span class="k">break</span><span class="err">;</span>
+                            <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">moveItemAtIndexPath</span><span class="p">:</span><span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="nf">toIndexPath</span><span class="p">:</span><span class="n">obj</span><span class="p">[</span><span class="mi">1</span><span class="p">]];</span>
+                            <span class="k">break</span><span class="p">;</span>
                     <span class="p">}</span>
-                <span class="p">}]</span><span class="err">;</span>
+                <span class="p">}];</span>
             <span class="p">}</span>
         <span class="p">}</span> <span class="nf">completion</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
     <span class="p">}</span>
@@ -1078,42 +1021,40 @@ Licensed MIT
     <span class="p">[</span><span class="n">_objectChanges</span> <span class="nf">removeAllObjects</span><span class="p">];</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>These methods should work for any <code>UICollectionView</code> and <code>NSFetchedResultsController</code> data.</p>
 
 <p>Now that the <code>NSFetchedResultsController</code> is hooked up the the <code>UICollectionView</code>, let’s load some photos from 500px!</p>
 
 <p>Use the consumer key and consumer secret from when you <a href="http://developers.500px.com/settings/applications?from=developers">registered your application</a> earlier. Follow the directions in the <a href="https://github.com/500px/500px-iOS-api">iOS 500px SDK</a> to add the 500px SDK to your Xcode project. Make sure to follow the instructions in the SDKs <code>README</code> to set up your project to use the SDK.</p>
-<pre><code class="highlight objective_c"><span class="p">[</span><span class="n">PXRequest</span> <span class="nf">setConsumerKey</span><span class="p">:</span><span class="s">@"your consumer key"</span> <span class="nf">consumerSecret</span><span class="p">:</span><span class="s">@"your consumer secret"</span><span class="p">];</span>
+<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">PXRequest</span> <span class="nf">setConsumerKey</span><span class="p">:</span><span class="s">@"your consumer key"</span> <span class="nf">consumerSecret</span><span class="p">:</span><span class="s">@"your consumer secret"</span><span class="p">];</span>
 
 <span class="p">[</span><span class="n">PXRequest</span> <span class="nf">requestForPhotoFeature</span><span class="p">:</span><span class="n">PXAPIHelperPhotoFeaturePopular</span> <span class="nf">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">results</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="p">[[[</span><span class="n">UIAlertView</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithTitle</span><span class="p">:</span><span class="s">@"Couldn't fetch from 500px."</span> <span class="nf">message</span><span class="p">:</span><span class="n">error</span><span class="p">.</span><span class="n">localizedDescription</span> <span class="nf">delegate</span><span class="p">:</span><span class="nb">nil</span> <span class="nf">cancelButtonTitle</span><span class="p">:</span><span class="nb">nil</span> <span class="nf">otherButtonTitles</span><span class="p">:</span><span class="s">@"OK"</span><span class="p">,</span> <span class="nb">nil</span><span class="p">]</span> <span class="nf">show</span><span class="p">]</span><span class="err">;</span>
-        <span class="k">return</span><span class="err">;</span>
+        <span class="p">[[[</span><span class="n">UIAlertView</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithTitle</span><span class="p">:</span><span class="s">@"Couldn't fetch from 500px."</span> <span class="nf">message</span><span class="p">:</span><span class="n">error</span><span class="p">.</span><span class="n">localizedDescription</span> <span class="nf">delegate</span><span class="p">:</span><span class="nb">nil</span> <span class="nf">cancelButtonTitle</span><span class="p">:</span><span class="nb">nil</span> <span class="n">otherButtonTitles</span><span class="o">:</span><span class="s">@"OK"</span><span class="p">,</span> <span class="nb">nil</span><span class="p">]</span> <span class="n">show</span><span class="p">];</span>
+        <span class="k">return</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="n">NSArray</span> <span class="o">*</span><span class="n">photoArray</span> <span class="o">=</span> <span class="p">[</span><span class="n">results</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"photos"</span><span class="p">]</span><span class="err">;</span>
+    <span class="n">NSArray</span> <span class="o">*</span><span class="n">photoArray</span> <span class="o">=</span> <span class="p">[</span><span class="n">results</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"photos"</span><span class="p">];</span>
 
     <span class="k">for</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">photoDictionary</span> <span class="k">in</span> <span class="n">photoArray</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="n">NSManagedObject</span> <span class="o">*</span><span class="n">photoModel</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSEntityDescription</span> <span class="nf">insertNewObjectForEntityForName</span><span class="p">:</span><span class="s">@"AFPhotoModel"</span> <span class="nf">inManagedObjectContext</span><span class="p">:</span><span class="n">AppDelegate</span><span class="p">.</span><span class="n">managedObjectContext</span><span class="p">]</span><span class="err">;</span>
-        <span class="p">[</span><span class="n">photoModel</span> <span class="nf">setValue</span><span class="p">:[</span><span class="n">photoDictionary</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"rating"</span><span class="p">]</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"photoRating"</span><span class="p">]</span><span class="err">;</span>
-        <span class="p">[</span><span class="n">photoModel</span> <span class="nf">setValue</span><span class="p">:[</span><span class="n">photoDictionary</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"name"</span><span class="p">]</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"photoName"</span><span class="p">]</span><span class="err">;</span>
+        <span class="n">NSManagedObject</span> <span class="o">*</span><span class="n">photoModel</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSEntityDescription</span> <span class="nf">insertNewObjectForEntityForName</span><span class="p">:</span><span class="s">@"AFPhotoModel"</span> <span class="nf">inManagedObjectContext</span><span class="p">:</span><span class="n">AppDelegate</span><span class="p">.</span><span class="n">managedObjectContext</span><span class="p">];</span>
+        <span class="p">[</span><span class="n">photoModel</span> <span class="nf">setValue</span><span class="p">:[</span><span class="n">photoDictionary</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"rating"</span><span class="p">]</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"photoRating"</span><span class="p">];</span>
+        <span class="p">[</span><span class="n">photoModel</span> <span class="nf">setValue</span><span class="p">:[</span><span class="n">photoDictionary</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"name"</span><span class="p">]</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"photoName"</span><span class="p">];</span>
 
         <span class="n">dispatch_async</span><span class="p">(</span><span class="n">dispatch_get_global_queue</span><span class="p">(</span><span class="n">DISPATCH_QUEUE_PRIORITY_HIGH</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="o">^</span><span class="p">{</span>
-            <span class="n">NSString</span> <span class="o">*</span><span class="n">urlString</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">photoDictionary</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"images"</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"url"</span><span class="p">]</span><span class="err">;</span>
-            <span class="n">NSData</span> <span class="o">*</span><span class="n">imageData</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSData</span> <span class="nf">dataWithContentsOfURL</span><span class="p">:[</span><span class="n">NSURL</span> <span class="nf">URLWithString</span><span class="p">:</span><span class="n">urlString</span><span class="p">]]</span><span class="err">;</span>
+            <span class="n">NSString</span> <span class="o">*</span><span class="n">urlString</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">photoDictionary</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"images"</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"url"</span><span class="p">];</span>
+            <span class="n">NSData</span> <span class="o">*</span><span class="n">imageData</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSData</span> <span class="nf">dataWithContentsOfURL</span><span class="p">:[</span><span class="n">NSURL</span> <span class="nf">URLWithString</span><span class="p">:</span><span class="n">urlString</span><span class="p">]];</span>
             <span class="n">dispatch_async</span><span class="p">(</span><span class="n">dispatch_get_main_queue</span><span class="p">(),</span> <span class="o">^</span><span class="p">{</span>
-                <span class="p">[</span><span class="n">photoModel</span> <span class="nf">setValue</span><span class="p">:</span><span class="n">imageData</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"photoImageData"</span><span class="p">]</span><span class="err">;</span>
-            <span class="p">})</span><span class="err">;</span>
-        <span class="p">})</span><span class="err">;</span>
+                <span class="p">[</span><span class="n">photoModel</span> <span class="nf">setValue</span><span class="p">:</span><span class="n">imageData</span> <span class="nf">forKey</span><span class="p">:</span><span class="s">@"photoImageData"</span><span class="p">];</span>
+            <span class="p">});</span>
+        <span class="p">});</span>
     <span class="p">}</span>
 <span class="p">}];</span>
 </code></pre>
-
 <p>The fetched results controller will take care of that magic for us. We just need to configure our cells.</p>
-<pre><code class="highlight objective_c"><span class="k">-</span> <span class="p">(</span><span class="n">UICollectionViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">collectionView</span><span class="p">:(</span><span class="n">UICollectionView</span> <span class="o">*</span><span class="p">)</span><span class="nv">collectionView</span> <span class="nf">cellForItemAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">UICollectionViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">collectionView</span><span class="p">:(</span><span class="n">UICollectionView</span> <span class="o">*</span><span class="p">)</span><span class="nv">collectionView</span> <span class="nf">cellForItemAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
 <span class="p">{</span>
     <span class="n">AFCollectionViewCell</span> <span class="o">*</span><span class="n">cell</span> <span class="o">=</span> <span class="p">(</span><span class="n">AFCollectionViewCell</span> <span class="o">*</span><span class="p">)[</span><span class="n">collectionView</span> <span class="nf">dequeueReusableCellWithReuseIdentifier</span><span class="p">:</span><span class="n">CellIdentifier</span> <span class="nf">forIndexPath</span><span class="p">:</span><span class="n">indexPath</span><span class="p">];</span>
 
@@ -1123,19 +1064,18 @@ Licensed MIT
     <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
-
-<p><img src="/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png" alt="E8ecc8892eeb418d9fe04c6a04ad5436"></p>
 
 <p>I went to the liberty of adjusting the sizes to make things pretty - nice app! Let’s connect the detail view controller now.</p>
 
 <p>Open the Storyboard and right-click on the prototype cell. We’ll be connecting the <code>selection</code> triggered segue to the detail view controller. Drag the circle beside <code>selection</code> to the detail view controller and choose “push” from the menu that appears.</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/AF66949DE9D6407C8288A2B406292DB8.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/AF66949DE9D6407C8288A2B406292DB8.png" alt="Af66949de9d6407c8288a2b406292db8"></p>
 
 <p>Select the segue and make sure its identifier is set to “showDetail”.</p>
 
 <p>Replace the <code>UILabel</code> with a <code>UIImageView</code>, change the <code>IBOutlet</code> in the header file, reconnect the outlet, and modify <code>configureView</code> to look like the following:</p>
-<pre><code class="highlight objective_c"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">configureView</span>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">configureView</span>
 <span class="p">{</span>
     <span class="c1">// Update the user interface for the detail item.
 </span>
@@ -1146,9 +1086,8 @@ Licensed MIT
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>In the master view controller, <code>prepareForSegue:sender:</code> should look like the following:</p>
-<pre><code class="highlight objective_c"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prepareForSegue</span><span class="p">:(</span><span class="n">UIStoryboardSegue</span> <span class="o">*</span><span class="p">)</span><span class="nv">segue</span> <span class="nf">sender</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prepareForSegue</span><span class="p">:(</span><span class="n">UIStoryboardSegue</span> <span class="o">*</span><span class="p">)</span><span class="nv">segue</span> <span class="nf">sender</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">([[</span><span class="n">segue</span> <span class="nf">identifier</span><span class="p">]</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"showDetail"</span><span class="p">])</span> <span class="p">{</span>
         <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span> <span class="o">=</span> <span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathsForSelectedItems</span><span class="p">]</span> <span class="nf">lastObject</span><span class="p">];</span>
@@ -1157,91 +1096,37 @@ Licensed MIT
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-
 <p>Run the app, tap on a photo, and you’ll see the following:</p>
 
-<p><img src="/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png"></p>
+<p><img src="/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png" alt="2e826d143c214e178029f7b19ae16936"></p>
 
 <p>Looks great!</p>
 
 <p>If you have any questions, please let me know. Check out <a href="https://github.com/AshFurrow/UICollectionViewExample">the code</a> from GitHub and have fun!</p>
-
 <hr>
 <span class="meta">Posted on September 19, 2012</span>
-</div>
-</div>
-</article><div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+</div></div></article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <hr>
 <div id="book-link">
-<a href="http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00IHZKDCU&amp;linkCode=as2&amp;tag=ashfur-20&amp;linkId=T2MHOE5AYIWQTV3G" onclick="trackMaretingLink('collectionview')">
-<img src="/img/marketing/collectionview.jpg"></a>
-<a class="visible-md visible-lg" href="http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00IHZKDCU&amp;linkCode=as2&amp;tag=ashfur-20&amp;linkId=T2MHOE5AYIWQTV3G" onclick="trackMaretingLink('collectionview')">
-<h3>Enjoyed my post? You'd love my book!</h3>
-</a>
-<a class="visible-xs visible-sm" href="http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00IHZKDCU&amp;linkCode=as2&amp;tag=ashfur-20&amp;linkId=T2MHOE5AYIWQTV3G" onclick="trackMaretingLink('collectionview')">
-<h3>Enjoyed my post?</h3>
-</a>
-<p>UICollectionView: The Complete Guide will help you build highly immersive, cutting-edge iOS user interfaces that transform your apps from good to great!</p>
+<a href="http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00IHZKDCU&amp;linkCode=as2&amp;tag=ashfur-20&amp;linkId=T2MHOE5AYIWQTV3G" onclick="trackMaretingLink('collectionview')"><img src="/img/marketing/collectionview.jpg"></a><a class="visible-md visible-lg" href="http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00IHZKDCU&amp;linkCode=as2&amp;tag=ashfur-20&amp;linkId=T2MHOE5AYIWQTV3G" onclick="trackMaretingLink('collectionview')"><h3>Enjoyed my post? You'd love my book!</h3></a><a class="visible-xs visible-sm" href="http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00IHZKDCU&amp;linkCode=as2&amp;tag=ashfur-20&amp;linkId=T2MHOE5AYIWQTV3G" onclick="trackMaretingLink('collectionview')"><h3>Enjoyed my post?</h3></a><p>UICollectionView: The Complete Guide will help you build highly immersive, cutting-edge iOS user interfaces that transform your apps from good to great!</p>
 </div>
 <div class="clearfix"></div>
-
 <hr>
-<!-- Pager --><ul class="pager article_pager">
-<li class="next">
-<a href="/blog/twitter-cuts-ifttts-balls-off/"><div>Twitter Cuts IFTTT's Balls Off</div>
-</a>
-</li>
-<li class="previous">
-<a href="/blog/in-defence-of-skeuomorphism/"><div>In Defence of Skeuomorphism</div>
-</a>
-</li>
+<ul class="pager article_pager">
+<li class="next"><a href="/blog/twitter-cuts-ifttts-balls-off/"><div>Twitter Cuts IFTTT's Balls Off</div></a></li>
+<li class="previous"><a href="/blog/nscharacterset-on-nshipster/"><div>NSCharacterSet on NSHipster</div></a></li>
 </ul>
+</div></div>
 </div>
-</div>
-</div>
-
-<!-- Footer -->
 <hr id="page_footer">
-<footer><div class="container">
-<div class="row">
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<footer><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <ul class="list-inline text-center">
-<li>
-<a title="Twitter" href="https://twitter.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="GitHub" href="https://github.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Photo Blog" href="http://photos.ashfurrow.com"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
-<li>
-<a title="Instagram" href="http://instagram.com/ashfurrow"><span class="fa-stack fa-lg">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
+<li><a href="https://twitter.com/ashfurrow" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="https://github.com/ashfurrow" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://photos.ashfurrow.com" title="Photo Blog"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-picture-o fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://instagram.com/ashfurrow" title="Instagram"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
 </ul>
-<p class="copyright text-muted">
-This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
-</p>
-</div>
-</div>
-</div>
-</footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
+<p class="copyright text-muted"> This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+</div></div></div></footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
 </body>
 </html>
