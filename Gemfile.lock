@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/ashfurrow/middleman-inliner.git
+  revision: e3d8a29fc7a40cf97749e04476d801d3e0d34ab5
+  branch: middleman-4
+  specs:
+    middleman-inliner (1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -226,6 +233,7 @@ DEPENDENCIES
   liquid
   middleman
   middleman-blog
+  middleman-inliner!
   middleman-search
   middleman-sprockets
   middleman-syntax

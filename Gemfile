@@ -6,6 +6,7 @@ gem 'middleman-blog'
 gem 'middleman-syntax'
 gem 'middleman-search'
 gem 'middleman-sprockets'
+gem 'middleman-inliner', github: 'ashfurrow/middleman-inliner', branch: 'middleman-4'
 
 gem 'httparty'
 gem 'slim'

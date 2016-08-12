@@ -83,18 +83,13 @@ script type='application/ld+json'
   | }
 
 / Style-specific Javascripts
-= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'
-= stylesheet_link_tag '/css/all'
-= javascript_include_tag 'typekit'
+= stylesheet_inline_tag 'critical'
+= javascript_inline_tag 'typekit'
+= javascript_inline_tag 'loadCSS'
 
-/ TODO: Fix this
-/ = stylesheet_inline_tag 'critical'
-/ = javascript_inline_tag 'typekit'
-/ = javascript_inline_tag 'loadCSS'
-
-/ javascript:
-/   loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
-/   loadCSS('/css/all.css');
+javascript:
+  loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+  loadCSS('/css/all.css');
 
 / Google Analytics
 javascript:
