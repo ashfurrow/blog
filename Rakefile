@@ -104,7 +104,7 @@ end
 
 desc "Build site locally"
 task :build do
-  sh 'bundle exec middleman build --verbose --no-clean'
+  sh 'bundle exec middleman build --verbose --no-clean --no-parallel'
 end
 
 desc "Start middleman server"
