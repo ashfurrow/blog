@@ -33,9 +33,9 @@ module Embed
   end
 end
 
-::Middleman::Extensions.register(:embed) do
-  ::Embed
-end
+# ::Middleman::Extensions.register(:embed) do
+#   ::Embed
+# end
 
 class String
   def embed_youtube!

@@ -35,9 +35,9 @@ module ModifyWidths
   end
 end
 
-::Middleman::Extensions.register(:modify_widths) do
-  ::ModifyWidths
-end
+# ::Middleman::Extensions.register(:modify_widths) do
+#   ::ModifyWidths
+# end
 
 class String
   def self.Pattern(block_delineator)

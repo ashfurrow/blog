@@ -41,6 +41,6 @@ module AddLinksToNavigation
   end
 end
 
-::Middleman::Extensions.register(:add_links_to_navigation) do
-  ::AddLinksToNavigation
-end
+# ::Middleman::Extensions.register(:add_links_to_navigation) do
+#   ::AddLinksToNavigation
+# end

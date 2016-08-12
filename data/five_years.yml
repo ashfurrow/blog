@@ -1,4 +1,4 @@
-- 2009:
+- "2009":
   - heading: Opened Xcode
     content:
     - I worked from the basement of Ashley's mother's house (there was no WiFi so I had to connect directly to their modem with ethernet). Armed with cs193p courses from Stanford (instructed that year by Evan Doll), I learnt the basics of iOS app structure.
@@ -12,7 +12,7 @@
     img_url: /img/blog/5-years-of-ios/coffeetimer.png
 
 
-- 2010:
+- "2010":
   - heading: WWDC Scholarship
     content:
     - Someone, I think on Twitter, recommended that students apply for a WWDC scholarship. I had no idea what it was, but I figured I'd throw my hat in. I wrote about CoffeeTimer and some background about me, and then I forgot about it.
@@ -61,7 +61,7 @@
     img_url: /img/blog/5-years-of-ios/simulator.png
 
 
-- 2011:
+- "2011":
   - heading: Completed Counselling
     content:
     - That Winter, I finished my counselling. It was a big deal for me because I had worked so hard to overcome my depression. Still, I kept it a secret. Looking back, I don't know why. I guess I was afraid that people would judge me for it – I didn't want it to define me. Not even my parents knew.
@@ -123,7 +123,7 @@
     img_url: /img/blog/5-years-of-ios/storygram.png
 
 
-- 2012:
+- "2012":
   - heading: TACOW
     content:
     - I had been attending <a href='http://www.meetup.com/tacow-org/'>TACOW</a> a Toronto-based iOS/OS X/WebObjects developers meetup group. I began attending when I first moved to Toronto and in 2012, I started giving the occasional presentation. These were my first non-academic talks.
@@ -185,7 +185,7 @@
     img_url: /img/blog/5-years-of-ios/500pxiphone.jpg
 
 
-- 2013:
+- "2013":
   - heading: Quit 500px
     content:
     - The first day after the break, I submitted my resignation, giving them three weeks notice.
@@ -251,7 +251,7 @@
     content:
     - Over the Christmas break, I designed and implemented an <a href='https://github.com/ashfurrow/C-41'>open source</a> app called <a href='https://itunes.apple.com/ca/app/c-41/id789924103?mt=8'>C-41</a>. It was largely an exercise in ReactiveCocoa and MVVM. It had no reason not to be open source, so it was.
 
-- 2014:
+- "2014":
   - heading: Leave Teehan+Lax
     content:
     - I thoroughly enjoyed working with everyone at Teehan+Lax and I'm proud of everything I accomplished there. I learnt a lot and grew as a professional.

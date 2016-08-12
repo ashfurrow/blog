@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'middleman', '< 4'
+gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-syntax'
-gem 'middleman-inliner'
 gem 'middleman-search'
 
 gem 'httparty'

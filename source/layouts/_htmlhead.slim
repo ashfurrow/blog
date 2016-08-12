@@ -1,7 +1,7 @@
 meta charset='utf-8' /
 meta content='IE=edge' http-equiv='X-UA-Compatible'/
 
-title = html_title(current_article, current_resource)
+title =html_title(current_article, current_resource)
 
 / Feed Tags
 = feed_tag :atom, data.site.feed_link, title: 'Atom Feed'
@@ -83,13 +83,19 @@ script type='application/ld+json'
   | }
 
 / Style-specific Javascripts
-= stylesheet_inline_tag 'critical'
-= javascript_inline_tag 'typekit'
-= javascript_inline_tag 'loadCSS'
+= stylesheet_link_tag ''//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css''
+= stylesheet_link_tag 'all'
+= javascript_tag 'typekit'
+= javascript_tag 'typekit'
 
-javascript:
-  loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
-  loadCSS('/css/all.css');
+/ TODO: Fix this
+/ = stylesheet_inline_tag 'critical'
+/ = javascript_inline_tag 'typekit'
+/ = javascript_inline_tag 'loadCSS'
+
+/ javascript:
+/   loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+/   loadCSS('/css/all.css');
 
 / Google Analytics
 javascript:

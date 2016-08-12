@@ -12,12 +12,7 @@ require 'slim'
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, disable_indented_code_blocks: true, strikethrough: true, smartypants: true, with_toc_data: true
 set :relative_links, true
-
-# Disables useless slim warning.
-Slim::Engine.disable_option_validator!
-
-activate :syntax
-activate :inliner
+set :slim
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -56,10 +51,11 @@ end
 
 helpers CustomHelpers
 
+activate :syntax
 activate :directory_indexes
-activate :add_links_to_navigation
-activate :modify_widths
-activate :embed
+# activate :add_links_to_navigation
+# activate :modify_widths
+# activate :embed
 
 page "/feed.xml", layout: false
 page "/feed.rss.xml", layout: false
@@ -68,7 +64,6 @@ page "/sitemap.xml", layout: false
 set :css_dir, 'css'
 set :js_dir, 'javascripts'
 set :images_dir, 'img'
-set :partials_dir, 'layouts'
 
 ###
 # Build-specific configuration
