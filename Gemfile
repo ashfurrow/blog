@@ -20,7 +20,7 @@ gem 'ansi'
 gem 'twitter'
 
 group :distribution do
-  gem 'danger', '2.0.1'
+  gem 'danger'
   gem 'danger-prose'
   gem 'html-proofer'
 end
