@@ -37,7 +37,7 @@ activate :search do |search|
     title:   {boost: 100, store: true, required: true},
     date:    {index: false, store: true},
     content: {boost: 50},
-    url:     {index: false, store: true},
+    url:     {index: false, store: true}
   }
 end
 

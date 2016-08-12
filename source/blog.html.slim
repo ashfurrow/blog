@@ -21,5 +21,5 @@ priority: 0.25
                   - articles.each do |article|
                     article
                       =link_to article.title, article.url
-                      | &nbsp;
+                      | &nbsp;&nbsp;
                       .post-meta= article.date.strftime('%B %e, %Y')
