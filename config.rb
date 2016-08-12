@@ -57,7 +57,7 @@ activate :sprockets do |c|
   c.expose_middleman_helpers = true
 end
 # activate :add_links_to_navigation
-# activate :modify_widths
+activate :modify_widths
 activate :embed
 
 page "/*.xml", layout: false

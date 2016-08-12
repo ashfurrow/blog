@@ -19,10 +19,8 @@ module Middleman
 
     def initialize(app, options_hash={}, &block)
       super
-      puts "Initialized"
-      app.after_render do |body, path, locs, template|
-        puts "Rendered #{path}"
 
+      app.after_render do |body, path, locs, template|
         # There are multiple rendering calls and we want to get the one that renders the blog_post template. 
         if (path.to_s.index "blog_post") != nil
           body.embed_youtube!
