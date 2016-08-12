@@ -11,4 +11,4 @@ This is Canada: we don't ban books, here. We just pay ridiculous prices for book
 
 The parent appears upset because the book presents a view of the world they're either uncomfortable with or which differs from the one through which they want their child to see. If this is the case, then they should talk to their kids about the book, its message, and the values with which the parents raised them. You don't get to ban a book because you disagree with it or think your kid ought to disagree with it. Instead, act like a responsible parent and just _talk to your kid._
 
-<!-- more -->
+(READMORE)

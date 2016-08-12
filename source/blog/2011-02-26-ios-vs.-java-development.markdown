@@ -7,4 +7,4 @@ Since I was experienced enough with iOS development to make this claim, I've bel
 
 
 
-<!-- more -->
+(READMORE)

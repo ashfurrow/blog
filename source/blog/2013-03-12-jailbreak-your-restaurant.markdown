@@ -11,4 +11,4 @@ Nope. Doesn't sound like me at all.
 
 Hope you enjoy it.
 
-<!-- more -->
+(READMORE)

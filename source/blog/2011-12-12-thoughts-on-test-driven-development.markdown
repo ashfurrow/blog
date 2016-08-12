@@ -21,4 +21,4 @@ Before coding.
 
 TDD may work well for you and your team on your project. It may, however, not. And there's nothing wrong with that.
 
-<!-- more -->
+(READMORE)

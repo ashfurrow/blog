@@ -7,4 +7,4 @@ A few months ago, my friend [Nick](http://blog.nickhoward.ca/) suggested using W
 
 I [grew impatient](/blog/transitioning-from-attero-ingorantiam/) with blogger and finally installed WordPress on my personal website last night.&nbsp;&nbsp;It's awesome! I'm experimenting with the layout, and I'm thinking about using this WordPress installation as my own site, as a replacement for the current&nbsp; ashfurrow.com. Any thoughts?
 
-<!-- more -->
+(READMORE)

@@ -27,4 +27,4 @@ But it points out a pretty common problem among nerds of all stripes: a lack of 
 
 Dear nerds: normal people have normal sensibilities so try to squeeze in a few minutes of empathy in your day. Don't be a dick.
 
-<!-- more -->
+(READMORE)

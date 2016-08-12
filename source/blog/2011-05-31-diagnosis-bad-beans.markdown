@@ -15,4 +15,4 @@ When Starbucks or Maxwell House or whatever coffee you drink roasts their beans,
 
 Anyways, I learned my lesson and my half pound of Columbia fairtrade is almost done in the roaster. The most important thing you could possibly do to improve your coffee is use fresh-roasted, fresh-ground beans. Something I would do well to remember, too, apparently!
 
-<!-- more -->
+(READMORE)

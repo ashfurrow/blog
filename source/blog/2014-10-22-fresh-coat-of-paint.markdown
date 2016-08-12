@@ -7,7 +7,7 @@ background_image_source: https://500px.com/photo/43500268/the-hurricane-iii-by-a
 
 A few months ago, I felt something change. I remember it precisely: I asked a friend for advice designing a portfolio section of my website, and I couldn’t implement his suggestions. This wasn’t the first time that tools have limited my ability to express my ideas on the web, but it was a catalyst for what you see today: a brand new website. 
 
-<!-- more -->
+(READMORE)
 
 So to talk about how and why we arrived here, we need to go back a bit. (This is going to be a bit of a storytelling post.)
 

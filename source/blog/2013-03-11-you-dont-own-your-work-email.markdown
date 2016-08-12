@@ -11,4 +11,4 @@ Guess what, professor J. Obvlivious, you don't _own_ that email account. Your em
 
 Harvard legitimately searched emails for a the person who created a scandal that lead to to 70 students being forced to leave the school. This isn't a case of misuse of power, this is a case of "don't be a douchebag" and a lesson in keeping your private messages off your company email.
 
-<!-- more -->
+(READMORE)

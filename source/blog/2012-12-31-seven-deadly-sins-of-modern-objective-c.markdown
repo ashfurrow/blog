@@ -86,4 +86,4 @@ This is a serious problem with the Objective-C community. Unit testing is [total
 
 That's my list. We're all guilty of some Objective-C sins, I'm sure, but the important thing is to improve. We're at the dawn of a new year. Why not take this opportunity to reflect on why you've been so sinful and find ways to code more virtuously in the new year?
 
-<!-- more -->
+(READMORE)

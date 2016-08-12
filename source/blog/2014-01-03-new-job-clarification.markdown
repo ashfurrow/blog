@@ -9,4 +9,4 @@ I mentioned the Booking.com job I had applied for in the post. I was still in th
 
 Unfortunately, I can't say much more than that. I will tell you that I am characteristically excited about their product and that it's something that I believe could have a significant, positive impact on the world we live in. I'm looking forward to starting with them late February.
 
-<!-- more -->
+(READMORE)

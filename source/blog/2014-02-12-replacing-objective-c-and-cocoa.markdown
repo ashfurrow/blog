@@ -9,4 +9,4 @@ Steve Streza has a [follow up post](http://informalprotocol.com/2014/02/replacin
 
 Inspiring.
 
-<!-- more -->
+(READMORE)

@@ -40,4 +40,4 @@ I'm not kidding.
 
 If you care at all about making better apps, stop looking for a shortcut. Invest a few hours to read a whopping 184 pages and I guarantee you that your apps will improve.
 
-<!-- more -->
+(READMORE)

@@ -9,7 +9,7 @@ My blog's current incarnation's birthday is approaching – it's been nearly a y
 
 At times, I've gone a bit overboard, but I've been able to justify the time and energy because it's been educational. My blog has been a good side project to learn new things on. It's something I care about, but updates to it are almost certainly never urgent. It's a low-risk thing I'm motivated to work on.
 
-<!-- more -->
+(READMORE)
 
 Recently, I've been busy. I've [switched to using haml](https://github.com/ashfurrow/blog/pull/124), [put the site on CloudFlare](https://github.com/ashfurrow/blog/pull/132), and [tried moving to GitHub pages instead of S3](https://github.com/ashfurrow/blog/tree/archive-gh-pages).
 

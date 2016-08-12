@@ -15,4 +15,4 @@ Oh, would you look at that? A **reasonable** size for a font. I like&nbsp;his si
 
 Note: I realize that my site is using size 13 font; I'm working on it. I have school work to do, and I think the reasonably good job I've done setting up this wordpress install is good for 3 day's free time.
 
-<!-- more -->
+(READMORE)

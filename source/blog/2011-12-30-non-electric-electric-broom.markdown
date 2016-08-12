@@ -7,4 +7,4 @@ Ashley and I just purchased a new household appliance: it's a non electric, elec
 
 
 
-<!-- more -->
+(READMORE)

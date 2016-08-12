@@ -22,4 +22,4 @@ dispatch_async(q, ^{doWork();};`
 
 I dunno - maybe I'm just being a zealot but it seems like the Java way is like trying to fool the API into doing what you want. Thoughts?
 
-<!-- more -->
+(READMORE)

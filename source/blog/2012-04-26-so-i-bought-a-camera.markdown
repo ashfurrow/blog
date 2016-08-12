@@ -19,4 +19,4 @@ Looking back, I was already interested in photography; I work at a company which
 
 For the first time in a long time, I find myself at the threshold of something very new. My ambition for what to do next is bounding forward faster than the time (or budget) I have to keep up with it. I am so much more mindful of the world around me and I want to capture this feeling to revisit it later if I ever forget it..
 
-<!-- more -->
+(READMORE)

@@ -8,4 +8,4 @@ If you're looking for how to get around the `NSInternalInconsistencyException` r
 
 The problem is that the existing `UITableView` class uses `beginUpdates` and `endUpdates` to submit batches to the table view. `UICollectionView` has a new `performBatchUpdates:` method, which takes a block parameter to update the collection view. That's pretty good, but it doesn't work well with the existing paradigm for `NSFetchedResultsController`.
 
-<!-- more -->
+(READMORE)

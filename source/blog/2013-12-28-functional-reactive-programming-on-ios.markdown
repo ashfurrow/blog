@@ -9,4 +9,4 @@ All the source code discussed in the book is [open](https://github.com/AshFurrow
 
 I'd really appreciate anything you could do to help spread the word. Every little bit helps!
 
-<!-- more -->
+(READMORE)

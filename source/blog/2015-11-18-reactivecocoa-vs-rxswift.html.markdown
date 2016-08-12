@@ -9,7 +9,7 @@ I've spoken in different venues about functional reactive programming in iOS, us
 
 Now there are several FRP libraries to choose from, and people have begun thinking that because I no longer recommend ReactiveCocoa, I no longer think it's a good project. That's just not true, ReactiveCocoa is demonstrably a great project. The reason that I'm no longer recommending it – or any other library – is because the frameworks themselves don't matter.
 
-<!-- more -->
+(READMORE)
 
 Well, they "don't matter" for beginners anyways. If you haven't tried using either one yet, then respectfully, you don't yet have the vocabulary necessary to discuss which is more suited for your needs.
 

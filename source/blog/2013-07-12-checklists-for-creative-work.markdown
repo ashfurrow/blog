@@ -9,4 +9,4 @@ My coworker Eric wrote a great article entitled [Checklists for Creative Work](h
 
 I'd strongly encourage you to read the article. Programming, I have argued, is a creative process and Eric's advice for use of checklists apply very well to developers.
 
-<!-- more -->
+(READMORE)

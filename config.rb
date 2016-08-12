@@ -19,11 +19,7 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = "{title}.html"
 
-  # Enable pagination
-  blog.paginate = true
-  blog.per_page = 10
-  blog.page_link = "page/{num}"
-  blog.summary_separator = /<!-- more -->/
+  blog.summary_separator = /(READMORE)/
   blog.new_article_template = "new_article.markdown.erb"
   blog.layout = "partials/_blog_post"
 end
@@ -56,7 +52,7 @@ activate :directory_indexes
 activate :sprockets do |c|
   c.expose_middleman_helpers = true
 end
-# activate :add_links_to_navigation
+activate :add_links_to_navigation
 activate :modify_widths
 activate :embed
 

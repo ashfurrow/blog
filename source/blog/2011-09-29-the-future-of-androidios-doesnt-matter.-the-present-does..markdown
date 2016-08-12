@@ -20,4 +20,4 @@ Android has come a long way. The very best, very latest Android phones offer a h
 
 Impress me.
 
-<!-- more -->
+(READMORE)

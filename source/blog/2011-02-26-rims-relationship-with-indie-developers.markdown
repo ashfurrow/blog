@@ -15,4 +15,4 @@ I admit BBM is pretty cool, and RIM's latest marketing campaigns are slick, but 
 
 They can do whatever they want to, since their position in business and government is very secure, but RIM's playing catch-up in the consumer marking and they're ignoring a pool of innovative and fresh independent app developers.
 
-<!-- more -->
+(READMORE)

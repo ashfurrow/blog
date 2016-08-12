@@ -15,4 +15,4 @@ In the process, I re-affirmed that I love to code. It's something I was afraid I
 
 You can check out my [GitHub Profile](https://github.com/AshFurrow) for all the nitty gritty details.
 
-<!-- more -->
+(READMORE)

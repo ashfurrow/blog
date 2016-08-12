@@ -6,7 +6,7 @@ link_to: swift
 
 This morning, I was working on the [sample app](https://github.com/AshFurrow/Moya/issues/39) for [Moya](https://github.com/AshFurrow/Moya), a network abstraction framework that I’ve built on top of [Alamofire](https://github.com/Alamofire/Alamofire). I needed a way to grab some user text input, so I turned to `UIAlertView`. Turns out that that’s deprecated in favour of `UIAlertController`. Hmm.
 
-<!-- more -->
+(READMORE)
 
 Looking around the internet, there weren’t very many examples of how to use this cool new class, and the [documentation](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIAlertController_class/) was sparse at best. Let’s take a look at the high-level API and then get into some of the nitty-gritty. (I’m going to write this in Swift because I am not a [dinosaur](http://t.co/Q2hvacChLu).)
 

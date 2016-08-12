@@ -17,4 +17,4 @@ Seriously, the developer's commentary on Portal showed me the staggering amount 
 
 Making amazing software requires cleverness, and designing a game around the expectations of _people_ requires extra special cleverness, since people think in really weird, specific ways. I think that more software should be designed and developed with that same vociferous appeal to users' expectations. I'll also restate what I realized at the time: making amazing software requires more than just clever developers; it requires that everyone working on your team approaches their jobs with the users' expectations in mind.
 
-<!-- more -->
+(READMORE)

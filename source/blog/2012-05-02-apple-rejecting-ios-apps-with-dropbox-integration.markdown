@@ -23,4 +23,4 @@ Every once in a while, iOS nerds are reminded that, while the benefits of develo
 
 S go ahead and make some noise; get Apple's App Review Team lead to slap the wrist of whoever overstepped the line. Just remember that no one is holding a gun to your head.
 
-<!-- more -->
+(READMORE)

@@ -25,4 +25,4 @@ New Xcode projects will let you keep local git source control. Using an existing
 
 I tried adding initializing an empty git repo and importing into Xcode with no luck. If anyone has a better solution, please let me know!
 
-<!-- more -->
+(READMORE)

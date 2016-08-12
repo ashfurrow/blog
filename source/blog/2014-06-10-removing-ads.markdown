@@ -9,4 +9,4 @@ I've been blogging a lot more recently with my personal issues with depression, 
 
 I wish Fusion Ads all the best. They've been very kind to me, and if I ever want to sell ads against one of my web properties again, I'll likely return to them.
 
-<!-- more -->
+(READMORE)

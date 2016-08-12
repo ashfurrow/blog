@@ -5,7 +5,7 @@ date: 2014-09-11 00:00
 
 I've started a [project](https://github.com/AnyoneCanLearn/AnyoneCanLearn) called "AnyoneCanLearn". You can read the information there for the goals and values and everything; this blog post isn't about promoting it or explaining it. It's about providing my motivation.
 
-<!-- more -->
+(READMORE)
 
 For a long time, I've been asked questions about iOS development. People email me or tweet at me all the time because they have questions about one of my books or open source projects. I love getting these emails and I try my best to respond to each one in a timely manner. Usually, though, if the question is novel, I'll suggest asking it on Stackoverflow. That way, others can benefit from the answer I put there. My common refrain has been "open source your question so they can open source the answer", and I've thought this was a good idea.
 

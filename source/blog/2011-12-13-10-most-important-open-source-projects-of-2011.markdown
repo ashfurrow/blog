@@ -15,4 +15,4 @@ date: 2011-12-13 00:00
 
 This is why I laugh at Android fans when they point out how "closed" the iOS platform is.
 
-<!-- more -->
+(READMORE)

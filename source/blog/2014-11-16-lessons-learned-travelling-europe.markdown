@@ -9,7 +9,7 @@ Almost a year ago, my wife and I decided to move from Toronto to Amsterdam. Why?
 
 Well, we certainly have seen more of the world and we certainly have had an adventure. 
 
-<!-- more -->
+(READMORE)
 
 The past nine months have been incredible. And while I still do miss my old job at Teehan+Lax and my friends in Toronto, the personal and professional growth I’ve undergone since leaving Canada has just been tremendous. I believe there really is no substitute for a broader perspective, which is why I’m glad we made the decision to move. 
 

@@ -7,4 +7,4 @@ For the past five months, I've been working with my colleagues at Teehan+Lax on 
 
 To that end, I've written a [blog post](http://www.teehanlax.com/blog/krush-ios-architecture) on the T+L blog featuring four case studies about decisions we made. Take a read and let me know what you think.
 
-<!-- more -->
+(READMORE)

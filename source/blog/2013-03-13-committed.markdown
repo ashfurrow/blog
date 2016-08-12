@@ -11,4 +11,4 @@ It also does a great job of handling organizations. I'm a member of quite a few,
 
 Check it out in the [App Store](https://itunes.apple.com/ca/app/committed/id560767719?mt=12).
 
-<!-- more -->
+(READMORE)

@@ -37,4 +37,4 @@ If you're not willing to settle for HTTP Basic Authentication, and there's every
 
 If you're developing an API and actually want developers to use it, then consider not using standard OAuth and please, please, please, please write documentation that doesn't make assumptions about the framework and language I'm using.
 
-<!-- more -->
+(READMORE)

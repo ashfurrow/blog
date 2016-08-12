@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/762788174955413
 
 There are a bunch of things I do when I re-install macOS on a computer, or when I begin working on a new computer. I don't do this often, so it's easy to forget the steps. So I [documented everything in a gist](https://gist.github.com/ashfurrow/3865eed417a5fbe8402708e2c706eea6).
 
-<!-- more -->
+(READMORE)
 
 I used to keep these steps in Notes.app but figured they should be public anyway (open source by default, right?) so here we are.
 

@@ -17,4 +17,4 @@ However, there are drawbacks. Using CocoaPods makes it difficult to contribute b
 
 CocoaPods is a maturing tool that's come a long way and shows a lot of promise. If you've previously looked at the tool but passed on it, I would encourage you to look again. It's a great way to easily incorporate lots of open source goodness into your project. As my friend [Jason](http://twitter.com/jasonbrennan) puts it, don't think of it as "not invented here", but rather "proudly discovered elsewhere."
 
-<!-- more -->
+(READMORE)

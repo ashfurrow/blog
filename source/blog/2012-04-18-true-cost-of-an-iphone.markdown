@@ -11,4 +11,4 @@ While I find the invocation of Foxconn workers' suicide rate inflammatory and a 
 
 The concepts it portrays are worth thinking about. Where do are electronics come from? What are the hidden costs of those products? What happens once we're done with them? And finally, why aren't we considering these costs when we make all of our purchases?
 
-<!-- more -->
+(READMORE)

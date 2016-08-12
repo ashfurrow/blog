@@ -9,4 +9,4 @@ On Saturday, June 29th, open an Objective-C repository or fork an existing one. 
 
 Check out the [EventBrite](http://openobjectivec.eventbrite.com) page for a reminder.
 
-<!-- more -->
+(READMORE)

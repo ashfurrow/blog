@@ -8,4 +8,4 @@ I've written an introductory post about [Model View ViewModel](http://www.teehan
 
 Let me know what you think!
 
-<!-- more -->
+(READMORE)

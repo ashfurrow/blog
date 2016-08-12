@@ -15,4 +15,4 @@ So I wrote it myself. The resulting UITableViewCell category (called ShrinkTo).
 
 The code is freely available on [GitHub](https://github.com/AshFurrow/UITableViewCell-ShinkTo).
 
-<!-- more -->
+(READMORE)

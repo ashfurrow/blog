@@ -23,4 +23,4 @@ So far, we've left everything up to Apple, letting them dictate the best way to 
 
 We're still a very young community that's finding its feet. We need to look at other communities who have been through this and see what they did right and wrong in order to develop our own set of best practices.
 
-<!-- more -->
+(READMORE)

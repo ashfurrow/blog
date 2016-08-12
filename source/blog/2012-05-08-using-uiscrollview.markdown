@@ -9,4 +9,4 @@ I'm giving a talk tonight at [TACOW](http://tacow.org/), the Toronto Cocoa and W
 
 The sample code is completed - no exercises left to the user :)
 
-<!-- more -->
+(READMORE)

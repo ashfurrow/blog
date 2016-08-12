@@ -21,4 +21,4 @@ On usability:
 
 There are also some great, great pieces of advice discussing pair-programming, code reviews, effetive use of git, and more. Read the whole thing if you can.
 
-<!-- more -->
+(READMORE)

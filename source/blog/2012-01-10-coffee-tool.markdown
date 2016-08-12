@@ -11,4 +11,4 @@ The thing is magic. It keeps the hot water from touching you, has [removable bri
 
 This is the only aspect of making coffee I enjoy more at work than I do at home.
 
-<!-- more -->
+(READMORE)

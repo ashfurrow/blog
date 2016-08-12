@@ -35,4 +35,4 @@ On iOS, the NSValue methods or wrapping rects are stored in a category on NSValu
 
 What's more interesting is that the iOS methods are called things like "valueWithCGRect:" and the OS X methods are the likes of "valueWithRect:". It's probably a trick by Apple to get the compiler to not complain, but it is very curious why they chose to segregate the methods into a hard-to-find section of a related header file on iOS.
 
-<!-- more -->
+(READMORE)

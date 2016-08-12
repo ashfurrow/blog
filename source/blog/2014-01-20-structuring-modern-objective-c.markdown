@@ -182,4 +182,4 @@ Note: [Michael](http://twitter.com/italoarmstrong) points out that we should tec
 
 I don't care whether you prefix your constants with 'k' or a class name, or just a prefix, but _do_ be consistent. And descriptive. Otherwise, you'll run into naming conflicts when your codebase grows. Trust me on this one.
 
-<!-- more -->
+(READMORE)

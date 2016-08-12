@@ -15,4 +15,4 @@ If you've enjoyed the show, please consider [rating it on iTunes](https://itunes
 
 I'm really excited about where this is going.
 
-<!-- more -->
+(READMORE)

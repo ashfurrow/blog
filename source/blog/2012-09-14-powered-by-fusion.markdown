@@ -9,4 +9,4 @@ The goal of my blog has always been, first and foremost, to write about things I
 
 Making money has never been the goal for me - elevating my writing to the point where it is serious enough to advertise against has been. I'm really looking forward to what's in store.
 
-<!-- more -->
+(READMORE)

@@ -9,4 +9,4 @@ I'm focusing on the aspects of development that are important to me because they
 
 Now that I've left my old workplace, moved, and finished writing my latest book, I've felt less stressed and more relaxed. I can't remember the last time I've felt this happy.
 
-<!-- more -->
+(READMORE)

@@ -11,4 +11,4 @@ My grandmother used to read it to me before she passed away. I was young and her
 
 It's weird how someone you've never met could have such an impact on your life and how their death can really affect you.
 
-<!-- more -->
+(READMORE)

@@ -10,7 +10,7 @@ But the engine also produces electricity which can be used to charge the battery
 
 I was impressed when, recently in a taxi, I saw this information displayed visually on the car's dashboard. It looked something like this.
 
-<!-- more -->
+(READMORE)
 
 ![Hybrid Dashboard](/img/blog/hybrids/dash.jpg)
 

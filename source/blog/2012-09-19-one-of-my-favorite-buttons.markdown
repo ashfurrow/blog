@@ -24,4 +24,4 @@ It wasn't _difficult_ to add that button. All the developer's had to do was give
 
 I guess in addition to giving a damn, it also helps to listen to your users. Turn out.
 
-<!-- more -->
+(READMORE)

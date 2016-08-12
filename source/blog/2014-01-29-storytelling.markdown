@@ -13,4 +13,4 @@ I rely on the open source community for a lot of what makes my projects good: by
 
 Coincidentally, I'm launching a thing soon. Yeah, I'm nervous, but I'm confident it'll work out in the end.
 
-<!-- more -->
+(READMORE)

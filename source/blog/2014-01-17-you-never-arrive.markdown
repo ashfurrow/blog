@@ -11,4 +11,4 @@ Instead of being preoccupied with "arriving" to a state of mind where we're not 
 
 That piece of wisdom has stuck with me for a while now, and I believe it's the best advice I've ever gotten.
 
-<!-- more -->
+(READMORE)

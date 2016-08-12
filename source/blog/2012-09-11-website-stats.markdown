@@ -15,4 +15,4 @@ Still! It's nice to know on my worst day _now_, I'm getting more viewers than on
 
 If you ever have suggestions for improvements or articles you'd like me to write, please [get in touch](/about/).
 
-<!-- more -->
+(READMORE)

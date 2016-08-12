@@ -27,4 +27,4 @@ Now, I own an entry-level Rebel DSLR, so my light sensitivity goes up only to IS
 
 There are other conventions I'm not following, but after reading these tips, I'm much more comfortable challenging established dogma in my own photography. The results aren't always spectacular, but I'm learning these lessons for myself instead of relying on the experience of others to completely inform my skill. I'm trying to use the lessons I'm learning as a beginning photographer to help me recognize the assumptions I've made about software development so that I can evaluate them on their merit.
 
-<!-- more -->
+(READMORE)

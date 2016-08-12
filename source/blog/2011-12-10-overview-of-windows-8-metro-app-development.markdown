@@ -69,4 +69,4 @@ I was admittedly intimidated by XAML because I'm used to defining my interfaces 
 
 Let's face it: Metro will be a success. As a company, Microsoft isn't going anywhere and they've learned lessons from Apple, Amazon, and Google on how to create an excellent app ecosystem. Personally, I'm too entrenched in the Obj-C/iOS ways to develop my own, personal &nbsp;Metro app. But based on what I've seen about Metro, I can see a lot of Enterprise ASP.Net corporate developers going home at night to tinker on their Metro apps, and who can argue against that?
 
-<!-- more -->
+(READMORE)

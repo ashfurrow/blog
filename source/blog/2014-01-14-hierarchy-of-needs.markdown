@@ -11,4 +11,4 @@ I've been having a harder time focusing on work and play – it's frustrating. I
 
 Luckily, we've signed a contract for an apartment near the city centre and we've gotten our financials in order, so the stress is going down. It'll all be over soon. Hopefully when it is, and I return to my baseline of stress, my tolerance for stress at that level will be better.
 
-<!-- more -->
+(READMORE)

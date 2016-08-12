@@ -13,4 +13,4 @@ Now, being in love with evens doesn't make a mathematician. However, my birthday
 
 After that, my "fate" was sealed; I really [didn't have a choice in the matter](http://www.smbc-comics.com/index.php?db=comics&id=2143#comic). I was good at math naturally, and I had (and still have to this day) a fantastic memory for the&nbsp;minutiae&nbsp;of everyday life. This led to me noticing a lot of coincidences, which further antagonized my predisposition towards numbers. For instance, I'd notice when something happened an even number of times and then something good would happen! I wouldn't notice when something good _didn't_ happen, and so on.
 
-<!-- more -->
+(READMORE)

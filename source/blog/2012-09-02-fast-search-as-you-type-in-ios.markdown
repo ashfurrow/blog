@@ -69,4 +69,4 @@ filteringPredicate = [NSPredicate predicateWithFormat:@"canonicalSearchTerm begi
 NSDictionary *substitutionDictionary = @{ @"searchTerm" : [inputText lowerCaseString] };
 filteredCityModelArray = [cityModelArray filteredArrayUsingPredicate:[filteringPredicate predicateWithSubstitutionVariables:substitutionDictionary];
 ```
- ![](/img/import/blog/fast-search-as-you-type-in-ios/C11B981EB6C442618B44A5F754E8DC66.jpg)<!-- more -->
+ ![](/img/import/blog/fast-search-as-you-type-in-ios/C11B981EB6C442618B44A5F754E8DC66.jpg)(READMORE)

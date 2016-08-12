@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/665704240350932
 
 I've been giving a lot of thought to community-building within the context of open source software. Ideas have been bouncing around my head for some time and lately I've been trying to make sense of them, to articulate them clearly.
 
-<!-- more -->
+(READMORE)
 
 The other day I tweeted this:
 

@@ -5,7 +5,7 @@ date: 2014-07-18 00:00
 
 So WWDC happened, and we were all blown away by Swift. Yay Swift! And one of my reactions afterward was "I want to write a book on this", because that's apparently what I do now. So I created [this page](https://leanpub.com/swift_book) where you can register for updates when the book is launched.
 
-<!-- more -->
+(READMORE)
 
 Cool, cool. But why, people would ask me, am I writing a book when Apple has _two_ ebooks on Swift already available, for free? Well, I had to think really hard about that. To be honest, I just wanted to write something cool – largely as an excuse to get really good at Swift. So I had to think hard about _why_ I wanted to write about Swift, and after reading the Apple books and getting my hands dirty, it came down to this: Apple's resources are really good at describing the language, but it's not written as a resource for teaching practical knowledge. The book, while excellent, reads like a text book.
 

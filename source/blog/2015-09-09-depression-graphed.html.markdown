@@ -12,7 +12,7 @@ It's amazing how simple drawings can relate such a broad range of feelings. Word
 
 Over the past few months of therapy, I've gained a better picture of my own depression, and I want to record these insights. Maybe someone else will find them useful or informative, but mainly this post is so I can understand myself better.
 
-<!-- more -->
+(READMORE)
 
 ----------------
 

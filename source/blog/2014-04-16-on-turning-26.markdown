@@ -49,4 +49,4 @@ I probably won't write another book for a while, since it's so exhausting, but I
 
 Thanks again for reading.
 
-<!-- more -->
+(READMORE)

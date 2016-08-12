@@ -9,4 +9,4 @@ I've got a new podcast, called [The Master Branch](http://themasterbranch.com/),
 
 Check it out. Let me know what you think.
 
-<!-- more -->
+(READMORE)

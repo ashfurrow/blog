@@ -8,4 +8,4 @@ link_to: swift
 
 Hat tip to [Alessandro Zoffoli](http://twitter.com/AL333Z).
 
-<!-- more -->
+(READMORE)

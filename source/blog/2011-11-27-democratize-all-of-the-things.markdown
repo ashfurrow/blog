@@ -15,4 +15,4 @@ Friday night, not even 48 hours ago, I decided to [localize my app](http://mygen
 
 The Internet helps individuals and small business reach an entire globe of people to make friends, sell services, and buy products. It has lowered the barrier to entry for almost every industry in the modern world. While the publishing mongols and translation bureau tycoons rue the Internet's widespread adoption and the&nbsp;devastating&nbsp;impact on their respective industries, I'm not losing any sleep over their lost profits. The Internet has changed the world of business and is continuing to do so, making services cheaper and more efficient. I couldn't be happier.
 
-<!-- more -->
+(READMORE)

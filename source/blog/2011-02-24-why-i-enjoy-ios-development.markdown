@@ -13,4 +13,4 @@ It's this reason that makes me enjoy making interfaces for iOS apps and then fil
 
 So that's it. I program in the iOS garden because I have a set of rules, and if I follow those rules, I know the user will enjoy using my app (which is what we should all be about, anyways). It lets me focus more on the idea of an awesome new app and less on making an intuitive interface. Polished interface is something that is paramount in my applications, and having a helping hand makes it easy to accomplish.
 
-<!-- more -->
+(READMORE)

@@ -7,4 +7,4 @@ I'm very happy to share [Ole Begemann's list of favourite Cocoa blogs](http://ol
 
 I know I didn't do as much writing here as I wanted to in 2013, but I'm looking forward to doing more of it, and more open source contributions, in the coming twelve months. Cheers!
 
-<!-- more -->
+(READMORE)

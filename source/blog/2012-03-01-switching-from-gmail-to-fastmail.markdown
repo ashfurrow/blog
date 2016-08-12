@@ -32,4 +32,4 @@ If you're thinking of making the switch and moving to FastMail, please use my [a
 
 In a month's time, I'll let you know how I'm faring.
 
-<!-- more -->
+(READMORE)

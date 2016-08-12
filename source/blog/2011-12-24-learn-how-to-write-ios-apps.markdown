@@ -59,4 +59,4 @@ I find that following certain blogs or just looking through archives to be reall
 
 That's about all I can say - I learn best by trying, identifying a problem or shortcoming in my understanding, and then fixing it. Hopefully you'll be on your way in no time. If anyone ever has a question or comment, please feel free to [contact me via twitter](http://twitter.com/#!/ashfurrow).
 
-<!-- more -->
+(READMORE)

@@ -17,4 +17,4 @@ Ironically, I checked out the Microsoft booth, and I'm _very_&nbsp;impressed wit
 
 I think Apple has less to worry about from Android, and more to worry about from Microsoft. I'm even considering installing Visual Studio and having my hand at it - it looks like a fun platform to develop for.&nbsp;
 
-<!-- more -->
+(READMORE)

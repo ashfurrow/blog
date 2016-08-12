@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/667425825248145
 
 I came across a study today that discussed politeness in the context of open source communities. Being a Canadian open source developer, I was naturally intrigued.
 
-<!-- more -->
+(READMORE)
 
 [The study](https://peerj.com/preprints/1515v1/)'s autors examined a _tonne_ of tickets from big open source projects, like Hadoop and Casandra. Their data (and paper) are open source, so I took a look and the _zip file_ is seven hundred megabytes.
 

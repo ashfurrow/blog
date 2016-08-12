@@ -26,4 +26,4 @@ My friend Alex insists that how you act is more important than what you're weari
 
 Photo credit: [Suit Society](http://www.suitsociety.com/jfk/)
 
-<!-- more -->
+(READMORE)

@@ -11,4 +11,4 @@ I'm going to be doing work that fulfills me and that exercises my expertise. I'm
 
 In the end, patience paid off. I'm very excited to start my new job Monday!
 
-<!-- more -->
+(READMORE)

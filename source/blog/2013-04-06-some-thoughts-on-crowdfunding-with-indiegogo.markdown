@@ -19,4 +19,4 @@ If I had to do it all over again, I would not have launched on a Friday night an
 
 I'm incredibly grateful for everyone who has helped out, either by contributing or helping to spread the word. You all rock.
 
-<!-- more -->
+(READMORE)

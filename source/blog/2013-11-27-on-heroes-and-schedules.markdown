@@ -23,4 +23,4 @@ These are two separate, yet intertwined topics. Heroes alienate other devs and b
 
 Don't work yourself to death; communication is good. Get back to work.
 
-<!-- more -->
+(READMORE)

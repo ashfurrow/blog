@@ -12,4 +12,4 @@ I'd add a few things:
 - [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
 - [Specta](https://github.com/specta/specta)
 - [AppSee](http://www.appsee.com) (if you're into Analytics)
-<!-- more -->
+(READMORE)

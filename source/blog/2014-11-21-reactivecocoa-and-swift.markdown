@@ -6,7 +6,7 @@ link_to: frpswift
 
 The talk for my [presentation at MBLTDev](/blog/reactivecocoa-with-swift/) is up now – while a few things (like [CocoaPods Support](https://github.com/artsy/eidolon/pull/317)) have changed since I have the talk, it's still very relevant. [Give it a watch](https://www.youtube.com/watch?v=tRCgBuJsNtg) if you're interested in working with ReactiveCocoa and Swift. 
 
-<!-- more -->
+(READMORE)
 
 YOUTUBE tRCgBuJsNtg
 

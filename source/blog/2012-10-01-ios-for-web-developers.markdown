@@ -115,4 +115,4 @@ The other place to put code is in methods that respond to user interaction. This
 
 So those are the basics. We've covered the similarities and differences of iOS and Web development, where code lives in an iOS project, and how to access members of the view hierarchy. If you have any other suggestions for blog articles, reach out to me on [twitter](http://twitter.com/ashfurrow).
 
-<!-- more -->
+(READMORE)

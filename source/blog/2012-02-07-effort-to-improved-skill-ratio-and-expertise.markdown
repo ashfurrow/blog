@@ -15,4 +15,4 @@ Attending university for 5 years offered many opportunities to try new pursuits.
 
 As an adult, I now have a career. I develop software and refine my craft every day. I am worried that someday I won't enjoy software development enough to continue it as a career, but luckily I'm naive enough to hope that I've actually hit the point of inflection and I'm still pursuing the craft of software development in spite of the decreased marginal benefit practising it has on my expertise. I'd like to think that I'm getting satisfaction out of coding because of what I'm building and not just what I'm gaining as skills.
 
-<!-- more -->
+(READMORE)

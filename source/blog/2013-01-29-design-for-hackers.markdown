@@ -11,4 +11,4 @@ I think that readers of this blog probably appreciate design more than the typic
 
 I'd highly recommend it.
 
-<!-- more -->
+(READMORE)

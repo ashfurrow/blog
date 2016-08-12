@@ -9,4 +9,4 @@ I just read a [really interesting article about side projects](http://blog.joshl
 
 This really resonated with me. I've got a lot on my plate (especially in the last year or so) and try to treat all of my endeavours seriously.
 
-<!-- more -->
+(READMORE)

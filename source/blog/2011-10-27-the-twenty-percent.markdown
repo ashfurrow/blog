@@ -7,4 +7,4 @@ I read an article this morning detailing the complete [failure of Google and han
 
 Android OEMs and Google need to step up if they expect developers to write apps on their platform.
 
-<!-- more -->
+(READMORE)

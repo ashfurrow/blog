@@ -19,4 +19,4 @@ It's not that I disagree with Paul Graham's thesis that we makers work on our ow
 
 Otherwise, what sort of society is our technology enabling?
 
-<!-- more -->
+(READMORE)

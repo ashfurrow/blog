@@ -7,4 +7,4 @@ Cue has a great [roundup of results](http://tech.cueup.com/blog/2013/07/01/objec
 
 126 repositories created. ObamaNotBad.jpg.
 
-<!-- more -->
+(READMORE)

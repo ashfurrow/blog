@@ -9,4 +9,4 @@ I'm terrified – terrified – of it breaking once people actually start to use
 
 I've done the usual – set up monitoring services that'll alert me when something breaks, and I'm learning more about automated testing on Node.js to minitigate a failure. What do you all do? Just get used to the omnipresent threat of a downed server?
 
-<!-- more -->
+(READMORE)

@@ -13,4 +13,4 @@ Right!
 
 `zsh` has autocomplete for git. That is _all_ you need to know to switch.
 
-<!-- more -->
+(READMORE)

@@ -21,4 +21,4 @@ I want to be a ninja. I want to be the best I can be. I want to contemplate how 
 
 There's nothing wrong with being a pirate, but it's not for me anymore. I'm not sure it ever really was.
 
-<!-- more -->
+(READMORE)

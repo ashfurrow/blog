@@ -11,4 +11,4 @@ It was an incredible learning experience. The chapters are nearly complete with 
 
 I've chosen a self-publishing platform and have began planning another book. Except some exciting things this Fall.
 
-<!-- more -->
+(READMORE)

@@ -7,4 +7,4 @@ I just read an [interesting and thorough guide to iOS Design](http://taybenlor.c
 
 Definitely something to keep in your bookmarks folder as a quick reference.
 
-<!-- more -->
+(READMORE)

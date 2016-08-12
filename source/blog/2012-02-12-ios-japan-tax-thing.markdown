@@ -11,4 +11,4 @@ Marco Arment posted a link to a [very informative article](http://david-smith.or
 
 It's only about $10 in Canadian Dollars, but it'll add up. And from a principled perspective, I'm being taxed when I oughtn't to.
 
-<!-- more -->
+(READMORE)

@@ -15,4 +15,4 @@ University revenue comes from two main sources: tuition and an operating grant f
 
 I hate to sound like a broken record, but this all comes back to the Conservative government. If they had given universities the money they need to operate, they wouldn't need to raise what is the second-highest tuition in Canada.
 
-<!-- more -->
+(READMORE)

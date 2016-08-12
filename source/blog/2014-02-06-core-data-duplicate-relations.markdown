@@ -19,4 +19,4 @@ One of the models, an ancillary one to A and B, was depending on the fact that i
 
 The lesson here is complicated. First, your models should _never_ rely on being configured on a specific thread. Ever. Second, migrating from a single-context to multi-context Core Data stack is hard; it's better if you architect something mutli-context from the get-go, or use something like [MagicalRecord](https://github.com/magicalpanda/MagicalRecord) to do it for you. Finally, even experienced Core Data practioners can make beginner mistakes. Always test your assumptions.
 
-<!-- more -->
+(READMORE)

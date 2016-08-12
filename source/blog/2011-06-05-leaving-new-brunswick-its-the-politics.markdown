@@ -25,4 +25,4 @@ I can't speak directly to the Torries' motivations over this one, especially con
 
 Ashley and I leave on a plane for Toronto tomorrow morning to look for an apartment and gainful employment. We can't be more excited to move to such an amazing city and away from such a regressive province. It's going to be nice to be able to vote in an election for a party that's not red or blue and have a chance of them actually winning.
 
-<!-- more -->
+(READMORE)

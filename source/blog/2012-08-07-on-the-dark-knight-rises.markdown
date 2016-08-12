@@ -17,4 +17,4 @@ Not only was the dialogued spoiled by maladroit exchanges between the characters
 
 In short, I think I would enjoy seeing this film again, but I would have to suspend all belief that this story could plausibly be possible; it is a far cry from the compelling story-telling we saw in Acts I and II.
 
-<!-- more -->
+(READMORE)

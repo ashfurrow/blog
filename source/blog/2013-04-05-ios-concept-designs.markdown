@@ -19,4 +19,4 @@ Design doesn't exist in a vacuum. Think about how your design is going to fit wi
 
 Don't get me wrong – iOS is _not_ perfect. It has a lot of room to grow and is even being surpassed in some ways by other mobile operating systems. But don't go out and grab every feature from every OS you care to riff off – mobile _and_ desktop – and call it a good concept video. Let's be sensible about what we're asking for from Apple, because who knows –&nbsp;we might end up with it.
 
-<!-- more -->
+(READMORE)

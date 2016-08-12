@@ -17,4 +17,4 @@ It's certainly the kind of move we've come to expect from Twitter.
 
 _Golf clap_.
 
-<!-- more -->
+(READMORE)

@@ -9,4 +9,4 @@ My friend asked me recently if I ever regretted not pursuing some startup opport
 
 The question intrigued me. I thought about it, and I came up with this answer. I'm incredibly happy with where I am in my life and career, and every single decision I've made has lead me to where I am today. How could I regret any of them?
 
-<!-- more -->
+(READMORE)

@@ -13,4 +13,4 @@ I looked at my downloads numbers, and I've actually started selling more copies 
 
 Here's a deal: you rate my app, and if you're ever downtown Toronto, I'll take you out for a coffee :)
 
-<!-- more -->
+(READMORE)

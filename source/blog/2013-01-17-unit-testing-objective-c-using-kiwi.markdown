@@ -65,4 +65,4 @@ describe(@"Image downloader", ^{
 
 I'm looking for any feedback you have about the code, the structure of the project, or the testing I've performed.
 
-<!-- more -->
+(READMORE)

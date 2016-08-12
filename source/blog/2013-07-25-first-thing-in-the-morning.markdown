@@ -11,4 +11,4 @@ I just read this, er, _interesting_ tweet.
 
 The other 29% couldn't say what the first thing they touch in the morning in polite company.
 
-<!-- more -->
+(READMORE)

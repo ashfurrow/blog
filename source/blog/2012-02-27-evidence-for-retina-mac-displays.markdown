@@ -25,4 +25,4 @@ This API was introduced recently in Lion, but sounds very similar to the `UIScre
 
 I'm still very new to Mac development, but I wouldn't be surprised if this NSWindow property gets a lot more attention as WWDC approaches.
 
-<!-- more -->
+(READMORE)

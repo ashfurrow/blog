@@ -51,4 +51,4 @@ Another good example is the latest Instapaper update:
 
 I think that the release notes of iOS app updates are one of the most underused method of communicating with your users. Next time you submit an update, put yourself in the user's shoes and ask yourself how they're going to perceive your message.
 
-<!-- more -->
+(READMORE)

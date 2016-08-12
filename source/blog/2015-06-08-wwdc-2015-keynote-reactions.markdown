@@ -7,7 +7,7 @@ Today kicked off WWDC 2015 with two exciting keynotes: the "Keynote" keynote, an
 
 So what happened? 
 
-<!-- more -->
+(READMORE)
 
 A lot happened. And I'm going to ignore most of it, because a summary isn't really what's important. 
 

@@ -11,4 +11,4 @@ Nevertheless, I found [Holman's guide to Slide Design](http://zachholman.com/pos
 
 I'm actually accomplished as at saxophone jazz improvisation. This might not be so hard after all :)
 
-<!-- more -->
+(READMORE)

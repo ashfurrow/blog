@@ -113,4 +113,4 @@ It would have been a lot easier if, say, `UIBarButtonItem` wasn't such a fucking
 
 There are historical reasons for using this pattern to create standard icons, and it makes the job of developers easy if the look they're going for fits within the existing interface paradigm (ie: their app looks like it shipped with the user's device). However, for advanced customization, you'll have to break out some advanced techniques to convince `UIBarButtonItem` to behave.
 
-<!-- more -->
+(READMORE)

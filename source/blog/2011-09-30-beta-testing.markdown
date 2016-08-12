@@ -17,4 +17,4 @@ Lastly, it's really humanized users for me. It's hard to empathize with users wh
 
 Maybe I just have awesome beta testers. At any rate, I've never been more fulfilled with my work; the interactions I have with users on a daily basis are a huge part of that.
 
-<!-- more -->
+(READMORE)

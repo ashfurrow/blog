@@ -7,7 +7,7 @@ If your electricity bill increased, would you pay it? Probably. I mean, most peo
 
 When I first tried film photography, it was a way to explore the medium. When I made the switch to primarily shoot analogue photography, it wasn’t really a decision I made as much as it was the direction of the course I was on. There wasn’t much I could do to affect it.
 
-<!-- more -->
+(READMORE)
 
 And when I started having to pay for film and development, it wasn’t really a _new_ cost. Photography, even digital photography, has a cost. Your time to take a photo, to look at it later, consider editing it, editing, and sharing. That’s all a cost – time spent on every photo, which adds up.
 

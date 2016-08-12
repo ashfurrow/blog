@@ -13,4 +13,4 @@ I've been in workplaces that have cultural components that seem great on the sur
 
 When you're looking for a job, make sure that your prospective employer is upfront about their culture and they aren't using it to hide something negative. That's tough – the best suggestion I can suggest is just drilling interviewers about their company's culture. Ask in-depth questions: what they don't say is as telling as what they do.
 
-<!-- more -->
+(READMORE)

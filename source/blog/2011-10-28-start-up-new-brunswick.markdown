@@ -15,4 +15,4 @@ Obliging young people to stay in New Brunswick isn't the way to help the provinc
 
 This kind of proactive action is exactly what New Brunswick needs to turn itself around from a "potato and oil barron" province. I can't stress enough how happy I am to see this, and I hope people involved reach out to students at UNB who might have the next $300 million idea.
 
-<!-- more -->
+(READMORE)

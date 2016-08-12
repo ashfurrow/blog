@@ -13,4 +13,4 @@ Many people claim that they have a passion for programming or design. They say t
 
 I don't doubt that lots of people are passionate about software development. If you care about your craft, and are willing to personally sacrifice for it, then you're passionate. That's the difference between passion and enthusiasm.
 
-<!-- more -->
+(READMORE)

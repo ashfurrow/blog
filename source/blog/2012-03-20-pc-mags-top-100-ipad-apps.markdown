@@ -9,4 +9,4 @@ PC Mag has listed their [top 100 iPad apps](http://www.pcmag.com/article2/0,2817
 
 I'll be interested to see how this affects downloads. I'm already seeing an affect on my mood today.
 
-<!-- more -->
+(READMORE)

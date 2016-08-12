@@ -11,4 +11,4 @@ Instead, I recommend posting a question to [Stack Overflow](http://stackoverflow
 
 Open source your question so they can open source the answer.
 
-<!-- more -->
+(READMORE)

@@ -13,4 +13,4 @@ Eric Sink as a great article detailing the pros and cons of [HTML5 vs. Native ap
 
 I have chosen to actively avoid HTML5 mobile app development. I value a quality user experience, and the best quality apps are, and always have been, written natively.
 
-<!-- more -->
+(READMORE)

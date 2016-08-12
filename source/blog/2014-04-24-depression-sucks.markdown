@@ -27,4 +27,4 @@ This past weekend has reminded me of that time. I find myself questioning weathe
 
 I'm going to give it some more time, since I am getting better as time moves forward. However, going from my half dose down to nothing is going to be really, really hard. Since I have a lot of travelling in May and June, I might leave that next step for July. We'll see.
 
-<!-- more -->
+(READMORE)

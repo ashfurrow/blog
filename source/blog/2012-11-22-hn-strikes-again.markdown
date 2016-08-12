@@ -17,4 +17,4 @@ This isn't the first time I've seen people try to bring up the topic of privileg
 
 Privilege is a very touchy subject and relates to a lot of other topics people tend to have strong feelings about: economics, politics, social justice, human rights, the list goes on. It is frustrating that the mere mention of privilege is enough to set off an entire flame war, but we all just need to calm down. Contextualize our statements. Read what someone wrote instead of what we want to hear. And stop arguing on the Internet.
 
-<!-- more -->
+(READMORE)

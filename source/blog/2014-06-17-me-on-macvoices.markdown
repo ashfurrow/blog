@@ -8,4 +8,4 @@ I was delighted to be interviewed by Chuck Joiner down in San Francisco to discu
 YOUTUBE TmE_TPnGHlA
 
 </iframe>
-<!-- more -->
+(READMORE)

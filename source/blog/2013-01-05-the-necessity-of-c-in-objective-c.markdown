@@ -33,4 +33,4 @@ So you can use C in Objective-C, but I would strongly caution _against_ using Ob
 
 C is a procedural programming language. Objective-C is a message-oriented language that has objects. If the problem you're solving is best done with a procedural approach, then by all means, use C. However, you should always stop first and consider if the problem wouldn't really be better solved using a message-oriented or object-oriented approach, instead.
 
-<!-- more -->
+(READMORE)

@@ -21,4 +21,4 @@ I couldn't be happier.
 
 Now that my secret project at work is wrapped up, I'm looking forward to getting back into iOS. We've got a clear idea of exactly what we need to do to make an _even better_&nbsp;app, and I can't wait to realize our plans.
 
-<!-- more -->
+(READMORE)

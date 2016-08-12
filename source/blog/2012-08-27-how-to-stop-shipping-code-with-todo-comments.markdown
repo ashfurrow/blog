@@ -52,4 +52,4 @@ You'll never ship an accidental snaffoo again because your build _will break_ in
 
 I'm integrating it into my work flow and I'll report back on how it works out.
 
-<!-- more -->
+(READMORE)

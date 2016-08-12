@@ -17,4 +17,4 @@ Maybe it's just me, but I think the Installer app is being a little presumptuous
 
 The only excuse for this type of behaviour is that the operation is time-sensitive or sensitive to being interrupt. Yes, app install fall under this category, but couldn't you just re-install if power goes out midway though?&nbsp;Anyone have any thoughts on this?
 
-<!-- more -->
+(READMORE)

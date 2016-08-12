@@ -19,4 +19,4 @@ If that's not your definition for programming, then you're doing it wrong. If th
 
 We are makers; we take abstract ideas that exist _only inside our imaginations_ and turn them into concrete, working software. We _make_ things. We are in the same field as painters, writers, and musicians. I hazzard that there aren't many poets out there who don't see themselves writing poetry forever.
 
-<!-- more -->
+(READMORE)

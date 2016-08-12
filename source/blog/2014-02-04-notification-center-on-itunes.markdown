@@ -7,4 +7,4 @@ My new podcast, [Notification Center](http://notificationcenter.tv), has been ad
 
 Go check it out, subscribe, and leave a review. We'll be recording and releasing a new episode this weekend.
 
-<!-- more -->
+(READMORE)

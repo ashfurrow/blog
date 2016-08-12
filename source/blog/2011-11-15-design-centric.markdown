@@ -9,4 +9,4 @@ To me, designing was a process I went through as I wrote the app. Not the best a
 
 When I finally answered the question of "am I a designer?", I said "no", but a qualified one: "No, I'm a design-centric developer."
 
-<!-- more -->
+(READMORE)

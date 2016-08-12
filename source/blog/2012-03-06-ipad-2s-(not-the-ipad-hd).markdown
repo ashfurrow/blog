@@ -17,4 +17,4 @@ I'm not going to justify the "iPad 2S" name anymore - everyone else can justify 
 
 <small>(As for "iPad HD", please. That's so crass - this is Apple, not Samsung.)</small>
 
-<!-- more -->
+(READMORE)

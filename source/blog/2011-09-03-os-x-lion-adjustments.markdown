@@ -19,4 +19,4 @@ I love to use Apple products and I Apples their attention to this level of detai
 
 Honestly, I'm still having mixed feelings about Lion. It feels like a work in progress, a transition to what Apple's desktop OS _is going_ to be. I'm picturing an OS X House Cat 10.8 that looks more like iOS 6 than Snow Leopard.
 
-<!-- more -->
+(READMORE)

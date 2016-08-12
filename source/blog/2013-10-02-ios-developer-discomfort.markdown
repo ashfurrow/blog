@@ -111,4 +111,4 @@ We're in a golden age of tools – anyone can choose any tool that suits their t
 
 If you avoid something just because it's unfamiliar or it disagrees with your currently held best practices, you're doing yourself a disservice by turning down an opportunity to rid yourself of ignorance. You're going to learn something new – either that you were right all along or that you still have more to learn.
 
-<!-- more -->
+(READMORE)

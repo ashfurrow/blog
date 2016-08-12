@@ -5,7 +5,7 @@ date: 2015-08-23 19:45:37 UTC
 
 A few weeks ago, I blogged about [drawing](/blog/drawing/) and how it had never been something I thought I could do, but in fact it is. Since then, I've been making time nearly every day to draw or sketch something. I've been following a few tutorials from the internet, and have now got a [book](http://amzn.to/1PwDPtg). My technique seems to be improving, but more importantly, I'm having _a tonne_ of fun. 
 
-<!-- more -->
+(READMORE)
 
 And not just fun when I'm actually using pencil and paper, either. I'm experiencing familiar feelings and sensations throughout the day: on my walk to work, at work, out to dinner, all the time. 
 

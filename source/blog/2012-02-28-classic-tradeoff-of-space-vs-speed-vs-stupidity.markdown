@@ -19,4 +19,4 @@ This saved each frame to my home directory. I ran the application and triggered 
 
 My initial attempt was naive, but informative. I think this is the best approach in terms of how to approach this; it may be possible to find an more elegant solution using CoreAnimation with keyframe animations of some kind, but this solution is fast, not that CPU-intensive, and good enough.
 
-<!-- more -->
+(READMORE)

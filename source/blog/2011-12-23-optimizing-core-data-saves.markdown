@@ -43,4 +43,4 @@ This lets us delay saves until they won't be noticed by the user. While it break
 
 The background MOC is now almost strictly used for accessing background instances of the data models. In fact, no parsing or mutating of data takes place in the background queue at all. I _could_ get rid of it altogether, but&nbsp;I'm going to keep the background MOC around since it might come in handy to perform long-running fetches or importing lots of data.
 
-<!-- more -->
+(READMORE)

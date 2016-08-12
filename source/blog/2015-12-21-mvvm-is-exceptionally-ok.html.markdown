@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/678384591930048
 
 Last week I saw a blog post float around called [MVVM is Not Very Good](http://khanlou.com/2015/12/mvvm-is-not-very-good/), and I specifically avoided reading it because I was having a not-great week and I was afraid I would take the blog post personally. Well, this morning I read the article and here I am writing a response to it.
 
-<!-- more -->
+(READMORE)
 
 So let's break this down. The post levels a few criticisms of MVVM:
 

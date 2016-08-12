@@ -11,4 +11,4 @@ We don't know how long he waited between reporting the secrity issue to Apple be
 
 However, I can't help but feel very frustrated that his "research" has severely impacted the ability for six million registered developers to do their job.
 
-<!-- more -->
+(READMORE)

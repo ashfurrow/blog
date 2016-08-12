@@ -11,4 +11,4 @@ Now that I'm in the industry, I see that software engineers do in fact get paid 
 
 As professionals, we work together regardless of our backgrounds, whether we went to school for a degree, a diploma, or didn't go to school at all. As long as we share the same goals – no matter what they are – we can accomplish really awesome stuff. If you're fretting over the differences, don't worry. After you're done school, it all seems rather, well, academic.
 
-<!-- more -->
+(READMORE)

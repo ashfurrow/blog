@@ -15,4 +15,4 @@ All within a 10 minute walk of home. We can get your sushi on, buy a new belt, a
 
 We love it here.
 
-<!-- more -->
+(READMORE)

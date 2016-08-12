@@ -9,7 +9,7 @@ When iOS 6 launched, I was so excited because Apple added a new class to UIKit: 
 
 Sadly, collection views are one of the most unjustly maligned classes in UIKit. They have a reputation for being difficult to work with, but I think that if people's expectations of collection views were more informed, they might see collection views for what they are: a flexible, high-performance way to display collections of data.
 
-<!-- more -->
+(READMORE)
 
 ---
 

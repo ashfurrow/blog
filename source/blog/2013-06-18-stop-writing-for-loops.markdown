@@ -47,4 +47,4 @@ We used to have to use arrays because Objective-C didn't have blocks. We've left
 
 EDIT: Several readers have pointed out the [performance](http://darkdust.net/writings/objective-c/nsarray-enumeration-performance) [gains](http://stackoverflow.com/questions/4486622/when-to-use-enumerateobjectsusingblock-vs-for) when using the different methods. Good point, and definitely worth a read.
 
-<!-- more -->
+(READMORE)

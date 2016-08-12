@@ -15,4 +15,4 @@ Unfortunately, the camera we were recording on stopped after 30 minutes, but I'm
 
 I really did enjoy every aspect of presenting this talk. Adam Shutsa, the Lead Designer at 500px, was instrumental in helping me with the script and in making the slides (not to mention making the app). I'm hoping to present more talks, and more often.
 
-<!-- more -->
+(READMORE)

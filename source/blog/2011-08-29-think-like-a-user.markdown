@@ -9,4 +9,4 @@ I once joined an iPhone project where the lead developer had _disabled_ bouncing
 
 As a developer, _you're not a user_. Let me say that again, as a developer, you are _not_ a user. If you expect your software to fare well against the competition, you've got to make it behave as the user expects. You've got to think like a user, or you'll go out of business.
 
-<!-- more -->
+(READMORE)

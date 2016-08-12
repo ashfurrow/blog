@@ -11,4 +11,4 @@ Exactly. Like anything in design, there is [tasteful use of skeuomorphism](/blog
 
 Apple has arguably optimized for the first-time user experience of their apps, but their use of skeuomorphism has a purpose. I think many nerds who are upset about skeuomorphism aren't taking that purpose into account.
 
-<!-- more -->
+(READMORE)

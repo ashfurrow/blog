@@ -17,4 +17,4 @@ Considering that everything is going well, and after discussing it with my wife,
 
 Results have been good. I've felt really dizzy as I come off the dose of SSRIs I've been on for over a year, but I have a really positive upshot of coming off my meds: I've felt "flat" over the past year or so, being on the drugs. My good days are amazing, even if my bad days really suck. I feel alive for the first time in a long time. And despite the bad days, it feels amazing.
 
-<!-- more -->
+(READMORE)

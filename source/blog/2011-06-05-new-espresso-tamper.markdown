@@ -17,4 +17,4 @@ It's a wenge wood with a copper base. I think feeling the grain of wood will mak
 
 [Reg Barber](http://www.coffeetamper.com/store/pc/home.asp) has always been very good with email communication and is very active in the online coffee community. He even "likes" [CoffeeTimer on facebook](https://www.facebook.com/pages/Coffee-Timer/380859466680). His hand-made products are well known to be among the best in the espresso world.
 
-<!-- more -->
+(READMORE)

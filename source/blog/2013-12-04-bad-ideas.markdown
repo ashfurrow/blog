@@ -15,4 +15,4 @@ I'd rather be wrong, and voice my wrong idea, and be made a fool of than continu
 
 As a rule, I don't delete articles I write here (with one [embarassing exception](/blog/dont-use-oauth-for-your-api)). I'm not going to delete the article. I haven't been convinced that I'm wrong, only that I'm using anecdotal evidence (oops). If anyone has anything more to say on the matter, I'll be on twitter.
 
-<!-- more -->
+(READMORE)

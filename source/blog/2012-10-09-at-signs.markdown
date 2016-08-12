@@ -13,4 +13,4 @@ This weeks' [NSHipster](http://nshipster.com/at-compiler-directives/) does not d
 
 I'm convinced the reason I can't bring myself to dive into Python is how goddamn short all the variable names are.
 
-<!-- more -->
+(READMORE)

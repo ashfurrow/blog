@@ -9,4 +9,4 @@ This led to [this post](http://putthison.com/post/2108812491/q-and-answer-where-
 
 I really like this site; it offers a lot of sound, sensible, and accessible advice. A lot of sites will say something like "don't bother paying anything less than $2000 or a watch", where this site instead says "don't pay more than $50 for a Quartz watch."
 
-<!-- more -->
+(READMORE)

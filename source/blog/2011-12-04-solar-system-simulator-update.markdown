@@ -31,4 +31,4 @@ I'm hopeful that everything is going to work out. I've been seeing an increase i
 
 I'm hoping to integrate more educational components into the app and I've got some neat ideas I'd like to experiment with. In the mean time, however, I'll be finishing Storygram, the app my coworker and I wrote two weeks ago at [Pixel Hack Day](http://pixelhackday.com/).
 
-<!-- more -->
+(READMORE)

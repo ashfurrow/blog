@@ -13,4 +13,4 @@ date: 2011-12-23 00:00
 
 I had a similar experience earlier this year. I left. Now I'm making cool things and solving interesting problems. I have complete control over my environment and I see how my efforts are directly impacting the company.
 
-<!-- more -->
+(READMORE)

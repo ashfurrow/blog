@@ -15,4 +15,4 @@ This is annoyingly typical of New Brunswick employers. Coming to Ontario and hav
 
 As long as New Brunswick keeps reinforcing these principles, its going to lose talented young people to provinces willing to treat them as more than throwaway employees.
 
-<!-- more -->
+(READMORE)

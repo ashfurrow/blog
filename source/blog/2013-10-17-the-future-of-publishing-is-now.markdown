@@ -9,4 +9,4 @@ I've said it before and I'll say it again now: the needs and desires of traditio
 
 One thing that stood out to me as incredible obvious, but apparently needed to be said, is that your readers are a community and you should engage with them. Our editor, designer, and myself have been active in accruing participation from our audience.
 
-<!-- more -->
+(READMORE)

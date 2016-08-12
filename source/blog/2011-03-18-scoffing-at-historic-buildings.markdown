@@ -13,4 +13,4 @@ I'm sorry, but I'm tired of people who invoke "history" as a way to justify thei
 
 Historic sites - real historic sites like Signal Hill in St. John's - should of course be preserved. "Historic" buildings like the one in the article are just excuses to avoid change that NB'ers seem terrified of.
 
-<!-- more -->
+(READMORE)

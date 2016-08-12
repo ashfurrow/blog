@@ -11,7 +11,7 @@ I've been thinking lately about ways the iOS community could improve. One of tho
 
 The problem seems that the iOS community doesn't really have a leader like Matz. I mean, I guess we have Apple, but they're not a person. And they're certainly not _nice_ in a way that engenders a drive for us to act nicely. 
 
-<!-- more -->
+(READMORE)
 
 So if the iOS community doesn't have an analogue to Matz, can we make a MINSWAN for iOS? If not in name, then at least in spirit?
 

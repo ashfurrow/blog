@@ -7,7 +7,7 @@ link_to: frpswift
 
 I just finished giving a presentation at [MBLTDev](http://mbltdev.ru), a conference in Moscow about mobile app development. The audience seemed receptive to the message and I got some interesting questions afterward. 
 
-<!-- more -->
+(READMORE)
 
 <img src="/img/blog/reactivecocoa-with-swift/1.jpg" alt="On Stage" class="img-responsive" />
 

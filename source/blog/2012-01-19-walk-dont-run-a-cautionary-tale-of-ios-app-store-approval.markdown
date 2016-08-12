@@ -21,4 +21,4 @@ Releasing an update that made things worse for users already experiencing a prob
 
 On the up side, since the update has gone live, the app has received only 4- and 5-star reviews worldwide. Users are happy again, and I feel a lot less like a "Scumbag iOS Developer." It's been a painful lesson, but one well-learnt: it's better to have an app that does fewer things, but does them very well than an app that does more but performs poorly.
 
-<!-- more -->
+(READMORE)

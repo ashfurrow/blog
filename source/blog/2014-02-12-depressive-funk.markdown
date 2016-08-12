@@ -13,4 +13,4 @@ This time, however, I have something to help me besides medication. I've been re
 
 In any case, I'm trying to stay positive. Only a few more days until I'm in freaking Amsterdam! It's hard, but I'm trying to be more excited than nervous.
 
-<!-- more -->
+(READMORE)

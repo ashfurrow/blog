@@ -5,7 +5,7 @@ date: 2014-07-29 00:00
 
 A few years ago (Jesus – has it been that long?), I wrote a blog post about being an " [almost gamer](/blog/the-joys-and-sorrows-of-being-an-almost-gamer)", in which I discussed something that John Siracusa brought up on Hypercritical. In his followup on the [subsequent episode](http://5by5.tv/hypercritical/66), he actually read my post, in part, and replied on air.
 
-<!-- more -->
+(READMORE)
 
 Basically, the idea is this: if you accept that video games are an art form, then it follows that they can be appreciated. However, due to limits skills necessary to gaming (like having good hand-eye coordination and a finely-developed 3D visuospatial sketchpad), there are many people in the world who can never appreciate this form of art. With practice, one can become a connoisseur of wines or films, because the skills necessary to appreciate those things – taste and sightedness/hearing – are very common.
 

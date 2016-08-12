@@ -15,4 +15,4 @@ Samsung is looking for centrist consumers who probably might not even have a sma
 
 I'm not sure people won over by such a negative ad are the kind of customers Apple wants, and I don't think they're the kind of customers I want, either.
 
-<!-- more -->
+(READMORE)

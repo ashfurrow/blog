@@ -12,7 +12,7 @@ Such a bag does not exist.
 
 In the end, the only way to get a bag that held both items was to change the size of my laptop.
 
-<!-- more -->
+(READMORE)
 
 For some time now, I've been frustrated with my MacBook Pro. At 15", it's pretty hefty and it takes up a lot of space. Carrying it around New York or while travelling takes a physical toll, and it's impossible to use on flights.
 

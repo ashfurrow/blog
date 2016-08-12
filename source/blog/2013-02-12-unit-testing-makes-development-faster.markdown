@@ -9,4 +9,4 @@ The metaphor is that brakes allow you to drive faster by letting you stop where 
 
 The next time you start a new project, [think about it](/blog/unit-testing-objective-c-using-kiwi).
 
-<!-- more -->
+(READMORE)

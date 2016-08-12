@@ -13,4 +13,4 @@ I'm also particularly proud of the site, since we threw it together ourselves. T
 
 It'll be on iTunes soon; or you can use the [RSS feed](http://www.notificationcenter.tv/feed.rss) for now.
 
-<!-- more -->
+(READMORE)

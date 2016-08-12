@@ -13,4 +13,4 @@ I continue to fail to understand why the myth of crunch mode being a good thing 
 
 Sounds familiar.
 
-<!-- more -->
+(READMORE)

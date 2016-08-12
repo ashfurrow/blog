@@ -50,4 +50,4 @@ As long as, as iOS developers, we're one `NULL` pointer dereference away from a 
 
 _Update_: It's been pointed out that I don't actually state _why_ Objective-C needs to be replaced. I'll be concise: eventually, if things continue without radical changes to Objective-C, writing apps in the language will seem as outdated as writing assembler does to us today. That will be a competitive disadvantage to Apple, which I don't want to see happen.
 
-<!-- more -->
+(READMORE)

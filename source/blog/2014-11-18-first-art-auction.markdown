@@ -6,7 +6,7 @@ background_image: /img/blog/first-art-auction/bidding.jpg
 
 Last night I experienced my [first ever art auction](https://artsy.net/feature/ici-benefit-auction-2014), which was even more exciting because it was the first time I ever got to see real users using the [auction kiosk app I’ve been working on](https://github.com/artsy/eidolon) for the past few months. It’s a very magical experience to see someone browsing artworks, see one they like, place a bid, and swipe their credit card all with software that I worked on. Very cool. 
 
-<!-- more -->
+(READMORE)
 
 ![Orta, dB, and I](/img/blog/first-art-auction/ici-1.gif)
 

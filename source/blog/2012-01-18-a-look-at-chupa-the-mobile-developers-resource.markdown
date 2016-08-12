@@ -17,4 +17,4 @@ Chupa calls itself the "Mobile Developer's Resource", which is pretty farcical. 
 
 Judging from the presentation of their libraries, I have almost no confidence in the quality of the code they sell or the maintenance the code will get. I won't be using Chupa and I suggest if you have a really cool library, you put it up on GitHub where you'll get Internet famous. It'll be worth more.
 
-<!-- more -->
+(READMORE)

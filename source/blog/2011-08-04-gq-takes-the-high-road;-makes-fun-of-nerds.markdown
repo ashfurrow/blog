@@ -9,4 +9,4 @@ I'm really happy that the editors at GQ went to the trouble of criticizing the s
 
 I don't think I'll go with that subscription I was considering. Maybe if they had written a piece about the snazziest dressers of Silicon Valley, but I suppose it's always easier to criticize that to compliment.
 
-<!-- more -->
+(READMORE)

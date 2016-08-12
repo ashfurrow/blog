@@ -11,4 +11,4 @@ Technology is transforming innumerable sectors of business and every aspect of s
 
 As creators of technology that empowers these changes to society, it is our responsibility to ask ourselves what kinds of changes we are enabling.
 
-<!-- more -->
+(READMORE)

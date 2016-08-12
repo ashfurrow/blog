@@ -17,4 +17,4 @@ It's learning curve is steep, but the creators of the project are working on it.
 
 I would highly encourage you to check it out. I'm working on a series of new blog posts that'll help flatten out that curve. Stay tuned.
 
-<!-- more -->
+(READMORE)

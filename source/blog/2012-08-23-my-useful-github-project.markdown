@@ -13,4 +13,4 @@ What I'm most proud of, however, is the README. I worked really hard to make sur
 
 Check it out, and if you have any recommendations or complaints, please do let me know.
 
-<!-- more -->
+(READMORE)

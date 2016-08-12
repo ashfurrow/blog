@@ -15,4 +15,4 @@ The journey is the reward _for everyone_, not just startup founders. If you're a
 
 There is no arrival in life: you live, then you die. You won't be happy once you make a certain amount of money, or when you get that new job, or when you retire. Your journey is all there is, so enjoy it for its own sake.
 
-<!-- more -->
+(READMORE)

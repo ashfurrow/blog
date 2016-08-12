@@ -17,4 +17,4 @@ I wish we could see the fashion trends span the decades in ancient Egypt, the ri
 
 I wonder what people, in a thousand years, will wish they could be able to see about us.
 
-<!-- more -->
+(READMORE)

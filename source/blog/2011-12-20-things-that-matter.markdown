@@ -30,4 +30,4 @@ They know that amazing products are written with amazing code by capable and exp
 
 If I'm ever in a position to hire developers, this is exactly the list I'm using on the job listing.
 
-<!-- more -->
+(READMORE)

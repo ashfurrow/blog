@@ -15,4 +15,4 @@ Each Friday afternoon, we sit in a soundproof-but-not-really room and record an 
 
 If you like us, you should rate us in iTunes. If you don't like us, then nevermind.
 
- ![](/img/import/blog/2012/01/my-podcast-loves-me/C0A05AB96EE7485889DB7A88C7FA6ED3.png)<!-- more -->
+ ![](/img/import/blog/2012/01/my-podcast-loves-me/C0A05AB96EE7485889DB7A88C7FA6ED3.png)(READMORE)

@@ -5,7 +5,7 @@ date: 2014-10-31 17:03 UTC
 
 We need to talk about language. Certainly, in our industry, but also in our society. 
 
-<!-- more -->
+(READMORE)
 
 Earlier today, I saw this video on [twitter](https://twitter.com/dwiskus/status/528071964834144256) and posted it to Facebook with the following comment:
 

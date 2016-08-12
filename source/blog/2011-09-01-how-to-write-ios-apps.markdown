@@ -60,4 +60,4 @@ At least _try_ to test your app. Give it to someone and see how they use it. Not
 
 That's it! If anyone has any suggestions, please leave them in the comments!
 
-<!-- more -->
+(READMORE)

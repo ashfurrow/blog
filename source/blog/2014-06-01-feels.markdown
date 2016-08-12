@@ -11,4 +11,4 @@ I met with a doctor a few weeks ago to adjust my medication for something better
 
 Anyways, you probably won't hear from me again for a few weeks. I'll be busy at the conference, and then writing some iOS 8 tutorials which'll stay under wraps until the NDA lifts. I'm confident that I'm turning the corner on this and, while it's been really hard over the past few months, I feel like I'm on the mend.
 
-<!-- more -->
+(READMORE)

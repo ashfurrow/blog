@@ -7,4 +7,4 @@ I made the switch to double-edged "safety" razors a few months ago. I chose the 
 
 Aside: For anyone using safety razors, The Shamporium in King's Place as Merkur 10-packs of Super Platinum bales for 95 cents.
 
-<!-- more -->
+(READMORE)

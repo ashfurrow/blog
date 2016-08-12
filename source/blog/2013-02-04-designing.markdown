@@ -13,4 +13,4 @@ I've been using Photoshop for editing photos, and I'm a lot more comfortable wit
 
 Any feedback on any of my work, design or otherwise, is always welcome. Don't feel the need to hold back — the only way I'll get better is through objective feedback and practice.
 
-<!-- more -->
+(READMORE)

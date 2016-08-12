@@ -27,4 +27,4 @@ As I said, this is a shift I've noticed in myself and my attitude. That means I 
 
 Photography and writing are two huge aspects of my life that bring me happiness. I'm going to try and bring in aspects of what makes those activities joyful into my day-to-day life as a programmer. I'll let you know how it goes.
 
-<!-- more -->
+(READMORE)

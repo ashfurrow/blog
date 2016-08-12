@@ -8,7 +8,7 @@ Earlier this year, I wrote a [GIF-laden and rambling post about protocols in Swi
 
 Well, Swift 2 has been in beta for a month now, and protocols are hot stuff. 
 
-<!-- more -->
+(READMORE)
 
 ![Captain Picard loves Swift 2 protocols](/img/blog/protocols-and-swift-follow-up/picard.gif)
 

@@ -7,7 +7,7 @@ My wife and I have been enjoying re-watching our favourite episodes of Star Trek
 
 But as I was watching, something kind of hit me. Star Trek is _totally_ propaganda for socialism. Allow me to explain. 
 
-<!-- more -->
+(READMORE)
 
 First of all, don't get me wrong: I kind of dig this. There are aspects of socialism that I like. There is room for nuance in how we organize our society and our economy – Canada and the UK both do well with socialized medicine, for instance. There is a vast spectrum of sociopolitical philosophies between free market libertarianism and Stalinist fascism. 
 

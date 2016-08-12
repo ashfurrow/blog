@@ -13,4 +13,4 @@ The thing that has really struck me the most was the impact the Cold War had on 
 
 I still don't know that much about the politics of the post-World War II world. Everything I can even say I know about has been taught to me by fiction. And that kind of bothers me.
 
-<!-- more -->
+(READMORE)

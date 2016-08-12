@@ -9,4 +9,4 @@ I expect a new Xcode 4 project format that allows for easy merging when working 
 
 And also an apology for why it's taken Apple so goddamn long to come up with.
 
-<!-- more -->
+(READMORE)

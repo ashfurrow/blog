@@ -8,7 +8,7 @@ summary: "<p>Alan Rickman, one of the most talented actors alive today, often pl
 
 Alan Rickman, one of the most talented actors alive today, often plays villains: Professor Snape, Hans Gruber, Tybalt, etc. What I admire about his portrayals is the gravitas with which he approaches these characters. He understands that no one is one-dimensional or “just evil.” Instead, people are complex creatures with histories and beliefs and motivations that sometimes make them do evil things. He once said: 
 
-<!-- more -->
+(READMORE)
 
 > As far as I'm concerned, I'm not playing 'the villain.' I'm just playing somebody who wants certain things in life, has made certain choices, and goes after them.
 

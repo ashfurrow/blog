@@ -5,7 +5,7 @@ date: 2015-07-12 22:26:24 UTC
 
 The other day, [this article on self care](http://eponis.tumblr.com/post/113798088670/everything-is-awful-and-im-not-okay-questions-to) floated across my timeline. I took a look and it looks like a very useful tool for anyone struggling with depression. 
 
-<!-- more -->
+(READMORE)
 
 It's a great piece of writing – basic questions, but things that can sometimes feel like unachievable goals in a depressive episode. Thinks like making sure you're hydrated, getting you to stretch, and having human contact like a hug. 
 

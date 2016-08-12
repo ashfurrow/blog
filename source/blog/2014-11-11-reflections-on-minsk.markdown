@@ -10,7 +10,7 @@ summary: "<p>A few months ago, Yana Poteeva emailed me about a prospective speak
 
 A few months ago, Yana Poteeva emailed me about a prospective speaking opportunity in Minsk, Belarus. I was already planning to visit Moscow a few weeks prior to the Minsk conference date, so this would be a second trip to a Russian-speaking country in as many weeks, but I thought it would still be really cool to visit Minsk. I had heard of the city, but knew almost nothing about it. And the whole reason I moved to Europe was to gain exposure to other cultures – Minsk sounded totally different from anything I had seen before. 
 
-<!-- more -->
+(READMORE)
 
 I accepted. 
 

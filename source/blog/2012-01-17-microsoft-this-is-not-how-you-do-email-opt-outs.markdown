@@ -7,4 +7,4 @@ date: 2012-01-17 00:00
 
 Do you not want to not receive no more stop email dialogues?
 
-<!-- more -->
+(READMORE)

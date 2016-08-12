@@ -13,4 +13,4 @@ It's worth revisiting [this video](http://www.youtube.com/watch?v=t02iJn5Ypio#t=
 
 His words merit repeating because, as we've seen over the past few years, app vendors are _not_ driven by volume alone, but are rather driven by the ability to make money. [As we've seen](http://appleinsider.com/articles/13/11/27/apples-ios-brings-developers-5x-more-revenue-per-download-than-android), iOS is where the money is being had.
 
-<!-- more -->
+(READMORE)

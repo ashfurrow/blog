@@ -35,4 +35,4 @@ People will take things personally, and I would have thought that everyone in th
 
 Or maybe I'm just being too Canadian. Can't we all be friends?
 
-<!-- more -->
+(READMORE)

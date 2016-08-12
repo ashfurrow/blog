@@ -36,4 +36,4 @@ else if (passwordPromptWidth
 
 Looking back, I'm asking myself what was wrong with me. Well-designed apps don't just happen, they're created by people who give a damn, something that is antithetical to being lazy.
 ```
-<!-- more -->
+(READMORE)

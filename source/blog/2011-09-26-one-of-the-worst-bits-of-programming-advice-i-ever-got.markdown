@@ -25,4 +25,4 @@ Either I'm only changing the class names to adhere to some silly piece of advice
 
 One of the best piece of programming advice I'll probably ever give is learn from your own experiences and beware of anyone espousing the virtues of the One True Way.
 
-<!-- more -->
+(READMORE)

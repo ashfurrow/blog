@@ -13,4 +13,4 @@ If you're going to write Android apps, use Java. If you're going to write iOS ap
 
 I guess the authors of J2ObjC are emacs users. _ducks_
 
-<!-- more -->
+(READMORE)

@@ -9,4 +9,4 @@ I had a great time this week presenting about ReactiveCocoa at [AltConf](http://
 YOUTUBE TlgUWYrQ0sc
 
 </iframe>
-<!-- more -->
+(READMORE)

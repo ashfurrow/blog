@@ -5,7 +5,7 @@ date: 2014-10-08 00:00
 
 Been in a bit of a rut lately. Lots of reasons – stress, working a lot, travel exhaustion, etc. I actually wrote an entirely different blog post about hopelessness yesterday, but it was kind of a downer, so I decided not to publish it.
 
-<!-- more -->
+(READMORE)
 
 One thing that I've been trying to do is consistently get out and take photos. You can see this reflected in my pedometer. Basically the only exercise I get is walking around taking photos (my commute to work is pretty minimal).
 

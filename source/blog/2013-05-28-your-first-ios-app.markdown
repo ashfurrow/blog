@@ -9,4 +9,4 @@ I'm giving away the [first chapter for free](http://yourfirstiosapp.com), licens
 
 Please help spread the word – the more the merrier!
 
-<!-- more -->
+(READMORE)

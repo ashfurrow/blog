@@ -13,4 +13,4 @@ In the end, the new Referendum Law appears to be a way for governments to pass t
 
 36 days. Can't wait.
 
-<!-- more -->
+(READMORE)

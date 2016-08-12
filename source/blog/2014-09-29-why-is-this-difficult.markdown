@@ -5,7 +5,7 @@ date: 2014-09-29 00:00
 
 Take a ride with me in the way-back machine. It was July in the year of 2014. Times were different – simpler – they didn’t even have iPhone 6’s! A team of documentarians had a goal to create a documentary about software and its cultural impacts on society. Pretty cool, huh? So they put it up for [Crowdfunding](https://www.kickstarter.com/projects/appdocu/app-the-human-story) and easily reach their goal of $100,000. They actually reach 163% of their goal, and kudos to them.
 
-<!-- more -->
+(READMORE)
 
 Now let’s return to the present. The bleak, terrible present. Another team of documentary filmmakers has another goal: deconstruct, raise awareness about, and help fix the gender gap in the software industry. No small feat! They too [ask for money](https://www.indiegogo.com/projects/code-debugging-the-gender-gap) from the internet, but sadly, they’re not enjoying the success of the first documentary. They’re asking for less money, even, and they’ve yet to break even halfway with less than two weeks to go. Oh, no!
 

@@ -15,4 +15,4 @@ SYNTHESIZE_SINGLE_FOR_CLASS(class_name);
 
 This is pretty sweet - if you're using the Singleton pattern a lot, and let's face it, it's always something we mean to do, this is a lifesaver since Singleton code is all copy-and-paste.
 
-<!-- more -->
+(READMORE)

@@ -19,4 +19,4 @@ I feel the same way I did two years ago learning Objective-C. I was so used to s
 
 Trying to change the way you think is a challenge. I'm worried about having to readjust to not writing in such high-level code, but I can always willingly narrow my focus; I can't willingly broaden it without learning something new.
 
-<!-- more -->
+(READMORE)

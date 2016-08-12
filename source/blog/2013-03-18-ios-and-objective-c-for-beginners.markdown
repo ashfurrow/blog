@@ -11,4 +11,4 @@ I've been overwhelmed by the response online. In only a few days, we're 30% of t
 
 This isn't just about writing a book. This is about providing a community resource to help make us all better at what we do. This is going to be _awesome_.
 
-<!-- more -->
+(READMORE)

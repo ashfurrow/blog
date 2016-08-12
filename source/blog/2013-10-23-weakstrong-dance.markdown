@@ -24,4 +24,4 @@ I still like the idea of referencing subviews weakly, since it maintains that ow
 
 What do you think?
 
-<!-- more -->
+(READMORE)

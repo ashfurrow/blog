@@ -9,4 +9,4 @@ Yeah, I know, _another_ podcast about iOS, but this one is diffrent. It doesn't 
 
 Their [inaugural episode](http://releasenotes.tv/1-conference-junkies/) is about conferences and it discusses the value of conferences, how to choose one to attend, and how to get the most out of it.
 
-<!-- more -->
+(READMORE)

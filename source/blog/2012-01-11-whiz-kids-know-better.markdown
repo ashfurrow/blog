@@ -15,4 +15,4 @@ The answer is simply that any college-educated engineer who is smart enough to b
 
 More than anything, I think _this_ is why Reddit, Google, Facebook, et al are so opposed to SOPA. Yes, it will hurt their business, but their leaders also know that SOPA is the wrong thing to do.
 
-<!-- more -->
+(READMORE)

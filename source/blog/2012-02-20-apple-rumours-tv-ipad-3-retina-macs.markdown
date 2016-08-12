@@ -25,4 +25,4 @@ So we've got the iPad and MacBook Air lineup covered. However, this would introd
 
 There's even some (arguable) [evidence](http://dcurt.is/retina) for this rumour: @2x Retina assets in the new Messages app beta and the OS X 10.7.3 update. I'm skeptical about the implications of this "solid" evidence, but I can see Retain MacBook Air's.
 
-<!-- more -->
+(READMORE)

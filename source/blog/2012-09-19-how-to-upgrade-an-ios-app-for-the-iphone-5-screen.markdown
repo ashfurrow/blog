@@ -55,4 +55,4 @@ Luckily, the rest of my app is using `resizableImageWithCapInsets:` and `colorWi
 
 That's it! Take some new screenshots of your app in the iPhone 5 simulator (assuming you don't _have_ an iPhone 5, yet) and upload them to iTunes Connect; there is a special spot for screenshots of the iPhone 5. Submit, and know that you've done your due diligence and your users will get the best experience possible.
 
-<!-- more -->
+(READMORE)

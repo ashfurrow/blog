@@ -27,4 +27,4 @@ I know it would take some intense javascript action to pull this off in a browse
 
 The survey bored me to tears and about the only redeeming quality I can discern is the fact that clicking anywhere in the div of a radio button would select it for you. Oh, and the iPad giveaway.
 
-<!-- more -->
+(READMORE)

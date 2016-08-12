@@ -15,4 +15,4 @@ The one problem I'm having with the taller screen is applications that are still
 
 So I have to mentally translate where my fingers touch to type in apps. The _really_ frustrating thing is the space bar, since it's at the bottom. I wish that Apple had made the hit target for the spacebar extend _below_ the frame of the application, since that's where I'm finding I'm tapping. I get a lot of sentenceswithwordsrunningtogether and it's a pain.
 
-<!-- more -->
+(READMORE)

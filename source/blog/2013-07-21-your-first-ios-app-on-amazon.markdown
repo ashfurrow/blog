@@ -7,4 +7,4 @@ I've finally gotten around to [publishing my book on Amazon](http://www.amazon.c
 
 If you buy it, a rating or review would be super helpful. Also, tell your friends all about it! Huzzah!
 
-<!-- more -->
+(READMORE)

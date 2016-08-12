@@ -13,4 +13,4 @@ Breaking things, and then fixing them, is a fundamental exercise in a Computer S
 
 Finally: if you don't learn to be bold and break things in the comfortable&nbsp;cocoon&nbsp;of school, you're not going to be able to innovate in the software development industry.
 
-<!-- more -->
+(READMORE)

@@ -11,4 +11,4 @@ I originally intended to implement the basics of the class, then add my own styl
 
 Still, it could be useful to someone and serves as a neat example of drawing code.
 
-<!-- more -->
+(READMORE)

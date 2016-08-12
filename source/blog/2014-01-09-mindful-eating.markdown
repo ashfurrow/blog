@@ -15,4 +15,4 @@ It's a great way to spend 12 minutes.
 
 <div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" allowfullscreen mozallowfullscreen src="//embed.ted.com/talks/sandra_aamodt_why_dieting_doesn_t_usually_work.html?wmode=opaque" webkitallowfullscreen data-embed="true" frameborder="0" class="embed-responsive-item"></iframe></div>
 
-<!-- more -->
+(READMORE)

@@ -12,4 +12,4 @@ The Artsy team is incredible – everyone is very good at what they do. I've bee
 
 After quitting my old job in Amsterdam, I had had some self-doubt about whether or not I made the right decision. Not working for a Dutch company, I'd only get to stay a year in Amsterdam. After meeting the Artsy team in-person, I'm now 100% confident that I made the right decision.
 
-<!-- more -->
+(READMORE)

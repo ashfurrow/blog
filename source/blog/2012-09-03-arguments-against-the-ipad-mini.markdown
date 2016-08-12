@@ -17,4 +17,4 @@ Just because we _want_ something doesn't mean Apple will make it. Just because A
 
 I don't want Apple to release an iPad Mini because I think it would be a bad business decision. Then again, just because I don't think they should doesn't mean they won't.
 
-<!-- more -->
+(READMORE)

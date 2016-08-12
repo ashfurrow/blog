@@ -35,4 +35,4 @@ Multitasking is a great feature of iOS, and the app switcher is a great tool for
 
 I like what the designer did with the playback controls; the designer obviously has talent. But they need to learn that just because you _can_ doesn't mean you _should_.
 
-<!-- more -->
+(READMORE)

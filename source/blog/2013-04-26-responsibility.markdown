@@ -9,4 +9,4 @@ Still, I loved teaching. More than the love of teaching, I felt a responsibility
 
 Yesterday, tickets for Apple's Worldwide Developer Conference sold out in less than two minutes. I'm one of the lucky 5 000 people who got a ticket. All of us have a responsibility to gather bugs to report to the Apple engineers and to learn from the sessions to teach others what we learn.
 
-<!-- more -->
+(READMORE)

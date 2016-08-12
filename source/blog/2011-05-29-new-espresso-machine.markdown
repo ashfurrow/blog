@@ -17,4 +17,4 @@ I'm not going into specifics, but there are some nice heat-exchange machines for
 
 We'll see. At least living in Toronto, I'll have the satisfaction of buying my machine in person. This means I'll save on shipping, too, which is pretty significant when some of the machines I'm looking at are 40+ pounds.
 
-<!-- more -->
+(READMORE)

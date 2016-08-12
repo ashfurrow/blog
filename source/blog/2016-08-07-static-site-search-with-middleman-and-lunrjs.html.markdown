@@ -11,7 +11,7 @@ Well, today's the day 🎉
 
 (Note: The original "the day" was two weeks ago but I had given up in frustration.)
 
-<!-- more -->
+(READMORE)
 
 Search is an interesting problem. Most search engines run on servers and not the browser client. This site, just like all static sites like those built with [Middleman](https://middlemanapp.com), is generated on a computer before being served statically. It's a faster, easier, and more secure way of serving web pages that don't need dynamism, but it does mean that you can't run server code when a page is fetched.
 

@@ -17,4 +17,4 @@ It's a fantastic presentation and I really recommend you give it a watch.
 
 Be sure to [pick up a ticket to Screens](http://screens2012.eventbrite.com) and come see my talk!
 
-<!-- more -->
+(READMORE)

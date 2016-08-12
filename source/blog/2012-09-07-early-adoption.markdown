@@ -21,4 +21,4 @@ Let's take a look at my completely self-serving example of photographers: Flickr
 
 So that's it. Twitter, for us, is dying. If there is sufficient demand, something will come along to fill the void it is leaving in our lives. I don't think Twitter will die, but I don't think that means a competing service won't flourish; we can all be happy there for a few years before the rest of the world ruins it for us, again.
 
-<!-- more -->
+(READMORE)

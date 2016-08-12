@@ -37,4 +37,4 @@ Now, instead of mocking `NSManagedObject`s, I can use them themselves and rely o
 
 I'm still completing the tests for this project, so I'm open to suggestions on how to improve the tests. Feel free to open an issue or pull request on the [GitHub project page](https://github.com/AshFurrow/C-41).
 
-<!-- more -->
+(READMORE)

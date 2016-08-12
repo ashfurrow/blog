@@ -11,4 +11,4 @@ The poster's justification is that proper design adjusts the size of hit targets
 
 Follow the rules and don't fuck around. Can I have that 500 point bounty now?
 
-<!-- more -->
+(READMORE)

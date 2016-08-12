@@ -7,7 +7,7 @@ link_to: swift
 
 Yesterday at [UIKonf](http://uikonf.com), I gave a presentation on Teaching and Learning, which described the beginning of my own career (surrounding blogging), reasons why you should blog, and some first steps to get started. 
 
-<!-- more -->
+(READMORE)
 
 <script async class="speakerdeck-embed" data-id="4471109de8c24a93a03fdbf549ad86eb" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 

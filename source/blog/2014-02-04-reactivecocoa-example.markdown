@@ -8,4 +8,4 @@ The Big Nerd Ranch blog has a [great post](http://blog.bignerdranch.com/4549-dat
 
 (Full disclosure: I helped them proof the article.)
 
-<!-- more -->
+(READMORE)

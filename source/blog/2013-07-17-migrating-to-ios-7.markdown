@@ -9,4 +9,4 @@ I wrote an article about what app owners [need to do now](http://www.teehanlax.c
 
 This is also my first article ever to be linked to by [The Loop](http://www.loopinsight.com/2013/07/17/keeping-your-app-relevant-when-ios-7-is-released/), so it's something of a milestone for me. Onward and upward!
 
-<!-- more -->
+(READMORE)

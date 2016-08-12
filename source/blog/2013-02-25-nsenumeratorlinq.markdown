@@ -9,4 +9,4 @@ For those of you who aren't former .Net fanboys, LINQ is the gem of .Net develop
 
 I actually miss it and, even though blocks made a lot of headway in Objective-C since 2010, the Foundation collections classes still lag behind .Nets in querying. I'm really glad to see progress being made on this.
 
-<!-- more -->
+(READMORE)

@@ -11,4 +11,4 @@ Use of open source code is quite common, but the tools don't support or encourag
 
 If you're attending 360iDev, I'd love to meet you. If you're not attending, I'd encourage you to do so. It's going to be a lot of fun.
 
-<!-- more -->
+(READMORE)

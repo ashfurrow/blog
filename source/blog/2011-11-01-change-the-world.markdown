@@ -15,4 +15,4 @@ Most recently, I've developed an [iPad app for 500px](http://500px.com/ipad), an
 
 Maybe only in small ways, I feel like I'm changing the world, but that feeling is why I get up in the morning. I feel really lucky that my profession lets me doing the kind of really cool things I get to do.
 
-<!-- more -->
+(READMORE)

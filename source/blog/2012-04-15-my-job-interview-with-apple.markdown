@@ -39,4 +39,4 @@ In my mind, Apple has always been a dream. Visiting them allowed me to see from 
 
 In my life, nothing has made me appreciate what I have, personally and professionally, more than facing the reality of giving it all up. This was a unique learning experience for me and I am convinced it will leave a visible impression on what I do with my life and who I do it with.
 
-<!-- more -->
+(READMORE)

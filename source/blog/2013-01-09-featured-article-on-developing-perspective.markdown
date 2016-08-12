@@ -7,4 +7,4 @@ David Smith featured the [article I wrote](/blog/seven-deadly-sins-of-modern-obj
 
 [Developing Perspective](http://developingperspective.com) is a great, daily podcast David Smith does about development topics. It's never longer than 15 minutes and fits right into my daily commute. If you're an Objective-C developer or hobbyist, you really should be listening to it.
 
-<!-- more -->
+(READMORE)

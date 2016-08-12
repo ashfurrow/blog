@@ -15,4 +15,4 @@ I think John's right, but that's not the whole picture. I don't want the things 
 
 After leaving, I've decided to make a conscious effort to change my thinking to affect my own perception of who I am. I'm not the 500px iOS guy anymore, and I don't want to move forward to become the "(insert cool project here) guy", either. I want to be "that cool dude who knows a shit tonne about Objective-C", to myself and others.
 
-<!-- more -->
+(READMORE)

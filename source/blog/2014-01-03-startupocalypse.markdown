@@ -15,4 +15,4 @@ Why just today I read another article about the [future of the Internet](http://
 
 That's interesting. I'm not sure really how I feel about the prospect of VCs not being interested in investing anymore. They seem like such a mainstay to the Internet economy. Then again, if its their (rather foolish) insistence that startups be comprised solely of completely devout, underpaid, over-worked code monkeys, maybe a lack of VC funding is exactly what the startup community needs.
 
-<!-- more -->
+(READMORE)

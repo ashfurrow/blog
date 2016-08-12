@@ -95,4 +95,4 @@ The balancing act between cost of cycles on the CPU and cost for developers to r
 
 tl;dr Don't waste time trying to diagnose problems associated with too many calls to `objc_msgSend`. You almost certainly have bigger performance problems your time would be better spent addressing.
 
-<!-- more -->
+(READMORE)

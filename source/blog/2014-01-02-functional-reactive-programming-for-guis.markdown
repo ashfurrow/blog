@@ -14,4 +14,4 @@ Another point Tikhon Jelvis makes is that with functional programming, you reall
 
 Implicit in that definition is that, as programmers, we tell a computer _how to do_ what it does. With functional programming, you _only_ tell the computer _what_ to do, and never _how_ to do it. That's a fundamental change. It's like, as Jelvis points out, starting to learn programming all over again.
 
-<!-- more -->
+(READMORE)

@@ -9,4 +9,4 @@ date: 2012-01-08 00:00
 
 Sadly, I haven't seen a 20000% increase in sales for my paid apps. Yet.
 
-<!-- more -->
+(READMORE)

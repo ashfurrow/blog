@@ -9,4 +9,4 @@ The course covers the basics of Core Data and includes steps to create a re-usab
 
 Check out the trailer video for more.
 
-<!-- more -->
+(READMORE)

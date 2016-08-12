@@ -9,4 +9,4 @@ I've just read something profound – a [theory](http://jonnegroni.com/2013/07/1
 
 You need to stop what you're doing right now and read this.
 
-<!-- more -->
+(READMORE)

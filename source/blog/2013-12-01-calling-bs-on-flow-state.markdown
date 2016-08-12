@@ -17,4 +17,4 @@ I make a mental choice to get into that headspace, and then I apply that choice 
 
 As software developers, we're paid to think. That being the case, we ought to get good at thinking and getting into the right headspace. It's time to confront needing hours of uninterrupted time alone to be productive – you can be productive in team environments. You just have to try.
 
-<!-- more -->
+(READMORE)

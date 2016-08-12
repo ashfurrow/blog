@@ -13,4 +13,4 @@ I hit "keep files" and now random files are deleted from my iTunes library (an u
 
 And what the heck does the subtitle mean? "Only files in the iTunes Media folder will be moved to the Trash." Does that mean that, since my music is in the iTunes folder, they are deleted no matter what? If so, since all my music is in that folder, this dialogue is completely redundant. iTunes' management of music files is sketchy at best with super-sketchy default settings. Come on, Apple, you can do better.
 
-<!-- more -->
+(READMORE)

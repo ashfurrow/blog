@@ -17,4 +17,4 @@ This week, I'll go back to having a "real" computer – an iMac with a Magic Mou
 
 I'm not sure, but I'm going to reflect on what habits form naturally. I'll see what works for me. At any rate, changing machines has given me pause to contemplate serious workflows.
 
-<!-- more -->
+(READMORE)

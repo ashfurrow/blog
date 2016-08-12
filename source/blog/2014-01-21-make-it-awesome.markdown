@@ -13,4 +13,4 @@ This gets back to my discussion about [quality](/blog/quality) from the other da
 
 I've committed myself to only making awesome stuff. That aligns with my new job in Amsterdam, with my open source contributions, and a super-secret project I can't talk about yet. Wink wink.
 
-<!-- more -->
+(READMORE)

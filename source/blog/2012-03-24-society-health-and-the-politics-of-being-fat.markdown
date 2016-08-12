@@ -110,4 +110,4 @@ You may still have some questions. I'd recommend reading [Health At Every Size: 
 
 The next time you think "that person is so fat - why don't they just exercise more?", remember that the reality of life is not that simple and it's wrong to judge and make assumptions about a person's appearances.
 
-<!-- more -->
+(READMORE)

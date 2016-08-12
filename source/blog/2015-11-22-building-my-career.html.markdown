@@ -9,7 +9,7 @@ Part of what I love about Artsy is its engineering culture, and part of that cul
 
 The push to develop my career is something I've never felt as strongly as I do here. I'm lucky enough to work where [we have an open source compensation framework](http://artsy.github.io/blog/2015/04/03/artsy-engineering-compensation-framework/) to help guide me on next steps, and my mentors proactively make sure I have every opportunity to improve myself.
 
-<!-- more -->
+(READMORE)
 
 The thing is, it's been a really long time since I've had any sort of longterm plan about my career. I've just been sort of floating along, gravitating towards things I enjoy. When I moved to New York, I suddenly had much better access to resources to help me plan and direct my career. At first, I was kind of unsure what to do.
 

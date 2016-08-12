@@ -7,7 +7,7 @@ I've heard that everyone is born a sketcher â€“ that we all drawn as children â€
 
 But what is good?
 
-<!-- more -->
+(READMORE)
 
 [![](http://threepanelsoul.com/comics/2014-08-19-336.png)](http://threepanelsoul.com/2014/08/19/dog-philosophy/)
 

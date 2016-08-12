@@ -21,4 +21,4 @@ Finally, if my goal is to be known as a total iOS badass, I feel that publishing
 
 The publishing industry isn't dead: it's just changing. I'm excited to be a young author in this exciting push over the digital cliff.
 
-<!-- more -->
+(READMORE)

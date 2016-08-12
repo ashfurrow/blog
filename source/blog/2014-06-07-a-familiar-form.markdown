@@ -38,4 +38,4 @@ Maybe. Maybe not.
 
 I feel that Apple may be making compromises on the language design for the sake of familiarity with developers, sacrificing what could be an even better syntax for the sake of developer penetration. Maybe this is the right choice, maybe it's not. I hope that they know what they're doing, and I hope that future revisions of the language aren't burdened with these familiarity considerations.
 
-<!-- more -->
+(READMORE)

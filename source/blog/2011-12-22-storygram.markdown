@@ -11,4 +11,4 @@ Last Friday, during our own internal hack day, we made the iPhone version and wi
 
 storygram is available for free and is not finished yet - we both have some great ideas on what to do next with this and are looking forward to some more hackathon storygram action!
 
-<!-- more -->
+(READMORE)

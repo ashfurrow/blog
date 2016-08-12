@@ -14,4 +14,4 @@ Enter the following command into the Terminal to get the latest and great git ve
 ```
 echo alias "git=xcrun git" >> ~/.bashrc
 ```
-<!-- more -->
+(READMORE)

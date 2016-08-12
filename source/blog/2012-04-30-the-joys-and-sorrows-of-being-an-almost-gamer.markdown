@@ -29,4 +29,4 @@ I think that marginal improvements in gamer skill at the high-end of the spectru
 
 I'm right at the margin of skills where I know the joy of a really good game, but am incapable of experiencing it. It really sucks.
 
-<!-- more -->
+(READMORE)

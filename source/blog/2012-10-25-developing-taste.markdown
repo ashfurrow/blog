@@ -11,4 +11,4 @@ I consider software development a creative process; writing code is like directi
 
 People develop the ability to criticize far before they learn the ability to create, and those critical skills are often detrimental to their early creative efforts. If you're out there learning to code, don't be discouraged. It is a monumental undertaking, but you will only ever improve with experience.
 
-<!-- more -->
+(READMORE)

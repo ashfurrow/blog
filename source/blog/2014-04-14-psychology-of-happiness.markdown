@@ -7,4 +7,4 @@ I just watched a [really interesting](http://www.ted.com/talks/shawn_achor_the_h
 
 Instead, we need to turn things around and take a look at what makes us happy _now_. I highly recommend you watch through the video and take a look for yourself.
 
-<!-- more -->
+(READMORE)

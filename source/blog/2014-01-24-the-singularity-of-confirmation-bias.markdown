@@ -19,4 +19,4 @@ Let me quote again from Wikipedia:
 
 The thing with "theorists" like Kurzweil is that no data can ever prove them wrong, in their eyes. It's so frustrating to evidence-based practioners like myself.
 
-<!-- more -->
+(READMORE)

@@ -7,4 +7,4 @@ I'm trying to write a post on my [UNB Blog](http://blogs.unb.ca/ash-furrow/) abo
 
 This isn't an office - it's my home. However, I've seen other geek's workstations, and they're always impressive. Multiple monitors, keyboard, backlit everything, wireless everything, and ne'er a cat's hairball to be found. These guys seem more like posers to me, based on what I've seen from my friends' home workstations. What do you think? Are these people just enthusiastic about workspace or is my judgemental attitude warranted?
 
-<!-- more -->
+(READMORE)

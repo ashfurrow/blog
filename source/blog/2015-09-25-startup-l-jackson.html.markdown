@@ -7,7 +7,7 @@ This morning, I came across an [article](http://recode.net/2015/09/24/is-twitter
 
 I've been aware of the account for a while, but I've only seen it when it gets retweeted by people I follow. 
 
-<!-- more -->
+(READMORE)
 
 The article goes into detail about the anonymity and popularity of the Twitter account. Apparently high-profile CEOs, investors, and other startup types have conversations with the account on Twitter. The author of the article decided to include a rather alarmist opinion:
 

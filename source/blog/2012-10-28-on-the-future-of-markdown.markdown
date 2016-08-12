@@ -31,4 +31,4 @@ Famously, or perhaps infamously, John Siracusa has [eschewed Markdown](http://5b
 
 I can't say that I'm abandoning Markdown, but I definitely have doubts about its future (or more to the point, it's lack of a one). I'm very excited about Jeff Atwood's project and I hope that the rest of the Internet isn't content to let Markdown remain Gruber's personal fiefdom.
 
-<!-- more -->
+(READMORE)

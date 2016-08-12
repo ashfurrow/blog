@@ -7,7 +7,7 @@ The other day, I read a [really interesting blog post](http://blog.valerieaurora
 
 It sounded like an awesome idea, so I tried it [last night](http://www.meetup.com/Brooklyn-Swift-Developers/events/223159208/). 
 
-<!-- more -->
+(READMORE)
 
 Things went pretty well. I placed the cards and some markers down on seats before anyone showed up and, in the beginning of my talk, explained how the Q&amp;A would work. I provided sharpies instead of pens because they’re easier to use, and make people write larger so it’s both easier to read and leads to shorter questions. 
 

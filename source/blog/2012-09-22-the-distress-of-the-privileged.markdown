@@ -11,4 +11,4 @@ It's a great article that touches on historical power inequalities, such as slav
 
 The author's conclusion is ultimately that empathy, even for those who we disagree with, is the best course of action. Not because it's necessarily the right thing to do, but because it's the best way to get what you want.
 
-<!-- more -->
+(READMORE)

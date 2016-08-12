@@ -11,4 +11,4 @@ I was chatting with my friend Lauren this morning about the stupidity of those m
 
 Or maybe, like Dirk, they're only justifying their services. After all, if your security audit comes back and it says "You're secure! Have a nice day!", you'll think you could get by without security auditors at all, which just won't do. Maybe I'm not giving auditors enough credit; maybe they're looking at their job&nbsp;holistically, too.
 
-<!-- more -->
+(READMORE)

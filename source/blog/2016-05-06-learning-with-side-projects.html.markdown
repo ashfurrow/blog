@@ -9,7 +9,7 @@ I'm a professional iOS developer – world class, if you believe my [about page]
 
 My favourite way to branch out of iOS development is to build this site, my blog. I've gotten experience in Ruby, Haml, web design, site deployments, CDN configuration, SVG formatting, etc etc etc. What's really fun is when I get an idea for an improvement to make, and my skills are [perfetcly matched for the task](https://en.wikipedia.org/wiki/Flow_(psychology)).
 
-<!-- more -->
+(READMORE)
 
 ---
 

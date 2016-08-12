@@ -45,4 +45,4 @@ A drawback with this approach is that, like all GCD dispatching, you can't cance
 
 Here we see two common methods for delaying the execution of some code in Objective-C. One is used for recurring invocations of a method, and the other is used for small delays of a fixed number of blocks to be executed.
 
-<!-- more -->
+(READMORE)

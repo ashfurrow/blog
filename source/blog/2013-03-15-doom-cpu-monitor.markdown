@@ -9,4 +9,4 @@ My friend [Tom Creigton](https://twitter.com/tomcreighton) and I threw together 
 
 Get the [code](https://github.com/AshFurrow/DOOM-CPU-Monitor) or [download the app](http://static.ashfurrow.com/github/Doom%20CPU%20Monitor.app.zip).
 
-<!-- more -->
+(READMORE)

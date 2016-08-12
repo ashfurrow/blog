@@ -21,4 +21,4 @@ Buy the coffee on Amazon:
 
 (Photo credit to this [Times Photo Essay](http://www.time.com/time/photogallery/0,29307,2048674,00.html)
 
-<!-- more -->
+(READMORE)

@@ -7,4 +7,4 @@ I'm a sucker for the Science Guy, but this video is great. (h/t to [Rob Rix](htt
 
 YOUTUBE aLvJ1mqlM98
 
-<!-- more -->
+(READMORE)

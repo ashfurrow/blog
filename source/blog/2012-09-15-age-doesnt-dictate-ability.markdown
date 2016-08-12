@@ -13,4 +13,4 @@ I know people who are more responsible at the age of 16 than most adults would e
 
 I'm very interested in this topic, especially given the ramifications of [the Internet](/blog/democratize-all-of-the-things). I would highly recommend the book _[The Case Against Adolescence](http://www.amazon.com/gp/product/188495670X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=188495670X&linkCode=as2&tag=ashfur-20)_ if you'd like to learn more about the history of adolescence and the motivations behind those who institutionalized the concept.
 
-<!-- more -->
+(READMORE)

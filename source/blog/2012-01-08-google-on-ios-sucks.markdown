@@ -23,4 +23,4 @@ Now all I see is the "call" button. Which sucks because in my basement apartment
 
 The fact that search with Google in Mobile Safar is so friction-y and has been so broken for so many months tells you exactly how much Google cares about your user experience: not at all.
 
-<!-- more -->
+(READMORE)

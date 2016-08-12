@@ -7,4 +7,4 @@ date: 2013-07-01 00:00
 
 Reminds me of when I told everyone to [stop writing for loops](/blog/stop-writing-for-loops) and twitter got mad at me.
 
-<!-- more -->
+(READMORE)

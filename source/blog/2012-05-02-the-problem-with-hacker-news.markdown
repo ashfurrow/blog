@@ -17,4 +17,4 @@ When you say something _should_ be some way because you _want_ something to be t
 
 I've removed Hacker News from my Top Sites for the same reason I stopped visiting Slashdot years ago; the comments became so inane and negative that I couldn't stand it anymore. I'm not saying Hacker News needs to change, just that there are implications for this growing trend of this self-congratulatory negativism of their comments.
 
-<!-- more -->
+(READMORE)

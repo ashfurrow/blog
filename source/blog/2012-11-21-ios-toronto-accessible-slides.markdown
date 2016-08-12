@@ -9,4 +9,4 @@ I gave a talk last night at [iOS Toronto](http://www.meetup.com/iOSToronto/) and
 
 Those are the slides - if you have any questions, drop me a line. Oh, and if you want to purchase the book mentioned in the slides, [head over to Amazon](http://www.amazon.com/gp/product/1430243686/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1430243686&linkCode=as2&tag=ashfur-20) :)
 
-<!-- more -->
+(READMORE)

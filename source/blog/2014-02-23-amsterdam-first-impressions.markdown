@@ -52,4 +52,4 @@ Part of the reason I moved here was for the iOS community. Mike Lee, over the Su
 
 On my second day here, I attended the largest CocoaHeads meeting I've ever attended in a nearby city. It was amazing. People are interested in learning and attending community events. Companies seem to be on the constant lookout for developers. It's a great combination.
 
-<!-- more -->
+(READMORE)

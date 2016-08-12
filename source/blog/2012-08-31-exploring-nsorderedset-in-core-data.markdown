@@ -170,4 +170,4 @@ There's the money shot. The first invocation still has a larger time than subseq
 
 Accessing ordered, to-many Core Data relationships can be done in constant-time provided the tree underlying the ordered set is balanced. The numbers here are extreme (at one point, I got an exception for trying to create an array with a hundred billion elements), but illustrate that accessing indexes of elements, or elements at indexes, is performed in constant time.
 
-<!-- more -->
+(READMORE)

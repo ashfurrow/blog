@@ -9,4 +9,4 @@ When using gesture recognizers, it is almost always far, far better to use `UIPa
 
 `UISwipeGestureRecognizer` doesn't provide developers with an opportunity to provide immediate, in-progress feedback. Compared to `UIPanGestureRecognizer`, it robs you of an opportunity to [make your app juicy](http://www.youtube.com/watch?v=Fy0aCDmgnxg).
 
-<!-- more -->
+(READMORE)

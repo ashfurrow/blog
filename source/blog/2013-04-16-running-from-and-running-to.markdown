@@ -11,4 +11,4 @@ I recently quit my job at an established Toronto startup and started a new job a
 
 I'm proud of the choices I made and how I handled the situation. That'll be my motivation the next time I have to make a difficult decision – any difficult one. Will I be proud of this decision in three months, or will I regret it?
 
-<!-- more -->
+(READMORE)

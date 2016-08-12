@@ -8,7 +8,7 @@ og_image: /img/blog/the-state-of-photography-in-2014/og.jpg
 
 In 2014, the photography community is in turmoil. Instagram is [destroying photography as we know it](http://www.theguardian.com/technology/2012/jul/19/instagram-debasing-real-photography?INTCMP=SRCH) and professional photographers [struggle to differentiate themselves from amateurs](http://photography-on-the.net/forum/showthread.php?t=1140101). It’s a dire time for anyone in the photography industry – artist or professional. 
 
-<!-- more -->
+(READMORE)
 
 Or is it? 
 

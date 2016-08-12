@@ -15,4 +15,4 @@ I want to change the world, which is why I write and why I choose to write the s
 
 My personal matra is:
 
-> Think globally; act within local scope.<!-- more -->
+> Think globally; act within local scope.(READMORE)

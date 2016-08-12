@@ -6,7 +6,7 @@ background_image: /img/blog/steven-universe-and-masculinity/background.jpg
 
 Discussion of masculinity in feminism forums online usually centres around [_toxic masculinity_](http://geekfeminism.wikia.com/wiki/Toxic_masculinity), defined as "the socially-constructed attitudes that describe the masculine gender role as violent, unemotional, sexually aggressive, and so forth." It's important to discuss toxic masculinity, and a lot has been said on the topic. But I'm _really_ excited about a [new web series](https://www.youtube.com/channel/UCHiwtz2tCEfS17N9A-WoSSw) that analyzes positive expressions of masculinity in pop culture.
 
-<!-- more -->
+(READMORE)
 
 If you need an introduction to toxic masculinity and its negative affects on society, check out the video below.
 

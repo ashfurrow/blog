@@ -19,4 +19,4 @@ At 500px, our users are our customers. Those that aren't paying for us are poten
 
 There are a few other niche products, but for the most part, if you're developing software, you're either selling to your users, writing software for clients, or selling to someone other than your users. Or you write software for the government, in which case, god help you.
 
-<!-- more -->
+(READMORE)

@@ -7,4 +7,4 @@ My friend [Zach](http://twitter.com/zachaysan) tweeted this video earlier. It de
 
 YOUTUBE D4p4XUZYfp4
 
-<!-- more -->
+(READMORE)

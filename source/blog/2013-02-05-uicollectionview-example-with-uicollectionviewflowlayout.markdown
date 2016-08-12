@@ -25,4 +25,4 @@ These are just a few of the gems I've picked up while writing a short book on `U
 
 I'll probably add more layouts to it other than small and large ones. If anyone has anything they want to add or suggestions, let me know.
 
-<!-- more -->
+(READMORE)

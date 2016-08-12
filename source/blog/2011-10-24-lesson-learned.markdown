@@ -9,4 +9,4 @@ On Friday, I submitted version 1.1 of the [500px iPad app](http://500px.com/ipad
 
 So, lesson learned. If you're submitted a build to Apple for approval, you'd be be damn sure it's ready for production, because they might decide to release it in only thirteen hours. And there's no rolling back to 1.0.
 
-<!-- more -->
+(READMORE)

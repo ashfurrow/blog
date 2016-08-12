@@ -29,4 +29,4 @@ An example of the perfect balance is [GMGridView](https://github.com/gmoledina/G
 
 Hopefully this will help give some direction to framework developers on how to structure their projects. There are many amazing projects out there that offer some serious help to developers and I think it's a shame that many frameworks are likely overlooked by developers because their demo projects need improvement.
 
-<!-- more -->
+(READMORE)

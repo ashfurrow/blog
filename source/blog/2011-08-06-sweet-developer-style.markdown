@@ -32,4 +32,4 @@ I think my aversion to the standard dev style of t-shirt and shorts is grounded 
 
 Now that I'm out fo school, I can afford nicer apparel to build my sweet developer style, but have to be careful not to go overboard. Ashley has helped me develop a sort of litmus test for determining if I should buy something. Maybe I'll detail it next time.
 
-<!-- more -->
+(READMORE)

@@ -41,4 +41,4 @@ You don't need to spend thousands of dollars on gear to get good at taking photo
 
 The biggest reason for developers to know to take and appreciate photographs is to grow, to become more well-rounded people. Our industry relies on growth for the rapid pace of progress it's seen in its short existence. If you stop growing, you'll be left behind.
 
-<!-- more -->
+(READMORE)

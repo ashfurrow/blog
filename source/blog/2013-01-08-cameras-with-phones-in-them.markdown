@@ -27,4 +27,4 @@ I know Justin was kidding about Instagram'ing sushi and I thought it was really 
 
 Instagram isn't ruining photography — it's enabling the shift in photography that society wanted anyway.
 
-<!-- more -->
+(READMORE)

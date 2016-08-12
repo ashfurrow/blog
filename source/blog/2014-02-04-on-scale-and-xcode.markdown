@@ -21,4 +21,4 @@ In his post, Brent does a great job of examining some of the details that have c
 
 The original [Quora post](http://www.quora.com/Facebook-Launches-Paper-January-2014/What-was-it-like-to-help-develop-Paper/answer/Jason-Barrett-Prado), which has since been edited, claimed that Facebook is doing iOS development at a scale ten times larger than anyone else. This is easily disproven by the fact that Apple is writing the whole iOS operating system, so Xcode must work for Apple. I wonder what Apple is doing to make Xcode scale to an OS-level that they're not telling us.
 
-<!-- more -->
+(READMORE)

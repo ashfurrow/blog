@@ -15,4 +15,4 @@ Debate on the motion was filled with herp and derp; mostly grandstanding from th
 
 All in all, the best part about the visit was an opportunity to practice listening to French, since my chops are a little rusty.
 
-<!-- more -->
+(READMORE)

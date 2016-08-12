@@ -9,4 +9,4 @@ On Monday, the tenth, I'll be speaking about ReactiveCocoa at the [Spotify WWDC 
 
 If you're attending any of these events, please say hi. Nerd parties are always awkward, but if we're awkward together, it'll work itself out.
 
-<!-- more -->
+(READMORE)

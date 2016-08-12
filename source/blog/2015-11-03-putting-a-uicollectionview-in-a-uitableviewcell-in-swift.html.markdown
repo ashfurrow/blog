@@ -9,7 +9,7 @@ A few years ago, I wrote this post on [putting a collection view inside a table 
 
 Since Swift was announced, I've been getting regular requests to rewrite my tutorial in Swift. Which brings us to today's topic. 
 
-<!-- more -->
+(READMORE)
 
 Having a collection view within a table view cell has become a common design pattern used in apps like Spotify, the App Store, and even the [Artsy app](http://artsy.net/iphone). It's useful for having a vertical list of things (the table view), with each containing a horizontal list (the collection view). 
 

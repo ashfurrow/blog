@@ -11,4 +11,4 @@ I was not expecting the insane amount of work that was required in writing a tec
 
 If you're interested in my growth as a photographer, you can take a peak at my best work on my [500px profile](http://500px.com/ashfurrow). I'll try to post more regularly here.
 
-<!-- more -->
+(READMORE)

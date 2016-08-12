@@ -22,4 +22,4 @@ I'm very impressed with Apple's [book](https://itunes.apple.com/us/book/swift-pr
 
 I'm planning on writing at least one book on Swift, which will be out in the coming months. While I'm impressed with the resources Apple has released, I think that there is room for some third-party resources, too.
 
-<!-- more -->
+(READMORE)

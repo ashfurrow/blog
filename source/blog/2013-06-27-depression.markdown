@@ -13,4 +13,4 @@ I wish that I had something more substantial to add to the dialogue than "me too
 
 If you're having thoughts of hurting yourself, please seek help.
 
-<!-- more -->
+(READMORE)

@@ -9,4 +9,4 @@ A [classmate of mine](http://twitter.com/#!/nanoinfinity) wrote an interesting b
 
 This is something I've [discussed before](http://blogs.unb.ca/ash-furrow/2010/12/13/programming-as-art/). I think programming can be artful and I use it as a creative outlet. Furthermore, it encourages use of a semicolon in everyday writing, my favourite punctuation symbol; you should all use them, too.
 
-<!-- more -->
+(READMORE)

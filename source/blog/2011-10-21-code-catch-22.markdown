@@ -17,4 +17,4 @@ For instance, if a programmer who knows about the implementation details of coll
 
 All of programming is pretty much a catch-22, I guess. Nothing highlights this fact more than learning about new programmer language features.
 
-<!-- more -->
+(READMORE)

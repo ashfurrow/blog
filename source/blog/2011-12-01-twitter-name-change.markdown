@@ -13,4 +13,4 @@ I really like that. I like being aloof and kiddish online. But I also understand
 
 As for the nature of my tweets, they've never been anything but my honest opinions and that's not going to change.
 
-<!-- more -->
+(READMORE)

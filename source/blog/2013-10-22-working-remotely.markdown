@@ -15,4 +15,4 @@ The befits outlined in the video are all benefits for the employees, not really 
 
 The long and short of it is that working remotely _might_ work for your team, but not necessarily. It's going to depend on your team and company culture. I've always been of that opinion, just as I've always been of the opinion that 37signals is telling a bit of a lie by omission by suggesting that it will work for _every_ company.
 
-<!-- more -->
+(READMORE)

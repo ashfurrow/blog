@@ -11,4 +11,4 @@ I'm not a software developer to make a quick buck off of the naïveté of users.
 
 Who do I want to be known as? Some creep that takes advantage of people or someone with character who builds quality software? I'm unwilling to sell out my principles for money.
 
-<!-- more -->
+(READMORE)

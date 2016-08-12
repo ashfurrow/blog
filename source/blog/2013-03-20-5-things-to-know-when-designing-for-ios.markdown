@@ -9,4 +9,4 @@ For my first contribution to the [Teehan+Lax](http://teehanlax.com) [Blog](http:
 
 I had fun with this one.
 
-<!-- more -->
+(READMORE)

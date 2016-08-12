@@ -13,4 +13,4 @@ If you're a whiskey drinker, please [go buy my app](https://itunes.apple.com/us/
 
 I'm not expecting to get rich off of this, and it will probably be my last personal app for a while, but it was a lot of fun and I enjoyed the challenge.
 
-<!-- more -->
+(READMORE)

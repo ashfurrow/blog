@@ -42,4 +42,4 @@ Brackets are around the assignment to avoid a compiler warning on Xcode 4's LLVM
 
 Again, this is a particularity of mine and I don't care enough to change existing code, but I care enough to blog about it. Does anyone have any thoughts on this method of writing initializers or indenting in general?
 
-<!-- more -->
+(READMORE)

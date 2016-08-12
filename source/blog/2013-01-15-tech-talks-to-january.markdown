@@ -9,4 +9,4 @@ The topic is going to be vitamins as a metaphor for Unit Testing and Accessibili
 
 It's going to be an interesting one, for sure!
 
-<!-- more -->
+(READMORE)

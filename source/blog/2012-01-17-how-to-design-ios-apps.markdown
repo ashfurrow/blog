@@ -69,4 +69,4 @@ These are all things I've seen developers do in order to make unique apps. Well,
 
 So that's it. If you're new to iOS development or have no graphic designer available to help, and probably even if you're experienced with designer assistance, go with the first option and use what Apple gave you. If you have a designer holding your hand ever step of the way, you can cross the highway to building your own interface conventions (or re-implementing someone else's). But only when you have a concrete vision of what your app is going to look like when it's finished.
 
-<!-- more -->
+(READMORE)

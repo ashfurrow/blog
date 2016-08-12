@@ -17,4 +17,4 @@ The author of the post sums it up nicely:
 
 I see people criticizing people who participate in iPhoneography, Instagram, selfies, etc. But put in historical context, I would hope that people would realize two things. First, the roles were reversed not too long ago; second, they're risking alienating artists and potential artists who just happen to use their iPhones as the tools. Such a shame.
 
-<!-- more -->
+(READMORE)

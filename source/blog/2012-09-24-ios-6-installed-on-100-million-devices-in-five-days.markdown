@@ -13,4 +13,4 @@ If each copy of iOS 6 is about 900MB (the size of the download form Apple's Deve
 
 That's incredible.
 
-<!-- more -->
+(READMORE)

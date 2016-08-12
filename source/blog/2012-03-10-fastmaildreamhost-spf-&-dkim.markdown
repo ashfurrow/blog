@@ -11,4 +11,4 @@ My boss pointed out that, with my new email provider, GMail is displaying a weir
 
 Email, DNS, and the whole "system administration" thing is really _not_&nbsp;my thing. I'm an iOS guy, so I don't really like to fuck around with _servers_. But I managed to figure it out:
 
-<!-- more -->
+(READMORE)

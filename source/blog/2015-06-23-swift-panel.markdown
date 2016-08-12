@@ -6,7 +6,7 @@ link_to: swift
 
 A few weeks ago, during WWDC week, I was honoured to participate in a panel discussion with some awesome people at [Realm](https://realm.io/). The video of the discussion, and transcript, are [available online](https://realm.io/news/apple-wwdc-2015-swift-panel-discussion/).
 
-<!-- more -->
+(READMORE)
 
 The event was particularly cool, in my opinion, since it was a _dry_ event (meaning they didn't serve alcohol). WWDC week is soaked in liquor and I applaud Realm for endeavouring to create a space where everyone in our community can feel welcome and safe. 
 

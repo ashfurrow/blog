@@ -23,4 +23,4 @@ I may be the first person accused of "Amazon Fanboyism."
 
 Fire away, Internet.
 
-<!-- more -->
+(READMORE)

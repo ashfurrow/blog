@@ -41,4 +41,4 @@ Next time you animate a view between transitions, consider using `CADisplayLink`
 
 **Update:** Robin sends along [this post](http://zearfoss.wordpress.com/2011/09/02/more-cadisplaylink/) on how to use `CADisplayLink`, written by the author of this [example on GitHub](https://github.com/pzearfoss/CircleDraw). Good stuff.
 
-<!-- more -->
+(READMORE)

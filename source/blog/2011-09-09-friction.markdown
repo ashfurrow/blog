@@ -17,4 +17,4 @@ The answer, most often, is laziness.
 
 As software creators, every time we add friction to the user experience, we're failing to do our job.
 
-<!-- more -->
+(READMORE)

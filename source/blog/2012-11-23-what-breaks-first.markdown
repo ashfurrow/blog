@@ -17,4 +17,4 @@ So that's it. I'm working on improving my ability to focus in hectic situations 
 
 I've now been to the brink of burn out and I'm more familiar with my own limitations. In a lot of ways, I think I've grown as a person and a professional during the past two months, but it's not an experience I ever want to repeat.
 
-<!-- more -->
+(READMORE)

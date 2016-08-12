@@ -19,4 +19,4 @@ I could sell my Mazzer for about the price of a new doserless M4, but I don't th
 
 I'm going to keep my Mazzer and focus on improving my technique. I could look for a better grinder, but only a poor workman blames his tools, and the tools I have are good enough for some of the best baristas in the world. If there's an issue with my espresso setup, it's definitely on the, erm, handle side of the portafilter.
 
-<!-- more -->
+(READMORE)

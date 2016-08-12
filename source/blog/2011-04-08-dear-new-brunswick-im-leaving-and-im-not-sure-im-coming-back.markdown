@@ -11,4 +11,4 @@ Since this is a very comprehensive decision, I'm not going to try to explain in 
 
 Here I am: a young person trained in the high-demand Information Technology field,a "Highly Qualified Person" by government nomenclature, who is leaving New Brunswick for greener pastures. I'm not the only one, but my reasons for leaving are pretty representative of people like me who want out of here.
 
-<!-- more -->
+(READMORE)

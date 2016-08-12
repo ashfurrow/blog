@@ -9,4 +9,4 @@ My new book, [UICollectionView: The Complete Guide](http://click.linksynergy.com
 
 Feedback is always welcome, and I'd love suggestions for new topics to cover either in a later edition or in a blog post here.
 
-<!-- more -->
+(READMORE)

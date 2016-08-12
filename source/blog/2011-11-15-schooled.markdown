@@ -17,4 +17,4 @@ It looks like currentIndex (zero), multiplied by the result of isKindOfClass: (w
 
 Oops.
 
-<!-- more -->
+(READMORE)

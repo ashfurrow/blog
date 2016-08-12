@@ -15,4 +15,4 @@ So I sold my 5D and canon glass.
 
 Crazy I know, but the 5D has always been too much camera for me. I love shooting on primes, and the 35mm equivalent lens on the X100S is a great angle for me. Besides, when I need an interchangeable lens system, I have my Leica M6. Film, sure, but I've been shooting about 50/50 on film since I got here anyway.
 
-<!-- more -->
+(READMORE)

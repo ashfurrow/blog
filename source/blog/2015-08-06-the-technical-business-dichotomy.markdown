@@ -9,7 +9,7 @@ It's a common trope in the software development world that non-technical people 
 
 And even though reasonable programmers admit that the business needs to have input on technical decisions, we still feel like _we_ are the best gatekeepers of business' influence. After all, _we_ are the programmers. 
 
-<!-- more -->
+(READMORE)
 
 It sounds convincing – it's easy to picture a product manager forcing a developer to do something that the developer doesn't want to do. To make a button a different shade of blue, for example, or to use the term "Save" instead of "Done", or to use PHP. All manner of evils. 
 

@@ -53,4 +53,4 @@ I agree that this can lead to inconsistent code, but you're **not** supposed to 
 
 Maybe you should stop whining about how _new things are hard_ and start getting good at something.
 
-<!-- more -->
+(READMORE)

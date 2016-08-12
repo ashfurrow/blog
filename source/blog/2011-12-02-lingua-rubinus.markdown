@@ -21,4 +21,4 @@ Ruby on Rails is like the Lingua France of the modern Internet. Not knowing it h
 
 Tomorrow. iOS are profound procrastinators.
 
-<!-- more -->
+(READMORE)

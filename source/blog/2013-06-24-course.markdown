@@ -7,4 +7,4 @@ I'm teaching a course this weekend in iOS Development. It'll be heavily derived 
 
 [Check out the course](http://iosapps.eventbrite.com).
 
-<!-- more -->
+(READMORE)

@@ -32,4 +32,4 @@ This is pretty cool! We used it for retrieve JSON parsed to an array of dictiona
 
 This got me thinking what other things the Objective-C collections API would let you do to avoid writing unnecessary code; I don't have time to summarize my results now, but take a look at the [Collections Operators](http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/KeyValueCoding/Articles/CollectionOperators.html). How many for loops could those save in _your_ code?
 
-<!-- more -->
+(READMORE)

@@ -21,4 +21,4 @@ I think the best developers already do this in their own way. I mean, what part 
 
 Personally, I'm interested in taking this to the next level. I want to understand the _why_ behind the vision I implement. _That_ is the hallmark of great craftsmanship
 
-<!-- more -->
+(READMORE)

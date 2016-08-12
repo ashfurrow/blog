@@ -33,4 +33,4 @@ Way to go, RIM, now people don't trust their smartphones.
 
 Of course, all the blame can't be placed on RIM since Apple could have and, in fact, should have come up with a better UI that makes it clear that recently-used apps aren't slowing down your phone or sucking up your battery. This needs to be fixed.
 
-<!-- more -->
+(READMORE)

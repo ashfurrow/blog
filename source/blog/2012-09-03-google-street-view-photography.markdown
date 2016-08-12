@@ -15,4 +15,4 @@ This is crazy - the Google Street View van just happened to catch a field fire i
 
 Through some fluke in Google's image stitching algorithm, we've got something like a person would have actually made in Photoshop. This photo emerged through an automated, mechanical process, but represents something more when we [imbue](http://www.imdb.com/title/tt0579531/quotes) it with meaning.
 
-<!-- more -->
+(READMORE)

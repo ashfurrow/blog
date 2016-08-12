@@ -11,5 +11,5 @@ If you have an SSD, like in a MacBook Air, you might think that since there isn'
 
 I have everything backed up. My data is safe because I am a professional who cares about that data. I you don't have a good backup solution, ask yourself why not.<img src="/img/import/blog/SGFyZC1Ecml2ZS1X/BAFDC6017B224CAF9274A0A92A97E9D9.jpeg" class="img-responsive" />
 
-<!-- more -->
+(READMORE)
 

@@ -11,4 +11,4 @@ Lately, I've been listening to [Marco Arment's podcast](http://5by5.tv/buildanal
 
 I'm listening to this developer because, in many ways, he's who I aspire to be in five or so years. I'm in the trenches of a startup now, where I'm having a kick ass time writing software that people are going to love to use. I don't have any long-term plans for running my own business, but who knows. Maybe Coffee Timer will take off :)
 
-<!-- more -->
+(READMORE)

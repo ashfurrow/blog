@@ -9,4 +9,4 @@ I'll be presenting a talk at [FITC SCREENS](http://fitc.ca/screens) this October
 
 I hope to see you there!&nbsp;
 
-<!-- more -->
+(READMORE)

@@ -15,4 +15,4 @@ Importantly, in the latest 2.2 release, it includes a "demo mode" which allows u
 
 Architecturally speaking, it's a very modern iOS application that's been well designed and executed by my colleagues at T+L. Let me know what you think.
 
-<!-- more -->
+(READMORE)

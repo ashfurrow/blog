@@ -41,4 +41,4 @@ The transition is also a fantastic opportunity to do things in your code that yo
 
 When you're done your transition, you'll look back at how you were doing things before and wonder why you waited so long. I know I did.
 
-<!-- more -->
+(READMORE)

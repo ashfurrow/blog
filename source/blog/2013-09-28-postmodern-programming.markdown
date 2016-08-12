@@ -9,4 +9,4 @@ My friend Rob Rix has done an excellent job presenting [Postmodern Programming](
 
 I would highly recommend reading them over.
 
-<!-- more -->
+(READMORE)

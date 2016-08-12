@@ -15,4 +15,4 @@ Currently, [their "buzz" page](http://beta.crashlytics.com/buzz/) lists testimon
 
 Let me make this easy for you: you need to go sign up for this. Your app _is crashing right now_&nbsp;and you probably don't even know about it.
 
-<!-- more -->
+(READMORE)

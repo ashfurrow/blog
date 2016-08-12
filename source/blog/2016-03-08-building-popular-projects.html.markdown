@@ -9,7 +9,7 @@ We're seeing an explosion in the number of server-side Swift frameworks, which i
 
 So if you've recently created a server-side Swift library (or if you want to (and statistically, you _probably_ do)) then I have some suggestions on how to win the server-side Swift library arms race.
 
-<!-- more -->
+(READMORE)
 
 Now, the longevity and popularity of your library depends on both the quality of its code and of its community. I won't tell you how to measure code, but here are some tips to create a quality community and increase the chances that _your_ library is the _the_ library the community chooses.
 

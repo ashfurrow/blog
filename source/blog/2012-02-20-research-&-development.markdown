@@ -19,4 +19,4 @@ I understand Objective-C and Cocoa Touch well enough that, when asked to do some
 
 If you're using _trial and error_&nbsp;and are a software developer, then you're not. You're actually a monkey trying to write Shakespeare.
 
-<!-- more -->
+(READMORE)

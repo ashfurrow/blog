@@ -55,4 +55,4 @@ The hassle in learning a new skill often seems like it's not worth the dip in pr
 
 I've been using git my entire career. I can't imagine not using it.
 
-<!-- more -->
+(READMORE)

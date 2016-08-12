@@ -11,4 +11,4 @@ One of the key points in the article, for experienced developers, is to rely on 
 
 Don't reinvent the wheel every time. If you're about to write something new, check out [Cocoa Controls](http://www.cocoacontrols.com) to see if someone else has already done something like it. Maybe you can't use it wholesale, but maybe you can modify existing work for your needs.
 
-<!-- more -->
+(READMORE)

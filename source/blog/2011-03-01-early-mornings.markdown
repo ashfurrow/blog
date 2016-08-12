@@ -11,4 +11,4 @@ I wake up, turn on my espresso machine, and read some online news. The beauty of
 
 Additionally, while my mornings have been graced my the pleasant staccato of espresso for over a year now, this morning I had the time to make a macchiato, pictured right.
 
-<!-- more -->
+(READMORE)

@@ -25,4 +25,4 @@ In some ways, this is a financial burden. I'm paying a little bit of money each 
 
 I'm taking control of my life online because it matters to me and because I'd rather spend time doing what I value than waste time to try and save what amounts to only a few dollars a month.
 
-<!-- more -->
+(READMORE)

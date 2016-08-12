@@ -9,4 +9,4 @@ Take this article I found on Hacker News this morning: [I keep forgetting to use
 
 Maybe it's just that the paragraph didn't pull me in and tell me what the full article was about. Maybe I'm over-reacting to an Internet full of people who aren't great at writing compelling blog posts (gasp!), but I feel in some ways that my attention span has been reduced; I feel like because there's always something to read, I never take the time to read and reflect on anything in any amount of depth. And I kind of hate it.
 
-<!-- more -->
+(READMORE)

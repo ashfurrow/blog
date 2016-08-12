@@ -9,7 +9,7 @@ Working in the open source community can be a fulfilling experience. Helping oth
 
 So if people do open source because it makes them happy, then the joy that they experience is important. Happiness drives open source, and by extension, the entire tech industry. We need to protect it, and help it grow. 
 
-<!-- more -->
+(READMORE)
 
 ----------------
 

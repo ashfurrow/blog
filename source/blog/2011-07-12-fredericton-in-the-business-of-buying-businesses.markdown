@@ -18,4 +18,4 @@ It also rubs me that last April or so the Council voted for rezoning of Woodside
 
 I'm starting to regret my decision to move away from New Brunswick (for Fun and Profit). Maybe I should have bought some land in Fredericton, set up a legal but&nbsp;unsavory&nbsp;business, and waited for the city to purchase my land for half a million dollars.
 
-<!-- more -->
+(READMORE)

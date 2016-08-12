@@ -9,4 +9,4 @@ This is a really interesting piece from The Guardian discussing [society and its
 
 The article takes a look at different angles of fat acceptance, but it concludes by pointing out the fact that judging someone based on their weight is still prejudice. Whether or not you believe someone can change their weight (an idea [I have dispelled](/blog/society-health-and-the-politics-of-being-fat)), the mutability of a condition of prejudice doesn't excuse prejudging someone based on that condition.
 
-<!-- more -->
+(READMORE)

@@ -15,4 +15,4 @@ As a software development team, how can we know that an approach or a feature is
 
 That's unacceptable to me. I'm in this industry for the opportunity to create something beautiful and intuitive - to strive for the absolute best something can be. I've only recently really realize how specialized that makes me.
 
-<!-- more -->
+(READMORE)

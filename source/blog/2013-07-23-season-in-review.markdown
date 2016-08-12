@@ -11,4 +11,4 @@ It was a really fun project – combining stats data together with an interested
 
 I shot the original concept video (which we later reshot with the talented visual designers at T+L) and I also contributed video editing (new for me), audio editing, and photography. I can't imagine working anywhere else and getting to flex my creative muscles in quite the same way.
 
-<!-- more -->
+(READMORE)

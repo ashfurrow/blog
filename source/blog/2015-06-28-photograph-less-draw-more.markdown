@@ -5,7 +5,7 @@ date: 2015-06-28 16:14:40 UTC
 
 The [School of Life](https://www.youtube.com/channel/UC7IcJI8PUf5Z3zKxnZvTBog) has posted another [awesome video](https://www.youtube.com/watch?v=k1eHm0PNnjo) – this one, on photography.
 
-<!-- more -->
+(READMORE)
 
 YOUTUBE k1eHm0PNnjo
 

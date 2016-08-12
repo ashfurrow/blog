@@ -29,4 +29,4 @@ The other main consideration is the E61 Group, featured right. It's sort of a st
 
 Their usually limited to Heat Exchange machines, but you can get some on single boilers. Their popularity means getting accessories like portafilter baskets, naked portafilters, and tampers would be a breeze. Not that I already don't have a new [Reg Barber](http://www.coffeetamper.com/store/pc/viewCategories.asp?idCategory=3) tamper picked out.
 
-<!-- more -->
+(READMORE)

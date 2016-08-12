@@ -9,4 +9,4 @@ I've partnered with the good folks down at [Cue](https://www.cueup.com/) to orga
 
 Yes I am. And all of my students will be committing to open source Objective-C. Huzzah!
 
-<!-- more -->
+(READMORE)

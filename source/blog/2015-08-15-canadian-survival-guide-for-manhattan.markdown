@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/632528646847209
 
 I am a Canadian, living undercover in New York for the past six months. Having successfully avoided detection by the New Yorkers, I have some advice for other Canadians hoping to survive Manhattan.
 
-<!-- more -->
+(READMORE)
 
 ----------------
 

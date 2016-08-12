@@ -9,4 +9,4 @@ I have been using [1Password](https://agilebits.com/onepassword) all year and ha
 
 This is also a great example of "good enough" implementations (a common theme on my blog this week, it seems). Sometimes our strive to be perfect is counterproductive in our goal of accomplishing some task.
 
-<!-- more -->
+(READMORE)

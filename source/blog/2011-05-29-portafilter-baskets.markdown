@@ -15,4 +15,4 @@ The baskets are very important in the brewing process; I've gone to [some length
 
 They're everything Lauren was talking about when she said "coffee snob"; they're exclusive,&nbsp;unnecessary, expensive, and I want them.
 
-<!-- more -->
+(READMORE)

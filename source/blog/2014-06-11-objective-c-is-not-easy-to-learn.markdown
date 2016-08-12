@@ -8,7 +8,7 @@ I read [this blog post](http://www.bignerdranch.com/blog/ios-developers-need-to-
 
 There are many things that I disagree with about this article, but there is one in particular that I took offence to.
 
-<!-- more -->
+(READMORE)
 
 > Objective-C is easier to learn than Swift.
 

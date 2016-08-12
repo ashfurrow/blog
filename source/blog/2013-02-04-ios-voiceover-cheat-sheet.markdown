@@ -9,4 +9,4 @@ Honestly, after reading his list, even I discovered a few new tricks.
 
 Remember, iOS has two interfaces: a visual one and an aural one. You need to know how to use them both effectively in order to build your best apps.
 
-<!-- more -->
+(READMORE)

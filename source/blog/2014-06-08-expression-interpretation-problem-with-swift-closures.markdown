@@ -64,4 +64,4 @@ b{
 
 Interesting. I've filed a radar about it and I expect it'll be fixed soon.
 
-<!-- more -->
+(READMORE)

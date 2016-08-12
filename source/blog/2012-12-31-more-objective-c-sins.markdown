@@ -11,4 +11,4 @@ You're code just got, like, instantly more stable. Once you fix all the warnings
 
 It's a fantastic list — anyone looking to improve their Objective-C chops this year would do well to read it.
 
-<!-- more -->
+(READMORE)

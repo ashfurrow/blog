@@ -7,4 +7,4 @@ Microsoft issued a security update to Windows, labeled "high priority", which ha
 
 I cannot imagine Apple doing something like this with OS X. Granted, Apple would have just left the security flaw unpatched for months, but they would not have broken the typographic system they have worked so hard to create. I can't image that this was the only way to patch the flaw — certainly, Microsoft, there's another option?
 
-<!-- more -->
+(READMORE)

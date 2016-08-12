@@ -15,4 +15,4 @@ Now imagine you're a geek buying a computer. You've got two options.
 
 What would concern you more: the fact that [one computer will never, ever receive security updates](http://www.androidpolice.com/2011/10/01/massive-security-vulnerability-in-htc-android-devices-evo-3d-4g-thunderbolt-others-exposes-phone-numbers-gps-sms-emails-addresses-much-more/), ever? Or that the other computer could _only_&nbsp;download applications from _one_&nbsp;location?
 
-<!-- more -->
+(READMORE)

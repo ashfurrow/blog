@@ -23,4 +23,4 @@ Sounds good to me.
 
 This project isn't just a book&nbsp;– it's a tool for making us better. Please help [spread the word](http://indiegogo.com/projects/your-first-ios-app).
 
-<!-- more -->
+(READMORE)

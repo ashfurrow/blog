@@ -13,4 +13,4 @@ ARC has some gotchas, and you'll learn them as you get familiar with the languag
 
 You can always go back and learn manual memory management later — it would be a great exercise. But if you're _just_ picking up the language, avoid manual memory management in favour of ARC.
 
-<!-- more -->
+(READMORE)

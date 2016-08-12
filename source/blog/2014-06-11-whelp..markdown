@@ -7,7 +7,7 @@ Last week, I attended WWDC in San Francisco. I was in the Bay Area for two weeks
 
 Since the last time I was at WWDC, I've pulished [two](https://leanpub.com/iosfrp) [books](https://leanpub.com/your-first-ios-app), a [second edition](http://www.amazon.com/gp/product/B00IHZKDCU/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00IHZKDCU&linkCode=as2&tag=ashfur-20) to a book, started contributing to a number of [open source projects](https://github.com/ashfurrow/), wrote a tonne of [iOS 7 tutorials](http://www.teehanlax.com/blog/author/ash/), started another [podcast](http://notificationcenter.tv), and doubled my number of twitter followers. Basically, it was a busy year.
 
-<!-- more -->
+(READMORE)
 
 In hindsight, it shouldn't have come as such a surprise when I ran into a lot of people who knew who I was. The common refrain from the week was something like:
 

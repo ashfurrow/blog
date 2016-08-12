@@ -15,4 +15,4 @@ That's where `PSTCollectionView` comes in.
 
 I think that, moving forward, we may see a growing number of these types of open-source projects aiming to replicate user interface implemented in newer version of iOS which not available on older hardware.
 
-<!-- more -->
+(READMORE)

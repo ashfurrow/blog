@@ -11,7 +11,7 @@ Every now and then, I get reached out to with a request to hop on a quick phone 
 
 Yesterday, I got this.
 
-<!-- more -->
+(READMORE)
 
 ![A disservive was committed here, most definitely.](/img/blog/now-and-forever/email.jpg)
 

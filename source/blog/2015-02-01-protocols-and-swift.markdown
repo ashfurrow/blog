@@ -7,7 +7,7 @@ link_to: swift
 
 The other day I posed this (somewhat cryptic) question to Twitter: 
 
-<!-- more -->
+(READMORE)
 
 <blockquote class="twitter-tweet" lang="en"><p>Best way for pure Swift objects to have optional conformance to some contract? Optional protocols/protocol members are <a href="https://twitter.com/objc">@objc</a>-only.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/560436119956115456">January 28, 2015</a></blockquote>
 

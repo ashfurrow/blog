@@ -13,4 +13,4 @@ The worst part is, to be perfectly honest, that I acknowledge that I can be a pe
 
 So no, thank you, I don't want to watch a show about how comical it is that pedantic and socially awkward people, you know, exist.
 
-<!-- more -->
+(READMORE)

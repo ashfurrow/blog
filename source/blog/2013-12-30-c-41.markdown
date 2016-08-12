@@ -9,4 +9,4 @@ I wrote this app as a learning experience. I've learnt a lot about ReactiveCocoa
 
 Take a look. If you have suggestions, open an issue or fork the repo. I learnt a lot from writing C-41 and I hope that other can learn from it, too.
 
-<!-- more -->
+(READMORE)

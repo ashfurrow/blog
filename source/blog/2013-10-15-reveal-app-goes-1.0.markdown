@@ -9,4 +9,4 @@ date: 2013-10-15 00:00
 
 I use Reveal every day and [recently interviewed](http://springboardshow.com/episodes/24) one of the developers on Springboard.
 
-<!-- more -->
+(READMORE)

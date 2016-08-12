@@ -13,4 +13,4 @@ This really struck out to me. It reminds me of another TED talk discussing the [
 
 We are apparently really bad at predicting our own happiness due to something called impact bias: we overstate the impact that getting what we want will have on us. Instead of striving to always get what we want, focusing on our mental states of mind will have a far deeper, longer-lasting effect on our happiness. Cool.
 
-<!-- more -->
+(READMORE)

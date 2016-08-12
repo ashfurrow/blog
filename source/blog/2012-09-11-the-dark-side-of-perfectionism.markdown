@@ -25,4 +25,4 @@ No artist ever created something a moving piece of art by first expecting it to 
 
 There is a difference between polish and perfection. I think that you can have a polished product that you feel personally invested in, even if you know it's less than perfect. Don't let obsessions with perfection stop you from doing _anything_.
 
-<!-- more -->
+(READMORE)

@@ -11,4 +11,4 @@ But the sad fact is that the latest Wordpress update broke the hack they themsel
 
 My friend Jason [tweeted](http://twitter.com/#!/jasonbrennan/status/116975447526473728) (I can only assume this was directed at me) a link. [ShouldIUseWordpress.com](http://shouldiusewordpress.com/).&nbsp;I really have to learn Ruby on Rails.
 
-<!-- more -->
+(READMORE)

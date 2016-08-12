@@ -17,4 +17,4 @@ I've been getting up early to photograph the sunrise over Lake Ontario. It's bee
 
 Admittedly, I've caught the gear-acquisition syndrome a bit. I've upgraded my digital camera and purchased a used Leica M6. (I have a very understanding wife.) My gadget budget for the rest of the year has been completely depleted, but I couldn't be happier – learning something new with each photo I take.
 
-<!-- more -->
+(READMORE)

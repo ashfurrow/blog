@@ -29,4 +29,4 @@ You can easily [test networking code](/blog/your-first-objective-c-unit-test-wit
 
 So that's it: Unit Test models and networking code. Use UAT to test the rest, if it's worth your time. Maybe manual testing the views and controllers would fit better into your work flow, especially for smaller apps. Finally, document whatever Unit Testing and UAT does _not_ test, so you can be sure to manually test it before you ship.
 
-<!-- more -->
+(READMORE)

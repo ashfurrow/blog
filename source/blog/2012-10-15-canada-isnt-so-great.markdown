@@ -43,4 +43,4 @@ All while blantantly [flaunting democracy](http://www.thestar.com/opinion/editor
 
 The US has exported its conservatism to Canada. We're not better than the states; we're just a little behind the curve.
 
-<!-- more -->
+(READMORE)

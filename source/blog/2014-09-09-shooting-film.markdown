@@ -7,7 +7,7 @@ I’ve been blogging recently about photography, and a few readers have asked me
 
 Many film photographers will insist that film has a different “feel” to it – that the images captured with it are inherently different from those captured on digital. I think they’re right, but that’s not the reason I choose to use film.
 
-<!-- more -->
+(READMORE)
 
 The premise is that you experience the world differently when you hold a camera in your hand. It’s something I believe most – probably all – photographers would agree on. Taking a walk by yourself is intrinsically different from taking a walk with a camera. You see things in new ways. You see things you wouldn’t have seen. You’re looking for them now. Everything feels different.
 

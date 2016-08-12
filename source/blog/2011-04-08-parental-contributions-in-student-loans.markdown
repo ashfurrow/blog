@@ -17,4 +17,4 @@ Minister Coulombe als talked about how much she was consulting with students. Sh
 
 Make no mistake: this is a bad decision for New Brunswick. There are students who will not be able to attend PSE because of this decision.
 
-<!-- more -->
+(READMORE)

@@ -8,7 +8,7 @@ summary: "There are a lot of photographers out there – ones I really respect �
 
 There are a lot of photographers out there – ones I really respect – who recommend shooting on [one camera, using one lens](http://erickimphotography.com/blog/2013/04/19/3-reasons-why-you-should-shoot-with-one-camera-and-one-lens/). The reasons they often cite are definitely compelling:
 
-<!-- more -->
+(READMORE)
 
 1. You stop yourself from buying other, unnecessary equipment.
 1. You master one focal length (they recommend only using one _prime_ lens).

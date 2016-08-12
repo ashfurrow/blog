@@ -9,4 +9,4 @@ If you like it, [you should go buy it](https://leanpub.com/your-first-ios-app/).
 
 Sorry to be all pitchy, but I worked really hard on this and it'd be super-awesome if it made a big splash. And sorry for apologising – I'm Canadian, after all.
 
-<!-- more -->
+(READMORE)

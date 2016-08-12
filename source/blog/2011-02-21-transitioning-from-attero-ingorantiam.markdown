@@ -11,4 +11,4 @@ Additionally, I started my blog for a purpose, which I've long-since accomplishe
 
 Lastly, I wanted desperately to get our of the blogger ecosystem. Anyone who's used it will understand.
 
-<!-- more -->
+(READMORE)

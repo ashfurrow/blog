@@ -9,7 +9,7 @@ I've recently found a [really awesome twitter account named @CloudyConway](https
 
 The account is a bot that uses [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) to generate beautiful, algorithmic art. If you've not heard of the Game of Life before, you're in for a treat. 
 
-<!-- more -->
+(READMORE)
 
 The Game of Life is a "zero-player game" (there's a metaphor in there somewhere). The player's entire interaction is setting up the initial board state – the "living cells" that occupy the board. The game starts and the cells reproduce or die based on the cells around them. 
 

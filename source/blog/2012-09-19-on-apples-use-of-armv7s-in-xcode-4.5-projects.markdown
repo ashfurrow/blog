@@ -11,4 +11,4 @@ Neither can I.
 
 You can fix the linker error with [these instructions](/fix-ios-6-sdk-linker-error).
 
-<!-- more -->
+(READMORE)

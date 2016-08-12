@@ -15,4 +15,4 @@ Facts are that we don't know who severed the Google Maps integration in iOS 6 or
 
 Companies aren't people; they don't experience joy, schadenfreude, or orgasmic pleasure at their rivals' discomfort. Stop personifying corporations.
 
-<!-- more -->
+(READMORE)

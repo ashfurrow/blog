@@ -7,4 +7,4 @@ I'm writing the labs for the iPhone course I'm teaching next week and the machin
 
 After spending some time trying to install older versions of Xcode, I've figured out a really easy way to make the new simulator (the iPhone 4) look like the old simulator (the iPhone 3G/3GS/1st gen). Grab a copy of the old simulator; I sftp'd into the school machines and downloaded a zipped copy of the app bundle. In Finder, right-click and "Show Package Contents" and in the Contents/Resources folder, you'll find a file named "frame.png". Replace the one in your simulator (/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications) with the old one, backing up the original first. Next time you load the simulator, voila! I'm actually surprised it worked, considering the dimensions could have been different. Maybe Apple ... gasp! hardcoded screen dimensions?
 
-<!-- more -->
+(READMORE)

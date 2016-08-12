@@ -19,4 +19,4 @@ In this vide, Tony Porter describes his "man box" theory: a collection of stereo
 
 Feminism isn't about anything other than equality for everyone. The sooner we get there, the better.
 
-<!-- more -->
+(READMORE)

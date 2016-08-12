@@ -11,4 +11,4 @@ With apologies to the diligent community of developers and designers working har
 
 I've switched to&nbsp; [Squarespace](http://www.squarespace.com), which I'm finding quite delightful. All links to old articles will correctly redirect and your RSS feeds will still work, with some possible duplicates in your feed reader. I'm still deciding on a feel for my site, but I've always liked the monochrome, toned-down look. If you have any feedback, let me know!
 
-<!-- more -->
+(READMORE)

@@ -87,4 +87,4 @@ Making quality software is a measure of honour, and making software accessible i
 
 The biggest challenge in raising the quality of accessibility in iOS apps is educating developers about how and why they need to worry about it.
 
-<!-- more -->
+(READMORE)

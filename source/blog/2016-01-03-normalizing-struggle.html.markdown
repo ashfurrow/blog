@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/682934079445188
 
 When you interact with someone online – GitHub, Twitter, whatever – you don't often see them discuss _struggle_. They'll be witty, or share something cool they've done, or maybe a recording of a talk they gave. But they don't normally talk about struggling to write their pithy tweet, or falling out of love with their side project, or pushing against writer's block. I think that's a shame, because those struggles are normal. 
 
-<!-- more -->
+(READMORE)
 
 I mean _really_ normal. _Ridiculously_ commonplace. Sure, _you_ have struggled, but you know what? Your boss has struggled. Your best friend has struggled. That person you admire? Yeah, they've struggled, too. 
 

@@ -7,7 +7,7 @@ summary: "<p>My sister posted <a href='http://www.buzzfeed.com/lukebailey/ambive
 
 My sister posted [this Buzzfeed listicle](http://www.buzzfeed.com/lukebailey/ambiverts-for-the-silver#.qnmeb9ynLZ) on Facebook. Normally these aren't my bag, but the headline caught me:
 
-<!-- more -->
+(READMORE)
 
 > 21 Signs You Might Actually Be An Ambivert
 

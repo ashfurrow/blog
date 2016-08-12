@@ -7,7 +7,7 @@ OK, OK, not _all_ sharing is selfish, of course. A more accurate headline would 
 
 So let's talk about the selfish benefits of sharing knowledge. To do so, we'll have to define what that actually means.
 
-<!-- more -->
+(READMORE)
 
 _Sharing knowledge_. Hmm.
 

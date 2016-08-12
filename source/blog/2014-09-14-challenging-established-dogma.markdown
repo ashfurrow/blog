@@ -11,7 +11,7 @@ So it’s with some disgust that I recently realized that _I_ have become an “
 
 Let’s back up a minute.
 
-<!-- more -->
+(READMORE)
 
 There is a concept in psychology called the [Dreyfus model of skill acquisition](http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition). It’s awesome – I think about it a lot when teaching, because depending on my audience, I’ll present the same material differently. For example, beginners in a field tend to see things through a lens that polarizes solutions as “good” or “bad” depending on how those solutions adhere to principles taught by experts. Beginners adhere rigidly to these principles. As learners progress in their field – towards competence, proficiency, and expertise – they learn that knowledge is _not_ absolute and that the things experts teach are only well-informed opinions. Solutions to problems aren’t “good” or “bad” based on how well they adhere to a principle, but rather how well they solve the problem.
 

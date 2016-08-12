@@ -24,4 +24,4 @@ Double-click on "armv7 armv7s" and then select the "armv7s" row and click the mi
 
 That's it! Make a mental note to check back with your statically compiled libraries to see when they update to incorporate A6 support.
 
-<!-- more -->
+(READMORE)

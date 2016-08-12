@@ -5,7 +5,7 @@ date: 2014-11-07 09:32 UTC
 
 I just gave a well-received talk at the [Mobile Developer & Business Day](http://by.mdday.ru/) about teaching and learning here in Minsk. There were some great questions and interesting conversations following the presentation.
 
-<!-- more -->
+(READMORE)
 
 <script async class="speakerdeck-embed" data-id="fcb3f5b0487c013239cd36e5e480a335" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 

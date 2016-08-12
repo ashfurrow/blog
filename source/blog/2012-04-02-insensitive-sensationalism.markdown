@@ -13,4 +13,4 @@ Buried near the end of a lengthy personal essay, I did not include this to be in
 
 It's difficult to compare types of prejudice, maybe impossible. I think that, like calling something "gay" in a derogatory sense has begun to see a push back from main stream society, using the term "fat" in a similarly derogatory way will also become ignorant slang. The oppression of the LGBTQ community and fat people are distinct, and it is wrong to suggest otherwise.
 
-<!-- more -->
+(READMORE)

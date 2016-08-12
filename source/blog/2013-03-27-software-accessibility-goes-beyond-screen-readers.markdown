@@ -9,4 +9,4 @@ Consider the scrolling indicator colour. When you're designing your mobile web s
 
 Part of making good software is making usable software. Software accessibility is just a specific form of usability. Keep that in mind the next time you build something.
 
-<!-- more -->
+(READMORE)

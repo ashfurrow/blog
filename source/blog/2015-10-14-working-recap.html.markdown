@@ -11,7 +11,7 @@ Three countries, three talks, one workshop, seven take-offs and landings – the
 
 I am exhausted.
 
-<!-- more -->
+(READMORE)
 
 ![](/img/blog/2015-10-13-working-recap/trip.jpg)
 

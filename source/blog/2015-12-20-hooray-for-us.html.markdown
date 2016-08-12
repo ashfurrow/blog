@@ -5,7 +5,7 @@ date: 2015-12-20 23:19:29 UTC
 
 So Canada's been really excited, eh? We've got a new, dreamy prime minister and [some shockingly awesome policies](http://www.nationalobserver.com/2015/12/07/news/canada-shocks-cop21-big-new-climate-commitment) to match. One of the things we've been _most_ excited about is that Canada has welcomed its first Syrian refugees.
 
-<!-- more -->
+(READMORE)
 
 [Yay, welcoming refugees!](http://www.thestar.com/news/gta/2015/12/11/syrian-refugees-arriving-at-pearson-tonight-but-well-wishers-asked-to-stay-home.html) We've got Prime Minister Trudeau [greating refugees](http://www.huffingtonpost.ca/2015/12/11/first-flight-of-syrian-refugees-expected-to-arrive-today-in-toronto_n_8767700.html) with a great speech:
 

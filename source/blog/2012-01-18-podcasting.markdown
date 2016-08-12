@@ -9,4 +9,4 @@ Podcasting requires arcane knowledge (particularly, sounds engineering); it oste
 
 The only thing missing, I believe, is knowledge about the craft itself. Once I learned that coffee can taste, you know, good, I was all over it! Once I started listening to podcasts on my own, I realized _I_&nbsp;could do it, too. What other things out there are just waiting to eat up all my free time?
 
-<!-- more -->
+(READMORE)

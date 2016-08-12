@@ -7,7 +7,7 @@ So yesterday happened. [This](http://www.apple.com/watch/) happened. Ugh. Whatev
 
 But this is not a post discussing the Watch. Well, it is, sort of. I want to talk about the event itself.
 
-<!-- more -->
+(READMORE)
 
 Apple hyped the shit out of this. Their invitations were sent out indicating that this was going to be held at the Flint Center, where they announced the original Macintosh. It’s a bigger venue and it invokes bigger kinds of product announcements. OK, fine.
 

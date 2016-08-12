@@ -5,7 +5,7 @@ date: 2014-09-05 00:00
 
 Last week, my wife and I returned from a trip to Copenhagen, then Warsaw. I spoke at two meetups in the cities, got to visit some new places, and take some photos. It was a really great trip.
 
-<!-- more -->
+(READMORE)
 
 In Copenhagen, I gave a rendition of my [Solving Problems the Swift Way](/blog/solving-problems-the-swift-way) presentation at a [GotoNight](https://secure.trifork.com/cph-2014/freeevent/index.jsp?eventOID=6461). Great attendance with some excellent questions. Really nice city – we stayed at an Airbnb very close to the city centre.
 

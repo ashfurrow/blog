@@ -61,4 +61,4 @@ The crux of the argument for accessibility on iOS and OS X is simply that it tak
 
 Check out [Matt Gemmell's excellent post](http://mattgemmell.com/accessibility-for-iphone-and-ipad-apps/) on iOS accessibility for an in-depth perspective on the topic. A lengthy read, it's well worth your time.
 
-<!-- more -->
+(READMORE)

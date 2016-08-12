@@ -9,4 +9,4 @@ Recently, I developed two open source UIKit controls you can easily use in your 
 
 These controls mimic the subtle effects present in the iOS 6 music app. It shows the attention to detail that Apple demonstrates. It's a bar they set that we should all try and surpass.
 
-<!-- more -->
+(READMORE)

@@ -27,4 +27,4 @@ The OHA may be able to strong-arm OEMs with little-to-no offerings in the Androi
 
 The OHA benefits consumers and hopefully Google has some teeth to enforce the rules on more than the likes of Acer. If Google wants Android to compete with iOS in the long-term, this is exactly the kind of strategy they need to maintain.
 
-<!-- more -->
+(READMORE)

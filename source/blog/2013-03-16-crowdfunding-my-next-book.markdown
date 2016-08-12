@@ -13,4 +13,4 @@ Sample code is going to be available on GitHub. Backers at the "Assistant Editor
 
 <div class="embed-responsive embed-responsive-16by9"><iframe scrolling="no" src="//www.indiegogo.com/project/360741/widget/2700170?wmode=opaque" data-embed="true" frameborder="0" class="embed-responsive-item"></iframe></div>
 
-<!-- more -->
+(READMORE)

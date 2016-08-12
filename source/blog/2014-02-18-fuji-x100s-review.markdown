@@ -53,4 +53,4 @@ Overall I'm really happy with the camera. A few quirks but otherwise a real perf
 
 I'm still going to shoot on my M6 – I love that camera. However, the future of my 5D is in question. It's always been more camera than I strictly need, but I love to shoot with it. It's just so damn big. At this point, I'm going to see how my habits develop. If I'm not using my 5D at all, then I'll likely sell it. It would be a compromise on flexibility of a zoom lens and quality of bokey I can get from shots, but life is about compromises I suppose.
 
- ![](/img/import/blog/fuji-x100s-review/8D8EEC8BEBDD4033B0870633EB06BDFF.jpg)<!-- more -->
+ ![](/img/import/blog/fuji-x100s-review/8D8EEC8BEBDD4033B0870633EB06BDFF.jpg)(READMORE)

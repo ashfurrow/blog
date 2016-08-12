@@ -19,4 +19,4 @@ My [transition to film](/blog/film) has had a lot to do with this personal revel
 
 I can't attribute the differences completely to my editing process or outlook on photography – after all, they were made using completely different media. However, their difference is representative _to me_ of the change I've been undergoing in my photography. I need to reflect some more to find out what that really means.
 
-<!-- more -->
+(READMORE)

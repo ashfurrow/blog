@@ -15,4 +15,4 @@ It's not a good solution, but it works. Replacing their version of Growl.framewo
 
 This solution is &nbsp;a lot harder than it should have to be. I wish that Growl would improve their documentation on how to re-codesign the Growl framework with your own identity; their documented solution is an internal tool that they've published, but they don't offer much in the way of explanation of its context, how to use the tool, or what it is supposed to do.
 
-<!-- more -->
+(READMORE)

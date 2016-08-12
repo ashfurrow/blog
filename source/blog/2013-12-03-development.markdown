@@ -15,4 +15,4 @@ I'm missing more images by messing up the manual focus, aperture, and shutter sp
 
 I've really given up on doing photography for other people. I'm tired of the social media bullshit people keep trying to associate with photography. I'm going to do my own thing as long as it makes me happy.
 
-<!-- more -->
+(READMORE)

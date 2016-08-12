@@ -31,4 +31,4 @@ It takes a few minutes to pull a shot and steam the milk for a latte, but it is 
 
 So I'm going to take it a little easier and slow down in the ways I can. When I move fast, I want to move decisively, but when I can take time to enjoy life, I will.
 
-<!-- more -->
+(READMORE)

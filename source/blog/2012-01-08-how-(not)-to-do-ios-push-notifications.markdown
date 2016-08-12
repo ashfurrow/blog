@@ -54,4 +54,4 @@ In iOS 4, Apple introduced push notifications and Android fanboys switched from 
 
 <dt><br></dt>
 
-</dl> ![](/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/83B73FC21B7F4A21830274D2F887A9ED.png)<!-- more -->
+</dl> ![](/img/import/blog/2012/01/common-mistakes-in-ios-push-notifications/83B73FC21B7F4A21830274D2F887A9ED.png)(READMORE)

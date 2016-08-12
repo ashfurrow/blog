@@ -19,4 +19,4 @@ So I [wrote one](https://github.com/AshFurrow/500px-iOS-api/).
 
 My goal was to make something I could be proud of, and I'm halfway there. Requests can be signed with OAuth, but still need to be loaded over the network. Now that I have the request creation taken care of, I'm going to write a layer to abstract the network requests away altogether. Oh, and it's completely tested, as well. (Maybe not with unit tests, more like integration tests, but tested nonetheless.)
 
-<!-- more -->
+(READMORE)

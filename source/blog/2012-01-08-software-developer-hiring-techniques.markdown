@@ -37,4 +37,4 @@ Each company I interviewed with eventually offered me a job (who can blame them?
 
 </dd>
 
-</dl><!-- more -->
+</dl>(READMORE)

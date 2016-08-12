@@ -13,4 +13,4 @@ Software developers: the next time you develop a feature or a product that might
 
 I'm really surprised that these software makers didn't put themselves in the shoes of photographers.
 
-<!-- more -->
+(READMORE)

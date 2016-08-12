@@ -6,7 +6,7 @@ link_to: swift
 
 After WWDC, once Swift had been announced, I was contacted by some developers in Poland who wanted to organize the first ever Swift hackathon. Really neat idea – and they wondered if I was interested in giving the keynote.
 
-<!-- more -->
+(READMORE)
 
 I accepted and am just finishing up the [SwiftCrunch](http://swiftcrunch.com) hackathon now. It's been a fantastic experience – I've met a lot of great developers and had a great time.
 

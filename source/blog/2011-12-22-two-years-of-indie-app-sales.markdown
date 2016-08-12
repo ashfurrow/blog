@@ -15,4 +15,4 @@ I've annotated it to include events that I feel affected (or rather, effected) s
 
 Most importantly, I think, it's been&nbsp;notoriety&nbsp;on the Internet. Around when I graduated, I taught a three-day workshop at UNB on iOS development. Blogging, changing my domain name to be something reasonable (not coffeetimerapp.com) and contributing to online communities like Stack Overflow and GitHub have helped me become more visible as a professional, and I think that's what's helped me the most. Now, not only do I get (modest) income from my app sales, but I also landed an awesome job making awesome things.
 
-<!-- more -->
+(READMORE)

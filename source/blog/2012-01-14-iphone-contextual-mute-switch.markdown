@@ -33,4 +33,4 @@ I would not use the Alarm Clock feature of my iPhone if it wasn't excluded from 
 
 Without the contextual mute, I'd never use the Alarm Clock app; Apple thought of this and I believe they made the right decision. I also believe the fact that it took almost five years, a Philharmonic Orchestra, and a New York Times article to bring this to the public's attention is &nbsp;justification of Apple's decision.
 
-<!-- more -->
+(READMORE)

@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/697609940140224
 
 In a binary, anything is either zero or one. Right? Maybe not. 
 
-<!-- more -->
+(READMORE)
 
 A binary can be any two mutually-exclusive cases, like "true or false", which are often an analogue for one and zero, respectively. But those are two different binaries – just because they're analogous doesn't meant that they're the _same_. There're a tonne of binaries out there! Let's take a look at a few others.
 

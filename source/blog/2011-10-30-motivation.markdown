@@ -7,4 +7,4 @@ Don't use money to motivate yourself. If I don't enjoy a freelance project, it's
 
 Funny how motivation works.
 
-<!-- more -->
+(READMORE)

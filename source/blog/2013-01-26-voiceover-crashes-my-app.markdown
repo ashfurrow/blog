@@ -15,4 +15,4 @@ For the mean time, avoid the new table view methods. Fall back to the old "try t
 
 Golf clap, Apple. Golf. Clap.
 
-<!-- more -->
+(READMORE)

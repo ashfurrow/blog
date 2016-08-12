@@ -13,4 +13,4 @@ I left at six in the morning to capture [Peggy's Cove](http://500px.com/photo/21
 
 I'm continuing to explore photography as a hobby, and I'm very interested in how it's affecting my life as a software developer.
 
-<!-- more -->
+(READMORE)

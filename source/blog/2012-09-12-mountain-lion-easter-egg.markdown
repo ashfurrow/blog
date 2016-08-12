@@ -11,4 +11,4 @@ The date, midnight PST, January 24, 1984, was the launch date of the original Ma
 
 Apparently this has already been covered by [Apple Insider](http://appleinsider.com/articles/12/07/26/mountain_lion_easter_egg_references_debut_of_original_apple_macintosh.html), but for a relatively recent Mac convert (the Mac came out 6 years before I was even born), I feel a small sense of pride in finding it myself.
 
-<!-- more -->
+(READMORE)

@@ -8,7 +8,7 @@ _Star Trek Voyager_ is one of the best pieces of science fiction television ever
 
 Now, all TV has good episodes and bad episodes. We only wanted to watch the good ones. A while back, we used this [handy guide to _TNG_ in 40 hours](https://medium.com/maxistentialism-blog/star-trek-the-next-generation-in-40-hours-c4a6762cbd3) to go through just the best episodes, but I couldn't find a corresponding resource for _Voyager_. So here we are.
 
-<!-- more -->
+(READMORE)
 
 ## Contempt
 

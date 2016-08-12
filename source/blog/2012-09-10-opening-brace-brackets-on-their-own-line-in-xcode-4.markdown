@@ -69,4 +69,4 @@ Save the file and restart Xcode. That's it!
 
 **Update** : My friend Zev is maintaining an up-to-date version of `SystemCodeSnippets.codesnippets` for the latest Xcode version [on GitHub](https://github.com/sveinungkb/ios-convenience). Go check it out.
 
-<!-- more -->
+(READMORE)

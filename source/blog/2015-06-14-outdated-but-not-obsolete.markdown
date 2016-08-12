@@ -5,7 +5,7 @@ date: 2015-06-14 18:39:53 UTC
 
 While in San Francisco last week, I had a great conversation with a friend. Actually, I had a lot of those, but this one in particular got me thinking. 
 
-<!-- more -->
+(READMORE)
 
 We discussed the advantages of film photography over digital (this is _me_ we're talking about, _come on_). While digital presents many, many advantages over film, it's not _universally_ better. There _are_ tradeoffs. 
 

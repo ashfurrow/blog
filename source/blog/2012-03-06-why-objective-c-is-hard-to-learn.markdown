@@ -86,4 +86,4 @@ Objective-C, and the corresponding frameworks, runtime, and compiler, exist in a
 
 The evidence we've seen over the past 4 years or so indicates that Apple is attempting to reduce the size and complexity of the Objective-C language. They're attempting to make it easier to approach by doing away with manual memory management and classical C header files; they're also introducing modern programming language concepts like Automatic Reference Counting and dot-syntax for getter/setter access. But for now, Objective-C remains difficult to approach; only the appeal of writing hit iOS apps seems to be driving its popularity.
 
-<!-- more -->
+(READMORE)

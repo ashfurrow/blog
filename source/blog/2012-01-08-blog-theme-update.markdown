@@ -21,4 +21,4 @@ She pointed out how this is the "default" mode for the web, and she's right agai
 
 I'm hoping, like my new CSS, that this change will bring a new look to this blog.
 
-<!-- more -->
+(READMORE)

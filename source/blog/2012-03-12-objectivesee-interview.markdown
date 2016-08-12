@@ -9,4 +9,4 @@ As part of an ongoing series of interviews with Objective-C developers, [Objecti
 
 I'm pretty excited to be included on a page with the likes of Jim Dovey, Milen Dzhumerov, and Oliver Drobnik, as well as other notable Objective-C developers.
 
-<!-- more -->
+(READMORE)

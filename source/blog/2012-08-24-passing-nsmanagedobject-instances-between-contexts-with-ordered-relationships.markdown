@@ -62,4 +62,4 @@ Something is fishy with `NSOrderedSet` and Core Data. We tried using both the ge
 
 If anyone has any hypothesis as to why this might have been happening, please do get in touch.
 
-<!-- more -->
+(READMORE)

@@ -23,4 +23,4 @@ When the application finishes launching, there is a distracting visible change t
 
 These are only a few of the worst visual problems with the app; they're not huge problems themselves but are indicative of a crappy user experience in general. It makes me sad that a company which pioneers a new and innovative way to display tabbed-content to the user can fuck the rest of their app up so extraordinarily.
 
-<!-- more -->
+(READMORE)

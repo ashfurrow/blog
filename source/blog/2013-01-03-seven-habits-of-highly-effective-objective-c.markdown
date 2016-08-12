@@ -102,4 +102,4 @@ That sounds silly, I know. What I mean is that if you want to become really, rea
 
 If you enjoy Objective-C, then you should be following other developers on twitter and reading [Objective-C blogs](/blog/list-of-cocoa-programming-blogs). Surround yourself with opportunities to learn and you'll become a better developer. I know I have.
 
-<!-- more -->
+(READMORE)

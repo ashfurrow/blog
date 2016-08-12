@@ -27,4 +27,4 @@ As a student, the wine I buy usually costs $12 or $13. Many of the wines we had 
 
 Doug answered that there were a lot of affordable wines. He said to avoid anything from Australia for less than $25 - an Aussie in the crowd took offense - and look into a&nbsp;Connoisseur Pinot Noir - I didn't copy down the country, unfortunately, so if anyone's hear of this, please let me know - any New Zealand Sauvignon Blanc, and any&nbsp;Argentinian&nbsp;Malbec. He also mentioned that Chile has everything going for it now in terms of wine making, so check out wines from that region.
 
-<!-- more -->
+(READMORE)

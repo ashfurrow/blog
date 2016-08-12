@@ -95,4 +95,4 @@ There's an [Xcode plugin](https://github.com/kattrali/cocoapods-xcode-plugin) fo
 
 I gave a talk this morning on effectively using open source software. The slides are below.
 
-<script async class="speakerdeck-embed" data-id="bb7fb4c0fc510130bc6b32c793acd495" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><!-- more -->
+<script async class="speakerdeck-embed" data-id="bb7fb4c0fc510130bc6b32c793acd495" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>(READMORE)

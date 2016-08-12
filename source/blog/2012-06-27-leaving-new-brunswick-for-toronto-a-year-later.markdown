@@ -53,4 +53,4 @@ So there you go. June 26th, 2011 was the date we left New Brunswick. For the imm
 
 A move back to the Maritimes isn't out of the question, but I personally think we're more likely to move to a whole new city, if we move at all. For now, anyway, Toronto is where we feel we belong, so that's where we are staying.
 
-<!-- more -->
+(READMORE)

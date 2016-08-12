@@ -22,4 +22,4 @@ These are older and less frequently updated, but still good:
 
 If you have any resources you find helpful, please get in touch on [twitter](http://twitter.com/ashfurrow) and let me know.
 
-<!-- more -->
+(READMORE)

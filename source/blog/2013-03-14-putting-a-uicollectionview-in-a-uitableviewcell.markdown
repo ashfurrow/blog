@@ -10,7 +10,7 @@ link_to: collectionview
 
 So you want to put a collection view inside of a table view cell, eh? Sounds easy, right? Well, to do it right requires a little bit of work. We want a clear separation of concerns so that the `UITableViewCell` isn't acting as the data source or delegate for the `UICollectionView` (because that would be very, very bad). You can follow along by downloading the [sample code](https://github.com/AshFurrow/AFTabledCollectionView).
 
-<!-- more -->
+(READMORE)
 
 We're going to build a view hierarchy like the one below. Each `UITableViewCell` will contain a `UICollectionView` instead in its `contentView`. (For reasons we'll get into momentarily, this collection view needs to be a custom subclass.) Each collection view contains a certain number of cells, defined by its datasource.
 

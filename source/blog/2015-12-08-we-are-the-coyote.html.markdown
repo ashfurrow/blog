@@ -5,7 +5,7 @@ date: 2015-12-08 16:21:57 UTC
 
 I saw [this](https://twitter.com/andrey_butov/status/674237455911006209) tweeted earlier, and it really resonated with me.
 
-<!-- more -->
+(READMORE)
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Chuck Jones’ original rules for the Wile E. Coyote and The Road Runner cartoon. <a href="https://t.co/L45bSBpg2B">pic.twitter.com/L45bSBpg2B</a></p>&mdash; Andrey Butov (@andrey_butov) <a href="https://twitter.com/andrey_butov/status/674237455911006209">December 8, 2015</a></blockquote>
 

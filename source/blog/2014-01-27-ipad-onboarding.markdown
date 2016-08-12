@@ -20,4 +20,4 @@ Apple's raised the bar in a lot of ways, but the first-run experience needs to g
 
 The account sign-in gaffe is an obvious oversight given how much attention Apple puts into the unboxing experience.
 
-<!-- more -->
+(READMORE)

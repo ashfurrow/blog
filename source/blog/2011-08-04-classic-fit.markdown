@@ -11,4 +11,4 @@ We were shopping over the weekend at Harry Rosen's on Bloor St\* when Ashley poi
 
 I found a really sweet sports coat/jacket hybrid for the upcoming "Winter" in Toronto. I don't usually buy things at the beginning of the season (since it's full price), but it fit me **perfectly** off the rack with only a slight hem on the sleeves. Talking to the friendly sales lady (not those pushy assholes on the basement level - don't ask me if I want to try on that $2 600 Etro smoking jacket and, no, I don't want to get anything in bespoke), the jacket belongs to one of their house brands, _specifically designed for "classic fit" guys_. I swooned.
 
-<!-- more -->
+(READMORE)

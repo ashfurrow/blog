@@ -45,4 +45,4 @@ I haven't implemented either of these solutions, yet. I'm currently getting infr
 
 Any suggestions?
 
-<!-- more -->
+(READMORE)

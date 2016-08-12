@@ -13,4 +13,4 @@ This makes me nervous.
 
 If you're interested in switching to a paid email provider, I can't recommend [FastMail](https://www.fastmail.fm/?STKI=7977317) enough.
 
-<!-- more -->
+(READMORE)

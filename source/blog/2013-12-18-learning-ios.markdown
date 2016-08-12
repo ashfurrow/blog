@@ -9,4 +9,4 @@ For the holidays, I've halfed the price of my book, [Your First iOS App](https:/
 
 The book takes you through everything you'll need to know to design, build, and submit a working app. All of the code is [up on GitHub](https://github.com/AshFurrow/Your-First-iOS-App). Get coding today!
 
-<!-- more -->
+(READMORE)

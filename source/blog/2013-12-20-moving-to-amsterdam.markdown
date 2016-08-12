@@ -35,4 +35,4 @@ Impulsive? Maybe. I've had a few moments like this in my life where I knew what 
 
 I have no idea what comes next, but it'll be an adventure.
 
-<!-- more -->
+(READMORE)

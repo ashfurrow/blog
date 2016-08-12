@@ -11,4 +11,4 @@ People might say "Apple would sell more X if only they'd (lower prices|lower acc
 
 The moral of the story is I need to stop reading Slashdot.
 
-<!-- more -->
+(READMORE)

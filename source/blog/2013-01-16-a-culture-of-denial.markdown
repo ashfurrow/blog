@@ -13,4 +13,4 @@ I've heard people in our industry insist — unsolicitedly — that anyone can s
 
 It's not just a culture of denial —&nbsp;it's a culture of blame.
 
-<!-- more -->
+(READMORE)

@@ -11,4 +11,4 @@ We're currently beating Google Earth, "Find my iPhone", and Netflix in terms of 
 
 But what I'm most proud of is that my app is being featured beside Marco's, who holds the #34 spot for the paid category. Awesome.
 
-<!-- more -->
+(READMORE)

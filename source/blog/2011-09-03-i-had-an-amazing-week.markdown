@@ -19,4 +19,4 @@ Finally, myself and two other employees who started this week made it onto the [
 
 It's been a really great week. I hadn't had one in a while, but it was worth the wait.
 
-<!-- more -->
+(READMORE)

@@ -13,4 +13,4 @@ It's not a fantastic photo, but it's not bad for someone with no experience or k
 
 I was looking forward to returning to Yerba Buena Gardens to recapture this but, sadly, the fountain is under construction.
 
-<!-- more -->
+(READMORE)

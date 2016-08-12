@@ -7,7 +7,7 @@ My employer, [Artsy](http://artsy.net), sent me to the world's largest [art fair
 
 Holy. Shit.
 
-<!-- more -->
+(READMORE)
 
 I don't have a sophisticated appreciation of art – I'm very new to the art world at large, but have been gaining an eye for good photography over the past few years. I thought I might be prepared.
 

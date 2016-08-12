@@ -17,4 +17,4 @@ Basically you're punished if you want to use ShareKit any other way than how the
 
 Fuck you, ShareKit. When I drop support for iOS 4 in my apps, a day that is quickly approaching, you're getting kicked to the curb so fucking hard.
 
-<!-- more -->
+(READMORE)

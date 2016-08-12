@@ -23,4 +23,4 @@ Only time will tell.
 
 In the meantime, making these kinds of assumptions is not the work of someone trying to write anything factual.
 
-<!-- more -->
+(READMORE)

@@ -33,4 +33,4 @@ Holy balls that's better.
 
 Am I crazy here? Or am I just the last sane developer left?
 
-<!-- more -->
+(READMORE)

@@ -5,7 +5,7 @@ date: 2014-11-26 23:38:58 UTC
 
 About a month ago, I wrote about [transitioning from Squarespace to my own maintained site](/blog/fresh-coat-of-paint/). A month has passed, and I thought that I would describe the technical aspects of the site: its migration, what went well, and what you should be on the lookout for if you decide to host on S3. 
 
-<!-- more -->
+(READMORE)
 
 ## Idea
 

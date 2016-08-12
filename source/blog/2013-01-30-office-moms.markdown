@@ -9,4 +9,4 @@ Lauren Bacon has a [great article](http://qz.com/47154/tech-companies-stop-hirin
 
 She has a great list of questions to ask yourself to see how your workplace stacks up against this subtle form of sexism. A really good read.
 
-<!-- more -->
+(READMORE)

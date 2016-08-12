@@ -15,4 +15,4 @@ You would not say "no" to a customer or client – you'd let them know that thei
 
 Let you designers lead the design of your application – the implementation details are your problem and no one else's.
 
-<!-- more -->
+(READMORE)

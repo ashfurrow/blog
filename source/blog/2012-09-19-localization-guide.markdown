@@ -9,4 +9,4 @@ date: 2012-09-19 00:00
 
 Fantastic. My personal apps could definitely use some more localization love. Maybe that'll be a weekend project.
 
-<!-- more -->
+(READMORE)

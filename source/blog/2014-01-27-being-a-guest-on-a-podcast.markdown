@@ -11,4 +11,4 @@ For instance, I don't record as soon as I call them over Skype, nor do I live st
 
 I'm going to try and do better on prepping guests before I call them over Skype. I'll be thinking more about what kinds of instructions I'll have for a guest on Springboard. After all, being a guest on a 5by5 show is an honour, but being a guest on Springboard is more like doing _me_ a favour, so I have to be choosey about what kinds of things I ask guests for. If you have suggestions, especially those based on past Springboard shows, please do get in touch.
 
-<!-- more -->
+(READMORE)

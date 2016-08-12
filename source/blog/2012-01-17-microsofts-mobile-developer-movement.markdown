@@ -15,4 +15,4 @@ Publish an app? Get a set of Beats headphones! _Two_ apps? Free Xbox! Three apps
 
 Apple has never had to bribe anyone to write quality iOS apps. While some developers may be incentivized by free toys to develop Windows Mobile apps, I'll stick with writing iOS apps where I get paid real money.
 
-<!-- more -->
+(READMORE)

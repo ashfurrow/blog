@@ -7,4 +7,4 @@ date: 2012-10-20 00:00
 
 Now if only they could make gasoline from all the emissions of gas-powered vehicles.
 
-<!-- more -->
+(READMORE)

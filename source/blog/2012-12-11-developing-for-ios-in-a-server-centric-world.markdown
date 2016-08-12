@@ -26,4 +26,4 @@ _Turns out_, developing iOS apps is different from developing web apps. Like, _h
 
 So, server guys, _please_ stop making assumptions about how easy or difficult tasks are on iOS. iOS development is a completely different world from web apps and it has its own challenges and costs; don't shoehorn your view of software development into the constraints unique to iOS.
 
-<!-- more -->
+(READMORE)
