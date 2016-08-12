@@ -123,10 +123,10 @@ end
 
 desc 'Runs html-proofer against current build/ directory.'
 task :test do
-  require 'html/proofer'
+  require 'html-proofer'
 
   puts 'Testing build/ directory.'
-  HTML::Proofer.new('build/', {
+  HTMLProofer.check_directory('build/', {
     ext: '.html',
     disable_external: true,
     alt_ignore: [/.*/],
