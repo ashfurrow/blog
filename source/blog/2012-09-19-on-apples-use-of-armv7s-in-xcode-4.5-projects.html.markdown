@@ -9,6 +9,6 @@ From the " [don't release code until you've tested it](http://wanderingcoder.net
 
 Neither can I.
 
-You can fix the linker error with [these instructions](/fix-ios-6-sdk-linker-error).
+You can fix the linker error with [these instructions](/blog/fix-ios-6-sdk-linker-error).
 
 (READMORE)
