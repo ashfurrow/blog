@@ -1,0 +1,29 @@
+hr#page_footer/
+footer
+  .container
+    .row
+      == standard_width_div do
+        ul.list-inline.text-center
+          li
+            = link_to 'https://twitter.com/ashfurrow', title: 'Twitter', relative: false do
+              span.fa-stack.fa-lg
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-twitter.fa-stack-1x.fa-inverse
+          li
+            = link_to 'https://github.com/ashfurrow', title: 'GitHub', relative: false do
+              span.fa-stack.fa-lg
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-github.fa-stack-1x.fa-inverse
+          li
+            = link_to 'http://photos.ashfurrow.com', title: 'Photo Blog', relative: false do
+              span.fa-stack.fa-lg
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-picture-o.fa-stack-1x.fa-inverse
+          li
+            = link_to 'http://instagram.com/ashfurrow', title: 'Instagram', relative: false do
+              span.fa-stack.fa-lg
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-instagram.fa-stack-1x.fa-inverse
+
+        p.copyright.text-muted
+          |  This site is <a href='http://github.com/ashfurrow/blog'>open source</a>. <a href='http://purl.org/dc/dcmitype/Text'>Content</a> licensed under <a href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0</a>.

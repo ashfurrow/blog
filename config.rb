@@ -54,7 +54,9 @@ helpers CustomHelpers
 
 activate :syntax
 activate :directory_indexes
-activate :sprockets
+activate :sprockets do |c|
+  c.expose_middleman_helpers = true
+end
 # activate :add_links_to_navigation
 # activate :modify_widths
 # activate :embed

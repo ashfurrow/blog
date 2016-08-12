@@ -1,0 +1,10 @@
+/ Pager
+ul.pager.article_pager
+  - if current_article.next_article
+    li.next
+      = link_to current_article.next_article.url do
+        div= current_article.next_article.title
+  - if current_article.previous_article
+    li.previous
+      = link_to current_article.previous_article.url do
+        div= current_article.previous_article.title

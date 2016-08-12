@@ -231,7 +231,7 @@ DEPENDENCIES
   middleman
   middleman-blog
   middleman-search
-  middleman-sprockets (~> 4.0.0.rc)
+  middleman-sprockets
   middleman-syntax
   nokogiri
   rake
