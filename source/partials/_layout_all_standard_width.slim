@@ -1,0 +1,11 @@
+== wrap_layout :layout do
+
+  == partial 'partials/_header', 
+    locals: { title: current_resource.metadata[:page][:title], 
+      subtitle: current_resource.metadata[:page][:subtitle], 
+      background_image: current_resource.metadata[:page][:background_image] }
+
+  .container
+    .row
+      == standard_width_div do
+        == yield
