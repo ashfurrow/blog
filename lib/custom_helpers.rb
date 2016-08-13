@@ -20,7 +20,7 @@ module CustomHelpers
         return "#{data.site.name} – Blog – Page #{page_number}"
       end
 
-      page_title = current_resource.metadata[:page]["title"]
+      page_title = current_resource.metadata[:page][:title]
       return page_title + ' - ' + data.site.name unless page_title.nil?
     end
 
@@ -42,14 +42,14 @@ module CustomHelpers
 
   def og_image_or_default(current_article, current_resource)
 
-    image = current_resource.metadata[:page]["og_image"]
+    image = current_resource.metadata[:page][:og_image]
 
     if current_article
       doc = Nokogiri::HTML(current_article.body)
       image ||= doc.xpath("//img").map { |img| img["src"] }.first
     end
 
-    image ||= current_resource.metadata[:page]["background_image"]
+    image ||= current_resource.metadata[:page][:background_image]
 
     # Default image
     image ||= data.site.dark_image
@@ -62,8 +62,8 @@ module CustomHelpers
   end
 
   def og_image_or_background(current_resource)
-    image = current_resource.metadata[:page]["og_image"]
-    image ||= current_resource.metadata[:page]["background_image"]
+    image = current_resource.metadata[:page][:og_image]
+    image ||= current_resource.metadata[:page][:background_image]
 
     if image && image[0] == '/'
       image = "https://ashfurrow.com#{image}"
@@ -73,7 +73,7 @@ module CustomHelpers
   end
 
   def twitter_card_type(current_resource)
-    if current_resource.metadata[:page]["og_image"]
+    if current_resource.metadata[:page][:og_image]
       'summary_large_image'
     else
       'summary'
@@ -83,12 +83,12 @@ module CustomHelpers
 
   def page_description
     # Default to any description in the frontmatter of the resource.
-    description = current_resource.metadata[:page]["description"]
+    description = current_resource.metadata[:page][:description]
 
     # If this is a blog article, we can use its summary.
     if current_article
       # Retrieve the summary through frontmatter, or the generated summary.
-      summary = (current_article.metadata[:page]["summary"] or current_article.summary)
+      summary = (current_article.metadata[:page][:summary] or current_article.summary)
       # Grab the first two paragraph tags, strip their HTML, and concatentate them.
       description ||= Nokogiri::HTML(summary).xpath('//p').collect.first(2).map { |paragraph|
         # Escape any HTML in the paragraph. Add a space betwen then all. We'll strip later.
