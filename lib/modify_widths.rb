@@ -17,12 +17,17 @@ require 'middleman-core'
 module Middleman
   class ModifyWidths < Extension
 
+    AllowedLayouts = [
+      "blog_post",
+      "_layout_all_standard_width"
+    ]
+
     def initialize(app, options_hash={}, &block)
       super
 
       app.after_render do |body, path, locs, template|
-        # There are multiple rendering calls and we want to get the one that renders the blog_post template. 
-        if (path.to_s.index "blog_post") != nil
+        # There are multiple rendering calls and we want to get one that renders a permitted template.
+        unless AllowedLayouts.map { |l| path.to_s.index l }.compact.empty?
           body.replace_width_modifiers_with_size! 'WIDE', 'col-lg-10 col-lg-offset-1 col-md-12'
           body.replace_width_modifiers_with_size! 'EXTRA_WIDE', 'col-lg-12 col-md-12'
           body.replace_width_modifiers_with_size! 'NARROW', 'col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2'

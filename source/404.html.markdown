@@ -1,0 +1,11 @@
+---
+title: "404"
+subtitle: Couldn't find that
+noindex: true
+permalink: /404.html
+directory_index: false
+background_image: /img/backgrounds/404.jpg
+layout: partials/_layout_all_standard_width
+---
+
+Couldn't find anything at that address – it's probably not your fault. This site recently moved a lot of things around. [Email me](mailto:ash@ashfurrow.com) and I'll help you find what you're looking for.
