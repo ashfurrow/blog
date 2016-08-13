@@ -4,6 +4,9 @@
     <loc>https://ashfurrow.com/about/</loc>
     <lastmod>2016-08-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://ashfurrow.com/img/backgrounds/about.jpg</image:loc>
+    </image:image>
     <priority>0.75</priority>
   </url>
   <url>
@@ -3679,6 +3682,9 @@
     <loc>https://ashfurrow.com/uicollectionview-the-complete-guide/</loc>
     <lastmod>2016-08-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://ashfurrow.com/img/uicollectionview/background.jpg</image:loc>
+    </image:image>
     <priority>0.5</priority>
   </url>
 </urlset>
