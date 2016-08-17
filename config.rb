@@ -20,7 +20,7 @@ activate :blog do |blog|
   blog.permalink = "{title}.html"
 
   blog.summary_separator = /\(READMORE\)/
-  blog.new_article_template = "new_article.markdown.erb"
+  blog.new_article_template = File.expand_path('new_article.markdown.erb', File.dirname(__FILE__))
   blog.layout = "partials/_blog_post"
 end
 
