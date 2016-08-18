@@ -5,7 +5,7 @@ background_image: /img/blog/smartphones-and-augmenting-humanity/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/766250712091205632
 ---
 
-A few weeks ago, shortly after Pokemon Go launched, I saw a pretty messed up image get circulated 'round the Internet, with comments to the effect of "haha, this is _so_ edgy!" But it made me pretty angry.
+A few weeks ago, shortly after Pokemon Go launched, I saw a pretty messed up image get circulated 'round the internet, with comments to the effect of "haha, this is _so_ edgy!" But it made me pretty angry.
 
 (READMORE)
 
@@ -33,12 +33,12 @@ BEGIN_NARROW
 
 END_NARROW
 
-The internet – and technology in general – is at its best when it helps people lead fulfilling lives. By many measures, smartphones do that. All the thinkpieces criticizing people for using smartphones, all the comics mocking people for using apps, they're all intellectually lazy slop that's designed to satisfy one group of people by othering another. Mostly older folks are the audience for these pieces, and mostly younger folks are the targets. And we all act like mocking people for relying on technology is okay.
+The internet – and technology in general – is at its best when it helps people lead fulfilling lives. By many measures, smartphones do that. All the thinkpieces criticizing people for using smartphones, all the comics mocking people for using apps, they're all intellectually lazy, designed to satisfy one group of people by othering another. And we all act like it's normal to mock people for relying on technology.
 
-Everyone acts like it's acceptable to hate on people who rely on the internet, but it's not. This is just a thing society does in order to shame people who find communicating online easier than in real life. 
+Everyone acts like it's acceptable to hate on people who rely on the internet, but it's not. This is just a thing that society does in order to shame people who find communicating online easier than in real life. 
 
 It's got to stop.
 
-Smartphones augment human intelligence, the internet enable new kinds of friendships, and technology provide new avenues for creativity. Computers are [bicycles for our minds](https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/) and we take them for granted. As a society, we've accepted the idea that relying on technology is a form of weakness. 
+Smartphones augment human intelligence, the internet enables new kinds of friendships, and technology provides new avenues of creativity. Computers are [bicycles for our minds](https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/) and we take them for granted. As a society, we've accepted the idea that relying on technology is a form of weakness. 
 
-No more edgy comics, no more provocative thinkpieces. They're all wrong. If we fail to challenge their message, then we are complicit in the harm they do.
+No more edgy comics. No more provocative thinkpieces. They're all wrong. If we fail to challenge their message, then we are complicit in the harm they do.
