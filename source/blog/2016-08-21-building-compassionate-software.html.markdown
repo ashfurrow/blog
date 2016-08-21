@@ -1,6 +1,6 @@
 ---
 title: Building Compassionate Software
-date: 2016-08-20 19:18:08 UTC
+date: 2016-08-21 12:00:00 UTC
 background_image: /img/blog/building-compassionate-software/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/767029232140779520
 ---
@@ -110,7 +110,7 @@ First, remember that everyone struggles and everyone makes mistakes. If you, as 
 
 Next, all work your team performs should be primarily modelled as exercises in learning. Because that's what they are; when a team build something, you're all really just _learning how to build something_ as a team. The byproduct of this is the thing that happened to built. 
 
-The product a team builds is important to the business' success, so it may seem counterintuitive to place a higher priority on the learning experience of a team than on building the product itself. But remember: by doing this, you're helping to increase the performance of your team so in turn, they're able to build a better product, faster and with fewer bugs. The evidence shows it makes business sense.
+The product a team builds is important to the business' success, so it may seem counterintuitive to place a higher priority on the learning experience of a team than on building the product itself. But remember: by doing this, you're helping to increase the performance of your team so – in turn – they're able to build a better product, faster and with fewer bugs. The evidence shows it makes business sense.
 
 Finally, you need to model curiosity. Ask questions, even silly ones. Ask questions you think you already know the answer to. Help model an environment where learning through curiosity is praised.
 
