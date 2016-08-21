@@ -117,7 +117,7 @@ module CustomHelpers
 
     # Embed any YouTube videos
     require('lib/embed.rb')
-    body.embed_youtube!
+    body.embed_items!
 
     # Remove width modifiers
     require('lib/modify_widths.rb')
