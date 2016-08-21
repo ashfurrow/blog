@@ -19,7 +19,7 @@ I'm going to take us through three main points:
 2. **Teams with Psychological Safety Perform Better.** I'm going to describe what psychological safety means and what it looks like.
 3. **How to Implement Psychological Safety on Your Team.** After we have a firm grasp on feelings and psychological safety, I want to discuss some ways to start improving your team's performance and dynamics.
 
-I've had this topic on my mind for a long time, and the 
+I've had this topic on my mind for a long time, and I'm really excited to get started. Let'd dive in! 
 
 ## Feelings Matter
 
@@ -44,11 +44,7 @@ Empathy is a choice we make. In 1996, [Theresa Wiseman's work](http://onlinelibr
 - Staying non-judgemental.
 - Communicating that you understand.
 
-TODO: move example google calendar
-
 These are things we can do, things we can _choose_ to do.
-
-- We can practice, we can set a Google Calendar reminder to reflect on recent meetings with the intent to empathize with our peers.
 
 This is how someone empathizes, which is core to feelings, which matter. Feelings are important. Now I want to explore what it means to be a member of a team where feelings are prioritized.
 
@@ -74,11 +70,9 @@ Developers – _people_ – need to be able to ask questions when they don't und
 
 There was this one time at Artsy where I was behind schedule on a big feature, which was delaying me from starting work on [something really important](http://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/). I sat down with my team, and we had _just_ started reviewing the designs for all the stuff I had to finish when a designer asked "what if... we just... didn't do any of it?" We hadn't really considered whether the feature I was behind on was worth delaying the next project for. A designer from outside our team was comfortable challenging our assumptions. They were right, we dropped the delayed feature and moved directly on to what was more important.
 
-TODO: Expand or reword?
-
 Because the designer felt comfortable asking questions, we came to a new conclusion we hadn't considered on own.
 
-Psychological safety is observable in teams in two ways[TODO: citation needed]:
+Psychological safety is [observable in teams](http://qz.com/625870/after-years-of-intensive-analysis-google-discovers-the-key-to-good-teamwork-is-being-nice/) in two ways:
 
   1. Conversational turn-taking.
   2. Average emotional sensitivity.
@@ -110,7 +104,7 @@ Leaders and contributors can do three main things to help improve psychological 
 
 1. **Admit fallibility** and normalize struggle.
 2. Frame all work as **learning experiences**.
-3. **Model curiosity** by creating a necessity for voice. TODO clarify
+3. **Model curiosity** by creating a space where opinions are asked for and voices don't need to ask permission.
 
 First, remember that everyone struggles and everyone makes mistakes. If you, as a team lead, make this the norm, then that sends a message to team members that it's okay to make mistakes. Honestly, it's pretty straightforward: you want your team to feel safe when things go wrong, so make sure to act normal when you make a mistake.
 
@@ -125,6 +119,7 @@ This advice is really built upon empathy, which means there are a few other comm
 - Watch out for people getting interrupted in meetings. When you see it, say "hang on, I want to hear the rest of what they have to say."
 - Don't pressure people into providing immediate feedback. Instead of asking on the spot, give time for reflective feedback. "I'll type up what we've discussed and send it to everyone, let me know what isn't clear." 
 - Allow space for your team to revisit discussions if someone feels their voice wasn't heard.
+- We can practice empathy, we can set a Google Calendar reminder to reflect on recent meetings, we can focus on the feelings of our peers.
 
 Psychological safety can be a differentiator at your workplace. It's hard to retain good developers, and it's harder to find them in the first place. Working in a safe environment, where everyone feels like they can ask questions and where everyone is able to do their best work, well that sounds awesome, doesn't it? Implement these suggestions so that your workplace stands out to prospective developers. 
 
