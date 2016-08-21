@@ -74,8 +74,8 @@ If we were in an environment where the designer didn't feel comfortable asking t
 
 Psychological safety is observable in teams in two ways:
 
-  - Conversational turn-taking.
-  - Average emotional sensitivity.
+  1. Conversational turn-taking.
+  2. Average emotional sensitivity.
 
 Conversational turn-taking is a measure of how often people in a conversation switch from talking to listening. One member of a team who dominates the conversation is risking the psychological safety of the entire team. Everyone needs to feel safe having their say, and to revisit a conversation later necessary.
 
