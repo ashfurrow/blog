@@ -94,22 +94,35 @@ I'm glad you asked.
 
 ## How to Implement Psychological Safety on Your Team
 
+Psychological safety is awesome! How do we "do psychological safety" though? That's an interesting question. First we need to talk about the two scenarios you're likely to find yourself in.
 
+If you're a team leader, there's a lot you can do to improve you team's dynamic and – as a consequence – you're team's performance. Let's take a look at those steps after we discuss how individual contributors can help their teams, too.
 
+If you're a team member, then you can still help improve the levels of psychological safety in your team using the same techniques as a team lead. However, you're likely to have the biggest impact if you approach your team lead directly, present the evidence we've discussed, and work on the team dynamic together. This is really their job, they just might not know it yet.
 
+Leaders and contributors can do three main things to help improve psychological safety on their team:
 
+1. **Admit fallibility** and normalize struggle.
+2. Frame all work as **learning experiences**.
+3. **Model curiosity** by creating a necessity for voice.
 
+First, remember that everyone struggles and everyone makes mistakes. If you, as a team lead, make this the norm, then that sends a message to team members that it's okay to make mistakes. Honestly, it's pretty straightforward: you want your team to feel safe when things go wrong, so make sure to act normal when you make a mistake.
 
-- How to improve psych safety:
-  - If you're a team contributor, you can start implementing this stuff, but getting help from your manager is how to best apply it.
-  - If you're a team lead, you've got some work to do.
-- Nuts and bolts:
-  - Admit fallibility, normalize struggle.
-  - Frame all work as primarily a learning experience.
-  - Model curiosity, create a necessity for voice.
-- Watch out for people getting interrupted in meetings, or people not contributing. "Hang on, I want to hear what they have to say."
-- Don't pressure people into providing feedback on the spot, give time for reflective feedback, allow team to revisit discussion if someone feels their voice wasn't heard.
-- Can be a differentiator to help attract/retain talent.
+Next, all work your team performs should be primarily modelled as exercises in learning. Because that's what they are; when a team build something, you're all really just _learning how to build something_ as a team. The byproduct of this is the thing that happened to built. 
+
+The product a team builds is important to the business' success, so it may seem counterintuitive to place a higher priority on the learning experience of a team than on building the product itself. But remember: by doing this, you're helping to increase the performance of your team so in turn, they're able to build a better product, faster and with fewer bugs. The evidence shows it makes business sense.
+
+Finally, you need to model curiosity. Ask questions, even dumb ones. Ask questions you think you already know the answer to. Help model an environment where learning through curiosity is praised.
+
+This advice is really built upon empathy, which means there are a few other common sense tidbits that accompany it:
+
+- Watch out for people getting interrupted in meetings. When you see it, say "hang on, I want to hear the rest of what they have to say."
+- Don't pressure people into providing immediate feedback. Instead of asking on the spot, give time for reflective feedback. "I'll type up what we've discussed and send it to everyone, let me know what isn't clear." 
+- Allow your team to revisit discussion if someone feels their voice wasn't heard.
+
+Psychological safety can be a differentiator at your workplace. It's hard to retain good developers, and it's harder to find them in the first place. Working in a safe environment, where everyone feels like they can ask questions and where everyone is able to do their best work, well that sounds awesome, doesn't it? Implement these suggestions so that your workplace stands out to prospective developers. 
+
+This can be a workplace differentiator, likely more attractive than free snacks or a foosball table to prospective and current colleagues.
 
 ---
   
