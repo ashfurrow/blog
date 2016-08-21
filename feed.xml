@@ -4,10 +4,174 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2016-08-18T20:18:47+00:00</updated>
+  <updated>2016-08-21T12:00:00+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Building Compassionate Software</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/building-compassionate-software/"/>
+    <id>https://ashfurrow.com/blog/building-compassionate-software/</id>
+    <published>2016-08-21T12:00:00+00:00</published>
+    <updated>2016-08-21T12:00:00+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;If you make a mistake, you would want a colleague to point it out to you, right? Just like you would hope a colleague would ask a question when they don&amp;rsquo;t understand something, and just like you want everyone on your team to speak up with ideas, even if they&amp;rsquo;re unconventional. But chances are that you&amp;rsquo;ve been in the position to speak up before and haven&amp;rsquo;t. &lt;/p&gt;
+
+&lt;p&gt;Why? It feels like those scenarios represent a good team dynamic, but what effect do they have on a team&amp;rsquo;s performance? And how can we begin to change a team&amp;rsquo;s dynamic to improve its performance?&lt;/p&gt;
+
+&lt;p&gt;Today we&amp;rsquo;re going to take a look at &lt;em&gt;psychological safety&lt;/em&gt; and how it can help your team perform better. My goal is to give you the evidence you need to take back to your team so we can all improve our workplaces – with enough of us, we can begin to make significant change in our industry and beyond.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to take us through three main points:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Feelings Matter.&lt;/strong&gt; Before we talk about feelings, we should discuss why exactly they matter. There&amp;rsquo;s a lot of evidence here that I&amp;rsquo;m excited to talk about.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Teams with Psychological Safety Perform Better.&lt;/strong&gt; I&amp;rsquo;m going to describe what psychological safety means and what it looks like.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to Implement Psychological Safety on Your Team.&lt;/strong&gt; After we have a firm grasp on feelings and psychological safety, I want to discuss some ways to start improving your team&amp;rsquo;s performance and dynamics.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had this topic on my mind for a long time, and I&amp;rsquo;m really excited to get started. Let&amp;rsquo;d dive in! &lt;/p&gt;
+
+&lt;h2 id="feelings-matter"&gt;Feelings Matter&lt;/h2&gt;
+
+&lt;p&gt;So I&amp;rsquo;ve &lt;a href="https://ashfurrow.com/blog/empathetic-civilization/"&gt;written about this before&lt;/a&gt;, but I&amp;rsquo;ll say it again: &lt;em&gt;feelings matter&lt;/em&gt;. It might sound obvious to you – it might not – so it really does need to be repeated: feelings matter. Compassionate software can&amp;rsquo;t be built without compassion for each other.&lt;/p&gt;
+
+&lt;p&gt;Feelings matter, a lot. &lt;a href="http://qz.com/622749/teens-do-better-in-science-when-they-know-einstein-and-curie-also-struggled/"&gt;We&amp;rsquo;ve actually researched this&lt;/a&gt;: students who learned about the struggles that scientists went through on their way to achieving success did a lot better in science class. And students who &lt;em&gt;didn&amp;rsquo;t&lt;/em&gt; learn started doing &lt;em&gt;worse&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Learning how successful scientists struggle helped students when they inevitably struggled. That&amp;rsquo;s because struggling is normal, but when we neglect to mention the struggles of history&amp;rsquo;s great scientists, we present the incorrect view that they just &lt;em&gt;were great&lt;/em&gt;. And that&amp;rsquo;s not true, &lt;a href="https://ashfurrow.com/blog/normalizing-struggle/"&gt;everyone struggles&lt;/a&gt; sometimes. Students no longer felt like outsiders when &lt;em&gt;they&lt;/em&gt; started to struggle.&lt;/p&gt;
+
+&lt;p&gt;When students see themselves and their own struggles represented in the history of science, they learn to &lt;em&gt;empathize&lt;/em&gt; with scientists. Empathy, the core of emotions, is the practice of sharing another person&amp;rsquo;s point of view and feelings.&lt;/p&gt;
+
+
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/1Evwgu369Jw' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+
+&lt;p&gt;Empathy is a choice we make. In 1996, &lt;a href="http://onlinelibrary.wiley.com/doi/10.1046/j.1365-2648.1996.12213.x/full"&gt;Theresa Wiseman&amp;rsquo;s work&lt;/a&gt; (&lt;a href="https://www.researchgate.net/profile/Theresa_Wiseman/publication/227941757_A_concept_analysis_of_empathy/links/00b4951e409deac34f000000.pdf"&gt;PDF&lt;/a&gt;) categorized four necessary components to empathy:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Seeing the world as others see it.&lt;/li&gt;
+&lt;li&gt;Recognizing and understanding another&amp;rsquo;s feelings.&lt;/li&gt;
+&lt;li&gt;Staying non-judgemental.&lt;/li&gt;
+&lt;li&gt;Communicating that you understand.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are things we can do, things we can &lt;em&gt;choose&lt;/em&gt; to do.&lt;/p&gt;
+
+&lt;p&gt;This is how someone empathizes, which is core to feelings, which matter. Feelings are important. Now I want to explore what it means to be a member of a team where feelings are prioritized.&lt;/p&gt;
+
+&lt;h2 id="teams-with-psychological-safety-perform-better"&gt;Teams with Psychological Safety Perform Better&lt;/h2&gt;
+
+&lt;p&gt;So you want to be a 10x developer, eh? You may have heard that the 10x developer is a myth, but that&amp;rsquo;s not true: a 10x developer is someone who makes the five developers around them each twice as productive. You can be a 10x developer by making sure that your team has psychological safety.&lt;/p&gt;
+
+&lt;p&gt;Psychological safety is defined as&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The belief that one will not be punished or humiliated for speaking up with ideas, questions, concerns, or mistakes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I know this sounds touchy-feely, but there is data to back this up! Google spent &lt;em&gt;five years&lt;/em&gt; on &lt;a href="http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html?_r=0"&gt;Project Aristotle&lt;/a&gt; searching for the answer to &lt;em&gt;what makes some teams perform really well and other teams perform poorly?&lt;/em&gt; They examined &lt;em&gt;a tonne&lt;/em&gt; of data and eventually – after extensive searching – they found psychological safety is correlated positively with team success.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There were other behaviors that seemed important as well — like making sure teams had clear goals and creating a culture of dependability. But Google’s data indicated that psychological safety, more than anything else, was critical to making a team work.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is &lt;em&gt;Google&lt;/em&gt;. They A/B test shades of blue to use on the Gmail &amp;ldquo;Send&amp;rdquo; button. They are &lt;em&gt;the&lt;/em&gt; data-driven organization, and their research came to the conclusion that teams with psychological safety were more successful than teams without.&lt;/p&gt;
+
+&lt;p&gt;Remember, psychological safety is the belief that you won&amp;rsquo;t be punished for saying something. That&amp;rsquo;s fairly basic, but think about it: I&amp;rsquo;m sure you&amp;rsquo;ve worked in groups where this wasn&amp;rsquo;t the case. Was that project a success, or a failure?&lt;/p&gt;
+
+&lt;div class='embed-responsive embed-responsive-4by3'&gt;&lt;iframe src='//www.youtube.com/embed/LhoLuui9gX8' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;Developers – &lt;em&gt;people&lt;/em&gt; – need to be able to ask questions when they don&amp;rsquo;t understand something. We need to feel free to suggest ideas or concerns, to be able to point out and admit mistakes. This is really necessary for development teams, and &lt;em&gt;especially&lt;/em&gt; necessary in resource-strained startups where missteps could cost the company.&lt;/p&gt;
+
+&lt;p&gt;There was this one time at Artsy where I was behind schedule on a big feature, which was delaying me from starting work on &lt;a href="http://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/"&gt;something really important&lt;/a&gt;. I sat down with my team, and we had &lt;em&gt;just&lt;/em&gt; started reviewing the designs for all the stuff I had to finish when a designer asked &amp;ldquo;what if&amp;hellip; we just&amp;hellip; don&amp;rsquo;t do any of it?&amp;rdquo; We hadn&amp;rsquo;t really considered whether the feature I was behind on was worth delaying the next project for. A designer from outside our team was comfortable challenging our assumptions. They were right, we dropped the delayed feature and moved directly on to what was more important.&lt;/p&gt;
+
+&lt;p&gt;Because the designer felt comfortable asking questions, we came to a new conclusion we hadn&amp;rsquo;t considered on own.&lt;/p&gt;
+
+&lt;p&gt;Psychological safety is &lt;a href="http://qz.com/625870/after-years-of-intensive-analysis-google-discovers-the-key-to-good-teamwork-is-being-nice/"&gt;observable in teams&lt;/a&gt; in two ways:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Conversational turn-taking.&lt;/li&gt;
+&lt;li&gt;Average emotional sensitivity.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Conversational turn-taking is a measure of how often people in a conversation switch from talking to listening. One member of a team who dominates the conversation is risking the psychological safety of the entire team. Everyone needs to feel safe having their say, and to revisit a conversation later if necessary.&lt;/p&gt;
+
+&lt;p&gt;Average emotional sensitivity is a bit trickier. Emotional sensitivity is basically a measure of how empathetic some is to another&amp;rsquo;s feelings. For example, how often does one colleague notice another colleague is having a difficult time? And when they notice, do they try to understand? Do they stay non-judgemental? And do they communicate that understanding?&lt;/p&gt;
+
+&lt;p&gt;Psychological safety really ought to be expected at your workplace. At any workplace, really, for two reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;It makes team members feel safer: everyone is welcome.&lt;/li&gt;
+&lt;li&gt;It makes business sense: teams with high levels of psychological safety consistently perform better than those without.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Everyone&lt;/em&gt; at your workplace should expect these things: from contributors and leadership, C-levels and the company board.&lt;/p&gt;
+
+&lt;p&gt;Okay. So feelings matter, and psychological safety is why high-performing teams do so well. But how would one go about improving their team&amp;rsquo;s dynamic? Where do we start?&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m glad you asked.&lt;/p&gt;
+
+&lt;h2 id="how-to-implement-psychological-safety-on-your-team"&gt;How to Implement Psychological Safety on Your Team&lt;/h2&gt;
+
+&lt;p&gt;Psychological safety is awesome! How do we &amp;ldquo;do psychological safety&amp;rdquo; though? That&amp;rsquo;s an interesting question. First we need to talk about the two scenarios you&amp;rsquo;re likely to find yourself in.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re a team leader, there&amp;rsquo;s a lot you can do to improve your team&amp;rsquo;s dynamic and – as a consequence – your team&amp;rsquo;s performance. Let&amp;rsquo;s take a look at those steps after we discuss how individual contributors can help their teams, too.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re a team member, then you can still help improve the levels of psychological safety in your team using the same techniques as a team lead. However, you&amp;rsquo;re likely to have the biggest impact if you approach your team lead directly, present the evidence we&amp;rsquo;ve discussed, and work on the team dynamic together. This is really their job, they just might not know it yet.&lt;/p&gt;
+
+&lt;p&gt;Leaders and contributors can do three main things to help improve psychological safety on their team:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Admit fallibility&lt;/strong&gt; and normalize struggle.&lt;/li&gt;
+&lt;li&gt;Frame all work as &lt;strong&gt;learning experiences&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model curiosity&lt;/strong&gt; by creating a space where opinions are asked for and voices don&amp;rsquo;t need to ask permission.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;First, remember that everyone struggles and everyone makes mistakes. If you, as a team lead, make this the norm, then that sends a message to team members that it&amp;rsquo;s okay to make mistakes. Honestly, it&amp;rsquo;s pretty straightforward: you want your team to feel safe when things go wrong, so make sure to act normal when you make a mistake.&lt;/p&gt;
+
+&lt;p&gt;Next, all work your team performs should be primarily modelled as exercises in learning. Because that&amp;rsquo;s what they are; when a team build something, you&amp;rsquo;re all really just &lt;em&gt;learning how to build something&lt;/em&gt; as a team. The byproduct of this is the thing that happened to built. &lt;/p&gt;
+
+&lt;p&gt;The product a team builds is important to the business&amp;rsquo; success, so it may seem counterintuitive to place a higher priority on the learning experience of a team than on building the product itself. But remember: by doing this, you&amp;rsquo;re helping to increase the performance of your team so – in turn – they&amp;rsquo;re able to build a better product, faster and with fewer bugs. The evidence shows it makes business sense.&lt;/p&gt;
+
+&lt;p&gt;Finally, you need to model curiosity. Ask questions, even silly ones. Ask questions you think you already know the answer to. Help model an environment where learning through curiosity is praised.&lt;/p&gt;
+
+&lt;p&gt;This advice is really built upon empathy, which means there are a few other common sense tidbits that accompany it:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Watch out for people getting interrupted in meetings. When you see it, say &amp;ldquo;hang on, I want to hear the rest of what they have to say.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t pressure people into providing immediate feedback. Instead of asking on the spot, give time for reflective feedback. &amp;ldquo;I&amp;rsquo;ll type up what we&amp;rsquo;ve discussed and send it to everyone, let me know what isn&amp;rsquo;t clear.&amp;rdquo; &lt;/li&gt;
+&lt;li&gt;Allow space for your team to revisit discussions if someone feels their voice wasn&amp;rsquo;t heard.&lt;/li&gt;
+&lt;li&gt;We can practice empathy, we can set a Google Calendar reminder to reflect on recent meetings, we can focus on the feelings of our peers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Psychological safety can be a differentiator at your workplace. It&amp;rsquo;s hard to retain good developers, and it&amp;rsquo;s harder to find them in the first place. Working in a safe environment, where everyone feels like they can ask questions and where everyone is able to do their best work, well that sounds awesome, doesn&amp;rsquo;t it? Implement these suggestions so that your workplace stands out to prospective developers. &lt;/p&gt;
+
+&lt;p&gt;This can be a workplace differentiator, likely more attractive than free snacks or a foosball table to prospective colleagues. Show your potential hires how you structure meetings, give them examples where you made a mistake but learned something, tell them a story about how someone asked a question and it had a big impact.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;We&amp;rsquo;ve covered a lot today, from some initial questions to empathy, and from definition of &amp;lsquo;psychological safety&amp;rsquo; to steps on improving it in your team. That&amp;rsquo;s a lot to take in, why not set a reminder somewhere to wait a week, think things over, and revisit this post.&lt;/p&gt;
+
+&lt;p&gt;We have the evidence that shows how an ideal team works, but we see our industry falling short of that ideal. But! We have the tools to improve ourselves, our teams, and our industry. I really hope that teams operating in psychological safety become the norm, something to expect at any job. We&amp;rsquo;ve got a long way to go before we reach that point, but I know we can do it if we work together.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Like I said, I&amp;rsquo;ve had this topic on my mind for a long time, though I didn&amp;rsquo;t have the vocabulary to discuss it or the evidence to support my theories. A few months ago, I attended the &lt;a href="http://www.osfeels.com"&gt;Open Source &amp;amp; Feelings&lt;/a&gt; conference, and the talks there really helped frame a lot of my thoughts. I found the following talk particularly helpful, and led me to a lot of the points I discussed today.&lt;/p&gt;
+
+
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/OdHH5KWGTNo' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+
+&lt;p&gt;I&amp;rsquo;m presenting on this topic at a &lt;a href="http://www.meetup.com/iOSoho/events/226405664/"&gt;meetup here in New York&lt;/a&gt; in October. I&amp;rsquo;d love to see you there, hear what you think, and talk about how we can all help improve the industry together.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Smartphones and Augmenting Humanity</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/smartphones-and-augmenting-humanity/"/>
@@ -226,89 +390,6 @@
 &lt;p&gt;This isn&amp;rsquo;t just to keep my inbox manageable, you should do this for your own sake: chances are there are other people watching the issues that can help you faster than I can. Your issue will probably get answered faster than I can answer an email or tweet.&lt;/p&gt;
 
 &lt;p&gt;Open source is big, it&amp;rsquo;s many-to-many, and when you email or tweet at me, that really limits how many people can benefit from my response. &lt;a href="https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/"&gt;Being nice is nice&lt;/a&gt;, so be nice.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Blogging Workshop Notes</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/blogging-workshop-notes/"/>
-    <id>https://ashfurrow.com/blog/blogging-workshop-notes/</id>
-    <published>2016-08-01T18:22:58+00:00</published>
-    <updated>2016-08-01T18:22:58+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;This week, at Artsy&amp;rsquo;s offsite, Orta and I are leading a workshop named &amp;ldquo;Bootstrap your Blog!&amp;rdquo; where we&amp;rsquo;ll try to get participants most of the way towards their first blog post. This advice is widely applicable, so I thought I&amp;rsquo;d share it here. &lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the introductory email we sent participants.&lt;/p&gt;
-
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Hello team! Orta and I are super-excited you&amp;rsquo;re coming to our &amp;ldquo;Bootstrap your Blog&amp;rdquo; workshop at Artsy&amp;rsquo;s offsite! Here&amp;rsquo;s a brief intro describing the workshop and a small bit of necessary preparation.&lt;/p&gt;
-
-&lt;p&gt;Our workshop&amp;rsquo;s goal is to get you most of the way towards writing your first blog post. We&amp;rsquo;ll be describing what a good blog post is, how to write one, and most importantly: how to recognize when to write a blog post.&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll need to bring an idea to blog about. This idea should be something you care about – the more you care, the easier it&amp;rsquo;ll be to blog. It can be related to Artsy, or not, as long as you care about it. Try to think of something you&amp;rsquo;ve recently learned, or were surprised by, and bring that idea with you.&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;re recommending you use pencil and paper, which suits the offsite a little better than computers. We&amp;rsquo;ll have materials, but you&amp;rsquo;re welcome to use a laptop or tablet if that&amp;rsquo;s more comfortable.&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;re really looking forward to this because we both believe in a world where everyone benefits when we all share our experiences. It&amp;rsquo;s exciting and rewarding to be there as you take your first steps into that world, but remember that the most important thing is that you enjoy yourself. Have fun!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;The email is meant to be encouraging without applying too much pressure. People get caught up in the details of writing and that can be discouraging. Instead, I&amp;rsquo;ve tried to frame our introduction as a learning exercise so that making mistakes, or not completing a blog post, are totally acceptable. I write half blog posts all the time and they never get published, and that&amp;rsquo;s okay.&lt;/p&gt;
-
-&lt;p&gt;Here are the main points we&amp;rsquo;re going to cover in the actual workshop.&lt;/p&gt;
-
-&lt;h2 id="how-to-recognize-when-to-blog"&gt;How to recognize when to blog?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Blogging is easiest and most effective when the blogger &lt;em&gt;cares&lt;/em&gt; about the subject.&lt;/li&gt;
-&lt;li&gt;The more you care about the subject, the more you should blog about it.&lt;/li&gt;
-&lt;li&gt;If you learn something, if something wasn&amp;rsquo;t immediately obvious to you, if something surprised you, write down a few notes. You probably won&amp;rsquo;t remember this later, but these little things can turn out to be the most important part of your post.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="what-is-a-good-blog-post"&gt;What is a good blog post?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A good blog post is usually short, even a few paragraphs can be effective.&lt;/li&gt;
-&lt;li&gt;A good blog post usually tells a story. The better storytelling, the better the blog post.&lt;/li&gt;
-&lt;li&gt;Blog posts, like all stories, usually follow the &lt;a href="https://en.wikipedia.org/wiki/Hero%27s_journey"&gt;Hero&amp;rsquo;s Journey&lt;/a&gt; (and you&amp;rsquo;re the hero!). Here are 5 good steps for a blog post:
-
-&lt;ol&gt;
-&lt;li&gt;The Ordinary World&lt;/li&gt;
-&lt;li&gt;The Call to Adventure&lt;/li&gt;
-&lt;li&gt;The Ordeal&lt;/li&gt;
-&lt;li&gt;The Reward&lt;/li&gt;
-&lt;li&gt;The Return&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;The story your blog posts should tell is &lt;em&gt;your&lt;/em&gt; story. Since &lt;em&gt;you&amp;rsquo;re&lt;/em&gt; the best person to tell your story, don&amp;rsquo;t worry about blogging something that another blogger has already discussed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="how-to-start-writing-a-post"&gt;How to start writing a post?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Start with a stream of consciousness process. Either:
-
-&lt;ul&gt;
-&lt;li&gt;Stream an outline of the story and fill in details later.&lt;/li&gt;
-&lt;li&gt;Stream a story and organize it later.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Starting is the hardest part.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="miscellaneous-advice"&gt;Miscellaneous advice&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Worry about where to put it, formatting, etc &lt;em&gt;last&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;As a medium, blogs are not printed on paper. They exist on the web, and can be corrected. Don&amp;rsquo;t worry too much about publishing something less than perfect.&lt;/li&gt;
-&lt;li&gt;Orta and I can help you get set up putting your blog post online when we get back to New York. Just worry about the content :)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And that&amp;rsquo;s it! Remember to relax, take it easy, and remember: your blog doesn&amp;rsquo;t need to be perfect, it just needs to be yours.&lt;/p&gt;
 </content>
   </entry>
 </feed>
