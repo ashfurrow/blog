@@ -68,7 +68,7 @@ YOUTUBE43 LhoLuui9gX8
 
 Developers – _people_ – need to be able to ask questions when they don't understand something. We need to feel free to suggest ideas or concerns, to be able to point out and admit mistakes. This is really necessary for development teams, and _especially_ necessary in resource-strained startups where missteps could cost the company.
 
-There was this one time at Artsy where I was behind schedule on a big feature, which was delaying me from starting work on [something really important](http://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/). I sat down with my team, and we had _just_ started reviewing the designs for all the stuff I had to finish when a designer asked "what if... we just... didn't do any of it?" We hadn't really considered whether the feature I was behind on was worth delaying the next project for. A designer from outside our team was comfortable challenging our assumptions. They were right, we dropped the delayed feature and moved directly on to what was more important.
+There was this one time at Artsy where I was behind schedule on a big feature, which was delaying me from starting work on [something really important](http://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/). I sat down with my team, and we had _just_ started reviewing the designs for all the stuff I had to finish when a designer asked "what if... we just... don't do any of it?" We hadn't really considered whether the feature I was behind on was worth delaying the next project for. A designer from outside our team was comfortable challenging our assumptions. They were right, we dropped the delayed feature and moved directly on to what was more important.
 
 Because the designer felt comfortable asking questions, we came to a new conclusion we hadn't considered on own.
 
@@ -123,7 +123,7 @@ This advice is really built upon empathy, which means there are a few other comm
 
 Psychological safety can be a differentiator at your workplace. It's hard to retain good developers, and it's harder to find them in the first place. Working in a safe environment, where everyone feels like they can ask questions and where everyone is able to do their best work, well that sounds awesome, doesn't it? Implement these suggestions so that your workplace stands out to prospective developers. 
 
-This can be a workplace differentiator, likely more attractive than free snacks or a foosball table to prospective and current colleagues.
+This can be a workplace differentiator, likely more attractive than free snacks or a foosball table to prospective colleagues. Show your potential hires how you structure meetings, give them examples where you made a mistake but learned something, tell them a story about how someone asked a question and it had a big impact.
 
 ---
   
