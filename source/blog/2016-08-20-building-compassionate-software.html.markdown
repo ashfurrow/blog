@@ -11,16 +11,15 @@ TODO: Intro.
 
 BEGIN_WIDE
 
-// TODO: OSFeels talk
+// TODO: OSFeels talk?
+
 YOUTUBE OdHH5KWGTNo
 
 END_WIDE
 
-BEGIN_WIDE
-// TODO: Amy Edmunson's talk
-YOUTUBE LhoLuui9gX8
+// TODO: Amy Edmunson's talk?
 
-END_WIDE
+YOUTUBE43 LhoLuui9gX8
 
 ## Feelings Matter
 
