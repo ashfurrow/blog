@@ -50,7 +50,15 @@ This is how someone empathizes, which is core to feelings, which matter. Feeling
 
 ## Teams with Psychological Safety Perform Better
 
-So you want to be a 10x developer, eh? You may have heard that the 10x developer is a myth, but that's not true: a 10x developer is someone who makes the five developers around them each twice as productive. You can be a 10x developer by making sure that your team has psychological safety.
+So you want to be a 10x developer, eh? You may have heard that the 10x developer is a myth, but that's not true: a 10x developer is someone who makes the ten developers around them each twice as productive.
+
+BEGIN_NARROW
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">How to be a 10x engineer: help ten other engineers be twice as good.</p>&mdash; Peter Seibel (@peterseibel) <a href="https://twitter.com/peterseibel/status/512615519934230528">September 18, 2014</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+END_NARROW
+
+You can be a 10x developer by making sure that your team has psychological safety.
 
 Psychological safety is defined as
   
