@@ -23,11 +23,11 @@ I've had this topic on my mind for a long time, and the
 
 ## Feelings Matter
 
-So I've [written about this before](https://ashfurrow.com/blog/empathetic-civilization/), but I'll say it again: _feelings matter_. It might sound obvious to you, but it really does need to be repeated. Compassionate software can't be built without compassion for each other.
+So I've [written about this before](https://ashfurrow.com/blog/empathetic-civilization/), but I'll say it again: _feelings matter_. It might sound obvious to you – it might not – so it really does need to be repeated: feelings matter. Compassionate software can't be built without compassion for each other.
 
-Feelings matter, a lot. [We've actually researched this](http://qz.com/622749/teens-do-better-in-science-when-they-know-einstein-and-curie-also-struggled/): students who learned about the struggles that scientists went through on their way to achieving success did a lot better in science class. And students who _didn't_ learn did started doing _worse_.
+Feelings matter, a lot. [We've actually researched this](http://qz.com/622749/teens-do-better-in-science-when-they-know-einstein-and-curie-also-struggled/): students who learned about the struggles that scientists went through on their way to achieving success did a lot better in science class. And students who _didn't_ learn started doing _worse_.
 
-Learning how successful scientists struggle helped students when they inevitably struggled. That's because struggling is normal, but when we neglect to mention the struggles of history's great scientists, we present the incorrect view that they just _were great_. And that's not true, [everyone struggles](https://ashfurrow.com/blog/normalizing-struggle/) sometimes.
+Learning how successful scientists struggle helped students when they inevitably struggled. That's because struggling is normal, but when we neglect to mention the struggles of history's great scientists, we present the incorrect view that they just _were great_. And that's not true, [everyone struggles](https://ashfurrow.com/blog/normalizing-struggle/) sometimes. Students no longer felt like outsiders when _they_ started to struggle.
 
 When students see themselves and their own struggles represented in the history of science, they learn to _empathize_ with scientists. Empathy, the core of emotions, is the practice of sharing another person's point of view and feelings.
 
@@ -37,14 +37,18 @@ YOUTUBE 1Evwgu369Jw
 
 END_WIDE
 
-Empathy is a choice we make. In 1996, [Theresa Wiseman's work](http://onlinelibrary.wiley.com/doi/10.1046/j.1365-2648.1996.12213.x/full) ([PDF](https://www.researchgate.net/profile/Theresa_Wiseman/publication/227941757_A_concept_analysis_of_empathy/links/00b4951e409deac34f000000.pdf)) explained that there are four components to empathy:
+Empathy is a choice we make. In 1996, [Theresa Wiseman's work](http://onlinelibrary.wiley.com/doi/10.1046/j.1365-2648.1996.12213.x/full) ([PDF](https://www.researchgate.net/profile/Theresa_Wiseman/publication/227941757_A_concept_analysis_of_empathy/links/00b4951e409deac34f000000.pdf)) categorized four necessary components to empathy:
 
 - Seeing the world as others see it.
 - Recognizing and understanding another's feelings.
 - Staying non-judgemental.
 - Communicating that you understand.
 
-These are things we can do, things we can _choose_ to do. We can practice, we can set a Google Calendar reminder to reflect on recent meetings with the intent to empathize with our peers.
+TODO: move example google calendar
+
+These are things we can do, things we can _choose_ to do.
+
+- We can practice, we can set a Google Calendar reminder to reflect on recent meetings with the intent to empathize with our peers.
 
 This is how someone empathizes, which is core to feelings, which matter. Feelings are important. Now I want to explore what it means to be a member of a team where feelings are prioritized.
 
@@ -56,7 +60,7 @@ Psychological safety is defined as
   
 > The belief that one will not be punished or humiliated for speaking up with ideas, questions, concerns, or mistakes.
 
-I know this sounds kind of touchy-feely, but there is data to back this up! Google spent _five years_ on [Project Aristotle](http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html?_r=0) searching for the answer to _what makes some teams perform really well and other teams perform poorly?_ They examined _a tonne_ of data and eventually – after extensive searching – they found psychological safety is correlated positively with team success.
+I know this sounds touchy-feely, but there is data to back this up! Google spent _five years_ on [Project Aristotle](http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html?_r=0) searching for the answer to _what makes some teams perform really well and other teams perform poorly?_ They examined _a tonne_ of data and eventually – after extensive searching – they found psychological safety is correlated positively with team success.
 
 > There were other behaviors that seemed important as well — like making sure teams had clear goals and creating a culture of dependability. But Google’s data indicated that psychological safety, more than anything else, was critical to making a team work.
 
@@ -66,24 +70,26 @@ Remember, psychological safety is the belief that you won't be punished for sayi
 
 YOUTUBE43 LhoLuui9gX8
 
-Developers need to be able to ask questions when they don't understand something. We need to feel free to suggest ideas or concerns, to be able to point out and admit mistakes. This is really necessary for development teams, and _especially_ necessary in resource-strained startups where missteps could cost the company.
+Developers – _people_ – need to be able to ask questions when they don't understand something. We need to feel free to suggest ideas or concerns, to be able to point out and admit mistakes. This is really necessary for development teams, and _especially_ necessary in resource-strained startups where missteps could cost the company.
 
-There was this one time at Artsy where I was behind schedule on a big feature, which was delaying me from starting work on [something really important](http://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/). I sat down with my team, and we had _just_ started reviewing the designs for all the stuff I had to finish when a designer asked "what if... we just... didn't do any of it?" We hadn't really considered whether the feature I was behind on was worth delaying the next project. A designer from outside our team was comfortable challenging our assumptions. They were right, we dropped the delayed feature and moved directly on to what was more important.
+There was this one time at Artsy where I was behind schedule on a big feature, which was delaying me from starting work on [something really important](http://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/). I sat down with my team, and we had _just_ started reviewing the designs for all the stuff I had to finish when a designer asked "what if... we just... didn't do any of it?" We hadn't really considered whether the feature I was behind on was worth delaying the next project for. A designer from outside our team was comfortable challenging our assumptions. They were right, we dropped the delayed feature and moved directly on to what was more important.
 
-If we were in an environment where the designer didn't feel comfortable asking that question, we could have seriously jeopardized the success of the product. But instead, the product succeeded.
+TODO: Expand or reword?
 
-Psychological safety is observable in teams in two ways:
+Because the designer felt comfortable asking questions, we came to a new conclusion we hadn't considered on own.
+
+Psychological safety is observable in teams in two ways[TODO: citation needed]:
 
   1. Conversational turn-taking.
   2. Average emotional sensitivity.
 
-Conversational turn-taking is a measure of how often people in a conversation switch from talking to listening. One member of a team who dominates the conversation is risking the psychological safety of the entire team. Everyone needs to feel safe having their say, and to revisit a conversation later necessary.
+Conversational turn-taking is a measure of how often people in a conversation switch from talking to listening. One member of a team who dominates the conversation is risking the psychological safety of the entire team. Everyone needs to feel safe having their say, and to revisit a conversation later if necessary.
 
 Average emotional sensitivity is a bit trickier. Emotional sensitivity is basically a measure of how empathetic some is to another's feelings. For example, how often does one colleague notice another colleague is having a difficult time? And when they notice, do they try to understand? Do they stay non-judgemental? And do they communicate that understanding?
 
 Psychological safety really ought to be expected at your workplace. At any workplace, really, for two reasons:
 
-1. It makes team members feel safer, like everyone is welcome.
+1. It makes team members feel safer: everyone is welcome.
 2. It makes business sense: teams with high levels of psychological safety consistently perform better than those without.
 
 _Everyone_ at your workplace should expect these things: from contributors and leadership, C-levels and the company board.
@@ -96,7 +102,7 @@ I'm glad you asked.
 
 Psychological safety is awesome! How do we "do psychological safety" though? That's an interesting question. First we need to talk about the two scenarios you're likely to find yourself in.
 
-If you're a team leader, there's a lot you can do to improve you team's dynamic and – as a consequence – you're team's performance. Let's take a look at those steps after we discuss how individual contributors can help their teams, too.
+If you're a team leader, there's a lot you can do to improve your team's dynamic and – as a consequence – your team's performance. Let's take a look at those steps after we discuss how individual contributors can help their teams, too.
 
 If you're a team member, then you can still help improve the levels of psychological safety in your team using the same techniques as a team lead. However, you're likely to have the biggest impact if you approach your team lead directly, present the evidence we've discussed, and work on the team dynamic together. This is really their job, they just might not know it yet.
 
@@ -104,7 +110,7 @@ Leaders and contributors can do three main things to help improve psychological 
 
 1. **Admit fallibility** and normalize struggle.
 2. Frame all work as **learning experiences**.
-3. **Model curiosity** by creating a necessity for voice.
+3. **Model curiosity** by creating a necessity for voice. TODO clarify
 
 First, remember that everyone struggles and everyone makes mistakes. If you, as a team lead, make this the norm, then that sends a message to team members that it's okay to make mistakes. Honestly, it's pretty straightforward: you want your team to feel safe when things go wrong, so make sure to act normal when you make a mistake.
 
@@ -112,13 +118,13 @@ Next, all work your team performs should be primarily modelled as exercises in l
 
 The product a team builds is important to the business' success, so it may seem counterintuitive to place a higher priority on the learning experience of a team than on building the product itself. But remember: by doing this, you're helping to increase the performance of your team so in turn, they're able to build a better product, faster and with fewer bugs. The evidence shows it makes business sense.
 
-Finally, you need to model curiosity. Ask questions, even dumb ones. Ask questions you think you already know the answer to. Help model an environment where learning through curiosity is praised.
+Finally, you need to model curiosity. Ask questions, even silly ones. Ask questions you think you already know the answer to. Help model an environment where learning through curiosity is praised.
 
 This advice is really built upon empathy, which means there are a few other common sense tidbits that accompany it:
 
 - Watch out for people getting interrupted in meetings. When you see it, say "hang on, I want to hear the rest of what they have to say."
 - Don't pressure people into providing immediate feedback. Instead of asking on the spot, give time for reflective feedback. "I'll type up what we've discussed and send it to everyone, let me know what isn't clear." 
-- Allow your team to revisit discussion if someone feels their voice wasn't heard.
+- Allow space for your team to revisit discussions if someone feels their voice wasn't heard.
 
 Psychological safety can be a differentiator at your workplace. It's hard to retain good developers, and it's harder to find them in the first place. Working in a safe environment, where everyone feels like they can ask questions and where everyone is able to do their best work, well that sounds awesome, doesn't it? Implement these suggestions so that your workplace stands out to prospective developers. 
 
@@ -140,4 +146,4 @@ YOUTUBE OdHH5KWGTNo
 
 END_WIDE
 
-I'm presenting on this topic at a [Meetup here in New York](http://www.meetup.com/iOSoho/events/226405664/) in October. I'd love to see you there, hear what you think, and talk about how we can all help improve the industry together.
+I'm presenting on this topic at a [meetup here in New York](http://www.meetup.com/iOSoho/events/226405664/) in October. I'd love to see you there, hear what you think, and talk about how we can all help improve the industry together.
