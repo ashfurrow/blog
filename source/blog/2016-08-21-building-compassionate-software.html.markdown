@@ -19,7 +19,7 @@ I'm going to take us through three main points:
 2. **Teams with Psychological Safety Perform Better.** I'm going to describe what psychological safety means and what it looks like.
 3. **How to Implement Psychological Safety on Your Team.** After we have a firm grasp on feelings and psychological safety, I want to discuss some ways to start improving your team's performance and dynamics.
 
-I've had this topic on my mind for a long time, and I'm really excited to get started. Let'd dive in! 
+I've had this topic on my mind for a long time, and I'm really excited to get started. Let's dive in! 
 
 ## Feelings Matter
 
@@ -78,7 +78,7 @@ Developers – _people_ – need to be able to ask questions when they don't und
 
 There was this one time at Artsy where I was behind schedule on a big feature, which was delaying me from starting work on [something really important](http://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/). I sat down with my team, and we had _just_ started reviewing the designs for all the stuff I had to finish when a designer asked "what if... we just... don't do any of it?" We hadn't really considered whether the feature I was behind on was worth delaying the next project for. A designer from outside our team was comfortable challenging our assumptions. They were right, we dropped the delayed feature and moved directly on to what was more important.
 
-Because the designer felt comfortable asking questions, we came to a new conclusion we hadn't considered on own.
+Because the designer felt comfortable asking questions, we came to a new conclusion we hadn't considered on our own.
 
 Psychological safety is [observable in teams](http://qz.com/625870/after-years-of-intensive-analysis-google-discovers-the-key-to-good-teamwork-is-being-nice/) in two ways:
 
