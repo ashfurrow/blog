@@ -29,7 +29,7 @@ This really challenged me. There is no one-to-one mapping from playgrounds to pl
 
 ## How to get started?
 
-Follow the [installation instructions][install] in the readme. Basically just run `gem install playgrounds`, with `sudo` if necessary. 
+Follow the [installation instructions][install] in the readme. Basically just run `gem install playgroundbook`, with `sudo` if necessary. 
 
 The readme has instructions on how to use the tool, but here's a more in-depth explanation. You need two things:
 
