@@ -32,7 +32,7 @@
 
 &lt;h2 id="how-to-get-started"&gt;How to get started?&lt;/h2&gt;
 
-&lt;p&gt;Follow the &lt;a href="https://github.com/ashfurrow/playgroundbook#installation"&gt;installation instructions&lt;/a&gt; in the readme. Basically just run &lt;code&gt;gem install playgrounds&lt;/code&gt;, with &lt;code&gt;sudo&lt;/code&gt; if necessary. &lt;/p&gt;
+&lt;p&gt;Follow the &lt;a href="https://github.com/ashfurrow/playgroundbook#installation"&gt;installation instructions&lt;/a&gt; in the readme. Basically just run &lt;code&gt;gem install playgroundbook&lt;/code&gt;, with &lt;code&gt;sudo&lt;/code&gt; if necessary. &lt;/p&gt;
 
 &lt;p&gt;The readme has instructions on how to use the tool, but here&amp;rsquo;s a more in-depth explanation. You need two things:&lt;/p&gt;
 
