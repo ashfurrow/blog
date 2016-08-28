@@ -11,7 +11,7 @@ I wanted in.
 
 (READMORE)
 
-I watched and re-watched [the Swift playground video][wwdc] to wrap my head around the capabilities of playground books, from an author's perspective, and a learner's too. Playground books are not complex in theory: a nested folder structure with `Manfiest.plist` files with book metadata. But that structure needs to be precisely adhered to, or the book won't work on the iPad.
+I watched and re-watched [the Swift playground video][wwdc] to wrap my head around the capabilities of playground books, from an author's perspective, and a learner's too. Playground books are not complex in theory: a nested folder structure with `Manifest.plist` files with book metadata. But that structure needs to be precisely adhered to, or the book won't work on the iPad.
 
 BEGIN_WIDE
 
