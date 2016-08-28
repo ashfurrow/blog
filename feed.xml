@@ -23,7 +23,7 @@
 
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;I watched and re-watched &lt;a href="https://developer.apple.com/videos/play/wwdc2016/408/"&gt;the Swift playground video&lt;/a&gt; to wrap my head around the capabilities of playground books, from an author&amp;rsquo;s perspective, and a learner&amp;rsquo;s too. Playground books are not complex in theory: a nested folder structure with &lt;code&gt;Manfiest.plist&lt;/code&gt; files with book metadata. But that structure needs to be precisely adhered to, or the book won&amp;rsquo;t work on the iPad.&lt;/p&gt;
+&lt;p&gt;I watched and re-watched &lt;a href="https://developer.apple.com/videos/play/wwdc2016/408/"&gt;the Swift playground video&lt;/a&gt; to wrap my head around the capabilities of playground books, from an author&amp;rsquo;s perspective, and a learner&amp;rsquo;s too. Playground books are not complex in theory: a nested folder structure with &lt;code&gt;Manifest.plist&lt;/code&gt; files with book metadata. But that structure needs to be precisely adhered to, or the book won&amp;rsquo;t work on the iPad.&lt;/p&gt;
 
 
 
