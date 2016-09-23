@@ -4,10 +4,42 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2016-08-27T16:57:02+00:00</updated>
+  <updated>2016-09-23T01:08:19+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>CocoaPods' Lasting Impact</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/cocoapods-lasting-impact/"/>
+    <id>https://ashfurrow.com/blog/cocoapods-lasting-impact/</id>
+    <published>2016-09-23T01:08:19+00:00</published>
+    <updated>2016-09-23T01:08:19+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;I&amp;rsquo;ve &lt;a href="https://ashfurrow.com/blog/building-online-communities/"&gt;written before&lt;/a&gt; about how CocoaPods isn&amp;rsquo;t a dependency manager, but rather that CocoaPods &lt;em&gt;makes&lt;/em&gt; a dependency manager.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;CocoaPods is a dependency manager only in the sense that Apple is a cell phone manufacturer – it’s just one of their many projects.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It raises the question: if CocoaPods isn&amp;rsquo;t a dependency manager, what &lt;em&gt;is&lt;/em&gt; it? And with an increasing variety of dependency managers for iOS, what will CocoaPods become?&lt;/p&gt;
+
+&lt;p&gt;I can&amp;rsquo;t speak to what CocoaPods is, but I believe that CocoaPods&amp;rsquo; lasting impact on the iOS developer community won&amp;rsquo;t be a tool, but rather an idea: that iOS developers can build their own developer tools and improve their own ecosystem.&lt;/p&gt;
+
+&lt;p&gt;It can be hard to remember what iOS development was like before CocoaPods. I remember because &lt;em&gt;it sucked&lt;/em&gt; and as soon as a friend introduced me to CocoaPods, I was hooked. Your options were basically downloading zip files from GitHub, or using git submodules (still not convinced about which one is worse). CocoaPods was the first time I had seen someone other than Apple make my job as an iOS developer easier.&lt;/p&gt;
+
+&lt;p&gt;CocoaPods was controversial – it still is, depending on who you ask – but the community has largely accepted the idea of non-Apple dependencies. CocoaPods won because it saved untold numbers of hours of tedious work. And now, I think in part &lt;em&gt;because&lt;/em&gt; CocoaPods was a success, we have lots of different third-party tools. We&amp;rsquo;ve got &lt;a href="https://revealapp.com"&gt;Reveal&lt;/a&gt; and &lt;a href="https://kapeli.com/dash"&gt;Dash&lt;/a&gt;, we&amp;rsquo;ve got &lt;a href="http://alcatraz.io"&gt;Xcode plugins&lt;/a&gt; and &lt;a href="https://github.com/Quick"&gt;Quick&amp;amp;Nimble&lt;/a&gt;, we&amp;rsquo;ve got the belief that &lt;a href="https://speakerdeck.com/jpsim/fixing-the-swift-tooling-problem"&gt;we can solve our own problems&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;CocoaPods’ message is really that while the &lt;a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/DevPedia-CocoaCore/"&gt;Cocoa Core Competencies&lt;/a&gt; are a necessary foundation, they aren’t sufficient to be a good iOS developer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I wrote this last year and I still think it&amp;rsquo;s true. But it&amp;rsquo;s not complete. I&amp;rsquo;m more and more convinced that being a good developer has less to do with what you know and more to do with your attitude. Good developers look both ways before crossing one-way streets, good developers don&amp;rsquo;t easily give up, and good developers look for ways to improve their workflows.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Building Swift Playground Books</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/building-swift-playground-books/"/>
@@ -428,68 +460,6 @@
 &lt;p&gt;I&amp;rsquo;m not really into the idea of my computer trusting a company like Blue Coat, so I &lt;a href="https://blog.filippo.io/untrusting-an-intermediate-ca-on-os-x/"&gt;follow the instructions&lt;/a&gt; to untrust this certificate. I highly recommend you do, too.&lt;/p&gt;
 
 &lt;p&gt;And I recommend you document everything you do to make your computer awesome! &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Static Site Search with Middleman and lunrjs</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/"/>
-    <id>https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/</id>
-    <published>2016-08-07T15:03:06+00:00</published>
-    <updated>2016-08-07T15:03:06+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;A few months ago, &lt;a href="https://github.com/ashfurrow/blog/issues/213"&gt;someone opened an issue&lt;/a&gt; asking for a site search on my blog. Neat idea, it wasn&amp;rsquo;t high on my list of priorities at the time, but maybe I&amp;rsquo;d get to it someday.&lt;/p&gt;
-
-&lt;p&gt;Well, today&amp;rsquo;s the day 🎉&lt;/p&gt;
-
-&lt;p&gt;(Note: The original &amp;ldquo;the day&amp;rdquo; was two weeks ago but I had given up in frustration.)&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Search is an interesting problem. Most search engines run on servers and not the browser client. This site, just like all static sites like those built with &lt;a href="https://middlemanapp.com"&gt;Middleman&lt;/a&gt;, is generated on a computer before being served statically. It&amp;rsquo;s a faster, easier, and more secure way of serving web pages that don&amp;rsquo;t need dynamism, but it does mean that you can&amp;rsquo;t run server code when a page is fetched.&lt;/p&gt;
-
-&lt;p&gt;Running search on servers makes sense for DuckDuckGo and Google because their search engines are trying to cover the whole internet. But for a site like mine, a client-side search engine written in Javascript can be a suitable solution.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://lucene.apache.org/solr/"&gt;Solr&lt;/a&gt; is an open source search engine. &lt;a href="http://lunrjs.com"&gt;lunrjs&lt;/a&gt; is a Javascript-based search engine, which claims to be:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A bit like Solr, but much smaller and not as bright.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Lovely. I think the sun-vs-moon metaphor for server-vs-client search engines is really apt.&lt;/p&gt;
-
-&lt;p&gt;There are a few Middleman extensions that integrate lunrjs search into static sites, but I couldn&amp;rsquo;t get any to work for me because I didn&amp;rsquo;t understand how they worked. I ended up &lt;a href="https://github.com/256dpi/middleman-lunr/blob/5c49621007e003da0b748ec8bd34bfc7b11240d2/lib/middleman-lunr/indexer.rb#L23-L64"&gt;reading the source code&lt;/a&gt; of one to understand &lt;em&gt;exactly&lt;/em&gt; how it worked. Even then, I couldn&amp;rsquo;t get things right. It turns out that I didn&amp;rsquo;t know enough Javascript to use a Javascript-based search engine. Not yet anyway.&lt;/p&gt;
-
-&lt;p&gt;I submitted a &lt;a href="https://github.com/ashfurrow/blog/pull/232"&gt;work-in-progress pull request&lt;/a&gt; and gave up again.&lt;/p&gt;
-
-&lt;p&gt;After a little break and some food, I went back and looked into a different extension. Actually it was the original extension I tried but I couldn&amp;rsquo;t get it working. I understood what it was doing on the Ruby side, and concentrated just on the Javascript. After looking up some jQuery syntax, I had something that worked.&lt;/p&gt;
-
-&lt;p&gt;Some fiddling with CSS and lining things up, &lt;a href="https://github.com/ashfurrow/blog/pull/233"&gt;I had a ready PR&lt;/a&gt;.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;a href="/search"&gt;&lt;img src="https://ashfurrow.com/img/blog/static-site-search-with-middleman-and-lunrjs/screenshot.jpg" alt="Screenshot of site search" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;Site search stumped me for weeks. Distinct from search engines in general, server-side static site search is a very interesting problem in its own right. Ruby code uses Javascript to generate a search engine index of the content of my entire site. Then client-side Javascript downloads that index and uses lunrjs to run queries against it. It crosses the dynamic-to-static barrier, which isn&amp;rsquo;t something many other features of static sites need to do.&lt;/p&gt;
-
-&lt;p&gt;After submitting the pull request, I realized I had been working into the late evening, that I&amp;rsquo;d had a beer or two, and that maybe pushing code to production wasn&amp;rsquo;t the best thing to do. I pinged Orta on the pull request and asked for a second opinion. It can never hurt to have someone double-check things for you.&lt;/p&gt;
-
-&lt;p&gt;Things checked out, and &lt;a href="/search"&gt;search is here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://github.com/ashfurrow/blog/pull/233"&gt;The pull request is here&lt;/a&gt;, so feel free to comment on anything that you&amp;rsquo;d like clarification on or that you have a suggestion about. I&amp;rsquo;m sure there are ways this could be more idiomatically done. (&lt;strong&gt;Update&lt;/strong&gt;: I&amp;rsquo;ve &lt;a href="https://github.com/ashfurrow/blog/pull/237"&gt;added documentation&lt;/a&gt; to all the code and linked to the relevant code &lt;a href="https://github.com/ashfurrow/blog"&gt;in the readme&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;Writing new features into software can be overwhelming, and stepping back for a break is usually the right answer. It&amp;rsquo;s okay to give up if things are getting frustrating, and it&amp;rsquo;s okay to ask for help.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;PARTY TIP: At the end of the day, just try your hardest to be nice.&lt;/p&gt;&amp;mdash; ANDREW W.K. (@AndrewWK) &lt;a href="https://twitter.com/AndrewWK/status/722843678994219009"&gt;April 20, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;We&amp;rsquo;re all in this together.&lt;/p&gt;
 </content>
   </entry>
 </feed>
