@@ -33,11 +33,8 @@ before_install:
   # Copy proselint settings to home.
   - cp .proselintrc ~/
   
-  # Decrypt deployment key and add it.
-  - if [ -f "$encrypted_1e572e84b7d1_iv" ]; then openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d ; chmod 600 deploy_key; eval `ssh-agent -s` ; ssh-add deploy_key ; fi
-
-  # Setup deploy directory.
-  - git clone -b gh-pages git@github.com:ashfurrow/blog build
+  # Decrypt deployment key and add it, then setup deploy directory.
+  - if [ -f "$encrypted_1e572e84b7d1_iv" ]; then openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d ; chmod 600 deploy_key; eval `ssh-agent -s` ; ssh-add deploy_key ; git clone -b gh-pages git@github.com:ashfurrow/blog build ; fi
 
   # Configure git.
   - git config --global user.name "Travis CI"
