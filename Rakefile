@@ -39,7 +39,7 @@ namespace :deploy do
   end
 
   desc "Sets up Travis to deploy, if on the master branch"
-  desc :travis_setup do
+  task :travis_setup do
     branch = ENV['TRAVIS_BRANCH']
     pull_request = ENV['TRAVIS_PULL_REQUEST']
     key = ENV['encrypted_1e572e84b7d1_key']
