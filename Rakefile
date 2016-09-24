@@ -47,7 +47,7 @@ namespace :deploy do
     abort 'Must be run on Travis' if branch.nil? || key.nil?
 
     puts 'Checking deploy status...'
-    if branch == 'master' && !pull_request
+    if branch == 'master' && pull_request == 'false'
       puts 'Setting Travis up for deploys.'
       sh "openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d"
       sh "chmod 600 deploy_key"
