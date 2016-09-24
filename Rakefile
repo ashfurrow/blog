@@ -47,17 +47,16 @@ namespace :deploy do
     abort 'Must be run on Travis' if branch.nil? || key.nil?
 
     puts 'Checking deploy status...'
-    return unless branch == 'master'
-    return unless pull_request == false
-
-    puts 'Setting Travis up for deploys.'
-    sh "openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d"
-    sh "chmod 600 deploy_key"
-    sh "eval `ssh-agent -s`"
-    sh "ssh-add deploy_key"
-    sh "git clone -b gh-pages git@github.com:ashfurrow/blog build"
-    sh "git config --global user.name 'Travis CI'"
-    sh "git config --global user.email 'ash@ashfurrow.com'"
+    if branch == 'master' && !pull_request
+      puts 'Setting Travis up for deploys.'
+      sh "openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d"
+      sh "chmod 600 deploy_key"
+      sh "eval `ssh-agent -s`"
+      sh "ssh-add deploy_key"
+      sh "git clone -b gh-pages git@github.com:ashfurrow/blog build"
+      sh "git config --global user.name 'Travis CI'"
+      sh "git config --global user.email 'ash@ashfurrow.com'"
+    end
   end
 
   desc "Deploy if Travis environment variables are set correctly"
