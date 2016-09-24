@@ -1,5 +1,4 @@
 require 'rake'
-require 'httparty'
 require 'json'
 
 desc "Initial setup"
@@ -37,6 +36,27 @@ namespace :deploy do
   desc "Deploys to production and syncs feeds"
   task :all => [:fetch_gh_pages, :gh_pages, :feeds, :invalidate] do
     puts 'Deploy all succeeded.'
+  end
+
+  desc "Sets up Travis to deploy, if on the master branch"
+  task :travis_setup do
+    branch = ENV['TRAVIS_BRANCH']
+    pull_request = ENV['TRAVIS_PULL_REQUEST']
+    key = ENV['encrypted_1e572e84b7d1_key']
+
+    abort 'Must be run on Travis' if branch.nil? || key.nil?
+
+    puts 'Checking deploy status...'
+    if branch == 'master' && pull_request == 'false'
+      puts 'Setting Travis up for deploys.'
+      sh "openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d"
+      sh "chmod 600 deploy_key"
+      sh "eval `ssh-agent -s`"
+      sh "ssh-add deploy_key"
+      sh "git clone -b gh-pages git@github.com:ashfurrow/blog build"
+      sh "git config --global user.name 'Travis CI'"
+      sh "git config --global user.email 'ash@ashfurrow.com'"
+    end
   end
 
   desc "Deploy if Travis environment variables are set correctly"
@@ -204,6 +224,7 @@ def git_branch_name
   `git rev-parse --abbrev-ref HEAD`
 end
 
+desc 'Submits PR to GitHub.'
 task :pr do
   branch_name = git_branch_name
   if branch_name == 'master'
