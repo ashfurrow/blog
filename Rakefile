@@ -51,7 +51,6 @@ namespace :deploy do
       puts 'Setting Travis up for deploys.'
       %x[openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d]
       %x[chmod 600 deploy_key]
-      spawn('eval `ssh-agent -s`')
       %x[ssh-add deploy_key]
       %x[git clone -b gh-pages git@github.com:ashfurrow/blog build]
       %x[git config --global user.name 'Travis CI']

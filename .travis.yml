@@ -33,6 +33,7 @@ before_install:
   # Copy proselint settings to home.
   - cp .proselintrc ~/
   
+  - eval `ssh-agent -s`
   - rake deploy:travis_setup
 
 script:
