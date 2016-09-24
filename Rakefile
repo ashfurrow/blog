@@ -1,5 +1,4 @@
 require 'rake'
-require 'httparty'
 require 'json'
 
 desc "Initial setup"
@@ -226,6 +225,7 @@ def git_branch_name
   `git rev-parse --abbrev-ref HEAD`
 end
 
+desc 'Submits PR to GitHub.'
 task :pr do
   branch_name = git_branch_name
   if branch_name == 'master'
