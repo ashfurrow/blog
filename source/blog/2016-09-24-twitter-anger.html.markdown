@@ -5,7 +5,7 @@ background_image: /img/blog/twitter-anger/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/779425582010490880
 ---
 
-I've struggled a a bunch with being angry on Twitter. I'll feel angry and share that anger with the world, which isn't something I want to do. I think it's usually related to my depression. When I'm having trouble feeling my own emotions, it's hard to relate to other and empathize with them, so I tweet things I normally wouldn't. I always regret it later.
+I've struggled a a bunch with being angry on Twitter. I'll feel angry and share that anger with the world, which isn't something I want to do. I think it's usually related to my depression. When I'm having trouble feeling my own emotions, it's hard to relate to others and empathize with them, so I tweet things I normally wouldn't. I always regret it later.
 
 The worst part is, Twitter rewards anger with followers, with favourites, and with retweets.
 
