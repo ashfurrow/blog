@@ -33,7 +33,7 @@ before_install:
   # Copy proselint settings to home.
   - cp .proselintrc ~/
   
-  - rake travis_setup
+  - rake deploy:travis_setup
 
 script:
   - bundle exec rake build:test
