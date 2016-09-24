@@ -49,12 +49,12 @@ namespace :deploy do
     puts 'Checking deploy status...'
     if branch == 'master' && pull_request == 'false'
       puts 'Setting Travis up for deploys.'
-      sh "openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d"
-      sh "chmod 600 deploy_key"
-      sh "eval `ssh-agent -s` && ssh-add deploy_key"
-      sh "git clone -b gh-pages git@github.com:ashfurrow/blog build"
-      sh "git config --global user.name 'Travis CI'"
-      sh "git config --global user.email 'ash@ashfurrow.com'"
+      %x[openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d]
+      %x[chmod 600 deploy_key]
+      %x[eval `ssh-agent -s` && ssh-add deploy_key]
+      %x[git clone -b gh-pages git@github.com:ashfurrow/blog build]
+      %x[git config --global user.name 'Travis CI']
+      %x[git config --global user.email 'ash@ashfurrow.com']
     end
   end
 
