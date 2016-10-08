@@ -20,7 +20,7 @@ BEGIN_NARROW
 
 END_NARROW
 
-About a hundred years ago this employee at a german microscope manufacturer wanted to take a camera with him during his walks in the woods, but he had asthma and couldn't carry a LF camera. So he _invented_ 35mm photography. That gives you a sense of much of a pain it is to use these cameras.
+About a hundred years ago this employee at a German microscope manufacturer wanted to take a camera with him during his walks in the woods, but he had asthma and couldn't carry a LF camera. So he _invented_ 35mm photography. That gives you a sense of much of a pain it is to use these cameras.
 
 When you think of "really old camera", a large format camera is probably what you imagine. It's big, it's got some bellows, it's propped up on a tripod, and the photographer stands underneath a hood to take the photo. _That_ is a large format camera.
 
