@@ -26,6 +26,9 @@ before_install:
   # Need s3cmd to deploy feeds.
   - pip install --user s3cmd
   - s3cmd --version
+
+  # Install spellchecker.
+  - npm install -g orta/node-markdown-spellcheck
   
   # Echo for Danger.
   - echo $TRAVIS_COMMIT_RANGE
