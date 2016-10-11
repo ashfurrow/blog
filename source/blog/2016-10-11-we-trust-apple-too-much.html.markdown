@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/785254024673198
 
 _A blog post in five tweets._
 
-So we all know about Dash know, eh? [Apple acted rashly against an indie dev](https://blog.kapeli.com/apple-removed-dash-from-the-app-store), [the developer called them on it](https://blog.kapeli.com/dash-and-apple-my-side-of-the-story), and the iOS developer community failed to rally behind the developer like it should have.
+So we all know about Dash, eh? [Apple acted rashly against an indie dev](https://blog.kapeli.com/apple-removed-dash-from-the-app-store), [the developer called them on it](https://blog.kapeli.com/dash-and-apple-my-side-of-the-story), and the iOS developer community failed to rally behind the developer like it should have.
 
 (READMORE)
 
