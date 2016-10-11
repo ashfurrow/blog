@@ -4,10 +4,38 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2016-10-09T19:06:30+00:00</updated>
+  <updated>2016-10-11T08:23:08+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>We Trust Apple Too Much</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/we-trust-apple-too-much/"/>
+    <id>https://ashfurrow.com/blog/we-trust-apple-too-much/</id>
+    <published>2016-10-11T08:23:08+00:00</published>
+    <updated>2016-10-11T08:23:08+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;em&gt;A blog post in five tweets.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So we all know about Dash know, eh? &lt;a href="https://blog.kapeli.com/apple-removed-dash-from-the-app-store"&gt;Apple acted rashly against an indie dev&lt;/a&gt;, &lt;a href="https://blog.kapeli.com/dash-and-apple-my-side-of-the-story"&gt;the developer called them on it&lt;/a&gt;, and the iOS developer community failed to rally behind the developer like it should have.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;There’s no proof, and no reason to believe Apple here. They mess the easy stuff up all the time, trust about big stuff is too eroded.&lt;/p&gt;&amp;mdash; Ash vs NSThread (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/785606500433747968"&gt;October 10, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;I wrote these tweets as I waddled through security in New York, &lt;em&gt;before&lt;/em&gt; the Kapeli told their side of the story. I think we need more of this critical thinking towards Apple. Something I&amp;rsquo;ve said before:&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;If you love Apple, think critically about their decisions. Question their motives and decisions. Embrace nuance, reject extremism.&lt;/p&gt;&amp;mdash; Ash vs NSThread (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/773856902304366592"&gt;September 8, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Matt Drance really summed the whole Dash situation up it up well:&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Again, it doesn&amp;rsquo;t entirely matter if he ends up a liar. The levee broke too early. The end.&lt;/p&gt;&amp;mdash; Matt Drance (@drance) &lt;a href="https://twitter.com/drance/status/785635370939523072"&gt;October 11, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Apple is &lt;a href="https://ashfurrow.com/blog/crestfallen/"&gt;just a company&lt;/a&gt;. I know we all like them, and we want them to do well, but sometimes Apple will fail to live up to our ideals and our expectations. We&amp;rsquo;ve got to be ready to hold them accountable.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Growing Pains</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/growing-pains/"/>
@@ -239,38 +267,6 @@ git fetch upstream
 &lt;p&gt;Even though &lt;a href="https://twitter.com/ashfurrow/status/774228247051657217"&gt;I regretted this tweet&lt;/a&gt;, I didn&amp;rsquo;t delete it because it felt like productive anger.&lt;/p&gt;
 
 &lt;p&gt;So I&amp;rsquo;m not sure that being angry on Twitter is &lt;em&gt;bad&lt;/em&gt; per se, as much as it is unproductive (despite being often celebrated). Since &lt;a href="https://github.com/ashfurrow/blog/issues/189"&gt;beginning to think about this in January&lt;/a&gt;, I&amp;rsquo;ve been a lot less angry. In general, 2016 has been a great year for making progress in my depression. And apparently my anger, too.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>CocoaPods' Lasting Impact</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/cocoapods-lasting-impact/"/>
-    <id>https://ashfurrow.com/blog/cocoapods-lasting-impact/</id>
-    <published>2016-09-23T01:08:19+00:00</published>
-    <updated>2016-09-23T01:08:19+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;I&amp;rsquo;ve &lt;a href="https://ashfurrow.com/blog/building-online-communities/"&gt;written before&lt;/a&gt; about how CocoaPods isn&amp;rsquo;t a dependency manager, but rather that CocoaPods &lt;em&gt;makes&lt;/em&gt; a dependency manager.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;CocoaPods is a dependency manager only in the sense that Apple is a cell phone manufacturer – it’s just one of their many projects.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It raises the question: if CocoaPods isn&amp;rsquo;t a dependency manager, what &lt;em&gt;is&lt;/em&gt; it? And with an increasing variety of dependency managers for iOS, what will CocoaPods become?&lt;/p&gt;
-
-&lt;p&gt;I can&amp;rsquo;t speak to what CocoaPods is, but I believe that CocoaPods&amp;rsquo; lasting impact on the iOS developer community won&amp;rsquo;t be a tool, but rather an idea: that iOS developers can build their own developer tools and improve their own ecosystem.&lt;/p&gt;
-
-&lt;p&gt;It can be hard to remember what iOS development was like before CocoaPods. I remember because &lt;em&gt;it sucked&lt;/em&gt; and as soon as a friend introduced me to CocoaPods, I was hooked. Your options were basically downloading zip files from GitHub, or using git submodules (still not convinced about which one is worse). CocoaPods was the first time I had seen someone other than Apple make my job as an iOS developer easier.&lt;/p&gt;
-
-&lt;p&gt;CocoaPods was controversial – it still is, depending on who you ask – but the community has largely accepted the idea of non-Apple dependencies. CocoaPods won because it saved untold numbers of hours of tedious work. And now, I think in part &lt;em&gt;because&lt;/em&gt; CocoaPods was a success, we have lots of different third-party tools. We&amp;rsquo;ve got &lt;a href="https://revealapp.com"&gt;Reveal&lt;/a&gt; and &lt;a href="https://kapeli.com/dash"&gt;Dash&lt;/a&gt;, we&amp;rsquo;ve got &lt;a href="http://alcatraz.io"&gt;Xcode plugins&lt;/a&gt; and &lt;a href="https://github.com/Quick"&gt;Quick&amp;amp;Nimble&lt;/a&gt;, we&amp;rsquo;ve got the belief that &lt;a href="https://speakerdeck.com/jpsim/fixing-the-swift-tooling-problem"&gt;we can solve our own problems&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;CocoaPods’ message is really that while the &lt;a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/DevPedia-CocoaCore/"&gt;Cocoa Core Competencies&lt;/a&gt; are a necessary foundation, they aren’t sufficient to be a good iOS developer.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I wrote this last year and I still think it&amp;rsquo;s true. But it&amp;rsquo;s not complete. I&amp;rsquo;m more and more convinced that being a good developer has less to do with what you know and more to do with your attitude. Good developers look both ways before crossing one-way streets, good developers don&amp;rsquo;t easily give up, and good developers look for ways to improve their workflows.&lt;/p&gt;
 </content>
   </entry>
 </feed>
