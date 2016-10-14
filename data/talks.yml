@@ -1,6 +1,12 @@
 upcoming_talks:
 
 - name: TBD
+  conference: The Swift Alps
+  url: http://theswiftalps.com
+  location: Crans-Montana, Switzerland
+  dates: November 10–11, 2016
+  image: swiftalps.png
+- name: TBD
   conference: SwiftConf
   url: https://swiftconf.com
   location: Cologne, Germany
