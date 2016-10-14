@@ -14,6 +14,12 @@ upcoming_talks:
   image: swiftconf.png
 
 past_talks:
+- name: Thinking in Swift
+  conference: Pragma
+  url: http://pragmaconference.com/
+  location: Verona, Italy
+  dates: October 12, 2016
+  hidden: true
 - name: iOS Checkup
   conference: MCE
   url: http://2016.mceconf.com
