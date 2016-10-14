@@ -1,5 +1,12 @@
 upcoming_talks:
 
+- name: TBD
+  conference: SwiftConf
+  url: https://swiftconf.com
+  location: Cologne, Germany
+  dates: September 2017
+  image: swiftconf.png
+
 past_talks:
 - name: iOS Checkup
   conference: MCE
