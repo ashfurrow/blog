@@ -6,6 +6,42 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Contempt in Swift</title>
+      <link>https://ashfurrow.com/blog/contempt-in-swift/</link>
+      <description>&lt;p&gt;You should read this fascinating article on &lt;a href="http://blog.aurynn.com/contempt-culture"&gt;contempt culture in programming communities&lt;/a&gt;, specifically Python. It details the dynamics of having contempt for another programming language and for the developers who use it. The article describes the toxicity of this culture and the obvious result: exclusion.&lt;/p&gt;
+
+&lt;p&gt;A community can&amp;rsquo;t be both welcoming &lt;em&gt;and&lt;/em&gt; be exclusive of those who have other preferences.&lt;/p&gt;
+
+&lt;p&gt;I think it&amp;rsquo;s worth exploring the idea of contempt culture in the Swift community, particularly in regards to Objective-C and Objective-C developers.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we begin, I need to say: I&amp;rsquo;ve been a big critic of Objective-C&amp;rsquo;s. Four months before Swift&amp;rsquo;s announcement, I wrote &lt;a href="https://ashfurrow.com/blog/we-need-to-replace-objective-c/"&gt;&lt;em&gt;We Need to Replace Objective-C&lt;/em&gt;&lt;/a&gt;. I didn&amp;rsquo;t insult the language, I criticized it and detailed reasons it needed to be replaced. That’s okay. But I&amp;rsquo;ve been known to go further than technical critique: I&amp;rsquo;ve implied that Objective-C is a bad language and I&amp;rsquo;ve made fun of Objective-C developers, and that was wrong. I&amp;rsquo;m sorry.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot of damage caused by hating on Objective-C and Objective-C developers. Contempt of Objective-C only impedes the inclusion of others within the Swift community, which ultimately hurts the goal of spreading fluency of this awesome language. It&amp;rsquo;s self-defeating to hate on Objective-C because you love Swift.&lt;/p&gt;
+
+&lt;p&gt;Objective-C isn&amp;rsquo;t the only target of our contempt. I regularly see developers bash JavaScript, despite the fact that it runs a significant portion of the web.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/BenjaminCoe"&gt;@BenjaminCoe&lt;/a&gt; You heard correctly, and yes we do.&lt;/p&gt;&amp;mdash; Collin Estes (@CollinEstes) &lt;a href="https://twitter.com/CollinEstes/status/738765249407504384"&gt;June 3, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;And of course, what iOS developer doesn&amp;rsquo;t love to hate on Android (even though it&amp;rsquo;s marketshare outstrips iOS by a mile). &lt;/p&gt;
+
+&lt;p&gt;I think developers throw shade on other languages as a form of signalling. “I’m one of you, I hate them too.” It’s only human. But this othering has a significant emotional cost for those developers in those outside groups. &lt;/p&gt;
+
+&lt;p&gt;Is it worth it? Is it worth it to mock outsiders and exclude them from our community? Individually, we might say “no”, but as a community, we have clearly answered “it is.”&lt;/p&gt;
+
+&lt;p&gt;The original blog post&amp;rsquo;s author had a solution to the problem:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;SHUT. UP.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I couldn&amp;rsquo;t agree more.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 17 Oct 2016 14:02:33 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/contempt-in-swift/</guid>
+    </item>
+    <item>
       <title>We Trust Apple Too Much</title>
       <link>https://ashfurrow.com/blog/we-trust-apple-too-much/</link>
       <description>&lt;p&gt;&lt;em&gt;A blog post in five tweets.&lt;/em&gt;&lt;/p&gt;
@@ -217,30 +253,6 @@ git fetch upstream
 </description>
       <pubDate>Sat, 24 Sep 2016 21:29:28 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/darkroom-printing/</guid>
-    </item>
-    <item>
-      <title>Twitter Anger</title>
-      <link>https://ashfurrow.com/blog/twitter-anger/</link>
-      <description>&lt;p&gt;I&amp;rsquo;ve struggled a a bunch with being angry on Twitter. I&amp;rsquo;ll feel angry and share that anger with the world, which isn&amp;rsquo;t something I want to do. I think it&amp;rsquo;s usually related to my depression. When I&amp;rsquo;m having trouble feeling my own emotions, it&amp;rsquo;s hard to relate to others and empathize with them, so I tweet things I normally wouldn&amp;rsquo;t. I always regret it later.&lt;/p&gt;
-
-&lt;p&gt;The worst part is, Twitter rewards anger with followers, with favourites, and with retweets.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;I made a tweet when I was angry that I now regret and it makes me sad that it got more RT / faves than most of my puns. :(&lt;/p&gt;&amp;mdash; Aaron Patterson (@tenderlove) &lt;a href="https://twitter.com/tenderlove/status/688179491529592833"&gt;January 16, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;I said that I don&amp;rsquo;t want to share anger with the world, and that&amp;rsquo;s sort of accurate. There are things worth getting angry about, like the rise of fascism in America, and then there are other things, like the removal of the iPhone&amp;rsquo;s headphone jack. I&amp;rsquo;m okay sharing my anger about things that matter, and I&amp;rsquo;m okay with sharing frustration with things that matter less, but what I don&amp;rsquo;t want to share is &lt;em&gt;unproductive&lt;/em&gt; anger.&lt;/p&gt;
-
-&lt;p&gt;This is why I feel being angry on Twitter, for me, is related to my depression. After a few years of talk therapy, I&amp;rsquo;ve come to characterize my depression by &lt;em&gt;unproductive sadness&lt;/em&gt;, and that absence of usefulness when I tweet angrily is what feels familiar, what feels like depression.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Seriously, fuck Dropbox. &lt;a href="https://t.co/F7BKhLX6M3"&gt;https://t.co/F7BKhLX6M3&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ash Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/774225112203718656"&gt;September 9, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Even though &lt;a href="https://twitter.com/ashfurrow/status/774228247051657217"&gt;I regretted this tweet&lt;/a&gt;, I didn&amp;rsquo;t delete it because it felt like productive anger.&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;m not sure that being angry on Twitter is &lt;em&gt;bad&lt;/em&gt; per se, as much as it is unproductive (despite being often celebrated). Since &lt;a href="https://github.com/ashfurrow/blog/issues/189"&gt;beginning to think about this in January&lt;/a&gt;, I&amp;rsquo;ve been a lot less angry. In general, 2016 has been a great year for making progress in my depression. And apparently my anger, too.&lt;/p&gt;
-</description>
-      <pubDate>Sat, 24 Sep 2016 15:06:47 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/twitter-anger/</guid>
     </item>
   </channel>
 </rss>
