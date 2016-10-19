@@ -10,8 +10,14 @@ upcoming_talks:
   conference: iOSoho
   url: https://www.meetup.com/iOSoho/events/232809656/
   location: New York, America
-  dates: Deceember 12, 2016
+  dates: December 12, 2016
   image: iosoho.jpeg
+- name: TBD
+  conference: App Builders
+  url: https://www.appbuilders.ch
+  location: Lausanne, Switzerland
+  dates: April 24–25, 2017
+  image: appbuilders.png
 - name: TBD
   conference: SwiftConf
   url: https://swiftconf.com
