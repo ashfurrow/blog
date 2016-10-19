@@ -6,6 +6,12 @@ upcoming_talks:
   location: Crans-Montana, Switzerland
   dates: November 10–11, 2016
   image: swiftalps.png
+- name: Building Compassionate Software
+  conference: iOSoho
+  url: https://www.meetup.com/iOSoho/events/232809656/
+  location: New York, America
+  dates: Deceember 12, 2016
+  image: iosoho.jpeg
 - name: TBD
   conference: SwiftConf
   url: https://swiftconf.com
