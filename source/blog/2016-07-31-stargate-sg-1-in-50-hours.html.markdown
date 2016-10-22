@@ -168,7 +168,7 @@ Find Season 10 on [Amazon Video](http://amzn.to/2amXRaG).
 
 [_Ark of Truth_](http://amzn.to/2amG2P4) and [_Continuum_](http://amzn.to/2aB1D3a) are the two made-for-TV movies from the SciFi channel. They're pretty great, I enjoyed them each. _Ark of Truth_ wraps up the Ori storyline with a visit _to_ the Ori galaxy through the supergate. _Contiuum_ is a masterpiece of time-travel storytelling, featuring Ba'al, the series' best villain. The film wraps up his I-have-a-hundred-clones storyline by killing the last of them. It's a romp.
 
-As I mentioned before, _SG-1_ has a spinoff. Actually, it has two! Actually there's [also a terrible cartoon](https://en.wikipedia.org/wiki/Stargate_Infinity), but don't want it. Seriously don't watch it. But _do_ go ahead and watch [_Stargate Atlantis_](http://amzn.to/2ae1W1r). It's not everyone's cup of tea, but there's just something about an international team of scrappy humans barely surviving in another galaxy that works for me. 
+As I mentioned before, _SG-1_ has a spinoff. Actually, it has two! Actually there's [also a terrible cartoon](https://en.wikipedia.org/wiki/Stargate_Infinity), but don't watch it. Seriously don't watch it. But _do_ go ahead and watch [_Stargate Atlantis_](http://amzn.to/2ae1W1r). It's not everyone's cup of tea, but there's just something about an international team of scrappy humans barely surviving in another galaxy that works for me. 
 
 However, a scrappy bunch of barely surviving people is not sufficient to drive a plot. And unfortunately, the writers thought they could replace actual character development with sex appeal, and we got _Stargate 90210_. Er, _Stargate Universe_. Don't watch it.
 
