@@ -836,7 +836,7 @@ ga('send', 'pageview');</script>
 <strong><code>-v /Users:/Users</code></strong> means “map the <code>/Users</code> directory of my actual system to the <code>/Users</code> directory of the VM.” This lets us access files stored in <code>/Users</code> on my Mac from within the VM. So I could use Xcode to write Swift, and then compile and run it from the Linux VM. Neat!</li>
 <li>Not sure what <strong><code>--privileged</code></strong> means, it’s apparently the subject of <a href="http://obrown.io/2016/02/15/privileged-containers.html">some debate</a> but the docker-swift Readme has it so I used it.</li>
 <li>
-<strong><code>i</code></strong> means “interactive” and it keeps the STDIN strem open when docker isn’t attached. Not entirely sure why that’s important.</li>
+<strong><code>-i</code></strong> means “interactive” and it keeps the STDIN strem open when docker isn’t attached. Not entirely sure why that’s important.</li>
 <li>
 <strong><code>-t</code></strong> looks important for nerdy terminal reasons. Again, included in the docker-swift Readme so I used it.</li>
 <li>
