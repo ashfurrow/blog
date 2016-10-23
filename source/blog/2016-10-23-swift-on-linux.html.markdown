@@ -29,6 +29,7 @@ docker run -p 8000:8000 -v /Users:/Users --privileged -i -t --name swiftfun swif
 - **`-p 8000:8000`** means "map port 8000 of the VM to port 8000 on my actual computer." This lets use access the web server of [Ben Scheirman's sample project](https://github.com/subdigital/swift-rock-paper-scissors).
 - **`-v /Users:/Users`** means "map the `/Users` directory of my actual system to the `/Users` directory of the VM." This lets us access files stored in `/Users` on my Mac from within the VM. So I could use Xcode to write Swift, and then compile and run it from the Linux VM. Neat!
 - Not sure what **`--privileged`** means, it's apparently the subject of [some debate](http://obrown.io/2016/02/15/privileged-containers.html) but the docker-swift Readme has it so I used it.
+- **`i`** means "interactive" and it keeps the STDIN strem open when docker isn't attached. Not entirely sure why that's important.
 - **`-t`** looks important for nerdy terminal reasons. Again, included in the docker-swift Readme so I used it.
 - **`--name swiftfun`** sets the name of your new VM, `swiftfun` was recommended by docker-swift.
 - **`swiftdocker/swift:latest`** tells Docker where to download the VM image from.
