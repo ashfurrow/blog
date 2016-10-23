@@ -6,6 +6,72 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Swift on Linux</title>
+      <link>https://ashfurrow.com/blog/swift-on-linux/</link>
+      <description>&lt;p&gt;All the cool kids are experimenting with Swift on Linux and I&amp;rsquo;ve always meant to but never got around to it. After watching &lt;a href="https://speakerdeck.com/subdigital/swift-on-linux"&gt;Ben Scheirman&amp;rsquo;s talk&lt;/a&gt; on the subject, I decided to give it a shot. &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;At first I tried to use Vagrant and download one of the pre-built Swift binaries for Linux. But the configuration was difficult, and I ultimately couldn&amp;rsquo;t get it to work. Then I tried Docker.&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/NeoNacho"&gt;@NeoNacho&lt;/a&gt; &lt;a href="https://twitter.com/ashfurrow"&gt;@ashfurrow&lt;/a&gt; the easiest s way to start is with something like swiftdocker, then you know versions are right&lt;/p&gt;&amp;mdash; Daniel Dunbar (@daniel_dunbar) &lt;a href="https://twitter.com/daniel_dunbar/status/789879904925921280"&gt;October 22, 2016&lt;/a&gt;&lt;/blockquote&gt; 
+
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know the finer points of how Vagrant and Docker differ – but as far as I can tell they&amp;rsquo;re both tools for managing virtual machines, or VMs. A VM is like a computer that runs inside your computer.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a &lt;a href="https://github.com/swiftdocker/docker-swift"&gt;prebuilt Docker image&lt;/a&gt; for running Swift on Linux that I tried out.&lt;/p&gt;
+
+&lt;p&gt;First I had to &lt;a href="https://docs.docker.com/docker-for-mac/"&gt;download Docker for macOS&lt;/a&gt;. I had some trouble installing with Homebrew, I definitely recommend just downloading the Docker.app from their site.&lt;/p&gt;
+
+&lt;p&gt;Next I had to set up the VM. This means downloading the VM image – which is like the disk contents of a freshly installed Linux machine. To do this, use the &lt;code&gt;docker run&lt;/code&gt; command. This will download the image and create the VM for you, along with some initial setup. The docker-swift readme is a bit incomplete, I had to use the following command:&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;docker run -p 8000:8000 -v /Users:/Users --privileged -i -t --name swiftfun swiftdocker/swift:latest /bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;-p 8000:8000&lt;/code&gt;&lt;/strong&gt; means &amp;ldquo;map port 8000 of the VM to port 8000 on my actual computer.&amp;rdquo; This lets use access the web server of &lt;a href="https://github.com/subdigital/swift-rock-paper-scissors"&gt;Ben Scheirman&amp;rsquo;s sample project&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;-v /Users:/Users&lt;/code&gt;&lt;/strong&gt; means &amp;ldquo;map the &lt;code&gt;/Users&lt;/code&gt; directory of my actual system to the &lt;code&gt;/Users&lt;/code&gt; directory of the VM.&amp;rdquo; This lets us access files stored in &lt;code&gt;/Users&lt;/code&gt; on my Mac from within the VM. So I could use Xcode to write Swift, and then compile and run it from the Linux VM. Neat!&lt;/li&gt;
+&lt;li&gt;Not sure what &lt;strong&gt;&lt;code&gt;--privileged&lt;/code&gt;&lt;/strong&gt; means, it&amp;rsquo;s apparently the subject of &lt;a href="http://obrown.io/2016/02/15/privileged-containers.html"&gt;some debate&lt;/a&gt; but the docker-swift Readme has it so I used it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;-t&lt;/code&gt;&lt;/strong&gt; looks important for nerdy terminal reasons. Again, included in the docker-swift Readme so I used it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;--name swiftfun&lt;/code&gt;&lt;/strong&gt; sets the name of your new VM, &lt;code&gt;swiftfun&lt;/code&gt; was recommended by docker-swift.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;swiftdocker/swift:latest&lt;/code&gt;&lt;/strong&gt; tells Docker where to download the VM image from.&lt;/li&gt;
+&lt;li&gt;I think &lt;strong&gt;&lt;code&gt;/bin/bash&lt;/code&gt;&lt;/strong&gt; tells the VM which shell to use, another thing I don&amp;rsquo;t quite understand.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After running that command, I was logged into the VM.&lt;/p&gt;
+
+&lt;p&gt;To start and attach to the Docker VM after the first time, I would run:&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;docker start swiftfun
+docker attach swiftfun
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I had to experiment with the &lt;code&gt;docker run&lt;/code&gt; command; because it does some set up that is hard to replicate after the VM is created, I created several VMs before I got it right. Every time I had to rename or delete the old ones.&lt;/p&gt;
+
+&lt;p&gt;So after creating the VM and attaching to it, I need to clone the sample project in a shared folder.&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /Users/ash/bin/swift-on-linux
+git clone https://github.com/subdigital/swift-rock-paper-scissors.git
+&lt;span class="nb"&gt;cd &lt;/span&gt;swift-rock-paper-scissors/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next up, the sample project has some dependencies, which in turn require some Linux libraries to be installed. These two commands retrieved the latest list of packages and then installed themes required for the sample project to compile.&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get install -y libcurl4-openssl-dev uuid-dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cool! Then, following the instructions from the Readme build and run the sample app:&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;swift build
+./.build/debug/rps --web
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally I went to a normal web browser and typed in &lt;code&gt;http://localhost:8000&lt;/code&gt; to see the results.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/swift-on-linux/screenshot.png" alt="Screenshot of app" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;Thanks again for everyone who chimed in on Twitter! I&amp;rsquo;m going to keep poking around, I don&amp;rsquo;t know if running Swift on Linux is something I want to explore more, but it was fun to get this far, so who knows 😄&lt;/p&gt;
+</description>
+      <pubDate>Sun, 23 Oct 2016 17:12:43 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/swift-on-linux/</guid>
+    </item>
+    <item>
       <title>Contempt in Swift</title>
       <link>https://ashfurrow.com/blog/contempt-in-swift/</link>
       <description>&lt;p&gt;You should read this fascinating article on &lt;a href="http://blog.aurynn.com/contempt-culture"&gt;contempt culture in programming communities&lt;/a&gt;, specifically Python. It details the dynamics of having contempt for another programming language and for the developers who use it. The article describes the toxicity of this culture and the obvious result: exclusion.&lt;/p&gt;
@@ -235,24 +301,6 @@ git fetch upstream
 </description>
       <pubDate>Tue, 27 Sep 2016 16:28:32 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/resolving-github-merge-conflicts/</guid>
-    </item>
-    <item>
-      <title>Darkroom Printing</title>
-      <link>https://ashfurrow.com/blog/darkroom-printing/</link>
-      <description>&lt;p&gt;A few weeks ago, I participated in &lt;a href="http://www.nycwlk.com"&gt;NYCWLK&lt;/a&gt;, a darkroom workshop and photo walk. I had been looking forward to this all summer – darkroom printing is arcane, requires equipment and chemicals, and a dark room. Having someone experienced there to show me the ropes in the &lt;a href="http://www.bushwickcommunitydarkroom.com"&gt;Bushwick Community Darkroom&lt;/a&gt; was the perfect way to try it out. &lt;a href="http://www.johnnypatience.com"&gt;Johnny Patience&lt;/a&gt; was great, and I learned a tonne.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the gist of how things work: when you take a film photo, a &lt;em&gt;negative&lt;/em&gt; is created on a piece of plastic. It&amp;rsquo;s called a negative because the dark parts of the photo are clear, and the brights parts of the photo are dark. When you want to create a photo from your negative, you basically shine a lamp from one side of the negative to project the image (enlarged) onto a piece of light-sensitive paper. This creates a negative image &lt;em&gt;of the negative&lt;/em&gt;. This recreates the original scene.&lt;/p&gt;
-
-&lt;p&gt;What has fascinated me for so long about this process is &lt;em&gt;just how analogue it is&lt;/em&gt;. Film photography is obviously analogue, but there&amp;rsquo;s some science to it around metering light to get a proper exposure; you can only take the photo once, so you need to get it right. But in the darkroom, you cut test strips and try over and over with different exposure times and contrast levels until you see what you like. It&amp;rsquo;s all very subjective and you just sort of experiment until you get the results you want.&lt;/p&gt;
-
-&lt;p&gt;(Again, this is &lt;a href="/blog/developers-should-learn-photography/"&gt;kind of like programming&lt;/a&gt; where you try something and see if it works. This repetition and experimentation is how humans acquire new skills, and both programming and film photography imbue this same learning philosophy.)&lt;/p&gt;
-
-&lt;p&gt;Since the workshop, I&amp;rsquo;ve returned to the darkroom in Bushwick. My results are nowhere near great yet, but I&amp;rsquo;m really enjoying the process. I can&amp;rsquo;t say that printing in the darkroom gives me a better result than scanning and printing digitally – not yet anyway – but I definitely enjoy the process more. I feel a deeper sense of ownership over the final product, too. I&amp;rsquo;m looking forward to entering darkroom prints into next year&amp;rsquo;s Artsy Salon.&lt;/p&gt;
-</description>
-      <pubDate>Sat, 24 Sep 2016 21:29:28 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/darkroom-printing/</guid>
     </item>
   </channel>
 </rss>
