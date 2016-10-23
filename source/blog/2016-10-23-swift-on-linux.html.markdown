@@ -36,14 +36,14 @@ docker run -p 8000:8000 -v /Users:/Users --privileged -i -t --name swiftfun swif
 
 After running that command, I was logged into the VM.
 
-To start and attach to the Docker VM after the first time, I run:
+To start and attach to the Docker VM after the first time, I would run:
 
 ```sh
 docker start swiftfun
 docker attach swiftfun
 ```
 
-I had to experiment with the `docker run` command; because it does set up that's hard to replicate after the VM is created, I had to create several VMs before I got it right. Every time I had to rename or delete the old ones.
+I had to experiment with the `docker run` command; because it does some set up that is hard to replicate after the VM is created, I created several VMs before I got it right. Every time I had to rename or delete the old ones.
 
 So after creating the VM and attaching to it, I need to clone the sample project in a shared folder.
 
