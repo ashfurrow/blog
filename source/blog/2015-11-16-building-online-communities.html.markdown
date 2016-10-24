@@ -27,7 +27,7 @@ Watching the team work, I've realized that the role of an OSS leader doesn't nec
 
 <blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" lang="en"><p lang="en" dir="ltr"><a href="https://t.co/8uUEb4Ny1n">https://t.co/8uUEb4Ny1n</a> shows hackathons, bug jams, automated online documentation, meetups, test jams, pechakuchas, and more.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/664180241942913025">November 10, 2015</a></blockquote>
 
-In a broad sense, their goals are to get people to work together. After all, that's something like a core tenant of open source software. Making a dependency manager is just _one_ way to get people collaborating.
+In a broad sense, their goals are to get people to work together. After all, that's something like a core tenet of open source software. Making a dependency manager is just _one_ way to get people collaborating.
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr">I’d argue CocoaPods is making us all more decent developers and more decent human beings.</p>&mdash; Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/664181353374724096">November 10, 2015</a></blockquote> 
 
