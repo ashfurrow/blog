@@ -15,7 +15,7 @@ BEGIN_WIDE
 
 END_WIDE
 
-This idea of automating tasks _just enough_ to augment human capabilities has been on my mind since I met [Joe Caraffa](https://twitter.com/joetastic), the Engineering Manager of Applied Research at Warby Parker. A lot of applied research in our field is interested in AI/machine learning and automation.
+This idea of automating tasks _just enough_ to augment human capabilities has been on my mind since I met [Joe Carrafa](https://twitter.com/joetastic), the Engineering Manager of Applied Research at Warby Parker. A lot of applied research in our field is interested in AI/machine learning and automation.
 
 We discussed the fascinating idea of _semi-autonomous_ programs. Like _almost_ artificial intelligence. A little bit of human input and the computer fills in the rest. There are some things that humans are really good at but are intractable for computers. Humans can fill in the gap in the computers' capabilities, and then computers can automate the parts that are difficult for humans.
 
