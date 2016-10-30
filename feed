@@ -6,6 +6,50 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Monet.app</title>
+      <link>https://ashfurrow.com/blog/monet-app/</link>
+      <description>&lt;p&gt;I heard about a cool &lt;a href="http://www.iflscience.com/plants-and-animals/website-helps-you-identify-birds-looking-your-photo/"&gt;website that can identify the species of bird from a photo&lt;/a&gt;. It&amp;rsquo;s an impressive feat of computer vision research, but i&amp;rsquo;s not an entirely automated process.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Once users have taken a photo, they draw a box around the bird, click its bill, eye and tail and tell [the website] where and when the photo was taken.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+&lt;p&gt;This idea of automating tasks &lt;em&gt;just enough&lt;/em&gt; to augment human capabilities has been on my mind since I met &lt;a href="https://twitter.com/joetastic"&gt;Joe Caraffa&lt;/a&gt;, the Engineering Manager of Applied Research at Warby Parker. A lot of applied research in our field is interested in AI/machine learning and automation.&lt;/p&gt;
+
+&lt;p&gt;We discussed the fascinating idea of &lt;em&gt;semi-autonomous&lt;/em&gt; programs. Like &lt;em&gt;almost&lt;/em&gt; artificial intelligence. A little bit of human input and the computer fills in the rest. There are some things that humans are really good at but are intractable for computers. Humans can fill in the gap in the computers&amp;rsquo; capabilities, and then computers can automate the parts that are difficult for humans.&lt;/p&gt;
+
+&lt;p&gt;A lot has already been said on the topic of automation, like this awesome video, but I want to talk about automation from an artistic perspective.&lt;/p&gt;
+
+
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/7Pq-S557XQU' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+
+&lt;p&gt;Researchers have built &lt;a href="http://thenextweb.com/creativity/2015/08/31/machine-or-picasso-this-algorithm-can-transform-photos-into-fine-art/"&gt;algorithms that transform photos into Van Gogh paintings&lt;/a&gt;. Google has &lt;a href="http://www.theverge.com/2016/6/1/11829678/google-magenta-melody-art-generative-artificial-intelligence"&gt;created an AI that composes music&lt;/a&gt;. There are &lt;a href="https://github.com/alexjc/neural-doodle"&gt;open source projects that generate Monet paintings from MS-Paint&lt;/a&gt;. How cool is that!&lt;/p&gt;
+
+&lt;p&gt;People worry about what you could call an &amp;ldquo;art of the gaps.&amp;rdquo; This is the scenario where human creativity is relegated to the shrinking gaps between what hasn&amp;rsquo;t yet been automated by technology. &lt;/p&gt;
+
+&lt;p&gt;I share this worry, I think most technologists should, but like most technologists I can&amp;rsquo;t help but be excited, too. Because new technology doesn&amp;rsquo;t just automate things; new technology creates &lt;em&gt;new ways to be creative&lt;/em&gt;. Let me explain. &lt;/p&gt;
+
+&lt;p&gt;Take photography for example. Right now, photography is one of the most widely practiced forms of art in history because of the ubiquity of camera phones. Some are concerned that the ease of taking pictures has come at the cost of creative freedom. They&amp;rsquo;re right, image processing algorithms have replaced darkrooms and have removed a lot of creative control from photography. &lt;/p&gt;
+
+&lt;p&gt;But it&amp;rsquo;s not all bad! Photography has &lt;em&gt;exploded&lt;/em&gt; as an art form. And there are now &lt;em&gt;new types&lt;/em&gt; of photography, too. We now have Instagram stars and artists &lt;a href="http://petapixel.com/2016/01/23/this-artist-got-90k-instagram-followers-with-photos-of-a-fake-lavish-lifestyle/"&gt;parodying Instagram stars&lt;/a&gt; and cool discussions about &lt;a href="http://petapixel.com/2015/05/26/richard-prince-is-a-jerk/"&gt;&amp;ldquo;what is art?&amp;rdquo;&lt;/a&gt; and all kinds of new stuff!&lt;/p&gt;
+
+&lt;p&gt;I think it&amp;rsquo;s &lt;em&gt;awesome&lt;/em&gt; that smartphones helped to proliferate photography as a casual form of art. I still enjoy a darkroom, but there are clear benefits to what smartphones have done for photography. It&amp;rsquo;s not just that photography is easier, it&amp;rsquo;s different now.&lt;/p&gt;
+
+&lt;p&gt;Automation is going to keep supplementing human activity, including forms of labour and forms of art. In art&amp;rsquo;s case, I think the benefits far, far outweigh the costs.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 30 Oct 2016 01:18:55 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/monet-app/</guid>
+    </item>
+    <item>
       <title>Swift on Linux</title>
       <link>https://ashfurrow.com/blog/swift-on-linux/</link>
       <description>&lt;p&gt;All the cool kids are experimenting with Swift on Linux and I&amp;rsquo;ve always meant to but never got around to it. After watching &lt;a href="https://speakerdeck.com/subdigital/swift-on-linux"&gt;Ben Scheirman&amp;rsquo;s talk&lt;/a&gt; on the subject, I decided to give it a shot. &lt;/p&gt;
@@ -231,77 +275,6 @@ sudo apt-get install -y libcurl4-openssl-dev uuid-dev
 </description>
       <pubDate>Sat, 08 Oct 2016 20:03:34 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/large-format-photography/</guid>
-    </item>
-    <item>
-      <title>Resolving GitHub Merge Conflicts</title>
-      <link>https://ashfurrow.com/blog/resolving-github-merge-conflicts/</link>
-      <description>&lt;p&gt;So you&amp;rsquo;ve seen an opportunity to improve an open source project and you&amp;rsquo;ve submitted a pull request – awesome! Whether it&amp;rsquo;s a typo fix, added documentation, or maybe some code, pull requests from the open source community are what keep a project alive.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes, in the time between when you make your pull request, and when it&amp;rsquo;s approved by the project maintainers, someone &lt;em&gt;else&amp;rsquo;s&lt;/em&gt; pull request gets merged, and &lt;em&gt;their&lt;/em&gt; changes conflict with yours. You might recognize this greyed out interface in GitHub:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/resolving-github-merge-conflicts/merge_ui.png" alt="GitHub merge interface" /&gt;&lt;/p&gt;
-
-&lt;p&gt;If this happens, don&amp;rsquo;t worry. Let&amp;rsquo;s walk through the steps to pull down the updates from the other pull request, resolve the conflicts, and update your pull request so it can be merged.&lt;/p&gt;
-
-&lt;p&gt;(I&amp;rsquo;m going to work from the command line, but you should be able to use these instructions for any git tool. I&amp;rsquo;m also going to assume that you&amp;rsquo;ve made your changes on a &lt;em&gt;fork&lt;/em&gt; of the project, basically a copy of the repository that you own.)&lt;/p&gt;
-
-&lt;p&gt;The first thing we need to do is tell git where to find the changes. As a convention, we&amp;rsquo;re going to call the original repository the &lt;em&gt;upstream&lt;/em&gt;. This is the repository that your pull request is submitted on. To get the upstream git URL, go to the original GitHub repo page and click the &amp;ldquo;Clone or Download&amp;rdquo; button. &lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/resolving-github-merge-conflicts/url.png" alt="GitHub merge interface" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;Copy that URL. Now we need to tell git where the upstream is, and then tell git to fetch information from the upstream.&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;git remote add upstream https://github.com/Moya/Moya.git
-git fetch upstream
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Okay, great! Let&amp;rsquo;s make sure that we&amp;rsquo;re on the branch that you&amp;rsquo;ve made your changes on, the branch that you&amp;rsquo;re submitted the pull request from. I&amp;rsquo;m going to assume it&amp;rsquo;s called &lt;code&gt;my_pr_branch&lt;/code&gt;. It&amp;rsquo;s important that git is on this branch in order to resolve the conflicts from the upstream.&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;git checkout my_pr_branch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Okay, now we need to pull in the changes from upstream into our pull request branch. We do this with the following command:&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;git pull upstream master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;At this point, you&amp;rsquo;re probably going to have some conflicts. Let&amp;rsquo;s take a look at a conflict I had to resolve recently.&lt;/p&gt;
-
-
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="kt"&gt;HEAD&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;newEndpoint&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;endpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;endpointByAddingParameterEncoding&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;encodedRequest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;?&lt;/span&gt; &lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlRequest&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;newEncodedRequest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;?&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlRequest&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="o"&gt;=======&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;newEndpoint&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;endpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;adding&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;newParameterEncoding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;encodedRequest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;?&lt;/span&gt; &lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlRequest&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;newEncodedRequest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;?&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlRequest&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;08&lt;/span&gt;&lt;span class="n"&gt;b3dcbbc2a98d2b0c8ea04845681e04176fbd8f&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;p&gt;The changes from my pull request are on the top, and the changes that have been made to the upstream repo are on the bottom. We need to reconcile the two, which can be tricky. Ideally, we would find out why the changes on the top were made so we can incorporate them into our branch, so go check the GitHub history for that file. This process of resolving merge conflicts gets easier with experience.&lt;/p&gt;
-
-&lt;p&gt;Unit tests help a lot here, since they&amp;rsquo;ll let you know if you&amp;rsquo;ve made a mistake in the conflict resolution. If tests passed on your branch &lt;em&gt;before&lt;/em&gt; pulling from the upstream, and they passed on the upstream before being pulled into your branch, then they should also pass after merging the conflicts. If they don&amp;rsquo;t, there&amp;rsquo;s probably a mistake somewhere. If you can&amp;rsquo;t figure it out, don&amp;rsquo;t worry! Just push it to your pull request and ask for help.&lt;/p&gt;
-
-&lt;p&gt;In my case, it ended up looking like this:&lt;/p&gt;
-
-
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;newEndpoint&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;endpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;adding&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;newParameterEncoding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;encodedRequest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;?&lt;/span&gt; &lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlRequest&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;newEncodedRequest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;?&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameterEncoding&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;encode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;urlRequest&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;newEndpoint&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;p&gt;After resolving conflicts, you need to &lt;code&gt;git add .&lt;/code&gt; to add all the conflicting files and then &lt;code&gt;git commit&lt;/code&gt;. This will open up a text editor, probably vim, with a pre-filled commit message. &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Merge remote-tracking branch 'upstream/master' into my_pr_branch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In vim, type &lt;code&gt;:wq&lt;/code&gt; and your commit is complete. Do a &lt;code&gt;git push&lt;/code&gt; to add the commit to your pull request, and wait for someone to review.&lt;/p&gt;
-
-&lt;p&gt;Resolving conflicts gets easier with experience. Using git gets easier, too, but it still trips me up sometimes. If you get stuck at some point in this process, don&amp;rsquo;t worry. Do a Google search for your problem, and don&amp;rsquo;t give up. If you can&amp;rsquo;t figure it out, add a comment to the pull request asking for help. Make sure to &lt;a href="http://mattgemmell.com/what-have-you-tried/"&gt;list what you&amp;rsquo;ve tried&lt;/a&gt;. You&amp;rsquo;re trying to improve the project and so is the maintainer. We&amp;rsquo;ve all got the same goals: to improve the code and to improve the community, but make sure to have fun!&lt;/p&gt;
-</description>
-      <pubDate>Tue, 27 Sep 2016 16:28:32 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/resolving-github-merge-conflicts/</guid>
     </item>
   </channel>
 </rss>
