@@ -1,7 +1,7 @@
 ---
 title: Monet.app
 date: 2016-10-30 01:18:55 UTC
-background_image: /img/blog/matisse-app/background.jpg
+background_image: /img/blog/monet-app/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/792124334320082944
 ---
 
