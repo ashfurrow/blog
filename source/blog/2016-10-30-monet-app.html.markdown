@@ -5,7 +5,7 @@ background_image: /img/blog/monet-app/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/792124334320082944
 ---
 
-I heard about a cool [website that can identify the species of bird from a photo](http://www.iflscience.com/plants-and-animals/website-helps-you-identify-birds-looking-your-photo/). It's an impressive feat of computer vision research, but i's not an entirely automated process.
+I heard about a cool [website that can identify the species of bird from a photo](http://www.iflscience.com/plants-and-animals/website-helps-you-identify-birds-looking-your-photo/). It's an impressive feat of computer vision research, but it's not an entirely automated process.
 
 (READMORE)
   
