@@ -26,6 +26,13 @@ upcoming_talks:
   image: swiftconf.png
 
 past_talks:
+- name: Swift, Briskly
+  conference: try! Swift NYC Meetup
+  url: https://www.meetup.com/try_SwiftNYC/events/234789872/
+  location: New York, America
+  slides: https://speakerdeck.com/ashfurrow/swift-briskly
+  dates: November 3, 2016
+  hidden: true
 - name: Thinking in Swift
   conference: Pragma
   url: http://pragmaconference.com/
