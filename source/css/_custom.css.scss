@@ -165,8 +165,6 @@ code, pre {
 
 .container .pager li {
   a {
-    margin-top: 0.625em;
-    margin-bottom: 0.625em;
     text-decoration: none;
     overflow: hidden;
     width: 100%;
@@ -232,8 +230,13 @@ header {
 	padding-bottom: 0.5em;
 }
 
-.under-header {
-	padding-top: 1.25em;
+.intro-header {
+	margin-bottom: 2em;
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    margin-bottom: 3em;    
+  }
 }
 
 @media only screen and (max-width: 768px) {
