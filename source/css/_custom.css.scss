@@ -23,7 +23,7 @@ p.readmore {
 li {
   p {
     &:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
@@ -32,8 +32,8 @@ li {
 
 .search-results {
   /* Gives us some nice spacing. */
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 
   /* Links are article titles, we only underline on hover. */
   a {
@@ -47,8 +47,8 @@ li {
   
   /* An individual search result. */
   .result {
-    padding-left: 0px;
-    line-height: 35px;
+    padding-left: 0;
+    line-height: 2em;
 
     /* Make the date look faded and cool. */
     .post-meta {
@@ -67,7 +67,7 @@ article li a {
 .post-preview {
   p {
     // Instead of 30px 0.
-    margin: 20px 0;
+    margin: 1.25em 0;
   }
 
   h2 {
@@ -76,23 +76,15 @@ article li a {
   }
 }
 
-/* Space out article previews on main blog page. */
-.blog-previews {
-  hr {
-    margin: 45px 0px;
-    border-color: transparent;
-  }
-}
-
 /* Make code look nice. */
 code, pre {
   color: $brand-primary;
   background-color: $gray-light;
-  font-size: 14px;
+  font-size: 0.875em;
 
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 1em;
   }
 }
 
@@ -106,7 +98,7 @@ code, pre {
   }
 
   .icon-link {
-    font-size: 16px;
+    font-size: 1em;
 
     display: none;
 
@@ -120,16 +112,16 @@ code, pre {
 .container.archive {
 
   ol {
-    padding-left: 0px;
-    line-height: 35px;
+    padding-left: 0;
+    line-height: 2em;
   }
 
   li.month {
-    padding-bottom: 30px;
+    padding-bottom: 2em;
 
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) {
-      padding-bottom: 45px;
+      padding-bottom: 3em;
     }
   }
 
@@ -165,16 +157,16 @@ code, pre {
       bottom: 0;
       right: 0;
       color: rgba(255,255,255,0.5);
-      padding-right: 20px;
-      padding-bottom: 20px;
+      padding-right: 1.25em;
+      padding-bottom: 1.25em;
     }
   }
 }
 
 .container .pager li {
   a {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
     text-decoration: none;
     overflow: hidden;
     width: 100%;
@@ -212,46 +204,54 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
 
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
 }
 
 #page_footer {
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 
 /* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
 .blog-previews {
-  @media (min-width: 768px) {
-    margin-top: 40px; // this 40 + the header's 50 margin = 90, the inter-item distance.
+  margin: 3em 0;
+
+  /* Space out article previews on main blog page. */
+  hr {
+    margin: 1em 0;
+    border-color: transparent;
+
+    @media (min-width: 768px) {
+      margin: 2em 0;
+    }
   }
 }
 
 .container li {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 .under-header {
-	padding-top: 20px;
+	padding-top: 1.25em;
 }
 
 @media only screen and (max-width: 768px) {
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 
   .intro-header .site-heading .subheading, .intro-header .page-heading .subheading {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 }
 
 .meta {
   color: #808080;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: italic;
   margin-top: 0;
 }
@@ -269,25 +269,25 @@ iframe.twitter-tweet {
 /* Adds top/bottom spacing to embedded videos */
 
 .embed-responsive {
-  margin: 15px 0px;
+  margin: 1em 0;
 
   @media only screen and (min-width: 768px) {
-    margin: 30px 0px;
+    margin: 2em 0;
   }
 }
 
 blockquote {
-  padding: 0px 15px;
-  padding-left: 30px;
-  margin: 40px 0px;
+  padding: 0 1em;
+  padding-left: 2em;
+  margin: 2em 0;
   font-style: none;
 
   @media only screen and (min-width: 768px) {
-    padding: 0px 30px;
-    padding-left: 45px;
+    padding: 0 2em;
+    padding-left: 3em;
     
     p {
-      font-size: 24px;
+      font-size: 1.5em;
     }
   }
 }
@@ -358,34 +358,34 @@ blockquote > p:first-child {
 #book-link {
   background-color: $gray-light;
   width: 100%;
-  padding: 20px;
-  margin-bottom: 10px;
+  padding: 1.25em;
+  margin-bottom: 0.625em;
   clear: both;
 
   @media only screen and (min-width: 768px) {
-    padding: 40px;
+    padding: 2.5em;
   }
 
   img {
     width: 40%;
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 
     @media only screen and (min-width: 768px) {
     width: 20%;
-      padding-bottom: 0px;
-      padding-right: 20px;
+      padding-bottom: 0;
+      padding-right: 1.25em;
       float: left;
     }
   }
 
   h3 {
-    font-size: 20pt;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 0.625em;
   }
 
   p {
-    margin: 0px;
+    margin: 0;
     @include clearfix();
   }
 

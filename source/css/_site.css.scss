@@ -5,12 +5,12 @@
 
 body {
   @include serif;
-  font-size: 16px;
+  font-size: 1em;
   color: $gray-dark;
 
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 }
 
@@ -34,7 +34,7 @@ body {
 // -- Typography
 
 p {
-  line-height: 1.5;
+  line-height: 1.5em;
   margin: 30px 0;
   a {
     text-decoration: none;
@@ -98,7 +98,7 @@ hr.small {
     li {
       a {
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 0.75em;
         @include heavy;
         letter-spacing: 1px;
       }
@@ -187,7 +187,6 @@ hr.small {
   background-attachment: scroll;
   @include background-cover;
   // NOTE: Background images are set within the HTML using inline CSS!
-  margin-bottom: 20px;
   .site-heading,
   .post-heading,
   .page-heading {
@@ -205,7 +204,7 @@ hr.small {
       font-size: 50px;
     }
     .subheading {
-      font-size: 24px;
+      font-size: 1.5em;
       line-height: 1.1;
       display: block;
       @include sans-serif;
@@ -214,13 +213,13 @@ hr.small {
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 80px;
+        font-size: 5em;
       }
     }
   }
   .post-heading {
     h1 {
-      font-size: 35px;
+      font-size: 2em;
     }
     .subheading,
     .meta {
@@ -229,23 +228,23 @@ hr.small {
     }
     .subheading {
       @include sans-serif;
-      font-size: 24px;
+      font-size: 1.5em;
       margin: 10px 0 30px;
     }
     .meta {
       @include serif;
       font-style: italic;
-      font-size: 20px;
+      font-size: 1.25em;
       a {
         color: white;
       }
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 55px;
+        font-size: 3em;
       }
       .subheading {
-        font-size: 30px;
+        font-size: 1.875em;
       }
     }
   }
@@ -262,7 +261,7 @@ hr.small {
       color: $brand-primary;
     }
     > .post-title {
-      font-size: 30px;
+      font-size: 1.875em;
       margin-bottom: 10px;
     }
     > .post-subtitle {
@@ -272,14 +271,14 @@ hr.small {
   }
   > .post-meta {
     color: $gray;
-    font-size: 18px;
+    font-size: 1em;
     font-style: italic;
     margin: 0;
   }
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 36px;
+        font-size: 2em;
       }
     }
   }
@@ -288,14 +287,14 @@ hr.small {
 // Sections
 
 .section-heading {
-  font-size: 36px;
+  font-size: 2em;
   margin-top: 60px;
   @include heavy;
 }
 
 .caption {
   text-align: center;
-  font-size: 14px;
+  font-size: 1em;
   padding: 10px;
   font-style: italic;
   margin: 0;
@@ -311,7 +310,7 @@ footer {
     padding: 0;
   }
   .copyright {
-    font-size: 14px;
+    font-size: 1em;
     text-align: center;
     margin-bottom: 0;
   }
@@ -323,14 +322,14 @@ footer {
   @include sans-serif;
   @include heavy;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1em;
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
 }
 
 .btn-lg {
-  font-size: 16px;
+  font-size: 1em;
   padding: 25px 35px;
 }
 
@@ -355,7 +354,7 @@ footer {
       @include sans-serif;
       @include heavy;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 0.875em;
       letter-spacing: 1px;
       padding: 15px 25px;
       background-color: white;
