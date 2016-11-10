@@ -216,8 +216,6 @@ header {
 
 /* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
 .blog-previews {
-  margin: 3em 0;
-
   /* Space out article previews on main blog page. */
   hr {
     margin: 1em 0;
@@ -241,7 +239,7 @@ header {
 @media only screen and (max-width: 768px) {
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .intro-header .site-heading .subheading, .intro-header .page-heading .subheading {
