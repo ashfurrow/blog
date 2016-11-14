@@ -3,6 +3,7 @@ title: The Swift Alps & ReSwift
 date: 2016-11-13 23:01:57 UTC
 background_image: /img/blog/the-swift-alps-reswift/background.jpg
 background_image_source: https://www.instagram.com/p/BMxLwVggrio/
+og_image: /img/blog/the-swift-alps-reswift/background.jpg
 ---
 
 I've wanted to expand my expertise outside of just mobile development for a while now, and a few months ago I got the opportunity to begin building a large new feature in an existing [React][react] app for the Artsy Auctions platform. I was _extra_ excited because the feature's purpose is to make running auctions easier for my colleagues on the operations team, so every line of code I write makes their lives just a little easier. It's been a very rewarding experience.
