@@ -60,7 +60,7 @@
 
 &lt;p&gt;The counter app does a lot more than I had originally intended, and it&amp;rsquo;s now probably too complex to serve as a simple introduction to ReSwift. That&amp;rsquo;s okay, it can &lt;a href="https://github.com/TheSwiftAlps/CounterExample"&gt;sit alongside the original&lt;/a&gt; as a learning resource for others.&lt;/p&gt;
 
-&lt;p&gt;I like Redux, and ReSwift is a great implementation of the idea. I&amp;rsquo;m undergoing a &lt;a href="https://github.com/artsy/eigen/pull/1985"&gt;switch to ReSwift in our auctions code&lt;/a&gt;. ReDux appears to clash with UIKit in only the expected ways that a non-UIKit library would, and the simplicity of the framework helps to minimize dependencies within our large app.&lt;/p&gt;
+&lt;p&gt;I like Redux, and ReSwift is a great implementation of the idea. I&amp;rsquo;m undergoing a &lt;a href="https://github.com/artsy/eigen/pull/1985"&gt;switch to ReSwift in our auctions code&lt;/a&gt;. Redux appears to clash with UIKit in only the expected ways that a non-UIKit library would, and the simplicity of the framework helps to minimize dependencies within our large app.&lt;/p&gt;
 
 &lt;p&gt;If I were to repeat this workshop, I would do a lot of the groundwork for creating a universal iOS/macOS app, since that became a large time sink. I feel bad that the time put into Xcode project configuration could have been spent exploring more interesting problems. However, the workshop format of having an &lt;em&gt;idea&lt;/em&gt; of the goal but not an exact destination or path in mind made the journey more educational, and more fun for everyone.&lt;/p&gt;
 
