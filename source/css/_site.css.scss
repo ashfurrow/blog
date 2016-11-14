@@ -5,12 +5,15 @@
 
 body {
   @include serif;
-  font-size: 16px;
   color: $gray-dark;
+
+  font-size: 1.5em;
+  line-height: 1.5em;
 
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    font-size: 20px;
+    font-size: 2em;
+    line-height: 1.5em;
   }
 }
 
@@ -34,8 +37,12 @@ body {
 // -- Typography
 
 p {
-  line-height: 1.5;
-  margin: 30px 0;
+  margin: 1em 0;
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    margin: 1.5em 0;
+  }
+
   a {
     text-decoration: none;
     color: $brand-primary;
@@ -98,7 +105,7 @@ hr.small {
     li {
       a {
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 0.75em;
         @include heavy;
         letter-spacing: 1px;
       }
@@ -109,7 +116,7 @@ hr.small {
     border-bottom: 1px solid transparent;
     .navbar-brand {
       color: white;
-      padding: 20px;
+      padding: 1.25em;
       &:hover,
       &:focus {
         color: $white-faded;
@@ -119,7 +126,7 @@ hr.small {
       li {
         a {
           color: white;
-          padding: 20px;
+          padding: 1.25em;
           &:hover,
           &:focus {
             color: $white-faded;
@@ -187,14 +194,13 @@ hr.small {
   background-attachment: scroll;
   @include background-cover;
   // NOTE: Background images are set within the HTML using inline CSS!
-  margin-bottom: 20px;
   .site-heading,
   .post-heading,
   .page-heading {
-    padding: 100px 0 50px;
+    padding: 6em 0 3em;
     color: white;
     @media only screen and (min-width: 768px) {
-      padding: 150px 0;
+      padding: 7em 0;
     }
   }
   .site-heading,
@@ -202,10 +208,10 @@ hr.small {
     text-align: center;
     h1 {
       margin-top: 0;
-      font-size: 50px;
+      font-size: 2.5em;
     }
     .subheading {
-      font-size: 24px;
+      font-size: 1em;
       line-height: 1.1;
       display: block;
       @include sans-serif;
@@ -214,13 +220,13 @@ hr.small {
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 80px;
+        font-size: 4em;
       }
     }
   }
   .post-heading {
     h1 {
-      font-size: 35px;
+      font-size: 2em;
     }
     .subheading,
     .meta {
@@ -229,23 +235,23 @@ hr.small {
     }
     .subheading {
       @include sans-serif;
-      font-size: 24px;
-      margin: 10px 0 30px;
+      font-size: 1.5em;
+      margin: 0.625em 0 2em;
     }
     .meta {
       @include serif;
       font-style: italic;
-      font-size: 20px;
+      font-size: 1.25em;
       a {
         color: white;
       }
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 55px;
+        font-size: 2.5em;
       }
       .subheading {
-        font-size: 30px;
+        font-size: 1.875em;
       }
     }
   }
@@ -262,24 +268,24 @@ hr.small {
       color: $brand-primary;
     }
     > .post-title {
-      font-size: 30px;
-      margin-bottom: 10px;
+      font-size: 1.875em;
+      margin-bottom: 0.625em;
     }
     > .post-subtitle {
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 0.625em;
     }
   }
   > .post-meta {
     color: $gray;
-    font-size: 18px;
+    font-size: 1em;
     font-style: italic;
     margin: 0;
   }
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 36px;
+        font-size: 2em;
       }
     }
   }
@@ -288,15 +294,15 @@ hr.small {
 // Sections
 
 .section-heading {
-  font-size: 36px;
-  margin-top: 60px;
+  font-size: 2em;
+  margin-top: 3em;
   @include heavy;
 }
 
 .caption {
   text-align: center;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 1em;
+  padding: 0.625em;
   font-style: italic;
   margin: 0;
   display: block;
@@ -305,13 +311,13 @@ hr.small {
 }
 
 footer {
-  padding: 50px 0 65px;
+  padding: 3em 0 3em;
   .list-inline {
     margin: 0;
     padding: 0;
   }
   .copyright {
-    font-size: 14px;
+    font-size: 0.75em;
     text-align: center;
     margin-bottom: 0;
   }
@@ -323,15 +329,15 @@ footer {
   @include sans-serif;
   @include heavy;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1em;
   letter-spacing: 1px;
   border-radius: 0;
-  padding: 15px 25px;
+  padding: 1em 1.5em;
 }
 
 .btn-lg {
-  font-size: 16px;
-  padding: 25px 35px;
+  font-size: 1em;
+  padding: 1.5em 2em;
 }
 
 .btn-default {
@@ -347,7 +353,7 @@ footer {
 
 .pager {
 
-  margin: 20px 0 0;
+  margin: 0;
 
   li {
     > a,
@@ -355,9 +361,9 @@ footer {
       @include sans-serif;
       @include heavy;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 0.75em;
       letter-spacing: 1px;
-      padding: 15px 25px;
+      padding: 1em 1.5em;
       background-color: white;
       border-radius: 0;
     }
