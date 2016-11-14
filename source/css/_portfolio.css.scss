@@ -43,9 +43,9 @@
     @include serif;
     font-weight: 400;
     color: $gray-dark;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left;
-    line-height: 2em;
+    line-height: 1.5em;
   }
 
   /* Software, Education */
@@ -79,7 +79,7 @@
         h3 {
           max-width: 60%;
           text-align: left;
-          margin-bottom: 1em;
+          margin-bottom: 0;
         }
 
         div {
@@ -98,11 +98,11 @@
       }
 
       div {
-        margin-top: 1em;
+        margin-top: 0.5em;
       }
 
       p {
-        margin-top: 1em;
+        margin-top: 0.5em;
       }
     }
   }
@@ -157,7 +157,7 @@
     background: no-repeat center center scroll;
     background-size: cover;
     margin-top: 5em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     padding-top: 3em;
     padding-bottom: 3em;
 

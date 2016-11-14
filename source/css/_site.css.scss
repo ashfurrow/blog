@@ -211,7 +211,7 @@ hr.small {
       font-size: 2.5em;
     }
     .subheading {
-      font-size: 1.5em;
+      font-size: 1em;
       line-height: 1.1;
       display: block;
       @include sans-serif;
@@ -317,7 +317,7 @@ footer {
     padding: 0;
   }
   .copyright {
-    font-size: 1em;
+    font-size: 0.75em;
     text-align: center;
     margin-bottom: 0;
   }
@@ -361,7 +361,7 @@ footer {
       @include sans-serif;
       @include heavy;
       text-transform: uppercase;
-      font-size: 0.875em;
+      font-size: 0.75em;
       letter-spacing: 1px;
       padding: 1em 1.5em;
       background-color: white;
