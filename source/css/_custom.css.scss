@@ -215,8 +215,11 @@ header {
 /* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
 .blog-previews {
 
-  /* Give header some breathing room when immediately followed by h3's */
-  margin-top: 2em;
+
+  @media (min-width: 768px) {
+    /* Give header some breathing room when immediately followed by h3's. */
+    margin-top: 2em;
+  }
 
   /* Space out article previews on main blog page. */
   hr {
