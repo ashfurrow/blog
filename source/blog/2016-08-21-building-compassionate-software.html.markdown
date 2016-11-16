@@ -149,4 +149,4 @@ YOUTUBE OdHH5KWGTNo
 
 END_WIDE
 
-I'm presenting on this topic at a [meetup here in New York](http://www.meetup.com/iOSoho/events/226405664/) in October. I'd love to see you there, hear what you think, and talk about how we can all help improve the industry together.
+I'm presenting on this topic at a [meetup here in New York](https://www.meetup.com/iOSoho/events/232809656/) in December. I'd love to see you there, hear what you think, and talk about how we can all help improve the industry together.
