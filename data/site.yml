@@ -6,3 +6,20 @@ dark_image: /img/siteimage_dark.png
 default_background_image: /img/backgrounds/default.jpg
 feed_link: //feed.ashfurrow.com/feed.xml
 feed_rss_link: //feed.ashfurrow.com/feed.rss.xml
+
+featured_posts:
+  - title: Normalizing Struggle
+    background: /img/featured/normaling_struggle.png
+    url: /blog/normalizing-struggle/
+
+  - title: Asking for Help in Open Source
+    background: /img/featured/asking-for-help-in-open-source.jpg
+    url: /blog/asking-for-help-in-open-source/
+
+  - title: Empathetic Civilization
+    background: /img/featured/empathetic_civilization.jpg
+    url: /blog/empathetic-civilization/
+
+  - title: Building Compassionate Software
+    background: /img/featured/building_compassionate_software.jpg
+    url: /blog/empathetic-civilization/

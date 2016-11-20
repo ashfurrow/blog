@@ -28,6 +28,51 @@ li {
   }
 }
 
+/* Featured blog posts */
+.featured-blog-posts {
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    padding-top: 1em;
+  }
+
+  a {
+    color: white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    div {
+      margin-bottom: 0.5em;
+      &:nth-child(2n+2) {
+        padding-left: 1em;
+      }
+      &:nth-child(2n+1) {
+        padding-right: 1em;
+      }
+    }
+  }
+
+  .preview {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    min-height: 6.5em;
+    /* medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      min-height: 6.5em;
+    }
+  }
+  h2 {
+    padding: 0.5em;
+  }
+}
+
 /* Search. */
 
 .search-results {
@@ -214,12 +259,7 @@ header {
 
 /* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
 .blog-previews {
-
-
-  @media (min-width: 768px) {
-    /* Give header some breathing room when immediately followed by h3's. */
-    margin-top: 2em;
-  }
+  margin-top: 2em;
 
   /* Space out article previews on main blog page. */
   hr {
@@ -238,12 +278,7 @@ header {
 }
 
 .intro-header {
-	margin-bottom: 2em;
-
-  /* Small devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    margin-bottom: 1em;    
-  }
+	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
