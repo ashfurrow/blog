@@ -3,6 +3,7 @@ title: The Swift Alps & ReSwift
 date: 2016-11-13 23:01:57 UTC
 background_image: /img/blog/the-swift-alps-reswift/background.jpg
 background_image_source: https://www.instagram.com/p/BMxLwVggrio/
+og_image: /img/blog/the-swift-alps-reswift/background.jpg
 ---
 
 I've wanted to expand my expertise outside of just mobile development for a while now, and a few months ago I got the opportunity to begin building a large new feature in an existing [React][react] app for the Artsy Auctions platform. I was _extra_ excited because the feature's purpose is to make running auctions easier for my colleagues on the operations team, so every line of code I write makes their lives just a little easier. It's been a very rewarding experience.
@@ -44,7 +45,7 @@ We tried, failed, and tried again. When I ran out of ideas to augment the app, p
 
 The counter app does a lot more than I had originally intended, and it's now probably too complex to serve as a simple introduction to ReSwift. That's okay, it can [sit alongside the original][counter_example_fork] as a learning resource for others.
 
-I like Redux, and ReSwift is a great implementation of the idea. I'm undergoing a [switch to ReSwift in our auctions code][reswift_pr]. ReDux appears to clash with UIKit in only the expected ways that a non-UIKit library would, and the simplicity of the framework helps to minimize dependencies within our large app.
+I like Redux, and ReSwift is a great implementation of the idea. I'm undergoing a [switch to ReSwift in our auctions code][reswift_pr]. Redux appears to clash with UIKit in only the expected ways that a non-UIKit library would, and the simplicity of the framework helps to minimize dependencies within our large app.
 
 If I were to repeat this workshop, I would do a lot of the groundwork for creating a universal iOS/macOS app, since that became a large time sink. I feel bad that the time put into Xcode project configuration could have been spent exploring more interesting problems. However, the workshop format of having an _idea_ of the goal but not an exact destination or path in mind made the journey more educational, and more fun for everyone.
 
