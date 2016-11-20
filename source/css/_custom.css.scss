@@ -62,10 +62,11 @@ li {
     }
   }
 
-  /* Small devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .embedded {
-      margin-bottom: 1.5em;
+  .embedded {
+    margin-bottom: 1em;
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        margin-bottom: 1.5em;
     }
   }
 
