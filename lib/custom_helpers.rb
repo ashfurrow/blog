@@ -138,9 +138,9 @@ module CustomHelpers
     divs = ''
     array.each_with_index do |element, index|
       if index % 2 == 0
-        divs += "<div class='col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6'>#{yield(element)}</div>"
+        divs += "<div class='col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 embedded'>#{yield(element)}</div>"
       else
-        divs += "<div class='col-lg-4 col-md-5 col-sm-6'>#{yield(element)}</div>"
+        divs += "<div class='col-lg-4 col-md-5 col-sm-6 embedded'>#{yield(element)}</div>"
       end
     end
     divs

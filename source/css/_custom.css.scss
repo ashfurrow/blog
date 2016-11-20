@@ -28,6 +28,25 @@ li {
   }
 }
 
+/* Things specific to the landing page */
+.container{
+  .recent-blog-posts {
+    ol {
+      padding-left: 0;
+    }
+    li {
+      list-style-image: none;
+      list-style-position: outside;
+      list-style-type: none;
+      padding-top: 0;
+      padding-bottom: 0.25em;
+    }
+    li.older-posts {
+      font-style: italic;
+    }
+  }
+}
+
 /* Featured blog posts */
 .featured-blog-posts {
 
@@ -45,14 +64,8 @@ li {
 
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    div {
-      margin-bottom: 0.5em;
-      &:nth-child(2n+2) {
-        padding-left: 1em;
-      }
-      &:nth-child(2n+1) {
-        padding-right: 1em;
-      }
+    .embedded {
+      margin-bottom: 1.5em;
     }
   }
 
@@ -67,9 +80,15 @@ li {
     @media (min-width: 992px) {
       min-height: 6.5em;
     }
+
+    h2 {
+      padding: 0.5em;
+      margin: 0;
+    }
   }
+
   h2 {
-    padding: 0.5em;
+    padding-bottom: 0.25em;
   }
 }
 
@@ -256,22 +275,6 @@ header {
 #page_footer {
   margin-top: 1.25em;
 }
-
-/* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
-.blog-previews {
-  margin-top: 2em;
-
-  /* Space out article previews on main blog page. */
-  hr {
-    margin: 1em 0;
-    border-color: transparent;
-
-    @media (min-width: 768px) {
-      margin: 2em 0;
-    }
-  }
-}
-
 .container li {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
