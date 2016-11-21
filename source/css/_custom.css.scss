@@ -49,7 +49,6 @@ li {
 
 /* Featured blog posts */
 .featured-blog-posts {
-
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
     padding-top: 1em;
@@ -179,15 +178,6 @@ code, pre {
   ol {
     padding-left: 0;
     line-height: 2em;
-  }
-
-  li.month {
-    padding-bottom: 2em;
-
-    /* Small devices (tablets, 768px and up) */
-    @media (min-width: 768px) {
-      padding-bottom: 3em;
-    }
   }
 
   li {
