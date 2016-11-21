@@ -6,21 +6,19 @@ changefreq: daily
 / Page Header
 == partial 'partials/_header', locals: { title: data.site.name, subtitle: data.site.subtitle }
 
-.container
-  .row.blog-previews
+.container.landing-page
+  .row.featured-blog-posts
     == standard_width_div do
-      - page_articles.each_with_index do |article, i|
-        .post-preview
-          h2.post-title= link_to article.title, article.url
-          p.post-meta= article.date.strftime('%B %e, %Y')
-          = article.summary
-          p.readmore= link_to 'Read more...', article.url
+      h2 Get Started Here
+    == alternate_offset_divs(data.site.featured_posts) do |post|
+      = link_to post.url
+        .preview style="background-image: url('#{post.background}');"
+          h2= post.title
 
-        / Add hr between each article
-        - if (i != page_articles.size - 1)
-          hr
-      hr
-
-      / Pager
-      ul.pager
-        li.previous= link_to 'Older Posts', '/blog'
+  .row.recent-blog-posts
+    == standard_width_div do
+      h2 Recent Posts
+      ol
+        - page_articles.each_with_index do |article, i|
+          li= link_to article.title, article.url
+        li.older-posts= link_to 'Older posts...', '/blog'

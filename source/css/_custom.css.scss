@@ -28,6 +28,70 @@ li {
   }
 }
 
+/* Things specific to the landing page */
+.container{
+  .recent-blog-posts {
+    ol {
+      padding-left: 0;
+    }
+    li {
+      list-style-image: none;
+      list-style-position: outside;
+      list-style-type: none;
+      padding-top: 0;
+      padding-bottom: 0.25em;
+    }
+    li.older-posts {
+      font-style: italic;
+    }
+  }
+}
+
+/* Featured blog posts */
+.featured-blog-posts {
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    padding-top: 1em;
+  }
+
+  a {
+    color: white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .embedded {
+    margin-bottom: 1em;
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        margin-bottom: 1.5em;
+    }
+  }
+
+  .preview {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    min-height: 6.5em;
+    /* medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      min-height: 6.5em;
+    }
+
+    h2 {
+      padding: 0.5em;
+      margin: 0;
+    }
+  }
+
+  h2 {
+    padding-bottom: 0.25em;
+  }
+}
+
 /* Search. */
 
 .search-results {
@@ -116,15 +180,6 @@ code, pre {
     line-height: 2em;
   }
 
-  li.month {
-    padding-bottom: 2em;
-
-    /* Small devices (tablets, 768px and up) */
-    @media (min-width: 768px) {
-      padding-bottom: 3em;
-    }
-  }
-
   li {
     list-style-image: none;
     list-style-position: outside;
@@ -211,39 +266,13 @@ header {
 #page_footer {
   margin-top: 1.25em;
 }
-
-/* Since we can see the first few previews on large displays, the top one looks "too close" to the header. */
-.blog-previews {
-
-
-  @media (min-width: 768px) {
-    /* Give header some breathing room when immediately followed by h3's. */
-    margin-top: 2em;
-  }
-
-  /* Space out article previews on main blog page. */
-  hr {
-    margin: 1em 0;
-    border-color: transparent;
-
-    @media (min-width: 768px) {
-      margin: 2em 0;
-    }
-  }
-}
-
 .container li {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
 
 .intro-header {
-	margin-bottom: 2em;
-
-  /* Small devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    margin-bottom: 1em;    
-  }
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
