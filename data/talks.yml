@@ -1,11 +1,4 @@
 upcoming_talks:
-
-- name: TBD
-  conference: The Swift Alps
-  url: http://theswiftalps.com
-  location: Crans-Montana, Switzerland
-  dates: November 10–11, 2016
-  image: swiftalps.png
 - name: Building Compassionate Software
   conference: iOSoho
   url: https://www.meetup.com/iOSoho/events/232809656/
@@ -26,6 +19,13 @@ upcoming_talks:
   image: swiftconf.png
 
 past_talks:
+- name: Re-visiting ReSwift
+  conference: The Swift Alps
+  url: http://theswiftalps.com
+  location: Crans-Montana, Switzerland
+  dates: November 10–11, 2016
+  image: swiftalps.png
+  hidden: true
 - name: Swift, Briskly
   conference: try! Swift NYC Meetup
   url: https://www.meetup.com/try_SwiftNYC/events/234789872/
