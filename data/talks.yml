@@ -6,6 +6,12 @@ upcoming_talks:
   dates: December 12, 2016
   image: iosoho.jpeg
 - name: TBD
+  conference: Playgrounds
+  url: http://www.playgroundscon.com
+  location: Melbourne, Australia
+  dates: February 23–24, 2017
+  image: playgroundscon.jpg
+- name: TBD
   conference: App Builders
   url: https://www.appbuilders.ch
   location: Lausanne, Switzerland
