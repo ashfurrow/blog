@@ -94,6 +94,15 @@ li {
 
 /* Search. */
 
+.row.seach {
+  margin-top: 1em;
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    margin-top: 2em;
+  }
+}
+
 .search-results {
   /* Gives us some nice spacing. */
   margin-top: 1.25em;
