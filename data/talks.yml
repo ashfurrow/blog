@@ -1,10 +1,4 @@
 upcoming_talks:
-- name: Building Compassionate Software
-  conference: iOSoho
-  url: https://www.meetup.com/iOSoho/events/232809656/
-  location: New York, America
-  dates: December 12, 2016
-  image: iosoho.jpeg
 - name: TBD
   conference: Playgrounds
   url: http://www.playgroundscon.com
@@ -25,6 +19,13 @@ upcoming_talks:
   image: swiftconf.png
 
 past_talks:
+- name: Building Compassionate Software
+  conference: iOSoho
+  url: https://www.meetup.com/iOSoho/events/232809656/
+  location: New York, America
+  slides: https://speakerdeck.com/ashfurrow/building-compassionate-software
+  dates: December 12, 2016
+  image: buildingcompassionatesoftware.png
 - name: Re-visiting ReSwift
   conference: The Swift Alps
   url: http://theswiftalps.com
