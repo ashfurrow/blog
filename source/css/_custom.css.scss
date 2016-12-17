@@ -248,10 +248,11 @@ code, pre {
 
 .container .article_pager li {
   a {
-    /* Make pagers on articles half width */
+    margin-top: 1em;
 
     /* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) {
+      margin-top: 0;
       width: 45%;
     }
   }
