@@ -6,6 +6,40 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Learning Guitar</title>
+      <link>https://ashfurrow.com/blog/learning-guitar/</link>
+      <description>&lt;p&gt;So the world kinda sucks, eh? There&amp;rsquo;s no shortage of things to be worried about, and if I&amp;rsquo;m not careful I can easily get sucked into a spiral of despair. Yikes. I can&amp;rsquo;t help anyone if I&amp;rsquo;m paralyzed by depression, so I needed something to help take my mind off things. Music seemed like a great choice.&lt;/p&gt;
+
+&lt;p&gt;So about a month ago I bought a ukulele. Actually, my wife and I each got one so we could learn together. I&amp;rsquo;d tried to learn guitar a few years ago but had struggled due to a lack of direction, and the uke seemed like a good way to try again to learn my first stringed instrument. Well after getting &lt;em&gt;really&lt;/em&gt; into it I decided to by a guitar again.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The guitar is just as hard to learn as I remember, but the uke really helped me get used to contorting my fingers into unnatural shapes to play chords. So I&amp;rsquo;m really grateful I picked it up first. I got a &lt;a href="http://amzn.to/2i3vzGq"&gt;Cordoba 15CM&lt;/a&gt; ukulele from Guitar Center and went back for a &lt;a href="http://amzn.to/2hVWvfq"&gt;Yamaha FS800&lt;/a&gt;. I followed advice from friends to go to a store in person and find an instrument that felt nice in my hands, even if I didn&amp;rsquo;t know how to play it yet. I got an acoustic guitar because it&amp;rsquo;s most used in the music I listen to.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://www.instagram.com/p/nn7ASGjBng/"&gt;last time&lt;/a&gt; I tried to learn guitar I didn&amp;rsquo;t really have a plan, other than to just playing Rocksmith. Turns out playing a video game isn&amp;rsquo;t the best way to learn an instrument. So here&amp;rsquo;s what I&amp;rsquo;m doing now:&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m using &lt;a href="http://yousician.com"&gt;Yousician&lt;/a&gt; to learn uke and guitar; their lessons and tips have been really helpful so far, and I like that their business model (monthly subscription) is based on users continuing to use the app, so they have an incentive to continue to supply educational content. I wouldn&amp;rsquo;t be as far along with either the guitar or uke without them.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.youtube.com/user/andycrowley"&gt;Andy Guitar&lt;/a&gt; has a free YouTube-based guitar course that I&amp;rsquo;ve been following, as well as tutorials on individual songs. The tutorials and the course actually tie into each other, and there&amp;rsquo;s a bunch of other educational content on &lt;a href="https://www.andyguitar.co.uk"&gt;their site&lt;/a&gt;. Really great stuff.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.youtube.com/user/ukuleleunderground"&gt;Ukulele Underground&lt;/a&gt; is a YouTube channel with really earnest, helpful tips and instructions. &lt;a href="https://www.youtube.com/user/TheUkuleleTeacher"&gt;The Ukulele Teacher&lt;/a&gt; is another channel that focuses on teaching individual songs (with lots from Steven Universe, too).&lt;/p&gt;
+
+&lt;p&gt;I also bought a book from the guitar store with my uke, which covers a lot of basics like how to hold and strum the instrument.&lt;/p&gt;
+
+&lt;p&gt;What I&amp;rsquo;ve been trying to do is to expose myself to a variety of opinions on how to play, and then to synthesize a technique that works for me. Different experts have different opinions on how best to learn, and trying them has helped me understand the principles of what I&amp;rsquo;m learning.&lt;/p&gt;
+
+&lt;p&gt;The human body isn&amp;rsquo;t designed to play instruments, especially guitar. When I was a student playing alto saxophone, my mouth ached after playing for a while, because my face muscles weren&amp;rsquo;t designed enough to maintain an embouchure. My teeth left indents on the inside of my mouth that lasted for years after I stopped playing.&lt;/p&gt;
+
+&lt;p&gt;Guitar is a bit different. My left hand&amp;rsquo;s finger tips have lost most of their sensation from calluses building up. I knew this would happen but I wasn&amp;rsquo;t really prepared for it. I&amp;rsquo;m a programmer, I type a lot, and typing feels different when half my fingers can&amp;rsquo;t feel the keys anymore. And I&amp;rsquo;ve had to be diligent about holding/strumming properly to not aggravate my carpal tunnel syndrome. But it&amp;rsquo;s been rewarding nonetheless.&lt;/p&gt;
+
+&lt;p&gt;I turned to music as a way to cope with crappy world events, and it&amp;rsquo;s worked: I&amp;rsquo;m feeling less stressed and more able to focus. The next two weeks off are gonna be jam-tastic.&lt;/p&gt;
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/hIoiyoo9W0Q' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+</description>
+      <pubDate>Sun, 18 Dec 2016 16:44:20 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/learning-guitar/</guid>
+    </item>
+    <item>
       <title>The Swift Alps &amp; ReSwift</title>
       <link>https://ashfurrow.com/blog/the-swift-alps-reswift/</link>
       <description>&lt;p&gt;I&amp;rsquo;ve wanted to expand my expertise outside of just mobile development for a while now, and a few months ago I got the opportunity to begin building a large new feature in an existing &lt;a href="https://facebook.github.io/react/"&gt;React&lt;/a&gt; app for the Artsy Auctions platform. I was &lt;em&gt;extra&lt;/em&gt; excited because the feature&amp;rsquo;s purpose is to make running auctions easier for my colleagues on the operations team, so every line of code I write makes their lives just a little easier. It&amp;rsquo;s been a very rewarding experience.&lt;/p&gt;
@@ -230,34 +264,6 @@ sudo apt-get install -y libcurl4-openssl-dev uuid-dev
 </description>
       <pubDate>Tue, 11 Oct 2016 08:23:08 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/we-trust-apple-too-much/</guid>
-    </item>
-    <item>
-      <title>Growing Pains</title>
-      <link>https://ashfurrow.com/blog/growing-pains/</link>
-      <description>&lt;p&gt;Artsy did it&amp;rsquo;s six-monthly peer performance (performance?) reviews and I got lots of meaningful feedback, including &amp;ldquo;aww yeah, Ash is great&amp;rdquo; comments from colleagues and my manager. I want to reflect a bit on the review, my direction, and my goals.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Artsy&amp;rsquo;s process involves a self-evaluation, peer evaluations, and a meeting with one&amp;rsquo;s manager. All the feedback is non-anonymous. The evaluations measure performance and teamwork separately, but both of them against Artsy&amp;rsquo;s values:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Quality Worthy of Art&lt;/li&gt;
-&lt;li&gt;People are Paramount&lt;/li&gt;
-&lt;li&gt;Openness&lt;/li&gt;
-&lt;li&gt;Positive Energy&lt;/li&gt;
-&lt;li&gt;Art x Science&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I gave myself good marks for performance and great marks on teamwork. It&amp;rsquo;s a struggle to give an honest, not-depression-tinted review of my own abilities, so it was a struggled to say &amp;ldquo;I&amp;rsquo;m great.&amp;rdquo; I also said that I need to stop taking things so personally and to get better at conflict resolution.&lt;/p&gt;
-
-&lt;p&gt;My manager told me that I was being hard on myself, that he was proud of what I had accomplished and that I had full latitude to continue working on new strategies to improve our team&amp;rsquo;s dynamics. So that was pretty cool.&lt;/p&gt;
-
-&lt;p&gt;My goals are to continue to focus on &lt;a href="https://ashfurrow.com/blog/building-online-communities/"&gt;community-building&lt;/a&gt; and expand into manager-type responsibilities. I&amp;rsquo;m not sure if a &amp;ldquo;manager&amp;rdquo; is what I want to be, but the skills are important to acquire in either case.&lt;/p&gt;
-
-&lt;p&gt;One other note: I dislike awkward situations, like &lt;em&gt;really&lt;/em&gt; dislike them. But my work often involves things like disagreeing with others and giving critical feedback to colleagues. Obviously no Canadian likes disagreeing with anyone, but I take it to an extreme. So I&amp;rsquo;m going to start pushing towards that awkwardness, like a kind of exposure therapy. So look forward to more unsalted opinions and blog posts even more awkward than sharing one&amp;rsquo;s peerformance review. &lt;/p&gt;
-</description>
-      <pubDate>Sun, 09 Oct 2016 19:06:30 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/growing-pains/</guid>
     </item>
   </channel>
 </rss>
