@@ -52,10 +52,12 @@ jQuery(document).ready(function($) {
       method: 'GET',
       success: function(data) {
         // Callback for success: log it and set up our search.
-        console.log('Downloaded Search JSON.');
+        console.info('Downloaded Search JSON.');
         setupSearch(data);
       }
     });
+    // Search text input should have immediate focus.
+    $('#search').focus();
   }
 });
 
@@ -68,7 +70,7 @@ var trackMaretingLink = function(link) {
 // bind to events, search the DOM based on classes and ids, as well as to 
 // manipulate the DOM by unwrapping and removing elements.
 function setupSearch(lunrData) {
-  console.log('Creating search index.');
+  console.info('Creating search index.');
   // Set up the index, store it and the map in two vars defined up top.
   // The index is used to make searches, the map is used to retrieve information
   // about a result. This information is what's specified as "stored" in 
@@ -79,7 +81,7 @@ function setupSearch(lunrData) {
   // We move the element with id `search` up in its DOM hierarchy and remove the
   // search result group, a bootstrap element that shows the user the index is
   // still being downloaded.
-  $('#search').unwrap();
+  $('#search').unwrap().focus();
   $('#search-result-group').remove();
 
   // We now bind the keyup event to an anonymous function, invoked whenever the
