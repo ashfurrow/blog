@@ -7,11 +7,11 @@ background_image_source: https://twitter.com/CloudyConway/status/817193041161232
 
 I recently launched this [Peer Lab website](http://peerlab.community) to list the peer labs around the world and to provide instructions on starting one. It's a small site with no need for a backend, so I decided to host it as static HTML. However, it was important that adding new labs would be easy for outside contributors. Since I had used the tool before to build a few static websites – including this blog – I turned to [Middleman](https://middlemanapp.com).
 
-So let's explore the exact process I went through. I'm going to provide a series of high-level steps so you can replicate this for whatever site you need to build, and link to actual code when I can. However, every website is different, so "some assembly required" 😉
+Let's explore the exact process I went through. I'm going to provide a series of high-level steps and link to actual code when I can, so you can replicate this for whatever site you need to build, However, every website is different, so "some assembly required" 😉
 
 (READMORE)
 
-The first thing you've got to do is create a new GitHub repository. We'll use the repo to store the source code and also to host the site, each on their own branch, but more on that later. Install Middleman with `gem install middleman`, and then run `middleman init` to create the empty scaffold of your site. You can now run `middleman` to start a server and browse the site locally. Nice! Time to commit your changes and push.
+The first thing you've got to do is create a new GitHub repository. We'll use the repo to store the source code and also to host the site (each on their own branch, but more on that later). Install Middleman with `gem install middleman`, and then run `middleman init` to create the empty scaffold of your site. You can now run `middleman` to start a server and browse the site locally. Nice! Time to commit your changes and push.
 
 Okay, so we're running locally. Now we need to be able to deploy. I added the `middleman-gh-pages` gem to my Gemfile and ran `bundle install`, and followed [their instructions](https://github.com/edgecase/middleman-gh-pages#installation) to create a new Rake task. Now deploying to GitHub Pages is as easy as typing `rake publish`. Try it out to make sure it works: it will build the site using Middleman and push a copy of the static HTML to the `gh-pages` branch of your repo. Nice! Commit your changes and push them.
 
