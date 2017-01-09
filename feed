@@ -6,6 +6,89 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Building Static Sites with Middleman</title>
+      <link>https://ashfurrow.com/blog/building-static-sites-with-middleman/</link>
+      <description>&lt;p&gt;I recently launched this &lt;a href="http://peerlab.community"&gt;Peer Lab website&lt;/a&gt; to list the peer labs around the world and to provide instructions on starting one. It&amp;rsquo;s a small site with no need for a backend, so I decided to host it as static HTML. However, it was important that adding new labs would be easy for outside contributors. Since I had used the tool before to build a few static websites – including this blog – I turned to &lt;a href="https://middlemanapp.com"&gt;Middleman&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s explore the exact process I went through. I&amp;rsquo;m going to provide a series of high-level steps and link to actual code when I can, so you can replicate this for whatever site you need to build, However, every website is different, so &amp;ldquo;some assembly required&amp;rdquo; 😉&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing you&amp;rsquo;ve got to do is create a new GitHub repository. We&amp;rsquo;ll use the repo to store the source code and also to host the site (each on their own branch, but more on that later). Install Middleman with &lt;code&gt;gem install middleman&lt;/code&gt;, and then run &lt;code&gt;middleman init&lt;/code&gt; to create the empty scaffold of your site. You can now run &lt;code&gt;middleman&lt;/code&gt; to start a server and browse the site locally. Nice! Time to commit your changes and push.&lt;/p&gt;
+
+&lt;p&gt;Okay, so we&amp;rsquo;re running locally. Now we need to be able to deploy. I added the &lt;code&gt;middleman-gh-pages&lt;/code&gt; gem to my Gemfile and ran &lt;code&gt;bundle install&lt;/code&gt;, and followed &lt;a href="https://github.com/edgecase/middleman-gh-pages#installation"&gt;their instructions&lt;/a&gt; to create a new Rake task. Now deploying to GitHub Pages is as easy as typing &lt;code&gt;rake publish&lt;/code&gt;. Try it out to make sure it works: it will build the site using Middleman and push a copy of the static HTML to the &lt;code&gt;gh-pages&lt;/code&gt; branch of your repo. Nice! Commit your changes and push them.&lt;/p&gt;
+
+&lt;p&gt;Optionally, follow the &lt;a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/"&gt;GitHub Pages documentation&lt;/a&gt; on using a custom domain name. Put the &lt;code&gt;CNAME&lt;/code&gt; file in the &lt;code&gt;source&lt;/code&gt; directory of your site&amp;rsquo;s repo.&lt;/p&gt;
+
+&lt;p&gt;Now that we have deploys working, it&amp;rsquo;s time to automate them. Set up a new CI project on Travis or Circle CI (I used Travis, but they&amp;rsquo;re both awesome choices). CI is going to need to be able to push to your GitHub repo, so you&amp;rsquo;ll need a GitHub personal access token with the necessary permissions, stored in a CI secure environment variable. Once you&amp;rsquo;ve done that, we need to tell &lt;code&gt;git&lt;/code&gt; to use the token when pushing to GitHub. In your CI setup, add something like the following:&lt;/p&gt;
+
+
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;before_install&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;echo -e "machine github.com\n  login ci-user\n  password $GITHUB_API_KEY" &amp;gt;&amp;gt; ~/.netrc&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;chmod 600 ~/.netrc&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;git config --global user.email "ash@ashfurrow.com"&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;git config --global user.name "Ash Furrow (via Travis)"&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Storing the access token in &lt;code&gt;.netrc&lt;/code&gt; provides the login info for when &lt;code&gt;git&lt;/code&gt; tries to push to GitHub, via the &lt;code&gt;middleman-gh-pages&lt;/code&gt; gem. Nice. &lt;/p&gt;
+
+&lt;p&gt;Your CI needs some sort of script to test that the site generated successfully. I use &lt;code&gt;bundle exec middleman build --build-dir=test&lt;/code&gt; to generate the site in a &lt;code&gt;test&lt;/code&gt; directory. I want the testing and the deploying to be separate, but this means that we&amp;rsquo;re actually building the site twice. It&amp;rsquo;s a performance hit, but not a huge deal unless your site is huge.&lt;/p&gt;
+
+&lt;p&gt;Ok, so in your CI config, after a successful build, we&amp;rsquo;ll want to add the following line: &lt;code&gt;bundle exec rake travis ALLOW_DIRTY=true&lt;/code&gt;. This executes the &lt;code&gt;travis&lt;/code&gt; Rake task with &lt;code&gt;ALLOW_DIRTY&lt;/code&gt;, needed for the GitHub Pages deploy gem. Let&amp;rsquo;s create that Rake task to &lt;em&gt;only&lt;/em&gt; deploy on pushes to master. Here&amp;rsquo;s what it looks like for Travis:&lt;/p&gt;
+
+
+&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:travis&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;ENV&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'TRAVIS_BRANCH'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+  &lt;span class="n"&gt;pull_request&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;ENV&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'TRAVIS_PULL_REQUEST'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+  &lt;span class="nb"&gt;abort&lt;/span&gt; &lt;span class="s1"&gt;'Must be run on Travis'&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt;
+
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pull_request&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;'false'&lt;/span&gt;
+    &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s1"&gt;'Skipping deploy for pull request; can only be deployed from master branch.'&lt;/span&gt;
+    &lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;'master'&lt;/span&gt;
+    &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;"Skipping deploy for &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;; can only be deployed from master branch."&lt;/span&gt;
+    &lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="no"&gt;Rake&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Task&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'publish'&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="nf"&gt;invoke&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;This script will look different for Circle, check out &lt;a href="https://circleci.com/docs/environment-variables/"&gt;their documentation&lt;/a&gt; for more details. Commit your changes and push them to GitHub. Watch your CI and – if everything goes right – your site should be deployed automatically, within minutes. Awesome!&lt;/p&gt;
+
+&lt;p&gt;Now that the deploy process is automated, we can really quickly iterate on the site&amp;rsquo;s content and design. Oh hey, design, that&amp;rsquo;s a great idea! Time to replace the Middleman scaffold. &lt;/p&gt;
+
+&lt;p&gt;Head over to &lt;a href="https://startbootstrap.com"&gt;Start Bootstrap&lt;/a&gt; and grab one of their templates. After you&amp;rsquo;ve picked one, give it attribution in your site&amp;rsquo;s Readme. Importing the template itself is kind of tricky, as it&amp;rsquo;s different for each template. You&amp;rsquo;ll want to start by moving the templates&amp;rsquo; JavaScript files into the &lt;code&gt;source/javascripts&lt;/code&gt; directory of your Middleman site, and do the same for any images and stylesheets. Now comes the really tricky part.&lt;/p&gt;
+
+&lt;p&gt;The template files are plain HTML, but Middleman uses ERB to construct the pages. You can use Slim or HAML or whatever you like, but I stuck with ERB for this project. You&amp;rsquo;re going to have to migrate the HTML over into the ERB files manually.&lt;/p&gt;
+
+&lt;p&gt;Each page is wrapped using &lt;code&gt;layout.erb&lt;/code&gt;. You&amp;rsquo;ll want to move the parts of the template that apply to every page (like the like HTML &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; section, navigation, and footer) into the &lt;code&gt;layout.erb&lt;/code&gt; file. Move the landing page-specific content into &lt;code&gt;index.html.erb&lt;/code&gt;. This involves a lot of trial-and-error, just keep at it until it looks right. If you get stuck with a weird error, Google it and I&amp;rsquo;m sure you&amp;rsquo;ll find someone else with the same problem (and you can benefit from their solution).&lt;/p&gt;
+
+&lt;p&gt;Writing your content and getting it to display correctly is beyond the scope of this blog post, and it&amp;rsquo;s going to depend a lot on what your site is about. Remember to make frequent, small changes, and that deploys are automated when you push to GitHub.&lt;/p&gt;
+
+&lt;p&gt;The Peer Lab site has a list of peer labs around the world, and this list is generated from a &lt;a href="https://github.com/ashfurrow/peerlab.community/blob/5792eebad29156ea56f60e7304fd29dba3dbe55a/data/events.yml"&gt;yaml file&lt;/a&gt;. If you want to do something similar, create a new &lt;code&gt;data&lt;/code&gt; directory in the root of your repo and, within it, create a new &lt;code&gt;.yml&lt;/code&gt; file. You&amp;rsquo;ll be able to access the contents of this file &lt;em&gt;as&lt;/em&gt; Ruby objects. There&amp;rsquo;s more info &lt;a href="https://middlemanapp.com/advanced/data_files/#toc"&gt;in the Middleman docs&lt;/a&gt;, and you can check out my implementation &lt;a href="https://github.com/ashfurrow/peerlab.community/blob/5792eebad29156ea56f60e7304fd29dba3dbe55a/source/find.html.erb#L20-L56"&gt;here&lt;/a&gt;. I also added &lt;a href="https://github.com/ashfurrow/peerlab.community#adding-your-peer-lab"&gt;documentation&lt;/a&gt; about the format of the yaml file to my Readme, you should consider doing it too.&lt;/p&gt;
+
+&lt;p&gt;Okay, almost done! The final thing we need to do is think about SEO. Yes, SEO. When someone shares your site on Facebook or Twitter, or sends it as an iMessage, you want it to expand and have a summary card instead of just being an ordinary URL. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/building-static-sites-with-middleman/imessage.png" alt="iMessage expansion" /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three groups of &lt;code&gt;&amp;lt;meta&amp;gt;&lt;/code&gt; tags to add to your &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;: ordinary tags, Twitter Card tags, and Facebook Open Graph tags. The content of these tags is going to depend on your individual site, but for reference here&amp;rsquo;s the &lt;a href="https://dev.twitter.com/cards/overview"&gt;Twitter Cards documentation&lt;/a&gt;, the &lt;a href="https://developers.facebook.com/docs/sharing/opengraph"&gt;Facebook Open Graph documentation&lt;/a&gt;, and &lt;a href="https://github.com/ashfurrow/peerlab.community/blob/5792eebad29156ea56f60e7304fd29dba3dbe55a/source/layouts/layout.erb#L8-L34"&gt;my implementation&lt;/a&gt; for the Peer Lab site. Use the &lt;a href="https://developers.facebook.com/tools/debug/"&gt;Open Graph Debugger&lt;/a&gt; to preview what your site looks like when people share it. Nice.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;So that&amp;rsquo;s a rundown on how to quickly create a static website using Middleman. I&amp;rsquo;ve done this a few times and every time I do, I need to remember all the steps. Now, at the very least, I&amp;rsquo;ve got documentation 😅&lt;/p&gt;
+
+&lt;p&gt;The peer lab site is &lt;a href="https://github.com/ashfurrow/peerlab.community"&gt;open source&lt;/a&gt;, as is &lt;a href="https://github.com/ashfurrow/blog"&gt;this blog&lt;/a&gt;, and both are built with Middleman. My blog is significantly more complicated, though. I&amp;rsquo;m happy to answer questions about either, just open a GitHub issue and I&amp;rsquo;ll answer there. Good luck!&lt;/p&gt;
+</description>
+      <pubDate>Mon, 09 Jan 2017 19:58:57 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/building-static-sites-with-middleman/</guid>
+    </item>
+    <item>
       <title>Craft and Tooling</title>
       <link>https://ashfurrow.com/blog/craft-and-tooling/</link>
       <description>&lt;p&gt;You may have heard the idiom &amp;ldquo;it&amp;rsquo;s a poor craftsperson who blames their tools&amp;rdquo;, which offers advice that seems to make sense on the surface: focus on skill, and not on tools. But there&amp;rsquo;s a danger in taking that advice too far and &lt;em&gt;ignoring&lt;/em&gt; tools completely, and I don&amp;rsquo;t know of any craftspeople who would recommend that.&lt;/p&gt;
@@ -236,42 +319,6 @@ sudo apt-get install -y libcurl4-openssl-dev uuid-dev
 </description>
       <pubDate>Sun, 23 Oct 2016 17:12:43 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/swift-on-linux/</guid>
-    </item>
-    <item>
-      <title>Contempt in Swift</title>
-      <link>https://ashfurrow.com/blog/contempt-in-swift/</link>
-      <description>&lt;p&gt;You should read this fascinating article on &lt;a href="http://blog.aurynn.com/contempt-culture"&gt;contempt culture in programming communities&lt;/a&gt;, specifically Python. It details the dynamics of having contempt for another programming language and for the developers who use it. The article describes the toxicity of this culture and the obvious result: exclusion.&lt;/p&gt;
-
-&lt;p&gt;A community can&amp;rsquo;t be both welcoming &lt;em&gt;and&lt;/em&gt; be exclusive of those who have other preferences.&lt;/p&gt;
-
-&lt;p&gt;I think it&amp;rsquo;s worth exploring the idea of contempt culture in the Swift community, particularly in regards to Objective-C and Objective-C developers.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Before we begin, I need to say: I&amp;rsquo;ve been a big critic of Objective-C&amp;rsquo;s. Four months before Swift&amp;rsquo;s announcement, I wrote &lt;a href="https://ashfurrow.com/blog/we-need-to-replace-objective-c/"&gt;&lt;em&gt;We Need to Replace Objective-C&lt;/em&gt;&lt;/a&gt;. I didn&amp;rsquo;t insult the language, I criticized it and detailed reasons it needed to be replaced. That’s okay. But I&amp;rsquo;ve been known to go further than technical critique: I&amp;rsquo;ve implied that Objective-C is a bad language and I&amp;rsquo;ve made fun of Objective-C developers, and that was wrong. I&amp;rsquo;m sorry.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s a lot of damage caused by hating on Objective-C and Objective-C developers. Contempt of Objective-C only impedes the inclusion of others within the Swift community, which ultimately hurts the goal of spreading fluency of this awesome language. It&amp;rsquo;s self-defeating to hate on Objective-C because you love Swift.&lt;/p&gt;
-
-&lt;p&gt;Objective-C isn&amp;rsquo;t the only target of our contempt. I regularly see developers bash JavaScript, despite the fact that it runs a significant portion of the web.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/BenjaminCoe"&gt;@BenjaminCoe&lt;/a&gt; You heard correctly, and yes we do.&lt;/p&gt;&amp;mdash; Collin Estes (@CollinEstes) &lt;a href="https://twitter.com/CollinEstes/status/738765249407504384"&gt;June 3, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;And of course, what iOS developer doesn&amp;rsquo;t love to hate on Android (even though it&amp;rsquo;s marketshare outstrips iOS by a mile). &lt;/p&gt;
-
-&lt;p&gt;I think developers throw shade on other languages as a form of signalling. “I’m one of you, I hate them too.” It’s only human. But this othering has a significant emotional cost for those developers in those outside groups. &lt;/p&gt;
-
-&lt;p&gt;Is it worth it? Is it worth it to mock outsiders and exclude them from our community? Individually, we might say “no”, but as a community, we have clearly answered “it is.”&lt;/p&gt;
-
-&lt;p&gt;The original blog post&amp;rsquo;s author had a solution to the problem:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;SHUT. UP.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I couldn&amp;rsquo;t agree more.&lt;/p&gt;
-</description>
-      <pubDate>Mon, 17 Oct 2016 14:02:33 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/contempt-in-swift/</guid>
     </item>
   </channel>
 </rss>
