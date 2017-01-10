@@ -11,6 +11,12 @@ upcoming_talks:
   location: Lausanne, Switzerland
   dates: April 24–25, 2017
   image: appbuilders.png
+- name: Building Open Source Communities
+  conference: Craft
+  url: http://craft-conf.com
+  location: Budapest, Hungary
+  dates: April 25–28, 2017
+  image: craft.png
 - name: TBD
   conference: SwiftConf
   url: https://swiftconf.com
