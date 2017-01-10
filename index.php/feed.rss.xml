@@ -10,7 +10,7 @@
       <link>https://ashfurrow.com/blog/building-static-sites-with-middleman/</link>
       <description>&lt;p&gt;I recently launched this &lt;a href="http://peerlab.community"&gt;Peer Lab website&lt;/a&gt; to list the peer labs around the world and to provide instructions on starting one. It&amp;rsquo;s a small site with no need for a backend, so I decided to host it as static HTML. However, it was important that adding new labs would be easy for outside contributors. Since I had used the tool before to build a few static websites – including this blog – I turned to &lt;a href="https://middlemanapp.com"&gt;Middleman&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Let&amp;rsquo;s explore the exact process I went through. I&amp;rsquo;m going to provide a series of high-level steps and link to actual code when I can, so you can replicate this for whatever site you need to build, However, every website is different, so &amp;ldquo;some assembly required&amp;rdquo; 😉&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s explore the exact process I went through. I&amp;rsquo;m going to provide a series of high-level steps and link to actual code when I can, so you can replicate this for whatever site you need to build. However, every website is different, so &amp;ldquo;some assembly required&amp;rdquo; 😉&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
