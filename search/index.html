@@ -178,15 +178,12 @@ h2 {
   font-size: 30px;
 }
 
-p {
-  margin: 0 0 10px;
-}
-
 .small {
   font-size: 85%;
 }
 
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -228,6 +225,9 @@ ul {
   margin-left: -15px;
 }
 
+.col-lg-4,
+.col-md-5,
+.col-sm-6,
 .col-lg-8,
 .col-md-10 {
   position: relative;
@@ -236,7 +236,18 @@ ul {
   padding-left: 15px;
 }
 
+@media (min-width:768px) {
+  .col-sm-6 {
+    float: left;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
 @media (min-width:992px) {
+  .col-md-5,
   .col-md-10 {
     float: left;
   }
@@ -245,18 +256,27 @@ ul {
     width: 83.33333333%;
   }
 
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
   .col-md-offset-1 {
     margin-left: 8.33333333%;
   }
 }
 
 @media (min-width:1200px) {
+  .col-lg-4,
   .col-lg-8 {
     float: left;
   }
 
   .col-lg-8 {
     width: 66.66666667%;
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%;
   }
 
   .col-lg-offset-2 {
@@ -542,21 +562,6 @@ body {
   }
 }
 
-p {
-  margin: 1em 0;
-}
-
-@media (min-width: 768px) {
-  p {
-    margin: 1.5em 0;
-  }
-}
-
-p a {
-  text-decoration: none;
-  color: #398CCC;
-}
-
 h1,
 h2 {
   font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -668,23 +673,63 @@ hr.small {
   }
 }
 
-.post-preview>.post-meta {
-  color: gray;
-  font-size: 1em;
-  font-style: italic;
-  margin: 0;
-}
-
 body {
   webkit-tap-highlight-color: #398CCC;
 }
 
-.post-preview p {
-  margin: 1.25em 0;
+.container .recent-blog-posts ol {
+  padding-left: 0;
 }
 
-.post-preview h2 {
+.container .recent-blog-posts li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding-top: 0;
+  padding-bottom: 0.25em;
+}
+
+@media (min-width: 768px) {
+  .featured-blog-posts {
+    padding-top: 1em;
+  }
+}
+
+.featured-blog-posts a {
+  color: white;
+}
+
+.featured-blog-posts .embedded {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .featured-blog-posts .embedded {
+    margin-bottom: 1.5em;
+  }
+}
+
+.featured-blog-posts .preview {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  min-height: 6.5em;
+}
+
+@media (min-width: 992px) {
+  .featured-blog-posts .preview {
+    min-height: 6.5em;
+  }
+}
+
+.featured-blog-posts .preview h2 {
+  padding: 0.5em;
   margin: 0;
+}
+
+.featured-blog-posts h2 {
+  padding-bottom: 0.25em;
 }
 
 @media (min-width: 768px) {
@@ -705,12 +750,12 @@ body {
 }
 
 header {
-  -webkit-box-shadow: rgba(0,0,0,0.1) 0px -50px 50px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -50px 50px 0px inset;
   position: relative;
 }
 
 .header-dimmer {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   left: 0;
   top: 0;
@@ -718,20 +763,13 @@ header {
   height: 100%;
 }
 
-@media (min-width: 768px) {
-  .blog-previews {
-    margin-top: 2em;
-  }
+.container li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .intro-header {
-  margin-bottom: 2em;
-}
-
-@media (min-width: 768px) {
-  .intro-header {
-    margin-bottom: 1em;
-  }
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -747,7 +785,7 @@ header {
 @font-face {
   font-family: 'icomoon';
   src: url('/fonts/icomoon.eot?-ar0ypv');
-  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"),url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"),url('/fonts/icomoon.woff?-ar0ypv') format("woff"),url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"), url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"), url('/fonts/icomoon.woff?-ar0ypv') format("woff"), url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -771,7 +809,7 @@ header {
 @font-face {
   font-family: 'FontAwesome';
   src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
   font-weight: normal;
   font-style: normal;
 }
