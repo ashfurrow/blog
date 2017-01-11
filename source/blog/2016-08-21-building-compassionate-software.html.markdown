@@ -5,6 +5,14 @@ background_image: /img/blog/building-compassionate-software/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/767029232140779520
 ---
 
+**Update**: I've since presented this content [as a talk](https://vimeo.com/198777217), which you can watch below if that's more your jam. Skip to 4:30 to avoid an introduction from the meetup.
+
+BEGIN_WIDE
+
+<div class="embed-responsive embed-responsive-16by9"><iframe src="https://player.vimeo.com/video/198777217" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="embed-responsive-item"></iframe></div>
+
+END_WIDE
+
 If you make a mistake, you would want a colleague to point it out to you, right? Just like you would hope a colleague would ask a question when they don't understand something, and just like you want everyone on your team to speak up with ideas, even if they're unconventional. But chances are that you've been in the position to speak up before and haven't. 
 
 Why? It feels like those scenarios represent a good team dynamic, but what effect do they have on a team's performance? And how can we begin to change a team's dynamic to improve its performance?
