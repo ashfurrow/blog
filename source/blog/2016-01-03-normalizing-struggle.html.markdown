@@ -35,7 +35,7 @@ But other stuff is hard too! Everyone struggles with difficult concepts, but peo
 
 BEGIN_NARROW
 
-[![Adult tasks](https://36.media.tumblr.com/4f4ded57815426f62bc4c10292239894/tumblr_nuwfle1ndH1qiuiebo1_540.jpg)](http://sarahcandersen.com/post/129419169496/i-know-the-internet-is-rampant-with-jokes-about)
+[![Adult tasks](/img/blog/normalizing-struggle/sarah_scribbles.jpg)](http://sarahcandersen.com/post/129419169496/i-know-the-internet-is-rampant-with-jokes-about)
 
 END_NARROW
 
