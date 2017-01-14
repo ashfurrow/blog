@@ -61,11 +61,11 @@ Think about who is likely to read your code and what their goals are.
 
 ## Guidelines
 
-Please remember that I'm adapting the advice [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and it's author [Li Haoyi](https://github.com/lihaoyi). Also remember that these are guidelines, not axioms: brea the rules if your intuition tells you to. These are listed in rough order of importance. Let's dive in!
+Please remember that I'm adapting the advice [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and it's author [Li Haoyi](https://github.com/lihaoyi). Also remember that these are guidelines, not axioms: break the rules if your intuition tells you to. These are listed in rough order of importance. Let's dive in!
 
 ### Wider-Scoped Names Should Be Longer
 
-Why is the name `i` ok in this example?
+Why is the name `i` okay in this example?
 
 ```swift
 for var i in 0..<10 {
@@ -186,7 +186,7 @@ Remember: we want to tell the developer calling the function something they don'
 
 ### Names with Source-Context Should be Shorter
 
-Types with names that exist inside types should be shorter, and ones that exist outside types should be longr. Consider the following:
+Types with names that exist inside types should be shorter, and ones that exist outside types should be longer. Consider the following:
 
 ```swift
 protocol Delegate {
@@ -224,7 +224,7 @@ class Downloader {
 
 Developers already know that types inside the `Downloader` class have to do with that class, so repeating that information is superfluous. This is an example of our final guideline:
 
-### Strongly-Typed Names Should be Shorter
+### Strongly Typed Names Should be Shorter
 
 Swift has a powerful, expressive type system and we can use that to make our names shorter. For example, consider the following property:
 
