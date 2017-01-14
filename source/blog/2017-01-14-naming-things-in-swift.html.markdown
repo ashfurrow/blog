@@ -220,8 +220,60 @@ Developers already know that types inside the `Downloader` class have to do with
 
 
 
-## Leaving Out Names
+## Omiting Names Entirely
 
-On the spectrum of verbose to succinct, at the very end by "succinct", we have the option to just not name things at all. You can do this with trailing closure syntax, with unnamed parameters, and with positional closure arguments. Let's take a look at each.
+On the spectrum of verbose to succinct, at the very end by "succinct", we have the option to just not name things at all. You can do this with trailing closure syntax, with unnamed parameters, and with positional closure arguments. Using them – or not – follows the general guidelines above, but let's take a look at each.
 
-Trailing closure syntax is really handy when
+Trailing closure syntax is really handy, I'll refer you to the Ray Wenderlich Swift Style Guide [section on closures](https://github.com/raywenderlich/swift-style-guide#closure-expressions): don't use trailing closure syntax if the purpose of the closure is ambiguous. For example, this would be bad:
+
+```swift
+UIView.animate(withDuration: 1.0, animations: {
+  ...
+}) { finished in
+  ...
+}
+```
+
+This would definitely be more clear:
+
+```swift
+UIView.animate(withDuration: 1.0, animations: {
+  ...
+}, completion: { finished in
+  ...
+})
+```
+
+For unnamed parameters, I'll refer you to the official Swift API Guidelines [on argument labels](https://swift.org/documentation/api-design-guidelines/#argument-labels):
+
+- Omit all labels when arguments cannot be usefully distinguished (ex: `union(set1, set2)`).
+- Omit labels when its clear from the grammar of the function name what the first argument is (ex: `addSubview(y)`).
+
+Finally that brings us to propositional closure arguments. I think this depends mostly on the length of your closure, and it closely matches the "Wider-Scoped Names Should Be Longer" rule. If your closure does only a few things, use positional closure arguments:
+
+```swift
+(0..<10).map({ String($0) })
+```
+
+But either of these would be bad:
+
+```swift
+(0..<10).map({ number in String(number) })
+(0..<10).map({
+  ...
+  
+  ...
+
+  let data = Data(repeating: 0, count: $0)
+  
+  ...
+  
+  ...
+
+  Model(fromData: data, index: $0)
+
+  ...
+})
+```
+
+You can read more about closures in 
