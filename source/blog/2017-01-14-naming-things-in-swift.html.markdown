@@ -26,9 +26,15 @@ The principles of Swift API design that specifically touch on naming things are:
 
 Fantastic guidelines, but let's go further. Quoting the original Scala blog post:
 
+BEGIN_WIDE
+
 > Show programmers something they don't already know, but want to know.
 
+END_WIDE
+
 This strikes me as a more interesting guideline because it requires us to think about the context of our code, and who will be working with it in the future. Remember: code is written only once, but is read over and over, so programming should optimize for _ease of reading_ and not ease of writing. The most important thing to consider when optimize for reading is _context_. The Scala blog post [lays this out well](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#Philosophy):
+
+BEGIN_WIDE
 
 > Programmers already know:
 > 
@@ -45,6 +51,8 @@ This strikes me as a more interesting guideline because it requires us to think 
 >
 > This is not comprehensive.
 
+END_WIDE
+
 Think about who will be reading your code, and when. Is it a colleague, who will use the code every day? Or maybe yourself six months from now? Are you trying to encourage more casual contributions to your open source project? These different situations may affect how you name some function.
 
 A colleague using your code every day is likely to be familiar with your codebase and its conventions, so pithy code might be best. If, in six months you've forgotten how most of the codebase works, being wordy might be most helpful. Casual contributors to open source projects probably won't understand how a large codebase fits together, so being overly verbose could be really helpful.
@@ -53,7 +61,7 @@ Think about who is likely to read your code and what their goals are.
 
 ## Guidelines
 
-Please remember that I'm adapting the advice [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and it's author [Li Haoyi](https://github.com/lihaoyi). Also remember that these are guidelines, not axioms: brea the rules if your intuition tells you to. Let's dive in!
+Please remember that I'm adapting the advice [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and it's author [Li Haoyi](https://github.com/lihaoyi). Also remember that these are guidelines, not axioms: brea the rules if your intuition tells you to. These are listed in rough order of importance. Let's dive in!
 
 ### Wider-Scoped Names Should Be Longer
 
@@ -214,11 +222,31 @@ class Downloader {
 }
 ```
 
-Developers already know that types inside the `Downloader` class have to do with that class, so repeating that information is superfluous.
+Developers already know that types inside the `Downloader` class have to do with that class, so repeating that information is superfluous. This is an example of our final guideline:
 
 ### Strongly-Typed Names Should be Shorter
 
+Swift has a powerful, expressive type system and we can use that to make our names shorter. For example, consider the following property:
 
+```swift
+class Downloader {
+  var downloaderDelegate: Delegate
+}
+```
+
+We already know that the delegate property belongs to the `Downloader` class, to giving it `downloaderDelegate` as a property name is excessive. Here's another counterexample:
+
+```swift
+func zipTwoSequences<...>(_ sequence1: Sequence1, _ sequence2: Sequence2) -> ...
+```
+
+Instead, the standard library contains only:
+
+```swift
+func zip<...>(_ sequence1: Sequence1, _ sequence2: Sequence2) -> ...
+```
+
+This is because it's obvious from the type signature that the arguments are sequences.
 
 ## Omiting Names Entirely
 
@@ -276,4 +304,4 @@ But either of these would be bad:
 })
 ```
 
-You can read more about closures in 
+Again, refer to the Ray Wenderlich guide for more info on closures. Generally, though, the guidelines we've discussed in this article apply.
