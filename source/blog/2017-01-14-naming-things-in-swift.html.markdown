@@ -5,26 +5,26 @@ background_image: /img/blog/naming-things-in-swift/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/817193041161232385
 ---
 
-Swift. What a language. Swift's design is rooted in Objective-C conventions, which are verbose, but Swift as provided mechanisms to write far more concise code than Objective-C (plus some awesome Objective-C interop). The question is when to use which level of verbosity?
+Lately, I've been using different programming languages and environments, trying to diversity my skills. I've been working regularly in React, Swift, Objective-C, and Scala, and they all have their own idioms and conventions. It's been a real learning experience, getting to compare and contrast the languages, and try to use what I learn to become a better Swift developer, too.
 
-It turns out this problem of naming things extends beyond Swift. Lately I've been writing Scala and let me tell you: Scala can be pretty concise! My manager sent me this awesome [blog post about naming things in Scala](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html) and it blew me away in its comprehensive description of when to use different levels of verbosity in Scala.
-
-My goal with this post is to provide a similarly awesome blog post about when to be concise and when to be verbose in Swift. I'm going to be borrowing some examples and points from the Scala post, but also discuss feelings and TODO
+My manager, who has been helping me learn Scala, sent me this awesome [blog post about naming things](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html) and it blew me away in its comprehensive description of when to use different levels of verbosity in Scala. So my goal today is to provide a similarly awesome blog post about when to be concise and when to be verbose, in Swift. I'm going to be borrowing some examples and points from the Scala post, relating things back to Swift and iOS apps.
 
 (READMORE)
 
-Whether or not you prefer conciseness or verbosity when programming, chances are your language supplies a spectrum of verbosity that your code can be written in. Swift has language features that allow you to write your code at your preferred middle ground on the concise/verbose spectrum. Things like trailing closure syntax, unnamed parameters, positional closure arguments allow programmers to be verbose in some circumstances and succinct in others.
+Whether or not you prefer conciseness or verbosity when programming, Swift has language features that allow you to write your code at your preferred level of verbosity. Beyond naming, fatures like trailing closure syntax, unnamed parameters, positional closure arguments allow programmers to be verbose in some circumstances and succinct in others.
 
-The question isn't _if_ you should be concise. The question is: _where_ you should be precise.
+The question isn't _if_ you should be concise (or not). The question is: _where_ you should be concise (or verbose).
 
-Swift has been around long enough that it's started to develop idioms that our code should generally adhere to. So let's talk about those idioms. The creators of Swift have been kind enough to release [official API design guidelines](https://swift.org/documentation/api-design-guidelines/) which are an excellent read. These are great, but I want more: I want to talk about how to develop an _intuition_ about idiomatic Swift.
+Swift has been around long enough that it's started to develop idioms that code should generally adhere to. The creators of Swift have been kind enough to release [official API design guidelines](https://swift.org/documentation/api-design-guidelines/) which are an excellent read. These are great, but I want more: I want to talk about how to develop an _intuition_ about idiomatic Swift. We're going to cover naming things in detail, then move onto a discussion of language features.
 
-The principles of Swift API design that specifically touch on naming things are:
+## Philosophy
+
+The principles of the Swift API design that specifically touch on naming things are:
 
 - Clarity at the point of use is your most important goal.
 - Clarity is more important than brevity.
 
-Fantastic guidelines, but let's go further. Quoting the original Scala blog post:
+Fantastic guidelines, but let's go further. The original Scala blog post tells us that our goal when naming something is to:
 
 BEGIN_WIDE
 
@@ -32,7 +32,7 @@ BEGIN_WIDE
 
 END_WIDE
 
-This strikes me as a more interesting guideline because it requires us to think about the context of our code, and who will be working with it in the future. Remember: code is written only once, but is read over and over, so programming should optimize for _ease of reading_ and not ease of writing. The most important thing to consider when optimize for reading is _context_. The Scala blog post [lays this out well](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#Philosophy):
+This is an interesting guideline because it requires us to think about the context of our code, and who will be working with it in the future. Remember: code is written only once, but is read over and over, so programmers should optimize for _ease of reading_ and not ease of writing. And, the most important thing to consider when optimize for reading is _context_. The Scala blog post [lays this out well](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#Philosophy), and says that context includes both things the programmer already knows, and things they want to know:
 
 BEGIN_WIDE
 
@@ -53,15 +53,17 @@ BEGIN_WIDE
 
 END_WIDE
 
-Think about who will be reading your code, and when. Is it a colleague, who will use the code every day? Or maybe yourself six months from now? Are you trying to encourage more casual contributions to your open source project? These different situations may affect how you name some function.
+Think about who will be reading your code, and when. Is it a colleague, who will use the code every day? Or maybe yourself six months from now? Are you trying to encourage more casual contributions to your open source project? These different situations may affect how you name some function. Let's examine.
 
-A colleague using your code every day is likely to be familiar with your codebase and its conventions, so pithy code might be best. If, in six months you've forgotten how most of the codebase works, being wordy might be most helpful. Casual contributors to open source projects probably won't understand how a large codebase fits together, so being overly verbose could be really helpful.
+A colleague using your code every day is likely to be thoroughly familiar with your codebase and its conventions, so pithy code might be best. If you don't plan on working on the codebase for six months, you'll likely return to it unfamiliar with its conventions, so being wordy might be most helpful. Casual contributors to open source projects probably won't understand how large codebases fit together, so being overly verbose could be help improve the number of contributions to your project.
 
-Think about who is likely to read your code and what their goals are. 
+Think about who is likely to read your code, and what their goals are. 
 
 ## Guidelines
 
-Please remember that I'm adapting the advice [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and it's author [Li Haoyi](https://github.com/lihaoyi). Also remember that these are guidelines, not axioms: break the rules if your intuition tells you to. These are listed in rough order of importance. Let's dive in!
+These are guidelines, not axioms. Break the rules if your intuition tells you to. Let's discuss guidelines for naming things in rough order of importance. And remember: always keep context in mind!
+
+(Please remember that I'm adapting these naming guidelines [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and it's author, [Li Haoyi](https://github.com/lihaoyi).)
 
 ### Wider-Scoped Names Should Be Longer
 
@@ -81,7 +83,9 @@ struct MyStruct {
 }
 ```
 
-Consider where `i` is being referred from within the codebase. In the first example, `i` is only accessed from within the `for` loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly then entire codebase! At a glance, it's impossible to find out the whole context of what `i` because it's so widely used. Remember: we want to tell the programmer reading the code something they don't know but want to know. Let's fix the struct.
+Consider where `i` is being referred from within the codebase. In the first example, `i` is only accessed from within the `for` loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly then entire codebase! At a glance, it's impossible to find out the whole context of what `i` because it's so widely used. 
+
+Remember: we want to tell the programmer reading the code something they don't know but want to know. Let's fix the struct.
 
 ```swift
 struct MyStruct {
@@ -89,7 +93,7 @@ struct MyStruct {
 }
 ```
 
-This doesn't mean that all loop variables should be short, it only means that _widely_ used names should be longer. Let's see a counterexample, where a short variable name in a loop is a bad idea.
+This doesn't mean that all loop variables should be short, it only means that _widely_ used names should be longer. Let's see a counterexample, where a short variable name in a loop can be a bad idea.
 
 ```swift
 for var i in 0..<10 {
@@ -118,17 +122,17 @@ for var i in 0..<10 {
 }
 ```
 
-I think we can all agree that `i` would benefit from a longer name. Why? Because its scope of use is wider.
+I think we can all agree that `i` would benefit from a longer name. Why? Because its scope of use is wider, and it's used more. That brings us to our next guideline.
 
 ### More-Used Names Should be Shorter
 
-Consider `print`, probably the first function you learned in Swift. `print` works perfectly well here:
+Consider `print`, probably the first function you learned in Swift. As a function name, "print" works perfectly well:
 
 ```swift
 print("Hi there!")
 ```
 
-So why doesn't `cache` work well here?
+So why doesn't "cache" work well here?
 
 ```swift
 class Downloader {
@@ -141,7 +145,7 @@ class Downloader {
 class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationDidFinishLaunching(_ application: UIApplication) {
     ...
-    downloader.cache() // Only called once.
+    downloader.cache() // Only called at app startup.
   }
 }
 ```
@@ -158,7 +162,7 @@ Much nicer.
 
 ### Dangerous Names Should be Longer
 
-This is a function that's _too_ long.
+Some functions should be long because of what they _do_. Dangerous functions should be long, while boring ones should be shorter. This is a function that's _too_ long.
 
 ```swift
 extension Downloader {
@@ -166,7 +170,15 @@ extension Downloader {
 }
 ```
 
-It could be something like `loadFromCache`. But consider this function, which is _definitely_ too short:
+It could be something like this instead: `loadFromCache`. 
+
+```swift
+extension Downloader {
+  func loadFromCache() { ... }
+}
+```
+
+But consider this function, which really benefits from being quite long:
 
 ```swift
 extension Downloader {
@@ -174,7 +186,7 @@ extension Downloader {
 }
 ```
 
-This is probably okay being that verbose because it does something dangerous. You wouldn't want to call it something really succinct, like:
+This function has a long name because it's dangerous to call it: we always want to avoid deleting user data by accident. For that reason you wouldn't want to call it something really succinct, like:
 
 ```swift
 extension Downloader {
@@ -182,7 +194,7 @@ extension Downloader {
 }
 ```
 
-Remember: we want to tell the developer calling the function something they don't know but that they _do_ want to know. I imagine whoever calling this function definitely wants to know if it deletes users data!
+Remember: we want to tell the developer reading the name something they don't know but that they _do_ want to know. I imagine whoever calling this function definitely wants to know if it deletes users data!
 
 ### Names with Source-Context Should be Shorter
 
@@ -194,7 +206,7 @@ protocol Delegate {
 }
 ```
 
-That's probably too short, since we don't know what the `Delegate` protocol is _for_. Let's improve it:
+That's probably too short, since we don't know what the `Delegate` protocol is _for_. Let's improve it by giving it a longer name:
 
 ```swift
 protocol DownloaderDelegate {
@@ -202,7 +214,9 @@ protocol DownloaderDelegate {
 }
 ```
 
-Awesome! Now the name helps us know what the protocol is for. An alternative improvement could be:
+Awesome! Now the name helps us know what the protocol is for. 
+
+An alternative improvement could be:
 
 ```swift
 class Downloader {
@@ -212,7 +226,7 @@ class Downloader {
 }
 ```
 
-Both of these are improvements, but the second one is what I prefer. Just try to avoid repeating source context in your type names:
+This extends its _fully qualified_ name to be `Downloader.Delegate`. Both of these are improvements, but the second one is what I prefer. Just avoid repeating source context in your type names:
 
 ```swift
 class Downloader {
@@ -222,7 +236,7 @@ class Downloader {
 }
 ```
 
-Developers already know that types inside the `Downloader` class have to do with that class, so repeating that information is superfluous. This is an example of our final guideline:
+Developers already know that types inside the `Downloader` class have to do with that class, so repeating that information is superfluous. This brings us to our final guideline:
 
 ### Strongly Typed Names Should be Shorter
 
@@ -234,7 +248,9 @@ class Downloader {
 }
 ```
 
-We already know that the delegate property belongs to the `Downloader` class, to giving it `downloaderDelegate` as a property name is excessive. Here's another counterexample:
+We already know that the delegate property belongs to the `Downloader` class, to giving it `downloaderDelegate` as a property name is excessive. 
+
+Here's another counterexample:
 
 ```swift
 func zipTwoSequences<...>(_ sequence1: Sequence1, _ sequence2: Sequence2) -> ...
@@ -248,11 +264,13 @@ func zip<...>(_ sequence1: Sequence1, _ sequence2: Sequence2) -> ...
 
 This is because it's obvious from the type signature that the arguments are sequences.
 
+Thanks all for naming guidelines, let's talk about Swift features that let us be concise!
+
 ## Omiting Names Entirely
 
-On the spectrum of verbose to succinct, at the very end by "succinct", we have the option to just not name things at all. You can do this with trailing closure syntax, with unnamed parameters, and with positional closure arguments. Using them – or not – follows the general guidelines above, but let's take a look at each.
+On the spectrum of verbose to succinct, at the very end of "succinct", we have the option to just not name things _at all_. You can do this with trailing closure syntax, with unnamed parameters, and with positional closure arguments. When to use them is a matter of following the guidelines outlined above.
 
-Trailing closure syntax is really handy, I'll refer you to the Ray Wenderlich Swift Style Guide [section on closures](https://github.com/raywenderlich/swift-style-guide#closure-expressions): don't use trailing closure syntax if the purpose of the closure is ambiguous. For example, this would be bad:
+Trailing closure syntax is really handy, it helps make calling functions more concise. Borrowing from the Ray Wenderlich Swift Style Guide [section on closures](https://github.com/raywenderlich/swift-style-guide#closure-expressions): don't use trailing closure syntax if the _purpose_ of the closure is ambiguous. For example, this would be bad:
 
 ```swift
 UIView.animate(withDuration: 1.0, animations: {
@@ -277,16 +295,23 @@ For unnamed parameters, I'll refer you to the official Swift API Guidelines [on 
 - Omit all labels when arguments cannot be usefully distinguished (ex: `union(set1, set2)`).
 - Omit labels when its clear from the grammar of the function name what the first argument is (ex: `addSubview(y)`).
 
-Finally that brings us to propositional closure arguments. I think this depends mostly on the length of your closure, and it closely matches the "Wider-Scoped Names Should Be Longer" rule. If your closure does only a few things, use positional closure arguments:
+Finally, that brings us to positional closure arguments. When to use these depends mostly on the length of your closure, and closely matches the "Wider-Scoped Names Should Be Longer" rule. 
+
+If your closure does only a few things, use positional closure arguments:
 
 ```swift
 (0..<10).map({ String($0) })
 ```
 
-But either of these would be bad:
+Here's a counterexample of being overly verbose:
 
 ```swift
 (0..<10).map({ number in String(number) })
+```
+
+And this is what things would look like if you don't adhere to the first two guidelines about naming things.
+
+```swift
 (0..<10).map({
   ...
   
@@ -304,4 +329,4 @@ But either of these would be bad:
 })
 ```
 
-Again, refer to the Ray Wenderlich guide for more info on closures. Generally, though, the guidelines we've discussed in this article apply.
+Again, refer to the Ray Wenderlich guide for more info on closures.
