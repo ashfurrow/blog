@@ -63,7 +63,7 @@ Think about who is likely to read your code, and what their goals are.
 
 These are guidelines, not axioms. Break the rules if your intuition tells you to. Let's discuss guidelines for naming things in rough order of importance. And remember: always keep context in mind!
 
-(Please remember that I'm adapting these naming guidelines [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and it's author, [Li Haoyi](https://github.com/lihaoyi).)
+(Please remember that I'm adapting these naming guidelines [from the original article](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names) for Swift – we owe that post and its author, [Li Haoyi](https://github.com/lihaoyi).)
 
 ### Wider-Scoped Names Should Be Longer
 
