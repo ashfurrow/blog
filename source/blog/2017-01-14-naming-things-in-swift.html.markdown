@@ -226,7 +226,7 @@ class Downloader {
 }
 ```
 
-This would extend its _fully qualified_ name to be `Downloader.Delegate`. But alas.
+This would extend its _fully qualified_ name to be `Downloader.Delegate`. But alas, Swift doesn't yet support this kind of protocol nesting.
 
 Just make sure to avoid duplicating type information within names:
 
