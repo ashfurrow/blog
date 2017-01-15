@@ -5,17 +5,17 @@ background_image: /img/blog/naming-things-in-swift/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/817193041161232385
 ---
 
-Lately, I've been using different programming languages and environments, trying to diversity my skills. I've been working regularly in React, Swift, Objective-C, and Scala, and they all have their own idioms and conventions. It's been a real learning experience, getting to compare and contrast the languages, and try to use what I learn to become a better Swift developer, too.
+Lately, I've been using different programming languages and environments, trying to diversify my skills. I've been working regularly in React, Swift, Objective-C, and Scala, and they all have their own idioms and conventions. It's been a real learning experience, getting to compare and contrast the languages, and to use what I learn to become a better Swift developer, too.
 
-My manager, who has been helping me learn Scala, sent me this awesome [blog post about naming things](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html) and it blew me away in its comprehensive description of when to use different levels of verbosity in Scala. So my goal today is to provide a similarly awesome blog post about when to be concise and when to be verbose, in Swift. I'm going to be borrowing some examples and points from the Scala post, relating things back to Swift and iOS apps.
+My manager, who has been helping me learn Scala, sent me this awesome [blog post about naming things](http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html) and it blew me away with its comprehensive description of when to use different levels of verbosity in Scala. So my goal today is to provide a similarly awesome blog post about when to be concise and when to be verbose, in Swift. I'm going to be borrowing some examples and points from this Scala post, relating things back to Swift and iOS apps.
 
 (READMORE)
 
-Whether or not you prefer conciseness or verbosity when programming, Swift has language features that allow you to write your code at your preferred level of verbosity. Beyond naming, features like trailing closure syntax, unnamed parameters, positional closure arguments allow programmers to be verbose in some circumstances and succinct in others.
+Whether or not you prefer conciseness when programming, Swift has language features that allow you to write your code at your preferred level of verbosity. Beyond naming, features like trailing closure syntax, unnamed parameters, positional closure arguments allow programmers to be verbose in some circumstances and succinct in others.
 
 The question isn't _if_ you should be concise (or not). The question is: _where_ you should be concise (or verbose).
 
-Swift has been around long enough that it's started to develop idioms that code should generally adhere to. The creators of Swift have been kind enough to release [official API design guidelines](https://swift.org/documentation/api-design-guidelines/) which are an excellent read. These are great, but I want more: I want to talk about how to develop an _intuition_ about idiomatic Swift. We're going to cover naming things in detail, then move onto a discussion of language features.
+Swift has been around long enough that it's started to develop idioms that code should generally adhere to. The creators of Swift have been kind enough to release [official API design guidelines](https://swift.org/documentation/api-design-guidelines/) which are an excellent read. These are great, but I want more: I want to talk about how to develop an _intuition_ about idiomatic Swift. We're going to cover intutively naming things in detail, then move onto a discussion of language features.
 
 ## Philosophy
 
@@ -24,7 +24,7 @@ The principles of the Swift API design that specifically touch on naming things 
 - Clarity at the point of use is your most important goal.
 - Clarity is more important than brevity.
 
-Fantastic guidelines, but let's go further. The original Scala blog post tells us that our goal when naming something is to:
+Fantastic guidelines, but let's go further. Haoyi's Scala blog post tells us that our goal when naming something is to:
 
 BEGIN_WIDE
 
@@ -264,7 +264,7 @@ func zip<...>(_ sequence1: Sequence1, _ sequence2: Sequence2) -> ...
 
 This is because it's obvious from the type signature that the arguments are sequences.
 
-Thanks all for naming guidelines, let's talk about Swift features that let us be concise!
+That's all for naming guidelines, let's talk about Swift features that let us be concise!
 
 ## Omitting Names Entirely
 
