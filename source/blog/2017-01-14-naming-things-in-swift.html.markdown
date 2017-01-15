@@ -216,7 +216,7 @@ protocol DownloaderDelegate {
 
 Awesome! Now the name helps us know what the protocol is for. 
 
-An alternative improvement could be:
+If the Swift compiler supported protocols within types, an alternative improvement would be:
 
 ```swift
 class Downloader {
@@ -226,7 +226,9 @@ class Downloader {
 }
 ```
 
-This extends its _fully qualified_ name to be `Downloader.Delegate`. Both of these are improvements, but the second one is what I prefer. Just avoid repeating source context in your type names:
+This would extend its _fully qualified_ name to be `Downloader.Delegate`. But alas.
+
+Just make sure to avoid duplicating type information within names:
 
 ```swift
 class Downloader {
