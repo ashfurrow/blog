@@ -294,6 +294,8 @@ For unnamed parameters, I'll refer you to the official Swift API Guidelines [on 
 
 - Omit all labels when arguments cannot be usefully distinguished (ex: `union(set1, set2)`).
 - Omit labels when its clear from the grammar of the function name what the first argument is (ex: `addSubview(y)`).
+- Omit labels for type conversion (ex: `Int64(someUInt32)`).
+- Otherwise (generally) include argument labels.
 
 Finally, that brings us to positional closure arguments. When to use these depends mostly on the length of your closure, and closely matches the "Wider-Scoped Names Should Be Longer" rule. 
 
@@ -323,10 +325,12 @@ And this is what things would look like if you don't adhere to the first two gui
   
   ...
 
-  Model(fromData: data, index: $0)
-
-  ...
+  return Model(fromData: data, index: $0)
 })
 ```
 
 Again, refer to the Ray Wenderlich guide for more info on closures.
+
+---
+
+Remember, the guidelines we've discussed today are not absolutes. Experiment, ask others, and learn. Have fun!
