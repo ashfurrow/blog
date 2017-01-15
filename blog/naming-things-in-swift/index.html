@@ -1082,7 +1082,7 @@ ga('send', 'pageview');</script>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-<p>This would extend its <em>fully qualified</em> name to be <code>Downloader.Delegate</code>. But alas.</p>
+<p>This would extend its <em>fully qualified</em> name to be <code>Downloader.Delegate</code>. But alas, Swift doesn’t yet support this kind of protocol nesting.</p>
 
 <p>Just make sure to avoid duplicating type information within names:</p>
 <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>

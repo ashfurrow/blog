@@ -197,7 +197,7 @@
   &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This would extend its &lt;em&gt;fully qualified&lt;/em&gt; name to be &lt;code&gt;Downloader.Delegate&lt;/code&gt;. But alas.&lt;/p&gt;
+&lt;p&gt;This would extend its &lt;em&gt;fully qualified&lt;/em&gt; name to be &lt;code&gt;Downloader.Delegate&lt;/code&gt;. But alas, Swift doesn&amp;rsquo;t yet support this kind of protocol nesting.&lt;/p&gt;
 
 &lt;p&gt;Just make sure to avoid duplicating type information within names:&lt;/p&gt;
 &lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
