@@ -85,7 +85,7 @@
 
 &lt;p&gt;These are guidelines, not axioms. Break the rules if your intuition tells you to. Let&amp;rsquo;s discuss guidelines for naming things in rough order of importance. And remember: always keep context in mind!&lt;/p&gt;
 
-&lt;p&gt;(Please remember that I&amp;rsquo;m adapting these naming guidelines &lt;a href="http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names"&gt;from the original article&lt;/a&gt; for Swift – we owe that post and it&amp;rsquo;s author, &lt;a href="https://github.com/lihaoyi"&gt;Li Haoyi&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;(Please remember that I&amp;rsquo;m adapting these naming guidelines &lt;a href="http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names"&gt;from the original article&lt;/a&gt; for Swift – we owe that post and its author, &lt;a href="https://github.com/lihaoyi"&gt;Li Haoyi&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;h3 id="wider-scoped-names-should-be-longer"&gt;Wider-Scoped Names Should Be Longer&lt;/h3&gt;
 
