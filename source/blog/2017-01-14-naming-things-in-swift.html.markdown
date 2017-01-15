@@ -11,7 +11,7 @@ My manager, who has been helping me learn Scala, sent me this awesome [blog post
 
 (READMORE)
 
-Whether or not you prefer conciseness or verbosity when programming, Swift has language features that allow you to write your code at your preferred level of verbosity. Beyond naming, fatures like trailing closure syntax, unnamed parameters, positional closure arguments allow programmers to be verbose in some circumstances and succinct in others.
+Whether or not you prefer conciseness or verbosity when programming, Swift has language features that allow you to write your code at your preferred level of verbosity. Beyond naming, features like trailing closure syntax, unnamed parameters, positional closure arguments allow programmers to be verbose in some circumstances and succinct in others.
 
 The question isn't _if_ you should be concise (or not). The question is: _where_ you should be concise (or verbose).
 
@@ -266,7 +266,7 @@ This is because it's obvious from the type signature that the arguments are sequ
 
 Thanks all for naming guidelines, let's talk about Swift features that let us be concise!
 
-## Omiting Names Entirely
+## Omitting Names Entirely
 
 On the spectrum of verbose to succinct, at the very end of "succinct", we have the option to just not name things _at all_. You can do this with trailing closure syntax, with unnamed parameters, and with positional closure arguments. When to use them is a matter of following the guidelines outlined above.
 
