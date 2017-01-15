@@ -199,14 +199,16 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Awesome! Now the name helps us know what the protocol is for. &lt;/p&gt;
 
-&lt;p&gt;An alternative improvement could be:&lt;/p&gt;
+&lt;p&gt;If the Swift compiler supported protocols within types, an alternative improvement would be:&lt;/p&gt;
 &lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;protocol&lt;/span&gt; &lt;span class="kt"&gt;Delegate&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="o"&gt;...&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This extends its &lt;em&gt;fully qualified&lt;/em&gt; name to be &lt;code&gt;Downloader.Delegate&lt;/code&gt;. Both of these are improvements, but the second one is what I prefer. Just avoid repeating source context in your type names:&lt;/p&gt;
+&lt;p&gt;This would extend its &lt;em&gt;fully qualified&lt;/em&gt; name to be &lt;code&gt;Downloader.Delegate&lt;/code&gt;. But alas.&lt;/p&gt;
+
+&lt;p&gt;Just make sure to avoid duplicating type information within names:&lt;/p&gt;
 &lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;protocol&lt;/span&gt; &lt;span class="kt"&gt;DownloaderDelegate&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="o"&gt;...&lt;/span&gt;

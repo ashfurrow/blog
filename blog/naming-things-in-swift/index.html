@@ -1075,14 +1075,16 @@ ga('send', 'pageview');</script>
 </code></pre>
 <p>Awesome! Now the name helps us know what the protocol is for. </p>
 
-<p>An alternative improvement could be:</p>
+<p>If the Swift compiler supported protocols within types, an alternative improvement would be:</p>
 <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">protocol</span> <span class="kt">Delegate</span> <span class="p">{</span>
     <span class="o">...</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-<p>This extends its <em>fully qualified</em> name to be <code>Downloader.Delegate</code>. Both of these are improvements, but the second one is what I prefer. Just avoid repeating source context in your type names:</p>
+<p>This would extend its <em>fully qualified</em> name to be <code>Downloader.Delegate</code>. But alas.</p>
+
+<p>Just make sure to avoid duplicating type information within names:</p>
 <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">protocol</span> <span class="kt">DownloaderDelegate</span> <span class="p">{</span>
     <span class="o">...</span>
