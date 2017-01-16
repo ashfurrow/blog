@@ -55,7 +55,7 @@ END_WIDE
 
 Think about who will be reading your code, and when. Is it a colleague, who will use the code every day? Or maybe yourself six months from now? Are you trying to encourage more casual contributions to your open source project? These different situations may affect how you name some function. Let's examine.
 
-A colleague using your code every day is likely to be thoroughly familiar with your codebase and its conventions, so pithy code might be best. If you don't plan on working on the codebase for six months, you'll likely return to it unfamiliar with its conventions, so being wordy might be most helpful. Casual contributors to open source projects probably won't understand how large codebases fit together, so being overly verbose could be help improve the number of contributions to your project.
+A colleague using your code every day is likely to be thoroughly familiar with your codebase and its conventions, so pithy code might be best. If you don't plan on working on the codebase for six months, you'll likely return to it unfamiliar with its conventions, so being wordy might be most helpful. Casual contributors to open source projects probably won't understand how large codebases fit together, so being overly verbose could help improve the number of contributions to your project.
 
 Think about who is likely to read your code, and what their goals are. 
 
