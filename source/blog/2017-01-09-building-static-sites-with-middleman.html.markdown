@@ -87,3 +87,11 @@ There are three groups of `<meta>` tags to add to your `<head>`: ordinary tags, 
 So that's a rundown on how to quickly create a static website using Middleman. I've done this a few times and every time I do, I need to remember all the steps. Now, at the very least, I've got documentation 😅
 
 The peer lab site is [open source](https://github.com/ashfurrow/peerlab.community), as is [this blog](https://github.com/ashfurrow/blog), and both are built with Middleman. My blog is significantly more complicated, though. I'm happy to answer questions about either, just open a GitHub issue and I'll answer there. Good luck!
+
+**Update**: I've since given a lunch & learn at work on this topic, you can check it out here:
+
+BEGIN_WIDE
+
+YOUTUBE yoGielteT64
+
+END_WIDE
