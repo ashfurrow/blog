@@ -5,6 +5,12 @@ upcoming_talks:
   location: Melbourne, Australia
   dates: February 23–24, 2017
   image: playgroundscon.jpg
+- name: Building Compassionate Software  
+  conference: RWDevCon
+  url: https://www.rwdevcon.com
+  image: rwdevcon.png
+  dates: March 30 – April 1, 2017
+  location: Washington, D.C., America
 - name: TBD
   conference: App Builders
   url: https://www.appbuilders.ch
