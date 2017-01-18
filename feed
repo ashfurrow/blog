@@ -90,7 +90,7 @@
   &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;i&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Int&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Consider where &lt;code&gt;i&lt;/code&gt; is being referred from within the codebase. In the first example, &lt;code&gt;i&lt;/code&gt; is only accessed from within the &lt;code&gt;for&lt;/code&gt; loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly then entire codebase! At a glance, it&amp;rsquo;s impossible to find out the whole context of what &lt;code&gt;i&lt;/code&gt; because it&amp;rsquo;s so widely used. &lt;/p&gt;
+&lt;p&gt;Consider where &lt;code&gt;i&lt;/code&gt; is being referred from within the codebase. In the first example, &lt;code&gt;i&lt;/code&gt; is only accessed from within the &lt;code&gt;for&lt;/code&gt; loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly the entire codebase! At a glance, it&amp;rsquo;s impossible to find out the context of &lt;code&gt;i&lt;/code&gt; because it&amp;rsquo;s so widely used. &lt;/p&gt;
 
 &lt;p&gt;Remember: we want to tell the programmer reading the code something they don&amp;rsquo;t know but want to know. Let&amp;rsquo;s fix the struct.&lt;/p&gt;
 &lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;struct&lt;/span&gt; &lt;span class="kt"&gt;MyStruct&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -171,10 +171,10 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This function has a long name because it&amp;rsquo;s dangerous to call it: we always want to avoid deleting user data by accident. For that reason you wouldn&amp;rsquo;t want to call it something really succinct, like:&lt;/p&gt;
 &lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;extension&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;delToken&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="cm"&gt;/* deletes use data omg! */&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;delToken&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="cm"&gt;/* deletes user data omg! */&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Remember: we want to tell the developer reading the name something they don&amp;rsquo;t know but that they &lt;em&gt;do&lt;/em&gt; want to know. I imagine whoever calling this function definitely wants to know if it deletes users data!&lt;/p&gt;
+&lt;p&gt;Remember: we want to tell the developer reading the name something they don&amp;rsquo;t know but that they &lt;em&gt;do&lt;/em&gt; want to know. I imagine whoever calling this function definitely wants to know if it deletes user data!&lt;/p&gt;
 
 &lt;h3 id="names-with-source-context-should-be-shorter"&gt;Names with Source-Context Should be Shorter&lt;/h3&gt;
 
@@ -215,7 +215,7 @@
   &lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;downloaderDelegate&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Delegate&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We already know that the delegate property belongs to the &lt;code&gt;Downloader&lt;/code&gt; class, to giving it &lt;code&gt;downloaderDelegate&lt;/code&gt; as a property name is excessive. &lt;/p&gt;
+&lt;p&gt;We already know that the delegate property belongs to the &lt;code&gt;Downloader&lt;/code&gt; class, so giving it &lt;code&gt;downloaderDelegate&lt;/code&gt; as a property name is excessive. &lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s another counterexample:&lt;/p&gt;
 &lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="n"&gt;zipTwoSequences&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;...&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="nv"&gt;sequence1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Sequence1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="nv"&gt;sequence2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Sequence2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;

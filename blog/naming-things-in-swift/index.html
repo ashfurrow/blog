@@ -972,7 +972,7 @@ ga('send', 'pageview');</script>
   <span class="k">let</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span>
 <span class="p">}</span>
 </code></pre>
-<p>Consider where <code>i</code> is being referred from within the codebase. In the first example, <code>i</code> is only accessed from within the <code>for</code> loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly then entire codebase! At a glance, it’s impossible to find out the whole context of what <code>i</code> because it’s so widely used. </p>
+<p>Consider where <code>i</code> is being referred from within the codebase. In the first example, <code>i</code> is only accessed from within the <code>for</code> loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly the entire codebase! At a glance, it’s impossible to find out the context of <code>i</code> because it’s so widely used. </p>
 
 <p>Remember: we want to tell the programmer reading the code something they don’t know but want to know. Let’s fix the struct.</p>
 <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyStruct</span> <span class="p">{</span>
@@ -1055,10 +1055,10 @@ ga('send', 'pageview');</script>
 </code></pre>
 <p>This function has a long name because it’s dangerous to call it: we always want to avoid deleting user data by accident. For that reason you wouldn’t want to call it something really succinct, like:</p>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
-  <span class="kd">func</span> <span class="nf">delToken</span><span class="p">()</span> <span class="p">{</span> <span class="cm">/* deletes use data omg! */</span> <span class="p">}</span>
+  <span class="kd">func</span> <span class="nf">delToken</span><span class="p">()</span> <span class="p">{</span> <span class="cm">/* deletes user data omg! */</span> <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-<p>Remember: we want to tell the developer reading the name something they don’t know but that they <em>do</em> want to know. I imagine whoever calling this function definitely wants to know if it deletes users data!</p>
+<p>Remember: we want to tell the developer reading the name something they don’t know but that they <em>do</em> want to know. I imagine whoever calling this function definitely wants to know if it deletes user data!</p>
 
 <h3 id="names-with-source-context-should-be-shorter">
 <a class="header-link" href="#names-with-source-context-should-be-shorter">#</a> Names with Source-Context Should be Shorter</h3>
@@ -1101,7 +1101,7 @@ ga('send', 'pageview');</script>
   <span class="k">var</span> <span class="nv">downloaderDelegate</span><span class="p">:</span> <span class="kt">Delegate</span>
 <span class="p">}</span>
 </code></pre>
-<p>We already know that the delegate property belongs to the <code>Downloader</code> class, to giving it <code>downloaderDelegate</code> as a property name is excessive. </p>
+<p>We already know that the delegate property belongs to the <code>Downloader</code> class, so giving it <code>downloaderDelegate</code> as a property name is excessive. </p>
 
 <p>Here’s another counterexample:</p>
 <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">zipTwoSequences</span><span class="o">&lt;...&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence1</span><span class="p">:</span> <span class="kt">Sequence1</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sequence2</span><span class="p">:</span> <span class="kt">Sequence2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">...</span>
