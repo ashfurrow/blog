@@ -83,7 +83,7 @@ struct MyStruct {
 }
 ```
 
-Consider where `i` is being referred from within the codebase. In the first example, `i` is only accessed from within the `for` loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly then entire codebase! At a glance, it's impossible to find out the whole context of what `i` because it's so widely used. 
+Consider where `i` is being referred from within the codebase. In the first example, `i` is only accessed from within the `for` loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly the entire codebase! At a glance, it's impossible to find out the context of `i` because it's so widely used. 
 
 Remember: we want to tell the programmer reading the code something they don't know but want to know. Let's fix the struct.
 
@@ -190,11 +190,11 @@ This function has a long name because it's dangerous to call it: we always want 
 
 ```swift
 extension Downloader {
-  func delToken() { /* deletes use data omg! */ }
+  func delToken() { /* deletes user data omg! */ }
 }
 ```
 
-Remember: we want to tell the developer reading the name something they don't know but that they _do_ want to know. I imagine whoever calling this function definitely wants to know if it deletes users data!
+Remember: we want to tell the developer reading the name something they don't know but that they _do_ want to know. I imagine whoever calling this function definitely wants to know if it deletes user data!
 
 ### Names with Source-Context Should be Shorter
 
@@ -250,7 +250,7 @@ class Downloader {
 }
 ```
 
-We already know that the delegate property belongs to the `Downloader` class, to giving it `downloaderDelegate` as a property name is excessive. 
+We already know that the delegate property belongs to the `Downloader` class, so giving it `downloaderDelegate` as a property name is excessive. 
 
 Here's another counterexample:
 
