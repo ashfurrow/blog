@@ -32,6 +32,15 @@ body {
 
   /* Best case scenario, just use `font-variant-*`. */
   font-variant-ligatures: common-ligatures;
+
+  // We want to disable ligatures in code.
+  code, pre {
+    @supports not (font-variant-ligatures: common-ligatures) {
+      font-feature-settings: "liga" 0;
+    }
+    -ms-font-feature-settings: "liga" 0;
+    font-variant-ligatures: no-common-ligatures;
+  }
 }
 
 // -- Typography

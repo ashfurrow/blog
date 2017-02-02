@@ -154,11 +154,6 @@ code, pre {
   color: $brand-primary;
   background-color: $gray-light;
   font-size: 0.75em;
-
-  /* Small devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    font-size: 1em;
-  }
 }
 
 .nav {
