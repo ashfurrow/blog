@@ -1,1 +1,11 @@
-!function(e,t,n,a,c,s,i,o,r){i=a[c],i&&(o=e.createElement("style"),o.innerHTML=i,e.getElementsByTagName("head")[0].appendChild(o),e.documentElement.className+=" wf-cached"),r=t[n],t[n]=function(e,l,d,m){if("string"==typeof l&&l.indexOf(s)>-1){try{d=new XMLHttpRequest,d.open("GET",l,!0),d.onreadystatechange=function(){try{4==d.readyState&&(m=d.responseText.replace(/url\(\//g,"url("+s+"/"),m!==i&&(a[c]=m))}catch(e){o&&(o.innerHTML="")}},d.send(null)}catch(e){}t[n]=r}return r.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net"),function(e){var t,n={kitId:"fmr6vlo",scriptTimeout:3e3,async:!0},a=e.documentElement,c=setTimeout(function(){a.className=a.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},n.scriptTimeout),s=e.createElement("script"),i=!1,o=e.getElementsByTagName("script")[0];a.className+=" wf-loading",s.src="https://use.typekit.net/"+n.kitId+".js",s.async=!0,s.onload=s.onreadystatechange=function(){if(t=this.readyState,!(i||t&&"complete"!=t&&"loaded"!=t)){i=!0,clearTimeout(c);try{Typekit.load(n)}catch(e){}}},o.parentNode.insertBefore(s,o)}(document);
+// From https://github.com/morris/typekit-cache
+!function(e,t,n,a,r,c,l,s,o){l=a[r],l&&(s=e.createElement("style"),s.innerHTML=l,e.getElementsByTagName("head")[0].appendChild(s),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,p,u,i){if("string"==typeof p&&p.indexOf(c)>-1){try{u=new XMLHttpRequest,u.open("GET",p,!0),u.onreadystatechange=function(){try{4==u.readyState&&(i=u.responseText.replace(/url\(\//g,"url("+c+"/"),i!==l&&(a[r]=i))}catch(e){s&&(s.innerHTML="")}},u.send(null)}catch(d){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net");
+
+(function(d) {
+  var config = {
+    kitId: 'fmr6vlo',
+    scriptTimeout: 3000,
+    async: true
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
