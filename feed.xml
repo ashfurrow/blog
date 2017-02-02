@@ -4,10 +4,36 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-01-14T21:15:11+00:00</updated>
+  <updated>2017-02-01T19:05:46+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Ugh 2017</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/ugh-2017/"/>
+    <id>https://ashfurrow.com/blog/ugh-2017/</id>
+    <published>2017-02-01T19:05:46+00:00</published>
+    <updated>2017-02-01T19:05:46+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;Last week I visited Canada and while I was outside the country, shit went down. An Executive Order was signed that limited refugees and immigration, and US Customs acted arbitrarily towards people entering the country. I was afraid that I&amp;rsquo;d be turned away at the border because I&amp;rsquo;m a foreigner and because I disagree with the current Administration. Even though I&amp;rsquo;ve called New York my home for two years.&lt;/p&gt;
+
+&lt;p&gt;I made it over without a problem, but I was still afraid. I protected my Twitter account and stopped tweeting things I thought would agitate border agents. I was scared.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Ugh.&lt;/p&gt;
+
+&lt;p&gt;People died after being turned away from the border, but all I suffered was a small panic attack. I&amp;rsquo;ve lost an Ativan while others have lost their dreams, or their lives. I feel guilty even contemplating how bad I have it because I know others have it far, far worse.&lt;/p&gt;
+
+&lt;p&gt;2017 sucks. But I saw something the other day that profoundly changed my outlook on things, and my view of myself in this political climate.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Resistance requires intersectionality. It requires that you know and live Lilla Watson&amp;rsquo;s principle. Know your freedom is bound up w mine. &lt;a href="https://t.co/CqFgayDm9p"&gt;pic.twitter.com/CqFgayDm9p&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brittany Packnett (@MsPackyetti) &lt;a href="https://twitter.com/MsPackyetti/status/825723153519353856"&gt;January 29, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to keep working, keep volunteering in New York to help others, and keep writing for myself. This is the only life I&amp;rsquo;ll ever have and I refuse to spend it in fear.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Naming Things in Swift</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/naming-things-in-swift/"/>
@@ -519,54 +545,6 @@
 &lt;p&gt;If I were to repeat this workshop, I would do a lot of the groundwork for creating a universal iOS/macOS app, since that became a large time sink. I feel bad that the time put into Xcode project configuration could have been spent exploring more interesting problems. However, the workshop format of having an &lt;em&gt;idea&lt;/em&gt; of the goal but not an exact destination or path in mind made the journey more educational, and more fun for everyone.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m excited to return to New York and the Auctions team, and bring with me a renewed appreciation for what Redux can accomplish. Travelling often leaves me tired, and I do feel a bit foggy now, but my spirit hasn&amp;rsquo;t been as high in quite a while. I&amp;rsquo;m looking forward to sharing this enthusiasm with the rest of my team.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Monet.app</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/monet-app/"/>
-    <id>https://ashfurrow.com/blog/monet-app/</id>
-    <published>2016-10-30T01:18:55+00:00</published>
-    <updated>2016-10-30T01:18:55+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;I heard about a cool &lt;a href="http://www.iflscience.com/plants-and-animals/website-helps-you-identify-birds-looking-your-photo/"&gt;website that can identify the species of bird from a photo&lt;/a&gt;. It&amp;rsquo;s an impressive feat of computer vision research, but it&amp;rsquo;s not an entirely automated process.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Once users have taken a photo, they draw a box around the bird, click its bill, eye and tail and tell [the website] where and when the photo was taken.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;This idea of automating tasks &lt;em&gt;just enough&lt;/em&gt; to augment human capabilities has been on my mind since I met &lt;a href="https://twitter.com/joetastic"&gt;Joe Carrafa&lt;/a&gt;, the Engineering Manager of Applied Research at Warby Parker. A lot of applied research in our field is interested in AI/machine learning and automation.&lt;/p&gt;
-
-&lt;p&gt;We discussed the fascinating idea of &lt;em&gt;semi-autonomous&lt;/em&gt; programs. Like &lt;em&gt;almost&lt;/em&gt; artificial intelligence. A little bit of human input and the computer fills in the rest. There are some things that humans are really good at but are intractable for computers. Humans can fill in the gap in the computers&amp;rsquo; capabilities, and then computers can automate the parts that are difficult for humans.&lt;/p&gt;
-
-&lt;p&gt;A lot has already been said on the topic of automation, like this awesome video, but I want to talk about automation from an artistic perspective.&lt;/p&gt;
-
-
-
-&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/7Pq-S557XQU' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-
-
-&lt;p&gt;Researchers have built &lt;a href="http://thenextweb.com/creativity/2015/08/31/machine-or-picasso-this-algorithm-can-transform-photos-into-fine-art/"&gt;algorithms that transform photos into Van Gogh paintings&lt;/a&gt;. Google has &lt;a href="http://www.theverge.com/2016/6/1/11829678/google-magenta-melody-art-generative-artificial-intelligence"&gt;created an AI that composes music&lt;/a&gt;. There are &lt;a href="https://github.com/alexjc/neural-doodle"&gt;open source projects that generate Monet paintings from MS-Paint&lt;/a&gt;. How cool is that!&lt;/p&gt;
-
-&lt;p&gt;People worry about what you could call an &amp;ldquo;art of the gaps.&amp;rdquo; This is the scenario where human creativity is relegated to the shrinking gaps between what hasn&amp;rsquo;t yet been automated by technology. &lt;/p&gt;
-
-&lt;p&gt;I share this worry, I think most technologists should, but like most technologists I can&amp;rsquo;t help but be excited, too. Because new technology doesn&amp;rsquo;t just automate things; new technology creates &lt;em&gt;new ways to be creative&lt;/em&gt;. Let me explain. &lt;/p&gt;
-
-&lt;p&gt;Take photography for example. Right now, photography is one of the most widely practiced forms of art in history because of the ubiquity of camera phones. Some are concerned that the ease of taking pictures has come at the cost of creative freedom. They&amp;rsquo;re right, image processing algorithms have replaced darkrooms and have removed a lot of creative control from photography. &lt;/p&gt;
-
-&lt;p&gt;But it&amp;rsquo;s not all bad! Photography has &lt;em&gt;exploded&lt;/em&gt; as an art form. And there are now &lt;em&gt;new types&lt;/em&gt; of photography, too. We now have Instagram stars and artists &lt;a href="http://petapixel.com/2016/01/23/this-artist-got-90k-instagram-followers-with-photos-of-a-fake-lavish-lifestyle/"&gt;parodying Instagram stars&lt;/a&gt; and cool discussions about &lt;a href="http://petapixel.com/2015/05/26/richard-prince-is-a-jerk/"&gt;&amp;ldquo;what is art?&amp;rdquo;&lt;/a&gt; and all kinds of new stuff!&lt;/p&gt;
-
-&lt;p&gt;I think it&amp;rsquo;s &lt;em&gt;awesome&lt;/em&gt; that smartphones helped to proliferate photography as a casual form of art. I still enjoy a darkroom, but there are clear benefits to what smartphones have done for photography. It&amp;rsquo;s not just that photography is easier, it&amp;rsquo;s different now.&lt;/p&gt;
-
-&lt;p&gt;Automation is going to keep supplementing human activity, including forms of labour and forms of art. In art&amp;rsquo;s case, I think the benefits far, far outweigh the costs.&lt;/p&gt;
 </content>
   </entry>
 </feed>
