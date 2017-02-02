@@ -959,7 +959,7 @@ ga('send', 'pageview');</script>
 <p>Boom, compiler error.</p>
 
 <blockquote>
-<p>Cannot convert the expression’s type ’()’ to type ‘Bool’</p>
+<p>Cannot convert the expression’s type ‘()’ to type ‘Bool’</p>
 </blockquote>
 
 <p>Interesting. It took us a few minutes to understand what was going on. The invocation of <code>a</code> returned a <code>Bool</code>, so the compiler was inferring that the closure should return a <code>Bool</code>, too, leading to a type-mismatch. Remember that the last expression in a closure is interpreted as an implicit return statement. So the compiler was interpreting this as follows.</p>

@@ -946,7 +946,7 @@ ga('send', 'pageview');</script>
 
 <p><code>Error Domain=NSURLErrorDomain Code=-1012 "The operation couldn’t be completed. (NSURLErrorDomain error -1012.)" UserInfo=0x8893bf0 {NSErrorFailingURLKey=https://someURL.com, NSErrorFailingURLStringKey=https://someURL.com, NSUnderlyingError=0x88935c0 "The operation couldn’t be completed. (kCFErrorDomainCFNetwork error -1012.)"}</code></p>
 
-<p>My old friend, kCFErrorDomainCFNetwork error -1012. It’s always -1012, by the way, no matter what’s wrong. Earlier today, the issue was that I wasn’t url-encoding the url-encoded ’[’. You see, ’[’ is encoded as “%5B.” However, when you’re constructing an OAuth base string, you need to <em>double</em> url-encode the attributes (encode them individually then encode their concatenation). So the ’%’ in “%5B” has to be encoded, making the whole thing “%255B” - but wait! You need to escape the ’%’ in your NSString literal, so it’s actually something like @“%%255B”.</p>
+<p>My old friend, kCFErrorDomainCFNetwork error -1012. It’s always -1012, by the way, no matter what’s wrong. Earlier today, the issue was that I wasn’t url-encoding the url-encoded ‘[’. You see, ‘[’ is encoded as “%5B.” However, when you’re constructing an OAuth base string, you need to <em>double</em> url-encode the attributes (encode them individually then encode their concatenation). So the ‘%’ in “%5B” has to be encoded, making the whole thing “%255B” - but wait! You need to escape the ‘%’ in your NSString literal, so it’s actually something like @“%%255B”.</p>
 
 <p>Huh.</p>
 

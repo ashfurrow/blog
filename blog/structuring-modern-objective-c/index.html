@@ -1006,8 +1006,8 @@ ga('send', 'pageview');</script>
 <p>It’s always been a good idea to follow <a href="https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CodingGuidelines/Articles/NamingMethods.html#//apple_ref/doc/uid/20001282-1004202-BCIGGFCC">Apple’s Guidelines</a> when declaring properties. But I admit I haven’t always been diligent. Remember that when declaring <code>BOOL</code> properties to define a custom getter.</p>
 <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">getter</span> <span class="o">=</span> <span class="n">isSomething</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">something</span><span class="p">;</span>
 </code></pre>
-<h2 id="don-39-t-import-in-header-files-unnecessarily">
-<a class="header-link" href="#don-39-t-import-in-header-files-unnecessarily">#</a> Don’t <code>#import</code> in Header Files Unnecessarily</h2>
+<h2 id="dont-import-in-header-files-unnecessarily">
+<a class="header-link" href="#dont-import-in-header-files-unnecessarily">#</a> Don’t <code>#import</code> in Header Files Unnecessarily</h2>
 
 <p>I see this a lot in code written by Objective-C newcomers. Basically, the crux of it is that most <code>#import</code> statements should only be written in <code>.m</code> files, not <code>.h</code> headers.</p>
 
@@ -1074,10 +1074,10 @@ ga('send', 'pageview');</script>
 </code></pre>
 <p>Don’t wait until it’s already a mess to fix it – start right away! Then, adding them later is a breeze and it keeps your code clean.</p>
 
-<h2 id="don-39-t-use-define-for-constants">
-<a class="header-link" href="#don-39-t-use-define-for-constants">#</a> Don’t use <code>#define</code> for Constants</h2>
+<h2 id="dont-use-define-for-constants">
+<a class="header-link" href="#dont-use-define-for-constants">#</a> Don’t use <code>#define</code> for Constants</h2>
 
-<p>Here’s one I expect to get some blowback on. The thing with constants is that they’re, well, <em>constant</em>. Constant in name and constant in value. When you <code>#define</code> a constant, it’s defined in every other file the compiler looks at until (if) it’s <code>#undef</code>’d. Yikes! That’s not constant at all, and, like, global variable type stuff.</p>
+<p>Here’s one I expect to get some blowback on. The thing with constants is that they’re, well, <em>constant</em>. Constant in name and constant in value. When you <code>#define</code> a constant, it’s defined in every other file the compiler looks at until (if) it’s <code>#undef</code>‘d. Yikes! That’s not constant at all, and, like, global variable type stuff.</p>
 
 <p>Avoid it.</p>
 
@@ -1096,7 +1096,7 @@ ga('send', 'pageview');</script>
 <h2 id="properly-name-constants">
 <a class="header-link" href="#properly-name-constants">#</a> Properly Name Constants</h2>
 
-<p>I don’t care whether you prefix your constants with ‘k’ or a class name, or just a prefix, but <em>do</em> be consistent. And descriptive. Otherwise, you’ll run into naming conflicts when your codebase grows. Trust me on this one.</p>
+<p>I don’t care whether you prefix your constants with 'k’ or a class name, or just a prefix, but <em>do</em> be consistent. And descriptive. Otherwise, you’ll run into naming conflicts when your codebase grows. Trust me on this one.</p>
 
 <p></p>
 <hr>

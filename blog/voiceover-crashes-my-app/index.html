@@ -942,7 +942,7 @@ ga('send', 'pageview');</script>
 
 <p>Hmm. Shit.</p>
 
-<p>Turns out it’s only when using <code>UITableView</code>’s new <code>dequeueReusableCellWithIdentifier:forIndexPath:</code> with pre-registered classes. Somehow, VoiceOver is interfering with this process and calling this method will crash your app when VoiceOver is turned on.</p>
+<p>Turns out it’s only when using <code>UITableView</code>‘s new <code>dequeueReusableCellWithIdentifier:forIndexPath:</code> with pre-registered classes. Somehow, VoiceOver is interfering with this process and calling this method will crash your app when VoiceOver is turned on.</p>
 
 <p>For the mean time, avoid the new table view methods. Fall back to the old “try to dequeue, create if nil” approach.</p>
 

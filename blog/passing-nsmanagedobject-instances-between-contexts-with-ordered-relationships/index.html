@@ -962,7 +962,7 @@ else
 
 <p>I’ve looked through our code, and we never removed <code>PXPhotoModel</code> entities from our Core Data store, so the problem isn’t that the object is being removed. Somehow, when the child context saved, the change was not being propagated up to the main context. Very weird.</p>
 
-<p>We solved the problem by grabbing the <code>PXPhotoModel</code>’s <code>objectID</code> from the main context and retrieve the equivalent model from our child context:</p>
+<p>We solved the problem by grabbing the <code>PXPhotoModel</code>‘s <code>objectID</code> from the main context and retrieve the equivalent model from our child context:</p>
 <pre class="highlight plaintext"><code>NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"PXPhotoModel"];
 request.predicate = [NSPredicate predicateWithFormat:@"identifier == %@", [photoDict objectForKey:@"id"]];
 __block NSManagedObjectID *objectID;
