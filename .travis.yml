@@ -6,7 +6,7 @@ cache:
   - bundler
   - pip
 
-rvm: 2.1.2
+rvm: 2.2.2
 
 env:
   global:
