@@ -60,12 +60,3 @@ page "/*.xml", layout: false
 set :css_dir, 'css'
 set :js_dir, 'javascripts'
 set :images_dir, 'img'
-
-###
-# Build-specific configuration
-###
-
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-end
