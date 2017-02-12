@@ -4,10 +4,46 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-02-01T19:05:46+00:00</updated>
+  <updated>2017-02-11T18:12:20+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Swift vs. React Native Feels</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/swift-vs-react-native-feels/"/>
+    <id>https://ashfurrow.com/blog/swift-vs-react-native-feels/</id>
+    <published>2017-02-11T18:12:20+00:00</published>
+    <updated>2017-02-11T18:12:20+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;So this past week, my colleague Orta wrote a blog post, &lt;a href="http://artsy.github.io/blog/2017/02/05/Retrospective-Swift-at-Artsy/"&gt;Retrospective: Swift at Artsy&lt;/a&gt;. It&amp;rsquo;s a long read, but worth it. The post describes &lt;em&gt;why&lt;/em&gt; we made the decision to move all new development into React Native instead of Swift.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s my side of the story: my team make a decision I disagreed with, but it turned out to be the right decision for us. I had to come to terms with that.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;See, I like Swift. I liked it from the day it was announced because &lt;a href="https://ashfurrow.com/blog/we-need-to-replace-objective-c/"&gt;it wasn&amp;rsquo;t Objective-C&lt;/a&gt;. I pushed for us to adopt it at Artsy, and &lt;a href="https://github.com/artsy/eidolon"&gt;the code we wrote&lt;/a&gt; there has become a landmark for the entire OSS community.&lt;/p&gt;
+
+&lt;p&gt;So when Eloy proposed writing apps in JavaScript – &lt;em&gt;JavaScript!&lt;/em&gt; – I was unenthusiastic. However, Eloy is the most pragmatic and level-headed developer I know, and he reached the decision to move to React Native after months of careful study, so I kept an open mind. And I&amp;rsquo;m glad I did.&lt;/p&gt;
+
+&lt;p&gt;I decided to look into JavaScript and started contributing to JS web projects at Artsy last year. And I was surprised to see that the modern JS development workflow is &lt;em&gt;slick&lt;/em&gt;. Like, &lt;em&gt;really slick&lt;/em&gt;. The tooling has been built with developer experience front of mind, and it shows. Orta goes into more detail in his post, but suffice it to say that compared to Xcode and Swift development, the JS workflow is matured and polished.&lt;/p&gt;
+
+&lt;p&gt;After getting some first-hand experience with JavaScript, and learning more about &lt;a href="http://artsy.github.io/blog/2016/08/15/React-Native-at-Artsy/"&gt;React Native, Relay, and GraphQL&lt;/a&gt;, I was on board with using React Native at Artsy. The decision made sense, from our perspective. And it might not from yours – that&amp;rsquo;s okay! Each team has different priorities and will make different compromises. &lt;/p&gt;
+
+&lt;p&gt;However&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;I still had trouble accepting the decision, even after I agreed with it. At Artsy, every line of Swift I write now is legacy code, and that&amp;rsquo;s a new feeling for me. I don&amp;rsquo;t like it.&lt;/p&gt;
+
+&lt;p&gt;Swift is awesome and it sucks to &lt;em&gt;feel bad&lt;/em&gt; writing it. It&amp;rsquo;s something I&amp;rsquo;ve had to get used to, I guess my honeymoon with Swift had to end sometime.&lt;/p&gt;
+
+&lt;p&gt;I want Swift to succeed, and I still think it will. It&amp;rsquo;s a great language with a kick-ass community, backed by a company with a vested interest in seeing it explode in popularity. &lt;/p&gt;
+
+&lt;p&gt;As luck would have it, Artsy needs someone to maintain all their Swift code, so I&amp;rsquo;ll be writing Swift for a long time 😉 &lt;/p&gt;
+
+&lt;p&gt;And I have to acknowledge: I really enjoy the JS workflow. JS had a decades-long  head start, and I hope Apple engineers are looking to close the gap. (&lt;a href="http://isxcodeopensourceyet.github.io"&gt;Hint hint&lt;/a&gt;).&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Ugh 2017</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/ugh-2017/"/>
@@ -486,65 +522,6 @@
 &lt;p&gt;I turned to music as a way to cope with crappy world events, and it&amp;rsquo;s worked: I&amp;rsquo;m feeling less stressed and more able to focus. The next two weeks off are gonna be jam-tastic.&lt;/p&gt;
 
 &lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/hIoiyoo9W0Q' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Swift Alps &amp; ReSwift</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/the-swift-alps-reswift/"/>
-    <id>https://ashfurrow.com/blog/the-swift-alps-reswift/</id>
-    <published>2016-11-13T23:01:57+00:00</published>
-    <updated>2016-11-13T23:01:57+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;I&amp;rsquo;ve wanted to expand my expertise outside of just mobile development for a while now, and a few months ago I got the opportunity to begin building a large new feature in an existing &lt;a href="https://facebook.github.io/react/"&gt;React&lt;/a&gt; app for the Artsy Auctions platform. I was &lt;em&gt;extra&lt;/em&gt; excited because the feature&amp;rsquo;s purpose is to make running auctions easier for my colleagues on the operations team, so every line of code I write makes their lives just a little easier. It&amp;rsquo;s been a very rewarding experience.&lt;/p&gt;
-
-&lt;p&gt;The React app in question uses &lt;a href="http://redux.js.org"&gt;Redux&lt;/a&gt;, a state-management framework that I&amp;rsquo;ve grown quite fond of. The library itself is so small that it&amp;rsquo;s more accurately described as an &lt;em&gt;idea&lt;/em&gt; rather than a framework. And lo, Redux has an implementation in Swift called &lt;a href="https://github.com/ReSwift/ReSwift"&gt;ReSwift&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;My friend Junior decided to run an experimental, workshop-based, collaborative learning conference called &lt;a href="http://theswiftalps.com"&gt;The Swift Alps&lt;/a&gt;. He asked me to be a mentor for the conference and I was honoured to oblige. I decided to use ReSwift in my workshops as a way to explore several other important aspects of iOS and Swift development.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Explore alternative ways to manage application state in iOS apps.&lt;/li&gt;
-&lt;li&gt;Imbue participants with a sense of community-driven software development.&lt;/li&gt;
-&lt;li&gt;Normalize the GitHub model of fork/commit/pull request.&lt;/li&gt;
-&lt;li&gt;Discover friction points involved in using non-UIKit inspired abstractions for managing state.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&amp;ldquo;UIKit is very opinionated and those opinions are often not very good&amp;rdquo; &lt;a href="https://twitter.com/ashfurrow"&gt;@ashfurrow&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/swiftalps?src=hash"&gt;#swiftalps&lt;/a&gt;&lt;/p&gt;&amp;mdash; Roy Marmelstein (@marmelroy) &lt;a href="https://twitter.com/marmelroy/status/797007786047639553"&gt;November 11, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Importantly, my goal was not to &lt;em&gt;convince&lt;/em&gt; people to use ReSwift or Redux style state management in Swift; instead, I only wanted to use ReSwift as a way to explore what was possible in terms of state management and demonstrate how software teams can work together to accomplish common goals. In that spirit, I reached out to ReSwift core maintainer &lt;a href="https://twitter.com/benjaminencz"&gt;Benjamin Encz&lt;/a&gt; to see what sorts of ideas they might have, or chores we could accomplish for them. I distilled their wishlist down to three main goals:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Extend an &lt;a href="https://github.com/ReSwift/CounterExample"&gt;existing iOS example app&lt;/a&gt;, from displaying/manipulating one counter, to several.&lt;/li&gt;
-&lt;li&gt;Add an iOS target to an &lt;a href="https://github.com/ReSwift/ReSwift-Todo-Example"&gt;existing macOS example app&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Build a brand new iOS application that used networking to explore asynchronous state changes in ReSwift.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;It was ambitious. I had planned three two-hour sessions, each with a fresh batch of participants, each one building upon the work of the others (just like real software development). What the final products would look like, I didn&amp;rsquo;t know, but we were going to try, fail, and learn. Together.&lt;/p&gt;
-
-&lt;p&gt;I didn&amp;rsquo;t want this to be like a typical workshop where I direct people to accomplish preset tasks. Instead, I wanted to model this off of the weekly &lt;a href="https://artsy.github.io/blog/2015/08/10/peer-lab/"&gt;peer lab&lt;/a&gt; that I help run on Saturday mornings. As a group, we broke down the goals into tasks that groups of two or three participants worked on. They reviewed each others&amp;rsquo; pull requests, coordinated, and handled merge conflicts. I was only there to facilitate.&lt;/p&gt;
-
-&lt;p&gt;We accomplished the first goal and made some progress towards the second. Sadly, slow wifi and Xcode problems hampered transforming the macOS app into a macOS/iOS app. We didn&amp;rsquo;t end up building a new app. Despite these challenges, we learned a lot.&lt;/p&gt;
-
-&lt;p&gt;Most of the work went into the first task: augmenting a simple counting application from being able to count one thing at a time to being able to count several things at once. This transition from one counter to many counters is commonly used in Redux web tutorials to graduate from simple to complex state; I wanted to repeat the process for ReSwift. By the end of the day, we had a full app that used ReSwift to full effect, including named counters, dynamic table view reloading based on LCS algorithms, Redux-style selectors, and state persistence.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/the-swift-alps-reswift/screenshot.png" alt="Screenshot of finished app" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;We tried, failed, and tried again. When I ran out of ideas to augment the app, participants helped me out by coming up with their own goals and distributing work between groups. I was surprised and humbled by how quickly the participants – mostly strangers – were able to come together and form well-functioning teams.&lt;/p&gt;
-
-&lt;p&gt;The counter app does a lot more than I had originally intended, and it&amp;rsquo;s now probably too complex to serve as a simple introduction to ReSwift. That&amp;rsquo;s okay, it can &lt;a href="https://github.com/TheSwiftAlps/CounterExample"&gt;sit alongside the original&lt;/a&gt; as a learning resource for others.&lt;/p&gt;
-
-&lt;p&gt;I like Redux, and ReSwift is a great implementation of the idea. I&amp;rsquo;m undergoing a &lt;a href="https://github.com/artsy/eigen/pull/1985"&gt;switch to ReSwift in our auctions code&lt;/a&gt;. Redux appears to clash with UIKit in only the expected ways that a non-UIKit library would, and the simplicity of the framework helps to minimize dependencies within our large app.&lt;/p&gt;
-
-&lt;p&gt;If I were to repeat this workshop, I would do a lot of the groundwork for creating a universal iOS/macOS app, since that became a large time sink. I feel bad that the time put into Xcode project configuration could have been spent exploring more interesting problems. However, the workshop format of having an &lt;em&gt;idea&lt;/em&gt; of the goal but not an exact destination or path in mind made the journey more educational, and more fun for everyone.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m excited to return to New York and the Auctions team, and bring with me a renewed appreciation for what Redux can accomplish. Travelling often leaves me tired, and I do feel a bit foggy now, but my spirit hasn&amp;rsquo;t been as high in quite a while. I&amp;rsquo;m looking forward to sharing this enthusiasm with the rest of my team.&lt;/p&gt;
 </content>
   </entry>
 </feed>
