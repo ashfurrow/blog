@@ -1,10 +1,4 @@
 upcoming_talks:
-- name: TBD
-  conference: Playgrounds
-  url: http://www.playgroundscon.com
-  location: Melbourne, Australia
-  dates: February 23–24, 2017
-  image: playgroundscon.jpg
 - name: Building Compassionate Software  
   conference: RWDevCon
   url: https://www.rwdevcon.com
@@ -31,6 +25,13 @@ upcoming_talks:
   image: swiftconf.png
 
 past_talks:
+- name: Comparative Asynchronous Programming
+  conference: Playgrounds
+  url: http://www.playgroundscon.com
+  location: Melbourne, Australia
+  dates: February 23–24, 2017
+  image: playgroundscon.png
+  slides: https://speakerdeck.com/ashfurrow/comparative-asynchronous-programming
 - name: Building Compassionate Software
   conference: iOSoho
   url: https://www.meetup.com/iOSoho/events/232809656/
