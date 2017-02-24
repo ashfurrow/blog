@@ -32,7 +32,7 @@ Most of the code Swift developers write is "normal", or synchronous. Let's take 
 let returnValue = someFunctionCall()
 ```
 
-This is an example of a synchronous, or “normal” Swift function call. It is synchronous, meaning from the call site’s perspective, it gets executed atomically. It starts, it finishes, all in one line of code.
+This is an example of a synchronous, or "normal" Swift function call. It is synchronous, meaning from the call site’s perspective, it gets executed atomically. It starts, it finishes, all in one line of code.
 
 If all the function is doing is adding two numbers you’ve already loaded from RAM, it’ll be really fast. If it has to retrieve those from RAM first, it’ll be orders of magnitude slower. If you’re doing something complex like reading a file from disk, then it’ll be orders of magnitude slower still. At a certain point, you’re wasting CPU time waiting for file I/O, network I/O, or other long-running task to complete.
 
@@ -80,7 +80,7 @@ Most helpful for managing threading, which is beyond the scope of this talk. Pro
 
 ### NSOperationQueue
 
-NSOperationQueues are built on top of GCD and allow you to “link” different operations together to form a complex dependency graph. Look up DRBOperationTree for an example of an even more powerful abstraction built on top of operation queues.
+NSOperationQueues are built on top of GCD and allow you to "link" different operations together to form a complex dependency graph. Look up DRBOperationTree for an example of an even more powerful abstraction built on top of operation queues.
 
 ### POSIX Threads
 
@@ -100,11 +100,9 @@ logIn(with: credentials) { result in
 }
 ```
 
-TODO: Explain code.
+Here we have a `logIn(with:)` function that takes a completion handler as its last parameter, and that handler gets executed when the login succeeds or fails.
 
-Hard to stack a callback within a callback.
-Actually, it’s easy, but that’s the problem.
-Hard to debug / messy stack traces.
+The thing is, it's hard to stack a callback within a callback. Actually, it’s easy, but that’s the problem. Soon, you have callbacks within callbacks within callbacks, which are hard to debug and produce messy stack traces.
 
 ```swift
 getCredentialsFromUser() { credentials in
@@ -114,7 +112,7 @@ getCredentialsFromUser() { credentials in
 }
 ```
 
-This “triangle of doom” is bad but things get worse when you consider handling errors appropriately.
+This "triangle of doom" is the code creeping further and further from the left side of the screen (right side for RTL languages). This is bad enough, but things get worse when you consider handling errors appropriately.
 
 ```swift
 getCredentialsFromUser() { credentials, error in
@@ -132,19 +130,31 @@ getCredentialsFromUser() { credentials, error in
 }
 ```
 
-Consider that none of these asynchronous functions work well with the built-in Swift error handling of `throws`, what a shame.
+So now we have error handling strewn throughout our callbacks. Gross! Consider that none of these asynchronous functions work well with the built-in Swift error handling of `throws`. What a shame.
+
+An important consideration when you're writing a function that takes a call back is the callback's _signature_. What information are you going to pass to it? We generally want to pass either a value (in the success case) or something else (in the failure case). A simple approach is to use an Optional.
 
 ```swift
 (credentials: Credentials?) -> Void
+```
 
+A `nil` value will represent a failure, and a non-`nil` value will represent a success. This works well for small cases but has a limitation: what if we want to know _what_ went wrong?
+
+We could just add an optional `Error` parameter, and in some ways that would be an improvement. The `Error` can be used to take appropriate follow-up action after an error is encountered.
+
+```swift
 (credentials: Credentials?, error: Error?) -> Void
+```
 
+However, we've introduced some ambiguity into our code. What happens if both of the parameters are `nil`? What happens if neither of them are?
+
+An even better approach is to use a Result type.
+
+```swift
 (result: Result<Credentials>) -> Void
 ```
 
-TODO: Break up & explain
-
-Swift doesn’t have a result type, but you can make one fairly easily.
+A result represents either a success or an error. Because Swift is so keen on staying unopinioated, it doesn’t have a result type built in. You can either use [the Result library](https://github.com/antitypical/Result) or make one yourself.
 
 ```swift
 enum Result<T> {
@@ -257,7 +267,7 @@ Due to compiler limitations, there are some asynchronous approaches that are imp
 ### Async / Await
 
 Supported in JavaScript and C#, very popular in those languages.
-Lets you write code that looks “normal” but is actually asynchronous
+Lets you write code that looks "normal" but is actually asynchronous
 
 Very powerful and expressive
 
@@ -270,11 +280,11 @@ async func logIn() -> Login {
 }
 ```
 
-TODO: Explain code example.
+Here we have a `logIn()` function that appears to return a value synchronously, but in this hypothetical syntax, we see that the function has been marked asynchronous with the `async` keyword. When the function execution reaches `await getCredentialsFromUser()`, the function _pauses_ and waits for that function to return a value, asynchronously. At that point, the function execution will resume. How cool is that! Check out [this great blog post](http://khanlou.com/2016/09/async-await/) for more details on a hypothetical async/await in Swift.
 
-Async/Await isn’t perfect – for example, mixing async/await with regular callback closures is really hard to do. They’re an opinionated aspect of a programming language, and so they fit in well with C# and modern JavaScript. Plus they work with throwing errors, so we could write idiomatic Swift error-handling.
+Async/await isn’t perfect – for example, mixing async/await with regular callback closures is really hard to do. They’re an opinionated aspect of a programming language, and so they fit in well with opinionated languages like C# and modern JavaScript. Plus they work with throwing errors, so we could write idiomatic Swift error-handling.
 
-Async/Await is the way I wish Swift had done async programming, it’s probably the ideal but is now too late to standardize on.
+Async/await is the way I wish Swift had done async programming, it’s probably the ideal but is now too late to standardize on.
 
 Additionally, some asynchronous needs aren’t well-met by async/await. It would be hard to write gesture recognizer code this way, which works best with existing Swift-supported abstractions like FRP or target/action.
 
@@ -304,14 +314,14 @@ fibGenerator() // returns 3
 fibGenerator() // returns 5
 ```
 
-This is a hypothetical generator function in Swift. It’s marked as a generator with an asterisk, like in JavaScript, and it’s an infinite generator. You can call the function over and over forever and it would always return a new value. 
+This `fibGenerator` function has been marked as a _generator_ using the `*`, a syntax borrowed from JavaScript. It looks like an infinite loop, but it actually returns a value using the `yield` keyword and then pauses execution until it gets called again. Every time you call the function, it resumes execution, loops, and yields a new value. How cool is that?
 
-This isn’t code you might actually use – JavaScript developers don’t often use generators directly, but rather use them to but higher level abstractions like Async/Await.
+This isn’t code you might actually use – JavaScript developers don’t often use generators directly, but rather use them to but higher level abstractions like async/await.
 
 ## Wrap Up
 
-TODO: Summarize
+We've covered a lot of ground today. We talked about what asynchronous programming is and why there's no single "best" solution. Then we discussed the asynchronous approaches built into Swift, the approaches we can build ourselves in Swift, and finally the approaches we can't yet build in Swift.
 
-Hopefully you made this face a few times while reading. It’s always a good idea to learn new things, even if they’re not directly applicable to your job, just to know they’re out there. If you see something cool you’d like in Swift, head over to Swift Evolution and talk to the compiler engineers. Together, we can help shape the future of Swift. 
+Hopefully you made the 🤔 face a few times while reading. It’s always a good idea to learn new things, even if they’re not directly applicable to your job, just to know they’re out there. If you see something cool you’d like in Swift, head over to Swift Evolution and talk to the compiler engineers. Together, we can help shape the future of Swift. 
 
 Especially as Swift gains popularity outside of just building apps, I'm incredibly excited to see how it continues to evolve, and to see how new asynchronous become possible in my favourite language.
