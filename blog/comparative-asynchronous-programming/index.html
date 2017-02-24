@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Comparative Asynchronous Programming - Ash Furrow</title>
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<meta content="width=device-width initial-scale=1" name="viewport">
+<link href="https://ashfurrow.com/blog/comparative-asynchronous-programming/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/comparative-asynchronous-programming/" itemprop="url">
+<meta content="So I’m in Australia to give my talk at Playgrounds Conference about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let’s dive in!" itemprop="about">
+<meta content="So I’m in Australia to give my talk at Playgrounds Conference about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let’s dive in!" itemprop="description">
+<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="Comparative Asynchronous Programming" property="og:title">
+<meta content="https://ashfurrow.com/blog/comparative-asynchronous-programming/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="So I’m in Australia to give my talk at Playgrounds Conference about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let’s dive in!" property="og:description">
+<meta content="https://ashfurrow.com/img/blog/comparative-asynchronous-programming/akka.png" property="og:image">
+<meta content="summary" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="Comparative Asynchronous Programming" name="twitter:title">
+<meta content="So I’m in Australia to give my talk at Playgrounds Conference about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let’s dive in!" name="twitter:description">
+<meta content="https://ashfurrow.com/img/blog/comparative-asynchronous-programming/akka.png" name="twitter:image">
+<link href="/img/siteimage_dark.png" rel="image_src">
+<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<script type="application/ld+json">{  '@context' ='http://schema.org',  '@type' ='Person',  'name' ='Ash Furrow',  'url' ='https://ashfurrow.com',  'image' ='http://static.ashfurrow.com/ashfurrow_square.jpg',  'sameAs' =[ 'http://twitter.com/ashfurrow' 'http://instagram.com/ashfurrow' 'http://github.com/ashfurrow' ]}</script><script type="application/ld+json">{  '@context'='http://schema.org',  '@type'='Organization',  'url'='https://ashfurrow.com',  'logo'='/img/siteimage.png'}</script><style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-4,
+.col-md-5,
+.col-sm-6,
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:768px) {
+  .col-sm-6 {
+    float: left;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width:992px) {
+  .col-md-5,
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-4,
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid > .navbar-header,
+  .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav > li {
+    float: left;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right !important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  color: #404040;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+body {
+  -ms-font-feature-settings: "liga";
+  font-variant-ligatures: common-ligatures;
+}
+
+@supports not (font-variant-ligatures: common-ligatures) {
+  body {
+    font-feature-settings: "liga";
+  }
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 1.25em;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: gray;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro-header .site-heading {
+  padding: 6em 0 3em;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 7em 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 1em;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 4em;
+  }
+}
+
+body {
+  webkit-tap-highlight-color: #398CCC;
+}
+
+.container .recent-blog-posts ol {
+  padding-left: 0;
+}
+
+.container .recent-blog-posts li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding-top: 0;
+  padding-bottom: 0.25em;
+}
+
+@media (min-width: 768px) {
+  .featured-blog-posts {
+    padding-top: 1em;
+  }
+}
+
+.featured-blog-posts a {
+  color: white;
+}
+
+.featured-blog-posts .embedded {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .featured-blog-posts .embedded {
+    margin-bottom: 1.5em;
+  }
+}
+
+.featured-blog-posts .preview {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  min-height: 6.5em;
+}
+
+@media (min-width: 992px) {
+  .featured-blog-posts .preview {
+    min-height: 6.5em;
+  }
+}
+
+.featured-blog-posts .preview h2 {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.featured-blog-posts h2 {
+  padding-bottom: 0.25em;
+}
+
+@media (min-width: 768px) {
+  .nav .text-link {
+    display: none;
+  }
+}
+
+.nav .icon-link {
+  font-size: 1em;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav .icon-link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.intro-header {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 2.5em;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 1.25em;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"), url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"), url('/fonts/icomoon.woff?-ar0ypv') format("woff"), url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}
+</style>
+<script type="text/javascript">// From https://github.com/morris/typekit-cache
+!function(e,t,n,a,r,c,l,s,o){l=a[r],l&&(s=e.createElement("style"),s.innerHTML=l,e.getElementsByTagName("head")[0].appendChild(s),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,p,u,i){if("string"==typeof p&&p.indexOf(c)>-1){try{u=new XMLHttpRequest,u.open("GET",p,!0),u.onreadystatechange=function(){try{4==u.readyState&&(i=u.responseText.replace(/url\(\//g,"url("+c+"/"),i!==l&&(a[r]=i))}catch(e){s&&(s.innerHTML="")}},u.send(null)}catch(d){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net");
+
+(function(d) {
+  var config = {
+    kitId: 'fmr6vlo',
+    scriptTimeout: 3000,
+    async: true
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+</script><script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	w.loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var ss = w.document.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else if( w.document.querySelectorAll ){
+			var refs = w.document.querySelectorAll(  "style,link[rel=stylesheet],script" );
+			// No need to check length. This script has a parent element, at least
+			ref = refs[ refs.length - 1];
+		}
+		else {
+			ref = w.document.getElementsByTagName( "script" )[ 0 ];
+		}
+
+		var sheets = w.document.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+		ss.onloadcssdefined = function( cb ){
+			var defined;
+			for( var i = 0; i < sheets.length; i++ ){
+				if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+					defined = true;
+				}
+			}
+			if( defined ){
+				cb();
+			} else {
+				setTimeout(function() {
+					ss.onloadcssdefined( cb );
+				});
+			}
+		};
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		ss.onloadcssdefined(function() {
+			ss.media = media || "all";
+		});
+		return ss;
+	};
+}(this));
+</script><script>loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+loadCSS('/css/all.css');</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9572240-3', 'auto');
+ga('send', 'pageview');</script>
+</head>
+<body>
+<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right">
+<li><a href="/blog">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a href="/search" class="text-link">Search</a><a href="/search" class="icon-link"><i class="fa fa-search"></i></a>
+</li>
+<li>
+<a href="//feed.ashfurrow.com/feed.xml" class="text-link">Blog Feed</a><a href="//feed.ashfurrow.com/feed.xml" class="icon-link"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul></div>
+</div></nav><header class="intro-header" style="background-image: url('/img/blog/comparative-asynchronous-programming/background.png');"><div class="header-dimmer"></div>
+<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Comparative Asynchronous Programming</h1></div></div></div></div>
+<div class="header_image_link_container"><a href="https://twitter.com/CrookedCosmos/status/834342450835636224"><i class="fa fa-picture-o"></i></a></div></header><div class="container">
+<article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>So I’m in Australia to give my talk at <a href="http://playgroundscon.com">Playgrounds Conference</a> about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let’s dive in!</p>
+
+<p></p>
+
+<script async class="speakerdeck-embed" data-id="46f4ab568af449b8ac95aa4939f9e62e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><p>Today we’re going to be talking about asynchronous programming: what it is, why it’s important, and what it can look like in Swift. The topic is quite complicated and I don’t have enough time to go into a tonne of detail, but my goal isn’t depth, it’s breadth. I want to expose you to lots of ideas and give you hints about where to follow up to do your own research. </p>
+
+<p>Today we’re discussing four main points:</p>
+
+<ol>
+<li>Asynchronous programming is difficult and there is no one “best” way to do it.</li>
+<li>Swift ships with some asynchronous abstractions, but they’re not great.</li>
+<li>But we can build our own abstractions in Swift!</li>
+<li>However, compiler limitations mean there are some abstractions we <em>can’t</em> build in Swift.</li>
+</ol>
+<p>Let’s get started.</p>
+
+<h2 id="asynchronous-programming-difficult-and-subjective">
+<a class="header-link" href="#asynchronous-programming-difficult-and-subjective">#</a> Asynchronous Programming: Difficult and Subjective</h2>
+
+<p>Before we talk about asynchronous programming, let’s define it. To define it, let’s contrast it with synchronous programming. “Normal” programming, as contrasted with asynchronous programming, is the kind of programming you probably learned first. It’s where program execution starts at the top and executes each line of code in step, moving towards the bottom. The program waits for each line of code to finish before moving onto the next line. </p>
+
+<p>Most of the code Swift developers write is “normal”, or synchronous. Let’s take a look at an example.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">returnValue</span> <span class="o">=</span> <span class="nf">someFunctionCall</span><span class="p">()</span>
+</code></pre>
+<p>This is an example of a synchronous, or “normal” Swift function call. It is synchronous, meaning from the call site’s perspective, it gets executed atomically. It starts, it finishes, all in one line of code.</p>
+
+<p>If all the function is doing is adding two numbers you’ve already loaded from RAM, it’ll be really fast. If it has to retrieve those from RAM first, it’ll be orders of magnitude slower. If you’re doing something complex like reading a file from disk, then it’ll be orders of magnitude slower still. At a certain point, you’re wasting CPU time waiting for file I/O, network I/O, or other long-running task to complete.</p>
+
+<p>That’s where asynchronous programming comes in: it mitigates this wasted CPU time by letting programs do stuff while waiting for other code to get executed.</p>
+
+<p>Asynchronous programming is where you write code that’s executed out of order. Your program continues to execute new lines of code while it waits for previous lines to finish. Then, code gets executed in response to external signals like completed network requests, user interaction, all kinds of things! Code might get executed in parallel, too. Things get complicated quickly!</p>
+
+<p>Like most mainstream languages, Swift is really all about writing synchronous programming, and forces programmers to choose the appropriate abstractions. Which to choose?</p>
+
+<p>It depends.</p>
+
+<p>Software development is all about tradeoffs. Which abstraction you pick depend on which tradeoffs you want to make. Some languages and frameworks have strong opinions about how to do asynchronous programming, like <a href="https://nodejs.org">Node.js</a>. They use something called “non-blocking” functions because they have the benefit of never blocking the main thread. This is critical in JavaScript because there is only one thread, so blocking at any point blocks your whole app. Yikes!</p>
+
+<p>Non-blocking code is great but has its tradeoffs: imagine if almost every function call you made in Swift had a completion closure instead of a return value. That might be terrible, but it might be great! Let’s press on and explore.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">file</span> <span class="o">=</span> <span class="nf">readFile</span><span class="p">()</span>
+
+<span class="c1">// vs</span>
+
+<span class="nf">readFile</span><span class="p">()</span> <span class="p">{</span> <span class="n">file</span> <span class="k">in</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</code></pre>
+<p>The first example blocks while the second example is non-blocking. The blocking call is simpler to understand, since it happens atomically from the calcite’s perspective. But it’s less performant. The non-blocking call is better for performance but it doesn’t have an “immediate” return value, so it’s asynchronous nature propagates up the call stack. In effect, the code using it becomes non-blocking. This is annoying for developers, but you get really performant code.</p>
+
+<p>See? Tradeoffs.</p>
+
+<p>Swift doesn’t have that same kind of opinionated nature as Node.js, which is a shame because it leads to developers avoiding thinking about abstractions.</p>
+
+<p>To write modern software, you <em>have</em> to write asynchronous code sometimes. And writing asynchronous code involves picking an abstraction; if you don’t think about which abstraction would be best in a given situation, you’re very unlikely to pick the best one for you.</p>
+
+<p>Let’s look at the abstractions built-in to Swift.</p>
+
+<h2 id="swift-has-async-built-in-sorta">
+<a class="header-link" href="#swift-has-async-built-in-sorta">#</a> Swift Has Async Built-in. Sorta.</h2>
+
+<p>Swift’s built-in abstractions are a bit lacking because it’s fairly unopinionated about asynchronous programming. Most of its asynchronous abstractions come directly from Objective-C, and aren’t that great. Let’s explore.</p>
+
+<p>(We’re going to limit ourselves to iOS, macOS, watchOS, and tvOS – none of that “Swift on Linux” stuff.)</p>
+
+<h3 id="grand-central-dispatch">
+<a class="header-link" href="#grand-central-dispatch">#</a> Grand Central Dispatch</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Grand_Central_Dispatch">Grand Central Dispatch</a> (GCD) is most helpful for managing threading, which is beyond the scope of this post. It’s probably not best to use GCD directly, but rather use it to build higher-level abstractions that are easier to think about. However, GCD is <em>super</em> powerful.</p>
+
+<h3 id="nsoperationqueue">
+<a class="header-link" href="#nsoperationqueue">#</a> NSOperationQueue</h3>
+
+<p>NSOperationQueues are built on top of GCD and allow you to “link” different operations together to form a complex dependency graph. They’re really cool! But kind of a pain to use directly. Check out <a href="https://github.com/dstnbrkr/DRBOperationTree">DRBOperationTree</a> for an example of an even more powerful abstraction built on top of operation queues.</p>
+
+<h3 id="posix-threads">
+<a class="header-link" href="#posix-threads">#</a> POSIX Threads</h3>
+
+<p>It’s possible to use <a href="https://en.wikipedia.org/wiki/POSIX_Threads">POSIX threads</a> in Swift but it’s far too low level, I really discourage this approach.</p>
+
+<h3 id="target-action">
+<a class="header-link" href="#target-action">#</a> Target / Action</h3>
+
+<p><a href="https://developer.apple.com/library/content/documentation/General/Conceptual/Devpedia-CocoaApp/TargetAction.html">Target/action</a> is a pattern that calls a specific function on a specific object. It is used throughout UIKit, usually for user interaction like button presses or gesture recognizers. This pattern works okay for small uses but doesn’t always scale well.</p>
+
+<h3 id="callbacks-completion-handlers">
+<a class="header-link" href="#callbacks-completion-handlers">#</a> Callbacks / Completion Handlers</h3>
+
+<p>Callbacks are built from closures, short anonymous functions that get executed later on in time. You’ve probably used these before at the completion of a network request or animation, but let’s take a closer look.</p>
+<pre class="highlight swift"><code><span class="nf">logIn</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">credentials</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+  <span class="c1">// Handle login success or failure</span>
+<span class="p">}</span>
+</code></pre>
+<p>Here we have a <code>logIn(with:)</code> function that takes a completion handler as its last parameter, and that handler gets executed when the login succeeds or fails.</p>
+
+<p>The thing is, it’s hard to stack a callback within a callback. Actually, it’s easy, but that’s the problem. Soon, you have callbacks within callbacks within callbacks, which are hard to debug and produce messy stack traces.</p>
+<pre class="highlight swift"><code><span class="nf">getCredentialsFromUser</span><span class="p">()</span> <span class="p">{</span> <span class="n">credentials</span> <span class="k">in</span>
+  <span class="nf">logIn</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">credentials</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span> <span class="k">in</span>
+    <span class="c1">// Handle login success or failure</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<p>This “triangle of doom” is the code creeping further and further from the left side of the screen (right side for RTL languages). This is bad enough, but things get worse when you consider handling errors appropriately.</p>
+<pre class="highlight swift"><code><span class="nf">getCredentialsFromUser</span><span class="p">()</span> <span class="p">{</span> <span class="n">credentials</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+  <span class="k">if</span> <span class="n">credentials</span> <span class="p">{</span>
+      <span class="nf">logIn</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">credentials</span><span class="p">)</span> <span class="p">{</span> <span class="n">login</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+        <span class="k">if</span> <span class="n">login</span> <span class="p">{</span>
+          <span class="c1">// Handle login success</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="c1">// Handle error</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// Handle error</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<p>So now we have error handling strewn throughout our callbacks. Gross! Consider that none of these asynchronous functions work well with the built-in Swift error handling of <code>throws</code>. What a shame.</p>
+
+<p>An important consideration when you’re writing a function that takes a call back is the callback’s <em>signature</em>. What information are you going to pass to it? We generally want to pass either a value (in the success case) or something else (in the failure case). A simple approach is to use an Optional.</p>
+<pre class="highlight swift"><code><span class="p">(</span><span class="nv">credentials</span><span class="p">:</span> <span class="kt">Credentials</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
+</code></pre>
+<p>A <code>nil</code> value will represent a failure, and a non-<code>nil</code> value will represent a success. This works well for small cases but has a limitation: what if we want to know <em>what</em> went wrong?</p>
+
+<p>We could just add an optional <code>Error</code> parameter, and in some ways that would be an improvement. The <code>Error</code> can be used to take appropriate follow-up action after an error is encountered.</p>
+<pre class="highlight swift"><code><span class="p">(</span><span class="nv">credentials</span><span class="p">:</span> <span class="kt">Credentials</span><span class="p">?,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
+</code></pre>
+<p>However, we’ve introduced some ambiguity into our code. What happens if both of the parameters are <code>nil</code>? What happens if neither of them are?</p>
+
+<p>An even better approach is to use a Result type.</p>
+<pre class="highlight swift"><code><span class="p">(</span><span class="nv">result</span><span class="p">:</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Credentials</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
+</code></pre>
+<p>A result represents either a success or an error. Because Swift is so keen on staying unopinionated, it doesn’t have a result type built in. You can either use <a href="https://github.com/antitypical/Result">the Result library</a> or make one yourself.</p>
+<pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="nf">success</span><span class="p">(</span><span class="kt">T</span><span class="p">)</span>
+  <span class="k">case</span> <span class="nf">error</span><span class="p">(</span><span class="kt">Error</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<p>Result uses Swift enums to define two cases: a success, with an associated generic value, and an error with an associated error value. Since the result has to be exactly one of these two cases, there’s no ambiguity when writing you code!</p>
+
+<p>If you’re going to use callbacks to write asynchronous code in Swift, I highly encourage you to use a Result type as a parameter to the callback. Not only is it clean, but it’s also a gateway to using higher-level abstractions. Something something monad.</p>
+
+<p>Callbacks are useful for one-off async methods. You don’t need a fancy async approach if all you’re doing is, say, fetching some photos from the user’s library. But if you find yourself nesting callbacks within each other, look for a better solution.</p>
+
+<h2 id="some-async-abstractions-are-supported-in-swift">
+<a class="header-link" href="#some-async-abstractions-are-supported-in-swift">#</a> Some Async Abstractions are Supported in Swift</h2>
+
+<p>As developers, we aren’t constrained to only using what our language and frameworks supply. We can use open source libraries and build our own abstractions that are better suited for our needs. There a tonne of abstractions out there to use, let’s take a look at a few popular ones.</p>
+
+<h3 id="promises-futures">
+<a class="header-link" href="#promises-futures">#</a> Promises &amp; Futures</h3>
+
+<p>(Promises and futures are technical distinct but I’m not going into the differences between them. We’ll use them interchangeably here.)</p>
+
+<p>A future is a class that represents a future value or error. You write your code based on how you would deal with a future value or error, and later when it happens, the correct code gets run. Lots of libraries already exist in Swift for promises and futures. Let’s look at one called <a href="https://github.com/Thomvis/BrightFutures">BrightFutures</a>.</p>
+<pre class="highlight swift"><code><span class="nf">getCredentialsFromUser</span><span class="p">()</span>
+  <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="n">credentials</span> <span class="k">in</span>
+    <span class="k">return</span> <span class="nf">login</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">credentials</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="o">.</span><span class="n">onSuccess</span> <span class="p">{</span> <span class="n">login</span> <span class="k">in</span>
+    <span class="c1">// Handle login success</span>
+  <span class="p">}</span>
+  <span class="o">.</span><span class="n">onFailure</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="c1">// Handle login error</span>
+  <span class="p">}</span>
+</code></pre>
+<p>We can see that there are a few big improvements over simple callbacks. First, transforming one future into another is really easy using <code>flatMap</code>. Second, error handling is all done at the end in one spot. An error from any future is propagated through the chain, so you don’t end up writing duplicated error-handling code. Nice!</p>
+
+<h3 id="functional-reactive-programming">
+<a class="header-link" href="#functional-reactive-programming">#</a> Functional Reactive Programming</h3>
+
+<p>I couldn’t talk about asynchronous programming without discussing my favourite abstraction: functional reactive programming. Briefly, FRP encapsulates a stream of events that you can observe:</p>
+
+<ul>
+<li>New value events.</li>
+<li>Error events.</li>
+<li>Completion events.</li>
+</ul>
+<p>These streams, called observables, finish with either an error or completion event (never both), and they stop sending events afterwards. I’ve written a whole <a href="https://ashfurrow.com/blog/reactivecocoa-vs-rxswift/">blog post</a> about choosing an FRP library, but let’s explore some <a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> examples.</p>
+<pre class="highlight swift"><code><span class="nf">getCredentialsFromUser</span><span class="p">()</span>
+  <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="n">credentials</span> <span class="k">in</span>
+    <span class="k">return</span> <span class="nf">login</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">credentials</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="o">.</span><span class="nf">on</span><span class="p">(</span><span class="nv">next</span><span class="p">:</span> <span class="p">{</span> <span class="n">login</span> <span class="k">in</span>
+      <span class="c1">// Handle login success</span>
+    <span class="p">},</span> <span class="nv">error</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+      <span class="c1">// Handle login error</span>
+    <span class="p">})</span>
+</code></pre>
+<p>🤔</p>
+
+<p>That FRP code looks <em>really</em> similar to futures/promises. That’s because our code is structured such that it only sends one value and then it’s done. FRP has all the benefits of promises, and then some, and FRP is at its best when used for streams of values that get sent over a long period of time.</p>
+<pre class="highlight swift"><code><span class="n">gerstureRecognizer</span><span class="o">.</span><span class="n">rx</span>
+  <span class="o">.</span><span class="n">event</span>
+  <span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">recognizer</span> <span class="k">in</span>
+    <span class="k">return</span> <span class="n">recognizer</span><span class="o">.</span><span class="nf">location</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="n">recognizer</span><span class="o">.</span><span class="n">view</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="o">.</span><span class="nf">bind</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">circle</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="n">center</span><span class="p">)</span>
+</code></pre>
+<p>This is a better RxSwift example. We have a gesture recognizer that sends new value events ever time the user moves their finger on the screen. Then we map those events into locations, and bind those location events into a circle view’s <code>center</code> position. In five lines of code, we’ve written asynchronous gesture recognizer handling to have a view follow a user’s finger. Cool!</p>
+
+<p>I should mention that RxSwift works well with idiomatic error-throwing in Swift, too. Even cooler.</p>
+
+<p>FRP would be my recommendation for a fully-featured async approach. The abstractions are great and super-powerful, but do take some getting used to. If FRP is too complex for your needs, stick to using promises.</p>
+
+<h3 id="actor-model">
+<a class="header-link" href="#actor-model">#</a> Actor Model</h3>
+
+<p>This is probably the most far-out approach we’ll discuss today. <a href="https://en.wikipedia.org/wiki/Actor_model">Actor-based programming</a> treats “actors” as primitives for concurrent computation. <a href="http://akka.io">Akka</a> is a popular library for using actors in Scala, we use it at Artsy and it’s pretty cool.</p>
+
+<p>This diagram is from <a href="http://doc.akka.io/docs/akka/current/scala/actors.html">Akka’s documentation</a>, don’t look at – it it’s too complicated!</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          
+
+<p><img src="/img/blog/comparative-asynchronous-programming/akka.png" alt="Akka actor lifecycle diagram"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>The actor model provides a number of constraints and conditions that make async robust, but more complicated.</p>
+
+<p>Different implementations, but generally:</p>
+
+<ul>
+<li>Actors receive messages in unspecified order and have to react to those messages.</li>
+<li>Actors can create child actors to perform some work – no callbacks!</li>
+<li>Actors can maintain local state, so they can respond to a message differently when called subsequent times.</li>
+<li>Actors maintain a hierarchy, leading to great error-tolerance.</li>
+</ul>
+<p>Actors are definitely overkill for nearly all iOS applications, But properly implemented, Actors can be used to write fault-tolerant, highly performant distributed systems</p>
+
+<p><a href="http://www.erlang.org">Erlang</a> proved the actor model was feasible and helped to popularize it. As Swift’s popularity outside iOS/macOS apps grows, I’m looking forward to seeing how the Actor Model gets used in Swift.</p>
+
+<h2 id="some-async-abstractions-are-impossible-in-swift">
+<a class="header-link" href="#some-async-abstractions-are-impossible-in-swift">#</a> Some Async Abstractions are Impossible in Swift</h2>
+
+<p>Due to compiler limitations, there are some asynchronous approaches that are impossible to do in Swift, at least for now.</p>
+
+<h3 id="async-await">
+<a class="header-link" href="#async-await">#</a> Async / Await</h3>
+
+<p>This abstraction is supported in JavaScript and C# and is very popular in those languages. Why? It lets you write code that looks “normal” but is actually asynchronous under the hood. It’s  powerful and expressive and not yet possible in Swift for reasons we’ll discuss shortly.</p>
+
+<p>Let’s look at an example.</p>
+<pre class="highlight swift"><code><span class="n">async</span> <span class="kd">func</span> <span class="nf">logIn</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Login</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">credentials</span> <span class="o">=</span> <span class="n">await</span> <span class="nf">getCredentialsFromUser</span><span class="p">()</span>
+  <span class="k">return</span> <span class="n">await</span> <span class="nf">logIn</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">credentials</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<p>Here we have a <code>logIn()</code> function that appears to return a value synchronously, but in this hypothetical syntax, we see that the function has been marked asynchronous with the <code>async</code> keyword. When the function execution reaches <code>await getCredentialsFromUser()</code>, the function <em>pauses</em> and waits for that function to return a value, asynchronously. At that point, the function execution will resume. How cool is that! Check out <a href="http://khanlou.com/2016/09/async-await/">this great blog post</a> for more details on a hypothetical async/await in Swift.</p>
+
+<p>Async/await isn’t perfect – for example, mixing async/await with regular callback closures is really hard to do. They’re an opinionated aspect of a programming language, and so they fit in well with opinionated languages like C# and modern JavaScript. Plus they work with throwing errors, so we could write idiomatic Swift error-handling.</p>
+
+<p>Async/await is the way I wish Swift had done async programming, it’s probably the ideal but is now too late to standardize on.</p>
+
+<p>Additionally, some asynchronous needs aren’t well-met by async/await. It would be hard to write gesture recognizer code this way, which works best with existing Swift-supported abstractions like FRP or target/action.</p>
+
+<h3 id="coroutines-and-generator-functions">
+<a class="header-link" href="#coroutines-and-generator-functions">#</a> Coroutines and Generator Functions</h3>
+
+<p>These are the strangest things I came across in researching different asynchronous programming approaches. Why? Because <a href="http://exploringjs.com/es6/ch_generators.html">coroutines/generators</a> violate some of the base assumptions I’d made about programming. Assumptions like:</p>
+
+<ul>
+<li>Functions can only complete once.</li>
+<li>Functions can only return a value once.</li>
+<li>Function execution always starts at the top.</li>
+</ul>
+<p>Coroutines and generator functions aren’t typically used directly, but are required to make async/await. Swift doesn’t have support for coroutines yet, so that’s why Swift can’t have async/await like JavaScript or C#.</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="n">fibGenerator</span><span class="o">*</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+  <span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="k">repeat</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">next</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span>
+    <span class="n">yield</span> <span class="nf">next</span>
+    <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">next</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">while</span> <span class="kc">true</span>
+<span class="p">}</span>
+
+<span class="nf">fibGenerator</span><span class="p">()</span> <span class="c1">// returns 1</span>
+<span class="nf">fibGenerator</span><span class="p">()</span> <span class="c1">// returns 2</span>
+<span class="nf">fibGenerator</span><span class="p">()</span> <span class="c1">// returns 3</span>
+<span class="nf">fibGenerator</span><span class="p">()</span> <span class="c1">// returns 5</span>
+</code></pre>
+<p>This <code>fibGenerator</code> function has been marked as a <em>generator</em> using the <code>*</code>, a syntax borrowed from JavaScript. It looks like an infinite loop, but it actually returns a value using the <code>yield</code> keyword and then pauses execution until it gets called again. Every time you call the function, it resumes execution, loops, and yields a new value. How cool is that?</p>
+
+<p>This isn’t code you might actually use – JavaScript developers don’t often use generators directly, but rather use them to but higher level abstractions like async/await.</p>
+
+<h2 id="wrap-up">
+<a class="header-link" href="#wrap-up">#</a> Wrap Up</h2>
+
+<p>We’ve covered a lot of ground today. We talked about what asynchronous programming is and why there’s no single “best” solution. Then we discussed the asynchronous approaches built into Swift, the approaches we can build ourselves in Swift, and finally the approaches we can’t yet build in Swift.</p>
+
+<p></p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">🤔<a href="https://twitter.com/hashtag/playgroundscon?src=hash">#playgroundscon</a> Great talk on (almost) all things async <a href="https://twitter.com/ashfurrow">@ashfurrow</a> <a href="https://t.co/99iHsLBR4A">pic.twitter.com/99iHsLBR4A</a></p>— Bjorn Ho (@nrg84) <a href="https://twitter.com/nrg84/status/834909007148036096">February 23, 2017</a>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>Hopefully you made this face a few times while reading. It’s always a good idea to learn new things, even if they’re not directly applicable to your job, just to know they’re out there. If you see something cool you’d like in Swift, head over to <a href="https://github.com/apple/swift-evolution">Swift Evolution</a> and talk to the language community. Together, we can help shape the future of Swift.</p>
+
+<p>Especially as Swift gains popularity outside of just building apps, I’m incredibly excited to see how it continues to evolve. I’m particularly keen to see new asynchronous abstractions become possible in my favourite language.</p>
+<hr>
+<span class="meta">Posted on February 24, 2017</span>
+</div></div></article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<ul class="pager article_pager"><li class="previous"><a href="/blog/swift-vs-react-native-feels/"><div>Swift vs. React Native Feels</div></a></li></ul>
+</div></div>
+</div>
+<hr id="page_footer">
+<footer><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li><a href="https://twitter.com/ashfurrow" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="https://github.com/ashfurrow" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://photos.ashfurrow.com" title="Photo Blog"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-picture-o fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://instagram.com/ashfurrow" title="Instagram"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+</ul>
+<p class="copyright text-muted"> This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+</div></div></div></footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
+</body>
+</html>
