@@ -239,7 +239,7 @@ FRP would be my recommendation for a fully-featured async approach. The abstract
 
 This is probably the most far-out approach we'll discuss today. [Actor-based programming](https://en.wikipedia.org/wiki/Actor_model) treats "actors" as primitives for concurrent computation. [Akka](http://akka.io) is a popular library for using actors in Scala, we use it at Artsy and it's pretty cool.
 
-This diagram is from [Akka's documentation](http://doc.akka.io/docs/akka/current/scala/actors.html), don't look at – it it's too complicated!
+This diagram is from [Akka's documentation](http://doc.akka.io/docs/akka/current/scala/actors.html), don't look at it – it's too complicated!
 
 BEGIN_NARROW
 
