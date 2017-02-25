@@ -210,7 +210,7 @@
 
 &lt;p&gt;This is probably the most far-out approach we&amp;rsquo;ll discuss today. &lt;a href="https://en.wikipedia.org/wiki/Actor_model"&gt;Actor-based programming&lt;/a&gt; treats &amp;ldquo;actors&amp;rdquo; as primitives for concurrent computation. &lt;a href="http://akka.io"&gt;Akka&lt;/a&gt; is a popular library for using actors in Scala, we use it at Artsy and it&amp;rsquo;s pretty cool.&lt;/p&gt;
 
-&lt;p&gt;This diagram is from &lt;a href="http://doc.akka.io/docs/akka/current/scala/actors.html"&gt;Akka&amp;rsquo;s documentation&lt;/a&gt;, don&amp;rsquo;t look at – it it&amp;rsquo;s too complicated!&lt;/p&gt;
+&lt;p&gt;This diagram is from &lt;a href="http://doc.akka.io/docs/akka/current/scala/actors.html"&gt;Akka&amp;rsquo;s documentation&lt;/a&gt;, don&amp;rsquo;t look at it – it&amp;rsquo;s too complicated!&lt;/p&gt;
 
 
 
