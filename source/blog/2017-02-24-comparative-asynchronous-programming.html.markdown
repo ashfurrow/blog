@@ -58,7 +58,7 @@ readFile() { file in
 }
 ```
 
-The first example blocks while the second example is non-blocking. The blocking call is simpler to understand, since it happens atomically from the calcite's perspective. But it's less performant. The non-blocking call is better for performance but it doesn't have an "immediate" return value, so it's asynchronous nature propagates up the call stack. In effect, the code using it becomes non-blocking. This is annoying for developers, but you get really performant code.
+The first example blocks while the second example is non-blocking. The blocking call is simpler to understand, since it happens atomically from the call site's perspective. But it's less performant. The non-blocking call is better for performance but it doesn't have an "immediate" return value, so it's asynchronous nature propagates up the call stack. In effect, the code using it becomes non-blocking. This is annoying for developers, but you get really performant code.
 
 See? Tradeoffs.
 
