@@ -984,7 +984,7 @@ ga('send', 'pageview');</script>
   <span class="o">...</span>
 <span class="p">}</span>
 </code></pre>
-<p>The first example blocks while the second example is non-blocking. The blocking call is simpler to understand, since it happens atomically from the calcite’s perspective. But it’s less performant. The non-blocking call is better for performance but it doesn’t have an “immediate” return value, so it’s asynchronous nature propagates up the call stack. In effect, the code using it becomes non-blocking. This is annoying for developers, but you get really performant code.</p>
+<p>The first example blocks while the second example is non-blocking. The blocking call is simpler to understand, since it happens atomically from the call site’s perspective. But it’s less performant. The non-blocking call is better for performance but it doesn’t have an “immediate” return value, so it’s asynchronous nature propagates up the call stack. In effect, the code using it becomes non-blocking. This is annoying for developers, but you get really performant code.</p>
 
 <p>See? Tradeoffs.</p>
 
