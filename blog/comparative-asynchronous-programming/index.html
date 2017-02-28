@@ -1119,9 +1119,9 @@ ga('send', 'pageview');</script>
   <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="n">credentials</span> <span class="k">in</span>
     <span class="k">return</span> <span class="nf">login</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">credentials</span><span class="p">)</span>
   <span class="p">}</span>
-  <span class="o">.</span><span class="nf">on</span><span class="p">(</span><span class="nv">next</span><span class="p">:</span> <span class="p">{</span> <span class="n">login</span> <span class="k">in</span>
+  <span class="o">.</span><span class="nf">subscribe</span><span class="p">(</span><span class="nv">onNext</span><span class="p">:</span> <span class="p">{</span> <span class="n">login</span> <span class="k">in</span>
       <span class="c1">// Handle login success</span>
-    <span class="p">},</span> <span class="nv">error</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="p">},</span> <span class="nv">onError</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
       <span class="c1">// Handle login error</span>
     <span class="p">})</span>
 </code></pre>

@@ -193,9 +193,9 @@
   &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;flatMap&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nf"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;next&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;login&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
+  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;subscribe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;onNext&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;login&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
       &lt;span class="c1"&gt;// Handle login success&lt;/span&gt;
-    &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
+    &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="nv"&gt;onError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
       &lt;span class="c1"&gt;// Handle login error&lt;/span&gt;
     &lt;span class="p"&gt;})&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
