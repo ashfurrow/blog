@@ -209,9 +209,9 @@ getCredentialsFromUser()
   .flatMap { credentials in
     return login(with: credentials)
   }
-  .on(next: { login in
+  .subscribe(onNext: { login in
       // Handle login success
-    }, error: { error in
+    }, onError: { error in
       // Handle login error
     })
 ```
