@@ -6,6 +6,36 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Improving / Improvising</title>
+      <link>https://ashfurrow.com/blog/improving-improvising/</link>
+      <description>&lt;p&gt;I&amp;rsquo;m nearly three months in to &lt;a href="https://ashfurrow.com/blog/learning-guitar/"&gt;learning guitar&lt;/a&gt; and it&amp;rsquo;s going &lt;em&gt;awesome&lt;/em&gt;. I&amp;rsquo;m still teaching myself through &lt;a href="http://yousician.com"&gt;Yousician&lt;/a&gt; but I&amp;rsquo;m thinking of getting a teacher to help. I&amp;rsquo;ve also been supplementing their curriculum more and more with  something even more important than a teacher: experimentation.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;After watching a tonne of videos and reading a tonne of material online, a core message started to emerge: experimenting makes you a better guitar player.&lt;/p&gt;
+
+&lt;p&gt;Hmm.&lt;/p&gt;
+
+&lt;p&gt;I studied music in school and played the alto sax and piano for seven years, and at the same time I was also learning the basics of coding. The parallels between music and programming weren&amp;rsquo;t always obvious to me, but they definitely exist. For example, I&amp;rsquo;ve noticed after writing a tonne of blog posts and delivering a bunch of conference talks that a core message of mine has started to emerge: experimenting makes you a better programmer.&lt;/p&gt;
+
+&lt;p&gt;Like a lot of sax players, I was really into jazz. I had great teachers and they encouraged me to learn theory and to practice. One of the best skills I learned was how to &lt;em&gt;improvise&lt;/em&gt;. To improvise, or improv, is to create music spontaneously, without preparation. But that doesn&amp;rsquo;t mean just playing random notes willy-nilly, it&amp;rsquo;s about applying theory to help you manifest an idea in your head into tangible music.&lt;/p&gt;
+
+&lt;p&gt;Which sounds a lot like coding. You may have an idea of what you&amp;rsquo;re going to do, but you&amp;rsquo;re never sure until you&amp;rsquo;re done. Circumstances change, your mood changes, the code you write never works the first time, et cetera.&lt;/p&gt;
+
+&lt;p&gt;Since picking up the guitar, I&amp;rsquo;ve been practicing my &lt;a href="https://en.wikipedia.org/wiki/Blues_scale"&gt;blues scales&lt;/a&gt;. Combined with a &lt;a href="https://en.wikipedia.org/wiki/Twelve-bar_blues"&gt;twelve-bar blues progression&lt;/a&gt;, that&amp;rsquo;s all the theory you need. But it wasn&amp;rsquo;t until I found a bunch of backing tracks on YouTube yesterday that I really got into it. They give you a beat and the chord progression to express yourself musically, either through improv or not. Rediscovering how fun it is to spontaneously play has been amazing.&lt;/p&gt;
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/8L2mqkk28sE' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;So I wonder: what does a backing track look like in code? Well in music, a backing track provides a rhythm and progression around which you play your melody. I think there&amp;rsquo;s a strong argument to be made that a backing track in coding is like a framework or library. Take RxSwift or UIKit, frameworks around which you write your code. Without frameworks, building apps would be really hard, just like improv in isolation would be. Not impossible, but difficult.&lt;/p&gt;
+
+&lt;p&gt;Some backing tracks are simple, some are complicated. Some repeat themselves a lot, others change constantly. And different backing tracks lend themselves differently to different styles of music.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m excited. To learn more guitar, to write more code, and to continue to explore the parallels between two of my favourite forms of expression.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 28 Feb 2017 12:12:34 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/improving-improvising/</guid>
+    </item>
+    <item>
       <title>Comparative Asynchronous Programming</title>
       <link>https://ashfurrow.com/blog/comparative-asynchronous-programming/</link>
       <description>&lt;p&gt;So I&amp;rsquo;m in Australia to give my talk at &lt;a href="http://playgroundscon.com"&gt;Playgrounds Conference&lt;/a&gt; about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let&amp;rsquo;s dive in!&lt;/p&gt;
@@ -722,38 +752,6 @@
 </description>
       <pubDate>Mon, 09 Jan 2017 19:58:57 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/building-static-sites-with-middleman/</guid>
-    </item>
-    <item>
-      <title>Craft and Tooling</title>
-      <link>https://ashfurrow.com/blog/craft-and-tooling/</link>
-      <description>&lt;p&gt;You may have heard the idiom &amp;ldquo;it&amp;rsquo;s a poor craftsperson who blames their tools&amp;rdquo;, which offers advice that seems to make sense on the surface: focus on skill, and not on tools. But there&amp;rsquo;s a danger in taking that advice too far and &lt;em&gt;ignoring&lt;/em&gt; tools completely, and I don&amp;rsquo;t know of any craftspeople who would recommend that.&lt;/p&gt;
-
-&lt;p&gt;Hi, I&amp;rsquo;m the Internet&amp;rsquo;s Ash Furrow and today we&amp;rsquo;re going to talk about a problematic tweet I saw today.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;When you overhear people complaining that their tools are the root cause of failure send them this video of Kelly Slater on a table. &lt;a href="https://t.co/0Mw1CByeUy"&gt;pic.twitter.com/0Mw1CByeUy&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jesse Hanley (@jessethanley) &lt;a href="https://twitter.com/jessethanley/status/813904788702183425"&gt;December 28, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Okay so first off I just need to say &lt;em&gt;that looks awesome&lt;/em&gt;. That surfer is kicking ass at making upturned-furniture surfing look cool and fun. But just like our idiom earlier, there&amp;rsquo;s a danger in taking away the wrong message: that tools don&amp;rsquo;t matter at all. Tools definitely matter.&lt;/p&gt;
-
-&lt;p&gt;So let&amp;rsquo;s talk about tooling! It&amp;rsquo;s really important to understand that different people work better or worse with different tools. Let&amp;rsquo;s look at guitars as an example. People with smaller bodies sometimes use 3/4– or 1/2–size guitars, beginners sometimes start on classical guitars with nylon strings that are easier to learn to plan on, and different types of guitars lend themselves to different styles of music. My point is: the guitar itself matters.&lt;/p&gt;
-
-&lt;p&gt;When you&amp;rsquo;re first learning a craft, the tool you use is going to heavily affect your ability to function and learn. Returning to the guitar metaphor, if a guitar is ill-suited for an individual, then they&amp;rsquo;re going to have a hard time staying motivated to keep learning the guitar. This is in contrast to an expert guitarist, who already has the skills to make an ill-suited guitar sound great.&lt;/p&gt;
-
-&lt;p&gt;So not only do tools matter, but they matter &lt;em&gt;more&lt;/em&gt; for beginners than experts.&lt;/p&gt;
-
-&lt;p&gt;This might seem counter-intuitive, but it makes more sense when you consider that experts are more experienced at picking the &lt;em&gt;right&lt;/em&gt; tool for a job.&lt;/p&gt;
-
-&lt;p&gt;When we focus on skills to the exclusion of tools, we risk falling victim to &lt;a href="https://en.wikipedia.org/wiki/Survivorship_bias"&gt;survivorship bias&lt;/a&gt;. In any field, experts (who have already &amp;ldquo;survived&amp;rdquo; the learning process of their craft) are especially prone to falling for this logical fallacy; tools don&amp;rsquo;t matter as much to them anymore.&lt;/p&gt;
-
-&lt;p&gt;As developers, we need tools that support experts, and beginners, and everyone in between. And we need to recognize that while skills matter, tools play a really important role in how we acquire those skills.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;a) ✨ survivorship bias ✨&lt;br&gt;b) man surfboards don’t have technical debt, own up and maintain your stuff&lt;a href="https://t.co/kKYUrgz6er"&gt;https://t.co/kKYUrgz6er&lt;/a&gt;&lt;/p&gt;&amp;mdash; Melissa 🕯 (@0xabad1dea) &lt;a href="https://twitter.com/0xabad1dea/status/814858687642763268"&gt;December 30, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;So enjoy a hearty laugh at that fellow who can surf on an upturned coffee table – it&amp;rsquo;s pretty cool! But keep in mind that it took skill to do so – skills acquired with better tools. The longer you&amp;rsquo;ve been working in a field, the less tools will matter to you. Just be aware of your bias when your talking to beginners and you&amp;rsquo;ll do great!&lt;/p&gt;
-</description>
-      <pubDate>Sat, 31 Dec 2016 02:34:38 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/craft-and-tooling/</guid>
     </item>
   </channel>
 </rss>
