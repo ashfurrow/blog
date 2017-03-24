@@ -17,12 +17,6 @@ upcoming_talks:
   location: Budapest, Hungary
   dates: April 25–28, 2017
   image: craft.png
-- name: TBD
-  conference: SwiftConf
-  url: https://swiftconf.com
-  location: Cologne, Germany
-  dates: September 2017
-  image: swiftconf.png
 
 past_talks:
 - name: Comparative Asynchronous Programming

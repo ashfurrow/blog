@@ -5,7 +5,7 @@ background_image: /img/blog/improving-improvising/background.png
 background_image_source: https://twitter.com/CrookedCosmos/status/835656365276299264
 ---
 
-I'm nearly three months in to [learning guitar](https://ashfurrow.com/blog/learning-guitar/) and it's going _awesome_. I'm still teaching myself through [Yousician](http://yousician.com) but I'm thinking of getting a teacher to help. I've also been supplementing their curriculum more and more with  something even more important than a teacher: experimentation.
+I'm nearly three months in to [learning guitar](https://ashfurrow.com/blog/learning-guitar/) and it's going _awesome_. I'm still teaching myself through [Yousician](http://yousician.com) but I'm thinking of getting a teacher to help. I've also been supplementing their curriculum more and more with something even more important than a teacher: experimentation.
 
 (READMORE)
 
@@ -13,7 +13,7 @@ After watching a tonne of videos and reading a tonne of material online, a core 
 
 Hmm.
 
-I studied music in school and played the alto sax and piano for seven years, and at the same time I was also learning the basics of coding. The parallels between music and programming weren't always obvious to me, but they definitely exist. For example, I've noticed after writing a tonne of blog posts and delivering a bunch of conference talks that a core message of mine has started to emerge: experimenting makes you a better programmer.
+I studied music in school and played the alto saxophone and piano for seven years, and at the same time I was also learning the basics of coding. The parallels between music and programming weren't always obvious to me, but they definitely exist. For example, I've noticed after writing a tonne of blog posts and delivering a bunch of conference talks that a core message of mine has started to emerge: experimenting makes you a better programmer.
 
 Like a lot of sax players, I was really into jazz. I had great teachers and they encouraged me to learn theory and to practice. One of the best skills I learned was how to _improvise_. To improvise, or improv, is to create music spontaneously, without preparation. But that doesn't mean just playing random notes willy-nilly, it's about applying theory to help you manifest an idea in your head into tangible music.
 
