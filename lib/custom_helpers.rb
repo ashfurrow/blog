@@ -90,13 +90,16 @@ module CustomHelpers
       # Retrieve the summary through frontmatter, or the generated summary.
       summary = (current_article.metadata[:page][:summary] or current_article.summary)
       # Grab the first two paragraph tags, strip their HTML, and concatentate them.
-      description ||= Nokogiri::HTML(summary).xpath('//p').collect.first(2).map { |paragraph|
+      description ||= Nokogiri::HTML(summary).xpath('//p').select { |paragraph|
+        # Filter out any macros we use internally. See: https://github.com/ashfurrow/blog/issues/306
+        !paragraph.to_str.include?('_WIDE') || !paragraph.to_str.include?('YOUTUBE')
+      }.collect.first(2).map { |paragraph|
         # Escape any HTML in the paragraph. Add a space betwen then all. We'll strip later.
         "#{paragraph.to_str} "
       }.reduce('', :+).strip
     end
 
-       # If there is a resource, it is responsible for assigning a title.
+    # If there is a resource, it is responsible for assigning a title.
     if current_resource
       url = current_resource.url
 
