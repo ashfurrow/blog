@@ -6,6 +6,32 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Good Bad Days</title>
+      <link>https://ashfurrow.com/blog/good-bad-days/</link>
+      <description>&lt;p&gt;Depression, as I&amp;rsquo;ve noted extensively, &lt;a href="http://localhost:4567/blog/depression-sucks/"&gt;sucks&lt;/a&gt;. It sucks really bad, but it doesn&amp;rsquo;t suck &lt;em&gt;constantly&lt;/em&gt;. It sucks &lt;a href="/blog/depression-graphed/"&gt;sometimes&lt;/a&gt;, in unpredictable, sporadic up-and-downs. There are good days, and there are bad days; and there is everything in between: good good days, good bad days, bad good days, and bad bad days.&lt;/p&gt;
+
+&lt;p&gt;Today was a good bad day.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;A few weeks ago I was talking with my psychiatrist about my medication. It helps me – a lot – but I didn&amp;rsquo;t feel like I was getting the most out of it. Additionally, the secondary prescription I&amp;rsquo;m on has some unpleasant long-term side-effects, so if we could find a better primary drug, then maybe we could even go off the secondary altogether.&lt;/p&gt;
+
+&lt;p&gt;So, I began cross-tapering according to my doctor&amp;rsquo;s notes.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Cross-tapering from old to new antidepressants. Worst of both worlds: withdrawal plus new side-effects :&amp;lt;/p&amp;gt;&amp;mdash; Ash Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/839504160882049024"&gt;March 8, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Things have been up and down since then, but I&amp;rsquo;m beginning to really feel the effects of the new medication, and I&amp;rsquo;m hopeful that things are going to be on an upswing for a while. &lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;When the SSRI’s are out of your system but the SNRI’s are still kicking in. &lt;a href="https://t.co/y0TTOkkRrE"&gt;pic.twitter.com/y0TTOkkRrE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ash Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/843893464043606016"&gt;March 20, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the effects of the new meds is that I&amp;rsquo;m more able to recover from problems. And so today, when I couldn&amp;rsquo;t go in to work, I was still able to recover and have a good day. It was a bad day – any day I can&amp;rsquo;t go in to the office is generally bad – but it was a good bad day. I got a lot done and didn&amp;rsquo;t feel as horrible about myself as I normally do on bad days.&lt;/p&gt;
+
+&lt;p&gt;Another effect of the new medication is that it&amp;rsquo;s helping to augment how effective therapy can be for me, and I&amp;rsquo;ve been making a lot of progress lately. So I&amp;rsquo;m hopeful.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 24 Mar 2017 22:56:53 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/good-bad-days/</guid>
+    </item>
+    <item>
       <title>Guitar Update</title>
       <link>https://ashfurrow.com/blog/guitar-update/</link>
       <description>&lt;p&gt;A few weeks ago, I wrote about &lt;a href="/blog/improving-improvising/"&gt;improvising on guitar&lt;/a&gt;, a follow-up from &lt;a href="/blog/learning-guitar/"&gt;when I started learning in December&lt;/a&gt;. I&amp;rsquo;ve been busy since then, practicing and playing every day. Time for another update.&lt;/p&gt;
@@ -412,287 +438,6 @@
 </description>
       <pubDate>Wed, 01 Feb 2017 19:05:46 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/ugh-2017/</guid>
-    </item>
-    <item>
-      <title>Naming Things in Swift</title>
-      <link>https://ashfurrow.com/blog/naming-things-in-swift/</link>
-      <description>&lt;p&gt;Lately, I&amp;rsquo;ve been using different programming languages and environments, trying to diversify my skills. I&amp;rsquo;ve been working regularly in React, Swift, Objective-C, and Scala, and they all have their own idioms and conventions. It&amp;rsquo;s been a real learning experience, getting to compare and contrast the languages, and to use what I learn to become a better Swift developer, too.&lt;/p&gt;
-
-&lt;p&gt;My manager, who has been helping me learn Scala, sent me this awesome &lt;a href="http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html"&gt;blog post about naming things&lt;/a&gt; and it blew me away with its comprehensive description of when to use different levels of verbosity in Scala. So my goal today is to provide a similarly awesome blog post about when to be concise and when to be verbose, in Swift. I&amp;rsquo;m going to be borrowing some examples and points from this Scala post, relating things back to Swift and iOS apps.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Whether or not you prefer conciseness when programming, Swift has language features that allow you to write your code at your preferred level of verbosity. Beyond naming, features like trailing closure syntax, unnamed parameters, positional closure arguments allow programmers to be verbose in some circumstances and succinct in others.&lt;/p&gt;
-
-&lt;p&gt;The question isn&amp;rsquo;t &lt;em&gt;if&lt;/em&gt; you should be concise (or not). The question is: &lt;em&gt;where&lt;/em&gt; you should be concise (or verbose).&lt;/p&gt;
-
-&lt;p&gt;Swift has been around long enough that it&amp;rsquo;s started to develop idioms that code should generally adhere to. The creators of Swift have been kind enough to release &lt;a href="https://swift.org/documentation/api-design-guidelines/"&gt;official API design guidelines&lt;/a&gt; which are an excellent read. These are great, but I want more: I want to talk about how to develop an &lt;em&gt;intuition&lt;/em&gt; about idiomatic Swift. We&amp;rsquo;re going to cover intutively naming things in detail, then move onto a discussion of language features.&lt;/p&gt;
-
-&lt;h2 id="philosophy"&gt;Philosophy&lt;/h2&gt;
-
-&lt;p&gt;The principles of the Swift API design that specifically touch on naming things are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Clarity at the point of use is your most important goal.&lt;/li&gt;
-&lt;li&gt;Clarity is more important than brevity.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Fantastic guidelines, but let&amp;rsquo;s go further. Haoyi&amp;rsquo;s Scala blog post tells us that our goal when naming something is to:&lt;/p&gt;
-
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Show programmers something they don&amp;rsquo;t already know, but want to know.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;This is an interesting guideline because it requires us to think about the context of our code, and who will be working with it in the future. Remember: code is written only once, but is read over and over, so programmers should optimize for &lt;em&gt;ease of reading&lt;/em&gt; and not ease of writing. And, the most important thing to consider when optimize for reading is &lt;em&gt;context&lt;/em&gt;. The Scala blog post &lt;a href="http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#Philosophy"&gt;lays this out well&lt;/a&gt;, and says that context includes both things the programmer already knows, and things they want to know:&lt;/p&gt;
-
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Programmers already know:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Things they&amp;rsquo;ve seen before in your codebase&lt;/li&gt;
-&lt;li&gt;Things they&amp;rsquo;ve seen before in other codebases&lt;/li&gt;
-&lt;li&gt;Facts they&amp;rsquo;ve picked up in previous jobs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Programmers want to know about:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Things that affect what they&amp;rsquo;re doing&lt;/li&gt;
-&lt;li&gt;Things which they need to understand&lt;/li&gt;
-&lt;li&gt;Things they are unfamiliar with&lt;/li&gt;
-&lt;li&gt;Things that are especially dangerous, whether due to correctness, security, performance, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This is not comprehensive.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;Think about who will be reading your code, and when. Is it a colleague, who will use the code every day? Or maybe yourself six months from now? Are you trying to encourage more casual contributions to your open source project? These different situations may affect how you name some function. Let&amp;rsquo;s examine.&lt;/p&gt;
-
-&lt;p&gt;A colleague using your code every day is likely to be thoroughly familiar with your codebase and its conventions, so pithy code might be best. If you don&amp;rsquo;t plan on working on the codebase for six months, you&amp;rsquo;ll likely return to it unfamiliar with its conventions, so being wordy might be most helpful. Casual contributors to open source projects probably won&amp;rsquo;t understand how large codebases fit together, so being overly verbose could help improve the number of contributions to your project.&lt;/p&gt;
-
-&lt;p&gt;Think about who is likely to read your code, and what their goals are. &lt;/p&gt;
-
-&lt;h2 id="guidelines"&gt;Guidelines&lt;/h2&gt;
-
-&lt;p&gt;These are guidelines, not axioms. Break the rules if your intuition tells you to. Let&amp;rsquo;s discuss guidelines for naming things in rough order of importance. And remember: always keep context in mind!&lt;/p&gt;
-
-&lt;p&gt;(Please remember that I&amp;rsquo;m adapting these naming guidelines &lt;a href="http://www.lihaoyi.com/post/StrategicScalaStyleConcisenessNames.html#long-names-vs-short-names"&gt;from the original article&lt;/a&gt; for Swift – we owe that post and its author, &lt;a href="https://github.com/lihaoyi"&gt;Li Haoyi&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;h3 id="wider-scoped-names-should-be-longer"&gt;Wider-Scoped Names Should Be Longer&lt;/h3&gt;
-
-&lt;p&gt;Why is the name &lt;code&gt;i&lt;/code&gt; okay in this example?&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;i&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;..&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But not in this one?&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;struct&lt;/span&gt; &lt;span class="kt"&gt;MyStruct&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;i&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Int&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Consider where &lt;code&gt;i&lt;/code&gt; is being referred from within the codebase. In the first example, &lt;code&gt;i&lt;/code&gt; is only accessed from within the &lt;code&gt;for&lt;/code&gt; loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly the entire codebase! At a glance, it&amp;rsquo;s impossible to find out the context of &lt;code&gt;i&lt;/code&gt; because it&amp;rsquo;s so widely used. &lt;/p&gt;
-
-&lt;p&gt;Remember: we want to tell the programmer reading the code something they don&amp;rsquo;t know but want to know. Let&amp;rsquo;s fix the struct.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;struct&lt;/span&gt; &lt;span class="kt"&gt;MyStruct&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;numberOfInteractions&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Int&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This doesn&amp;rsquo;t mean that all loop variables should be short, it only means that &lt;em&gt;widely&lt;/em&gt; used names should be longer. Let&amp;rsquo;s see a counterexample, where a short variable name in a loop can be a bad idea.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;i&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;..&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;Data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;repeating&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="nf"&gt;writeToDb&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;transformedData&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;// Tricky C API...&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;temp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I think we can all agree that &lt;code&gt;i&lt;/code&gt; would benefit from a longer name. Why? Because its scope of use is wider, and it&amp;rsquo;s used more. That brings us to our next guideline.&lt;/p&gt;
-
-&lt;h3 id="more-used-names-should-be-shorter"&gt;More-Used Names Should be Shorter&lt;/h3&gt;
-
-&lt;p&gt;Consider &lt;code&gt;print&lt;/code&gt;, probably the first function you learned in Swift. As a function name, &amp;ldquo;print&amp;rdquo; works perfectly well:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Hi there!"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So why doesn&amp;rsquo;t &amp;ldquo;cache&amp;rdquo; work well here?&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;cache&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="o"&gt;...&lt;/span&gt;
-
-&lt;span class="kd"&gt;@UIApplicationMain&lt;/span&gt;
-&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;AppDelegate&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;UIResponder&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;UIApplicationDelegate&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;applicationDidFinishLaunching&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="nv"&gt;application&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;UIApplication&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="o"&gt;...&lt;/span&gt;
-    &lt;span class="n"&gt;downloader&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;cache&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;// Only called at app startup.&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;print&lt;/code&gt; is used a lot and any Swift developer could be expected to be familiar with it. &lt;code&gt;cache&lt;/code&gt; is only used once and is defined in a custom object that probably doesn&amp;rsquo;t get looked at all too often. It could benefit from a longer name.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;initializeCache&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Much nicer.&lt;/p&gt;
-
-&lt;h3 id="dangerous-names-should-be-longer"&gt;Dangerous Names Should be Longer&lt;/h3&gt;
-
-&lt;p&gt;Some functions should be long because of what they &lt;em&gt;do&lt;/em&gt;. Dangerous functions should be long, while boring ones should be shorter. This is a function that&amp;rsquo;s &lt;em&gt;too&lt;/em&gt; long.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;extension&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;loadDataFieldsFromOfflineCache&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It could be something like this instead: &lt;code&gt;loadFromCache&lt;/code&gt;. &lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;extension&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;loadFromCache&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But consider this function, which really benefits from being quite long:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;extension&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;deleteAPICredentialsFromCache&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This function has a long name because it&amp;rsquo;s dangerous to call it: we always want to avoid deleting user data by accident. For that reason you wouldn&amp;rsquo;t want to call it something really succinct, like:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;extension&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;delToken&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="cm"&gt;/* deletes user data omg! */&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Remember: we want to tell the developer reading the name something they don&amp;rsquo;t know but that they &lt;em&gt;do&lt;/em&gt; want to know. I imagine whoever calling this function definitely wants to know if it deletes user data!&lt;/p&gt;
-
-&lt;h3 id="names-with-source-context-should-be-shorter"&gt;Names with Source-Context Should be Shorter&lt;/h3&gt;
-
-&lt;p&gt;Types with names that exist inside types should be shorter, and ones that exist outside types should be longer. Consider the following:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;protocol&lt;/span&gt; &lt;span class="kt"&gt;Delegate&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That&amp;rsquo;s probably too short, since we don&amp;rsquo;t know what the &lt;code&gt;Delegate&lt;/code&gt; protocol is &lt;em&gt;for&lt;/em&gt;. Let&amp;rsquo;s improve it by giving it a longer name:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;protocol&lt;/span&gt; &lt;span class="kt"&gt;DownloaderDelegate&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Awesome! Now the name helps us know what the protocol is for. &lt;/p&gt;
-
-&lt;p&gt;If the Swift compiler supported protocols within types, an alternative improvement would be:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;protocol&lt;/span&gt; &lt;span class="kt"&gt;Delegate&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="o"&gt;...&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This would extend its &lt;em&gt;fully qualified&lt;/em&gt; name to be &lt;code&gt;Downloader.Delegate&lt;/code&gt;. But alas, Swift doesn&amp;rsquo;t yet support this kind of protocol nesting.&lt;/p&gt;
-
-&lt;p&gt;Just make sure to avoid duplicating type information within names:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="kd"&gt;protocol&lt;/span&gt; &lt;span class="kt"&gt;DownloaderDelegate&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="o"&gt;...&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Developers already know that types inside the &lt;code&gt;Downloader&lt;/code&gt; class have to do with that class, so repeating that information is superfluous. This brings us to our final guideline:&lt;/p&gt;
-
-&lt;h3 id="strongly-typed-names-should-be-shorter"&gt;Strongly Typed Names Should be Shorter&lt;/h3&gt;
-
-&lt;p&gt;Swift has a powerful, expressive type system and we can use that to make our names shorter. For example, consider the following property:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;Downloader&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;downloaderDelegate&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Delegate&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We already know that the delegate property belongs to the &lt;code&gt;Downloader&lt;/code&gt; class, so giving it &lt;code&gt;downloaderDelegate&lt;/code&gt; as a property name is excessive. &lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s another counterexample:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="n"&gt;zipTwoSequences&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;...&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="nv"&gt;sequence1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Sequence1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="nv"&gt;sequence2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Sequence2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Instead, the standard library contains only:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="n"&gt;zip&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;...&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="nv"&gt;sequence1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Sequence1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="nv"&gt;sequence2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Sequence2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is because it&amp;rsquo;s obvious from the type signature that the arguments are sequences.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s all for naming guidelines, let&amp;rsquo;s talk about Swift features that let us be concise!&lt;/p&gt;
-
-&lt;h2 id="omitting-names-entirely"&gt;Omitting Names Entirely&lt;/h2&gt;
-
-&lt;p&gt;On the spectrum of verbose to succinct, at the very end of &amp;ldquo;succinct&amp;rdquo;, we have the option to just not name things &lt;em&gt;at all&lt;/em&gt;. You can do this with trailing closure syntax, with unnamed parameters, and with positional closure arguments. When to use them is a matter of following the guidelines outlined above.&lt;/p&gt;
-
-&lt;p&gt;Trailing closure syntax is really handy, it helps make calling functions more concise. Borrowing from the Ray Wenderlich Swift Style Guide &lt;a href="https://github.com/raywenderlich/swift-style-guide#closure-expressions"&gt;section on closures&lt;/a&gt;: don&amp;rsquo;t use trailing closure syntax if the &lt;em&gt;purpose&lt;/em&gt; of the closure is ambiguous. For example, this would be bad:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kt"&gt;UIView&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;animate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;withDuration&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;animations&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;})&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;finished&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This would definitely be more clear:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kt"&gt;UIView&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;animate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;withDuration&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;animations&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="nv"&gt;completion&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;finished&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For unnamed parameters, I&amp;rsquo;ll refer you to the official Swift API Guidelines &lt;a href="https://swift.org/documentation/api-design-guidelines/#argument-labels"&gt;on argument labels&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Omit all labels when arguments cannot be usefully distinguished (ex: &lt;code&gt;union(set1, set2)&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Omit labels when its clear from the grammar of the function name what the first argument is (ex: &lt;code&gt;addSubview(y)&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Omit labels for type conversion (ex: &lt;code&gt;Int64(someUInt32)&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Otherwise (generally) include argument labels.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finally, that brings us to positional closure arguments. When to use these depends mostly on the length of your closure, and closely matches the &amp;ldquo;Wider-Scoped Names Should Be Longer&amp;rdquo; rule. &lt;/p&gt;
-
-&lt;p&gt;If your closure does only a few things, use positional closure arguments:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;..&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;map&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here&amp;rsquo;s a counterexample of being overly verbose:&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;..&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;map&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And this is what things would look like if you don&amp;rsquo;t adhere to the first two guidelines about naming things.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;..&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;map&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;Data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;repeating&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="o"&gt;...&lt;/span&gt;
-
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kt"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;fromData&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;index&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Again, refer to the Ray Wenderlich guide for more info on closures.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Remember, the guidelines we&amp;rsquo;ve discussed today are not absolutes. Experiment, ask others, and learn. Have fun!&lt;/p&gt;
-</description>
-      <pubDate>Sat, 14 Jan 2017 21:15:11 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/naming-things-in-swift/</guid>
     </item>
   </channel>
 </rss>

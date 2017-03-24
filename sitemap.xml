@@ -3853,6 +3853,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://ashfurrow.com/blog/good-bad-days/</loc>
+    <lastmod>2017-03-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://ashfurrow.com/img/blog/good-bad-days/background.jpg</image:loc>
+    </image:image>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://ashfurrow.com/blog/guitar-update/</loc>
     <lastmod>2017-03-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
