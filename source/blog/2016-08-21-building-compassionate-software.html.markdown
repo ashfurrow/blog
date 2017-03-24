@@ -3,6 +3,7 @@ title: Building Compassionate Software
 date: 2016-08-21 12:00:00 UTC
 background_image: /img/blog/building-compassionate-software/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/767029232140779520
+description: "If you make a mistake, you would want a colleague to point it out to you, right? Just like you would hope a colleague would ask a question when they don't understand something, and just like you want everyone on your team to speak up with ideas, even if they're unconventional. But chances are that you've been in the position to speak up before and haven't."
 ---
 
 **Update**: I've since presented this content [as a talk](https://vimeo.com/198777217), which you can watch below if that's more your jam. Skip to 4:30 to avoid an introduction from the meetup.
