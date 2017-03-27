@@ -5,7 +5,7 @@ background_image: /img/blog/good-bad-days/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/845095494338691077
 ---
 
-Depression, as I've noted extensively, [sucks](http://localhost:4567/blog/depression-sucks/). It sucks really bad, but it doesn't suck _constantly_. It sucks [sometimes](/blog/depression-graphed/), in unpredictable, sporadic up-and-downs. There are good days, and there are bad days; and there is everything in between: good good days, good bad days, bad good days, and bad bad days.
+Depression, as I've noted extensively, [sucks](/blog/depression-sucks/). It sucks really bad, but it doesn't suck _constantly_. It sucks [sometimes](/blog/depression-graphed/), in unpredictable, sporadic up-and-downs. There are good days, and there are bad days; and there is everything in between: good good days, good bad days, bad good days, and bad bad days.
 
 Today was a good bad day.
 
