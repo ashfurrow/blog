@@ -19,7 +19,7 @@ So let's take a detour and talk about my new favourite show: Rick and Morty.
 
 Ricky is a drunk who takes his adolescent grandson Morty on adventures through the multiverse. There are actually an infinite amount of Rick's and Mortys, since there are an infinite number of dimensions to exist in. They interact with these alternate versions of themselves and get up to hijinks and in to trouble.
 
-So the show, during a hiatus between seasons, released a game that parodied Pokémon: Pocket Mortys. You play as Rick to collect, train, and fight Mortys. Say again: the game is cockfighting, but with your grandson. And it's super fun.
+So the show, during a hiatus between seasons, released a game that parodied Pokémon: [Pocket Mortys](https://itunes.apple.com/us/app/rick-and-morty-pocket-mortys/id992640880?mt=8). You play as Rick to collect, train, and fight Mortys. Say again: the game is cockfighting, but with your grandson. And it's super fun.
 
 BEGIN_NARROW
 
@@ -27,7 +27,7 @@ BEGIN_NARROW
 
 END_NARROW
 
-No one on the Internet seems to have a problem with this uncomfortable truth, even though the game explicitly highlights the same truth that McIntosh did. During fights, Mortys will scream in pain, they'll whimper "this just seems really cruel", and they'll exclaim "I don't want to do this anymore!" And it's all part of the fun.
+No one on the Internet seems to have a problem with this uncomfortable truth, even though the game explicitly highlights the same truth that McIntosh did. During fights, Mortys will scream in pain, they'll whimper "this just seems really cruel", and they'll exclaim "I don't want to do this any more!" And it's all part of the fun.
 
 So why does this game get critically reviewed as "hilarious" and "quirky" while McIntosh gets threatened on twitter – even when both point out the same reality? [Pocket Mortys even gets compared directly to Pokémon](http://www.ign.com/articles/2016/01/12/rick-and-morty-pocket-mortys-review):
 
