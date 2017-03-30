@@ -33,7 +33,7 @@ So why does this game get critically reviewed as "hilarious" and "quirky" while 
 
 > In its best moments, Pocket Mortys has a similar feel and tone to its source material.
 
-And no one seems to care that it's pointing out the cruelty.
+And no one seems to care that it's pointing out the cruelty. The game is an explicit parody of Pokémon, and readily points out how cruel it is to fight Mortys. By extension, the game highlights how cruel it is to fight Pokémon. Yet there has been no pushback against the creators of Pocket Mortys, while McIntosh gets threatened on twitter for essentially saying the same thing. What's the difference here?
 
 People are uncomfortable when something they like gets criticized as problematic. Well... tough. Your [favs are problematic](https://medium.com/matter/admit-it-your-fave-is-problematic-2dfa692f557b). Your favourite game? Problematic. Your favourite book? Problematic. 
 
