@@ -48,6 +48,7 @@ Thanks to the following people and projects:
 - [s3cmd](http://s3tools.org/)
 - [vertical timeline jquery thingy](http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html)
 - [@CloudyConway](http://twitter.com/CloudyConway)
+- [@CrookedCosmos](http://twitter.com/CrookedCosmos)
 - [IcoMoon](https://icomoon.io)
 - [CloudFlare](http://cloudflare.com)
 
@@ -63,7 +64,7 @@ Photo | Photographer
 Main banner on [Portfio](https://ashfurrow.com/portfolio). | [Andrey Tochilin](https://twitter.com/Tochilin)
 "Software" banner on [Portfolio](https://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
 Blogging image on [Portfolio](https://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
-Several blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744))
+Recent blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744)) and [Crooked Cosmos](http://twitter.com/CrookedCosmos) (CC0)
 
 Server Setup
 ------------
