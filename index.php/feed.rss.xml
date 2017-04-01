@@ -6,6 +6,46 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Swift Playground Books</title>
+      <link>https://ashfurrow.com/blog/swift-playground-books/</link>
+      <description>&lt;p&gt;Some time ago I wrote about &lt;a href="/blog/building-swift-playground-books/"&gt;Swift Playground Books&lt;/a&gt; and introduced &lt;a href="https://github.com/playgroundbooks/playgroundbook"&gt;a tool&lt;/a&gt; to create them from a regular Xcode playground. There&amp;rsquo;s been a lot of work done to the tool by our wonderful contributors, and it&amp;rsquo;s time for an update.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;As a quick overview of &lt;a href="https://developer.apple.com/swift/playgrounds/"&gt;Swift Playground Books&lt;/a&gt; (for iPad), let&amp;rsquo;s explore what they look like on the file system.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/swift-playground-books/structure.png" alt="Structure of a playground book source" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This structure (documented &lt;a href="https://developer.apple.com/library/prerelease/content/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW4"&gt;here&lt;/a&gt;) must be strictly adhered to or else the playground book won&amp;rsquo;t work on the iPad. Creating this directory structure and the corresponding manifest plists is tedious, which is why I originally created the tool. Now, compared to the original post, things are much easier to accomplish.&lt;/p&gt;
+
+&lt;p&gt;The original format had users writing triple-slash &lt;code&gt;///&lt;/code&gt; comments to delineate playground book pages. Now, chapters are divided into individual Xcode playgrounds.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/swift-playground-books/new_structure.png" alt="Structure of a rendered playground book" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Individual pages within a chapter are represented by Playground pages within Xcode. Use the File -&amp;gt; New menu to add pages. Make sure that the page names are lexicographically ordered in the way you want them to appear in the book.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/swift-playground-books/new_page.png" alt="Adding a new page" /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s also some cool things you can do with special comments.&lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="c1"&gt;//#-hidden-code&lt;/span&gt;
+&lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"This code gets executed but isn't visible in the book."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;//#-end-hidden-code&lt;/span&gt;
+
+&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="cm"&gt;/*#-editable-code*/&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;funcName&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="cm"&gt;/*#-end-editable-code*/&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"The user will be prompted to edit &amp;lt;#funcName#&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"This yields a compiler warning in Xcode ¯&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="s"&gt;_(ツ)_/¯"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Play around and see what you think! For more info, check out &lt;a href="https://github.com/playgroundbooks/example"&gt;the example repository&lt;/a&gt;. I&amp;rsquo;m sure there are bugs in the tool, so if you run into problems please &lt;a href="https://github.com/ashfurrow/playgroundbook/issues/new"&gt;open an issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;I love open source, and I&amp;rsquo;m glad I built this tool (even if I never did end up using it myself). Several students have contacted me for assistance when using it to apply for WWDC scholarships, and it makes my heart swell knowing that people are using my software to advance their own careers. I couldn&amp;rsquo;t be happier with the small community that&amp;rsquo;s growing around the tool.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 01 Apr 2017 15:06:24 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/swift-playground-books/</guid>
+    </item>
+    <item>
       <title>Pocket Cruelty</title>
       <link>https://ashfurrow.com/blog/pocket-cruelty/</link>
       <description>&lt;p&gt;Last year when Pokémon Go came out, cultural critic Jonathan McIntosh did what cultural critics do: he pointed out an uncomfortable truth.&lt;/p&gt;
@@ -432,38 +472,6 @@
 </description>
       <pubDate>Fri, 24 Feb 2017 09:39:20 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/comparative-asynchronous-programming/</guid>
-    </item>
-    <item>
-      <title>Swift vs. React Native Feels</title>
-      <link>https://ashfurrow.com/blog/swift-vs-react-native-feels/</link>
-      <description>&lt;p&gt;So this past week, my colleague Orta wrote a blog post, &lt;a href="http://artsy.github.io/blog/2017/02/05/Retrospective-Swift-at-Artsy/"&gt;Retrospective: Swift at Artsy&lt;/a&gt;. It&amp;rsquo;s a long read, but worth it. The post describes &lt;em&gt;why&lt;/em&gt; we made the decision to move all new development into React Native instead of Swift.&lt;/p&gt;
-
-&lt;p&gt;So here&amp;rsquo;s my side of the story: my team make a decision I disagreed with, but it turned out to be the right decision for us. I had to come to terms with that.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;See, I like Swift. I liked it from the day it was announced because &lt;a href="https://ashfurrow.com/blog/we-need-to-replace-objective-c/"&gt;it wasn&amp;rsquo;t Objective-C&lt;/a&gt;. I pushed for us to adopt it at Artsy, and &lt;a href="https://github.com/artsy/eidolon"&gt;the code we wrote&lt;/a&gt; there has become a landmark for the entire OSS community.&lt;/p&gt;
-
-&lt;p&gt;So when Eloy proposed writing apps in JavaScript – &lt;em&gt;JavaScript!&lt;/em&gt; – I was unenthusiastic. However, Eloy is the most pragmatic and level-headed developer I know, and he reached the decision to move to React Native after months of careful study, so I kept an open mind. And I&amp;rsquo;m glad I did.&lt;/p&gt;
-
-&lt;p&gt;I decided to look into JavaScript and started contributing to JS web projects at Artsy last year. And I was surprised to see that the modern JS development workflow is &lt;em&gt;slick&lt;/em&gt;. Like, &lt;em&gt;really slick&lt;/em&gt;. The tooling has been built with developer experience front of mind, and it shows. Orta goes into more detail in his post, but suffice it to say that compared to Xcode and Swift development, the JS workflow is matured and polished.&lt;/p&gt;
-
-&lt;p&gt;After getting some first-hand experience with JavaScript, and learning more about &lt;a href="http://artsy.github.io/blog/2016/08/15/React-Native-at-Artsy/"&gt;React Native, Relay, and GraphQL&lt;/a&gt;, I was on board with using React Native at Artsy. The decision made sense, from our perspective. And it might not from yours – that&amp;rsquo;s okay! Each team has different priorities and will make different compromises. &lt;/p&gt;
-
-&lt;p&gt;However&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;I still had trouble accepting the decision, even after I agreed with it. At Artsy, every line of Swift I write now is legacy code, and that&amp;rsquo;s a new feeling for me. I don&amp;rsquo;t like it.&lt;/p&gt;
-
-&lt;p&gt;Swift is awesome and it sucks to &lt;em&gt;feel bad&lt;/em&gt; writing it. It&amp;rsquo;s something I&amp;rsquo;ve had to get used to, I guess my honeymoon with Swift had to end sometime.&lt;/p&gt;
-
-&lt;p&gt;I want Swift to succeed, and I still think it will. It&amp;rsquo;s a great language with a kick-ass community, backed by a company with a vested interest in seeing it explode in popularity. &lt;/p&gt;
-
-&lt;p&gt;As luck would have it, Artsy needs someone to maintain all their Swift code, so I&amp;rsquo;ll be writing Swift for a long time 😉 &lt;/p&gt;
-
-&lt;p&gt;And I have to acknowledge: I really enjoy the JS workflow. JS had a decades-long  head start, and I hope Apple engineers are looking to close the gap. (&lt;a href="http://isxcodeopensourceyet.github.io"&gt;Hint hint&lt;/a&gt;).&lt;/p&gt;
-</description>
-      <pubDate>Sat, 11 Feb 2017 18:12:20 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/swift-vs-react-native-feels/</guid>
     </item>
   </channel>
 </rss>
