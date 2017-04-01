@@ -76,9 +76,11 @@ The site is served from S3, but through CloudFlare's CDN. The CDN caches everyth
 Search
 ------
 
-Search is done using [lunrjs](http://lunrjs.com) through the [middleman-search plugin](https://github.com/manastech/middleman-search). This requires:
+Search is done using [lunrjs](http://lunrjs.com) through the [middleman-search plugin](https://github.com/manastech/middleman-search). In summary:
 
 - [Activation and configuration](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/config.rb#L33-L48).
 - [Inclusion in `all.js` sprockets file](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/source/javascripts/all.js#L3).
 - [jQuery to connect the search box to lunrjs](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/source/javascripts/_site.js#L64-L127).
 - [Set up for search box and results](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/source/search.haml#L11-L22).
+
+Or check out [this blog post](https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/).
