@@ -3,6 +3,11 @@ title: Building Swift Playground Books
 date: 2016-08-27 16:57:02 UTC
 background_image: /img/blog/building-swift-playground-books/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/769166474560802816
+summary: "When I heard about Swift playground books during WWDC, I was <em>super</em> excited about what kinds of new ways people could learn to code. And not just learn to code for the first time, but to learn a new framework or technique. "
+---
+
+**Update**: As of version 1.0 of the tool, we now support a much improved structure for the source playgrounds. Check out an [updated blog post](/blog/swift-playground-books/) or [the documentation](https://github.com/playgroundbooks/playgroundbook#usage) for more info. We're always looking for new contributors to help with examples, too! For posterity, the original blog post follows.
+
 ---
 
 When I heard about Swift playground books during WWDC, I was _super_ excited about what kinds of new ways people could learn to code. And not just learn to code for the first time, but to learn a new framework or technique. 

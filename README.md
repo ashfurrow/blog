@@ -48,6 +48,7 @@ Thanks to the following people and projects:
 - [s3cmd](http://s3tools.org/)
 - [vertical timeline jquery thingy](http://www.jqueryscript.net/other/Responsive-Vertical-Timeline-With-jQuery-CSS3.html)
 - [@CloudyConway](http://twitter.com/CloudyConway)
+- [@CrookedCosmos](http://twitter.com/CrookedCosmos)
 - [IcoMoon](https://icomoon.io)
 - [CloudFlare](http://cloudflare.com)
 
@@ -63,7 +64,7 @@ Photo | Photographer
 Main banner on [Portfio](https://ashfurrow.com/portfolio). | [Andrey Tochilin](https://twitter.com/Tochilin)
 "Software" banner on [Portfolio](https://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
 Blogging image on [Portfolio](https://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
-Several blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744))
+Recent blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744)) and [Crooked Cosmos](http://twitter.com/CrookedCosmos) (CC0)
 
 Server Setup
 ------------
@@ -75,9 +76,11 @@ The site is served from S3, but through CloudFlare's CDN. The CDN caches everyth
 Search
 ------
 
-Search is done using [lunrjs](http://lunrjs.com) through the [middleman-search plugin](https://github.com/manastech/middleman-search). This requires:
+Search is done using [lunrjs](http://lunrjs.com) through the [middleman-search plugin](https://github.com/manastech/middleman-search). In summary:
 
 - [Activation and configuration](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/config.rb#L33-L48).
 - [Inclusion in `all.js` sprockets file](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/source/javascripts/all.js#L3).
 - [jQuery to connect the search box to lunrjs](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/source/javascripts/_site.js#L64-L127).
 - [Set up for search box and results](https://github.com/ashfurrow/blog/blob/88eeda09a6010c014dd02f8d05b63eb8cc7da07a/source/search.haml#L11-L22).
+
+Or check out [this blog post](https://ashfurrow.com/blog/static-site-search-with-middleman-and-lunrjs/).
