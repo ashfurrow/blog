@@ -1,6 +1,6 @@
 ---
 title: RxSwift Book Announcement
-date: 2017-04-03 17:00:00 UTC
+date: 2017-04-03 8:00:00 UTC
 background_image: /img/blog/rxswift-book-announcement/background.png
 background_image_source: https://twitter.com/CrookedCosmos/status/846434957195128833
 og_image: /img/blog/rxswift-book-announcement/cover.png
