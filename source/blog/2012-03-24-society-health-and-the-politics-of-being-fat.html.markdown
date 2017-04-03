@@ -1,11 +1,12 @@
 ---
 title: "Society, Health, and the Politics of Being Fat"
 date: 2012-03-24 00:00
+summary: "I hate the term 'overweight' because it implies that my weight, as a fat person, is abnormal; it implies that my weight is over the weight I should have, and that is not true. Every month or two, I see a new study that demonstrates that the Body-Mass Index, the primary measure by which fat people are labeled 'overweight' is full of shit. We're discovering that a measurement that reduces an entire person's body down to a &nbsp;single number might not be accurate for all 7 billion on the entire earth. Huh."
 ---
 
+**Update**: This article originally used a comparison to homophobia that I'm not proud of. I apologized [in this follow-up blog post](https://ashfurrow.com/blog/insensitive-sensationalism/) and have removed the reference below.
+
 First, let me state clearly and loudly: this is a reflective essay. If you disagree, fine, tweet at me, but nothing on this blog has ever been anything more than my opinion.
-
-
 
 ## A Loaded Term
 
@@ -79,7 +80,7 @@ You've taken a healthy person and done what, exactly?
 
 If society cared about health, it would encourage fat people to lead healthy, active lifestyles and to eat well-balanced, low-meat diets. But then again, society doesn't care about _health_, they care about _appearance_ and _money_.
 
-## Fat-Shaming: The New Homophobia
+## Fat-Shaming
 
 I'm often at odds with the politicians that govern my life. Lately, [Rob "Fucking" Ford](http://www.torontolife.com/daily/informer/ford-focus/2011/10/27/rob-fucking-ford-berates-911-dispatchers/) has been wreaking havoc on the City of Toronto. I love to criticize his short-sighted policies, but often times the people I'm conversing with make fun of his weight.
 
@@ -91,7 +92,7 @@ So what?
 
 That would be like calling a politician inept for having a large nose, being red-headed, or short. Someone's [physical appearance](http://en.wikipedia.org/wiki/Phrenology) bears no appearance on their ability to govern.
 
-Conflating fat with health, and further conflating health with the ability to govern, is stupid. As a society, we've reached the point that, outside of frat houses, calling something "gay" as an insult is becoming socially unacceptable. I think that, in the next few decades, the same thing is going to happen to making fun of fat people.
+Conflating fat with health, and further conflating health with the ability to govern, is stupid. I think that, over the next few decades, we'll see this start to become socially unacceptable.
 
 ## What About Rising Obesity Rates?
 
