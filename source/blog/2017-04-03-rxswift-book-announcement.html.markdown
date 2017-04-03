@@ -16,7 +16,7 @@ BEGIN_NARROW
   
 END_NARROW
 
-I've been serving as a technical editor to help make sure the book is correct, awesome, and cohesie. I've had a blast working with Florent Pillet, Junior Bontognali, Marin Todorov, Scott Gardner, and Chris Belanger.
+I've been serving as a technical editor to help make sure the book is correct, awesome, and cohesive. I've had a blast working with Florent Pillet, Junior Bontognali, Marin Todorov, Scott Gardner, and Chris Belanger.
 
 It's been really hard to keep this under wraps, partially because I'm so excited about it and partially because people keep asking me for a Swift version of my existing [Functional Reactive Programming on iOS book](https://leanpub.com/iosfrp). Well it's finally here.
 
