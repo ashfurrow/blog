@@ -4,10 +4,36 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-04-01T15:06:24+00:00</updated>
+  <updated>2017-04-03T08:00:00+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>RxSwift Book Announcement</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/rxswift-book-announcement/"/>
+    <id>https://ashfurrow.com/blog/rxswift-book-announcement/</id>
+    <published>2017-04-03T08:00:00+00:00</published>
+    <updated>2017-04-03T08:00:00+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;Well well well, look what we have here. After months of toiling in secret, I can finally announce that I&amp;rsquo;ve helped the &lt;a href="https://raywenderlich.com"&gt;Ray Wenderlich team&lt;/a&gt; complete a brand new RxSwift book! &lt;a href="https://store.raywenderlich.com/products/rxswift"&gt;RxSwift: Reactive Programming in Swift&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;a href="https://store.raywenderlich.com/products/rxswift"&gt;&lt;img src="https://ashfurrow.com/img/blog/rxswift-book-announcement/cover.png" alt="Book cover" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;I&amp;rsquo;ve been serving as a technical editor to help make sure the book is correct, awesome, and cohesie. I&amp;rsquo;ve had a blast working with Florent Pillet, Junior Bontognali, Marin Todorov, Scott Gardner, and Chris Belanger.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s been really hard to keep this under wraps, partially because I&amp;rsquo;m so excited about it and partially because people keep asking me for a Swift version of my existing &lt;a href="https://leanpub.com/iosfrp"&gt;Functional Reactive Programming on iOS book&lt;/a&gt;. Well it&amp;rsquo;s finally here.&lt;/p&gt;
+
+&lt;p&gt;The book is much more than I could have accomplished on my own, from a team that&amp;rsquo;s used to writing top-notch tutorials. I&amp;rsquo;m very proud of what we accomplished, and I hope you enjoy reading it as much as we enjoyed making it.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Swift Playground Books</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/swift-playground-books/"/>
@@ -202,302 +228,6 @@
 &lt;p&gt;Some backing tracks are simple, some are complicated. Some repeat themselves a lot, others change constantly. And different backing tracks lend themselves differently to different styles of music.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m excited. To learn more guitar, to write more code, and to continue to explore the parallels between two of my favourite forms of expression.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Comparative Asynchronous Programming</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/comparative-asynchronous-programming/"/>
-    <id>https://ashfurrow.com/blog/comparative-asynchronous-programming/</id>
-    <published>2017-02-24T09:39:20+00:00</published>
-    <updated>2017-02-24T09:39:20+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;So I&amp;rsquo;m in Australia to give my talk at &lt;a href="http://playgroundscon.com"&gt;Playgrounds Conference&lt;/a&gt; about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let&amp;rsquo;s dive in!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;script async class="speakerdeck-embed" data-id="46f4ab568af449b8ac95aa4939f9e62e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;Today we&amp;rsquo;re going to be talking about asynchronous programming: what it is, why it&amp;rsquo;s important, and what it can look like in Swift. The topic is quite complicated and I don&amp;rsquo;t have enough time to go into a tonne of detail, but my goal isn&amp;rsquo;t depth, it&amp;rsquo;s breadth. I want to expose you to lots of ideas and give you hints about where to follow up to do your own research. &lt;/p&gt;
-
-&lt;p&gt;Today we&amp;rsquo;re discussing four main points:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Asynchronous programming is difficult and there is no one &amp;ldquo;best&amp;rdquo; way to do it.&lt;/li&gt;
-&lt;li&gt;Swift ships with some asynchronous abstractions, but they&amp;rsquo;re not great.&lt;/li&gt;
-&lt;li&gt;But we can build our own abstractions in Swift!&lt;/li&gt;
-&lt;li&gt;However, compiler limitations mean there are some abstractions we &lt;em&gt;can&amp;rsquo;t&lt;/em&gt; build in Swift.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Let&amp;rsquo;s get started.&lt;/p&gt;
-
-&lt;h2 id="asynchronous-programming-difficult-and-subjective"&gt;Asynchronous Programming: Difficult and Subjective&lt;/h2&gt;
-
-&lt;p&gt;Before we talk about asynchronous programming, let&amp;rsquo;s define it. To define it, let&amp;rsquo;s contrast it with synchronous programming. &amp;ldquo;Normal&amp;rdquo; programming, as contrasted with asynchronous programming, is the kind of programming you probably learned first. It&amp;rsquo;s where program execution starts at the top and executes each line of code in step, moving towards the bottom. The program waits for each line of code to finish before moving onto the next line. &lt;/p&gt;
-
-&lt;p&gt;Most of the code Swift developers write is &amp;ldquo;normal&amp;rdquo;, or synchronous. Let&amp;rsquo;s take a look at an example.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;returnValue&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nf"&gt;someFunctionCall&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is an example of a synchronous, or &amp;ldquo;normal&amp;rdquo; Swift function call. It is synchronous, meaning from the call site&amp;rsquo;s perspective, it gets executed atomically. It starts, it finishes, all in one line of code.&lt;/p&gt;
-
-&lt;p&gt;If all the function is doing is adding two numbers you&amp;rsquo;ve already loaded from RAM, it&amp;rsquo;ll be really fast. If it has to retrieve those from RAM first, it&amp;rsquo;ll be orders of magnitude slower. If you&amp;rsquo;re doing something complex like reading a file from disk, then it&amp;rsquo;ll be orders of magnitude slower still. At a certain point, you&amp;rsquo;re wasting CPU time waiting for file I/O, network I/O, or other long-running task to complete.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s where asynchronous programming comes in: it mitigates this wasted CPU time by letting programs do stuff while waiting for other code to get executed.&lt;/p&gt;
-
-&lt;p&gt;Asynchronous programming is where you write code that&amp;rsquo;s executed out of order. Your program continues to execute new lines of code while it waits for previous lines to finish. Then, code gets executed in response to external signals like completed network requests, user interaction, all kinds of things! Code might get executed in parallel, too. Things get complicated quickly!&lt;/p&gt;
-
-&lt;p&gt;Like most mainstream languages, Swift is really all about writing synchronous programming, and forces programmers to choose the appropriate abstractions. Which to choose?&lt;/p&gt;
-
-&lt;p&gt;It depends.&lt;/p&gt;
-
-&lt;p&gt;Software development is all about tradeoffs. Which abstraction you pick depend on which tradeoffs you want to make. Some languages and frameworks have strong opinions about how to do asynchronous programming, like &lt;a href="https://nodejs.org"&gt;Node.js&lt;/a&gt;. They use something called &amp;ldquo;non-blocking&amp;rdquo; functions because they have the benefit of never blocking the main thread. This is critical in JavaScript because there is only one thread, so blocking at any point blocks your whole app. Yikes!&lt;/p&gt;
-
-&lt;p&gt;Non-blocking code is great but has its tradeoffs: imagine if almost every function call you made in Swift had a completion closure instead of a return value. That might be terrible, but it might be great! Let&amp;rsquo;s press on and explore.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;file&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nf"&gt;readFile&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-&lt;span class="c1"&gt;// vs&lt;/span&gt;
-
-&lt;span class="nf"&gt;readFile&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-  &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The first example blocks while the second example is non-blocking. The blocking call is simpler to understand, since it happens atomically from the call site&amp;rsquo;s perspective. But it&amp;rsquo;s less performant. The non-blocking call is better for performance but it doesn&amp;rsquo;t have an &amp;ldquo;immediate&amp;rdquo; return value, so it&amp;rsquo;s asynchronous nature propagates up the call stack. In effect, the code using it becomes non-blocking. This is annoying for developers, but you get really performant code.&lt;/p&gt;
-
-&lt;p&gt;See? Tradeoffs.&lt;/p&gt;
-
-&lt;p&gt;Swift doesn&amp;rsquo;t have that same kind of opinionated nature as Node.js, which is a shame because it leads to developers avoiding thinking about abstractions.&lt;/p&gt;
-
-&lt;p&gt;To write modern software, you &lt;em&gt;have&lt;/em&gt; to write asynchronous code sometimes. And writing asynchronous code involves picking an abstraction; if you don&amp;rsquo;t think about which abstraction would be best in a given situation, you&amp;rsquo;re very unlikely to pick the best one for you.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s look at the abstractions built-in to Swift.&lt;/p&gt;
-
-&lt;h2 id="swift-has-async-built-in-sorta"&gt;Swift Has Async Built-in. Sorta.&lt;/h2&gt;
-
-&lt;p&gt;Swift&amp;rsquo;s built-in abstractions are a bit lacking because it&amp;rsquo;s fairly unopinionated about asynchronous programming. Most of its asynchronous abstractions come directly from Objective-C, and aren&amp;rsquo;t that great. Let&amp;rsquo;s explore.&lt;/p&gt;
-
-&lt;p&gt;(We&amp;rsquo;re going to limit ourselves to iOS, macOS, watchOS, and tvOS – none of that &amp;ldquo;Swift on Linux&amp;rdquo; stuff.)&lt;/p&gt;
-
-&lt;h3 id="grand-central-dispatch"&gt;Grand Central Dispatch&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Grand_Central_Dispatch"&gt;Grand Central Dispatch&lt;/a&gt; (GCD) is most helpful for managing threading, which is beyond the scope of this post. It&amp;rsquo;s probably not best to use GCD directly, but rather use it to build higher-level abstractions that are easier to think about. However, GCD is &lt;em&gt;super&lt;/em&gt; powerful.&lt;/p&gt;
-
-&lt;h3 id="nsoperationqueue"&gt;NSOperationQueue&lt;/h3&gt;
-
-&lt;p&gt;NSOperationQueues are built on top of GCD and allow you to &amp;ldquo;link&amp;rdquo; different operations together to form a complex dependency graph. They&amp;rsquo;re really cool! But kind of a pain to use directly. Check out &lt;a href="https://github.com/dstnbrkr/DRBOperationTree"&gt;DRBOperationTree&lt;/a&gt; for an example of an even more powerful abstraction built on top of operation queues.&lt;/p&gt;
-
-&lt;h3 id="posix-threads"&gt;POSIX Threads&lt;/h3&gt;
-
-&lt;p&gt;It&amp;rsquo;s possible to use &lt;a href="https://en.wikipedia.org/wiki/POSIX_Threads"&gt;POSIX threads&lt;/a&gt; in Swift but it&amp;rsquo;s far too low level, I really discourage this approach.&lt;/p&gt;
-
-&lt;h3 id="target-action"&gt;Target / Action&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="https://developer.apple.com/library/content/documentation/General/Conceptual/Devpedia-CocoaApp/TargetAction.html"&gt;Target/action&lt;/a&gt; is a pattern that calls a specific function on a specific object. It is used throughout UIKit, usually for user interaction like button presses or gesture recognizers. This pattern works okay for small uses but doesn&amp;rsquo;t always scale well.&lt;/p&gt;
-
-&lt;h3 id="callbacks-completion-handlers"&gt;Callbacks / Completion Handlers&lt;/h3&gt;
-
-&lt;p&gt;Callbacks are built from closures, short anonymous functions that get executed later on in time. You&amp;rsquo;ve probably used these before at the completion of a network request or animation, but let&amp;rsquo;s take a closer look.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;logIn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-  &lt;span class="c1"&gt;// Handle login success or failure&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here we have a &lt;code&gt;logIn(with:)&lt;/code&gt; function that takes a completion handler as its last parameter, and that handler gets executed when the login succeeds or fails.&lt;/p&gt;
-
-&lt;p&gt;The thing is, it&amp;rsquo;s hard to stack a callback within a callback. Actually, it&amp;rsquo;s easy, but that&amp;rsquo;s the problem. Soon, you have callbacks within callbacks within callbacks, which are hard to debug and produce messy stack traces.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;getCredentialsFromUser&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-  &lt;span class="nf"&gt;logIn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-    &lt;span class="c1"&gt;// Handle login success or failure&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This &amp;ldquo;triangle of doom&amp;rdquo; is the code creeping further and further from the left side of the screen (right side for RTL languages). This is bad enough, but things get worse when you consider handling errors appropriately.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;getCredentialsFromUser&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="nf"&gt;logIn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;login&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;login&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-          &lt;span class="c1"&gt;// Handle login success&lt;/span&gt;
-        &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-          &lt;span class="c1"&gt;// Handle error&lt;/span&gt;
-        &lt;span class="p"&gt;}&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="c1"&gt;// Handle error&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So now we have error handling strewn throughout our callbacks. Gross! Consider that none of these asynchronous functions work well with the built-in Swift error handling of &lt;code&gt;throws&lt;/code&gt;. What a shame.&lt;/p&gt;
-
-&lt;p&gt;An important consideration when you&amp;rsquo;re writing a function that takes a call back is the callback&amp;rsquo;s &lt;em&gt;signature&lt;/em&gt;. What information are you going to pass to it? We generally want to pass either a value (in the success case) or something else (in the failure case). A simple approach is to use an Optional.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Credentials&lt;/span&gt;&lt;span class="p"&gt;?)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="kt"&gt;Void&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;A &lt;code&gt;nil&lt;/code&gt; value will represent a failure, and a non-&lt;code&gt;nil&lt;/code&gt; value will represent a success. This works well for small cases but has a limitation: what if we want to know &lt;em&gt;what&lt;/em&gt; went wrong?&lt;/p&gt;
-
-&lt;p&gt;We could just add an optional &lt;code&gt;Error&lt;/code&gt; parameter, and in some ways that would be an improvement. The &lt;code&gt;Error&lt;/code&gt; can be used to take appropriate follow-up action after an error is encountered.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Credentials&lt;/span&gt;&lt;span class="p"&gt;?,&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;?)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="kt"&gt;Void&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;However, we&amp;rsquo;ve introduced some ambiguity into our code. What happens if both of the parameters are &lt;code&gt;nil&lt;/code&gt;? What happens if neither of them are?&lt;/p&gt;
-
-&lt;p&gt;An even better approach is to use a Result type.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;result&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;Result&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="kt"&gt;Credentials&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="kt"&gt;Void&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;A result represents either a success or an error. Because Swift is so keen on staying unopinionated, it doesn&amp;rsquo;t have a result type built in. You can either use &lt;a href="https://github.com/antitypical/Result"&gt;the Result library&lt;/a&gt; or make one yourself.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;enum&lt;/span&gt; &lt;span class="kt"&gt;Result&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="kt"&gt;T&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="nf"&gt;success&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;T&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="nf"&gt;error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Result uses Swift enums to define two cases: a success, with an associated generic value, and an error with an associated error value. Since the result has to be exactly one of these two cases, there&amp;rsquo;s no ambiguity when writing you code!&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re going to use callbacks to write asynchronous code in Swift, I highly encourage you to use a Result type as a parameter to the callback. Not only is it clean, but it&amp;rsquo;s also a gateway to using higher-level abstractions. Something something monad.&lt;/p&gt;
-
-&lt;p&gt;Callbacks are useful for one-off async methods. You don&amp;rsquo;t need a fancy async approach if all you&amp;rsquo;re doing is, say, fetching some photos from the user&amp;rsquo;s library. But if you find yourself nesting callbacks within each other, look for a better solution.&lt;/p&gt;
-
-&lt;h2 id="some-async-abstractions-are-supported-in-swift"&gt;Some Async Abstractions are Supported in Swift&lt;/h2&gt;
-
-&lt;p&gt;As developers, we aren&amp;rsquo;t constrained to only using what our language and frameworks supply. We can use open source libraries and build our own abstractions that are better suited for our needs. There a tonne of abstractions out there to use, let&amp;rsquo;s take a look at a few popular ones.&lt;/p&gt;
-
-&lt;h3 id="promises-futures"&gt;Promises &amp;amp; Futures&lt;/h3&gt;
-
-&lt;p&gt;(Promises and futures are technical distinct but I&amp;rsquo;m not going into the differences between them. We&amp;rsquo;ll use them interchangeably here.)&lt;/p&gt;
-
-&lt;p&gt;A future is a class that represents a future value or error. You write your code based on how you would deal with a future value or error, and later when it happens, the correct code gets run. Lots of libraries already exist in Swift for promises and futures. Let&amp;rsquo;s look at one called &lt;a href="https://github.com/Thomvis/BrightFutures"&gt;BrightFutures&lt;/a&gt;.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;getCredentialsFromUser&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;flatMap&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nf"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;onSuccess&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;login&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-    &lt;span class="c1"&gt;// Handle login success&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;onFailure&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-    &lt;span class="c1"&gt;// Handle login error&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We can see that there are a few big improvements over simple callbacks. First, transforming one future into another is really easy using &lt;code&gt;flatMap&lt;/code&gt;. Second, error handling is all done at the end in one spot. An error from any future is propagated through the chain, so you don&amp;rsquo;t end up writing duplicated error-handling code. Nice!&lt;/p&gt;
-
-&lt;h3 id="functional-reactive-programming"&gt;Functional Reactive Programming&lt;/h3&gt;
-
-&lt;p&gt;I couldn&amp;rsquo;t talk about asynchronous programming without discussing my favourite abstraction: functional reactive programming. Briefly, FRP encapsulates a stream of events that you can observe:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;New value events.&lt;/li&gt;
-&lt;li&gt;Error events.&lt;/li&gt;
-&lt;li&gt;Completion events.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These streams, called observables, finish with either an error or completion event (never both), and they stop sending events afterwards. I&amp;rsquo;ve written a whole &lt;a href="https://ashfurrow.com/blog/reactivecocoa-vs-rxswift/"&gt;blog post&lt;/a&gt; about choosing an FRP library, but let&amp;rsquo;s explore some &lt;a href="https://github.com/ReactiveX/RxSwift"&gt;RxSwift&lt;/a&gt; examples.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;getCredentialsFromUser&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;flatMap&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nf"&gt;login&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;subscribe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;onNext&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;login&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-      &lt;span class="c1"&gt;// Handle login success&lt;/span&gt;
-    &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="nv"&gt;onError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-      &lt;span class="c1"&gt;// Handle login error&lt;/span&gt;
-    &lt;span class="p"&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;🤔&lt;/p&gt;
-
-&lt;p&gt;That FRP code looks &lt;em&gt;really&lt;/em&gt; similar to futures/promises. That&amp;rsquo;s because our code is structured such that it only sends one value and then it&amp;rsquo;s done. FRP has all the benefits of promises, and then some, and FRP is at its best when used for streams of values that get sent over a long period of time.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="n"&gt;gerstureRecognizer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rx&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;event&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;recognizer&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;recognizer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;location&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;in&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;recognizer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;to&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;circle&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rx&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;center&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is a better RxSwift example. We have a gesture recognizer that sends new value events ever time the user moves their finger on the screen. Then we map those events into locations, and bind those location events into a circle view&amp;rsquo;s &lt;code&gt;center&lt;/code&gt; position. In five lines of code, we&amp;rsquo;ve written asynchronous gesture recognizer handling to have a view follow a user&amp;rsquo;s finger. Cool!&lt;/p&gt;
-
-&lt;p&gt;I should mention that RxSwift works well with idiomatic error-throwing in Swift, too. Even cooler.&lt;/p&gt;
-
-&lt;p&gt;FRP would be my recommendation for a fully-featured async approach. The abstractions are great and super-powerful, but do take some getting used to. If FRP is too complex for your needs, stick to using promises.&lt;/p&gt;
-
-&lt;h3 id="actor-model"&gt;Actor Model&lt;/h3&gt;
-
-&lt;p&gt;This is probably the most far-out approach we&amp;rsquo;ll discuss today. &lt;a href="https://en.wikipedia.org/wiki/Actor_model"&gt;Actor-based programming&lt;/a&gt; treats &amp;ldquo;actors&amp;rdquo; as primitives for concurrent computation. &lt;a href="http://akka.io"&gt;Akka&lt;/a&gt; is a popular library for using actors in Scala, we use it at Artsy and it&amp;rsquo;s pretty cool.&lt;/p&gt;
-
-&lt;p&gt;This diagram is from &lt;a href="http://doc.akka.io/docs/akka/current/scala/actors.html"&gt;Akka&amp;rsquo;s documentation&lt;/a&gt;, don&amp;rsquo;t look at it – it&amp;rsquo;s too complicated!&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/comparative-asynchronous-programming/akka.png" alt="Akka actor lifecycle diagram" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;The actor model provides a number of constraints and conditions that make async robust, but more complicated.&lt;/p&gt;
-
-&lt;p&gt;Different implementations, but generally:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Actors receive messages in unspecified order and have to react to those messages.&lt;/li&gt;
-&lt;li&gt;Actors can create child actors to perform some work – no callbacks!&lt;/li&gt;
-&lt;li&gt;Actors can maintain local state, so they can respond to a message differently when called subsequent times.&lt;/li&gt;
-&lt;li&gt;Actors maintain a hierarchy, leading to great error-tolerance.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Actors are definitely overkill for nearly all iOS applications, But properly implemented, Actors can be used to write fault-tolerant, highly performant distributed systems&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://www.erlang.org"&gt;Erlang&lt;/a&gt; proved the actor model was feasible and helped to popularize it. As Swift&amp;rsquo;s popularity outside iOS/macOS apps grows, I&amp;rsquo;m looking forward to seeing how the Actor Model gets used in Swift.&lt;/p&gt;
-
-&lt;h2 id="some-async-abstractions-are-impossible-in-swift"&gt;Some Async Abstractions are Impossible in Swift&lt;/h2&gt;
-
-&lt;p&gt;Due to compiler limitations, there are some asynchronous approaches that are impossible to do in Swift, at least for now.&lt;/p&gt;
-
-&lt;h3 id="async-await"&gt;Async / Await&lt;/h3&gt;
-
-&lt;p&gt;This abstraction is supported in JavaScript and C# and is very popular in those languages. Why? It lets you write code that looks &amp;ldquo;normal&amp;rdquo; but is actually asynchronous under the hood. It&amp;rsquo;s  powerful and expressive and not yet possible in Swift for reasons we&amp;rsquo;ll discuss shortly.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s look at an example.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="n"&gt;async&lt;/span&gt; &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;logIn&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="kt"&gt;Login&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;credentials&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;await&lt;/span&gt; &lt;span class="nf"&gt;getCredentialsFromUser&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;await&lt;/span&gt; &lt;span class="nf"&gt;logIn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;credentials&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here we have a &lt;code&gt;logIn()&lt;/code&gt; function that appears to return a value synchronously, but in this hypothetical syntax, we see that the function has been marked asynchronous with the &lt;code&gt;async&lt;/code&gt; keyword. When the function execution reaches &lt;code&gt;await getCredentialsFromUser()&lt;/code&gt;, the function &lt;em&gt;pauses&lt;/em&gt; and waits for that function to return a value, asynchronously. At that point, the function execution will resume. How cool is that! Check out &lt;a href="http://khanlou.com/2016/09/async-await/"&gt;this great blog post&lt;/a&gt; for more details on a hypothetical async/await in Swift.&lt;/p&gt;
-
-&lt;p&gt;Async/await isn&amp;rsquo;t perfect – for example, mixing async/await with regular callback closures is really hard to do. They&amp;rsquo;re an opinionated aspect of a programming language, and so they fit in well with opinionated languages like C# and modern JavaScript. Plus they work with throwing errors, so we could write idiomatic Swift error-handling.&lt;/p&gt;
-
-&lt;p&gt;Async/await is the way I wish Swift had done async programming, it&amp;rsquo;s probably the ideal but is now too late to standardize on.&lt;/p&gt;
-
-&lt;p&gt;Additionally, some asynchronous needs aren&amp;rsquo;t well-met by async/await. It would be hard to write gesture recognizer code this way, which works best with existing Swift-supported abstractions like FRP or target/action.&lt;/p&gt;
-
-&lt;h3 id="coroutines-and-generator-functions"&gt;Coroutines and Generator Functions&lt;/h3&gt;
-
-&lt;p&gt;These are the strangest things I came across in researching different asynchronous programming approaches. Why? Because &lt;a href="http://exploringjs.com/es6/ch_generators.html"&gt;coroutines/generators&lt;/a&gt; violate some of the base assumptions I&amp;rsquo;d made about programming. Assumptions like:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Functions can only complete once.&lt;/li&gt;
-&lt;li&gt;Functions can only return a value once.&lt;/li&gt;
-&lt;li&gt;Function execution always starts at the top.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Coroutines and generator functions aren&amp;rsquo;t typically used directly, but are required to make async/await. Swift doesn&amp;rsquo;t have support for coroutines yet, so that&amp;rsquo;s why Swift can&amp;rsquo;t have async/await like JavaScript or C#.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="n"&gt;fibGenerator&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="kt"&gt;Int&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-  &lt;span class="k"&gt;repeat&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;next&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;
-    &lt;span class="n"&gt;yield&lt;/span&gt; &lt;span class="nf"&gt;next&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;next&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="nf"&gt;fibGenerator&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;// returns 1&lt;/span&gt;
-&lt;span class="nf"&gt;fibGenerator&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;// returns 2&lt;/span&gt;
-&lt;span class="nf"&gt;fibGenerator&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;// returns 3&lt;/span&gt;
-&lt;span class="nf"&gt;fibGenerator&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;// returns 5&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This &lt;code&gt;fibGenerator&lt;/code&gt; function has been marked as a &lt;em&gt;generator&lt;/em&gt; using the &lt;code&gt;*&lt;/code&gt;, a syntax borrowed from JavaScript. It looks like an infinite loop, but it actually returns a value using the &lt;code&gt;yield&lt;/code&gt; keyword and then pauses execution until it gets called again. Every time you call the function, it resumes execution, loops, and yields a new value. How cool is that?&lt;/p&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t code you might actually use – JavaScript developers don&amp;rsquo;t often use generators directly, but rather use them to but higher level abstractions like async/await.&lt;/p&gt;
-
-&lt;h2 id="wrap-up"&gt;Wrap Up&lt;/h2&gt;
-
-&lt;p&gt;We&amp;rsquo;ve covered a lot of ground today. We talked about what asynchronous programming is and why there&amp;rsquo;s no single &amp;ldquo;best&amp;rdquo; solution. Then we discussed the asynchronous approaches built into Swift, the approaches we can build ourselves in Swift, and finally the approaches we can&amp;rsquo;t yet build in Swift.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;🤔&lt;a href="https://twitter.com/hashtag/playgroundscon?src=hash"&gt;#playgroundscon&lt;/a&gt; Great talk on (almost) all things async &lt;a href="https://twitter.com/ashfurrow"&gt;@ashfurrow&lt;/a&gt; &lt;a href="https://t.co/99iHsLBR4A"&gt;pic.twitter.com/99iHsLBR4A&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bjorn Ho (@nrg84) &lt;a href="https://twitter.com/nrg84/status/834909007148036096"&gt;February 23, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Hopefully you made this face a few times while reading. It&amp;rsquo;s always a good idea to learn new things, even if they&amp;rsquo;re not directly applicable to your job, just to know they&amp;rsquo;re out there. If you see something cool you&amp;rsquo;d like in Swift, head over to &lt;a href="https://github.com/apple/swift-evolution"&gt;Swift Evolution&lt;/a&gt; and talk to the language community. Together, we can help shape the future of Swift.&lt;/p&gt;
-
-&lt;p&gt;Especially as Swift gains popularity outside of just building apps, I&amp;rsquo;m incredibly excited to see how it continues to evolve. I&amp;rsquo;m particularly keen to see new asynchronous abstractions become possible in my favourite language.&lt;/p&gt;
 </content>
   </entry>
 </feed>
