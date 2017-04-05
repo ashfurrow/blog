@@ -4,10 +4,42 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-04-03T08:00:00+00:00</updated>
+  <updated>2017-04-05T01:11:09+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Mastodon</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/mastodon/"/>
+    <id>https://ashfurrow.com/blog/mastodon/</id>
+    <published>2017-04-05T01:11:09+00:00</published>
+    <updated>2017-04-05T01:11:09+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;I love Twitter. I have a community there of people I talk with, learn from, it&amp;rsquo;s great. But Twitter also has serious problems that stop everyone from being able to participate in that community. That sucks.&lt;/p&gt;
+
+&lt;p&gt;I was keen on App.net, when it was around. It never really had the chance to get off the ground, I feel, since they tried a pay model.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Enter &lt;a href="https://github.com/tootsuite/mastodon"&gt;Mastodon&lt;/a&gt;, a free-and-open-source distributed microblogging service. Sarah Jeong has great things to say in her article &lt;a href="https://motherboard.vice.com/en_us/article/mastodon-is-like-twitter-without-nazis-so-why-are-we-not-using-it"&gt;&lt;em&gt;Mastodon Is Like Twitter Without Nazis, So Why Are We Not Using It?&lt;/em&gt;&lt;/a&gt; I was intrigued and signed up to one of the more popular instances that Jeong mentioned in her article. &lt;/p&gt;
+
+&lt;p&gt;Well, I wasn&amp;rsquo;t around too long in &lt;a href="https://awoo.space"&gt;Awoo&lt;/a&gt; before noticing that the existing community was starting to feel uncomfortable with the influx of outsiders. One of the posts said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;While queer furries are the &amp;lsquo;old guard&amp;rsquo; of mastodon.social&amp;hellip; here we run the joint. You are in our house, and we expect safety and calm to be the order of the day here. If you want something more lively or tech-y, find another instance.&lt;/p&gt;
+
+&lt;p&gt;Still wanna stay? If you behave and respect us, you&amp;rsquo;re welcome.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am 100% on board with respecting people, but I don&amp;rsquo;t want my presence to make anyone feel like their space is not theirs. So I decided I&amp;rsquo;d try to run my own instance for tech folks like me. If you&amp;rsquo;re keen, head over to &lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt; and sign up.&lt;/p&gt;
+
+&lt;p&gt;Setting up the instance took a few hours of configuration (I&amp;rsquo;m not that great at this) and some email providers aren&amp;rsquo;t letting the confirmation emails through (if you don&amp;rsquo;t get an email, &lt;a href="mailto:ash@ashfurrow.com"&gt;email me&lt;/a&gt; and I&amp;rsquo;ll get you confirmed). I put it on a Heroku hobby plan, so we&amp;rsquo;ll see how things go. If costs become a burden, I&amp;rsquo;ll throw up a Patreon or something. &lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t promise that this instance will be around forever, or ever around next week, but I think that Mastodon&amp;rsquo;s distributed nature makes it a great bet for the future of microblogging (&lt;a href="http://micro.blog"&gt;micro.blog&lt;/a&gt; looks promising too). Come hang out, help me build an inclusive community, and have fun. &lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>RxSwift Book Announcement</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/rxswift-book-announcement/"/>
@@ -194,40 +226,6 @@
 
 
 &lt;p&gt;So yeah, pretty excited. Guitar has become a daily activity for me, something I look forward to doing and something that helps me relax. I&amp;rsquo;d highly recommend it 👍&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Improving / Improvising</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/improving-improvising/"/>
-    <id>https://ashfurrow.com/blog/improving-improvising/</id>
-    <published>2017-02-28T12:12:34+00:00</published>
-    <updated>2017-02-28T12:12:34+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m nearly three months in to &lt;a href="https://ashfurrow.com/blog/learning-guitar/"&gt;learning guitar&lt;/a&gt; and it&amp;rsquo;s going &lt;em&gt;awesome&lt;/em&gt;. I&amp;rsquo;m still teaching myself through &lt;a href="http://yousician.com"&gt;Yousician&lt;/a&gt; but I&amp;rsquo;m thinking of getting a teacher to help. I&amp;rsquo;ve also been supplementing their curriculum more and more with something even more important than a teacher: experimentation.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;After watching a tonne of videos and reading a tonne of material online, a core message started to emerge: experimenting makes you a better guitar player.&lt;/p&gt;
-
-&lt;p&gt;Hmm.&lt;/p&gt;
-
-&lt;p&gt;I studied music in school and played the alto saxophone and piano for seven years, and at the same time I was also learning the basics of coding. The parallels between music and programming weren&amp;rsquo;t always obvious to me, but they definitely exist. For example, I&amp;rsquo;ve noticed after writing a tonne of blog posts and delivering a bunch of conference talks that a core message of mine has started to emerge: experimenting makes you a better programmer.&lt;/p&gt;
-
-&lt;p&gt;Like a lot of sax players, I was really into jazz. I had great teachers and they encouraged me to learn theory and to practice. One of the best skills I learned was how to &lt;em&gt;improvise&lt;/em&gt;. To improvise, or improv, is to create music spontaneously, without preparation. But that doesn&amp;rsquo;t mean just playing random notes willy-nilly, it&amp;rsquo;s about applying theory to help you manifest an idea in your head into tangible music.&lt;/p&gt;
-
-&lt;p&gt;Which sounds a lot like coding. You may have an idea of what you&amp;rsquo;re going to do, but you&amp;rsquo;re never sure until you&amp;rsquo;re done. Circumstances change, your mood changes, the code you write never works the first time, et cetera.&lt;/p&gt;
-
-&lt;p&gt;Since picking up the guitar, I&amp;rsquo;ve been practicing my &lt;a href="https://en.wikipedia.org/wiki/Blues_scale"&gt;blues scales&lt;/a&gt;. Combined with a &lt;a href="https://en.wikipedia.org/wiki/Twelve-bar_blues"&gt;twelve-bar blues progression&lt;/a&gt;, that&amp;rsquo;s all the theory you need. But it wasn&amp;rsquo;t until I found a bunch of backing tracks on YouTube yesterday that I really got into it. They give you a beat and the chord progression to express yourself musically, either through improv or not. Rediscovering how fun it is to spontaneously play has been amazing.&lt;/p&gt;
-
-&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/8L2mqkk28sE' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-&lt;p&gt;So I wonder: what does a backing track look like in code? Well in music, a backing track provides a rhythm and progression around which you play your melody. I think there&amp;rsquo;s a strong argument to be made that a backing track in coding is like a framework or library. Take RxSwift or UIKit, frameworks around which you write your code. Without frameworks, building apps would be really hard, just like improv in isolation would be. Not impossible, but difficult.&lt;/p&gt;
-
-&lt;p&gt;Some backing tracks are simple, some are complicated. Some repeat themselves a lot, others change constantly. And different backing tracks lend themselves differently to different styles of music.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m excited. To learn more guitar, to write more code, and to continue to explore the parallels between two of my favourite forms of expression.&lt;/p&gt;
 </content>
   </entry>
 </feed>
