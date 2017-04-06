@@ -6,6 +6,54 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Mastodon Administration</title>
+      <link>https://ashfurrow.com/blog/mastodon-administration/</link>
+      <description>&lt;p&gt;Yesterday I &lt;a href="/blog/mastodon/"&gt;wrote&lt;/a&gt; about starting my own Mastodon instance. It&amp;rsquo;s like a federated Twitter, and it&amp;rsquo;s really fun.&lt;/p&gt;
+
+&lt;p&gt;I wanted to create a place for tech folks to hang out, but I don&amp;rsquo;t have a lot of experience with server administration. So I chose Heroku. Things have gone&amp;hellip; okay. Mostly good, even.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve run into a number of scaling issues, 500 errors, questions I don&amp;rsquo;t know the answer to, yikes. So I&amp;rsquo;ve spent time searching for answers, scaling up Heroku Dynos, configuring DNS settings, and upgrading Postgres databases. &lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-administration/resources.png" alt="Resources" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;My hope is that these resources will be sufficient for some time while the community scales. I&amp;rsquo;m planning on starting a Patreon to help cover the hosting costs, and maybe even a little of my time. But I don&amp;rsquo;t want to start asking for help unless I&amp;rsquo;m certain that this is something I want to build in the long run.&lt;/p&gt;
+
+&lt;p&gt;Because this has taken time away from the rest of my life. If that cost is largely upfront, with ongoing costs not taking up a lot of time, then that&amp;rsquo;s great. But I can&amp;rsquo;t afford to give dozens of hours a month to this project. If things start looking dire, at least I know who to ask for help 😄&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested, here are the metrics for the Heroku app. The red numbers worry me. We&amp;rsquo;ll see how things go. I&amp;rsquo;m thinking of migrating the whole instance over to a Digital Ocean instance, which would bring the costs down considerably, but the limiting factor is my time.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-administration/metrics.png" alt="Metrics" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;At first I was really overwhelmed because things weren&amp;rsquo;t always running perfectly. Then I realized that this is just a process, an experiment, and I should relax. People have been thanking me for setting up the instance, which has felt really nice. Even if this space turns out to be ephemeral, it&amp;rsquo;s still its own community, and creating that community is really rewarding.&lt;/p&gt;
+
+&lt;p&gt;Once I accepted that the instance won&amp;rsquo;t be around forever, that at some point in the future it &lt;em&gt;will&lt;/em&gt; shut down (all websites will eventually), once I accepted that fact, things became a lot less stressful. So what if GIF uploads aren&amp;rsquo;t work, or 2FA is broken? I&amp;rsquo;m opening GitHub issues to ask for help, and I&amp;rsquo;m getting helped. I&amp;rsquo;m contributing back documentation improvements. I&amp;rsquo;m learning a &lt;em&gt;tonne&lt;/em&gt; about how to administer websites through firsthand experience and experimentation. And I&amp;rsquo;m helping contribute to an entire community of online communities.&lt;/p&gt;
+
+&lt;p&gt;So &lt;a href="https://mastodon.technology"&gt;join&lt;/a&gt;, if you like, in a social media experiment and experience. It might not last – but nothing does – and in the mean time, you can have fun and meet new friends. &lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re keen, I&amp;rsquo;m going to need help. Things on my agenda are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;define a code of conduct.&lt;/li&gt;
+&lt;li&gt;help to establish community norms.&lt;/li&gt;
+&lt;li&gt;respond to reported abuses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in helping, let&amp;rsquo;s chat.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 05 Apr 2017 22:44:43 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/mastodon-administration/</guid>
+    </item>
+    <item>
       <title>Mastodon</title>
       <link>https://ashfurrow.com/blog/mastodon/</link>
       <description>&lt;p&gt;I love Twitter. I have a community there of people I talk with, learn from, it&amp;rsquo;s great. But Twitter also has serious problems that stop everyone from being able to participate in that community. That sucks.&lt;/p&gt;
@@ -168,38 +216,6 @@
 </description>
       <pubDate>Fri, 24 Mar 2017 22:56:53 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/good-bad-days/</guid>
-    </item>
-    <item>
-      <title>Guitar Update</title>
-      <link>https://ashfurrow.com/blog/guitar-update/</link>
-      <description>&lt;p&gt;A few weeks ago, I wrote about &lt;a href="/blog/improving-improvising/"&gt;improvising on guitar&lt;/a&gt;, a follow-up from &lt;a href="/blog/learning-guitar/"&gt;when I started learning in December&lt;/a&gt;. I&amp;rsquo;ve been busy since then, practicing and playing every day. Time for another update.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/guitar-update/yousician.jpg" alt="Yousician screenshot" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;I&amp;rsquo;ve been using &lt;a href="http://yousician.com"&gt;Yousician&lt;/a&gt;, and it&amp;rsquo;s been a great tool to help develop skills. If you&amp;rsquo;re on Yousician, or you join, please add me as a friend. I find competition for high scores really motivating 😄&lt;/p&gt;
-
-&lt;p&gt;Yousician isn&amp;rsquo;t a complete replacement for learning an instrument, though. I&amp;rsquo;ve been learning songs on my own, following YouTube courses, and have my first lesson with a local guitar teacher next week.&lt;/p&gt;
-
-&lt;p&gt;After discussing with some friends, I started a Slack for musicians to collaborate and learn from each other. If you&amp;rsquo;re interested, &lt;a href="mailto:ash@ashfurrow.com"&gt;email me&lt;/a&gt;. It&amp;rsquo;s been nice to have a place to chat and encourage each other.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been recording myself as well. Mostly for my own sake and to share with the Slack, but I&amp;rsquo;ve also sent it to my mom (who is very proud of me).&lt;/p&gt;
-
-
-
-&lt;iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312605091&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
-
-
-
-&lt;p&gt;So yeah, pretty excited. Guitar has become a daily activity for me, something I look forward to doing and something that helps me relax. I&amp;rsquo;d highly recommend it 👍&lt;/p&gt;
-</description>
-      <pubDate>Fri, 24 Mar 2017 15:07:52 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/guitar-update/</guid>
     </item>
   </channel>
 </rss>
