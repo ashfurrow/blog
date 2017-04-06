@@ -3916,6 +3916,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://ashfurrow.com/blog/update-on-medication-changes/</loc>
+    <lastmod>2017-04-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://ashfurrow.com/img/blog/update-on-medication-changes/background.jpg</image:loc>
+    </image:image>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://ashfurrow.com/books/</loc>
     <lastmod>2017-04-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
