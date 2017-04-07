@@ -17,7 +17,7 @@
     <author>
       <name>Ash Furrow</name>
     </author>
-    <content type="html">&lt;p&gt;So I&amp;rsquo;ve been &lt;a href="http://localhost:4567/blog/mastodon-administration/"&gt;running an instance&lt;/a&gt; of &lt;a href="https://github.com/tootsuite/mastodon"&gt;Mastodon&lt;/a&gt; this week. It&amp;rsquo;s be a fun adventure! I&amp;rsquo;m still not sure where it&amp;rsquo;ll end up but I&amp;rsquo;m learning a tonne. So let&amp;rsquo;s share some of what I&amp;rsquo;ve learned by running Mastodon on &lt;a href="http://heroku.com"&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;So I&amp;rsquo;ve been &lt;a href="/blog/mastodon-administration/"&gt;running an instance&lt;/a&gt; of &lt;a href="https://github.com/tootsuite/mastodon"&gt;Mastodon&lt;/a&gt; this week. It&amp;rsquo;s be a fun adventure! I&amp;rsquo;m still not sure where it&amp;rsquo;ll end up but I&amp;rsquo;m learning a tonne. So let&amp;rsquo;s share some of what I&amp;rsquo;ve learned by running Mastodon on &lt;a href="http://heroku.com"&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
