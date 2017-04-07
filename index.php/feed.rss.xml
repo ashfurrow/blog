@@ -6,6 +6,87 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Running Mastodon on Heroku</title>
+      <link>https://ashfurrow.com/blog/running-mastodon-on-heroku/</link>
+      <description>&lt;p&gt;So I&amp;rsquo;ve been &lt;a href="http://localhost:4567/blog/mastodon-administration/"&gt;running an instance&lt;/a&gt; of &lt;a href="https://github.com/tootsuite/mastodon"&gt;Mastodon&lt;/a&gt; this week. It&amp;rsquo;s be a fun adventure! I&amp;rsquo;m still not sure where it&amp;rsquo;ll end up but I&amp;rsquo;m learning a tonne. So let&amp;rsquo;s share some of what I&amp;rsquo;ve learned by running Mastodon on &lt;a href="http://heroku.com"&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/info.png" alt="Extended info" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;First, a few things. I &lt;em&gt;love&lt;/em&gt; Heroku; it&amp;rsquo;s server administration that&amp;rsquo;s friendly to iOS developers like me who don&amp;rsquo;t know anything about server administration. But! Heroku support for Mastodon is  e x p e r i m e n t a l . That&amp;rsquo;s fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I&amp;rsquo;ve run into.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1007"&gt;&lt;strong&gt;Animated GIF upload doesn&amp;rsquo;t work&lt;/strong&gt;&lt;/a&gt;. GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you &lt;em&gt;just&lt;/em&gt; over the 300MB slug size on Heroku.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1119"&gt;&lt;strong&gt;Streaming API doesn&amp;rsquo;t work&lt;/strong&gt;&lt;/a&gt;. Not sure of the cause yet.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now to the good stuff: how to get Mastodon set up. &lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/resources.png" alt="Heroku Resources" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;The initial deploy (use the &amp;ldquo;Deploy to Heroku&amp;rdquo; button &lt;a href="https://github.com/tootsuite/mastodon#deployment-on-heroku-experimental"&gt;in the readme&lt;/a&gt; is going to install two dynos, Redis, and Postgres. You &lt;a href="https://github.com/tootsuite/mastodon/blob/4e41cd9ab8f51120d558b70528b163c98993be53/config/puma.rb#L11-L13"&gt;only need the first Dyno&lt;/a&gt;, the web one.&lt;/p&gt;
+
+&lt;p&gt;I registered a domain (&lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt;) with &lt;a href="https://www.hover.com"&gt;Hover&lt;/a&gt; and used Heroku&amp;rsquo;s SSL support to serve the Mastodon instance over HTTPS. It&amp;rsquo;s 2017, after all.&lt;/p&gt;
+
+&lt;p&gt;On Heroku, your limiting resource is going to be RAM. I&amp;rsquo;m using one 2x Dyno for the extra RAM, and I&amp;rsquo;ve set the &lt;code&gt;WEB_CONCURRENCY&lt;/code&gt; environmental variable to &lt;code&gt;1&lt;/code&gt; to avoid scaling issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://elements.heroku.com/addons/papertrail"&gt;Papertrail&lt;/a&gt; is logging service. I tried their free tier but exceeded my daily log limit the second day.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/postgres.png" alt="Postgres" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;I had to &lt;a href="https://devcenter.heroku.com/articles/upgrading-heroku-postgres-databases"&gt;upgrade my Postgres instance&lt;/a&gt; almost immediately. It&amp;rsquo;s not difficult to do, which was nice. Heroku makes a lot of this &lt;em&gt;super&lt;/em&gt; easy.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/redis.png" alt="Redis" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;I also needed to upgrade my Redis instance almost immediately, to avoid &lt;a href="https://github.com/tootsuite/mastodon/issues/957"&gt;500 errors&lt;/a&gt;. Redis was the first scaling problem I hit. It looks like a super-useful service, but is priced really aggressively on Heroku. I understand why – Heroku is a business trying to make money – but it&amp;rsquo;s frustrating that costs double for a few extra megabytes of RAM. Or maybe I just don&amp;rsquo;t understand how Redis works &lt;code&gt;¯\_(ツ)_/¯&lt;/code&gt;.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/scheduler.png" alt="Scheduler for cron jobs" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;I added a &lt;a href="https://elements.heroku.com/addons/scheduler"&gt;scheduler&lt;/a&gt; add-on for some of the &lt;a href="https://github.com/tootsuite/mastodon#tasks"&gt;cron tasks&lt;/a&gt;. I&amp;rsquo;m still experimenting with the task frequency, but you can see what works for you.&lt;/p&gt;
+
+&lt;p&gt;Okay, so that&amp;rsquo;s the Heroku setup. I also used &lt;a href="https://www.mailgun.com"&gt;Mailgun&lt;/a&gt; for email sending (the free tier is fine) and &lt;a href="https://aws.amazon.com"&gt;AWS S3&lt;/a&gt; for storing media that gets uploaded (dunno costs there yet). Additionally, I&amp;rsquo;m using free &lt;a href="https://www.cloudflare.com"&gt;Cloudflare&lt;/a&gt; as a CDN in front of S3, and to host the S3 bucket on its own domain (static.mastodon.technology) that has a Cloudflare SSL certificate. This is important. Without HTTPS support for your media uploads, you&amp;rsquo;ll be serving mixed content (HTTP assets on an HTTPS page). This causes problems on iOS and some web browsers.&lt;/p&gt;
+
+&lt;p&gt;The worst part was just waiting for the DNS changes to propagate. I&amp;rsquo;m using Cloudflare for DNS, and pointed the domain name servers from Hover to use Cloudflare.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Even after all this configuration, I&amp;rsquo;m still running into performance issues. The site completely fell over this morning and I have no idea why.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/perf.png" alt="Performance" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;It leads me to wonder how long I can keep this up, but like I said, life is an experiment and I&amp;rsquo;m just rolling with it.&lt;/p&gt;
+
+&lt;p&gt;Heroku support is experimental, and like Mastodon, it&amp;rsquo;s continuing to evolve. If you have small needs, I&amp;rsquo;d say go for it. If you want to be the next big instance, you&amp;rsquo;ll need to invest in a more sophisticated hosting solution. I looked at Digital Ocean for using the Docker image but quickly got in over my head; Heroku is it for me.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 07 Apr 2017 15:50:03 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/running-mastodon-on-heroku/</guid>
+    </item>
+    <item>
       <title>Update on Medication Changes</title>
       <link>https://ashfurrow.com/blog/update-on-medication-changes/</link>
       <description>&lt;p&gt;I&amp;rsquo;ve been open about my &lt;a href="/blog/good-bad-days/"&gt;recent changes to antidepressant medications&lt;/a&gt; and I wanted to provide an update about how things are going. In a word: well. Things are going well. A lot better than they&amp;rsquo;ve gone in a long time, in fact. I attribute this improvement to a recent change in medication.&lt;/p&gt;
@@ -162,54 +243,6 @@
 </description>
       <pubDate>Sat, 01 Apr 2017 15:06:24 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/swift-playground-books/</guid>
-    </item>
-    <item>
-      <title>Pocket Cruelty</title>
-      <link>https://ashfurrow.com/blog/pocket-cruelty/</link>
-      <description>&lt;p&gt;Last year when Pokémon Go came out, cultural critic Jonathan McIntosh did what cultural critics do: he pointed out an uncomfortable truth.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Surprisingly unpopular opinion of the day: I find it unsettling that the ultimate goal of Pokémon Go is to train your cute pets to fight.&lt;/p&gt;&amp;mdash; Jonathan McIntosh (@radicalbytes) &lt;a href="https://twitter.com/radicalbytes/status/754147540149219329"&gt;July 16, 2016&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Pokémon was a huge part of my childhood – augmented by the nominal determinism of being named &amp;ldquo;Ash&amp;rdquo; – but I don&amp;rsquo;t deny that it&amp;rsquo;s cruel to capture animals and force them to fight. I mean, come on people. It&amp;rsquo;s a bit obvious, if (as McIntosh points out) surprisingly unpopular.&lt;/p&gt;
-
-&lt;p&gt;Of course, the internet being what it is, McIntosh got a bunch of harsh blowback because people are uncomfortable with the idea that something they like could be problematic. &lt;/p&gt;
-
-&lt;p&gt;So let&amp;rsquo;s take a detour and talk about my new favourite show: Rick and Morty.&lt;/p&gt;
-
-&lt;p&gt;Ricky is a drunk genius who takes his adolescent grandson Morty on adventures through the multiverse. There are actually an infinite amount of Ricks and Mortys, since there are an infinite number of dimensions to exist in. They interact with these alternate versions of themselves and get up to hijinks and in to trouble.&lt;/p&gt;
-
-&lt;p&gt;So the show, during a hiatus between seasons, released a game that parodied Pokémon: &lt;a href="https://itunes.apple.com/us/app/rick-and-morty-pocket-mortys/id992640880?mt=8"&gt;Pocket Mortys&lt;/a&gt;. You play as Rick to collect, train, and fight Mortys. Say again: the game is cockfighting, but with your grandson. And it&amp;rsquo;s super fun.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/pocket-cruelty/pm.png" alt="Pocket Morty's Screenshot" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;No one on the Internet seems to have a problem with this uncomfortable truth, even though the game explicitly highlights the same truth that McIntosh did. During fights, Mortys will scream in pain, they&amp;rsquo;ll whimper &amp;ldquo;this just seems really cruel&amp;rdquo;, and they&amp;rsquo;ll exclaim &amp;ldquo;I don&amp;rsquo;t want to do this any more!&amp;rdquo; And it&amp;rsquo;s all part of the fun.&lt;/p&gt;
-
-&lt;p&gt;So why does this game get critically reviewed as &amp;ldquo;hilarious&amp;rdquo; and &amp;ldquo;quirky&amp;rdquo; while McIntosh gets threatened on twitter – even when both point out the same reality? &lt;a href="http://www.ign.com/articles/2016/01/12/rick-and-morty-pocket-mortys-review"&gt;Pocket Mortys even gets compared directly to Pokémon&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;In its best moments, Pocket Mortys has a similar feel and tone to its source material.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And no one seems to care that it&amp;rsquo;s pointing out the cruelty. The game is an explicit parody of Pokémon, and readily points out how cruel it is to fight Mortys. By extension, the game highlights how cruel it is to fight Pokémon. Yet there has been no pushback against the creators of Pocket Mortys, while McIntosh gets threatened on twitter for essentially saying the same thing. What&amp;rsquo;s the difference here?&lt;/p&gt;
-
-&lt;p&gt;People are uncomfortable when something they like gets criticized as problematic. Well&amp;hellip; tough. Your &lt;a href="https://medium.com/matter/admit-it-your-fave-is-problematic-2dfa692f557b"&gt;favs are problematic&lt;/a&gt;. Your favourite game? Problematic. Your favourite book? Problematic. &lt;/p&gt;
-
-&lt;p&gt;Deal. With. It. &lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m problematic, you&amp;rsquo;re problematic. Everyone is. We all have blind spots – that doesn&amp;rsquo;t make us bad people, it just makes us human. What makes us good or bad people is how we respond to uncomfortable realizations. What do you do when it&amp;rsquo;s pointed out that your favourite game or show or author is problematic?&lt;/p&gt;
-
-&lt;p&gt;Something I learned from &lt;a href="https://feministfrequency.com"&gt;Feminist Frequency&lt;/a&gt; is to be critical of the media I love. Pocket Mortys is a fun game, and the show is funny as hell, but in some ways it&amp;rsquo;s suuuuuuper problematic. I can enjoy both the game and the show while being critical of them. I swear, it might be uncomfortable at first, but after a while you get used to liking something while recognizing its flaws. &lt;/p&gt;
-
-&lt;p&gt;This kind of critical thinking is useful beyond just media, I would argue it&amp;rsquo;s necessary to be a well-rounded member of society.&lt;/p&gt;
-</description>
-      <pubDate>Thu, 30 Mar 2017 14:05:27 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/pocket-cruelty/</guid>
     </item>
   </channel>
 </rss>
