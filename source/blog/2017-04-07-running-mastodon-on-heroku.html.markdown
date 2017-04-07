@@ -5,7 +5,7 @@ background_image: /img/blog/running-mastodon-on-heroku/background.png
 background_image_source: https://twitter.com/CrookedCosmos/status/850365833448742913
 ---
 
-So I've been [running an instance](http://localhost:4567/blog/mastodon-administration/) of [Mastodon](https://github.com/tootsuite/mastodon) this week. It's be a fun adventure! I'm still not sure where it'll end up but I'm learning a tonne. So let's share some of what I've learned by running Mastodon on [Heroku](http://heroku.com).
+So I've been [running an instance](/blog/mastodon-administration/) of [Mastodon](https://github.com/tootsuite/mastodon) this week. It's be a fun adventure! I'm still not sure where it'll end up but I'm learning a tonne. So let's share some of what I've learned by running Mastodon on [Heroku](http://heroku.com).
 
 (READMORE)
 
