@@ -15,7 +15,7 @@ BEGIN_NARROW
 
 END_NARROW
 
-First, a few things. I _love_ Heroku; it's server administration that's friendly to iOS developers. But! Heroku support for Mastodon is  e x p e r i m e n t a l . That's fine, this whole things is an experiment! Life is an experiment. And like life, there are some issues I've run into.
+First, a few things. I _love_ Heroku; it's server administration that's friendly to iOS developers like me who don't know anything about server administration. But! Heroku support for Mastodon is  e x p e r i m e n t a l . That's fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I've run into.
 
 - [**Animated GIF upload doesn't work**](https://github.com/tootsuite/mastodon/issues/1007). GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you _just_ over the 300MB slug size on Heroku.
 - [**Streaming API doesn't work**](https://github.com/tootsuite/mastodon/issues/1119). Not sure of the cause yet.
@@ -52,15 +52,15 @@ END_WIDE
 
 I also needed to upgrade my Redis instance almost immediately, to avoid [500 errors](https://github.com/tootsuite/mastodon/issues/957). Redis was the first scaling problem I hit. It looks like a super-useful service, but is priced really aggressively on Heroku. I understand why – Heroku is a business trying to make money – but it's frustrating that costs double for a few extra megabytes of RAM. Or maybe I just don't understand how Redis works `¯\_(ツ)_/¯`.
 
-BEGIN_NARROW
+BEGIN_WIDE
 
 ![Scheduler for cron jobs](/img/blog/running-mastodon-on-heroku/scheduler.png)
 
-END_NARROW
+END_WIDE
 
 I added a [scheduler](https://elements.heroku.com/addons/scheduler) add-on for some of the [cron tasks](https://github.com/tootsuite/mastodon#tasks). I'm still experimenting with the task frequency, but you can see what works for you.
 
-Okay, so that's the Heroku setup. I also used [Mailgun](https://www.mailgun.com) for email sending (the free tier is fine) and [AWS S3](https://aws.amazon.com) for storing media that gets uploaded (dunno costs there yet). Additionally, I'm using free [Cloudflare](https://www.cloudflare.com) as a CDN in front of S3, and to host the S3 bucket on its own domain (static.mastodon.techology) that has a Cloudflare SSL certificate. This is important. Without HTTPS support for your media uploads, you'll be serving mixed content (HTTP assets on an HTTPS page). This causes problems on iOS and some web browsers.
+Okay, so that's the Heroku setup. I also used [Mailgun](https://www.mailgun.com) for email sending (the free tier is fine) and [AWS S3](https://aws.amazon.com) for storing media that gets uploaded (dunno costs there yet). Additionally, I'm using free [Cloudflare](https://www.cloudflare.com) as a CDN in front of S3, and to host the S3 bucket on its own domain (static.mastodon.technology) that has a Cloudflare SSL certificate. This is important. Without HTTPS support for your media uploads, you'll be serving mixed content (HTTP assets on an HTTPS page). This causes problems on iOS and some web browsers.
 
 The worst part was just waiting for the DNS changes to propagate. I'm using Cloudflare for DNS, and pointed the domain name servers from Hover to use Cloudflare.
 
