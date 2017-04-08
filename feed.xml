@@ -19,6 +19,8 @@
     </author>
     <content type="html">&lt;p&gt;So I&amp;rsquo;ve been &lt;a href="/blog/mastodon-administration/"&gt;running an instance&lt;/a&gt; of &lt;a href="https://github.com/tootsuite/mastodon"&gt;Mastodon&lt;/a&gt; this week. It&amp;rsquo;s be a fun adventure! I&amp;rsquo;m still not sure where it&amp;rsquo;ll end up but I&amp;rsquo;m learning a tonne. So let&amp;rsquo;s share some of what I&amp;rsquo;ve learned by running Mastodon on &lt;a href="http://heroku.com"&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
 
+&lt;p&gt;If you&amp;rsquo;d like to help out with some of the hosting costs, please head on over &lt;a href="https://patreon.com/user?u=3581610"&gt;to my Patreon&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;&lt;/p&gt;
 
 
@@ -196,7 +198,7 @@
 
 &lt;p&gt;I am 100% on board with respecting people, but I don&amp;rsquo;t want my presence to make anyone feel like their space is not theirs. So I decided I&amp;rsquo;d try to run my own instance for tech folks like me. If you&amp;rsquo;re keen, head over to &lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt; and sign up.&lt;/p&gt;
 
-&lt;p&gt;Setting up the instance took a few hours of configuration (I&amp;rsquo;m not that great at this) and some email providers aren&amp;rsquo;t letting the confirmation emails through (if you don&amp;rsquo;t get an email, &lt;a href="mailto:ash@ashfurrow.com"&gt;email me&lt;/a&gt; and I&amp;rsquo;ll get you confirmed). I put it on a Heroku hobby plan, so we&amp;rsquo;ll see how things go. If costs become a burden, I&amp;rsquo;ll throw up a Patreon or something. &lt;/p&gt;
+&lt;p&gt;Setting up the instance took a few hours of configuration (I&amp;rsquo;m not that great at this) and some email providers aren&amp;rsquo;t letting the confirmation emails through (if you don&amp;rsquo;t get an email, &lt;a href="mailto:ash@ashfurrow.com"&gt;email me&lt;/a&gt; and I&amp;rsquo;ll get you confirmed). I put it on a Heroku hobby plan, so we&amp;rsquo;ll see how things go. If costs become a burden, I&amp;rsquo;ll throw up a Patreon or something. (&lt;strong&gt;Update&lt;/strong&gt;: I &lt;a href="https://patreon.com/user?u=3581610"&gt;did start a Patreon&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;I won&amp;rsquo;t promise that this instance will be around forever, or ever around next week, but I think that Mastodon&amp;rsquo;s distributed nature makes it a great bet for the future of microblogging (&lt;a href="http://micro.blog"&gt;micro.blog&lt;/a&gt; looks promising too). Come hang out, help me build an inclusive community, and have fun. &lt;/p&gt;
 </content>
