@@ -21,6 +21,6 @@ Well, I wasn't around too long in [Awoo](https://awoo.space) before noticing tha
 
 I am 100% on board with respecting people, but I don't want my presence to make anyone feel like their space is not theirs. So I decided I'd try to run my own instance for tech folks like me. If you're keen, head over to [mastodon.technology](https://mastodon.technology) and sign up.
 
-Setting up the instance took a few hours of configuration (I'm not that great at this) and some email providers aren't letting the confirmation emails through (if you don't get an email, [email me](mailto:ash@ashfurrow.com) and I'll get you confirmed). I put it on a Heroku hobby plan, so we'll see how things go. If costs become a burden, I'll throw up a Patreon or something. 
+Setting up the instance took a few hours of configuration (I'm not that great at this) and some email providers aren't letting the confirmation emails through (if you don't get an email, [email me](mailto:ash@ashfurrow.com) and I'll get you confirmed). I put it on a Heroku hobby plan, so we'll see how things go. If costs become a burden, I'll throw up a Patreon or something. (**Update**: I [did start a Patreon](https://patreon.com/user?u=3581610).)
 
 I won't promise that this instance will be around forever, or ever around next week, but I think that Mastodon's distributed nature makes it a great bet for the future of microblogging ([micro.blog](http://micro.blog) looks promising too). Come hang out, help me build an inclusive community, and have fun. 

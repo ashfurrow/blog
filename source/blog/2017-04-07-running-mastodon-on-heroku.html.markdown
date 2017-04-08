@@ -7,6 +7,8 @@ background_image_source: https://twitter.com/CrookedCosmos/status/85036583344874
 
 So I've been [running an instance](/blog/mastodon-administration/) of [Mastodon](https://github.com/tootsuite/mastodon) this week. It's be a fun adventure! I'm still not sure where it'll end up but I'm learning a tonne. So let's share some of what I've learned by running Mastodon on [Heroku](http://heroku.com).
 
+If you'd like to help out with some of the hosting costs, please head on over [to my Patreon](https://patreon.com/user?u=3581610).
+
 (READMORE)
 
 BEGIN_NARROW
