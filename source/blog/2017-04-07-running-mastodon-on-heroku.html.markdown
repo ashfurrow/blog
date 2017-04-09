@@ -19,8 +19,10 @@ END_NARROW
 
 First, a few things. I _love_ Heroku; it's server administration that's friendly to iOS developers like me who don't know anything about server administration. But! Heroku support for Mastodon is  e x p e r i m e n t a l . That's fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I've run into.
 
-- [**Animated GIF upload doesn't work**](https://github.com/tootsuite/mastodon/issues/1007). GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you _just_ over the 300MB slug size on Heroku.
-- [**Streaming API doesn't work**](https://github.com/tootsuite/mastodon/issues/1119). Not sure of the cause yet.
+- [**~~Animated GIF upload doesn't work~~**](https://github.com/tootsuite/mastodon/issues/1007). GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you _just_ over the 300MB slug size on Heroku.
+- [**~~Streaming API doesn't work~~**](https://github.com/tootsuite/mastodon/issues/1119). Not sure of the cause yet.
+
+(**Edit**: These are being addressed in more long-term ways, but for now I've gotten them to work. Check out the issues for more details.)
 
 Now to the good stuff: how to get Mastodon set up. 
 
