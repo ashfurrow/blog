@@ -23,9 +23,11 @@
 &lt;p&gt;First, a few things. I &lt;em&gt;love&lt;/em&gt; Heroku; it&amp;rsquo;s server administration that&amp;rsquo;s friendly to iOS developers like me who don&amp;rsquo;t know anything about server administration. But! Heroku support for Mastodon is  e x p e r i m e n t a l . That&amp;rsquo;s fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I&amp;rsquo;ve run into.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1007"&gt;&lt;strong&gt;Animated GIF upload doesn&amp;rsquo;t work&lt;/strong&gt;&lt;/a&gt;. GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you &lt;em&gt;just&lt;/em&gt; over the 300MB slug size on Heroku.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1119"&gt;&lt;strong&gt;Streaming API doesn&amp;rsquo;t work&lt;/strong&gt;&lt;/a&gt;. Not sure of the cause yet.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1007"&gt;&lt;strong&gt;&lt;del&gt;Animated GIF upload doesn&amp;rsquo;t work&lt;/del&gt;&lt;/strong&gt;&lt;/a&gt;. GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you &lt;em&gt;just&lt;/em&gt; over the 300MB slug size on Heroku.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1119"&gt;&lt;strong&gt;&lt;del&gt;Streaming API doesn&amp;rsquo;t work&lt;/del&gt;&lt;/strong&gt;&lt;/a&gt;. Not sure of the cause yet.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;(&lt;strong&gt;Edit&lt;/strong&gt;: These are being addressed in more long-term ways, but for now I&amp;rsquo;ve gotten them to work. Check out the issues for more details.)&lt;/p&gt;
 
 &lt;p&gt;Now to the good stuff: how to get Mastodon set up. &lt;/p&gt;
 
