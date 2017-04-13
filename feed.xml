@@ -4,10 +4,61 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-04-07T15:50:03+00:00</updated>
+  <updated>2017-04-13T13:57:45+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Mastodon Hosting Migration Plan</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/mastodon-hosting-migration-plan/"/>
+    <id>https://ashfurrow.com/blog/mastodon-hosting-migration-plan/</id>
+    <published>2017-04-13T13:57:45+00:00</published>
+    <updated>2017-04-13T13:57:45+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;I&amp;rsquo;ve been &lt;a href="/blog/running-mastodon-on-heroku/"&gt;running Mastodon on Heroku&lt;/a&gt; for about a week now, and it&amp;rsquo;s been a blast! Heroku is really convenient, but it&amp;rsquo;s also expensive. So I&amp;rsquo;m looking at an alternative hosting plan. Because I&amp;rsquo;m learning as I go along, I wanted to write a post about my migration plan, to hopefully get feedback from people who&amp;rsquo;ve done this kind of thing before. &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start with the current infrastructure: two Heroku apps, one for streaming and one for everything else. Estimated costs are ~$150/month. I don&amp;rsquo;t know what to expect from AWS, but from my experience I&amp;rsquo;m guess that it&amp;rsquo;ll be a lot less than I&amp;rsquo;m paying now. Additionally, as the community scales up, I&amp;rsquo;ll be able to more easily scale my instance.&lt;/p&gt;
+
+&lt;p&gt;I considered Digital Ocean, since it would probably be even cheaper, but I would have to do a lot more to administer Postgres and Redis instances, which seems boring and tedious. I&amp;rsquo;d rather use RDS and ElastiCache respectively for the convenience.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-hosting-migration-plan/heroku.png" alt="Current Heroku Infrastructure" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;What I&amp;rsquo;m thinking of is an AWS infrastructure that replaces Heroku Add-Ons for AWS services. I figure if I&amp;rsquo;m getting into AWS hosting I may as well dive right in, to get the most advantage from fully participating in their ecosystem.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-hosting-migration-plan/aws.png" alt="Proposed AWS Infrastructure" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;(Note that both infrastructures use S3 for static asset hosting, which is not shown.)&lt;/p&gt;
+
+&lt;p&gt;So the big question is, how do I go from one to the other? Well here&amp;rsquo;s my plan:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Migrate Postgres from a Heroku Add-On to AWS&amp;rsquo; RDS service&lt;/strong&gt;. This is the highest priority since Heroku&amp;rsquo;s Postgres Add-On is currently the highest cost. I expect some downtime as I put the existing app in maintenance mode, export the database, and import it into RDS. I&amp;rsquo;ll do a dry-run first to make sure things work; maybe I&amp;rsquo;ll set up a fresh Heroku app that points to the new database. The nice thing is, if things go wrong I can just point back to the existing database. Once I verify things are working (maybe give it a few days?) I&amp;rsquo;ll retire the existing database Add-On.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Migrate Redis from a Heroku &lt;a href="https://redislabs.com/products/redis-cloud/"&gt;Redis Cloud&lt;/a&gt; Add-On to AWS&amp;rsquo; ElastiCache service&lt;/strong&gt;. This is a lower priority because I expect it&amp;rsquo;ll take some figuring out, and there&amp;rsquo;ll be some downtime. My plan is to set up ElastiCache to replicate the existing store, put the app into maintenance mode, give the new store a chance to catch up, and switch the app over to the new store. Let me know if you&amp;rsquo;ve done this before and see any problems with this.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Migrate from Heroku Dynos to AWS EC2&lt;/strong&gt;. This is the biggest question mark for me. It&amp;rsquo;s going to require a lot of effort because I&amp;rsquo;ve not run a server like this before. Basically I&amp;rsquo;ll get an EC2 running the web server, streaming server, and Sidekiq jobs, make sure it&amp;rsquo;s working, and then switch the DNS to slowly move everyone over to the new server. Once DNS changes have fully propagated, retire the Dynos. If I have to, I&amp;rsquo;ll separate out the web, streaming, and Sidekiq responsibilities into separate instances. Let me know if this is something I should do from the start.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deal with the little things&lt;/strong&gt;. Stuff like setting up cron jobs, making sure logging is working, that kind of stuff.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Aaaaaaand I think that&amp;rsquo;s it. Hopefully minimal downtime.&lt;/p&gt;
+
+&lt;p&gt;This is a learning experience for me. It seemed really scary at first but writing it out made things make more sense.&lt;/p&gt;
+
+&lt;p&gt;I reckon this will take a solid weekend of work, but I&amp;rsquo;m happy to do it because a) I really like Mastodon and contributing to a distributed community is rewarding, and b) I&amp;rsquo;ll learn a tonne, which is its own reward.&lt;/p&gt;
+
+&lt;p&gt;And again, any advice you have would be welcome. &lt;a href="http://mastodon.technology/@ashfurrow"&gt;Toot me&lt;/a&gt; or &lt;a href="mailto:ash@ashfurrow.com"&gt;send me an email&lt;/a&gt; if you have any advice, and I&amp;rsquo;ll amend my post.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Running Mastodon on Heroku</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/running-mastodon-on-heroku/"/>
@@ -229,50 +280,6 @@
 &lt;p&gt;It&amp;rsquo;s been really hard to keep this under wraps, partially because I&amp;rsquo;m so excited about it and partially because people keep asking me for a Swift version of my existing &lt;a href="https://leanpub.com/iosfrp"&gt;Functional Reactive Programming on iOS book&lt;/a&gt;. Well it&amp;rsquo;s finally here.&lt;/p&gt;
 
 &lt;p&gt;The book is much more than I could have accomplished on my own, from a team that&amp;rsquo;s used to writing top-notch tutorials. I&amp;rsquo;m very proud of what we accomplished, and I hope you enjoy reading it as much as we enjoyed making it.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Swift Playground Books</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/swift-playground-books/"/>
-    <id>https://ashfurrow.com/blog/swift-playground-books/</id>
-    <published>2017-04-01T15:06:24+00:00</published>
-    <updated>2017-04-01T15:06:24+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Some time ago I wrote about &lt;a href="/blog/building-swift-playground-books/"&gt;Swift Playground Books&lt;/a&gt; and introduced &lt;a href="https://github.com/playgroundbooks/playgroundbook"&gt;a tool&lt;/a&gt; to create them from a regular Xcode playground. There&amp;rsquo;s been a lot of work done to the tool by our wonderful contributors, and it&amp;rsquo;s time for an update.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;As a quick overview of &lt;a href="https://developer.apple.com/swift/playgrounds/"&gt;Swift Playground Books&lt;/a&gt; (for iPad), let&amp;rsquo;s explore what they look like on the file system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/swift-playground-books/structure.png" alt="Structure of a playground book source" /&gt;&lt;/p&gt;
-
-&lt;p&gt;This structure (documented &lt;a href="https://developer.apple.com/library/prerelease/content/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW4"&gt;here&lt;/a&gt;) must be strictly adhered to or else the playground book won&amp;rsquo;t work on the iPad. Creating this directory structure and the corresponding manifest plists is tedious, which is why I originally created the tool. Now, compared to the original post, things are much easier to accomplish.&lt;/p&gt;
-
-&lt;p&gt;The original format had users writing triple-slash &lt;code&gt;///&lt;/code&gt; comments to delineate playground book pages. Now, chapters are divided into individual Xcode playgrounds.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/swift-playground-books/new_structure.png" alt="Structure of a rendered playground book" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Individual pages within a chapter are represented by Playground pages within Xcode. Use the File -&amp;gt; New menu to add pages. Make sure that the page names are lexicographically ordered in the way you want them to appear in the book.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/swift-playground-books/new_page.png" alt="Adding a new page" /&gt;&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s also some cool things you can do with special comments.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="c1"&gt;//#-hidden-code&lt;/span&gt;
-&lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"This code gets executed but isn't visible in the book."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="c1"&gt;//#-end-hidden-code&lt;/span&gt;
-
-&lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="cm"&gt;/*#-editable-code*/&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;funcName&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="cm"&gt;/*#-end-editable-code*/&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"The user will be prompted to edit &amp;lt;#funcName#&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"This yields a compiler warning in Xcode ¯&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="s"&gt;_(ツ)_/¯"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Play around and see what you think! For more info, check out &lt;a href="https://github.com/playgroundbooks/example"&gt;the example repository&lt;/a&gt;. I&amp;rsquo;m sure there are bugs in the tool, so if you run into problems please &lt;a href="https://github.com/ashfurrow/playgroundbook/issues/new"&gt;open an issue&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;I love open source, and I&amp;rsquo;m glad I built this tool (even if I never did end up using it myself). Several students have contacted me for assistance when using it to apply for WWDC scholarships, and it makes my heart swell knowing that people are using my software to advance their own careers. I couldn&amp;rsquo;t be happier with the small community that&amp;rsquo;s growing around the tool.&lt;/p&gt;
 </content>
   </entry>
 </feed>
