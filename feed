@@ -6,6 +6,36 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Moving Mastodon to Digital Ocean</title>
+      <link>https://ashfurrow.com/blog/moving-mastodon-to-digital-ocean/</link>
+      <description>&lt;p&gt;This morning &lt;a href="/blog/mastodon-hosting-migration-plan/"&gt;I wrote about&lt;/a&gt; my plans to move from hosting &lt;a href="https://mastodon.technology"&gt;my mastodon instance&lt;/a&gt; on Heroku to hosting it on AWS. Well I got some feedback, and I did some thinking, and I changed my plan, and then I actually did the whole thing! I&amp;rsquo;m now hosting on &lt;a href="https://m.do.co/c/4a83a8a7aedf"&gt;Digital Ocean&lt;/a&gt; (referral link) and I kind of love it.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;My primary reason for moving hosts was cost. I really like Heroku, but you pay a premium for the convenience of it. That&amp;rsquo;s why I planned to switch to AWS, but &lt;em&gt;turns out&lt;/em&gt; you can end up paying a lot for convenience on AWS, too. I found there were comparable costs for Redis and Postgres services between Heroku and AWS, the those were the two things I was expecting to save the most on.&lt;/p&gt;
+
+&lt;p&gt;I know that you save money when you roll up your sleeves and start administer your own database, but I didn&amp;rsquo;t realize how much. Luckily, the Mastodon developers know administrating stuff is hard, so they have support for &lt;a href="https://www.docker.com"&gt;Docker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Docker is &lt;em&gt;like&lt;/em&gt; a virtual machine (don&amp;rsquo;t @ me) and the Mastodon developers include what are basically recipes for Docker containers to be built from, and to run from. Combined with &lt;a href="http://digitalmind.io/post/deploying-mastodon-on-digital-ocean"&gt;this blog post&lt;/a&gt;, I was able to get a test instance of Mastodon up within a half hour. &lt;/p&gt;
+
+&lt;p&gt;Which, wow, that amazed me. I&amp;rsquo;ve historically had a lot of trouble deploying stuff, and this was amazing. I couldn&amp;rsquo;t believe how quickly I had something working. But enough gushing over Docker.&lt;/p&gt;
+
+&lt;p&gt;I originally had a complicated migration strategy. Originally. Then, instead of doing a bunch of complicated configuration to get zero-or-near-zero downtime, I just took the instance down. The whole process took twenty minutes, and would have been shorter but I ran into problems importing the Postgres database backup. &lt;/p&gt;
+
+&lt;p&gt;Things went well! I&amp;rsquo;ve got SSL set up like before, and also gained IPv6 support. Somehow, I guess, I lost the Redis database? I&amp;rsquo;m not sure, but things are working well enough that I&amp;rsquo;m not going to worry about it.&lt;/p&gt;
+
+&lt;p&gt;So how are things working? Well, I don&amp;rsquo;t have a response time graph anymore but interactions feel a little slower. CPU utilization is peaking at 30%, and RAM is near 30% as well.&lt;/p&gt;
+
+&lt;p&gt;So what about the costs? Well, I&amp;rsquo;m currently running on a $40/month virtual machine, plus some backup, S3, and Mailgun costs, so I&amp;rsquo;m pegging it at $50–60, or about a third of what I was paying on Heroku. The VM has 4GB of RAM, 2 virtual CPUs, 30GB of SSD space, and 4TB of network transfer a month. Not bad! &lt;/p&gt;
+
+&lt;p&gt;The constellation of Heroku Dynos and Add-Ons has been reduced to one virtual computer running contains each for Sidekiq, Rails-on-Puma, Redis, and Postgres. Everything is stored to the main disk but I may take a look at Digital Ocean&amp;rsquo;s dedicated storage volumes soon.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to leave it running as-is and look at tuning or reducing costs until I have a solid baseline of how things are working. I kind of miss my Papertrail logs and my response time graphs, so I&amp;rsquo;ll probably customize the code a bit. &lt;/p&gt;
+</description>
+      <pubDate>Fri, 14 Apr 2017 00:14:01 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/moving-mastodon-to-digital-ocean/</guid>
+    </item>
+    <item>
       <title>Mastodon Hosting Migration Plan</title>
       <link>https://ashfurrow.com/blog/mastodon-hosting-migration-plan/</link>
       <description>&lt;p&gt;I&amp;rsquo;ve been &lt;a href="/blog/running-mastodon-on-heroku/"&gt;running Mastodon on Heroku&lt;/a&gt; for about a week now, and it&amp;rsquo;s been a blast! Heroku is really convenient, but it&amp;rsquo;s also expensive. So I&amp;rsquo;m looking at an alternative hosting plan. Because I&amp;rsquo;m learning as I go along, I wanted to write a post about my migration plan, to hopefully get feedback from people who&amp;rsquo;ve done this kind of thing before. &lt;/p&gt;
@@ -232,28 +262,6 @@
 </description>
       <pubDate>Wed, 05 Apr 2017 01:11:09 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/mastodon/</guid>
-    </item>
-    <item>
-      <title>RxSwift Book Announcement</title>
-      <link>https://ashfurrow.com/blog/rxswift-book-announcement/</link>
-      <description>&lt;p&gt;Well well well, look what we have here. After months of toiling in secret, I can finally announce that I&amp;rsquo;ve helped the &lt;a href="https://raywenderlich.com"&gt;Ray Wenderlich team&lt;/a&gt; complete a brand new RxSwift book! &lt;a href="https://store.raywenderlich.com/products/rxswift"&gt;RxSwift: Reactive Programming in Swift&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;a href="https://store.raywenderlich.com/products/rxswift"&gt;&lt;img src="https://ashfurrow.com/img/blog/rxswift-book-announcement/cover.png" alt="Book cover" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;I&amp;rsquo;ve been serving as a technical editor to help make sure the book is correct, awesome, and cohesive. I&amp;rsquo;ve had a blast working with Florent Pillet, Junior Bontognali, Marin Todorov, Scott Gardner, and Chris Belanger.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s been really hard to keep this under wraps, partially because I&amp;rsquo;m so excited about it and partially because people keep asking me for a Swift version of my existing &lt;a href="https://leanpub.com/iosfrp"&gt;Functional Reactive Programming on iOS book&lt;/a&gt;. Well it&amp;rsquo;s finally here.&lt;/p&gt;
-
-&lt;p&gt;The book is much more than I could have accomplished on my own, from a team that&amp;rsquo;s used to writing top-notch tutorials. I&amp;rsquo;m very proud of what we accomplished, and I hope you enjoy reading it as much as we enjoyed making it.&lt;/p&gt;
-</description>
-      <pubDate>Mon, 03 Apr 2017 08:00:00 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/rxswift-book-announcement/</guid>
     </item>
   </channel>
 </rss>
