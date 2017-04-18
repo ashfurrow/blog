@@ -4,10 +4,50 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-04-14T00:14:01+00:00</updated>
+  <updated>2017-04-17T23:15:17+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>The Web and Mastodon</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/the-web-and-mastodon/"/>
+    <id>https://ashfurrow.com/blog/the-web-and-mastodon/</id>
+    <published>2017-04-17T23:15:17+00:00</published>
+    <updated>2017-04-17T23:15:17+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;I read a &lt;a href="https://medium.com/glitch/the-web-was-supposed-to-be-a-thing-we-make-c023b6e7f56a"&gt;blog post from Glitch&lt;/a&gt; about their graphic design, and something in it really struck me.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It’s easy to forget in an era of billion-dollar Internet startups that the original vision of the web was that it’s something we make, not just something we consume.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The web: something we make, not just something we consume.&lt;/p&gt;
+
+&lt;p&gt;This hit me because I&amp;rsquo;ve been &lt;a href="https://ashfurrow.com/blog/mastodon/"&gt;running a Mastodon instance&lt;/a&gt; for two weeks. Let me explain. Beyond administering a tech-focused instance, I&amp;rsquo;ve also been contributing to their community with added documentation, new ideas, and code. It&amp;rsquo;s been an incredibly rewarding experience, in large part because of the community. Being a part of Mastodon feels like being a part of something much bigger than just myself.&lt;/p&gt;
+
+&lt;p&gt;Mastodon is the Web at its best. I&amp;rsquo;m building a space, the community is building social norms, it&amp;rsquo;s so participatory and so refreshing and so rewarding. &lt;/p&gt;
+
+&lt;p&gt;But the thing is, I&amp;rsquo;m a bit tired of pundits wringing their hands about Mastodon: &amp;ldquo;will it be a success?&amp;rdquo;, &amp;ldquo;how can it beat Twitter?&amp;rdquo;, blah blah blah. Who cares? &lt;/p&gt;
+
+&lt;p&gt;One article &lt;a href="http://www.zdnet.com/article/is-mastodon-the-new-social-media-star-or-imploding-black-hole/"&gt;cuts to the heart&lt;/a&gt; of pundits&amp;rsquo; problematic hot takes:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;And therein lies the issues for brands who want to join this new network and advertise to the community.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ugh, who cares about brands. We – me and the other Mastodonians – are making something &lt;em&gt;for us&lt;/em&gt; and not for brands. Sorry if that offends.&lt;/p&gt;
+
+&lt;p&gt;Mastodon isn&amp;rsquo;t defined by its relation to Twitter or to Facebook or to Snapchat. It&amp;rsquo;s not trying to be anything other than what it is. The developers are doing this because they like it. The admins are doing this because they like it. The users are doing this because they like it.&lt;/p&gt;
+
+&lt;p&gt;Leave us out of your hot takes, &lt;em&gt;please&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not saying things are perfect – there are tensions and conflicts in any community – but the fediverse feels so much happier and friendly than Twitter has for years. Maybe ever. It&amp;rsquo;s the salad days of Mastodon, just enjoy it! Aww yeah!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Moving Mastodon to Digital Ocean</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/moving-mastodon-to-digital-ocean/"/>
@@ -256,38 +296,6 @@
 &lt;/ul&gt;
 
 &lt;p&gt;If you&amp;rsquo;re interested in helping, let&amp;rsquo;s chat.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Mastodon</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/mastodon/"/>
-    <id>https://ashfurrow.com/blog/mastodon/</id>
-    <published>2017-04-05T01:11:09+00:00</published>
-    <updated>2017-04-05T01:11:09+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;I love Twitter. I have a community there of people I talk with, learn from, it&amp;rsquo;s great. But Twitter also has serious problems that stop everyone from being able to participate in that community. That sucks.&lt;/p&gt;
-
-&lt;p&gt;I was keen on App.net, when it was around. It never really had the chance to get off the ground, I feel, since they tried a pay model.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Enter &lt;a href="https://github.com/tootsuite/mastodon"&gt;Mastodon&lt;/a&gt;, a free-and-open-source distributed microblogging service. Sarah Jeong has great things to say in her article &lt;a href="https://motherboard.vice.com/en_us/article/mastodon-is-like-twitter-without-nazis-so-why-are-we-not-using-it"&gt;&lt;em&gt;Mastodon Is Like Twitter Without Nazis, So Why Are We Not Using It?&lt;/em&gt;&lt;/a&gt; I was intrigued and signed up to one of the more popular instances that Jeong mentioned in her article. &lt;/p&gt;
-
-&lt;p&gt;Well, I wasn&amp;rsquo;t around too long in &lt;a href="https://awoo.space"&gt;Awoo&lt;/a&gt; before noticing that the existing community was starting to feel uncomfortable with the influx of outsiders. One of the posts said:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;While queer furries are the &amp;lsquo;old guard&amp;rsquo; of mastodon.social&amp;hellip; here we run the joint. You are in our house, and we expect safety and calm to be the order of the day here. If you want something more lively or tech-y, find another instance.&lt;/p&gt;
-
-&lt;p&gt;Still wanna stay? If you behave and respect us, you&amp;rsquo;re welcome.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I am 100% on board with respecting people, but I don&amp;rsquo;t want my presence to make anyone feel like their space is not theirs. So I decided I&amp;rsquo;d try to run my own instance for tech folks like me. If you&amp;rsquo;re keen, head over to &lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt; and sign up.&lt;/p&gt;
-
-&lt;p&gt;Setting up the instance took a few hours of configuration (I&amp;rsquo;m not that great at this) and some email providers aren&amp;rsquo;t letting the confirmation emails through (if you don&amp;rsquo;t get an email, &lt;a href="mailto:ash@ashfurrow.com"&gt;email me&lt;/a&gt; and I&amp;rsquo;ll get you confirmed). I put it on a Heroku hobby plan, so we&amp;rsquo;ll see how things go. If costs become a burden, I&amp;rsquo;ll throw up a Patreon or something. (&lt;strong&gt;Update&lt;/strong&gt;: I &lt;a href="https://patreon.com/user?u=3581610"&gt;did start a Patreon&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;I won&amp;rsquo;t promise that this instance will be around forever, or ever around next week, but I think that Mastodon&amp;rsquo;s distributed nature makes it a great bet for the future of microblogging (&lt;a href="http://micro.blog"&gt;micro.blog&lt;/a&gt; looks promising too). Come hang out, help me build an inclusive community, and have fun. &lt;/p&gt;
 </content>
   </entry>
 </feed>
