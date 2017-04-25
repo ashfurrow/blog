@@ -4,10 +4,38 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-04-17T23:15:17+00:00</updated>
+  <updated>2017-04-25T16:49:27+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Contributing to Mastodon</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/contributing-to-mastodon/"/>
+    <id>https://ashfurrow.com/blog/contributing-to-mastodon/</id>
+    <published>2017-04-25T16:49:27+00:00</published>
+    <updated>2017-04-25T16:49:27+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;So Mastodon. Obviously, I&amp;rsquo;m into it. &lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been running an instance for weeks now and it&amp;rsquo;s been great! Some tensions, some conflicts, but overall very rewarding and worth any costs. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.patreon.com/ashfurrow"&gt;My Patreon&lt;/a&gt; to pay for server costs is fully funded, the &lt;a href="/blog/moving-mastodon-to-digital-ocean/"&gt;switch to Digital Ocean&lt;/a&gt; has gone smoothly, and so I&amp;rsquo;ve begun looking for more ways to contribute.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;It’s my birthday, but I got you a present: &lt;a href="https://t.co/Hixblpmg5A"&gt;https://t.co/Hixblpmg5A&lt;/a&gt;&lt;/p&gt;&amp;mdash; Federated Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/853645778463723520"&gt;April 16, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;See, the web is &lt;a href="/blog/the-web-and-mastodon/"&gt;something we create&lt;/a&gt;, and I want to help create Mastodon. Yeah I do that by hosting an instance, but I&amp;rsquo;m a software developer and I love to build things. So I&amp;rsquo;ve been picking off easy issues &lt;a href="https://github.com/tootsuite/mastodon"&gt;on the repo&lt;/a&gt;, gradually moving towards harder ones. I took a look at all &lt;a href="https://github.com/tootsuite/mastodon/pulls?utf8=✓&amp;amp;q=%20author%3Aashfurrow%20"&gt;the issues/pull requests I&amp;rsquo;ve opened&lt;/a&gt;, and wow. I&amp;rsquo;m getting to know the project better and better over time, including things outside the codebase. The creator granted me rights to manage GitHub issues, so I&amp;rsquo;ve been deduplicating bug reports, reviewing pull requests, and labelling issues. It&amp;rsquo;s been great!&lt;/p&gt;
+
+&lt;p&gt;While the developer community has been welcoming, the Mastodon project (and leadership) have been straining under the stress of Mastodon&amp;rsquo;s meteoric rise in popularity. What&amp;rsquo;s nice is that they&amp;rsquo;re being very conscientious and thoughtful about how to address &lt;a href="https://medium.com/@alliethehart/gameingers-are-dead-and-so-is-mastodon-705b535ed616"&gt;concerns from the community&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;While I have lots of experience in open source community management, I&amp;rsquo;ve never led a project operating at this scale, so I&amp;rsquo;m mostly listening and only offering advice where appropriate.  I think this is especially important, as I live many dimensions of privilege, and the project started and continues to be run by many people of marginalized groups. Even the ability to donate my time to Mastodon is a form of privilege, so I&amp;rsquo;m trying to be conscientious of that.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m looking forward to continuing to learn about Rails, React, and the Mastodon community. It&amp;rsquo;s been a blast so far, despite being challenging, and I don&amp;rsquo;t intend to stop any time soon.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>The Web and Mastodon</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/the-web-and-mastodon/"/>
@@ -244,58 +272,6 @@
 &lt;p&gt;For the first time in a while, the things I&amp;rsquo;m &lt;em&gt;excited&lt;/em&gt; to do exceed the number of hours I have to spend on them. I&amp;rsquo;m excited to play guitar, but also excited to write this blog post. I have to pick one, and here we are. &lt;/p&gt;
 
 &lt;p&gt;Oddly enough, it&amp;rsquo;s introducing some FOMO and I&amp;rsquo;m having a hard time dealing with that kind of anxiety. This is progress. Recovery isn&amp;rsquo;t a straight line, and if my recouped energy leads me to a little anxiety around what to spend my time on, well then I&amp;rsquo;ll have to deal with that. No problem.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Mastodon Administration</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/mastodon-administration/"/>
-    <id>https://ashfurrow.com/blog/mastodon-administration/</id>
-    <published>2017-04-05T22:44:43+00:00</published>
-    <updated>2017-04-05T22:44:43+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Yesterday I &lt;a href="/blog/mastodon/"&gt;wrote&lt;/a&gt; about starting my own Mastodon instance. It&amp;rsquo;s like a federated Twitter, and it&amp;rsquo;s really fun.&lt;/p&gt;
-
-&lt;p&gt;I wanted to create a place for tech folks to hang out, but I don&amp;rsquo;t have a lot of experience with server administration. So I chose Heroku. Things have gone&amp;hellip; okay. Mostly good, even.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve run into a number of scaling issues, 500 errors, questions I don&amp;rsquo;t know the answer to, yikes. So I&amp;rsquo;ve spent time searching for answers, scaling up Heroku Dynos, configuring DNS settings, and upgrading Postgres databases. &lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-administration/resources.png" alt="Resources" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;My hope is that these resources will be sufficient for some time while the community scales. I&amp;rsquo;m planning on starting a Patreon to help cover the hosting costs, and maybe even a little of my time. But I don&amp;rsquo;t want to start asking for help unless I&amp;rsquo;m certain that this is something I want to build in the long run.&lt;/p&gt;
-
-&lt;p&gt;Because this has taken time away from the rest of my life. If that cost is largely upfront, with ongoing costs not taking up a lot of time, then that&amp;rsquo;s great. But I can&amp;rsquo;t afford to give dozens of hours a month to this project. If things start looking dire, at least I know who to ask for help 😄&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re interested, here are the metrics for the Heroku app. The red numbers worry me. We&amp;rsquo;ll see how things go. I&amp;rsquo;m thinking of migrating the whole instance over to a Digital Ocean instance, which would bring the costs down considerably, but the limiting factor is my time.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-administration/metrics.png" alt="Metrics" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;At first I was really overwhelmed because things weren&amp;rsquo;t always running perfectly. Then I realized that this is just a process, an experiment, and I should relax. People have been thanking me for setting up the instance, which has felt really nice. Even if this space turns out to be ephemeral, it&amp;rsquo;s still its own community, and creating that community is really rewarding.&lt;/p&gt;
-
-&lt;p&gt;Once I accepted that the instance won&amp;rsquo;t be around forever, that at some point in the future it &lt;em&gt;will&lt;/em&gt; shut down (all websites will eventually), once I accepted that fact, things became a lot less stressful. So what if GIF uploads aren&amp;rsquo;t work, or 2FA is broken? I&amp;rsquo;m opening GitHub issues to ask for help, and I&amp;rsquo;m getting helped. I&amp;rsquo;m contributing back documentation improvements. I&amp;rsquo;m learning a &lt;em&gt;tonne&lt;/em&gt; about how to administer websites through firsthand experience and experimentation. And I&amp;rsquo;m helping contribute to an entire community of online communities.&lt;/p&gt;
-
-&lt;p&gt;So &lt;a href="https://mastodon.technology"&gt;join&lt;/a&gt;, if you like, in a social media experiment and experience. It might not last – but nothing does – and in the mean time, you can have fun and meet new friends. &lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re keen, I&amp;rsquo;m going to need help. Things on my agenda are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;define a code of conduct.&lt;/li&gt;
-&lt;li&gt;help to establish community norms.&lt;/li&gt;
-&lt;li&gt;respond to reported abuses.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you&amp;rsquo;re interested in helping, let&amp;rsquo;s chat.&lt;/p&gt;
 </content>
   </entry>
 </feed>
