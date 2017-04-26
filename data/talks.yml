@@ -1,10 +1,4 @@
 upcoming_talks:
-- name: TBD
-  conference: App Builders
-  url: https://www.appbuilders.ch
-  location: Lausanne, Switzerland
-  dates: April 24–25, 2017
-  image: appbuilders.png
 - name: Building Open Source Communities
   conference: Craft
   url: http://craft-conf.com
@@ -13,6 +7,13 @@ upcoming_talks:
   image: craft.png
 
 past_talks:
+- name: Comparative Asynchronous Programming
+  conference: App Builders
+  url: https://www.appbuilders.ch
+  location: Lausanne, Switzerland
+  dates: April 24–25, 2017
+  image: appbuilders.png
+  hidden: true
 - name: Building Compassionate Software
   conference: RWDevCon
   url: https://www.rwdevcon.com
