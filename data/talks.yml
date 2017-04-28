@@ -14,6 +14,7 @@ past_talks:
   dates: April 24–25, 2017
   image: appbuilders.png
   hidden: true
+  video: https://youtu.be/zBr8Bawe5Pg
 - name: Building Compassionate Software
   conference: RWDevCon
   url: https://www.rwdevcon.com
