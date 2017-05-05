@@ -3,7 +3,7 @@ title: "The Redemption of the Almost-Gamer"
 date: 2014-07-29 00:00
 ---
 
-A few years ago (Jesus – has it been that long?), I wrote a blog post about being an " [almost gamer](/blog/the-joys-and-sorrows-of-being-an-almost-gamer)", in which I discussed something that John Siracusa brought up on Hypercritical. In his followup on the [subsequent episode](http://5by5.tv/hypercritical/66), he actually read my post, in part, and replied on air.
+A few years ago (Jesus – has it been that long?), I wrote a blog post about being an "[almost gamer](/blog/the-joys-and-sorrows-of-being-an-almost-gamer)", in which I discussed something that John Siracusa brought up on Hypercritical. In his followup on the [subsequent episode](http://5by5.tv/hypercritical/66), he actually read my post, in part, and replied on air.
 
 (READMORE)
 
