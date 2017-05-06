@@ -6,6 +6,24 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Stepping Back from Moya</title>
+      <link>https://ashfurrow.com/blog/stepping-back-from-moya/</link>
+      <description>&lt;p&gt;Last week, I gave &lt;a href="http://www.ustream.tv/recorded/102858222"&gt;a talk&lt;/a&gt; on the subject of building open source communities. I ended the presentation with the announcement that I&amp;rsquo;m stepping back from the Moya community.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;iframe height="420" width="100%" src="//www.ustream.tv/embed/recorded/102858222?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The talk goes into detail about how open source maintainers should distribute their power and responsibilities as early as possible. Because the fact is, eventually you &lt;em&gt;will&lt;/em&gt; be ready to move on to your next project. Your goal as a maintainer really should be to create a project that can outlive your interest in it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve spent two and a half years focusing on the community of Moya, rather than just the codebase, and I&amp;rsquo;m grateful to the team of core contributors that are ready to take over for me. They have my full confidence.&lt;/p&gt;
+
+&lt;p&gt;I hope that when you&amp;rsquo;re ready to move on from your next project, you&amp;rsquo;ve built up a community ready to take over for you, too. &lt;/p&gt;
+</description>
+      <pubDate>Sat, 06 May 2017 15:33:42 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/stepping-back-from-moya/</guid>
+    </item>
+    <item>
       <title>Breath of the Wild &amp; The Switch</title>
       <link>https://ashfurrow.com/blog/breath-of-the-wild-switch/</link>
       <description>&lt;p&gt;I&amp;rsquo;ve always struggled with video games. I love them but could &lt;a href="/blog/the-joys-and-sorrows-of-being-an-almost-gamer/"&gt;never quite clear the skills curve&lt;/a&gt; of the types of games I enjoyed: role-playing games. So I&amp;rsquo;d get through a good chunk of the game, get really invested in the characters and story, and then get stuck and give up in frustration.&lt;/p&gt;
@@ -183,91 +201,6 @@
 </description>
       <pubDate>Thu, 13 Apr 2017 13:57:45 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/mastodon-hosting-migration-plan/</guid>
-    </item>
-    <item>
-      <title>Running Mastodon on Heroku</title>
-      <link>https://ashfurrow.com/blog/running-mastodon-on-heroku/</link>
-      <description>&lt;p&gt;So I&amp;rsquo;ve been &lt;a href="/blog/mastodon-administration/"&gt;running an instance&lt;/a&gt; of &lt;a href="https://github.com/tootsuite/mastodon"&gt;Mastodon&lt;/a&gt; this week. It&amp;rsquo;s be a fun adventure! I&amp;rsquo;m still not sure where it&amp;rsquo;ll end up but I&amp;rsquo;m learning a tonne. So let&amp;rsquo;s share some of what I&amp;rsquo;ve learned by running Mastodon on &lt;a href="http://heroku.com"&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;d like to help out with some of the hosting costs, please head on over &lt;a href="https://patreon.com/user?u=3581610"&gt;to my Patreon&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/info.png" alt="Extended info" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;First, a few things. I &lt;em&gt;love&lt;/em&gt; Heroku; it&amp;rsquo;s server administration that&amp;rsquo;s friendly to iOS developers like me who don&amp;rsquo;t know anything about server administration. But! Heroku support for Mastodon is  e x p e r i m e n t a l . That&amp;rsquo;s fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I&amp;rsquo;ve run into.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1007"&gt;&lt;strong&gt;&lt;del&gt;Animated GIF upload doesn&amp;rsquo;t work&lt;/del&gt;&lt;/strong&gt;&lt;/a&gt;. GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you &lt;em&gt;just&lt;/em&gt; over the 300MB slug size on Heroku.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/tootsuite/mastodon/issues/1119"&gt;&lt;strong&gt;&lt;del&gt;Streaming API doesn&amp;rsquo;t work&lt;/del&gt;&lt;/strong&gt;&lt;/a&gt;. Not sure of the cause yet.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(&lt;strong&gt;Edit&lt;/strong&gt;: These are being addressed in more long-term ways, but for now I&amp;rsquo;ve gotten them to work. Check out the issues for more details.)&lt;/p&gt;
-
-&lt;p&gt;Now to the good stuff: how to get Mastodon set up. &lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/resources.png" alt="Heroku Resources" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;The initial deploy (use the &amp;ldquo;Deploy to Heroku&amp;rdquo; button &lt;a href="https://github.com/tootsuite/mastodon#deployment-on-heroku-experimental"&gt;in the readme&lt;/a&gt; is going to install two dynos, Redis, and Postgres. You &lt;a href="https://github.com/tootsuite/mastodon/blob/4e41cd9ab8f51120d558b70528b163c98993be53/config/puma.rb#L11-L13"&gt;only need the first Dyno&lt;/a&gt;, the web one.&lt;/p&gt;
-
-&lt;p&gt;I registered a domain (&lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt;) with &lt;a href="https://www.hover.com"&gt;Hover&lt;/a&gt; and used Heroku&amp;rsquo;s SSL support to serve the Mastodon instance over HTTPS. It&amp;rsquo;s 2017, after all.&lt;/p&gt;
-
-&lt;p&gt;On Heroku, your limiting resource is going to be RAM. I&amp;rsquo;m using one 2x Dyno for the extra RAM, and I&amp;rsquo;ve set the &lt;code&gt;WEB_CONCURRENCY&lt;/code&gt; environmental variable to &lt;code&gt;1&lt;/code&gt; to avoid scaling issues.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://elements.heroku.com/addons/papertrail"&gt;Papertrail&lt;/a&gt; is logging service. I tried their free tier but exceeded my daily log limit the second day.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/postgres.png" alt="Postgres" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;I had to &lt;a href="https://devcenter.heroku.com/articles/upgrading-heroku-postgres-databases"&gt;upgrade my Postgres instance&lt;/a&gt; almost immediately. It&amp;rsquo;s not difficult to do, which was nice. Heroku makes a lot of this &lt;em&gt;super&lt;/em&gt; easy.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/redis.png" alt="Redis" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;I also needed to upgrade my Redis instance almost immediately, to avoid &lt;a href="https://github.com/tootsuite/mastodon/issues/957"&gt;500 errors&lt;/a&gt;. Redis was the first scaling problem I hit. It looks like a super-useful service, but is priced really aggressively on Heroku. I understand why – Heroku is a business trying to make money – but it&amp;rsquo;s frustrating that costs double for a few extra megabytes of RAM. Or maybe I just don&amp;rsquo;t understand how Redis works &lt;code&gt;¯\_(ツ)_/¯&lt;/code&gt;.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/scheduler.png" alt="Scheduler for cron jobs" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;I added a &lt;a href="https://elements.heroku.com/addons/scheduler"&gt;scheduler&lt;/a&gt; add-on for some of the &lt;a href="https://github.com/tootsuite/mastodon#tasks"&gt;cron tasks&lt;/a&gt;. I&amp;rsquo;m still experimenting with the task frequency, but you can see what works for you.&lt;/p&gt;
-
-&lt;p&gt;Okay, so that&amp;rsquo;s the Heroku setup. I also used &lt;a href="https://www.mailgun.com"&gt;Mailgun&lt;/a&gt; for email sending (the free tier is fine) and &lt;a href="https://aws.amazon.com"&gt;AWS S3&lt;/a&gt; for storing media that gets uploaded (dunno costs there yet). Additionally, I&amp;rsquo;m using free &lt;a href="https://www.cloudflare.com"&gt;Cloudflare&lt;/a&gt; as a CDN in front of S3, and to host the S3 bucket on its own domain (static.mastodon.technology) that has a Cloudflare SSL certificate. This is important. Without HTTPS support for your media uploads, you&amp;rsquo;ll be serving mixed content (HTTP assets on an HTTPS page). This causes problems on iOS and some web browsers.&lt;/p&gt;
-
-&lt;p&gt;The worst part was just waiting for the DNS changes to propagate. I&amp;rsquo;m using Cloudflare for DNS, and pointed the domain name servers from Hover to use Cloudflare.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Even after all this configuration, I&amp;rsquo;m still running into performance issues. The site completely fell over this morning and I have no idea why.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/running-mastodon-on-heroku/perf.png" alt="Performance" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;It leads me to wonder how long I can keep this up, but like I said, life is an experiment and I&amp;rsquo;m just rolling with it.&lt;/p&gt;
-
-&lt;p&gt;Heroku support is experimental, and like Mastodon, it&amp;rsquo;s continuing to evolve. If you have small needs, I&amp;rsquo;d say go for it. If you want to be the next big instance, you&amp;rsquo;ll need to invest in a more sophisticated hosting solution. I looked at Digital Ocean for using the Docker image but quickly got in over my head; Heroku is it for me.&lt;/p&gt;
-</description>
-      <pubDate>Fri, 07 Apr 2017 15:50:03 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/running-mastodon-on-heroku/</guid>
     </item>
   </channel>
 </rss>
