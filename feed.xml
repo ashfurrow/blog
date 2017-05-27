@@ -4,10 +4,42 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-05-06T15:33:42+00:00</updated>
+  <updated>2017-05-27T15:02:01+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Hitting a Guitar Stride</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/hitting-a-guitar-stride/"/>
+    <id>https://ashfurrow.com/blog/hitting-a-guitar-stride/</id>
+    <published>2017-05-27T15:02:01+00:00</published>
+    <updated>2017-05-27T15:02:01+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s been about six months since I bought an acoustic Guitar and &lt;a href="/blog/learning-guitar/"&gt;started teaching myself&lt;/a&gt; using the Internet. Since then, I&amp;rsquo;ve got an electric guitar too, found an instructor, taken a few lessons, and started recording myself to track progress.&lt;/p&gt;
+
+&lt;p&gt;Music has been challenging, rewarding, and fun! The last few months in America have sucked, and music has for sure helped me get through some challenging times.&lt;/p&gt;
+
+&lt;p&gt;I thought it would be worth looking back on how far I&amp;rsquo;ve come, because I feel like I&amp;rsquo;ve recently hit a stride in learning new skills on the guitar.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;At first, learning songs was really hard because I wasn&amp;rsquo;t used to learning the new chords, the rhythm, the lyrics, everything. But as I repeated the learning process over and over, I got better at it. A few weeks ago, I started learning one of my favourite songs and it went a lot easier than other, less challenging songs had gone. Within a week I had gotten to the point I was really happy with it.&lt;/p&gt;
+
+&lt;iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323809759&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;So learning has gotten easier because I&amp;rsquo;ve been doing it more, but there&amp;rsquo;s more to it than just that. I feel like each additional skill I learn can be combined with every skill I&amp;rsquo;ve already learned; so there&amp;rsquo;s a combinatorial explosion of ability. A sort of &lt;code&gt;n!&lt;/code&gt; effect.&lt;/p&gt;
+
+&lt;p&gt;What got me thinking about all this was this video below. It&amp;rsquo;s a tutorial from a show I watch that teaches a song; it has a tonne of chords, most of which are new to me, and I would&amp;rsquo;ve been really intimidating to learn even a month ago. Instead, when I found it last weekend I was really excited to learn all the new skills because it means I can connect each one to each other one I already have.&lt;/p&gt;
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/LbKPWRxtok0' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;This song has helped me get better at barre chords, descending baseline notes over chords, barre chord slides, muting, strumming speed, all kinds of stuff. It&amp;rsquo;s a surprisingly challenging song, and it&amp;rsquo;s been a tonne of fun. &lt;/p&gt;
+
+&lt;p&gt;Unfortunately, while I feel like I&amp;rsquo;ve been getting better and better at guitar (and I&amp;rsquo;m enjoying it more and more), my wrist pain this week has been really bad. It&amp;rsquo;s been super-frustrating since it affects my ability to work as a programmer, too. I&amp;rsquo;ll be going back to physiotherapy next week (I&amp;rsquo;ve not been back since my trip a while ago) so hopefully I&amp;rsquo;ll be able to continue learning guitar without pain.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Stepping Back from Moya</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/stepping-back-from-moya/"/>
@@ -176,57 +208,6 @@
 &lt;p&gt;The constellation of Heroku Dynos and Add-Ons has been reduced to one virtual computer running contains each for Sidekiq, Rails-on-Puma, Redis, and Postgres. Everything is stored to the main disk but I may take a look at Digital Ocean&amp;rsquo;s dedicated storage volumes soon.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m going to leave it running as-is and look at tuning or reducing costs until I have a solid baseline of how things are working. I kind of miss my Papertrail logs and my response time graphs, so I&amp;rsquo;ll probably customize the code a bit. &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Mastodon Hosting Migration Plan</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/mastodon-hosting-migration-plan/"/>
-    <id>https://ashfurrow.com/blog/mastodon-hosting-migration-plan/</id>
-    <published>2017-04-13T13:57:45+00:00</published>
-    <updated>2017-04-13T13:57:45+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;I&amp;rsquo;ve been &lt;a href="/blog/running-mastodon-on-heroku/"&gt;running Mastodon on Heroku&lt;/a&gt; for about a week now, and it&amp;rsquo;s been a blast! Heroku is really convenient, but it&amp;rsquo;s also expensive. So I&amp;rsquo;m looking at an alternative hosting plan. Because I&amp;rsquo;m learning as I go along, I wanted to write a post about my migration plan, to hopefully get feedback from people who&amp;rsquo;ve done this kind of thing before. &lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s start with the current infrastructure: two Heroku apps, one for streaming and one for everything else. Estimated costs are ~$150/month. I don&amp;rsquo;t know what to expect from AWS, but from my experience I&amp;rsquo;m guess that it&amp;rsquo;ll be a lot less than I&amp;rsquo;m paying now. Additionally, as the community scales up, I&amp;rsquo;ll be able to more easily scale my instance.&lt;/p&gt;
-
-&lt;p&gt;I considered Digital Ocean, since it would probably be even cheaper, but I would have to do a lot more to administer Postgres and Redis instances, which seems boring and tedious. I&amp;rsquo;d rather use RDS and ElastiCache respectively for the convenience.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-hosting-migration-plan/heroku.png" alt="Current Heroku Infrastructure" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;What I&amp;rsquo;m thinking of is an AWS infrastructure that replaces Heroku Add-Ons for AWS services. I figure if I&amp;rsquo;m getting into AWS hosting I may as well dive right in, to get the most advantage from fully participating in their ecosystem.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mastodon-hosting-migration-plan/aws.png" alt="Proposed AWS Infrastructure" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;(Note that both infrastructures use S3 for static asset hosting, which is not shown.)&lt;/p&gt;
-
-&lt;p&gt;So the big question is, how do I go from one to the other? Well here&amp;rsquo;s my plan:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Migrate Postgres from a Heroku Add-On to AWS&amp;rsquo; RDS service&lt;/strong&gt;. This is the highest priority since Heroku&amp;rsquo;s Postgres Add-On is currently the highest cost. I expect some downtime as I put the existing app in maintenance mode, export the database, and import it into RDS. I&amp;rsquo;ll do a dry-run first to make sure things work; maybe I&amp;rsquo;ll set up a fresh Heroku app that points to the new database. The nice thing is, if things go wrong I can just point back to the existing database. Once I verify things are working (maybe give it a few days?) I&amp;rsquo;ll retire the existing database Add-On.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Migrate Redis from a Heroku &lt;a href="https://redislabs.com/products/redis-cloud/"&gt;Redis Cloud&lt;/a&gt; Add-On to AWS&amp;rsquo; ElastiCache service&lt;/strong&gt;. This is a lower priority because I expect it&amp;rsquo;ll take some figuring out, and there&amp;rsquo;ll be some downtime. My plan is to set up ElastiCache to replicate the existing store, put the app into maintenance mode, give the new store a chance to catch up, and switch the app over to the new store. Let me know if you&amp;rsquo;ve done this before and see any problems with this.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Migrate from Heroku Dynos to AWS EC2&lt;/strong&gt;. This is the biggest question mark for me. It&amp;rsquo;s going to require a lot of effort because I&amp;rsquo;ve not run a server like this before. Basically I&amp;rsquo;ll get an EC2 running the web server, streaming server, and Sidekiq jobs, make sure it&amp;rsquo;s working, and then switch the DNS to slowly move everyone over to the new server. Once DNS changes have fully propagated, retire the Dynos. If I have to, I&amp;rsquo;ll separate out the web, streaming, and Sidekiq responsibilities into separate instances. Let me know if this is something I should do from the start.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deal with the little things&lt;/strong&gt;. Stuff like setting up cron jobs, making sure logging is working, that kind of stuff.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Aaaaaaand I think that&amp;rsquo;s it. Hopefully minimal downtime.&lt;/p&gt;
-
-&lt;p&gt;This is a learning experience for me. It seemed really scary at first but writing it out made things make more sense.&lt;/p&gt;
-
-&lt;p&gt;I reckon this will take a solid weekend of work, but I&amp;rsquo;m happy to do it because a) I really like Mastodon and contributing to a distributed community is rewarding, and b) I&amp;rsquo;ll learn a tonne, which is its own reward.&lt;/p&gt;
-
-&lt;p&gt;And again, any advice you have would be welcome. &lt;a href="http://mastodon.technology/@ashfurrow"&gt;Toot me&lt;/a&gt; or &lt;a href="mailto:ash@ashfurrow.com"&gt;send me an email&lt;/a&gt; if you have any advice, and I&amp;rsquo;ll amend my post.&lt;/p&gt;
 </content>
   </entry>
 </feed>
