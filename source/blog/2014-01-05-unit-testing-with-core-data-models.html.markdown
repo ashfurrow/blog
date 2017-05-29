@@ -1,7 +1,7 @@
 ---
 title: "Unit Testing with Core Data Models"
 date: 2014-01-05 00:00
-link_to: iosfrp
+link_to: frpswift
 ---
 
 I've been experimenting with [Model-View-ViewModel](https://github.com/ReactiveCocoa/ReactiveViewModel#model-view-viewmodel) lately; one of the benefits of using MVVM is that your code becomes more testable. In a nutshell, you take all of the presentation logic in view controllers, which are infamously hard to unit test, and put them in a _view model_ that is easy to unit test. Then you can test that logic.
