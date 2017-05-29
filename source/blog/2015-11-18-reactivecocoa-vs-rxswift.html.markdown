@@ -3,6 +3,7 @@ title: ReactiveCocoa vs RxSwift
 date: 2015-11-18 18:27:08 UTC
 background_image: /img/blog/reactivecocoa-vs-rxswift/background.png
 background_image_source: https://twitter.com/CloudyConway/status/660238972912803841
+link_to: frpswift
 ---
 
 I've spoken in different venues about functional reactive programming in iOS, using either Objective-C or Swift. Now, before Swift came out, I told people to try ReactiveCocoa because that was the only FRP library available. And it's a great library, too!

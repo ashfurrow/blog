@@ -3,6 +3,7 @@ title: Naming Things in Swift
 date: 2017-01-14 21:15:11 UTC
 background_image: /img/blog/naming-things-in-swift/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/817193041161232385
+link_to: frpswift
 ---
 
 Lately, I've been using different programming languages and environments, trying to diversify my skills. I've been working regularly in React, Swift, Objective-C, and Scala, and they all have their own idioms and conventions. It's been a real learning experience, getting to compare and contrast the languages, and to use what I learn to become a better Swift developer, too.
