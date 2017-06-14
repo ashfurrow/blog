@@ -4,10 +4,36 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-05-27T15:02:01+00:00</updated>
+  <updated>2017-06-14T18:12:00+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Feelings are Hard</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/feelings-are-hard/"/>
+    <id>https://ashfurrow.com/blog/feelings-are-hard/</id>
+    <published>2017-06-14T18:12:00+00:00</published>
+    <updated>2017-06-14T18:12:00+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;Things have been getting to me lately. Big things, little things, all kinds of things. The result is: I get upset. Angry even.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Aaaaaand because I insist on spending so much of my life on Twitter (I need to stop that&amp;hellip;) everyone gets to see me get upset at things. The latest problems in my life are bringing the wrong computer cable and the LEGO store being sold out of something I want. Pretty childish stuff.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Hey Ash, sounds like you’re not having the best day. Here’s a box of fucking adorable goddamn kittens. It’ll help you on your way. &lt;a href="https://t.co/92nzKdfbFB"&gt;pic.twitter.com/92nzKdfbFB&lt;/a&gt;&lt;/p&gt;&amp;mdash; Aaron Vegh 📎 (@aaronvegh) &lt;a href="https://twitter.com/aaronvegh/status/875051392515403784"&gt;June 14, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;See, things were going great until about six weeks ago when my doctor suggested going off one of my medications. I&amp;rsquo;m on a very small dose, and we wanted to see if I needed it. Turns out I desperately do. Within a week I was miserable, flat, depressed. I finally got back on the medication, and as soon as it kicked in, I caught a cold. So I&amp;rsquo;m back to feeling miserable.&lt;/p&gt;
+
+&lt;p&gt;Playing guitar can help, except my wrists hurt too much to play. So I get a little more sad. Sleeping helps, I feel better in the mornings. Doing things helps, so I feel better when I make it to the office.&lt;/p&gt;
+
+&lt;p&gt;But the sort of back drop for this emotional rollercoaster is the political landscape of 2017. What a shitty year it&amp;rsquo;s been and promises to continue to be.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s going to be okay – I have a supportive partner, and a therapist, and a psychiatrist. And I&amp;rsquo;m making progress all the time. I&amp;rsquo;ve just had such a hard time over the past month or so. This summer was supposed to be refreshing and exciting, but instead it&amp;rsquo;s began with familiar ennui. Things are looking up, I guess, but I can&amp;rsquo;t help feel like I&amp;rsquo;m going to be stuck here forever.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Hitting a Guitar Stride</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/hitting-a-guitar-stride/"/>
@@ -174,40 +200,6 @@
 &lt;p&gt;Leave us out of your hot takes, &lt;em&gt;please&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m not saying things are perfect – there are tensions and conflicts in any community – but the fediverse feels so much happier and friendly than Twitter has for years. Maybe ever. It&amp;rsquo;s the salad days of Mastodon, just enjoy it! Aww yeah!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Moving Mastodon to Digital Ocean</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/moving-mastodon-to-digital-ocean/"/>
-    <id>https://ashfurrow.com/blog/moving-mastodon-to-digital-ocean/</id>
-    <published>2017-04-14T00:14:01+00:00</published>
-    <updated>2017-04-14T00:14:01+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;This morning &lt;a href="/blog/mastodon-hosting-migration-plan/"&gt;I wrote about&lt;/a&gt; my plans to move from hosting &lt;a href="https://mastodon.technology"&gt;my mastodon instance&lt;/a&gt; on Heroku to hosting it on AWS. Well I got some feedback, and I did some thinking, and I changed my plan, and then I actually did the whole thing! I&amp;rsquo;m now hosting on &lt;a href="https://m.do.co/c/4a83a8a7aedf"&gt;Digital Ocean&lt;/a&gt; (referral link) and I kind of love it.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;My primary reason for moving hosts was cost. I really like Heroku, but you pay a premium for the convenience of it. That&amp;rsquo;s why I planned to switch to AWS, but &lt;em&gt;turns out&lt;/em&gt; you can end up paying a lot for convenience on AWS, too. I found there were comparable costs for Redis and Postgres services between Heroku and AWS, the those were the two things I was expecting to save the most on.&lt;/p&gt;
-
-&lt;p&gt;I know that you save money when you roll up your sleeves and start administer your own database, but I didn&amp;rsquo;t realize how much. Luckily, the Mastodon developers know administrating stuff is hard, so they have support for &lt;a href="https://www.docker.com"&gt;Docker&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Docker is &lt;em&gt;like&lt;/em&gt; a virtual machine (don&amp;rsquo;t @ me) and the Mastodon developers include what are basically recipes for Docker containers to be built from, and to run from. Combined with &lt;a href="http://digitalmind.io/post/deploying-mastodon-on-digital-ocean"&gt;this blog post&lt;/a&gt;, I was able to get a test instance of Mastodon up within a half hour. &lt;/p&gt;
-
-&lt;p&gt;Which, wow, that amazed me. I&amp;rsquo;ve historically had a lot of trouble deploying stuff, and this was amazing. I couldn&amp;rsquo;t believe how quickly I had something working. But enough gushing over Docker.&lt;/p&gt;
-
-&lt;p&gt;I originally had a complicated migration strategy. Originally. Then, instead of doing a bunch of complicated configuration to get zero-or-near-zero downtime, I just took the instance down. The whole process took twenty minutes, and would have been shorter but I ran into problems importing the Postgres database backup. &lt;/p&gt;
-
-&lt;p&gt;Things went well! I&amp;rsquo;ve got SSL set up like before, and also gained IPv6 support. Somehow, I guess, I lost the Redis database? I&amp;rsquo;m not sure, but things are working well enough that I&amp;rsquo;m not going to worry about it.&lt;/p&gt;
-
-&lt;p&gt;So how are things working? Well, I don&amp;rsquo;t have a response time graph anymore but interactions feel a little slower. CPU utilization is peaking at 30%, and RAM is near 30% as well.&lt;/p&gt;
-
-&lt;p&gt;So what about the costs? Well, I&amp;rsquo;m currently running on a $40/month virtual machine, plus some backup, S3, and Mailgun costs, so I&amp;rsquo;m pegging it at $50–60, or about a third of what I was paying on Heroku. The VM has 4GB of RAM, 2 virtual CPUs, 30GB of SSD space, and 4TB of network transfer a month. Not bad! &lt;/p&gt;
-
-&lt;p&gt;The constellation of Heroku Dynos and Add-Ons has been reduced to one virtual computer running contains each for Sidekiq, Rails-on-Puma, Redis, and Postgres. Everything is stored to the main disk but I may take a look at Digital Ocean&amp;rsquo;s dedicated storage volumes soon.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to leave it running as-is and look at tuning or reducing costs until I have a solid baseline of how things are working. I kind of miss my Papertrail logs and my response time graphs, so I&amp;rsquo;ll probably customize the code a bit. &lt;/p&gt;
 </content>
   </entry>
 </feed>
