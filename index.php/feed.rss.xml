@@ -6,6 +6,36 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Why My Eyes Gently Roll</title>
+      <link>https://ashfurrow.com/blog/why-my-eyes-gently-roll/</link>
+      <description>&lt;p&gt;Last week, an article from the Washington Post titled &lt;a href="https://www.washingtonpost.com/graphics/2017/lifestyle/the-slow-secret-death-of-the-electric-guitar/"&gt;&lt;em&gt;Why my guitar gently weeps&lt;/em&gt;&lt;/a&gt; made its way around the internet&amp;rsquo;s various music circles. The article makes some noise about falling guitar sales and draws conclusions from interviews that the author conducted with various captains of industry; its thesis is that sales are trending down, the industry is shrinking, and a lack of &amp;ldquo;guitar heroes&amp;rdquo; is to blame. Young people – apparently – just don&amp;rsquo;t have enough rock stars to look up to and emulate.&lt;/p&gt;
+
+&lt;p&gt;If you decide to read the post (it&amp;rsquo;s not long) prepare yourself for some extreme eye-rolling. Also, the article uses some weird JavaScript scroll hijacking, so have fun.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Almost as an aside, the article mentions a shift towards more women and girls learning guitar, but brushes their increased interest aside as trivial – or based purely in aesthetics. &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Andy Mooney, the Fender CEO, calls [Taylor] Swift “the most influential guitarist of recent years.”&lt;/p&gt;
+
+&lt;p&gt;“I don’t think that young girls looked at Taylor and said, ‘I’m really impressed by the way she plays G major arpeggios.’ ” Mooney says. “They liked how she looked, and they wanted to emulate her.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This sounds dismissive. After all, young folks of the past were focused &lt;em&gt;only&lt;/em&gt; on the sounds of musicians and not their looks (for example, this is why KISS is known for wearing only dull boring outfits during performances). Girls don&amp;rsquo;t care about music, just about looks. Uh huh.&lt;/p&gt;
+
+&lt;p&gt;From a writing perspective, the biggest weakness of the article is that the author neglected to include perspectives from actual &lt;em&gt;guitarists&lt;/em&gt;. Instead, Geoff Edgars tacitly implies that falling guitar sales = declining industry = declining guitar popularity. A lot of folks around guitar forums and YouTube have pointed out this fallacy, and they further refute the claim that there are no &amp;ldquo;guitar heroes&amp;rdquo; by offering their own list of popular players. Usually men. Actually, all men.&lt;/p&gt;
+
+&lt;p&gt;(I&amp;rsquo;m starting to think that just maybe our society has some kind of problem with attitudes towards women.)&lt;/p&gt;
+
+&lt;p&gt;I agree with the musicians&amp;rsquo; rebuttal, that there &lt;em&gt;are&lt;/em&gt; still &amp;ldquo;guitar heroes&amp;rdquo; (gosh I dislike that term). I can name a few bands that really influenced my decision to pick up the guitar.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, there&amp;rsquo;s such an abundance of educational resources on learning guitar that, since starting in December, I&amp;rsquo;ve at times felt overwhelmed by just how much there is to learn, and just how many ways there are to learn it all. I would be interested in reading an article discussing these resources, the rising popularity of YouTube as a music education platform, and hearing from a variety of musicians (of all genders) about their perspectives on the guitar industry&amp;rsquo;s decline. But that would require the Washington Post to investigate – which is apparently too much to ask.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 28 Jun 2017 18:16:47 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/why-my-eyes-gently-roll/</guid>
+    </item>
+    <item>
       <title>Feelings are Hard</title>
       <link>https://ashfurrow.com/blog/feelings-are-hard/</link>
       <description>&lt;p&gt;Things have been getting to me lately. Big things, little things, all kinds of things. The result is: I get upset. Angry even.&lt;/p&gt;
@@ -138,42 +168,6 @@
 </description>
       <pubDate>Tue, 25 Apr 2017 16:49:27 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/contributing-to-mastodon/</guid>
-    </item>
-    <item>
-      <title>The Web and Mastodon</title>
-      <link>https://ashfurrow.com/blog/the-web-and-mastodon/</link>
-      <description>&lt;p&gt;I read a &lt;a href="https://medium.com/glitch/the-web-was-supposed-to-be-a-thing-we-make-c023b6e7f56a"&gt;blog post from Glitch&lt;/a&gt; about their graphic design, and something in it really struck me.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It’s easy to forget in an era of billion-dollar Internet startups that the original vision of the web was that it’s something we make, not just something we consume.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The web: something we make, not just something we consume.&lt;/p&gt;
-
-&lt;p&gt;This hit me because I&amp;rsquo;ve been &lt;a href="https://ashfurrow.com/blog/mastodon/"&gt;running a Mastodon instance&lt;/a&gt; for two weeks. Let me explain. Beyond administering a tech-focused instance, I&amp;rsquo;ve also been contributing to their community with added documentation, new ideas, and code. It&amp;rsquo;s been an incredibly rewarding experience, in large part because of the community. Being a part of Mastodon feels like being a part of something much bigger than just myself.&lt;/p&gt;
-
-&lt;p&gt;Mastodon is the Web at its best. I&amp;rsquo;m building a space, the community is building social norms, it&amp;rsquo;s so participatory and so refreshing and so rewarding. &lt;/p&gt;
-
-&lt;p&gt;But the thing is, I&amp;rsquo;m a bit tired of pundits wringing their hands about Mastodon: &amp;ldquo;will it be a success?&amp;rdquo;, &amp;ldquo;how can it beat Twitter?&amp;rdquo;, blah blah blah. Who cares? &lt;/p&gt;
-
-&lt;p&gt;One article &lt;a href="http://www.zdnet.com/article/is-mastodon-the-new-social-media-star-or-imploding-black-hole/"&gt;cuts to the heart&lt;/a&gt; of pundits&amp;rsquo; problematic hot takes:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;And therein lies the issues for brands who want to join this new network and advertise to the community.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ugh, who cares about brands. We – me and the other Mastodonians – are making something &lt;em&gt;for us&lt;/em&gt; and not for brands. Sorry if that offends.&lt;/p&gt;
-
-&lt;p&gt;Mastodon isn&amp;rsquo;t defined by its relation to Twitter or to Facebook or to Snapchat. It&amp;rsquo;s not trying to be anything other than what it is. The developers are doing this because they like it. The admins are doing this because they like it. The users are doing this because they like it.&lt;/p&gt;
-
-&lt;p&gt;Leave us out of your hot takes, &lt;em&gt;please&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not saying things are perfect – there are tensions and conflicts in any community – but the fediverse feels so much happier and friendly than Twitter has for years. Maybe ever. It&amp;rsquo;s the salad days of Mastodon, just enjoy it! Aww yeah!&lt;/p&gt;
-</description>
-      <pubDate>Mon, 17 Apr 2017 23:15:17 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/the-web-and-mastodon/</guid>
     </item>
   </channel>
 </rss>
