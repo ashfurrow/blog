@@ -25,6 +25,6 @@ From a writing perspective, the biggest weakness of the article is that the auth
 
 I agree with the musicians' rebuttal, that there _are_ still "guitar heroes" (gosh I dislike that term). I can name a few bands that really influenced my decision to pick up the guitar.
 
-Furthermore, there's such an abundance of educational resources on learning guitar that, since starting in December, I've at times felt overwhelmed by just how much there is to learn, and just how many ways there are to learn it all. I would be interested in reading an article discussing these resources, the rising popularity of YouTube as a music education platform, and hearing from a variety of musicians (of all genders) about their perspectives on the guitar industry's decline. But that would require, I guess, investigation – which is apparently too much to ask of the Washington Post.
+Furthermore, there's such an abundance of educational resources on learning guitar that, since starting in December, I've at times felt overwhelmed by just how much there is to learn, and just how many ways there are to learn it all. I would be interested in reading an article discussing these resources, the rising popularity of YouTube as a music education platform, and hearing from a variety of musicians (of all genders) about their perspectives on the guitar industry's decline. But that would require the Washington Post to investigate – which is apparently too much to ask.
 
 [article]: https://www.washingtonpost.com/graphics/2017/lifestyle/the-slow-secret-death-of-the-electric-guitar/
