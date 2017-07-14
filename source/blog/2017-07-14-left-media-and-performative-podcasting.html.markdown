@@ -15,7 +15,7 @@ But here's the thing: they're a bit problematic. They don't adhere to the usual 
 
 As the show gains popularity as a tentpole of radical left culture, it's come under increasing scrutiny (largely from liberals). And while I agree with some of the criticisms lobbed at the show, hating it has become a sort of signifier among liberals that _yes, I too think Chapo is problematic_. The liberals that somehow managed to lose to Donald Trump(!) think it in vogue to hate _Chapo Traphouse_ and its fans, and to consider the show to be the _real_ enemy of progress.
 
-Seriously. Instead of organizing against Trump or his awful policies, they criticize a leftwing podcast.
+Seriously. Instead of organizing against Trump or his awful policies, they criticize a left-wing podcast.
 
 Our capitalist society is so completely imbued with the ideology that _you are what you consume_ that I've been hesitant to even admit that I listen to the show (lest I get called out as _problematic_). But I am not the podcasts I listen to, and I can enjoy media while being critical of it. 
 
