@@ -41,7 +41,7 @@ Our ideology is a feedback loop – a sort of flywheel that keeps gaining moment
 
 [Our values][values] are open source. They all contribute to our success. But openness, particularly in software, will always be close to my heart, and I'll see it reflected in our success all the time. I believe that this is how the whole software industry will work, eventually, and I'm proud to be ahead of the curve.
 
-I would encourage you to experiment with open source by default at your own workplace. Remember, it's open source _by default_, not _by demand_. It's okay to have closed source! The the steps to start open source by default, more rationale behind the idea, and tales of our own progress towards this goal are [all documented][oss_series]. Check it out, get in touch if you have questions. 
+I would encourage you to experiment with open source by default at your own workplace. Remember, it's open source _by default_, not _by demand_. It's okay to have closed source! The steps to start open source by default, more rationale behind the idea, and tales of our own progress towards this goal are [all documented][oss_series]. Check it out, get in touch if you have questions. 
 
 
 [artsy]: https://artsy.net
