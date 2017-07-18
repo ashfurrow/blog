@@ -4042,6 +4042,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://ashfurrow.com/blog/open-source-ideology/</loc>
+    <lastmod>2017-07-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://ashfurrow.com/img/blog/open-source-ideology/background.jpg</image:loc>
+    </image:image>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://ashfurrow.com/books/</loc>
     <lastmod>2017-07-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
