@@ -4,10 +4,32 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-07-14T16:36:52+00:00</updated>
+  <updated>2017-07-18T00:06:02+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Contemporaneous Blogging</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/contemporaneous-blogging/"/>
+    <id>https://ashfurrow.com/blog/contemporaneous-blogging/</id>
+    <published>2017-07-18T00:06:02+00:00</published>
+    <updated>2017-07-18T00:06:02+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;So I&amp;rsquo;ve &lt;a href="https://ashfurrow.com/blog/sharing-is-selfish/"&gt;written&lt;/a&gt; – and &lt;a href="https://ashfurrow.com/blog/sharing-is-selfish/"&gt;spoken&lt;/a&gt; – about how we should all be blogging as we learn things. It&amp;rsquo;s a good idea for many reasons, some selfish and some altruistic. But I&amp;rsquo;ve always said: you really should try and write &lt;em&gt;as&lt;/em&gt; you learn something. It&amp;rsquo;s when you&amp;rsquo;re best able to describe and bridge the gap between ignorance and understanding. &lt;em&gt;As&lt;/em&gt; you experience the learning process.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;However, there are other reasons to blog &lt;em&gt;as&lt;/em&gt; you learn something – contemporaneously with the learning process. For example, it&amp;rsquo;s easier to write about a topic when it&amp;rsquo;s fresh in your mind. Also, even if you &lt;em&gt;mean&lt;/em&gt; to write about something later, it can easily become an item on a todo list that you&amp;rsquo;re likely to put off and &lt;a href="https://github.com/ashfurrow/blog/issues/188#issuecomment-315918906"&gt;not get to&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But another reason to blog contemporaneously is that you may just not be able to write about something in the future. A friend recently was laid off and now a blog post they had written contemporaneously – but not published – is out of context and needs to be changed. That&amp;rsquo;s a lot of work.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re able to fit writing into your schedule – please try to. You never know when life circumstances – job, family, housing – could change. Writing about things &lt;em&gt;as&lt;/em&gt; you learn them is the best way to capture that knowledge.&lt;/p&gt;
+
+&lt;p&gt;Even if you keep it private, writing is a wonderful way to document knowledge and gain a deeper understanding of the subject. I encourage you to try it out, even if writing hasn&amp;rsquo;t been a strength for you. I have faith you&amp;rsquo;ll produce something of value.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Left Media and Performative Podcasting</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/left-media-and-performative-podcasting/"/>
@@ -166,28 +188,6 @@
 &lt;p&gt;This song has helped me get better at barre chords, descending baseline notes over chords, barre chord slides, muting, strumming speed, all kinds of stuff. It&amp;rsquo;s a surprisingly challenging song, and it&amp;rsquo;s been a tonne of fun. &lt;/p&gt;
 
 &lt;p&gt;Unfortunately, while I feel like I&amp;rsquo;ve been getting better and better at guitar (and I&amp;rsquo;m enjoying it more and more), my wrist pain this week has been really bad. It&amp;rsquo;s been super-frustrating since it affects my ability to work as a programmer, too. I&amp;rsquo;ll be going back to physiotherapy next week (I&amp;rsquo;ve not been back since my trip a while ago) so hopefully I&amp;rsquo;ll be able to continue learning guitar without pain.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Stepping Back from Moya</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/stepping-back-from-moya/"/>
-    <id>https://ashfurrow.com/blog/stepping-back-from-moya/</id>
-    <published>2017-05-06T15:33:42+00:00</published>
-    <updated>2017-05-06T15:33:42+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Last week, I gave &lt;a href="http://www.ustream.tv/recorded/102858222"&gt;a talk&lt;/a&gt; on the subject of building open source communities. I ended the presentation with the announcement that I&amp;rsquo;m stepping back from the Moya community.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;iframe height="420" width="100%" src="//www.ustream.tv/embed/recorded/102858222?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;The talk goes into detail about how open source maintainers should distribute their power and responsibilities as early as possible. Because the fact is, eventually you &lt;em&gt;will&lt;/em&gt; be ready to move on to your next project. Your goal as a maintainer really should be to create a project that can outlive your interest in it.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve spent two and a half years focusing on the community of Moya, rather than just the codebase, and I&amp;rsquo;m grateful to the team of core contributors that are ready to take over for me. They have my full confidence.&lt;/p&gt;
-
-&lt;p&gt;I hope that when you&amp;rsquo;re ready to move on from your next project, you&amp;rsquo;ve built up a community ready to take over for you, too. &lt;/p&gt;
 </content>
   </entry>
 </feed>

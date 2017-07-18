@@ -6,6 +6,24 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Contemporaneous Blogging</title>
+      <link>https://ashfurrow.com/blog/contemporaneous-blogging/</link>
+      <description>&lt;p&gt;So I&amp;rsquo;ve &lt;a href="https://ashfurrow.com/blog/sharing-is-selfish/"&gt;written&lt;/a&gt; – and &lt;a href="https://ashfurrow.com/blog/sharing-is-selfish/"&gt;spoken&lt;/a&gt; – about how we should all be blogging as we learn things. It&amp;rsquo;s a good idea for many reasons, some selfish and some altruistic. But I&amp;rsquo;ve always said: you really should try and write &lt;em&gt;as&lt;/em&gt; you learn something. It&amp;rsquo;s when you&amp;rsquo;re best able to describe and bridge the gap between ignorance and understanding. &lt;em&gt;As&lt;/em&gt; you experience the learning process.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;However, there are other reasons to blog &lt;em&gt;as&lt;/em&gt; you learn something – contemporaneously with the learning process. For example, it&amp;rsquo;s easier to write about a topic when it&amp;rsquo;s fresh in your mind. Also, even if you &lt;em&gt;mean&lt;/em&gt; to write about something later, it can easily become an item on a todo list that you&amp;rsquo;re likely to put off and &lt;a href="https://github.com/ashfurrow/blog/issues/188#issuecomment-315918906"&gt;not get to&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But another reason to blog contemporaneously is that you may just not be able to write about something in the future. A friend recently was laid off and now a blog post they had written contemporaneously – but not published – is out of context and needs to be changed. That&amp;rsquo;s a lot of work.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re able to fit writing into your schedule – please try to. You never know when life circumstances – job, family, housing – could change. Writing about things &lt;em&gt;as&lt;/em&gt; you learn them is the best way to capture that knowledge.&lt;/p&gt;
+
+&lt;p&gt;Even if you keep it private, writing is a wonderful way to document knowledge and gain a deeper understanding of the subject. I encourage you to try it out, even if writing hasn&amp;rsquo;t been a strength for you. I have faith you&amp;rsquo;ll produce something of value.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 18 Jul 2017 00:06:02 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/contemporaneous-blogging/</guid>
+    </item>
+    <item>
       <title>Left Media and Performative Podcasting</title>
       <link>https://ashfurrow.com/blog/left-media-and-performative-podcasting/</link>
       <description>&lt;p&gt;So there&amp;rsquo;s the podcast, right? It&amp;rsquo;s by a bunch of hard left folks and they discuss really interesting topics like labour organizing, they provide radical feminist criticisms of popular culture, and they have interesting guests on to discuss their own interesting work. I really enjoy listening to them.&lt;/p&gt;
@@ -144,24 +162,6 @@
 </description>
       <pubDate>Sat, 27 May 2017 15:02:01 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/hitting-a-guitar-stride/</guid>
-    </item>
-    <item>
-      <title>Stepping Back from Moya</title>
-      <link>https://ashfurrow.com/blog/stepping-back-from-moya/</link>
-      <description>&lt;p&gt;Last week, I gave &lt;a href="http://www.ustream.tv/recorded/102858222"&gt;a talk&lt;/a&gt; on the subject of building open source communities. I ended the presentation with the announcement that I&amp;rsquo;m stepping back from the Moya community.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;iframe height="420" width="100%" src="//www.ustream.tv/embed/recorded/102858222?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;The talk goes into detail about how open source maintainers should distribute their power and responsibilities as early as possible. Because the fact is, eventually you &lt;em&gt;will&lt;/em&gt; be ready to move on to your next project. Your goal as a maintainer really should be to create a project that can outlive your interest in it.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve spent two and a half years focusing on the community of Moya, rather than just the codebase, and I&amp;rsquo;m grateful to the team of core contributors that are ready to take over for me. They have my full confidence.&lt;/p&gt;
-
-&lt;p&gt;I hope that when you&amp;rsquo;re ready to move on from your next project, you&amp;rsquo;ve built up a community ready to take over for you, too. &lt;/p&gt;
-</description>
-      <pubDate>Sat, 06 May 2017 15:33:42 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/stepping-back-from-moya/</guid>
     </item>
   </channel>
 </rss>
