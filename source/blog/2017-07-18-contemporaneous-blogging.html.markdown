@@ -9,7 +9,7 @@ So I've [written](https://ashfurrow.com/blog/sharing-is-selfish/) – and [spoke
 
 (READMORE)
 
-But there are other reasons to blog _as_ you learn something – contemporaneously with the learning process. For example, it's easier to write about a topic when it's fresh in your mind. Also, even if you _mean_ to write about something later, it can easily become an item on a todo list that you're likely to put off and [not get to](https://github.com/ashfurrow/blog/issues/188#issuecomment-315918906).
+However, there are other reasons to blog _as_ you learn something – contemporaneously with the learning process. For example, it's easier to write about a topic when it's fresh in your mind. Also, even if you _mean_ to write about something later, it can easily become an item on a todo list that you're likely to put off and [not get to](https://github.com/ashfurrow/blog/issues/188#issuecomment-315918906).
 
 But another reason to blog contemporaneously is that you may just not be able to write about something in the future. A friend recently was laid off and now a blog post they had written contemporaneously – but not published – is out of context and needs to be changed. That's a lot of work.
 
