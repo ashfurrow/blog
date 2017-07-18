@@ -39,6 +39,8 @@ So there are a lot of business upsides to working in the open. The risks are pre
 
 Our ideology is a feedback loop – a sort of flywheel that keeps gaining momentum. The more we contribute to open source, the more we benefit as a business, allowing us to contribute more back, and so on.
 
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">The team <a href="https://twitter.com/artsy">@artsy</a> <a href="https://twitter.com/ArtsyOpenSource">@ArtsyOpenSource</a> is committed to spending a lot of our $50MM Series D on writing open source code. <a href="https://t.co/Fb4GxMisrT">https://t.co/Fb4GxMisrT</a></p>&mdash; Artsy Open Source (@ArtsyOpenSource) <a href="https://twitter.com/ArtsyOpenSource/status/887358284553912321">July 18, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 [Our values][values] are open source. They all contribute to our success. But openness, particularly in software, will always be close to my heart, and I'll see it reflected in our success all the time. I believe that this is how the whole software industry will work, eventually, and I'm proud to be ahead of the curve.
 
 I would encourage you to experiment with open source by default at your own workplace. Remember, it's open source _by default_, not _by demand_. It's okay to have closed source! The steps to start open source by default, more rationale behind the idea, and tales of our own progress towards this goal are [all documented][oss_series]. Check it out, get in touch if you have questions. 
