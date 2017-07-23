@@ -6,6 +6,41 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Rotating Mastodon Log Files</title>
+      <link>https://ashfurrow.com/blog/rotating-mastodon-log-files/</link>
+      <description>&lt;p&gt;So I&amp;rsquo;ve been running the &lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt; instance of &lt;a href="https://joinmastodon.org"&gt;Mastodon&lt;/a&gt; since April, and I&amp;rsquo;ve written about different things I&amp;rsquo;ve learned while administering a server and contributing to the project. One thing I&amp;rsquo;ve only recent learned about is &lt;a href="https://en.wikipedia.org/wiki/Log_rotation"&gt;log rotation&lt;/a&gt;: an automatic task to prevent log files from filling up a disk.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;This relates to a problem I had a month ago. My primary disk filled up, prevent media uploads from working for a few hours (the database was unaffected since it uses a separate disk). The problem was exacerbated by an &lt;a href="https://github.com/tootsuite/mastodon/issues/3565"&gt;issue&lt;/a&gt; I&amp;rsquo;ve been having with Sidekiq log file sizes, but the root of the issue is that I wasn&amp;rsquo;t rotating Mastodon log files at all. I was just logging in about once a week to do restart the docker containers (thereby clearing the logs). But I forgot one week.&lt;/p&gt;
+
+&lt;p&gt;I asked some colleagues for advice and they told me about log rotation. So I added the following new, named &lt;code&gt;/etc/logrotate.d/docker-container&lt;/code&gt; (see &lt;a href="https://sandro-keil.de/blog/2015/03/11/logrotate-for-docker-container/"&gt;this helpful post&lt;/a&gt;).&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;/var/lib/docker/containers/*/*.log {
+  rotate 7
+  daily
+  compress
+  size=1M
+  missingok
+  delaycompress
+  copytruncate
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This moves the log contents to a new file and compresses previously moved logs, so I get a disk use increase of about 50MB/day instead of 1GB/day.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/rotating-mastodon-log-files/transmit.png" alt="Docker container directory listing" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Obviously the logs are still growing, but the instance could now run for months without me restarting docker containers and not run out of disk space. Nice.&lt;/p&gt;
+
+&lt;p&gt;And I think Docker has this kind of functionality built in now, but this is working so I&amp;rsquo;m running with it.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;simple and helpful&lt;br&gt;my disk space woes are over&lt;br&gt;logrotate.d &lt;a href="https://t.co/R2Mfl7j2Kv"&gt;pic.twitter.com/R2Mfl7j2Kv&lt;/a&gt;&lt;/p&gt;&amp;mdash; the javascript lover (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/889102904023539712"&gt;July 23, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;So yeah, logrotate.d is another &lt;a href="https://www.xkcd.com/208/"&gt;minor skill&lt;/a&gt; I&amp;rsquo;ve added to my tool belt that&amp;rsquo;s come from working on and administering Mastodon.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 23 Jul 2017 12:50:57 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/rotating-mastodon-log-files/</guid>
+    </item>
+    <item>
       <title>Open Source Ideology</title>
       <link>https://ashfurrow.com/blog/open-source-ideology/</link>
       <description>&lt;p&gt;Oh hey look, my employer &lt;a href="https://artsy.net"&gt;Artsy&lt;/a&gt; is in the news! We got a &lt;a href="https://www.theverge.com/2017/7/18/15983712/artsy-fine-art-galleries-online-auction-sales"&gt;great write-up in &lt;em&gt;The Verge&lt;/em&gt;&lt;/a&gt; and our recent fundraising was reported on in &lt;a href="https://techcrunch.com/2017/07/18/online-art-marketplace-artsy-raises-50m-plans-to-double-down-on-auctions"&gt;&lt;em&gt;Tech Crunch&lt;/em&gt;&lt;/a&gt;. Very cool! &lt;/p&gt;
@@ -160,28 +195,6 @@ argue have a huge positive impact on our business success.&lt;/p&gt;
 </description>
       <pubDate>Wed, 28 Jun 2017 18:16:47 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/why-my-eyes-gently-roll/</guid>
-    </item>
-    <item>
-      <title>Feelings are Hard</title>
-      <link>https://ashfurrow.com/blog/feelings-are-hard/</link>
-      <description>&lt;p&gt;Things have been getting to me lately. Big things, little things, all kinds of things. The result is: I get upset. Angry even.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Aaaaaand because I insist on spending so much of my life on Twitter (I need to stop that&amp;hellip;) everyone gets to see me get upset at things. The latest problems in my life are bringing the wrong computer cable and the LEGO store being sold out of something I want. Pretty childish stuff.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Hey Ash, sounds like you’re not having the best day. Here’s a box of fucking adorable goddamn kittens. It’ll help you on your way. &lt;a href="https://t.co/92nzKdfbFB"&gt;pic.twitter.com/92nzKdfbFB&lt;/a&gt;&lt;/p&gt;&amp;mdash; Aaron Vegh 📎 (@aaronvegh) &lt;a href="https://twitter.com/aaronvegh/status/875051392515403784"&gt;June 14, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;See, things were going great until about six weeks ago when my doctor suggested going off one of my medications. I&amp;rsquo;m on a very small dose, and we wanted to see if I needed it. Turns out I desperately do. Within a week I was miserable, flat, depressed. I finally got back on the medication, and as soon as it kicked in, I caught a cold. So I&amp;rsquo;m back to feeling miserable.&lt;/p&gt;
-
-&lt;p&gt;Playing guitar can help, except my wrists hurt too much to play. So I get a little more sad. Sleeping helps, I feel better in the mornings. Doing things helps, so I feel better when I make it to the office.&lt;/p&gt;
-
-&lt;p&gt;But the sort of back drop for this emotional rollercoaster is the political landscape of 2017. What a shitty year it&amp;rsquo;s been and promises to continue to be.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s going to be okay – I have a supportive partner, and a therapist, and a psychiatrist. And I&amp;rsquo;m making progress all the time. I&amp;rsquo;ve just had such a hard time over the past month or so. This summer was supposed to be refreshing and exciting, but instead it&amp;rsquo;s began with familiar ennui. Things are looking up, I guess, but I can&amp;rsquo;t help feel like I&amp;rsquo;m going to be stuck here forever.&lt;/p&gt;
-</description>
-      <pubDate>Wed, 14 Jun 2017 18:12:00 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/feelings-are-hard/</guid>
     </item>
   </channel>
 </rss>
