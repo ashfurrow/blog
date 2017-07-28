@@ -6,6 +6,53 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Guitar Debut</title>
+      <link>https://ashfurrow.com/blog/guitar-debut/</link>
+      <description>&lt;p&gt;Yesterday evening was &lt;a href="https://www.instagram.com/explore/tags/artsysalon/"&gt;Artsy&amp;rsquo;s third annual Salon&lt;/a&gt;, where everyone at Artsy is invited to show off the art that they create. Not everyone participates, and that&amp;rsquo;s okay, but it&amp;rsquo;s nice to celebrate all my colleagues&amp;rsquo; creative outlets. &lt;/p&gt;
+
+&lt;p&gt;Normally, I display some photographs, but this year I tried something different. The theme of the Salon was growth, and I&amp;rsquo;ve been &lt;a href="/blog/learning-guitar/"&gt;learning the guitar since December&lt;/a&gt;, so last night was my big debut!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I should say, I guess, that I&amp;rsquo;ve been learning guitar &lt;em&gt;and&lt;/em&gt; to sing. The singing was what I was most nervous about actually – I&amp;rsquo;m not sure why. I&amp;rsquo;ve performed piano and saxophone in front of much larger crowds, but I haven&amp;rsquo;t sang publicly since elementary school. My colleagues&amp;rsquo; opinions of me mean a lot, and I guess I was afraid of embarrassing myself. Or maybe I still hate my own voice.&lt;/p&gt;
+
+&lt;p&gt;I performed two songs – covers – one by The Weakerthans and another by their lead, John K Samson. A great Canadian group and artist. The first song was &lt;a href="https://open.spotify.com/track/5bil0D8WSuxyGSDLA4LxZK"&gt;&lt;em&gt;Virtute the Cat Explains Her Departure&lt;/em&gt;&lt;/a&gt;, and the second was &lt;a href="https://open.spotify.com/track/1RwhqapZ0XuqDDeSY4Tzbu"&gt;_Heart of the Continent&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/6-OFLKdUU0w' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+
+&lt;p&gt;I could feel my knees shaking, I was sure everyone could see how nervous I was. But I had rehearsed and felt my body follow muscle memory as my brain slipped into that blissful autopilot. It reminded me of speaking at a conference – something I&amp;rsquo;m pretty comfortable with at this point. But still nerve-wracking. I made a few mistakes, but I kept going. &lt;/p&gt;
+
+&lt;p&gt;When I was a senior in high school, I performed in the talent show. Well, I started too. About eight bars into &amp;ldquo;American Pie&amp;rdquo; on the piano, I forgot the music. My mind blanked. I panicked and ran off stage. I was afraid I would panic again and forget the music. But even if I did, I felt safe around my colleagues. &lt;/p&gt;
+
+
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/582iYsdMHjA' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+
+&lt;p&gt;The second song went well too, though my legs were still shaking. I rushed the tempo. I always do. In retrospect, I was afraid of the mic; I need to rehearse more with one. That&amp;rsquo;s okay – those are all improvements I can make.&lt;/p&gt;
+
+&lt;p&gt;The important thing is I had fun, and that I did it. It was hard and I did it anyway (not always easy with depression). Je pense que quelqu&amp;#39;un se mit a rire au française dans the chanson. Bienvenue.&lt;/p&gt;
+
+&lt;p&gt;Next time it&amp;rsquo;ll be a little easier, and I&amp;rsquo;ll be a little better. Actually, I recorded &lt;em&gt;Heart of the Continent&lt;/em&gt; a month ago, and re-listening to that recording this morning, I&amp;rsquo;m surprised by just how much I&amp;rsquo;ve improved since then.&lt;/p&gt;
+
+
+
+&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331082254&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
+  
+
+
+
+&lt;p&gt;Thank you to my colleagues and friends for showing up for my debut, and thank you to my wife Ashley for taking some recordings. It&amp;rsquo;s nice to have some artefact of my ability – a snapshot of what I could do. &lt;/p&gt;
+</description>
+      <pubDate>Fri, 28 Jul 2017 16:42:58 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/guitar-debut/</guid>
+    </item>
+    <item>
       <title>Rotating Mastodon Log Files</title>
       <link>https://ashfurrow.com/blog/rotating-mastodon-log-files/</link>
       <description>&lt;p&gt;So I&amp;rsquo;ve been running the &lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt; instance of &lt;a href="https://joinmastodon.org"&gt;Mastodon&lt;/a&gt; since April, and I&amp;rsquo;ve written about different things I&amp;rsquo;ve learned while administering a server and contributing to the project. One thing I&amp;rsquo;ve only recent learned about is &lt;a href="https://en.wikipedia.org/wiki/Log_rotation"&gt;log rotation&lt;/a&gt;: an automatic task to prevent log files from filling up a disk.&lt;/p&gt;
@@ -165,36 +212,6 @@ argue have a huge positive impact on our business success.&lt;/p&gt;
 </description>
       <pubDate>Sun, 02 Jul 2017 00:52:35 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/mastodon-interview/</guid>
-    </item>
-    <item>
-      <title>Why My Eyes Gently Roll</title>
-      <link>https://ashfurrow.com/blog/why-my-eyes-gently-roll/</link>
-      <description>&lt;p&gt;Last week, an article from the Washington Post titled &lt;a href="https://www.washingtonpost.com/graphics/2017/lifestyle/the-slow-secret-death-of-the-electric-guitar/"&gt;&lt;em&gt;Why my guitar gently weeps&lt;/em&gt;&lt;/a&gt; made its way around the internet&amp;rsquo;s various music circles. The article makes some noise about falling guitar sales and draws conclusions from interviews that the author conducted with various captains of industry; its thesis is that sales are trending down, the industry is shrinking, and a lack of &amp;ldquo;guitar heroes&amp;rdquo; is to blame. Young people – apparently – just don&amp;rsquo;t have enough rock stars to look up to and emulate.&lt;/p&gt;
-
-&lt;p&gt;If you decide to read the post (it&amp;rsquo;s not long) prepare yourself for some extreme eye-rolling. Also, the article uses some weird JavaScript scroll hijacking, so have fun.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Almost as an aside, the article mentions a shift towards more women and girls learning guitar, but brushes their increased interest aside as trivial – or based purely in aesthetics. &lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Andy Mooney, the Fender CEO, calls [Taylor] Swift “the most influential guitarist of recent years.”&lt;/p&gt;
-
-&lt;p&gt;“I don’t think that young girls looked at Taylor and said, ‘I’m really impressed by the way she plays G major arpeggios.’ ” Mooney says. “They liked how she looked, and they wanted to emulate her.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This sounds dismissive. After all, young folks of the past were focused &lt;em&gt;only&lt;/em&gt; on the sounds of musicians and not their looks (for example, this is why KISS is known for wearing only dull boring outfits during performances). Girls don&amp;rsquo;t care about music, just about looks. Uh huh.&lt;/p&gt;
-
-&lt;p&gt;From a writing perspective, the biggest weakness of the article is that the author neglected to include perspectives from actual &lt;em&gt;guitarists&lt;/em&gt;. Instead, Geoff Edgars tacitly implies that falling guitar sales = declining industry = declining guitar popularity. A lot of folks around guitar forums and YouTube have pointed out this fallacy, and they further refute the claim that there are no &amp;ldquo;guitar heroes&amp;rdquo; by offering their own list of popular players. Usually men. Actually, all men.&lt;/p&gt;
-
-&lt;p&gt;(I&amp;rsquo;m starting to think that just maybe our society has some kind of problem with attitudes towards women.)&lt;/p&gt;
-
-&lt;p&gt;I agree with the musicians&amp;rsquo; rebuttal, that there &lt;em&gt;are&lt;/em&gt; still &amp;ldquo;guitar heroes&amp;rdquo; (gosh I dislike that term). I can name a few bands that really influenced my decision to pick up the guitar.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, there&amp;rsquo;s such an abundance of educational resources on learning guitar that, since starting in December, I&amp;rsquo;ve at times felt overwhelmed by just how much there is to learn, and just how many ways there are to learn it all. I would be interested in reading an article discussing these resources, the rising popularity of YouTube as a music education platform, and hearing from a variety of musicians (of all genders) about their perspectives on the guitar industry&amp;rsquo;s decline. But that would require the Washington Post to investigate – which is apparently too much to ask.&lt;/p&gt;
-</description>
-      <pubDate>Wed, 28 Jun 2017 18:16:47 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/why-my-eyes-gently-roll/</guid>
     </item>
   </channel>
 </rss>
