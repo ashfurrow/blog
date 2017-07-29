@@ -13,7 +13,7 @@ Normally, I display some photographs, but this year I tried something different.
 
 I should say, I guess, that I've been learning guitar _and_ to sing. The singing was what I was most nervous about actually – I'm not sure why. I've performed piano and saxophone in front of much larger crowds, but I haven't sang publicly since elementary school. My colleagues' opinions of me mean a lot, and I guess I was afraid of embarrassing myself. Or maybe I still hate my own voice.
 
-I performed two songs – covers – one by The Weakerthans and another by their lead, John K Samson. A great Canadian group and artist. The first song was [_Virtute the Cat Explains Her Departure_][virtute], and the second was [_Heart of the Continent][heart].
+I performed two songs – covers – one by The Weakerthans and another by their lead, John K Samson. A great Canadian group and artist. The first song was [_Virtute the Cat Explains Her Departure_][virtute], and the second was [_Heart of the Continent_][heart].
 
 BEGIN_WIDE
 
