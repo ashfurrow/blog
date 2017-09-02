@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -946,7 +945,9 @@ ga('send', 'pageview');</script>
 <p></p>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">What am I doing wrong such that Swift’s lack of dynamism doesn’t seem to be hindering me in the slightest?</p>— Bryan Irace (@irace) <a href="https://twitter.com/irace/status/732051171498700800">May 16, 2016</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>Objective-C’s dynamic nature exists as an integral part of UIKit, and as Craig Hockenberry <a href="http://furbo.org/2016/05/20/adulterated-swift/">has pointed out</a>, your app is still built atop an Objective-C foundation even if the code you write is 100% Swift. However, I think there are a lot of Objective-C developers – many who have come to the language since the iPhone – who don’t use a lot of the features that make Objective-C a powerful, dynamic language. </p>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Objective-C’s dynamic nature exists as an integral part of UIKit, and as Craig Hockenberry <a href="http://furbo.org/2016/05/20/adulterated-swift/">has pointed out</a>, your app is still built atop an Objective-C foundation even if the code you write is 100% Swift. However, I think there are a lot of Objective-C developers – many who have come to the language since the iPhone – who don’t use a lot of the features that make Objective-C a powerful, dynamic language. </p>
 
 <p>I started learning Objective-C in 2009 when I learned to write iOS apps. At the time, I didn’t <em>really</em> need to know about the dynamic runtime. Swizzling methods and asking if an object responds to a selector is something I knew about – kind of – but I never really took advantage of those capabilities. And I don’t think my experience is unique. </p>
 
@@ -956,6 +957,7 @@ ga('send', 'pageview');</script>
 <li>A lot of the knowledge needed to use Objective-C’s full dynamic power is woefully under-documented, arcane, and explained only on dated mailing lists.</li>
 <li>Apple made a decision to de-emphasize Objective-C dynamic nature when building tools for iOS developers (in contrast with tools for OS X developers that already existed).</li>
 </ol>
+
 <p>The second point is far more interesting. Let’s take a look at one example: OS X has this really cool feature in Interface Builder called <em>bindings</em>. You can have a property of a view be <em>bound</em> to a property of something else, like <code>NSUserDefaults</code>, another view property, a property of an object you’ve added to your nib, whatever. It’s all built atop Objective-C’s dynamic runtime, key-value observation, and value transformers.</p>
 
 <p>When I tell iOS developers about bindings, they’re usually stunned. They have <em>no idea</em> what I’m talking about, because bindings don’t exist on iOS. Whether intentional or not, Interface Builder excluded bindings for iOS interfaces. It’s a tool that’s just not given to iOS developers.</p>
@@ -969,7 +971,9 @@ ga('send', 'pageview');</script>
 <p></p>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">Your goal should not be to find the best tool (there is none), but to grow your tool set, so you can choose the best tool for each job.</p>— Peter Hosey (@boredzo) <a href="https://twitter.com/boredzo/status/733159429391011841">May 19, 2016</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>We don’t need Objective-C to be pilloried, and we don’t need to pretend that Swift is a superior language in every way. At the end of the day, our job is to build software. Having a diverse set of tools means you can solve a diverse set of problems. Let’s keep sharing what we learn, and let’s keep learning from each other.</p>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>We don’t need Objective-C to be pilloried, and we don’t need to pretend that Swift is a superior language in every way. At the end of the day, our job is to build software. Having a diverse set of tools means you can solve a diverse set of problems. Let’s keep sharing what we learn, and let’s keep learning from each other.</p>
 <hr>
 <span class="meta">Posted on May 20, 2016</span>
 </div></div></article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

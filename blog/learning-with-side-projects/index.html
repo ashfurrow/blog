@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -944,6 +943,7 @@ ga('send', 'pageview');</script>
 <p></p>
 
 <hr>
+
 <p>The other day, I got an <a href="https://twitter.com/ashfurrow/status/727999169827377153">empty threat of a DDoS attack</a>. Cloudflare, my awesome CDN provider, has a <a href="https://blog.cloudflare.com/empty-ddos-threats-meet-the-armada-collective/">great blog post</a> explaining this scam. Now, my site is statically generated and uploaded to an S3 bucket, and then that bucket is behind Cloudflare, so even if the DDoS threat was credible, I’m protected. </p>
 
 <p>It got me thinking, though, what if someone bypassed the CDN and accessed my site directly by its S3 URL? I mean, what would the consequences be? I guess I’d be paying for S3 costs – bandwidth and stuff – but I have an AWS alert to let me know if my bill gets too high. It would suck, but I’d be fine.</p>
@@ -965,9 +965,11 @@ ga('send', 'pageview');</script>
 <li>Create a bucket policy with the IP addresses.</li>
 <li>Update the policy on AWS.</li>
 </ol>
+
 <p>After some trial-and-error with Ruby’s <a href="http://pryrepl.org">pry REPL</a>, I had <a href="https://github.com/ashfurrow/blog/pull/207">finished</a>. Ruby’s a great language for getting things done easily – I used it originally to format a plaintext list of IP addresses into a JSON array. I’m really glad that I’ve learnt enough Ruby to be effective and productive, even in environments where I’m not as experienced as iOS development. </p>
 
 <hr>
+
 <p>So that’s that! My site is low-risk, low-effort way for me to explore the world of web development and infrastructure. It’s fun and rewarding to step outside my comfort zone now and then; it gives me a sense of how my colleagues in the web world work. There are lots of ways to step outside one’s comfort zone, but I like working on my site because I’m making something <em>real</em>, that’s actually used.</p>
 <hr>
 <span class="meta">Posted on May  6, 2016</span>

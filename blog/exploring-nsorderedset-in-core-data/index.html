@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -992,7 +991,7 @@ NSLog(@"%@", results);
 
 <p>I’ve graphed the results below. The bottom axis is testing for inclusion in an <code>NSOrderedSet</code> instance with that many members, and the left axis is the number of nanoseconds it took to execute that line of code. (Each test in the graph below is measured in nanoseconds.)</p>
 
-<p><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/0A08EEBA91D747FB8FF1F3A69A8349C9.png" alt="0a08eeba91d747fb8ff1f3a69a8349c9"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/1EB17A30245B444DA975836FDDB0F053.png" alt="1eb17a30245b444da975836fddb0f053"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/A18EE02707E845CA9D3B06A7EA49C2E4.png" alt="A18ee02707e845ca9d3b06a7ea49c2e4"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/5BEE1C3455814408A1411729CB4B5B5F.png" alt="5bee1c3455814408a1411729cb4b5b5f"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/7A2664968015404F9A7D867DCE306700.png" alt="7a2664968015404f9a7d867dce306700"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/898B7FB232E94629828B77497E9C78E4.png" alt="898b7fb232e94629828b77497e9c78e4"></p>
+<p><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/0A08EEBA91D747FB8FF1F3A69A8349C9.png" alt="0a08eeba91d747fb8ff1f3a69a8349c9"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/1EB17A30245B444DA975836FDDB0F053.png" alt="1eb17a30245b444da975836fddb0f053"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/A18EE02707E845CA9D3B06A7EA49C2E4.png" alt="A18ee02707e845ca9d3b06a7ea49c2e4"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/5BEE1C3455814408A1411729CB4B5B5F.png" alt="5bee1c3455814408a1411729cb4b5b5f"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/7A2664968015404F9A7D867DCE306700.png" alt="7a2664968015404f9a7d867dce306700"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/898B7FB232E94629828B77497E9C78E4.png" alt="898b7fb232e94629828b77497e9c78e4"></p>
 
 <p>Interesting! The spikes you see are the <strong>first</strong> test for inclusion, but subsequent tests remain about constant across groath of the data set. This first test for inclusion seems to scale sublinearly with the size of the ordered set.</p>
 
@@ -1016,7 +1015,7 @@ NSLog(@"%@", results);
 
 <p>Let’s see how <code>NSOrderedSet</code> handles <code>indexOfObject:</code>.</p>
 
-<p><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/DC25A86EAFAB4702B0CBCF07BA39E111.png" alt="Dc25a86eafab4702b0cbcf07ba39e111"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/BAAAC401380342B68502478CE945826C.png" alt="Baaac401380342b68502478ce945826c"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/2420B1F219AC4283896E63DE1745B889.png" alt="2420b1f219ac4283896e63de1745b889"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/527F9CCCB31F495CA1882BDB6EAE986C.png" alt="527f9cccb31f495ca1882bdb6eae986c"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/B4B35F4668134A95AA847263F81AE2A4.png" alt="B4b35f4668134a95aa847263f81ae2a4"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/5E8811D3716D426AB8AA2B7EC76DA724.png" alt="5e8811d3716d426ab8aa2b7ec76da724"></p>
+<p><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/DC25A86EAFAB4702B0CBCF07BA39E111.png" alt="Dc25a86eafab4702b0cbcf07ba39e111"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/BAAAC401380342B68502478CE945826C.png" alt="Baaac401380342b68502478ce945826c"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/2420B1F219AC4283896E63DE1745B889.png" alt="2420b1f219ac4283896e63de1745b889"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/527F9CCCB31F495CA1882BDB6EAE986C.png" alt="527f9cccb31f495ca1882bdb6eae986c"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/B4B35F4668134A95AA847263F81AE2A4.png" alt="B4b35f4668134a95aa847263f81ae2a4"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/5E8811D3716D426AB8AA2B7EC76DA724.png" alt="5e8811d3716d426ab8aa2b7ec76da724"></p>
 
 <p>That’s super-interesting! It looks like the longest-running invocation of the <code>indexOfObject:</code> is the <em>second</em> one. Huh.</p>
 
@@ -1089,7 +1088,7 @@ for (unsigned long int passes = 100; passes &lt;= 10000000; passes *= 10)
 </code></pre>
 <p>Hacky, sure, but whatever. Let’s take a look at the test results for 100-item ordered sets</p>
 
-<p><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/CDDBEEA9EFF649AC9A659BA0C5C679DA.png" alt="Cddbeea9eff649ac9a659ba0c5c679da"><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/F24C924537A94CD097A8BB3DFFFBC806.png" alt="F24c924537a94cd097a8bb3dfffbc806"></p>
+<p><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/CDDBEEA9EFF649AC9A659BA0C5C679DA.png" alt="Cddbeea9eff649ac9a659ba0c5c679da"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/F24C924537A94CD097A8BB3DFFFBC806.png" alt="F24c924537a94cd097a8bb3dfffbc806"></p>
 
 <p>There’s the money shot. The first invocation still has a larger time than subsequent ones, and is probably due to the re-balancing of the tree. Additionally, though there is a longer run time on the first invocation, it isn’t as significant in the context of the tests with larger ordered sets.</p>
 

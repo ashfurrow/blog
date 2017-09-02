@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -946,7 +945,9 @@ ga('send', 'pageview');</script>
 <p></p>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">Things I don’t want: <a href="https://twitter.com/hashtag/Dropbox?src=hash">#Dropbox</a> up in my kernel. <a href="https://t.co/p4LV87cKYy">pic.twitter.com/p4LV87cKYy</a></p>— Dusty (@duspom) <a href="https://twitter.com/duspom/status/735263193497505792">May 25, 2016</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>I’ve been trying to move away from online services that allow easy mass surveillance. For example, I started in 2012, when I <a href="https://ashfurrow.com/blog/switching-from-gmail-to-fastmail/">moved off of Gmail</a>. It’s not been easy, I think in part because services that are popular are typically ad-supported – viewing your data is how they sell ads to you – this implies a lack of end-to-end encryption, and security in general. I’ve been tolerating Dropbox because it’s so <em>damm</em> convenient, but the kernel extension was the last straw, so I <a href="https://twitter.com/ashfurrow/status/736936037876895744">asked for alternatives</a>. </p>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I’ve been trying to move away from online services that allow easy mass surveillance. For example, I started in 2012, when I <a href="https://ashfurrow.com/blog/switching-from-gmail-to-fastmail/">moved off of Gmail</a>. It’s not been easy, I think in part because services that are popular are typically ad-supported – viewing your data is how they sell ads to you – this implies a lack of end-to-end encryption, and security in general. I’ve been tolerating Dropbox because it’s so <em>damm</em> convenient, but the kernel extension was the last straw, so I <a href="https://twitter.com/ashfurrow/status/736936037876895744">asked for alternatives</a>. </p>
 
 <p>The solution that appealed to me the most was <a href="https://getsync.com">BitTorrent Sync</a>. It’s closed source (boo) but on its face, offers a good compromise between security and convenience. I decided to give it a try, and in the process I ran into confusing documentation and tutorials that would make me <em>less</em> secure than using Dropbox. It really sucks that in order to <em>securely</em> do something as commonplace as syncing files, you have to be pretty tech savvy. While I’m continuing to evaluate it for a sync solution (I’m not yet ready to commit to BitTorrent Sync), I’m hoping this post will be a resource for anyone who wants to use BitTorrent Sync securely.</p>
 
@@ -970,6 +971,7 @@ ga('send', 'pageview');</script>
 <li>Turn B on.</li>
 <li>The file isn’t sync’d to B, because A isn’t online to send it.</li>
 </ol>
+
 <p>The solution to this is to have a computer that’s running BitTorrent Sync that’s always on. Unless you have a home server or colocated machine, you’re going to have to use a virtual server. That’s where Amazon Web Services comes in.</p>
 
 <p>AWS is super-popular, but managing it is so infamously unfriendly that there’s a <a href="https://www.expeditedssl.com/aws-in-plain-english">AWS in Plain English</a> site to help. We’re going to use EC2, their virtual server service. The best blog post I found to help this is <a href="http://meltingice.net/2015/07/27/how-to-run-bittorrent-sync-on-aws/">here</a>, and it’s an excellent reference on how to set up BitTorrent Sync on a new EC2 instance (basically a virtual server). You get a year of free service from AWS, and after that it’s about $10/month (when billed hourly – you can save money by <a href="https://aws.amazon.com/ec2/pricing/">billing monthly or yearly</a>). </p>
@@ -983,6 +985,7 @@ ga('send', 'pageview');</script>
 </li>
 <li><p>The server syncs your files <em>in plaintext</em>, so an attacker who gains access to the server, or an NSA employee issuing a subpoena to Amazon for your instance’s filesystem [?], now has all your files. </p></li>
 </ol>
+
 <p>These problems can be pretty easily mitigated. First, though, I need to explain a bit more about how BitTorrent Sync works.</p>
 
 <h2 id="bittorrent-sync">
@@ -1041,6 +1044,7 @@ ga('send', 'pageview');</script>
 <p>While I was critical of BitTorrent Sync’s documentation, it <em>is</em> a step in the right direction, and I hope they continue to make setup easier. As for AWS, there are other solutions like <a href="https://www.digitalocean.com">DigitalOcean</a> that might be easier. Cloud server administration is a lot simpiler than it used to be, and combined with cool services like BitTorrent Sync, I hope we can all take a step towards and end-to-end encrypted future.</p>
 
 <hr>
+
 <p>Thanks to <a href="https://twitter.com/gothmog%E2%80%AC">Jeremy Beker</a>, <a href="https://twitter.com/aaronvegh">Aaron Vegh</a>, <a href="https://twitter.com/orta">Orta Therox</a>, and of course <a href="https://twitter.com/ashleykrista">my wife</a> for their help proofreading this post.</p>
 <hr>
 <span class="meta">Posted on May 30, 2016</span>

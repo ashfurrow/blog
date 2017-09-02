@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -964,7 +963,9 @@ function goToRandomLibrary() {
     window.location.href = 'https://cocoapods.org/pods/' + libraries[index];
 }
 
-</script><p><input type="button" onclick="goToRandomLibrary()" value="Go" class="btn btn-default center-block"></p>
+</script>
+
+<p><input type="button" onclick="goToRandomLibrary()" value="Go" class="btn btn-default center-block"></p>
 
 <p>(If you have suggestions for other FRP libraries to recommend, <a href="https://github.com/ashfurrow/blog/edit/master/source/blog/2015-11-18-reactivecocoa-vs-rxswift.html.markdown">send a pull request</a>.)</p>
 

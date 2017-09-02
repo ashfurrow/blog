@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -944,7 +943,9 @@ ga('send', 'pageview');</script>
 <p>Best way for pure Swift objects to have optional conformance to some contract? Optional protocols/protocol members are <a href="https://twitter.com/objc">@objc</a>-only.</p>— Ash Furrow (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/560436119956115456">January 28, 2015</a>
 </blockquote>
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>I heard back from a lot of different people with a lot of different opinions. Most were confused by my necessarily terse question (it may have been better to post a longer, more detailed question on a medium that provides more than 140 characters). </p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I heard back from a lot of different people with a lot of different opinions. Most were confused by my necessarily terse question (it may have been better to post a longer, more detailed question on a medium that provides more than 140 characters). </p>
 
 <p>I shared my <a href="https://github.com/ashfurrow/Moya/issues/95#issuecomment-71834677">actual question</a> and with help from other developers, I found an <a href="https://github.com/ashfurrow/Moya/pull/96">answer</a> for my specific case. </p>
 
@@ -1037,6 +1038,7 @@ ga('send', 'pageview');</script>
 
 <p></p>
 <hr>
+
 <p>After playing around for a while, things seemed a bit hopeless. Eventually, I realized that I was trying to solve a Swift problem using Objective-C methodology – something that can only lead to tears. I’ve been saying for a while that we need to reevaluate our approaches to familiar problems with Swift, and it was time to follow my own advice. </p>
 
 <p>Let’s revisit the high-level problem I’m trying to solve: I have two types and I want them to talk to each other <em>without coupling</em>. Justin Spahr-Summers, as usual, has an answer: </p>
@@ -1045,7 +1047,9 @@ ga('send', 'pageview');</script>
 <p><a href="https://twitter.com/ashfurrow">@ashfurrow</a> Split out the optional bits into one or more separate protocols that can be conformed to if desired.</p>— Justin Spahr-Summers (@jspahrsummers) <a href="https://twitter.com/jspahrsummers/status/560493854374113280">January 28, 2015</a>
 </blockquote>
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>OK, cool. I can see that being really useful for table views, for example. He even later <a href="https://twitter.com/jspahrsummers/status/560498081162993665">pointed out</a> that was the case. So let’s take a break from <code>Cat</code> and <code>Food</code> and look at table views. How might they look in pure Swift?  </p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>OK, cool. I can see that being really useful for table views, for example. He even later <a href="https://twitter.com/jspahrsummers/status/560498081162993665">pointed out</a> that was the case. So let’s take a break from <code>Cat</code> and <code>Food</code> and look at table views. How might they look in pure Swift?  </p>
 
 <p>The table view delegate/datasource protocols have always mystified me – no one has ever given me a satisfactory rule  dividing what is a datasource method from what is a delegate method. The datasource protocol alone has eleven methods, all but two of which are <code>optional</code>. </p>
 
@@ -1183,6 +1187,7 @@ ga('send', 'pageview');</script>
 
 <p></p>
 <hr>
+
 <p>But wait – what about my first example? With the cat and the food and everything? What do we do there? Well, just like my Twitter question the other day, the answer isn’t so simple. </p>
 
 <p>Remember, the <em>problem</em> isn’t “I need optional protocol functions blah blah blah” – those are a means to an end. The problem is “I need two types to talk to one another without coupling.” Let’s solve this problem the Swift way: with protocols. </p>
@@ -1253,6 +1258,7 @@ ga('send', 'pageview');</script>
 <p>This approach obviously isn’t suited for every case, but it is a useful tool to have at your disposal. </p>
 
 <hr>
+
 <p>Remember that the general problem is “how do I get different types to talk to one another without coupling?” </p>
 
 <p>The answer is “it depends.”</p>
@@ -1260,6 +1266,7 @@ ga('send', 'pageview');</script>
 <p>Swift and Objective-C are interoperable, but are still fundamentally different languages. One prefers static typing and the other is dynamic. Solutions that work well in one aren’t necessarily going to work well in the other. However  natural it is for us to try and use Objective-C solutions to solve Swift problems, we should always be on the lookout for new or better ways to solve problems. If something is difficult in Swift (and it’s not related to constant compiler crashes), it’s likely that you’re trying to use it in a way it is not intended to be used. Pay attention to the friction you experience when writing Swift – if something feels overly difficult, there probably is a better way. </p>
 
 <hr>
+
 <h3 id="update">
 <a class="header-link" href="#update">#</a> Update</h3>
 

@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -951,16 +950,20 @@ ga('send', 'pageview');</script>
 <li>Normalize the GitHub model of fork/commit/pull request.</li>
 <li>Discover friction points involved in using non-UIKit inspired abstractions for managing state.</li>
 </ul>
+
 <p></p>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">“UIKit is very opinionated and those opinions are often not very good” <a href="https://twitter.com/ashfurrow">@ashfurrow</a> <a href="https://twitter.com/hashtag/swiftalps?src=hash">#swiftalps</a></p>— Roy Marmelstein (@marmelroy) <a href="https://twitter.com/marmelroy/status/797007786047639553">November 11, 2016</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>Importantly, my goal was not to <em>convince</em> people to use ReSwift or Redux style state management in Swift; instead, I only wanted to use ReSwift as a way to explore what was possible in terms of state management and demonstrate how software teams can work together to accomplish common goals. In that spirit, I reached out to ReSwift core maintainer <a href="https://twitter.com/benjaminencz">Benjamin Encz</a> to see what sorts of ideas they might have, or chores we could accomplish for them. I distilled their wishlist down to three main goals:</p>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Importantly, my goal was not to <em>convince</em> people to use ReSwift or Redux style state management in Swift; instead, I only wanted to use ReSwift as a way to explore what was possible in terms of state management and demonstrate how software teams can work together to accomplish common goals. In that spirit, I reached out to ReSwift core maintainer <a href="https://twitter.com/benjaminencz">Benjamin Encz</a> to see what sorts of ideas they might have, or chores we could accomplish for them. I distilled their wishlist down to three main goals:</p>
 
 <ol>
 <li>Extend an <a href="https://github.com/ReSwift/CounterExample">existing iOS example app</a>, from displaying/manipulating one counter, to several.</li>
 <li>Add an iOS target to an <a href="https://github.com/ReSwift/ReSwift-Todo-Example">existing macOS example app</a>.</li>
 <li>Build a brand new iOS application that used networking to explore asynchronous state changes in ReSwift.</li>
 </ol>
+
 <p>It was ambitious. I had planned three two-hour sessions, each with a fresh batch of participants, each one building upon the work of the others (just like real software development). What the final products would look like, I didn’t know, but we were going to try, fail, and learn. Together.</p>
 
 <p>I didn’t want this to be like a typical workshop where I direct people to accomplish preset tasks. Instead, I wanted to model this off of the weekly <a href="https://artsy.github.io/blog/2015/08/10/peer-lab/">peer lab</a> that I help run on Saturday mornings. As a group, we broke down the goals into tasks that groups of two or three participants worked on. They reviewed each others’ pull requests, coordinated, and handled merge conflicts. I was only there to facilitate.</p>

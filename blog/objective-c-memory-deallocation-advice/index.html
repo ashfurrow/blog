@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -943,6 +942,7 @@ ga('send', 'pageview');</script>
 <ul>
 <li>When releasing a batch from the cache, remove the references into and out of it.</li>
 </ul>
+
 <p>Something like:</p>
 <pre class="highlight objective_c"><code><span class="n">NSArray</span> <span class="o">*</span><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="n">sharedCache</span> <span class="nf">allKeys</span><span class="p">];</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">key</span> <span class="k">in</span> <span class="n">keys</span><span class="p">)</span>
@@ -957,6 +957,7 @@ ga('send', 'pageview');</script>
 <ul>
 <li>When dealloc'ing a model instance, use a static NSLock to remove the references to each model.</li>
 </ul>
+
 <p>Something like:</p>
 <pre class="highlight objective_c"><code><span class="k">static</span> <span class="n">NSLock</span> <span class="o">*</span><span class="n">deallocLock</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">deallocLock</span><span class="p">)</span>

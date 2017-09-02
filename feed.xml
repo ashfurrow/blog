@@ -4,10 +4,36 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-08-20T17:29:52+00:00</updated>
+  <updated>2017-09-02T15:58:53+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Some Updates</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/some-updates/"/>
+    <id>https://ashfurrow.com/blog/some-updates/</id>
+    <published>2017-09-02T15:58:53+00:00</published>
+    <updated>2017-09-02T15:58:53+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;Bit of a personal post, but wanted to updated after some tweets I made about my medication.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Recently found the perfect Rx combo to help me with depression. Works really well for me. Tuesday, I had to stop b/c a serious side-effect 😔&lt;/p&gt;&amp;mdash; the javascript lover (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/901838857683038212"&gt;August 27, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;Things have been going really well for me (which I&amp;rsquo;d &lt;a href="/blog/therapys-end/"&gt;recently written about&lt;/a&gt;) and this medication change kind of came out of the blue. It sucks to find a groove and then have it disrupted, but life is a journey and there are lots of other medications I can try. I&amp;rsquo;m hopeful that the adverse side-effect that required me to suddenly stop taking one of my meds aren&amp;rsquo;t permanent (it&amp;rsquo;s a neurological problem, so it might be). &lt;/p&gt;
+
+&lt;p&gt;The last time I went off this medication (which was a tapered change and not a hard stop, like this time) &lt;a href="/blog/feelings-are-hard/"&gt;things got really hard really quickly&lt;/a&gt;. It&amp;rsquo;s been nearly two weeks now and while I&amp;rsquo;m definitely feeling down, but I&amp;rsquo;m also being proactive about managing the imminent mood problems. For example, I find getting out the door in the mornings to be difficult, and it kind of sets the tone for the whole day. So I have a schedule written out of what exactly to do in the mornings, including some self-care to make sure my mood stays stable throughout the day. It&amp;rsquo;s been helping a lot.&lt;/p&gt;
+
+&lt;p&gt;So far, so good. We&amp;rsquo;ll see. I&amp;rsquo;m in high spirits, for now, but like I&amp;rsquo;ve said before: I&amp;rsquo;ve got a supportive partner, friends, and work environment. I&amp;rsquo;ll be fine, just need to remember that I&amp;rsquo;ll be fine.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Music is Back</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/music-is-back/"/>
@@ -218,28 +244,6 @@ argue have a huge positive impact on our business success.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/artsy/meta/blob/master/meta/what_is_artsy.md"&gt;Our values&lt;/a&gt; are open source. They all contribute to our success. But openness, particularly in software, will always be close to my heart, and I&amp;rsquo;ll see it reflected in our success all the time. I believe that this is how the whole software industry will work, eventually, and I&amp;rsquo;m proud to be ahead of the curve.&lt;/p&gt;
 
 &lt;p&gt;I would encourage you to experiment with open source by default at your own workplace. Remember, it&amp;rsquo;s open source &lt;em&gt;by default&lt;/em&gt;, not &lt;em&gt;by demand&lt;/em&gt;. It&amp;rsquo;s okay to have closed source! The steps to start open source by default, more rationale behind the idea, and tales of our own progress towards this goal are &lt;a href="https://artsy.github.io/series/open-source-by-default/"&gt;all documented&lt;/a&gt;. Check it out, get in touch if you have questions. &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Contemporaneous Blogging</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/contemporaneous-blogging/"/>
-    <id>https://ashfurrow.com/blog/contemporaneous-blogging/</id>
-    <published>2017-07-18T00:06:02+00:00</published>
-    <updated>2017-07-18T00:06:02+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;So I&amp;rsquo;ve &lt;a href="https://ashfurrow.com/blog/sharing-is-selfish/"&gt;written&lt;/a&gt; – and &lt;a href="https://ashfurrow.com/blog/sharing-is-selfish/"&gt;spoken&lt;/a&gt; – about how we should all be blogging as we learn things. It&amp;rsquo;s a good idea for many reasons, some selfish and some altruistic. But I&amp;rsquo;ve always said: you really should try and write &lt;em&gt;as&lt;/em&gt; you learn something. It&amp;rsquo;s when you&amp;rsquo;re best able to describe and bridge the gap between ignorance and understanding. &lt;em&gt;As&lt;/em&gt; you experience the learning process.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;However, there are other reasons to blog &lt;em&gt;as&lt;/em&gt; you learn something – contemporaneously with the learning process. For example, it&amp;rsquo;s easier to write about a topic when it&amp;rsquo;s fresh in your mind. Also, even if you &lt;em&gt;mean&lt;/em&gt; to write about something later, it can easily become an item on a todo list that you&amp;rsquo;re likely to put off and &lt;a href="https://github.com/ashfurrow/blog/issues/188#issuecomment-315918906"&gt;not get to&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;But another reason to blog contemporaneously is that you may just not be able to write about something in the future. A friend recently was laid off and now a blog post they had written contemporaneously – but not published – is out of context and needs to be changed. That&amp;rsquo;s a lot of work.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re able to fit writing into your schedule – please try to. You never know when life circumstances – job, family, housing – could change. Writing about things &lt;em&gt;as&lt;/em&gt; you learn them is the best way to capture that knowledge.&lt;/p&gt;
-
-&lt;p&gt;Even if you keep it private, writing is a wonderful way to document knowledge and gain a deeper understanding of the subject. I encourage you to try it out, even if writing hasn&amp;rsquo;t been a strength for you. I have faith you&amp;rsquo;ll produce something of value.&lt;/p&gt;
 </content>
   </entry>
 </feed>

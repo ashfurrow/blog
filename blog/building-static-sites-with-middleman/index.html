@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -1031,6 +1030,7 @@ ga('send', 'pageview');</script>
 <p>There are three groups of <code>&lt;meta&gt;</code> tags to add to your <code>&lt;head&gt;</code>: ordinary tags, Twitter Card tags, and Facebook Open Graph tags. The content of these tags is going to depend on your individual site, but for reference here’s the <a href="https://dev.twitter.com/cards/overview">Twitter Cards documentation</a>, the <a href="https://developers.facebook.com/docs/sharing/opengraph">Facebook Open Graph documentation</a>, and <a href="https://github.com/ashfurrow/peerlab.community/blob/5792eebad29156ea56f60e7304fd29dba3dbe55a/source/layouts/layout.erb#L8-L34">my implementation</a> for the Peer Lab site. Use the <a href="https://developers.facebook.com/tools/debug/">Open Graph Debugger</a> to preview what your site looks like when people share it. Nice.</p>
 
 <hr>
+
 <p>So that’s a rundown on how to quickly create a static website using Middleman. I’ve done this a few times and every time I do, I need to remember all the steps. Now, at the very least, I’ve got documentation 😅</p>
 
 <p>The peer lab site is <a href="https://github.com/ashfurrow/peerlab.community">open source</a>, as is <a href="https://github.com/ashfurrow/blog">this blog</a>, and both are built with Middleman. My blog is significantly more complicated, though. I’m happy to answer questions about either, just open a GitHub issue and I’ll answer there. Good luck!</p>

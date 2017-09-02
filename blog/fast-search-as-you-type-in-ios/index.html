@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -979,7 +978,9 @@ filteredCityModelArray = [cityModelArray filteredArrayUsingPredicate:[NSPredicat
     <p><a href="https://twitter.com/ashfurrow"><s>@</s><b>ashfurrow</b></a> consider using -predicateWithSubstitutionVariables: to avoid expensive format string parsing: <a href="http://t.co/mXRmjFrg" title="http://stackoverflow.com/a/7713512/1034477">stackoverflow.com/a/7713512/1034…</a></p>— Ryder Mackay (@rydermackay) <a href="https://twitter.com/rydermackay/status/242393643154022400" data-datetime="2012-09-02T22:48:42+00:00">September 2, 2012</a>
 </blockquote>
 
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>Nice! We can create the predicate once and then save it for later to avoid having to parse the format string (a not-inexpensive operation).</p>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Nice! We can create the predicate once and then save it for later to avoid having to parse the format string (a not-inexpensive operation).</p>
 <pre class="highlight plaintext"><code>//put this in viewDidLoad
 //filteringPredicate is an instance variable
 filteringPredicate = [NSPredicate predicateWithFormat:@"canonicalSearchTerm beginsith $searchTerm", lowerCaseInputText]

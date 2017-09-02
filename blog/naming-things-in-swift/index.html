@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -958,6 +957,7 @@ ga('send', 'pageview');</script>
 <li>Clarity at the point of use is your most important goal.</li>
 <li>Clarity is more important than brevity.</li>
 </ul>
+
 <p>Fantastic guidelines, but let’s go further. Haoyi’s Scala blog post tells us that our goal when naming something is to:</p>
 
         </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
@@ -996,6 +996,7 @@ ga('send', 'pageview');</script>
 <li>Things they’ve seen before in other codebases</li>
 <li>Facts they’ve picked up in previous jobs</li>
 </ul>
+
 <p>Programmers want to know about:</p>
 
 <ul>
@@ -1004,6 +1005,7 @@ ga('send', 'pageview');</script>
 <li>Things they are unfamiliar with</li>
 <li>Things that are especially dangerous, whether due to correctness, security, performance, etc.</li>
 </ul>
+
 <p>This is not comprehensive.</p>
 </blockquote>
 
@@ -1209,6 +1211,7 @@ ga('send', 'pageview');</script>
 <li>Omit labels for type conversion (ex: <code>Int64(someUInt32)</code>).</li>
 <li>Otherwise (generally) include argument labels.</li>
 </ul>
+
 <p>Finally, that brings us to positional closure arguments. When to use these depends mostly on the length of your closure, and closely matches the “Wider-Scoped Names Should Be Longer” rule. </p>
 
 <p>If your closure does only a few things, use positional closure arguments:</p>
@@ -1235,6 +1238,7 @@ ga('send', 'pageview');</script>
 <p>Again, refer to the Ray Wenderlich guide for more info on closures.</p>
 
 <hr>
+
 <p>Remember, the guidelines we’ve discussed today are not absolutes. Experiment, ask others, and learn. Have fun!</p>
 <hr>
 <span class="meta">Posted on January 14, 2017</span>

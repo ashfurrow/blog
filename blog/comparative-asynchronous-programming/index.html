@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -941,7 +940,9 @@ ga('send', 'pageview');</script>
 
 <p></p>
 
-<script async class="speakerdeck-embed" data-id="46f4ab568af449b8ac95aa4939f9e62e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script><p>Today we’re going to be talking about asynchronous programming: what it is, why it’s important, and what it can look like in Swift. The topic is quite complicated and I don’t have enough time to go into a tonne of detail, but my goal isn’t depth, it’s breadth. I want to expose you to lots of ideas and give you hints about where to follow up to do your own research. </p>
+<script async class="speakerdeck-embed" data-id="46f4ab568af449b8ac95aa4939f9e62e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>Today we’re going to be talking about asynchronous programming: what it is, why it’s important, and what it can look like in Swift. The topic is quite complicated and I don’t have enough time to go into a tonne of detail, but my goal isn’t depth, it’s breadth. I want to expose you to lots of ideas and give you hints about where to follow up to do your own research. </p>
 
 <p>Today we’re discussing four main points:</p>
 
@@ -951,6 +952,7 @@ ga('send', 'pageview');</script>
 <li>But we can build our own abstractions in Swift!</li>
 <li>However, compiler limitations mean there are some abstractions we <em>can’t</em> build in Swift.</li>
 </ol>
+
 <p>Let’s get started.</p>
 
 <h2 id="asynchronous-programming-difficult-and-subjective">
@@ -1114,6 +1116,7 @@ ga('send', 'pageview');</script>
 <li>Error events.</li>
 <li>Completion events.</li>
 </ul>
+
 <p>These streams, called observables, finish with either an error or completion event (never both), and they stop sending events afterwards. I’ve written a whole <a href="https://ashfurrow.com/blog/reactivecocoa-vs-rxswift/">blog post</a> about choosing an FRP library, but let’s explore some <a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> examples.</p>
 <pre class="highlight swift"><code><span class="nf">getCredentialsFromUser</span><span class="p">()</span>
   <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="n">credentials</span> <span class="k">in</span>
@@ -1175,6 +1178,7 @@ ga('send', 'pageview');</script>
 <li>Actors can maintain local state, so they can respond to a message differently when called subsequent times.</li>
 <li>Actors maintain a hierarchy, leading to great error-tolerance.</li>
 </ul>
+
 <p>Actors are definitely overkill for nearly all iOS applications, But properly implemented, Actors can be used to write fault-tolerant, highly performant distributed systems</p>
 
 <p><a href="http://www.erlang.org">Erlang</a> proved the actor model was feasible and helped to popularize it. As Swift’s popularity outside iOS/macOS apps grows, I’m looking forward to seeing how the Actor Model gets used in Swift.</p>
@@ -1213,6 +1217,7 @@ ga('send', 'pageview');</script>
 <li>Functions can only return a value once.</li>
 <li>Function execution always starts at the top.</li>
 </ul>
+
 <p>Coroutines and generator functions aren’t typically used directly, but are required to make async/await. Swift doesn’t have support for coroutines yet, so that’s why Swift can’t have async/await like JavaScript or C#.</p>
 <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">fibGenerator</span><span class="o">*</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
   <span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1240,7 +1245,9 @@ ga('send', 'pageview');</script>
 <p></p>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">🤔<a href="https://twitter.com/hashtag/playgroundscon?src=hash">#playgroundscon</a> Great talk on (almost) all things async <a href="https://twitter.com/ashfurrow">@ashfurrow</a> <a href="https://t.co/99iHsLBR4A">pic.twitter.com/99iHsLBR4A</a></p>— Bjorn Ho (@nrg84) <a href="https://twitter.com/nrg84/status/834909007148036096">February 23, 2017</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>Hopefully you made this face a few times while reading. It’s always a good idea to learn new things, even if they’re not directly applicable to your job, just to know they’re out there. If you see something cool you’d like in Swift, head over to <a href="https://github.com/apple/swift-evolution">Swift Evolution</a> and talk to the language community. Together, we can help shape the future of Swift.</p>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Hopefully you made this face a few times while reading. It’s always a good idea to learn new things, even if they’re not directly applicable to your job, just to know they’re out there. If you see something cool you’d like in Swift, head over to <a href="https://github.com/apple/swift-evolution">Swift Evolution</a> and talk to the language community. Together, we can help shape the future of Swift.</p>
 
 <p>Especially as Swift gains popularity outside of just building apps, I’m incredibly excited to see how it continues to evolve. I’m particularly keen to see new asynchronous abstractions become possible in my favourite language.</p>
 <hr>

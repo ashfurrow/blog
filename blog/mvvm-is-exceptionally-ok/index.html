@@ -912,10 +912,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-9572240-3', 'auto');
-ga('send', 'pageview');</script>
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 </head>
 <body>
-<noscript><link href="/css/all.css" rel="stylesheet"></noscript>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
 <div class="navbar-header page-scroll">
 <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
@@ -948,6 +947,7 @@ ga('send', 'pageview');</script>
 <li>MVVM invites many responsibilities.</li>
 <li>MVVM doesn’t change your structure.</li>
 </ol>
+
 <p>I actually agree with all of these.</p>
 
 <p>MVVM <em>is</em> poorly named. Why don’t we rename it? Great idea. MVVM is a pretty big “umbrella term”, and precise language would help beginners get started.</p>
@@ -979,6 +979,7 @@ ga('send', 'pageview');</script>
 <p>Separating out view models and view controllers isn’t <em>just</em> to make future work easier – it also provides you with an extremely important, immediate benefit: better testability. Now that view controllers are thin, you can use stubbed view models and <a href="https://cocoapods.org/pods/Nimble-Snapshots">test your view controllers visually</a>. Similarly, the logic in your view models is now far easier to test because it’s not touching the views <em>at all</em>.</p>
 
 <hr>
+
 <p>A statement like “MVVM is not very good” implies that “MVVM is worse than what we already have.” But what we have are view controllers that are hundreds of lines long and do <em>everything</em> in our apps. And MVC tightly binds all our app logic to UIKit and the <code>UIView</code> lifecycle, which makes them <em>incredibly</em> difficult to test. As a result, they don’t get tested. I don’t blame us – <a href="https://www.youtube.com/watch?v=VD51AkG8EZw">even the Ruby community struggles with this</a>.</p>
 
 <p>Learning to program is a journey with no end. I believe that for the iOS community, MVVM is one stop along that journey, a layover to <em>even better</em> places. But these are <em>all</em> just stops along a journey; we can’t stop at MVVM, we have to keep moving.</p>
