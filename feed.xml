@@ -4,10 +4,50 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-09-02T15:58:53+00:00</updated>
+  <updated>2017-09-09T14:07:00+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>And I Feel Fine</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/and-i-feel-fine/"/>
+    <id>https://ashfurrow.com/blog/and-i-feel-fine/</id>
+    <published>2017-09-09T14:07:00+00:00</published>
+    <updated>2017-09-09T14:07:00+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;I&amp;rsquo;ve been struggling lately with political &amp;ldquo;feelpinions&amp;rdquo;, political opinions mostly informed by feelings. I have strong opinions about a lot of what&amp;rsquo;s going on in the world at the moment, but those opinions are backed by feelings instead of things like in-depth research. I just don&amp;rsquo;t have time.&lt;/p&gt;
+
+&lt;p&gt;I can handle this, even when my opinions come into conflict with someone else&amp;rsquo;s. After all – their opinions are probably not more informed than mine. But when what &lt;em&gt;I&lt;/em&gt; believe conflicts with mainstream narratives, life becomes hard. Reading the news or talking with colleagues is oftentimes difficult.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Politic&amp;rsquo;s is back baby. It&amp;rsquo;s good again. Awoouu (wolf Howl)&lt;/p&gt;&amp;mdash; wint (@dril) &lt;a href="https://twitter.com/dril/status/568056615355740160"&gt;February 18, 2015&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I continue, I&amp;rsquo;d like to address the fact that that last paragraph probably sounded a bit conspiratorial. &amp;ldquo;Mainstream narratives&amp;rdquo; etc. My opinions aren&amp;rsquo;t really that extreme – they&amp;rsquo;re just outside the &lt;a href="https://en.wikipedia.org/wiki/Overton_window"&gt;Overton window&lt;/a&gt;. For example, it&amp;rsquo;s pretty obvious to me that capitalism is wholly incapable of dealing with climate change. However, I still need to survive my day-to-day life in a society built on capitalism; it&amp;rsquo;s hard for me to motivate myself to work building tools for the art market when I know that that market exists inside a system that&amp;rsquo;s thrusting our species towards its inescapable doom. &lt;/p&gt;
+
+&lt;p&gt;(And, obviously, I need to acknowledge that interacting with the rest of society has been even more difficult lately because of &lt;a href="/blog/some-updates/"&gt;some recent life changes&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;To help me cope, and maybe to let others of similar opinions know that they&amp;rsquo;re not alone, I&amp;rsquo;m going to rapid-fire some political feelpinions I have that go against the grain of what&amp;rsquo;s &amp;ldquo;normal&amp;rdquo; – opinions I have that I haven&amp;rsquo;t necessarily interrogated in-depth, but opinions I hold nevertheless. &lt;/p&gt;
+
+&lt;p&gt;Here we go!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Capitalism is responsible for a massive amount of worldwide suffering, and this suffering overwhelmingly affects women, people of colour, people living in poverty, and members of other marginalized groups.&lt;/li&gt;
+&lt;li&gt;Climate change is going to continue getting worse, and will get more worse more quickly as time goes on. Our species is likely headed to extinction.&lt;/li&gt;
+&lt;li&gt;The &lt;a href="http://www.dsausa.org"&gt;Democratic Socialists of America&lt;/a&gt; are a cool organization, but are not without their flaws. They do &lt;a href="https://twitter.com/neworleansdsa/status/901549034699194369"&gt;good work&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Many criticisms of Hillary Clinton are based in (and motivated by) misogyny. This fact is used by centrists to stifle legitimate criticisms of her policies. (For in-depth feminist critique of Clinton&amp;rsquo;s policies, check out &lt;a href="http://amzn.to/2jbPzwd"&gt;this book&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Many criticisms of Israel are based in (and motivated by) antisemitism. This fact is used by centrists to stifle legitimate criticisms of the country&amp;rsquo;s policies. After all, Israel is a country, and &lt;em&gt;all&lt;/em&gt; countries&amp;rsquo; policies have flaws, therefore Israel&amp;rsquo;s policies have flaws. This shouldn&amp;rsquo;t be a controversial statement.&lt;/li&gt;
+&lt;li&gt;The Democratic Party is deeply, deeply flawed. Probably irreparably. They represent the interests of their donors first and foremost, and have failed to offer a meaningful resistance to the rise of fascism.&lt;/li&gt;
+&lt;li&gt;The 2016 Clinton presidential campaign banked too heavily on &amp;ldquo;not being Donald Trump&amp;rdquo; instead of presenting appealing social policies (for example, single payer health care).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Phew! That felt good. Certainly not an exhaustive list. If you agree with any of these, that&amp;rsquo;s cool. If not, don&amp;rsquo;t @ me.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s the end of the world, baby!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Some Updates</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/some-updates/"/>
@@ -192,58 +232,6 @@
 &lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;simple and helpful&lt;br&gt;my disk space woes are over&lt;br&gt;logrotate.d &lt;a href="https://t.co/R2Mfl7j2Kv"&gt;pic.twitter.com/R2Mfl7j2Kv&lt;/a&gt;&lt;/p&gt;&amp;mdash; the javascript lover (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/889102904023539712"&gt;July 23, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;So yeah, logrotate.d is another &lt;a href="https://www.xkcd.com/208/"&gt;minor skill&lt;/a&gt; I&amp;rsquo;ve added to my tool belt that&amp;rsquo;s come from working on and administering Mastodon.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Open Source Ideology</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/open-source-ideology/"/>
-    <id>https://ashfurrow.com/blog/open-source-ideology/</id>
-    <published>2017-07-18T16:57:32+00:00</published>
-    <updated>2017-07-18T16:57:32+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Oh hey look, my employer &lt;a href="https://artsy.net"&gt;Artsy&lt;/a&gt; is in the news! We got a &lt;a href="https://www.theverge.com/2017/7/18/15983712/artsy-fine-art-galleries-online-auction-sales"&gt;great write-up in &lt;em&gt;The Verge&lt;/em&gt;&lt;/a&gt; and our recent fundraising was reported on in &lt;a href="https://techcrunch.com/2017/07/18/online-art-marketplace-artsy-raises-50m-plans-to-double-down-on-auctions"&gt;&lt;em&gt;Tech Crunch&lt;/em&gt;&lt;/a&gt;. Very cool! &lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m really proud of my work at Artsy, and I admire the company and its leadership. I especially like a few things, that I would 
-argue have a huge positive impact on our business success.&lt;/p&gt;
-
-&lt;p&gt;First, there&amp;rsquo;s our &lt;a href="http://code.dblock.org/2015/02/09/becoming-open-source-by-default.html"&gt;Open Source by Default&lt;/a&gt; policy. We &lt;a href="http://artsy.github.io/open-source/"&gt;generate a lot of open source&lt;/a&gt;: code, tools, frameworks. We create projects for – and contributing back to – the Ruby, Node, iOS, and DevOps open source communities.&lt;/p&gt;
-
-&lt;p&gt;Second, there is our adherence to collaboration over disruption. The term &amp;ldquo;disruption&amp;rdquo; is such a cliché of Silicon Valley, and I&amp;rsquo;m really glad to focus more on collaborating with existing art market players than &amp;ldquo;disrupting&amp;rdquo; them. As time goes on, folks in the valley are starting to realize that disruption may not be the guaranteed path to business success they thought it was.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;This really gets to what I like about the company and it’s culture. &lt;a href="https://t.co/iWC7mMp3wr"&gt;pic.twitter.com/iWC7mMp3wr&lt;/a&gt;&lt;/p&gt;&amp;mdash; the nokogiri lover (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/887313271518375936"&gt;July 18, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;And I think these two paradigms – open source and collaboration – complement each other really nicely. &lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;em&gt;gently&lt;/em&gt; corrected me :) &lt;br&gt;&lt;br&gt;But the sentiment of collaboration in lieu of disruption has stuck with me.&lt;/p&gt;&amp;mdash; the nokogiri lover (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/887315061680766976"&gt;July 18, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Artsy&amp;rsquo;s success has always been intrinsically aligned with the company values and open source software. We couldn&amp;rsquo;t build Artsy without open source, especially with such a small team, and we wouldn&amp;rsquo;t be as successful as a business without contributing back to that community. Collaboration is intrinsically connected to that open source software as well.&lt;/p&gt;
-
-&lt;p&gt;This is something so foundational to Artsy&amp;rsquo;s engineering culture that it&amp;rsquo;s hard for me to describe. What I&amp;rsquo;ll call our &lt;em&gt;open source ideology&lt;/em&gt; imbues every conversation I have with one of my engineering colleagues. It&amp;rsquo;s contagious. Engineers are drawn to it, they join the company, they drink the Kool-Aid. &amp;ldquo;I can&amp;rsquo;t imagine working any other way&amp;rdquo;, I&amp;rsquo;ll hear them say. I nod. &amp;ldquo;Neither could I.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;But what is it? Artsy&amp;rsquo;s open source ideology is defined by &amp;ldquo;open source by default&amp;rdquo;, and there are a lot of implications carried in that phrase. To borrow a phrase, open source by default is a &lt;em&gt;mindset&lt;/em&gt;. It&amp;rsquo;s the ability for engineers to ask the community for help on a pull request they&amp;rsquo;re having a hard time with. It&amp;rsquo;s taking pride in their work, knowing they can use it and showcase it even after they (eventually) leave the company. It&amp;rsquo;s a sense of ownership, as open source projects created by Artsy engineers are done on their own GitHub accounts – our engineers &lt;em&gt;own&lt;/em&gt; the open source projects they build. &lt;/p&gt;
-
-&lt;p&gt;Not all our software is open, but even our closed source software still has open source components that we contribute back to. And that closed source software is often modularized and open sourced piecemeal anyway. We aim for a sort of&amp;hellip; minimum viable closed source.&lt;/p&gt;
-
-&lt;p&gt;So why is this open source ideology so important to Artsy&amp;rsquo;s business success? Let&amp;rsquo;s frame the impact in business terms.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Low turnover&lt;/strong&gt;. It&amp;rsquo;s rare for an engineer to leave Artsy. Turnover, especially in specialized fields like software engineering, is a huge cost for businesses. Replacing engineers is expensive, and we don&amp;rsquo;t often have to do it. That&amp;rsquo;s because we&amp;rsquo;ve got&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Engaged engineers&lt;/strong&gt;. Our engineering team is really engaged with their work; our internal anonymous surveys back this up. I doubt we could accomplish as much as we do with only 25 engineers if we weren&amp;rsquo;t highly engaged with our jobs. You can read more about the impact of employee engagement on businesses &lt;a href="http://hello.cultureamp.com/hubfs/Impact_of_engagement-whitepaper.pdf"&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reputation&lt;/strong&gt;. Smart businesses know that you can never have too much reputation. Artsy is well-known among developers in the open source community. That helps us attract talent, making hiring engineers a lot easier for us.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Familiarity with tools&lt;/strong&gt;. Every business relies on open source software, at some level, and our team is familiar with a lot of that tooling. There are teammates available to pair with you on whatever compiler/language/tool issue you&amp;rsquo;re having to find the problem, document a fix, and hopefully submit a pull request back to the project. &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So there are a lot of business upsides to working in the open. The risks are pretty minimal too. People tend to overestimate the risks anyway, since the unfamiliar is always scarier than the status quo.&lt;/p&gt;
-
-&lt;p&gt;Our ideology is a feedback loop – a sort of flywheel that keeps gaining momentum. The more we contribute to open source, the more we benefit as a business, allowing us to contribute more back, and so on.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;The team &lt;a href="https://twitter.com/artsy"&gt;@artsy&lt;/a&gt; &lt;a href="https://twitter.com/ArtsyOpenSource"&gt;@ArtsyOpenSource&lt;/a&gt; is committed to spending a lot of our $50MM Series D on writing open source code. &lt;a href="https://t.co/Fb4GxMisrT"&gt;https://t.co/Fb4GxMisrT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Artsy Open Source (@ArtsyOpenSource) &lt;a href="https://twitter.com/ArtsyOpenSource/status/887358284553912321"&gt;July 18, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://github.com/artsy/meta/blob/master/meta/what_is_artsy.md"&gt;Our values&lt;/a&gt; are open source. They all contribute to our success. But openness, particularly in software, will always be close to my heart, and I&amp;rsquo;ll see it reflected in our success all the time. I believe that this is how the whole software industry will work, eventually, and I&amp;rsquo;m proud to be ahead of the curve.&lt;/p&gt;
-
-&lt;p&gt;I would encourage you to experiment with open source by default at your own workplace. Remember, it&amp;rsquo;s open source &lt;em&gt;by default&lt;/em&gt;, not &lt;em&gt;by demand&lt;/em&gt;. It&amp;rsquo;s okay to have closed source! The steps to start open source by default, more rationale behind the idea, and tales of our own progress towards this goal are &lt;a href="https://artsy.github.io/series/open-source-by-default/"&gt;all documented&lt;/a&gt;. Check it out, get in touch if you have questions. &lt;/p&gt;
 </content>
   </entry>
 </feed>
