@@ -4,10 +4,64 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-09-09T14:07:00+00:00</updated>
+  <updated>2017-09-14T18:26:42+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Bargainville</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/bargainville/"/>
+    <id>https://ashfurrow.com/blog/bargainville/</id>
+    <published>2017-09-14T18:26:42+00:00</published>
+    <updated>2017-09-14T18:26:42+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;Some of my oldest memories are of riding in my father&amp;rsquo;s 1998 red Toyota 4runner listening to a cassette tape of the Moxy Früvous album &lt;em&gt;Bargainville&lt;/em&gt; (1993). I was walking this morning and I put the album on and it still really speaks to me. &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;iframe src="https://open.spotify.com/embed/album/6OGn8UPY9GnwhR1068nR7x" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I was always fond of &lt;em&gt;River Valley&lt;/em&gt; because it&amp;rsquo;s a catchy tune, and I grew up in a river valley. Listening to it today, during the incipient climate collapse, is chilling.&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Is your favourite place controlled by developing ambitions?&lt;/p&gt;
+
+&lt;p&gt;Do you think you&amp;rsquo;ll have some power signing a petition?&lt;/p&gt;
+
+&lt;p&gt;Are you fine with your surroundings? Are they gonna crumble?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+&lt;p&gt;Anyway. I kept listening, and kept hearing the same sort of left wife anthems come through. I mean, this seems on the nose by contemporary standards, but in the 90&amp;rsquo;s this was somewhat subversive stuff.&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Clem had a daydream, a daydream from heaven&lt;/p&gt;
+
+&lt;p&gt;Picked up the headline, his country was made up of singers&lt;/p&gt;
+
+&lt;p&gt;And no more right-wingers&lt;/p&gt;
+
+&lt;p&gt;He wakes up to &amp;ldquo;Homeless are stupid, welfare is stupid&lt;/p&gt;
+
+&lt;p&gt;Private investment, efficiency, cool fiscal plannin&amp;rsquo;&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Sounds like more Pat Buchanan&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+&lt;p&gt;Anyway, if you&amp;rsquo;re interested in listening to 90&amp;rsquo;s Canadian folk rock, you could do a lot worse than &lt;em&gt;Bargainville&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;(giant pile of filth Jian Ghomeshi notwithstanding)&lt;/p&gt;&amp;mdash; javascript apologist (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/908311114685054976"&gt;September 14, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>And I Feel Fine</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/and-i-feel-fine/"/>
@@ -193,45 +247,6 @@
 
 
 &lt;p&gt;Thank you to my colleagues and friends for showing up for my debut, and thank you to my wife Ashley for taking some recordings. It&amp;rsquo;s nice to have some artefact of my ability – a snapshot of what I could do. &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Rotating Mastodon Log Files</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/rotating-mastodon-log-files/"/>
-    <id>https://ashfurrow.com/blog/rotating-mastodon-log-files/</id>
-    <published>2017-07-23T12:50:57+00:00</published>
-    <updated>2017-07-23T12:50:57+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;So I&amp;rsquo;ve been running the &lt;a href="https://mastodon.technology"&gt;mastodon.technology&lt;/a&gt; instance of &lt;a href="https://joinmastodon.org"&gt;Mastodon&lt;/a&gt; since April, and I&amp;rsquo;ve written about different things I&amp;rsquo;ve learned while administering a server and contributing to the project. One thing I&amp;rsquo;ve only recent learned about is &lt;a href="https://en.wikipedia.org/wiki/Log_rotation"&gt;log rotation&lt;/a&gt;: an automatic task to prevent log files from filling up a disk.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;This relates to a problem I had a month ago. My primary disk filled up, prevent media uploads from working for a few hours (the database was unaffected since it uses a separate disk). The problem was exacerbated by an &lt;a href="https://github.com/tootsuite/mastodon/issues/3565"&gt;issue&lt;/a&gt; I&amp;rsquo;ve been having with Sidekiq log file sizes, but the root of the issue is that I wasn&amp;rsquo;t rotating Mastodon log files at all. I was just logging in about once a week to do restart the docker containers (thereby clearing the logs). But I forgot one week.&lt;/p&gt;
-
-&lt;p&gt;I asked some colleagues for advice and they told me about log rotation. So I added the following new, named &lt;code&gt;/etc/logrotate.d/docker-container&lt;/code&gt; (see &lt;a href="https://sandro-keil.de/blog/2015/03/11/logrotate-for-docker-container/"&gt;this helpful post&lt;/a&gt;).&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;/var/lib/docker/containers/*/*.log {
-  rotate 7
-  daily
-  compress
-  size=1M
-  missingok
-  delaycompress
-  copytruncate
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This moves the log contents to a new file and compresses previously moved logs, so I get a disk use increase of about 50MB/day instead of 1GB/day.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/rotating-mastodon-log-files/transmit.png" alt="Docker container directory listing" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Obviously the logs are still growing, but the instance could now run for months without me restarting docker containers and not run out of disk space. Nice.&lt;/p&gt;
-
-&lt;p&gt;And I think Docker has this kind of functionality built in now, but this is working so I&amp;rsquo;m running with it.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;simple and helpful&lt;br&gt;my disk space woes are over&lt;br&gt;logrotate.d &lt;a href="https://t.co/R2Mfl7j2Kv"&gt;pic.twitter.com/R2Mfl7j2Kv&lt;/a&gt;&lt;/p&gt;&amp;mdash; the javascript lover (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/889102904023539712"&gt;July 23, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;So yeah, logrotate.d is another &lt;a href="https://www.xkcd.com/208/"&gt;minor skill&lt;/a&gt; I&amp;rsquo;ve added to my tool belt that&amp;rsquo;s come from working on and administering Mastodon.&lt;/p&gt;
 </content>
   </entry>
 </feed>
