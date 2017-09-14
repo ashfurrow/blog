@@ -4,10 +4,36 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-09-14T18:26:42+00:00</updated>
+  <updated>2017-09-14T21:05:44+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Technology is not Neutral</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/technology-is-not-neutral/"/>
+    <id>https://ashfurrow.com/blog/technology-is-not-neutral/</id>
+    <published>2017-09-14T21:05:44+00:00</published>
+    <updated>2017-09-14T21:05:44+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;Facebook&amp;rsquo;s advertising algorithms are &lt;a href="https://www.propublica.org/article/facebook-enabled-advertisers-to-reach-jew-haters"&gt;back in the news&lt;/a&gt; after ProPublica discovered you could target antisemitic categories in your ad campaigns. The publication has &lt;a href="https://www.propublica.org/article/facebook-lets-advertisers-exclude-users-by-race"&gt;previously revealed&lt;/a&gt; that Facebook housing ads allowed landlords to exclude potential tenants based on their race.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;So let&amp;rsquo;s break this down, from a like a moral/technical perspective. What Facebook has done is it&amp;rsquo;s created a piece of &amp;ldquo;neutral&amp;rdquo; technology. The ad-buying algorithm is a way for ad buyers to target audiences with relevant ads, based on information Facebook has gathered or inferred from its users. That&amp;rsquo;s straightforward and certainly sounds harmless. But Facebook failed to account for how its software would be used. For how its software &lt;em&gt;could&lt;/em&gt; be used.&lt;/p&gt;
+
+&lt;p&gt;See, when you create technology based on real people, your technology is necessarily imbued with the biases and prejudices of those people. When Facebook runs an algorithm to determine whose attention is worth how much, its factoring in a lot of signals from people. Those signals carry bias, so the algorithm carries bias. The same premise can be applied to machine learning, too, which also suffers from this problem.&lt;/p&gt;
+
+&lt;p&gt;This is why when Microsoft released a &amp;ldquo;neutral&amp;rdquo; chat bot into Twitter, it got &lt;a href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist"&gt;really racist really quickly&lt;/a&gt;. Microsoft failed to account for what other bot-makers already knew: without foresight and prevention, technology can/will be used in ways that violate its own creators&amp;rsquo; values. &lt;/p&gt;
+
+&lt;p&gt;Put another way: unless a technologist thinks ahead puts in safeguards, they cannot control how the technology they create will be used.&lt;/p&gt;
+
+&lt;p&gt;There are moral implications to building technology, and this is one of them: if your goal is neutrality, you &lt;em&gt;must&lt;/em&gt; tilt the scale in favour of those people that our society marginalizes. You &lt;em&gt;must&lt;/em&gt; overshoot towards social justice. Otherwise, your &amp;ldquo;neutral&amp;rdquo; technology only reinforces the existing imbalances in our society.&lt;/p&gt;
+
+&lt;p&gt;Facebook is asking us to blame their algorithm for being racist, when in fact Facebook are the ones who messed up. They failed to anticipate these problems when they should have thought more carefully about how their software could be used. This should serve as a valuable lesson to all of us.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Bargainville</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/bargainville/"/>
@@ -196,57 +222,6 @@
 &lt;p&gt;Therapy was a life-changing experience for me – I&amp;rsquo;ve been fortunate to have access to mental health treatment. Well, kind of – you wouldn&amp;rsquo;t believe how difficult it is to live abroad with mental health issues.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re struggling with your emotions, ask yourself how that struggle is affecting your life. Talking to someone could really help.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Guitar Debut</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/guitar-debut/"/>
-    <id>https://ashfurrow.com/blog/guitar-debut/</id>
-    <published>2017-07-28T16:42:58+00:00</published>
-    <updated>2017-07-28T16:42:58+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Yesterday evening was &lt;a href="https://www.instagram.com/explore/tags/artsysalon/"&gt;Artsy&amp;rsquo;s third annual Salon&lt;/a&gt;, where everyone at Artsy is invited to show off the art that they create. Not everyone participates, and that&amp;rsquo;s okay, but it&amp;rsquo;s nice to celebrate all my colleagues&amp;rsquo; creative outlets. &lt;/p&gt;
-
-&lt;p&gt;Normally, I display some photographs, but this year I tried something different. The theme of the Salon was growth, and I&amp;rsquo;ve been &lt;a href="/blog/learning-guitar/"&gt;learning the guitar since December&lt;/a&gt;, so last night was my big debut!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I should say, I guess, that I&amp;rsquo;ve been learning guitar &lt;em&gt;and&lt;/em&gt; to sing. The singing was what I was most nervous about actually – I&amp;rsquo;m not sure why. I&amp;rsquo;ve performed piano and saxophone in front of much larger crowds, but I haven&amp;rsquo;t sang publicly since elementary school. My colleagues&amp;rsquo; opinions of me mean a lot, and I guess I was afraid of embarrassing myself. Or maybe I still hate my own voice.&lt;/p&gt;
-
-&lt;p&gt;I performed two songs – covers – one by The Weakerthans and another by their lead, John K Samson. A great Canadian group and artist. The first song was &lt;a href="https://open.spotify.com/track/5bil0D8WSuxyGSDLA4LxZK"&gt;&lt;em&gt;Virtute the Cat Explains Her Departure&lt;/em&gt;&lt;/a&gt;, and the second was &lt;a href="https://open.spotify.com/track/1RwhqapZ0XuqDDeSY4Tzbu"&gt;&lt;em&gt;Heart of the Continent&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-
-
-&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/6-OFLKdUU0w' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-
-
-&lt;p&gt;I could feel my knees shaking, I was sure everyone could see how nervous I was. But I had rehearsed and felt my body follow muscle memory as my brain slipped into that blissful autopilot. It reminded me of speaking at a conference – something I&amp;rsquo;m pretty comfortable with at this point. But still nerve-wracking. I made a few mistakes, but I kept going. &lt;/p&gt;
-
-&lt;p&gt;When I was a senior in high school, I performed in the talent show. Well, I started too. About eight bars into &amp;ldquo;American Pie&amp;rdquo; on the piano, I forgot the music. My mind blanked. I panicked and ran off stage. I was afraid I would panic again and forget the music. But even if I did, I felt safe around my colleagues. &lt;/p&gt;
-
-
-
-&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/582iYsdMHjA' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-
-
-&lt;p&gt;The second song went well too, though my legs were still shaking. I rushed the tempo. I always do. In retrospect, I was afraid of the mic; I need to rehearse more with one. That&amp;rsquo;s okay – those are all improvements I can make.&lt;/p&gt;
-
-&lt;p&gt;The important thing is I had fun, and that I did it. It was hard and I did it anyway (not always easy with depression). Je pense que quelqu&amp;#39;un se mit a rire au française dans the chanson. Bienvenue.&lt;/p&gt;
-
-&lt;p&gt;Next time it&amp;rsquo;ll be a little easier, and I&amp;rsquo;ll be a little better. Actually, I recorded &lt;em&gt;Heart of the Continent&lt;/em&gt; a month ago, and re-listening to that recording this morning, I&amp;rsquo;m surprised by just how much I&amp;rsquo;ve improved since then.&lt;/p&gt;
-
-
-
-&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331082254&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
-  
-
-
-
-&lt;p&gt;Thank you to my colleagues and friends for showing up for my debut, and thank you to my wife Ashley for taking some recordings. It&amp;rsquo;s nice to have some artefact of my ability – a snapshot of what I could do. &lt;/p&gt;
 </content>
   </entry>
 </feed>
