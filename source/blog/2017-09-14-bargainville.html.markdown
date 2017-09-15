@@ -23,7 +23,7 @@ BEGIN_WIDE
 
 END_WIDE
 
-Anyway. I kept listening, and kept hearing the same sort of left wife anthems come through. I mean, this seems on the nose by contemporary standards, but in the 90's this was somewhat subversive stuff.
+Anyway. I kept listening, and kept hearing the same sort of left-wing anthems come through. I mean, this seems on the nose by contemporary standards, but in the 90's this was somewhat subversive stuff.
 
 BEGIN_WIDE
 
