@@ -5,6 +5,8 @@ summary: "<p>The other day I posed this (somewhat cryptic) question to Twitter..
 link_to: swift
 ---
 
+(Hey there friend, hope your day is going well. This post was written for Swift 1.0 (!) but still has technical merit, especially if you're keen to learn how Swift has evolved to where it is today.)
+
 The other day I posed this (somewhat cryptic) question to Twitter: 
 
 (READMORE)
