@@ -4123,6 +4123,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://ashfurrow.com/blog/citations-needed/</loc>
+    <lastmod>2017-09-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://ashfurrow.com/img/blog/citations-needed/background.jpg</image:loc>
+    </image:image>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://ashfurrow.com/blog/emotions-matter/</loc>
     <lastmod>2017-09-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
