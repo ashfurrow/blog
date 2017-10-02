@@ -4,10 +4,85 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-09-30T17:48:36+00:00</updated>
+  <updated>2017-10-01T19:28:28+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Weekend Hack Project: Twelease</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/node-express-typescript/"/>
+    <id>https://ashfurrow.com/blog/node-express-typescript/</id>
+    <published>2017-10-01T19:28:28+00:00</published>
+    <updated>2017-10-01T19:28:28+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;I&amp;rsquo;ve been using technologies like &lt;a href="http://nodejs.org"&gt;Node&lt;/a&gt;, &lt;a href="http://expressjs.com"&gt;Express&lt;/a&gt;, and &lt;a href="https://www.typescriptlang.org"&gt;TypeScript&lt;/a&gt; at Artsy for a while now, contributing new features or fixing bugs to various codebases. But, I haven&amp;rsquo;t ever gone through the full process of having an idea, starting a new project, building a minimum-deployable-product, and shipping it off to a server. I was less prepared for this than I&amp;rsquo;d thought.&lt;/p&gt;
+
+&lt;p&gt;While I give an overview of steps I followed, this isn&amp;rsquo;t a tutorial. It is a reflection on the contrasts between the iOS developer experience and the JavaScript developer experience. All the code is &lt;a href="https://github.com/ashfurrow/twelease"&gt;available on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s go!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I like using small projects to learn new things. Limited-scope projects are great to build without getting too overwhelmed by complexity. An open source project &lt;a href="https://github.com/danger/danger-js/issues/332"&gt;wanted to tweet when they pushed a new GitHub tag&lt;/a&gt;; only slightly more complicated than an IFTTT rule, perfect.&lt;/p&gt;
+
+&lt;p&gt;But where to start?&lt;/p&gt;
+
+&lt;p&gt;See, after opening Xcode and selecting a project template, you have an entire app. You can compile and run it as-is and there&amp;rsquo;s tonnes of helpful comments about where to add certain pieces of code.&lt;/p&gt;
+
+&lt;p&gt;There is no Xcode for JavaScript, so how you decide to build your app is &lt;em&gt;entirely&lt;/em&gt; up to you. It can be difficult to choose a methodology because there is an entire community of strong opinions about how to build software. And while projects like &lt;a href="https://github.com/react-community/create-react-native-app"&gt;Create React Native App&lt;/a&gt; offer an equivalent experience of a new project template, what I&amp;rsquo;ve learned is that the frameworks you use in JavaScript are only the tip of the iceberg.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m using Express, but I prefer using a strong type system. No problem, I&amp;rsquo;ll use TypeScript! Okay, so now I have to integrate an entire build system into my workflows for developing, testing, and deploying, and holy shit I&amp;rsquo;m exhausted already.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve used Express before, but I copy/pasted a basic Hello, World project anyway. Then I found &lt;a href="https://github.com/Gisonrg/express-github-webhook"&gt;a library&lt;/a&gt; that provides middleware to process and verify GitHub webhook events. Great! Let&amp;rsquo;s smash the two together, LHC-style.&lt;/p&gt;
+
+&lt;p&gt;As I work, I&amp;rsquo;m getting tired of building, then running, my code. So I add &lt;a href="https://gulpjs.com"&gt;Gulp&lt;/a&gt; to watch the filesystem and re-run the TypeScript compiler whenever I change &lt;code&gt;.ts&lt;/code&gt; files. I also specify an output directory of &lt;code&gt;dist&lt;/code&gt; because that seems to be what everyone else does. (&lt;code&gt;dist&lt;/code&gt; isn&amp;rsquo;t checked in to git, it&amp;rsquo;s basically like your Xcode app archives.) &lt;/p&gt;
+
+&lt;p&gt;Gulp is configured via execution of &lt;a href="https://github.com/ashfurrow/twelease/blob/master/gulpfile.js"&gt;&lt;code&gt;gulpfile.js&lt;/code&gt;&lt;/a&gt;, like a Gemfile or Podfile, while TypeScript is configured through &lt;a href="https://github.com/ashfurrow/twelease/blob/master/tsconfig.json"&gt;&lt;code&gt;tsconfig.json&lt;/code&gt;&lt;/a&gt;. Quirky difference – but it makes sense. It&amp;rsquo;s amazing how flexible all the tools are – you can configure tools on the command line, through config files, or through environment variables. The easiest is through the config files, but they all need to be strictly valid JSON. The strictness of JSON was a bit frustrating, to be honest, especially the lack of comments.&lt;/p&gt;
+
+&lt;p&gt;I also needed to get fancy about how Heroku gets deployed by adding &lt;code&gt;[&amp;quot;types&amp;quot;: [&amp;quot;node&amp;quot;]]&lt;/code&gt; to my TypeScript config. Oh, and also a &lt;a href="https://github.com/ashfurrow/twelease/blob/1f233ba4aa8004958379e073232cc9b72b395c47/package.json#L41"&gt;&lt;code&gt;postinstall&lt;/code&gt; script&lt;/a&gt;. Otherwise, the TypeScript compilation would fail on Heroku. And I wanted to compile the TypeScript &lt;em&gt;on deploy&lt;/em&gt; and not as part of the server startup. Oh, and I made sure Heroku&amp;rsquo;s &lt;code&gt;Procfile&lt;/code&gt; points to the &lt;code&gt;dist&lt;/code&gt; directory&amp;rsquo;s &lt;code&gt;index.js&lt;/code&gt; (which is the compiled version of &lt;code&gt;src/index.ts&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;So.&lt;/p&gt;
+
+&lt;p&gt;Depending on your background, these details might seem either so trivial as to be hardly worth mentioning, or so complex that you might feel overwhelmed. And with no community authority like Apple providing a clear path for beginners, it&amp;rsquo;s very easy to get stuck on random configuration problems.&lt;/p&gt;
+
+&lt;p&gt;That said, I also happen to disagree with a lot of Apple&amp;rsquo;s vision for how to develop software. Not just methodology, like MVC, but also build tools. For instance, Apple&amp;rsquo;s &lt;a href="http://isxcodeopensourceyet.github.io"&gt;Xcode IDE is closed source&lt;/a&gt;, and has very minimal support for extensions. Many community projects, like &lt;a href="https://github.com/realm/SwiftLint"&gt;swiftlint&lt;/a&gt; and &lt;a href="https://github.com/jpsim/SourceKitten"&gt;sourcekitten&lt;/a&gt;, do help improve the iOS development experience, but iOS developers tend to rely exclusively on Apple tooling.&lt;/p&gt;
+
+&lt;p&gt;In contrast, the JS tooling ecosystem is alive with a variety of linters, type-checkers, formatters, file watchers, test runners, and more. Yes, it is a little overwhelming, and yes, your initial project setup is a lot harder than a new project template from Xcode, but the JS community seems to believe that a little extra upfront work is well worth improving the development experience long term. Having worked in both the iOS and JS ecosystems, I&amp;rsquo;m inclined to agree with them.&lt;/p&gt;
+
+&lt;p&gt;More than just a variety of tools is the size of the community that builds them. Because JavaScript developers mainly use tools written &lt;em&gt;in JavaScript&lt;/em&gt;, the initial barrier of contributing to those tools is enormously lowered. The community empowers its members to improve the shared tooling, and the results are spectacular.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Let’s flip the tables: how empowering would it feel if your app’s API was written in Swift? You’d be able to fix your own bugs, add features&lt;/p&gt;&amp;mdash; Pablo Picasghost👻 (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/914247587984687104?ref_src=twsrc%5Etfw"&gt;September 30, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The cycle of compiling Swift/Objective-C to run unit tests adds a lot of time to my iOS development process. It takes time to compile, install, and run tests. If you have to wait fifteen seconds to see if your code works, you won&amp;rsquo;t check as often. In contrast, &lt;a href="https://code.visualstudio.com"&gt;VSCode&lt;/a&gt; and &lt;a href="https://facebook.github.io/jest/"&gt;Jest&lt;/a&gt; make testing &lt;em&gt;unbelievably fast&lt;/em&gt;. Using Jest to test fundamentally changed how I write code, and I miss the near-instant feedback cycle when I return to iOS native development.&lt;/p&gt;
+
+&lt;p&gt;The JavaScript community moves at a blistering pace. That means I can&amp;rsquo;t just learn the current JS syntax because most tutorials, StackOverflow answers, and blog posts use older syntaxes that I also need to learn. For example, dependencies used to be loaded into a file with &lt;code&gt;require()&lt;/code&gt; but now most folks seem to use &lt;code&gt;import&lt;/code&gt;. But &lt;code&gt;import&lt;/code&gt; won&amp;rsquo;t work for me in the Node REPL, I had to still use &lt;code&gt;require&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Something I really dig about JavaScript is how you import all your dependencies explicitly; you import specifically &amp;ldquo;exported&amp;rdquo; functions and such from modules. Some modules export named functions, while other modules export a &amp;ldquo;default&amp;rdquo; function. Some do both. Here are a few examples of how to import stuff in JS:&lt;/p&gt;
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;error&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'./lib/loggers'&lt;/span&gt;
+&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="nx"&gt;auth&lt;/span&gt; &lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'auth'&lt;/span&gt;
+&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;tweet&lt;/span&gt; &lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'./twitter'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It all makes sense to read, but I still don&amp;rsquo;t have the mechanics internalized enough to write the syntax right on the first try.&lt;/p&gt;
+
+&lt;p&gt;One need thing I like about working in Artsy&amp;rsquo;s JS codebases is their use of git precommit hooks. Often, these hooks will lint and reformat your code for you to adhere to the repo&amp;rsquo;s standard. Or maybe they&amp;rsquo;ll run any tests related to your staged changes. Very handy stuff for catching mistakes earlier in the development process. For whatever reason, automatic code formatters just haven&amp;rsquo;t been popular among iOS developers.&lt;/p&gt;
+
+&lt;p&gt;Okay, so I have my app set up and working, but With all the experimentation with tools and frameworks, I&amp;rsquo;m certain that I&amp;rsquo;ve left in some orphaned configuration or dependencies that I no longer need. Or maybe I have some developer dependencies in my &lt;a href="https://github.com/ashfurrow/twelease/blob/master/package.json"&gt;&lt;code&gt;package.json&lt;/code&gt; file&lt;/a&gt;. Or some leftover &lt;code&gt;scripts&lt;/code&gt;. It&amp;rsquo;s pretty easy to accumulate all this stuff. Maybe I&amp;rsquo;ll go shake it out. If you see anything funky &lt;a href="https://github.com/ashfurrow/twelease"&gt;in the repo&lt;/a&gt;, let me know in an issue.&lt;/p&gt;
+
+&lt;p&gt;I still have a few mysteries I&amp;rsquo;m looking to solve, like precisely how es-lint, ts-lint, and prettier relate to one another. Stuff like that, quirks I&amp;rsquo;ve noticed or other common knowledge that people don&amp;rsquo;t tend to write blog posts about. I&amp;rsquo;ve still got a lot to learn.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;The JavaScript and iOS developer communities are very different places. iOS developers have Apple setting the vision for how to build apps, whereas JS developers have an &lt;em&gt;overwhelming&lt;/em&gt; number of options. I&amp;rsquo;m glad I can work in both communities – I like and dislike things about each.&lt;/p&gt;
+
+&lt;p&gt;The initial setup of the project, toolchain, and workflows was difficult enough to frustrate me a few times. It will be a lot easier next time. But the improved development workflow makes writing software way easier, way faster, and way more fun.&lt;/p&gt;
+
+&lt;p&gt;If any of this has resonated with you, Mozilla has some &lt;a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs"&gt;comprehensive documentation&lt;/a&gt; around setting up a development environment to write a &lt;code&gt;Hello, World&lt;/code&gt; app in Express. Don&amp;rsquo;t worry about TypeScript for now.&lt;/p&gt;
+
+&lt;p&gt;Think of something you&amp;rsquo;d like to build, and try to build it. Make sure your idea is really easy, because building it will probably actually be hard, and you might not finish, but that&amp;rsquo;s okay because you&amp;rsquo;ll have learned a lot. Hopefully you&amp;rsquo;ll have some fun. I sure did.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Citations Needed</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/citations-needed/"/>
@@ -168,32 +243,6 @@
 &lt;p&gt;Phew! That felt good. Certainly not an exhaustive list. If you agree with any of these, that&amp;rsquo;s cool. If not, don&amp;rsquo;t @ me.&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s the end of the world, baby!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Some Updates</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/some-updates/"/>
-    <id>https://ashfurrow.com/blog/some-updates/</id>
-    <published>2017-09-02T15:58:53+00:00</published>
-    <updated>2017-09-02T15:58:53+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Bit of a personal post, but wanted to updated after some tweets I made about my medication.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Recently found the perfect Rx combo to help me with depression. Works really well for me. Tuesday, I had to stop b/c a serious side-effect 😔&lt;/p&gt;&amp;mdash; the javascript lover (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/901838857683038212"&gt;August 27, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;Things have been going really well for me (which I&amp;rsquo;d &lt;a href="/blog/therapys-end/"&gt;recently written about&lt;/a&gt;) and this medication change kind of came out of the blue. It sucks to find a groove and then have it disrupted, but life is a journey and there are lots of other medications I can try. I&amp;rsquo;m hopeful that the adverse side-effect that required me to suddenly stop taking one of my meds aren&amp;rsquo;t permanent (it&amp;rsquo;s a neurological problem, so it might be). &lt;/p&gt;
-
-&lt;p&gt;The last time I went off this medication (which was a tapered change and not a hard stop, like this time) &lt;a href="/blog/feelings-are-hard/"&gt;things got really hard really quickly&lt;/a&gt;. It&amp;rsquo;s been nearly two weeks now and while I&amp;rsquo;m definitely feeling down, but I&amp;rsquo;m also being proactive about managing the imminent mood problems. For example, I find getting out the door in the mornings to be difficult, and it kind of sets the tone for the whole day. So I have a schedule written out of what exactly to do in the mornings, including some self-care to make sure my mood stays stable throughout the day. It&amp;rsquo;s been helping a lot.&lt;/p&gt;
-
-&lt;p&gt;So far, so good. We&amp;rsquo;ll see. I&amp;rsquo;m in high spirits, for now, but like I&amp;rsquo;ve said before: I&amp;rsquo;ve got a supportive partner, friends, and work environment. I&amp;rsquo;ll be fine, just need to remember that I&amp;rsquo;ll be fine.&lt;/p&gt;
 </content>
   </entry>
 </feed>
