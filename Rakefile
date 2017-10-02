@@ -16,6 +16,8 @@ namespace :deploy do
   CLOUDFLARE_ZONE_ID = 'cbd7eb9c9ccb4c9a8d84e2000dea93bf'
 
   task :invalidate do
+    puts 'Invalidating CDN.'
+    sleep 20 # Give GitHub time to deploy the site before invalidating.
     # Documented at https://api.cloudflare.com/#zone-purge-all-files
     sh <<-EOS
       curl -X DELETE "https://api.cloudflare.com/client/v4/zones/#{CLOUDFLARE_ZONE_ID}/purge_cache" \
