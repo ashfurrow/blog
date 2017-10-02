@@ -5,7 +5,7 @@ background_image: /img/blog/node-express-typescript/background.jpg
 background_image_source: https://twitter.com/CrookedCosmos/status/914339934563127296
 ---
 
-I've been using technologies like [Node][node], [Express][express], and [TypeScript][ts] at Artsy for a while now, contributing new features or fixing bugs to various codebases. But, I haven't ever gone through the full process of having an idea, starting a new project, building a minimum-deployable-product, and shipping it off to a server. I was less prepared for this than I'd thought.
+I've been using technologies like [Node.js][node], [Express][express], and [TypeScript][ts] at Artsy for a while now, contributing new features or fixing bugs to various codebases. But I haven't ever gone through the full process of having an idea, starting a new project, building a minimum-deployable-product, and shipping it off to a server. I was less prepared for this than I'd thought.
 
 While I give an overview of steps I followed, this isn't a tutorial. It is a reflection on the contrasts between the iOS developer experience and the JavaScript developer experience. All the code is [available on GitHub][repo].
 
@@ -27,7 +27,7 @@ I've used Express before, but I copy/pasted a basic Hello, World project anyway.
 
 As I work, I'm getting tired of building, then running, my code. So I add [Gulp][gulp] to watch the filesystem and re-run the TypeScript compiler whenever I change `.ts` files. I also specify an output directory of `dist` because that seems to be what everyone else does. (`dist` isn't checked in to git, it's basically like your Xcode app archives.) 
 
-Gulp is configured via execution of [`gulpfile.js`][gulp_config], like a Gemfile or Podfile, while TypeScript is configured through [`tsconfig.json`][ts_config]. Quirky difference – but it makes sense. It's amazing how flexible all the tools are – you can configure tools on the command line, through config files, or through environment variables. The easiest is through the config files, but they all need to be strictly valid JSON. The strictness of JSON was a bit frustrating, to be honest, especially the lack of comments.
+Gulp is configured via execution of [`gulpfile.js`][gulp_config] - like a Gemfile or Podfile, while TypeScript is configured through [`tsconfig.json`][ts_config]. Quirky difference – but it makes sense. It's amazing how flexible all the tools are – you can configure tools on the command line, through config files, or through environment variables. The easiest is through the config files, but they all need to be strictly valid JSON. The strictness of JSON was a bit frustrating, to be honest, especially the lack of comments.
 
 I also needed to get fancy about how Heroku gets deployed by adding `["types": ["node"]]` to my TypeScript config. Oh, and also a [`postinstall` script][postinstall]. Otherwise, the TypeScript compilation would fail on Heroku. And I wanted to compile the TypeScript _on deploy_ and not as part of the server startup. Oh, and I made sure Heroku's `Procfile` points to the `dist` directory's `index.js` (which is the compiled version of `src/index.ts`).
 
@@ -57,11 +57,11 @@ import tweet from './twitter'
 
 It all makes sense to read, but I still don't have the mechanics internalized enough to write the syntax right on the first try.
 
-One need thing I like about working in Artsy's JS codebases is their use of git precommit hooks. Often, these hooks will lint and reformat your code for you to adhere to the repo's standard. Or maybe they'll run any tests related to your staged changes. Very handy stuff for catching mistakes earlier in the development process. For whatever reason, automatic code formatters just haven't been popular among iOS developers.
+One neat thing I like about working in Artsy's JS codebases is their use of git pre-commit hooks. Often, these hooks will lint and reformat your code for you to adhere to the repo's standard. Or maybe they'll run any tests related to your staged changes. Very handy stuff for catching mistakes earlier in the development process. For whatever reason, automatic code formatters just haven't been popular among iOS developers.
 
-Okay, so I have my app set up and working, but With all the experimentation with tools and frameworks, I'm certain that I've left in some orphaned configuration or dependencies that I no longer need. Or maybe I have some developer dependencies in my [`package.json` file][package]. Or some leftover `scripts`. It's pretty easy to accumulate all this stuff. Maybe I'll go shake it out. If you see anything funky [in the repo][repo], let me know in an issue.
+Okay, so I have my app set up and working, but with all the experimentation with tools and frameworks, I'm certain that I've left in some orphaned configuration or dependencies that I no longer need. Or maybe I have some developer dependencies in my [`package.json` file][package]. Or some leftover `scripts`. It's pretty easy to accumulate all this stuff. Maybe I'll go shake it out. If you see anything funky [in the repo][repo], let me know in an issue.
 
-I still have a few mysteries I'm looking to solve, like precisely how es-lint, ts-lint, and prettier relate to one another. Stuff like that, quirks I've noticed or other common knowledge that people don't tend to write blog posts about. I've still got a lot to learn.
+I still have a few mysteries I'm looking to solve, like precisely how `es-lint`, `ts-lint`, and `prettier` relate to one another. Stuff like that, quirks I've noticed or other common knowledge that people don't tend to write blog posts about. I've still got a lot to learn.
 
 ---
 
