@@ -6,7 +6,7 @@ layout: partials/_layout_all_standard_width
 description: I am a Canadian software developer currently living in New York’s East Village. The last five years of my life have been focused on iOS development, but I dabble. Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I’ve been working toward becoming Open Source by Default in all aspects of my life.
 ---
 
-I am a world-class software developer living in New York’s East Village. The last [five years of my life](https://ashfurrow.com/blog/5-years-of-ios/) have been focused on iOS development, but I dabble. I have two cats, and when I’m not [contributing in open source](https://github.com/ashfurrow), I like to [write books](https://leanpub.com/u/theashfurrow) and [make photos](http://photos.ashfurrow.com).
+I am a world-class software developer living in New York’s East Village. The last [five years of my life](https://ashfurrow.com/blog/5-years-of-ios/) have been focused on iOS development, but I dabble. I have two cats, and when I’m not [contributing in open source](https://github.com/ashfurrow), I like to [write books](https://leanpub.com/u/theashfurrow) and [make photos](https://photos.ashfurrow.com).
 
 Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I owe it to the people who helped me to help others now. I want to lead by example and become the kind of developer that I would want to work with. That means sharing knowledge, code, and time with others. To that end, I’ve been working toward becoming [Open Source by Default](http://code.dblock.org/2015/02/09/becoming-open-source-by-default.html) in all aspects of my life.
 
