@@ -6,6 +6,152 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Apple Releases Jive</title>
+      <link>https://ashfurrow.com/blog/apple-releases-jive/</link>
+      <description>&lt;p&gt;The following is a hypothetical blog post, written by a version of me in a parallel universe. In this fictional world, Apple cares very much about software quality (ensured by unit testing), as well as the developer experience of building software for its platforms. The features I describe of Apple&amp;rsquo;s new fictional test runner are all real features in the &lt;a href="https://github.com/facebook/jest"&gt;Jest project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Wow, what a WWDC! Lots of stuff to get excited about, but what&amp;rsquo;s got me most pumped up is the release of Apple&amp;rsquo;s new unit testing tool: Jive. Let&amp;rsquo;s dive into what Jive is, how it makes your life as an iOS developer easier, and how it helps you write better software.&lt;/p&gt;
+
+&lt;p&gt;First some theory. Unit testing generally has three components: a test runner, which runs your tests; a test framework, which is how you structure your tests; and a matcher library, which helps you write test assertions. Jive provides the whole package: it&amp;rsquo;s a test runner, a test framework, and a matcher library. Let&amp;rsquo;s go through each component in detail.&lt;/p&gt;
+
+&lt;h2 id="test-runner"&gt;Test Runner&lt;/h2&gt;
+
+&lt;p&gt;Jive&amp;rsquo;s test runner is seriously impressive. Apple has examined the workflow that developers – inside Apple and within the community – and has optimized Jive for common workflows. The top priority of Jive is to give accurate test results as quickly as possible.&lt;/p&gt;
+
+&lt;p&gt;So let&amp;rsquo;s say you check out a new branch to work on a feature. Jive is going to use git to determine which Swift files and which tests have changed since the last commit. Running fewer tests will speed up the test suite run time. And whenever you save a file, Jive examines the dependency graph and re-runs all related tests, giving you near instant feedback in your red/green/refactor cycle.&lt;/p&gt;
+
+&lt;p&gt;Jive prioritizes running tests that failed the last time it ran because it assumes that you&amp;rsquo;re trying to fix those tests first. It also keeps track of how long each test takes to run, in order to prioritize long-running tests &lt;em&gt;first&lt;/em&gt;. This reduces overall test time. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/apple-releases-jive/length.png" alt="Before and after running long tests first" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Apparently, the improved scheduling of long-running tests improved full test suite run times by 20% – wow! And because it can run tests in parallel simulator processes (from Xcode 9), parallelism is constrained only by the number of cores in your CPU.&lt;/p&gt;
+
+&lt;p&gt;Overall, Jive provides a fast testing experience, using advanced dependency resolution techniques and aggressive caching so that incremental changes take less than a second to test. This near-instant feedback is a &lt;em&gt;huge&lt;/em&gt; change in how we can write code. Since tests take a very short time to run, developers run them more often (on file saves, in a pre-commit hook, etc). &lt;/p&gt;
+
+&lt;p&gt;On full test runs, Jive is still stunningly fast, reducing test suite run times with XCTest to about 15% of their original run times. Very impressive!&lt;/p&gt;
+
+&lt;h2 id="test-framework"&gt;Test Framework&lt;/h2&gt;
+
+&lt;p&gt;XCTest provided a very bare-bones approach to testing, something reminiscent of JUnit circa 1999. In contrast, Jive provides a modern RSpec-like interface for behaviour-driven development. Let&amp;rsquo;s compare.&lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;MyTests&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;XCTestCase&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;override&lt;/span&gt; &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;setUp&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;super&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;setUp&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="k"&gt;override&lt;/span&gt; &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;tearDown&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;super&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;tearDown&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;testExample&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="c1"&gt;// TODO&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Okay now let see an equivalent Jive test suite.&lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="n"&gt;beforeEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;afterEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"behaves a certain way"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="c1"&gt;// TODO&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What may not be obvious about RSpec-style tests is the possibility of &lt;em&gt;nesting contexts&lt;/em&gt;. Let&amp;rsquo;s take a look at a more practical example to see the power of nesting test contexts.&lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;db&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;DataBase&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
+
+&lt;span class="n"&gt;beforeEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;db&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;DataBase&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;testDataBase&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;afterEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;destroy&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"adds new rows to the db"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"prepopulated"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;beforeEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;db&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;DataBase&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;populateWithFac&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"can fetch rows from the db"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This kind of nested contexts was impossible to build in XCTest (at least, without a lot of work and/or repeated code). Finally Apple has recognized that a test suite needs more than just two &lt;code&gt;setup()&lt;/code&gt; and &lt;code&gt;tearDown()&lt;/code&gt; methods.&lt;/p&gt;
+
+&lt;p&gt;Jive leverages its new runner with the RSpec-style tests to run each test in an independent process. This means that state leftover from one test can&amp;rsquo;t affect the outcome of another test. Nice!&lt;/p&gt;
+
+&lt;p&gt;Overall, Jest provides an interface for testing that lends itself to writing more expressive tests. It reminds me of &lt;a href="https://github.com/Quick/Quick"&gt;Quick&lt;/a&gt;, the Swift test framework that&amp;rsquo;s now been sherlocked by Jive.&lt;/p&gt;
+
+&lt;h2 id="matchers"&gt;Matchers&lt;/h2&gt;
+
+&lt;p&gt;XCTest matchers were&amp;hellip; not optimal. Matchers are used by the assertions of a test, so making them concise and expressive is really important.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s see an example.&lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kt"&gt;XCTAssertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;objectB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now let&amp;rsquo;s compare with the new Jive matchers.&lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;equal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;// or&lt;/span&gt;
+&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;objectB&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Jive uses operator overloading to help write more expressive tests. I really dig this – it lets developers choose whatever level of verbosity they feel is right for their project.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take a look at a few more examples.&lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;~=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
+&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;optional&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;not&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;beNil&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can write your own matchers, too, and leverage the power of the Swift type system. For example, it&amp;rsquo;d be pretty easy to write a custom matcher to check that collections are of a certain size. I&amp;rsquo;ll likely port my &lt;a href="https://github.com/ashfurrow/Nimble-Snapshots"&gt;Nimble-Snapshots&lt;/a&gt; library over to Jive within the next few weeks.&lt;/p&gt;
+
+&lt;p&gt;And of course Jive ships with a comprehensive mocking library. This makes mocking dependencies and injecting them into a subject under test &lt;em&gt;really&lt;/em&gt; easy. &lt;/p&gt;
+&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"invokes the callback"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;mock&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;Jive&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;mock&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="n"&gt;testSubject&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mock&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mock&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;haveBeenCalledWith&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;success&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"calls the network"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;mock&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;Jive&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;mock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;Alamofire&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;testSubject&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;networkModel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mock&lt;/span&gt;
+
+    &lt;span class="n"&gt;testSubject&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mock&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;haveBeenCalledWith&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;request&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"https://example.com"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Very cool, and all out of the box! Mocking is a testing strategy that Objective-C and Swift developers aren&amp;rsquo;t too familiar with, but it &lt;a href="https://stackoverflow.com/a/3623574/516359"&gt;solves a lot of problems&lt;/a&gt;. I&amp;rsquo;m looking forward to this powerful testing technique become more popular within our community.&lt;/p&gt;
+
+&lt;h2 id="wrap-up"&gt;Wrap up&lt;/h2&gt;
+
+&lt;p&gt;Apple has released Jive as an open source Xcode extension, written in Swift. This means that any Swift developer can contribute back to the project, helping to improve everyone&amp;rsquo;s developer experience. After releasing the &lt;a href="https://swift.org/blog/swift-local-refactoring/"&gt;Swift refactoring tools&lt;/a&gt; as open source last year, it&amp;rsquo;s exciting to see Apple continue this trend.&lt;/p&gt;
+
+&lt;p&gt;Finally, Xcode ships with everything an iOS developer needs to write comprehensive unit tests. Apple really put a concerted effort into making Jive an industry-leading test runner, and I thank them for recognizing how important unit testing is to making quality software.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Of course, Jive doesn&amp;rsquo;t exist. It&amp;rsquo;s up to iOS developers to seek out better testing tools than the ones we&amp;rsquo;re given by Apple, and most folks don&amp;rsquo;t bother. And because Xcode is &lt;a href="http://isxcodeopensourceyet.github.io"&gt;closed source&lt;/a&gt;, the community can&amp;rsquo;t contribute back to improve their own tools.&lt;/p&gt;
+
+&lt;p&gt;So why haven&amp;rsquo;t Apple done this? Priorities. Apple has the engineering talent to make this a reality, but they&amp;rsquo;d rather make Animojis I guess.&lt;/p&gt;
+
+&lt;p&gt;Not to suggest that making Jive would be easy. Imagine: you hit &amp;ldquo;save&amp;rdquo; and Xcode has to determine which files have changed, recompile them, load them into a runtime, and execute them. That alone would take a lot of engineering effort, and only a few companies exist that could invest the time. And only Apple can contribute to Xcode.&lt;/p&gt;
+
+&lt;p&gt;Until Apple starts caring about writing modern unit tests, or until they get tired of us &lt;a href="https://bugreport.apple.com"&gt;filing radars&lt;/a&gt; begging for better tools, we&amp;rsquo;ll likely never see Jive come to be.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 07 Oct 2017 14:55:08 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/apple-releases-jive/</guid>
+    </item>
+    <item>
       <title>Weekend Hack Project: Twelease</title>
       <link>https://ashfurrow.com/blog/node-express-typescript/</link>
       <description>&lt;p&gt;I&amp;rsquo;ve been using technologies like &lt;a href="http://nodejs.org"&gt;Node.js&lt;/a&gt;, &lt;a href="http://expressjs.com"&gt;Express&lt;/a&gt;, and &lt;a href="https://www.typescriptlang.org"&gt;TypeScript&lt;/a&gt; at Artsy for a while now, contributing new features or fixing bugs to various codebases. But I haven&amp;rsquo;t ever gone through the full process of having an idea, starting a new project, building a minimum-deployable-product, and shipping it off to a server. I was less prepared for this than I&amp;rsquo;d thought.&lt;/p&gt;
@@ -181,42 +327,6 @@
 </description>
       <pubDate>Thu, 14 Sep 2017 18:26:42 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/bargainville/</guid>
-    </item>
-    <item>
-      <title>And I Feel Fine</title>
-      <link>https://ashfurrow.com/blog/and-i-feel-fine/</link>
-      <description>&lt;p&gt;I&amp;rsquo;ve been struggling lately with political &amp;ldquo;feelpinions&amp;rdquo;, political opinions mostly informed by feelings. I have strong opinions about a lot of what&amp;rsquo;s going on in the world at the moment, but those opinions are backed by feelings instead of things like in-depth research. I just don&amp;rsquo;t have time.&lt;/p&gt;
-
-&lt;p&gt;I can handle this, even when my opinions come into conflict with someone else&amp;rsquo;s. After all – their opinions are probably not more informed than mine. But when what &lt;em&gt;I&lt;/em&gt; believe conflicts with mainstream narratives, life becomes hard. Reading the news or talking with colleagues is oftentimes difficult.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Politic&amp;rsquo;s is back baby. It&amp;rsquo;s good again. Awoouu (wolf Howl)&lt;/p&gt;&amp;mdash; wint (@dril) &lt;a href="https://twitter.com/dril/status/568056615355740160"&gt;February 18, 2015&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Before I continue, I&amp;rsquo;d like to address the fact that that last paragraph probably sounded a bit conspiratorial. &amp;ldquo;Mainstream narratives&amp;rdquo; etc. My opinions aren&amp;rsquo;t really that extreme – they&amp;rsquo;re just outside the &lt;a href="https://en.wikipedia.org/wiki/Overton_window"&gt;Overton window&lt;/a&gt;. For example, it&amp;rsquo;s pretty obvious to me that capitalism is wholly incapable of dealing with climate change. However, I still need to survive my day-to-day life in a society built on capitalism; it&amp;rsquo;s hard for me to motivate myself to work building tools for the art market when I know that that market exists inside a system that&amp;rsquo;s thrusting our species towards its inescapable doom. &lt;/p&gt;
-
-&lt;p&gt;(And, obviously, I need to acknowledge that interacting with the rest of society has been even more difficult lately because of &lt;a href="/blog/some-updates/"&gt;some recent life changes&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;To help me cope, and maybe to let others of similar opinions know that they&amp;rsquo;re not alone, I&amp;rsquo;m going to rapid-fire some political feelpinions I have that go against the grain of what&amp;rsquo;s &amp;ldquo;normal&amp;rdquo; – opinions I have that I haven&amp;rsquo;t necessarily interrogated in-depth, but opinions I hold nevertheless. &lt;/p&gt;
-
-&lt;p&gt;Here we go!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Capitalism is responsible for a massive amount of worldwide suffering, and this suffering overwhelmingly affects women, people of colour, people living in poverty, and members of other marginalized groups.&lt;/li&gt;
-&lt;li&gt;Climate change is going to continue getting worse, and will get more worse more quickly as time goes on. Our species is likely headed to extinction.&lt;/li&gt;
-&lt;li&gt;The &lt;a href="http://www.dsausa.org"&gt;Democratic Socialists of America&lt;/a&gt; are a cool organization, but are not without their flaws. They do &lt;a href="https://twitter.com/neworleansdsa/status/901549034699194369"&gt;good work&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Many criticisms of Hillary Clinton are based in (and motivated by) misogyny. This fact is used by centrists to stifle legitimate criticisms of her policies. (For in-depth feminist critique of Clinton&amp;rsquo;s policies, check out &lt;a href="http://amzn.to/2jbPzwd"&gt;this book&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Many criticisms of Israel are based in (and motivated by) antisemitism. This fact is used by centrists to stifle legitimate criticisms of the country&amp;rsquo;s policies. After all, Israel is a country, and &lt;em&gt;all&lt;/em&gt; countries&amp;rsquo; policies have flaws, therefore Israel&amp;rsquo;s policies have flaws. This shouldn&amp;rsquo;t be a controversial statement.&lt;/li&gt;
-&lt;li&gt;The Democratic Party is deeply, deeply flawed. Probably irreparably. They represent the interests of their donors first and foremost, and have failed to offer a meaningful resistance to the rise of fascism.&lt;/li&gt;
-&lt;li&gt;The 2016 Clinton presidential campaign banked too heavily on &amp;ldquo;not being Donald Trump&amp;rdquo; instead of presenting appealing social policies (for example, single payer health care).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Phew! That felt good. Certainly not an exhaustive list. If you agree with any of these, that&amp;rsquo;s cool. If not, don&amp;rsquo;t @ me.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s the end of the world, baby!&lt;/p&gt;
-</description>
-      <pubDate>Sat, 09 Sep 2017 14:07:00 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/and-i-feel-fine/</guid>
     </item>
   </channel>
 </rss>
