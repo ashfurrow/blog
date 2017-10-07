@@ -83,7 +83,7 @@ it("adds new rows to the db") {
 
 describe("prepopulated") {
     beforeEach {
-        db = DataBase.populateWithFac()
+        db = DataBase.populateWithFakeData()
     }
     
     it("can fetch rows from the db") {
@@ -144,7 +144,7 @@ it("calls the network") {
     
     testSubject.fetch()
     
-    expect(mock).to.haveBeenCalledWith(request("https://example.com"))
+    expect(mock.request).to.haveBeenCalledWith("https://example.com")
 }
 ```
 
