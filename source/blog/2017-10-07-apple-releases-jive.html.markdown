@@ -19,13 +19,13 @@ First some theory. Unit testing generally has three components: a test runner, w
 
 Jive's test runner is seriously impressive. Apple has examined the workflow that developers – inside Apple and within the community – and has optimized Jive for common workflows. The top priority of Jive is to give accurate test results as quickly as possible.
 
-So let's say you check out a new branch to work on a feature. Jive is going to use git to determine which Swift files and which tests have changed since the last commit. Whenever you save a file, Jive examines the dependency graph and re-runs all related tests, giving you near instant feedback in your red/green/refactor cycle.
+So let's say you check out a new branch to work on a feature. Jive is going to use git to determine which Swift files and which tests have changed since the last commit. Running fewer tests will speed up the test suite run time. And whenever you save a file, Jive examines the dependency graph and re-runs all related tests, giving you near instant feedback in your red/green/refactor cycle.
 
 Jive prioritizes running tests that failed the last time it ran because it assumes that you're trying to fix those tests first. It also keeps track of how long each test takes to run, in order to prioritize long-running tests _first_. This reduces overall test time. 
 
 ![Before and after running long tests first](/img/blog/apple-releases-jive/length.png)
 
-Apparently, the improved scheduling of long-running tests improved test suite run times by 20% – wow! And because it can run tests in parallel simulator processes (from Xcode 9), parallelism is constrained only by the number of cores in your CPU.
+Apparently, the improved scheduling of long-running tests improved full test suite run times by 20% – wow! And because it can run tests in parallel simulator processes (from Xcode 9), parallelism is constrained only by the number of cores in your CPU.
 
 Overall, Jive provides a fast testing experience, using advanced dependency resolution techniques and aggressive caching so that incremental changes take less than a second to test. This near-instant feedback is a _huge_ change in how we can write code. Since tests take a very short time to run, developers run them more often (on file saves, in a pre-commit hook, etc). 
 
@@ -138,7 +138,7 @@ it("invokes the callback") {
     expect(mock).to.haveBeenCalledWith(.success)
 }
 
-it("calls the network model") {
+it("calls the network") {
     let mock = Jive.mock(Alamofire)
     testSubject.networkModel = mock
     
@@ -148,7 +148,7 @@ it("calls the network model") {
 }
 ```
 
-Very cool, and all out of the box! Mocking is a testing strategy that Objective-C and Swift developers aren't too familiar with, but it [solves a lot of problems][so].
+Very cool, and all out of the box! Mocking is a testing strategy that Objective-C and Swift developers aren't too familiar with, but it [solves a lot of problems][so]. I'm looking forward to this powerful testing technique become more popular within our community.
 
 ## Wrap up
 
