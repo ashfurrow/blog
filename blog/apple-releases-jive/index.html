@@ -1008,7 +1008,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
 <span class="nf">describe</span><span class="p">(</span><span class="s">"prepopulated"</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">beforeEach</span> <span class="p">{</span>
-        <span class="n">db</span> <span class="o">=</span> <span class="kt">DataBase</span><span class="o">.</span><span class="nf">populateWithFac</span><span class="p">()</span>
+        <span class="n">db</span> <span class="o">=</span> <span class="kt">DataBase</span><span class="o">.</span><span class="nf">populateWithFakeData</span><span class="p">()</span>
     <span class="p">}</span>
 
     <span class="nf">it</span><span class="p">(</span><span class="s">"can fetch rows from the db"</span><span class="p">)</span> <span class="p">{</span>
@@ -1058,7 +1058,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="n">testSubject</span><span class="o">.</span><span class="nf">fetch</span><span class="p">()</span>
 
-    <span class="nf">expect</span><span class="p">(</span><span class="n">mock</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="nf">haveBeenCalledWith</span><span class="p">(</span><span class="nf">request</span><span class="p">(</span><span class="s">"https://example.com"</span><span class="p">))</span>
+    <span class="nf">expect</span><span class="p">(</span><span class="n">mock</span><span class="o">.</span><span class="n">request</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="nf">haveBeenCalledWith</span><span class="p">(</span><span class="s">"https://example.com"</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre>
 <p>Very cool, and all out of the box! Mocking is a testing strategy that Objective-C and Swift developers aren’t too familiar with, but it <a href="https://stackoverflow.com/a/3623574/516359">solves a lot of problems</a>. I’m looking forward to this powerful testing technique become more popular within our community.</p>
