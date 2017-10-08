@@ -6,6 +6,37 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Due Diligence</title>
+      <link>https://ashfurrow.com/blog/due-diligence/</link>
+      <description>&lt;p&gt;Okay so yesterday I wrote a &lt;a href="/blog/apple-releases-jive/"&gt;hypothetical blog post&lt;/a&gt; about a new testing framework that Apple made. I&amp;rsquo;ve got a lot of feedback – more than I expected, honestly. Developers really care about their tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;One piece of criticism I received is that I hadn&amp;rsquo;t filed any bug reports with Apple asking for these features. I did include a link to &lt;a href="http://bugreport.apple.com"&gt;Apple&amp;rsquo;s bug reporter&lt;/a&gt; and asked people to file radars, but I didn&amp;rsquo;t provide any radars to duplicate. That was an oversight on my part.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s some due diligence: I have filed ten radars with Apple asking for individual features that would each enhance the developer experience. They have all been cross-posted to &lt;a href="http://www.openradar.me/"&gt;Open Radar&lt;/a&gt;, so please feel free to duplicate them.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4928269132496896"&gt;34875844 Xcode&amp;rsquo;s unit testing framework should include a mocking library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5060966442074112"&gt;34875826 Hot Module Reloading&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4970395111260160"&gt;34875798 Open source Xcode, or make a new OSS Xcode Lite&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5011363730554880"&gt;34875762 Run unit tests in parallel processes/simulators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5055377615880192"&gt;34875753 Xcode unit testing should support Behaviour-Driven Development workflows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=6135499479580672"&gt;34875723 Matchers that ship with Xcode&amp;rsquo;s testing framework could be improved&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5025044409352192"&gt;34875713 Xcode should schedule failing tests to run first&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4959620246274048"&gt;34873674 Xcode should only run tests related to files changed since the last commit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=6063405903380480"&gt;34873507 Add a test-on-save feature&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4937505996537856"&gt;34873492 Unit tests always run in the same order, but should be randomized&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are &lt;em&gt;all&lt;/em&gt; feature requests that I&amp;rsquo;m bringing from other communities – mainly Ruby and JavaScript. I&amp;rsquo;ve been &lt;a href="https://www.youtube.com/watch?v=LtrzZb5Jw0g"&gt;asking developers to bring ideas from other communities since Swift was in beta&lt;/a&gt;. It&amp;rsquo;s fair to ask me to follow my own advice.&lt;/p&gt;
+
+&lt;p&gt;What features would make your day-to-day life as a developer easier, or more joyful?&lt;/p&gt;
+</description>
+      <pubDate>Sun, 08 Oct 2017 16:04:31 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/due-diligence/</guid>
+    </item>
+    <item>
       <title>Apple Releases Jive</title>
       <link>https://ashfurrow.com/blog/apple-releases-jive/</link>
       <description>&lt;p&gt;The following is a hypothetical blog post, written by a version of me in a parallel universe. In this fictional world, Apple cares very much about software quality (ensured by unit testing), as well as the developer experience of building software for its platforms. The features I describe of Apple&amp;rsquo;s new fictional test runner are all real features in the &lt;a href="https://github.com/facebook/jest"&gt;Jest project&lt;/a&gt;.&lt;/p&gt;
@@ -277,56 +308,6 @@
 </description>
       <pubDate>Thu, 14 Sep 2017 21:05:44 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/technology-is-not-neutral/</guid>
-    </item>
-    <item>
-      <title>Bargainville</title>
-      <link>https://ashfurrow.com/blog/bargainville/</link>
-      <description>&lt;p&gt;Some of my oldest memories are of riding in my father&amp;rsquo;s 1998 red Toyota 4runner listening to a cassette tape of the Moxy Früvous album &lt;em&gt;Bargainville&lt;/em&gt; (1993). I was walking this morning and I put the album on and it still really speaks to me. &lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;iframe src="https://open.spotify.com/embed/album/6OGn8UPY9GnwhR1068nR7x" width="300" height="380" frameborder="0" allowtransparency="true"&gt;&lt;/iframe&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;I was always fond of &lt;em&gt;River Valley&lt;/em&gt; because it&amp;rsquo;s a catchy tune, and I grew up in a river valley. Listening to it today, during the incipient climate collapse, is chilling.&lt;/p&gt;
-
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Is your favourite place controlled by developing ambitions?&lt;/p&gt;
-
-&lt;p&gt;Do you think you&amp;rsquo;ll have some power signing a petition?&lt;/p&gt;
-
-&lt;p&gt;Are you fine with your surroundings? Are they gonna crumble?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;Anyway. I kept listening, and kept hearing the same sort of left-wing anthems come through. I mean, this seems on the nose by contemporary standards, but in the 90&amp;rsquo;s this was somewhat subversive stuff.&lt;/p&gt;
-
-
-
-&lt;blockquote&gt;
-&lt;p&gt;Clem had a daydream, a daydream from heaven&lt;/p&gt;
-
-&lt;p&gt;Picked up the headline, his country was made up of singers&lt;/p&gt;
-
-&lt;p&gt;And no more right-wingers&lt;/p&gt;
-
-&lt;p&gt;He wakes up to &amp;ldquo;Homeless are stupid, welfare is stupid&lt;/p&gt;
-
-&lt;p&gt;Private investment, efficiency, cool fiscal plannin&amp;rsquo;&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Sounds like more Pat Buchanan&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;Anyway, if you&amp;rsquo;re interested in listening to 90&amp;rsquo;s Canadian folk rock, you could do a lot worse than &lt;em&gt;Bargainville&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;(giant pile of filth Jian Ghomeshi notwithstanding)&lt;/p&gt;&amp;mdash; javascript apologist (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/908311114685054976"&gt;September 14, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
-      <pubDate>Thu, 14 Sep 2017 18:26:42 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/bargainville/</guid>
     </item>
   </channel>
 </rss>
