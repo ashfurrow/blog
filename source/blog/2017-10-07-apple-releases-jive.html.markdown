@@ -21,13 +21,13 @@ Jive's test runner is seriously impressive. Apple has examined the workflow that
 
 So let's say you check out a new branch to work on a feature. Jive is going to use git to determine which Swift files and which tests have changed since the last commit. Running fewer tests will speed up the test suite run time. And whenever you save a file, Jive examines the dependency graph and re-runs all related tests, giving you near instant feedback in your red/green/refactor cycle.
 
-Jive prioritizes running tests that failed the last time it ran because it assumes that you're trying to fix those tests first. It also keeps track of how long each test takes to run, in order to prioritize long-running tests _first_. This reduces overall test time. 
+Jive prioritizes running tests that failed the last time it ran because it assumes that you're trying to fix those tests first. It also keeps track of how long each test takes to run, in order to prioritize long-running tests _first_. This reduces overall test time.
 
 ![Before and after running long tests first](/img/blog/apple-releases-jive/length.png)
 
 Apparently, the improved scheduling of long-running tests improved full test suite run times by 20% – wow! And because it can run tests in parallel simulator processes (from Xcode 9), parallelism is constrained only by the number of cores in your CPU.
 
-Overall, Jive provides a fast testing experience, using advanced dependency resolution techniques and aggressive caching so that incremental changes take less than a second to test. This near-instant feedback is a _huge_ change in how we can write code. Since tests take a very short time to run, developers run them more often (on file saves, in a pre-commit hook, etc). 
+Overall, Jive provides a fast testing experience, using advanced dependency resolution techniques and aggressive caching so that incremental changes take less than a second to test. This near-instant feedback is a _huge_ change in how we can write code. Since tests take a very short time to run, developers run them more often (on file saves, in a pre-commit hook, etc).
 
 On full test runs, Jive is still stunningly fast, reducing test suite run times with XCTest to about 15% of their original run times. Very impressive!
 
@@ -40,11 +40,11 @@ class MyTests: XCTestCase {
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
-    
+
     func testExample() {
         // TODO
     }
@@ -85,7 +85,7 @@ describe("prepopulated") {
     beforeEach {
         db.populateWithFakeData()
     }
-    
+
     it("can fetch rows from the db") {
     }
 }
@@ -127,23 +127,23 @@ expect(optional).not.to.beNil()
 
 You can write your own matchers, too, and leverage the power of the Swift type system. For example, it'd be pretty easy to write a custom matcher to check that collections are of a certain size. I'll likely port my [Nimble-Snapshots][ns] library over to Jive within the next few weeks.
 
-And of course Jive ships with a comprehensive mocking library. This makes mocking dependencies and injecting them into a subject under test _really_ easy. 
+And of course Jive ships with a comprehensive mocking library. This makes mocking dependencies and injecting them into a subject under test _really_ easy.
 
 ```swift
 it("invokes the callback") {
     let mock = Jive.mock()
-    
+
     testSubject.method(mock)
-    
+
     expect(mock).to.haveBeenCalledWith(.success)
 }
 
 it("calls the network") {
     let mock = Jive.mock(Alamofire)
     testSubject.networkModel = mock
-    
+
     testSubject.fetch()
-    
+
     expect(mock.request).to.haveBeenCalledWith("https://example.com")
 }
 ```
@@ -164,7 +164,7 @@ So why haven't Apple done this? Priorities. Apple has the engineering talent to 
 
 Not to suggest that making Jive would be easy. Imagine: you hit "save" and Xcode has to determine which files have changed, recompile them, load them into a runtime, and execute them. That alone would take a lot of engineering effort, and only a few companies exist that could invest the time. And only Apple can contribute to Xcode.
 
-Until Apple cares more about writing modern unit tests, or until they get tired of us [filing radars][radars] asking for better tools, we'll likely never see Jive come to be.
+Until Apple prioritizes bringing the power of Jest-style unit tests to Xcode, or until they get tired of us [filing radars][radars] asking for better tools, we'll likely never see Jive come to be.
 
 [jest]: https://github.com/facebook/jest
 [quick]: https://github.com/Quick/Quick
