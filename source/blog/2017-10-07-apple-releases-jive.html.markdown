@@ -160,11 +160,11 @@ Finally, Xcode ships with everything an iOS developer needs to write comprehensi
 
 Of course, Jive doesn't exist. It's up to iOS developers to seek out better testing tools than the ones we're given by Apple, and most folks don't bother. And because Xcode is [closed source][xcode], the community can't contribute back to improve their own tools.
 
-So why haven't Apple done this? Priorities. Apple has the engineering talent to make this a reality, but they'd rather make Animojis I guess.
+So why haven't Apple done this? Priorities. Apple has the engineering talent to make this a reality, but they have other priorities.
 
 Not to suggest that making Jive would be easy. Imagine: you hit "save" and Xcode has to determine which files have changed, recompile them, load them into a runtime, and execute them. That alone would take a lot of engineering effort, and only a few companies exist that could invest the time. And only Apple can contribute to Xcode.
 
-Until Apple starts caring about writing modern unit tests, or until they get tired of us [filing radars][radars] begging for better tools, we'll likely never see Jive come to be.
+Until Apple cares more about writing modern unit tests, or until they get tired of us [filing radars][radars] asking for better tools, we'll likely never see Jive come to be.
 
 [jest]: https://github.com/facebook/jest
 [quick]: https://github.com/Quick/Quick
