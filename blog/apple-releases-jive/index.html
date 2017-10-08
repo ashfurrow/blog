@@ -1008,7 +1008,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
 <span class="nf">describe</span><span class="p">(</span><span class="s">"prepopulated"</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">beforeEach</span> <span class="p">{</span>
-        <span class="n">db</span> <span class="o">=</span> <span class="kt">DataBase</span><span class="o">.</span><span class="nf">populateWithFakeData</span><span class="p">()</span>
+        <span class="n">db</span><span class="o">.</span><span class="nf">populateWithFakeData</span><span class="p">()</span>
     <span class="p">}</span>
 
     <span class="nf">it</span><span class="p">(</span><span class="s">"can fetch rows from the db"</span><span class="p">)</span> <span class="p">{</span>
