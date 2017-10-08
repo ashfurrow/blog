@@ -171,5 +171,5 @@ Until Apple cares more about writing modern unit tests, or until they get tired 
 [ns]: https://github.com/ashfurrow/Nimble-Snapshots
 [xcode]: http://isxcodeopensourceyet.github.io
 [swift]: https://swift.org/blog/swift-local-refactoring/
-[radars]: https://bugreport.apple.com
+[radars]: /blog/due-diligence/
 [so]: https://stackoverflow.com/a/3623574/516359
