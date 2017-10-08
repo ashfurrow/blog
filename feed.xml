@@ -23,7 +23,7 @@
 
 &lt;p&gt;One piece of criticism I received is that I hadn&amp;rsquo;t filed any bug reports with Apple asking for these features. I did include a link to &lt;a href="http://bugreport.apple.com"&gt;Apple&amp;rsquo;s bug reporter&lt;/a&gt; and asked people to file radars, but I didn&amp;rsquo;t provide any radars to duplicate. That was an oversight on my part.&lt;/p&gt;
 
-&lt;p&gt;So here&amp;rsquo;s some due diligence: I have filed ten radars with Apple asking for individual features that would each enhance the developer experience. They have all been cross-posted to &lt;a href="http://www.openradar.me/"&gt;Open Radar&lt;/a&gt;, so please feel free to duplicate them.&lt;/p&gt;
+&lt;p&gt;So here&amp;rsquo;s some due diligence: I have filed eleven radars with Apple asking for individual features that would each enhance the developer experience. They have all been cross-posted to &lt;a href="http://www.openradar.me/"&gt;Open Radar&lt;/a&gt;, so please feel free to duplicate them.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4928269132496896"&gt;34875844 Xcode&amp;rsquo;s unit testing framework should include a mocking library&lt;/a&gt;&lt;/li&gt;
@@ -36,6 +36,7 @@
 &lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4959620246274048"&gt;34873674 Xcode should only run tests related to files changed since the last commit&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=6063405903380480"&gt;34873507 Add a test-on-save feature&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4937505996537856"&gt;34873492 Unit tests always run in the same order, but should be randomized&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5001137547640832"&gt;34876469 Isolate global state between tests by isolating tests&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;These are &lt;em&gt;all&lt;/em&gt; feature requests that I&amp;rsquo;m bringing from other communities – mainly Ruby and JavaScript. I&amp;rsquo;ve been &lt;a href="https://www.youtube.com/watch?v=LtrzZb5Jw0g"&gt;asking developers to bring ideas from other communities since Swift was in beta&lt;/a&gt;. It&amp;rsquo;s fair to ask me to follow my own advice.&lt;/p&gt;
