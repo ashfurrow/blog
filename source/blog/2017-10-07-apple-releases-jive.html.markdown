@@ -83,7 +83,7 @@ it("adds new rows to the db") {
 
 describe("prepopulated") {
     beforeEach {
-        db = DataBase.populateWithFakeData()
+        db.populateWithFakeData()
     }
     
     it("can fetch rows from the db") {
