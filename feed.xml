@@ -190,7 +190,7 @@
 
 &lt;p&gt;Not to suggest that making Jive would be easy. Imagine: you hit &amp;ldquo;save&amp;rdquo; and Xcode has to determine which files have changed, recompile them, load them into a runtime, and execute them. That alone would take a lot of engineering effort, and only a few companies exist that could invest the time. And only Apple can contribute to Xcode.&lt;/p&gt;
 
-&lt;p&gt;Until Apple cares more about writing modern unit tests, or until they get tired of us &lt;a href="https://bugreport.apple.com"&gt;filing radars&lt;/a&gt; asking for better tools, we&amp;rsquo;ll likely never see Jive come to be.&lt;/p&gt;
+&lt;p&gt;Until Apple cares more about writing modern unit tests, or until they get tired of us &lt;a href="/blog/due-diligence/"&gt;filing radars&lt;/a&gt; asking for better tools, we&amp;rsquo;ll likely never see Jive come to be.&lt;/p&gt;
 </content>
   </entry>
   <entry>
