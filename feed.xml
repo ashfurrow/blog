@@ -151,11 +151,11 @@
 
 &lt;p&gt;Of course, Jive doesn&amp;rsquo;t exist. It&amp;rsquo;s up to iOS developers to seek out better testing tools than the ones we&amp;rsquo;re given by Apple, and most folks don&amp;rsquo;t bother. And because Xcode is &lt;a href="http://isxcodeopensourceyet.github.io"&gt;closed source&lt;/a&gt;, the community can&amp;rsquo;t contribute back to improve their own tools.&lt;/p&gt;
 
-&lt;p&gt;So why haven&amp;rsquo;t Apple done this? Priorities. Apple has the engineering talent to make this a reality, but they&amp;rsquo;d rather make Animojis I guess.&lt;/p&gt;
+&lt;p&gt;So why haven&amp;rsquo;t Apple done this? Priorities. Apple has the engineering talent to make this a reality, but they have other priorities.&lt;/p&gt;
 
 &lt;p&gt;Not to suggest that making Jive would be easy. Imagine: you hit &amp;ldquo;save&amp;rdquo; and Xcode has to determine which files have changed, recompile them, load them into a runtime, and execute them. That alone would take a lot of engineering effort, and only a few companies exist that could invest the time. And only Apple can contribute to Xcode.&lt;/p&gt;
 
-&lt;p&gt;Until Apple starts caring about writing modern unit tests, or until they get tired of us &lt;a href="https://bugreport.apple.com"&gt;filing radars&lt;/a&gt; begging for better tools, we&amp;rsquo;ll likely never see Jive come to be.&lt;/p&gt;
+&lt;p&gt;Until Apple cares more about writing modern unit tests, or until they get tired of us &lt;a href="https://bugreport.apple.com"&gt;filing radars&lt;/a&gt; asking for better tools, we&amp;rsquo;ll likely never see Jive come to be.&lt;/p&gt;
 </content>
   </entry>
   <entry>
