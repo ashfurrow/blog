@@ -32,6 +32,7 @@ past_talks:
   dates: February 23–24, 2017
   image: playgroundscon.png
   slides: https://speakerdeck.com/ashfurrow/comparative-asynchronous-programming
+  video: https://www.skilled.io/u/playgroundscon/comparative-asynchronous-programming
 - name: Building Compassionate Software
   conference: iOSoho
   url: https://www.meetup.com/iOSoho/events/232809656/
