@@ -21,7 +21,7 @@ That changed about a year ago, when I talked to my manager about breaking outsid
 
 It's been a slow process. I haven't _just_ been learning new things, I've also been helping other team members contribute to Artsy's iOS code. I can't just leave the iOS codebases – I have responsibilities. I was doing things like pairing on our Scala codebase, which was totally new to me, while also pairing on our iOS codebases, which I helped write.
 
-My progress was stunted at times setbacks in my depression treatment. Sometimes I would take one step forward and two steps back. That sucked. I made progress where I could and tried to accept that developing new skills takes time.
+My progress was stunted at times by setbacks in my depression treatment. Sometimes I would take one step forward and two steps back. That sucked. I made progress where I could and tried to accept that developing new skills takes time.
 
 Contributions to non-iOS codebases were minor at first: arduous pull requests that changed some button's text or added some field to a model object. Simple stuff. I was making contributions, but each one was a challenge.
 
