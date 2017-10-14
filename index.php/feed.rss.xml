@@ -6,6 +6,54 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Perspective of the Polyglot</title>
+      <link>https://ashfurrow.com/blog/perspective-of-the-polyglot/</link>
+      <description>&lt;p&gt;In 2015, &lt;a href="/blog/building-my-career/"&gt;I wrote&lt;/a&gt; about my next steps in &lt;a href="http://artsy.github.io/blog/2015/04/03/artsy-engineering-compensation-framework/"&gt;Artsy&amp;rsquo;s engineering career ladder&lt;/a&gt;. I laid out the steps that I would be focusing on, like multiplying effectiveness of cross-team work and having an obvious technical impact on the team&amp;rsquo;s strategic trajectory. I&amp;rsquo;ve made progress on these points, to varying degrees, but that&amp;rsquo;s not what I want to talk about.&lt;/p&gt;
+
+&lt;p&gt;Back then, after listing all the things I wanted to focus on, I casually mention some other items that I&amp;rsquo;d skipped.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There are other, more technical things like &amp;ldquo;own a large scale and impact service&amp;rdquo; &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In hindsight, I maybe treated these &amp;ldquo;technical things&amp;rdquo; as though they were inevitable and would just happen on their own. But just like the community-oriented qualifications, technical skills are things that I need to consciously practice to improve at. To some extent, I might have neglected them.&lt;/p&gt;
+
+&lt;p&gt;I mean, don&amp;rsquo;t get me wrong. I made occasional contributions (mostly in Ruby), I built new open source tools (mostly in Ruby), I even rewrote my website (in Ruby). I stayed in my comfort zone – heck, I didn&amp;rsquo;t even learn Rails!&lt;/p&gt;
+
+&lt;p&gt;That changed about a year ago, when I talked to my manager about breaking outside of the iOS developer box. I told him that I wanted to contribute to mission-critical backend systems, to help build web frontends written in new languages, to experiment with unproven technologies and evaluate their applications at Artsy.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s been a slow process. I haven&amp;rsquo;t &lt;em&gt;just&lt;/em&gt; been learning new things, I&amp;rsquo;ve also been helping other team members contribute to Artsy&amp;rsquo;s iOS code. I can&amp;rsquo;t just leave the iOS codebases – I have responsibilities. I was doing things like pairing on our Scala codebase, which was totally new to me, while also pairing on our iOS codebases, which I helped write.&lt;/p&gt;
+
+&lt;p&gt;My progress was stunted at times setbacks in my depression treatment. Sometimes I would take one step forward and two steps back. That sucked. I made progress where I could and tried to accept that developing new skills takes time.&lt;/p&gt;
+
+&lt;p&gt;Contributions to non-iOS codebases were minor at first: arduous pull requests that changed some button&amp;rsquo;s text or added some field to a model object. Simple stuff. I was making contributions, but each one was a challenge.&lt;/p&gt;
+
+&lt;p&gt;Recently, things have been different. I started making contributions to a few distinct projects a week. Then a few distinct projects a day. I sought out exposure to building new-to-me kinds of software, with new-to-me practices and new-to-me conventions. It was hard. It sucked. It ruled. I doubted myself a lot.&lt;/p&gt;
+
+&lt;p&gt;On the upside, learning language after framework after methodology helped develop my intuition and pattern-recognition. I can more quickly recognize the similarities and differences between different types of software. Now, I can jump into a new project and pretty quickly make meaningful contributions.&lt;/p&gt;
+
+&lt;p&gt;It. Feels. Amazing.&lt;/p&gt;
+
+&lt;p&gt;Take this week: I released a new version of Artsy&amp;rsquo;s main iOS app, helped profile and limit GraphQL request complexity, tuned server logging, worked on a new feature in a Rails app, undertook a refactor in a Scala backend – all while keeping on top of my responsibilities in the open source community. Cool!&lt;/p&gt;
+
+&lt;p&gt;So what? Well.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s perspective that comes with experience in different programming languages. Not just languages: systems, communities, and contexts. For example, when I step into another programming community, I have the opportunity to look back and see the iOS developer community from a distance. Sometimes I really like what I see. Sometimes I don&amp;rsquo;t. I try to &lt;a href="/blog/apple-releases-jive/"&gt;bring that perspective back&lt;/a&gt; with me and improve things. Perspective makes you do that.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;a href="https://science.nasa.gov/science-news/science-at-nasa/2013/23jul_palebluedot"&gt;&lt;img src="https://ashfurrow.com/img/blog/perspective-of-the-polyglot/bluedot.jpg" alt="Bluedot" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;The more I learn, the more I realize I have to learn. I make progress only to learn that the goal – my vision of an idealized developer – is even further away than I thought. Like Zeno, I&amp;rsquo;ll never make it to a finish line. I don&amp;rsquo;t think that feeling will ever change, but I&amp;rsquo;m learning to accept the fact that the finish line doesn&amp;rsquo;t exist: &lt;a href="/blog/the-journey-is-the-reward/"&gt;the journey is the reward&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 14 Oct 2017 02:09:25 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/perspective-of-the-polyglot/</guid>
+    </item>
+    <item>
       <title>Due Diligence</title>
       <link>https://ashfurrow.com/blog/due-diligence/</link>
       <description>&lt;p&gt;Okay so yesterday I wrote a &lt;a href="/blog/apple-releases-jive/"&gt;hypothetical blog post&lt;/a&gt; about a new testing framework that Apple made. I&amp;rsquo;ve got a lot of feedback – more than I expected, honestly. Developers really care about their tools.&lt;/p&gt;
@@ -287,28 +335,6 @@
 </description>
       <pubDate>Sat, 30 Sep 2017 15:38:30 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/emotions-matter/</guid>
-    </item>
-    <item>
-      <title>Technology is not Neutral</title>
-      <link>https://ashfurrow.com/blog/technology-is-not-neutral/</link>
-      <description>&lt;p&gt;Facebook&amp;rsquo;s advertising algorithms are &lt;a href="https://www.propublica.org/article/facebook-enabled-advertisers-to-reach-jew-haters"&gt;back in the news&lt;/a&gt; after ProPublica discovered you could target antisemitic categories in your ad campaigns. The publication has &lt;a href="https://www.propublica.org/article/facebook-lets-advertisers-exclude-users-by-race"&gt;previously revealed&lt;/a&gt; that Facebook housing ads allowed landlords to exclude potential tenants based on their race.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;So let&amp;rsquo;s break this down, from like a moral/technical perspective. What Facebook has done is it&amp;rsquo;s created a piece of &amp;ldquo;neutral&amp;rdquo; technology. The ad-buying algorithm is a way for ad buyers to target audiences with relevant ads, based on information Facebook has gathered or inferred from its users. That&amp;rsquo;s straightforward and certainly sounds harmless. But Facebook failed to account for how its software would be used. For how its software &lt;em&gt;could&lt;/em&gt; be used.&lt;/p&gt;
-
-&lt;p&gt;See, when you create technology based on real people, your technology is necessarily imbued with the biases and prejudices of those people. When Facebook runs an algorithm to determine whose attention is worth how much, its factoring in a lot of signals from people. Those signals carry bias, so the algorithm carries bias. The same premise can be applied to machine learning, too, which also suffers from this problem.&lt;/p&gt;
-
-&lt;p&gt;This is why when Microsoft released a &amp;ldquo;neutral&amp;rdquo; chat bot into Twitter, it got &lt;a href="https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist"&gt;really racist really quickly&lt;/a&gt;. Microsoft failed to account for what other bot-makers already knew: without foresight and prevention, technology can/will be used in ways that violate its own creators&amp;rsquo; values. &lt;/p&gt;
-
-&lt;p&gt;Put another way: unless a technologist thinks ahead and puts in safeguards, they cannot control how the technology they create will be used.&lt;/p&gt;
-
-&lt;p&gt;There are moral implications to building technology, and this is one of them: if your goal is neutrality, you &lt;em&gt;must&lt;/em&gt; tilt the scale in favour of those people that our society marginalizes. You &lt;em&gt;must&lt;/em&gt; overshoot towards social justice. Otherwise, your &amp;ldquo;neutral&amp;rdquo; technology only reinforces the existing imbalances in our society.&lt;/p&gt;
-
-&lt;p&gt;Facebook is asking us to blame their algorithm for being racist, when in fact Facebook are the ones who messed up. They failed to anticipate these problems when they should have thought more carefully about how their software could be used. This should serve as a valuable lesson to all of us.&lt;/p&gt;
-</description>
-      <pubDate>Thu, 14 Sep 2017 21:05:44 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/technology-is-not-neutral/</guid>
     </item>
   </channel>
 </rss>
