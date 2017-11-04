@@ -15,9 +15,9 @@ This past August had me feeling happier than I've been since roughly 2011, when 
 
 I was taking two medications: an SNRI and another "booster" drug that augments the SNRI. It was the _perfect_ combination for me, it worked _so well_. I had even [stopped going to therapy][therapy] because I had worked through what I needed to work through.
 
-Well see the problem is that the booster I was on has an uncommon complication. It's fairly rare, and I was on a very low dose, but I had been told to watch out for certain signs of this... complication. This neurological complication. This complication that often is permanent and persists for the rest of one's life.
+Well see the problem is that the booster I was on has an uncommon complication. It's fairly rare, and I was on a very low dose, but I had been told to watch out for certain signs of this complication. This neurological complication. This complication that often is permanent and persists for the rest of one's life.
 
-I stopped taking the booster at the very end of August. I knew what withdrawal from this drug would feel like, I'd been through it before a few times. It starts out seemingly like it won't be so bad: a few weeks of no change at all, but then a sudden and steep drop in my mood. Drop in my appetite. Drop in hobbies. In motivation to work. Motivation to live.
+I stopped taking the booster at the very end of August. I knew what withdrawal from this drug would feel like, I'd been through it a few times. It starts out seeming like it won't be so bad: a few weeks of no change at all, but then a sudden and steep drop in my mood. Drop in my appetite. Drop in hobbies. In motivation to work. Motivation to live.
 
 I spoke with my psychiatrist and the next step we'd settled on was to use a different booster, one that I had used before and had seen _partial_ improvement with. It's a fairly conventional approach and I wanted to pursue this before trying something more radical: a change to my main anti-depressant. From an SNRI to, something else. I'm nervous about this option.
 
@@ -27,7 +27,7 @@ BEGIN_NARROW
 
 END_NARROW
 
-Artsy changed insurance providers at the end of August and my therapist was no longer in my health insurance network. And he's more of a psychoanalyst than someone who could help me with coping strategies in the moments when I'm feeling hopeless. What I need is a Cognitive Behavioural Therapist. My psychiatrist had offered to help me find someone specializing in CBT. I was secretly resistant to this idea for, I don't know, really dumb reasons. Rationales that I hadn't shared with my psychiatrist or my wife, Ashley. After talking it through with Ashley, I decided to find a new therapist. 
+Artsy changed insurance providers at the end of August and my old therapist was no longer in my health insurance network. And he's more of a psychoanalyst than someone who could help me with coping strategies in the moments when I'm feeling hopeless. What I need is a Cognitive Behavioural Therapist. My psychiatrist had offered to help me find someone specializing in CBT. I was secretly resistant to this idea for, I don't know, really dumb reasons. Rationales that I hadn't shared with my psychiatrist or my wife, Ashley. After talking it through with Ashley, I decided to find a new therapist. 
 
 So that's kind of where I am right now.
 
@@ -37,15 +37,15 @@ I went back to my psychiatrist for a checkup to see how I was feeling on the alt
 
 See... psychiatrists all have these little questionnaires that measures changes in different symptoms of depression. Things like mood, appetite, sleeping patterns, interest in activities, and of course, thoughts of suicide. I took the usual questionnaire and my results were only a _slight_ improvement from September. Not promising. 
 
-My psychiatrist noticed that one score on the questionnaire had significantly worsened, a really important question. And so I got to have _that_ conversation. You know the one, right? 
+My psychiatrist noticed that one score on one questionnaire had significantly worsened, a really important question. And so I got to have _that_ conversation. You know the one, right? 
 
-"And how often would you say that you think about ending your life?"
+_"And how often would you say that you think about ending your life?"_
 
-"That's quite a lot."
+_"That's quite a lot."_
 
-"Do you have access to any firearms?"
+_"Do you have access to any firearms?"_
 
-"What do you think you would do if you decided to act on these thoughts?"
+_"What do you think you would do if you decided to act on these thoughts?"_
 
 I always hate this conversation. I feel so ashamed of myself. I know I shouldn't but I do. I feel like a dog getting its nose rubbed into a mess it's made.
   
@@ -61,27 +61,27 @@ Talking helped improve my mood in the short term and I hope or believe I guess t
 
 My friend and yours, Orta, had spoken highly of [Blue Apron][blueapron] on several occasions. I was really interested but I hadn't pursued it yet.
 
-See, my appetite is pretty low right now. I have to remind myself to eat and if I forget, my mood drops significant. And my motivation to _do_ things was verrrrrrry limited. So I was eating pretty poorly because it is _far_ easier to microwave another frozen dinner or order food using the internet than it is to:
+See, my appetite is pretty low right now. I have to remind myself to eat and if I forget, my mood drops significant. And my motivation to _do_ things was _verrrrrrry_ limited. So I was eating pretty poorly because it is _far_ easier to microwave another frozen dinner or order food using the internet than it is to:
 
 1. Plan what to eat.
 2. Make a list of things I need to buy.
 3. Go outside and buy them (or, more likely, order them using the internet).
-4. Prepare the food in the tiny kitchen I share with my roommates.
+4. Prepare the food in the tiny kitchen that I share with my roommates.
 5. Clean up afterwards.
 
 Which is a real fucking shame because I _love_ to cook. I used to anyways. Here's me in university 2010 cooking for a community breakfast that I'd organized:
 
 ![Me making pancakes](/img/blog/so-i-have-been-struggling/pancakes.jpg)
 
-Moving to Toronto was like, the peak of my enjoyment of cooking. Actually, it was and remains the most joyous part of my life. I had a _sweet_ kitchen and bought all kinds of doodads to make all kinds of food. I started experimenting with baking, even making goddamn _macarons_.
+Moving to Toronto was like, the peak of my enjoyment of cooking. Actually, it was and remains the most joyous part of my life. I had a _kickass_ kitchen and bought all kinds of doodads to make all kinds of food. I started experimenting with baking, even making goddamn _macarons_.
 
-Moving to Amsterdam put up a lot of barriers to me enjoying cooking. Barriers like a totally different grocery store where everything is in a totally different language and people assume you speak Dutch, and folks interact according to totally (okay, somewhat) different customs. Barriers like this weren't a problem but after moving to Amsterdam I ran out of anti-depressants and struggled to find reliably medical help. I didn't cook anymore, my appetite was gone, I was feeling suicidal.
+Moving to Amsterdam put up a lot of barriers to me enjoying cooking. Barriers like a totally different grocery store where everything is in a totally different language and cashiers assume you speak Dutch, and folks interact according to very different customs. Barriers like this weren't by themselves a problem but after moving to Amsterdam I ran out of anti-depressants and struggled to find reliable medical help. I didn't cook anymore, my appetite was gone, I was feeling suicidal.
 
-(Footnote: I probably felt the lowest during my first few months with Artsy, and I was really worried that I wasn't performing adequately enough. Artsy colleagues, and Orta in particular, were a reliable source of validation. It got me through some tough times.)
+(Footnote: the time I was feeling the lowest coincided with my first few months with Artsy, and I was really worried that I wasn't performing adequately enough. Artsy colleagues, and Orta in particular, were a reliable source of validation. It got me through some tough times.)
 
 Moving to New York reduced a lot of the barriers to cooking I'd had in Amsterdam, but I wasn't really in the habit anymore. Plus there are _so many_ cool takeout places around the city to try out. Well, to order over the internet. Anyway, the point is I haven't really cooked since Toronto.
 
-Some things I've come to rely upon in New York while I've been depressed in the past few years are, like, _super_ bougie. The part of me that wants to buy off-brand Kraft Dinner to save thirty cents is in utter conflict with the part of me that is _so_ into getting my laundry done online.
+Some things I've come to rely upon in New York while I've been depressed in the past few years are, like, _super_ bougie. The part of me that wants to buy off-brand Kraft Dinner to save thirty cents is in utter conflict with the part of me that is _so_ into doing my laundry online.
 
 I felt ashamed of paying extra for convenience. Ashley had explained that, logistically, it makes more sense to pay a little extra for conveniences than to languish without the basics of living. That made sense, and was the kind of justification that I'd used when I felt bad about things.
 
@@ -93,13 +93,15 @@ BEGIN_NARROW
 
 END_NARROW
 
-It's been three weeks now and I. Am. Loving. It. It's brought some joy back into my life while I struggle through all the shit I'm going through right now. It reminded me that _I like to cook_. And that hard stuff? The planning and grocery lists and going to store? Well I'd forgotten, but I like that too. Today I noticed an _amazing_ grocery store literally on my walk home. It excited me. I went in, planned not one, but two meals! I had a goddamn _conversation_ with the cashier about what I was planning to cook and _I enjoyed it_.
+It's been three weeks now and I. Am. Loving. It. Blue Apron has brought some joy back into my life while I struggle through all the shit I'm going through right now. It reminded me that _I like to cook_. 
 
-I'm still not completely at ease with my feelings about the modern conveniences of New York and the internet. Maybe parts of me will always be at odds, a struggle between rigid parsimony and practical indulgence. But embracing convenience and starting Blue Apron sparked something with me. It re-ignited a source of joy for me, and is responsible for a much-needed reprieve from the things I'm struggling with right now.
+And that hard stuff? The planning and grocery lists and going to store and cleaning the kitchen? Well I'd forgotten, but I like that too. Yesterday, I noticed an _amazing_ grocery store literally on my walk home. It excited me. I went in, planned not one, but two meals! I had a goddamn _conversation_ with the cashier about what I was planning to cook and _I enjoyed it_.
+
+I'm still not completely at ease with my feelings about the modern conveniences of New York and the internet. Maybe parts of me will always be at odds: a struggle between rigid parsimony and practical indulgence. But embracing convenience and starting Blue Apron sparked something with me. It re-ignited a source of joy for me, and is responsible for a much-needed reprieve from the things I'm struggling with right now.
 
 ---
 
-I have realized that the most effective solutions to my problems _always_ involve talking it through with someone. It's a mix of Rubber Duck debugging but for emotions, and advice from trusted friends. It came down to talking, but I had to be honest and I usually had to start the conversation. That was really hard. Like, _the hardest thing_. But I did it. I worked up the courage for days and finally sprung a conversationa about suicidal ideation on my unsuspecting wife while seated in a bustling café. It worked, and I felt _so_ much better.
+I have realized that the most effective solutions to my problems _always_ involve talking it through with someone. It's a mix of [Rubber Duck debugging][duck] but for emotions, and advice from trusted friends. It came down to talking, but I had to be honest and I usually had to start the conversation. That was really hard. Like, _the hardest thing_. But I did it. I worked up the courage for days and finally sprung a conversation about suicidal ideation on my unsuspecting wife while seated in a bustling café. But it worked, and I felt _so_ much better.
 
 If you're struggling with the kinds of problems I'm having, I want you to try talking to someone you trust about how you're feeling. Please. I promise that you _are_ worth the struggle it will be to ask: "can we talk?"
 
@@ -107,3 +109,4 @@ If you're struggling with the kinds of problems I'm having, I want you to try ta
 [therapy]: /blog/therapys-end/
 [flat]: /blog/depression-graphed/
 [blueapron]: https://www.blueapron.com
+[duck]: https://en.wikipedia.org/wiki/Rubber_duck_debugging
