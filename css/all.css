@@ -302,6 +302,13 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #398CCC; }
+/* Hover state on menu links should be bluuuuue */
+.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+  color: #398CCC; }
+
+.navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
+  color: #398CCC; }
+
 /* GitHub logo is slightly too low. */
 .fa-github::before {
   position: relative;
