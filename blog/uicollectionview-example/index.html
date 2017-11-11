@@ -964,16 +964,16 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>It’s always something with you, isn’t it, Xcode?</p>
 
 <p>We’re going to gut the contents of the master view controller that deal with the <code>tableView</code> property (which we replaced). For this example, I’m deleting the following method:</p>
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">commitEditingStyle</span><span class="p">:(</span><span class="n">UITableViewCellEditingStyle</span><span class="p">)</span><span class="nv">editingStyle</span> <span class="nf">forRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
-</code></pre>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">commitEditingStyle</span><span class="p">:(</span><span class="n">UITableViewCellEditingStyle</span><span class="p">)</span><span class="nv">editingStyle</span> <span class="nf">forRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+</code></pre></div>
 <p>Everywhere else you see <code>tableView</code> cuasing a problem, replace it with <code>collectionView</code>. The two classes behave almost identically, so it’ll be an easy conversion.</p>
 
 <p>The only problem I had was</p>
-<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathForSelectedRow</span><span class="p">];</span>
-</code></pre>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathForSelectedRow</span><span class="p">];</span>
+</code></pre></div>
 <p><code>UICollectionView</code> doesn’t have the method <code>indexPathForSelectedRow</code>, so replace that line with the following:</p>
-<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathsForSelectedItems</span><span class="p">]</span> <span class="nf">lastObject</span><span class="p">];</span>
-</code></pre>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathsForSelectedItems</span><span class="p">]</span> <span class="nf">lastObject</span><span class="p">];</span>
+</code></pre></div>
 <p>You’ll also need to modify the <code>insertSections:withRowAnimation:</code> method calls, since <code>UICollectionView</code> doesn’t have row animations; just remove the second part of the selector name.</p>
 
 <p>Once you deal with all of the transition, you have a an app that runs, but is empty. Let’s fill it with beautiful photos.</p>
@@ -1001,7 +1001,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p><em>Note</em>: We’re using batch updates because we are inserting more than one cell at a time, and we want that nice animation when adding each individual cell. You could call <code>reloadData</code> once all the results are loaded, but you wouldn’t have any animations, which are part of the delight of <code>NSCollectionVIew</code>.</p>
 
 <p>Creating the <code>NSFetchedResultsController</code> is almost the exact same as the project template:</p>
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="n">fetchedResultsController</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="n">fetchedResultsController</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">_fetchedResultsController</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">_fetchedResultsController</span><span class="p">;</span>
@@ -1037,9 +1037,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="k">return</span> <span class="n">_fetchedResultsController</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Create two <code>NSMutableArray</code> instance variables and instantiate them in <code>viewDidLoad</code>. Implement the following <code>NSFetchedResultsControllerDelegate</code> methods.</p>
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controller</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span> 
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controller</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span> 
     <span class="nf">didChangeSection</span><span class="p">:(</span><span class="n">id</span> <span class="o">&lt;</span><span class="n">NSFetchedResultsSectionInfo</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">sectionInfo</span>
     <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">sectionIndex</span> 
     <span class="nf">forChangeType</span><span class="p">:(</span><span class="n">NSFetchedResultsChangeType</span><span class="p">)</span><span class="nv">type</span>
@@ -1084,9 +1084,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     <span class="p">}</span>
     <span class="p">[</span><span class="n">_objectChanges</span> <span class="nf">addObject</span><span class="p">:</span><span class="n">change</span><span class="p">];</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>These two methods queue the updates to the collection view. The following method waits for the fetched results controller to be finished before dequeuing those updates and applying them to our collection view.</p>
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controllerDidChangeContent</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">controllerDidChangeContent</span><span class="p">:(</span><span class="n">NSFetchedResultsController</span> <span class="o">*</span><span class="p">)</span><span class="nv">controller</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">([</span><span class="n">_sectionChanges</span> <span class="nf">count</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
     <span class="p">{</span>
@@ -1146,13 +1146,13 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     <span class="p">[</span><span class="n">_sectionChanges</span> <span class="nf">removeAllObjects</span><span class="p">];</span>
     <span class="p">[</span><span class="n">_objectChanges</span> <span class="nf">removeAllObjects</span><span class="p">];</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>These methods should work for any <code>UICollectionView</code> and <code>NSFetchedResultsController</code> data.</p>
 
 <p>Now that the <code>NSFetchedResultsController</code> is hooked up the the <code>UICollectionView</code>, let’s load some photos from 500px!</p>
 
 <p>Use the consumer key and consumer secret from when you <a href="http://developers.500px.com/settings/applications?from=developers">registered your application</a> earlier. Follow the directions in the <a href="https://github.com/500px/500px-iOS-api">iOS 500px SDK</a> to add the 500px SDK to your Xcode project. Make sure to follow the instructions in the SDKs <code>README</code> to set up your project to use the SDK.</p>
-<pre class="highlight objective_c"><code><span class="p">[</span><span class="n">PXRequest</span> <span class="nf">setConsumerKey</span><span class="p">:</span><span class="s">@"your consumer key"</span> <span class="nf">consumerSecret</span><span class="p">:</span><span class="s">@"your consumer secret"</span><span class="p">];</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="p">[</span><span class="n">PXRequest</span> <span class="nf">setConsumerKey</span><span class="p">:</span><span class="s">@"your consumer key"</span> <span class="nf">consumerSecret</span><span class="p">:</span><span class="s">@"your consumer secret"</span><span class="p">];</span>
 
 <span class="p">[</span><span class="n">PXRequest</span> <span class="nf">requestForPhotoFeature</span><span class="p">:</span><span class="n">PXAPIHelperPhotoFeaturePopular</span> <span class="nf">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">results</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span>
@@ -1178,9 +1178,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="p">});</span>
     <span class="p">}</span>
 <span class="p">}];</span>
-</code></pre>
+</code></pre></div>
 <p>The fetched results controller will take care of that magic for us. We just need to configure our cells.</p>
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">UICollectionViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">collectionView</span><span class="p">:(</span><span class="n">UICollectionView</span> <span class="o">*</span><span class="p">)</span><span class="nv">collectionView</span> <span class="nf">cellForItemAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">UICollectionViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">collectionView</span><span class="p">:(</span><span class="n">UICollectionView</span> <span class="o">*</span><span class="p">)</span><span class="nv">collectionView</span> <span class="nf">cellForItemAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
 <span class="p">{</span>
     <span class="n">AFCollectionViewCell</span> <span class="o">*</span><span class="n">cell</span> <span class="o">=</span> <span class="p">(</span><span class="n">AFCollectionViewCell</span> <span class="o">*</span><span class="p">)[</span><span class="n">collectionView</span> <span class="nf">dequeueReusableCellWithReuseIdentifier</span><span class="p">:</span><span class="n">CellIdentifier</span> <span class="nf">forIndexPath</span><span class="p">:</span><span class="n">indexPath</span><span class="p">];</span>
 
@@ -1189,7 +1189,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p><img src="/img/import/blog/uicollectionview-example/E8ECC8892EEB418D9FE04C6A04AD5436.png" alt="E8ecc8892eeb418d9fe04c6a04ad5436"></p>
 
 <p>I went to the liberty of adjusting the sizes to make things pretty - nice app! Let’s connect the detail view controller now.</p>
@@ -1201,7 +1201,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>Select the segue and make sure its identifier is set to “showDetail”.</p>
 
 <p>Replace the <code>UILabel</code> with a <code>UIImageView</code>, change the <code>IBOutlet</code> in the header file, reconnect the outlet, and modify <code>configureView</code> to look like the following:</p>
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">configureView</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">configureView</span>
 <span class="p">{</span>
     <span class="c1">// Update the user interface for the detail item.
 </span>
@@ -1211,9 +1211,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="n">self</span><span class="p">.</span><span class="n">title</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">detailItem</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"photoName"</span><span class="p">];</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>In the master view controller, <code>prepareForSegue:sender:</code> should look like the following:</p>
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prepareForSegue</span><span class="p">:(</span><span class="n">UIStoryboardSegue</span> <span class="o">*</span><span class="p">)</span><span class="nv">segue</span> <span class="nf">sender</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prepareForSegue</span><span class="p">:(</span><span class="n">UIStoryboardSegue</span> <span class="o">*</span><span class="p">)</span><span class="nv">segue</span> <span class="nf">sender</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sender</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">([[</span><span class="n">segue</span> <span class="nf">identifier</span><span class="p">]</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"showDetail"</span><span class="p">])</span> <span class="p">{</span>
         <span class="n">NSIndexPath</span> <span class="o">*</span><span class="n">indexPath</span> <span class="o">=</span> <span class="p">[[</span><span class="n">self</span><span class="p">.</span><span class="n">collectionView</span> <span class="nf">indexPathsForSelectedItems</span><span class="p">]</span> <span class="nf">lastObject</span><span class="p">];</span>
@@ -1221,7 +1221,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="p">[[</span><span class="n">segue</span> <span class="nf">destinationViewController</span><span class="p">]</span> <span class="nf">setDetailItem</span><span class="p">:</span><span class="n">object</span><span class="p">];</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Run the app, tap on a photo, and you’ll see the following:</p>
 
 <p><img src="/img/import/blog/uicollectionview-example/2E826D143C214E178029F7B19AE16936.png" alt="2e826d143c214e178029f7b19ae16936"></p>

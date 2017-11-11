@@ -1002,17 +1002,17 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>In Javascript, elements in the DOM are accessible via <code>getElementsByClassName</code> or <code>getElementByID</code>. In Objective-C, you <em>can</em> access views with a similar approach, but we typically opt to store <em>references</em> to these views as <em>instance variables</em> of a view controller. We access and change the properties of views within our hierarchy by using these instance variables.</p>
 
 <p>In Objective-C, instance variables are declared either in the header or implementation file between brace brackets after the keywork <code>@interface</code> or <code>@implementation</code>, respectively.</p>
-<pre class="highlight objective_c"><code><span class="k">@implementation</span> <span class="nc">MyViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">@implementation</span> <span class="nc">MyViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span>
 <span class="p">{</span>
     <span class="n">UIButton</span> <span class="o">*</span><span class="n">myButton</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Here we see an instance variable of a <code>UIButton</code>. However, since we’re using <code>.xib</code>s or Storyboards, there’s an additional step we need to do in order to access this button. Put the keyboard <code>IBOutlet</code> in front of the instance variable declaration.</p>
-<pre class="highlight objective_c"><code><span class="k">@implementation</span> <span class="nc">MyViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">@implementation</span> <span class="nc">MyViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span>
 <span class="p">{</span>
     <span class="n">IBOutlet</span> <span class="n">UIButton</span> <span class="o">*</span><span class="n">myButton</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p><code>IBOutlet</code> is a slightly anachronistic keyword that was born when a separate program, called Interface Builder, was used to lay out interface files. In the interface file (either the <code>.xib</code> or Storyboard), option-click the view controller in the left pane to get the view controller’s list of outlets. Drag from the circle beside <code>myButton</code> onto the button on the view. That’s it!</p>
 
 <p><img src="/img/import/blog/ios-for-web-developers/2CF509714C4D48138550C828114B2A46.png" alt="2cf509714c4d48138550c828114b2a46"></p>
@@ -1022,19 +1022,19 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>First, <code>UIViewController</code> has several methods that you (may) override in your view controllers. These are called during documented events. This is a lot like attaching methods onto events in Javascript, like whena document has loaded. For example, the method <code>viewDidLoad</code> is called once all the outlets have been set (the interface has been “thawed”), so it’s often used to customize their appearance. <code>viewDidAppear:</code> is called when a view has appeared, and so on. Check the <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIViewController_Class/Reference/Reference.html"><code>UIViewController</code> class reference</a> for a list of all of these methods.</p>
 
 <p>For example, the following code would customize the title of the button once the view has been loaded.</p>
-<pre class="highlight plaintext"><code>-(void)viewDidLoad
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)viewDidLoad
 {
     [super viewDidLoad];
 
     [myButton setTitle:@"This is my button title" forState:UIControlStateNormal];
 }
-</code></pre>
+</code></pre></div>
 <p>The other place to put code is in methods that respond to user interaction. This is very much like using Javascript to attach methods to events, like <code>onClick</code>. These methods are where the bulk of Objective-C code is written. Methods that are connected to <code>.xib</code>s and Storyboards have to return a specific type: <code>IBAction</code>. We connect these <code>IBAction</code> outlets to controls in the view the same way we connected the button.</p>
-<pre class="highlight plaintext"><code>-(IBAction)myButtonWasPressed
+<div class="highlight"><pre class="highlight plaintext"><code>-(IBAction)myButtonWasPressed
 {
     NSLog(@"My button was pressed!");
 }
-</code></pre>
+</code></pre></div>
 <h2 id="conclusion">
 <a class="header-link" href="#conclusion">#</a> Conclusion</h2>
 

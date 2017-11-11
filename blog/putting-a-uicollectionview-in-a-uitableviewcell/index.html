@@ -961,7 +961,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithStyle</span><span class="p">:(</span><span class="n">UITableViewCellStyle</span><span class="p">)</span><span class="nv">style</span> 
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithStyle</span><span class="p">:(</span><span class="n">UITableViewCellStyle</span><span class="p">)</span><span class="nv">style</span> 
     <span class="nf">reuseIdentifier</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">reuseIdentifier</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">self</span> <span class="o">=</span> <span class="p">[</span><span class="n">super</span> <span class="nf">initWithStyle</span><span class="p">:</span><span class="n">style</span> <span class="nf">reuseIdentifier</span><span class="p">:</span><span class="n">reuseIdentifier</span><span class="p">]))</span> <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
@@ -978,7 +978,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -995,13 +995,13 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">layoutSubviews</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">layoutSubviews</span>
 <span class="p">{</span>
     <span class="p">[</span><span class="n">super</span> <span class="nf">layoutSubviews</span><span class="p">];</span>
 
     <span class="n">self</span><span class="p">.</span><span class="n">collectionView</span><span class="p">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">contentView</span><span class="p">.</span><span class="n">bounds</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1020,12 +1020,12 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> 
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> 
     <span class="nf">numberOfRowsInSection</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">section</span>
 <span class="p">{</span>
     <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">colorArray</span><span class="p">.</span><span class="n">count</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1042,7 +1042,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">collectionView</span><span class="p">:(</span><span class="n">AFIndexedCollectionView</span> <span class="o">*</span><span class="p">)</span><span class="nv">collectionView</span> 
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">collectionView</span><span class="p">:(</span><span class="n">AFIndexedCollectionView</span> <span class="o">*</span><span class="p">)</span><span class="nv">collectionView</span> 
     <span class="nf">numberOfItemsInSection</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">section</span>
 <span class="p">{</span>
     <span class="n">NSArray</span> <span class="o">*</span><span class="n">collectionViewArray</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">colorArray</span><span class="p">[</span><span class="n">collectionView</span><span class="p">.</span><span class="nf">index</span><span class="p">];</span>
@@ -1059,7 +1059,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1078,11 +1078,11 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">willDisplayCell</span><span class="p">:(</span><span class="n">AFTableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nv">cell</span> <span class="nf">forRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">willDisplayCell</span><span class="p">:(</span><span class="n">AFTableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nv">cell</span> <span class="nf">forRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
 <span class="p">{</span>
     <span class="p">[</span><span class="n">cell</span> <span class="nf">setCollectionViewDataSourceDelegate</span><span class="p">:</span><span class="n">self</span> <span class="nf">index</span><span class="p">:</span><span class="n">indexPath</span><span class="p">.</span><span class="n">row</span><span class="p">];</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1099,7 +1099,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> 
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tableView</span><span class="p">:(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> 
     <span class="nf">willDisplayCell</span><span class="p">:(</span><span class="n">AFTableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nv">cell</span> 
     <span class="nf">forRowAtIndexPath</span><span class="p">:(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
 <span class="p">{</span>
@@ -1118,7 +1118,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     <span class="n">NSInteger</span> <span class="n">index</span> <span class="o">=</span> <span class="n">cell</span><span class="p">.</span><span class="n">collectionView</span><span class="p">.</span><span class="n">index</span><span class="p">;</span>
     <span class="n">self</span><span class="p">.</span><span class="n">contentOffsetDictionary</span><span class="p">[[</span><span class="err">@</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="nf">stringValue</span><span class="p">]]</span> <span class="o">=</span> <span class="err">@</span><span class="p">(</span><span class="n">horizontalOffset</span><span class="p">);</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>

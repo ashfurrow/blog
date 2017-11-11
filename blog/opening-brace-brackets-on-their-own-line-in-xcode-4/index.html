@@ -936,20 +936,20 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Opening Brace Brackets on Their Own Line in Xcode 4</h1></div></div></div></div></header><div class="container">
 <article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>If you’re like me, you like your brace backets on their own lines, like this:</p>
-<pre class="highlight plaintext"><code>if (condition)
+<div class="highlight"><pre class="highlight plaintext"><code>if (condition)
 {
     statements
 }
-</code></pre>
+</code></pre></div>
 <p>If you’re even more like me, you make heavy use of Xcode’s autocomplete and snippets, like the following:</p>
 
 <p><img src="/img/import/blog/opening-brace-brackets-on-their-own-line-in-xcode-4/EB56DB5A74DD42C390BEDBDC90529BDB.png" alt="Eb56db5a74dd42c390bedbdc90529bdb"></p>
 
 <p>And finally, if you’re <em>just</em> like me, you get really disappointed when this happens:</p>
-<pre class="highlight plaintext"><code>if (condition) {
+<div class="highlight"><pre class="highlight plaintext"><code>if (condition) {
     statements
 }
-</code></pre>
+</code></pre></div>
 <p>What the hell, Xcode? Even the project templates have brace brackets on their own lines. What gives?</p>
 
 <p>Thanks to <a href="http://stackoverflow.com/questions/5324622/how-to-change-autocomplete-braces-in-xcode-4">some research</a>, I found the <a href="http://forrst.com/posts/Put_that_where_it_might_belong_Xcode-PNL">file</a> you need to edit. The problem is, Xcode is now distributed through the Mac App Store, so the steps are a little different. Here’s what you do.</p>
@@ -971,7 +971,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 </ol>
 
 <p>Do a “Find” for the word “condition” and you should find almost all the instance of the snippets you want to modify. It’ll look like this:</p>
-<pre class="highlight plaintext"><code>&lt;key&gt;IDECodeSnippetVersion&lt;/key&gt;
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;key&gt;IDECodeSnippetVersion&lt;/key&gt;
     &lt;integer&gt;1&lt;/integer&gt;
    &lt;key&gt;IDECodeSnippetCompletionPrefix&lt;/key&gt;
     &lt;string&gt;if&lt;/string&gt;
@@ -979,9 +979,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     &lt;string&gt;if (&amp;lt;#condition#&amp;gt;) {
 &amp;lt;#statements#&amp;gt;
 }&lt;/string&gt;
-</code></pre>
+</code></pre></div>
 <p>Just put a new line before the opening brace bracket.</p>
-<pre class="highlight plaintext"><code>&lt;key&gt;IDECodeSnippetVersion&lt;/key&gt;
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;key&gt;IDECodeSnippetVersion&lt;/key&gt;
     &lt;integer&gt;1&lt;/integer&gt;
     &lt;key&gt;IDECodeSnippetCompletionPrefix&lt;/key&gt;
     &lt;string&gt;if&lt;/string&gt;
@@ -990,7 +990,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 {
 &amp;lt;#statements#&amp;gt;
 }&lt;/string&gt;
-</code></pre>
+</code></pre></div>
 <p>This will find all the if statements and most loops; search for the text “forin” to modify the fast enumeration snippet.</p>
 
 <p>Save the file and restart Xcode. That’s it!</p>

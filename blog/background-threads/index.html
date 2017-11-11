@@ -936,12 +936,12 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Background Threads</h1></div></div></div></div></header><div class="container">
 <article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>Today I helped a student with their software engineering project. In their actionPerformed() method, they do some server communication that blocks. Not a great design, but it’s also a second-year course that focuses on the design process and not network communication. The blocking call would stop the main thread from redrawing their GUI until after the actionPerformed() method returned. A quick search yielded the official <a href="http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html">Java solution</a>:</p>
-<pre class="highlight java"><code><span class="n">Runnable</span> <span class="n">doWorkRunnable</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+<div class="highlight"><pre class="highlight java"><code><span class="n">Runnable</span> <span class="n">doWorkRunnable</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span> <span class="n">doWork</span><span class="o">();</span> <span class="o">}</span>
 <span class="o">};</span>
 
 <span class="n">SwingUtilities</span><span class="o">.</span><span class="na">invokeLater</span><span class="o">(</span><span class="n">doWorkRunnable</span><span class="o">);</span>
-</code></pre>
+</code></pre></div>
 <p>Java is so entrenched in OO design. Their solution is to create an instance of an anonymous inner class implementing the Runnable interface before calling some Swing-specific method to invoke it “later.” It’s kind of hack-y, but maybe anonymous inner classes are supposed to be used in Java more often than I thought. I just always considered them an impairment to maintainable code.</p>
 
 <p>I would strongly prefer the Objective-C approach, which uses a multithreaded paradigm designed with just this sort of thing in mind.</p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/Blog">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <title>Objective-C is Not Easy to Learn - Ash Furrow</title>
@@ -954,16 +954,16 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>I’m disappointed by this statement, because it is simply not true. Objective-C is a <a href="/blog/why-objective-c-is-hard-to-learn">massive pain in the ass to learn</a>. It’s a mix of language (with “weird” syntax), runtime (all that arcane knowledge), and frameworks (massive ones). Swift obviates the difficult with the first two, which is awesome.</p>
 
 <p>Let’s consider a simple example.</p>
-<pre class="highlight plaintext"><code>NSLog(@"Hello, world!");
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>NSLog(@"Hello, world!");
+</code></pre></div>
 <p>OK, so let’s take a look at this. Why is <code>NS</code> there? Why not just <code>log</code>? And why is there an <code>@</code> sign in front of the string? That’s bizarre! Why doesn’t <code>NSLog</code> conform to standard Objective-C syntax?</p>
 
 <p>Pedantic? Maybe. But I’m not the one claiming Objective-C is easier to learn than Swift. Let’s take a look at another example. I want an array, called <code>array</code>, of the numbers 1 to 5. Let’s contrast.</p>
-<pre class="highlight plaintext"><code>NSArray *array = @[@(1), @(2), @(3), @(4), @(5)];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>NSArray *array = @[@(1), @(2), @(3), @(4), @(5)];
+</code></pre></div>
 <p>Holy shit. Why is that asterisk there? (Yeah, explain pointers to a newcomer to programming. Have fun.) Again, what’s with all these <code>@</code> signs?! It makes no sense! Why doesn’t this look more like the following?</p>
-<pre class="highlight plaintext"><code>var array = [1...5]
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>var array = [1...5]
+</code></pre></div>
 <p>But then, that’s Swift.</p>
 
 <p>I’ll tolerate people saying that “Swift is complex”, either because it’s unfamiliar or whatever reason you have. But come on. Objective-C being easier to learn? Give me a break.</p>

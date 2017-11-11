@@ -943,7 +943,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>This relates to a problem I had a month ago. My primary disk filled up, prevent media uploads from working for a few hours (the database was unaffected since it uses a separate disk). The problem was exacerbated by an <a href="https://github.com/tootsuite/mastodon/issues/3565">issue</a> I’ve been having with Sidekiq log file sizes, but the root of the issue is that I wasn’t rotating Mastodon log files at all. I was just logging in about once a week to do restart the docker containers (thereby clearing the logs). But I forgot one week.</p>
 
 <p>I asked some colleagues for advice and they told me about log rotation. So I added the following new, named <code>/etc/logrotate.d/docker-container</code> (see <a href="https://sandro-keil.de/blog/2015/03/11/logrotate-for-docker-container/">this helpful post</a>).</p>
-<pre class="highlight plaintext"><code>/var/lib/docker/containers/*/*.log {
+<div class="highlight"><pre class="highlight plaintext"><code>/var/lib/docker/containers/*/*.log {
   rotate 7
   daily
   compress
@@ -952,7 +952,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
   delaycompress
   copytruncate
 }
-</code></pre>
+</code></pre></div>
 <p>This moves the log contents to a new file and compresses previously moved logs, so I get a disk use increase of about 50MB/day instead of 1GB/day.</p>
 
 <p><img src="/img/blog/rotating-mastodon-log-files/transmit.png" alt="Docker container directory listing"></p>

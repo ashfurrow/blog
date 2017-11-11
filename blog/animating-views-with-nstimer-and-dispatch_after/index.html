@@ -940,12 +940,12 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>There are a few different ways to approach this problem, and I chose a method that’s a little unconventional with a small downside, which I’ll discuss.</p>
 
 <p>When I want to kick off a round of animation, I call the <code>animate</code> method; setting up an <code>NSTimer</code> to do this is easy:</p>
-<pre class="highlight plaintext"><code>[NSTimer scheduledTimerWithTimeInterval:4 target:self selector:@selector(animate) userInfo:nil repeats:YES];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>[NSTimer scheduledTimerWithTimeInterval:4 target:self selector:@selector(animate) userInfo:nil repeats:YES];
+</code></pre></div>
 <p>I use <code>NSTimer</code> because we’re repeating this <em>every</em> 4 seconds; it’s the standard approach to solve this sort of problem.</p>
 
 <p>The second problem, kicking off a series of state transitions with a small delay between each one, is a little weirder. In the past, you would be forced to either use <code>performSelector:withObject:afterDelay:</code> or another <code>NSTimer</code>, which is thrown away after the last transition. However, this is modern Objective-C and we have a new option: <code>dispatch_after</code>.</p>
-<pre class="highlight plaintext"><code>-(void)animate
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)animate
 {
     const NSTimeInterval intervalBetweenSteps = 0.1f;
 
@@ -960,7 +960,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         });
     }
 }
-</code></pre>
+</code></pre></div>
 <p>This may seem a little peculiar, especially if you haven’t used <code>dispatch_after</code> before. Essentially, what it does is take a parameter representing a time interval, a Grand Central Dispatch queue, and a block object to be executed after that time interval has passed. The block is enqueued onto the GCD queue, but it isn’t dequeued right away, as usual. Instead, GCD waits for the time interval to pass before dequeuing and executing the block.</p>
 
 <p>What we’re doing here is dispatching a series of blocks onto the main queue with intervals ranging from 0 to the time interval multiplied by the number of state transitions. We take care of creating each block object upfront and we don’t worry about dealing with them later.</p>

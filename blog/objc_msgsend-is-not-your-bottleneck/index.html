@@ -944,7 +944,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p><code>objc_msgSend</code> has never been a bottleneck for me. Ever.</p>
 
 <p>I’ve been trying to structure my code more to use private properties defined in the implementation file, like this.</p>
-<pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">AFController</span> <span class="p">()</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">AFController</span> <span class="p">()</span>
 
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UILabel</span> <span class="o">*</span><span class="n">label</span><span class="p">;</span>
 
@@ -962,9 +962,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <span class="p">}</span>
 
 <span class="k">@end</span>
-</code></pre>
+</code></pre></div>
 <p>Now, I could structure this code more efficiently:</p>
-<pre class="highlight plaintext"><code>-(void)viewDidLoad
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)viewDidLoad
 {
     _label = [[UILabel alloc] initWithFrame:CGRectWhatever];
     _label.backgroundColor = [UIColor clearColor];
@@ -972,9 +972,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     _label.text = @"Suck it, dot-syntax-haters.";
     [self.view addSubview:_label];
 }
-</code></pre>
+</code></pre></div>
 <p>I could even do something like this:</p>
-<pre class="highlight plaintext"><code>-(void)viewDidLoad
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)viewDidLoad
 {
     UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectWhatever];
     newLabel.backgroundColor = [UIColor clearColor];
@@ -983,7 +983,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     [self.view addSubview:newLabel];
     self.label = newLabel;
 }
-</code></pre>
+</code></pre></div>
 <p>Either of which would save me about 50 cycles on the CPU.</p>
 
 <p>I could not care less.</p>
@@ -999,7 +999,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>I’ve never thought to myself “gee, I wish I was consistently accessing these properties with their backing instance variable.” I’ve often thought to myself “shit. I wish I was consistently accessing this property with its synthesized getter.”</p>
 
 <p>Generally, I reserve accessing instance variables backing properties only for cases where calling the getter or setter won’t work. For example, a lazily-loaded fetched results controller.</p>
-<pre class="highlight plaintext"><code>-(NSFetchedResultsController *)fetchedResultsController
+<div class="highlight"><pre class="highlight plaintext"><code>-(NSFetchedResultsController *)fetchedResultsController
 {
     if (_fetchedResultsController)
     {
@@ -1010,7 +1010,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     return _fetchedResultsController;
 }
-</code></pre>
+</code></pre></div>
 <p>The balancing act between cost of cycles on the CPU and cost for developers to read code does not have a one-size-fits-all answer. It’s up to each team to decide what’s more valuable to them and their product.</p>
 
 <p>tl;dr Don’t waste time trying to diagnose problems associated with too many calls to <code>objc_msgSend</code>. You almost certainly have bigger performance problems your time would be better spent addressing.</p>

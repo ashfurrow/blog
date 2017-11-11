@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/Blog">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <title>I Totally Didn't Understand Frames and Bounds - Ash Furrow</title>
@@ -1009,9 +1009,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight plaintext"><code>hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
+<div class="highlight"><pre class="highlight plaintext"><code>hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
 hotNewSubview.frame = self.view.bounds; //Better, but still not good
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1044,12 +1044,12 @@ hotNewSubview.frame = self.view.bounds; //Better, but still not good
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight plaintext"><code>hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
+<div class="highlight"><pre class="highlight plaintext"><code>hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
 hotNewSubview.frame = self.view.bounds; //Better, but still not perfect
 hotNewSubview.frame = CGRectMake(0, 0, 
     CGRectGetWidth(self.view.bounds), 
     CGRectGetHeight(self.view.bounds)); //Best
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>

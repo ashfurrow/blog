@@ -954,23 +954,23 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>There are plenty of others, but one of the interesting things about these all is that they describe two <em>different</em> cases. The case are “success” and “failure”, not “success” and “not success.” Even if logically “not success” might be equivalent to “failure,” using the term “failure” is better because it helps connote meaning.</p>
 
 <p>And that’s kind of my point here: we shouldn’t pigeon-hole ourselves and our code into thinking <em>only</em> in true/false binaries. I did this earlier today, when I wrote this horrible-looking code:</p>
-<pre class="highlight swift"><code><span class="k">guard</span> <span class="n">bypassCCRequirement</span> <span class="o">==</span> <span class="kc">false</span> <span class="k">else</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">guard</span> <span class="n">bypassCCRequirement</span> <span class="o">==</span> <span class="kc">false</span> <span class="k">else</span> <span class="p">{</span>
 <span class="o">...</span>
-</code></pre>
+</code></pre></div>
 <p>Wow, eh? Totally bananas. The <code>bypassCCRequirement</code> variable is from a function called <code>checkForAdminCCBypass</code>, which <em>was</em> returning a <code>Bool</code>. So what does a <code>true</code> or <code>false</code> mean in this circumstance? That the bypass should happen? Or that the requirement is present? </p>
 
 <p>This is an example of using the <em>wrong</em> dichotomy. Or if not wrong, at least inappropriate. </p>
 
 <p>After <a href="https://github.com/artsy/eidolon/pull/588#discussion_r52672464">Orta pointed this out</a>, the solution became pretty obvious, a two-case enum:</p>
-<pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">BypassResult</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">BypassResult</span> <span class="p">{</span>
     <span class="k">case</span> <span class="kt">RequireCC</span>
     <span class="k">case</span> <span class="kt">SkipCCRequirement</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>So now my guard statement would look like this:</p>
-<pre class="highlight swift"><code><span class="k">guard</span> <span class="k">case</span> <span class="n">bypassCCRequirement</span> <span class="o">=</span> <span class="o">.</span><span class="kt">RequireCC</span> <span class="k">else</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">guard</span> <span class="k">case</span> <span class="n">bypassCCRequirement</span> <span class="o">=</span> <span class="o">.</span><span class="kt">RequireCC</span> <span class="k">else</span> <span class="p">{</span>
 <span class="o">...</span>
-</code></pre>
+</code></pre></div>
 <p>I don’t know why I was so reluctant to use an enum – to be honest, it just didn’t occur to me. Once it had, it seemed pretty obvious. I wonder where else in my code I’m using <code>Bool</code>s where something else might be more appropriate. I’m going to keep an eye on where I use booleans and we’ll see.</p>
 <hr>
 <span class="meta">Posted on February 11, 2016</span>

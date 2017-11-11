@@ -289,7 +289,7 @@
 &lt;h2 id="test-framework"&gt;Test Framework&lt;/h2&gt;
 
 &lt;p&gt;XCTest provided a very bare-bones approach to testing, something reminiscent of JUnit circa 1999. In contrast, Jive provides a modern RSpec-like interface for behaviour-driven development. Let&amp;rsquo;s compare.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;MyTests&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;XCTestCase&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="kt"&gt;MyTests&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;XCTestCase&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;override&lt;/span&gt; &lt;span class="kd"&gt;func&lt;/span&gt; &lt;span class="nf"&gt;setUp&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
         &lt;span class="k"&gt;super&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;setUp&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
@@ -302,9 +302,9 @@
         &lt;span class="c1"&gt;// TODO&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Okay now let see an equivalent Jive test suite.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="n"&gt;beforeEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="n"&gt;beforeEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="n"&gt;afterEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -313,9 +313,9 @@
 &lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"behaves a certain way"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="c1"&gt;// TODO&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;What may not be obvious about RSpec-style tests is the possibility of &lt;em&gt;nesting contexts&lt;/em&gt;. Let&amp;rsquo;s take a look at a more practical example to see the power of nesting test contexts.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;db&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;DataBase&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;db&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;DataBase&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
 
 &lt;span class="n"&gt;beforeEach&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;db&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;DataBase&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;testDataBase&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -336,7 +336,7 @@
     &lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"can fetch rows from the db"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This kind of nested contexts was impossible to build in XCTest (at least, without a lot of work and/or repeated code). Finally Apple has recognized that a test suite needs more than just two &lt;code&gt;setup()&lt;/code&gt; and &lt;code&gt;tearDown()&lt;/code&gt; methods.&lt;/p&gt;
 
 &lt;p&gt;Jive leverages its new runner with the RSpec-style tests to run each test in an independent process. This means that state leftover from one test can&amp;rsquo;t affect the outcome of another test. Nice!&lt;/p&gt;
@@ -348,24 +348,24 @@
 &lt;p&gt;XCTest matchers were&amp;hellip; not optimal. Matchers are used by the assertions of a test, so making them concise and expressive is really important.&lt;/p&gt;
 
 &lt;p&gt;Let&amp;rsquo;s see an example.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kt"&gt;XCTAssertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;objectB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="kt"&gt;XCTAssertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;objectB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now let&amp;rsquo;s compare with the new Jive matchers.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;equal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;equal&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectB&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;// or&lt;/span&gt;
 &lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;objectA&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;objectB&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Jive uses operator overloading to help write more expressive tests. I really dig this – it lets developers choose whatever level of verbosity they feel is right for their project.&lt;/p&gt;
 
 &lt;p&gt;Let&amp;rsquo;s take a look at a few more examples.&lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;~=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;~=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
 &lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
 &lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;optional&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;not&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;beNil&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You can write your own matchers, too, and leverage the power of the Swift type system. For example, it&amp;rsquo;d be pretty easy to write a custom matcher to check that collections are of a certain size. I&amp;rsquo;ll likely port my &lt;a href="https://github.com/ashfurrow/Nimble-Snapshots"&gt;Nimble-Snapshots&lt;/a&gt; library over to Jive within the next few weeks.&lt;/p&gt;
 
 &lt;p&gt;And of course Jive ships with a comprehensive mocking library. This makes mocking dependencies and injecting them into a subject under test &lt;em&gt;really&lt;/em&gt; easy. &lt;/p&gt;
-&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"invokes the callback"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight swift"&gt;&lt;code&gt;&lt;span class="nf"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"invokes the callback"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;mock&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;Jive&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;mock&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
     &lt;span class="n"&gt;testSubject&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mock&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -381,7 +381,7 @@
 
     &lt;span class="nf"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mock&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;haveBeenCalledWith&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"https://example.com"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Very cool, and all out of the box! Mocking is a testing strategy that Objective-C and Swift developers aren&amp;rsquo;t too familiar with, but it &lt;a href="https://stackoverflow.com/a/3623574/516359"&gt;solves a lot of problems&lt;/a&gt;. I&amp;rsquo;m looking forward to this powerful testing technique become more popular within our community.&lt;/p&gt;
 
 &lt;h2 id="wrap-up"&gt;Wrap up&lt;/h2&gt;
@@ -449,10 +449,10 @@
 &lt;p&gt;The JavaScript community moves at a blistering pace. That means I can&amp;rsquo;t just learn the current JS syntax because most tutorials, StackOverflow answers, and blog posts use older syntaxes that I also need to learn. For example, dependencies used to be loaded into a file with &lt;code&gt;require()&lt;/code&gt; but now most folks seem to use &lt;code&gt;import&lt;/code&gt;. But &lt;code&gt;import&lt;/code&gt; won&amp;rsquo;t work for me in the Node REPL, I had to still use &lt;code&gt;require&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Something I really dig about JavaScript is how you import all your dependencies explicitly; you import specifically &amp;ldquo;exported&amp;rdquo; functions and such from modules. Some modules export named functions, while other modules export a &amp;ldquo;default&amp;rdquo; function. Some do both. Here are a few examples of how to import stuff in JS:&lt;/p&gt;
-&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;error&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'./lib/loggers'&lt;/span&gt;
-&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="nx"&gt;auth&lt;/span&gt; &lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'auth'&lt;/span&gt;
-&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;tweet&lt;/span&gt; &lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'./twitter'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;error&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'./lib/loggers'&lt;/span&gt;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nx"&gt;auth&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'auth'&lt;/span&gt;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;tweet&lt;/span&gt; &lt;span class="k"&gt;from&lt;/span&gt; &lt;span class="s1"&gt;'./twitter'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It all makes sense to read, but I still don&amp;rsquo;t have the mechanics internalized enough to write the syntax right on the first try.&lt;/p&gt;
 
 &lt;p&gt;One neat thing I like about working in Artsy&amp;rsquo;s JS codebases is their use of git pre-commit hooks. Often, these hooks will lint and reformat your code for you to adhere to the repo&amp;rsquo;s standard. Or maybe they&amp;rsquo;ll run any tests related to your staged changes. Very handy stuff for catching mistakes earlier in the development process. For whatever reason, automatic code formatters just haven&amp;rsquo;t been popular among iOS developers.&lt;/p&gt;

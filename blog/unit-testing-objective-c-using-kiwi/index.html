@@ -936,10 +936,10 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Unit Testing Objective-C Using Kiwi</h1></div></div></div></div></header><div class="container">
 <article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>I have released <a href="https://github.com/AshFurrow/AFImageDownloader">AFImageDownloader</a> to the open source community. It, asynchronously, downloads JPEGs from the Internet and decompresses them on a background queue.</p>
-<pre class="highlight plaintext"><code>[AFImageDownloader imageDownloaderWithURLString:@"http://static.ashfurrow.com./github/worked.jpg" autoStart:YES completion:^(UIImage *decompressedImage) {
+<div class="highlight"><pre class="highlight plaintext"><code>[AFImageDownloader imageDownloaderWithURLString:@"http://static.ashfurrow.com./github/worked.jpg" autoStart:YES completion:^(UIImage *decompressedImage) {
     self.imageView.image = decompressedImage;
 }];
-</code></pre>
+</code></pre></div>
 <p>Network calls obviously take a long time and must not be performed on the main thread. JPEG decompression can actually take a long time if it’s performed on a large image or on small images very frequently. It can be a common cause of performance problems.</p>
 
 <p>What I’m really excited about is that it is the first Objective-C project I’ve developed using strict TDD/BDD using <a href="https://github.com/allending/Kiwi">Kiwi</a>. Until I was completely finished writing the code, I had only tested it using unit tests — never letting it touch the Internet at all. The first time I ran it, it worked perfectly.</p>
@@ -947,7 +947,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>(While I think that blindly adhering to TDD may not be a wise choice for iOS development, I wanted to see if I were up to the challenge.)</p>
 
 <p>Kiwi encourages <a href="http://en.wikipedia.org/wiki/Behavior-driven_development">Behaviour-Driven Development</a>. While the <a href="https://github.com/allending/Kiwi/wiki/Guide:-Up-and-Running-with-Kiwi">setup</a> is a little arduous, it was a joy to work with.</p>
-<pre class="highlight plaintext"><code>describe(@"Image downloader", ^{
+<div class="highlight"><pre class="highlight plaintext"><code>describe(@"Image downloader", ^{
     NSString *urlString = @"http://example.com/image.jpeg";
     __block AFImageDownloader *imageDownloader;
 
@@ -988,7 +988,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         });
     });
 });
-</code></pre>
+</code></pre></div>
 <p>I’m looking for any feedback you have about the code, the structure of the project, or the testing I’ve performed.</p>
 
 <p></p>

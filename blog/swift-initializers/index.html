@@ -953,28 +953,28 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>That’s not the case in Swift. Swift has a very clear, specific sequence of operations that are done in initializers. Let’s start with some basic examples are work our way up to a general case.</p>
 
 <p>Let’s take an object A. We’ll define it as follows.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Notice that A does <em>not</em> have a superclass, so it cannot call a <code>super.init()</code> function as it does not exist.</p>
 
 <p>OK, so now let’s subclass A with a new class named B.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
         <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="n">x</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>This is a departure from Objective-C where <code>[super init]</code> would typically be called <em>first</em> before anything else. Not so in Swift. You are responsible for ensuring that <em>your</em> instance variables are in a consistent state before you do <em>anything else</em>, including calling methods (which includes your superclass’ initializer). Neato.</p>
 
 <p>But there’s one more hitch. Say that we want to make sure that <code>x</code> is always set to a value computed by a method in our class? We can’t call a method on B until we call super’s init. We’d actually write something like this.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
@@ -986,21 +986,21 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="cm">/* return some value */</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>That’s right. If you want to access a superclass’ property,you <em>must</em> do so <em>after</em> calling <code>super.init()</code> in order to give the superclass a chance to set them first.</p>
 
 <p>In general, a Swift object initializer looks like the following:</p>
-<pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="cm">/*parameters*/</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="cm">/*parameters*/</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// set own properties, if necessary</span>
     <span class="c1">// call super.init()</span>
     <span class="c1">// set superclass' properties, if necessary</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <h2 id="convenience-and-designated-initializers">
 <a class="header-link" href="#convenience-and-designated-initializers">#</a> Convenience and Designated Initializers</h2>
 
 <p>Swift formalizes the common Objective-C pattern of designated initializers into something checked at compile-time. This is actually really, really cool. Let’s take a look at a new class hierarchy.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="n">convenience</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
@@ -1009,11 +1009,11 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="k">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p><code>init(x: Int)</code> is the designated initializer for this class and all other initializers in A <em>must</em> have the <code>convenience</code>. Convenience initializers can call other convenience initializers, or the designated initializer.</p>
 
 <p>Let’s take a look at a subclass. This is where things get interesting.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">B</span><span class="p">:</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span>
     <span class="n">convenience</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">self</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
@@ -1026,32 +1026,32 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="n">x</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Convenience initializers in a subclass may <em>only</em> call other initializers in <em>their own class</em>. Only the designated initializer may call an initializer on the superclass.</p>
 
 <h2 id="missing-objective-c-style-semantics">
 <a class="header-link" href="#missing-objective-c-style-semantics">#</a> Missing Objective-C-Style Semantics</h2>
 
 <p>Swift departs from Objective-C initializers. Consider the old style initializer.</p>
-<pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">-</span><span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="p">{</span>
     <span class="n">self</span> <span class="o">=</span> <span class="p">[</span><span class="n">super</span> <span class="nf">init</span><span class="p">];</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">self</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// setup
 </span>    <span class="p">}</span>
     <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>There are a few distinctive parts to a classic Objective-C initializer. First, you need to assign <code>self</code> to something, either your superclass’ initializer or another initializer on <code>self</code>. Then we check if the reference to <code>self</code> is valid (maybe the initializer that <em>we</em> called returned <code>nil</code>). We do some setup, then we must return <code>self</code>.</p>
 
 <p>In contrast, Swift initializers are very straightforward. Initializers don’t return <code>self</code>, so you don’t need to return <code>self</code>. Cool! However, this has a implication. In Objective-C, if initialization fails, we can return <code>nil</code> in order to indicate that failure. Since Swift initializers don’t return a reference to <code>self</code>, this approach is not possible.</p>
 
 <p>I spoke with an Apple engineer at the Swift Lab at WWDC and asked about the pattern. He indicated that this was not currently possible. Instead, we should use factory methods that return an <em>optional</em> type. (<strong>Update</strong>: see the <a href="#update">note</a> at the end of this post.)</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">A</span> <span class="p">{</span>
     <span class="kd">class</span> <span class="kd">func</span> <span class="nf">anything</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">A</span><span class="p">?</span> <span class="p">{</span>
         <span class="k">return</span> <span class="kt">A</span><span class="p">()</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>He indicated that they’re working on building something into the language, since initializers are the preferred way to create instances (as opposed to factory class methods). For now, this works well if you need this kind of failing initializer pattern.</p>
 
 <p>Neat! Swift has really embraced the conventions that Cocoa and CocoaTouch developers already know and incorporated them into the language-level with compile-time checks.</p>
@@ -1062,12 +1062,12 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <a class="header-link" href="#update">#</a> Update</h3>
 
 <p>Swift 1.1 introduced the concept of <a href="https://developer.apple.com/swift/blog/?id=17"><em>failable initializers</em></a>: <code>init</code> methods that return an optional. These can be specified by placing a <code>?</code> after the <code>init</code> keyword.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Image</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Image</span> <span class="p">{</span>
     <span class="nf">init</span><span class="p">?(</span><span class="nv">filename</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
         <span class="o">...</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Inside the <code>init?</code>, you can <code>return nil</code> to define a failing initialization, or assign <code>self = whatever</code> to indicate success. </p>
 
 <p>Be careful about calling through to a failable initializer inside of a regular one – a non-failing initializer <em>must not fail</em>. The compiler will force you either to force-unwrap the call to <code>super.init()</code> or to change your initializer to <em>also</em> be failable. Neat!</p>

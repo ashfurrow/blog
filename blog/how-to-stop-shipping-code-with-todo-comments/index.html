@@ -936,16 +936,16 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>How to Stop Shipping Code with TODO Comments</h1></div></div></div></div></header><div class="container">
 <article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>If you use Xcode, you’ve probably used or seen the <code>TODO</code> comment. It looks something like this:</p>
-<pre class="highlight plaintext"><code>//TODO: this isn't the most efficient. Refactor.
+<div class="highlight"><pre class="highlight plaintext"><code>//TODO: this isn't the most efficient. Refactor.
 -(void)someMethod {
     ...
 }
-</code></pre>
+</code></pre></div>
 <p>Here’s another:</p>
-<pre class="highlight plaintext"><code>//TODO: change to the production endpoint before shipping
+<div class="highlight"><pre class="highlight plaintext"><code>//TODO: change to the production endpoint before shipping
 #define kAPIURL @"http://staging.server.com"
 //#define kAPIRUL @"http://server.com"
-</code></pre>
+</code></pre></div>
 <p>The <code>TOOD</code> commments will show up in the file’s quick jump bar, making it really easy to find them.</p>
 
 <p>However, there’s nothing stopping you from forgetting to address the important <code>TODO</code> items before you ship. The first <code>TODO</code> is just that a method is inefficient. It should be looked at, but if you’re on a deadline, sometimes improving performance has to wait for a point release.</p>
@@ -959,14 +959,14 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>We’re going to add a Build Script to your Xcode target to find any <code>TODO</code> or <code>FIXME</code> comments and replace them with warnings (if we’re building for Debug configuration) or replace them with errors (if we’re building for Release, as you do when you Archive).</p>
 
 <p>It’s a simple script that I modified from its <a href="http://deallocatedobjects.com/posts/show-todos-and-fixmes-as-warnings-in-xcode-4">original source</a> It looks like the following:</p>
-<pre class="highlight plaintext"><code>KEYWORDS="TODO:|\?\?\?:|\!\!\!:"
+<div class="highlight"><pre class="highlight plaintext"><code>KEYWORDS="TODO:|\?\?\?:|\!\!\!:"
 if ["${CONFIGURATION}" = "Release"]; then
     find "${SRCROOT}" \( -name "*.h" -or -name "*.m" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($KEYWORDS).*\$" | perl -p -e "s/($KEYWORDS)/ error: \$1/"
 fi
 if ["${CONFIGURATION}" = "Debug"]; then
     find "${SRCROOT}" \( -name "*.h" -or -name "*.m" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($KEYWORDS).*\$" | perl -p -e "s/($KEYWORDS)/ warning: \$1/"
 fi
-</code></pre>
+</code></pre></div>
 <p>Just copy and paste it into a new Build Script, added through the target detail view in Xcode:</p>
 
 <p><img src="/img/import/blog/how-to-stop-shipping-code-with-todo-comments/CAE77EC0DCEA4032947915A76A1A1196.png" alt="Cae77ec0dcea4032947915a76a1a1196"></p>

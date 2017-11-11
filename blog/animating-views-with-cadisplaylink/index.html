@@ -952,7 +952,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>My code works on a series of states, represented as a C <code>enum</code>. When I set a new state, the class (a <code>UIView</code> subclass) calls <code>[self setNeedsDisplay]</code>. The code in <code>drawRect:</code> only updates to discrete states; it does not actually animate the intermediate changes along the way.</p>
 
 <p>The actual animation is a cheat. As an example of “good enough” implementations, I just add a new animation to the view’s layer:</p>
-<pre class="highlight plaintext"><code>-(void)setState:(PXWidgetState)widgetState
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)setState:(PXWidgetState)widgetState
 {
     _widgetState = widgetState;
 
@@ -964,7 +964,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     transition.type = kCATransitionFade;
     [self.layer addAnimation:transition forKey:nil];
 }
-</code></pre>
+</code></pre></div>
 <p>It’s not strictly <em>the most</em> efficient way to animate changes, but it works well and the performance cost is so insignificant as to be negligible. My <code>drawRect:</code> implementation is only 27 lines of code (pretty short). Adding support for rendering these “in-between” states would likely double the lines of code and complexity.</p>
 
 <p>Next time you animate a view between transitions, consider using <code>CADisplayLink</code>. Tip o’ the hat to Rob for pointing it out.</p>

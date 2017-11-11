@@ -948,7 +948,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>The first thing you need to do when writing unit tests for network code is make a private instance method in the class you’re testing that will create all of your <code>NSURLConnection</code> objects. This is how we will replace real url connection objects with our own, stubbed versions.</p>
 
 <p>The old code looked like this:</p>
-<pre class="highlight plaintext"><code>#pragma mark - Public Instance Methods
+<div class="highlight"><pre class="highlight plaintext"><code>#pragma mark - Public Instance Methods
 
 -(void)start
 {
@@ -970,9 +970,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     [PXRequest addRequestToInProgressMutableSet:self];
 }
-</code></pre>
+</code></pre></div>
 <p>Let’s change it to look like this, instead.</p>
-<pre class="highlight plaintext"><code>#pragma mark - Private Instance Methods
+<div class="highlight"><pre class="highlight plaintext"><code>#pragma mark - Private Instance Methods
 
 -(NSURLConnection *)urlConnectionForURLRequest:(NSURLRequest *)request
 {
@@ -1000,11 +1000,11 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     [PXRequest addRequestToInProgressMutableSet:self];
 }
-</code></pre>
+</code></pre></div>
 <p>Notice how we call an instance method in order to generate a url connection. We’re going to generate a partial mock instance that will return a different value.</p>
 
 <p>Create a <code>SenTestCase</code> class to test the <code>PXRequest</code> class. In the implementation file, we need to tell the compiler that there is a method named <code>urlConnectionForRequest:</code>.</p>
-<pre class="highlight objective_c"><code><span class="cp">#import "PXRequest.h"
+<div class="highlight"><pre class="highlight objective_c"><code><span class="cp">#import "PXRequest.h"
 #import "OCMock.h"
 #import "PXPXRequestTests.h"
 </span>
@@ -1018,11 +1018,11 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <span class="k">@implementation</span> <span class="nc">PXPXRequestTests</span>
 
 <span class="k">@end</span>
-</code></pre>
+</code></pre></div>
 <p>We’re adding the custom, private initializer <code>initWithURLRequest:completion:</code> because we only want to test the <code>PXRequest</code> class. The class methods to create ’PXRequest’s are all contained in another file. We’ll test those separately, later.</p>
 
 <p>Great. Let’s write our first test. This will make sure that the <code>start</code> method starts the URL connection instance.</p>
-<pre class="highlight plaintext"><code>-(void)testURLConnectionStart
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)testURLConnectionStart
 {
     NSURLRequest *dummyURLRequest = [NSURLRequest requestWithURL:
         [NSURL URLWithString:@"http://example.com"]];
@@ -1040,43 +1040,43 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     [mockConnection verify];
 }
-</code></pre>
+</code></pre></div>
 <p>I’m going to go through this example one line at a time.</p>
 
 <p>First, in order to create an instance of <code>PXRequest</code>, we’ll need some URL request. We’ll just create a dummy one.</p>
-<pre class="highlight plaintext"><code>NSURLRequest *dummyURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>NSURLRequest *dummyURLRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
+</code></pre></div>
 <p>Now we need to create an object to test.</p>
-<pre class="highlight plaintext"><code>PXRequest *requestUnderTest = [[PXRequest alloc] initWithURLRequest:dummyURLRequest completion:nil];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>PXRequest *requestUnderTest = [[PXRequest alloc] initWithURLRequest:dummyURLRequest completion:nil];
+</code></pre></div>
 <p>Everything until now has been standard Objective-C and you should be comfortable with it. The next line gets a little tricky.</p>
-<pre class="highlight plaintext"><code>id mockConnection = [OCMockObject niceMockForClass:[NSURLConnection class]];
+<div class="highlight"><pre class="highlight plaintext"><code>id mockConnection = [OCMockObject niceMockForClass:[NSURLConnection class]];
     [[mockConnection expect] start];
-</code></pre>
+</code></pre></div>
 <p>What we’ve done is create a mock connection. It mocks <code>NSURLConnection</code>. We’re going to tell it to expect the <code>start</code> method to be called. We’re making it a “nice” mock so that other methods can be invoked on it, too. You can use the <code>mockForClass:</code> instead, if you want stricter tests.</p>
 
 <p>So now we have a mock <code>NSURLConnection</code> instance that expects <code>start</code> to be called on it. We need some way to “give” this mock object to our <code>requestUnderTest</code>. We’re going to do that using a partial mock. This is a special kind of mock object. We can stub out methods that will be called and replace them with our own return values. Any methods we don’t stub out will be passed onto the original instance.</p>
 
 <p>We’re going to stub the <code>urlConnectionForURLRequest:</code> method.</p>
-<pre class="highlight plaintext"><code>id partialRequestMock = (PXRequest *)[OCMockObject partialMockForObject:requestUnderTest];
+<div class="highlight"><pre class="highlight plaintext"><code>id partialRequestMock = (PXRequest *)[OCMockObject partialMockForObject:requestUnderTest];
 [[[partialRequestMock stub] andReturn:mockConnection] urlConnectionForURLRequest:OCMOCK_ANY];
-</code></pre>
+</code></pre></div>
 <p>We’re telling the partial mock that when <code>urlConnectionForURLRequest:</code> is called with any parameter, return <code>mockConnection</code>.</p>
 
 <p>You should read the code from the start, then after “stub”, from the back: “stub ’urlConnectionForURLRequest:’and return ’mockConnection’.”</p>
 
 <p>Now lets run the test.</p>
-<pre class="highlight plaintext"><code>[partialRequestMock start];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>[partialRequestMock start];
+</code></pre></div>
 <p>This is the method we want to test. It will call <code>urlConnectionForURLRequest:</code>, which we’ve replaced with our own implementation. Now we want to make sure that calling this method actually called <code>start</code> on the connection. That’s what the last line is for.</p>
-<pre class="highlight plaintext"><code>[mockConnection verify];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>[mockConnection verify];
+</code></pre></div>
 <p>Calling this method verifies that all the expected methods have been called. If they haven’t, your test will fail here.</p>
 
 <p>Let’s do another test. This time, let’s test to make sure our completion block is invoked when there is a failure. First, we need to make sure that the <code>connection:didReceiveResponse:</code> method only calls <code>statusCode</code> on the url response once, since we OCMock only handles each <code>expect</code> call once.</p>
 
 <p>That refactoring is very minor. Onto the test!</p>
-<pre class="highlight plaintext"><code>-(void)testCompletionBlockIsCalledOnConnectionFailure
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)testCompletionBlockIsCalledOnConnectionFailure
 {
     __block BOOL completionBlockInvoked = NO;
 
@@ -1110,7 +1110,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     [mockConnection verify];
     STAssertTrue(completionBlockInvoked, @"Completion block was not invoked when connection failed.");
 }
-</code></pre>
+</code></pre></div>
 <p>First, we declared a <code>__block</code> variable to record if the completion block is invoked at all. In the completion block, we assert that the arguments to the block are what we expect. Arguably, this could go in its own test depending on how granular you want to test.</p>
 
 <p>Next, we create a mock connection, just like last time, except now we tell it to also expect a call to <code>cancel</code>.</p>

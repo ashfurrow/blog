@@ -936,30 +936,30 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Stop Writing For Loops</h1></div></div></div></div></header><div class="container">
 <article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>Most of the time, when we use a <code>for</code> loop, it’s to iterate over some collection. Typically an array. We used to write things like this:</p>
-<pre class="highlight plaintext"><code>for (NSInteger i = 0; i &lt; [array count]; i++) {
+<div class="highlight"><pre class="highlight plaintext"><code>for (NSInteger i = 0; i &lt; [array count]; i++) {
     id obj = array[i];
     // do something with obj
 }
-</code></pre>
+</code></pre></div>
 <p>Then we came up with the foreach loop.</p>
-<pre class="highlight plaintext"><code>for (id obj in array) {
+<div class="highlight"><pre class="highlight plaintext"><code>for (id obj in array) {
     // do something with obj
 }
-</code></pre>
+</code></pre></div>
 <p>That worked well unless you wanted to know the index of the object that you’re using. We’ve all written code like this:</p>
-<pre class="highlight plaintext"><code>NSInteger i = 0;
+<div class="highlight"><pre class="highlight plaintext"><code>NSInteger i = 0;
 for (id obj in array) {
     // do something with obj
     i++;
 }
-</code></pre>
+</code></pre></div>
 <p>This one is particularly insidious since it creates a new local variable <code>i</code> outside of the lexical scope of the loop. Gross!</p>
 
 <p>Please, stop using all of these. Instead, use <code>enumerateObjectsUsingBlock:</code></p>
-<pre class="highlight plaintext"><code>[array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+<div class="highlight"><pre class="highlight plaintext"><code>[array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     //do something with obj at idx
 }];
-</code></pre>
+</code></pre></div>
 <p>This abstracts away <em>how</em> the computer is doing something and let’s you focus solely on <em>what</em> it is you’re trying to accomplish. You get the index of the iteration and can stop the enumeration at any time by setting <code>*stop = YES</code>.</p>
 
 <p>We used to have to use arrays because Objective-C didn’t have blocks. We’ve left the dark ages and can now focus on what we’re trying to accomplish instead of being mired in the minutia of how the computer works.</p>

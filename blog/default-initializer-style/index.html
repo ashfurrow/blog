@@ -936,7 +936,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Default Initializer Style</h1></div></div></div></div></header><div class="container">
 <article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>I just created a new class, subclassing <code>UITableViewCell</code>, and this is the initializer Xcode gave me:</p>
-<pre class="highlight plaintext"><code>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+<div class="highlight"><pre class="highlight plaintext"><code>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -944,9 +944,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     }
     return self;
 }
-</code></pre>
+</code></pre></div>
 <p>Garbage. Never mind the fact that the brace bracket style isn’t even consistent, but you’re adding an entire level of indentation for nothing!</p>
-<pre class="highlight plaintext"><code>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+<div class="highlight"><pre class="highlight plaintext"><code>- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (!(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) return nil;
 
@@ -954,7 +954,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     return self;
 }
-</code></pre>
+</code></pre></div>
 <p>Holy balls that’s better.</p>
 
 <p>Am I crazy here? Or am I just the last sane developer left?</p>

@@ -986,7 +986,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 </ul>
 
 <p>The metadata file looks like this:</p>
-<pre class="highlight yaml"><code><span class="na">name</span><span class="pi">:</span> <span class="s">UICollectionView Book</span>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">name</span><span class="pi">:</span> <span class="s">UICollectionView Book</span>
 <span class="na">identifier</span><span class="pi">:</span> <span class="s">com.ashfurrow.collectionview</span>
 <span class="na">deployment_target</span><span class="pi">:</span> <span class="s">ios10.0</span> <span class="c1"># Optional</span>
 <span class="na">resources</span><span class="pi">:</span> <span class="s">Resources</span> <span class="c1"># Optional</span>
@@ -997,7 +997,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
   <span class="pi">-</span> <span class="s">Chapter 1</span>
   <span class="pi">-</span> <span class="s">Chapter 2</span>
   <span class="pi">-</span> <span class="s">etc...</span>
-</code></pre>
+</code></pre></div>
 <p><code>name</code> is the name of your book, <code>identifier</code> is a unique identifier for it, and <code>deployment_target</code> is the iOS version you’re targeting. </p>
 
 <p><code>resources</code> is an optional directory to include images or other assets to be available to your book’s code. I haven’t used this feature extensively, so please open an issue if you run into any problems.</p>
@@ -1010,7 +1010,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <a class="header-link" href="#how-does-it-work">#</a> How does it work?</h2>
 
 <p>Here’s an example playground that can be built into a book. </p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">UIKit</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">UIKit</span>
 <span class="kd">import</span> <span class="kt">PlaygroundSupport</span>
 
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">sharedFunction</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
@@ -1024,13 +1024,13 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <span class="c1">//// Second Page</span>
 
 <span class="c1">// TODO: Write the second page.</span>
-</code></pre>
+</code></pre></div>
 <p>Code before the first quadruple slash comments is preamble that’s available to all your pages, which are delineated by those special comments. Code in the preamble can be accessed by pages but <em>only</em> if it is marked <code>public</code> (it’s a limitation of the playground books format). I know it doesn’t make sense to mark things as <code>public</code> so you can access them in a playground, but I did warn you that there wasn’t a one-to-one mapping 😉</p>
 
 <p>Okay, so each page has a name that comes after the <code>////</code> comment. </p>
 
 <p>You can also use special comments in playground books.</p>
-<pre class="highlight swift"><code><span class="c1">//#-hidden-code</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="c1">//#-hidden-code</span>
 <span class="nf">print</span><span class="p">(</span><span class="s">"This code gets executed but isn't visible in the book."</span><span class="p">)</span>
 <span class="c1">//#-end-hidden-code</span>
 
@@ -1038,11 +1038,11 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     <span class="nf">print</span><span class="p">(</span><span class="s">"The user will be prompted to edit &lt;#funcName#&gt;"</span><span class="p">)</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"This yields a compiler warning in Xcode ¯</span><span class="err">\</span><span class="s">_(ツ)_/¯"</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>These comments are in the video but not in the <a href="https://developer.apple.com/library/prerelease/content/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW4">documentation</a>. I don’t want to risk getting a letter from Apple Legal, so I’m not going to publish an extensive guide here.</p>
 
 <p>One more <strong>important thing</strong>: code in the first page is accessible to the second page and every page after it <strong>only in Xcode</strong>. These pages get split into several files and won’t be in the same scope. <strong>So this will not work</strong>.</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">UIKit</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">UIKit</span>
 
 <span class="c1">//// First Page</span>
 
@@ -1051,14 +1051,14 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <span class="c1">//// Second Page</span>
 
 <span class="n">str</span> <span class="o">=</span> <span class="s">"Hello"</span> <span class="c1">// This only works in Xcode, it will break on the iPad ❗</span>
-</code></pre>
+</code></pre></div>
 <p>So watch out!</p>
 
 <p>(Like I said, it’s not an ideal solution but it is good enough.)</p>
 
 <p>To build a book from your playgrounds, run the following command terminal in the directory containing the <code>book.yml</code> file and all the playgrounds:</p>
-<pre class="highlight shell"><code><span class="gp">&gt; </span>playgroundbook render book.yaml
-</code></pre>
+<div class="highlight"><pre class="highlight shell"><code><span class="o">&gt;</span> playgroundbook render book.yaml
+</code></pre></div>
 <p>Then you can AirDrop the playground book to your iPad and use it.</p>
 
 <p>Again, if you run into any problems, <a href="https://github.com/ashfurrow/playgroundbook/issues/new">open an issue</a>. </p>

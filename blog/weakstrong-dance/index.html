@@ -946,10 +946,10 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 </blockquote>
 
 <p>He’s completely correct from a technical perspective. There’s no <em>need</em> to reference these as weak properties anymore. In fact, doing so requires you pollute your local scope when creating them.</p>
-<pre class="highlight plaintext"><code>UIView *myView = [UIView new]; //capture in strong local variable
+<div class="highlight"><pre class="highlight plaintext"><code>UIView *myView = [UIView new]; //capture in strong local variable
 [self.view addSubview:myView]; //strongly referenced by self.view
 self.myView = myView;
-</code></pre>
+</code></pre></div>
 <p>I still like the idea of referencing subviews weakly, since it maintains that ownership mechanic supported by ARC. However, I don’t like the extra step taken in order to instantiate our properties.</p>
 
 <p>What do you think?</p>
@@ -965,7 +965,7 @@ self.myView = myView;
 <div class="clearfix"></div>
 <hr>
 <ul class="pager article_pager">
-<li class="next"><a href="/blog/software-engineering-vs.-computer-science/"><div>Software Engineering vs. Computer Science</div></a></li>
+<li class="next"><a href="/blog/software-engineering-vs-computer-science/"><div>Software Engineering vs. Computer Science</div></a></li>
 <li class="previous"><a href="/blog/working-remotely/"><div>Working Remotely</div></a></li>
 </ul>
 </div></div>

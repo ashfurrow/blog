@@ -944,14 +944,14 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 </ul>
 
 <p>Something like:</p>
-<pre class="highlight objective_c"><code><span class="n">NSArray</span> <span class="o">*</span><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="n">sharedCache</span> <span class="nf">allKeys</span><span class="p">];</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="n">NSArray</span> <span class="o">*</span><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="n">sharedCache</span> <span class="nf">allKeys</span><span class="p">];</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">key</span> <span class="k">in</span> <span class="n">keys</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="p">[[[[</span><span class="n">sharedCache</span> <span class="nf">objectForKey</span><span class="p">:</span><span class="n">key</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span> <span class="nf">previousModel</span><span class="p">]</span> <span class="nf">setNextModel</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
     <span class="p">[[[[</span><span class="n">sharedCache</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="n">key</span><span class="p">]</span> <span class="nf">objectAtIndex</span><span class="p">:</span><span class="mi">11</span><span class="p">]</span> <span class="nf">nextModel</span><span class="p">]</span> <span class="nf">setPreviousModel</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
     <span class="p">[</span><span class="n">sharedCache</span> <span class="nf">removeObjectForKey</span><span class="p">:</span><span class="n">key</span><span class="p">];</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>And then not worry about zero-ing out the next/previous references individually within the batch.</p>
 
 <ul>
@@ -959,14 +959,14 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 </ul>
 
 <p>Something like:</p>
-<pre class="highlight objective_c"><code><span class="k">static</span> <span class="n">NSLock</span> <span class="o">*</span><span class="n">deallocLock</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">static</span> <span class="n">NSLock</span> <span class="o">*</span><span class="n">deallocLock</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">deallocLock</span><span class="p">)</span>
     <span class="n">deallocLock</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSLock</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
 <span class="p">[</span><span class="n">deallocLock</span> <span class="nf">lock</span><span class="p">];</span>
 <span class="n">self</span><span class="p">.</span><span class="n">nextPhotoModel</span><span class="p">.</span><span class="n">previousPhotoModel</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
 <span class="n">self</span><span class="p">.</span><span class="n">previousPhotoModel</span><span class="p">.</span><span class="n">nextPhotoModel</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
 <span class="p">[</span><span class="n">deallocLock</span> <span class="nf">unlock</span><span class="p">];</span>
-</code></pre>
+</code></pre></div>
 <p>Which guarantees two neighbouring models in the list don’t accidentally try to dereference one another while dealloc'ing.</p>
 
 <p>I don’t like the first option because it leaves the possibility that two models within the batch will do something funky. I don’t like the second option because locking in the dealloc method scares the shit out of me.</p>

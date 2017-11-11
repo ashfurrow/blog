@@ -936,9 +936,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Fix iOS 6 SDK Linker Error</h1></div></div></div></div></header><div class="container">
 <article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <p>If you download the latest Xcode 4.5 with iOS 6 SDK, existing projects no longer compile. A common one might be the Google Analytics library; it will give the following error:</p>
-<pre class="highlight plaintext"><code>ld: file is universal (3 slices) but does not contain a(n) armv7s slice: /Users/ash/Dropbox/500px/500px-ios/500px/ExternalLibraries/Google Analytics SDK/Library/libGoogleAnalytics.a for architecture armv7s
+<div class="highlight"><pre class="highlight plaintext"><code>ld: file is universal (3 slices) but does not contain a(n) armv7s slice: /Users/ash/Dropbox/500px/500px-ios/500px/ExternalLibraries/Google Analytics SDK/Library/libGoogleAnalytics.a for architecture armv7s
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-</code></pre>
+</code></pre></div>
 <p>This is due to the fact that the new Xcode specifics the A6 (<code>armv7s</code>) as a valid architeture which libraries need to build for. However, any statically compiled frameworks need to be built including support for the A6. Since this chip is brand new, no libraries include that support.</p>
 
 <p><img src="/img/import/blog/fix-ios-6-sdk-linker-error/88FE0C083DF344C291DB1F4E5BAB2C6F.png" alt="88fe0c083df344c291db1f4e5bab2c6f"></p>

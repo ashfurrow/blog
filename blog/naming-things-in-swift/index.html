@@ -1034,24 +1034,24 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <a class="header-link" href="#wider-scoped-names-should-be-longer">#</a> Wider-Scoped Names Should Be Longer</h3>
 
 <p>Why is the name <code>i</code> okay in this example?</p>
-<pre class="highlight swift"><code><span class="k">for</span> <span class="k">var</span> <span class="nv">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">for</span> <span class="k">var</span> <span class="nv">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span> <span class="p">{</span>
   <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>But not in this one?</p>
-<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyStruct</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyStruct</span> <span class="p">{</span>
   <span class="k">let</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Consider where <code>i</code> is being referred from within the codebase. In the first example, <code>i</code> is only accessed from within the <code>for</code> loop. But in the second example, it is a member of a struct and is accessed by any code using that struct, possibly the entire codebase! At a glance, it’s impossible to find out the context of <code>i</code> because it’s so widely used. </p>
 
 <p>Remember: we want to tell the programmer reading the code something they don’t know but want to know. Let’s fix the struct.</p>
-<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyStruct</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyStruct</span> <span class="p">{</span>
   <span class="k">let</span> <span class="nv">numberOfInteractions</span><span class="p">:</span> <span class="kt">Int</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>This doesn’t mean that all loop variables should be short, it only means that <em>widely</em> used names should be longer. Let’s see a counterexample, where a short variable name in a loop can be a bad idea.</p>
-<pre class="highlight swift"><code><span class="k">for</span> <span class="k">var</span> <span class="nv">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">for</span> <span class="k">var</span> <span class="nv">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span> <span class="p">{</span>
 
   <span class="o">...</span>
 
@@ -1075,17 +1075,17 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
   <span class="o">...</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>I think we can all agree that <code>i</code> would benefit from a longer name. Why? Because its scope of use is wider, and it’s used more. That brings us to our next guideline.</p>
 
 <h3 id="more-used-names-should-be-shorter">
 <a class="header-link" href="#more-used-names-should-be-shorter">#</a> More-Used Names Should be Shorter</h3>
 
 <p>Consider <code>print</code>, probably the first function you learned in Swift. As a function name, “print” works perfectly well:</p>
-<pre class="highlight swift"><code><span class="nf">print</span><span class="p">(</span><span class="s">"Hi there!"</span><span class="p">)</span>
-</code></pre>
+<div class="highlight"><pre class="highlight swift"><code><span class="nf">print</span><span class="p">(</span><span class="s">"Hi there!"</span><span class="p">)</span>
+</code></pre></div>
 <p>So why doesn’t “cache” work well here?</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">func</span> <span class="nf">cache</span><span class="p">()</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="p">}</span>
 
@@ -1098,88 +1098,88 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     <span class="n">downloader</span><span class="o">.</span><span class="nf">cache</span><span class="p">()</span> <span class="c1">// Only called at app startup.</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p><code>print</code> is used a lot and any Swift developer could be expected to be familiar with it. <code>cache</code> is only used once and is defined in a custom object that probably doesn’t get looked at all too often. It could benefit from a longer name.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">func</span> <span class="nf">initializeCache</span><span class="p">()</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Much nicer.</p>
 
 <h3 id="dangerous-names-should-be-longer">
 <a class="header-link" href="#dangerous-names-should-be-longer">#</a> Dangerous Names Should be Longer</h3>
 
 <p>Some functions should be long because of what they <em>do</em>. Dangerous functions should be long, while boring ones should be shorter. This is a function that’s <em>too</em> long.</p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">func</span> <span class="nf">loadDataFieldsFromOfflineCache</span><span class="p">()</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>It could be something like this instead: <code>loadFromCache</code>. </p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">func</span> <span class="nf">loadFromCache</span><span class="p">()</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>But consider this function, which really benefits from being quite long:</p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">func</span> <span class="nf">deleteAPICredentialsFromCache</span><span class="p">()</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>This function has a long name because it’s dangerous to call it: we always want to avoid deleting user data by accident. For that reason you wouldn’t want to call it something really succinct, like:</p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">func</span> <span class="nf">delToken</span><span class="p">()</span> <span class="p">{</span> <span class="cm">/* deletes user data omg! */</span> <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Remember: we want to tell the developer reading the name something they don’t know but that they <em>do</em> want to know. I imagine whoever calling this function definitely wants to know if it deletes user data!</p>
 
 <h3 id="names-with-source-context-should-be-shorter">
 <a class="header-link" href="#names-with-source-context-should-be-shorter">#</a> Names with Source-Context Should be Shorter</h3>
 
 <p>Types with names that exist inside types should be shorter, and ones that exist outside types should be longer. Consider the following:</p>
-<pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">Delegate</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">Delegate</span> <span class="p">{</span>
   <span class="o">...</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>That’s probably too short, since we don’t know what the <code>Delegate</code> protocol is <em>for</em>. Let’s improve it by giving it a longer name:</p>
-<pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">DownloaderDelegate</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">DownloaderDelegate</span> <span class="p">{</span>
   <span class="o">...</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Awesome! Now the name helps us know what the protocol is for. </p>
 
 <p>If the Swift compiler supported protocols within types, an alternative improvement would be:</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">protocol</span> <span class="kt">Delegate</span> <span class="p">{</span>
     <span class="o">...</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>This would extend its <em>fully qualified</em> name to be <code>Downloader.Delegate</code>. But alas, Swift doesn’t yet support this kind of protocol nesting.</p>
 
 <p>Just make sure to avoid duplicating type information within names:</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="kd">protocol</span> <span class="kt">DownloaderDelegate</span> <span class="p">{</span>
     <span class="o">...</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Developers already know that types inside the <code>Downloader</code> class have to do with that class, so repeating that information is superfluous. This brings us to our final guideline:</p>
 
 <h3 id="strongly-typed-names-should-be-shorter">
 <a class="header-link" href="#strongly-typed-names-should-be-shorter">#</a> Strongly Typed Names Should be Shorter</h3>
 
 <p>Swift has a powerful, expressive type system and we can use that to make our names shorter. For example, consider the following property:</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Downloader</span> <span class="p">{</span>
   <span class="k">var</span> <span class="nv">downloaderDelegate</span><span class="p">:</span> <span class="kt">Delegate</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>We already know that the delegate property belongs to the <code>Downloader</code> class, so giving it <code>downloaderDelegate</code> as a property name is excessive. </p>
 
 <p>Here’s another counterexample:</p>
-<pre class="highlight swift"><code><span class="kd">func</span> <span class="n">zipTwoSequences</span><span class="o">&lt;...&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence1</span><span class="p">:</span> <span class="kt">Sequence1</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sequence2</span><span class="p">:</span> <span class="kt">Sequence2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">...</span>
-</code></pre>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">func</span> <span class="n">zipTwoSequences</span><span class="o">&lt;...&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence1</span><span class="p">:</span> <span class="kt">Sequence1</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sequence2</span><span class="p">:</span> <span class="kt">Sequence2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">...</span>
+</code></pre></div>
 <p>Instead, the standard library contains only:</p>
-<pre class="highlight swift"><code><span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;...&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence1</span><span class="p">:</span> <span class="kt">Sequence1</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sequence2</span><span class="p">:</span> <span class="kt">Sequence2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">...</span>
-</code></pre>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">func</span> <span class="n">zip</span><span class="o">&lt;...&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence1</span><span class="p">:</span> <span class="kt">Sequence1</span><span class="p">,</span> <span class="n">_</span> <span class="nv">sequence2</span><span class="p">:</span> <span class="kt">Sequence2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">...</span>
+</code></pre></div>
 <p>This is because it’s obvious from the type signature that the arguments are sequences.</p>
 
 <p>That’s all for naming guidelines, let’s talk about Swift features that let us be concise!</p>
@@ -1190,19 +1190,19 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>On the spectrum of verbose to succinct, at the very end of “succinct”, we have the option to just not name things <em>at all</em>. You can do this with trailing closure syntax, with unnamed parameters, and with positional closure arguments. When to use them is a matter of following the guidelines outlined above.</p>
 
 <p>Trailing closure syntax is really handy, it helps make calling functions more concise. Borrowing from the Ray Wenderlich Swift Style Guide <a href="https://github.com/raywenderlich/swift-style-guide#closure-expressions">section on closures</a>: don’t use trailing closure syntax if the <em>purpose</em> of the closure is ambiguous. For example, this would be bad:</p>
-<pre class="highlight swift"><code><span class="kt">UIView</span><span class="o">.</span><span class="nf">animate</span><span class="p">(</span><span class="nv">withDuration</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">animations</span><span class="p">:</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kt">UIView</span><span class="o">.</span><span class="nf">animate</span><span class="p">(</span><span class="nv">withDuration</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">animations</span><span class="p">:</span> <span class="p">{</span>
   <span class="o">...</span>
 <span class="p">})</span> <span class="p">{</span> <span class="n">finished</span> <span class="k">in</span>
   <span class="o">...</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>This would definitely be more clear:</p>
-<pre class="highlight swift"><code><span class="kt">UIView</span><span class="o">.</span><span class="nf">animate</span><span class="p">(</span><span class="nv">withDuration</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">animations</span><span class="p">:</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kt">UIView</span><span class="o">.</span><span class="nf">animate</span><span class="p">(</span><span class="nv">withDuration</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">animations</span><span class="p">:</span> <span class="p">{</span>
   <span class="o">...</span>
 <span class="p">},</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">{</span> <span class="n">finished</span> <span class="k">in</span>
   <span class="o">...</span>
 <span class="p">})</span>
-</code></pre>
+</code></pre></div>
 <p>For unnamed parameters, I’ll refer you to the official Swift API Guidelines <a href="https://swift.org/documentation/api-design-guidelines/#argument-labels">on argument labels</a>:</p>
 
 <ul>
@@ -1215,13 +1215,13 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>Finally, that brings us to positional closure arguments. When to use these depends mostly on the length of your closure, and closely matches the “Wider-Scoped Names Should Be Longer” rule. </p>
 
 <p>If your closure does only a few things, use positional closure arguments:</p>
-<pre class="highlight swift"><code><span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span> <span class="kt">String</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span> <span class="p">})</span>
-</code></pre>
+<div class="highlight"><pre class="highlight swift"><code><span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span> <span class="kt">String</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span> <span class="p">})</span>
+</code></pre></div>
 <p>Here’s a counterexample of being overly verbose:</p>
-<pre class="highlight swift"><code><span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span> <span class="n">number</span> <span class="k">in</span> <span class="kt">String</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="p">})</span>
-</code></pre>
+<div class="highlight"><pre class="highlight swift"><code><span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span> <span class="n">number</span> <span class="k">in</span> <span class="kt">String</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="p">})</span>
+</code></pre></div>
 <p>And this is what things would look like if you don’t adhere to the first two guidelines about naming things.</p>
-<pre class="highlight swift"><code><span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span>
   <span class="o">...</span>
 
   <span class="o">...</span>
@@ -1234,7 +1234,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
   <span class="k">return</span> <span class="kt">Model</span><span class="p">(</span><span class="nv">fromData</span><span class="p">:</span> <span class="n">data</span><span class="p">,</span> <span class="nv">index</span><span class="p">:</span> <span class="nv">$0</span><span class="p">)</span>
 <span class="p">})</span>
-</code></pre>
+</code></pre></div>
 <p>Again, refer to the Ray Wenderlich guide for more info on closures.</p>
 
 <hr>

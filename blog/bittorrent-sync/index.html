@@ -1026,8 +1026,8 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p><img src="/img/blog/bittorrent-sync/security.png" alt="Security Policy"></p>
 
 <p>Then open a terminal and use the following command:</p>
-<pre class="highlight shell"><code>ssh -i path/to/your/certificate.pem -N -L  9000:ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com:80 ubuntu@ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com
-</code></pre>
+<div class="highlight"><pre class="highlight shell"><code>ssh <span class="nt">-i</span> path/to/your/certificate.pem <span class="nt">-N</span> <span class="nt">-L</span>  9000:ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com:80 ubuntu@ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com
+</code></pre></div>
 <p>This command redirects traffic from port 9000 locally over the SSH tunnel to port 80 on <code>ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com</code> on the other side of the tunnel. Modify <code>path/to/your/certificate.pem</code> to point to your actual EC2 certificate that was created when you launched the instance, and change <code>ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com</code> to be the public DNS of the instance.</p>
 
 <p><img src="/img/blog/bittorrent-sync/dashboard.png" alt="Dashboard accessed through SSH tunnelling"></p>

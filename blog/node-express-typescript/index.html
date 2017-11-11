@@ -982,10 +982,10 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>The JavaScript community moves at a blistering pace. That means I can’t just learn the current JS syntax because most tutorials, StackOverflow answers, and blog posts use older syntaxes that I also need to learn. For example, dependencies used to be loaded into a file with <code>require()</code> but now most folks seem to use <code>import</code>. But <code>import</code> won’t work for me in the Node REPL, I had to still use <code>require</code>.</p>
 
 <p>Something I really dig about JavaScript is how you import all your dependencies explicitly; you import specifically “exported” functions and such from modules. Some modules export named functions, while other modules export a “default” function. Some do both. Here are a few examples of how to import stuff in JS:</p>
-<pre class="highlight javascript"><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">info</span><span class="p">,</span> <span class="nx">error</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'./lib/loggers'</span>
-<span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">auth</span> <span class="nx">from</span> <span class="s1">'auth'</span>
-<span class="kr">import</span> <span class="nx">tweet</span> <span class="nx">from</span> <span class="s1">'./twitter'</span>
-</code></pre>
+<div class="highlight"><pre class="highlight javascript"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">info</span><span class="p">,</span> <span class="nx">error</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'./lib/loggers'</span>
+<span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">auth</span> <span class="k">from</span> <span class="s1">'auth'</span>
+<span class="k">import</span> <span class="nx">tweet</span> <span class="k">from</span> <span class="s1">'./twitter'</span>
+</code></pre></div>
 <p>It all makes sense to read, but I still don’t have the mechanics internalized enough to write the syntax right on the first try.</p>
 
 <p>One neat thing I like about working in Artsy’s JS codebases is their use of git pre-commit hooks. Often, these hooks will lint and reformat your code for you to adhere to the repo’s standard. Or maybe they’ll run any tests related to your staged changes. Very handy stuff for catching mistakes earlier in the development process. For whatever reason, automatic code formatters just haven’t been popular among iOS developers.</p>

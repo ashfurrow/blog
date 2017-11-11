@@ -940,7 +940,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>It’s a data-collection app the client uses to get people to enter information such as their address. My client wants an autocomplete-esque experience of typing in your city and province.</p>
 
 <p>The easiest way to do this on an iPad was a popover with a table view controller displaying a list representing models of city/province combinations. A naïve approach <em>that works</em> would be filtering a list of these models every time the text in their city box changes. The following model and predicate for filter would work.</p>
-<pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">CityModel</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">CityModel</span>
 
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">cityName</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">provinceName</span><span class="p">;</span>
@@ -950,22 +950,22 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <span class="p">...</span>
 
 <span class="n">filteredCityModelArray</span> <span class="o">=</span> <span class="p">[</span><span class="n">cityModelArray</span> <span class="nf">filteredArrayUsingPredicate</span><span class="p">:[</span><span class="n">NSPredicate</span> <span class="nf">predicateWithFormat</span><span class="p">:</span><span class="s">@"cityName like[c] %@"</span><span class="p">,</span> <span class="n">inputText</span><span class="p">]];</span>
-</code></pre>
+</code></pre></div>
 <p>Anyone who has done much SQL (and could incidentally read <code>NSPredicate</code>s) would tell you this is a bad idea. <code>like</code> is a pretty slow operation and the <code>[c]</code> operator makes the comparison diacritically insensitive (this encompasses, among other things, case insensitivity). That means each element of the array is going to have it’s <code>cityName</code> turned into lower case for the comparison. That’s additional work that the predicate has to perform every time the user enters a letter; depending on the length of the <code>cityModelArray</code>, this could cause UI stuttering.</p>
 
 <p>What’s better is to have a canonical version of each search term (the city) that we can compare against.</p>
-<pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">CityModel</span>
+<div class="highlight"><pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">CityModel</span>
 
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">cityName</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">provinceName</span><span class="p">;</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">canonicalSearchTerm</span><span class="p">;</span>
 
 <span class="k">@end</span>
-</code></pre>
+</code></pre></div>
 <p>This <code>canonicalSearchTerm</code> will be a lower-case version of the <code>cityName</code> (though, in your implementations, you could use whatever canonical search term you like). The predicate would now look something like this:</p>
-<pre class="highlight plaintext"><code>NSString *lowerCaseInputText = [inputText lowerCaseString];
+<div class="highlight"><pre class="highlight plaintext"><code>NSString *lowerCaseInputText = [inputText lowerCaseString];
 filteredCityModelArray = [cityModelArray filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"canonicalSearchTerm beginsith %@", lowerCaseInputText]];
-</code></pre>
+</code></pre></div>
 <p>The predicate no longer uses the <code>like</code> operator, so we’ll get faster performance there. The predicate also no longer has to turn each city name into lower case for each comparison; the input text is made lower case <em>once</em> and compared against the canonical, lower case search term. Way faster.</p>
 
 <p>These techniques apply to both bare <code>NSObject</code> models and Core Data <code>NSManagedObjects</code>. They lead to a slight increase in the amoutn of memory your app takes up, but the performance gains will be noticable to the user (<em>especially</em> if you have a large number of items to filter through).</p>
@@ -981,7 +981,7 @@ filteredCityModelArray = [cityModelArray filteredArrayUsingPredicate:[NSPredicat
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p>Nice! We can create the predicate once and then save it for later to avoid having to parse the format string (a not-inexpensive operation).</p>
-<pre class="highlight plaintext"><code>//put this in viewDidLoad
+<div class="highlight"><pre class="highlight plaintext"><code>//put this in viewDidLoad
 //filteringPredicate is an instance variable
 filteringPredicate = [NSPredicate predicateWithFormat:@"canonicalSearchTerm beginsith $searchTerm", lowerCaseInputText]
 
@@ -990,7 +990,7 @@ filteringPredicate = [NSPredicate predicateWithFormat:@"canonicalSearchTerm begi
 //later, when we want to filter
 NSDictionary *substitutionDictionary = @{ @"searchTerm" : [inputText lowerCaseString] };
 filteredCityModelArray = [cityModelArray filteredArrayUsingPredicate:[filteringPredicate predicateWithSubstitutionVariables:substitutionDictionary];
-</code></pre>
+</code></pre></div>
 <p><img src="/img/import/blog/fast-search-as-you-type-in-ios/C11B981EB6C442618B44A5F754E8DC66.jpg" alt="C11b981eb6c442618b44a5f754e8dc66"></p>
 <hr>
 <span class="meta">Posted on September  2, 2012</span>

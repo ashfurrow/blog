@@ -968,15 +968,15 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
 
 <p>Copy that URL. Now we need to tell git where the upstream is, and then tell git to fetch information from the upstream.</p>
-<pre class="highlight shell"><code>git remote add upstream https://github.com/Moya/Moya.git
+<div class="highlight"><pre class="highlight shell"><code>git remote add upstream https://github.com/Moya/Moya.git
 git fetch upstream
-</code></pre>
+</code></pre></div>
 <p>Okay, great! Let’s make sure that we’re on the branch that you’ve made your changes on, the branch that you’re submitted the pull request from. I’m going to assume it’s called <code>my_pr_branch</code>. It’s important that git is on this branch in order to resolve the conflicts from the upstream.</p>
-<pre class="highlight shell"><code>git checkout my_pr_branch
-</code></pre>
+<div class="highlight"><pre class="highlight shell"><code>git checkout my_pr_branch
+</code></pre></div>
 <p>Okay, now we need to pull in the changes from upstream into our pull request branch. We do this with the following command:</p>
-<pre class="highlight shell"><code>git pull upstream master
-</code></pre>
+<div class="highlight"><pre class="highlight shell"><code>git pull upstream master
+</code></pre></div>
 <p>At this point, you’re probably going to have some conflicts. Let’s take a look at a conflict I had to resolve recently.</p>
 
         </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
@@ -985,7 +985,7 @@ git fetch upstream
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="kt">HEAD</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="kt">HEAD</span>
 <span class="k">let</span> <span class="nv">newEndpoint</span> <span class="o">=</span> <span class="n">endpoint</span><span class="o">.</span><span class="nf">endpointByAddingParameterEncoding</span><span class="p">(</span><span class="n">parameterEncoding</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">encodedRequest</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">parameterEncoding</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">newEndpoint</span><span class="o">.</span><span class="n">urlRequest</span><span class="o">!</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameters</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">newEncodedRequest</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameterEncoding</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">newEndpoint</span><span class="o">.</span><span class="n">urlRequest</span><span class="o">!</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameters</span><span class="p">)</span>
@@ -994,7 +994,7 @@ git fetch upstream
 <span class="k">let</span> <span class="nv">encodedRequest</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">parameterEncoding</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">newEndpoint</span><span class="o">.</span><span class="n">urlRequest</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameters</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">newEncodedRequest</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameterEncoding</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">newEndpoint</span><span class="o">.</span><span class="n">urlRequest</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameters</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="mi">08</span><span class="n">b3dcbbc2a98d2b0c8ea04845681e04176fbd8f</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1015,10 +1015,10 @@ git fetch upstream
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">newEndpoint</span> <span class="o">=</span> <span class="n">endpoint</span><span class="o">.</span><span class="nf">adding</span><span class="p">(</span><span class="nv">newParameterEncoding</span><span class="p">:</span> <span class="n">parameterEncoding</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">let</span> <span class="nv">newEndpoint</span> <span class="o">=</span> <span class="n">endpoint</span><span class="o">.</span><span class="nf">adding</span><span class="p">(</span><span class="nv">newParameterEncoding</span><span class="p">:</span> <span class="n">parameterEncoding</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">encodedRequest</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">parameterEncoding</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">newEndpoint</span><span class="o">.</span><span class="n">urlRequest</span><span class="o">!</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameters</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">newEncodedRequest</span> <span class="o">=</span> <span class="k">try</span><span class="p">?</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameterEncoding</span><span class="o">.</span><span class="nf">encode</span><span class="p">(</span><span class="n">newEndpoint</span><span class="o">.</span><span class="n">urlRequest</span><span class="o">!</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">newEndpoint</span><span class="o">.</span><span class="n">parameters</span><span class="p">)</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1028,8 +1028,8 @@ git fetch upstream
 
 
 <p>After resolving conflicts, you need to <code>git add .</code> to add all the conflicting files and then <code>git commit</code>. This will open up a text editor, probably vim, with a pre-filled commit message. </p>
-<pre class="highlight plaintext"><code>Merge remote-tracking branch 'upstream/master' into my_pr_branch
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>Merge remote-tracking branch 'upstream/master' into my_pr_branch
+</code></pre></div>
 <p>In vim, type <code>:wq</code> and your commit is complete. Do a <code>git push</code> to add the commit to your pull request, and wait for someone to review.</p>
 
 <p>Resolving conflicts gets easier with experience. Using git gets easier, too, but it still trips me up sometimes. If you get stuck at some point in this process, don’t worry. Do a Google search for your problem, and don’t give up. If you can’t figure it out, add a comment to the pull request asking for help. Make sure to <a href="http://mattgemmell.com/what-have-you-tried/">list what you’ve tried</a>. You’re trying to improve the project and so is the maintainer. We’ve all got the same goals: to improve the code and to improve the community, but make sure to have fun!</p>

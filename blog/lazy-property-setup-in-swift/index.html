@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html itemscope="" itemtype="http://schema.org/Blog">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <title>Lazy Property Setup in Swift - Ash Furrow</title>
@@ -944,11 +944,11 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>Hmmm.</p>
 
 <p>I’ve come up with a pretty good solution. Consider a <code>UIDynamicAnimator</code> property on a view controller. I need to initialize it with a reference view of <code>self.view</code>, but I’m in the same situation as Robert was. My solution, which came from a talk with Dave Addey at the WWDC labs, was to use a <code>@lazy</code> property that is set to a self-evaluating closure. The closure returns a reference to the initialized dynamic animator, but it since it’s lazy, it isn’t set until the first time it’s referred to.</p>
-<pre class="highlight plaintext"><code>@lazy var animator: UIDynamicAnimator = {
+<div class="highlight"><pre class="highlight plaintext"><code>@lazy var animator: UIDynamicAnimator = {
     let animator = UIDynamicAnimator(referenceView: self.view)
     return animator
 }()
-</code></pre>
+</code></pre></div>
 <p>The downside, as I can see it, is that <code>@lazy</code> properties <em>must</em> be <code>var</code> and not <code>let</code>, so you lose some Swift-ness there. Still, it’s better than having an optional type.</p>
 <hr>
 <span class="meta">Posted on July  5, 2014</span>

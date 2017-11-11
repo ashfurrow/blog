@@ -942,7 +942,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>Just kidding, the documentation makes no such references.</p>
 
 <p>So I wrote a small program to check out the running time of the data structure. Since we’re concerned with the complexity and not the absolute time it takes to execute, running this on a computer is sufficient.</p>
-<pre class="highlight plaintext"><code>NSMutableString *results = [NSMutableString string];
+<div class="highlight"><pre class="highlight plaintext"><code>NSMutableString *results = [NSMutableString string];
 
 for (unsigned long int passes = 100; passes &lt;= 10000000; passes *= 10)
 {
@@ -986,7 +986,7 @@ for (unsigned long int passes = 100; passes &lt;= 10000000; passes *= 10)
 }
 
 NSLog(@"%@", results);
-</code></pre>
+</code></pre></div>
 <p>We’ll test the time it takes to test for inclusion, first. Testing for inclusion in an <code>NSSet</code> is a constant-time operation, so <code>NSOrderedSet</code> would hopefully maintain this feature. We also test for inclusion of members we <em>know</em> aren’t present, a likely “worst case” for their implementation.</p>
 
 <p>I’ve graphed the results below. The bottom axis is testing for inclusion in an <code>NSOrderedSet</code> instance with that many members, and the left axis is the number of nanoseconds it took to execute that line of code. (Each test in the graph below is measured in nanoseconds.)</p>
@@ -1030,7 +1030,7 @@ NSLog(@"%@", results);
 <p>The first time we invoke this method, it must be calling a lot fo <code>malloc</code>. As one engineer at Apple once reminded me, “<code>malloc</code> is expensive. If they’re breaking off a significant chunk of contiguous memory in these implementations, then the virtual memory subsystem in the OS might have to do some extra work to find that space.</p>
 
 <p>If this is true, then we should run the first test once, throw away the results, and then re-run the entire test as usual.</p>
-<pre class="highlight plaintext"><code>NSMutableString *results = [NSMutableString string];
+<div class="highlight"><pre class="highlight plaintext"><code>NSMutableString *results = [NSMutableString string];
 
 for (unsigned long int passes = 100; passes &lt;= 10000000; passes *= 10)
 {
@@ -1085,7 +1085,7 @@ for (unsigned long int passes = 100; passes &lt;= 10000000; passes *= 10)
         continue;
     }
 }
-</code></pre>
+</code></pre></div>
 <p>Hacky, sure, but whatever. Let’s take a look at the test results for 100-item ordered sets</p>
 
 <p><img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/CDDBEEA9EFF649AC9A659BA0C5C679DA.png" alt="Cddbeea9eff649ac9a659ba0c5c679da"> <img src="/img/import/blog/running-time-of-nsorderedset-in-ordered-to-many-core-data-relationships/F24C924537A94CD097A8BB3DFFFBC806.png" alt="F24c924537a94cd097a8bb3dfffbc806"></p>

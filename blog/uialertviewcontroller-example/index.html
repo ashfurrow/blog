@@ -944,9 +944,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p><code>UIAlertController</code> is a <code>UIViewController</code> subclass. This contrasts with <code>UIAlertView</code>, a <code>UIView</code> subclass. View controllers are (or at least, should be) the main unit of composition when writing iOS applications. It makes a lot of sense that Apple would replace alert views with alert view <em>controllers</em>. That’s cool.</p>
 
 <p>Creating an alert view controller is pretty simple. Just use the initializer to create one and then present it to the user as you would present any other view controller.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
+<div class="highlight"><pre class="highlight swift"><code><span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
 <span class="nf">presentViewController</span><span class="p">(</span><span class="n">alertController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
-</code></pre>
+</code></pre></div>
 <p>Pretty straightforward. I’m using the <code>.Alert</code> preferred style, but you can use the <code>.ActionSheet</code> instead. I’m using this as a replacement for <code>UIAlertView</code>, so I’ll just discuss the alert style.</p>
 
 <p>If you ran this code, you’d be presented with something like the following (on beta 7).</p>
@@ -956,10 +956,10 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>Weird. The title is there, but the message is not present. There are also no buttons, so you can’t dismiss the controller. It’s there until you relaunch your app. Sucky.</p>
 
 <p>Turns out if you want buttons, you’ve got to explicitly add them to the controller before presenting it.</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">})</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">})</span>
 <span class="k">let</span> <span class="nv">cancel</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Cancel"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Cancel</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> <span class="p">}</span> 
 <span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">ok</span><span class="p">)</span> <span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">cancel</span><span class="p">)</span> 
-</code></pre>
+</code></pre></div>
 <p>This is <em>worlds</em> better than <code>UIAlertView</code>, despite being much more verbose. First of all, you can have multiple cancel or destructive buttons. You also specify individual closures to be executed when a button is pressed instead of some shitty delegate callback telling you which button <em>index</em> was pressed. (If anyone out there makes a <code>UIAlertController+Blocks</code> category, I will find you, and I <em>will</em> kill you.)</p>
 
 <p><img src="/img/import/blog/uialertviewcontroller-example/2A03E60C605A42789A6FAF704BB9A130.jpg" alt="2a03e60c605a42789a6faf704bb9a130"></p>
@@ -971,10 +971,10 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>Way better. Weird that the message is now showing up. Maybe it’s a bug, or maybe it’s intended behaviour. Apple, you so cray cray. Anyway, you should also notice that the “OK” and “Cancel” buttons have been styled and positioned according to iOS conventions. Neato.</p>
 
 <p>What <em>I</em> needed, however, was user input. This was possible with <code>UIAlertView</code>, so it should be possible with <code>UIAlertController</code>, right? Well, kinda. There’s an encouraging instance method named <code>addTextFieldWithConfigurationHandler()</code>, but using it is not so straightforward. Let me show you what I mean.</p>
-<pre class="highlight swift"><code><span class="n">alertController</span><span class="o">.</span><span class="n">addTextFieldWithConfigurationHandler</span> <span class="p">{</span> <span class="p">(</span><span class="n">textField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
+<div class="highlight"><pre class="highlight swift"><code><span class="n">alertController</span><span class="o">.</span><span class="n">addTextFieldWithConfigurationHandler</span> <span class="p">{</span> <span class="p">(</span><span class="n">textField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
     <span class="c1">// Here you can configure the text field (eg: make it secure, add a placeholder, etc) </span>
 <span class="p">}</span> 
-</code></pre>
+</code></pre></div>
 <p>Straightforward. Run the code, get the following.</p>
 
 <p><img src="/img/import/blog/uialertviewcontroller-example/9EA0E4E86AB54891A9A27BC24D1C8889.png" alt="9ea0e4e86ab54891a9a27bc24d1c8889"></p>
@@ -992,7 +992,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>So what do we do? Well, I’ve been writing Swift lately, and whenever I come across a problem like this, I think “if I had <a href="http://instagram.com/p/rWyQdUDBhH">five years of Swift experience</a>, what would <em>I</em> do?” My answer was the following.</p>
 
 <p>Let’s create a local variable, a <code>UITextField?</code> optional. In the configuration closure for the text field, assign the local variable to the text field that we’re passed in. Then we can access that local variable in our alert action closure. Sweet. The full implementation looks like this.</p>
-<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">inputTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">?</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">var</span> <span class="nv">inputTextField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">?</span>
 
 <span class="k">let</span> <span class="nv">alertController</span> <span class="o">=</span> <span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"Title"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Message"</span><span class="p">,</span> <span class="nv">preferredStyle</span><span class="p">:</span> <span class="o">.</span><span class="kt">Alert</span><span class="p">)</span> 
 <span class="k">let</span> <span class="nv">ok</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"OK"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span> 
@@ -1010,7 +1010,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
 <span class="nf">presentViewController</span><span class="p">(</span><span class="n">alertController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span> 
 
-</code></pre>
+</code></pre></div>
 <p>I like this a lot. It avoids polluting our object with unnecessary properties, avoids memory leaks, and seems pretty “Swift”. I’ve created a <a href="https://github.com/AshFurrow/UIAlertController-Example">GitHub repo</a> that I’ll keep up to date with future betas, etc.</p>
 
 <p><img src="/img/import/blog/uialertviewcontroller-example/09B8BCEA8BBE48239C07298CD4112B53.jpg" alt="09b8bcea8bbe48239c07298cd4112b53"></p>

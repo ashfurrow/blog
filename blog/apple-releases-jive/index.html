@@ -967,7 +967,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <a class="header-link" href="#test-framework">#</a> Test Framework</h2>
 
 <p>XCTest provided a very bare-bones approach to testing, something reminiscent of JUnit circa 1999. In contrast, Jive provides a modern RSpec-like interface for behaviour-driven development. Let’s compare.</p>
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MyTests</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MyTests</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
     <span class="k">override</span> <span class="kd">func</span> <span class="nf">setUp</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">super</span><span class="o">.</span><span class="nf">setUp</span><span class="p">()</span>
     <span class="p">}</span>
@@ -980,9 +980,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="c1">// TODO</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Okay now let see an equivalent Jive test suite.</p>
-<pre class="highlight swift"><code><span class="n">beforeEach</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="n">beforeEach</span> <span class="p">{</span>
 <span class="p">}</span>
 
 <span class="n">afterEach</span> <span class="p">{</span>
@@ -991,9 +991,9 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <span class="nf">it</span><span class="p">(</span><span class="s">"behaves a certain way"</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// TODO</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>What may not be obvious about RSpec-style tests is the possibility of <em>nesting contexts</em>. Let’s take a look at a more practical example to see the power of nesting test contexts.</p>
-<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">db</span><span class="p">:</span> <span class="kt">DataBase</span><span class="o">!</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">var</span> <span class="nv">db</span><span class="p">:</span> <span class="kt">DataBase</span><span class="o">!</span>
 
 <span class="n">beforeEach</span> <span class="p">{</span>
     <span class="n">db</span> <span class="o">=</span> <span class="kt">DataBase</span><span class="o">.</span><span class="nf">testDataBase</span><span class="p">()</span>
@@ -1014,7 +1014,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     <span class="nf">it</span><span class="p">(</span><span class="s">"can fetch rows from the db"</span><span class="p">)</span> <span class="p">{</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>This kind of nested contexts was impossible to build in XCTest (at least, without a lot of work and/or repeated code). Finally Apple has recognized that a test suite needs more than just two <code>setup()</code> and <code>tearDown()</code> methods.</p>
 
 <p>Jive leverages its new runner with the RSpec-style tests to run each test in an independent process. This means that state leftover from one test can’t affect the outcome of another test. Nice!</p>
@@ -1027,24 +1027,24 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>XCTest matchers were… not optimal. Matchers are used by the assertions of a test, so making them concise and expressive is really important.</p>
 
 <p>Let’s see an example.</p>
-<pre class="highlight swift"><code><span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">objectA</span><span class="p">,</span> <span class="n">objectB</span><span class="p">)</span>
-</code></pre>
+<div class="highlight"><pre class="highlight swift"><code><span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">objectA</span><span class="p">,</span> <span class="n">objectB</span><span class="p">)</span>
+</code></pre></div>
 <p>Now let’s compare with the new Jive matchers.</p>
-<pre class="highlight swift"><code><span class="nf">expect</span><span class="p">(</span><span class="n">objectA</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="nf">equal</span><span class="p">(</span><span class="n">objectB</span><span class="p">)</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="nf">expect</span><span class="p">(</span><span class="n">objectA</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="nf">equal</span><span class="p">(</span><span class="n">objectB</span><span class="p">)</span>
 <span class="c1">// or</span>
 <span class="nf">expect</span><span class="p">(</span><span class="n">objectA</span><span class="p">)</span> <span class="o">==</span> <span class="n">objectB</span>
-</code></pre>
+</code></pre></div>
 <p>Jive uses operator overloading to help write more expressive tests. I really dig this – it lets developers choose whatever level of verbosity they feel is right for their project.</p>
 
 <p>Let’s take a look at a few more examples.</p>
-<pre class="highlight swift"><code><span class="nf">expect</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">~=</span> <span class="n">value</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="nf">expect</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">~=</span> <span class="n">value</span>
 <span class="nf">expect</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
 <span class="nf">expect</span><span class="p">(</span><span class="kd">optional</span><span class="p">)</span><span class="o">.</span><span class="n">not</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="nf">beNil</span><span class="p">()</span>
-</code></pre>
+</code></pre></div>
 <p>You can write your own matchers, too, and leverage the power of the Swift type system. For example, it’d be pretty easy to write a custom matcher to check that collections are of a certain size. I’ll likely port my <a href="https://github.com/ashfurrow/Nimble-Snapshots">Nimble-Snapshots</a> library over to Jive within the next few weeks.</p>
 
 <p>And of course Jive ships with a comprehensive mocking library. This makes mocking dependencies and injecting them into a subject under test <em>really</em> easy. </p>
-<pre class="highlight swift"><code><span class="nf">it</span><span class="p">(</span><span class="s">"invokes the callback"</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="nf">it</span><span class="p">(</span><span class="s">"invokes the callback"</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">let</span> <span class="nv">mock</span> <span class="o">=</span> <span class="kt">Jive</span><span class="o">.</span><span class="nf">mock</span><span class="p">()</span>
 
     <span class="n">testSubject</span><span class="o">.</span><span class="nf">method</span><span class="p">(</span><span class="n">mock</span><span class="p">)</span>
@@ -1060,7 +1060,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="nf">expect</span><span class="p">(</span><span class="n">mock</span><span class="o">.</span><span class="n">request</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="o">.</span><span class="nf">haveBeenCalledWith</span><span class="p">(</span><span class="s">"https://example.com"</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Very cool, and all out of the box! Mocking is a testing strategy that Objective-C and Swift developers aren’t too familiar with, but it <a href="https://stackoverflow.com/a/3623574/516359">solves a lot of problems</a>. I’m looking forward to this powerful testing technique become more popular within our community.</p>
 
 <h2 id="wrap-up">

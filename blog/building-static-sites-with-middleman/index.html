@@ -956,12 +956,12 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight yaml"><code><span class="na">before_install</span><span class="pi">:</span>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">before_install</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s">echo -e "machine github.com\n  login ci-user\n  password $GITHUB_API_KEY" &gt;&gt; ~/.netrc</span>
   <span class="pi">-</span> <span class="s">chmod 600 ~/.netrc</span>
   <span class="pi">-</span> <span class="s">git config --global user.email "ash@ashfurrow.com"</span>
   <span class="pi">-</span> <span class="s">git config --global user.name "Ash Furrow (via Travis)"</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -982,7 +982,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight ruby"><code><span class="n">task</span> <span class="ss">:travis</span> <span class="k">do</span>
+<div class="highlight"><pre class="highlight ruby"><code><span class="n">task</span> <span class="ss">:travis</span> <span class="k">do</span>
   <span class="n">branch</span> <span class="o">=</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'TRAVIS_BRANCH'</span><span class="p">]</span>
   <span class="n">pull_request</span> <span class="o">=</span> <span class="no">ENV</span><span class="p">[</span><span class="s1">'TRAVIS_PULL_REQUEST'</span><span class="p">]</span>
 
@@ -1000,7 +1000,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
   <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="p">[</span><span class="s1">'publish'</span><span class="p">].</span><span class="nf">invoke</span>
 <span class="k">end</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>

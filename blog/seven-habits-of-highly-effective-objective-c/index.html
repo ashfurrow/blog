@@ -944,14 +944,14 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 </h2>
 
 <p>The <code>#pragma</code> preprocessor directive is a useful tool for organizing code and <a href="http://nshipster.com/pragma/">other interesting things</a>. I use <code>#pragma</code> primarily to divide groups of methods within a class. For example:</p>
-<pre class="highlight plaintext"><code>#pragma mark - UICollectionViewDataSource &amp; UICollectionViewDelegate Methods
+<div class="highlight"><pre class="highlight plaintext"><code>#pragma mark - UICollectionViewDataSource &amp; UICollectionViewDelegate Methods
 
 //All those methods
 
 #pragma mark - Private Custom Methods
 
 //And so on
-</code></pre>
+</code></pre></div>
 <p>When I open my jump bar’s drop down for the file, It’ll divide my methods with headers. Beginning the mark with a hyphen will also add a horizontal line to the drop down.</p>
 
 <p><img src="/img/import/blog/seven-habits-of-highly-effective-objective-c/198BD8E3B30B447F807F41D0E186F4A0.png" alt="198bd8e3b30b447f807f41d0e186f4a0"></p>
@@ -975,14 +975,14 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <a class="header-link" href="#3-write-self-documenting-code">#</a> 3. Write Self-Documenting Code</h2>
 
 <p>This may sound like obvious common sense, but there is some subtlety to it. Variable names should be descriptive, obviously. Another self-documenting code practice is to take advantage of Objective-C’s message-passing syntax. For example, the following method declaration is perfectly valid Objective-C:</p>
-<pre class="highlight plaintext"><code>-(void)doSomethingWithInt:(int)anInt :(float)aFloat;
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>-(void)doSomethingWithInt:(int)anInt :(float)aFloat;
+</code></pre></div>
 <p>You’d call this method like this:</p>
-<pre class="highlight plaintext"><code>[obj doSomethingWithInt:13 :0.5f];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>[obj doSomethingWithInt:13 :0.5f];
+</code></pre></div>
 <p>This is a pedagogical example, but wouldn’t this make more sense like this?</p>
-<pre class="highlight plaintext"><code>[obj doSomethingWithInt:13 float:0.5f];
-</code></pre>
+<div class="highlight"><pre class="highlight plaintext"><code>[obj doSomethingWithInt:13 float:0.5f];
+</code></pre></div>
 <p>Now you know more about the method because it’s been named properly. I never thought this was a problem until I started diving into some open source projects that I’m not going to name here. It’s an easy way to make your code more expressive, and others will thank you for it.</p>
 
 <p>Of course, this isn’t to say that comments aren’t important. I’ve found that code comments are useful for explaining <em>why</em> some piece of code does something instead of <em>what</em> it’s doing. In any case, both are good practice.</p>

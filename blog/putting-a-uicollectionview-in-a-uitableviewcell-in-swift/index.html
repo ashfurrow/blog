@@ -1057,12 +1057,12 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TableViewCell</span><span class="p">:</span> <span class="kt">UITableViewCell</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TableViewCell</span><span class="p">:</span> <span class="kt">UITableViewCell</span> <span class="p">{</span>
 
     <span class="kd">@IBOutlet</span> <span class="kd">private</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="o">!</span>
 
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1083,7 +1083,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="kd">func</span> <span class="n">setCollectionViewDataSourceDelegate</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">func</span> <span class="n">setCollectionViewDataSourceDelegate</span>
     <span class="o">&lt;</span><span class="kt">D</span><span class="p">:</span> <span class="kd">protocol</span><span class="o">&lt;</span><span class="kt">UICollectionViewDataSource</span><span class="p">,</span> <span class="kt">UICollectionViewDelegate</span><span class="o">&gt;&gt;</span>
     <span class="p">(</span><span class="nv">dataSourceDelegate</span><span class="p">:</span> <span class="kt">D</span><span class="p">,</span> <span class="n">forRow</span> <span class="nv">row</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
 
@@ -1092,7 +1092,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
     <span class="n">collectionView</span><span class="o">.</span><span class="n">tag</span> <span class="o">=</span> <span class="n">row</span>
     <span class="n">collectionView</span><span class="o">.</span><span class="nf">reloadData</span><span class="p">()</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1113,12 +1113,12 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UITableViewController</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UITableViewController</span> <span class="p">{</span>
 
     <span class="k">let</span> <span class="nv">model</span><span class="p">:</span> <span class="p">[[</span><span class="kt">UIColor</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">generateRandomData</span><span class="p">()</span>
 
     <span class="o">...</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1139,7 +1139,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+<div class="highlight"><pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
     <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">count</span>
 <span class="p">}</span>
@@ -1152,7 +1152,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="k">return</span> <span class="n">cell</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1169,7 +1169,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+<div class="highlight"><pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
     <span class="n">willDisplayCell</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> 
     <span class="n">forRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="p">{</span>
 
@@ -1177,7 +1177,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="n">tableViewCell</span><span class="o">.</span><span class="nf">setCollectionViewDataSourceDelegate</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">forRow</span><span class="p">:</span> <span class="n">indexPath</span><span class="o">.</span><span class="n">row</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1194,7 +1194,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UICollectionViewDelegate</span><span class="p">,</span> <span class="kt">UICollectionViewDataSource</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UICollectionViewDelegate</span><span class="p">,</span> <span class="kt">UICollectionViewDataSource</span> <span class="p">{</span>
     <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> 
         <span class="n">numberOfItemsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
 
@@ -1212,7 +1212,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="k">return</span> <span class="n">cell</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1258,7 +1258,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">collectionViewOffset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="k">var</span> <span class="nv">collectionViewOffset</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span>
     <span class="k">get</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">collectionView</span><span class="o">.</span><span class="n">contentOffset</span><span class="o">.</span><span class="n">x</span>
     <span class="p">}</span>
@@ -1267,7 +1267,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
         <span class="n">collectionView</span><span class="o">.</span><span class="n">contentOffset</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">newValue</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1288,13 +1288,13 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UITableViewController</span> <span class="p">{</span>
+<div class="highlight"><pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UITableViewController</span> <span class="p">{</span>
 
     <span class="k">let</span> <span class="nv">model</span><span class="p">:</span> <span class="p">[[</span><span class="kt">UIColor</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">generateRandomData</span><span class="p">()</span>
     <span class="k">var</span> <span class="nv">storedOffsets</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">]()</span>
 
     <span class="o">...</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>
@@ -1311,7 +1311,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
           
-<pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
+<div class="highlight"><pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> 
     <span class="n">willDisplayCell</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> 
     <span class="n">forRowAtIndexPath</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">NSIndexPath</span><span class="p">)</span> <span class="p">{</span>
 
@@ -1329,7 +1329,7 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 
     <span class="n">storedOffsets</span><span class="p">[</span><span class="n">indexPath</span><span class="o">.</span><span class="n">row</span><span class="p">]</span> <span class="o">=</span> <span class="n">tableViewCell</span><span class="o">.</span><span class="n">collectionViewOffset</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 
         </div>
       </div>

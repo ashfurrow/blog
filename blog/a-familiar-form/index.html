@@ -940,20 +940,20 @@ ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesh
 <p>Generally, <a href="/blog/initial-thoughts-on-swift">I’m impressed</a>. Swift is the kind of radical departure from the existing Objective-C language that I was <a href="/blog/we-need-to-replace-objective-c">hoping for</a>. Sure, it’s a radical departure, but is it radical enough?</p>
 
 <p>Swift gets rid of a lot of cruft of Objective-C syntax while keeping some of its key features, like named parameters, around. But it also keeps around things that aren’t <em>necessarily</em> a good thing. Let’s take a look at a basic example.</p>
-<pre class="highlight plaintext"><code>func compute (x: Int) -&gt; Int {
+<div class="highlight"><pre class="highlight plaintext"><code>func compute (x: Int) -&gt; Int {
     return x*x
 }
 
 compute(4) //prints 16
-</code></pre>
+</code></pre></div>
 <p>This is a basic function definition and a corresponding invocation. A few things jump out that should be familiar to Objective-C developers. First, we have brace brackets delimiting the scope of the function. Lots of languages do this, but plenty don’t, as well. We also see a familiar, C-like syntax for invoking the <code>compute</code> function.</p>
 
 <p>Swift could easily have looked like this, a more Haskell-friendly syntax.</p>
-<pre class="highlight plaintext"><code>func compute x: Int -&gt; Int 
+<div class="highlight"><pre class="highlight plaintext"><code>func compute x: Int -&gt; Int 
    x*x
 
 compute 4 //prints 16
-</code></pre>
+</code></pre></div>
 <p>Less familiar, sure, but would be just as valid if you’re designing a whole new language.</p>
 
 <p>When I asked an Apple engineer about these kinds of constructs, his answer was that familiarity with existing Objective-C developers was an important factor in the design process of the language.</p>
