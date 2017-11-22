@@ -4,10 +4,97 @@
   <id>https://ashfurrow.com/blog</id>
   <link href="https://ashfurrow.com/"/>
   <link href="https://ashfurrow.com/feed.xml" rel="self"/>
-  <updated>2017-11-19T23:30:50+00:00</updated>
+  <updated>2017-11-22T17:49:14+00:00</updated>
   <author>
     <name>Ash Furrow</name>
   </author>
+  <entry>
+    <title>Taxonomies of Engineering Careers</title>
+    <link rel="alternate" href="https://ashfurrow.com/blog/taxonomies-of-engineering-careers/"/>
+    <id>https://ashfurrow.com/blog/taxonomies-of-engineering-careers/</id>
+    <published>2017-11-22T17:49:14+00:00</published>
+    <updated>2017-11-22T17:49:14+00:00</updated>
+    <author>
+      <name>Ash Furrow</name>
+    </author>
+    <content type="html">&lt;p&gt;Humans are ridiculous bad a taxonomy. We look for patterns to group stuff together, even though most stuff is different from most other stuff. Nature defies any classification system we humans try to create, but it is our nature to try anyway. Our classification systems can &lt;em&gt;never&lt;/em&gt; be applied universally. Just look at hour poorly we define &lt;em&gt;seasons&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/s0oX9YJ5XLo' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+
+&lt;p&gt;Drift between theoretical classification systems and the tangible stuff they try to classify isn&amp;rsquo;t always a bad thing. Classifications are a kind of abstraction that hides &lt;em&gt;some&lt;/em&gt; details in order to make &lt;em&gt;others&lt;/em&gt; easier to reason about. For example, Linnaean taxonomy is good at grouping individuals into &amp;ldquo;species&amp;rdquo; because &lt;em&gt;we&lt;/em&gt; find it useful; even though nature is &lt;em&gt;far&lt;/em&gt; too messy to ever be accurately represented in a general taxonomy, having a taxonomy nonetheless helps us study biology.&lt;/p&gt;
+
+&lt;p&gt;Classification systems are most useful when they &lt;em&gt;describe&lt;/em&gt; something that &lt;em&gt;already&lt;/em&gt; exists. They loose much of their usefulness when we use them to &lt;em&gt;prescribe&lt;/em&gt; what we &lt;em&gt;want&lt;/em&gt; to exist.&lt;/p&gt;
+
+&lt;p&gt;Today I want to discuss career ladders! If your engineering team is worth their salt, they try to help you grow as a software developer using a &amp;ldquo;ladder&amp;rdquo; of different stages of your career. I&amp;rsquo;m using my own career and &lt;a href="http://artsy.github.io/blog/2015/04/03/artsy-engineering-compensation-framework/"&gt;Artsy&amp;rsquo;s own engineering career ladder&lt;/a&gt; to illustrate shortcomings in engineering careers &lt;em&gt;in general&lt;/em&gt;. Hopefully this will resonate with your and you can help your team work around those shortcomings.&lt;/p&gt;
+
+&lt;p&gt;I have two main complaints with engineering career ladders:&lt;/p&gt;
+
+
+
+&lt;ul&gt;
+&lt;li&gt;They tacitly expect that engineers will advance up the ladder, always and forever.&lt;/li&gt;
+&lt;li&gt;The prescribe a single path that engineers are expected to follow.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;Okay so let&amp;rsquo;s deal with the tacit suggestion that to grow in your career, you need to advance up the ladder. From junior to intermediate to senior and beyond. There is an expectation from businesses and peers that developers ought to seek to advance their careers, that we should always be working towards the next rung of that ladder.&lt;/p&gt;
+
+&lt;p&gt;This problem is exacerbated by conflation between growing one&amp;rsquo;s career and growing one&amp;rsquo;s skillset; continual learning is inherent to being an engineer, but continual progress up some arbitrary career ladder is not. &lt;/p&gt;
+
+&lt;p&gt;This is something I&amp;rsquo;ve been facing lately in my own career. According to Artsy, I am a &amp;ldquo;Senior Engineer&amp;rdquo; despite fulfilling many of the requirements for the next level role of &amp;ldquo;Staff Engineer.&amp;rdquo; I had convinced myself that I &lt;em&gt;needed&lt;/em&gt; to broaden my skills and praxis to advance to that next level, despite how it was affecting my happiness and satisfaction with my career &lt;em&gt;now&lt;/em&gt;. Let&amp;rsquo;s take a look at a Staff Engineer&amp;rsquo;s responsibilities at Artsy:&lt;/p&gt;
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Owns large scale and impact service or collection of services.&lt;/li&gt;
+&lt;li&gt;Understands the Artsy business and makes decisions based on its direction.&lt;/li&gt;
+&lt;li&gt;Sought out by other team members for technical guidance.&lt;/li&gt;
+&lt;li&gt;Anticipates technical issues at the product level and makes architectural and design decisions to avoid them.&lt;/li&gt;
+&lt;li&gt;Recognized as a prolific contributor to core and side projects.&lt;/li&gt;
+&lt;li&gt;Multiplies the effectiveness of others by facilitating cross-team work.&lt;/li&gt;
+&lt;li&gt;Has track record of creating sweeping improvements in stability, performance, and scalability across services.&lt;/li&gt;
+&lt;li&gt;Consistently reduces the complexity of projects, services, and processes in order to get more done with less work.&lt;/li&gt;
+&lt;li&gt;Has made an obvious positive impact on the entire company&amp;rsquo;s technical trajectory.&lt;/li&gt;
+&lt;li&gt;Sets short to medium-term strategic technical direction.&lt;/li&gt;
+&lt;li&gt;Communicates the awesomeness of Artsy technology externally via talks and blog posts.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;The requirements that I already fulfill are fulfilled because &lt;em&gt;I enjoy doing them&lt;/em&gt;. The requirements that I don&amp;rsquo;t fulfill are largely because &lt;em&gt;I don&amp;rsquo;t enjoy doing them&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Why aren&amp;rsquo;t I happy just being a &amp;ldquo;Senior Engineer&amp;rdquo;? Probably the hedonic treadmill I guess. I didn&amp;rsquo;t even realize how much my pursuit of the ladder&amp;rsquo;s next rung was making me unhappy and dissatisfied with what I already have and do. I was a &lt;a href="/blog/we-are-the-coyote/"&gt;coyote&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I believe that the expectation of engineers to continually advance up a career ladder is intrinsic to the &lt;em&gt;overwhelming&lt;/em&gt; breadth of the ladders themselves. These ladders attempt to describe the complete range of developer experience levels, despite that &lt;em&gt;how&lt;/em&gt; you grow as a junior dev is &lt;em&gt;very&lt;/em&gt; different from how you grow as a senior dev.&lt;/p&gt;
+
+&lt;p&gt;The fault is in the ladder metaphor itself. It works well as a prescription of how to grow from novice to competency but does &lt;em&gt;not&lt;/em&gt; work well as a guide to growing from competency to proficiency. Let me explain.&lt;/p&gt;
+
+&lt;p&gt;When starting a software developer career, there are basics that &lt;em&gt;everyone&lt;/em&gt; needs to learn. Things like familiarity with source control, command line tools, and &lt;em&gt;a&lt;/em&gt; programming language. Once you learn those basics, you can move onto more complex, but still universally applicable skills such as writing idiomatic code or contributing to open source. But beyond these fundamentals, things vary wildly based on individual engineers.&lt;/p&gt;
+
+&lt;p&gt;A senior engineer might pursue a career in user interface systems, people management, community building, system reliability, and so on. No career &amp;ldquo;ladder&amp;rdquo; can possibly prescribe steps and goals for such a wide gamut of paths because careers defy classification. The ladder metaphor works very well for junior engineers but loses applicability the more an engineer advances. &lt;/p&gt;
+
+&lt;p&gt;A better metaphor might be that of a tree: roots and a trunk that follow a single path upward before splitting into many branches. This provides structure for beginning engineers while still accommodating the breadth of ways individual engineers grow.&lt;/p&gt;
+
+&lt;p&gt;The core problem with prescriptive, linear career ladders is that the limitations of the ladder metaphor cause them to be imbued with the biases of whoever writes it. For example, Artsy&amp;rsquo;s engineering career ladder requires public speaking and/or blog posts (which excludes developers who aren&amp;rsquo;t interested in or able to practice those activities). It&amp;rsquo;s also very oriented around &amp;ldquo;services&amp;rdquo;, which excludes developers who work primarily on apps.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s not to say Artsy&amp;rsquo;s ladder isn&amp;rsquo;t useful – it is! I&amp;rsquo;m just highlighting that the experience and background of the engineers who &lt;em&gt;wrote&lt;/em&gt; Artsy&amp;rsquo;s ladder have influenced it. By extension, those biases have impacted the careers of dozens of engineers who have worked at Artsy. That impact, of biases on career ladders, is going to be present in &lt;em&gt;any&lt;/em&gt; ladder, no matter who writes it and no matter how useful that ladder is.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;I&amp;rsquo;ve realized that my focus on advancing to the &amp;ldquo;next level&amp;rdquo; of Artsy&amp;rsquo;s ladder is hurting my satisfaction with what I already have. I need to learn to pursue career growth that leaves me fulfilled and not dissatisfied.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;rsquo;ve realized that the ladder metaphor itself is prescriptive and every ladder is imbued with the biases of its authors. Maybe I need to write my own career ladder, specific to me.&lt;/p&gt;
+
+&lt;p&gt;As an industry, I hope that we move away from prescription towards description, away from linear tracks towards intertwining paths, away form the relentless pursuit of what&amp;rsquo;s next towards an appreciation for what we&amp;rsquo;ve already accomplished.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Proprioception</title>
     <link rel="alternate" href="https://ashfurrow.com/blog/proprioception/"/>
@@ -323,42 +410,6 @@
 
 
 &lt;p&gt;The more I learn, the more I realize I have to learn. I make progress only to learn that the goal – my vision of an idealized developer – is even further away than I thought. Like Zeno, I&amp;rsquo;ll never make it to a finish line. I don&amp;rsquo;t think that feeling will ever change, but I&amp;rsquo;m learning to accept the fact that the finish line doesn&amp;rsquo;t exist: &lt;a href="/blog/the-journey-is-the-reward/"&gt;the journey is the reward&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Due Diligence</title>
-    <link rel="alternate" href="https://ashfurrow.com/blog/due-diligence/"/>
-    <id>https://ashfurrow.com/blog/due-diligence/</id>
-    <published>2017-10-08T16:04:31+00:00</published>
-    <updated>2017-10-08T16:04:31+00:00</updated>
-    <author>
-      <name>Ash Furrow</name>
-    </author>
-    <content type="html">&lt;p&gt;Okay so yesterday I wrote a &lt;a href="/blog/apple-releases-jive/"&gt;hypothetical blog post&lt;/a&gt; about a new testing framework that Apple made. I&amp;rsquo;ve got a lot of feedback – more than I expected, honestly. Developers really care about their tools.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;One piece of criticism I received is that I hadn&amp;rsquo;t filed any bug reports with Apple asking for these features. I did include a link to &lt;a href="http://bugreport.apple.com"&gt;Apple&amp;rsquo;s bug reporter&lt;/a&gt; and asked people to file radars, but I didn&amp;rsquo;t provide any radars to duplicate. That was an oversight on my part.&lt;/p&gt;
-
-&lt;p&gt;So here&amp;rsquo;s some due diligence: I have filed eleven radars with Apple asking for individual features that would each enhance the developer experience. They have all been cross-posted to &lt;a href="http://www.openradar.me/"&gt;Open Radar&lt;/a&gt;, so please feel free to duplicate them.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4928269132496896"&gt;34875844 Xcode&amp;rsquo;s unit testing framework should include a mocking library&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5060966442074112"&gt;34875826 Hot Module Reloading&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4970395111260160"&gt;34875798 Open source Xcode, or make a new OSS Xcode Lite&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5011363730554880"&gt;34875762 Run unit tests in parallel processes/simulators&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5055377615880192"&gt;34875753 Xcode unit testing should support Behaviour-Driven Development workflows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=6135499479580672"&gt;34875723 Matchers that ship with Xcode&amp;rsquo;s testing framework could be improved&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5025044409352192"&gt;34875713 Xcode should schedule failing tests to run first&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4959620246274048"&gt;34873674 Xcode should only run tests related to files changed since the last commit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=6063405903380480"&gt;34873507 Add a test-on-save feature&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=4937505996537856"&gt;34873492 Unit tests always run in the same order, but should be randomized&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.openradar.me/radar?id=5001137547640832"&gt;34876469 Isolate global state between tests by isolating tests&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These are &lt;em&gt;all&lt;/em&gt; feature requests that I&amp;rsquo;m bringing from other communities – mainly Ruby and JavaScript. I&amp;rsquo;ve been &lt;a href="https://www.youtube.com/watch?v=LtrzZb5Jw0g"&gt;asking developers to bring ideas from other communities since Swift was in beta&lt;/a&gt;. It&amp;rsquo;s fair to ask me to follow my own advice.&lt;/p&gt;
-
-&lt;p&gt;What features would make your day-to-day life as a developer easier, or more joyful?&lt;/p&gt;
 </content>
   </entry>
 </feed>
