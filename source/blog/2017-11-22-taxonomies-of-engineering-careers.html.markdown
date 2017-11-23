@@ -17,7 +17,7 @@ END_WIDE
 
 Drift between theoretical classification systems and the tangible stuff they try to classify isn't always a bad thing. Classifications are a kind of abstraction that hides _some_ details in order to make _others_ easier to reason about. For example, Linnaean taxonomy is good at grouping individuals into "species" because _we_ find it useful; even though nature is _far_ too messy to ever be accurately represented in a general taxonomy, having a taxonomy nonetheless helps us study biology.
 
-Classification systems are most useful when they _describe_ something that _already_ exists. They loose much of their usefulness when we use them to _prescribe_ what we _want_ to exist.
+Classification systems are most useful when they _describe_ something that _already_ exists. They lose much of their usefulness when we use them to _prescribe_ what we _want_ to exist.
 
 Today I want to discuss career ladders! If your engineering team is worth their salt, they try to help you grow as a software developer using a "ladder" of different stages of your career. I'm using my own career and [Artsy's own engineering career ladder][ladder] to illustrate shortcomings in engineering careers _in general_. Hopefully this will resonate with your and you can help your team work around those shortcomings.
 
