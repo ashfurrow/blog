@@ -5,7 +5,7 @@ background_image: /img/blog/taxonomies-of-engineering-careers/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/933322083030978561
 ---
 
-Humans are ridiculous bad a taxonomy. We look for patterns to group stuff together, even though most stuff is different from most other stuff. Nature defies any classification system we humans try to create, but it is our nature to try anyway. Our classification systems can _never_ be applied universally. Just look at hour poorly we define _seasons_.
+Humans are ridiculous bad a taxonomy. We look for patterns to group stuff together, even though most stuff is different from most other stuff. Nature defies any classification system we humans try to create, but it is our nature to try anyway. Our classification systems can _never_ be applied universally. Just look at how poorly we define _seasons_.
 
 (READMORE)
 
