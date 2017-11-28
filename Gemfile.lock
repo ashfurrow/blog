@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/ashfurrow/middleman-inliner.git
+  remote: https://github.com/ashfurrow/middleman-inliner.git
   revision: e3d8a29fc7a40cf97749e04476d801d3e0d34ab5
   branch: middleman-4
   specs:
@@ -249,4 +249,4 @@ DEPENDENCIES
   twitter
 
 BUNDLED WITH
-   1.15.4
+   1.16.0
