@@ -1,5 +1,5 @@
 ---
-title: So Steven Universe eh?
+title: So Steven Universe, eh?
 date: 2017-11-28 00:00:01 UTC
 og_image: /img/blog/so-steven-universe-eh/greg.jpg
 background_image: /img/blog/so-steven-universe-eh/background.jpg
