@@ -40,7 +40,6 @@ module CustomHelpers
   end
 
   def og_image_or_default(current_article, current_resource)
-
     image = current_resource.metadata[:page][:og_image]
 
     if current_article

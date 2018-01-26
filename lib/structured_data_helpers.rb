@@ -48,6 +48,28 @@ module StructuredDataHelpers
   end
 
   def article_structured_data
-    nil
+    return nil unless current_article
+    {
+      "@context" => "http://schema.org",
+      "@type" => "NewsArticle",
+      "image" => article_images
+    }
+  end
+
+  def absoluteify(url)
+    return nil if url.nil?
+    if url[0] == '/'
+      url.replace "https://ashfurrow.com#{url}"
+    end
+    url
+  end
+
+  def article_images
+    doc = Nokogiri::HTML(current_article.body)
+    [
+      absoluteify(current_resource.metadata[:page][:og_image]),
+      doc.xpath("//img").map { |img| absoluteify(img["src"]) },
+      absoluteify(current_resource.metadata[:page][:background_image])
+    ].flatten.compact.uniq
   end
 end
