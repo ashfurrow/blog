@@ -44,6 +44,14 @@ jQuery(document).ready(function($) {
   }
 
   if (document.location.href.match(/search/)) {
+    // Transfer any query string into the text box right away.
+    var queries = {};
+    $.each(document.location.search.substr(1).split('&'), function(c, q){ 
+      var i = q.split('=');
+      queries[i[0].toString()] = i[1].toString(); 
+    });
+    $('#search').val(queries['q'])
+
     // Download search index and then set up search.
     // jQuery provides nicer syntax for this async download. 
     $.ajax({

@@ -65,22 +65,7 @@ meta name='theme-color' content='#398ccc'
   meta name='robots' content='noindex' /
 
 / Rich Snippets
-script type='application/ld+json' 
-  | {
-  |   "@context": "http://schema.org",
-  |   "@type": "Person",
-  |   "name": "Ash Furrow",
-  |   "url": "https://ashfurrow.com",
-  |   "image": "https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg",
-  |   "sameAs": [ "https://twitter.com/ashfurrow", "https://instagram.com/ashfurrow", "https://github.com/ashfurrow" ]
-  | }
-script type='application/ld+json' 
-  | {
-  |   "@context": "http://schema.org",
-  |   "@type": "Organization",
-  |   "url": "https://ashfurrow.com",
-  |   "logo": "https://ashfurrow.com#{data.site.image}"
-  | }
+= structured_data_markup
 
 / Style-specific Javascripts
 = stylesheet_inline_tag 'critical'
