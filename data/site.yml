@@ -4,6 +4,7 @@ description: Learning and teaching about interesting topics in iOS Development. 
 image: /img/siteimage.png
 dark_image: /img/siteimage_dark.png
 default_background_image: /img/backgrounds/default.jpg
+ash_picture: https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg
 feed_link: //feed.ashfurrow.com/feed.xml
 feed_rss_link: //feed.ashfurrow.com/feed.rss.xml
 

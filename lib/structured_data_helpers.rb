@@ -4,6 +4,7 @@ module StructuredDataHelpers
       person_structured_data,
       web_site_structured_data,
       article_structured_data,
+      article_breadcrumbs_structured_data,
       index_summary_carousel_structured_data
     ].compact.map(&:to_json)
     .map do |markup|
@@ -49,7 +50,52 @@ module StructuredDataHelpers
     {
       "@context" => "http://schema.org",
       "@type" => "NewsArticle",
-      "image" => article_images
+      "image" => resource_images
+    }
+  end
+
+  def article_breadcrumbs_structured_data
+    crumbs = [
+      {
+        "@id" => "https://ashfurrow.com",
+        "name" => "Ash Furrow",
+        "image" => data.site.ash_picture
+      }
+    ]
+
+    if current_article.nil?
+      crumbs << {
+        "@id" => absoluteify(current_resource.url),
+        "name" => current_resource.metadata[:page][:title],
+        "image" => resource_images.first
+      }
+    else
+      crumbs += [
+        {
+          "@id" => "https://ashfurrow.com/blog",
+          "name" => "Blog",
+          "image" => absoluteify(data.site.dark_image)
+        },
+        {
+          "@id" => absoluteify(current_article.url),
+          "name" => current_article.title,
+          "image" => resource_images.first
+        }
+      ]
+    end
+
+    item_list = crumbs.map.with_index do |crumb, index|
+      {
+        "@type" => "ListItem",
+        "position" => index + 1,
+        "item" => crumb
+      }
+    end
+
+    {
+      "@context" => "http://schema.org",
+      "@type" => "BreadcrumbList",
+      "itemListElement" => item_list
     }
   end
 
@@ -58,7 +104,7 @@ module StructuredDataHelpers
     recent_post_markups = page_articles.map.with_index do |post, index|
       {
         "@type" => "ListItem",
-        "position" => index+1,
+        "position" => index + 1,
         "url": absoluteify(post.url)
       }
     end
@@ -79,12 +125,13 @@ module StructuredDataHelpers
     url
   end
 
-  def article_images
-    doc = Nokogiri::HTML(current_article.body)
-    [
-      absoluteify(current_resource.metadata[:page][:og_image]),
-      doc.xpath("//img").map { |img| absoluteify(img["src"]) },
-      absoluteify(current_resource.metadata[:page][:background_image])
-    ].flatten.compact.uniq
+  def resource_images
+    images = [absoluteify(current_resource.metadata[:page][:og_image])]
+    unless current_article.nil?
+      doc = Nokogiri::HTML(current_article.body)
+      images += doc.xpath("//img").map { |img| absoluteify(img["src"]) }
+    end
+    images << absoluteify(current_resource.metadata[:page][:background_image])
+    images.compact.uniq
   end
 end
