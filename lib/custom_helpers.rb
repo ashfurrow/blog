@@ -28,7 +28,6 @@ module CustomHelpers
     data.site.name
   end
 
-
   def og_title(current_article, current_resource)
     if current_resource
       title = current_resource.metadata[:page][:title]
@@ -114,7 +113,7 @@ module CustomHelpers
   end
 
   # Takes raw HTML rendered from post and turns it into something consumable by feeds.
-  def prepare_feed_content (body)
+  def prepare_feed_content(body)
     # Expand any relative URLs
     body.gsub!('src="/img/', 'src="https://ashfurrow.com/img/') unless body.nil?
 
