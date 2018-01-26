@@ -52,7 +52,6 @@ jQuery(document).ready(function($) {
     });
     $('#search').val(queries['q'])
 
-
     // Download search index and then set up search.
     // jQuery provides nicer syntax for this async download. 
     $.ajax({
