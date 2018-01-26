@@ -1,13 +1,10 @@
 module StructuredDataHelpers
   def structured_data_markup
-    puts "Hi!"
-    puts "Current Resource: #{current_resource}"
-    puts "Current Article: #{current_article}"
-
     [
       person_structured_data,
       web_site_structured_data,
-      article_structured_data
+      article_structured_data,
+      index_summary_carousel_structured_data
     ].compact.map(&:to_json)
     .map do |markup|
       (
@@ -55,6 +52,24 @@ module StructuredDataHelpers
       "image" => article_images
     }
   end
+
+  def index_summary_carousel_structured_data
+    return nil unless current_resource.url == '/'
+    recent_post_markups = page_articles.map.with_index do |post, index|
+      {
+        "@type" => "ListItem",
+        "position" => index+1,
+        "url": absoluteify(post.url)
+      }
+    end
+    {
+      "@context" => "http://schema.org",
+      "@type" => "ItemList",
+      "itemListElement" => recent_post_markups
+    }
+  end
+
+  # Okay so these methods below are, like, EXTRA private.
 
   def absoluteify(url)
     return nil if url.nil?
