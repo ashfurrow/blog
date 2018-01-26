@@ -50,7 +50,22 @@ module StructuredDataHelpers
     {
       "@context" => "http://schema.org",
       "@type" => "NewsArticle",
-      "image" => resource_images
+      "image" => resource_images,
+      "author" => "Ash Furrow",
+      "datePublished" => current_article.date.to_s,
+      "headLine" => current_article.title,
+      "mainEntityOfPage" => {
+        "@type" => "WebPage",
+        "@id" => absoluteify(current_resource.url)
+      },
+      "publisher" => {
+        "@type" => "Organization", # lol
+        "name" => "Ash Furrow",
+        "logo" => {
+          "@type": "ImageObject",
+          "url" => data.site.ash_picture
+        }
+      }
     }
   end
 
