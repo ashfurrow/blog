@@ -13,7 +13,7 @@
 <meta content="https://ashfurrow.com/blog/optimizing-core-data-saves/" itemprop="url">
 <meta content="I recently transitioned from keeping data models in memory to persisting them to disc using Core Data. There are a lot of good reasons to do this. This article discusses the finer points of optimizing an application for important data from an external API, storing it in Core Data, and displaying it to the user without adversely affecting performance of the app. The existing set was fairly elegant; synchronous API fetches were performed in a background thread and invoked using another layer whose responsibility it was to make these calls asynchronous. View controllers accessed this middle layer and provided GCD blocks as callbacks to be executed when the API fetches were complete. The view controllers didn’t touch any GCD code and the callbacks were all performed on the main queue." itemprop="about">
 <meta content="I recently transitioned from keeping data models in memory to persisting them to disc using Core Data. There are a lot of good reasons to do this. This article discusses the finer points of optimizing an application for important data from an external API, storing it in Core Data, and displaying it to the user without adversely affecting performance of the app. The existing set was fairly elegant; synchronous API fetches were performed in a background thread and invoked using another layer whose responsibility it was to make these calls asynchronous. View controllers accessed this middle layer and provided GCD blocks as callbacks to be executed when the API fetches were complete. The view controllers didn’t touch any GCD code and the callbacks were all performed on the main queue." itemprop="description">
-<meta content="/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<meta content="https://ashfurrow.com/img/siteimage_dark.png" itemprop="thumbnailUrl">
 <meta content="Ash Furrow" property="og:site_name">
 <meta content="Optimizing Core Data Saves" property="og:title">
 <meta content="https://ashfurrow.com/blog/optimizing-core-data-saves/" property="og:url">
@@ -26,8 +26,8 @@
 <meta content="Optimizing Core Data Saves" name="twitter:title">
 <meta content="I recently transitioned from keeping data models in memory to persisting them to disc using Core Data. There are a lot of good reasons to do this. This article discusses the finer points of optimizing an application for important data from an external API, storing it in Core Data, and displaying it to the user without adversely affecting performance of the app. The existing set was fairly elegant; synchronous API fetches were performed in a background thread and invoked using another layer whose responsibility it was to make these calls asynchronous. View controllers accessed this middle layer and provided GCD blocks as callbacks to be executed when the API fetches were complete. The view controllers didn’t touch any GCD code and the callbacks were all performed on the main queue." name="twitter:description">
 <meta content="https://ashfurrow.com/img/import/blog/2011/12/optimizing-core-data/882D2E53441A42C2AAB3429A76BE4192.png" name="twitter:image">
-<link href="/img/siteimage_dark.png" rel="image_src">
-<meta content="/img/siteimage_dark.png" itemprop="image">
+<link href="https://ashfurrow.com/img/siteimage_dark.png" rel="image_src">
+<meta content="https://ashfurrow.com/img/siteimage_dark.png" itemprop="image">
 <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
 <link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
@@ -47,7 +47,18 @@
 <meta content="#da532c" name="msapplication-TileColor">
 <meta content="/mstile-144x144.png" name="msapplication-TileImage">
 <meta content="#398ccc" name="theme-color">
-<script type="application/ld+json">{  "@context": "http://schema.org",  "@type": "Person",  "name": "Ash Furrow",  "url": "https://ashfurrow.com",  "image": "https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg",  "sameAs": [ "https://twitter.com/ashfurrow", "https://instagram.com/ashfurrow", "https://github.com/ashfurrow" ]}</script><script type="application/ld+json">{  "@context": "http://schema.org",  "@type": "Organization",  "url": "https://ashfurrow.com",  "logo": "https://ashfurrow.com/img/siteimage.png"}</script><style type="text/css">html {
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"Person","name":"Ash Furrow","url":"https://ashfurrow.com","image":"https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg","sameAs":["https://twitter.com/ashfurrow","https://instagram.com/ashfurrow","https://github.com/ashfurrow"]}
+</script>
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"WebSite","url":"https://ashfurrow.com","potentialAction":{"@type":"SearchAction","target":"https://ashfurrow.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"NewsArticle","image":["https://ashfurrow.com/img/import/blog/2011/12/optimizing-core-data/882D2E53441A42C2AAB3429A76BE4192.png","https://ashfurrow.com/img/import/blog/2011/12/optimizing-core-data/4F01D11DA49149109B7E2479A6CD6E04.png","https://ashfurrow.com/img/import/blog/2011/12/optimizing-core-data/F9568C934C9C4336A4F088AA00214E33.png","https://ashfurrow.com/img/import/blog/2011/12/optimizing-core-data/B40C0AC973E346BCBFEA78E2BCDE52D3.png","https://ashfurrow.com/img/import/blog/2011/12/optimizing-core-data/A1AD28CC681A48D8A5DA196AB94516F0.png"]}
+</script>
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://ashfurrow.com","name":"Ash Furrow","image":"https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg"}},{"@type":"ListItem","position":2,"item":{"@id":"https://ashfurrow.com/blog","name":"Blog","image":"https://ashfurrow.com/img/siteimage_dark.png"}},{"@type":"ListItem","position":3,"item":{"@id":"https://ashfurrow.com/blog/optimizing-core-data-saves/","name":"Optimizing Core Data Saves","image":"https://ashfurrow.com/img/import/blog/2011/12/optimizing-core-data/882D2E53441A42C2AAB3429A76BE4192.png"}}]}
+</script><style type="text/css">html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
