@@ -1,82 +1,18 @@
+require 'lib/helper_helpers'
+require 'haml'
+
 module CustomHelpers
-
-  # Meta stuff
-
-  def html_title(current_article, current_resource)
+  def html_title
     # If it's an article, generate only this way.
-    if current_article
-      return "#{current_article.title} - #{data.site.name}"
-    end
+    return "#{current_article.title} - #{data.site.name}" unless current_article.nil?
+    # Default to the site name if there is no current resource.
+    return data.site.name if current_resource.nil?
+    
+    url = current_resource.url
+    return data.site.name if url == '/'
 
-    # If there is a resource, it is responsible for assigning a title.
-    if current_resource
-      url = current_resource.url
-
-      # Need to check if it's a numbered page or the homepage.
-      if url == '/'
-        return data.site.name
-      elsif url =~ /\/page\/[0-9]+\//
-        page_number = url.split('/')[2]
-        return "#{data.site.name} – Blog – Page #{page_number}"
-      end
-
-      page_title = current_resource.metadata[:page][:title]
-      return page_title + ' - ' + data.site.name unless page_title.nil?
-    end
-
-    # Default to site's name.
-    data.site.name
-  end
-
-  def og_title(current_article, current_resource)
-    if current_resource
-      title = current_resource.metadata[:page][:title]
-      return title unless title.nil?
-    elsif current_article
-      return current_article.title
-    end
-
-    data.site.name
-  end
-
-  def og_image_or_default(current_article, current_resource)
-    image = current_resource.metadata[:page][:og_image]
-
-    if current_article
-      doc = Nokogiri::HTML(current_article.body)
-      image ||= doc.xpath("//img").map { |img| img["src"] }.first
-    end
-
-    image ||= current_resource.metadata[:page][:background_image]
-
-    # Default image
-    image ||= data.site.dark_image
-
-    if image[0] == '/'
-      image = "https://ashfurrow.com#{image}"
-    end
-
-    image
-  end
-
-  def og_image_or_background(current_resource)
-    image = current_resource.metadata[:page][:og_image]
-    image ||= current_resource.metadata[:page][:background_image]
-
-    if image && image[0] == '/'
-      image = "https://ashfurrow.com#{image}"
-    end
-
-    image
-  end
-
-  def twitter_card_type(current_resource)
-    if current_resource.metadata[:page][:og_image]
-      'summary_large_image'
-    else
-      'summary'
-    end
-
+    page_title = current_resource.metadata[:page][:title]
+    return page_title + ' - ' + data.site.name
   end
 
   def page_description
@@ -97,18 +33,7 @@ module CustomHelpers
       }.reduce('', :+).strip
     end
 
-    # If there is a resource, it is responsible for assigning a title.
-    if current_resource
-      url = current_resource.url
-
-      # Need to check if it's a numbered page.
-      if url =~ /\/page\/[0-9]+\//
-        page_number = url.split('/')[2]
-        description = "#{data.site.name}'s Blog – Page #{page_number}."
-      end
-    end
-
-    description or data.site.description
+    description || data.site.description
   end
 
   # Takes raw HTML rendered from post and turns it into something consumable by feeds.
@@ -126,8 +51,6 @@ module CustomHelpers
 
     body
   end
-
-  require 'haml'
 
   # Divs' Widths
 

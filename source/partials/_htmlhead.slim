@@ -1,7 +1,7 @@
 meta charset='utf-8' /
 meta content='IE=edge' http-equiv='X-UA-Compatible'/
 
-title =html_title(current_article, current_resource)
+title =html_title
 
 / Feed Tags
 = feed_tag :atom, data.site.feed_link, title: 'Atom Feed'
@@ -21,19 +21,19 @@ meta itemprop='thumbnailUrl' content=data.site.dark_image /
 
 / Open Graph
 meta property='og:site_name' content=data.site.name /
-meta property='og:title' content=og_title(current_article, current_resource) /
+meta property='og:title' content=og_title /
 meta property='og:url' content=this_url /
 meta property='og:type' content='website' /
 meta property='og:description' content=page_description /
-meta property='og:image' content=og_image_or_default(current_article, current_resource) /
+meta property='og:image' content=og_image_or_default /
 
 / Twitter Cards
-meta name='twitter:card' content=twitter_card_type(current_resource) 
-meta name='twitter:site' content='@ashfurrow' 
-meta name='twitter:creator' content='@ashfurrow' 
-meta name='twitter:title' content=og_title(current_article, current_resource) 
-meta name='twitter:description' content=page_description 
-meta name='twitter:image' content=og_image_or_default(current_article, current_resource) 
+meta name='twitter:card' content=twitter_card_type /
+meta name='twitter:site' content='@ashfurrow' /
+meta name='twitter:creator' content='@ashfurrow' /
+meta name='twitter:title' content=og_title /
+meta name='twitter:description' content=page_description /
+meta name='twitter:image' content=og_image_or_default /
 
 / Favicon site icons etc
 link rel='image_src' href=data.site.dark_image 
