@@ -1,3 +1,5 @@
+require 'lib/helper_helpers'
+
 module StructuredDataHelpers
   def structured_data_markup
     [
@@ -128,25 +130,5 @@ module StructuredDataHelpers
       "@type" => "ItemList",
       "itemListElement" => recent_post_markups
     }
-  end
-
-  # Okay so these methods below are, like, EXTRA private.
-
-  def absoluteify(url)
-    return nil if url.nil?
-    if url[0] == '/'
-      url.replace "https://ashfurrow.com#{url}"
-    end
-    url
-  end
-
-  def resource_images
-    images = [absoluteify(current_resource.metadata[:page][:og_image])]
-    unless current_article.nil?
-      doc = Nokogiri::HTML(current_article.body)
-      images += doc.xpath("//img").map { |img| absoluteify(img["src"]) }
-    end
-    images << absoluteify(current_resource.metadata[:page][:background_image])
-    images.compact.uniq
   end
 end

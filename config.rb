@@ -1,5 +1,6 @@
 require 'lib/custom_helpers'
 require 'lib/structured_data_helpers'
+require 'lib/open_graph_helpers'
 require 'lib/add_links_to_navigation.rb'
 require 'lib/modify_widths.rb'
 require 'lib/embed.rb'
@@ -48,6 +49,7 @@ end
 
 helpers CustomHelpers
 helpers StructuredDataHelpers
+helpers OpenGraphHelpers
 
 activate :syntax
 activate :directory_indexes
