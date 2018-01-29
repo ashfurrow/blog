@@ -27,7 +27,7 @@ It took some time to get a response, but eventually they gave us tentative permi
 
 ---
 
-You probably don't know this about me, because it's not been a part of my life for some time, but I played piano _daily_ from ages 11 to 18.
+You probably don't know this about me because it's never been a part of my adult life, but I played piano _daily_ from ages 11 to 18.
 
 I had to ask my parents, repeatedly and for what felt like forever, to get a piano. Piano's aren't exactly cheap, or even easy to actually buy. And so, I was given a... well, I don't remember what they were called but I thought of them as tests. These were characteristic of my childhood: demonstrate the responsibility necessary to earn a privilege.
 
@@ -51,12 +51,6 @@ After graduating, I left my home town to go to university. I lost my musical sup
 
 Attendees would start trickling in soon. I had less than a half hour before [peer lab][] started, so I had to hurry getting set up. I'd already printed off [sheet music][] of _The Entertainer_, a ragtime jazz song I had memorized in grade 8. I wanted my re-introduction to piano to be gentle. I was nervous, but excited.
 
-BEGIN_WIDE
-
-<iframe width="100%" height="394" src="https://musescore.com/user/3471/scores/1352881/embed" frameborder="0" allowfullscreen></iframe><span><a href="https://musescore.com/user/3471/scores/1352881">The Entertainer</a> by <a href="https://musescore.com/user/3471">zebulon</a></span>  
-  
-END_WIDE
-
 I sit down. I begin, slow at first. Then faster. Then I blink. I look down at my watch: a half hour had passed. How could a half hour had already passed? I had to stop, it was difficult.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I was there for peer lab this morning and snuck away for about a half hour of piano. Had some trouble remembering the bass clef notation, but it came back to me pretty quickly! I am excited.</p>&mdash; The SI Unit Respecter (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/954809752239865858?ref_src=twsrc%5Etfw">January 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -75,7 +69,7 @@ I'm glad I have a supportive partner. She's excited to get to know this part of 
 
 I don't know what's about to happen, but for the first time since August, I feel like things are about to _improve_. Like, it's been a while since I've felt _anything_ was going to improve; best-case scenario was things only stayed as bad as they are. And today, something is changed. I feel optimistic again. And I intend to capitalize on that optimism: through therapy, I have learned to fold improvements in my mood back in on themselves. Feedback loops. The virtuous complement to the [vicious circles][] I had experienced with depression. 
 
-Medication changes I started two months ago have finally stabilized, and have brought me back to the frame of mind I had in August: ready to turn the page on this depressive chapter of my life and move forward.
+Medication changes I started two months ago have finally stabilized, and have brought me back to the frame of mind I had in August: ready to turn the page on this depressive chapter of my life and move forward. It's ironic that I'm looking to something from my past, music, in order to move forward. But we live in ironic times!
 
 [learning guitar]: /blog/learning-guitar/
 [struggling]: /blog/proprioception/
