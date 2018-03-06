@@ -1,4 +1,10 @@
 upcoming_talks:
+- name: Building Better Software by Building Better Teams
+  conference: Appdevcon
+  url: http://appdevcon.nl
+  location: Amsterdam, The Netherlands
+  dates: March 16, 2018
+  image: appdevcon.png
 
 past_talks:
 - name: Building Open Source Communities
