@@ -6,6 +6,42 @@
     <description>Learning and teaching about interesting topics in iOS Development. Sometimes I diverge to talk about design, photography, or what-have-you.</description>
     <link>https://ashfurrow.com/</link>
     <item>
+      <title>Mood Improvements</title>
+      <link>https://ashfurrow.com/blog/mood-improvements/</link>
+      <description>&lt;p&gt;Okay so it&amp;rsquo;s been over a month since I &lt;a href="/blog/progress-and-pianos/"&gt;last checked in&lt;/a&gt; about how my mood was doing. It&amp;rsquo;s better! But I have this habit of believing that everything is improving because I feel good &lt;em&gt;at the moment&lt;/em&gt;, despite continued problems in my mood. So I&amp;rsquo;ll go to my psychiatrist and she&amp;rsquo;ll say &amp;ldquo;how&amp;rsquo;ve you been this week?&amp;rdquo; and I&amp;rsquo;ll say &amp;ldquo;great!&amp;rdquo; because I feel good &lt;em&gt;at that moment&lt;/em&gt;, and it prevents me from acknowledging the problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;But this time, I have data! My friend Felix wrote a &lt;a href="https://github.com/KrauseFx/mood"&gt;small Telegram app&lt;/a&gt; that texts you three times a day to ask how you&amp;rsquo;re feeling. Nice.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mood-improvements/screenshot.png" alt="A screenshot of the app I'm using to track my mood" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;I&amp;rsquo;ve been particularly keen to see the data over the past week, since I just today have my second weekly session with a new therapist. Last Friday, she gave me some exercises to practice my observation skills, and encouraged me to begin meditating again. With the help of &lt;a href="https://www.headspace.com"&gt;Headspace&lt;/a&gt;, I&amp;rsquo;ve been meditating twice a day: once in the morning and once in mid-afternoon in Artsy&amp;rsquo;s meditation room.&lt;/p&gt;
+
+&lt;p&gt;Okay so on to the data. I started collecting it just over a month ago, so I&amp;rsquo;ve got a few weeks before starting therapy and meditation, and a week afterwards. I&amp;rsquo;ve marked on the image below when I started, and the data is available in plaintext format &lt;a href="https://gist.github.com/ashfurrow/752aab4da069076ad893a88cc2a983a0"&gt;here&lt;/a&gt; for people with visual impairments.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/mood-improvements/mood.png" alt="A graph of my mood over the past month" /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;Okay, nice. So things were pretty turbulent there before begining therapy. Mostly bouncing around 3 (good, alright) and (down, worried). There are three dips down to 0 (miserable, nervous), which represent, uh, very very bad moods where I felt at my lowest. With all that is implied.&lt;/p&gt;
+
+&lt;p&gt;But hey look! For the past week, my mood has been almost entirely 3 (good, alright) or 4 (happy, excited)! Awesome news. I finally feel like things might be improving &lt;em&gt;and&lt;/em&gt; I have the data to back up that feeling.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;If you want to track your mood with software, you have a few options. There&amp;rsquo;s the app I&amp;rsquo;m using that I linked to earlier, as well as &lt;a href="https://expo.io/@kkemple/hwyd"&gt;HWYD&lt;/a&gt;, detailed in &lt;a href="https://medium.com/@kurtiskemple/introducing-hwyd-an-app-for-graphing-depression-442a508c2016"&gt;this awesome blog post&lt;/a&gt; and is &lt;a href="https://github.com/kkemple/hwyd"&gt;also open source&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 09 Mar 2018 22:39:02 +0000</pubDate>
+      <guid>https://ashfurrow.com/blog/mood-improvements/</guid>
+    </item>
+    <item>
       <title>Progress and Pianos</title>
       <link>https://ashfurrow.com/blog/progress-and-pianos/</link>
       <description>&lt;p&gt;For over a year now, I have been &lt;a href="/blog/learning-guitar/"&gt;learning guitar&lt;/a&gt;. And it&amp;rsquo;s been going great, but also not great. I enjoy guitar, but I am still very much &lt;em&gt;learning&lt;/em&gt; guitar. I&amp;rsquo;m not proficient in the styles I want to be. And, I have plateaued. There are songs I listen to, &lt;em&gt;want&lt;/em&gt; to learn, but can&amp;rsquo;t. Not because the songs are too advanced, but because of &lt;em&gt;me&lt;/em&gt;.&lt;/p&gt;
@@ -307,134 +343,6 @@
 </description>
       <pubDate>Wed, 06 Dec 2017 19:52:16 +0000</pubDate>
       <guid>https://ashfurrow.com/blog/the-s-word/</guid>
-    </item>
-    <item>
-      <title>So Steven Universe, eh?</title>
-      <link>https://ashfurrow.com/blog/so-steven-universe-eh/</link>
-      <description>&lt;p&gt;There&amp;rsquo;s a TV show called &lt;em&gt;Steven Universe&lt;/em&gt; that I highly recommend, to anyone. To everyone, actually. I&amp;rsquo;m rewatching it now and I&amp;rsquo;ve got some notes on what appeals to me in the show. Maybe it would appeal to you, too.&lt;/p&gt;
-
-&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;If you’re looking for a distraction from the depressing hellscape of 2017, I can’t recommend Steven Universe enough. &lt;a href="https://t.co/pymOPd086g"&gt;pic.twitter.com/pymOPd086g&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ash &amp;ldquo;Thanksgiving Belongs in October&amp;rdquo; Furrow (@ashfurrow) &lt;a href="https://twitter.com/ashfurrow/status/925891391737143296?ref_src=twsrc%5Etfw"&gt;November 2, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; &lt;/p&gt;
-
-&lt;p&gt;Even if you&amp;rsquo;ve never watched cartoons or did but didn&amp;rsquo;t enjoy them, I encourage you to set that aside and give &lt;em&gt;Steven Universe&lt;/em&gt; a try anyways. It&amp;rsquo;s obviously a cartoon and it&amp;rsquo;s obviously aimed at kids, but the metaphors in the show make it inclusive to folks from all kinds of different backgrounds. Even adults. It&amp;rsquo;s not a &lt;em&gt;kid&amp;rsquo;s show&lt;/em&gt; as much as it is a show that is accessible &lt;em&gt;to&lt;/em&gt; kids.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Steven Universe&lt;/em&gt; is an adventure dramedy that tells stories around a cast of believable characters – with hopes and flaws – centred around the titular Steven&amp;rsquo;s coming-of-age story. The show also tells a long, drawn-out sci-fi about intergalactic beings that colonize planets to mine their raw materials.&lt;/p&gt;
-
-&lt;p&gt;So there are a few things that really stand out in the show. Here&amp;rsquo;s a tl;dr list, continue reading for more details.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Excellent pacing.&lt;/li&gt;
-&lt;li&gt;Large stories, told with restraint.&lt;/li&gt;
-&lt;li&gt;Consistent and cohesive lore.&lt;/li&gt;
-&lt;li&gt;Phenomenal music.&lt;/li&gt;
-&lt;li&gt;Believable characters.&lt;/li&gt;
-&lt;li&gt;Spectacular Art.&lt;/li&gt;
-&lt;li&gt;A non-judgemental narrative style.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let&amp;rsquo;s go into detail!&lt;/p&gt;
-
-&lt;h2 id="pacing"&gt;Pacing&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Steven Universe&lt;/em&gt; is a masterclass in pacing. The story takes place on a kind of slightly-alternate Earth, and it spans back thousands of years to a war. Through telling stories relating to that war, the characters are developed over the course of 11-minute episodes. &lt;/p&gt;
-
-&lt;p&gt;There are no filler episodes; each episode contributes to character development in some way, and usually ties in with the broader story. There are often 3–5 episode arcs that tie together, but each episode is a self-contained story. This is a nice balance between the episodic monster-of-the-week style and the Battlestar Galactica style where only a few episodes can be watched in isolation.&lt;/p&gt;
-
-&lt;h2 id="lore"&gt;Lore&lt;/h2&gt;
-
-&lt;p&gt;The lore and world-building in &lt;em&gt;Steven Universe&lt;/em&gt; is remarkable in its consistency and cohesion with both the art and the plot. It builds upon itself, setting up a stable foundation upon which to grow the characters and tell their stories.&lt;/p&gt;
-
-&lt;p&gt;To give you a taste, here&amp;rsquo;s a rough overview of the world (season one/two spoilers):&lt;/p&gt;
-
-&lt;p&gt;Gems are aliens. They are a kind of magic/technology hybrid and exist as small gemstones embedded in their &amp;ldquo;physical forms&amp;rdquo; – humanoid bodies. These bodies are &amp;ldquo;holograms but with mass&amp;rdquo; and the show has fun with that.&lt;/p&gt;
-
-&lt;p&gt;Gems don&amp;rsquo;t age and they don&amp;rsquo;t change. Gems are created and used for specific purposes and there is no escape from their rigid social hierarchy. And that brings us to the war.&lt;/p&gt;
-
-&lt;p&gt;The Gem War was began on Earth as a rebellion against Homeworld. Earth was being destroyed to serve the purposes of the Diamonds until Rose Quartz stopped them. Countless gems and humans were destroyed, but the resistance successfully fought off Homeworld&amp;rsquo;s forces (for now). Only a few gems survived the last assault on Earth, and they have been living in isolation for thousands of years.&lt;/p&gt;
-
-&lt;p&gt;In the mid-nineties, Rose met Greg (a human). They fell in love and, eventually, decided to have a child. This was unprecedented – gems don&amp;rsquo;t have children, they are grown artificially. Steven was born and the show focuses a lot on his struggle to exist in the space between two races. Not a human, not a gem. Just Steven.&lt;/p&gt;
-
-&lt;h2 id="music"&gt;Music&lt;/h2&gt;
-
-&lt;p&gt;The show weaves music into its narrative in a real thoughtful way. Both background music as well as music featured in the show: Steven plays a ukulele, and his dad plays a guitar. The show&amp;rsquo;s music had an impact on me: this time last year, I picked up a ukulele and have rediscovered how much I enjoy music.&lt;/p&gt;
-
-&lt;p&gt;The voice actors are cast specifically with their singing voices in mind, and Rebecca Sugar (the show&amp;rsquo;s creator) really emphasizes how important the music is by playing a lot of the songs herself.&lt;/p&gt;
-
-
-
-&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/usXTGY4anrQ' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-
-
-&lt;p&gt;Oh, and the soundtrack is &lt;a href="https://open.spotify.com/album/3fNVnjSRQ3oW4PUIKvrThu"&gt;available on Spotify&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="characters"&gt;Characters&lt;/h2&gt;
-
-&lt;p&gt;Okay so the characters! The adolescent Steven lives with the gems leftover from the war, and is also raised by his father Greg.&lt;/p&gt;
-
-&lt;p&gt;Rose and Greg wanted to have a child, but Rose understood this would require a sacrifice. She would have to permanently give up her physical form to give birth. This serves as an analogue to dying during childbirth, except that Rose &lt;em&gt;knew&lt;/em&gt; that the beginning of Steven&amp;rsquo;s existence would mark the end of her own.&lt;/p&gt;
-
-&lt;p&gt;So fast forward: Steven is living with the gems and spends a lot of time with his father. The two groups don&amp;rsquo;t really get along. Some of the gems blame Greg for Rose being gone, and they struggle with complicated feelings towards their roles in Steven&amp;rsquo;s life.&lt;/p&gt;
-
-&lt;p&gt;Each gem has their own distinct origins. Greg has a backstory too. These are all explored in really interesting and thoughtful ways. Side-characters too! You will never see a character only once, they &lt;em&gt;always&lt;/em&gt; reappear. Here&amp;rsquo;s a very small (but very representative) example: in Season Two, we explore the origins of a side-character, and that origin story briefly features this gem in a flashback:&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/so-steven-universe-eh/lapis.jpg" alt="Lapis is poofed by Bismuth" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;Later, in Season Three, we meet the gem again learn more about her relationship to Rose and her role in the war.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/so-steven-universe-eh/bismuth.jpg" alt="Steven meets Bismuth" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;I mean, what? I didn&amp;rsquo;t see this coming at all – and these kinds of hints are scattered throughout the show&amp;rsquo;s art.&lt;/p&gt;
-
-&lt;h2 id="art"&gt;Art&lt;/h2&gt;
-
-&lt;p&gt;The art in the show is spectacular. &lt;em&gt;Steven Universe&lt;/em&gt; uses dedicated background artists to help create a cohesive palette of visuals that drive – and are driven by – the plot. It won&amp;rsquo;t do it just to describe, so here are some examples.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/so-steven-universe-eh/tree.jpg" alt="A tree on a hill" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/so-steven-universe-eh/car.jpg" alt="Stevonnie driving" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/so-steven-universe-eh/house.jpg" alt="Steven's kitchen" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://ashfurrow.com/img/blog/so-steven-universe-eh/pearl.jpg" alt="Pearl clutching a sword" /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;The dynamic nature of the show&amp;rsquo;s artwork isn&amp;rsquo;t really represented by still images. The distinctive animation plays a key role. I&amp;rsquo;ve mentioned music already, but music+art+animation combine synergistically to convey a really compelling story. Here&amp;rsquo;s one representative example, with some cool glitchy body horror elements!&lt;/p&gt;
-
-
-
-&lt;div class='embed-responsive embed-responsive-16by9'&gt;&lt;iframe src='//www.youtube.com/embed/Iqp0jlXkNQk' frameborder='0' allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-
-
-&lt;h2 id="non-judgemental-narratives"&gt;Non-judgemental Narratives&lt;/h2&gt;
-
-&lt;p&gt;What I really dig about the show is how non-judgemental it is. No story ever looks down on a character for their ability, stature, job, lifestyle, whatever.&lt;/p&gt;
-
-&lt;p&gt;Take Greg for example. Greg is a burnt-out wannabe rockstar who lives in his van parked beside the carwash (where he works). Rather than depicting Greg as being unable to care for Steven, the relationship between the two is caring and meaningful. The show celebrates how Greg overcomes difficult challenges to support his son. Greg is probably my favourite character.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;I&amp;rsquo;ve presented here a list and explanation of what appeals to me in &lt;em&gt;Steven Universe&lt;/em&gt;, but I&amp;rsquo;ve tried to describe the show only in ways &lt;em&gt;any&lt;/em&gt; show could be evaluated. This analysis misses out on discussing ways the show excels as a piece of &lt;em&gt;culture&lt;/em&gt;. I&amp;rsquo;m not well-suited to describing the show&amp;rsquo;s meaningfulness to groups of people who are underrepresented in media, but the show&amp;rsquo;s makers make efforts to tell stories that are neglected by most television media. &lt;em&gt;Steven Universe&lt;/em&gt; uses metaphors to tell stories that would normally be &amp;ldquo;over the heads&amp;rdquo; of children, tackling topics normally reserved for &lt;em&gt;Degrassi&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;The metaphors, oh the metaphors!&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re keen to start watching the show, there are a few places you can begin with. The first episode, &lt;em&gt;Gem Glow&lt;/em&gt; (S01E01), is a natural place to start; the show finds its footing incredibly quickly. &lt;em&gt;Space Race&lt;/em&gt; (S01E28) is a great way to dive in and get a feel for the show without getting caught up in its lore. And if you want a sneak into the where the show&amp;rsquo;s story is gonna go – while avoiding most spoilers! – try &lt;em&gt;Bismuth&lt;/em&gt; (S03E20). Have fun!&lt;/p&gt;
-</description>
-      <pubDate>Tue, 28 Nov 2017 00:00:01 +0000</pubDate>
-      <guid>https://ashfurrow.com/blog/so-steven-universe-eh/</guid>
     </item>
   </channel>
 </rss>
