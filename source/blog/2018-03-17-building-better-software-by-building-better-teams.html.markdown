@@ -144,13 +144,14 @@ The technical definition of psychological safety is "a measure of the comfort of
 
 Instead, I like to think of psychological safety as "the degree to which your team feels safe learning from its mistakes.” A psychologically safe environment is one where people feel safe asking questions, pointing out and admitting mistakes, and take risks without fear of being ridiculed by their teammates. Only a psychologically safe team is able to examine and learn from their mistakes, without needlessly judging themselves.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Picard management tip: If you never fail, you aren&#39;t going boldly enough.</p>&mdash; Picard Tips (@PicardTips) <a href="https://twitter.com/PicardTips/status/970012685797556225?ref_src=twsrc%5Etfw">March 3, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Picard management tip: If you never fail, you aren&#39;t going boldly enough.</p>&mdash; Picard Tips (@PicardTips) <a href="https://twitter.com/PicardTips/status/970012685797556225?ref_src=twsrc%5Etfw">March 3, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 Every person makes mistakes, and every team makes mistakes. They happen, in every setting imaginable, even on high-stakes medical teams. Like suffering, we can try to avoid and minimize mistakes, but they are inevitable. 
 
 We must must must learn to accept our mistakes and to discuss them. Only then – when your team is comfortable with their own mistakes – will your team be able to learn from them.
 
-When I was researching this talk, I read through the Artsy blog archive. Not the Artsy Engineering blog, but the [_Life at Artsy_][lab] blog. And I came across [this article on open sourcing our company culture][oss_culture], which I collaborated on in 2015, predating my research into team dynamics. 
+When I was researching this talk, I read through the Artsy blog archive. Not the Artsy Engineering blog, but the [_Life at Artsy_][lab] blog. And I came across [this article on open sourcing our company culture][oss_culture], which I collaborated on in 2015, predating my research into team dynamics.
 
 > Being open with your errors and identifying the insights gained can help others avoid the same blunders and keep your team on-track.
 
@@ -200,10 +201,11 @@ And indeed, this kind of synergy has business precedence.
 
 I have many criticisms of how Steve Jobs managed teams, but he did get this right. He famously said:
 
-> It's in Apple's DNA that technology alone is not enough. 
-> It’s technology married with liberal arts, 
-> married with the humanities, 
-> that yields the results that make our hearts sing.
+BEGIN_WIDE
+
+> It's in Apple's DNA that technology alone is not enough.  It’s technology married with liberal arts, married with the humanities, that yields the results that make our hearts sing.
+
+END_WIDE
 
 Wake up, people! He's describing synergy!
 
@@ -257,7 +259,7 @@ The first is a book, [_Awakening Compassion at Work_][awaken], an excellent book
 
 [Compassionate Coding][coding], a firm run by [April Wensel][april], which helps companies build compassionate teams. Check out [their blog][coding_blog] for sure!
 
-[_Operating Manual for Spaceship Earth_][fuller] is a collection of steps that humanity needs to take if it is to survive the 21st century. It profoundly changed the way I think about systems generally, including teams.
+[_Operating Manual for Spaceship Earth_][fuller] is a book by Buckminster Fuller. It is a collection of steps that humanity needs to take if we are to survive the 21st century. It profoundly changed the way I think about systems generally, including teams.
 
 [_Inclusion is a Captain’s Job_][inclusion] by [Danilo Campos][danilo] is a conference talk-turn-blog post about lessons of inclusion from the Star Trek cannon. The _good_ Star Trek cannon. And he 100% presented the talk in a Starfleet Engineering uniform:
 
@@ -269,7 +271,7 @@ Now that we're at the end of this post, I have something really important to tel
 
 **You will never finish.**
 
-You will never finish working towards compassion.
+You will never finish working towards compassion. Your education in compassion, your pursuit of building better teams, will last the rest of your life.
 
 It is *critical* to remember this. Us engineers are used to thinking about tasks in terms of GitHub issues to be closed or Trello cards to move to the “Done” column, but building compassionate teams is _not_ something you can ever call "finished."
 
@@ -285,7 +287,7 @@ You must accept the fact that your work will never **ever** be complete, and you
 [candour]: http://radicalcandor.com
 [candour_book]: http://amzn.to/2HGYVaE
 [lab]: https://medium.com/artsy-blog
-[off_culture]: https://medium.com/artsy-blog/open-sourcing-company-culture-at-artsy-79720cf235cc
+[oss_culture]: https://medium.com/artsy-blog/open-sourcing-company-culture-at-artsy-79720cf235cc
 [io]: https://www.artsy.net/auction/input-output
 [swift]: http://artsy.github.io/series/swift-at-artsy/
 [awaken]: http://amzn.to/2DyJwqo
