@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/Blog">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Building Better Software by Building Better Teams - Ash Furrow</title>
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="//feed.ashfurrow.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="//feed.ashfurrow.com/feed.rss.xml">
+<meta content="width=device-width initial-scale=1 viewport-fit=cover" name="viewport">
+<link href="https://ashfurrow.com/blog/building-better-software-by-building-better-teams/" rel="canonical">
+<meta content="Ash Furrow" itemprop="name">
+<meta content="https://ashfurrow.com/blog/building-better-software-by-building-better-teams/" itemprop="url">
+<meta content="On March 16, 2018, I delivered the opening keynote for Appdevcon, which was titled Building Better Software by Building Better Teams. The video will be available at a later date, but this is important enough to me to write a blog post to accompany the talk. I’ll add the video to this post when it becomes available. In the mean time, this post serves as a kind of pseudo-transcript of the talk." itemprop="about">
+<meta content="On March 16, 2018, I delivered the opening keynote for Appdevcon, which was titled Building Better Software by Building Better Teams. The video will be available at a later date, but this is important enough to me to write a blog post to accompany the talk. I’ll add the video to this post when it becomes available. In the mean time, this post serves as a kind of pseudo-transcript of the talk." itemprop="description">
+<meta content="https://ashfurrow.com/img/siteimage_dark.png" itemprop="thumbnailUrl">
+<meta content="Ash Furrow" property="og:site_name">
+<meta content="Building Better Software by Building Better Teams" property="og:title">
+<meta content="https://ashfurrow.com/blog/building-better-software-by-building-better-teams/" property="og:url">
+<meta content="website" property="og:type">
+<meta content="On March 16, 2018, I delivered the opening keynote for Appdevcon, which was titled Building Better Software by Building Better Teams. The video will be available at a later date, but this is important enough to me to write a blog post to accompany the talk. I’ll add the video to this post when it becomes available. In the mean time, this post serves as a kind of pseudo-transcript of the talk." property="og:description">
+<meta content="https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/professor.jpg" property="og:image">
+<meta content="summary" name="twitter:card">
+<meta content="@ashfurrow" name="twitter:site">
+<meta content="@ashfurrow" name="twitter:creator">
+<meta content="Building Better Software by Building Better Teams" name="twitter:title">
+<meta content="On March 16, 2018, I delivered the opening keynote for Appdevcon, which was titled Building Better Software by Building Better Teams. The video will be available at a later date, but this is important enough to me to write a blog post to accompany the talk. I’ll add the video to this post when it becomes available. In the mean time, this post serves as a kind of pseudo-transcript of the talk." name="twitter:description">
+<meta content="https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/professor.jpg" name="twitter:image">
+<link href="https://ashfurrow.com/img/siteimage_dark.png" rel="image_src">
+<meta content="https://ashfurrow.com/img/siteimage_dark.png" itemprop="image">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<link href="/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+<link href="/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<link href="/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png">
+<link href="/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/manifest.json" rel="manifest">
+<link color="#398ccc" href="/safari-pinned-tab.svg" rel="mask-icon">
+<meta content="#da532c" name="msapplication-TileColor">
+<meta content="/mstile-144x144.png" name="msapplication-TileImage">
+<meta content="#398ccc" name="theme-color">
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"Person","name":"Ash Furrow","url":"https://ashfurrow.com","image":"https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg","sameAs":["https://twitter.com/ashfurrow","https://instagram.com/ashfurrow","https://github.com/ashfurrow"]}
+</script>
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"WebSite","url":"https://ashfurrow.com","potentialAction":{"@type":"SearchAction","target":"https://ashfurrow.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"NewsArticle","image":["https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/professor.jpg","https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/graph.png","https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/graph_filled_in.png","https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/team.jpg","https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/sj.jpg","https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/danilo.jpg","https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/background.jpg"],"author":"Ash Furrow","datePublished":"2018-03-17 07:35:30 UTC","headLine":"Building Better Software by Building Better Teams","mainEntityOfPage":{"@type":"WebPage","@id":"https://ashfurrow.com/blog/building-better-software-by-building-better-teams/"},"publisher":{"@type":"Organization","name":"Ash Furrow","logo":{"@type":"ImageObject","url":"https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg"}}}
+</script>
+<script type="application/ld+json">
+  {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://ashfurrow.com","name":"Ash Furrow","image":"https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg"}},{"@type":"ListItem","position":2,"item":{"@id":"https://ashfurrow.com/blog","name":"Blog","image":"https://ashfurrow.com/img/siteimage_dark.png"}},{"@type":"ListItem","position":3,"item":{"@id":"https://ashfurrow.com/blog/building-better-software-by-building-better-teams/","name":"Building Better Software by Building Better Teams","image":"https://ashfurrow.com/img/blog/building-better-software-by-building-better-teams/professor.jpg"}}]}
+</script><style type="text/css">html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+nav {
+  display: block;
+}
+
+a {
+  background: 0 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.small {
+  font-size: 85%;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-4,
+.col-md-5,
+.col-sm-6,
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:768px) {
+  .col-sm-6 {
+    float: left;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width:992px) {
+  .col-md-5,
+  .col-md-10 {
+    float: left;
+  }
+
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+@media (min-width:1200px) {
+  .col-lg-4,
+  .col-lg-8 {
+    float: left;
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container-fluid > .navbar-header,
+  .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav > li {
+    float: left;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right !important;
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: 'ff-tisa-web-pro', 'Georgia', 'Times New Roman', serif;
+  color: #404040;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+body {
+  -ms-font-feature-settings: "liga";
+  font-variant-ligatures: common-ligatures;
+}
+
+@supports not (font-variant-ligatures: common-ligatures) {
+  body {
+    font-feature-settings: "liga";
+  }
+}
+
+h1,
+h2 {
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #404040;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 3px;
+  border-color: white;
+}
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 1.25em;
+  }
+
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+.intro-header {
+  background: no-repeat center center;
+  background-color: gray;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro-header .site-heading {
+  padding: 6em 0 3em;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 7em 0;
+  }
+}
+
+.intro-header .site-heading {
+  text-align: center;
+}
+
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+
+.intro-header .site-heading .subheading {
+  font-size: 1em;
+  line-height: 1.1;
+  display: block;
+  font-family: 'futura-pt', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 4em;
+  }
+}
+
+body {
+  webkit-tap-highlight-color: #398CCC;
+}
+
+.container .recent-blog-posts ol {
+  padding-left: 0;
+}
+
+.container .recent-blog-posts li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding-top: 0;
+  padding-bottom: 0.25em;
+}
+
+@media (min-width: 768px) {
+  .featured-blog-posts {
+    padding-top: 1em;
+  }
+}
+
+.featured-blog-posts a {
+  color: white;
+}
+
+.featured-blog-posts .embedded {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .featured-blog-posts .embedded {
+    margin-bottom: 1.5em;
+  }
+}
+
+.featured-blog-posts .preview {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  min-height: 6.5em;
+}
+
+@media (min-width: 992px) {
+  .featured-blog-posts .preview {
+    min-height: 6.5em;
+  }
+}
+
+.featured-blog-posts .preview h2 {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.featured-blog-posts h2 {
+  padding-bottom: 0.25em;
+}
+
+@media (min-width: 768px) {
+  .nav .text-link {
+    display: none;
+  }
+}
+
+.nav .icon-link {
+  font-size: 1em;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav .icon-link {
+    display: inherit;
+  }
+}
+
+header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -50px 50px 0px inset;
+  position: relative;
+}
+
+.header-dimmer {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.intro-header {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 2.5em;
+  }
+
+  .intro-header .site-heading .subheading {
+    font-size: 1.25em;
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon.eot?-ar0ypv');
+  src: url('/fonts/icomoon.eot?#iefix-ar0ypv') format("embedded-opentype"), url('/fonts/icomoon.ttf?-ar0ypv') format("truetype"), url('/fonts/icomoon.woff?-ar0ypv') format("woff"), url('/fonts/icomoon.svg?-ar0ypv#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-site-logo:before {
+  content: "\e602";
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format("embedded-opentype"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format("woff"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format("truetype"), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-rss-square:before {
+  content: "\f143";
+}
+</style>
+<script type="text/javascript">// From https://github.com/morris/typekit-cache
+!function(e,t,n,a,r,c,l,s,o){l=a[r],l&&(s=e.createElement("style"),s.innerHTML=l,e.getElementsByTagName("head")[0].appendChild(s),e.documentElement.className+=" wf-cached"),o=t[n],t[n]=function(e,p,u,i){if("string"==typeof p&&p.indexOf(c)>-1){try{u=new XMLHttpRequest,u.open("GET",p,!0),u.onreadystatechange=function(){try{4==u.readyState&&(i=u.responseText.replace(/url\(\//g,"url("+c+"/"),i!==l&&(a[r]=i))}catch(e){s&&(s.innerHTML="")}},u.send(null)}catch(d){}t[n]=o}return o.apply(this,arguments)}}(document,Element.prototype,"setAttribute",localStorage,"tk","https://use.typekit.net");
+
+(function(d) {
+  var config = {
+    kitId: 'fmr6vlo',
+    scriptTimeout: 3000,
+    async: true
+  },
+  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+</script><script type="text/javascript">/*!
+loadCSS: load a CSS file asynchronously.
+[c]2015 @scottjehl, Filament Group, Inc.
+Licensed MIT
+*/
+
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	w.loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var ss = w.document.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else if( w.document.querySelectorAll ){
+			var refs = w.document.querySelectorAll(  "style,link[rel=stylesheet],script" );
+			// No need to check length. This script has a parent element, at least
+			ref = refs[ refs.length - 1];
+		}
+		else {
+			ref = w.document.getElementsByTagName( "script" )[ 0 ];
+		}
+
+		var sheets = w.document.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+		ss.onloadcssdefined = function( cb ){
+			var defined;
+			for( var i = 0; i < sheets.length; i++ ){
+				if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+					defined = true;
+				}
+			}
+			if( defined ){
+				cb();
+			} else {
+				setTimeout(function() {
+					ss.onloadcssdefined( cb );
+				});
+			}
+		};
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		ss.onloadcssdefined(function() {
+			ss.media = media || "all";
+		});
+		return ss;
+	};
+}(this));
+</script><script>loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+loadCSS('/css/all.css');</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9572240-3', 'auto');
+ga('send', 'pageview');</script><noscript><link href="/css/all.css" rel="stylesheet"></noscript>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class="container-fluid">
+<div class="navbar-header page-scroll">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="icon-site-logo"></i></a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav navbar-right">
+<li><a href="/blog">Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/books/">Books</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/speaking/">Speaking</a></li>
+<li>
+<a href="/search" class="text-link">Search</a><a href="/search" class="icon-link"><i class="fa fa-search"></i></a>
+</li>
+<li>
+<a href="//feed.ashfurrow.com/feed.xml" class="text-link">Blog Feed</a><a href="//feed.ashfurrow.com/feed.xml" class="icon-link"><i class="fa fa-rss-square"></i></a>
+</li>
+</ul></div>
+</div></nav><header class="intro-header" style="background-image: url('/img/blog/building-better-software-by-building-better-teams/background.jpg');"><div class="header-dimmer"></div>
+<div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>Building Better Software by Building Better Teams</h1></div></div></div></div>
+<div class="header_image_link_container"><a href="https://twitter.com/CloudyConway/status/974908318815793152"><i class="fa fa-picture-o"></i></a></div></header><div class="container">
+<article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<p>On March 16, 2018, I delivered the opening keynote for <a href="http://appdevcon.nl">Appdevcon</a>, which was titled <em>Building Better Software by Building Better Teams</em>. The video will be available at a later date, but this is important enough to me to write a blog post to accompany the talk. I’ll add the video to this post when it becomes available. In the mean time, this post serves as a kind of pseudo-transcript of the talk.</p>
+
+<p></p>
+
+<hr>
+
+<p>Hello! I’m Ash Furrow, and I’ve been writing iOS apps since 2009. I’ve also helped build business-critical systems in Swift, Objective-C, Node, Scala, Rails, React – all kinds of stuff. And today we’re going to talk about how we can build better software by building better teams.</p>
+
+<p>Two and a half years ago I wrote <a href="/blog/building-online-communities/">this blog post</a> about building online communities. It was inspired by seeing a talk by <a href="https://twitter.com/searls">Justin Searls</a> called <a href="https://www.youtube.com/watch?v=e_-qV8waPVM"><em>The Social Coding Contract</em></a> about online communities. That month I wrote <a href="/blog/building-my-career/">another post</a> about how the next step in my career was going to become a community-builder: someone who builds teams. I ran that idea by my manager at Artsy, and then by our CTO, and I had their full support. </p>
+
+<p>I began researching team dynamics, community structures, and online empathy. Part of my job became to learn about team building and apply it to Artsy.
+I’m not an expert in this field, but I’ve focused the past two and a half years on learning how to build teams, online and in-person, both in open source and business contexts.</p>
+
+<p>When I started, I wrote the following:</p>
+
+<blockquote>
+<p>… believing in something isn’t enough to make it happen. It takes planning and consistent action.</p>
+</blockquote>
+
+<p>I’m still learning, and I’m still working on these skills. And today, I’m really excited to share some of what I’ve learned with all of you. So let’s get started!</p>
+
+<p>My goal today is to convince you that team building improves software quality, and to provide you with a vocabulary to discuss team quality.</p>
+
+<h2 id="team-quality-affects-software-quality">
+<a class="header-link" href="#team-quality-affects-software-quality">#</a> Team Quality Affects Software Quality</h2>
+
+<p>Before we discuss how to use the quality of a team to influence the quality of the software produced, we need to define the relationship between team quality and software quality.</p>
+
+<p>So let’s step back and think at a slightly higher level. Developers often think that software teams are unique or special among teams, but that’s not true from an organizational perspective. We tend to think that building software is unique among other types of work, that we have unique needs and distinct characteristics that mean that organizational behaviour principles don’t apply to us. But <em>every</em> type of worker is unique and <em>every</em> field has their own distinct way of working. We can acknowledge what makes building software unique while still looking to other fields for lessons in structuring teams.</p>
+
+<p>Let’s borrow observations of other types of teams and apply them to teams of software developers.</p>
+
+<p><img src="/img/blog/building-better-software-by-building-better-teams/professor.jpg" alt="Photo of Professor Amy Edmondson"></p>
+
+<p>Amy Edmondson is a professor of Leadership at Harvard Business School. She was studying medical teams in hospital settings in the 90’s, and wanted to establish a correlation between patient outcomes (post-operation complications, things that can be easily and objectively measured) with team quality. She initially hypothesized that teams that reported making the fewest mistakes would be the ones with the best patient outcomes, but was surprised to find the exact opposite: teams with better patient outcomes reported making <em>more</em> mistakes.</p>
+
+<p>Investigating further, she discovered that teams with poorer outcomes were reluctant to admit mistakes because they feared being humiliated or shamed by their peers. So mistakes were hidden. This prevented the team from learning from the mistake and preventing the same mistake from happening again.</p>
+
+<p>In contrast, effective teams (with better patient outcomes) readily discussed their mistakes. That way, everyone was able to learn from them. They felt safe to ask questions and suggest ideas, too, without fear of being ridiculed. The team’s outcomes benefited greatly from the individuals’ freedom from fear of humiliation.</p>
+
+<p>Her research led Professor Edmondson to a concept she named “psychological safety.” We’ll get into what that means later.</p>
+
+<p>My point is that the relationships between team members (the quality of a medical team) had a direct and measurable impact on the quality of the team’s output (patient health). The medical staff who were comfortable admitting and reporting mistakes knew that they would not be ridiculed or judged for them, and so the whole team benefited from the learning opportunities of those mistakes. </p>
+
+<p>We can generalize a bit: just as the quality of the medical team affected the quality of patient outcomes, team quality <em>generally</em> affects team outcomes. Since software teams are teams like any other, the quality of the software team is going to affect the quality software they produce. </p>
+
+<ul>
+<li>A junior developer thinks they see problem in the network layer of an app. It was written by a senior member of the team. Will they feel comfortable pointing it out to their team?</li>
+<li>A programmer at your startup is rushed by a deadline. They are exhausted and have started making mistakes. Will they feel comfortable getting the rest they need in order to keep your app from crashing during an investor pitch?</li>
+<li>A designer sees a complex animation that’s been implemented incorrectly, breaking the visual metaphor of the whole app. There’s not enough time to re-implement it from scratch, will the designer approach the app developer and work together on a compromise for v1?</li>
+</ul>
+
+<p>(Note: I didn’t say so during my talk, but the developer in each of these examples was… me!)</p>
+
+<p><strong>The prime directive</strong> of this post is: everyone on your team assumes that everyone else on the team is doing their best work, given their circumstances. When you start from that shared understanding – that you’re all doing your best you can – you can foster a compassionate working environment. </p>
+
+<h2 id="compassion-facilitates-teamwork">
+<a class="header-link" href="#compassion-facilitates-teamwork">#</a> Compassion Facilitates Teamwork</h2>
+
+<p>Suffering is a normal and inevitable part of life. Since work is a part of life, suffering <em>will</em> be a part of work, too.</p>
+
+<p>But just because suffering is inevitable doesn’t mean that <em>all</em> suffering is inevitable. It can be avoided, and it can be minimized. Compassion is defined as the process of minimizing suffering. And in that sense, “compassion” is an optimization problem: to minimize suffering. </p>
+
+<p>Being compassionate in our teams is about <em>minimizing</em> the suffering of our teammates (and ourselves!). </p>
+
+<p>Optimizing something – anything – is something developers specialize in. We optimize app launch times, memory footprints, scrolling performance, so we should approach compassionate work on those terms.</p>
+
+<p>So how does one minimize suffering? Well there are two main ways:</p>
+
+<ul>
+<li>Respond to suffering with respectful inquiry.</li>
+<li>Anticipate suffering and avoid/minimize it.</li>
+</ul>
+
+<p>This can be really hard because it requires empathy, which is a skill that developers are not known for. But that’s only because we don’t practice those skills! Every programmer and every human being is capable of empathy; it is only a matter of practicing the skill until it becomes a habit.</p>
+
+<p>Theresa Wiseman, a nursing academic, conducted <a href="http://onlinelibrary.wiley.com/doi/10.1046/j.1365-2648.1996.12213.x/full">a literature review</a> of the study of empathy and concluded that empathy consists of four necessary components:</p>
+
+<ol>
+<li>Sharing another person’s perspective.</li>
+<li>Sharing another person’s feelings.</li>
+<li>Staying non-judgemental about those thoughts and feelings.</li>
+<li>Communicating that you understand (in a non-judgemental way).</li>
+</ol>
+
+<p>That last one gets missed a lot. It is not enough to understand what a person is thinking, to understand what they’re feeling, and to stay non-judgemental. Empathy involves <em>communicating</em> your understanding back to the other person.</p>
+
+<p>These individually are skills that you can practice. They are skills that I am still practicing, too.</p>
+
+<p><strong>Responding to suffering</strong> with empathy is done through “inquiry work”, and is difficult to get right. But, like empathy, it is a skill that you can develop.
+When inquiring about a colleague’s suffering, stay respectful. Frame your inquiry around genuine concern and the prime directive. Remember: everyone assumes that everyone else is doing their best.</p>
+
+<ul>
+<li>If a team member’s number of commits have dropped, will you inquire about potential suffering or leave them alone to face disciplinary action later on?</li>
+<li>If one team member harshly reviews another team member’s code in a pull request, will you inquire about why they were harsh or leave them alone, lowering the bar for tolerable behaviour on your team?</li>
+<li>If an open source developer expresses remorse about not fixing an bug sooner, will you inquire about why they feel bad (and remind them that open source developers are volunteers) or leave them alone to feel needlessly bad?</li>
+</ul>
+
+<p>This can all be difficult, and it is definitely easier to ignore these situations. In fact, it is tempting to <em>not</em> inquire about suffering out of some misplaced sense of empathy. But if someone’s work performance has dropped, is it really better to ignore their suffering until the point that disciplinary action is required?</p>
+
+<p><strong>Anticipating suffering</strong> also involves empathy, but in a different way. We can’t inquire about how they’re feeling about an event that hasn’t occurred yet, so we have to use our intuition and empathy to construct and idea of what they <em>could</em> feel and think.</p>
+
+<p>Once you understand someone’s thoughts and feelings without judging them, you can begin to anticipate how events will affect them. Even if you don’t know a person well, focus on the similarities you have with them to foster empathy. Are they working in a similar field? Are they at a similar career stage as you? Are they working in the same company? These similarities help you empathize.</p>
+
+<ul>
+<li>The end of a sprint is approaching. Will you investigate your teammates’ wellbeing or leave them alone until after the sprint has failed to find out that they needed help?</li>
+<li>If your team is switching from Swift to React Native, will you talk about a teammate’s possible apprehension around being left behind or leave them alone so they feel isolated?</li>
+<li>If there is going to be a change in team reporting structure, will you inquire about a colleague’s apprehension about a prospective change or leave them alone to find out via email and let their imaginations run wild?</li>
+</ul>
+
+<p>Compassion is an optimization problem: to minimize suffering. And we can do that through inquiry work when we notice suffering, and through anticipating suffering to avoid it.</p>
+
+<p>Moving on from minimizing suffering, we come to another powerful tool of effective teams: feedback.</p>
+
+<blockquote>
+<p>Feedback is a gift.</p>
+</blockquote>
+
+<p>My colleague says that “feedback is a gift.” When he first told me that, it changed how I thought about feedback. I realized I didn’t feel grateful for the constructive feedback I was getting, and I wasn’t giving adequately constructive feedback either. If I didn’t have something positive to say about a colleague’s work, I didn’t say anything.</p>
+
+<p>I still struggle with this. But I try to make sure the feedback I give is a gift worth receiving, and to listen to feedback I’m given as the gift that it is.</p>
+
+<p>A useful framework for thinking about how to approach our colleagues when something is wrong is called <a href="http://radicalcandor.com">Radical Candour</a>, which is the name of a <a href="http://amzn.to/2HGYVaE">book</a> on the giving and receiving feedback.</p>
+
+<p>Imagine a graph with the vertical axis representing whether or not you care personally about a colleague, and the horizontal axis representing whether or not you’re willing to challenge the directly. </p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+
+<p><img src="/img/blog/building-better-software-by-building-better-teams/graph.png" alt="A graph depicting two axes, representing caring for colleagues vs whether or not you're willing to challenge them directly"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Okay so now we have four possibilities on our graph, but today I want to focus on the top area of the chart, the area where you care personally about the other person. If you don’t care about the person, then… well I <em>could</em> convince you about why you ought to care for your colleagues but I don’t have time for it right now. So let’s assume that you care.</p>
+
+<p>Alright let’s take a look at the top right corner, where you care and you’re willing to challenge directly.</p>
+
+<p>This area is where radical candour lives. It’s when you care enough about a person to ask difficult questions, to share difficult feelings, and to have difficult conversations. It can be an uncomfortable place at times.</p>
+
+<p>Your instinct might be to avoid the difficulties of talking to someone about something uncomfortable. That would be the top left corner of our graph, where you care but you’re unwilling to challenge someone directly.</p>
+
+<p>This area of the graph is called “ruinous empathy” because you care about someone but you’re unwilling to have difficult conversations. It really is ruinous: you think that by avoiding a difficult conversation you might be helping a person, but avoiding difficult conversations is only helping yourself.</p>
+
+<p>(Side note: this is why I get so mad when people diminish non-technical skills as “soft” and imply they aren’t difficult – they are! These are all difficult conversations, but radical candour is a skill and habit you can get better at.)</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+
+<p><img src="/img/blog/building-better-software-by-building-better-teams/graph_filled_in.png" alt="A graph depicting two axes, representing caring for colleagues vs whether or not you're willing to challenge them directly, with labelled quadrants for radical candour and ruinous empathy"></p>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Psychological Safety is a really useful idea that is unfortunately being co-opted and misused by managers and CEOs.</p>
+
+<p>The technical definition of psychological safety is “a measure of the comfort of a team to take interpersonal risks”, but that doesn’t really mean anything unless you do a lot of reading. </p>
+
+<p>Instead, I like to think of psychological safety as "the degree to which your team feels safe learning from its mistakes.” A psychologically safe environment is one where people feel safe asking questions, pointing out and admitting mistakes, and take risks without fear of being ridiculed by their teammates. Only a psychologically safe team is able to examine and learn from their mistakes, without needlessly judging themselves.</p>
+
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">Picard management tip: If you never fail, you aren’t going boldly enough.</p>— Picard Tips (@PicardTips) <a href="https://twitter.com/PicardTips/status/970012685797556225?ref_src=twsrc%5Etfw">March 3, 2018</a>
+</blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<p>Every person makes mistakes, and every team makes mistakes. They happen, in every setting imaginable, even on high-stakes medical teams. Like suffering, we can try to avoid and minimize mistakes, but they are inevitable. </p>
+
+<p>We must must must learn to accept our mistakes and to discuss them. Only then – when your team is comfortable with their own mistakes – will your team be able to learn from them.</p>
+
+<p>When I was researching this talk, I read through the Artsy blog archive. Not the Artsy Engineering blog, but the <a href="https://medium.com/artsy-blog"><em>Life at Artsy</em></a> blog. And I came across <a href="https://medium.com/artsy-blog/open-sourcing-company-culture-at-artsy-79720cf235cc">this article on open sourcing our company culture</a>, which I collaborated on in 2015, predating my research into team dynamics.</p>
+
+<blockquote>
+<p>Being open with your errors and identifying the insights gained can help others avoid the same blunders and keep your team on-track.</p>
+</blockquote>
+
+<p>Now that I have the vocabulary to describe compassionate and toxic workplaces, it’s remarkable to me how well this quote characterizes psychological safety.</p>
+
+<p>Psychological safe work environments are also places where asking questions is a normal and <em>expected</em> part of work. Try to foster an environment of curiosity and learning by asking questions, <em>especially</em> if you’re a senior developer. If you’re only 99% sure you know the answer to a question, then ask it anyway. 99% isn’t enough. </p>
+
+<p>By asking questions, you are signalling to the rest of the team that asking questions is normal, and expected of them. This is especially important for teams with junior developers.</p>
+
+<p>I tend to take ideas to their extremes, and fostering an environment focused on learning is an extreme that I embrace. More important than <em>what</em> your team builds is the <em>learning process</em> of building it. Say that your team is building an app. You’ve never built that app before, right? So instead of focusing on building the app, focus on <em>learning how to build the app</em> and the app itself will naturally follow. Because your teammates care more about learning than they do about being ridiculed for making a mistake or asking a question, you catch bugs faster. You identify bottlenecks sooner. You anticipate problems before they manifest themselves.</p>
+
+<p>Remember: you’re not just learning, you’re learning <em>as a team</em>, so you benefit from <em>everyone’s</em> experience.</p>
+
+<p>Regarding compassion, it is far, far better to extend compassion to someone who might take advantage of it than it is to withhold compassion from someone who might need it. Remember the prime directive: we’re all doing our best; start from that shared understanding and you can foster compassion.</p>
+
+<h2 id="teams-are-the-sum-of-teamwork">
+<a class="header-link" href="#teams-are-the-sum-of-teamwork">#</a> Teams are the Sum of Teamwork</h2>
+
+<p>There’s a really useful term for discussing team work, but before we get there I need to tell you about Buckminster Fuller.</p>
+
+<p>He was an American architect, systems theorist, author, designer, and inventor. President of Mensa. Smart person. And in the 60’s and 70’s, Buckminster Fuller spoke at universities around the world and used that opportunity to popularize a word. The word described an enormously useful idea, and he was aghast that it didn’t catch on.</p>
+
+<p>Sadly, the word did eventually catch on with opportunistic CEOs and product managers. It became overused and through overuse, the word became devalued. Unfortunately, when we devalued the word, we seem to have devalued the idea, too. And that word is… <strong>synergy</strong>.</p>
+
+<blockquote>
+<p>Synergy means behaviour of whole systems unpredicted by the behaviour of their parts taken separately.</p>
+</blockquote>
+
+<p>He also said: "there is nothing in the chemistry of a toenail that predicts the existence of a human being.” If you need a more technical example:there’s nothing in the mechanics of DNS that predicts the existence of the world wide web.</p>
+
+<p>Synergy is essentially a word for the idea that a whole is larger than the sum of its parts.</p>
+
+<p>It’s such a shame that "synergy” has fallen into disuse because this is a very useful idea, and it’s difficult to have a conversation about ideas without actually having a name for them. So: let’s bring “synergy” back! Let’s reclaim it from the waste bin of history. I’m going to use the word “synergy” unironically and I encourage you too as well.</p>
+
+<p><img src="/img/blog/building-better-software-by-building-better-teams/team.jpg" alt="A photo of Artsy staff a the Sotheby's Input/Output auction, October 2015"></p>
+
+<p>This is a photo from 2015, taken at Artsy’s first ever <a href="https://www.artsy.net/auction/input-output">art auction we ran with Sotheby’s</a>, one of the largest auction houses in the world. It was a huge deal – months of work had built up to this night. The future of the Artsy auctions business hinged on this event.</p>
+
+<p>We were all there to ensure that the product we’d built together performed flawlessly. But there are only four engineers in this photo (one of them is the CTO). The rest are auction liaisons, marketers, support staff, project managers, and others.</p>
+
+<p>If you think about how a typical software project is managed, it includes more than just programmers. Technology is the product, but the developers are only a part of that team. A programmer working by themselves would not produce a very compelling product.</p>
+
+<p>It’s the responsibility of the team leaders to facilitate a team structure where the design team, the developer team, the support team, etc are appropriate aware of each other. Not everyone can be aware of what everyone else is doing; cross-team communication can easily become overwhelming, so it needs to be done with care and attention.</p>
+
+<p>And indeed, this kind of synergy has business precedence.</p>
+
+<p><img src="/img/blog/building-better-software-by-building-better-teams/sj.jpg" alt="A photo of Steve Jobs giving a keynote"></p>
+
+<p>(Note: I generally don’t like quoting Steve Jobs in conference presentations because it’s kind of cheating: we all know who he is and we are all familiar with his work. Many of us admire him. But what he has to say applies really well here.)</p>
+
+<p>I have many criticisms of how Steve Jobs managed teams, but he did get this right. He famously said:</p>
+
+        </div> <!-- col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 -->
+      </div> <!-- row -->
+
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+          
+
+<blockquote>
+<p>It’s in Apple’s DNA that technology alone is not enough.  It’s technology married with liberal arts, married with the humanities, that yields the results that make our hearts sing.</p>
+</blockquote>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+<p>Wake up, people! He’s describing synergy!</p>
+
+<p>And he’s describing a <em>business</em> success that is only possible through cross-team collaboration, through knowledge-sharing. A diverse team of teams working towards a common, well-defined goal.</p>
+
+<p>Synergy can exist in any team, but I believe that it is fostered best in teams that exhibit psychological safety. </p>
+
+<p>So what can synergy look like?</p>
+
+<p>At Artsy, I helped run a month-long, once-weekly <a href="http://artsy.github.io/series/swift-at-artsy/">course in Swift</a>. We designed two tracks: one for people who could explain what “Object-Oriented Programming” means, and another for everyone else. </p>
+
+<p>We took care to foster an environment where our non-technical colleagues could learn about coding and ask questions about how programming works. As a result, we fostered a broader work environment where they felt comfortable asking questions. We increased the psychological safety of our team, gave our colleagues the vocabulary to ask even more interesting questions, and we have been rewarded by a better team. A team that feels comfortable asking questions about products <em>before</em> they’re built, pointing out potential bugs <em>before</em> they get written, and contributing in ways we never anticipated.</p>
+
+<p>(Side note: it took a lot of composure not to tear up during this part of my presentation because I’m so proud of the work we’ve done and the work of my non-technical colleagues who took the time to learn more about how software gets built.)</p>
+
+<p>Remember that humans are naturally empathetic. Any parent can tell you that when babies hear another infant crying out, they start crying out too. These infants are only a few days old and don’t have language skills, but they sympathize with other reflexively. This sympathetic crying is hardwired into our brains from birth.</p>
+
+<p>Humans are not Epicureans, driven solely by ration self-interest. I reject psychological egoism. Human beings are complex individuals driven not only by self-interest, but also driven by a fierce need to care for others. Humans are empathetic by nature and it is only when obstacles are erected in our path that we ignore this drive to care.</p>
+
+<p>Society erects social barriers that prevent us from caring for others. These barriers often manifest themselves as judgements we make about others. “That person on the street asking me for money should just get a job” is a judgement, and it shuts down our ability to care for that <em>person</em>.</p>
+
+<p>And so too do workplaces erect barriers to caring, and so too do they manifest as judgements. We judge each other (and ourselves) whenever we use the word “should”. </p>
+
+<ul>
+<li>iOS developers <em>should</em> use Swift instead of Objective-C.</li>
+<li>React Native developers <em>should</em> just learn a real language.</li>
+<li>Designers <em>should</em> just learn to code.</li>
+</ul>
+
+<p>All of these judgements shut down our ability to empathize, to care, and to be compassionate. And we see violations of our prime directive: to assume that everyone is doing the best they can, given their circumstances.</p>
+
+<p>One really common form of these barriers manifesting themselves on software team is what people call “brutal honesty.” There’s this idea that as long as what you’re saying is true, it doesn’t matter how you say it. In fact, how you say something matters just as much as what you’re saying. </p>
+
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">Quick note: your brutal honesty? Ain’t nobody asking for that.<br><br>Where is you clever honesty? Your compassionate honesty? Your insightful honesty? Uplifting? Poetic? Empowering?<br><br>Take your brutal honesty and go sit in the back with all the devil’s advocates.</p>— Quinn Murphy (@qh_murphy) <a href="https://twitter.com/qh_murphy/status/956321955778650112?ref_src=twsrc%5Etfw">January 25, 2018</a>
+</blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<p>Compassionate honesty. What an amazing idea! A form of honesty that tries to minimize suffering. Radical candour doesn’t mean you have to hurt someone’s feelings to tell them a truth – radical candour is only radical because you care, so make sure that your honesty conveys that sense of caring for others.
+Synergy is when a group behaves in a way not predicted by the behaviour of its constituent components. We foster synergy in software teams by being compassionate, by caring for each other, by staying non-judgemental. </p>
+
+<p></p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">Code is never the challenge. Well-rested comfortable people who feel emotionally safe have solved every problem I’ve put in front of them.</p>— C J Silverio can deadlift you (@ceejbot) <a href="https://twitter.com/ceejbot/status/761569569802551300?ref_src=twsrc%5Etfw">August 5, 2016</a>
+</blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<p>In the absence of obstacles, Humans <em>will</em> care.</p>
+
+<p>We foster synergy through psychological safety, and we recognize that humans will care for one another <em>by default</em> if unimpeded by their environment.</p>
+
+<h2 id="conclusion">
+<a class="header-link" href="#conclusion">#</a> Conclusion</h2>
+
+<p>We talked about a lot today. Starting with the connection between team quality and team outcomes, we discussed compassion in the workplace: what it looks like and how to foster it. And we concluded with a discussion of synergy. (I hope you all start using that word!)</p>
+
+<p>I have spent the past two and half years learning about this stuff, and I’m definitely not done. But I’d like to offer a jump-start on your own journeys: I have some recommended reading for you. This is not an exhaustive list, of course, but these are resources that I have found useful in my own path to learning about compassion at work.</p>
+
+<p>The first is a book, <a href="http://amzn.to/2DyJwqo"><em>Awakening Compassion at Work</em></a>, an excellent book that puts the business case forward for compassion.</p>
+
+<p><a href="https://compassionatecoding.com">Compassionate Coding</a>, a firm run by <a href="https://twitter.com/aprilwensel">April Wensel</a>, which helps companies build compassionate teams. Check out <a href="https://medium.com/compassionate-coding">their blog</a> for sure!</p>
+
+<p><a href="http://amzn.to/2pkvGD3"><em>Operating Manual for Spaceship Earth</em></a> is a book by Buckminster Fuller. It is a collection of steps that humanity needs to take if we are to survive the 21st century. It profoundly changed the way I think about systems generally, including teams.</p>
+
+<p><a href="https://write.danilocampos.com/inclusion-is-a-captains-job-5c433726bd33"><em>Inclusion is a Captain’s Job</em></a> by <a href="https://twitter.com/_danilo">Danilo Campos</a> is a conference talk-turn-blog post about lessons of inclusion from the Star Trek cannon. The <em>good</em> Star Trek cannon. And he 100% presented the talk in a Starfleet Engineering uniform:</p>
+
+<p><img src="/img/blog/building-better-software-by-building-better-teams/danilo.jpg" alt="A photo of Danilo Campos giving a presentation while wearing a Starfleet Engineering uniform"></p>
+
+<hr>
+
+<p>Now that we’re at the end of this post, I have something really important to tell you…</p>
+
+<p><strong>You will never finish.</strong></p>
+
+<p>You will never finish working towards compassion. Your education in compassion, your pursuit of building better teams, will last the rest of your life.</p>
+
+<p>It is <em>critical</em> to remember this. Us engineers are used to thinking about tasks in terms of GitHub issues to be closed or Trello cards to move to the “Done” column, but building compassionate teams is <em>not</em> something you can ever call “finished.”</p>
+
+<p>You must accept the fact that your work will never <strong>ever</strong> be complete, and you must commit yourself to the pursuit of the shared compassion of humanity.</p>
+<hr>
+<span class="meta">Posted on March 17, 2018</span>
+</div></div></article><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+<ul class="pager article_pager"><li class="previous"><a href="/blog/mood-improvements/"><div>Mood Improvements</div></a></li></ul>
+</div></div>
+</div>
+<hr id="page_footer">
+<footer><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<ul class="list-inline text-center">
+<li><a href="https://twitter.com/ashfurrow" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="https://github.com/ashfurrow" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="https://photos.ashfurrow.com" title="Photo Blog"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-picture-o fa-stack-1x fa-inverse"></i></span></a></li>
+<li><a href="http://instagram.com/ashfurrow" title="Instagram"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+</ul>
+<p class="copyright text-muted"> This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.</p>
+</div></div></div></footer><script src="//code.jquery.com/jquery-2.1.4.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/javascripts/all.js"></script>
+</body>
+</html>
