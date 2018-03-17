@@ -151,7 +151,7 @@ Every person makes mistakes, and every team makes mistakes. They happen, in ever
 
 We must must must learn to accept our mistakes and to discuss them. Only then – when your team is comfortable with their own mistakes – will your team be able to learn from them.
 
-When I was researching this talk, I read through the Artsy blog archive. Not the Artsy Engineering blog, but the [_Life at Artsy_][lab] blog. And I came across [this article on open sourcing our company culture][oss_culture], which I collaborated on in 2015, predating my research into team dynamics.
+When I was researching this presentation, I read through the Artsy blog archive. Not the Artsy Engineering blog, but the [_Life at Artsy_][lab] blog. And I came across [this article on open sourcing our company culture][oss_culture], which I collaborated on in 2015, predating my research into team dynamics.
 
 > Being open with your errors and identifying the insights gained can help others avoid the same blunders and keep your team on-track.
 
@@ -223,7 +223,7 @@ We took care to foster an environment where our non-technical colleagues could l
 
 Remember that humans are naturally empathetic. Any parent can tell you that when babies hear another infant crying out, they start crying out too. These infants are only a few days old and don't have language skills, but they sympathize with other reflexively. This sympathetic crying is hardwired into our brains from birth.
 
-Humans are not Epicureans, driven solely by ration self-interest. I reject psychological egoism. Human beings are complex individuals driven not only by self-interest, but also driven by a fierce need to care for others. Humans are empathetic by nature and it is only when obstacles are erected in our path that we ignore this drive to care.
+Humans are not Epicureans, driven solely by rational self-interest. I reject psychological egoism. Human beings are complex individuals driven not only by self-interest, but also driven by a fierce need to care for others. Humans are empathetic by nature and it is only when obstacles are erected in our path that we ignore this drive to care.
 
 Society erects social barriers that prevent us from caring for others. These barriers often manifest themselves as judgements we make about others. "That person on the street asking me for money should just get a job" is a judgement, and it shuts down our ability to care for that _person_.
 
@@ -245,7 +245,7 @@ Synergy is when a group behaves in a way not predicted by the behaviour of its c
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Code is never the challenge. Well-rested comfortable people who feel emotionally safe have solved every problem I’ve put in front of them.</p>&mdash; C J Silverio can deadlift you (@ceejbot) <a href="https://twitter.com/ceejbot/status/761569569802551300?ref_src=twsrc%5Etfw">August 5, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-In the absence of obstacles, Humans _will_ care.
+In the absence of obstacles, humans _will_ care.
 
 We foster synergy through psychological safety, and we recognize that humans will care for one another _by default_ if unimpeded by their environment.
 
