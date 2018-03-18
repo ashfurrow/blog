@@ -38,8 +38,8 @@ module CustomHelpers
 
   # Takes raw HTML rendered from post and turns it into something consumable by feeds.
   def prepare_feed_content(body)
-    # Expand any relative URLs
-    body.gsub!('src="/img/', 'src="https://ashfurrow.com/img/') unless body.nil?
+    # Expand any relative URLs for links or images.
+    body.gsub!(%r{(src|href)=(["'])/}, '\1=\2https://ashfurrow.com/') unless body.nil?
 
     # Embed any YouTube videos
     require('lib/embed.rb')
