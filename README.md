@@ -17,6 +17,11 @@ rake
 
 Then navigate to [http://0.0.0.0:4567](http://0.0.0.0:4567).
 
+Contributing
+------------
+
+Contributions, such as typo corrections or bug reports, are very welcome! Feel free to [open an issue](https://github.com/ashfurrow/blog/issues/new) or make a pull request to the `master` branch. All blog posts are written in Markdown in the [`source/blog/`](https://github.com/ashfurrow/blog/tree/master/source/blog) directory, which gets deployed automatically by [Travis CI](https://travis-ci.org/ashfurrow/blog) when a pull request is merged. See [Server Setup](#server-setup) below.
+
 License
 -------
 
@@ -71,7 +76,7 @@ Server Setup
 
 The site is served from S3, but through CloudFlare's CDN. The CDN caches everything on edges. These edges respect the caching header set on individual files. CloudFlare also sets a browser cache expiration of 30 minutes for all content (if a longer one is not specified, see below).
 
-[After deploying](https://github.com/ashfurrow/blog/tree/master/Rakefile#L68-L80) to the gh-pages branch, Cloudflare's cached content is invalidated.
+[After deploying](https://github.com/ashfurrow/blog/blob/a6e27c6406ddffbc4216c09433501f117fc9b068/Rakefile#L38-L41) to the gh-pages branch, Cloudflare's cached content is invalidated.
 
 Search
 ------
