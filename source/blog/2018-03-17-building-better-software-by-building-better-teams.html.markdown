@@ -113,7 +113,7 @@ I still struggle with this. But I try to make sure the feedback I give is a gift
 
 A useful framework for thinking about how to approach our colleagues when something is wrong is called [Radical Candour][candour], which is the name of a [book][candour_book] on the giving and receiving feedback.
 
-Imagine a graph with the vertical axis representing whether or not you care personally about a colleague, and the horizontal axis representing whether or not you’re willing to challenge the directly. 
+Imagine a graph with the vertical axis representing whether or not you care personally about a colleague, and the horizontal axis representing whether or not you’re willing to challenge the person directly. 
 
 BEGIN_WIDE
 
@@ -262,7 +262,7 @@ The first is a book, [_Awakening Compassion at Work_][awaken], an excellent book
 
 [_Operating Manual for Spaceship Earth_][fuller] is a book by Buckminster Fuller. It is a collection of steps that humanity needs to take if we are to survive the 21st century. It profoundly changed the way I think about systems generally, including teams.
 
-[_Inclusion is a Captain’s Job_][inclusion] by [Danilo Campos][danilo] is a conference talk-turn-blog post about lessons of inclusion from the Star Trek cannon. The _good_ Star Trek cannon. And he 100% presented the talk in a Starfleet Engineering uniform:
+[_Inclusion is a Captain’s Job_][inclusion] by [Danilo Campos][danilo] is a conference talk-turn-blog post about lessons of inclusion from the Star Trek canon. The _good_ Star Trek canon. And he 100% presented the talk in a Starfleet Engineering uniform:
 
 ![A photo of Danilo Campos giving a presentation while wearing a Starfleet Engineering uniform](/img/blog/building-better-software-by-building-better-teams/danilo.jpg)
 
