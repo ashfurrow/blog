@@ -3,6 +3,7 @@ title: Building Better Software by Building Better Teams
 date: 2018-03-17 07:35:30 UTC
 background_image: /img/blog/building-better-software-by-building-better-teams/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/974908318815793152
+og_image: /img/blog/building-better-software-by-building-better-teams/team.jpg
 ---
 
 On March 16, 2018, I delivered the opening keynote for [Appdevcon][], which was titled _Building Better Software by Building Better Teams_. Slides are [here][slides]. The video will be available at a later date, but this is important enough to write a blog post accompanying the talk. I'll add the video to this post when it becomes available. In the mean time, this post serves as a kind of pseudo-transcript of the talk.
