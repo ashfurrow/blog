@@ -24,3 +24,11 @@ featured_posts:
   - title: Building Compassionate Software
     background: /img/featured/building_compassionate_software.jpg
     url: /blog/building-compassionate-software/
+  
+  - title: Building Better Software by Building Better Teams
+    background: /img/featured/building_better_software.png
+    url: /blog/building-better-software-by-building-better-teams/
+
+  - title: Perspective of the Polyglot
+    background: /img/featured/perspective_of_the_polyglot.png
+    url: /blog/perspective-of-the-polyglot/
