@@ -21,7 +21,7 @@ Note that this post is _not_ a set of instructions. Rather than prescribe how yo
 
 The first step in giving a presentation is typically writing a proposal that you submit to a conference, and then the conference picks which proposals to accept. This is called the "call for proposals" or "call for papers" or just "CFP."
 
-Writing a proposal is something that I'm not great at. If you want to write an amazing proposal, you should go through the whole process to actually make your talk before you even submit it. But that's a lot of work ¯\\_(ツ)_/¯ So I kind of wing it and sometimes it works. 
+Writing a proposal is something that I'm not great at. If you want to write an amazing proposal, you should go through the whole process to actually make your talk before you even submit it (that means, as I'll describe, writing an audience profile, communication objectives, and structure). But that's a lot of work ¯\\_(ツ)_/¯ So I kind of wing it and sometimes it works. 
 
 I know some people submit multiple proposals to anonymous CFPs in the hopes that this "shotgun method" will yield at least one accepted talk. I don't really like this because I feel like if you do several proposals rather than just one, the quality of each can't help but suffer. I'd rather submit one good proposal than three mediocre ones. 
 
