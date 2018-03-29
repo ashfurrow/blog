@@ -11,7 +11,7 @@ One of the junior developers I'm mentoring is applying for their first iOS devel
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Artsy is reviewing its engineering hiring practices and I&#39;m reminded of the take-home challenge I got when I interviewed 4 years ago:<br><br>&quot;Here&#39;s an ObjC class we want to open source. Create a repo, basic tests, CI, and a good readme.&quot;<br><br>It&#39;s still up: <a href="https://t.co/bsQKgAXSoO">https://t.co/bsQKgAXSoO</a></p>&mdash; Ash Furrow (or is it?) (it is.) (@ashfurrow) <a href="https://twitter.com/ashfurrow/status/979355315085955072?ref_src=twsrc%5Etfw">March 29, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Take-home challenges are better than evaluating coding skills during an interview because they more accurately reflect the environment a coder will be working in. In my opinion, they only valid in-person coding challenges are ones where the interviewer pairs with the candidate and they work together. But I digress.
+Take-home challenges are better than evaluating coding skills during an interview because they more accurately reflect the environment a coder will be working in. In my opinion, the only valid in-person coding challenges are ones where the interviewer pairs with the candidate and they work together. But I digress.
 
 The developer I'm mentoring got one of these challenges and it was about as good a challenge as you could get. It had:
 
