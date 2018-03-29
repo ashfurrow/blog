@@ -17,7 +17,7 @@ namespace :deploy do
 
   task :invalidate do
     puts 'Invalidating CDN.'
-    sleep 20 # Give GitHub time to deploy the site before invalidating.
+    sleep 60 # Give GitHub time to deploy the site before invalidating.
     # Documented at https://api.cloudflare.com/#zone-purge-all-files
     sh <<-EOS
       curl -X DELETE "https://api.cloudflare.com/client/v4/zones/#{CLOUDFLARE_ZONE_ID}/purge_cache" \
