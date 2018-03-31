@@ -1,6 +1,7 @@
 ---
 title: "UICollectionView: Unjustly Maligned"
 date: 2016-06-19 01:18:29 UTC
+link_to: collectionview
 background_image: /img/blog/uicollectionview-unjustly-maligned/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/743938332758056961
 ---
