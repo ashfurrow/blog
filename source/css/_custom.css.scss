@@ -1,6 +1,11 @@
 @import "_variables";
 @import "_mixins";
 
+/* Centres tweet embeds in Chrome */
+twitterwidget {
+  margin: auto;
+}
+
 /* Makes the subtitle of non-post headers bigger than the template. */
 .intro-header .site-heading .subheading {
   font-size: 1.5em;
