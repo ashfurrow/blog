@@ -1,6 +1,23 @@
 @import "_variables";
 @import "_mixins";
 
+/* Makes the subtitle of non-post headers bigger than the template. */
+.intro-header .site-heading .subheading {
+  font-size: 1.5em;
+}
+
+/* Makes the subtitle of post (its date) headers bigger than the template. */
+.intro-header .post-heading {
+  .subheading {
+    margin: 0;
+   font-size: 1.5em;   
+  }
+
+  hr {
+    margin: 15px 0;
+  }
+}
+
 /* Override the default text-decoration from the template, for the typo submission links. */
 article .meta a {
   text-decoration: underline;
