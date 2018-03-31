@@ -1,6 +1,10 @@
 @import "_variables";
 @import "_mixins";
 
+/* Override the default text-decoration from the template, for the typo submission links. */
+article .meta a {
+  text-decoration: underline;
+}
 
 /* Hover state on menu links should be bluuuuue */
 .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {

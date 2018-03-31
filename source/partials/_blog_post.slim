@@ -2,7 +2,7 @@
   - marketing_link = current_resource.metadata[:page][:link_to]
 
   / Page Header
-  == partial 'partials/_header', locals: { title: current_article.title }
+  == partial 'partials/_header', locals: { title: current_article.title, subtitle: current_article.date.strftime('%B %e, %Y') }
 
   .container
     article
@@ -10,7 +10,8 @@
         == standard_width_div do
           == yield
           hr
-          span.meta="Posted on #{current_article.date.strftime('%B %e, %Y')}"
+          - link = link_to 'on GitHub', "https://github.com/ashfurrow/blog/blob/master/source/#{current_resource.normalized_path}.markdown"
+          span.meta= "Please submit typo corrects #{link}" 
     .row
       == standard_width_div do
         hr
