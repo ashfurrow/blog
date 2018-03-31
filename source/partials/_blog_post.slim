@@ -10,8 +10,7 @@
         == standard_width_div do
           == yield
           hr
-          - link = link_to 'on GitHub', "https://github.com/ashfurrow/blog/blob/master/source/#{current_resource.normalized_path}.markdown"
-          span.meta= "Please submit typo corrects #{link}" 
+          span.meta=link_to 'Please submit typo corrections on GitHub', "https://github.com/ashfurrow/blog/blob/master/source/#{current_resource.normalized_path}.markdown"
     .row
       == standard_width_div do
         hr
