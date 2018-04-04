@@ -1,6 +1,16 @@
 @import "_variables";
 @import "_mixins";
 
+
+.post-heading h1 {
+  margin-top: 0;
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    margin-top: 20px; // This is Bootstrap's default
+  }
+}
+
 /* Centres tweet embeds in Chrome */
 twitterwidget {
   margin: auto;
