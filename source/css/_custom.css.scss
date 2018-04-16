@@ -1,7 +1,6 @@
 @import "_variables";
 @import "_mixins";
 
-
 .post-heading h1 {
   margin-top: 0;
 
@@ -11,7 +10,12 @@
   }
 }
 
-/* Centres tweet embeds in Chrome */
+/* Centres Instagram embeds. */
+iframe.instagram-media {
+  margin: 10px auto !important; // Needs to override the inline style attribute.
+}
+
+/* Centres tweet embeds in Chrome. */
 twitterwidget {
   margin: auto;
 }
