@@ -5,7 +5,7 @@ background_image: /img/blog/just-play/background.jpg
 background_image_source: https://twitter.com/CrookedCosmos/status/985322901485359104
 ---
 
-[My friend Samuel](https://twitter.com/samuelgoodwin) organized "Just Play", a thirty day-long group challenge of recording ourselves playing music every day. I'm very proud to have made it the whole month and only missing a handful of days. You can [check out Samuel's website](https://roundwallsoftware.com) for daily collections of the results.
+[My friend Samuel](https://twitter.com/samuelgoodwin) organized [Just Play](https://roundwallsoftware.com/music-challenge/), a thirty day-long group challenge of recording ourselves playing music every day. I'm very proud to have made it the whole month and only missing a handful of days. You can [check out Samuel's website](https://roundwallsoftware.com) for daily collections of the results.
 
 (READMORE)
 
