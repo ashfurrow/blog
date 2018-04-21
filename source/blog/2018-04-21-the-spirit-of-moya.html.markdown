@@ -13,7 +13,7 @@ What a compelling idea! I would say that using computers (compilers, in this cas
 
 In a nutshell, Moya has you encapsulate your network calls into an `enum`. Each `enum` case represents an API call, with associated values used as parameters. The compiler will produce an error if you try to use the API call without the required parameters. Since your `enum` has to conform to a specific protocol,the specifics of the network calls (HTTP verb, parameter encoding, path, headers) are centralized in one spot instead of strewn throughout your code.
 
-Of course, you still need to actually _write_ the `enum`s yourself. Boo. We have [long wished for](https://github.com/Moya/Moya/issues/73) a way to automate this, most likely through [Swagger](https://swagger.io). It never came to fruition, though. In a sense, the practice of Moya fell short of its spirit.
+Of course, you still need to actually _write_ the `enum`s yourself. Boo. We have [long wished for](https://github.com/Moya/Moya/issues/73) a way to automate this, most likely through [Swagger](https://swagger.io). It never came to fruition, though. In a sense, the _practice_ of Moya fell short of its _spirit_.
 
 Okay so a few years went by and then this cool new way to query an API came onto the scene: [GraphQL][]. Let's take a look why GraphQL is so cool.
 
