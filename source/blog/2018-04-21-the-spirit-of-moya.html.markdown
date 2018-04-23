@@ -89,5 +89,5 @@ But most of all, I feel so validated in my work on Moya. It was a pretty neat id
 [metaphysics]: https://github.com/artsy/metaphysics
 [GraphiQL]: https://github.com/graphql/graphiql
 [Relay]: https://facebook.github.io/relay/
-[belief]: http://localhost:4567/blog/coding-interview-take-home-challenges/
+[belief]: /blog/coding-interview-take-home-challenges/
 [Apollo]: https://www.apollographql.com
