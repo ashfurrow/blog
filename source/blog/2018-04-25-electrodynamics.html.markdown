@@ -37,7 +37,7 @@ Finally, a note about Slack. Slack is an Electron app, probably the most popular
 
 I'm just so very tired of this conversation. Regularly, someone will reignite the discussion. But every time, people miss out on the bigger picture: whether or not you think developers _should_ use Electron, they _are_ using it. So ask yourself: why? Put yourself in their shoes, assume positive intent, try to understand what they're thinking, and please please please stay nonjudgemental. A few tips: 
 
-- Don't remove their agency – "well Electron only makes sense for businesses." That dismissed entire groups of developers who _want_ to build Electron apps. 
+- Don't remove their agency – "well Electron only makes sense for businesses." That dismisses entire groups of developers who _want_ to build Electron apps. 
 - Don't dismiss their technical decisions – "well they should just learn AppKit." The fact is, they aren't learning AppKit. Asking "why not?" is a much more interesting question than labelling them as lazy.
 - Don't be defensive – "well if Electron replaces native apps then what will happen to me?" That's jumping to a conclusion. No one is arguing that Electron will or should replace native apps.
 
