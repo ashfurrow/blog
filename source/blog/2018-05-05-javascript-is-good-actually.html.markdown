@@ -84,7 +84,7 @@ Let's see what tool building in the JavaScript world can look like in practice:
 - Facebook builds a [GraphQL server in Node.js][GraphQL] and open sources it. The community helps improve it.
 - Facebook also builds [GraphiQL][], a small, in-browser IDE for debugging GraphQL queries on your server. The community helps here, too; the IDE has over sixty contributors.
 - Someone embeds GraphiQL [into an Electron app][gapp], which can be pointed to _any_ GraphQL server. You can use GraphiQL to explore another developer's API, cool!
-- Someone else embeds GraphiQL into a [JSON-to-GraphQL playground generator][gcollege]. It's a small-but-important part of a larger educational app to teach people about GraphQL and it accompanies and open source book about GraphQL.
+- Someone else embeds GraphiQL into a [JSON-to-GraphQL playground generator][gcollege]. It's a small-but-important part of a larger educational app to teach people about GraphQL and it accompanies an open source book about GraphQL.
 - Someone else further remixes GraphiQL into [GraphQL Playground][gplayground], a more powerful and feature-rich IDE than GraphQL alone.
 
 This is just a small example of how tools built and released into the OSS community proliferate and are composed into other, even more powerful tools. Here is a case where Facebook, a large company that makes developer tools, builds something. Then they release it and developers remix that thing for their own needs, helping the entire community in the process.
