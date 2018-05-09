@@ -21,7 +21,7 @@ So what does this mean? Well, you can see things got better after starting CBT. 
 
 Even though mostly I feel "happy, excited", I still dip down. I mean, everyone feels sad or anxious sometimes. The difference now is that I have skills to deal with those feelings. I have learned to separate my thoughts from my reaction _to_ those thoughts, which is a key part of CBT.
 
-I can't begin to tell you how different this feels. Because like, I've _been_ here before. I've felt better, I've [blogged about ending therpay](https://ashfurrow.com/blog/therapys-end/), I've felt good. But it never really lasted. This... feels different. I think, for all the medications I've tried (and all the terrible side effects), all it took was a handful of CBT sessions.
+I can't begin to tell you how different this feels. Because like, I've _been_ here before. I've felt better, I've [blogged about ending therapy](https://ashfurrow.com/blog/therapys-end/), I've felt good. But it never really lasted. This... feels different. I think, for all the medications I've tried (and all the terrible side effects), all it took was a handful of CBT sessions.
 
 ---
 
