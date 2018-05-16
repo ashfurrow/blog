@@ -1,5 +1,12 @@
 upcoming_talks:
 
+- name: TBD
+  conference: try! Swift NYC
+  url: https://www.tryswift.co/events/2018/nyc/
+  location: New York, America
+  dates: September 4–5, 2018
+  image: tryswiftnyc.png
+
 past_talks:
 - name: Building Better Software by Building Better Teams
   conference: Appdevcon
