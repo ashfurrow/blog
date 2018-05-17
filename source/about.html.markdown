@@ -6,13 +6,13 @@ layout: partials/_layout_all_standard_width
 description: I am a Canadian software developer currently living in New York’s East Village. The last five years of my life have been focused on iOS development, but I dabble. Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I’ve been working toward becoming Open Source by Default in all aspects of my life.
 ---
 
-I am a world-class software developer living in New York’s East Village. The last [five years of my life](https://ashfurrow.com/blog/5-years-of-ios/) have been focused on iOS development, but I dabble. I have two cats, and when I’m not [contributing in open source](https://github.com/ashfurrow), I like to [write books](https://leanpub.com/u/theashfurrow) and [make photos](https://photos.ashfurrow.com).
+I am a world-class software developer living in New York’s East Village. For [five years](https://ashfurrow.com/blog/5-years-of-ios/), I was focused on iOS development, but now I do a bunch of things. I'm married with two cats. I [contributed to open source](https://github.com/ashfurrow) so much that [it brainwashed me](https://ashfurrow.com/blog/open-source-ideology/). I've [written books](/books) and I've [made photos](https://photos.ashfurrow.com) and now I'm [playing guitar](/blog/just-play/).
 
-Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I owe it to the people who helped me to help others now. I want to lead by example and become the kind of developer that I would want to work with. That means sharing knowledge, code, and time with others. To that end, I’ve been working toward becoming [Open Source by Default](http://code.dblock.org/2015/02/09/becoming-open-source-by-default.html) in all aspects of my life.
+Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I owe it to the people who helped me to help others now, which is why I run a [weekly Peer Lab](https://peerlab.community) in New York and volunteer with [Coalition for Queens](https://www.c4q.nyc).
 
 ----------------
 
-If you want to get in touch, [Twitter](https://twitter.com/ashfurrow) is the best way to reach me. You can also email [ash@ashfurrow.com](mailto:ash@ashfurrow.com) and I’ll do my best to get back to you.
+If you want to get in touch, [Twitter](https://twitter.com/ashfurrow) is the best way to reach me. Only if you have to, you can email [ash@ashfurrow.com](mailto:ash@ashfurrow.com).
 
 ----------------
 
@@ -20,7 +20,7 @@ Over my career, I’ve been fortunate to work at some amazing places.
 
 ### Artsy
 
-The goal of [Artsy](https://www.artsy.net) is simple, but ambitious: make art as popular as music. Here, I work on a team to build Artsy’s different iOS apps – [all of which are open source](http://www.objc.io/issue-22/artsy.html), which is amazing 🎉
+The goal of [Artsy](https://www.artsy.net) is simple, but ambitious: make art as popular as music. I help build software for Artsy in Swift, Objective-C, Ruby, JavaScript, and Scala. Most of what I work on [is open source](https://github.com/artsy) and I write a lot on [Artsy's Engineering Blog](http://artsy.github.io).
 
 ### Teehan+Lax
 
