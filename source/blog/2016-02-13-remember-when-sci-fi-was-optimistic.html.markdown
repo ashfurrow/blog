@@ -5,6 +5,8 @@ background_image: /img/blog/remember-when-sci-fi-was-optimistic/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/698497319394738176
 ---
 
+(Note: This article was originally titled "Make Sci-fi Great Again", which was wrong when I wrote it and is wrong now. I apologize. Nothing about xenophobia is worth imitating, and so [I renamed the post](https://github.com/ashfurrow/blog/commit/80479cbdaae5b7e243b7d972274d20edf11570df). The post is otherwise unchanged.)
+
 When I was growing up, _Star Trek The Next Generation_ was in syndication, _Voyager_ was still new, and when I got home from school I could catch the final twenty minutes of _Stargate: SG-1_. I watched a lot of sci-fi TV growing up, and there was a good variety of it to watch. There were hopeful what-may-be shows like _TNG_, modern-day romps like _SG-1_, and exposés on humanity's undoing like _The X-Files_. I wasn't old enough to watch _The X-Files_ and other darker shows, and as a consequence, sci-fi always had a sort of optimism about it.
 
 (READMORE)
