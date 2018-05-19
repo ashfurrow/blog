@@ -1,7 +1,7 @@
 ---
-title: Make Sci-fi Great Again
+title: "Remember When Sci-fi Was Optimistic?"
 date: 2016-02-13 17:14:12 UTC
-background_image: /img/blog/make-sci-fi-great-again/background.jpg
+background_image: /img/blog/remember-when-sci-fi-was-optimistic/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/698497319394738176
 ---
 
