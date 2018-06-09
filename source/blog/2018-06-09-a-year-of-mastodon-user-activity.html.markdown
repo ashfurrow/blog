@@ -28,7 +28,7 @@ END_WIDE
 
 So that's cool! Let's contextualize things a bit. The spike in April came in light of the Cambridge Analytica and Facebook controversy. People were angry about Facebook and surveillance capitalism, and they took to Mastodon for an alternative social network. Cool! I was curious to see if that surge of popularity would last, and it _seems_ to have, so far anyway.
 
-The Fediverse was also recently hit my a wave of spam accounts, which _could_ be inflating login counts slightly, but it's hard to say.
+The Fediverse was also recently hit by a wave of spam accounts, which _could_ be inflating login counts slightly, but it's hard to say.
 
 All in all, I'm pretty happy with things. Aside from the [occasional problem](https://github.com/tootsuite/mastodon/issues/6734) or [misconfigured database backups](https://gist.github.com/ashfurrow/abd1418399883b2bdfdd9a1f6120f139), running a Mastodon instance hasn't been particularly onerous. This is good, since I have a life and a job and running mastodon.technology can't be like a full-time commitment for me. Having the hosting costs [covered by donations](https://www.patreon.com/ashfurrow) also helps _a lot_, since it removes the financial burden from me. Of course, there are occasional moderation duties, but for the most part users on my instance have adhered to the [Code of Conduct](https://mastodon.technology/about/more). A healthy admin support network helps, too.
 
