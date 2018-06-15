@@ -59,7 +59,7 @@ So yes, you'll have a lot of dependencies. But you'll also learn to see building
 
 The thing is: this is all just what I think. Different people with different backgrounds and different priorities are going to come to different conclusions. I think that's totally okay. There are lots of reasons not to use React Native; when my colleague Eloy [describes why Artsy adopted it][rn_artsy], he literally begins with a bunch of React Native downsides. We're not hiding anything!
 
-A lot (many? most?) iOS apps can be entirely described as "software that turns API calls into user interfaces, and user interactions into API calls." That's a problem that React is tailored to solve, and React Native adopts that solution to iOS and Android really really well.
+A lot of iOS apps (many? most?) can be entirely described as "software that turns API calls into user interfaces, and user interactions into API calls." That's a problem that React is tailored to solve, and React Native adopts that solution to iOS and Android really really well.
 
 React Native isn't perfect, and it's not suitable for every app. But nothing is! UIKit isn't perfect for every app, either. There simply are no silver bullets in programming. React solves the problem of programming UIs to such a degree of success that, when combined with a fantastic language and a vibrant ecosystem, it makes a compelling case for use in a lot of apps.
 
