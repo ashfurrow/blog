@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
     $.each(document.location.search.substr(1).split('&'), function(c, q) {
       var components = q.split('=');
       if (components.length > 1) {
-        queries[components[0].toString()] = components[1].toString(); 
+        queries[components[0].toString()] = decodeURIComponent(components[1].toString());
       }
     });
     $('#search').val(queries['q'])
