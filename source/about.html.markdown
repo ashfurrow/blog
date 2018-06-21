@@ -20,7 +20,7 @@ Over my career, I’ve been fortunate to work at some amazing places.
 
 ### Artsy
 
-The goal of [Artsy](https://www.artsy.net) is simple, but ambitious: make art as popular as music. I help build software for Artsy in Swift, Objective-C, Ruby, JavaScript, and Scala. Most of what I work on [is open source](https://github.com/artsy) and I write a lot on [Artsy's Engineering Blog](http://artsy.github.io).
+The vision of [Artsy](https://www.artsy.net) is ambitious: a future where everyone is moved by art every day. That vision resonates with me, and I'm proud to work towards it. I help build software for Artsy in JavaScript, Swift, Objective-C, Ruby, Scala – [whatever it takes](https://ashfurrow.com/blog/perspective-of-the-polyglot/). Most of what I work on [is open source](https://github.com/artsy) and I write a lot on [Artsy's Engineering Blog](http://artsy.github.io).
 
 ### Teehan+Lax
 
