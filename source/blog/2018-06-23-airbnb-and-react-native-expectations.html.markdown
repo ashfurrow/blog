@@ -63,7 +63,7 @@ Airbnb's experience has been compared, [appropriately][spike], to a rejected org
 
 The reasons that Airbnb chose to move away from React Native are cultural as much as they are technical, and while I understand why they didn't publicize these tensions, it gives the impression that Airbnb's decision was based entirely in technical merit. And that's just not the case.
 
-[airbnb]: https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a
+[airbnb]: https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c
 [charlie]: https://blog.expo.io/should-we-use-react-native-1465d8b607ac
 [Expo]: https://expo.io
 [spike]: https://twitter.com/spikebrehm/status/1010279535319879680
