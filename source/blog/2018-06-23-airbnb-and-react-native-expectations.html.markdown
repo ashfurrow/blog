@@ -26,10 +26,12 @@ BEGIN_WIDE
 
 1. _"Engineers were able to move at an unparalleled speed"_, but also there were also technical and cultural hurdles that mitigated this success.
 2. Again, a qualified success: _"we were able to accomplish a number of things that we weren’t sure were possible."_ But they point to the same technical challenges and a lack of internal engineering resources that frustrated their team sometimes.
-3. This was a failure: _"we wound up supporting code on three platforms instead of two"_, which sounds grim. But also, _"only a small percentage of our app was React Native"_, meaning they had a lot of overhead for not a lot benefit. I want to discuss this expectation in more detail, but more on that in a minute.
+3. This was a failure(**\***): _"we wound up supporting code on three platforms instead of two"_, which sounds grim. But also, _"only a small percentage of our app was React Native"_, meaning they had a lot of overhead for not a lot benefit. I want to discuss this expectation in more detail, but more on that in a minute.
 4. A _"mixed bag"_, which some things being way easier and faster, while other things were worse.
 
 END_WIDE
+
+(**\*Note**: my characterization of #3 as a failure has been disputed; you should go read [Leland Richardson's thread][thread] responding to me to get a really great, nuanced clarification of Airbnb's experience sharing code between Android and iOS.)
 
 Okay so at first glance, this seems kind of promising, right? I mean, Airbnb says that "60% [of engineers] would describe their experience as amazing", so a _majority_ of your team is on board. But 5% were "strongly negative"? Interesting. Very interesting. We'll get back to this shortly, first let's talk about that third expectation.
 
@@ -74,3 +76,4 @@ The reasons that Airbnb chose to move away from React Native are cultural as muc
 [pod]: http://artsy.github.io/blog/2018/04/17/making-a-components-pod/
 [eigen]: https://github.com/artsy/eigen
 [feels]: https://ashfurrow.com/blog/swift-vs-react-native-feels/
+[thread]: https://twitter.com/intelligibabble/status/1010948686501691393
