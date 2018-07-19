@@ -13,7 +13,7 @@ Yesterday I tweeted a complaint I had about Apple's iOS SDK. My complaint highli
 
 Despite my request to not be replied to, people did. They really seemed to want to discuss the specifics of this issue. But, to repeat myself: I don't care about this specific complaint, I care about the larger trend.
 
-So what is that trend? Well it's complicated and it involves critical thinking; if you'e never thought critically about Apple before, this might seem like a really weird thing to complain about, but here's my issue:
+So what is that trend? Well it's complicated and it involves critical thinking; if you've never thought critically about Apple before, this might seem like a really weird thing to complain about, but here's my issue:
 
 Apple designs its SDK based on how Apple wants the community to build software. However, sometimes the way Apple wants you to build things and the way you want to build things is going to differ.
 
