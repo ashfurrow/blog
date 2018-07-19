@@ -37,4 +37,4 @@ That's a huge shift from Apple's approach to, for example, the iPhone X API that
 
 Maybe it's just me, but this difference is really striking. It exemplifies the distinction that I'm trying to highlight.
 
-I'm not saying Apple needs to change or that you need to change your mind or anything. Not everything I say is meant to be persuasive. All I'm saying is: Apple is it's own company with its own motivations. Do not forget that, and do not conflate what's good for you with what's good for Apple.
+I'm not saying Apple needs to change or that you need to change your mind or anything. Not everything I say is meant to be persuasive. All I'm saying is: Apple is its own company with its own motivations. Do not forget that, and do not conflate what's good for you with what's good for Apple.
