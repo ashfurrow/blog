@@ -61,6 +61,6 @@ END_WIDE
 
 I have no regrets about our snapshot testing strategy, but others will have different approaches. A lot of the cons that I've outlined above have workarounds (one could, for example, store reference images in a submodule to mitigate repo bloat). And snapshot testing is really an open field: if you have an idea for a tool, you could probably build it on top of tools that already exist.
 
-If you decide to try snapshot testing, I can't recommend [Kaleidoscope](https://www.kaleidoscopeapp.com) enough. It's integration into `git difftool` makes reviewing changes to reference images _before_ opening a PR really easy.
+If you decide to try snapshot testing, I can't recommend [Kaleidoscope](https://www.kaleidoscopeapp.com) enough. Its integration into `git difftool` makes reviewing changes to reference images _before_ opening a PR really easy.
 
 I hope that gives you a clear picture of what snapshot tests are and how they can be used as a part of a comprehensive testing strategy. It's a cliché, but snapshot tests are not a silver bullet. They will not be a replacement for unit testing. But they can help you write better code, be more confident in your product, and open up whole new ways to collaborate with non-developer colleagues. They're definitely worth learning about – a tool worth having in your toolbox.
