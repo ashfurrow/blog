@@ -45,7 +45,10 @@ namespace :deploy do
     pull_request = ENV['TRAVIS_PULL_REQUEST']
     key = ENV['encrypted_1e572e84b7d1_key']
 
-    abort 'Must be run on Travis' if branch.nil? || key.nil?
+    if branch.nil? || key.nil?
+      puts 'Must be run on Travis'
+      return
+    end
 
     puts 'Checking deploy status...'
     if branch == 'master' && pull_request == 'false'
@@ -64,7 +67,10 @@ namespace :deploy do
     branch = ENV['TRAVIS_BRANCH']
     pull_request = ENV['TRAVIS_PULL_REQUEST']
 
-    abort 'Must be run on Travis' unless branch
+    if branch.nil?
+      puts 'Must be run on Travis'
+      return
+    end
 
     if pull_request != 'false'
       puts 'Skipping deploy for pull request; can only be deployed from master branch.'
