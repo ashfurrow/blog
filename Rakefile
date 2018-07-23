@@ -47,7 +47,7 @@ namespace :deploy do
 
     if branch.nil? || key.nil?
       puts 'Must be run on Travis'
-      return
+      next
     end
 
     puts 'Checking deploy status...'
@@ -69,7 +69,7 @@ namespace :deploy do
 
     if branch.nil?
       puts 'Must be run on Travis'
-      return
+      next
     end
 
     if pull_request != 'false'
