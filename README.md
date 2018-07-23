@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/ashfurrow/blog.svg?branch=master)](https://travis-ci.org/ashfurrow/blog)
 
+Testing!!!
+
 My Blog
 =======
 
