@@ -6,7 +6,9 @@ background_image_source: https://twitter.com/CloudyConway/status/974908318815793
 og_image: /img/blog/building-better-software-by-building-better-teams/team.jpg
 ---
 
-On March 16, 2018, I delivered the opening keynote for [Appdevcon][], which was titled _Building Better Software by Building Better Teams_. Slides are [here][slides]. The video will be available at a later date, but this is important enough to write a blog post accompanying the talk. I'll add the video to this post when it becomes available. In the mean time, this post serves as a kind of pseudo-transcript of the talk.
+On March 16, 2018, I delivered the opening keynote for [Appdevcon][], which was titled _Building Better Software by Building Better Teams_. Slides are [here][slides]. This post serves as a kind of pseudo-transcript of the talk. I also did [an interview](https://vimeo.com/270512268) with the conference organizers after my talk.
+
+<iframe src="https://player.vimeo.com/video/270512761?title=0&amp;byline=0&amp;portrait=0" width="100%" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 (READMORE)
 
@@ -264,7 +266,11 @@ The first is a book, [_Awakening Compassion at Work_][awaken], an excellent book
 
 [_Inclusion is a Captain’s Job_][inclusion] by [Danilo Campos][danilo] is a conference talk-turn-blog post about lessons of inclusion from the Star Trek canon. The _good_ Star Trek canon. And he 100% presented the talk in a Starfleet Engineering uniform:
 
+BEGIN_NARROW
+
 ![A photo of Danilo Campos giving a presentation while wearing a Starfleet Engineering uniform](/img/blog/building-better-software-by-building-better-teams/danilo.jpg)
+
+END_NARROW
 
 ---
 
