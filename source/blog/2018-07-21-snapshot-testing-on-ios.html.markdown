@@ -51,7 +51,7 @@ BEGIN_WIDE
 - **Con**: Snapshot testing can only test static UIs and not things like animations or user interaction.
 - **Pro**: Testing across devices, iOS versions, and size classes becomes trivial.
 - **Con**: Snapshot testing introduces additional complexity to your testing setup.
-- **Pro**: iOS-snapshot-test-case has tools for allowing a specified percentage of differing pixels, along with other cusotmization options.
+- **Pro**: iOS-snapshot-test-case has tools for allowing a specified percentage of differing pixels, along with other customization options.
 - **Con**: iOS versions often include changes to text antialiasing, so your tests need to be tied to specific iOS versions. Updating reference images when you update your iOS versions introduces a lot of churn in reference image files, contributing to repo size bloat.
 - **Pro**: Snapshot testing encourages you to write testable view controllers.
 - **Con**: It's easy to overdo snapshot tests, _feel_ confident in your app's correctness, but not actually be testing the correct thing.
