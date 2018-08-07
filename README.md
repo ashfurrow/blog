@@ -55,7 +55,6 @@ Thanks to the following people and projects:
 - [@CloudyConway](http://twitter.com/CloudyConway)
 - [@CrookedCosmos](http://twitter.com/CrookedCosmos)
 - [IcoMoon](https://icomoon.io)
-- [CloudFlare](http://cloudflare.com)
 
 Photo Credits
 -------------
@@ -68,15 +67,14 @@ Photo | Photographer
 --- | ---
 Main banner on [Portfio](https://ashfurrow.com/portfolio). | [Andrey Tochilin](https://twitter.com/Tochilin)
 "Software" banner on [Portfolio](https://ashfurrow.com/portfolio#software). | [Nick Simmons](http://instagram.com/nsimmons206)
-Blogging image on [Portfolio](https://ashfurrow.com/portfolio#community) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
+Education image on [Portfolio](https://ashfurrow.com/portfolio#education) | [Pete O'Shea](https://www.flickr.com/photos/59668110@N04/5600161625)
+Community image on [Portfolio](https://ashfurrow.com/portfolio#community) | [Paul Hudson](https://twitter.com/twostraws/status/974561090880274433)
 Recent blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyConway) ([license](https://twitter.com/vex0rian/status/625153928364191744)) and [Crooked Cosmos](http://twitter.com/CrookedCosmos) (CC0)
 
 Server Setup
 ------------
 
-The site is served from S3, but through CloudFlare's CDN. The CDN caches everything on edges. These edges respect the caching header set on individual files. CloudFlare also sets a browser cache expiration of 30 minutes for all content (if a longer one is not specified, see below).
-
-[After deploying](https://github.com/ashfurrow/blog/blob/a6e27c6406ddffbc4216c09433501f117fc9b068/Rakefile#L38-L41) to the gh-pages branch, Cloudflare's cached content is invalidated.
+The site is served from GitHub Pages, but with RSS feeds served through S3 via CloudFlare's CDN. [After deploying](https://github.com/ashfurrow/blog/blob/a6e27c6406ddffbc4216c09433501f117fc9b068/Rakefile#L38-L41) to the gh-pages branch, Cloudflare's cached content is invalidated.
 
 Search
 ------
