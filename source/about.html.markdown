@@ -12,7 +12,7 @@ Community is incredibly important to me; I’ve only been able to accomplish wha
 
 ----------------
 
-If you want to get in touch, [Twitter](https://twitter.com/ashfurrow) is the best way to reach me. Only if you have to, you can email [ash@ashfurrow.com](mailto:ash@ashfurrow.com).
+If you want to get in touch, [Mastodon](https://mastodon.technology/@ashfurrow) is probably the best way to reach me. Only if you have to, you can email [ash@ashfurrow.com](mailto:ash@ashfurrow.com).
 
 ----------------
 
