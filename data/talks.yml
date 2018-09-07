@@ -1,13 +1,13 @@
 upcoming_talks:
 
-- name: TBD
+past_talks:
+- name: Circumventing Fear of the Unknown
   conference: try! Swift NYC
-  url: https://www.tryswift.co/events/2018/nyc/
+  url: https://www.tryswift.co/events/2018/nyc/#fear
   location: New York, America
   dates: September 4–5, 2018
   image: tryswiftnyc.png
-
-past_talks:
+  slides: https://speakerdeck.com/ashfurrow/circumventing-fear-of-the-unknown
 - name: Building Better Software by Building Better Teams
   conference: Appdevcon
   url: http://appdevcon.nl
