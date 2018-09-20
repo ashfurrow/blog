@@ -15,7 +15,7 @@ A view _controller_.
 
 In iOS, a view controller is an object that controls a view hierarchy. Views are nested within one another to be rendered to the user, who can then interact with them. Those interactions represent changes the user wants to make to the data, stored in model objects. The view controller's responsibility is to mediate the interaction between the models and the views (it does so via different mechanisms, of which Cocoa and Cocoa Touch provide a healthy variety of). In essence, that's the MVC framework.
 
-A view controller has a `view` property, which is the root of it's view hierarchy. That view has subviews, which the controller can also reference directly. As a concrete example, let's take a look at the built-in system stopwatch example:
+A view controller has a `view` property, which is the root of its view hierarchy. That view has subviews, which the controller can also reference directly. As a concrete example, let's take a look at the built-in system stopwatch example:
 
 ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/2D45925D5D0D4415AD04B0697EF838DF.png)
 
@@ -47,11 +47,11 @@ Nice! Notice that the parent view controller doesn't even need a reference to th
 
 Now, there are some guidelines developers should abide by. These aren't enforced, necessarily, but following some established standards will make your life easier.
 
-First, a parent view controller should never reach into another view controller's hierarchy. It'd be a faux pas to assume that you know more about a view controller's view hierarchy, the thing which is it's paramount responsibility, than it does. Let's not micromanage, here.
+First, a parent view controller should never reach into another view controller's hierarchy. It'd be a faux pas to assume that you know more about a view controller's view hierarchy, the thing which is its paramount responsibility, than it does. Let's not micromanage, here.
 
-Conversely, a child view controller shouldn't reach out to it's parent's view hierarchy. The parent situates the _position_ and _size_ of it's child controller's view, and the child manages its own hierarchy from there.
+Conversely, a child view controller shouldn't reach out to its parent's view hierarchy. The parent situates the _position_ and _size_ of its child controller's view, and the child manages its own hierarchy from there.
 
-Here's the tricky part: the child view controller's view is in the parent controller's view hierarchy. That means, following our rules, that the child view controller _should not_ modify it's own view's position and size.
+Here's the tricky part: the child view controller's view is in the parent controller's view hierarchy. That means, following our rules, that the child view controller _should not_ modify its own view's position and size.
 
 Bam.
 
@@ -59,11 +59,11 @@ Bam.
 
 A view's position and size are determined by a C struct named `CGRect`, which contains two structs itself; a point representing the origin (top-left corner) of a view, and a size representing the width and height.
 
-If you access `self.view.frame` in a view controller, you're accessing the view's position _with respect to it's parent's coordinate system_. That means that the values you retrieve (or, more dangerously, assign) will be subject to transformations applied by the _parent_ view controller. This could include rotations and scaling, in which case, you're fucked!
+If you access `self.view.frame` in a view controller, you're accessing the view's position _with respect to its parent's coordinate system_. That means that the values you retrieve (or, more dangerously, assign) will be subject to transformations applied by the _parent_ view controller. This could include rotations and scaling, in which case, you're fucked!
 
 How so?
 
-Well, the `frame` of a view is defined as the smallest bounding box of that view with respect to it's parents coordinate system, including any transformations applied to that view. Let's look at an example:
+Well, the `frame` of a view is defined as the smallest bounding box of that view with respect to its parents coordinate system, including any transformations applied to that view. Let's look at an example:
 
 ![](/img/import/blog/you-probably-dont-understand-frames-and-bounds/B8B143BB6681476794386EFDB88201A7.png)
 
@@ -86,7 +86,7 @@ END_WIDE
 
 Why is setting the subview's `frame` to the `bounds` rect still not a good idea?
 
-The origins of a bounds is not always zero. Remember I said that the bounds origin is the origin of the view with respect to it's own coordinate system, so in the majority of cases, the bounds origin is `(0, 0)`. But not always.
+The origins of a bounds is not always zero. Remember I said that the bounds origin is the origin of the view with respect to its own coordinate system, so in the majority of cases, the bounds origin is `(0, 0)`. But not always.
 
 A transform on the view's coordinate system will affect its origin. You'll see this mostly with scroll views; scroll up by 10 points, and your bounds origin is now `(0, -10)`. This not only affects scroll views, but also scroll view subclasses, the most famous of which is `UITableView`.
 
@@ -98,7 +98,7 @@ So what's the answer? How do you avoid this?
 
 Don't be lazy.
 
-Objective-C developers often use `self.view.frame` or `self.view.bounds` to create a new subview that takes up the entire visible space. Instead of just copying these `CGRect` values over wholesale, create your own  `CGRect`s. 
+Objective-C developers often use `self.view.frame` or `self.view.bounds` to create a new subview that takes up the entire visible space. Instead of just copying these `CGRect` values over wholesale, create your own  `CGRect`s.
 
 Let's review:
 
@@ -107,8 +107,8 @@ BEGIN_WIDE
 ```
 hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
 hotNewSubview.frame = self.view.bounds; //Better, but still not perfect
-hotNewSubview.frame = CGRectMake(0, 0, 
-    CGRectGetWidth(self.view.bounds), 
+hotNewSubview.frame = CGRectMake(0, 0,
+    CGRectGetWidth(self.view.bounds),
     CGRectGetHeight(self.view.bounds)); //Best
 ```
 
