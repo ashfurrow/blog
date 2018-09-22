@@ -64,7 +64,7 @@ GEM
       faraday (~> 0.8)
     fast_blank (1.0.0)
     fastimage (2.1.1)
-    ffi (1.9.18)
+    ffi (1.9.25)
     git (1.3.0)
     haml (5.0.4)
       temple (>= 0.8.0)
@@ -249,4 +249,4 @@ DEPENDENCIES
   twitter
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
