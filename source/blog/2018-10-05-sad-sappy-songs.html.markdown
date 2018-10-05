@@ -3,6 +3,7 @@ title: Sad & Sappy Songs
 date: 2018-10-05 00:30:52 UTC
 background_image: /img/blog/sad-sappy-songs/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1048006375232753664
+og_image: /img/blog/sad-sappy-songs/opengraph.jpg
 ---
 
 [Mark Rothko](https://www.artsy.net/artist/mark-rothko), frustrated with an obtuse interviewer, [is claimed to have explained](https://youtu.be/qFnNgTSkHPM?t=412) his art by exclaiming: "you’ve got sadness in you, I’ve got sadness in me – and my works of art are places where the two sadnesses can meet, and therefore both of us need to feel less sad." As a musician, that really resonates with me. Sometimes, a sad song is exactly what I need to hear (or play) to feel better.
