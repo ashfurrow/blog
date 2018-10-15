@@ -1,4 +1,10 @@
 upcoming_talks:
+- name: How to Build Custom TSLint Rules
+  conference: TypeScript NYC
+  url: https://www.meetup.com/TypeScriptNYC/events/255170060/
+  location: New York, America
+  dates: October 30, 2018
+  image: ts_nyc.png
 
 past_talks:
 - name: Circumventing Fear of the Unknown
