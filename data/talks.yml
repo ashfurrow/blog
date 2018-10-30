@@ -7,6 +7,7 @@ past_talks:
   location: New York, America
   dates: October 30, 2018
   image: ts_nyc.jpg
+  slides: https://speakerdeck.com/ashfurrow/building-custom-tslint-rules
 - name: Circumventing Fear of the Unknown
   conference: try! Swift NYC
   url: https://www.tryswift.co/events/2018/nyc/#fear
