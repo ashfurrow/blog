@@ -85,7 +85,7 @@ module Speaking
     end
 
     if video
-      html += "<p><a href='#{video}'><i class='fa fa-youtube-play'></i>Recorded Video</a></p>"
+      html += "<p><a href='#{video}'><i class='fab fa-youtube'></i>Recorded Video</a></p>"
     end
     html += "</div>"
 
