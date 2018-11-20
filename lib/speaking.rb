@@ -30,6 +30,7 @@ module Speaking
     video = talk["video"]
     code = talk["code"]
     image_source = talk["image"]
+    blog_post = talk["blog_post"]
     image_source ||= missing_image_source
 
     html = "<li>"
@@ -78,6 +79,10 @@ module Speaking
 
     if dates
       html += "<p><i class='fa fa-calendar'></i>#{dates}</p>"
+    end
+
+    if blog_post
+      html += "<p><a href='#{blog_post}'><i class='fa fa-paperclip'></i>Read the blog post</p></a>"
     end
 
     if code
