@@ -49,7 +49,7 @@ past_talks:
   dates: March 30 – April 1, 2017
   image: buildingcompassionatesoftware.png
   video: https://www.raywenderlich.com/168106/rwdevcon-2017-inspiration-talk-building-compassionate-software-ash-furrow
-  blog_post: blog/building-compassionate-software/
+  blog_post: /blog/building-compassionate-software/
 - name: Comparative Asynchronous Programming
   conference: Playgrounds
   url: http://www.playgroundscon.com
