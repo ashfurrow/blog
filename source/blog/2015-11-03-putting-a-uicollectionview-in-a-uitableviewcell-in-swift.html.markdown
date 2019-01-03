@@ -91,15 +91,12 @@ Make sure to connect this collection view outlet to the cell's collection view i
 
 This is a standard `IBOutlet`, except I marked it as private. This is to create a separation of concerns – our view controller shouldn't be accessing the collection view through the table view cell. 
 
-Instead, we'll create a function to set the delegate, datasource, and row number on the collection view. Swift's handling of a type with multiple protocols is a bit weird, but this is the function.
+Instead, we'll create a function to set the delegate, datasource, and row number on the collection view. Here, note how we can use [Protocol Composition](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282), available [since Swift 3](https://github.com/apple/swift-evolution/blob/master/proposals/0095-any-as-existential.md).
 
 BEGIN_WIDE
 
 ```swift
-func setCollectionViewDataSourceDelegate
-    <D: protocol<UICollectionViewDataSource, UICollectionViewDelegate>>
-    (dataSourceDelegate: D, forRow row: Int) {
-
+func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forRow row: Int) {
     collectionView.delegate = dataSourceDelegate
     collectionView.dataSource = dataSourceDelegate
     collectionView.tag = row
