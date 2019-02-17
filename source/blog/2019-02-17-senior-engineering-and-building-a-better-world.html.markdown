@@ -1,6 +1,6 @@
 ---
 title: Senior Engineering and Building a Better World
-date: 2019-02-17 15:25:42 UTC
+date: 2019-02-17 01:00:00 UTC
 background_image: /img/blog/senior-engineering-and-building-a-better-world/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1096785169569251328
 ---
