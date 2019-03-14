@@ -15,7 +15,7 @@ Mine is only one of five English talks, and my Russian is pretty rusty. There ar
 
 The hosts have been awesome, and the participants are also welcoming. This is my first time in Russia, and Moscow is a very interesting city. I'm looking forward to exploring it tomorrow. 
 
-<img src="/img/blog/reactivecocoa-with-swift/2.jpg" alt="Audience" class="img-responsive" />
+<img src="/img/blog/reactivecocoa-with-swift/2.jpg" alt="Audience" />
 
 My slides are [available](https://speakerdeck.com/ashfurrow/functional-reactive-programming-in-swift), as well as a [sample project on GitHub](https://github.com/AshFurrow/MBLTDev). 
 
