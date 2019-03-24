@@ -13,13 +13,11 @@ Support : hi@vatanay.com
 */
 
 /*
-
-Note from Ash: I've modified this from its original version.
-
+Note from Ash: I've modified this from its original version. It has been formatted to fit your screen.
 */
 
 function responsiveChat(element) {
-  $(element).html('<form class="chat"><span></span><div class="messages"></div><input type="text" placeholder="Your message"><input type="submit" value="Send"></form>');
+  $(element).html('<form class="chat"><span></span><div class="messages"></div><p id="input"></p><input type="submit" value="Send"></form>');
 
   var chatScriptIndex = 0;
 
@@ -28,16 +26,10 @@ function responsiveChat(element) {
   }
   showLatestMessage();
 
-  $(element + ' input[type="text"]').keypress(function (event) {
-      if (event.which == 13) {
-          event.preventDefault();
-          $(element + ' input[type="submit"]').click();
-      }
-  });
   $(element + ' input[type="submit"]').click(function (event) {
       event.preventDefault();
-      var message = $(element + ' input[type="text"]').val();
-      if ($(element + ' input[type="text"]').val()) {
+      var message = $(element + ' #input').html();
+      if (message) {
           $(element + ' div.messages').append(
               '<div class="message"><div class="myMessage"><p>' +
               message +
@@ -50,7 +42,7 @@ function responsiveChat(element) {
               $(element).find('span').removeClass("spinner");
           }, 2000);
       }
-      $(element + ' input[type="text"]').val("");
+      $(element + ' #input').html("");
       showLatestMessage();
   });
 }
@@ -63,6 +55,7 @@ function responsiveChatPush(element, sender, origin, message) {
       originClass = 'fromThem';
   }
   $(element + ' .messages').append('<div class="message"><div class="' + originClass + '"><p>' + message + '</p></div></div>');
+  $(element + ' #input').html("Hey Ash, I have a few questions about native iOS and JavaScript...");
 }
 
 /* Activating chatbox on element */
@@ -70,7 +63,7 @@ responsiveChat('.responsive-html5-chat');
 
 
 responsiveChatPush('.chat', 'Kate', 'me', 'It looks beautiful!');
-responsiveChatPush('.chat', 'John Doe', 'you', 'It looks like the iPhone message box.');
+responsiveChatPush('.chat', 'John Doe', 'you', 'It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box.');
 responsiveChatPush('.chat', 'Kate', 'me', 'Yep, is this design responsive?');
 responsiveChatPush('.chat', 'Kate', 'me', 'By the way when I hover on my message it shows date.');
 responsiveChatPush('.chat', 'John Doe', 'you','Yes, this is completely responsive.');

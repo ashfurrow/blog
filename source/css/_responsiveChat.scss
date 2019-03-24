@@ -23,9 +23,10 @@ $appleBlue: #2668d0;
   }
 
   form.chat {
-    margin: 0;
+    margin: 15px 0;
     cursor: default;
     position: absolute;
+    display: block;
     left: 0;
     right: 0;
     bottom: 0;
@@ -42,7 +43,7 @@ $appleBlue: #2668d0;
       overflow-x: hidden;
       overflow-y: scroll;
       position: relative;
-      height: 90%;
+      height: 85%;
       width: 100%;
       padding: 2% 3%;
       border-bottom: 1px solid #ecf0f1;
@@ -69,10 +70,9 @@ $appleBlue: #2668d0;
       width: 98%;
       padding: 0.5%;
       p {
-        margin: 5px 0;
-        @media (min-width: 768px) {
-          margin: 0; // Handled by our default p tag for desktops. Oops.
-        }
+        line-height: 20px;
+        margin: 0;
+        padding: 10px 0;
       }
     }
     .myMessage, .fromThem {
@@ -161,20 +161,23 @@ $appleBlue: #2668d0;
     }
 
     // Formatting for the input at the bottom.
-    input {
-      font: 400 13px;
+    input, #input {
+      font-size: 13px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       border: 0;
       padding: 0 15px;
-      height: 10%;
+      height: 15%;
       outline: 0;
     }
-    input[type="text"] {
-      width: 73%;
+    p#input {
+      display: block;
+      width: calc(100% - 50px);
       float: left;
+      margin: 0;
+      line-height: 20px;
     }
     input[type="submit"] {
-      width: 23%;
+      width: 50px;
       background: transparent;
       color: #0072c6;
       font-weight: 700;
