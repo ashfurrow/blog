@@ -372,11 +372,12 @@ blockquote {
   padding: 0 1em;
   padding-left: 2em;
   margin: 2em 0;
-  font-style: none;
+  font-style: normal;
+  color: $gray;
 
   /* Makes bold text in blockquotes really pop */
-  strong, b {
-    color: $gray-dark;
+  strong, b, em {
+    color: darken($gray, 10%);
   }
 
   @media only screen and (min-width: 768px) {

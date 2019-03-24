@@ -68,7 +68,6 @@ function responsiveChat(element, chatScript) {
 }
 
 function responsiveChatPush(element, originClass, message) {
-  var originClass;
   $(element + " .messages").append(
     '<div class="message"><div class="' +
       originClass +

@@ -84,7 +84,7 @@ $appleBlue: #2668d0;
       border-radius: 25px;
       clear: both;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 12px;
+      font-size: 15px;
       max-width: 90%;
     }
 
@@ -162,7 +162,7 @@ $appleBlue: #2668d0;
 
     // Formatting for the input at the bottom.
     #input {
-      font-size: 13px;
+      font-size: 15px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       border: 0;
       padding: 0 10px;
@@ -170,7 +170,7 @@ $appleBlue: #2668d0;
       outline: 0;
 
       display: table;
-      width: calc(100% - 50px);
+      width: calc(100% - 60px);
       float: left;
       p {
         color: black;
@@ -181,14 +181,14 @@ $appleBlue: #2668d0;
       }
     }
     input[type="submit"] {
-      font-size: 13px;
+      font-size: 15px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       border: 0;
       padding: 0 15px;
       height: 15%;
       outline: 0;
 
-      width: 50px;
+      width: 60px;
       background: transparent;
       color: #0072c6;
       font-weight: 700;

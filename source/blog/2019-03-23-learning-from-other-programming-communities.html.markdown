@@ -1,5 +1,5 @@
 ---
-title:  iOS \"versus\" JavaScript: How to Learn From Other Programming Communities"
+title:  "iOS \"versus\" JavaScript: How to Learn From Other Programming Communities"
 date: 2019-03-23 20:54:23 UTC
 background_image: /img/blog/learning-from-other-programming-communities/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1106940840491081728
@@ -51,7 +51,7 @@ BEGIN_WIDE
 
 > (With Apple's tools), you can build an app you couldn't build on any (other) platform. And, to me, this is the most exciting. (...) Because it's all about managing complexity. You're developers, you know that. It's all about managing complexity. It's like scaffolding, right? You erect some scaffolding, and if you keep going up and up and up, and eventually the scaffolding collapses under its own weight. That's what building software is. It's "how much scaffolding can you erect before the whole thing collapses under its own weight?" (...) We all know that. It's about managing complexity.
 > 
-> (Apple's) tools allow you to not have to worry about 90% of the stuff you've worried about, so you can erect your five stories of scaffolding, but _you're starting on story number twenty three instead of story number six_. You can get a lot higher. (Emphasis added)
+> (Apple's) tools allow you to not have to worry about 90% of the stuff you've worried about, so you can erect your five stories of scaffolding, but **you're starting on story number twenty three instead of story number six**. You can get a lot higher. (Emphasis added)
 
 END_WIDE
 
@@ -69,14 +69,10 @@ While Apple might be able to provide a great foundation, _I'm a roads-and-bridge
 
 With all that said, with open hearts and clear minds, I'd like to share some of the practical affects of this rather philosophical distinction. What _are_ the actual advantages/disadvantages to both native iOS and JavaScript? In what's sure to make everyone mad, I've mocked up a conversation to describe why native iOS and JavaScript development are  both so amazing and both so awful.
 
-BEGIN_NARROW
-
 <div class="chatparent">
   <div class="responsive-html5-chat">
   </div>
 </div>
-
-END_NARROW
 
 This isn't a compressive list, and my opinions are constantly evolving. I try to be aware of my biases and blindspots, and I try not to assume that my experiences apply universally. These observations are obviously based on my experience of moving between iOS and web, which isn't typical.
 
