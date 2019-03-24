@@ -9,4 +9,4 @@ I gave a presentation this morning at [Podcamp Toronto](http://2012.podcamptoron
 
 Also, I release the slides under Creative Commons.
 
- [![Creative Commons License](http://i.creativecommons.org/l/by/3.0/88x31.png)](http://creativecommons.org/licenses/by/3.0/)(READMORE)
+ [![Creative Commons License](https://licensebuttons.net/l/by/3.0/88x31.png)](http://creativecommons.org/licenses/by/3.0/)(READMORE)
