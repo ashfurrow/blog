@@ -36,14 +36,15 @@ function responsiveChat(element) {
 
   $(element + ' input[type="submit"]').click(function(event) {
     event.preventDefault();
-    var message = $(element + " #input").html();
+    var message = $(element + " #input").text();
     if (message) {
       if (chatScriptIndex < chatScript.length) {
-        $(element + " div.messages").append(
-          '<div class="message"><div class="myMessage"><p>' +
-            message +
-            "</p></div></div>"
-        );
+        responsiveChatPush(element, "reader", message)
+        $(element + " #input").html("<p></p>");
+
+        var step = chatScript[chatScriptIndex];
+        chatScriptIndex++;
+
         setTimeout(function() {
           $(element)
             .find("span")
@@ -53,19 +54,9 @@ function responsiveChat(element) {
           $(element)
             .find("span")
             .removeClass("spinner");
+          responsiveChatPush(element, "ash", step.message)
+          $(element + " #input").html("<p>" + step.response + "</p>");
         }, 2000);
-
-        // Queue up the response.
-        var step = chatScript[chatScriptIndex];
-        chatScriptIndex++;
-        setTimeout(function() {
-          $(element + " .messages").append(
-            '<div class="message"><div class="fromThem"><p>' +
-              step.response +
-              "</p></div></div>"
-          );
-          $(element + " #input").html("<p>" + step.message + "</p>");
-        }, 3000);
       } else {
         $(element + " #input").html("");
       }
@@ -75,13 +66,8 @@ function responsiveChat(element) {
   });
 }
 
-function responsiveChatPush(element, origin, message) {
+function responsiveChatPush(element, originClass, message) {
   var originClass;
-  if (origin == "me") {
-    originClass = "myMessage";
-  } else {
-    originClass = "fromThem";
-  }
   $(element + " .messages").append(
     '<div class="message"><div class="' +
       originClass +
@@ -94,7 +80,7 @@ function responsiveChatPush(element, origin, message) {
 /* Activating chatbox on element */
 responsiveChat(".responsive-html5-chat");
 // Start us off on the right foot.
-responsiveChatPush('.chat', 'you', 'Hey, want to chat about native iOS "versus" JavaScript?');
+responsiveChatPush('.chat', 'ash', 'Hey, want to chat about native iOS "versus" JavaScript?');
 $(".responsive-html5-chat #input").html("<p>Yeah. Why blah blah blah</p>");
 
 // responsiveChatPush('.chat', 'you', 'It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box.');

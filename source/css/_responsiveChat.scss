@@ -75,7 +75,7 @@ $appleBlue: #2668d0;
         padding: 10px 0;
       }
     }
-    .myMessage, .fromThem {
+    .reader, .ash {
       word-wrap: break-word;
       margin-bottom: 20px;
       position: relative;
@@ -89,14 +89,14 @@ $appleBlue: #2668d0;
     }
 
     // Formatting specific to "my" messages.
-    .myMessage {
+    .reader {
       background: $appleBlue;
       color: white;
       float: right;
       clear: both;
       border-bottom-right-radius: 20px 0px;
     }
-    .myMessage:before {
+    .reader:before {
       content: "";
       position: absolute;
       z-index: 1;
@@ -110,7 +110,7 @@ $appleBlue: #2668d0;
       border-bottom-left-radius: 15px 0px;
       transform: translate(-1px, -2px);
     }
-    .myMessage:after {
+    .reader:after {
       content: "";
       position: absolute;
       z-index: 1;
@@ -125,14 +125,14 @@ $appleBlue: #2668d0;
     }
 
     // Formatting specific to "their" messages
-    .fromThem {
+    .ash {
       background: #e5e5ea;
       color: black;
       float: left;
       clear: both;
       border-bottom-left-radius: 30px 0px;
     }
-    .fromThem:before {
+    .ash:before {
       content: "";
       position: absolute;
       z-index: 2;
@@ -146,7 +146,7 @@ $appleBlue: #2668d0;
       border-bottom-right-radius: 15px 0px;
       transform: translate(-1px, -2px);
     }
-    .fromThem:after {
+    .ash:after {
       content: "";
       position: absolute;
       z-index: 3;
