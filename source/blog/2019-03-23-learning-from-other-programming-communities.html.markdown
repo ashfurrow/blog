@@ -69,12 +69,14 @@ While Apple might be able to provide a great foundation, _I'm a roads-and-bridge
 
 With all that said, with open hearts and clear minds, I'd like to share some of the practical affects of this rather philosophical distinction. What _are_ the actual advantages/disadvantages to both native iOS and JavaScript? In what's sure to make everyone mad, here are some concrete things I think make native iOS and JavaScript development both amazing and awful.
 
-<div class="iphone">
-  <div class="border">
-    <div class="responsive-html5-chat">
-    </div>
+BEGIN_NARROW
+
+<div class="chatparent">
+  <div class="responsive-html5-chat">
   </div>
 </div>
+
+END_NARROW
 
 This isn't a compressive list, and my opinions are constantly evolving. I try to be aware of my biases and blindspots, and I try not to assume that my experiences apply universally. These observations are obviously based on my experience of moving between iOS and web, which isn't typical.
 
