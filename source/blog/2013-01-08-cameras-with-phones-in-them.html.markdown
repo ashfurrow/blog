@@ -15,9 +15,7 @@ I was touched by his response.
 
 > Ash, you're part of the non-existent problem. Less professional looking photos, more sushi pictures.
 
-Not to let a challenge go unmet, the next time I had sushi, I took this photo with Instagram:
-
- [![](http://distilleryimage4.instagram.com/38754ffc578911e296ca22000a9f0a36_7.jpg)](http://distilleryimage4.instagram.com/38754ffc578911e296ca22000a9f0a36_7.jpg)
+Not to let a challenge go unmet, the next time I had sushi, I took a photo with Instagram.
 
 It got me thinking about iPhonography: are iPhones phones with pretty capable cameras in them? Or good point-and-shoot cameras with phones in them?
 
