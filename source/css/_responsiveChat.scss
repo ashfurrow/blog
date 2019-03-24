@@ -14,6 +14,7 @@ $appleBlue: #2668d0;
   margin: 0 auto;
   position: relative;
 
+  // Make everything animate because animations are cool.
   form.chat * {
     transition: all 0.5s;
     box-sizing: border-box;
@@ -35,185 +36,170 @@ $appleBlue: #2668d0;
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE/Edge */
     user-select: none;
-  }
 
-  form.chat span.spinner {
-    -moz-animation: loading-bar 1s 1;
-    -webkit-animation: loading-bar 1s 1;
-    animation: loading-bar 1s 1;
-    display: block;
-    height: 2px;
-    background-color: $appleBlue;
-    transition: width 0.2s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 4;
-  }
+    .messages {
+      display: block;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      position: relative;
+      height: 90%;
+      width: 100%;
+      padding: 2% 3%;
+      border-bottom: 1px solid #ecf0f1;
+    }
 
-  form.chat .messages {
-    display: block;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    position: relative;
-    height: 90%;
-    width: 100%;
-    padding: 2% 3%;
-    border-bottom: 1px solid #ecf0f1;
-  }
+    // Customize the scrollbar to look like Messages.app
+    ::-webkit-scrollbar {
+      width: 3px;
+      height: 1px;
+      transition: all 0.5s;
+      z-index: 10;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: white;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #bec4c8;
+      border-radius: 3px;
+    }
 
-  form.chat ::-webkit-scrollbar {
-    width: 3px;
-    height: 1px;
-    transition: all 0.5s;
-    z-index: 10;
-  }
-  form.chat ::-webkit-scrollbar-track {
-    background-color: white;
-  }
-  form.chat ::-webkit-scrollbar-thumb {
-    background-color: #bec4c8;
-    border-radius: 3px;
-  }
+    // Basic message formatting.
+    .message {
+      display: block;
+      width: 98%;
+      padding: 0.5%;
+      p {
+        margin: 5px 0;
+        @media (min-width: 768px) {
+          margin: 0; // Handled by our default p tag for desktops. Oops.
+        }
+      }
+    }
+    .myMessage, .fromThem {
+      word-wrap: break-word;
+      margin-bottom: 20px;
+      position: relative;
+      padding: 0px 15px;
+      color: white;
+      border-radius: 25px;
+      clear: both;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 12px;
+      max-width: 90%;
+    }
 
-  form.chat .message {
-    display: block;
-    width: 98%;
-    padding: 0.5%;
-  }
+    // Formatting specific to "my" messages.
+    .myMessage {
+      background: $appleBlue;
+      color: white;
+      float: right;
+      clear: both;
+      border-bottom-right-radius: 20px 0px;
+    }
+    .myMessage:before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      bottom: -2px;
+      right: -8px;
+      height: 19px;
+      border-right: 20px solid $appleBlue;
+      border-bottom-left-radius: 16px 14px;
+      -webkit-transform: translate(0, -2px);
+      transform: translate(0, -2px);
+      border-bottom-left-radius: 15px 0px;
+      transform: translate(-1px, -2px);
+    }
+    .myMessage:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      bottom: -2px;
+      right: -42px;
+      width: 12px;
+      height: 20px;
+      background: white;
+      border-bottom-left-radius: 10px;
+      -webkit-transform: translate(-30px, -2px);
+      transform: translate(-30px, -2px);
+    }
 
-  form.chat .message p {
-    margin: 5px 0;
-    @media (min-width: 768px) {
-      margin: 0; // Handled by our default p tag for desktops. Oops.
+    // Formatting specific to "their" messages
+    .fromThem {
+      background: #e5e5ea;
+      color: black;
+      float: left;
+      clear: both;
+      border-bottom-left-radius: 30px 0px;
+    }
+    .fromThem:before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      bottom: -2px;
+      left: -7px;
+      height: 19px;
+      border-left: 20px solid #e5e5ea;
+      border-bottom-right-radius: 16px 14px;
+      -webkit-transform: translate(0, -2px);
+      transform: translate(0, -2px);
+      border-bottom-right-radius: 15px 0px;
+      transform: translate(-1px, -2px);
+    }
+    .fromThem:after {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      bottom: -2px;
+      left: 4px;
+      width: 26px;
+      height: 20px;
+      background: white;
+      border-bottom-right-radius: 10px;
+      -webkit-transform: translate(-30px, -2px);
+      transform: translate(-30px, -2px);
+    }
+
+    // Formatting for the input at the bottom.
+    input {
+      font: 400 13px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      border: 0;
+      padding: 0 15px;
+      height: 10%;
+      outline: 0;
+    }
+    input[type="text"] {
+      width: 73%;
+      float: left;
+    }
+    input[type="submit"] {
+      width: 23%;
+      background: transparent;
+      color: #0072c6;
+      font-weight: 700;
+      text-align: right;
+      float: right;
+    }
+
+    // "Spinner" really means "loading indicator" here.
+    span.spinner {
+      -moz-animation: loading-bar 1s 1;
+      -webkit-animation: loading-bar 1s 1;
+      animation: loading-bar 1s 1;
+      display: block;
+      height: 2px;
+      background-color: $appleBlue;
+      transition: width 0.2s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 4;
     }
   }
 
-  form.chat .myMessage,
-  form.chat .fromThem {
-    max-width: 50%;
-    word-wrap: break-word;
-    margin-bottom: 20px;
-  }
-
-  form.chat .myMessage,
-  .fromThem {
-    position: relative;
-    padding: 0px 15px;
-    color: white;
-    border-radius: 25px;
-    clear: both;
-    font: 400 15px;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-
-  form.chat .myMessage {
-    background: $appleBlue;
-    color: white;
-    float: right;
-    clear: both;
-    border-bottom-right-radius: 20px 0px;
-  }
-
-  form.chat .myMessage:before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    bottom: -2px;
-    right: -8px;
-    height: 19px;
-    border-right: 20px solid $appleBlue;
-    border-bottom-left-radius: 16px 14px;
-    -webkit-transform: translate(0, -2px);
-    transform: translate(0, -2px);
-    border-bottom-left-radius: 15px 0px;
-    transform: translate(-1px, -2px);
-  }
-
-  form.chat .myMessage:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    bottom: -2px;
-    right: -42px;
-    width: 12px;
-    height: 20px;
-    background: white;
-    border-bottom-left-radius: 10px;
-    -webkit-transform: translate(-30px, -2px);
-    transform: translate(-30px, -2px);
-  }
-
-  form.chat .fromThem {
-    background: #e5e5ea;
-    color: black;
-    float: left;
-    clear: both;
-    border-bottom-left-radius: 30px 0px;
-  }
-  form.chat .fromThem:before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    bottom: -2px;
-    left: -7px;
-    height: 19px;
-    border-left: 20px solid #e5e5ea;
-    border-bottom-right-radius: 16px 14px;
-    -webkit-transform: translate(0, -2px);
-    transform: translate(0, -2px);
-    border-bottom-right-radius: 15px 0px;
-    transform: translate(-1px, -2px);
-  }
-
-  form.chat .fromThem:after {
-    content: "";
-    position: absolute;
-    z-index: 3;
-    bottom: -2px;
-    left: 4px;
-    width: 26px;
-    height: 20px;
-    background: white;
-    border-bottom-right-radius: 10px;
-    -webkit-transform: translate(-30px, -2px);
-    transform: translate(-30px, -2px);
-  }
-
-  form.chat input {
-    font: 400 13px;
-    font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
-    border: 0;
-    padding: 0 15px;
-    height: 10%;
-    outline: 0;
-  }
-
-  form.chat input[type="text"] {
-    width: 73%;
-    float: left;
-  }
-
-  form.chat input[type="submit"] {
-    width: 23%;
-    background: transparent;
-    color: #0072c6;
-    font-weight: 700;
-    text-align: right;
-    float: right;
-  }
-
-  form.chat .myMessage,
-  form.chat .fromThem {
-    font-size: 12px;
-  }
-
-  form.chat .myMessage,
-  form.chat .fromThem {
-    max-width: 90%;
-  }
-
+  // Loading bar animation
   @-moz-keyframes loading-bar {
     0% {
       width: 0%;
@@ -225,7 +211,6 @@ $appleBlue: #2668d0;
       width: 100%;
     }
   }
-
   @-webkit-keyframes loading-bar {
     0% {
       width: 0%;
@@ -237,7 +222,6 @@ $appleBlue: #2668d0;
       width: 100%;
     }
   }
-
   @keyframes loading-bar {
     0% {
       width: 0%;
