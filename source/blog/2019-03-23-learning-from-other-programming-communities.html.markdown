@@ -80,7 +80,7 @@ END_NARROW
 
 This isn't a compressive list, and my opinions are constantly evolving. I try to be aware of my biases and blindspots, and I try not to assume that my experiences apply universally. These observations are obviously based on my experience of moving between iOS and web, which isn't typical.
 
-What's important is that when you see a difference between what you know and what someone else knows, you approach that with an open mind. Don't jump to conclusions. Be curious about differences and always look for something you can learn.
+What's important is that when you see a difference between what you know and what someone else knows, you approach that with an open mind. Don't jump to conclusions. Be curious about differences and always look for something you can learn.
 
 BEGIN_WIDE
 
@@ -89,3 +89,193 @@ BEGIN_WIDE
 END_WIDE
 
 If you're an expert in one thing, it's going to feel uncomfortable to branch out and become a beginner again. It was terrifying for me. But if you push through that discomfort, you can gain valuable perspective that will only help you be a better professional.
+
+<script>
+  window.onload = function() {
+    var chatScript = [
+      {
+        message: "The best thing about JavaScript is its ecosystem. It is <em>huge</em>. And it's vibrant: JavaScript developers feel like they own their own platform, and consequently, there's a lot of experimentation. Most ideas are bad, but the successful ones get institutionalized as best practices. Over time, momentum grows.",
+        response: "What do you mean about momentum?"
+      },
+      {
+        message: "Think about this: JavaScript development tools are often written <em>in</em> JavaScript. As soon as a tool gets built, it's able to be used to build more tools.",
+        response: "That sounds kind of dizzying. Is that why the JavaScript ecosystem seems to move so quickly?"
+      },
+      {
+        message: "Aye, that's a big part of it. JavaScript itself and <a href='https://www.npmjs.com'>npm</a> also encourage the creation of many, single-purpose tools. Its easy for it to feel overwhelming.",
+        response: "That sounds pretty sketchy. What about the scaffolding metaphor from earlier? Don't all those packages collapse under their own weight?"
+      },
+      {
+        message: "Sometimes they do, but it's happened enough times now that the JavaScript ecosystem has developed better tools and best practices to deal with the complexity. Remember, the community is huge, so there's a lot of impetus to make it all work.",
+        response: "Still..."
+      },
+      {
+        message: "You're right to be skeptical. The JavaScript ecosystem can't easily be decoupled from your development flow, either. It's really weird to think about building a Node.js server, for example, without using npm. In iOS, lots of folks still don't use a dependency manager. It's just a different perspective.",
+        response: "I hadn't thought about that."
+      },
+      {
+        message: "It's interesting, isn't it? I think of JavaScript as a crucible: hard constraints, like the need for absolute backwards compatibility across decades of browsers, have encouraged creativity in the community, and a sense of shared ownership.",
+        response: "Don't things get really fragmented?"
+      },
+      {
+        message: "Yeah, they do. But fragmentation isn't always bad, either. JavaScript allows for specialization in a way that iOS can't: consider two core contributors to <a href='https://babeljs.io'>Babel</a> and <a href='https://prettier.io'>Prettier</a> (two important OSS projects). They might never interact at all because the two tools are so different, but they <em>do</em> both get to use the same tools. JavaScript encourages fragmentation in useful ways, too.",
+        response: "But the language just moves so fast!"
+      },
+      {
+        message: "Well, so does Swift.",
+        response: "Touché. Are you now going to tell me everything wrong with native iOS development?"
+      },
+      {
+        message: "No, I always like to start on a positive note. Apple's tools for common development workflows are <em>really</em> well-polished. Apple's app performance instrumentation tool is the best I've ever seen.",
+        response: "Yeah, Instruments.app is great."
+      },
+      {
+        message: "And because Apple owns the platform, they can be opinionated about their tools. Opinionated software can be really good.",
+        response: "That's true!"
+      },
+      {
+        message: "Unfortunately, Apple's opinions about developer tooling are often not that good.",
+        response: "Wait, what do you mean?"
+      },
+      {
+        message: "Apple's tooling reflects Apple's priorities; they make Instruments.app really amazing because they care that we build performant apps. That's great! But Apple's unit testing tools are... pretty awful to compared to <a href='https://jestjs.io'>Jest</a>. Apple doesn't prioritize unit testing – that's their opinion, and if you disagree with it, then that's your problem.",
+        response: "What's so wrong about Xcode's unit testing tools?"
+      },
+      {
+        message: "I wrote a <a href='https://ashfurrow.com/blog/apple-releases-jive/'>whole blog post about this</a>, go check it out. It's not a fair comparison, granted: Jest benefits from being used by such a huge community in web front-ends, servers, and command-line tools. XCTest gets used by the relatively small iOS developer community. However, the blog post goes into detail about low-hanging fruit that would make a huge difference.",
+        response: "I hadn't thought about how all the different types of JavaScript could share the same tools like that. How else are the native iOS tools different?"
+      },
+      {
+        message: "Apple builds tools for workflows that already exist, or that Apple invents. Their tools can be difficult to build community tools on top of. Take the new Xcode extensions API: it's very limited. Compare that to Visual Studio Code's extensions API, which is so capable that it has enabled entirely <em>new kinds</em> of developer tools get built.",
+        response: "Yeah, I still miss Alcatraz."
+      },
+      {
+        message: "Me too.",
+        response: "This kind of makes me feel like JavaScript is just always going to be better than native iOS, since it's bigger."
+      },
+      {
+        message: "\"Better\" is a value judgement – they are different. We're just analyzing those differences. Let's think about how iOS development encourages specialization.",
+        response: "Okay..."
+      },
+      {
+        message: "Specialization can be really useful. Many of Apple's APIs are so stable, and cross such a wide spectrum of levels of abstraction, that there are iOS developers who <em>just</em> focus on the AVFoundation or CoreAnimation frameworks. Specialists can create <em>incredibly</em> polished apps, and that kind of deep specialization is pretty uncommon among JavaScript developers.",
+        response: "Whoa, yeah."
+      },
+      {
+        message: "However, specialized skills are difficult to apply to a broad range of tasks.",
+        response: "That's bad."
+      },
+      {
+        message: "But they enable very rich, user-centric designs to spring to life and delight users.",
+        response: "That's good!"
+      },
+      {
+        message: "But when you have a problem, and Apple doesn't care about <em>that</em> problem, it really sucks.",
+        response: "That's bad."
+      },
+      {
+        message: "Despite this, open source contributors have built some very impressive iOS tools.",
+        response: "That's good!"
+      },
+      {
+        message: "But Apple's mishandling of Swift Package Manager has sucked a lot of enthusiasm out of this community.",
+        response: "That's bad."
+      },
+      {
+        message: "It is what it is.",
+        response: "... can I go now?"
+      },
+      {
+        message: "😉",
+        response: "Hey, I just figured out what this bit is a reference too."
+      },
+      {
+        message: "Yeah, I'm a sucker for early Simpsons jokes. <a href='https://youtu.be/Krbl911ZPBA?t=22'>Here's the source material</a>.",
+        response: "We've gotten off-topic."
+      },
+      {
+        message: "Right, sorry.",
+        response: "Any other big advantages to native iOS development?"
+      },
+      {
+        message: "Yes. I have to give huge props to Apple for using their authoritative position within the community to make it really easy to learn how to build working software.",
+        response: "What kind of tools?"
+      },
+      {
+        message: "In my Core Data workshops, one of the first things we do is create a project with a Core Data Xcode template and examine it. Or take <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a> for example. They make sure it's <em>really</em> easy to build apps for their platform.",
+        response: "It sounds almost... selfish, when you say it like that."
+      },
+      {
+        message: "Life is complicated. I can recognize when Apple has an agenda which happens to align with my own.",
+        response: "I guess..."
+      },
+      {
+        message: "Apple's problems aren't your problems. That's a value-neutral statement, so if you have feelings about it, interrogate them. I guarantee you'll learn something.",
+        response: "Okay so what else is wrong with native iOS development?"
+      },
+      {
+        message: "It's slow. <em>Unreasonably</em> slow. But this slowness is often only apparent when you've used something better. Since iOS developers often focus on just iOS, they don't notice it.",
+        response: "What do you mean?"
+      },
+      {
+        message: "JavaScript developer tooling is <em>incredibly</em> sophisticated (if unpolished). Hot module reloading and Jest's watch mode enable software development at the speed of thought. iOS development is like a painter who makes a brush stroke and has to wait fifteen seconds to see that change to their painting.",
+        response: "That's kind of harsh."
+      },
+      {
+        message: "It's how I feel. It's hard to go back from a world where I see my changes and test results <em>instantly</em>.",
+        response: "Are the tools really that good?"
+      },
+      {
+        message: "Yes. 'Not-invented here syndrome' doesn't hold much purchase among JavaScript developers.",
+        response: "You're saying it does with iOS developers?"
+      },
+      {
+        message: "It is what it is. Another reality is that native iOS programming languages can't be used outside native iOS software development.",
+        response: "What about Swift on the server?"
+      },
+      {
+        message: "Swift on the server is fighting an uphill battle against frameworks with years of momentum behind them. It can be fun to build server apps in Swift, but it's such a rough experience compared to the alternatives. When iOS developers ask me for advice on building their first server, I steer them away from Swift. They're more likely to accomplish their goals and avoid getting discouraged and quitting if they learn Sinatra or Express.",
+        response: "I'm starting to feel depressed about native iOS again..."
+      },
+      {
+        message: "The iOS community is way smaller. That's okay! Accepting that fact, and learning to work within our own constraints, only helps us grow. ",
+        response: "Can you say some mean things about JavaScript to cheer me up?"
+      },
+      {
+        message: "Yeah, totally. Remember Xcode's awesome project templates? No such thing exists on JavaScript. There is no platform owner, so there is no default <em>anything</em>. JavaScript's infinite possibilities lead to possibility paralysis. It leads to developers blaming themselves when their tools don't work. Constant framework churn leaves the ecosystem littered with codebases with hopelessly outdated dependencies. And let's not forget the heavy influence that corporate open source holds over the entire ecosystem.",
+        response: "Wait, what?"
+      },
+      {
+        message: "Facebook makes React, React Native, Jest, Yarn, and loads more. Microsoft makes Visual Studio Code and TypeScript. Even the beloved npm is backed by venture capital, which is scarier to me than a bloated node_modules directory. Any of these companies can make a decision based on their own agenda and cause major problems for the developer community.",
+        response: "That sounds awful."
+      },
+      {
+        message: "It is what it is. I do corporate open source for Artsy, which is also venture-backed.",
+        response: "Well, Artsy isn't a backbone of the JavaScript ecosystem."
+      },
+      {
+        message: "Earlier, I asked you to keep an open mind. That doesn't mean giving up critical thought.",
+        response: "I think that's a good place to wrap it up."
+      },
+      {
+        message: "Yeah, hey thanks for the discussion! It felt great to engage with such a curious interlocutor.",
+        response: "Well, you're quite eloquent yourself."
+      },
+      {
+        message: "Alright, take care.",
+        response: "See ya."
+      }
+    ];
+    // Activating chatbox on element
+    responsiveChat(".responsive-html5-chat", chatScript);
+    // Start us off on the right foot.
+    responsiveChatPush(
+      ".chat",
+      "ash",
+      'Hey, want to chat about native iOS "versus" JavaScript?'
+    );
+    $(".responsive-html5-chat #input").html(
+      "<p>Yeah. What exactly makes JavaScript so awesome?</p>"
+    );
+  }
+</script>

@@ -173,6 +173,7 @@ $appleBlue: #2668d0;
       width: calc(100% - 50px);
       float: left;
       p {
+        color: black;
         display: table-cell;
         vertical-align: middle;
         line-height: 20px;
@@ -197,9 +198,9 @@ $appleBlue: #2668d0;
 
     // "Spinner" really means "loading indicator" here.
     span.spinner {
-      -moz-animation: loading-bar 1s 1;
-      -webkit-animation: loading-bar 1s 1;
-      animation: loading-bar 1s 1;
+      -moz-animation: loading-bar 0.5s 1;
+      -webkit-animation: loading-bar 0.5s 1;
+      animation: loading-bar 0.5s 1;
       display: block;
       height: 2px;
       background-color: $appleBlue;

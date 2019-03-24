@@ -16,7 +16,7 @@ Support : hi@vatanay.com
 Note from Ash: I've modified this from its original version. It has been formatted to fit your screen.
 */
 
-function responsiveChat(element) {
+function responsiveChat(element, chatScript) {
   $(element).html(
     '<form class="chat"><span></span><div class="messages"></div><div id="input"></div><input type="submit" value="Send"></form>'
   );
@@ -27,9 +27,7 @@ function responsiveChat(element) {
     $(element)
       .find(".messages")
       .scrollTop(
-        $(element)
-          .find(".messages")
-          .height()
+        $(element).find(".messages").prop("scrollHeight")
       );
   }
   showLatestMessage();
@@ -41,6 +39,7 @@ function responsiveChat(element) {
       var step = chatScript[chatScriptIndex];
 
       responsiveChatPush(element, "reader", message);
+      showLatestMessage();
       $(element + " #input").html("<p></p>");
 
       setTimeout(function() {
@@ -49,16 +48,19 @@ function responsiveChat(element) {
           .addClass("spinner");
       }, 100);
       setTimeout(function() {
-        $(element).find("span").removeClass("spinner");
+        $(element)
+          .find("span")
+          .removeClass("spinner");
 
         if (chatScriptIndex < chatScript.length) {
           responsiveChatPush(element, "ash", step.message);
+          showLatestMessage();
           chatScriptIndex++;
           $(element + " #input").html("<p>" + step.response + "</p>");
         } else {
           $(element + " #input").html("");
         }
-      }, 2000);
+      }, 1000);
     }
 
     showLatestMessage();
@@ -75,26 +77,3 @@ function responsiveChatPush(element, originClass, message) {
       "</p></div></div>"
   );
 }
-
-/* Activating chatbox on element */
-responsiveChat(".responsive-html5-chat");
-// Start us off on the right foot.
-responsiveChatPush(
-  ".chat",
-  "ash",
-  'Hey, want to chat about native iOS "versus" JavaScript?'
-);
-$(".responsive-html5-chat #input").html(
-  "<p>Yeah. What exactly makes JavaScript so awesome?</p>"
-);
-
-var chatScript = [
-  {
-    message: "something",
-    response: "something else"
-  },
-  {
-    message: "something2",
-    response: "something else2"
-  }
-];
