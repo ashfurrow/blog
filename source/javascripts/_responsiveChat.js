@@ -44,10 +44,10 @@ function responsiveChat(element) {
               "</p></div></div>"
           );
           setTimeout(function () {
-              $(element + ' > span').addClass("spinner");
+              $(element).find('span').addClass("spinner");
           }, 100);
           setTimeout(function () {
-              $(element + ' > span').removeClass("spinner");
+              $(element).find('span').removeClass("spinner");
           }, 2000);
       }
       $(element + ' input[type="text"]').val("");
