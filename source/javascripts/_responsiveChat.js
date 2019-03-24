@@ -17,57 +17,98 @@ Note from Ash: I've modified this from its original version. It has been formatt
 */
 
 function responsiveChat(element) {
-  $(element).html('<form class="chat"><span></span><div class="messages"></div><p id="input"></p><input type="submit" value="Send"></form>');
+  $(element).html(
+    '<form class="chat"><span></span><div class="messages"></div><div id="input"></div><input type="submit" value="Send"></form>'
+  );
 
   var chatScriptIndex = 0;
 
   function showLatestMessage() {
-      $(element).find('.messages').scrollTop($(element).find('.messages').height());
+    $(element)
+      .find(".messages")
+      .scrollTop(
+        $(element)
+          .find(".messages")
+          .height()
+      );
   }
   showLatestMessage();
 
-  $(element + ' input[type="submit"]').click(function (event) {
-      event.preventDefault();
-      var message = $(element + ' #input').html();
-      if (message) {
-          $(element + ' div.messages').append(
-              '<div class="message"><div class="myMessage"><p>' +
-              message +
+  $(element + ' input[type="submit"]').click(function(event) {
+    event.preventDefault();
+    var message = $(element + " #input").html();
+    if (message) {
+      if (chatScriptIndex < chatScript.length) {
+        $(element + " div.messages").append(
+          '<div class="message"><div class="myMessage"><p>' +
+            message +
+            "</p></div></div>"
+        );
+        setTimeout(function() {
+          $(element)
+            .find("span")
+            .addClass("spinner");
+        }, 100);
+        setTimeout(function() {
+          $(element)
+            .find("span")
+            .removeClass("spinner");
+        }, 2000);
+
+        // Queue up the response.
+        var step = chatScript[chatScriptIndex];
+        chatScriptIndex++;
+        setTimeout(function() {
+          $(element + " .messages").append(
+            '<div class="message"><div class="fromThem"><p>' +
+              step.response +
               "</p></div></div>"
           );
-          setTimeout(function () {
-              $(element).find('span').addClass("spinner");
-          }, 100);
-          setTimeout(function () {
-              $(element).find('span').removeClass("spinner");
-          }, 2000);
+          $(element + " #input").html("<p>" + step.message + "</p>");
+        }, 3000);
+      } else {
+        $(element + " #input").html("");
       }
-      $(element + ' #input').html("");
-      showLatestMessage();
+    }
+
+    showLatestMessage();
   });
 }
 
-function responsiveChatPush(element, sender, origin, message) {
+function responsiveChatPush(element, origin, message) {
   var originClass;
-  if (origin == 'me') {
-      originClass = 'myMessage';
+  if (origin == "me") {
+    originClass = "myMessage";
   } else {
-      originClass = 'fromThem';
+    originClass = "fromThem";
   }
-  $(element + ' .messages').append('<div class="message"><div class="' + originClass + '"><p>' + message + '</p></div></div>');
-  $(element + ' #input').html("Hey Ash, I have a few questions about native iOS and JavaScript...");
+  $(element + " .messages").append(
+    '<div class="message"><div class="' +
+      originClass +
+      '"><p>' +
+      message +
+      "</p></div></div>"
+  );
 }
 
 /* Activating chatbox on element */
-responsiveChat('.responsive-html5-chat');
+responsiveChat(".responsive-html5-chat");
+// Start us off on the right foot.
+responsiveChatPush('.chat', 'you', 'Hey, want to chat about native iOS "versus" JavaScript?');
+$(".responsive-html5-chat #input").html("<p>Yeah. Why blah blah blah</p>");
 
-
-responsiveChatPush('.chat', 'Kate', 'me', 'It looks beautiful!');
-responsiveChatPush('.chat', 'John Doe', 'you', 'It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box.');
-responsiveChatPush('.chat', 'Kate', 'me', 'Yep, is this design responsive?');
-responsiveChatPush('.chat', 'Kate', 'me', 'By the way when I hover on my message it shows date.');
-responsiveChatPush('.chat', 'John Doe', 'you','Yes, this is completely responsive.');
+// responsiveChatPush('.chat', 'you', 'It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box.');
+// responsiveChatPush('.chat', 'me', 'Yep, is this design responsive?');
+// responsiveChatPush('.chat', 'me', 'By the way when I hover on my message it shows date.');
+// responsiveChatPush('.chat', 'you','Yes, this is completely responsive.');
 
 var chatScript = [
-  
-]
+  {
+    message: "something",
+    response: "something else"
+  },
+  {
+    message: "something2",
+    response: "something else2"
+  }
+];
