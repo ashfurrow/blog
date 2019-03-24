@@ -84,7 +84,10 @@ $appleBlue: #2668d0;
   }
 
   form.chat .message p {
-    margin: 0;
+    margin: 5px 0;
+    @media (min-width: 768px) {
+      margin: 0; // Handled by our default p tag for desktops. Oops.
+    }
   }
 
   form.chat .myMessage,
