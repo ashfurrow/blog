@@ -67,7 +67,7 @@ When I write native iOS code, I _feel_ like a renter. When I write JavaScript co
 
 While Apple might be able to provide a great foundation, _I'm a roads-and-bridges kind of developer_. I want to be able to improve my own tools, and I often find myself frustrated. Apple might have those twenty three stories to build on top of, but the JavaScript ecosystem is _huge_ and they're questioning the idea that you can only build so much complexity before it collapses under its own weight. That's great – I love questioning dominant paradigms! But it's also terrifying. Used responsibly, JavaScript can be used to start on a higher floor than native iOS development _and_ help you erect _ten_ stories of scaffolding – all on a platform _you_ own.
 
-With all that said, with open hearts and clear minds, I'd like to share some of the practical affects of this rather philosophical distinction. What _are_ the actual advantages/disadvantages to both native iOS and JavaScript? In what's sure to make everyone mad, here are some concrete things I think make native iOS and JavaScript development both amazing and awful.
+With all that said, with open hearts and clear minds, I'd like to share some of the practical affects of this rather philosophical distinction. What _are_ the actual advantages/disadvantages to both native iOS and JavaScript? In what's sure to make everyone mad, I've mocked up a conversation to describe why native iOS and JavaScript development are  both so amazing and both so awful.
 
 BEGIN_NARROW
 
