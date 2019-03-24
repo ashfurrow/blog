@@ -1,5 +1,5 @@
 ---
-title: Learning From Other Programming Communities
+title: "Native iOS \"versus\" JavaScript: How to Learn From Other Programming Communities"
 date: 2019-03-23 20:54:23 UTC
 background_image: /img/blog/learning-from-other-programming-communities/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1106940840491081728
@@ -7,7 +7,7 @@ background_image_source: https://twitter.com/CloudyConway/status/110694084049108
 
 I started writing iOS applications in 2009. By 2012, I had immersed myself deeply enough in the world of iOS development that I had co-authored [a book on Objective-C](https://amzn.to/2UaTPx4). I took a great deal of professional pride in crafting delightful user experiences in iOS applications, and thought I would carry on this kind of work for a long time. (You can read the whole story [here](https://ashfurrow.com/blog/5-years-of-ios/)).
 
-After I started at Artsy in 2014, I began branching out. Way out. I started helping the platform team maintain our Ruby/Node.js/Scala APIs that our iOS apps relied upon. Using JavaScript, I developed UIs for tools that helped Artsy build its business. I grew. Nowadays, I spend my time building "roads and bridges" to help my colleagues be productive in Artsy's React Native codebase (which is [open source](http://github.com/artsy/emission/)).
+After I started at Artsy in 2014, I began branching out. Way out. I started helping the platform team maintain our Ruby/Node.js/Scala APIs that our iOS apps relied upon. Using JavaScript, I developed UIs for tools that helped Artsy build its business. I grew. Nowadays, I spend my time building "[roads and bridges](https://www.fordfoundation.org/about/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/)" to help my colleagues be productive in Artsy's React Native codebase (which is [open source](http://github.com/artsy/emission/)).
 
 Let me put it to you this way: at companies with both iOS and web developers, those two groups often don't overlap. Or even interact all that much. They don't share programming languages, they don't share developer tooling, sometimes they are on entirely different teams from one another. They are _distinct_ teams with _distinct_ cultures.
 
