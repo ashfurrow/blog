@@ -38,28 +38,27 @@ function responsiveChat(element) {
     event.preventDefault();
     var message = $(element + " #input").text();
     if (message) {
-      if (chatScriptIndex < chatScript.length) {
-        responsiveChatPush(element, "reader", message)
-        $(element + " #input").html("<p></p>");
+      var step = chatScript[chatScriptIndex];
 
-        var step = chatScript[chatScriptIndex];
-        chatScriptIndex++;
+      responsiveChatPush(element, "reader", message);
+      $(element + " #input").html("<p></p>");
 
-        setTimeout(function() {
-          $(element)
-            .find("span")
-            .addClass("spinner");
-        }, 100);
-        setTimeout(function() {
-          $(element)
-            .find("span")
-            .removeClass("spinner");
-          responsiveChatPush(element, "ash", step.message)
+      setTimeout(function() {
+        $(element)
+          .find("span")
+          .addClass("spinner");
+      }, 100);
+      setTimeout(function() {
+        $(element).find("span").removeClass("spinner");
+
+        if (chatScriptIndex < chatScript.length) {
+          responsiveChatPush(element, "ash", step.message);
+          chatScriptIndex++;
           $(element + " #input").html("<p>" + step.response + "</p>");
-        }, 2000);
-      } else {
-        $(element + " #input").html("");
-      }
+        } else {
+          $(element + " #input").html("");
+        }
+      }, 2000);
     }
 
     showLatestMessage();
@@ -80,13 +79,14 @@ function responsiveChatPush(element, originClass, message) {
 /* Activating chatbox on element */
 responsiveChat(".responsive-html5-chat");
 // Start us off on the right foot.
-responsiveChatPush('.chat', 'ash', 'Hey, want to chat about native iOS "versus" JavaScript?');
-$(".responsive-html5-chat #input").html("<p>Yeah. Why blah blah blah</p>");
-
-// responsiveChatPush('.chat', 'you', 'It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box. It looks like the iPhone message box.');
-// responsiveChatPush('.chat', 'me', 'Yep, is this design responsive?');
-// responsiveChatPush('.chat', 'me', 'By the way when I hover on my message it shows date.');
-// responsiveChatPush('.chat', 'you','Yes, this is completely responsive.');
+responsiveChatPush(
+  ".chat",
+  "ash",
+  'Hey, want to chat about native iOS "versus" JavaScript?'
+);
+$(".responsive-html5-chat #input").html(
+  "<p>Yeah. What exactly makes JavaScript so awesome?</p>"
+);
 
 var chatScript = [
   {
