@@ -1,5 +1,5 @@
 ---
-title: "Native iOS \"versus\" JavaScript: How to Learn From Other Programming Communities"
+title:  iOS \"versus\" JavaScript: How to Learn From Other Programming Communities"
 date: 2019-03-23 20:54:23 UTC
 background_image: /img/blog/learning-from-other-programming-communities/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1106940840491081728
