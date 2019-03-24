@@ -21,53 +21,38 @@ Note from Ash: I've modified this from its original version.
 function responsiveChat(element) {
   $(element).html('<form class="chat"><span></span><div class="messages"></div><input type="text" placeholder="Your message"><input type="submit" value="Send"></form>');
 
+  var chatScriptIndex = 0;
+
   function showLatestMessage() {
       $(element).find('.messages').scrollTop($(element).find('.messages').height());
   }
   showLatestMessage();
 
-
-  // $(element + ' input[type="text"]').keypress(function (event) {
-  //     if (event.which == 13) {
-  //         event.preventDefault();
-  //         $(element + ' input[type="submit"]').click();
-  //     }
-  // });
-  // $(element + ' input[type="submit"]').click(function (event) {
-  //     event.preventDefault();
-  //     var message = $(element + ' input[type="text"]').val();
-  //     if ($(element + ' input[type="text"]').val()) {
-  //         var d = new Date();
-  //         var clock = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-  //         var month = d.getMonth() + 1;
-  //         var day = d.getDate();
-  //         var currentDate =
-  //             (("" + day).length < 2 ? "0" : "") +
-  //             day +
-  //             "." +
-  //             (("" + month).length < 2 ? "0" : "") +
-  //             month +
-  //             "." +
-  //             d.getFullYear() +
-  //             "&nbsp;&nbsp;" +
-  //             clock;
-  //         $(element + ' div.messages').append(
-  //             '<div class="message"><div class="myMessage"><p>' +
-  //             message +
-  //             "</p><date>" +
-  //             currentDate +
-  //             "</date></div></div>"
-  //         );
-  //         setTimeout(function () {
-  //             $(element + ' > span').addClass("spinner");
-  //         }, 100);
-  //         setTimeout(function () {
-  //             $(element + ' > span').removeClass("spinner");
-  //         }, 2000);
-  //     }
-  //     $(element + ' input[type="text"]').val("");
-  //     showLatestMessage();
-  // });
+  $(element + ' input[type="text"]').keypress(function (event) {
+      if (event.which == 13) {
+          event.preventDefault();
+          $(element + ' input[type="submit"]').click();
+      }
+  });
+  $(element + ' input[type="submit"]').click(function (event) {
+      event.preventDefault();
+      var message = $(element + ' input[type="text"]').val();
+      if ($(element + ' input[type="text"]').val()) {
+          $(element + ' div.messages').append(
+              '<div class="message"><div class="myMessage"><p>' +
+              message +
+              "</p></div></div>"
+          );
+          setTimeout(function () {
+              $(element + ' > span').addClass("spinner");
+          }, 100);
+          setTimeout(function () {
+              $(element + ' > span').removeClass("spinner");
+          }, 2000);
+      }
+      $(element + ' input[type="text"]').val("");
+      showLatestMessage();
+  });
 }
 
 function responsiveChatPush(element, sender, origin, message) {
@@ -90,3 +75,6 @@ responsiveChatPush('.chat', 'Kate', 'me', 'Yep, is this design responsive?');
 responsiveChatPush('.chat', 'Kate', 'me', 'By the way when I hover on my message it shows date.');
 responsiveChatPush('.chat', 'John Doe', 'you','Yes, this is completely responsive.');
 
+var chatScript = [
+  
+]
