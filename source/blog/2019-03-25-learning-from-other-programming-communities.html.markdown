@@ -3,6 +3,7 @@ title:  "iOS \"versus\" JavaScript: How to Learn From Other Programming Communit
 date: 2019-03-25 00:01:00 UTC
 background_image: /img/blog/learning-from-other-programming-communities/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1106940840491081728
+og_image: /img/blog/learning-from-other-programming-communities/chat.gif
 ---
 
 I started writing iOS applications in 2009. By 2012, I had immersed myself deeply enough in the world of iOS development that I had co-authored [a book on Objective-C](https://amzn.to/2UaTPx4). I took a great deal of professional pride in crafting delightful user experiences in iOS applications, and thought I would carry on this kind of work for a long time. (You can read the whole story [here](https://ashfurrow.com/blog/5-years-of-ios/)).
