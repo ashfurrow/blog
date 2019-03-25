@@ -71,7 +71,7 @@ It's important for me to re-iterate that neither one of these is "better." They 
 
 With all that said, with open hearts and clear minds, I'd like to share some of the practical affects of this rather philosophical distinction. What _are_ the actual advantages/disadvantages to both native iOS and JavaScript? In what's sure to make everyone mad, I've mocked up a conversation to describe why native iOS and JavaScript development are  both so amazing and both so awful.
 
-Go ahead and hit "Send" to get started.
+Go ahead and hit "Send" to get started. (Note: if you prefer, you can read the [source code with this conversation's script on GitHub](https://github.com/ashfurrow/blog/blob/master/source/blog/2019-03-25-learning-from-other-programming-communities.html.markdown). Scroll about halfway down.)
 
 BEGIN_WIDE
 
