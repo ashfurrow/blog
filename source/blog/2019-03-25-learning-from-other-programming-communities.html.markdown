@@ -234,7 +234,7 @@ If you're an expert in one thing, it's going to feel uncomfortable to branch out
         response: "You're saying it does with iOS developers?"
       },
       {
-        message: "Not nearly like it used to. I've been so happy to see the community nourish a tool-focused open source community that brings Apple's sense of polish to building their own tools. <a href='https://github.com/krzysztofzablocki/Sourcery'>Sourcery</a>, <a href='https://github.com/realm/jazzy'>Jazzy</a>, <a href='https://github.com/JohnSundell/Marathon'>Marathon</a>. I could go on – and don't forget amazing commercial tools like <a href='https://revealapp.com'>Reveal</a> or <a href='http://injectionforxcode.com'>Inection for Xcode</a>.",
+        message: "Not nearly like it used to. I've been so happy to see the community nourish a tool-focused open source community that brings Apple's sense of polish to building their own tools. <a href='https://github.com/krzysztofzablocki/Sourcery'>Sourcery</a>, <a href='https://github.com/realm/jazzy'>Jazzy</a>, <a href='https://github.com/JohnSundell/Marathon'>Marathon</a>. I could go on – and don't forget amazing commercial tools like <a href='https://revealapp.com'>Reveal</a> or <a href='http://injectionforxcode.com'>Injection for Xcode</a>.",
         response: "It's pretty impressive, what the community has accomplished."
        },
        { message: "I'm proud of it. Let's move on: another reality is that native iOS programming languages can't be used much outside native iOS software development.",
