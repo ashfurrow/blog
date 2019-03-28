@@ -2,14 +2,15 @@ require 'lib/helper_helpers'
 
 module OpenGraphHelpers
   def og_title
+    # Get a list of titles, in least-to-most preferrable.
+    titles = [data.site.name]
     if current_resource
-      title = current_resource.metadata[:page][:title]
-      return title unless title.nil?
-    elsif current_article
-      return current_article.title
+      titles += [current_resource.metadata[:page][:title]]
     end
-
-    data.site.name
+    if current_article
+      titles += [current_article.title]
+    end
+    titles.compact.last.gsub(/"([^"]+)"/) { "&ldquo;#{$1}&rdquo;" }
   end
 
   def og_image_or_default
