@@ -374,7 +374,7 @@ blockquote {
   margin: 2em 0;
   font-style: normal;
   color: $gray;
-  line-height: 40px;
+  line-height: 30px;
 
   /* Makes bold text in blockquotes really pop */
   strong, b, em {
@@ -384,6 +384,7 @@ blockquote {
   @media only screen and (min-width: 768px) {
     padding: 0 2em;
     padding-left: 3em;
+    line-height: 40px;
     
     p {
       font-size: 1.5em;
