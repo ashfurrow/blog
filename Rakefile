@@ -12,54 +12,11 @@ def perform_s3_cmd (cmd)
 end
 
 namespace :deploy do
-
-  CLOUDFLARE_ZONE_ID = 'cbd7eb9c9ccb4c9a8d84e2000dea93bf'
-
-  task :invalidate do
-    puts 'Invalidating CDN.'
-    # Documented at https://api.cloudflare.com/#zone-purge-all-files
-    sh <<-EOS
-      curl -X DELETE "https://api.cloudflare.com/client/v4/zones/#{CLOUDFLARE_ZONE_ID}/purge_cache" \
-      -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-      -H "X-Auth-Key: $CLOUDFLARE_CLIENT_API_KEY" \
-      -H "Content-Type: application/json" \
-      --data '{"purge_everything":true}'
-      EOS
-  end
-
   desc "Deploys RSS and Atom feeds"
   task :feeds do
     # Push the generated feeds to the feeds.ashfurrow.com bucket.
     perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
     puts "Feeds deployed."
-  end
-
-  desc "Deploys to production and syncs feeds"
-  task :all => [:fetch_gh_pages, :gh_pages, :feeds, :invalidate] do
-    puts 'Deploy all succeeded.'
-  end
-
-  desc "Sets up Travis to deploy, if on the master branch"
-  task :travis_setup do
-    branch = ENV['TRAVIS_BRANCH']
-    pull_request = ENV['TRAVIS_PULL_REQUEST']
-    key = ENV['encrypted_1e572e84b7d1_key']
-
-    if branch.nil? || key.nil?
-      puts 'Must be run on Travis'
-      next
-    end
-
-    puts 'Checking deploy status...'
-    if branch == 'master' && pull_request == 'false'
-      puts 'Setting Travis up for deploys.'
-      %x[openssl aes-256-cbc -K $encrypted_1e572e84b7d1_key -iv $encrypted_1e572e84b7d1_iv -in travis_id_rsa.enc -out deploy_key -d]
-      %x[chmod 600 deploy_key]
-      %x[ssh-add deploy_key]
-      %x[git clone -b gh-pages git@github.com:ashfurrow/blog build]
-      %x[git config --global user.name 'Travis CI']
-      %x[git config --global user.email 'ash@ashfurrow.com']
-    end
   end
 
   desc "Deploy if Travis environment variables are set correctly"
@@ -82,40 +39,6 @@ namespace :deploy do
       exit 0
     end
 
-    Rake::Task['deploy:all'].invoke
-  end
-
-  task :fetch_gh_pages do
-    unless Dir.exist?('build')
-      `git clone -b gh-pages https://github.com/ashfurrow/blog.git build`
-    end
-
-    Dir.chdir('build') do
-      `git checkout gh-pages`
-      `git pull origin gh-pages`
-    end
-  end
-
-  task :gh_pages do
-    head = `git log --pretty="%h" -n1`.chomp
-
-    Dir.chdir('build') do
-      `cp feed.rss.xml feed`
-      `cp feed.rss.xml index.php/`
-      
-      message = "Site updated to #{head}."
-      `git add .`
-      `git commit --allow-empty -m \"#{message}\"`
-      `git push origin gh-pages`
-    end
-  end
-end
-
-namespace :publish do
-  desc "Build and deploy to production"
-  task :production do
-    Rake::Task['build'].invoke
-    Rake::Task['deploy:production'].invoke
     Rake::Task['deploy:feeds'].invoke
   end
 end
@@ -226,16 +149,4 @@ end
 
 def git_branch_name
   `git rev-parse --abbrev-ref HEAD`
-end
-
-desc 'Submits PR to GitHub.'
-task :pr do
-  branch_name = git_branch_name
-  if branch_name == 'master'
-    puts 'On master branch, not PRing.'
-    exit 1
-  end
-
-  `git push -u origin #{branch_name}`
-  `open https://github.com/ashfurrow/blog/pull/new/ashfurrow:master...#{branch_name}` 
 end

@@ -74,7 +74,7 @@ Recent blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyC
 Server Setup
 ------------
 
-The site is served from GitHub Pages, but with RSS feeds served through S3 via CloudFlare's CDN. [After deploying](https://github.com/ashfurrow/blog/blob/a6e27c6406ddffbc4216c09433501f117fc9b068/Rakefile#L38-L41) to the gh-pages branch, Cloudflare's cached content is invalidated.
+The site is served from [Netlify](https://www.netlify.com), but with RSS feeds from S3.
 
 Search
 ------
