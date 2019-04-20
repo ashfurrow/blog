@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ashfurrow/blog.svg?branch=master)](https://travis-ci.org/ashfurrow/blog)
+[![Build Status](https://travis-ci.org/ashfurrow/blog.svg?branch=master)](https://travis-ci.org/ashfurrow/blog) [![Netlify Status](https://api.netlify.com/api/v1/badges/73ec75b9-958c-4274-a66b-0c74a9a43925/deploy-status)](https://app.netlify.com/sites/optimistic-bhabha-75cafb/deploys)
 
 My Blog
 =======
@@ -74,7 +74,7 @@ Recent blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyC
 Server Setup
 ------------
 
-The site is served from GitHub Pages, but with RSS feeds served through S3 via CloudFlare's CDN. [After deploying](https://github.com/ashfurrow/blog/blob/a6e27c6406ddffbc4216c09433501f117fc9b068/Rakefile#L38-L41) to the gh-pages branch, Cloudflare's cached content is invalidated.
+The site is served from [Netlify](https://www.netlify.com), but with RSS feeds from S3.
 
 Search
 ------
