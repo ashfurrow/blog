@@ -67,17 +67,23 @@ Feedback is a gift, so if someone gives you feedback, take it constructively. Le
 
 Don't underestimate the value of the web as a writing platform; it presents its own unique set of opportunities that, used effectively, enhances writing beyond the written, printed word.
 
-First up, the web is _mutable_. If you make a mistake on a blog post, you can edit that post. Hell, I get _other people_ to fix my typos (please click the "Edit" link at the bottom of this post if you find any here). Once I wrote [a blog post that was _so bad_][bad] that I deleted the entire contents and replaced it with a photo of my cat. It's okay to make mistakes on the web because people will correct you and you can make edits based on feedback.
+First up, the web is _mutable_. If you make a mistake on a blog post, you can edit that post. Once I wrote [a blog post that was _so bad_][bad] – just unbelievably factually incorrect – that I deleted the entire contents and replaced the post with a photo of my cat. It's okay to make mistakes on the web because people will correct you and then you can make edits based on feedback. Hell, I get _other people_ to fix my typos (please click the "Edit" link at the bottom of this post if you find any here).
 
-Next, the web isn't just a medium, it's a _hypermedium_. You don't just write text, you write _hypertext_. Compelling online writing, whether its blog posts or documentation, should take full advantage of the capabilities the web has to offer. Let's take a look at a few examples.
+Next, the web isn't just a medium, it's a _hypermedium_. You don't just write text, you write _hypertext_. Compelling online writing, whether its blog posts or documentation, should take appropriate advantage of the capabilities of the web. Let's take a look at a few examples.
 
-If you're writing a blog post and there's some kind of prerequisite your audience needs to know, you can just _link_ to further reading. People familiar with the prerequisite won't click it, but someone who needs more context can. Judicious use of hyperlinks is one of the most important aspects of compelling writing on the web.
+If you're writing a blog post and there's some kind of prerequisite your audience needs to know, you can just _link_ to further reading. People familiar with the prerequisite won't click it, but someone who needs more context can. Judicious use of hyperlinks is one of the most important fundamentals of compelling writing on the web.
 
 If you're writing a blog post and there's some multimedia that can support your point – a podcast, a video, an Instagram post – then you can just embed it instead of linking to it. This is critical because it helps break up the visuals of your writing. I've included a video and block quotes in this post to introduce visual interest; I avoid writing walls of text.
 
-Finally, if you're writing a blog post and an idea is too difficult to convey using language, you can make it interactive. Language is really lossy at conveying some ideas, while interactive components in online writing can convey them fluently. Let's take my [recent post on JavaScript and iOS][versus]; it used a mock conversation UI to force the reader into having the conversation that _I_ wanted to have with them. Or take Orta's [post on augmented reality at Artsy][arkit]; it used SVG diagrams that were dynamically styled with JavaScript and CSS. 
+Finally, if you're writing a blog post and an idea is too difficult to convey using language, you can make it interactive. Language is really lossy at conveying some ideas, while animated/interactive components in online writing can convey them fluently. Let's take my [recent post on JavaScript and iOS][versus]; it used a mock conversation UI to force the reader into having the conversation that _I_ wanted to have with them. Or take Orta's [post on augmented reality at Artsy][arkit]; it used SVG diagrams that were dynamically styled with JavaScript and CSS. My post detailing the [first 5 years of my career][career] isn't even really a blog post – it's a scroll-driven animated timeline of my life.
 
-The web is its own medium; get familiar with it and learn to leverage it. Read [this post by Bret Victor][bret] to learn how to think holistically about how to create writing online.
+Text couldn't have expressed those same ideas as losslessly as the interactive elements.
+
+Earlier, I said that online writing should take _appropriate_ advantage of what the web has to offer; you need to decide what you're trying to accomplish with your writing, and then use the aspects of the web that support your goals. Namely, don't make things interactive for the fun of it – make them interactive to convey nuance, or persuade someone, or tell a story. And don't get lost in making your writing web-centric that you neglect developing fundamentals of written language: diction, punctuation, tone, and metaphor.
+
+Interactive elements ought to support your writing, not distract from it.
+
+The web is its own medium; get familiar with it and learn to leverage it. For an in-depth exploration of what electronic writing _can_ be, read [this post by Bret Victor][bret].
 
 ## Levelling Up
 
@@ -85,23 +91,41 @@ As you write more and more, you'll eventually find that your time writing gets s
 
 Sometimes, I'll finish writing my initial stream-of-consciousness and when I go back to edit it, I realize that a huge part just needs to be deleted. Usually it's the first third. That's okay – the separation I develop between me and my writing helps me know when something I've written is bound for the trash.
 
-// TODO: Talk about developing a narrative voice.
+Earlier, I mentioned developing a narrative voice. This too is something that comes with practice – but what even _is_ a narrative voice? It's the rhythm of your sentences, the cadence of your paragraphs. It's the tone you take, conveyed through diction and punctuation. It's how your post _feels_ to read. This is one of the things I often explain to first-time contributors to the [Artsy Engineering blog][eng_blog]: instead of trying to adhere to an official "Artsy Engineering Editorial Voice", they should use the blog as an opportunity to develop their own.
 
-Okay! You might have noticed that so far, I haven't really described where to write. I generally don't like telling people where to put their writing, but here's my take:
+Okay! You might have noticed that so far, I haven't really described _where_ to put your writing. I generally don't like telling people where to put their writing, but here's my take:
 
-It literally doesn't matter where you blog.
+**It literally doesn't matter where you blog**.
 
-When trying to write, programmers tend to procrastinate by building their blog. Instead of spending time writing, they'll faff with CSS or Gatsby or Squarespace templates. This is a trap. Resist the temptation.
+Especially at first because – sorry to say this – but no one is really going to read what you write. You're not really writing for others as much as you are writing for yourself. That's okay, that's normal, just accept it. In the beginning, the _process of writing_ is more important than the actual content you write.
 
-If you're just beginning and need somewhere to put a blog post, to go [GitHub Gists][gist] and just start writing. GitHub gists are publicly accessible, indexable by Google, and let you write in Markdown. And most importantly: you _cannot_ faff with design on a gist.
+Lots of programmers, when trying to write more, tend to procrastinate by building/configuring their blog. Instead of spending time writing, they'll faff with CSS or Gatsby or Squarespace templates. This is a trap. Resist this temptation.
 
-Once you've practice enough writing to warrant investing in an actual blog, you can go ahead and find a more permanent home for your work. I'd recommend avoiding Medium, or even tools like Squarespace, because as a coder, you should [build your own blog][blog].
+If you're just beginning and need somewhere to put a blog post, put them on [GitHub Gists][gist]. Gists are publicly accessible, indexable by Google, and let you write in Markdown. And most importantly: you _cannot_ faff with design on a gist.
 
-Building a blog can be a great way to stretch your coding skills into new domains, to learn new tools and languages. Once I [learned how to build this blog with Middleman][my_blog], I've found [lots of other opportunities to use that skill][labs]. Building a new site also gives you lots of new things to write about, so use it as an opportunity to practice you're writing skills.
+Once you've practiced enough writing to warrant investing in an actual blog, you can go ahead and find a more permanent home for your work. I'd recommend avoiding Medium, or even tools like Squarespace, because as a coder, you should [build your own blog][blog]. Building a blog is a lot easier when you have existing content to put into the blog; you'll be able to customize the layout of the blog to support your writing and your narrative style (once you know what your style is).
+
+Building a blog can be a great way to stretch your coding skills into new domains, to learn new tools and languages. Once I [learned how to build this blog with Middleman][my_blog], I've found [lots of other opportunities to use that skill][labs]. It's also a way to express yourself creatively, or to share ideas you like. For example, every time I write a new blog post, the banner at the top of the post is pulled from the [latest generative art photo I've favourited on Twitter][cc]. You can't really get that level of expression through Medium or Squarespace.
+
+The easiest way to build your own blog is going to be with a static site generator. I'd recommend either [Middleman][] (if you're familiar with Ruby) or [Gatsby][] (if you're familiar with React). For hosting, use either [GitHub pages][] or [Netlify][]. If designing and building web UIs isn't your strongest suit, just find a free template online and modify it to suite your needs; that's what I did with this site's current iteration.
+
+And by the way, building a new site also gives you lots of new things to write _about_, so use it as an opportunity to practice you're writing skills.
 
 ---
 
-Writing well takes practices and it takes persistence, but honestly, that's all it takes. With time and patience, you'll become your own writing powerhouse. Good luck!
+Writing well takes practices and it takes persistence, but honestly, that's all it takes. With time and patience, you'll become your own writing powerhouse. To sum it all up, here's how to get proficient at technical writing on the web:
+
+BEGIN_WIDE
+
+- **Write a lot**. When you start, you need practice. Set up habits and routines to help you with this.
+- **Read a lot**. Develop your critical reading skills and find out what your taste is. Apply that taste to your writing, iterate on it.
+- **Write for the web**. Take appropriate advantage of the hypermedium.
+- **Find your voice**. Once you gain proficiency of the basics, find out what it is that makes a blog post written by your post distinctly _yours_.
+- **Don't start with a blog**. Instead, just start writing. Once you're sufficiently practiced and invested in the craft, build your own blog to support your narrative style.
+
+END_WIDE
+
+Make mistakes. Learn from them. Make better mistakes tomorrow. Good luck!
 
 [Orta]: https://open.nytimes.com/five-questions-with-orta-therox-d5bb9659c50b
 [sicp]: https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs
@@ -116,3 +140,10 @@ Writing well takes practices and it takes persistence, but honestly, that's all 
 [versus]: /blog/learning-from-other-programming-communities/
 [arkit]: https://artsy.github.io/blog/2018/03/18/ar/
 [bret]: http://worrydream.com/MagicInk/
+[career]: /blog/5-years-of-ios/
+[eng_blog]: https://artsy.github.io
+[cc]: https://github.com/ashfurrow/blog/blob/9435117750faaa69e5432c37c5632d5e7b6bc706/Rakefile#L122-L148
+[Netlify]: https://www.netlify.com
+[Middleman]: https://middlemanapp.com
+[Gatsby]: https://www.gatsbyjs.org
+[GitHub pages]: https://pages.github.com
