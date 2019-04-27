@@ -1,7 +1,7 @@
 ---
-title: Becoming Proficient at Technical Writing
+title: Technical Writing on the Web
 date: 2019-04-27 14:52:25 UTC
-background_image: /img/blog/becoming-proficient-at-technical-writing/background.jpg
+background_image: /img/blog/technical-writing-on-the-web/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1120994984952500224
 ---
 
