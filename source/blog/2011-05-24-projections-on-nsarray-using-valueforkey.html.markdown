@@ -5,7 +5,7 @@ date: 2011-05-24 00:00
 
 A coworker of mine recently told me about how valueForKey: works on an NSArray instance. It will enumerate the contents of the array and invoke valueForKey: on each element, returning an autoreleased array instance of the response of the elements. Formally, valueForKey: on an NSArray is a projection of your data to specific values. This is the same as a Select() on a .Net collections object. The following code:
 
-```
+```objc
 NSArray *array = [[NSArray alloc] initWithObjects:
   [NSDictionary dictionaryWithObjectsAndKeys:
     @"First Object", kNameKey, 
