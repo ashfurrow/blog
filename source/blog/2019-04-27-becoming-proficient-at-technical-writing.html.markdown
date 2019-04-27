@@ -23,6 +23,8 @@ Okay let's get started.
 
 (READMORE)
 
+## Why Write? How to Start?
+
 I stated earlier that written communication is a "critical skill" for software engineering because writing code _is_ written communication. A lot of programmers think that writing code is how we tell computers what to do, but I disagree. To prove my point, let me quote the introduction of a [famous book on programming][sicp]:
 
 BEGIN_WIDE
@@ -49,7 +51,7 @@ As a beginner, you're going to have to learn to distance yourself from what you 
 
 To help develop your critical reading skills, you should also be _reading_ a lot. But not just reading anything: read the kinds of posts that you want to write. Read something, and then pause to think about why you like it (or not). You're trying to develop _taste_. Once you read something, ask yourself if you like it and then ask yourself _why_. Is it the tone of the post? Is it the level of detail? Is it the narrow or broad audience it focuses on?
 
-Being a beginner in any creative pursuit sucks because, at first, your taste exceeds your abilities. You know what you've written isn't good, and you know why, but you've not yet got the practice to write something really good. _Lean into that discomfort_. Figure out what the delta is between your writing output and your taste, and then practice those skills.
+Being a beginner in any creative pursuit sucks because, at first, your taste exceeds your abilities. You know what you've written isn't good but you've not yet got the skills to improve it. _Lean into that discomfort_. Figure out what the delta is between your writing output and your taste, and then practice those skills.
 
 BEGIN_WIDE
 
@@ -61,9 +63,29 @@ You should also be seeking out feedback on what you write from people you trust.
 
 Feedback is a gift, so if someone gives you feedback, take it constructively. Learning to accept good-faith feedback as a gift is probably the most important skill you can develop as a professional, regardless of your profession.
 
+## Writing on the Web
+
+Don't underestimate the value of the web as a writing platform; it presents its own unique set of opportunities that, used effectively, enhances writing beyond the written, printed word.
+
+First up, the web is _mutable_. If you make a mistake on a blog post, you can edit that post. Hell, I get _other people_ to fix my typos (please click the "Edit" link at the bottom of this post if you find any here). Once I wrote [a blog post that was _so bad_][bad] that I deleted the entire contents and replaced it with a photo of my cat. It's okay to make mistakes on the web because people will correct you and you can make edits based on feedback.
+
+Next, the web isn't just a medium, it's a _hypermedium_. You don't just write text, you write _hypertext_. Compelling online writing, whether its blog posts or documentation, should take full advantage of the capabilities the web has to offer. Let's take a look at a few examples.
+
+If you're writing a blog post and there's some kind of prerequisite your audience needs to know, you can just _link_ to further reading. People familiar with the prerequisite won't click it, but someone who needs more context can. Judicious use of hyperlinks is one of the most important aspects of compelling writing on the web.
+
+If you're writing a blog post and there's some multimedia that can support your point – a podcast, a video, an Instagram post – then you can just embed it instead of linking to it. This is critical because it helps break up the visuals of your writing. I've included a video and block quotes in this post to introduce visual interest; I avoid writing walls of text.
+
+Finally, if you're writing a blog post and an idea is too difficult to convey using language, you can make it interactive. Language is really lossy at conveying some ideas, while interactive components in online writing can convey them fluently. Let's take my [recent post on JavaScript and iOS][versus]; it used a mock conversation UI to force the reader into having the conversation that _I_ wanted to have with them. Or take Orta's [post on augmented reality at Artsy][arkit]; it used SVG diagrams that were dynamically styled with JavaScript and CSS. 
+
+The web is its own medium; get familiar with it and learn to leverage it. Read [this post by Bret Victor][bret] to learn how to think holistically about how to create writing online.
+
+## Levelling Up
+
 As you write more and more, you'll eventually find that your time writing gets spent in two distinct "modes": inserting new content, and editing existing content. (Tell me if this sounds familiar, vim users.) I usually spend about two thirds of my writing time by dumping out a stream-of-consciousness blob of text, and spend the rest of my writing time editing. Editing is whittling down, rearranging, rephrasing, etc. Usually these two modes are done in separate sessions of work, to give myself emotional distance from what I've written.
 
 Sometimes, I'll finish writing my initial stream-of-consciousness and when I go back to edit it, I realize that a huge part just needs to be deleted. Usually it's the first third. That's okay – the separation I develop between me and my writing helps me know when something I've written is bound for the trash.
+
+// TODO: Talk about developing a narrative voice.
 
 Okay! You might have noticed that so far, I haven't really described where to write. I generally don't like telling people where to put their writing, but here's my take:
 
@@ -77,6 +99,8 @@ Once you've practice enough writing to warrant investing in an actual blog, you 
 
 Building a blog can be a great way to stretch your coding skills into new domains, to learn new tools and languages. Once I [learned how to build this blog with Middleman][my_blog], I've found [lots of other opportunities to use that skill][labs]. Building a new site also gives you lots of new things to write about, so use it as an opportunity to practice you're writing skills.
 
+---
+
 Writing well takes practices and it takes persistence, but honestly, that's all it takes. With time and patience, you'll become your own writing powerhouse. Good luck!
 
 [Orta]: https://open.nytimes.com/five-questions-with-orta-therox-d5bb9659c50b
@@ -88,3 +112,7 @@ Writing well takes practices and it takes persistence, but honestly, that's all 
 [blog]: https://artsy.github.io/blog/2019/01/30/why-we-run-our-blog/
 [my_blog]: /blog/blog-transition-retrospective/
 [labs]: /blog/building-static-sites-with-middleman/
+[bad]: /blog/dont-use-oauth-for-your-api/
+[versus]: /blog/learning-from-other-programming-communities/
+[arkit]: https://artsy.github.io/blog/2018/03/18/ar/
+[bret]: http://worrydream.com/MagicInk/
