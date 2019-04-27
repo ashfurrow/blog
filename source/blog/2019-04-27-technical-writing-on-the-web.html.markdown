@@ -71,7 +71,7 @@ First up, the web is _mutable_. If you make a mistake on a blog post, you can ed
 
 Next, the web isn't just a medium, it's a _hypermedium_. You don't just write text, you write _hypertext_. Compelling online writing, whether its blog posts or documentation, should take appropriate advantage of the capabilities of the web. Let's take a look at a few examples.
 
-If you're writing a blog post and there's some kind of prerequisite your audience needs to know, you can just _link_ to further reading. People familiar with the prerequisite won't click it, but someone who needs more context can. Judicious use of hyperlinks is one of the most important fundamentals of compelling writing on the web.
+If you're writing a blog post and there's some kind of prerequisite your audience needs to know, you can just [link][] to further reading. People familiar with the prerequisite won't click it, but someone who needs more context can. Judicious use of hyperlinks is one of the most important fundamentals of compelling writing on the web.
 
 If you're writing a blog post and there's some multimedia that can support your point – a podcast, a video, an Instagram post – then you can just embed it instead of linking to it. This is critical because it helps break up the visuals of your writing. I've included a video and block quotes in this post to introduce visual interest; I avoid writing walls of text.
 
@@ -147,3 +147,4 @@ Make mistakes. Learn from them. Make better mistakes tomorrow. Good luck!
 [Middleman]: https://middlemanapp.com
 [Gatsby]: https://www.gatsbyjs.org
 [GitHub pages]: https://pages.github.com
+[link]: https://en.wikipedia.org/wiki/Hyperlink
