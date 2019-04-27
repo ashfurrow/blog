@@ -103,7 +103,7 @@ Lots of programmers, when trying to write more, tend to procrastinate by buildin
 
 If you're just beginning and need somewhere to put a blog post, put them on [GitHub Gists][gist]. Gists are publicly accessible, indexable by Google, and let you write in Markdown. And most importantly: you _cannot_ faff with design on a gist.
 
-Once you've practiced enough writing to warrant investing in an actual blog, you can go ahead and find a more permanent home for your work. I'd recommend avoiding Medium, or even tools like Squarespace, because as a coder, you should [build your own blog][blog]. Building a blog is a lot easier when you have existing content to put into the blog; you'll be able to customize the layout of the blog to support your writing and your narrative style (once you know what your style is).
+Once you've practiced enough writing to warrant investing in an actual blog, you can go ahead and find a more permanent home for your work. I recommend avoiding Medium, or even tools like Squarespace. You're a code coder. [You should build your own blog][blog]. It will be a lot easier to build once you have existing content to put in it; you'll be able to customize your blog to support your writing and your narrative style (once you know what your style is).
 
 Building a blog can be a great way to stretch your coding skills into new domains, to learn new tools and languages. Once I [learned how to build this blog with Middleman][my_blog], I've found [lots of other opportunities to use that skill][labs]. It's also a way to express yourself creatively, or to share ideas you like. For example, every time I write a new blog post, the banner at the top of the post is pulled from the [latest generative art photo I've favourited on Twitter][cc]. You can't really get that level of expression through Medium or Squarespace.
 
@@ -120,7 +120,7 @@ BEGIN_WIDE
 - **Write a lot**. When you start, you need practice. Set up habits and routines to help you with this.
 - **Read a lot**. Develop your critical reading skills and find out what your taste is. Apply that taste to your writing, iterate on it.
 - **Write for the web**. Take appropriate advantage of the hypermedium.
-- **Find your voice**. Once you gain proficiency of the basics, find out what it is that makes a blog post written by your post distinctly _yours_.
+- **Find your voice**. What makes your writing distinctly _yours_? Find out and lean into it.
 - **Don't start with a blog**. Instead, just start writing. Once you're sufficiently practiced and invested in the craft, build your own blog to support your narrative style.
 
 END_WIDE
