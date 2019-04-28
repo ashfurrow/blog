@@ -23,4 +23,5 @@ group :distribution do
   gem 'danger'
   gem 'danger-prose'
   gem 'html-proofer'
+  gem 'aws-sdk'
 end

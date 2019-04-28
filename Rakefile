@@ -7,38 +7,28 @@ task :bootstrap do
   puts `bundle install --without distribution`
 end
 
-def perform_s3_cmd (cmd)
-  sh "s3cmd #{cmd} --access_key=$SITE_AWS_KEY --secret_key=$SITE_AWS_SECRET"
-end
-
 namespace :deploy do
   desc "Deploys RSS and Atom feeds"
   task :feeds do
-    # Push the generated feeds to the feeds.ashfurrow.com bucket.
-    perform_s3_cmd "put --recursive setacl --acl-public –recursive --add-header='Cache-Control:max-age=3600, public' build/feed*.xml s3://feed.ashfurrow.com/"
+    require 'aws-sdk-s3'
+
+    s3 = Aws::S3::Resource.new(
+      region: 'us-east-1',
+      access_key_id: ENV['FEEDS_AWS_ACCESS_KEY_ID'],
+      secret_access_key: ENV['FEEDS_AWS_SECRET_ACCESS_KEY']
+    )
+
+    Dir.glob('build/feed*.xml') do |f|
+      name = File.basename(f)
+      obj = s3.bucket('feed.ashfurrow.com').object(name)
+      obj.upload_file(f)
+    end
     puts "Feeds deployed."
   end
 
-  desc "Deploy if Travis environment variables are set correctly"
-  task :travis do
-    branch = ENV['TRAVIS_BRANCH']
-    pull_request = ENV['TRAVIS_PULL_REQUEST']
-
-    if branch.nil?
-      puts 'Must be run on Travis'
-      next
-    end
-
-    if pull_request != 'false'
-      puts 'Skipping deploy for pull request; can only be deployed from master branch.'
-      exit 0
-    end
-
-    if branch != 'master'
-      puts "Skipping deploy for #{ branch }; can only be deployed from master branch."
-      exit 0
-    end
-
+  desc 'Builds site for netlify and deploys feeds to S3'
+  task :netlify do
+    sh 'bundle exec middleman build --verbose'
     Rake::Task['deploy:feeds'].invoke
   end
 end
