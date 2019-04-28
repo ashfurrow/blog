@@ -4,7 +4,6 @@ sudo: false
 
 cache:
   - bundler
-  - pip
 
 rvm: 2.4.1
 
@@ -19,10 +18,6 @@ addons:
       - aspell-en
 
 before_install:
-  # Need s3cmd to deploy feeds.
-  - pip install --user s3cmd
-  - s3cmd --version
-
   # Install spellchecker.
   - npm install -g orta/node-markdown-spellcheck
   
@@ -35,6 +30,3 @@ before_install:
 script:
   - bundle exec rake build:test
   - bundle exec danger
-
-after_success:
-  - bundle exec rake deploy:travis
