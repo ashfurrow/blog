@@ -29,7 +29,11 @@ namespace :deploy do
   desc 'Builds site for netlify and deploys feeds to S3'
   task :netlify do
     sh 'bundle exec middleman build --verbose'
-    Rake::Task['deploy:feeds'].invoke
+    if ENV['BRANCH'] == 'master'
+      Rake::Task['deploy:feeds'].invoke
+    else
+      puts 'Not on master, skipping feeds deploys.'
+    end
   end
 end
 
