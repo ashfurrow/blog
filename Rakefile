@@ -1,12 +1,6 @@
 require 'rake'
 require 'json'
 
-desc "Initial setup"
-task :bootstrap do
-  puts 'Installing dependencies...'
-  puts `bundle install --without distribution`
-end
-
 namespace :deploy do
   desc "Deploys RSS and Atom feeds"
   task :feeds do
@@ -47,7 +41,7 @@ end
 
 desc "Build site locally"
 task :build do
-  sh 'bundle exec middleman build --no-clean'
+  sh 'bundle exec middleman build'
 end
 
 desc "Start middleman server"
@@ -139,8 +133,4 @@ def fetch_cloudy_conway
   puts "Retrieved image data: #{large_image_url}"
 
   [tweet.url, response.body]
-end
-
-def git_branch_name
-  `git rev-parse --abbrev-ref HEAD`
 end
