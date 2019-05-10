@@ -109,11 +109,11 @@ Building a blog can be a great way to stretch your coding skills into new domain
 
 The easiest way to build your own blog is going to be with a static site generator. I'd recommend either [Middleman][] (if you're familiar with Ruby) or [Gatsby][] (if you're familiar with React). For hosting, use either [GitHub pages][] or [Netlify][]. If designing and building web UIs isn't your strongest suit, just find a free template online and modify it to suite your needs; that's what I did with this site's current iteration.
 
-And by the way, building a new site also gives you lots of new things to write _about_, so use it as an opportunity to practice you're writing skills.
+And by the way, building a new site also gives you lots of new things to write _about_, so use it as an opportunity to practice your writing skills.
 
 ---
 
-Writing well takes practices and it takes persistence, but honestly, that's all it takes. With time and patience, you'll become your own writing powerhouse. To sum it all up, here's how to get proficient at technical writing on the web:
+Writing well takes practice and it takes persistence, but honestly, that's all it takes. With time and patience, you'll become your own writing powerhouse. To sum it all up, here's how to get proficient at technical writing on the web:
 
 BEGIN_WIDE
 
