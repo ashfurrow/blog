@@ -33,7 +33,7 @@ module CustomHelpers
       }.reduce('', :+).strip
     end
 
-    description || data.site.description
+    escape_html(description || data.site.description)
   end
 
   # Takes raw HTML rendered from post and turns it into something consumable by feeds.
