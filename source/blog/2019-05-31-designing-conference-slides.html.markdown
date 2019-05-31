@@ -37,7 +37,7 @@ I tried recreating the Tim Fishlock style in Sketch, but soon hit a wall.
 
 That's okay, I'm a programmer, I can code around the walls. I ended up [writing this](https://editor.p5js.org/ashfurrow/sketches/auiS1yFQr) to mimic the style. Here's an embed of the live Processing sketch:
 
-<iframe src="https://editor.p5js.org/ashfurrow/embed/auiS1yFQr" style="max-width: 710px; mid-width: 100%; margin: auto; display: block;" height="400"></iframe>
+<iframe src="https://editor.p5js.org/ashfurrow/embed/auiS1yFQr" style="max-width: 710px; min-width: 100%; margin: auto; display: block;" height="400"></iframe>
 
 Once I had that defined, I started playing with colours a bit, too. I liked the blue and orange from the Steven Skollar robots and went down that path for a while.
 
