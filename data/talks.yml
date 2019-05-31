@@ -1,12 +1,13 @@
 upcoming_talks:
+
+past_talks:
 - name: How Artsy Automates Team Culture
   conference: mDevCamp
   url: https://mdevcamp.eu
   location: Prague, Czech Republic
   dates: May 31st, 2019
   image: mdevcamp.png
-
-past_talks:
+  slides: https://speakerdeck.com/ashfurrow/how-artsy-automates-team-culture
 - name: Building Custom TSLint Rules
   conference: TypeScript NYC
   url: https://www.meetup.com/TypeScriptNYC/events/255170060/
