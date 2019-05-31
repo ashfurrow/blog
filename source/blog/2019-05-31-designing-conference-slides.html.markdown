@@ -5,7 +5,7 @@ background_image: /img/blog/designing-conference-slides/background.jpg
 background_image_source: https://twitter.com/CloudyConway/status/1134545523111841792
 ---
 
-Today I presented a talk at mDevCamp in Prague, titled _How Arty Automates Team Culture_, and I want to follow-up from [my last post](https://ashfurrow.com/blog/from-proposal-to-applause-how-i-public-speaking/) on the process of creating a conference presentation. That blog post is four years old, but, remarkably, still reflects my overall process. Today I want to focus in on the design aspect of giving a conference talk, using my mDevCamp talk as an example. 
+Today I presented a talk at mDevCamp in Prague, titled _How Artsy Automates Team Culture_, and I want to follow-up from [my last post](https://ashfurrow.com/blog/from-proposal-to-applause-how-i-public-speaking/) on the process of creating a conference presentation. That blog post is four years old, but, remarkably, still reflects my overall process. Today I want to focus in on the design aspect of giving a conference talk, using my mDevCamp talk as an example. 
 
 So often, when it comes to developers discussing something they've designed, they don't really discuss the nitty-gritty of _how_ they designed it. It just sort of, happens. I want to step through my entire creative process, with a focus on visual design. The [slide deck is available here](https://speakerdeck.com/ashfurrow/how-artsy-automates-team-culture). The talk was recorded and will be uploaded at a later date.
 
