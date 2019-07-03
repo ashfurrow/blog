@@ -41,7 +41,7 @@ END_WIDE
 
 My metrics have become more and more filled-in over time – I've just gotten better at hitting them. Since starting in January, I've continuously adjusted the metrics, too. When I decided I wanted to improve my diet, I added a metric of "≤ 1 junk food" and, when I was finished taking my anti-depressants, I removed the "took my medication on time" metric. This flexibility has been really helpful.
 
-I've thought about correlating my average [mood measurements](https://github.com/KrauseFx/mood) with the spreadsheet, but I don't think that would be that useful. I actually originally had a complex (omg spreadsheet are hard!) formula to give me a "grade" for each day, but I never paid attention to it. Like, at all. The picture was enough. So what's going on?
+I've thought about correlating my average [mood measurements](https://github.com/KrauseFx/mood) with the spreadsheet, but I don't think that would be that useful. I actually originally had a complex (omg spreadsheets are hard!) formula to give me a "grade" for each day, but I never paid attention to it. Like, at all. The picture was enough. So what's going on?
 
 Well, to relate things back to business again, let's think about sprint planning. On my team at Artsy, our _primary_ goal when estimating the complexity of tickets is _not_ to accurately plan a sprint based on capacity, but rather because the conversation around estimation is itself useful for uncovering hidden complexity. I'll say that again: we estimate our tickets, but not so we can plan a "full" sprint, but because the estimation process itself helps share knowledge and build team cohesion.
 
@@ -51,9 +51,9 @@ Something similar happens with my daily personal synthetic metrics. It's not rea
 
 "Oh, on days where I spend more than a half hour on my phone before leaving the house, I tend to arrive to work late." (Late in this context is "later than I want", because Artsy has flexible working hours.)
 
-"Oh, looks like I meditate consistently throughout the week, but often have difficult keeping up the habit on weekends."
+"Oh, looks like I meditate consistently throughout the week, but often have difficulty keeping up the habit on weekends."
 
-These are all really useful observations and, while they may be obvious, they are only obvious once you notice them. Having this record has helped me reflect on how my life has been going and where I want it to go next.
+These are all really useful observations and, while they may be obvious, they are only obvious once you _actually observe_ them. Having this record has helped me reflect on how my life has been going and where I want it to go next.
 
 Should you start keeping daily personal synthetic metrics? I don't know. The value of the synthetic metrics is really reflection and retrospection, which I _definitely_ recommend you do. Just make sure to do it in a way that works for you.
 
