@@ -9,7 +9,7 @@ But what is good?
 
 (READMORE)
 
-[![](http://threepanelsoul.com/comics/2014-08-19-336.png)](http://threepanelsoul.com/2014/08/19/dog-philosophy/)
+[![](https://threepanelsoul.com/comics/2014-08-19-336.png)](https://threepanelsoul.com/2014/08/19/dog-philosophy/)
 
 _Why_ do children draw? Because it's fun. It has value to them not because of the finished drawing, but because the act of drawing itself – the act of self-expression – is a fulfilling process. As adults, why do we ignore this value? Why do we only value art based on its appearance or market price? On what a drawing or painting or photograph _looks_ like? 
 

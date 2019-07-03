@@ -3,7 +3,7 @@ title: "Objective-C Singleton Macro"
 date: 2011-04-01 00:00
 ---
 
-My friend [Paddy](http://twitter.com/#!/tapi) showed me an awesome macro for generating single classes, shown [here](http://pastebin.com/yfgc28dR). You'd use it like:
+My friend [Paddy](https://twitter.com/#!/tapi) showed me an awesome macro for generating single classes, shown [here](https://pastebin.com/yfgc28dR). You'd use it like:
 
 ```objc
 SYNTHESIZE_SINGLE_FOR_CLASS(class_name);
