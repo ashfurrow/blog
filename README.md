@@ -74,7 +74,7 @@ Recent blog post header backgrounds | [Cloudy Conway](http://twitter.com/CloudyC
 Server Setup
 ------------
 
-The site is served from [Netlify](https://www.netlify.com), but with RSS feeds from S3.
+The site is served from [Netlify](https://www.netlify.com). The feeds are served from the feed.ashfurrow.com subdomain (aliased to the main domain, except everything that's not a feed URL will 404).
 
 Search
 ------
