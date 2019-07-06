@@ -43,16 +43,28 @@ jQuery(document).ready(function($) {
       });
   }
 
-  if (document.location.href.match(/search/)) {
+  if (document.location.href.match(/search|404/)) {
     // Transfer any query string into the text box right away.
-    var queries = {};
-    $.each(document.location.search.substr(1).split('&'), function(c, q) {
-      var components = q.split('=');
-      if (components.length > 1) {
-        queries[components[0].toString()] = decodeURIComponent(components[1].toString());
-      }
-    });
-    $('#search').val(queries['q'])
+    if (document.location.href.match(/search/)) {
+      // Search page
+      var queries = {};
+      $.each(document.location.search.substr(1).split('&'), function(c, q) {
+        var components = q.split('=');
+        if (components.length > 1) {
+          queries[components[0].toString()] = decodeURIComponent(components[1].toString());
+        }
+      });
+      $('#search').val(queries['q'])
+    } else {
+      // 404 page
+      var words = document.location
+        .pathname
+        .split("/").join("-")
+        .split("-")
+        .filter(e => e.length && !["blog", "404.html"].includes(e))
+      $('#search').val(words.join(" "))
+    }
+    
 
     // Download search index and then set up search.
     // jQuery provides nicer syntax for this async download. 
