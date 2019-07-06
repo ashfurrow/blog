@@ -43,7 +43,8 @@ jQuery(document).ready(function($) {
       });
   }
 
-  if (document.location.href.match(/search|404/)) {
+  // Does the page have a search bar?
+  if ($('#search').length) {
     // Transfer any query string into the text box right away.
     if (document.location.href.match(/search/)) {
       // Search page
