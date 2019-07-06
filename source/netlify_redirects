@@ -1,0 +1,9 @@
+# The following config lines allow feed.xml and feed.rss.xml to be served, but
+# otherwise the URL is served as feed.rss.xml.
+https://feed.ashfurrow.com/	https://ashfurrow.com/feed.xml	200
+https://feed.ashfurrow.com/feed.rss.xml	https://ashfurrow.com/feed.rss.xml	200!
+https://feed.ashfurrow.com/feed.xml	https://ashfurrow.com/feed.xml	200!
+https://feed.ashfurrow.com/*	https://feed.ashfurrow.com/:splat	200!
+
+# This redirects the Netlify domain to the default one.
+https://ashfurrow-blog.netlify.com/*	https://ashfurrow.com/:splat	301!

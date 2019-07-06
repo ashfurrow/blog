@@ -60,6 +60,7 @@ activate :modify_widths
 activate :embed
 
 page "/*.xml", layout: false
+proxy "/_redirects", "netlify_redirects", ignore: true
 
 set :css_dir, 'css'
 set :js_dir, 'javascripts'
