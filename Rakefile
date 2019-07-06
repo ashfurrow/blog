@@ -2,32 +2,9 @@ require 'rake'
 require 'json'
 
 namespace :deploy do
-  desc "Deploys RSS and Atom feeds"
-  task :feeds do
-    require 'aws-sdk-s3'
-
-    s3 = Aws::S3::Resource.new(
-      region: 'us-east-1',
-      access_key_id: ENV['FEEDS_AWS_ACCESS_KEY_ID'],
-      secret_access_key: ENV['FEEDS_AWS_SECRET_ACCESS_KEY']
-    )
-
-    Dir.glob('build/feed*.xml') do |f|
-      name = File.basename(f)
-      obj = s3.bucket('feed.ashfurrow.com').object(name)
-      obj.upload_file(f)
-    end
-    puts "Feeds deployed."
-  end
-
-  desc 'Builds site for netlify and deploys feeds to S3'
+  desc 'Builds site for netlify'
   task :netlify do
     sh 'bundle exec middleman build --verbose'
-    if ENV['BRANCH'] == 'master'
-      Rake::Task['deploy:feeds'].invoke
-    else
-      puts 'Not on master, skipping feeds deploys.'
-    end
   end
 end
 
