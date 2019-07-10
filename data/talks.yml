@@ -8,6 +8,7 @@ past_talks:
   dates: May 31st, 2019
   image: mdevcamp.png
   slides: https://speakerdeck.com/ashfurrow/how-artsy-automates-team-culture
+  video: https://slideslive.com/38916507/how-artsy-automates-team-culture
 - name: Building Custom TSLint Rules
   conference: TypeScript NYC
   url: https://www.meetup.com/TypeScriptNYC/events/255170060/
