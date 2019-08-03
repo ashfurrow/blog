@@ -24,6 +24,7 @@ activate :blog do |blog|
   blog.summary_separator = /\(READMORE\)/
   blog.new_article_template = File.expand_path('new_article.markdown.erb', File.dirname(__FILE__))
   blog.layout = "partials/_blog_post"
+  blog.publish_future_dated = true
 end
 
 # Activate the middleman-search extension and customize it.
