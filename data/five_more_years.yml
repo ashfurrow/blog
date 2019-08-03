@@ -31,7 +31,7 @@
   - heading: Teaching & Learning at UIKonf
     content:
       - In 2014, I attended UIKonf and had a great time. I returned the following year to present a talk titled <em>Teaching & Learning</em>. The thesis of my talk was that sharing knowledge is good, and you should do it for both altruistic and selfish reasons.
-      - In the years since my 2015 talk, I've only leaned harder into this "sharing knowledge is good" position. But at the time, this was the apex of my thought processes.
+      - In the years since my 2015 talk, I've only leaned harder into this "sharing knowledge is good" position. But at the time, this was as far as I had pushed into TODO what is this called? ugh.
     img_url: /img/blog/5-more-years/2015/uikonf.jpg
   - heading: Learning to Draw
     content:
@@ -54,7 +54,7 @@
       - My product work in 2015 wasn't that focused. I worked on Artsy Engineering's "Mobile Team" (as opposed to its "Web Team") and I just build whatever mobile software Artsy needed. I had a tonne of leeway to decide what to work on, but I didn't always have the business context I needed to make that decision.
   - heading: Loosely Held Strong Convictions
     content:
-      - TODO:
+      - TODO talk about how this was my most important talk so far. Maybe use it as a way to talk about how I was speaking at fewer and fewer conferenes over time.
     img_url: /img/blog/5-more-years/2015/pragma.jpg
   - heading: Building Communities
     content:
@@ -70,6 +70,7 @@
   - heading: Film!
     content:
       - I love photography. And since moving to New York, I doubled-down on my love of <em>film</em> photography, particularly. I was shooting mainly black-and-white film so I could develop and scan it myself. It had become an improtant part of my day-to-day life in New York.
+      - TODO talk about how art relates to my career, paralleling the note from 2015
     img_url: /img/blog/5-more-years/2016/film.jpg
   - heading: Live Auctions Integration 
     content:
@@ -121,18 +122,10 @@
     content:
       - After building a successful LAI product, we had to scale it. That involved a lot more work that scaling a typical software product; the bottleneck to running a LAI sale was operational, rather than technical.
       - Our focus turned from building out LAI to scaling it, and scaling tools for our colleagues in Auctions Ops. I found this work really fulfilling. Something about making my colleague's jobs easier just felt satisfying in a new, fresh way to me.
-  - heading: 
-    content:
-      - 
-    img_url: /img/blog/5-more-years/
-  - heading: 
-    content:
-      - 
-    img_url: /img/blog/5-more-years/
-  - heading: 
-    content:
-      - 
-    img_url: /img/blog/5-more-years/
+  # - heading: 
+  #   content:
+  #     - 
+  #   img_url: /img/blog/5-more-years/
   - heading: The 2016 Election
     content:
       - I was in Switzerland during the 2016 election. I remember waking up to the news and thinking "well, maybe I just won't go back."
@@ -142,22 +135,18 @@
     content:
       - After starting my own Peer Lab in 2014, I realized that I wanted to expand the idea. I can only run one peer lab, so I started <a href='https://peerlab.community'>peerlab.community</a> that I <a href='https://ashfurrow.com/blog/building-static-sites-with-middleman/'>built with Middleman</a>. It includes a list of peer labs and instructions to start one. 
       - We now have almost 40 peer labs worldwide, in many different countries. One of the cooler things to come out of this effort is that peer lab organizers are sharing ideas and improving the concept itself. For example, when a San Francisco peer lab organizer visited us in New York, they told us how a small standup helped attendees get to know one another. So now, we do a standup too.
-  - heading: 
-    content:
-      - 
-    img_url: /img/blog/5-more-years/
 - "2017":
-  - heading: 
+  - heading: TOOD
     content:
-      - 
-    img_url: /img/blog/5-more-years/
+      - Do this.
+    # img_url: /img/blog/5-more-years/
 - "2017":
-  - heading: 
+  - heading: TOOD
     content:
-      - 
-    img_url: /img/blog/5-more-years/
+      - Do this.
+    # img_url: /img/blog/5-more-years/
 - "2018":
-  - heading: 
+  - heading: TOOD
     content:
-      - 
-    img_url: /img/blog/5-more-years/
+      - Do this.
+    # img_url: /img/blog/5-more-years/
