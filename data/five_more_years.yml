@@ -54,13 +54,94 @@
       - My product work in 2015 wasn't that focused. I worked on Artsy Engineering's "Mobile Team" (as opposed to its "Web Team") and I just build whatever mobile software Artsy needed. I had a tonne of leeway to decide what to work on, but I didn't always have the business context I needed to make that decision.
   - heading: Loosely Held Strong Convictions
     content:
-      - 
+      - TODO:
     img_url: /img/blog/5-more-years/2015/pragma.jpg
+  - heading: Building Communities
+    content:
+      - Near the end of the year, I realized how empty I felt about my purpose. Sure, I was building cool software, but that just <em>wasn't enough anymore</em>.
+      - I decided that the next skill that I wanted to master was <a href='https://ashfurrow.com/blog/building-online-communities/'>build online communities</a>. I considered Artsy Engineering one type of online community, while <a href='https://github.com/Moya/Moya'>Moya</a> was another type.
+      - After making this decision, I told Artsy's CTO dB, who supported me. I started spending Artsy time researching team dynamics and skills to manage them. I had started down this path enough to realize how little I knew, and i was hungry for more.
+      - This was the very beginning of development of my philosophy of software development, which we'll see unfold over the next few years.
   - heading: The Auctions Team
     content:
       - I ended 2015 by helping to form Artsy Engineering's <em>Auctions Team</em>. My product work in 2015 hadn't been terribly focused, and I was excited to begin the new year on a new team, focused on building software for Artsy's burgeoning Auctions business.
       - The new team also included a new manager, Alan. Over the next few years, I'd learn a lot from Alan, on both the technical and non-technical sides of software development.
 - "2016":
+  - heading: Film!
+    content:
+      - I love photography. And since moving to New York, I doubled-down on my love of <em>film</em> photography, particularly. I was shooting mainly black-and-white film so I could develop and scan it myself. It had become an improtant part of my day-to-day life in New York.
+    img_url: /img/blog/5-more-years/2016/film.jpg
+  - heading: Live Auctions Integration 
+    content:
+      - If 2015 lacked focus, 2016 made up for it (and then some). 
+      - "January kicked off six months of <em>intense</em> work on the nascent Auctions team, building Live Auctions Integration (LAI). At the time, Artsy only supported <em>timed auctions</em>: the auction had a pre-set end time and, when that time arrived, whoever was the highest bidder on each lot won that lot."
+      - LAI was different. We would be sending an Artsy employee to an actual auction room, to represent all Artsy online bidders. Anyone using Artsy could, in real-time, bid on lots as if they were in the room themselves.
+      - That was the idea, anyway. We had a lot of work ahead of us – we wanted to ship an MVP in 4 months.
+    img_url: /img/blog/5-more-years/2016/lai.png
+  - heading: A New Look
+    content:
+      - Artsy offered headshots for our internal team navigator, and I took the opportunity to define a new, standardized avatar. This image <em>became</em> my representation online for over three years.
+      - The funny thing is, it was going to be a boring photo. But Orta was there, and encouraged me to give the thumbs up that ultimately became iconic.
+    img_url: /img/blog/5-more-years/2016/thumbsup.jpg
+  - heading: SINFO
+    content:
+      - Early in the year, I took a trip around the world. First, to Lisbon for the <a href='https://sinfo.org'>SINFO</a> conference, and then onto Tokyo for try! Swift.
+      - SINFO was a pretty formative experience for me because it was one of the first general-purpose tech conferences, not just targeted at iOS developers.
+      - The photo here depicts a billing with me and <a href='https://www.imdb.com/name/nm0270665/'>Danielle Feinberg</a>, a lighting artist and director of photography at Pixar. We got to chat over a few meals at the conference – I have a tonne of respect for her work and how she connects technology and art.
+    img_url: /img/blog/5-more-years/2016/sinfo.jpg
+  - heading: LAI Setbacks
+    content:
+      - Building something new is never easy, and we were trying to build something <em>very</em> new. The backend was written in Scala, using <a href='https://akka.io'>Akka</a> for actor-based programming. The web front-end was written in React (a relatively new technology at Artsy, at the time) and the iOS front-end was written in Swift. Both front-ends communicated to our backend over GraphQL for static data (lot estimates, artist names, etc) and a websocket backend for realtime data (current number of bids, the current highest bid, etc).
+      - All this new technology took time to learn. The Auctions team started getting help from other Artsy engineers, especially Orta and <a href='https://github.com/craigspaeth'>Craig Spaeth</a>. I would say that we had about half of Artsy Engineering working on the LAI launch, with the other half cheering us on.
+      - Despite our hard work, we had missed our 4-month launch target. The pressure was on. 
+  - heading: LAI Pressure
+    content:
+      - At the time, I didn't think of the LAI work as a "crunch" time. Looking back, I still don't think the term fits the situation. It was more like, there were times that I had to get some space from my work. And that was unusual for Artsy. (I was always able to get that space, and avoided burning out.)
+      - Everyone on the team knew that LAI was important, but we also knew that we had to balance working hard with a sustainable pace. Alan and Devang made sure that everyone on the team knew that this was a one-off situation, that crunch time would <em>not</em> become the norm. The would keep their word.
+      - A nice side-effect of the intensity LAI development was the equal intensity of the bonds our team formed. I will never forget what it felt like working with Alan, Sarah, Erik, Chris, Katarina, and Barry (with help from Orta and Craig).
+  - heading: LAI Launch
+    content:
+      - We launched LAI in June. I only found out later, but <em>a lot</em> was running on the success of this product. Alan, as well as our PM Devang, had worked hard to insulate us from this pressure. Like, I knew launching LAI quickly was important, but I didn't really understand the consequences of what would happen if we failed. And I'm glad I didn't, to be honest.
+      - I was handling the stress <em>okay</em>. Not the best, but not the worst for sure. If I'd known how much was riding on this going well, it would have only made me feel worse.
+      - Looking back, as a more leadership-y engineer, I have a profound appreciation for how Alan and Devang handled that stress, with what seemed like unwavering grace. That's a kind of grace I try to imbue now.
+      - The launch was a total success. <a href='https://artsy.github.io/blog/2016/08/09/the-tech-behind-live-auction-integration/'>Our software worked like a charm</a>, and after the launch, we were all encouraged to take as much time off as we needed.
+    img_url: /img/blog/5-more-years/2016/lailaunch.jpg
+  - heading: Missing WWDC
+    content:
+      - This was the first year that I didn't go to WWDC. It felt sad, I suppose. But mostly sad I didn't get to see my friends.
+      - Orta went to AltConf, and made these cool pins of his iOS friends to pass out. I still have a complete set! And my mom uses one of my pins as a keychain.
+    img_url: /img/blog/5-more-years/2016/buttons.jpg
+  - heading: Steven Universe
+    content:
+      - In 2016, my wife recommended that I check out a show called <em>Steven Universe</em>. I did, and was instantly hooked.
+      - I <a href='https://ashfurrow.com/blog/steven-universe-and-masculinity/'>started writing about the show</a> pretty quickly. This came at a pretty important time for me, since I was earnestly researching team dynamics, which is an important theme of the show. Orta called <em>Steven Universe</em> "the most \"Ash Furrow\" show", which I took as quite the compliment.
+      - "If I had to boil <em>Steven Universe</em> down, really far, I would say that the show's message is a coming-of-age story that questions the idealism-versus-pragmatism dichotomy. Steven has his ideals, and the entire world around him pushes him to be pragmatic. The show's answer to this conflict is: \"no, these ideals <em>are</em> pragmatic. It's the world that needs to change.\""
+    img_url: /img/blog/5-more-years/2016/stevenuniverse.jpg
+  - heading: Scaling LAI
+    content:
+      - After building a successful LAI product, we had to scale it. That involved a lot more work that scaling a typical software product; the bottleneck to running a LAI sale was operational, rather than technical.
+      - Our focus turned from building out LAI to scaling it, and scaling tools for our colleagues in Auctions Ops. I found this work really fulfilling. Something about making my colleague's jobs easier just felt satisfying in a new, fresh way to me.
+  - heading: 
+    content:
+      - 
+    img_url: /img/blog/5-more-years/
+  - heading: 
+    content:
+      - 
+    img_url: /img/blog/5-more-years/
+  - heading: 
+    content:
+      - 
+    img_url: /img/blog/5-more-years/
+  - heading: The 2016 Election
+    content:
+      - I was in Switzerland during the 2016 election. I remember waking up to the news and thinking "well, maybe I just won't go back."
+      - But I had to, of course – my wife and cats were back in New York. Over the next six months, I toyed with the idea of moving back to Canada. It felt like I was obligated to, somehow. But I worked through those feelings. Moving to Canada would solve nothing, and I desperately wanted to continue my work at Artsy.
+    img_url: /img/blog/5-more-years/2016/election.jpg
+  - heading: Peer Lab Community
+    content:
+      - After starting my own Peer Lab in 2014, I realized that I wanted to expand the idea. I can only run one peer lab, so I started <a href='https://peerlab.community'>peerlab.community</a> that I <a href='https://ashfurrow.com/blog/building-static-sites-with-middleman/'>built with Middleman</a>. It includes a list of peer labs and instructions to start one. 
+      - We now have almost 40 peer labs worldwide, in many different countries. One of the cooler things to come out of this effort is that peer lab organizers are sharing ideas and improving the concept itself. For example, when a San Francisco peer lab organizer visited us in New York, they told us how a small standup helped attendees get to know one another. So now, we do a standup too.
   - heading: 
     content:
       - 
