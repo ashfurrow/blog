@@ -65,7 +65,7 @@ Ugh.
 
 Dealing with injuring during a recovery was a new kind of experience for me. I had really been enjoying my daily home workout routine, but because of my injury, I suddenly had to stop. My inattentive exercising had led to an injury.
 
-That was a new experience, and navigating it made me realize how many parallels there are between exercising and other parts of life. Longterm oal-setting, problem-solving, persistence, learning from failure... those skills apply in exercise, but just as easily to learning guitar or programming a computer.
+That was a new experience, and navigating it made me realize how many parallels there are between exercising and other parts of life. Longterm goal-setting, problem-solving, persistence, learning from failure... those skills apply in exercise, but just as easily to learning guitar or programming a computer.
 
 Sorry if this all sounds super-obvious, but these were connections I hadn't really made before.
 
