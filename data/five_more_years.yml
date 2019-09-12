@@ -40,8 +40,9 @@
   - heading: Voting
     content:
       - Voting from abroad in 2015 was really important to me. I abhored the tory government that I'd felt had bullied Canada and tarnished its reputation. I wanted to feel connected to Canada.
-      - Of course, Trudeau would go on to <a href='https://trudeaumetre.polimeter.org'>break a lot of promises</a>. Over the next few years, I would feel alienated by the juxtaposition of my disappointment in his government and of the world fawning over Trudeau.
-      - I voted to stay connected to my country but it ended up pushing me away.
+      - Of course, Trudeau would go on to <a href='https://trudeaumetre.polimeter.org'>break a lot of promises</a>. Over the next few years, I would feel alienated by the juxtaposition of my disappointment in his government and of the world fawning over Trudeau. 
+      - When I tried to talk about this, online and in real life, my fairly commonsense criticism of Trudeau was met with mild shock. Non-Canadians are, I guess, just not accustomed to thinking about Canada as a country with internal politics. Nor are they aware of the many people to Trudeau's left who are pushing for Canada to live up to the paragon everyone thinks it already is.
+      - I voted to stay connected to my country, but it kind of ended up pushing me away. This becomes important later, when Ashley and I decide to become Permanent Residents of the United States.
     img_url: /img/blog/5-more-years/2015/voting.jpg
   - heading: 401 Broadway
     content:
@@ -82,7 +83,7 @@
   - heading: A New Look
     content:
       - Artsy offered headshots for our internal team navigator, and I took the opportunity to define a new, standardized avatar. This image <em>became</em> my representation online for over three years.
-      - The funny thing is, it was going to be a boring photo. But Orta was there, and encouraged me to give the thumbs up that ultimately became iconic.
+      - The funny thing is, it was going to be a boring photo. But Orta was there, and encouraged me to give the thumbs up that ultimately became – quite literally – iconic.
     img_url: /img/blog/5-more-years/2016/thumbsup.jpg
   - heading: SINFO
     content:
@@ -90,6 +91,12 @@
       - SINFO was a pretty formative experience for me because it was one of the first general-purpose tech conferences, not just targeted at iOS developers.
       - The photo here depicts a billing with me and <a href='https://www.imdb.com/name/nm0270665/'>Danielle Feinberg</a>, a lighting artist and director of photography at Pixar. We got to chat over a few meals at the conference – I have a tonne of respect for her work and how she connects technology and art.
     img_url: /img/blog/5-more-years/2016/sinfo.jpg
+  - heading: Green Card Process Starts
+    content:
+      - So far, my wife and I had been living in the United States on a TN-1 visa ("the NAFTA visa"). It had some restrictions that we were initial okay with, but grew tired of as we continued living in the states. And border crossings were a consistently stressful, as it's kind of a weird visa. Especially entering from Europe, airlines get really fussy.
+      - Ashley and I decided to ask Artsy to look into our options. Artsy hired a lawyer and we decided to apply for our Green Cards; this would make us Permanent Residents of the United States.
+      - The decision wasn't easy. We'd been living away from our families for a few years, and missed home, but felt that being closer (than Amsterdam) would be a reasonable compromise. And living outside Canada already just made the prospect of continuing to do so... justified, somehow. That's how it felt, anyway.
+      - This kicked off three years of paperwork, appointments, and headaches. But I have to thank Artsy, especially Gray and Michelle, for always being there to help.
   - heading: LAI Setbacks
     content:
       - Building something new is never easy, and we were trying to build something <em>very</em> new. The backend was written in Scala, using <a href='https://akka.io'>Akka</a> for actor-based programming. The web front-end was written in React (a relatively new technology at Artsy, at the time) and the iOS front-end was written in Swift. Both front-ends communicated to our backend over GraphQL for static data (lot estimates, artist names, etc) and a websocket backend for realtime data (current number of bids, the current highest bid, etc).
@@ -115,7 +122,7 @@
   - heading: Steven Universe
     content:
       - In 2016, my wife recommended that I check out a show called <em>Steven Universe</em>. I did, and was instantly hooked.
-      - I <a href='https://ashfurrow.com/blog/steven-universe-and-masculinity/'>started writing about the show</a> pretty quickly. This came at a pretty important time for me, since I was earnestly researching team dynamics, which is an important theme of the show. Orta called <em>Steven Universe</em> "the most \"Ash Furrow\" show", which I took as quite the compliment.
+      - I <a href='https://ashfurrow.com/blog/steven-universe-and-masculinity/'>started writing about the show</a> pretty quickly. This came at a pretty important time for me, since I was earnestly researching team dynamics, which is an important theme of the show. Orta called <em>Steven Universe</em> "the most 'Ash Furrow' show", which I took as quite the compliment.
       - "If I had to boil <em>Steven Universe</em> down, really far, I would say that the show's message is a coming-of-age story that questions the idealism-versus-pragmatism dichotomy. Steven has his ideals, and the entire world around him pushes him to be pragmatic. The show's answer to this conflict is: \"no, these ideals <em>are</em> pragmatic. It's the world that needs to change.\""
     img_url: /img/blog/5-more-years/2016/stevenuniverse.jpg
   - heading: Scaling LAI
@@ -131,6 +138,12 @@
       - I was in Switzerland during the 2016 election. I remember waking up to the news and thinking "well, maybe I just won't go back."
       - But I had to, of course – my wife and cats were back in New York. Over the next six months, I toyed with the idea of moving back to Canada. It felt like I was obligated to, somehow. But I worked through those feelings. Moving to Canada would solve nothing, and I desperately wanted to continue my work at Artsy.
     img_url: /img/blog/5-more-years/2016/election.jpg
+  - heading: A Cohering Philosophy of Software Development
+    content:
+      - When you go to my website's homepage, <a href="https://ashfurrow.com">ashfurrow.com</a> <em>used</em> to just show a list of recent blog posts, but <a href="https://github.com/ashfurrow/blog/pull/285">as of this pull request</a>, it links to what I considered "important" blog posts. 
+      - These initial "important" blog posts were each an attempt to apply what I had learned about team dynamics and turn them into a coherent narrative. I have since taken on the term "compassionate software developer", which I discovered from <a href="https://twitter.com/aprilwensel">April Wensel</a> of <a href="https://compassionatecoding.com">Compassionate Coding</a>. I'm a big fan of her work.
+      - Even though I had these initial blog posts, it would still be some time before my thoughts cohered around a central set of ideas. In 2018, I would give a talk (also transcribed it into a blog post) called <a href="/blog/building-better-software-by-building-better-teams/">Building Better Software by Building Better Teams</a>. In it, I lay out the evidence-based business value of compassionate software development, with instructions to get started and links to jumping off points.
+    img_url: /img/blog/5-more-years/2016/posts.png
   - heading: Peer Lab Community
     content:
       - After starting my own Peer Lab in 2014, I realized that I wanted to expand the idea. I can only run one peer lab, so I started <a href='https://peerlab.community'>peerlab.community</a> that I <a href='https://ashfurrow.com/blog/building-static-sites-with-middleman/'>built with Middleman</a>. It includes a list of peer labs and instructions to start one. 
