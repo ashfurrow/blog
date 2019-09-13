@@ -27,12 +27,23 @@
         revealElements();
       }
 
+      function updateElementsTopAndRevealWhatOughtToBeRevealed() {
+        if (document.location.hash) {
+          setTimeout(function() {
+            const element = $(document.location.hash)[0]
+            if (element) {
+              element.scrollIntoView(true)
+            }
+          }, 500); // 500ms matches CSS fade in transition.
+        }
+      }
+
       function revealElements(){
         var windowtop = $(window).scrollTop();
         var windowbtm = windowtop + $(window).height();
 
         for (var i = 0; i < states.length; i++){
-
+          states[i].top = $(statelist[i]).offset().top + settings.revealbefore;
           if (states[i].top > windowtop && states[i].top < windowbtm){
             if (!states[i].elm.hasClass(settings.anim_class) && $.isFunction(settings.onreveal)){
               settings.onreveal.call(this, states[i].elm);
@@ -51,6 +62,7 @@
 
       $(window).on('scroll', revealElements);
       $(window).on('load', setupElements)
+      $(document).ready(updateElementsTopAndRevealWhatOughtToBeRevealed)
     });
   }
 }(jQuery));
