@@ -67,6 +67,7 @@
     content:
       - I ended 2015 by helping to form Artsy Engineering's <em>Auctions Team</em>. My product work in 2015 hadn't been terribly focused, and I was excited to begin the new year on a new team, focused on building software for Artsy's burgeoning Auctions business.
       - The new team also included a new manager, Alan. Over the next few years, I'd learn a lot from Alan, on both the technical and non-technical sides of software development.
+      - Our first big event was was <a href='https://www.artsy.net/article/sotheby-s-sotheby-s-first-online-only-auction-input-output'>Sotheby's Input/Output</a> auction. Sotheby's is a big player in the auction world, so working with them was a big deal for Artsy. This was kind of stressful! But was a good preparation for the stress that would come next year, building Live Auctions Integration.
 - "2016":
   - heading: Film!
     content:
@@ -89,7 +90,9 @@
     content:
       - Early in the year, I took a trip around the world. First, to Lisbon for the <a href='https://sinfo.org'>SINFO</a> conference, and then onto Tokyo for try! Swift.
       - SINFO was a pretty formative experience for me because it was one of the first general-purpose tech conferences, not just targeted at iOS developers.
-      - The photo here depicts a billing with me and <a href='https://www.imdb.com/name/nm0270665/'>Danielle Feinberg</a>, a lighting artist and director of photography at Pixar. We got to chat over a few meals at the conference – I have a tonne of respect for her work and how she connects technology and art.
+      - The photo here depicts a billing with me and <a href='https://www.imdb.com/name/nm0270665/'>Danielle Feinberg</a>, a lighting artist and director of photography at Pixar. We got to chat over a few meals at the conference, she even attended my talk on functional reactive programming. She had a big impact on me and my career.
+      - Getting to speak on the same stage, I felt the difference in scale of what we were presenting. She talked about lighting Pixar films to achieve artistic and emotional affect. Like how our WALL•E’s eyes have a subtle difference in lighting from the other WALL•E robots, and how that difference gets taken away briefly when our main character forgets who he is. 
+      - And I was talking about FRP. Important, I guess, but at a very different scale. Danielle Feinberg inspired me because the message she was telling was so much bigger than I was used to thinking about, in a conference talk context. Looking back, I can see a big turn in my own conference talks after I saw how Danielle's talk on combing technology and art.
     img_url: /img/blog/5-more-years/2016/sinfo.jpg
   - heading: Green Card Process Starts
     content:
