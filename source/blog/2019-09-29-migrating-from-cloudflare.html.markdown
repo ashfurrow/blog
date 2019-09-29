@@ -53,7 +53,7 @@ So I set up a new subdomain, `cdn.mastodon.technology`, to point to BunnyCDN. I 
 
 I forgot that I'd also configured nginx to set [Content-Security Policy HTTP response headers](https://en.wikipedia.org/wiki/Content_Security_Policy), allow-listing asset downloads from our CDN host. I forgot to update the nginx settings to add the new domain, so media embeds were momentarily broken. I rolled back the environment variable change, update nginx's configuration, and re-deployed the change. Everything after that went smoothly, and I watched BunnyCDN's stats as traffic started rolling in.
 
-One thing that I really like about BunnyCDN is that I'm paying them. Weird, right? But it kind of sucked to be a free-tired Cloudflare customer. A lot of features, like realtime metrics, aren't available for free customers. By paying BunnyCDN, I'm getting a full-featured CDN provider. BunnyCDN might not provide as comprehensive a tool as Clouflare, but it has everything I need _and_ I can access all its features.
+One thing that I really like about BunnyCDN is that I'm paying them. Weird, right? But it kind of sucked to be a free-tired Cloudflare customer. A lot of features, like realtime metrics, aren't available for free customers. By paying BunnyCDN, I'm getting a full-featured CDN provider. BunnyCDN might not provide as comprehensive a tool as Cloudflare, but it has everything I need _and_ I can access all its features.
 
 Here's what Cloudflare's bandwidth stats looked like after about a week:
 
