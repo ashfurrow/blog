@@ -133,7 +133,7 @@ BEGIN_NARROW
 
 END_NARROW
 
-I'm really disappointed in Namecheap for introducing this limitation, that other domain registrars / DNS providers don't force on you. As far as I can tell, there's no way to mitigate this problem with using Namecheap. I would probably recommend using a different domain registrar, but for now I'm sticking with them because things are working now, and migrating away would be even more work. No thanks.
+I'm really disappointed in Namecheap for introducing this limitation, that other domain registrars / DNS providers don't force on you. As far as I can tell, there's no way to mitigate this problem with using Namecheap. I've contacted Namecheap support to let them know about the problem, and they've passed the feedback on to their product team. For now, I would probably recommend using a different domain registrar, but I'm sticking with them because things are working now, and migrating away would be even more work. No thanks.
 
 ## Aftermath
 
