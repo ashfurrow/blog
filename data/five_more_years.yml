@@ -31,7 +31,7 @@
   - heading: Teaching & Learning at UIKonf
     content:
       - In 2014, I attended UIKonf and had a great time. I returned the following year to present a talk titled <em>Teaching & Learning</em>. The thesis of my talk was that sharing knowledge is good, and you should do it for both altruistic and selfish reasons.
-      - In the years since my 2015 talk, I've only leaned harder into this "sharing knowledge is good" position. But at the time, this was as far as I had pushed into TODO what is this called? ugh.
+      - In the years since my 2015 talk, I've only leaned harder into this "sharing knowledge is good" position. But at the time, this was as far as I had pushed into it.
     img_url: /img/blog/5-more-years/2015/uikonf.jpg
   - heading: Learning to Draw
     content:
@@ -50,6 +50,11 @@
       - My wife and I were renting one bedroom out of a two-bedroom apartment; it never quite felt like home. In the absense of a <em>real</em> home, I think I was drawn to the office as a place of stability.
       - Attaching your personal sense of stability to your employer is never a good idea – businesses are inherently unstable and mooring your sense of self to them is a mistake. And, yet, I seem to make this mistake every time.
     img_url: /img/blog/5-more-years/2015/officeatnight.jpg
+  - heading: Life at Artsy
+    content:
+      - After UIKonf uploaded the video recording of my <em>Teaching & Learning</em> talk, I shared it within Artsy. That afternoon, Carter (Artsy's CEO) called me on the phone. He said "I watched your talk. Let's do it." And so Artsy created a new blog, <a href="https://www.artsy.net/life-at-artsy"><em>Life at Artsy</em></a>.
+      - "My colleague, Remy Ferber, worked on the initial post, <a href='https://www.artsy.net/article/remy-ferber-open-sourcing-company-culture-at-artsy'><em>Open-Sourcing Company Culture at Artsy</em></a>. In it, she says &quot;By promoting openness, we mitigate fear of judgment and embrace our mistakes as positive experiences to learn from and share with others.&quot; This is really key – it speaks to a concept that I didn't yet have the vocabulary to describe: psychological safety."
+      - Since starting at Artsy, I understood that the "arts team" (as it was known then) had a strong influence on our engineering culture. The <em>Life at Artsy</em> blog was one of the first times I helped the engineering team export <em>our</em> culture back into the broader company. It was really rewarding.
   - heading: Product Work
     content:
       - My product work in 2015 wasn't that focused. I worked on Artsy Engineering's "Mobile Team" (as opposed to its "Web Team") and I just build whatever mobile software Artsy needed. I had a tonne of leeway to decide what to work on, but I didn't always have the business context I needed to make that decision.
