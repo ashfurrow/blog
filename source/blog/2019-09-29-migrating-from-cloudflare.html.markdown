@@ -13,7 +13,7 @@ But CDNs can get expensive, too. Since they are designed to mitigate costs for s
 
 However, I don't really like Cloudflare. I don't like how they [protect hate forums, where mass shootings are planned](https://www.vice.com/en_us/article/j5yxxg/cloudflare-is-protecting-a-site-linked-to-a-neo-nazi-terror-group); I don't like how they have grown to the point where a [huge portion of the internet's total traffic flows through their infrastructure](https://w3techs.com/technologies/details/cn-cloudflare/all/all); I don't like how [un-seriously they treat their responsibilities](https://arstechnica.com/tech-policy/2017/08/cloudflare-ceo-the-people-behind-the-daily-stormer-are-assholes/). So, I wanted to move off. 
 
-A local Mastodon user, [IzzyOnDroid](https://mastodon.technology/@IzzyOnDroid) reached out to me to ask about this. Migrating away fro Cloudflare hadn't been high on my priority list, but IzzyOnDroid were really helpful, researching alternatives and asking the fediverse for suggestions. They did the hard work for me – getting enough context to make a decision – and brought back some options. I chose [BunnyCDN](https://bunnycdn.com).
+A local Mastodon user, [IzzyOnDroid](https://mastodon.technology/@IzzyOnDroid) reached out to me to ask about this. Migrating away from Cloudflare hadn't been high on my priority list, but IzzyOnDroid were really helpful, researching alternatives and asking the fediverse for suggestions. They did the hard work for me – getting enough context to make a decision – and brought back some options. I chose [BunnyCDN](https://bunnycdn.com).
 
 BEGIN_NARROW
 
