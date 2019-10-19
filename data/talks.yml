@@ -46,8 +46,7 @@ past_talks:
   url: https://www.appbuilders.ch
   location: Lausanne, Switzerland
   dates: April 24–25, 2017
-  image: appbuilders.png
-  hidden: true
+  image: comparative-async.png
   video: https://youtu.be/zBr8Bawe5Pg
 - name: Building Compassionate Software
   conference: RWDevCon
@@ -63,9 +62,9 @@ past_talks:
   url: http://www.playgroundscon.com
   location: Melbourne, Australia
   dates: February 23–24, 2017
-  image: playgroundscon.png
+  hidden: true
+  image: comparative-async.png
   slides: https://speakerdeck.com/ashfurrow/comparative-asynchronous-programming
-  video: https://www.skilled.io/u/playgroundscon/comparative-asynchronous-programming
 - name: Building Compassionate Software
   conference: iOSoho
   url: https://www.meetup.com/iOSoho/events/232809656/
@@ -126,7 +125,6 @@ past_talks:
   dates: October 29–30, 2015
   image: swiftsummit.png
   slides: https://speakerdeck.com/ashfurrow/emerging-best-practices-in-swift-2
-  video: http://www.skilled.io/ashfurrow/discovering-best-practices-in-swift
 - name: Functional Reactive Awesome
   conference: Cornell CS5356
   url: https://github.com/Cornell-CS5356-Fall2015/cs5356/blob/master/course/08-mobile/lecture.md#guest-lecturer
