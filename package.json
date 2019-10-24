@@ -68,6 +68,7 @@
     "typography": "^0.16.17"
   },
   "dependencies": {
-    "gatsby-plugin-google-tagmanager": "^2.0.5"
+    "gatsby-plugin-google-tagmanager": "^2.0.5",
+    "gatsby-plugin-web-font-loader": "^1.0.4"
   }
 }

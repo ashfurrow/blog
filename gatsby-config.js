@@ -32,6 +32,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'fmr6vlo'
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: config.Google_Tag_Manager_ID,
