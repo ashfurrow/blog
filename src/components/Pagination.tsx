@@ -1,15 +1,15 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { media } from '../utils/media';
-import theme from '../../config/Theme';
-import curriedDarken from 'polished/lib/color/darken';
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { media } from '../utils/media'
+import theme from '../../config/Theme'
+import curriedDarken from 'polished/lib/color/darken'
 
 export const PaginationContainer = styled.div`
   text-align: center;
   margin: 2rem;
   }
-`;
+`
 
 export const PaginationContent = styled.div`
     display: inline-block;
@@ -79,21 +79,21 @@ export const PaginationContent = styled.div`
           }
         }
       }
-    `;
+    `
 
 interface Props {
-  currentPage: number;
-  totalPages: number;
-  url: string;
+  currentPage: number
+  totalPages: number
+  url: string
 }
 
 export class Pagination extends React.PureComponent<Props> {
   public render() {
-    const { currentPage, totalPages, url } = this.props;
-    const isFirst = currentPage === 1;
-    const isLast = currentPage === totalPages;
-    const prevPage = currentPage - 1 === 1 ? `/${url}/` : `/${url}/${(currentPage - 1).toString()}`;
-    const nextPage = `/${url}/${(currentPage + 1).toString()}`;
+    const { currentPage, totalPages, url } = this.props
+    const isFirst = currentPage === 1
+    const isLast = currentPage === totalPages
+    const prevPage = currentPage - 1 === 1 ? `/${url}/` : `/${url}/${(currentPage - 1).toString()}`
+    const nextPage = `/${url}/${(currentPage + 1).toString()}`
     return totalPages > 1 ? (
       <PaginationContainer>
         <PaginationContent>
@@ -118,6 +118,6 @@ export class Pagination extends React.PureComponent<Props> {
           )}
         </PaginationContent>
       </PaginationContainer>
-    ) : null;
+    ) : null
   }
 }

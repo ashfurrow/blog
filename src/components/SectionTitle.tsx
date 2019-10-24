@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const SectionTitle: any = styled.div`
   font-size: ${props => props.theme.fontSize.big};
@@ -18,4 +18,4 @@ export const SectionTitle: any = styled.div`
     margin-left: -25px;
     background: ${props => props.theme.colors.white};
   }
-`;
+`

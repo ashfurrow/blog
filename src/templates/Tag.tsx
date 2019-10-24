@@ -1,16 +1,16 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import PageProps from '../models/PageProps';
-import { Article, Content, Header, Layout, SectionTitle, Subline, Wrapper } from '../components';
-import Helmet from 'react-helmet';
-import config from '../../config/SiteConfig';
-import kebabCase from 'lodash/kebabCase';
+import React from 'react'
+import Link from 'gatsby-link'
+import PageProps from '../models/PageProps'
+import { Article, Content, Header, Layout, SectionTitle, Subline, Wrapper } from '../components'
+import Helmet from 'react-helmet'
+import config from '../../config/SiteConfig'
+import kebabCase from 'lodash/kebabCase'
 
 export default class TagTemplate extends React.PureComponent<PageProps> {
   public render() {
-    const { posts, tagName } = this.props.pathContext;
-    const totalCount = posts ? posts.length : 0;
-    const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tagName}"`;
+    const { posts, tagName } = this.props.pathContext
+    const totalCount = posts ? posts.length : 0
+    const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tagName}"`
 
     return (
       <Layout>
@@ -40,6 +40,6 @@ export default class TagTemplate extends React.PureComponent<PageProps> {
           </Content>
         </Wrapper>
       </Layout>
-    );
+    )
   }
 }

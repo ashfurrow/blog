@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { media } from '../utils/media';
+import styled from 'styled-components'
+import { media } from '../utils/media'
 
 export const Wrapper: any = styled.div`
   display: flex;
@@ -13,4 +13,4 @@ export const Wrapper: any = styled.div`
   @media ${media.phone} {
     padding: ${(props: any) => (props.fullWidth ? '0' : '0 1rem')};
   }
-`;
+`

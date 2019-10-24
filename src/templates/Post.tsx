@@ -1,29 +1,29 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
-import kebabCase from 'lodash/kebabCase';
-import { Layout, Wrapper, Header, Subline, SEO, PrevNext, SectionTitle, Content } from '../components';
-import config from '../../config/SiteConfig';
-import '../utils/prismjs-theme.css';
-import PathContext from '../models/PathContext';
-import Post from '../models/Post';
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link, graphql } from 'gatsby'
+import styled from 'styled-components'
+import kebabCase from 'lodash/kebabCase'
+import { Layout, Wrapper, Header, Subline, SEO, PrevNext, SectionTitle, Content } from '../components'
+import config from '../../config/SiteConfig'
+import '../utils/prismjs-theme.css'
+import PathContext from '../models/PathContext'
+import Post from '../models/Post'
 
 const PostContent = styled.div`
   margin-top: 4rem;
-`;
+`
 
 interface Props {
   data: {
-    markdownRemark: Post;
-  };
-  pathContext: PathContext;
+    markdownRemark: Post
+  }
+  pathContext: PathContext
 }
 
 export default class PostPage extends React.PureComponent<Props> {
   public render() {
-    const { prev, next } = this.props.pathContext;
-    const post = this.props.data.markdownRemark;
+    const { prev, next } = this.props.pathContext
+    const post = this.props.data.markdownRemark
     return (
       <Layout>
         {post ? (
@@ -57,7 +57,7 @@ export default class PostPage extends React.PureComponent<Props> {
           </>
         ) : null}
       </Layout>
-    );
+    )
   }
 }
 
@@ -78,4 +78,4 @@ export const postQuery = graphql`
       timeToRead
     }
   }
-`;
+`

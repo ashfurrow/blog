@@ -1,10 +1,10 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import theme from '../../config/Theme';
-import { media } from '../utils/media';
-import split from 'lodash/split';
-import './layout.scss';
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
+import theme from '../../config/Theme'
+import { media } from '../utils/media'
+import split from 'lodash/split'
+import './layout.scss'
 
 const GlobalStyle = createGlobalStyle`
   ::selection {
@@ -58,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
   .textRight {
     text-align:right;
   }
-`;
+`
 
 const Footer = styled.footer`
   text-align: center;
@@ -66,11 +66,11 @@ const Footer = styled.footer`
   span {
     font-size: 0.75rem;
   }
-`;
+`
 
 export class Layout extends React.PureComponent<{}> {
   public render() {
-    const { children } = this.props;
+    const { children } = this.props
 
     return (
       <StaticQuery
@@ -95,6 +95,6 @@ export class Layout extends React.PureComponent<{}> {
           </ThemeProvider>
         )}
       />
-    );
+    )
   }
 }

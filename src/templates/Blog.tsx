@@ -1,24 +1,24 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import { Layout, Article, Wrapper, SectionTitle, Header, Content, Pagination } from '../components';
-import Helmet from 'react-helmet';
-import config from '../../config/SiteConfig';
-import Data from '../models/Data';
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+import { Layout, Article, Wrapper, SectionTitle, Header, Content, Pagination } from '../components'
+import Helmet from 'react-helmet'
+import config from '../../config/SiteConfig'
+import Data from '../models/Data'
 
 interface Props {
-  data: Data;
+  data: Data
   pageContext: {
-    currentPage: number;
-    totalPages: number;
-  };
+    currentPage: number
+    totalPages: number
+  }
 }
 
 export default class BlogPage extends React.Component<Props> {
   public render() {
-    const { currentPage, totalPages } = this.props.pageContext;
+    const { currentPage, totalPages } = this.props.pageContext
 
-    const { data } = this.props;
-    const { edges, totalCount } = data.allMarkdownRemark;
+    const { data } = this.props
+    const { edges, totalCount } = data.allMarkdownRemark
 
     return (
       <Layout>
@@ -44,7 +44,7 @@ export default class BlogPage extends React.Component<Props> {
           </Content>
         </Wrapper>
       </Layout>
-    );
+    )
   }
 }
 export const BlogQuery = graphql`
@@ -67,4 +67,4 @@ export const BlogQuery = graphql`
       }
     }
   }
-`;
+`

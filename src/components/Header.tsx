@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { darken, lighten } from 'polished';
-import rgba from 'polished/lib/color/rgba';
-import { media } from '../utils/media';
-import config from '../../config/SiteConfig';
+import React from 'react'
+import styled from 'styled-components'
+import { darken, lighten } from 'polished'
+import rgba from 'polished/lib/color/rgba'
+import { media } from '../utils/media'
+import config from '../../config/SiteConfig'
 
 const HeaderWrapper: any = styled.header`
   position: relative;
@@ -33,7 +33,7 @@ const HeaderWrapper: any = styled.header`
   @media ${media.phone} {
     padding: 1rem 0.5rem 2rem;
   }
-`;
+`
 
 const Content = styled.div`
   position: relative;
@@ -45,11 +45,11 @@ const Content = styled.div`
       color: white;
     }
   }
-`;
+`
 
 interface Props {
-  children: any;
-  banner?: string;
+  children: any
+  banner?: string
 }
 
 export class Header extends React.PureComponent<Props> {
@@ -58,6 +58,6 @@ export class Header extends React.PureComponent<Props> {
       <HeaderWrapper banner={this.props.banner || config.defaultBg}>
         <Content>{this.props.children}</Content>
       </HeaderWrapper>
-    );
+    )
   }
 }

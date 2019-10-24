@@ -1,15 +1,15 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
-import kebabCase from 'lodash/kebabCase';
-import { Layout, Wrapper, Header, SectionTitle, Content, Title } from '../components';
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
+import { Layout, Wrapper, Header, SectionTitle, Content, Title } from '../components'
 
-import config from '../../config/SiteConfig';
-import PageProps from '../models/PageProps';
+import config from '../../config/SiteConfig'
+import PageProps from '../models/PageProps'
 
 export default class AllTagTemplate extends React.PureComponent<PageProps> {
   public render() {
-    const { tags } = this.props.pathContext;
+    const { tags } = this.props.pathContext
     if (tags) {
       return (
         <Layout>
@@ -28,7 +28,7 @@ export default class AllTagTemplate extends React.PureComponent<PageProps> {
             </Content>
           </Wrapper>
         </Layout>
-      );
+      )
     }
   }
 }

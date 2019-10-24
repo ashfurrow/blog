@@ -1,14 +1,14 @@
-import Frontmatter from './Frontmatter';
+import Frontmatter from './Frontmatter'
 
 interface Post {
-  id: number;
-  excerpt: string;
-  html: string;
-  frontmatter: Frontmatter;
+  id: number
+  excerpt: string
+  html: string
+  frontmatter: Frontmatter
   fields: {
-    slug: string;
-  };
-  timeToRead: number;
+    slug: string
+  }
+  timeToRead: number
 }
 
-export default Post;
+export default Post

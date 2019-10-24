@@ -1,16 +1,16 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
-import { Layout, Wrapper, Header, Subline, Article, SectionTitle, Content } from '../components';
-import config from '../../config/SiteConfig';
-import kebabCase from 'lodash/kebabCase';
-import PageProps from '../models/PageProps';
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
+import { Layout, Wrapper, Header, Subline, Article, SectionTitle, Content } from '../components'
+import config from '../../config/SiteConfig'
+import kebabCase from 'lodash/kebabCase'
+import PageProps from '../models/PageProps'
 
 export default class Category extends React.PureComponent<PageProps> {
   public render() {
-    const { posts, categoryName } = this.props.pathContext;
-    const totalCount = posts ? posts.length : 0;
-    const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${categoryName}"`;
+    const { posts, categoryName } = this.props.pathContext
+    const totalCount = posts ? posts.length : 0
+    const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${categoryName}"`
 
     return (
       <Layout>
@@ -40,6 +40,6 @@ export default class Category extends React.PureComponent<PageProps> {
           </Content>
         </Wrapper>
       </Layout>
-    );
+    )
   }
 }

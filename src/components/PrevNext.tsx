@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
-import kebabCase from 'lodash/kebabCase';
-import Post from '../models/Post';
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
+import Post from '../models/Post'
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     align-items: center;
   }
   justify-items: center;
-`;
+`
 
 const Prev = styled.div`
   span {
@@ -21,7 +21,7 @@ const Prev = styled.div`
     font-size: 0.8rem;
     color: ${props => props.theme.colors.grey.light};
   }
-`;
+`
 
 const Next = styled.div`
   margin-left: auto;
@@ -31,16 +31,16 @@ const Next = styled.div`
     font-size: 0.8rem;
     color: ${props => props.theme.colors.grey.light};
   }
-`;
+`
 
 interface Props {
-  next: Post;
-  prev: Post;
+  next: Post
+  prev: Post
 }
 
 export class PrevNext extends React.PureComponent<Props> {
   public render() {
-    const { prev, next } = this.props;
+    const { prev, next } = this.props
     return (
       <Wrapper>
         {prev && (
@@ -56,6 +56,6 @@ export class PrevNext extends React.PureComponent<Props> {
           </Next>
         )}
       </Wrapper>
-    );
+    )
   }
 }

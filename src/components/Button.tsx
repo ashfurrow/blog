@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import curriedDarken from 'polished/lib/color/darken';
+import styled from 'styled-components'
+import curriedDarken from 'polished/lib/color/darken'
 
 export const Button: any = styled.button`
   background: ${props => props.theme.colors.primary};
@@ -27,4 +27,4 @@ export const Button: any = styled.button`
     margin-right: 0.75rem;
     fill: white;
   }
-`;
+`

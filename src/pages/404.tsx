@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Content, Header, Layout, Wrapper, SectionTitle } from '../components';
-import Helmet from 'react-helmet';
-import config from '../../config/SiteConfig';
-import { Link } from 'gatsby';
+import * as React from 'react'
+import { Content, Header, Layout, Wrapper, SectionTitle } from '../components'
+import Helmet from 'react-helmet'
+import config from '../../config/SiteConfig'
+import { Link } from 'gatsby'
 
 export default class NotFoundPage extends React.Component<any> {
   public render() {
@@ -19,6 +19,6 @@ export default class NotFoundPage extends React.Component<any> {
           </Content>
         </Wrapper>
       </Layout>
-    );
+    )
   }
 }
