@@ -77,7 +77,8 @@ const FooterLink = styled.a`
 `
 
 const FooterIcons = styled.div`
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 `
 
 export class Layout extends React.PureComponent<{}> {
@@ -99,6 +100,14 @@ export class Layout extends React.PureComponent<{}> {
               <GlobalStyle />
               {children}
               <Footer>
+                <hr
+                  style={{
+                    borderTopWidth: '1px',
+                    borderTopStyle: 'solid',
+                    borderTopColor: theme.colors.grey.light,
+                    height: 0
+                  }}
+                />
                 <FooterIcons>
                   <span className="fa-layers fa-fw fa-3x">
                     <FooterLink
