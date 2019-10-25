@@ -3,8 +3,15 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import theme from '../../config/Theme'
 import { media } from '../utils/media'
-import split from 'lodash/split'
 import './layout.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faMastodon,
+  faTwitter,
+  faGithub,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons'
+import { faCircle, faImage } from '@fortawesome/free-solid-svg-icons'
 
 const GlobalStyle = createGlobalStyle`
   ::selection {
@@ -19,12 +26,9 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   a {
-    color: ${theme.colors.grey.dark};
+    color: ${theme.colors.primary};
     text-decoration: none;
     transition: all ${theme.transitions.normal};
-  }
-  a:hover {
-    color: ${theme.colors.primary};
   }
   h1, h2, h3, h4 {
     color: ${theme.colors.grey.dark};
@@ -56,16 +60,24 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   .textRight {
-    text-align:right;
+    text-align: right;
   }
 `
 
 const Footer = styled.footer`
   text-align: center;
   padding: 3rem 0;
-  span {
-    font-size: 0.75rem;
+`
+
+const FooterLink = styled.a`
+  color: ${theme.colors.grey.default};
+  &:hover {
+    color: ${theme.colors.primary};
   }
+`
+
+const FooterIcons = styled.div`
+  margin-bottom: 3rem;
 `
 
 export class Layout extends React.PureComponent<{}> {
@@ -87,9 +99,83 @@ export class Layout extends React.PureComponent<{}> {
               <GlobalStyle />
               {children}
               <Footer>
-                &copy; {split(data.site.buildTime, '.')[2]} by Majid Hajian. All rights reserved. <br />
-                <a href="https://github.com/mhadaily/gatsby-starter-typescirpt-power-blog">GitHub Repository</a> <br />
-                <span>Last build: {data.site.buildTime}</span>
+                <FooterIcons>
+                  <span className="fa-layers fa-fw fa-3x">
+                    <FooterLink
+                      href="https://mastodon.technology/@ashfurrow"
+                      title="Mastodon"
+                      rel="me"
+                    >
+                      <FontAwesomeIcon
+                        icon={faMastodon}
+                        transform="shrink-8"
+                        mask={faCircle}
+                      />
+                    </FooterLink>
+                  </span>
+                  <span className="fa-layers fa-fw fa-3x">
+                    <FooterLink
+                      href="https://twitter.com/ashfurrow"
+                      title="Twitter"
+                      rel="me"
+                    >
+                      <FontAwesomeIcon
+                        icon={faTwitter}
+                        transform="shrink-8"
+                        mask={faCircle}
+                      />
+                    </FooterLink>
+                  </span>
+                  <span className="fa-layers fa-fw fa-3x">
+                    <FooterLink
+                      href="https://github.com/ashfurrow"
+                      title="GitHub"
+                      rel="me"
+                    >
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        transform="shrink-8"
+                        mask={faCircle}
+                      />
+                    </FooterLink>
+                  </span>
+                  <span className="fa-layers fa-fw fa-3x">
+                    <FooterLink
+                      href="https://photos.ashfurrow.com"
+                      title="Photo Blog"
+                      rel="me"
+                    >
+                      <FontAwesomeIcon
+                        icon={faImage}
+                        transform="shrink-8"
+                        mask={faCircle}
+                      />
+                    </FooterLink>
+                  </span>
+                  <span className="fa-layers fa-fw fa-3x">
+                    <FooterLink
+                      href="http://instagram.com/ashfurrow"
+                      title="Instagram"
+                      rel="me"
+                    >
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        transform="shrink-8"
+                        mask={faCircle}
+                      />
+                    </FooterLink>
+                  </span>
+                </FooterIcons>
+                <span style={{ fontSize: '0.75rem' }}>
+                  This site is{' '}
+                  <a href="http://github.com/ashfurrow/blog">open source</a>.{' '}
+                  <a href="http://purl.org/dc/dcmitype/Text">Content</a>{' '}
+                  licensed under{' '}
+                  <a href="http://creativecommons.org/licenses/by/4.0/">
+                    Creative Commons Attribution 4.0
+                  </a>
+                  .
+                </span>
               </Footer>
             </React.Fragment>
           </ThemeProvider>
@@ -98,3 +184,7 @@ export class Layout extends React.PureComponent<{}> {
     )
   }
 }
+
+/*
+
+*/
