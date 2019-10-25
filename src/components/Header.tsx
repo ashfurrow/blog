@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { darken, lighten } from 'polished'
 import rgba from 'polished/lib/color/rgba'
 import { media } from '../utils/media'
 import config from '../../config/SiteConfig'
