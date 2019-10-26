@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import config from '../../config/SiteConfig'
 
 export const SectionTitle: any = styled.div`
   font-size: ${props => props.theme.fontSize.big};
+  font-family: ${config.headerFontFamily};
   text-transform: ${(props: any) => (props.uppercase ? 'uppercase' : 'normal')};
   text-align: center;
   color: ${props => props.theme.colors.white};

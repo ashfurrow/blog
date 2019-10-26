@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import theme from '../../config/Theme'
+import config from '../../config/SiteConfig'
 import { media } from '../utils/media'
 import './layout.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -32,6 +33,16 @@ const GlobalStyle = createGlobalStyle`
   }
   h1, h2, h3, h4 {
     color: ${theme.colors.grey.dark};
+    a {
+      color: ${theme.colors.grey.dark};
+    }
+  }
+  /* Only h1's have the header font family. */
+  h1 {
+    font-family: ${config.headerFontFamily}
+  }
+  h2, h3, h4 {
+    font-family: ${config.bodyFontFamily}
   }
   blockquote {
     font-style: italic;
@@ -64,7 +75,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   hr {
-    background: ${theme.colors.grey.light}
+    background: ${theme.colors.grey.light};
+    clear: both;
   }
 `
 
