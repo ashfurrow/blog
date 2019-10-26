@@ -15,6 +15,7 @@ const HeaderWrapper: any = styled.header`
   background-size: cover;
   padding: 8rem 2rem 10rem;
   text-align: center;
+  z-index: 5;
 
   @media ${media.tablet} {
     padding: 4rem 2rem 6rem;
@@ -26,7 +27,6 @@ const HeaderWrapper: any = styled.header`
 
 const Content = styled.div`
   position: relative;
-  z-index: 999;
   a {
     color: white;
     &:hover {

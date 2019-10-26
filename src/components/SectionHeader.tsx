@@ -35,7 +35,6 @@ const HeaderWrapper = styled.header<{ banner: string; dim: boolean }>`
 
 const Content = styled.div`
   position: relative;
-  z-index: 999;
   color: white;
   a {
     color: white;

@@ -13,6 +13,7 @@ import {
   faInstagram
 } from '@fortawesome/free-brands-svg-icons'
 import { faCircle, faImage } from '@fortawesome/free-solid-svg-icons'
+import Navbar from './NavBar'
 
 const GlobalStyle = createGlobalStyle`
   ::selection {
@@ -100,7 +101,18 @@ const FooterIcons = styled.div`
   margin-bottom: 1.5rem;
 `
 
-export class Layout extends React.PureComponent<{}> {
+interface State {
+  navbarOpen: boolean
+}
+
+export class Layout extends React.PureComponent<{}, State> {
+  state = {
+    navbarOpen: false
+  }
+  handleNavBar = () => {
+    console.log('YEAH!')
+    this.setState({ navbarOpen: !this.state.navbarOpen })
+  }
   public render() {
     const { children } = this.props
 
@@ -116,6 +128,10 @@ export class Layout extends React.PureComponent<{}> {
         render={data => (
           <ThemeProvider theme={theme}>
             <React.Fragment>
+              <Navbar
+                navBarState={this.state.navbarOpen}
+                handleNavBar={this.handleNavBar}
+              />
               <GlobalStyle />
               {children}
               <Footer>

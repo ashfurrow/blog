@@ -3,7 +3,6 @@ import { media } from '../utils/media'
 
 export const Content = styled.div`
   padding: 2rem 4rem;
-  z-index: 9000;
   form {
     p {
       label,
