@@ -150,7 +150,7 @@ exports.createPages = ({ actions, graphql }) => {
     //                   });
     //      });
 
-    createClassificationPages({ createPage, posts, postsPerPage, numPages })
+    // createClassificationPages({ createPage, posts, postsPerPage, numPages })
 
     posts.forEach(({ node }, index) => {
       const next = index === 0 ? null : posts[index - 1].node

@@ -5,7 +5,7 @@ export const Wrapper: any = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: ${(props: any) => (props.fullWidth ? '100%' : '100rem')};
+  max-width: ${(props: any) => (props.fullWidth ? '100%' : '80rem')};
   padding: ${(props: any) => (props.fullWidth ? '0' : '0 6rem')};
   @media ${media.tablet} {
     padding: ${(props: any) => (props.fullWidth ? '0' : '0 3rem')};
