@@ -387,7 +387,7 @@ gotten good at it, too.
   </h2>
 </SectionHeader>
 { !!props.pageContext.frontmatter.upcoming_talks ? 
-    (<ol>
+    (<ol style={{margin: 0}}>
       { props.pageContext.frontmatter.upcoming_talks.map(t => <TalkTile talk={t} />) }
     </ol>) : 
     "No upcoming talks at this time." }
@@ -398,7 +398,7 @@ gotten good at it, too.
     Past Awesome Talks
   </h2>
 </SectionHeader>
-<ol>
+<ol style={{margin: 0}}>
   { props.pageContext.frontmatter.past_talks.map(t => <TalkTile talk={t} />) }
 </ol>
 
