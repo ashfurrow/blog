@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     transition: all ${theme.transitions.normal};
   }
   h1, h2, h3, h4 {
-    color: ${theme.colors.grey.dark};
+    color: ${theme.colors.grey.default};
     a {
       color: ${theme.colors.grey.dark};
     }
@@ -73,10 +73,13 @@ const GlobalStyle = createGlobalStyle`
   .textRight {
     text-align: right;
   }
-
   hr {
     background: ${theme.colors.grey.light};
     clear: both;
+  }
+  iframe {
+    display: block;
+    margin: 0 auto;
   }
 `
 

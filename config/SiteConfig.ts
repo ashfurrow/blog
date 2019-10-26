@@ -24,7 +24,7 @@ export default {
   // Settings for typography.ts
   headerFontFamily: 'Futura',
   bodyFontFamily: 'ff-tisa-web-pro',
-  baseFontSize: '18px',
+  baseFontSize: '20px',
 
   //
   POST_PER_PAGE: 4
