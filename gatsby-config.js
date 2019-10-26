@@ -24,7 +24,14 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-lodash',
-    'gatsby-plugin-mdx',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/MDXLayout.tsx')
+        }
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

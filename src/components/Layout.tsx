@@ -62,11 +62,15 @@ const GlobalStyle = createGlobalStyle`
   .textRight {
     text-align: right;
   }
+
+  hr {
+    background: ${theme.colors.grey.light}
+  }
 `
 
 const Footer = styled.footer`
   text-align: center;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
 `
 
 const FooterLink = styled.a`
@@ -100,14 +104,7 @@ export class Layout extends React.PureComponent<{}> {
               <GlobalStyle />
               {children}
               <Footer>
-                <hr
-                  style={{
-                    borderTopWidth: '1px',
-                    borderTopStyle: 'solid',
-                    borderTopColor: theme.colors.grey.light,
-                    height: 0
-                  }}
-                />
+                <hr />
                 <FooterIcons>
                   <span className="fa-layers fa-fw fa-3x">
                     <FooterLink
@@ -193,7 +190,3 @@ export class Layout extends React.PureComponent<{}> {
     )
   }
 }
-
-/*
-
-*/
