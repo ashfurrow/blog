@@ -65,6 +65,7 @@ class Navbar extends React.Component<Props, State> {
               <a href="/blog">Blog</a>
               <a href="/about">About</a>
               <a href="/books">Books</a>
+              <a href="/portfolio">Portfolio</a>
               <a href="/speaking">Speaking</a>
               <a href="/search">
                 <FontAwesomeIcon icon={faSearch} />
@@ -101,7 +102,7 @@ const Bar = styled.nav<{ clear: boolean }>`
   left: 0;
   background: ${({ clear }) => (clear ? 'clear' : theme.colors.white)};
   z-index: 100;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 `
 
 const FlexContainer = styled.div`
@@ -121,7 +122,7 @@ const NavLinks = styled.ul<{ clear: boolean }>`
     color: ${({ clear }) =>
       clear ? theme.colors.white : theme.colors.grey.dark};
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     padding-left: 1.5rem;
     text-decoration: none;
     font-family: ${config.headerFontFamily};

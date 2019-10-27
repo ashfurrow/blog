@@ -39,6 +39,11 @@ const CollapseMenu: React.FC<{
             </a>
           </li>
           <li>
+            <a href="/portfolio" onClick={handleNavBar}>
+              Portfolio
+            </a>
+          </li>
+          <li>
             <a href="/speaking" onClick={handleNavBar}>
               Speaking
             </a>
