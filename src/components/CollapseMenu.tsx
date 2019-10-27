@@ -6,7 +6,7 @@ import config from '../../config/SiteConfig'
 
 const CollapseMenu: React.FC<{
   navBarState: boolean
-  handleNavBar: () => undefined
+  handleNavBar: () => void
 }> = ({ navBarState, handleNavBar }) => {
   const { open } = useSpring({ open: navBarState ? 0 : 1 })
 

@@ -7,9 +7,10 @@ import theme from '../../config/Theme'
 export const BurgerMenu: React.FC<{
   handleNavBar: () => void
   navBarState: boolean
-}> = ({ handleNavBar, navBarState }) => {
+  clear: boolean
+}> = ({ handleNavBar, navBarState, clear }) => {
   return (
-    <Wrapper onClick={handleNavBar}>
+    <Wrapper onClick={handleNavBar} clear={clear}>
       <FontAwesomeIcon icon={navBarState ? faTimesCircle : faBars} />
     </Wrapper>
   )
@@ -17,9 +18,10 @@ export const BurgerMenu: React.FC<{
 
 export default BurgerMenu
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ clear: boolean }>`
   position: relative;
   cursor: pointer;
   display: block;
-  color: ${theme.colors.grey.default};
+  color: ${({ clear }) =>
+    clear ? theme.colors.white : theme.colors.grey.default};
 `
