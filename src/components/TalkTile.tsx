@@ -123,9 +123,8 @@ export class TalkTile extends React.Component<Props> {
         video
       }
     } = this.props
-    console.log({ blogPost })
     return (
-      <ListItem key={dates}>
+      <ListItem>
         <ImageContainer>
           {!!slides ? (
             <>
