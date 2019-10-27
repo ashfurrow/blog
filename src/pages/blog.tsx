@@ -35,7 +35,6 @@ export default class HomePage extends React.Component<Props> {
     const years = groupBy(edges, ({ node }) => {
       return new Date(node.frontmatter.date).getFullYear()
     })
-    console.log({ years })
     const months = Object.keys(years).map(year => {
       const posts = years[year].map(y => y.node)
       return {
@@ -45,7 +44,6 @@ export default class HomePage extends React.Component<Props> {
         })
       }
     })
-    console.log({ months })
 
     return (
       <Layout>
@@ -78,8 +76,8 @@ export default class HomePage extends React.Component<Props> {
                             <article key={post.fields.slug}>
                               <a href={`/blog/${post.fields.slug}`}>
                                 {post.frontmatter.title}
-                              </a>{' '}
-                              &nbsp;&nbsp;{' '}
+                              </a>
+                              &nbsp;&nbsp;&nbsp;
                               <span style={{ color: rgba(0, 0, 0, 0.5) }}>
                                 {post.frontmatter.formattedDate}
                               </span>
