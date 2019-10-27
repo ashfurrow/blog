@@ -123,6 +123,7 @@ exports.createPages = ({ actions, graphql }) => {
               category
               tags
               banner
+              bannerAttribution
             }
             timeToRead
           }

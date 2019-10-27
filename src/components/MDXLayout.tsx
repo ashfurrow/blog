@@ -6,13 +6,11 @@ import { Header } from './Header'
 import { SectionTitle } from './SectionTitle'
 import { Wrapper } from './Wrapper'
 import { Content } from './Content'
+import Frontmatter from '../models/Frontmatter'
 
 interface Props {
   pageContext: {
-    frontmatter: {
-      title: string
-      banner?: string
-    }
+    frontmatter: Frontmatter
   }
 }
 
@@ -21,14 +19,14 @@ export default class MDXLayout extends React.Component<Props> {
     const {
       children,
       pageContext: {
-        frontmatter: { title, banner }
+        frontmatter: { title, banner, bannerAttribution }
       }
     } = this.props
 
     return (
       <Layout>
         <Helmet title={title} />
-        <Header banner={banner}>
+        <Header banner={banner} bannerAttribution={bannerAttribution}>
           <SectionTitle>{title}</SectionTitle>
         </Header>
         <Wrapper>

@@ -3,15 +3,19 @@ import styled from 'styled-components'
 import rgba from 'polished/lib/color/rgba'
 import { media } from '../utils/media'
 import config from '../../config/SiteConfig'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faImage } from '@fortawesome/free-solid-svg-icons'
 
-const HeaderWrapper: any = styled.header`
+const HeaderWrapper: any = styled.header<{
+  banner: string
+}>`
   position: relative;
   /* Abusing linear-gradient for a constant dim effect. */
   background: linear-gradient(
       ${() => rgba(0, 0, 0, 0.2)},
       ${() => rgba(0, 0, 0, 0.2)}
     ),
-    url(${(props: any) => props.banner}) no-repeat;
+    url(${({ banner }) => banner}) no-repeat;
   background-size: cover;
   padding: 8rem 2rem 10rem;
   text-align: center;
@@ -36,16 +40,33 @@ const Content = styled.div`
   }
 `
 
+const AttributionLink = styled.a`
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.5);
+  padding-right: 1.25em;
+  padding-bottom: 1.25em;
+`
+
 interface Props {
   children: any
   banner?: string
+  bannerAttribution?: string
 }
 
 export class Header extends React.PureComponent<Props> {
   public render() {
+    const { banner, bannerAttribution, children } = this.props
     return (
-      <HeaderWrapper banner={this.props.banner || config.defaultBg}>
-        <Content>{this.props.children}</Content>
+      <HeaderWrapper banner={banner || config.defaultBg}>
+        {bannerAttribution && (
+          <AttributionLink href={bannerAttribution}>
+            <FontAwesomeIcon icon={faImage} />
+          </AttributionLink>
+        )}
+        <Content>{children}</Content>
       </HeaderWrapper>
     )
   }

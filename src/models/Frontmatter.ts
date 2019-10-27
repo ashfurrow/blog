@@ -5,6 +5,7 @@ interface Frontmatter {
   category: string
   tags: string[]
   banner?: string
+  bannerAttribution?: string
 }
 
 export default Frontmatter
