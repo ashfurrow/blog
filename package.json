@@ -75,6 +75,7 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "gatsby-plugin-feed": "^2.3.19",
     "gatsby-plugin-google-tagmanager": "^2.0.5",
     "gatsby-plugin-mdx": "^1.0.53",
     "gatsby-plugin-web-font-loader": "^1.0.4",
