@@ -43,6 +43,16 @@ const CollapseMenu: React.FC<{
               Speaking
             </a>
           </li>
+          <li>
+            <a href="/search" onClick={handleNavBar}>
+              Search
+            </a>
+          </li>
+          <li>
+            <a href="/feed.xml" onClick={handleNavBar}>
+              Blog Feed
+            </a>
+          </li>
         </NavLinks>
       </CollapseWrapper>
     )
@@ -71,7 +81,7 @@ const NavLinks = styled.ul`
   }
 
   a {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-family: ${config.headerFontFamily};
     line-height: 1rem;
     color: ${theme.colors.grey.default};

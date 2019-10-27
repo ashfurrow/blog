@@ -4,6 +4,8 @@ import theme from '../../config/Theme'
 import config from '../../config/SiteConfig'
 import BurgerMenu from './BurgerMenu'
 import CollapseMenu from './CollapseMenu'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch, faRssSquare } from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
   handleNavBar: () => void
@@ -64,6 +66,12 @@ class Navbar extends React.Component<Props, State> {
               <a href="/about">About</a>
               <a href="/books">Books</a>
               <a href="/speaking">Speaking</a>
+              <a href="/search">
+                <FontAwesomeIcon icon={faSearch} />
+              </a>
+              <a href="/feed.xml">
+                <FontAwesomeIcon icon={faRssSquare} />
+              </a>
             </NavLinks>
             <BurgerWrapper>
               <BurgerMenu
@@ -93,7 +101,7 @@ const Bar = styled.nav<{ clear: boolean }>`
   left: 0;
   background: ${({ clear }) => (clear ? 'clear' : theme.colors.white)};
   z-index: 100;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
 `
 
 const FlexContainer = styled.div`
@@ -107,7 +115,7 @@ const FlexContainer = styled.div`
 const NavLinks = styled.ul<{ clear: boolean }>`
   justify-self: end;
   list-style-type: none;
-  margin: auto 0;
+  margin: auto 0.5rem auto 0;
 
   a {
     color: ${({ clear }) =>

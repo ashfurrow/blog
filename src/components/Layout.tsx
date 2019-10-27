@@ -109,10 +109,28 @@ export class Layout extends React.PureComponent<{}, State> {
   state = {
     navbarOpen: false
   }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.listToResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.listToResize)
+  }
+
+  // If the window resizes, close the menu (prevents menu from opening when
+  // window is wide enough to be the full bar)
+  listToResize = () => {
+    this.setState({
+      navbarOpen: false
+    })
+  }
+
   handleNavBar = () => {
     console.log('YEAH!')
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
+
   public render() {
     const { children } = this.props
 
