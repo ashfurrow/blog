@@ -10,6 +10,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "postbuild": "mv public build",
     "start": "gatsby develop",
     "lint": "tslint --project .",
     "lint:fix": "tslint --fix --project .",
