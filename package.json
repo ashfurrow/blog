@@ -17,7 +17,9 @@
     "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
   },
   "devDependencies": {
+    "@types/elasticlunr": "^0.9.0",
     "@types/lodash": "^4.14.117",
+    "@types/moment": "^2.13.0",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "@types/react-helmet": "^5.0.7",
@@ -74,12 +76,15 @@
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "elasticlunr": "^0.9.5",
     "gatsby-plugin-feed": "^2.3.19",
     "gatsby-plugin-google-tagmanager": "^2.0.5",
     "gatsby-plugin-mdx": "^1.0.53",
     "gatsby-plugin-web-font-loader": "^1.0.4",
+    "moment": "^2.24.0",
     "react-spring": "^8.0.27"
   }
 }

@@ -9,6 +9,9 @@ require('ts-node').register({
 const config = require('./config/SiteConfig').default
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
+const moment = require('moment')
+const _ = require('lodash')
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -114,6 +117,27 @@ module.exports = {
             title: "Ash Furrow's Blog"
           }
         ]
+      }
+    },
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [`title`, `body`, `date`],
+        // How to resolve each field`s value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            path: node => `/blog/${_.kebabCase(node.frontmatter.title)}`,
+            // We want to index the blog posts but we want to keep the search index small
+            // So let's index the HTML-less markdown text as a compromise
+            body: node => node.rawMarkdownBody.replace(/<[^>]+>/g, ''),
+            date: node => moment(node.frontmatter.date).format('MMMM D, YYYY')
+          }
+        },
+        // Optional filter to limit indexed nodes
+        filter: (node, getNode) => node.frontmatter.tags !== 'exempt'
       }
     },
     {
