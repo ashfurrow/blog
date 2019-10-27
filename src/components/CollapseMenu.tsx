@@ -1,42 +1,46 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import theme from '../../config/Theme'
 import { useSpring, animated } from 'react-spring'
+import config from '../../config/SiteConfig'
 
-const CollapseMenu = props => {
-  const { open } = useSpring({ open: props.navbarState ? 0 : 1 })
+const CollapseMenu: React.FC<{
+  navBarState: boolean
+  handleNavBar: () => undefined
+}> = ({ navBarState, handleNavBar }) => {
+  const { open } = useSpring({ open: navBarState ? 0 : 1 })
 
-  if (props.navbarState === true) {
+  if (navBarState) {
     return (
       <CollapseWrapper
         style={{
           transform: open
             .interpolate({
               range: [0, 0.2, 0.3, 1],
-              output: [0, -20, 0, -200]
+              output: [0, 0, 0, -200]
             })
             .interpolate(openValue => `translate3d(0, ${openValue}px, 0`)
         }}
       >
         <NavLinks>
           <li>
-            <a href="/" onClick={props.handleNavBar}>
-              link n1
+            <a href="/blog" onClick={handleNavBar}>
+              Blog
             </a>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavBar}>
-              link n2
+            <a href="/about" onClick={handleNavBar}>
+              About
             </a>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavBar}>
-              link n3
+            <a href="/books" onClick={handleNavBar}>
+              Books
             </a>
           </li>
           <li>
-            <a href="/" onClick={props.handleNavBar}>
-              link n4
+            <a href="/speaking" onClick={handleNavBar}>
+              Speaking
             </a>
           </li>
         </NavLinks>
@@ -49,9 +53,9 @@ const CollapseMenu = props => {
 export default CollapseMenu
 
 const CollapseWrapper = styled(animated.div)`
-  background: #2d3436;
+  background: ${theme.colors.white};
   position: fixed;
-  top: 4.5rem;
+  top: 2.5rem;
   left: 0;
   right: 0;
   z-index: 95;
@@ -59,23 +63,23 @@ const CollapseWrapper = styled(animated.div)`
 
 const NavLinks = styled.ul`
   list-style-type: none;
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 0.5rem 1rem 0rem 1rem;
+  margin: 0;
 
-  & li {
-    transition: all 300ms linear 0s;
+  li {
+    margin-bottom: 0.5rem;
   }
 
-  & a {
-    font-size: 1.4rem;
-    line-height: 2;
-    color: #dfe6e9;
+  a {
+    font-size: 1rem;
+    font-family: ${config.headerFontFamily};
+    line-height: 1rem;
+    color: ${theme.colors.grey.default};
     text-transform: uppercase;
     text-decoration: none;
-    cursor: pointer;
 
     &:hover {
-      color: #fdcb6e;
-      border-bottom: 1px solid #fdcb6e;
+      color: ${theme.colors.primary};
     }
   }
 `

@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useSpring, animated, config } from 'react-spring'
-
-import Brand from './Brand'
+import theme from '../../config/Theme'
+import config from '../../config/SiteConfig'
 import BurgerMenu from './BurgerMenu'
 import CollapseMenu from './CollapseMenu'
 
@@ -10,39 +9,30 @@ const Navbar: React.FC<{
   handleNavBar: () => void
   navBarState: boolean
 }> = props => {
-  const barAnimation = useSpring({
-    from: { transform: 'translate3d(0, -10rem, 0)' },
-    transform: 'translate3d(0, 0, 0)'
-  })
-
-  const linkAnimation = useSpring({
-    from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
-    to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
-    delay: 800,
-    config: config.wobbly
-  })
-
   return (
     <>
-      <_NavBar style={barAnimation}>
+      <Bar>
         <FlexContainer>
-          <Brand />
-          <NavLinks style={linkAnimation}>
-            <a href="/">link n1</a>
-            <a href="/">link n2</a>
-            <a href="/">link n3</a>
-            <a href="/">link n4</a>
+          <Image
+            src="/assets/siteimage_dark.png"
+            style={{ height: '1.25rem' }}
+          />
+          <NavLinks>
+            <a href="/blog">Blog</a>
+            <a href="/about">About</a>
+            <a href="/books">Books</a>
+            <a href="/speaking">Speaking</a>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
-              navbarState={props.navBarState}
+              navBarState={props.navBarState}
               handleNavBar={props.handleNavBar}
             />
           </BurgerWrapper>
         </FlexContainer>
-      </_NavBar>
+      </Bar>
       <CollapseMenu
-        navbarState={props.navBarState}
+        navBarState={props.navBarState}
         handleNavBar={props.handleNavBar}
       />
     </>
@@ -51,43 +41,44 @@ const Navbar: React.FC<{
 
 export default Navbar
 
-const _NavBar = styled.nav`
+const Image = styled.img`
+  height: 85%;
+  margin: auto 0;
+`
+
+const Bar = styled.nav`
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background: #2d3436;
+  background: ${theme.colors.white};
   z-index: 100;
-  font-size: 1.4rem;
+  font-size: 1rem;
 `
 
 const FlexContainer = styled.div`
-  max-width: 120rem;
   display: flex;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   justify-content: space-between;
   height: 2.5rem;
 `
 
-const NavLinks = styled(animated.ul)`
+const NavLinks = styled.ul`
   justify-self: end;
   list-style-type: none;
   margin: auto 0;
 
-  & a {
-    color: #dfe6e9;
+  a {
+    color: ${theme.colors.grey.default};
     text-transform: uppercase;
-    font-weight: 600;
-    border-bottom: 1px solid transparent;
-    margin: 0 1.5rem;
-    transition: all 300ms linear 0s;
+    font-weight: 500;
+    padding-left: 1.5rem;
     text-decoration: none;
-    cursor: pointer;
+    font-family: ${config.headerFontFamily};
 
     &:hover {
-      color: #fdcb6e;
-      border-bottom: 1px solid #fdcb6e;
+      color: ${theme.colors.primary};
     }
 
     @media (max-width: 768px) {
@@ -99,7 +90,7 @@ const NavLinks = styled(animated.ul)`
 const BurgerWrapper = styled.div`
   margin: auto 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `
