@@ -85,6 +85,7 @@
     "gatsby-plugin-mdx": "^1.0.53",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "moment": "^2.24.0",
+    "react-responsive-embed": "^2.1.0",
     "react-spring": "^8.0.27"
   }
 }

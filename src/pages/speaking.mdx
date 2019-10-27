@@ -372,15 +372,18 @@ past_talks:
 
 <!-- {props.pageContext.frontmatter.past_talks.map(s => s.name)} -->
 
-import { SectionHeader } from "../components/SectionHeader.tsx"
-import { TalkTile } from "../components/TalkTile.tsx"
+import { SectionHeader } from '../components/SectionHeader.tsx'
+import { TalkTile } from '../components/TalkTile.tsx'
+import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed.tsx'
 
-I love sharing knowledge – in the form of blog posts, podcasts, open source code, 
-books – and over the past few years, I’ve grown really fond of speaking. I’ve 
+I love sharing knowledge – in the form of blog posts, podcasts, open source code,
+books – and over the past few years, I’ve grown really fond of speaking. I’ve
 gotten good at it, too.
 
-<!-- TODO: This needs to be responsive. -->
-<iframe src="https://player.vimeo.com/video/270512761" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<ReactResponsiveEmbed
+  src="https://player.vimeo.com/video/270512761"
+  allowfullscreen
+/>
 
 <SectionHeader banner="assets/speaking/upcomingtalks.jpg" dim>
   <h2>
@@ -393,7 +396,6 @@ gotten good at it, too.
     </ol>) : 
     "No upcoming talks at this time." }
 
-
 <SectionHeader banner="assets/speaking/pasttalks.jpg" dim>
   <h2>
     Past Awesome Talks
@@ -404,9 +406,7 @@ gotten good at it, too.
 </ol>
 
 <SectionHeader banner="assets/speaking/getintouch.jpg" dim>
-  <h2>
-    Get in Touch
-  </h2>
+  <h2>Get in Touch</h2>
 </SectionHeader>
 
 Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. Understanding _what_ you’re doing is poitnless if you don’t understand _why_ you’re doing it.
