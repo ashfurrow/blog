@@ -13,7 +13,10 @@ priority: 0.25
   .row
     == standard_width_div do
       ol.months
-        - page_articles.group_by {|a| a.date.year }.map{ |year, items| [year, items.group_by{|a| a.date.month}] }.each do |year, months|
+        - page_articles
+          .group_by {|a| a.date.year }
+          .map{ |year, items| [year, items.group_by{|a| a.date.month}] }
+          .each do |year, months|
           li
             ol.articles
               - months.each do |month, articles|
