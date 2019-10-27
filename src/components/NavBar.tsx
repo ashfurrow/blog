@@ -33,7 +33,6 @@ class Navbar extends React.Component<Props, State> {
     this.setState({
       scrolledAtTop
     })
-    console.log({ scrolledAtTop })
   }
 
   render() {
@@ -44,12 +43,22 @@ class Navbar extends React.Component<Props, State> {
       <>
         <Bar clear={clear}>
           <FlexContainer>
-            <Image
-              src={
-                clear ? '/assets/siteimage.png' : '/assets/siteimage_dark.png'
-              }
-              style={{ height: '1.25rem' }}
-            />
+            <a
+              href="/"
+              style={{
+                height: '1.25rem',
+                margin: 'auto 0'
+              }}
+            >
+              <Image
+                src={
+                  clear ? '/assets/siteimage.png' : '/assets/siteimage_dark.png'
+                }
+                style={{
+                  height: '100%'
+                }}
+              />
+            </a>
             <NavLinks clear={clear}>
               <a href="/blog">Blog</a>
               <a href="/about">About</a>

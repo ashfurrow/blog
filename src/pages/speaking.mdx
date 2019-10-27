@@ -379,6 +379,7 @@ I love sharing knowledge – in the form of blog posts, podcasts, open source co
 books – and over the past few years, I’ve grown really fond of speaking. I’ve 
 gotten good at it, too.
 
+<!-- TODO: This needs to be responsive. -->
 <iframe src="https://player.vimeo.com/video/270512761" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <SectionHeader banner="assets/speaking/upcomingtalks.jpg" dim>
@@ -388,7 +389,7 @@ gotten good at it, too.
 </SectionHeader>
 { !!props.pageContext.frontmatter.upcoming_talks ? 
     (<ol style={{margin: 0}}>
-      { props.pageContext.frontmatter.upcoming_talks.map(t => <TalkTile talk={t} />) }
+      { props.pageContext.frontmatter.upcoming_talks.map(t => <TalkTile talk={t} key={t.dates} />) }
     </ol>) : 
     "No upcoming talks at this time." }
 
@@ -399,7 +400,7 @@ gotten good at it, too.
   </h2>
 </SectionHeader>
 <ol style={{margin: 0}}>
-  { props.pageContext.frontmatter.past_talks.map(t => <TalkTile talk={t} />) }
+  { props.pageContext.frontmatter.past_talks.map(t => <TalkTile talk={t} key={t.dates} />) }
 </ol>
 
 <SectionHeader banner="assets/speaking/getintouch.jpg" dim>

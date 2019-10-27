@@ -36,6 +36,8 @@ Thanks
 
 Thanks to the following people and projects:
 
+- [NavBar Tutorial](https://dev.to/nunocpnp/your-very-first-responsive-and-animated-navigation-bar-with-react-and-react-spring-17co)
+
 - [Orta Therox](https://twitter.com/orta)
 - [Katarina Batina](https://twitter.com/katarinabatina)
 - [Tom Creighton](https://twitter.com/ashfurrow/status/523393606431019008)

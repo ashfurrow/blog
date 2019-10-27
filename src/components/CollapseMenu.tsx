@@ -63,7 +63,7 @@ const CollapseWrapper = styled(animated.div)`
 
 const NavLinks = styled.ul`
   list-style-type: none;
-  padding: 0.5rem 1rem 0rem 1rem;
+  padding: 0.5rem 1rem 0rem 0.5rem;
   margin: 0;
 
   li {

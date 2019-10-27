@@ -23,6 +23,6 @@ export const Content = styled.div`
     padding: 3rem 3rem;
   }
   @media ${media.phone} {
-    padding: 2rem 1.5rem;
+    padding: 1rem 0.5rem;
   }
 `
