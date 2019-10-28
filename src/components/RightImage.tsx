@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { media } from '../utils/media'
 
-export const BookImage = styled.img`
+export const RightImage = styled.img`
   float: right;
   max-width: 40%;
   @media ${media.phone} {
