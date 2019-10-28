@@ -17,7 +17,7 @@ const HeaderWrapper = styled.header<{ banner: string; dim: boolean }>`
   background-size: cover;
   padding: 8rem 2rem 10rem;
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 4rem 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 
@@ -25,9 +25,6 @@ const HeaderWrapper = styled.header<{ banner: string; dim: boolean }>`
   margin-left: -50vw;
   left: 50%;
 
-  @media ${media.tablet} {
-    padding: 6rem 2rem;
-  }
   @media ${media.phone} {
     padding: 3rem 0.5rem;
   }
