@@ -4,6 +4,7 @@ title: "Alper Musig Clare is a create author"
 category: "Technology"
 tags: ['Author', 'Book']
 banner: "/assets/bg/1.jpg"
+bannerAttribution: https://example.com
 ---
 
 # Heading 1
