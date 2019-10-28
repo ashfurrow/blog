@@ -66,8 +66,13 @@ const _Portfolio: React.FC = () => (
       A portfolio can only show you what I've done, but I hope this gives you a
       sense of what I'm doing next.
     </p>
+
     <SectionHeader banner="/assets/portfolio/community_header.jpg" dim>
-      <TitleCaption title="Community" />
+      <TitleCaption
+        title="Community"
+        subtitle="In my home region of Atlantic Canada, we have a saying: “rising tides lift
+      all boats.”"
+      />
     </SectionHeader>
     <p>
       Since I was a teenager, I’ve been fascinated with open source software.
@@ -75,7 +80,6 @@ const _Portfolio: React.FC = () => (
       projects. No one individual can accomplish what a community can – people
       can always accomplish more if they work together.
     </p>
-
     <p>
       Today, I practice a{' '}
       <a href="https://ashfurrow.com/blog/open-source-ideology/">
@@ -84,13 +88,11 @@ const _Portfolio: React.FC = () => (
       : I believe that unless there is a good reason to keep something secret,
       then it should be shared.
     </p>
-
     <p>
       At Artsy, we call it “open source by default.” At Teehan+Lax, we called it
       “creating more value than you capture.” Before that, I didn’t really have
       a name for it. It was just what I did.
     </p>
-
     <blockquote>
       <p>
         See, in all our searching, the only thing we’ve found that makes the
@@ -100,7 +102,6 @@ const _Portfolio: React.FC = () => (
         </a>
       </p>
     </blockquote>
-
     <p>
       I take a lot of pride in helping others and in contributing to the
       developer community, and I’ve tried to set a higher standard for{' '}
@@ -111,7 +112,6 @@ const _Portfolio: React.FC = () => (
       </a>
       , I volunteer with <a href="http://c4q.nyc">Coalition for Queens</a>.
     </p>
-
     <p>
       When I moved to New York in 2015, I started a{' '}
       <a href="http://artsy.github.io/blog/2015/08/10/peer-lab/">
@@ -177,6 +177,13 @@ const _Portfolio: React.FC = () => (
         </span>
       </FooterIcons>
     </Footer>
+
+    <SectionHeader banner="/assets/portfolio/software_header.jpg" dim>
+      <TitleCaption
+        title="Software"
+        subtitle="Great software is software nobody notices. I write meaningful software with this in mind."
+      />
+    </SectionHeader>
   </>
 )
 
@@ -186,6 +193,7 @@ const FigCaption = styled.figcaption`
 
   text-align: left;
   width: 40%;
+  max-width: 25rem;
   position: relative;
   right: -60%;
 
@@ -201,6 +209,7 @@ const FigCaption = styled.figcaption`
     background-image: url(/assets/portfolio/callout.svg);
     @media ${media.tablet} {
       width: 205px;
+      max-width: initial;
       height: 94px;
       top: 2em;
       right: 235px;
@@ -238,13 +247,13 @@ const FigCaption = styled.figcaption`
   }
 `
 
-const TitleCaption: React.FC<{ title: string }> = ({ title }) => (
+const TitleCaption: React.FC<{ title: string; subtitle: string }> = ({
+  title,
+  subtitle
+}) => (
   <FigCaption>
     <h2 style={{ margin: '0' }}>{title}</h2>
-    <p style={{ margin: '0' }}>
-      In my home region of Atlantic Canada, we have a saying: “rising tides lift
-      all boats.”
-    </p>
+    <p style={{ margin: '0' }}>{subtitle}</p>
   </FigCaption>
 )
 
