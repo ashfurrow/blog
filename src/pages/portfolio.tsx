@@ -11,6 +11,7 @@ import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import theme from '../../config/Theme'
 import styled from 'styled-components'
+import { media } from '../utils/media'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -65,8 +66,8 @@ const _Portfolio: React.FC = () => (
       A portfolio can only show you what I've done, but I hope this gives you a
       sense of what I'm doing next.
     </p>
-    <SectionHeader banner="/assets/portfolio/community_header.jpg">
-      <_SectionTitle>Community</_SectionTitle>
+    <SectionHeader banner="/assets/portfolio/community_header.jpg" dim>
+      <TitleCaption title="Community" />
     </SectionHeader>
     <p>
       Since I was a teenager, I’ve been fascinated with open source software.
@@ -179,9 +180,73 @@ const _Portfolio: React.FC = () => (
   </>
 )
 
-const _SectionTitle = styled.h2`
-  margin: 0;
+const FigCaption = styled.figcaption`
+  display: block;
+  padding: 0;
+
+  text-align: left;
+  width: 40%;
+  position: relative;
+  right: -60%;
+
+  &:before {
+    content: '';
+    display: block;
+    color: white;
+    position: relative;
+    width: 357px;
+    height: 164px;
+    right: 397px;
+    top: 3.6em;
+    background-image: url(/assets/portfolio/callout.svg);
+    @media ${media.tablet} {
+      width: 205px;
+      height: 94px;
+      top: 2em;
+      right: 235px;
+      background-image: url(/assets/portfolio/callout_small.svg);
+    }
+
+    @media ${media.phone} {
+      display: none;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  @media ${media.tablet} {
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
+  @media ${media.phone} {
+    padding: 0rem 1rem;
+    text-align: center;
+    width: 100%;
+    position: initial;
+    right: initial;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
 `
+
+const TitleCaption: React.FC<{ title: string }> = ({ title }) => (
+  <FigCaption>
+    <h2 style={{ margin: '0' }}>{title}</h2>
+    <p style={{ margin: '0' }}>
+      In my home region of Atlantic Canada, we have a saying: “rising tides lift
+      all boats.”
+    </p>
+  </FigCaption>
+)
 
 const Footer = styled.footer`
   text-align: center;

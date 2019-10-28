@@ -18,7 +18,7 @@ const HeaderWrapper = styled.header<{ banner: string; dim: boolean }>`
   padding: 8rem 2rem 10rem;
   text-align: center;
   padding: 10rem 2rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 
   width: 100vw;
