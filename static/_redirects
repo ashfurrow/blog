@@ -1,3 +1,5 @@
+# Netlify Redirects
+
 # The following config lines allow feed.xml and feed.rss.xml to be served, but
 # otherwise the URL is served as feed.rss.xml.
 https://feed.ashfurrow.com/	https://ashfurrow.com/feed.xml	200
