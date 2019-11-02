@@ -20,7 +20,7 @@ export default class HomePage extends React.Component<Props> {
   public render() {
     console.log({ props: this.props })
     const { data } = this.props
-    const { edges, totalCount } = data.allMarkdownRemark
+    const { edges, totalCount } = data.allMdx
 
     return (
       <Layout>
@@ -52,7 +52,7 @@ export default class HomePage extends React.Component<Props> {
 }
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {

@@ -5,7 +5,7 @@ import Frontmatter from '../src/models/Frontmatter'
 const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
   const { createNodeField } = actions
   if (
-    node.internal.type === 'MarkdownRemark' &&
+    node.internal.type === 'Mdx' &&
     has(node, 'frontmatter') &&
     has(node.frontmatter, 'title')
   ) {

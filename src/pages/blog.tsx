@@ -30,7 +30,7 @@ const MONTHS = [
 export default class HomePage extends React.Component<Props> {
   public render() {
     const { data } = this.props
-    const { edges } = data.allMarkdownRemark
+    const { edges } = data.allMdx
 
     const years = groupBy(edges, ({ node }) => {
       return new Date(node.frontmatter.date).getFullYear()
@@ -98,7 +98,7 @@ export default class HomePage extends React.Component<Props> {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {

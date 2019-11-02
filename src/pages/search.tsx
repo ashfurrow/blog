@@ -51,7 +51,6 @@ export default class Search extends React.Component<Props, State> {
             .search(query, {})
             // Map over each ID and return the full document
             .map(thing => {
-              console.log({ thing })
               return this.index && this.index.documentStore.getDoc(thing.ref)
             })
         )

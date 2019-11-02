@@ -1,7 +1,7 @@
 import AllMarkdownRemark from './AllMarkdownRemark'
 
 interface Data {
-  allMarkdownRemark: AllMarkdownRemark
+  allMdx: AllMarkdownRemark
 }
 
 export default Data

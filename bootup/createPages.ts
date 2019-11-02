@@ -8,27 +8,20 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
   const postTemplate = path.resolve(`src/templates/Post.tsx`)
   return graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 10
-      ) {
+      allMdx(sort: { order: DESC, fields: [frontmatter___date] }, limit: 10) {
         edges {
           node {
             excerpt(pruneLength: 250)
-            html
+            body
             id
-            fields {
-              slug
-            }
             frontmatter {
               date
               title
               category
               tags
               banner
-              bannerAttribution
+              # bannerAttribution
             }
-            timeToRead
           }
         }
       }
@@ -37,9 +30,8 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-    const allMarkdown = (result.data as any)
-      .allMarkdownRemark as AllMarkdownRemark
-    const posts = allMarkdown.edges
+    const allMdx = (result.data as any).allMdx as AllMarkdownRemark
+    const posts = allMdx.edges
     posts.forEach(({ node }, index) => {
       const next = index === 0 ? null : posts[index - 1].node
       const prev = index === posts.length - 1 ? null : posts[index + 1].node
@@ -49,6 +41,7 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
         context: {
           prev,
           next,
+          id: node.id,
           slug: kebabCase(node.frontmatter.title)
         }
       })

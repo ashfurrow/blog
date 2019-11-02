@@ -25,7 +25,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
-    'gatsby-plugin-manifest',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-lodash',
@@ -47,6 +46,7 @@ module.exports = {
         feeds: [
           // Wish I knew a better way to duplicate the feed, haha.
           {
+            // TODO: Needs to change to allMdx
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
@@ -127,12 +127,12 @@ module.exports = {
         // How to resolve each field`s value for a supported node type
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
-          MarkdownRemark: {
+          Mdx: {
             title: node => node.frontmatter.title,
             path: node => `/blog/${_.kebabCase(node.frontmatter.title)}`,
             // We want to index the blog posts but we want to keep the search index small
             // So let's index the HTML-less markdown text as a compromise
-            body: node => node.rawMarkdownBody.replace(/<[^>]+>/g, ''),
+            body: node => node.rawBody.replace(/<[^>]+>/g, ''),
             date: node => moment(node.frontmatter.date).format('MMMM D, YYYY')
           }
         },
@@ -140,19 +140,38 @@ module.exports = {
         filter: (node, getNode) => node.frontmatter.tags !== 'exempt'
       }
     },
+    // TODO: Is this needed?
     {
-      resolve: 'gatsby-plugin-mdx',
+      resolve: 'gatsby-plugin-page-creator',
       options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/MDXLayout.tsx')
-        }
+        path: `${__dirname}/blog`
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'post',
+        name: 'blog',
         path: `${__dirname}/blog`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          blog: require.resolve('./src/templates/Post.tsx'),
+          default: require.resolve('./src/components/MDXLayout.tsx')
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow noopener noreferrer'
+            }
+          },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-autolink-headers'
+        ]
       }
     },
     {
