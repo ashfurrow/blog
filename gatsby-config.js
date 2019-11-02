@@ -140,13 +140,6 @@ module.exports = {
         filter: (node, getNode) => node.frontmatter.tags !== 'exempt'
       }
     },
-    // TODO: Is this needed?
-    {
-      resolve: 'gatsby-plugin-page-creator',
-      options: {
-        path: `${__dirname}/blog`
-      }
-    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -192,6 +185,7 @@ module.exports = {
       }
     },
     {
+      // TODO: is this needed anymore?
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [

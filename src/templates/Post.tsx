@@ -18,8 +18,12 @@ import config from '../../config/SiteConfig'
 import '../utils/prismjs-theme.css'
 import PathContext from '../models/PathContext'
 import Post from '../models/Post'
+import { MDXProvider } from '@mdx-js/react'
+import Narrow from '../components/Narrow'
+import Wide from '../components/Wide'
+import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
 
-// TODO: Add shortcodes
+export const ShortCodes = [Narrow, Wide, ReactResponsiveEmbed]
 
 const PostContent = styled.div`
   margin-top: 4rem;
@@ -59,7 +63,9 @@ export default class PostPage extends React.PureComponent<Props> {
             <Wrapper>
               <Content>
                 <PostContent>
-                  <MDXRenderer>{post.body}</MDXRenderer>
+                  <MDXProvider components={ShortCodes}>
+                    <MDXRenderer>{post.body}</MDXRenderer>
+                  </MDXProvider>
                 </PostContent>
                 <PrevNext prev={prev} next={next} />
               </Content>

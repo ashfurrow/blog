@@ -3,7 +3,7 @@ import Frontmatter from './Frontmatter'
 interface Post {
   id: number
   excerpt: string
-  html: string
+  body: string
   frontmatter: Frontmatter
   fields: {
     slug: string

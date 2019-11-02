@@ -11,6 +11,5 @@ const gatsbyNode = {
 module.exports = gatsbyNode
 
 /*
-TODO: 
-Gatsby launch.json for VSCode
+TODO: Gatsby launch.json for VSCode
 */
