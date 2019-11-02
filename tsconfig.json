@@ -3,11 +3,7 @@
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2015",
-      "es2017"
-    ],
+    "lib": ["dom", "es2015", "es2017"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -18,7 +14,5 @@
     "removeComments": false,
     "preserveConstEnums": true
   },
-  "include": [
-    "./src/**/*"
-  ]
+  "include": ["./src/**/*", "./bootup/**/*"]
 }

@@ -1,6 +1,9 @@
-const path = require('path')
-const _ = require('lodash')
-const createPages = ({ actions, graphql }) => {
+import path from 'path'
+import { kebabCase } from 'lodash'
+import { GatsbyNode } from 'gatsby'
+import AllMarkdownRemark from '../src/models/AllMarkdownRemark'
+
+const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
   const { createPage } = actions
   const postTemplate = path.resolve(`src/templates/Post.tsx`)
   return graphql(`
@@ -34,17 +37,19 @@ const createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-    const posts = result.data.allMarkdownRemark.edges
+    const allMarkdown = (result.data as any)
+      .allMarkdownRemark as AllMarkdownRemark
+    const posts = allMarkdown.edges
     posts.forEach(({ node }, index) => {
       const next = index === 0 ? null : posts[index - 1].node
       const prev = index === posts.length - 1 ? null : posts[index + 1].node
       createPage({
-        path: `/blog/${_.kebabCase(node.frontmatter.title)}`,
+        path: `/blog/${kebabCase(node.frontmatter.title)}`,
         component: postTemplate,
         context: {
-          slug: _.kebabCase(node.frontmatter.title),
           prev,
-          next
+          next,
+          slug: kebabCase(node.frontmatter.title)
         }
       })
     })
