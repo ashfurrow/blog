@@ -14,7 +14,8 @@
     "start": "gatsby develop",
     "lint": "tslint --project .",
     "lint:fix": "tslint --fix --project .",
-    "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
+    "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' ",
+    "migrate": "ts-node scripts/migrate.ts"
   },
   "devDependencies": {
     "@types/elasticlunr": "^0.9.0",
