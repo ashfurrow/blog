@@ -18,9 +18,7 @@ const main = async () => {
     //     )
     //   )
     // )
-    migratePost(
-      './old/source/blog/2012-09-19-uicollectionview-example.html.markdown'
-    )
+    migratePost('2012-09-19-uicollectionview-example.html.markdown')
   } catch {
     console.log('OOP')
   }
@@ -38,7 +36,7 @@ const testing = async (filename: string) => {
 
 const migratePost = async (filename: string) => {
   console.log(`migrating ${filename}`)
-  const contents = await fs.readFile(filename, 'utf8')
+  const contents = await fs.readFile(`./old/source/blog/${filename}`, 'utf8')
   // console.log(JSON.stringify({ contents }))
   const [_unused, yamlRaw, ...blogMDArray] = contents.split(/---/)
   const blogMD = blogMDArray.join('---')
@@ -55,18 +53,22 @@ const migratePost = async (filename: string) => {
     ...(bannerAttribution && { bannerAttribution }),
     ...(socialImage && { socialImage })
   }
+  const newDirName = `./blog/${filename.split('.')[0]}`
+  fs.mkdir(newDirName)
+
   const newContents = `---
 ${trim(YAML.stringify(newFrontmatter))}
 ---
   `
   console.log({ newContents })
   /*
-    1. Transform YAML frontmatter
-    2. Look for images
+    1. Transform YAML frontmatter DONE
+    2. Compute new directory name and create DONE
+    3. Look for images
       - Move the images
       - Update markdown image references
-    3. Migrate YouTube embeds
-    4. Migrate _WIDE and _NARROW sections
+    4. Migrate YouTube embeds
+    5. Migrate _WIDE and _NARROW sections
   */
 }
 
