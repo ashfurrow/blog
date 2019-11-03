@@ -63,7 +63,7 @@ const migratePost = async () => {
   const imageURLs: string[] = []
   let match: RegExpExecArray | null
   while ((match = imgRegex.exec(blogMD)) !== null) {
-    console.log(match)
+    // console.log(match)
     if (match.groups) {
       const imageURL = match.groups.url
       imageURLs.push(imageURL)

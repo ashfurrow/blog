@@ -184,7 +184,6 @@ module.exports = {
       }
     },
     {
-      // TODO: is this needed anymore?
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
