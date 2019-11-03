@@ -76,9 +76,10 @@ const migratePost = async () => {
   }
 
   blogMD = blogMD
-    .replace(/YOUTUBE ([^#\&\?\n<]+)/, "<YouTube videoID='$1' />")
-    .replace(/BEGIN_WIDE((.|[\n])*)END_WIDE/, '<Wide>$1</Wide>')
-    .replace(/BEGIN_NARROW((.|[\n])*)END_NARROW/, '<Narrow>$1</Narrow>')
+    .replace('\n(READMORE)\n\n', '')
+    .replace(/YOUTUBE ([^#\&\?\n<]+)/g, "<YouTube videoID='$1' />")
+    .replace(/BEGIN_WIDE((.|[\n])*?)END_WIDE/g, '<Wide>$1</Wide>')
+    .replace(/BEGIN_NARROW((.|[\n])*?)END_NARROW/g, '<Narrow>$1</Narrow>')
 
   const newContents = `---
 ${trim(YAML.stringify(newFrontmatter))}
