@@ -41,7 +41,7 @@ const migratePost = async () => {
   const contents = await fs.readFile(`./old/source/blog/${filename}`, 'utf8')
   // console.log(JSON.stringify({ contents }))
   const [, yamlRaw, ...blogMDArray] = contents.split(/---/)
-  const blogMD = blogMDArray.join('---')
+  let blogMD = blogMDArray.join('---')
   const frontmatter = YAML.parse(yamlRaw)
   const {
     background_image: banner,
@@ -55,6 +55,7 @@ const migratePost = async () => {
     ...(bannerAttribution && { bannerAttribution }),
     ...(socialImage && { socialImage })
   }
+  // TODO: Remove the YYYY-MM-DD- from the beginning of this
   const newDirName = `./blog/${filename.split('.')[0]}`
   await fs.mkdir(newDirName, { recursive: true })
 
@@ -69,18 +70,24 @@ const migratePost = async () => {
       const imageFilename = last(imageURL.split('/'))
 
       await fs.rename(`old/source${imageURL}`, `${newDirName}/${imageFilename}`)
+      blogMD = blogMD.replace(imageURL, `./${imageFilename}`)
     }
   }
 
   const newContents = `---
 ${trim(YAML.stringify(newFrontmatter))}
 ---
+${blogMD}
   `
-  console.log({ imageURLs })
+
+  await fs.writeFile(`${newDirName}/index.mdx`, newContents)
+  await fs.unlink(`./old/source/blog/${filename}`)
+
+  // console.log({ imageURLs })
   /*
     1. Transform YAML frontmatter DONE
     2. Compute new directory name and create DONE
-    3. Look for images
+    3. Look for images DONE
       - Move the images
       - Update markdown image references
     4. Migrate YouTube embeds
