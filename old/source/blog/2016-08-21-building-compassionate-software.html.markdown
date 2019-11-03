@@ -14,7 +14,7 @@ BEGIN_WIDE
 
 END_WIDE
 
-If you make a mistake, you would want a colleague to point it out to you, right? Just like you would hope a colleague would ask a question when they don't understand something, and just like you want everyone on your team to speak up with ideas, even if they're unconventional. But chances are that you've been in the position to speak up before and haven't. 
+If you make a mistake, you would want a colleague to point it out to you, right? Just like you would hope a colleague would ask a question when they don't understand something, and just like you want everyone on your team to speak up with ideas, even if they're unconventional. But chances are that you've been in the position to speak up before and haven't.
 
 Why? It feels like those scenarios represent a good team dynamic, but what effect do they have on a team's performance? And how can we begin to change a team's dynamic to improve its performance?
 
@@ -28,7 +28,7 @@ I'm going to take us through three main points:
 2. **Teams with Psychological Safety Perform Better.** I'm going to describe what psychological safety means and what it looks like.
 3. **How to Implement Psychological Safety on Your Team.** After we have a firm grasp on feelings and psychological safety, I want to discuss some ways to start improving your team's performance and dynamics.
 
-I've had this topic on my mind for a long time, and I'm really excited to get started. Let's dive in! 
+I've had this topic on my mind for a long time, and I'm really excited to get started. Let's dive in!
 
 ## Feelings Matter
 
@@ -70,7 +70,7 @@ END_NARROW
 You can be a 10x developer by making sure that your team has psychological safety.
 
 Psychological safety is defined as
-  
+
 > The belief that one will not be punished or humiliated for speaking up with ideas, questions, concerns, or mistakes.
 
 I know this sounds touchy-feely, but there is data to back this up! Google spent _five years_ on [Project Aristotle](http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html?_r=0) searching for the answer to _what makes some teams perform really well and other teams perform poorly?_ They examined _a tonne_ of data and eventually – after extensive searching – they found psychological safety is correlated positively with team success.
@@ -81,7 +81,7 @@ This is _Google_. They A/B test shades of blue to use on the Gmail "Send" button
 
 Remember, psychological safety is the belief that you won't be punished for saying something. That's fairly basic, but think about it: I'm sure you've worked in groups where this wasn't the case. Was that project a success, or a failure?
 
-YOUTUBE43 LhoLuui9gX8
+YOUTUBE LhoLuui9gX8
 
 Developers – _people_ – need to be able to ask questions when they don't understand something. We need to feel free to suggest ideas or concerns, to be able to point out and admit mistakes. This is really necessary for development teams, and _especially_ necessary in resource-strained startups where missteps could cost the company.
 
@@ -91,8 +91,8 @@ Because the designer felt comfortable asking questions, we came to a new conclus
 
 Psychological safety is [observable in teams](http://qz.com/625870/after-years-of-intensive-analysis-google-discovers-the-key-to-good-teamwork-is-being-nice/) in two ways:
 
-  1. Conversational turn-taking.
-  2. Average emotional sensitivity.
+1. Conversational turn-taking.
+2. Average emotional sensitivity.
 
 Conversational turn-taking is a measure of how often people in a conversation switch from talking to listening. One member of a team who dominates the conversation is risking the psychological safety of the entire team. Everyone needs to feel safe having their say, and to revisit a conversation later if necessary.
 
@@ -125,7 +125,7 @@ Leaders and contributors can do three main things to help improve psychological 
 
 First, remember that everyone struggles and everyone makes mistakes. If you, as a team lead, make this the norm, then that sends a message to team members that it's okay to make mistakes. Honestly, it's pretty straightforward: you want your team to feel safe when things go wrong, so make sure to act normal when you make a mistake.
 
-Next, all work your team performs should be primarily modelled as exercises in learning. Because that's what they are; when a team build something, you're all really just _learning how to build something_ as a team. The byproduct of this is the thing that happened to built. 
+Next, all work your team performs should be primarily modelled as exercises in learning. Because that's what they are; when a team build something, you're all really just _learning how to build something_ as a team. The byproduct of this is the thing that happened to built.
 
 The product a team builds is important to the business' success, so it may seem counterintuitive to place a higher priority on the learning experience of a team than on building the product itself. But remember: by doing this, you're helping to increase the performance of your team so – in turn – they're able to build a better product, faster and with fewer bugs. The evidence shows it makes business sense.
 
@@ -134,16 +134,16 @@ Finally, you need to model curiosity. Ask questions, even silly ones. Ask questi
 This advice is really built upon empathy, which means there are a few other common sense tidbits that accompany it:
 
 - Watch out for people getting interrupted in meetings. When you see it, say "hang on, I want to hear the rest of what they have to say."
-- Don't pressure people into providing immediate feedback. Instead of asking on the spot, give time for reflective feedback. "I'll type up what we've discussed and send it to everyone, let me know what isn't clear." 
+- Don't pressure people into providing immediate feedback. Instead of asking on the spot, give time for reflective feedback. "I'll type up what we've discussed and send it to everyone, let me know what isn't clear."
 - Allow space for your team to revisit discussions if someone feels their voice wasn't heard.
 - We can practice empathy, we can set a Google Calendar reminder to reflect on recent meetings, we can focus on the feelings of our peers.
 
-Psychological safety can be a differentiator at your workplace. It's hard to retain good developers, and it's harder to find them in the first place. Working in a safe environment, where everyone feels like they can ask questions and where everyone is able to do their best work, well that sounds awesome, doesn't it? Implement these suggestions so that your workplace stands out to prospective developers. 
+Psychological safety can be a differentiator at your workplace. It's hard to retain good developers, and it's harder to find them in the first place. Working in a safe environment, where everyone feels like they can ask questions and where everyone is able to do their best work, well that sounds awesome, doesn't it? Implement these suggestions so that your workplace stands out to prospective developers.
 
 This can be a workplace differentiator, likely more attractive than free snacks or a foosball table to prospective colleagues. Show your potential hires how you structure meetings, give them examples where you made a mistake but learned something, tell them a story about how someone asked a question and it had a big impact.
 
 ---
-  
+
 We've covered a lot today, from some initial questions to empathy, and from definition of 'psychological safety' to steps on improving it in your team. That's a lot to take in, why not set a reminder somewhere to wait a week, think things over, and revisit this post.
 
 We have the evidence that shows how an ideal team works, but we see our industry falling short of that ideal. But! We have the tools to improve ourselves, our teams, and our industry. I really hope that teams operating in psychological safety become the norm, something to expect at any job. We've got a long way to go before we reach that point, but I know we can do it if we work together.
