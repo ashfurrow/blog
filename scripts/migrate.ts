@@ -24,9 +24,7 @@ const migratePost = async (filename: string) => {
     2. Look for images
       - Move the images
       - Update markdown image references
-    3. Look for YouTube embeds
-      - Add the required import
-      - Transform the embeds
+    3. Migrate YouTube embeds
     4. Migrate _WIDE and _NARROW sections
   */
 }
