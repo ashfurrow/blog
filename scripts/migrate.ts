@@ -1,14 +1,14 @@
 import path from 'path'
 import { promises as fs } from 'fs'
 import YAML from 'yaml'
-import { takeRight, flatten, uniq, trim } from 'lodash'
+import { takeRight, flatten, uniq, trim, last } from 'lodash'
 
 const main = async () => {
   try {
     const oldPostsPath = path.join(__dirname, '../old/source/blog')
-    console.log({ hi: oldPostsPath })
+    // console.log({ hi: oldPostsPath })
     const posts = await fs.readdir(oldPostsPath)
-    console.log({ length: posts.length })
+    // console.log({ length: posts.length })
     // console.log(
     //   uniq(
     //     flatten(
@@ -18,7 +18,8 @@ const main = async () => {
     //     )
     //   )
     // )
-    migratePost('2012-09-19-uicollectionview-example.html.markdown')
+    // migratePost('2012-09-19-uicollectionview-example.html.markdown')
+    migratePost()
   } catch {
     console.log('OOP')
   }
@@ -27,18 +28,19 @@ const main = async () => {
 const testing = async (filename: string) => {
   console.log(`migrating ${filename}`)
   const contents = await fs.readFile(`./old/source/blog/${filename}`, 'utf8')
-  const [_unused, yamlRaw, ...blogMDArray] = contents.split(/---/)
+  const [, yamlRaw, ...blogMDArray] = contents.split(/---/)
   const blogMD = blogMDArray.join('---')
   const frontmatter = YAML.parse(yamlRaw)
   delete frontmatter.link_to // who cares lol
   return Object.keys(frontmatter)
 }
 
-const migratePost = async (filename: string) => {
+const migratePost = async () => {
+  const filename = '2012-09-19-uicollectionview-example.html.markdown'
   console.log(`migrating ${filename}`)
   const contents = await fs.readFile(`./old/source/blog/${filename}`, 'utf8')
   // console.log(JSON.stringify({ contents }))
-  const [_unused, yamlRaw, ...blogMDArray] = contents.split(/---/)
+  const [, yamlRaw, ...blogMDArray] = contents.split(/---/)
   const blogMD = blogMDArray.join('---')
   const frontmatter = YAML.parse(yamlRaw)
   const {
@@ -54,13 +56,27 @@ const migratePost = async (filename: string) => {
     ...(socialImage && { socialImage })
   }
   const newDirName = `./blog/${filename.split('.')[0]}`
-  fs.mkdir(newDirName)
+  await fs.mkdir(newDirName, { recursive: true })
+
+  const imgRegex = /(?<url>\/img\/[^\.]+\.([a-zA-Z]{2,4}))/g
+  const imageURLs: string[] = []
+  let match: RegExpExecArray | null
+  while ((match = imgRegex.exec(blogMD)) !== null) {
+    console.log(match)
+    if (match.groups) {
+      const imageURL = match.groups.url
+      imageURLs.push(imageURL)
+      const imageFilename = last(imageURL.split('/'))
+
+      await fs.rename(`old/source${imageURL}`, `${newDirName}/${imageFilename}`)
+    }
+  }
 
   const newContents = `---
 ${trim(YAML.stringify(newFrontmatter))}
 ---
   `
-  console.log({ newContents })
+  console.log({ imageURLs })
   /*
     1. Transform YAML frontmatter DONE
     2. Compute new directory name and create DONE
