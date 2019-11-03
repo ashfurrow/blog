@@ -22,8 +22,9 @@ import { MDXProvider } from '@mdx-js/react'
 import Narrow from '../components/Narrow'
 import Wide from '../components/Wide'
 import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
+import YouTube from '../components/YouTube'
 
-export const ShortCodes = [Narrow, Wide, ReactResponsiveEmbed]
+const ShortCodes = { Narrow, Wide, ReactResponsiveEmbed, YouTube }
 
 const PostContent = styled.div`
   margin-top: 4rem;

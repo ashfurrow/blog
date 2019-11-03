@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { media } from '../utils/media'
 
-const Wide: any = styled.div`
+const Wide = styled.div`
   position: relative;
   width: 60vw;
   margin-left: -30vw;

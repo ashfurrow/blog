@@ -6,7 +6,8 @@ export const ReactResponsiveEmbed: React.FC<{
   allowFullScreen: boolean
   src: string
 }> = props => (
-  <Wide>
+  // 1.66rem matches line height
+  <Wide style={{ marginBottom: '1.66rem' }}>
     <_ReactResponsiveEmbed {...props} />
   </Wide>
 )

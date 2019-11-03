@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { media } from '../utils/media'
 
-const Narrow: any = styled.div`
+const Narrow = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
