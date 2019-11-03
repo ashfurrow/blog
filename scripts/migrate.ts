@@ -55,8 +55,9 @@ const migratePost = async () => {
     ...(bannerAttribution && { bannerAttribution }),
     ...(socialImage && { socialImage })
   }
-  // TODO: Remove the YYYY-MM-DD- from the beginning of this
-  const newDirName = `./blog/${filename.split('.')[0]}`
+  const newDirName = `./blog/${last(
+    filename.split('.')[0].split(/\d{4}-\d{2}-\d{2}-/)
+  )}`
   await fs.mkdir(newDirName, { recursive: true })
 
   const imgRegex = /(?<url>\/img\/[^\.]+\.([a-zA-Z]{2,4}))/g
