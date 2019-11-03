@@ -36,7 +36,7 @@ const testing = async (filename: string) => {
 }
 
 const migratePost = async () => {
-  const filename = '2012-09-19-uicollectionview-example.html.markdown'
+  const filename = '2017-11-22-taxonomies-of-engineering-careers.html.markdown'
   console.log(`migrating ${filename}`)
   const contents = await fs.readFile(`./old/source/blog/${filename}`, 'utf8')
   // console.log(JSON.stringify({ contents }))
@@ -50,7 +50,7 @@ const migratePost = async () => {
   } = frontmatter
   const newFrontmatter = {
     title: frontmatter.title,
-    date: frontmatter.date,
+    date: frontmatter.date.split(' ')[0], // Removes any time from the blog post
     ...(banner && { banner }),
     ...(bannerAttribution && { bannerAttribution }),
     ...(socialImage && { socialImage })
@@ -75,6 +75,11 @@ const migratePost = async () => {
     }
   }
 
+  blogMD = blogMD
+    .replace(/YOUTUBE ([^#\&\?\n<]+)/, "<YouTube videoID='$1' />")
+    .replace(/BEGIN_WIDE((.|[\n])*)END_WIDE/, '<Wide>$1</Wide>')
+    .replace(/BEGIN_NARROW((.|[\n])*)END_NARROW/, '<Narrow>$1</Narrow>')
+
   const newContents = `---
 ${trim(YAML.stringify(newFrontmatter))}
 ---
@@ -91,8 +96,8 @@ ${blogMD}
     3. Look for images DONE
       - Move the images
       - Update markdown image references
-    4. Migrate YouTube embeds
-    5. Migrate _WIDE and _NARROW sections
+    4. Migrate YouTube embeds DONE
+    5. Migrate _WIDE and _NARROW sections DONE
   */
 }
 
