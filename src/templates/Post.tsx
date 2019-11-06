@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
-import kebabCase from 'lodash/kebabCase'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import {
   Layout,
@@ -54,11 +53,6 @@ export default class PostPage extends React.PureComponent<Props> {
               <Subline light={true}>
                 {post.frontmatter.date} &mdash; {post.timeToRead} Min Read
                 &mdash; In{' '}
-                <Link
-                  to={`/categories/${kebabCase(post.frontmatter.category)}`}
-                >
-                  {post.frontmatter.category}
-                </Link>
               </Subline>
             </Header>
             <Wrapper>

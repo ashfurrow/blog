@@ -1,7 +1,7 @@
 import path from 'path'
-import { kebabCase } from 'lodash'
 import { GatsbyNode } from 'gatsby'
 import AllMarkdownRemark from '../src/models/AllMarkdownRemark'
+import { generateSlug } from '../src/utils/slugs'
 
 const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -36,13 +36,13 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
       const next = index === 0 ? null : posts[index - 1].node
       const prev = index === posts.length - 1 ? null : posts[index + 1].node
       createPage({
-        path: `/blog/${kebabCase(node.frontmatter.title)}`,
+        path: `/blog/${generateSlug(node.frontmatter.title)}`,
         component: postTemplate,
         context: {
           prev,
           next,
           id: node.id,
-          slug: kebabCase(node.frontmatter.title)
+          slug: generateSlug(node.frontmatter.title)
         }
       })
     })

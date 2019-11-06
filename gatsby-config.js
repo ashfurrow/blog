@@ -128,7 +128,7 @@ module.exports = {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           Mdx: {
             title: node => node.frontmatter.title,
-            path: node => `/blog/${_.kebabCase(node.frontmatter.title)}`,
+            path: node => `/blog/${_.generateSlug(node.frontmatter.title)}`,
             // We want to index the blog posts but we want to keep the search index small
             // So let's index the HTML-less markdown text as a compromise
             body: node => node.rawBody.replace(/<[^>]+>/g, ''),
