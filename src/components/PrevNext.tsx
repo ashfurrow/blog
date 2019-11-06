@@ -1,36 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import kebabCase from 'lodash/kebabCase'
 import Post from '../models/Post'
+import Theme from '../../config/Theme'
+import { generateSlug } from '../utils/slugs'
+import { media } from '../utils/media'
 
 const Wrapper = styled.div`
-  display: flex;
-  margin: 6rem auto 0 auto;
+  margin: 4rem auto;
+  overflow: auto;
+  @media ${media.tablet} {
+    margin: 2rem auto;
+  }
+  @media ${media.phone} {
+    margin: 2rem auto;
+  }
   a {
-    color: ${props => props.theme.colors.primary};
-    display: flex;
-    align-items: center;
-  }
-  justify-items: center;
-`
-
-const Prev = styled.div`
-  span {
+    color: ${() => Theme.colors.grey.default};
     text-transform: uppercase;
-    font-size: 0.8rem;
-    color: ${props => props.theme.colors.grey.light};
   }
 `
 
-const Next = styled.div`
-  margin-left: auto;
-  text-align: right;
-  span {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    color: ${props => props.theme.colors.grey.light};
-  }
+const Button = styled.div`
+  border: 1px black solid;
+  width: 45%;
+  padding: 0.5rem;
+`
+
+const Prev = styled(Button)`
+  text-align: center;
+  float: left;
+`
+
+const Next = styled(Button)`
+  text-align: center;
+  float: right;
 `
 
 interface Props {
@@ -45,14 +49,16 @@ export class PrevNext extends React.PureComponent<Props> {
       <Wrapper>
         {prev && (
           <Prev>
-            <span>Previous</span>
-            <Link to={`/blog/${kebabCase(prev.frontmatter.title)}`}>{prev.frontmatter.title}</Link>
+            <Link to={`/blog/${generateSlug(prev.frontmatter.title)}`}>
+              {prev.frontmatter.title}
+            </Link>
           </Prev>
         )}
         {next && (
           <Next>
-            <span>Next</span>
-            <Link to={`/blog/${kebabCase(next.frontmatter.title)}`}>{next.frontmatter.title}</Link>
+            <Link to={`/blog/${generateSlug(next.frontmatter.title)}`}>
+              {next.frontmatter.title}
+            </Link>
           </Next>
         )}
       </Wrapper>
