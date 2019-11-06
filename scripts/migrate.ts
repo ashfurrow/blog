@@ -17,7 +17,9 @@ const main = async () => {
     //   uniq(
     //     flatten(
     await Promise.all(
-      posts.filter(p => p.endsWith('.html.markdown')).map(generateRedirects)
+      takeRight(posts.filter(p => p.endsWith('.html.markdown')), 10).map(
+        migratePost
+      )
     )
     //     )
     //   )
@@ -76,12 +78,10 @@ const migratePost = async (filename: string) => {
   const newDirName = `./blog/${oldFileName}`
   await fs.mkdir(newDirName, { recursive: true })
 
-  // TODO: new slug generation
   const imgRegex = /(?<url>\/img\/[^\.]+\.([a-zA-Z]{2,4}))/g
   const imageURLs: string[] = []
   let match: RegExpExecArray | null
   while ((match = imgRegex.exec(blogMD)) !== null) {
-    // console.log(match)
     if (match.groups) {
       const imageURL = match.groups.url
       imageURLs.push(imageURL)
@@ -110,7 +110,7 @@ ${blogMD}
   /*
     1. Transform YAML frontmatter DONE
     2. Compute new directory name and create DONE
-    3. Look for images DONE
+    3. Look for images (body+frontmatter)
       - Move the images
       - Update markdown image references
     4. Migrate YouTube embeds DONE
