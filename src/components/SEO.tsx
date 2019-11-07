@@ -85,17 +85,21 @@ export const SEO = (props: SEO) => {
       <title>{config.siteTitle}</title>
       <meta name="description" content={description} />
       <meta name="image" content={image} />
-      <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(schemaOrgJSONLD)}
+      </script>
       <meta property="og:locale" content={config.ogLanguage} />
-      <meta property="og:site_name" content={config.ogSiteName ? config.ogSiteName : ''} />
+      <meta property="og:site_name" content={config.siteTitle} />
       <meta property="og:url" content={postSEO ? postURL : blogURL} />
       {postSEO ? <meta property="og:type" content="article" /> : null}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="fb:app_id" content={config.siteFBAppID ? config.siteFBAppID : ''} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content={config.userTwitter ? config.userTwitter : ''} />
+      <meta
+        name="twitter:creator"
+        content={config.userTwitter ? config.userTwitter : ''}
+      />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:url" content={config.siteUrl} />
       <meta name="twitter:description" content={description} />
