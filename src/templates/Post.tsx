@@ -54,7 +54,6 @@ export default class PostPage extends React.PureComponent<Props> {
   public render() {
     const { prev, next } = this.props.pageContext
     const post = this.props.data.mdx
-    console.log({ post })
     return (
       <Layout>
         {post ? (
