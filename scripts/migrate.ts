@@ -1,7 +1,7 @@
 import path from 'path'
 import { promises as fs } from 'fs'
 import YAML from 'yaml'
-import { takeRight, flatten, uniq, trim, last, kebabCase } from 'lodash'
+import { take, flatten, uniq, trim, last, kebabCase } from 'lodash'
 import requestPromise from 'request-promise-native'
 import { generateSlug } from '../src/utils/paths'
 
@@ -17,7 +17,7 @@ const main = async () => {
     //   uniq(
     //     flatten(
     await Promise.all(
-      takeRight(posts.filter(p => p.endsWith('.html.markdown')), 10).map(
+      take(posts.filter(p => p.endsWith('.html.markdown')), 100).map(
         migratePost
       )
     )
@@ -93,7 +93,7 @@ const migratePost = async (filename: string) => {
   }
 
   blogMD = blogMD
-    .replace('\n(READMORE)\n\n', '')
+    .replace('(READMORE)\n', '')
     .replace(/YOUTUBE ([^#\&\?\n<]+)/g, "<YouTube videoID='$1' />")
     .replace(/BEGIN_WIDE((.|[\n])*?)END_WIDE/g, '<Wide>$1</Wide>')
     .replace(/BEGIN_NARROW((.|[\n])*?)END_NARROW/g, '<Narrow>$1</Narrow>')
