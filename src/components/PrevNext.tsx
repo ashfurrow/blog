@@ -3,18 +3,22 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Post from '../models/Post'
 import Theme from '../../config/Theme'
-import { generateSlug } from '../utils/slugs'
+import { generatePath } from '../utils/paths'
 import { media } from '../utils/media'
 import config from '../../config/SiteConfig'
+
+const HR = styled.hr`
+  margin-bottom: 0;
+`
 
 const Wrapper = styled.div`
   margin: 4rem auto;
   overflow: auto;
   @media ${media.tablet} {
-    margin: 2rem auto;
+    margin: 0.5rem auto 1rem;
   }
   @media ${media.phone} {
-    margin: 0rem auto;
+    margin: 0.5rem auto 0;
   }
 `
 
@@ -29,7 +33,7 @@ const Button = styled.div`
   }
   @media ${media.phone} {
     width: 100%;
-    margin: 0.5rem auto;
+    margin: 0.25rem auto;
   }
 
   color: ${() => Theme.colors.grey.default};
@@ -70,22 +74,25 @@ export class PrevNext extends React.PureComponent<Props> {
   public render() {
     const { prev, next } = this.props
     return (
-      <Wrapper>
-        {prev && (
-          <Link to={`/blog/${generateSlug(prev.frontmatter.title)}`}>
-            <Prev>
-              <LinkText>{prev.frontmatter.title}</LinkText>
-            </Prev>
-          </Link>
-        )}
-        {next && (
-          <Link to={`/blog/${generateSlug(next.frontmatter.title)}`}>
-            <Next>
-              <LinkText>{next.frontmatter.title}</LinkText>
-            </Next>
-          </Link>
-        )}
-      </Wrapper>
+      <>
+        <HR />
+        <Wrapper>
+          {prev && (
+            <Link to={generatePath(prev.frontmatter.title)}>
+              <Prev>
+                <LinkText>{prev.frontmatter.title}</LinkText>
+              </Prev>
+            </Link>
+          )}
+          {next && (
+            <Link to={generatePath(next.frontmatter.title)}>
+              <Next>
+                <LinkText>{next.frontmatter.title}</LinkText>
+              </Next>
+            </Link>
+          )}
+        </Wrapper>
+      </>
     )
   }
 }

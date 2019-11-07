@@ -15,13 +15,15 @@ import {
 } from '../components'
 import config from '../../config/SiteConfig'
 import '../utils/prismjs-theme.css'
-import PathContext from '../models/PathContext'
 import Post from '../models/Post'
 import { MDXProvider } from '@mdx-js/react'
 import Narrow from '../components/Narrow'
 import Wide from '../components/Wide'
 import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
 import YouTube from '../components/YouTube'
+import Theme from '../../config/Theme'
+import { media } from '../utils/media'
+import PageContext from '../models/PageContext'
 
 const ShortCodes = { Narrow, Wide, ReactResponsiveEmbed, YouTube }
 
@@ -29,23 +31,36 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `
 
+const TypoLink = styled.a`
+  color: ${Theme.colors.grey.default};
+  margin: 1rem auto;
+  display: block;
+
+  @media ${media.tablet} {
+    margin: 0.5rem auto;
+  }
+  @media ${media.phone} {
+    margin: 0.5rem auto;
+  }
+`
+
 interface Props {
   data: {
     mdx: Post
   }
-  pathContext: PathContext
+  pageContext: PageContext
 }
 
 export default class PostPage extends React.PureComponent<Props> {
   public render() {
     console.log("hey, ho, what's this now?", this.props)
-    const { prev, next } = this.props.pathContext
+    const { prev, next } = this.props.pageContext
     const post = this.props.data.mdx
     return (
       <Layout>
         {post ? (
           <>
-            <SEO postPath={post.fields.slug} postNode={post} postSEO />
+            <SEO postPath={post.path} postNode={post} postSEO />
             <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
             <Header banner={post.frontmatter.banner}>
               <Link to="/">{config.siteTitle}</Link>
@@ -62,7 +77,10 @@ export default class PostPage extends React.PureComponent<Props> {
                     <MDXRenderer>{post.body}</MDXRenderer>
                   </MDXProvider>
                 </PostContent>
-                <hr />
+                <hr style={{ margin: '0' }} />
+                <TypoLink href="">
+                  Please submit typo corrections on GitHub
+                </TypoLink>
                 <PrevNext prev={prev} next={next} />
               </Content>
             </Wrapper>
@@ -74,12 +92,12 @@ export default class PostPage extends React.PureComponent<Props> {
 }
 
 export const postQuery = graphql`
-  query($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
+  query($id: String!) {
+    mdx(id: { eq: $id }) {
       id
       body
       fields {
-        slug
+        path
       }
       frontmatter {
         title

@@ -3,7 +3,7 @@ import { promises as fs } from 'fs'
 import YAML from 'yaml'
 import { takeRight, flatten, uniq, trim, last, kebabCase } from 'lodash'
 import requestPromise from 'request-promise-native'
-import { generateSlug } from '../src/utils/slugs'
+import { generateSlug } from '../src/utils/paths'
 
 let count = 0
 

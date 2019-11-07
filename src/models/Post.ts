@@ -6,7 +6,7 @@ interface Post {
   body: string
   frontmatter: Frontmatter
   fields: {
-    slug: string
+    path: string
   }
   timeToRead: number
 }

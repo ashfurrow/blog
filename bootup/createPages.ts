@@ -1,11 +1,11 @@
-import path from 'path'
+import Path from 'path'
 import { GatsbyNode } from 'gatsby'
 import AllMarkdownRemark from '../src/models/AllMarkdownRemark'
-import { generateSlug } from '../src/utils/slugs'
+import { generatePath } from '../src/utils/paths'
 
 const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
   const { createPage } = actions
-  const postTemplate = path.resolve(`src/templates/Post.tsx`)
+  const postTemplate = Path.resolve(`src/templates/Post.tsx`)
   return graphql(`
     {
       allMdx(sort: { order: DESC, fields: [frontmatter___date] }, limit: 10) {
@@ -35,14 +35,15 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
     posts.forEach(({ node }, index) => {
       const next = index === 0 ? null : posts[index - 1].node
       const prev = index === posts.length - 1 ? null : posts[index + 1].node
+      const path = generatePath(node.frontmatter.title)
       createPage({
-        path: `/blog/${generateSlug(node.frontmatter.title)}`,
+        path,
         component: postTemplate,
         context: {
           prev,
           next,
           id: node.id,
-          slug: generateSlug(node.frontmatter.title)
+          githubLink: 'blah'
         }
       })
     })

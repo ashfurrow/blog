@@ -15,3 +15,5 @@ export const generateSlug = (title: string) => {
     .replace(/-{2,}/, sep) // No more than one of the separator in a row.
     .replace(/^-|-$/, '') // Remove leading/trailing separator.
 }
+
+export const generatePath = (title: string) => `/blog/${generateSlug(title)}`

@@ -33,21 +33,21 @@ interface Props {
   title: string
   date: string
   excerpt: string
-  slug: string
+  path: string
   timeToRead: number
   category: string
 }
 
 export class Article extends React.PureComponent<Props> {
   public render() {
-    const { title, date, excerpt, slug, timeToRead, category } = this.props
+    const { title, date, excerpt, path, timeToRead, category } = this.props
     const firstChar = title.charAt(0)
 
     return (
       <Post>
         <Title>
           <Initiale>{firstChar}</Initiale>
-          <Link to={`/blog/${slug}`}>{title}</Link>
+          <Link to={path}>{title}</Link>
         </Title>
         <Excerpt>{excerpt}</Excerpt>
       </Post>

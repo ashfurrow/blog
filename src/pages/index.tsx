@@ -39,9 +39,9 @@ export default class HomePage extends React.Component<Props> {
                 date={post.node.frontmatter.date}
                 excerpt={post.node.excerpt}
                 timeToRead={post.node.timeToRead}
-                slug={post.node.fields.slug}
+                path={post.node.fields.path}
                 category={post.node.frontmatter.category}
-                key={post.node.fields.slug}
+                key={post.node.fields.path}
               />
             ))}
           </Content>
@@ -57,7 +57,7 @@ export const query = graphql`
       edges {
         node {
           fields {
-            slug
+            path
           }
           frontmatter {
             title

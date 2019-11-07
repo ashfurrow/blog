@@ -1,7 +1,7 @@
 import { has } from 'lodash'
 import { GatsbyNode } from 'gatsby'
 import Frontmatter from '../src/models/Frontmatter'
-import { generateSlug } from '../src/utils/slugs'
+import { generatePath } from '../src/utils/paths'
 
 const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
   const { createNodeField } = actions
@@ -11,8 +11,8 @@ const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, actions }) => {
     has(node.frontmatter, 'title')
   ) {
     const frontmatter = node.frontmatter as Frontmatter
-    const slug = `${generateSlug(frontmatter.title)}`
-    createNodeField({ node, name: 'slug', value: slug })
+    const path = generatePath(frontmatter.title)
+    createNodeField({ node, name: 'path', value: path })
   }
 }
 exports.onCreateNode = onCreateNode

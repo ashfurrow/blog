@@ -1,4 +1,4 @@
-import PathContext from './PathContext'
+import PageContext from './PageContext'
 import PageResources from './PageResources'
 import Data from './Data'
 
@@ -6,7 +6,7 @@ interface PageProps {
   data: Data
   location: Location
   pageResources?: PageResources
-  pathContext: PathContext
+  pageContenxt: PageContext
 }
 
 export default PageProps

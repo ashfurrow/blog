@@ -73,8 +73,8 @@ export default class HomePage extends React.Component<Props> {
                             {MONTHS[k]} {year}
                           </h2>
                           {monthPosts.map(post => (
-                            <article key={post.fields.slug}>
-                              <a href={`/blog/${post.fields.slug}`}>
+                            <article key={post.fields.path}>
+                              <a href={post.fields.path}>
                                 {post.frontmatter.title}
                               </a>
                               &nbsp;&nbsp;&nbsp;
@@ -103,7 +103,7 @@ export const query = graphql`
       edges {
         node {
           fields {
-            slug
+            path
           }
           frontmatter {
             title

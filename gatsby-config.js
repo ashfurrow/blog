@@ -8,6 +8,7 @@ require('ts-node').register({
 
 const config = require('./config/SiteConfig').default
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+const { generatePath } = require('./src/utils/paths')
 
 const moment = require('moment')
 const _ = require('lodash')
@@ -51,8 +52,8 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.path,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
                 })
               })
@@ -67,7 +68,7 @@ module.exports = {
                     node {
                       excerpt
                       html
-                      fields { slug }
+                      fields { path }
                       frontmatter {
                         title
                         date
@@ -86,8 +87,8 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.path,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
                 })
               })
@@ -102,7 +103,7 @@ module.exports = {
                     node {
                       excerpt
                       html
-                      fields { slug }
+                      fields { path }
                       frontmatter {
                         title
                         date
@@ -128,7 +129,7 @@ module.exports = {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           Mdx: {
             title: node => node.frontmatter.title,
-            path: node => `/blog/${_.generateSlug(node.frontmatter.title)}`,
+            path: node => generatePath(node.frontmatter.title),
             // We want to index the blog posts but we want to keep the search index small
             // So let's index the HTML-less markdown text as a compromise
             body: node => node.rawBody.replace(/<[^>]+>/g, ''),
