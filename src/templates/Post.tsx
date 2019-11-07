@@ -62,6 +62,7 @@ export default class PostPage extends React.PureComponent<Props> {
                     <MDXRenderer>{post.body}</MDXRenderer>
                   </MDXProvider>
                 </PostContent>
+                <hr />
                 <PrevNext prev={prev} next={next} />
               </Content>
             </Wrapper>

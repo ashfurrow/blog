@@ -5,6 +5,7 @@ import Post from '../models/Post'
 import Theme from '../../config/Theme'
 import { generateSlug } from '../utils/slugs'
 import { media } from '../utils/media'
+import config from '../../config/SiteConfig'
 
 const Wrapper = styled.div`
   margin: 4rem auto;
@@ -13,18 +14,32 @@ const Wrapper = styled.div`
     margin: 2rem auto;
   }
   @media ${media.phone} {
-    margin: 2rem auto;
-  }
-  a {
-    color: ${() => Theme.colors.grey.default};
-    text-transform: uppercase;
+    margin: 0rem auto;
   }
 `
 
 const Button = styled.div`
-  border: 1px black solid;
+  border: 1px ${Theme.colors.grey.default} solid;
   width: 45%;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  @media ${media.tablet} {
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+  @media ${media.phone} {
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  color: ${() => Theme.colors.grey.default};
+  &:hover,
+  &:focus {
+    /* Color here is for the text colour of the link. */
+    color: ${() => Theme.colors.white};
+    border-color: ${Theme.colors.primary};
+    background-color: ${Theme.colors.primary};
+  }
 `
 
 const Prev = styled(Button)`
@@ -35,6 +50,15 @@ const Prev = styled(Button)`
 const Next = styled(Button)`
   text-align: center;
   float: right;
+`
+
+const LinkText = styled.div`
+  text-transform: uppercase;
+  font-family: ${config.headerFontFamily};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.75rem;
 `
 
 interface Props {
@@ -48,18 +72,18 @@ export class PrevNext extends React.PureComponent<Props> {
     return (
       <Wrapper>
         {prev && (
-          <Prev>
-            <Link to={`/blog/${generateSlug(prev.frontmatter.title)}`}>
-              {prev.frontmatter.title}
-            </Link>
-          </Prev>
+          <Link to={`/blog/${generateSlug(prev.frontmatter.title)}`}>
+            <Prev>
+              <LinkText>{prev.frontmatter.title}</LinkText>
+            </Prev>
+          </Link>
         )}
         {next && (
-          <Next>
-            <Link to={`/blog/${generateSlug(next.frontmatter.title)}`}>
-              {next.frontmatter.title}
-            </Link>
-          </Next>
+          <Link to={`/blog/${generateSlug(next.frontmatter.title)}`}>
+            <Next>
+              <LinkText>{next.frontmatter.title}</LinkText>
+            </Next>
+          </Link>
         )}
       </Wrapper>
     )
