@@ -35,12 +35,11 @@ interface Props {
   excerpt: string
   path: string
   timeToRead: number
-  category: string
 }
 
 export class Article extends React.PureComponent<Props> {
   public render() {
-    const { title, date, excerpt, path, timeToRead, category } = this.props
+    const { title, excerpt, path } = this.props
     const firstChar = title.charAt(0)
 
     return (

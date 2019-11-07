@@ -17,8 +17,6 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
             frontmatter {
               date
               title
-              category
-              tags
               banner
               bannerAttribution
             }

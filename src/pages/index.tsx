@@ -40,7 +40,6 @@ export default class HomePage extends React.Component<Props> {
                 excerpt={post.node.excerpt}
                 timeToRead={post.node.timeToRead}
                 path={post.node.fields.path}
-                category={post.node.frontmatter.category}
                 key={post.node.fields.path}
               />
             ))}
@@ -62,7 +61,6 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD.MM.YYYY")
-            category
           }
           excerpt(pruneLength: 200)
           timeToRead
