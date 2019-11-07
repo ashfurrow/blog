@@ -59,33 +59,42 @@ export default class HomePage extends React.Component<Props> {
               .map(({ year, posts }) => {
                 return (
                   <div key={year}>
-                    {Object.keys(posts).map(k => {
-                      const monthPosts = posts[k]
-                      const representativeDate = new Date(
-                        monthPosts[0].frontmatter.date
-                      )
-                      return (
-                        <div
-                          key={representativeDate.toDateString()}
-                          style={{ marginBottom: '2rem' }}
-                        >
-                          <h2 style={{ marginBottom: '0.5rem' }}>
-                            {MONTHS[k]} {year}
-                          </h2>
-                          {monthPosts.map(post => (
-                            <article key={post.fields.path}>
-                              <a href={post.fields.path}>
-                                {post.frontmatter.title}
-                              </a>
-                              &nbsp;&nbsp;&nbsp;
-                              <span style={{ color: rgba(0, 0, 0, 0.5) }}>
-                                {post.frontmatter.formattedDate}
-                              </span>
-                            </article>
-                          ))}
-                        </div>
-                      )
-                    })}
+                    {Object.keys(posts)
+                      .map(k => {
+                        return posts[k]
+                      })
+                      .sort((lhs, rhs) => {
+                        const lhsDate = new Date(lhs[0].frontmatter.date)
+                        const rhsDate = new Date(rhs[0].frontmatter.date)
+                        return lhsDate.getFullYear() - rhsDate.getFullYear()
+                      })
+                      .reverse()
+                      .map((monthPosts, index) => {
+                        const representativeDate = new Date(
+                          monthPosts[0].frontmatter.date
+                        )
+                        return (
+                          <div
+                            key={representativeDate.toDateString()}
+                            style={{ marginBottom: '2rem' }}
+                          >
+                            <h2 style={{ marginBottom: '0.5rem' }}>
+                              {MONTHS[representativeDate.getMonth()]} {year}
+                            </h2>
+                            {monthPosts.map(post => (
+                              <article key={post.fields.path}>
+                                <a href={post.fields.path}>
+                                  {post.frontmatter.title}
+                                </a>
+                                &nbsp;&nbsp;&nbsp;
+                                <span style={{ color: rgba(0, 0, 0, 0.5) }}>
+                                  {post.frontmatter.formattedDate}
+                                </span>
+                              </article>
+                            ))}
+                          </div>
+                        )
+                      })}
                   </div>
                 )
               })}

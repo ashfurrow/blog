@@ -36,7 +36,6 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
       const next = index === 0 ? null : posts[index - 1].node
       const prev = index === posts.length - 1 ? null : posts[index + 1].node
       const path = generatePath(node.frontmatter.title)
-      console.log(`Creating ${path}`)
       createPage({
         path,
         component: postTemplate,
