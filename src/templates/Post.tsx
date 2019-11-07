@@ -54,13 +54,17 @@ export default class PostPage extends React.PureComponent<Props> {
   public render() {
     const { prev, next } = this.props.pageContext
     const post = this.props.data.mdx
+    console.log({ post })
     return (
       <Layout>
         {post ? (
           <>
             <SEO postPath={post.fields.path} postNode={post} postSEO />
             <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
-            <Header banner={post.frontmatter.banner}>
+            <Header
+              banner={post.frontmatter.banner}
+              bannerAttribution={post.frontmatter.bannerAttribution}
+            >
               <Link to="/">{config.siteTitle}</Link>
               <SectionTitle>{post.frontmatter.title}</SectionTitle>
               <Subline light={true}>
@@ -104,6 +108,7 @@ export const postQuery = graphql`
         category
         tags
         banner
+        bannerAttribution
       }
       timeToRead
     }

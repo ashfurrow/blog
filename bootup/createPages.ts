@@ -20,7 +20,7 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
               category
               tags
               banner
-              # bannerAttribution
+              bannerAttribution
             }
           }
         }
@@ -42,8 +42,7 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
         context: {
           prev,
           next,
-          id: node.id,
-          githubLink: 'blah'
+          id: node.id
         }
       })
     })

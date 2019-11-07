@@ -6,8 +6,8 @@ const Narrow = styled.div`
   padding: 0;
   position: relative;
 
-  width: 50vw;
-  margin-left: -25vw;
+  width: 45vw;
+  margin-left: -22.5vw;
   left: 50%;
 
   @media ${media.phone} {

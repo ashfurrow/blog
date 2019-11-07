@@ -59,6 +59,10 @@ interface Props {
 export class Header extends React.PureComponent<Props> {
   public render() {
     const { banner, bannerAttribution, children } = this.props
+
+    console.log('HI!')
+    console.log({ bannerAttribution })
+
     return (
       <HeaderWrapper banner={banner || config.defaultBg}>
         {bannerAttribution && (
