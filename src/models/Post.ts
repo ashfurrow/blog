@@ -5,8 +5,10 @@ interface Post {
   excerpt: string
   body: string
   frontmatter: Frontmatter
+  fileAbsolutePath: string
   fields: {
     path: string
+    githubLink: string
   }
   timeToRead: number
 }

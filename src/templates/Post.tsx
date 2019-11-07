@@ -35,12 +35,11 @@ const TypoLink = styled.a`
   color: ${Theme.colors.grey.default};
   margin: 1rem auto;
   display: block;
-
-  @media ${media.tablet} {
-    margin: 0.5rem auto;
-  }
-  @media ${media.phone} {
-    margin: 0.5rem auto;
+  font-size: 0.75rem;
+  font-style: italic;
+  &:hover {
+    color: ${Theme.colors.primary};
+    text-decoration: underline;
   }
 `
 
@@ -53,14 +52,13 @@ interface Props {
 
 export default class PostPage extends React.PureComponent<Props> {
   public render() {
-    console.log("hey, ho, what's this now?", this.props)
     const { prev, next } = this.props.pageContext
     const post = this.props.data.mdx
     return (
       <Layout>
         {post ? (
           <>
-            <SEO postPath={post.path} postNode={post} postSEO />
+            <SEO postPath={post.fields.path} postNode={post} postSEO />
             <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
             <Header banner={post.frontmatter.banner}>
               <Link to="/">{config.siteTitle}</Link>
@@ -78,7 +76,7 @@ export default class PostPage extends React.PureComponent<Props> {
                   </MDXProvider>
                 </PostContent>
                 <hr style={{ margin: '0' }} />
-                <TypoLink href="">
+                <TypoLink href={post.fields.githubLink}>
                   Please submit typo corrections on GitHub
                 </TypoLink>
                 <PrevNext prev={prev} next={next} />
@@ -98,6 +96,7 @@ export const postQuery = graphql`
       body
       fields {
         path
+        githubLink
       }
       frontmatter {
         title
