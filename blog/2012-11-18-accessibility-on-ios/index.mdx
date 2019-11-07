@@ -3,7 +3,6 @@ title: Accessibility on iOS
 date: 2012-11-18
 ---
 
-
 I was invited to give a talk at the [Toronto Accessibility Meetup last night](http://www.meetup.com/a11yTo/events/90075082/) about a developer's perspective on making software accessible. It was an amazing experience and I took a lot away from the conversations I had with the people there.
 
 I'm posting my script online, which I did deviate from quite a bit. However, these sum up my thoughts on accessibility.
@@ -12,7 +11,7 @@ I haven't always considered it as important as I do now, and shamefully, I know 
 
 If you're around, I'm giving another talk at the [iOS Toronto](http://www.meetup.com/iOSToronto/) meetup Tuesday evening at the Victory Cafe. If you want to know where to get started on making apps accessible, be there.
 
-# Accessibility on iOS
+## Accessibility on iOS
 
 When the iPhone was first announced in 2007, there were concerns from accessibility advocates that without hardware buttons, the iPhone would not be accessible to people with visual impairments. Traditionally, these buttons had raised edges that would help users who couldn't read the buttons differentiate what was on them. Since the iPhone uses only "soft" buttons on the screen of the device, this was a valid reason for concern.
 
@@ -20,7 +19,7 @@ The launch of the iPhone validated some of these concerns, but since then, Apple
 
 Today, I'm going to talk about how software developers make iOS apps accessible. I'm going to take a look at ways it's easy for developers to make accessible software, the costs associated with doing so, and provide examples of what how to do it.
 
-## How it's easy
+### How it's easy
 
 In traditional PC software, accessibility in applications was something that was completely the responsibility of the software developer. There was no support from the operating system and everything had to be built by developers from scratch. When Apple's Macintosh OS X was released, it was celebrated because it provided system-level tools for developers to make their applications accessible.
 
@@ -28,7 +27,7 @@ iOS is based on OS X and Apple brought the same system-level tools with them. Th
 
 Apple's accessibility tools are pretty comprehensive and easy to learn, and I'd like to talk about them now.
 
-### Good Support from Apple
+#### Good Support from Apple
 
 Apple's main library of tools supplied to developers to make software accessible on iOS is called UIAccessibility. These provide a built in list of traits that I can assign controls on the screen. Traits describe _what_ visual elements on the screen are and what interacting with them will do.
 
@@ -50,7 +49,7 @@ The last property I'd like to mention is the accessibility hint. The hint is use
 
 iOS will read interfaces to users with VoiceOver if developers take the time to ensure their interfaces work correctly. People using VoiceOver can _enter_ text into any application out of the box with _no_ work from developers.
 
-## Why it's Hard
+### Why it's Hard
 
 Now that I've given an overview of the tools that make creating accessible applications easy, I'd like to talk about some of the ways that making them is difficult.
 
@@ -64,7 +63,7 @@ To that end, I've started using VoiceOver to use my phone throughout the day. No
 
 This is a big attitude change in myself, and trying to propagate this across an entire industry isn't easy. Recently, prominent independent iOS developers have spoken out in strong favour of making apps accessible, and I'm excited about what the future holds for accessibility.
 
-### Implementation Details
+#### Implementation Details
 
 Now that I've talked about the high-level challenges facing iOS software accessibility, I'd like to take a look at the low-level implementation details. These are specific details that make iOS accessibility difficult for developers to achieve.
 
@@ -78,15 +77,12 @@ The other challenge I want to talk about is scrolling text. Scrolling, especiall
 
 Apple has done a good job of providing a solid foundation on which developers can write accessible applications. It isn't trivially easy, but not interface design ever is.
 
-### Localization
+#### Localization
 
 Everything that's made accessible also has to be localized so that people using VoiceOver in other languages can understand the interface as well.
 
-## Closing
+### Closing
 
 Making quality software is a measure of honour, and making software accessible is a measure of quality. Software developers need to recognize that there are other aspects of their interface exist beyond the visual. They need to understand how people use their software without the visual interface and they need to modify their apps to be congruent with these users' expectations.
 
 The biggest challenge in raising the quality of accessibility in iOS apps is educating developers about how and why they need to worry about it.
-
-
-  
