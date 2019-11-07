@@ -1,20 +1,21 @@
 import styled from 'styled-components'
 import { media } from '../utils/media'
 
+// col-lg-10 col-lg-offset-1 col-md-12
 const Wide = styled.div`
   position: relative;
-  width: 60vw;
-  margin-left: -30vw;
+  width: 83vw;
+  margin-left: -41.5vw;
   left: 50%;
 
   @media ${media.tablet} {
-    width: 90vw;
-    margin-left: -45vw;
+    width: 100%;
+    margin-left: initial;
+    left: initial;
   }
 
   @media ${media.phone} {
     width: 100%;
-    position: initial;
     margin-left: initial;
     left: initial;
   }

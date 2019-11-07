@@ -2,18 +2,18 @@ import styled from 'styled-components'
 import { media } from '../utils/media'
 
 const Narrow = styled.div`
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  max-width: ${(props: any) => (props.fullWidth ? '100%' : '50rem')};
-  padding: ${(props: any) => (props.fullWidth ? '0' : '0 6rem')};
-  @media ${media.tablet} {
-    max-width: ${(props: any) => (props.fullWidth ? '100%' : '80rem')};
-    padding: ${(props: any) => (props.fullWidth ? '0' : '0 3rem')};
-  }
+  padding: 0;
+  position: relative;
+
+  width: 50vw;
+  margin-left: -25vw;
+  left: 50%;
+
   @media ${media.phone} {
-    max-width: 100%;
-    padding: 0;
+    width: 75vw;
+    margin-left: -37.5vw;
+    left: 50%;
   }
 `
 export default Narrow

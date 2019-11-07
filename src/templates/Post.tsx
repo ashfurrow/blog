@@ -28,7 +28,7 @@ import PageContext from '../models/PageContext'
 const ShortCodes = { Narrow, Wide, ReactResponsiveEmbed, YouTube }
 
 const PostContent = styled.div`
-  margin-top: 4rem;
+  margin-top: 1rem;
 `
 
 const TypoLink = styled.a`
