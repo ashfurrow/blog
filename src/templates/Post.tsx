@@ -20,12 +20,19 @@ import { MDXProvider } from '@mdx-js/react'
 import Narrow from '../components/Narrow'
 import Wide from '../components/Wide'
 import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
-import { YouTube, Video } from '../components/Videos'
+import { YouTube, Video, SpeakerDeck } from '../components/Videos'
 import Theme from '../../config/Theme'
 import { media } from '../utils/media'
 import PageContext from '../models/PageContext'
 
-const ShortCodes = { Narrow, Wide, ReactResponsiveEmbed, YouTube, Video }
+const ShortCodes = {
+  Narrow,
+  Wide,
+  ReactResponsiveEmbed,
+  YouTube,
+  Video,
+  SpeakerDeck
+}
 
 const PostContent = styled.div`
   margin-top: 1rem;

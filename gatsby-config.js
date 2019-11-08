@@ -164,6 +164,7 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
+          'gatsby-remark-smartypants',
           'gatsby-remark-images',
           {
             resolve: 'gatsby-remark-copy-linked-files',
@@ -204,6 +205,7 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
+          'gatsby-remark-smartypants',
           'gatsby-remark-images',
           {
             resolve: 'gatsby-remark-copy-linked-files',
