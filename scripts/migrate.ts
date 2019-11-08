@@ -5,59 +5,21 @@ import { take, flatten, uniq, trim, last, kebabCase } from 'lodash'
 import requestPromise from 'request-promise-native'
 import { generateSlug } from '../src/utils/paths'
 
-let count = 0
-
 const main = async () => {
   try {
     const oldPostsPath = path.join(__dirname, '../old/source/blog')
-    // console.log({ hi: oldPostsPath })
     const posts = await fs.readdir(oldPostsPath)
-    // console.log({ length: posts.length })
-    // console.log(
-    //   uniq(
-    //     flatten(
     await Promise.all(
-      take(posts.filter(p => p.endsWith('.html.markdown')), 100).map(
-        migratePost
-      )
+      take(posts.filter(p => p.endsWith('.html.markdown')), 1).map(migratePost)
     )
-    //     )
-    //   )
-    // )
-    // migratePost('2012-09-19-uicollectionview-example.html.markdown')
-    // migratePost()
-    console.log(`Total Fail count: ${count}`)
   } catch {
     console.log('OOP')
   }
 }
 
-const generateRedirects = async (filename: string) => {
-  const contents = await fs.readFile(`./old/source/blog/${filename}`, 'utf8')
-  const [, yamlRaw] = contents.split(/---/)
-  const frontmatter = YAML.parse(yamlRaw)
-  const oldFileName = filename.replace('.html.markdown', '')
-  const oldSlug = last(oldFileName.split(/\d{4}-\d{2}-\d{2}-/))
-
-  const newSlug = generateSlug(frontmatter.title)
-  if (newSlug !== oldSlug) {
-    const url = `https://ashfurrow.com/blog/${newSlug}/`
-    // console.log(`Pinging ${url}`)
-    try {
-      await requestPromise(url)
-    } catch (exception) {
-      // console.log(`Failed (${url}): ${oldSlug} => ${newSlug}`)
-      console.log(`/blog/${oldSlug}/ /blog/${newSlug}/`)
-      count += 1
-    }
-  }
-}
-
 const migratePost = async (filename: string) => {
-  // const filename = '2017-11-22-taxonomies-of-engineering-careers.html.markdown'
   console.log(`migrating ${filename}`)
   const contents = await fs.readFile(`./old/source/blog/${filename}`, 'utf8')
-  // console.log(JSON.stringify({ contents }))
   const [, yamlRaw, ...blogMDArray] = contents.split(/---/)
   let blogMD = blogMDArray.join('---')
   const frontmatter = YAML.parse(yamlRaw)
@@ -66,13 +28,6 @@ const migratePost = async (filename: string) => {
     background_image_source: bannerAttribution,
     og_image: socialImage
   } = frontmatter
-  const newFrontmatter = {
-    title: frontmatter.title,
-    date: frontmatter.date.split(' ')[0], // Removes any time from the blog post
-    ...(banner && { banner }),
-    ...(bannerAttribution && { bannerAttribution }),
-    ...(socialImage && { socialImage })
-  }
   const oldFileName = filename.replace('.html.markdown', '')
   const oldSlug = last(oldFileName.split(/\d{4}-\d{2}-\d{2}-/))
   const newDirName = `./blog/${oldFileName}`
@@ -97,6 +52,21 @@ const migratePost = async (filename: string) => {
     .replace(/YOUTUBE ([^#\&\?\n<]+)/g, "<YouTube videoID='$1' />")
     .replace(/BEGIN_WIDE((.|[\n])*?)END_WIDE/g, '<Wide>$1</Wide>')
     .replace(/BEGIN_NARROW((.|[\n])*?)END_NARROW/g, '<Narrow>$1</Narrow>')
+
+  const newFrontmatter = {
+    title: frontmatter.title,
+    date: frontmatter.date.split(' ')[0], // Removes any time from the blog post
+    ...(banner && { banner }),
+    ...(bannerAttribution && { bannerAttribution }),
+    ...(socialImage && { socialImage })
+  }
+  if (banner) {
+    await fs.rename(
+      `old/source${banner}`,
+      `${newDirName}/${path.basename(banner)}`
+    )
+    newFrontmatter.banner = path.basename(banner)
+  }
 
   const newContents = `---
 ${trim(YAML.stringify(newFrontmatter))}
