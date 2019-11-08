@@ -12,9 +12,13 @@ export const Video: React.FC<{ src: string }> = ({ src }) => (
   <ReactResponsiveEmbed src={src} allowFullScreen />
 )
 
-export const SpeakerDeck: React.FC<{ videoID: string }> = ({ videoID }) => (
+export const SpeakerDeck: React.FC<{
+  videoID: string
+  fourByThree?: boolean
+}> = ({ videoID, fourByThree }) => (
   <ReactResponsiveEmbed
     src={`//speakerdeck.com/player/${videoID}`}
     allowFullScreen
+    {...(fourByThree && { ratio: '4:3' })}
   />
 )
