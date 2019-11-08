@@ -54,6 +54,10 @@ export default class PostPage extends React.PureComponent<Props> {
   public render() {
     const { prev, next } = this.props.pageContext
     const post = this.props.data.mdx
+    console.log({
+      bannerURL: post.frontmatter.banner,
+      pageContext: this.props.pageContext
+    })
     return (
       <Layout>
         {post ? (
@@ -61,7 +65,9 @@ export default class PostPage extends React.PureComponent<Props> {
             <SEO postPath={post.fields.path} postNode={post} postSEO />
             <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
             <Header
-              banner={post.frontmatter.banner}
+              banner={
+                post.frontmatter.banner && post.frontmatter.banner.publicURL
+              }
               bannerAttribution={post.frontmatter.bannerAttribution}
             >
               <Link to="/">{config.siteTitle}</Link>
@@ -104,7 +110,9 @@ export const postQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD.MM.YYYY")
-        banner
+        banner {
+          publicURL
+        }
         bannerAttribution
       }
       timeToRead
