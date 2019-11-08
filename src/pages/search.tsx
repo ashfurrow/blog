@@ -5,7 +5,6 @@ import { compact } from 'lodash'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import Data from '../models/Data'
-import theme from '../../config/Theme'
 import rgba from 'polished/lib/color/rgba'
 import { Index } from 'elasticlunr'
 import styled from 'styled-components'
@@ -84,7 +83,7 @@ export default class Search extends React.Component<Props, State> {
               render={data => {
                 this.index = Index.load(data.siteSearchIndex.index)
                 return (
-                  <div>
+                  <div style={{ marginTop: '1rem' }}>
                     <SearchInput
                       type="text"
                       value={this.state.query}
