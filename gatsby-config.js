@@ -164,7 +164,13 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
-          'gatsby-remark-images'
+          'gatsby-remark-images',
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              ignoredFileExtensions: ['jpg', 'jpeg', 'png']
+            }
+          }
         ]
       }
     },
@@ -198,7 +204,13 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
-          'gatsby-remark-images'
+          'gatsby-remark-images',
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              ignoredFileExtensions: ['jpg', 'jpeg', 'png']
+            }
+          }
         ]
       }
     },

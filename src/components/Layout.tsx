@@ -49,6 +49,11 @@ const GlobalStyle = createGlobalStyle`
     font-style: italic;
     position: relative;
   }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   blockquote:before {
     content: "";

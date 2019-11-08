@@ -90,6 +90,7 @@
     "gatsby-plugin-mdx": "^1.0.53",
     "gatsby-plugin-sharp": "^2.2.36",
     "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-remark-copy-linked-files": "^2.1.28",
     "gatsby-remark-images": "^3.1.28",
     "inflected": "^2.0.4",
     "moment": "^2.24.0",
