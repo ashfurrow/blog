@@ -82,7 +82,6 @@ export default class Search extends React.Component<Props, State> {
                 }
               `}
               render={data => {
-                console.log({ data: JSON.stringify(data) })
                 this.index = Index.load(data.siteSearchIndex.index)
                 return (
                   <div>

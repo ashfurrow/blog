@@ -18,7 +18,6 @@ interface Props {
 
 export default class HomePage extends React.Component<Props> {
   public render() {
-    console.log({ props: this.props })
     const { data } = this.props
     const { edges, totalCount } = data.allMdx
 

@@ -127,7 +127,6 @@ export class Layout extends React.PureComponent<{}, State> {
   }
 
   handleNavBar = () => {
-    console.log('YEAH!')
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
 
