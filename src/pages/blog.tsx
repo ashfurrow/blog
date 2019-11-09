@@ -52,7 +52,7 @@ export default class HomePage extends React.Component<Props> {
           <SectionTitle>Blog Archive</SectionTitle>
         </Header>
         <Wrapper>
-          <Content>
+          <Content style={{ marginTop: '2rem' }}>
             {months
               .sort((lhs, rhs) => lhs.year - rhs.year)
               .reverse()

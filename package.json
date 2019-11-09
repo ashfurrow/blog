@@ -96,6 +96,7 @@
     "gatsby-remark-smartypants": "^2.1.14",
     "inflected": "^2.0.4",
     "moment": "^2.24.0",
+    "react-instagram-embed": "^1.5.0",
     "react-responsive-embed": "^2.1.0",
     "react-spring": "^8.0.27",
     "yaml": "^1.7.2"

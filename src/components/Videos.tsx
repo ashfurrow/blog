@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactResponsiveEmbed } from './ReactResponsiveEmbed'
+import Narrow from './Narrow'
 
 export const YouTube: React.FC<{ videoID: string }> = ({ videoID }) => (
   <ReactResponsiveEmbed
@@ -20,5 +21,6 @@ export const SpeakerDeck: React.FC<{
     src={`//speakerdeck.com/player/${videoID}`}
     allowFullScreen
     {...(fourByThree && { ratio: '4:3' })}
+    narrow
   />
 )
