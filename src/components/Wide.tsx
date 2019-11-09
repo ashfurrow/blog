@@ -4,8 +4,8 @@ import { media } from '../utils/media'
 // col-lg-10 col-lg-offset-1 col-md-12
 const Wide = styled.div`
   position: relative;
-  width: 83vw;
-  margin-left: -41.5vw;
+  width: 75vw;
+  margin-left: -37.5vw;
   left: 50%;
 
   @media ${media.tablet} {

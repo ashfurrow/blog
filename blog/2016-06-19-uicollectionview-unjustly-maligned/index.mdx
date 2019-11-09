@@ -1,16 +1,15 @@
 ---
 title: "UICollectionView: Unjustly Maligned"
-date: 2016-06-19 01:18:29 UTC
-link_to: collectionview
-background_image: /img/blog/uicollectionview-unjustly-maligned/background.jpg
-background_image_source: https://twitter.com/CloudyConway/status/743938332758056961
+date: 2016-06-19
+banner: background.jpg
+bannerAttribution: https://twitter.com/CloudyConway/status/743938332758056961
 ---
+
 
 When iOS 6 launched, I was so excited because Apple added a new class to UIKit: UICollectionView. At the time, I was working at 500px, so displaying photos in a grid was like 80% of my job. Understandably, I was excited.
 
 Sadly, collection views are one of the most unjustly maligned classes in UIKit. They have a reputation for being difficult to work with, but I think that if people's expectations of collection views were more informed, they might see collection views for what they are: a flexible, high-performance way to display collections of data.
 
-(READMORE)
 
 ---
 
@@ -24,11 +23,11 @@ This post is a story of how collection views helped me implement a really challe
 
 Orta and I were looking over the design spec for a major new feature of the Artsy app, but we had a problem. Our designer had an awesome design that we didn’t know how to implement. The idea was that the user is looking at a list of lots in an auction, and we want to make sure that the _current_ lot is always visible. When the user scrolled, the current lot would stick to the top or bottom of the view as the rest of the lots scrolled beneath it. Kind of like UITableView section headers, but in both directions.
 
-BEGIN_NARROW
+<Narrow>
 
-![Implemented design](/img/blog/uicollectionview-unjustly-maligned/implemented.gif)
+![Implemented design](./implemented.gif)
 
-END_NARROW
+</Narrow>
 
 We weren't quite sure how to implement this, so we let the team know it was a big question mark. But in our haste to estimate how long it would take to build this feature, we jumped to the conclusion that this would be built atop a UITableView. It didn’t occur to either of us that there might be a better, non-UITableView option. For a minimal viable auctions app, it wasn’t strictly needed, and was a big question mark in terms of time, so we put it at the end, if we had time.
 
@@ -40,11 +39,11 @@ Orta was impressed with the simplicity of the solution and asked if collection v
 
 On the main auction view, iPhone users swipe left and right to traverse forward and backwards through the auction's lots. On larger screens, we have space to show a preview of the next (and reminder of the previous) lot.
 
-BEGIN_NARROW
+<Narrow>
 
-![Design spec gif](/img/blog/uicollectionview-unjustly-maligned/spec.gif)
+![Design spec gif](./spec.gif)
 
-END_NARROW
+</Narrow>
 
 Our efforts so far had been frustrating – this kind of interface is difficult to build from scratch with UIScrollView. Complicating things was how the lot view controllers themselves were displayed: UIPageViewController, an infamously opaque API.
 
@@ -66,7 +65,7 @@ Now that I have the current sizes of the cells at rest and at the destinations, 
 
 At this point, I know that the size and position of every cell at rest and at its destination, and I can interpolate between those values. [Linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) is the mathematic formula to take two values `a` and `b`, and a percentage `r`, to calculate the value at `r`% between `a` and `b`. 
 
-BEGIN_WIDE
+<Wide>
 
 ```swift
 func interpolateFrom(a: CGFloat, to b: CGFloat, ratio: CGFloat) -> CGFloat {
@@ -75,7 +74,7 @@ func interpolateFrom(a: CGFloat, to b: CGFloat, ratio: CGFloat) -> CGFloat {
 }
 ```
 
-END_WIDE
+</Wide>
 
 I can calculate the percentage that the user has scrolled based on the collection view's `contentSize.width` compared to its `contentOffset.x`. After all the upfront calculations, which store their values in a series of `typealias`'d tuples, it's an easy matter to interpolate between their at-rest and destination size and position. And then we [tell](https://github.com/artsy/eigen/blob/05d2f381f479340adb01ad845045e41756fd2883/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift#L70-L73) the collection view to re-do these calculations every time the scroll view is scrolled. 
 
@@ -83,11 +82,11 @@ I can calculate the percentage that the user has scrolled based on the collectio
 
 Oh, I forgot to mention that the whole thing _also_ has to resize in a neat animation that squishes the centre cell and pushes the previous and next ones away. Since we had the existing infrastructure of the layout pipeline, adding in an additional variable was straightforward ([PR](https://github.com/artsy/eigen/pull/1506)). 
 
-BEGIN_NARROW
+<Narrow>
 
-![Finished product gif](/img/blog/uicollectionview-unjustly-maligned/finished.gif)
+![Finished product gif](./finished.gif)
 
-END_NARROW
+</Narrow>
 
 I wanted to make sure that the layout was easy to maintain for my team, so I laid things out logically and added comments to explain everything. Understanding the file's [current version](https://github.com/artsy/eigen/blob/7ac7620c77b4aff306853d13c0cecf4044b4f4d2/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift) doesn't require anything more than a basic familiarity with collection view flow layouts.
 
@@ -96,3 +95,5 @@ I wanted to make sure that the layout was easy to maintain for my team, so I lai
 Collection views were a familiar, at-hand tool for me, but don't think this was an easy job. It took a lot of work. But it demonstrates that collection views can be used to create immersive interfaces, both simple and complex.
 
 UICollectionView is an unjustly maligned class, avoided by developers because of it's complexity when compared to UITableView. But developers forget that collection views solve a very different problem. And with all the further enhancements that iOS 10 brings, I'll need to update [my book](http://amzn.to/1S6eWUt) 😉
+
+  

@@ -1,15 +1,15 @@
 ---
 title: Building Popular Projects
-date: 2016-03-08 02:42:36 UTC
-background_image: /img/blog/building-oss-frameworks/background.jpg
-background_image_source: https://twitter.com/CloudyConway/status/706465122202603522
+date: 2016-03-08
+banner: background.jpg
+bannerAttribution: https://twitter.com/CloudyConway/status/706465122202603522
 ---
+
 
 We're seeing an explosion in the number of server-side Swift frameworks, which is _awesome_. The community needs to go in many directions to find out which ideas it should standardize on. Not all of these new libraries will be long-lived: some will fade out while others will become pillars of the server-side Swift community. _Which_ libraries the community centres around won't depend solely on code quality; it'll depend heavily on _community_ quality.
 
 So if you've recently created a server-side Swift library (or if you want to (and statistically, you _probably_ do)) then I have some suggestions on how to win the server-side Swift library arms race.
 
-(READMORE)
 
 Now, the longevity and popularity of your library depends on both the quality of its code and of its community. I won't tell you how to measure code, but here are some tips to create a quality community and increase the chances that _your_ library is the _the_ library the community chooses.
 
@@ -33,11 +33,11 @@ The biggest existential threat to your library is this: you get burned out and s
 
 After watching [this talk](https://www.youtube.com/watch?v=e_-qV8waPVM), I became convinced of the idea that a project should add contributors as early as possible. What that means is up to you. My answer is this: After any pull request – any one at all – I offer an invitation to its author to join the library's contributors. This happens often enough that I have Text Expander snippets, like this one:
 
-BEGIN_WIDE
+<Wide>
 
 > Hey there! Thanks a lot for contributing to Moya! I've invited you to join the Moya GitHub organization – no pressure to accept! If you'd like more information on what that means, check out our [contributor guidelines](https://github.com/Moya/contributors) and feel free to reach out with any questions.
 
-END_WIDE
+</Wide>
 
 You might be thinking "wow, contributor access after a _single_ merged PR sounds pretty risky", but you'd be wrong. What could possibly go awry? Are you're worried that something that shouldn't could get into `master`? Just protect the `master` branch from force pushes (in your repository's settings) so that you have a guaranteed-to-be-unbroken history on master, and then you can revert anything if it ever comes up. And you know what? It probably won't come up.
 
@@ -55,11 +55,11 @@ Prospective contributors will feel more comfortable if they know they won't be b
 
 I really like [the contributor covenant](http://contributor-covenant.org), which is written around this promise:
 
-BEGIN_WIDE
+<Wide>
 
 > In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-END_WIDE
+</Wide>
 
 Amazing, that is an awesome pledge, count me in.
 
@@ -86,3 +86,5 @@ You don't strictly _need_ these, but they help. I usually link to [Moya's contri
 These suggestions are focused on what your _library_ needs to be awesome; they're not focused on you. That may sound harsh, but I'd rather be honest than lead you on. The truth is, building an awesome library has a lot less to do with code than you might think. If you don't want to deal with building a community – if you just wanna code – that's totally cool, but you should consider finding a library already out there and contributing to it. 
 
 And sending the maintainers this blog post couldn't hurt either 😉
+
+  

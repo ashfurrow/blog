@@ -165,7 +165,12 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
           'gatsby-remark-smartypants',
-          'gatsby-remark-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200
+            }
+          },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
@@ -206,7 +211,12 @@ module.exports = {
           'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
           'gatsby-remark-smartypants',
-          'gatsby-remark-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200
+            }
+          },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {

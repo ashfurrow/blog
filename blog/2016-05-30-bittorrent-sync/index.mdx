@@ -1,16 +1,16 @@
 ---
 title: Securing a BitTorrent Sync EC2 Instance
-date: 2016-05-30 16:23:22 UTC
-og_image: /img/blog/bittorrent-sync/dashboard.png
-background_image: /img/blog/bittorrent-sync/background.jpg
-background_image_source: https://twitter.com/CloudyConway/status/737279203532541952
+date: 2016-05-30
+banner: background.jpg
+bannerAttribution: https://twitter.com/CloudyConway/status/737279203532541952
+socialImage: /img/blog/bittorrent-sync/dashboard.png
 ---
+
 
 Dropbox is a jewel of the Y-Combinator industrial complex: a successful company that provides software as a service to ordinary people. They even allegedly [turned down an acquisition offer from Steve Jobs](http://techcrunch.com/2011/10/18/dropbox-said-no-to-nine-digits-acquisition-offer-from-apple-steve-jobs/). Their success is no small feat, but sadly it appears that they had to make a deal with the devil to achieve so much. 
 
 From my perspective, the company has been acting suspiciously for a while. Appointing [George W. Bush's Secretary of State to their Board](http://bits.blogs.nytimes.com/2014/04/18/protests-continue-against-dropbox-after-appointing-condoleezza-rice-to-board/) was a big red flag. It inspired a whole [Drop Dropbox](http://www.drop-dropbox.com/) movement. I've been uneasy about Dropbox, but when they announced they'd be integrating in with my [operating system's kernel](https://blogs.dropbox.com/tech/2016/05/going-deeper-with-project-infinite/), I decided to move away from them. 
 
-(READMORE)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Things I don&#39;t want: <a href="https://twitter.com/hashtag/Dropbox?src=hash">#Dropbox</a> up in my kernel. <a href="https://t.co/p4LV87cKYy">pic.twitter.com/p4LV87cKYy</a></p>&mdash; Dusty (@duspom) <a href="https://twitter.com/duspom/status/735263193497505792">May 25, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -80,7 +80,7 @@ When you first create your EC2 instance, you're given a certificate to log into 
 
 First, configure your security group in EC2 to restrict port 80 access to `127.0.0.1/0` (instead of `0.0.0.0/0`, which means "anyone").
 
-![Security Policy](/img/blog/bittorrent-sync/security.png)
+![Security Policy](./security.png)
 
 Then open a terminal and use the following command:
 
@@ -90,7 +90,7 @@ ssh -i path/to/your/certificate.pem -N -L  9000:ec2-XX-XXX-XXX-XXX.compute-1.ama
 
 This command redirects traffic from port 9000 locally over the SSH tunnel to port 80 on `ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com` on the other side of the tunnel. Modify `path/to/your/certificate.pem` to point to your actual EC2 certificate that was created when you launched the instance, and change `ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com` to be the public DNS of the instance.
 
-![Dashboard accessed through SSH tunnelling](/img/blog/bittorrent-sync/dashboard.png)
+![Dashboard accessed through SSH tunnelling](./dashboard.png)
 
 Run the command and go to `localhost:9000` on your computer. With BitTorrent Sync is running on the EC2 instance, you'll be prompted for your username and password to access the dashboard. Since all the traffic is routed over the SSH tunnel, no one can sniff out the plaintext credentials.
 
@@ -105,3 +105,5 @@ While I was critical of BitTorrent Sync's documentation, it _is_ a step in the r
 ---
 
 Thanks to [Jeremy Beker](https://twitter.com/gothmog‬), [Aaron Vegh](https://twitter.com/aaronvegh), [Orta Therox](https://twitter.com/orta), and of course [my wife](https://twitter.com/ashleykrista) for their help proofreading this post.
+
+  
