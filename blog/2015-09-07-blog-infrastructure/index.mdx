@@ -1,15 +1,15 @@
 ---
 title: Blog Infrastructure
-date: 2015-09-07 16:27:55 UTC
-background_image: /img/blog/blog-infrastructure/background.png
-background_image_source: https://twitter.com/CloudyConway/status/640181721326059520
+date: 2015-09-07
+banner: background.png
+bannerAttribution: https://twitter.com/CloudyConway/status/640181721326059520
 ---
+
 
 My blog's current incarnation's birthday is approaching – it's been nearly a year since I [put a fresh coat of paint](/blog/fresh-coat-of-paint/) on an otherwise boring-looking site. In order to design and build it, I had to [master some basics of web development](/blog/blog-transition-retrospective/). After its launch, I've not stopped learning and improving it.
 
 At times, I've gone a bit overboard, but I've been able to justify the time and energy because it's been educational. My blog has been a good side project to learn new things on. It's something I care about, but updates to it are almost certainly never urgent. It's a low-risk thing I'm motivated to work on.
 
-(READMORE)
 
 Recently, I've been busy. I've [switched to using haml](https://github.com/ashfurrow/blog/pull/124), [put the site on CloudFlare](https://github.com/ashfurrow/blog/pull/132), and [tried moving to GitHub pages instead of S3](https://github.com/ashfurrow/blog/tree/archive-gh-pages).
 
@@ -35,7 +35,7 @@ I spent significant time reducing the number of round trips the browser. This wa
 
 I checked back with the PageSpeed tester, and I checked. My score _had_ improved, but only from 74% to 84%. 
 
-![Sadness](/img/blog/blog-infrastructure/sad.gif)
+![Sadness](./sad.gif)
 
 I had to tackle the main problem: CSS.
 
@@ -49,10 +49,12 @@ I [found a tool](https://jonassebastianohlsson.com/criticalpathcssgenerator/) th
 
 I pushed the changes, waited for the deploy, and Google was happy. 
 
-![A perfect score.](/img/blog/blog-infrastructure/results.png)
+![A perfect score.](./results.png)
 
 I'm sure there are things I'm not doing correctly, or optimally. If you have feedback or suggestions, [just open an issue](https://github.com/ashfurrow/blog/issues/new).
 
 It's remarkable that I've been able to take my site from something simple to something _just_ sophisticated enough – I'm quite proud of it. 
 
 A year ago, if you told me to embed some CSS in the pages, I'd have just pasted it in. But now I'm comfortable enough to be clever about where I put it. It's a small change, but it's indicative of a broader perspective. My comfort zone has grown, and I'm excited to see what kinds of new challenges I'll take on next. 
+
+  
