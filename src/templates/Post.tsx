@@ -18,17 +18,12 @@ import '../utils/prismjs-theme.css'
 import Post from '../models/Post'
 import { MDXProvider } from '@mdx-js/react'
 import Narrow from '../components/Narrow'
-import _Wide from '../components/Wide'
+import Wide from '../components/Wide'
 import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
 import { YouTube, Video, SpeakerDeck } from '../components/Videos'
 import Theme from '../../config/Theme'
 import PageContext from '../models/PageContext'
-import InstagramEmbed from 'react-instagram-embed'
-const Instagram = InstagramEmbed
-
-const Wide: React.FC = ({ children }) => (
-  <MDXRenderer>{children as any}</MDXRenderer>
-)
+import Instagram from 'react-instagram-embed'
 
 const ShortCodes = {
   Narrow,
