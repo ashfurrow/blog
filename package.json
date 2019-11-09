@@ -99,6 +99,7 @@
     "react-instagram-embed": "^1.5.0",
     "react-responsive-embed": "^2.1.0",
     "react-spring": "^8.0.27",
+    "react-twitter-embed": "^3.0.3",
     "yaml": "^1.7.2"
   }
 }

@@ -24,6 +24,13 @@ import { YouTube, Video, SpeakerDeck } from '../components/Videos'
 import Theme from '../../config/Theme'
 import PageContext from '../models/PageContext'
 import Instagram from 'react-instagram-embed'
+import { TwitterTweetEmbed } from 'react-twitter-embed'
+
+const Tweet: React.FC<{ tweetID: string }> = ({ tweetID }) => (
+  <Narrow style={{ marginBottom: '1.66rem' }}>
+    <TwitterTweetEmbed tweetId={tweetID} />
+  </Narrow>
+)
 
 const ShortCodes = {
   Narrow,
@@ -32,7 +39,8 @@ const ShortCodes = {
   YouTube,
   Video,
   SpeakerDeck,
-  Instagram
+  Instagram,
+  Tweet
 }
 
 const PostContent = styled.div`

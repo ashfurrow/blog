@@ -10,3 +10,14 @@ declare module '@mdx-js/react' {
   }
   export class MDXProvider extends React.Component<MDXProps> {}
 }
+
+declare module 'react-twitter-embed' {
+  import { ComponentType } from 'react'
+
+  type TwitterTweetEmbedProps = {
+    tweetId: string
+  }
+  export class TwitterTweetEmbed extends React.Component<
+    TwitterTweetEmbedProps
+  > {}
+}
