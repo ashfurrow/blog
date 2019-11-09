@@ -22,10 +22,12 @@ const Wrapper = styled.div`
   }
 `
 
-const Button = styled.div`
+export const Button = styled.div`
   border: 1px ${Theme.colors.grey.default} solid;
   width: 45%;
   padding: 0.5rem 1rem;
+  font-family: ${config.headerFontFamily};
+  text-align: center;
 
   @media ${media.tablet} {
     width: 100%;
@@ -47,7 +49,6 @@ const Button = styled.div`
 `
 
 const Prev = styled(Button)`
-  text-align: center;
   float: left;
 `
 
@@ -58,7 +59,6 @@ const Next = styled(Button)`
 
 const LinkText = styled.div`
   text-transform: uppercase;
-  font-family: ${config.headerFontFamily};
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -13,5 +13,5 @@
     "removeComments": false,
     "preserveConstEnums": true
   },
-  "include": ["./src/**/*", "./bootup/**/*", "./scripts/**/*"]
+  "include": ["./src/**/*", "./bootup/**/*", "./scripts/**/*", "./blog/**/*"]
 }
