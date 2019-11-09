@@ -1,6 +1,5 @@
 import React from 'react'
 import { ReactResponsiveEmbed } from './ReactResponsiveEmbed'
-import Narrow from './Narrow'
 
 export const YouTube: React.FC<{ videoID: string }> = ({ videoID }) => (
   <ReactResponsiveEmbed
