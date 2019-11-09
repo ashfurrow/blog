@@ -107,7 +107,9 @@ export default class HomePage extends React.Component<Props> {
 
 export const query = graphql`
   query {
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(
+      sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
+    ) {
       totalCount
       edges {
         node {
