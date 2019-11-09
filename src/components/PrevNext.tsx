@@ -12,7 +12,7 @@ const HR = styled.hr`
 `
 
 const Wrapper = styled.div`
-  margin: 4rem auto;
+  margin: 2rem auto 0;
   overflow: auto;
   @media ${media.tablet} {
     margin: 0.5rem auto 1rem;
