@@ -25,7 +25,8 @@ import {
   Video,
   SpeakerDeck,
   SoundCloud,
-  Spotify
+  Spotify,
+  Toot
 } from '../components/Videos'
 import Theme from '../../config/Theme'
 import PageContext from '../models/PageContext'
@@ -56,7 +57,8 @@ const ShortCodes = {
   Instagram,
   Tweet,
   SoundCloud,
-  Spotify
+  Spotify,
+  Toot
 }
 
 const PostContent = styled.div`

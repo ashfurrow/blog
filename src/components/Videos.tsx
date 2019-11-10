@@ -49,3 +49,15 @@ export const Spotify: React.FC<{ src: string }> = ({ src }) => (
     />
   </Narrow>
 )
+
+export const Toot: React.FC<{ src: string }> = ({ src }) => (
+  <Narrow style={{ marginBottom: '1.66rem' }}>
+    <iframe
+      src={src}
+      className="mastodon-embed"
+      style={{ minHeight: '250px', border: '0' }}
+      width="100%"
+      allowFullScreen={true}
+    />
+  </Narrow>
+)
