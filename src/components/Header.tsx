@@ -10,6 +10,7 @@ const HeaderWrapper: any = styled.header<{
   banner: string
 }>`
   position: relative;
+  margin: -5px; /* Some CloudyConway images have a white edge, which we hide here. */
   /* Abusing linear-gradient for a constant dim effect. */
   background: linear-gradient(
       ${() => rgba(0, 0, 0, 0.2)},
@@ -17,12 +18,12 @@ const HeaderWrapper: any = styled.header<{
     ),
     url(${({ banner }) => banner}) no-repeat;
   background-size: cover;
-  padding: 8rem 2rem 10rem;
+  padding: 6rem 14rem 8rem;
   text-align: center;
   z-index: 5;
 
   @media ${media.tablet} {
-    padding: 4rem 2rem 6rem;
+    padding: 4rem 9.5rem 6rem;
   }
   @media ${media.phone} {
     padding: 1rem 0.5rem 2rem;

@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     @media ${media.phone} {
       font-size: 14px;
     }
+    font-variant-ligatures: common-ligatures;
   }
   a {
     color: ${theme.colors.primary};
@@ -143,7 +144,7 @@ export class Layout extends React.PureComponent<{}, State> {
         query={graphql`
           query LayoutQuery {
             site {
-              buildTime(formatString: "DD.MM.YYYY")
+              buildTime(formatString: "MMMM D, YYYY")
             }
           }
         `}

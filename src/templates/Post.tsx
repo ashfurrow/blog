@@ -100,12 +100,11 @@ export default class PostPage extends React.PureComponent<Props> {
               }
               bannerAttribution={post.frontmatter.bannerAttribution}
             >
-              <Link to="/">{config.siteTitle}</Link>
-              <SectionTitle>{post.frontmatter.title}</SectionTitle>
-              <Subline light={true}>
-                {post.frontmatter.date} &mdash; {post.timeToRead} Min Read
-                &mdash; In{' '}
-              </Subline>
+              <SectionTitle left>{post.frontmatter.title}</SectionTitle>
+              <Line />
+              <Date dateTime={post.frontmatter.standardDate}>
+                {post.frontmatter.date}
+              </Date>
             </Header>
             <Wrapper>
               <Content>
@@ -128,6 +127,21 @@ export default class PostPage extends React.PureComponent<Props> {
   }
 }
 
+const Line = styled.hr`
+  color: white;
+  width: 5rem;
+  float: left;
+  margin: 0.5rem 0;
+  height: 3px;
+`
+
+const Date = styled.time`
+  color: white;
+  float: left;
+  clear: both;
+  font-family: ${config.headerFontFamily};
+`
+
 export const postQuery = graphql`
   query($id: String!) {
     mdx(id: { eq: $id }) {
@@ -139,7 +153,8 @@ export const postQuery = graphql`
       }
       frontmatter {
         title
-        date(formatString: "DD.MM.YYYY")
+        date(formatString: "MMMM D, YYYY")
+        standardDate: date(formatString: "YYYY-MM-DD")
         banner {
           publicURL
         }

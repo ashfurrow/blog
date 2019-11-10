@@ -61,7 +61,7 @@ export const query = graphql`
           }
           frontmatter {
             title
-            date(formatString: "DD.MM.YYYY")
+            date(formatString: "MMMM D, YYYY")
           }
           excerpt(pruneLength: 200)
           timeToRead
