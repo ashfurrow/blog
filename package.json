@@ -10,6 +10,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "postinstall": "patch-package",
     "postbuild": "mv public build",
     "start": "gatsby develop",
     "clean": "gatsby clean",
@@ -50,6 +51,8 @@
     "lint-staged": "^7.3.0",
     "lodash": "^4.17.11",
     "node-sass": "^4.9.4",
+    "patch-package": "^6.2.0",
+    "postinstall-postinstall": "^2.0.0",
     "polished": "^2.2.0",
     "prettier": "^1.14.3",
     "prismjs": "^1.15.0",
