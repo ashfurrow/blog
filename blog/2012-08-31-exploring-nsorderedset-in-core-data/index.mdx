@@ -96,7 +96,7 @@ So the results translate over nicely, that's good. Since we can test for inclusi
 
 Let's see how `NSOrderedSet` handles `indexOfObject:`.
 
-![](DC25A86EAFAB4702B0CBCF07BA39E111.png) ![](BAAAC401380342B68502478CE945826C.png) ![](2420B1F219AC4283896E63DE1745B889.png) ![](527F9CCCB31F495CA1882BDB6EAE986C.png) ![](B4B35F4668134A95AA847263F81AE2A4.png) ![](5E8811D3716D426AB8AA2B7EC76DA724.png)
+![](DC25A86EAFAB4702B0CBCF07BA39E111.png)![](BAAAC401380342B68502478CE945826C.png)![](2420B1F219AC4283896E63DE1745B889.png)![](527F9CCCB31F495CA1882BDB6EAE986C.png)![](B4B35F4668134A95AA847263F81AE2A4.png)![](5E8811D3716D426AB8AA2B7EC76DA724.png)
 
 That's super-interesting! It looks like the longest-running invocation of the `indexOfObject:` is the _second_ one. Huh.
 
@@ -172,7 +172,7 @@ for (unsigned long int passes = 100; passes <= 10000000; passes *= 10)
 
 Hacky, sure, but whatever. Let's take a look at the test results for 100-item ordered sets
 
-![](CDDBEEA9EFF649AC9A659BA0C5C679DA.png) ![](F24C924537A94CD097A8BB3DFFFBC806.png)
+![](CDDBEEA9EFF649AC9A659BA0C5C679DA.png)![](F24C924537A94CD097A8BB3DFFFBC806.png)
 
 There's the money shot. The first invocation still has a larger time than subsequent ones, and is probably due to the re-balancing of the tree. Additionally, though there is a longer run time on the first invocation, it isn't as significant in the context of the tests with larger ordered sets.
 

@@ -6,7 +6,7 @@ date: 2012-08-24
 
 Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring.
 
- ![](36A0D5D3B0B24483B02E652F53987E58.png)
+![](36A0D5D3B0B24483B02E652F53987E58.png)
 
 I've decided that the push notifications button should be red so more users tap on it. I think this design decision's a winner, so I'm not even going to run it by the designer first.
 
@@ -36,23 +36,23 @@ I can see the rationale behind this class; you supply a black and white image an
 
 In the above screenshot, the image used to create the notifications `UIBarButtonItem` looks something like the following:
 
- ![](F8D3867C5BC4452DAC0C9BE2584016D8.png)
+![](F8D3867C5BC4452DAC0C9BE2584016D8.png)
 
 `UIBarButtonItem` would take this image and figure out what it was _supposed_ to look like, given the properties of the bar it was contained in.
 
 As another example, `UITabBar` renders images with a blue gradient and nice overlay depending on if its tab was selected:
 
- ![](A3390B33CC1D4BA6AF60B1A7EEF861B8.jpg)
+![](A3390B33CC1D4BA6AF60B1A7EEF861B8.jpg)
 
 Those tab bar buttons are all drawn using a single, black and white `png` and are re-rendered if they become selected, as "Songs" currently is.
 
 If you want to circumvent the default appearence of the bar button item, then you can provide a custom view to be placed within the `UIBarButtonItem` without any custom drawing performed on it. The easiest way to do this is provide a `UIImageView` with your new custom image in it. For example, if I took the notification icon used above and replaced it with a red icon, I could achieve this effect in the 500px iPad app:
 
- ![](BEE259C5A030421CB65C5D8012123F70.png)
+![](BEE259C5A030421CB65C5D8012123F70.png)
 
 Using this new icon as a `UIImageView` custom view with `UIBarButtonItem`'s `initWithCustomView:` initializer, I'll get the following effect:
 
- ![](9E6BCEDFF1564134A3449996EDA4205B.png)
+![](9E6BCEDFF1564134A3449996EDA4205B.png)
 
 Awesome! I think this is a huge improvement. I can't wait to show it to Adam to see what he thinks.
 

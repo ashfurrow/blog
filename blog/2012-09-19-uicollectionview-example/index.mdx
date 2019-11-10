@@ -14,21 +14,21 @@ Create a new Xcode project using the "Master-Detail Application" template.
 
 Open the main Storyboard file. We're going to throw away the existing table view and replace it with a great new collection view. The easiest way to do that is to select the existing Master View Controller, shown below, and hit the delete key.
 
- ![](D64FDC4D8F644D60A15675757BC8EA95.png)
+![](D64FDC4D8F644D60A15675757BC8EA95.png)
 
 Now that the Master View Controller is missing, we need to re-add it. Go to your Master View Controller's `.h` file and change it from inheriting from `UITableViewController` to `UICollectionViewController`. You'll get some compiler errors; ignore them for now.
 
 Drag a new `UICollectionViewController` form the library. Right click and drag from the Navigation Controller onto the collection view controller and select the "root view controller" outlet.
 
- ![](BDF26DDF70744C57813ED87D31033FAF.png)
+![](BDF26DDF70744C57813ED87D31033FAF.png)
 
 Right. Almost there. Open the identity inspector (⌘⎇3) and give the new UICollectionViewController the class name of your Master View Controller.
 
- ![](3B0B5635D36F497B84851AA27A9494C7.png)
+![](3B0B5635D36F497B84851AA27A9494C7.png)
 
 We'll worry about the segues later. For now, go to the `UICollectionViewController` subclass' `.m` file. We'll fix those compiler errors now.
 
- ![](8A0115CB76E64B218DCD9E158D6AF93D.png)
+![](8A0115CB76E64B218DCD9E158D6AF93D.png)
 
 It's always something with you, isn't it, Xcode?
 
@@ -56,11 +56,11 @@ You'll also need to modify the `insertSections:withRowAnimation:` method calls, 
 
 Once you deal with all of the transition, you have a an app that runs, but is empty. Let's fill it with beautiful photos.
 
- ![](226450BE3A464F44B4A4B8706BDC0612.png)
+![](226450BE3A464F44B4A4B8706BDC0612.png)
 
 We need a data model. Since we're smart, accomplished, and handsome developers, let's use Core Data. Create the following Core Data model.
 
- ![](3E628B26764C4ACDA973588CAE0C2678.png)
+![](3E628B26764C4ACDA973588CAE0C2678.png)
 
 All we need is a `photoRating` to sort by and `photoImageData` to display actual images, but let's add a `photoName` for the detail view.
 
@@ -68,7 +68,7 @@ We need to configure the prototype cell used by the collection view. Create a ne
 
 Go to the Storyboard and select the protoype cell in the collection view. In the identity inspector, set it's class to the `UICollectionView` subclass you just created. Add a `UIImageView` to the prototype cell and connect the outlet.
 
- ![](2E0D5ECB395F41DEA921597398D5E79E.png)
+![](2E0D5ECB395F41DEA921597398D5E79E.png)
 
 Make sure to set the `Identifier` in the Storyboard or the collection view won't dequeue the proper class.
 
@@ -283,13 +283,13 @@ The fetched results controller will take care of that magic for us. We just need
 }
 ```
 
- ![](E8ECC8892EEB418D9FE04C6A04AD5436.png)
+![](E8ECC8892EEB418D9FE04C6A04AD5436.png)
 
 I went to the liberty of adjusting the sizes to make things pretty - nice app! Let's connect the detail view controller now.
 
 Open the Storyboard and right-click on the prototype cell. We'll be connecting the `selection` triggered segue to the detail view controller. Drag the circle beside `selection` to the detail view controller and choose "push" from the menu that appears.
 
- ![](AF66949DE9D6407C8288A2B406292DB8.png)
+![](AF66949DE9D6407C8288A2B406292DB8.png)
 
 Select the segue and make sure its identifier is set to "showDetail".
 
@@ -323,7 +323,7 @@ In the master view controller, `prepareForSegue:sender:` should look like the fo
 
 Run the app, tap on a photo, and you'll see the following:
 
- ![](2E826D143C214E178029F7B19AE16936.png)
+![](2E826D143C214E178029F7B19AE16936.png)
 
 Looks great!
 
