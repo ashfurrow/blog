@@ -62,7 +62,7 @@ class Navbar extends React.Component<Props, State> {
                 }}
               />
             </Link>
-            <NavLinks clear={clear}>
+            <NavLinks className="navbar" clear={clear}>
               <Link to="/blog">Blog</Link>
               <Link to="/about">About</Link>
               <Link to="/books">Books</Link>

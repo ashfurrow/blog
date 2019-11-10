@@ -39,9 +39,6 @@ const GlobalStyle = createGlobalStyle`
       color: ${theme.colors.grey.dark};
     }
   }
-  time {
-    font-
-  }
   /* Only h1's have the header font family. */
   h1 {
     font-family: ${config.headerFontFamily}
@@ -57,6 +54,14 @@ const GlobalStyle = createGlobalStyle`
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  /* Fixes FOUC bug on navbar FontAWesome icons. */
+  .navbar {
+    a {
+      svg {
+        height: 0.75rem;
+      }
+    }
   }
 
   blockquote:before {

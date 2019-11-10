@@ -13,6 +13,7 @@
     "postinstall": "patch-package",
     "postbuild": "mv public build",
     "start": "gatsby develop",
+    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "tslint --project .",
     "lint:fix": "tslint --fix --project .",
