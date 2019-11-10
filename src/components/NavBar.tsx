@@ -6,6 +6,7 @@ import BurgerMenu from './BurgerMenu'
 import CollapseMenu from './CollapseMenu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faRssSquare } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'gatsby'
 
 interface Props {
   handleNavBar: () => void
@@ -45,8 +46,8 @@ class Navbar extends React.Component<Props, State> {
       <>
         <Bar clear={clear}>
           <FlexContainer>
-            <a
-              href="/"
+            <Link
+              to="/"
               style={{
                 height: '1.25rem',
                 margin: 'auto 0'
@@ -60,19 +61,19 @@ class Navbar extends React.Component<Props, State> {
                   height: '75%'
                 }}
               />
-            </a>
+            </Link>
             <NavLinks clear={clear}>
-              <a href="/blog">Blog</a>
-              <a href="/about">About</a>
-              <a href="/books">Books</a>
-              <a href="/portfolio">Portfolio</a>
-              <a href="/speaking">Speaking</a>
-              <a href="/search">
+              <Link to="/blog">Blog</Link>
+              <Link to="/about">About</Link>
+              <Link to="/books">Books</Link>
+              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/speaking">Speaking</Link>
+              <Link to="/search">
                 <FontAwesomeIcon icon={faSearch} />
-              </a>
-              <a href="/feed.xml">
+              </Link>
+              <Link to="/feed.xml">
                 <FontAwesomeIcon icon={faRssSquare} />
-              </a>
+              </Link>
             </NavLinks>
             <BurgerWrapper>
               <BurgerMenu
@@ -102,7 +103,7 @@ const Bar = styled.nav<{ clear: boolean }>`
   left: 0;
   background: ${({ clear }) => (clear ? 'clear' : theme.colors.white)};
   z-index: 100;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 `
 
 const FlexContainer = styled.div`
@@ -126,6 +127,7 @@ const NavLinks = styled.ul<{ clear: boolean }>`
     padding-left: 1.5rem;
     text-decoration: none;
     font-family: ${config.headerFontFamily};
+    max-height: 0.75rem;
 
     &:hover {
       color: ${theme.colors.primary};
