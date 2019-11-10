@@ -8,7 +8,9 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
   const postTemplate = Path.resolve(`src/templates/Post.tsx`)
   return graphql(`
     {
-      allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMdx(
+        sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
+      ) {
         edges {
           node {
             excerpt(pruneLength: 250)

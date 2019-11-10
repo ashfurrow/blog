@@ -61,7 +61,7 @@ module.exports = {
             query: `
               {
                 allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
                   limit: 10,
                 ) {
                   edges {
@@ -96,7 +96,7 @@ module.exports = {
             query: `
               {
                 allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { order: DESC, , frontmatter___title] },
                   limit: 10,
                 ) {
                   edges {

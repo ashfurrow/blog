@@ -10,7 +10,7 @@ const main = async () => {
     const oldPostsPath = path.join(__dirname, '../old/source/blog')
     const posts = await fs.readdir(oldPostsPath)
     await Promise.all(
-      take(posts.filter(p => p.endsWith('.html.markdown')), 25).map(migratePost)
+      take(posts.filter(p => p.endsWith('.html.markdown')), 30).map(migratePost)
     )
   } catch {
     console.log('OOP')
