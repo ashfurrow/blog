@@ -2,15 +2,17 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import {
   Layout,
-  Article,
   Wrapper,
   SectionTitle,
   Header,
-  Content
+  Content,
+  SectionSubTitle
 } from '../components'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import Data from '../models/Data'
+import styled from 'styled-components'
+import { FeaturedPosts } from './FeaturedPost'
 
 interface Props {
   data: Data
@@ -25,23 +27,30 @@ export default class HomePage extends React.Component<Props> {
       <Layout>
         <Helmet title={`Blog | ${config.siteTitle}`} />
         <Header>
-          <Link to="/">{config.siteTitle}</Link>
-          <SectionTitle uppercase={true}>
-            Latest stories ({totalCount})
-          </SectionTitle>
+          <SectionTitle>Ash Furrow</SectionTitle>
+          <Line />
+          <SectionSubTitle>Compassionate Software Developer</SectionSubTitle>
         </Header>
         <Wrapper>
           <Content>
-            {edges.map(post => (
-              <Article
-                title={post.node.frontmatter.title}
-                date={post.node.frontmatter.date}
-                excerpt={post.node.excerpt}
-                timeToRead={post.node.timeToRead}
-                path={post.node.fields.path}
-                key={post.node.fields.path}
-              />
-            ))}
+            <h2 style={{ marginBottom: '1rem' }}>Get Started Here</h2>
+            <FeaturedPosts />
+            <h2 style={{ marginBottom: '1rem' }}>Recent Posts</h2>
+            <ol style={{ margin: 0 }}>
+              {edges.map(post => (
+                <li
+                  key={post.node.frontmatter.title}
+                  style={{ listStyleType: 'none', margin: 0 }}
+                >
+                  <Link to={post.node.fields.path}>
+                    <Title>{post.node.frontmatter.title}</Title>
+                    <Date dateTime={post.node.frontmatter.standardDate}>
+                      {post.node.frontmatter.date}
+                    </Date>
+                  </Link>
+                </li>
+              ))}
+            </ol>
           </Content>
         </Wrapper>
       </Layout>
@@ -52,6 +61,7 @@ export const query = graphql`
   query {
     allMdx(
       sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
+      limit: 10
     ) {
       totalCount
       edges {
@@ -62,6 +72,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM D, YYYY")
+            standardDate: date(formatString: "YYYY-MM-DD")
           }
           excerpt(pruneLength: 200)
           timeToRead
@@ -69,4 +80,20 @@ export const query = graphql`
       }
     }
   }
+`
+
+const Line = styled.hr`
+  color: white;
+  width: 5rem;
+  margin: 0.5rem auto;
+  height: 3px;
+`
+
+const Title = styled.span`
+  margin-right: 0.5rem;
+`
+
+const Date = styled.time`
+  color: rgba(0, 0, 0, 0.5);
+  font-family: ${config.headerFontFamily};
 `

@@ -7,6 +7,7 @@ import config from '../../config/SiteConfig'
 import Data from '../models/Data'
 import theme from '../../config/Theme'
 import rgba from 'polished/lib/color/rgba'
+import styled from 'styled-components'
 
 interface Props {
   data: Data
@@ -83,13 +84,15 @@ export default class HomePage extends React.Component<Props> {
                             </h2>
                             {monthPosts.map(post => (
                               <article key={post.fields.path}>
-                                <a href={post.fields.path}>
+                                <a
+                                  href={post.fields.path}
+                                  style={{ marginRight: '0.5rem' }}
+                                >
                                   {post.frontmatter.title}
                                 </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <span style={{ color: rgba(0, 0, 0, 0.5) }}>
+                                <Date dateTime={post.frontmatter.standardDate}>
                                   {post.frontmatter.formattedDate}
-                                </span>
+                                </Date>
                               </article>
                             ))}
                           </div>
@@ -104,6 +107,13 @@ export default class HomePage extends React.Component<Props> {
     )
   }
 }
+
+const Date = styled.time`
+  color: rgba(0, 0, 0, 0.5);
+  float: left;
+  clear: both;
+  font-family: ${config.headerFontFamily};
+`
 
 export const query = graphql`
   query {
@@ -120,6 +130,7 @@ export const query = graphql`
             title
             date
             formattedDate: date(formatString: "MMMM D, YYYY")
+            standardDate: date(formatString: "YYYY-MM-DD")
           }
         }
       }
