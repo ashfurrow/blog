@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactResponsiveEmbed } from './ReactResponsiveEmbed'
+import Wide from './Wide'
 
 export const YouTube: React.FC<{ videoID: string }> = ({ videoID }) => (
   <ReactResponsiveEmbed
@@ -22,4 +23,16 @@ export const SpeakerDeck: React.FC<{
     {...(fourByThree && { ratio: '4:3' })}
     narrow
   />
+)
+
+export const SoundCloud: React.FC<{ trackID?: string }> = ({ trackID }) => (
+  <Wide style={{ marginBottom: '1.66rem' }}>
+    <iframe
+      width="100%"
+      height="200"
+      scrolling="no"
+      frameBorder="no"
+      src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackID}&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true`}
+    />
+  </Wide>
 )

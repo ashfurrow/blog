@@ -20,7 +20,7 @@ import { MDXProvider } from '@mdx-js/react'
 import Narrow from '../components/Narrow'
 import Wide from '../components/Wide'
 import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
-import { YouTube, Video, SpeakerDeck } from '../components/Videos'
+import { YouTube, Video, SpeakerDeck, SoundCloud } from '../components/Videos'
 import Theme from '../../config/Theme'
 import PageContext from '../models/PageContext'
 import InstagramEmbed, {
@@ -48,7 +48,8 @@ const ShortCodes = {
   Video,
   SpeakerDeck,
   Instagram,
-  Tweet
+  Tweet,
+  SoundCloud
 }
 
 const PostContent = styled.div`
