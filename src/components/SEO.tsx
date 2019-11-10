@@ -21,7 +21,9 @@ export const SEO = (props: SEO) => {
     const postMeta = postNode.frontmatter
     title = postMeta.title
     description = postNode.excerpt
-    image = config.siteBanner
+    image = postNode.frontmatter.socialImage
+      ? postNode.frontmatter.socialImage.publicURL
+      : config.siteBanner
     postURL = config.siteUrl + realPrefix + postPath
   } else {
     title = config.siteTitle
@@ -61,7 +63,15 @@ export const SEO = (props: SEO) => {
         dateModified: postNode.frontmatter.date,
         author: {
           '@type': 'Person',
-          name: config.author
+          name: config.author,
+          url: config.siteUrl,
+          image: 'https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg',
+          sameAs: [
+            'https://twitter.com/ashfurrow',
+            'https://instagram.com/ashfurrow',
+            'https://mastodon.technology/@ashfurrow',
+            'https://github.com/ashfurrow'
+          ]
         },
         publisher: {
           '@type': 'Organization',

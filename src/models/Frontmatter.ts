@@ -7,6 +7,9 @@ interface Frontmatter {
     publicURL: string
   }
   bannerAttribution?: string
+  socialImage?: {
+    publicURL: string
+  }
 }
 
 export default Frontmatter
