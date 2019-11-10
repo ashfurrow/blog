@@ -12,7 +12,7 @@ import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import Data from '../models/Data'
 import styled from 'styled-components'
-import { FeaturedPosts } from './FeaturedPost'
+import { FeaturedPosts } from '../components/FeaturedPost'
 
 interface Props {
   data: Data

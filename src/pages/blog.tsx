@@ -34,7 +34,6 @@ export default class HomePage extends React.Component<Props> {
     const { edges } = data.allMdx
 
     const years = groupBy(edges, ({ node }) => {
-      console.log({ node })
       return new Date(node.frontmatter.date).getFullYear()
     })
     const months = Object.keys(years).map(year => {
