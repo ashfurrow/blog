@@ -15,11 +15,11 @@ export const ReactResponsiveEmbed: React.FC<{
 }> = ({ narrow, ...others }) =>
   // 1.66rem matches line height
   narrow ? (
-    <Normal style={{ marginBottom: '1.66rem' }}>
+    <Normal addBottom>
       <_ReactResponsiveEmbed {...others} />
     </Normal>
   ) : (
-    <Wide style={{ marginBottom: '1.66rem' }}>
+    <Wide addBottom>
       <_ReactResponsiveEmbed {...others} />
     </Wide>
   )
