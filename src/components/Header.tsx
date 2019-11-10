@@ -8,9 +8,11 @@ import { faImage } from '@fortawesome/free-solid-svg-icons'
 
 const HeaderWrapper: any = styled.header<{
   banner: string
+  left?: boolean
 }>`
+  display: block;
+  clear: both;
   position: relative;
-  margin: -5px; /* Some CloudyConway images have a white edge, which we hide here. */
   /* Abusing linear-gradient for a constant dim effect. */
   background: linear-gradient(
       ${() => rgba(0, 0, 0, 0.2)},
@@ -18,19 +20,35 @@ const HeaderWrapper: any = styled.header<{
     ),
     url(${({ banner }) => banner}) no-repeat;
   background-size: cover;
-  padding: 6rem 14rem 8rem;
-  text-align: center;
+  text-align: ${({ left }) => (left ? 'left' : 'center')};
   z-index: 5;
 
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   @media ${media.tablet} {
-    padding: 4rem 9.5rem 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   @media ${media.phone} {
-    padding: 1rem 0.5rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 `
 
-const Content = styled.div`
+const ContentWrapper = styled.div<{ left?: boolean }>`
+  /* margin: ${({ left }) => (left ? '0 auto auto 0' : '0 auto')}; */
+  margin: 0 auto;
+
+  width: 66.6%;
+  @media ${media.tablet} {
+    width: 83.3%;
+  }
+  @media ${media.phone} {
+    width: initial;
+  }
+`
+
+const Content = styled.div<{ left?: boolean }>`
   position: relative;
   a {
     color: white;
@@ -38,6 +56,14 @@ const Content = styled.div`
       opacity: 0.85;
       color: white;
     }
+  }
+
+  margin: 2rem 4rem;
+  @media ${media.tablet} {
+    margin: 2rem 5rem;
+  }
+  @media ${media.phone} {
+    margin: 0rem 1rem;
   }
 `
 
@@ -55,19 +81,22 @@ interface Props {
   children: any
   banner?: string
   bannerAttribution?: string
+  left?: boolean
 }
 
 export class Header extends React.PureComponent<Props> {
   public render() {
-    const { banner, bannerAttribution, children } = this.props
+    const { banner, bannerAttribution, left, children } = this.props
     return (
-      <HeaderWrapper banner={banner || config.defaultBg}>
+      <HeaderWrapper banner={banner || config.defaultBg} left={left}>
         {bannerAttribution && (
           <AttributionLink href={bannerAttribution}>
             <FontAwesomeIcon icon={faImage} />
           </AttributionLink>
         )}
-        <Content>{children}</Content>
+        <ContentWrapper left={left}>
+          <Content left={left}>{children}</Content>
+        </ContentWrapper>
       </HeaderWrapper>
     )
   }

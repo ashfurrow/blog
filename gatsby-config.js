@@ -62,6 +62,7 @@ module.exports = {
               {
                 allMdx(
                   sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
+                  filter:{ fileAbsolutePath:{glob:"**/blog/blog/**"} }
                   limit: 10,
                 ) {
                   edges {
@@ -97,6 +98,7 @@ module.exports = {
               {
                 allMdx(
                   sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
+                  filter:{ fileAbsolutePath:{glob:"**/blog/blog/**"} }
                   limit: 10,
                 ) {
                   edges {

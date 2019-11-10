@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { Layout, Wrapper, SectionTitle, Header, Content } from '../components'
 import { groupBy } from 'lodash'
 import Helmet from 'react-helmet'
@@ -34,6 +34,7 @@ export default class HomePage extends React.Component<Props> {
     const { edges } = data.allMdx
 
     const years = groupBy(edges, ({ node }) => {
+      console.log({ node })
       return new Date(node.frontmatter.date).getFullYear()
     })
     const months = Object.keys(years).map(year => {
@@ -84,15 +85,14 @@ export default class HomePage extends React.Component<Props> {
                             </h2>
                             {monthPosts.map(post => (
                               <article key={post.fields.path}>
-                                <a
-                                  href={post.fields.path}
-                                  style={{ marginRight: '0.5rem' }}
-                                >
-                                  {post.frontmatter.title}
-                                </a>
-                                <Date dateTime={post.frontmatter.standardDate}>
-                                  {post.frontmatter.formattedDate}
-                                </Date>
+                                <Link to={post.fields.path}>
+                                  <Title>{post.frontmatter.title}</Title>
+                                  <DateTag
+                                    dateTime={post.frontmatter.standardDate}
+                                  >
+                                    {post.frontmatter.formattedDate}
+                                  </DateTag>
+                                </Link>
                               </article>
                             ))}
                           </div>
@@ -108,10 +108,12 @@ export default class HomePage extends React.Component<Props> {
   }
 }
 
-const Date = styled.time`
+const Title = styled.span`
+  margin-right: 0.5rem;
+`
+
+const DateTag = styled.time`
   color: rgba(0, 0, 0, 0.5);
-  float: left;
-  clear: both;
   font-family: ${config.headerFontFamily};
 `
 
@@ -119,6 +121,7 @@ export const query = graphql`
   query {
     allMdx(
       sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
+      filter: { fileAbsolutePath: { glob: "**/blog/blog/**" } }
     ) {
       totalCount
       edges {

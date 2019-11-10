@@ -84,6 +84,7 @@ export default class PostPage extends React.PureComponent<Props> {
                 post.frontmatter.banner && post.frontmatter.banner.publicURL
               }
               bannerAttribution={post.frontmatter.bannerAttribution}
+              left
             >
               <SectionTitle left>{post.frontmatter.title}</SectionTitle>
               <Line />
@@ -115,14 +116,12 @@ export default class PostPage extends React.PureComponent<Props> {
 const Line = styled.hr`
   color: white;
   width: 5rem;
-  float: left;
   margin: 0.5rem 0;
   height: 3px;
 `
 
 const Date = styled.time`
   color: white;
-  float: left;
   clear: both;
   font-family: ${config.headerFontFamily};
 `

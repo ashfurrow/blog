@@ -39,6 +39,9 @@ const GlobalStyle = createGlobalStyle`
       color: ${theme.colors.grey.dark};
     }
   }
+  time {
+    font-
+  }
   /* Only h1's have the header font family. */
   h1 {
     font-family: ${config.headerFontFamily}

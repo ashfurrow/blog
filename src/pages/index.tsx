@@ -44,9 +44,9 @@ export default class HomePage extends React.Component<Props> {
                 >
                   <Link to={post.node.fields.path}>
                     <Title>{post.node.frontmatter.title}</Title>
-                    <Date dateTime={post.node.frontmatter.standardDate}>
+                    <DateTag dateTime={post.node.frontmatter.standardDate}>
                       {post.node.frontmatter.date}
-                    </Date>
+                    </DateTag>
                   </Link>
                 </li>
               ))}
@@ -93,7 +93,7 @@ const Title = styled.span`
   margin-right: 0.5rem;
 `
 
-const Date = styled.time`
+const DateTag = styled.time`
   color: rgba(0, 0, 0, 0.5);
   font-family: ${config.headerFontFamily};
 `

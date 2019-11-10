@@ -3,6 +3,7 @@ import { media } from '../utils/media'
 
 export const Content = styled.div`
   margin: 2rem 4rem;
+  /* clear: both; */
   form {
     p {
       label,

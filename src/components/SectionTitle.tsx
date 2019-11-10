@@ -15,6 +15,7 @@ export const SectionTitle = styled.div<{
   position: relative;
   padding: 2rem 0 0;
   margin-bottom: 0rem;
+  overflow-wrap: normal;
 `
 export const SectionSubTitle = styled(SectionTitle)`
   padding-top: 0;
