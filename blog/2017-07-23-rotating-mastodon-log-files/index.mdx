@@ -25,7 +25,7 @@ I asked some colleagues for advice and they told me about log rotation. So I add
 
 This moves the log contents to a new file and compresses previously moved logs, so I get a disk use increase of about 50MB/day instead of 1GB/day.
 
-![Docker container directory listing](./transmit.png)
+![Docker container directory listing](transmit.png)
 
 Obviously the logs are still growing, but the instance could now run for months without me restarting docker containers and not run out of disk space. Nice.
 

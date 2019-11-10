@@ -23,7 +23,7 @@ So let's say you check out a new branch to work on a feature. Jive is going to u
 
 Jive prioritizes running tests that failed the last time it ran because it assumes that you're trying to fix those tests first. It also keeps track of how long each test takes to run, in order to prioritize long-running tests _first_. This reduces overall test time. 
 
-![Before and after running long tests first](./length.png)
+![Before and after running long tests first](length.png)
 
 Apparently, the improved scheduling of long-running tests improved full test suite run times by 20% – wow! And because it can run tests in parallel simulator processes (from Xcode 9), parallelism is constrained only by the number of cores in your CPU.
 

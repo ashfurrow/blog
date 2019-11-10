@@ -80,7 +80,7 @@ When you first create your EC2 instance, you're given a certificate to log into 
 
 First, configure your security group in EC2 to restrict port 80 access to `127.0.0.1/0` (instead of `0.0.0.0/0`, which means "anyone").
 
-![Security Policy](./security.png)
+![Security Policy](security.png)
 
 Then open a terminal and use the following command:
 
@@ -90,7 +90,7 @@ ssh -i path/to/your/certificate.pem -N -L  9000:ec2-XX-XXX-XXX-XXX.compute-1.ama
 
 This command redirects traffic from port 9000 locally over the SSH tunnel to port 80 on `ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com` on the other side of the tunnel. Modify `path/to/your/certificate.pem` to point to your actual EC2 certificate that was created when you launched the instance, and change `ec2-XX-XXX-XXX-XXX.compute-1.amazonaws.com` to be the public DNS of the instance.
 
-![Dashboard accessed through SSH tunnelling](./dashboard.png)
+![Dashboard accessed through SSH tunnelling](dashboard.png)
 
 Run the command and go to `localhost:9000` on your computer. With BitTorrent Sync is running on the EC2 instance, you'll be prompted for your username and password to access the dashboard. Since all the traffic is routed over the SSH tunnel, no one can sniff out the plaintext credentials.
 

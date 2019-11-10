@@ -49,16 +49,16 @@ Squarespace’s [pricing](http://squarespace.com/pricing/) is pretty good. It’
 
 Let’s compare with AWS. My bill so far this November is actually exactly $10, which includes hosting several GIFs for various GitHub repos and blog posts on other sites (all served from CloudFront), as well as all podcasts episodes for a few different shows I’ve had over the years. Note that I haven’t published a [Notification Center](http://www.notificationcenter.tv) episode in that time, so the lion’s share of this $10 figure is _just_ my site.
 
-![November-to-date AWS costs](./cost.png)
+![November-to-date AWS costs](cost.png)
 
 The site itself is hosted on S3 while the common banner images (not the custom ones used on individual posts, but the 5 or so default ones) are hosted through Amazon’s CloundFront CDN so that my friends in Australia will stop whining about slow loading times.
-![November-to-date AWS cost breakdown](./breakdown.png)
+![November-to-date AWS cost breakdown](breakdown.png)
 
 As you can see, even putting just some common images behind CloudFront constituted a significant cost.
 
 To give you an idea of the traffic I get on my blog, here’s the Google Analytics page views since I moved to Middleman.
 
-![Google Analytics since the transition](./analytics.png)
+![Google Analytics since the transition](analytics.png)
 
 So I’m pretty happy about the cost. Maybe a little more than I was paying with Squarespace, but I didn’t switch for the cost: I switched to have more control over my site, which has been a great success.
 
@@ -70,7 +70,7 @@ It’s not ideal, but I can live with it. Those older articles don’t really co
 
 If I were doing this professionally, I would’ve done more thorough testing.
 
-![Google Webmaster tools warning](./404s.png)
+![Google Webmaster tools warning](404s.png)
 
 Speaking of my feed, I did have a few issues. Middleman’s blog template produces an Atom feed; I thought that if that feed was at the same location as the old RSS (or had a 301 redirect), then everything would be fine. Turns out that most reader clients don’t expect a previously RSS feed to suddenly become an Atom one. Oops.
 

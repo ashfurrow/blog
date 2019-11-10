@@ -11,17 +11,17 @@ Some time ago I wrote about [Swift Playground Books](/blog/building-swift-playgr
 
 As a quick overview of [Swift Playground Books](https://developer.apple.com/swift/playgrounds/) (for iPad), let's explore what they look like on the file system.
 
-![Structure of a playground book source](./structure.png)
+![Structure of a playground book source](structure.png)
 
 This structure (documented [here](https://developer.apple.com/library/prerelease/content/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW4)) must be strictly adhered to or else the playground book won't work on the iPad. Creating this directory structure and the corresponding manifest plists is tedious, which is why I originally created the tool. Now, compared to the original post, things are much easier to accomplish.
 
 The original format had users writing triple-slash `///` comments to delineate playground book pages. Now, chapters are divided into individual Xcode playgrounds.
 
-![Structure of a rendered playground book](./new_structure.png)
+![Structure of a rendered playground book](new_structure.png)
 
 Individual pages within a chapter are represented by Playground pages within Xcode. Use the File -> New menu to add pages. Make sure that the page names are lexicographically ordered in the way you want them to appear in the book.
 
-![Adding a new page](./new_page.png)
+![Adding a new page](new_page.png)
 
 There's also some cool things you can do with special comments.
 

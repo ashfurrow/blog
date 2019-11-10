@@ -13,7 +13,7 @@ We're going to be pretending that server-side web technologies don't exist since
 
 Let's take a minute to review the HTML Document Object Model, or DOM. The following image, courtesy of [W3Schools](http://www.w3schools.com/htmldom/default.asp), represents an example HTML document.
 
-![](./0592FD6876B24EF5AD3CBF8C64F5F07D.png)
+![](0592FD6876B24EF5AD3CBF8C64F5F07D.png)
 
 The DOM is a tree structure with a root node as the document. Elements of the DOM have exactly one parent and zero or more children. The elements represent laid out on a webpage as HTML tags. Elements have attributes, like the `href` of the `<a>` tag. These attributes define how the elements appear and behave.
 
@@ -21,7 +21,7 @@ The elements themselves can either be laid out in static HTML, or generated comp
 
 Now let's take a look at a simple iOS app example.
 
-![](./614DEB35A7A54927BFD128009FAC44E5.png)
+![](614DEB35A7A54927BFD128009FAC44E5.png)
 
 There isn't a lot going on here, visually, but there _is_ a lot going on behind the scenes. I've labeled the elements with their _class name_ (what kind of element they are).
 
@@ -29,7 +29,7 @@ Certain aspects of the interface, like the status bar, don't belong to _our_ vie
 
 A simplified diagram of what is going on in the above view is laid out below.
 
-![](./BA5ECBB142C94ADF90776AA88ACE5B9D.png)
+![](BA5ECBB142C94ADF90776AA88ACE5B9D.png)
 
 The basics are similar - there is a tree hierarchy, like the HTML DOM. Elements are visisble on the screen, and they have attributes that define how they appear and how they behave.
 
@@ -85,7 +85,7 @@ Here we see an instance variable of a `UIButton`. However, since we're using `.x
 
 `IBOutlet` is a slightly anachronistic keyword that was born when a separate program, called Interface Builder, was used to lay out interface files. In the interface file (either the `.xib` or Storyboard), option-click the view controller in the left pane to get the view controller's list of outlets. Drag from the circle beside `myButton` onto the button on the view. That's it!
 
-![](./2CF509714C4D48138550C828114B2A46.png)
+![](2CF509714C4D48138550C828114B2A46.png)
 
 That is only half the story. Now that you can access and modify views in your hierarchy, you need to know where to put code to do it. There are two places.
 

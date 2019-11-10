@@ -10,17 +10,17 @@ Since this is just to illustrate the basics of how to add support for the taller
 
 Before I make any changes to the project, Xcode looks something like this:
 
- ![](./39E5B64D143A4203AA391A912AC2CC66.png)
+ ![](39E5B64D143A4203AA391A912AC2CC66.png)
 
 If I ran the app right now, I would get the following letterbox/pillarbox effect from the OS:
 
- ![](./F07E5C57D6384F8D852EDEDB890D8999.png) ![](/img/import/blog/how-to-upgrade-an-ios-app-for-the-iphone-5-screen/67CD16741AAD4872960F38619B079032.png)
+ ![](F07E5C57D6384F8D852EDEDB890D8999.png) ![](/img/import/blog/how-to-upgrade-an-ios-app-for-the-iphone-5-screen/67CD16741AAD4872960F38619B079032.png)
 
 This is _not_ the experience we stylish iOS developers want to provide for our users.
 
 The _only_ clue about what to do next is a compiler warning
 
- ![](./56C93D758CBD4DC889CFB028D0915D4E.png)
+ ![](56C93D758CBD4DC889CFB028D0915D4E.png)
 
 The iPhone 5 has a screen of 640x1136 pixels (or, more accurately, 320x568 point). Remeber that on a Retina screen, 1 point is equal to 2 pixels. What apple is doing here is being cute; they know that a screen that is 568pt high _must_ be Retina, but they're reminding us through the file name that even though the image we provide should be 640x1136px, it's still only 568 points tall.
 
@@ -32,7 +32,7 @@ Open the project file in Xcode's File pane, select your target, and drag any ran
 
 If I run the app now, it looks like this:
 
- ![](./CF671B33AAC64E1DB520130DFB19E295.png) ![](/img/import/blog/how-to-upgrade-an-ios-app-for-the-iphone-5-screen/AD8EB78623D24F0A88390FAE216646C7.png)
+ ![](CF671B33AAC64E1DB520130DFB19E295.png) ![](/img/import/blog/how-to-upgrade-an-ios-app-for-the-iphone-5-screen/AD8EB78623D24F0A88390FAE216646C7.png)
 
 iOS is just taking the springs and struts defined by the `UIViewAutoresizingMask` supplied on the views that make up the interface. In landscape, that's exactly what I want. In portrait, though, it looks like I've totally entirely forgotten about a whole 88pt of my app's interface. I can't ship this! What do I look like, an Android developer?
 
@@ -40,7 +40,7 @@ Let's open the nib (or storyboard) and deal with this mess.
 
 If you select the main `UIView` and open the Attributes inspector (⌘⎇4), you'll see a new dropdown under "Simulated Metrics."
 
- ![](./60AE31BB2BAE4158B6297BDFD4B1238B.png)
+ ![](60AE31BB2BAE4158B6297BDFD4B1238B.png)
 
 This is the first time that developers have been able to specify any size other than 320c640pt for a view controller with a simulated status bar. Nice!
 
@@ -50,7 +50,7 @@ Since I only want to do this work once, I'm going to select "Freeform" so I can 
 
 Don't forget to repeat these steps for any localized nibs you have!
 
- ![](./A8B17D70B6C7422DBDF436F67D0D1FFD.png)
+ ![](A8B17D70B6C7422DBDF436F67D0D1FFD.png)
 
 Luckily, the rest of my app is using `resizableImageWithCapInsets:` and `colorWithPatternImage:`, so I don't need to regenerate any assets besides the launch image.
 

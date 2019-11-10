@@ -13,15 +13,15 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
 This is due to the fact that the new Xcode specifics the A6 (`armv7s`) as a valid architeture which libraries need to build for. However, any statically compiled frameworks need to be built including support for the A6. Since this chip is brand new, no libraries include that support.
 
- ![](./88FE0C083DF344C291DB1F4E5BAB2C6F.png)
+ ![](88FE0C083DF344C291DB1F4E5BAB2C6F.png)
 
 The solution is to remove `armv7s` as a valid architecture the Xcode project. Open the File Inspector (⌘⎇1), select the project, then the Build Settings tab. Find "Valid Architectures".
 
- ![](./3FA67A3329D14076BF9F1B115F881945.png)
+ ![](3FA67A3329D14076BF9F1B115F881945.png)
 
 Double-click on "armv7 armv7s" and then select the "armv7s" row and click the minus sign.
 
- ![](./6E04343357884D05AFDC088AFF7039EF.png)
+ ![](6E04343357884D05AFDC088AFF7039EF.png)
 
 That's it! Make a mental note to check back with your statically compiled libraries to see when they update to incorporate A6 support.
 

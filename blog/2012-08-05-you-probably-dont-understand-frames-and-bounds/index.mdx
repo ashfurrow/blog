@@ -18,13 +18,13 @@ In iOS, a view controller is an object that controls a view hierarchy. Views are
 
 A view controller has a `view` property, which is the root of its view hierarchy. That view has subviews, which the controller can also reference directly. As a concrete example, let's take a look at the built-in system stopwatch example:
 
-![](./2D45925D5D0D4415AD04B0697EF838DF.png)
+![](2D45925D5D0D4415AD04B0697EF838DF.png)
 
 The controller's view is everything on the screen, below the status bar at the top and above the tab bar at the bottom. However, the view controller also has references to the Start and Reset buttons, the labels indicating the lapsed time to the user, and the table view of the laps.
 
 I was careful to specify where on the screen that controller's view was present; specifically, the view is _above_ the tab bar. That's because the tab bar is a view that belongs to another, special kind of view controller that belongs to the system: a tab bar controller. The view controller representing the stopwatch is one of the tab bar controller's child view controllers.
 
-![](./EC87F23A25274175B83A06630EDFABFB.png)
+![](EC87F23A25274175B83A06630EDFABFB.png)
 
 The blue stopwatch controller is a child of the yellow tab bar controller.
 
@@ -36,13 +36,13 @@ In iOS 5, Apple provided new containment view controller APIs that made writing 
 
 In iOS 4 and earlier, a view hierarchy might look like the following.
 
-![](./1EA3627758A3487791BD14E0CF65502B.png)
+![](1EA3627758A3487791BD14E0CF65502B.png)
 
 This is a pedagogical example, certainly, but the 500px app has some view controllers with references to dozens and dozens of subviews. It makes writing code with a clear separation of concern impossible and debugging that code stressfully difficult.
 
 In iOS 5, we can delineate exactly which view controller is responsible for which views. Excellent!
 
-![](./24979633EED54A5D9C25EFB6023C9EA6.png)
+![](24979633EED54A5D9C25EFB6023C9EA6.png)
 
 Nice! Notice that the parent view controller doesn't even need a reference to the child view controller's view; it can access it indirectly via `self.subviewcontroller.view`.
 
@@ -66,7 +66,7 @@ How so?
 
 Well, the `frame` of a view is defined as the smallest bounding box of that view with respect to its parents coordinate system, including any transformations applied to that view. Let's look at an example:
 
-![](./B8B143BB6681476794386EFDB88201A7.png)
+![](B8B143BB6681476794386EFDB88201A7.png)
 
 Here you can see that the bounds size and the frame size are completely different.
 

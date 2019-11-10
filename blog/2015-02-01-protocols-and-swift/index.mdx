@@ -42,7 +42,7 @@ struct Cat {
 
 Nice.
 
-![Ode to Spot](./cat.gif)
+![Ode to Spot](cat.gif)
 
 In order to feed our cat, we need a type that conforms to the `Food` protocol.
 
@@ -65,7 +65,7 @@ dave.eat(catFood, grams: 30)
 
 Awesome. Note that we’re using pure Swift types – none of that Objective-C cruft.
 
-![This is my actual cat, Dave.](./play.gif)
+![This is my actual cat, Dave.](play.gif)
 
 (I know that this is fundamental stuff that you probably already know, but it’s important to make sure we’re on the same page before we continue.)
 
@@ -82,7 +82,7 @@ protocol Food {
 
 Er, no, actually. This code produces a compiler error advising you that the `’optional’ keyword can only be a applied to members of an @objc protocol`. Huh, that’s weird.
 
-![omg swift](./cry.gif)
+![omg swift](cry.gif)
 
 Fine, so we put `@objc` at the beginning of our protocol declaration.
 
@@ -119,7 +119,7 @@ struct Cat {
 
 But the compiler still errors: `Cannot downcast from ‘Food’ to non-@objc protocol type ‘WetFood’`. Swift protocols are just not designed to be used in this way.
 
-![Whomp whomp.](./sad.gif)
+![Whomp whomp.](sad.gif)
 
 <hr />
 
@@ -250,7 +250,7 @@ OK, so `UITableView` sucks and like most things that suck in Objective-C, they�
 
 So, Swift programmers, you have a choice now. The next time you write a protocol and it needs `optional` functions, _don’t_ just add `@objc` to the declaration. Split it out into multiple protocols like a responsible adult. There, that’s better. Your mother and I are so proud of you.
 
-![We really are.](./proud.gif)
+![We really are.](proud.gif)
 
 <hr />
 
@@ -325,7 +325,7 @@ You get a lot more flexibility with this method, since you can have foods that d
 
 (It would be nice to be able to extend the `FoodConsumer` protocol to add an `eat(Food)` method that could just call through for us, but Swift doesn't support such an extension – at least [not yet](https://github.com/ksm/SwiftInFlux#moving-functionality-from-global-functions-to-methods).) (**Update**: this is actually now possible! See the [note](#update) at the end of this article.)
 
-![Om nom nom.](./eating.gif)
+![Om nom nom.](eating.gif)
 
 This approach obviously isn’t suited for every case, but it is a useful tool to have at your disposal.
 

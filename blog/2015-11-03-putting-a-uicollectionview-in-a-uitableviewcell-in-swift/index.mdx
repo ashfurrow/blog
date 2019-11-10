@@ -14,7 +14,7 @@ Having a collection view within a table view cell has become a common design pat
 
 If we step back and think about this from a user interface perspective, it'll give us a hint at how we can structure our code, too.
 
-![UI layout](./layout.png)
+![UI layout](layout.png)
 
 So the collection view cells sit within the collection view (just like they normally do). And each collection view fills an entire table view cell (an entire row of the table view). And then the table view cells are inside the table view (again, just like normal).
 
@@ -26,7 +26,7 @@ So our view controller is going to act as a datasource and delegate for both the
 
 <Narrow>
 
-![Code structure](./diagram.png)
+![Code structure](diagram.png)
 
 </Narrow>
 
@@ -50,7 +50,7 @@ Drag a collection view onto the cell (Xcode will make it a subview of the cell's
 
 <Narrow>
 
-![Storyboard hierarchy](./hierarchy.png)
+![Storyboard hierarchy](hierarchy.png)
 
 </Narrow>
 
@@ -58,7 +58,7 @@ All that's left to do is configure the collection view. I set its size, spacing,
 
 <Narrow>
 
-![Collection geometry view configuration](./config.png)
+![Collection geometry view configuration](config.png)
 
 </Narrow>
 
@@ -66,7 +66,7 @@ Finally, I set the reuse identifier of the collection view cell to "Cell" (it ne
 
 <Narrow>
 
-![Completed storyboard](./viewController.png)
+![Completed storyboard](viewController.png)
 
 </Narrow>
 
@@ -201,7 +201,7 @@ OK cool. We can build and run our app and we see everything looks fine.
 
 <Narrow>
 
-![Working app](./screenshot.png)
+![Working app](screenshot.png)
 
 </Narrow>
 
@@ -277,7 +277,7 @@ Awesome! Let's see how it looks in action.
 
 <Narrow>
 
-![Working app animation](./animation.gif)
+![Working app animation](animation.gif)
 
 </Narrow>
 

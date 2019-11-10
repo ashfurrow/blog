@@ -22,7 +22,7 @@ Pretty straightforward. I’m using the `.Alert` preferred style, but you can us
 
 If you ran this code, you’d be presented with something like the following (on beta 7).
 
-![](./C47E5C761A24426CB34230DBB2A7AF7C.png)
+![](C47E5C761A24426CB34230DBB2A7AF7C.png)
 
 Weird. The title is there, but the message is not present. There are also no buttons, so you can’t dismiss the controller. It’s there until you relaunch your app. Sucky.
 
@@ -36,11 +36,11 @@ alertController.addAction(ok) alertController.addAction(cancel)
 
 This is _worlds_ better than `UIAlertView`, despite being much more verbose. First of all, you can have multiple cancel or destructive buttons. You also specify individual closures to be executed when a button is pressed instead of some shitty delegate callback telling you which button _index_ was pressed. (If anyone out there makes a `UIAlertController+Blocks` category, I will find you, and I _will_ kill you.)
 
-![](./2A03E60C605A42789A6FAF704BB9A130.jpg)
+![](2A03E60C605A42789A6FAF704BB9A130.jpg)
 
 If we added the above configuration to our code, we’d get the following.
 
-![](./08BE65FFF6E243CAAD311D4115EC75B6.png)
+![](08BE65FFF6E243CAAD311D4115EC75B6.png)
 
 Way better. Weird that the message is now showing up. Maybe it’s a bug, or maybe it’s intended behaviour. Apple, you so cray cray. Anyway, you should also notice that the “OK” and “Cancel” buttons have been styled and positioned according to iOS conventions. Neato.
 
@@ -54,15 +54,15 @@ alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
 
 Straightforward. Run the code, get the following.
 
-![](./9EA0E4E86AB54891A9A27BC24D1C8889.png)
+![](9EA0E4E86AB54891A9A27BC24D1C8889.png)
 
 The question now is this: how do you, in the closure for the “OK” button, access the contents of the text field?
 
-![](./0E7A01300D2F49C6947664D55AC91803.gif)
+![](0E7A01300D2F49C6947664D55AC91803.gif)
 
 There is no way for you to directly access the text field from the closure invoked when a button is pressed. [This](http://stackoverflow.com/questions/24172593/access-input-from-uialertcontroller) StackOverflow question has two possible answers. You can access the `textFields` array on the controller (assuming that the order of that array is the same as the order which you added the text fields), but this causes a reference cycle (the alert action has a strong reference to the alert view controller, which has a strong reference to the alert action). This _does_ cause a memory leak for each controller that you present.
 
-![](./31715566B57649FF8B277A3063191734.png)
+![](31715566B57649FF8B277A3063191734.png)
 
 The other answer suggests storing the text field that’s passed into the configuration closure in a property on the presenting controller, which can later be accessed. That’s a _very_ Objective-C way of solving this problem.
 
@@ -93,7 +93,7 @@ presentViewController(alertController, animated: true, completion: nil)
 
 I like this a lot. It avoids polluting our object with unnecessary properties, avoids memory leaks, and seems pretty “Swift”. I’ve created a [GitHub repo](https://github.com/AshFurrow/UIAlertController-Example) that I’ll keep up to date with future betas, etc.
 
-![](./09B8BCEA8BBE48239C07298CD4112B53.jpg)
+![](09B8BCEA8BBE48239C07298CD4112B53.jpg)
 
 So yeah. The new `UIAlertController` has some great benefits:
 

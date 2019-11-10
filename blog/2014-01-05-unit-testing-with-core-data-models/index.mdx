@@ -14,7 +14,7 @@ Here's the thing. Ever looked in a `.m` file of a managed object and see all tho
 
 There are two options. First, you can create a protocol that has all of your model's properties defined. Then, make your `NSManagedObject` subclass conform to that protocol. Core Data will still add those properties at runtime because of the `@dynamic` directives. Next, create a new model object – just for testing&nbsp;– that conforms to that same protocol and `@synthesize`s all of the protocols properties.
 
- ![](./010D82037DB646D8B46A97F8692BAB16.png)
+ ![](010D82037DB646D8B46A97F8692BAB16.png)
 
 Not _terrible_, but it's messy just for the sake of getting managed object mocks to work. I don't like having two code paths for testing and the actual runtime – it defeats the purpose of unit testing in the first place.
 

@@ -18,7 +18,7 @@ What Unit Tests do is automate the manual testing you should be doing for your a
 
 All that is preamble for the main topic: what is worth Unit Testing in Objective-C? Let's consider a well-architected iOS app. It's divided into three parts: the model, the view, and the controller.
 
- ![](./426D1328D1E744999A88979FAF12C2C2.png)
+ ![](426D1328D1E744999A88979FAF12C2C2.png)
 
 Did I say three parts? I meant three-ish. On apps requiring usage of an API, you have network access code, too. Sometimes that code is separate from the model and sometimes it's included within the model. It's never included in the view and should not be included in the controller if avoidable (it's always avoidable).
 

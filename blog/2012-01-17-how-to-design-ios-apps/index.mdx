@@ -18,7 +18,7 @@ However, developers often feel like using all the pre-made stuff is _boring_. To
 
 Let's take a look at one beloved example: Tweetie.
 
- ![](./1D269448944548D3B62E9F710C1FA66F.jpg)
+ ![](1D269448944548D3B62E9F710C1FA66F.jpg)
 
 What I admired about Tweetie was the way it combined the existing system interfaces and made a functional app that always behaved as I expected while also not looking like a cookie-cutter apps. They used all your standard view transition conventions - navigation stacks, tab bars, and modal views, and all appropriately.
 
@@ -38,7 +38,7 @@ You have to first&nbsp;understand that rolling your own _anything_&nbsp;in iOS i
 
 Creating your own interface requires an in-depth knowledge of both UIKit and Core Animation. You need to know how you can (ab)use existing tools to achieve the interface yo want. Even something as simple as adding a drop shadow to a navigation bar can be challenging. No? Don't think so? Try doing it with a UITableViewController's nav bar. You'll need to add the shadow gradient to to the nav bar to stop it from scrolling with the tableview. Then you'll quickly find a bug in some versions of iOS that makes UIBarButtonItem's in the navigation bar invisible when the bar's `clipsToBounds` is set to `NO`.
 
- ![](./70B13B2E093641B085650FEC9ADA7989.jpg)
+ ![](70B13B2E093641B085650FEC9ADA7989.jpg)
 
 Writing your own super-innovative mega-awesome interface is going to require _a lot_&nbsp;of design work. You're going to need icons. Lots and lots of icons. However, use the system standard icons wherever you can. There are some [really neat ways](https://github.com/0xced/UIKit-Artwork-Extractor) to use system UIBarButtonItem's pretty much anywhere, so use them.
 
@@ -46,11 +46,11 @@ With all that said, it can be _really_ fun to do and create a consistent, reward
 
 Leveraging existing classes and only deviating from UIKit when necessary will minimize the risk that something will break in future versions of iOS and also save you development time now. Just look at Twitter's iPad app:
 
- ![](./18AC87408126482D94798A2BBB6A3920.jpg)
+ ![](18AC87408126482D94798A2BBB6A3920.jpg)
 
 Nice iPad App, Twitter! Innovative accordion-style navigation stack! And look! The entire key window appears to slide down to revel the tweet composer! That's awesome! But look at what else there: a popover. A simple instance of UIPopoverController with a content view displaying the user's photo collection. They didn't have to write their own, so they didn't. Perfect. Do you think they implemented their own UITableView for the leftmost navigation view? Or for the tweet list? Of course not. They used what they could and only built from scratch what they had to.
 
- ![](./95F2C6064EC6481DAF6303862EE38C32.png)
+ ![](95F2C6064EC6481DAF6303862EE38C32.png)
 
 Facebook's new iPhone app is [pretty shitty](/blog/new-facebook-iphone-app/), but they did introduce a really neat top-level navigation system: the key window appears to slide to the right to reveal a navigation menu underneath it. Cool!
 
