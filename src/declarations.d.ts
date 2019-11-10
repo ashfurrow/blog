@@ -21,3 +21,15 @@ declare module 'react-twitter-embed' {
     TwitterTweetEmbedProps
   > {}
 }
+
+declare module '@merc/react-timeline' {
+  import { ComponentType } from 'react'
+
+  export class Timeline extends React.Component<any> {}
+  export class Events extends React.Component<any> {}
+  export class UrlButton extends React.Component<any> {}
+  export class ImageEvent extends React.Component<any> {}
+  export class TextEvent extends React.Component<any> {}
+  export class YouTubeEvent extends React.Component<any> {}
+  export class TwitterTweetEmbed extends React.Component<any> {}
+}

@@ -83,6 +83,7 @@
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "@merc/react-timeline": "^0.1.42",
     "@types/inflected": "^1.1.29",
     "@types/request-promise-native": "^1.0.17",
     "elasticlunr": "^0.9.5",
