@@ -3,7 +3,6 @@ import React from 'react'
 import { Layout } from '../components'
 import Helmet from 'react-helmet'
 import { Header } from './Header'
-import { MDXProvider } from '@mdx-js/react'
 import { SectionTitle } from './SectionTitle'
 import { Wrapper } from './Wrapper'
 import { Content } from './Content'
@@ -11,7 +10,11 @@ import Frontmatter from '../models/Frontmatter'
 
 interface Props {
   pageContext: {
-    frontmatter: Frontmatter
+    frontmatter: {
+      title: string
+      banner?: string
+      bannerAttribution?: string
+    }
   }
 }
 

@@ -95,5 +95,4 @@ const Title = styled.span`
 
 const DateTag = styled.time`
   color: rgba(0, 0, 0, 0.5);
-  font-family: ${config.headerFontFamily};
 `
