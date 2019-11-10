@@ -69,10 +69,10 @@ class Navbar extends React.Component<Props, State> {
               <Link to="/portfolio">Portfolio</Link>
               <Link to="/speaking">Speaking</Link>
               <Link to="/search">
-                <FontAwesomeIcon icon={faSearch} />
+                <FontAwesomeIcon icon={faSearch} fixedWidth />
               </Link>
               <Link to="/feed.xml">
-                <FontAwesomeIcon icon={faRssSquare} />
+                <FontAwesomeIcon icon={faRssSquare} fixedWidth />
               </Link>
             </NavLinks>
             <BurgerWrapper>
