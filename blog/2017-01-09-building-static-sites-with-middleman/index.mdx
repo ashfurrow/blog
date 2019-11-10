@@ -5,11 +5,9 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/817193041161232385
 ---
 
-
 I recently launched this [Peer Lab website](http://peerlab.community) to list the peer labs around the world and to provide instructions on starting one. It's a small site with no need for a backend, so I decided to host it as static HTML. However, it was important that adding new labs would be easy for outside contributors. Since I had used the tool before to build a few static websites – including this blog – I turned to [Middleman](https://middlemanapp.com).
 
 Let's explore the exact process I went through. I'm going to provide a series of high-level steps and link to actual code when I can, so you can replicate this for whatever site you need to build. However, every website is different, so "some assembly required" 😉
-
 
 The first thing you've got to do is create a new GitHub repository. We'll use the repo to store the source code and also to host the site (each on their own branch, but more on that later). Install Middleman with `gem install middleman`, and then run `middleman init` to create the empty scaffold of your site. You can now run `middleman` to start a server and browse the site locally. Nice! Time to commit your changes and push.
 
@@ -31,7 +29,7 @@ before_install:
 
 </Wide>
 
-Storing the access token in `.netrc` provides the login info for when `git` tries to push to GitHub, via the `middleman-gh-pages` gem. Nice. 
+Storing the access token in `.netrc` provides the login info for when `git` tries to push to GitHub, via the `middleman-gh-pages` gem. Nice.
 
 Your CI needs some sort of script to test that the site generated successfully. I use `bundle exec middleman build --build-dir=test` to generate the site in a `test` directory. I want the testing and the deploying to be separate, but this means that we're actually building the site twice. It's a performance hit, but not a huge deal unless your site is huge.
 
@@ -64,7 +62,7 @@ end
 
 This script will look different for Circle, check out [their documentation](https://circleci.com/docs/environment-variables/) for more details. Commit your changes and push them to GitHub. Watch your CI and – if everything goes right – your site should be deployed automatically, within minutes. Awesome!
 
-Now that the deploy process is automated, we can really quickly iterate on the site's content and design. Oh hey, design, that's a great idea! Time to replace the Middleman scaffold. 
+Now that the deploy process is automated, we can really quickly iterate on the site's content and design. Oh hey, design, that's a great idea! Time to replace the Middleman scaffold.
 
 Head over to [Start Bootstrap](https://startbootstrap.com) and grab one of their templates. After you've picked one, give it attribution in your site's Readme. Importing the template itself is kind of tricky, as it's different for each template. You'll want to start by moving the templates' JavaScript files into the `source/javascripts` directory of your Middleman site, and do the same for any images and stylesheets. Now comes the really tricky part.
 
@@ -76,7 +74,7 @@ Writing your content and getting it to display correctly is beyond the scope of 
 
 The Peer Lab site has a list of peer labs around the world, and this list is generated from a [yaml file](https://github.com/ashfurrow/peerlab.community/blob/5792eebad29156ea56f60e7304fd29dba3dbe55a/data/events.yml). If you want to do something similar, create a new `data` directory in the root of your repo and, within it, create a new `.yml` file. You'll be able to access the contents of this file _as_ Ruby objects. There's more info [in the Middleman docs](https://middlemanapp.com/advanced/data_files/#toc), and you can check out my implementation [here](https://github.com/ashfurrow/peerlab.community/blob/5792eebad29156ea56f60e7304fd29dba3dbe55a/source/find.html.erb#L20-L56). I also added [documentation](https://github.com/ashfurrow/peerlab.community#adding-your-peer-lab) about the format of the yaml file to my Readme, you should consider doing it too.
 
-Okay, almost done! The final thing we need to do is think about SEO. Yes, SEO. When someone shares your site on Facebook or Twitter, or sends it as an iMessage, you want it to expand and have a summary card instead of just being an ordinary URL. 
+Okay, almost done! The final thing we need to do is think about SEO. Yes, SEO. When someone shares your site on Facebook or Twitter, or sends it as an iMessage, you want it to expand and have a summary card instead of just being an ordinary URL.
 
 ![iMessage expansion](imessage.png)
 
@@ -90,10 +88,4 @@ The peer lab site is [open source](https://github.com/ashfurrow/peerlab.communit
 
 **Update**: I've since given a lunch & learn at work on this topic, you can check it out here:
 
-<Wide>
-
-<YouTube videoID='yoGielteT64' />
-
-</Wide>
-
-  
+<YouTube videoID="yoGielteT64" />
