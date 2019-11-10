@@ -1,18 +1,15 @@
 ---
 title: Swift on Linux
-date: 2016-10-23 17:12:43 UTC
-background_image: /img/blog/swift-on-linux/background.jpg
-background_image_source: https://twitter.com/CloudyConway/status/789255492803715074
+date: 2016-10-23
+banner: background.jpg
+bannerAttribution: https://twitter.com/CloudyConway/status/789255492803715074
 ---
 
-All the cool kids are experimenting with Swift on Linux and I've always meant to but never got around to it. After watching [Ben Scheirman's talk](https://speakerdeck.com/subdigital/swift-on-linux) on the subject, I decided to give it a shot. 
-
-(READMORE)
+All the cool kids are experimenting with Swift on Linux and I've always meant to but never got around to it. After watching [Ben Scheirman's talk](https://speakerdeck.com/subdigital/swift-on-linux) on the subject, I decided to give it a shot.
 
 At first I tried to use Vagrant and download one of the pre-built Swift binaries for Linux. But the configuration was difficult, and I ultimately couldn't get it to work. Then I tried Docker.
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/NeoNacho">@NeoNacho</a> <a href="https://twitter.com/ashfurrow">@ashfurrow</a> the easiest s way to start is with something like swiftdocker, then you know versions are right</p>&mdash; Daniel Dunbar (@daniel_dunbar) <a href="https://twitter.com/daniel_dunbar/status/789879904925921280">October 22, 2016</a></blockquote> 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<Tweet tweetID="789879904925921280" />
 
 I don't know the finer points of how Vagrant and Docker differ – but as far as I can tell they're both tools for managing virtual machines, or VMs. A VM is like a computer that runs inside your computer.
 
@@ -70,10 +67,10 @@ swift build
 
 Finally I went to a normal web browser and typed in `http://localhost:8000` to see the results.
 
-BEGIN_WIDE
+<Wide>
 
-![Screenshot of app](/img/blog/swift-on-linux/screenshot.png)
+![Screenshot of app](./screenshot.png)
 
-END_WIDE
+</Wide>
 
 Thanks again for everyone who chimed in on Twitter! I'm going to keep poking around, I don't know if running Swift on Linux is something I want to explore more, but it was fun to get this far, so who knows 😄

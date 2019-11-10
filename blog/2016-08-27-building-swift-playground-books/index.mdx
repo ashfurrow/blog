@@ -1,10 +1,10 @@
 ---
 title: Building Swift Playground Books
-date: 2016-08-27 16:57:02 UTC
-background_image: /img/blog/building-swift-playground-books/background.jpg
-background_image_source: https://twitter.com/CloudyConway/status/769166474560802816
-summary: "When I heard about Swift playground books during WWDC, I was <em>super</em> excited about what kinds of new ways people could learn to code. And not just learn to code for the first time, but to learn a new framework or technique. "
+date: 2016-08-27
+banner: background.jpg
+bannerAttribution: https://twitter.com/CloudyConway/status/769166474560802816
 ---
+
 
 **Update**: As of version 1.0 of the tool, we now support a much improved structure for the source playgrounds. Check out an [updated blog post](/blog/swift-playground-books/) or [the documentation](https://github.com/playgroundbooks/playgroundbook#usage) for more info. We're always looking for new contributors to help with examples, too! For posterity, the original blog post follows.
 
@@ -14,15 +14,14 @@ When I heard about Swift playground books during WWDC, I was _super_ excited abo
 
 I wanted in.
 
-(READMORE)
 
 I watched and re-watched [the Swift playground video][wwdc] to wrap my head around the capabilities of playground books, from an author's perspective, and a learner's too. Playground books are not complex in theory: a nested folder structure with `Manifest.plist` files with book metadata. But that structure needs to be precisely adhered to, or the book won't work on the iPad.
 
-BEGIN_WIDE
+<Wide>
 
-![Structure of playground book](/img/blog/building-swift-playground-books/structure.png)
+![Structure of playground book](./structure.png)
 
-END_WIDE
+</Wide>
 
 It's easy to make a mistake when building these from hand, so a month ago or so I wrote a "linter" for playground books; it checks your folder structure and `Manifest.plist` contents to made sure everything is correct. My idea was to build my playground book by hand and lint it to make sure I didn't make any mistakes. 
 
@@ -146,3 +145,5 @@ This was a lot of fun to build, done for the most part using TDD. It's the lates
 [docs]: https://developer.apple.com/library/prerelease/content/documentation/Xcode/Conceptual/swift_playgrounds_doc_format/index.html#//apple_ref/doc/uid/TP40017343-CH47-SW4
 [new_issue]: https://github.com/ashfurrow/playgroundbook/issues/new
 [projects]: https://ashfurrow.com/blog/up-and-running-with-ruby/
+
+  
