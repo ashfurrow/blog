@@ -22,12 +22,14 @@ export const SpeakerDeck: React.FC<{
   deckID: string
   fourByThree?: boolean
 }> = ({ deckID, fourByThree }) => (
-  <ReactResponsiveEmbed
-    src={`//speakerdeck.com/player/${deckID}`}
-    allowFullScreen
-    {...(fourByThree && { ratio: '4:3' })}
-    narrow
-  />
+  <div style={{ marginBottom: '1.66rem' }}>
+    <ReactResponsiveEmbed
+      src={`//speakerdeck.com/player/${deckID}`}
+      allowFullScreen
+      {...(fourByThree && { ratio: '4:3' })}
+      narrow
+    />
+  </div>
 )
 
 export const SoundCloud: React.FC<{ trackID: string }> = ({ trackID }) => (
@@ -43,7 +45,7 @@ export const SoundCloud: React.FC<{ trackID: string }> = ({ trackID }) => (
 )
 
 export const Spotify: React.FC<{ src: string }> = ({ src }) => (
-  <Narrow saddBottom>
+  <Narrow addBottom>
     <iframe
       src={src}
       width="100%"
