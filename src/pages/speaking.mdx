@@ -374,6 +374,7 @@ past_talks:
 import { SectionHeader } from '../components/SectionHeader.tsx'
 import { TalkTile } from '../components/TalkTile.tsx'
 import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed.tsx'
+import { SectionTitle } from '../components/SectionTitle.tsx'
 
 I love sharing knowledge – in the form of blog posts, podcasts, open source code,
 books – and over the past few years, I’ve grown really fond of speaking. I’ve
@@ -385,9 +386,9 @@ gotten good at it, too.
 />
 
 <SectionHeader banner="/assets/speaking/upcomingtalks.jpg" dim>
-  <h2>
+  <SectionTitle>
     Coming Soon to a Conference Near You
-  </h2>
+  </SectionTitle>
 </SectionHeader>
 { !!props.pageContext.frontmatter.upcoming_talks ? 
     (<ol style={{margin: 0}}>
@@ -396,16 +397,16 @@ gotten good at it, too.
     "No upcoming talks at this time." }
 
 <SectionHeader banner="/assets/speaking/pasttalks.jpg" dim>
-  <h2>
+  <SectionTitle>
     Past Awesome Talks
-  </h2>
+  </SectionTitle>
 </SectionHeader>
 <ol style={{margin: 0}}>
   { props.pageContext.frontmatter.past_talks.map(t => <TalkTile talk={t} key={t.dates} />) }
 </ol>
 
 <SectionHeader banner="/assets/speaking/getintouch.jpg" dim>
-  <h2>Get in Touch</h2>
+  <SectionTitle>Get in Touch</SectionTitle>
 </SectionHeader>
 
 Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. Understanding _what_ you’re doing is poitnless if you don’t understand _why_ you’re doing it.

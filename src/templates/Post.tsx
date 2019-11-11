@@ -52,7 +52,7 @@ const PostContent = styled.div`
 
 const TypoLink = styled.a`
   color: ${Theme.colors.grey.default};
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   display: block;
   font-size: 0.75rem;
   font-style: italic;
