@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import theme from '../../config/Theme'
 import { useSpring, animated } from 'react-spring'
 import config from '../../config/SiteConfig'
+import { Link } from 'gatsby'
 
 const CollapseMenu: React.FC<{
   navBarState: boolean
@@ -24,29 +25,29 @@ const CollapseMenu: React.FC<{
       >
         <NavLinks>
           <li>
-            <a href="/blog" onClick={handleNavBar}>
+            <Link to="/blog" onClick={handleNavBar}>
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" onClick={handleNavBar}>
+            <Link to="/about" onClick={handleNavBar}>
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/books" onClick={handleNavBar}>
+            <Link to="/books" onClick={handleNavBar}>
               Books
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/portfolio" onClick={handleNavBar}>
+            <Link to="/portfolio" onClick={handleNavBar}>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/speaking" onClick={handleNavBar}>
+            <Link to="/speaking" onClick={handleNavBar}>
               Speaking
-            </a>
+            </Link>
           </li>
           <li>
             <a href="/search" onClick={handleNavBar}>

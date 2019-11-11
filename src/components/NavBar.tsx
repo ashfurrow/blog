@@ -68,9 +68,9 @@ class Navbar extends React.Component<Props, State> {
               <Link to="/books">Books</Link>
               <Link to="/portfolio">Portfolio</Link>
               <Link to="/speaking">Speaking</Link>
-              <Link to="/search">
+              <a href="/search">
                 <FontAwesomeIcon icon={faSearch} fixedWidth />
-              </Link>
+              </a>
               <Link to="/feed.xml">
                 <FontAwesomeIcon icon={faRssSquare} fixedWidth />
               </Link>
