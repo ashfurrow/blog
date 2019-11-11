@@ -163,7 +163,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Footer = styled.footer`
   text-align: center;
-  padding-bottom: 3rem;
+  padding: 0 1rem 3rem 1rem;
 `
 
 const FooterLink = styled.a`
