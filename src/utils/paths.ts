@@ -18,4 +18,4 @@ export const generateSlug = (title: string) => {
     .replace(/^-|-$/, '') // Remove leading/trailing separator.
 }
 
-export const generatePath = (title: string) => `/blog/${generateSlug(title)}`
+export const generatePath = (title: string) => `/blog/${generateSlug(title)}/`

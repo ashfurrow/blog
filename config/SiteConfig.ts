@@ -3,7 +3,7 @@ export default {
 
   siteTitle: 'Ash Furrow', // Navigation and Site Title
   siteTitleAlt: 'Ash Furrow – Compassionate Software Development', // Alternative Site title for SEO
-  siteUrl: 'https://ashfurow.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://ashfurrow.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteBanner: '/assets/bg/default.jpg', // Your image for og:image tag. You can find it in the /static folder
   defaultBg: '/assets/bg/default.jpg', // default post background header
