@@ -25,7 +25,7 @@ export const Content = styled.div`
     margin: 2rem 2rem;
   }
   @media ${media.phone} {
-    padding: 0rem 0.5rem;
+    padding: 1rem 0.5rem;
     margin: 0rem 0;
   }
 `
