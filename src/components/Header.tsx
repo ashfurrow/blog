@@ -60,7 +60,7 @@ const Content = styled.div<{ left?: boolean }>`
 
   margin: 2rem 4rem;
   @media ${media.tablet} {
-    margin: 2rem 5rem;
+    margin: 2rem 2rem;
   }
   @media ${media.phone} {
     margin: 0rem 1rem;

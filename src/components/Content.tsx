@@ -21,7 +21,7 @@ export const Content = styled.div`
     }
   }
   @media ${media.tablet} {
-    padding: 0rem 3rem;
+    padding: 0rem;
     margin: 2rem 2rem;
   }
   @media ${media.phone} {

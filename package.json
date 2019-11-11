@@ -18,7 +18,8 @@
     "lint": "tslint --project .",
     "lint:fix": "tslint --fix --project .",
     "fix": "prettier --write '{src,blog}/**/*.{ts,tsx,scss,md}' && tslint --fix '{src,blog}/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' ",
-    "migrate": "ts-node scripts/migrate.ts"
+    "migrate": "ts-node scripts/migrate.ts",
+    "migrate5": "ts-node scripts/migrate5.ts"
   },
   "devDependencies": {
     "@types/elasticlunr": "^0.9.0",

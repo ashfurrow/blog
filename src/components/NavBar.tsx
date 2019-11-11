@@ -102,7 +102,7 @@ const Bar = styled.nav<{ clear: boolean }>`
   top: 0;
   left: 0;
   background: ${({ clear }) => (clear ? 'clear' : theme.colors.white)};
-  z-index: 100;
+  z-index: 1000;
   font-size: 0.75rem;
 `
 

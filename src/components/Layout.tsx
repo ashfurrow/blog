@@ -63,6 +63,66 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  .timeline {
+    .event.year {
+      .card-col {
+        /* display: none will break the flow, so just make it less-than-visible instead. */
+        .card {
+          background: transparent;
+          box-shadow: none;
+        }
+      }
+    }
+    .card {
+      margin-bottom: 1rem;
+      a {
+        color: ${theme.colors.primary};
+      }
+      h3 {
+        a {
+          margin-left: 0.3rem;
+          color: rgba(189, 189, 189, 0.25);
+          font-weight: normal;
+
+          &:hover {
+            color: ${theme.colors.primary};
+          }
+        }
+      }
+    }
+    h3, p {
+      margin-bottom: 0.75rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .timeline {
+      .event {
+        /* We hide the rendered Date component on tablet+ */
+        .card-col img.eventImage {
+          display: none;
+        }
+
+        /* On tablet+ we arrange the "Date" component (images) next to the marker column */
+        &:nth-child(2n) {
+          .date-col {
+            img {
+              margin-left: 0;
+            }
+          }
+        }
+        &:nth-child(2n+1) {
+          .date-col {
+            img {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 
   blockquote:before {
     content: "";
