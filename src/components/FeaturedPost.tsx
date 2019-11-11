@@ -56,6 +56,13 @@ const FeaturedPostItem = styled(Link)<{
 }>`
   background: url(${({ banner }) => banner}) no-repeat;
   background-size: cover;
+  h3 {
+    margin-bottom: 1.66rem;
+
+    @media ${media.phone} {
+      margin: 0;
+    }
+  }
 `
 
 export const FeaturedPost: React.FC<{
