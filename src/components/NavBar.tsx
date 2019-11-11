@@ -149,7 +149,6 @@ const NavLinks = styled.ul<{ clear: boolean }>`
       clear ? theme.colors.white : theme.colors.grey.dark};
     text-transform: uppercase;
     font-weight: bold;
-    /* padding-left: 1.5rem; */
     text-decoration: none;
     font-family: ${config.headerFontFamily};
     padding: 0.5rem;

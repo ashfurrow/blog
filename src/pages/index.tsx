@@ -27,9 +27,11 @@ export default class HomePage extends React.Component<Props> {
       <Layout>
         <Helmet title={`Blog | ${config.siteTitle}`} />
         <Header>
-          <SectionTitle>Ash Furrow</SectionTitle>
-          <Line />
-          <SectionSubTitle>Compassionate Software Developer</SectionSubTitle>
+          <SectionTitle>
+            Ash Furrow
+            <Line />
+            <SectionSubTitle>Compassionate Software Developer</SectionSubTitle>
+          </SectionTitle>
         </Header>
         <Wrapper>
           <Content>

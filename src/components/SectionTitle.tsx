@@ -29,8 +29,11 @@ export const SectionTitle = styled.div<{
     line-height: 2rem;
   }
 `
+
+// TODO: I don't like how this is structured, because a SectionSubTitle
+// currently sits *within* a SectionTitle. Cleanup.
 export const SectionSubTitle = styled(SectionTitle)`
-  padding-top: 0;
+  margin: auto;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: initial;

@@ -10,6 +10,7 @@ import {
   SEO,
   PrevNext,
   SectionTitle,
+  SectionSubTitle,
   Content
 } from '../components'
 import config from '../../config/SiteConfig'
@@ -86,11 +87,15 @@ export default class PostPage extends React.PureComponent<Props> {
               bannerAttribution={post.frontmatter.bannerAttribution}
               left
             >
-              <SectionTitle left>{post.frontmatter.title}</SectionTitle>
-              <Line />
-              <Date dateTime={post.frontmatter.standardDate}>
-                {post.frontmatter.date}
-              </Date>
+              <SectionTitle left>
+                {post.frontmatter.title}
+                <Line />
+                <SectionSubTitle left>
+                  <Date dateTime={post.frontmatter.standardDate}>
+                    {post.frontmatter.date}
+                  </Date>
+                </SectionSubTitle>
+              </SectionTitle>
             </Header>
             <Wrapper>
               <Content>
