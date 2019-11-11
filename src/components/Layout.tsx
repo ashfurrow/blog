@@ -159,6 +159,12 @@ const GlobalStyle = createGlobalStyle`
     display: block;
     margin: 0 auto;
   }
+
+  footer {
+    svg {
+      height: 3rem;
+    }
+  }
 `
 
 const Footer = styled.footer`
