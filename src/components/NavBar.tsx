@@ -49,8 +49,8 @@ class Navbar extends React.Component<Props, State> {
             <Link
               to="/"
               style={{
-                height: '1.25rem',
-                margin: 'auto 0'
+                height: '1.5rem',
+                margin: '0.5rem 0'
               }}
             >
               <Image
@@ -63,17 +63,31 @@ class Navbar extends React.Component<Props, State> {
               />
             </Link>
             <NavLinks className="navbar" clear={clear}>
-              <Link to="/blog">Blog</Link>
-              <Link to="/about">About</Link>
-              <Link to="/books">Books</Link>
-              <Link to="/portfolio">Portfolio</Link>
-              <Link to="/speaking">Speaking</Link>
-              <a href="/search">
-                <FontAwesomeIcon icon={faSearch} fixedWidth />
-              </a>
-              <Link to="/feed.xml">
-                <FontAwesomeIcon icon={faRssSquare} fixedWidth />
-              </Link>
+              <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/books">Books</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Portfolio</Link>
+              </li>
+              <li>
+                <Link to="/speaking">Speaking</Link>
+              </li>
+              <li>
+                <a href="/search">
+                  <FontAwesomeIcon icon={faSearch} fixedWidth />
+                </a>
+              </li>
+              <li>
+                <Link to="/feed.xml">
+                  <FontAwesomeIcon icon={faRssSquare} fixedWidth />
+                </Link>
+              </li>
             </NavLinks>
             <BurgerWrapper>
               <BurgerMenu
@@ -111,30 +125,37 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 0.5rem;
   justify-content: space-between;
-  height: 2.5rem;
+  /* height: 2.5rem; */
 `
 
 const NavLinks = styled.ul<{ clear: boolean }>`
   justify-self: end;
   list-style-type: none;
-  margin: auto 0.5rem auto 0;
+  margin: 0;
+
+  li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 
   a {
+    display: inline-block;
     color: ${({ clear }) =>
       clear ? theme.colors.white : theme.colors.grey.dark};
     text-transform: uppercase;
     font-weight: bold;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
     text-decoration: none;
     font-family: ${config.headerFontFamily};
-    max-height: 0.75rem;
+    padding: 0.5rem;
 
     &:hover {
       color: ${theme.colors.primary};
-    }
-
-    @media (max-width: 768px) {
-      display: none;
     }
   }
 `
