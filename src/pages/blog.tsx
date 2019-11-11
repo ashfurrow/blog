@@ -119,7 +119,7 @@ export const query = graphql`
   query {
     allMdx(
       sort: { fields: [frontmatter___date, frontmatter___title], order: DESC }
-      filter: { fileAbsolutePath: { glob: "**/blog/blog/**" } }
+      filter: { frontmatter: { date: { ne: null } } }
     ) {
       totalCount
       edges {

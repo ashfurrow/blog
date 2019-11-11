@@ -26,12 +26,12 @@ const HeaderWrapper: any = styled.header<{
   padding-top: 4rem;
   padding-bottom: 4rem;
   @media ${media.tablet} {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   @media ${media.phone} {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 `
 
@@ -58,7 +58,7 @@ const Content = styled.div<{ left?: boolean }>`
     }
   }
 
-  margin: 2rem 4rem;
+  margin: 3rem 3rem;
   @media ${media.tablet} {
     margin: 2rem 2rem;
   }

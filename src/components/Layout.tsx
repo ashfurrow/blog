@@ -46,6 +46,9 @@ const GlobalStyle = createGlobalStyle`
   h2, h3, h4 {
     font-family: ${config.bodyFontFamily}
   }
+  h3 {
+    margin-bottom: 0.83rem;
+  }
   blockquote {
     font-style: italic;
     position: relative;

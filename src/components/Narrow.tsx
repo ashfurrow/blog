@@ -6,11 +6,7 @@ const Narrow = styled.div<{ addBottom?: boolean }>`
   padding: 0 10vw;
 
   @media ${media.phone} {
-    position: relative;
-
-    width: 90vw;
-    margin-left: -45vw;
-    left: 50%;
+    padding: 0;
   }
 `
 export default Narrow

@@ -470,6 +470,10 @@ const Footer = styled.footer`
 
   span {
     margin: 0 1rem;
+
+    @media ${media.phone} {
+      margin: 0 0.3rem;
+    }
   }
 `
 
@@ -494,6 +498,11 @@ const ExposureIcon = styled.div`
   width: 53px;
   background: url('/assets/portfolio/exposure.png') no-repeat;
   background-size: contain;
+
+  @media ${media.phone} {
+    height: 42px;
+    width: 37px;
+  }
 
   &:hover {
     /* I don't like this at all, ugh. */
