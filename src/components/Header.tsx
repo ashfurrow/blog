@@ -36,7 +36,6 @@ const HeaderWrapper: any = styled.header<{
 `
 
 const ContentWrapper = styled.div<{ left?: boolean }>`
-  /* margin: ${({ left }) => (left ? '0 auto auto 0' : '0 auto')}; */
   margin: 0 auto;
 
   width: 66.6%;
@@ -58,7 +57,7 @@ const Content = styled.div<{ left?: boolean }>`
     }
   }
 
-  margin: 3rem 3rem;
+  margin: 3rem 4rem;
   @media ${media.tablet} {
     margin: 2rem 2rem;
   }
