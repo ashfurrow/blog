@@ -246,6 +246,7 @@ module.exports = {
         display: 'standalone',
         icon: config.favicon
       }
-    }
+    },
+    'gatsby-plugin-netlify-cache'
   ]
 }

@@ -97,6 +97,7 @@
     "gatsby-plugin-feed": "^2.3.19",
     "gatsby-plugin-google-tagmanager": "^2.0.5",
     "gatsby-plugin-mdx": "^1.0.53",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-sharp": "^2.2.36",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-copy-linked-files": "^2.1.28",
