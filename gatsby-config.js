@@ -247,6 +247,11 @@ module.exports = {
         icon: config.favicon
       }
     },
-    'gatsby-plugin-netlify-cache'
+    {
+      resolve: 'gatsby-plugin-netlify-cache',
+      options: {
+        cachePublic: true
+      }
+    }
   ]
 }
