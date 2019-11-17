@@ -11,7 +11,6 @@
   "scripts": {
     "build": "gatsby build",
     "postinstall": "patch-package",
-    "postbuild": "mv public build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
