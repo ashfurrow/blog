@@ -18,7 +18,7 @@ const HeaderWrapper: any = styled.header<{
       ${() => rgba(0, 0, 0, 0.2)},
       ${() => rgba(0, 0, 0, 0.2)}
     ),
-    url(${({ banner }) => banner}) no-repeat;
+    url(${({ banner }) => banner}) no-repeat black;
   background-size: cover;
   text-align: ${({ left }) => (left ? 'left' : 'center')};
   z-index: 5;
