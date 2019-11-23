@@ -126,6 +126,10 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  .twitter-tweet {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   blockquote:before {
     content: "";
