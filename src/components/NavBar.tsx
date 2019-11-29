@@ -57,9 +57,6 @@ class Navbar extends React.Component<Props, State> {
                 src={
                   clear ? '/assets/siteimage.png' : '/assets/siteimage_dark.png'
                 }
-                style={{
-                  height: '75%'
-                }}
               />
             </Link>
             <NavLinks className="navbar" clear={clear}>
@@ -107,7 +104,8 @@ class Navbar extends React.Component<Props, State> {
 export default Navbar
 
 const Image = styled.img`
-  margin: auto 0;
+  margin: 0.1rem 0 auto 0;
+  height: 75%;
 `
 
 const Bar = styled.nav<{ clear: boolean }>`
@@ -125,18 +123,20 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 0.5rem;
   justify-content: space-between;
-  /* height: 2.5rem; */
 `
 
 const NavLinks = styled.ul<{ clear: boolean }>`
-  justify-self: end;
+  justify-self: stretch;
+  vertical-align: center;
+  vertical-align: middle;
   list-style-type: none;
-  margin: 0;
+  margin: auto 0 auto auto;
 
   li {
-    display: inline;
+    display: inline-block;
     padding: 0;
-    margin: 0;
+    margin: auto 0;
+    line-height: 1.5rem;
 
     @media (max-width: 768px) {
       display: none;
