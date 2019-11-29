@@ -1,11 +1,12 @@
 import React from 'react'
 
-import { Layout } from '../components'
+import { Layout, SEO } from '../components'
 import Helmet from 'react-helmet'
 import { Header } from './Header'
 import { SectionTitle } from './SectionTitle'
 import { Wrapper } from './Wrapper'
 import { Content } from './Content'
+import { generatePath } from '../utils/paths'
 
 interface Props {
   pageContext: {
@@ -29,6 +30,7 @@ export default class MDXLayout extends React.Component<Props> {
     return (
       <Layout>
         <Helmet title={title} />
+        <SEO path={generatePath(title)} data={{ title }} />
         <Header banner={banner} bannerAttribution={bannerAttribution}>
           <SectionTitle>{title}</SectionTitle>
         </Header>

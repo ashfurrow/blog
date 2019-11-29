@@ -1,6 +1,13 @@
 import React from 'react'
 import { graphql, Link, StaticQuery } from 'gatsby'
-import { Layout, Wrapper, SectionTitle, Header, Content } from '../components'
+import {
+  Layout,
+  Wrapper,
+  SectionTitle,
+  Header,
+  Content,
+  SEO
+} from '../components'
 import { compact } from 'lodash'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
@@ -67,6 +74,7 @@ export default class Search extends React.Component<Props, State> {
     return (
       <Layout>
         <Helmet title={`Search | ${config.siteTitle}`} />
+        <SEO path={'/search/'} data={{ title: 'Search' }} />
         <Header banner="/assets/bg/search.jpg">
           <SectionTitle>Search</SectionTitle>
         </Header>

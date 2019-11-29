@@ -5,7 +5,8 @@ import {
   Layout,
   Wrapper,
   SectionTitle,
-  SectionHeader
+  SectionHeader,
+  SEO
 } from '../components'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
@@ -29,6 +30,13 @@ export default class Portfolio extends React.Component<any> {
     return (
       <Layout>
         <Helmet title={`Portfolio | ${config.siteTitle}`} />
+        <SEO
+          path="/portfolio/"
+          data={{
+            title: 'Ash Furrow Portfolio',
+            description: "Ash Furrow's Professional Portfolio"
+          }}
+        />
         <Header banner="/assets/bg/portfolio.jpg">
           <SectionTitle>Portfolio</SectionTitle>
         </Header>

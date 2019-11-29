@@ -1,6 +1,13 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { Layout, Wrapper, SectionTitle, Header, Content } from '../components'
+import {
+  Layout,
+  Wrapper,
+  SectionTitle,
+  Header,
+  Content,
+  SEO
+} from '../components'
 import { groupBy } from 'lodash'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
@@ -47,6 +54,7 @@ export default class HomePage extends React.Component<Props> {
     return (
       <Layout>
         <Helmet title={`Blog | ${config.siteTitle}`} />
+        <SEO path="/blog/" data={{ title: 'Blog Archive' }} />
         <Header>
           <SectionTitle>Blog Archive</SectionTitle>
         </Header>

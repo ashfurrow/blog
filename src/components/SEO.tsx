@@ -1,55 +1,55 @@
-/* eslint-disable react/require-default-props */
 import React from 'react'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import Post from '../models/Post'
 
+interface GeneralPageProps {
+  title: string
+  description?: string
+  image?: string
+}
+
 interface SEO {
-  postNode?: Post
-  postPath: string
+  data: Post | GeneralPageProps
+  path: string
+}
+
+function isPost(data: Post | GeneralPageProps): data is Post {
+  return 'excerpt' in data
 }
 
 export const SEO = (props: SEO) => {
-  const { postNode, postPath } = props
+  const { data, path } = props
   let title
   let description
   let image
-  let postURL
   const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-  if (postNode) {
-    const postMeta = postNode.frontmatter
+  const url = config.siteUrl + realPrefix + path
+  if (isPost(data)) {
+    const postMeta = data.frontmatter
     title = postMeta.title
-    description = postNode.excerpt
+    description = data.excerpt
     image = postMeta.socialImage && postMeta.socialImage.publicURL
     image = image || (postMeta.banner && postMeta.banner.publicURL)
     image = image || config.siteBanner
-    postURL = config.siteUrl + realPrefix + postPath
   } else {
-    title = config.siteTitle
-    description = config.siteDescription
-    image = config.siteBanner
+    title = data.title
+    description = data.description || config.siteDescription
+    image = data.image || config.siteBanner
   }
   image = config.siteUrl + realPrefix + image
   const blogURL = config.siteUrl + config.pathPrefix
-  let schemaOrgJSONLD = [
-    {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
-      '@id': blogURL,
-      url: blogURL,
-      name: title,
-      alternateName: config.siteTitleAlt ? config.siteTitleAlt : ''
-    }
-  ]
-  if (postNode) {
+
+  let schemaOrgJSONLD: Object[] = []
+  if (isPost(data)) {
     schemaOrgJSONLD = [
       {
+        url,
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
         // @ts-ignore
-        '@id': postURL,
+        '@id': url,
         // @ts-ignore
-        url: postURL,
         name: title,
         alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
         headline: title,
@@ -58,8 +58,8 @@ export const SEO = (props: SEO) => {
           url: image
         },
         description: config.siteDescription,
-        datePublished: postNode.frontmatter.date,
-        dateModified: postNode.frontmatter.date,
+        datePublished: data.frontmatter.date,
+        dateModified: data.frontmatter.date,
         author: {
           '@type': 'Person',
           name: config.author,
@@ -87,7 +87,19 @@ export const SEO = (props: SEO) => {
         }
       }
     ]
+  } else {
+    schemaOrgJSONLD = [
+      {
+        url,
+        '@context': 'http://schema.org',
+        '@type': 'WebSite',
+        '@id': url,
+        name: title,
+        alternateName: config.siteTitleAlt ? config.siteTitleAlt : ''
+      }
+    ]
   }
+
   return (
     <Helmet>
       <html lang={config.siteLanguage} />
@@ -99,16 +111,13 @@ export const SEO = (props: SEO) => {
       </script>
       <meta property="og:locale" content={config.ogLanguage} />
       <meta property="og:site_name" content={config.siteTitle} />
-      <meta property="og:url" content={postNode ? postURL : blogURL} />
-      {postNode ? <meta property="og:type" content="article" /> : null}
+      <meta property="og:url" content={url} />
+      {isPost(data) && <meta property="og:type" content="article" />}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:creator"
-        content={config.userTwitter ? config.userTwitter : ''}
-      />
+      <meta name="twitter:creator" content={config.userTwitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:url" content={config.siteUrl} />
       <meta name="twitter:description" content={description} />

@@ -78,7 +78,7 @@ export default class PostPage extends React.PureComponent<Props> {
       <Layout>
         {post ? (
           <>
-            <SEO postPath={post.fields.path} postNode={post} />
+            <SEO path={post.fields.path} data={post} />
             <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
             <Header
               banner={
