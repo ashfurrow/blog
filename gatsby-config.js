@@ -248,6 +248,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-catch-links',
+      options: {
+        excludePattern: /search/
+      }
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cache',
       options: {
         cachePublic: true
