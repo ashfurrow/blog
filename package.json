@@ -17,7 +17,13 @@
     "lint": "tslint --project .",
     "migrate": "ts-node scripts/migrate.ts",
     "migrate5": "ts-node scripts/migrate5.ts",
-    "article": "ts-node scripts/newPost.ts"
+    "article": "ts-node scripts/newPost.ts",
+    "type-check": "tsc"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn run type-check"
+    }
   },
   "devDependencies": {
     "@types/elasticlunr": "^0.9.0",
