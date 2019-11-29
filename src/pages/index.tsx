@@ -21,7 +21,7 @@ interface Props {
 export default class HomePage extends React.Component<Props> {
   public render() {
     const { data } = this.props
-    const { edges, totalCount } = data.allMdx
+    const { edges } = data.allMdx
 
     return (
       <Layout>

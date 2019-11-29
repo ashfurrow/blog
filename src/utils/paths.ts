@@ -1,6 +1,4 @@
 import { parameterize } from 'inflected'
-import path from 'path'
-import fs from 'fs'
 
 export const generateSlug = (title: string) => {
   // Re-implementation of https://www.rubydoc.info/github/middleman/middleman/Middleman%2FUtil%2FUriTemplates.safe_parameterize

@@ -1,5 +1,4 @@
 import Post from './Post'
-import Frontmatter from './Frontmatter'
 
 interface PageContext {
   next: Post

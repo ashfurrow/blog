@@ -1,5 +1,4 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import theme from '../../config/Theme'
 import config from '../../config/SiteConfig'
@@ -221,107 +220,96 @@ export class Layout extends React.PureComponent<{}, State> {
     const { children } = this.props
 
     return (
-      <StaticQuery
-        query={graphql`
-          query LayoutQuery {
-            site {
-              buildTime(formatString: "MMMM D, YYYY")
-            }
-          }
-        `}
-        render={data => (
-          <ThemeProvider theme={theme}>
-            <React.Fragment>
-              <Navbar
-                navBarState={this.state.navbarOpen}
-                handleNavBar={this.handleNavBar}
-              />
-              <GlobalStyle />
-              {children}
-              <Footer>
-                <hr />
-                <FooterIcons>
-                  <span className="fa-layers fa-fw fa-3x">
-                    <FooterLink
-                      href="https://mastodon.technology/@ashfurrow"
-                      title="Mastodon"
-                      rel="me"
-                    >
-                      <FontAwesomeIcon
-                        icon={faMastodon}
-                        transform="shrink-8"
-                        mask={faCircle}
-                      />
-                    </FooterLink>
-                  </span>
-                  <span className="fa-layers fa-fw fa-3x">
-                    <FooterLink
-                      href="https://twitter.com/ashfurrow"
-                      title="Twitter"
-                      rel="me"
-                    >
-                      <FontAwesomeIcon
-                        icon={faTwitter}
-                        transform="shrink-8"
-                        mask={faCircle}
-                      />
-                    </FooterLink>
-                  </span>
-                  <span className="fa-layers fa-fw fa-3x">
-                    <FooterLink
-                      href="https://github.com/ashfurrow"
-                      title="GitHub"
-                      rel="me"
-                    >
-                      <FontAwesomeIcon
-                        icon={faGithub}
-                        transform="shrink-8"
-                        mask={faCircle}
-                      />
-                    </FooterLink>
-                  </span>
-                  <span className="fa-layers fa-fw fa-3x">
-                    <FooterLink
-                      href="https://photos.ashfurrow.com"
-                      title="Photo Blog"
-                      rel="me"
-                    >
-                      <FontAwesomeIcon
-                        icon={faImage}
-                        transform="shrink-8"
-                        mask={faCircle}
-                      />
-                    </FooterLink>
-                  </span>
-                  <span className="fa-layers fa-fw fa-3x">
-                    <FooterLink
-                      href="http://instagram.com/ashfurrow"
-                      title="Instagram"
-                      rel="me"
-                    >
-                      <FontAwesomeIcon
-                        icon={faInstagram}
-                        transform="shrink-8"
-                        mask={faCircle}
-                      />
-                    </FooterLink>
-                  </span>
-                </FooterIcons>
-                <span style={{ fontSize: '0.75rem' }}>
-                  This site is{' '}
-                  <a href="http://github.com/ashfurrow/blog">open source</a>.{' '}
-                  <a href="http://purl.org/dc/dcmitype/Text">Content</a>{' '}
-                  licensed under{' '}
-                  <a href="http://creativecommons.org/licenses/by/4.0/">
-                    Creative Commons Attribution 4.0
-                  </a>
-                  .
-                </span>
-              </Footer>
-            </React.Fragment>
-          </ThemeProvider>
-        )}
-      />
+      <ThemeProvider theme={theme}>
+        <React.Fragment>
+          <Navbar
+            navBarState={this.state.navbarOpen}
+            handleNavBar={this.handleNavBar}
+          />
+          <GlobalStyle />
+          {children}
+          <Footer>
+            <hr />
+            <FooterIcons>
+              <span className="fa-layers fa-fw fa-3x">
+                <FooterLink
+                  href="https://mastodon.technology/@ashfurrow"
+                  title="Mastodon"
+                  rel="me"
+                >
+                  <FontAwesomeIcon
+                    icon={faMastodon}
+                    transform="shrink-8"
+                    mask={faCircle}
+                  />
+                </FooterLink>
+              </span>
+              <span className="fa-layers fa-fw fa-3x">
+                <FooterLink
+                  href="https://twitter.com/ashfurrow"
+                  title="Twitter"
+                  rel="me"
+                >
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    transform="shrink-8"
+                    mask={faCircle}
+                  />
+                </FooterLink>
+              </span>
+              <span className="fa-layers fa-fw fa-3x">
+                <FooterLink
+                  href="https://github.com/ashfurrow"
+                  title="GitHub"
+                  rel="me"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    transform="shrink-8"
+                    mask={faCircle}
+                  />
+                </FooterLink>
+              </span>
+              <span className="fa-layers fa-fw fa-3x">
+                <FooterLink
+                  href="https://photos.ashfurrow.com"
+                  title="Photo Blog"
+                  rel="me"
+                >
+                  <FontAwesomeIcon
+                    icon={faImage}
+                    transform="shrink-8"
+                    mask={faCircle}
+                  />
+                </FooterLink>
+              </span>
+              <span className="fa-layers fa-fw fa-3x">
+                <FooterLink
+                  href="http://instagram.com/ashfurrow"
+                  title="Instagram"
+                  rel="me"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    transform="shrink-8"
+                    mask={faCircle}
+                  />
+                </FooterLink>
+              </span>
+            </FooterIcons>
+            <span style={{ fontSize: '0.75rem' }}>
+              This site is{' '}
+              <a href="http://github.com/ashfurrow/blog">open source</a>.{' '}
+              <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed
+              under{' '}
+              <a href="http://creativecommons.org/licenses/by/4.0/">
+                Creative Commons Attribution 4.0
+              </a>
+              .
+            </span>
+          </Footer>
+        </React.Fragment>
+      </ThemeProvider>
     )
   }
 }

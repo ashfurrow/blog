@@ -3,10 +3,6 @@ import {
   Timeline as ReactTimeline,
   Events,
   Event,
-  UrlButton,
-  ImageEvent,
-  TextEvent,
-  YouTubeEvent,
   themes,
   createTheme
 } from '@merc/react-timeline'
@@ -41,7 +37,7 @@ import film from './film.jpg'
 
 import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
-import { kebabCase, camelCase } from 'lodash'
+import { camelCase } from 'lodash'
 
 const customTheme = createTheme(themes.default, {
   card: {

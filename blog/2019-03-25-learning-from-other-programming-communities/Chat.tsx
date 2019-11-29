@@ -118,7 +118,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   position: relative;
 
-  // Make everything animate because animations are cool.
+  /* Make everything animate because animations are cool. */
   form.chat * {
     transition: all 0.5s;
     box-sizing: border-box;
@@ -153,7 +153,7 @@ const Wrapper = styled.div`
       border-bottom: 1px solid #ecf0f1;
     }
 
-    // Customize the scrollbar to look like Messages.app
+    /* Customize the scrollbar to look like Messages.app */
     ::-webkit-scrollbar {
       width: 3px;
       height: 1px;
@@ -168,7 +168,7 @@ const Wrapper = styled.div`
       border-radius: 3px;
     }
 
-    // Basic message formatting.
+    /* Basic message formatting. */
     .message {
       display: block;
       width: 98%;
@@ -193,7 +193,7 @@ const Wrapper = styled.div`
       max-width: 90%;
     }
 
-    // Formatting specific to "my" messages.
+    /* Formatting specific to "my" messages. */
     .reader {
       background: ${appleBlue};
       color: white;
@@ -229,7 +229,7 @@ const Wrapper = styled.div`
       transform: translate(-30px, -2px);
     }
 
-    // Formatting specific to "their" messages
+    /* Formatting specific to "their" messages */
     .ash {
       background: #e5e5ea;
       color: black;
@@ -265,7 +265,7 @@ const Wrapper = styled.div`
       transform: translate(-30px, -2px);
     }
 
-    // Formatting for the input at the bottom.
+    /* Formatting for the input at the bottom. */
     #input {
       font-size: 15px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -301,7 +301,7 @@ const Wrapper = styled.div`
       float: right;
     }
 
-    // "Spinner" really means "loading indicator" here.
+    /* "Spinner" really means "loading indicator" here. */
     span.spinner {
       -moz-animation: loading-bar 0.5s 1;
       -webkit-animation: loading-bar 0.5s 1;
@@ -318,7 +318,7 @@ const Wrapper = styled.div`
     }
   }
 
-  // Loading bar animation
+  /* Loading bar animation */
   @-moz-keyframes loading-bar {
     0% {
       width: 0%;

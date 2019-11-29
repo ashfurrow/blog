@@ -1,9 +1,10 @@
 import path from 'path'
 import { promises as fs } from 'fs'
 import YAML from 'yaml'
-import { take, flatten, uniq, trim, last, kebabCase } from 'lodash'
-import requestPromise from 'request-promise-native'
-import { generateSlug } from '../src/utils/paths'
+// import { take, flatten, uniq, trim, last, kebabCase } from 'lodash'
+import { take, trim, last } from 'lodash'
+// import requestPromise from 'request-promise-native'
+// import { generateSlug } from '../src/utils/paths'
 
 const main = async () => {
   try {
@@ -29,7 +30,7 @@ const migratePost = async (filename: string) => {
     og_image: socialImage
   } = frontmatter
   const oldFileName = filename.replace('.html.markdown', '')
-  const oldSlug = last(oldFileName.split(/\d{4}-\d{2}-\d{2}-/))
+  // const oldSlug = last(oldFileName.split(/\d{4}-\d{2}-\d{2}-/))
   const newDirName = `./blog/${oldFileName}`
   await fs.mkdir(newDirName, { recursive: true })
 

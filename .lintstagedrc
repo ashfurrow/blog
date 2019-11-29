@@ -1,4 +1,5 @@
 {
-  "*.{ts,tsx}": ["npm run lint:fix", "git add"],
-  "{*.{scss,json,md}}": ["npm run fix", "git add"]
+  "*.{ts,tsx}": ["yarn tslint --fix", "prettier --write", "git add"],
+  "{*.{json,md}}": ["prettier --write", "git add"],
+  "*.scss": ["prettier --write", "yarn stylelint --fix", "git add"]
 }

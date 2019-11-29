@@ -15,7 +15,7 @@ export const ReactResponsiveEmbed: React.FC<{
 }> = ({ narrow, ...others }) =>
   // 1.66rem matches line height
   narrow ? (
-    <Normal addBottom>
+    <Normal>
       <_ReactResponsiveEmbed {...others} />
     </Normal>
   ) : (

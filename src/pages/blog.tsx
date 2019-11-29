@@ -5,8 +5,6 @@ import { groupBy } from 'lodash'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import Data from '../models/Data'
-import theme from '../../config/Theme'
-import rgba from 'polished/lib/color/rgba'
 import styled from 'styled-components'
 
 interface Props {
@@ -70,7 +68,7 @@ export default class HomePage extends React.Component<Props> {
                         return lhsDate.getFullYear() - rhsDate.getFullYear()
                       })
                       .reverse()
-                      .map((monthPosts, index) => {
+                      .map(monthPosts => {
                         const representativeDate = new Date(
                           monthPosts[0].frontmatter.date
                         )

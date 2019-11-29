@@ -11,7 +11,8 @@
     "skipLibCheck": true,
     "noUnusedParameters": true,
     "removeComments": false,
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    "noUnusedLocals": true
   },
   "include": ["./src/**/*", "./bootup/**/*", "./scripts/**/*", "./blog/**/*"]
 }

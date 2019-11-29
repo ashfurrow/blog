@@ -6,7 +6,6 @@ import { Header } from './Header'
 import { SectionTitle } from './SectionTitle'
 import { Wrapper } from './Wrapper'
 import { Content } from './Content'
-import Frontmatter from '../models/Frontmatter'
 
 interface Props {
   pageContext: {

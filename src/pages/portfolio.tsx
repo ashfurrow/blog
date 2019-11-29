@@ -22,9 +22,7 @@ import {
   faSoundcloud,
   faYoutube
 } from '@fortawesome/free-brands-svg-icons'
-import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import { RightImage } from '../components/RightImage'
-import { url } from 'inspector'
 
 export default class Portfolio extends React.Component<any> {
   public render() {
