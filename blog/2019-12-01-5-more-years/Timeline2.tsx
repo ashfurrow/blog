@@ -96,6 +96,8 @@ export class Timeline2 extends React.Component {
       <Wide>
         <ReactTimeline theme={customTheme}>
           <Events>
+            <Event className="year" date="2015" />
+
             <Entry title="Spreading the Word about Swift" img={dotSwift}>
               <p>
                 By 2015, Swift was public and gaining in popularity. I was an
@@ -373,6 +375,8 @@ export class Timeline2 extends React.Component {
                 come next year, building Live Auctions Integration.
               </p>
             </Entry>
+
+            <Event className="year" date="2016" />
 
             <Entry title="Film!" img={film}>
               <p>
@@ -697,13 +701,211 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="TOOD">
-              <p>Do this.</p>
+            <Event className="year" date="2017" />
+
+            <Entry title="Retrieval Errors">
+              <p>
+                2017 was a really difficult year for me. I was still suffering
+                from depression and that impacted my ability to form longterm
+                memories. If this section is shorter than the other years, I'll
+                blame it on that. I'm only grateful that I was able to write
+                down what had happened on this blog.
+              </p>
             </Entry>
+
+            <Entry title="React Native Feels">
+              <p>
+                In 2016, Artsy had introduced React Native into our iOS app. I
+                had largely ignored it because I thought, and hoped, that it
+                would fizzle out. To my dismay at the time, it didn't. I
+                eventually wrote{' '}
+                <a href="https://ashfurrow.com/blog/swift-vs-react-native-feels/">
+                  this blog post
+                </a>{' '}
+                early 2017 about dealing with these feelings, but in my opinion,
+                the post hasn't aged well. It still has me holding on to Swift
+                as the future of iOS at Artsy.
+              </p>
+              <p>
+                The problem is – rather, <em>my</em> problem <em>was</em> – that
+                I was too attached to my tools. I had the strong convictions,
+                but they were too tightly held. I ignored React Native because I
+                assumed it would be worse than what I was using. I had my head
+                in the sand and missed out on a huge opportunity to help define
+                what React Native at Artsy would look like. Since Artsy's app is
+                open source, it became a popular resource for how to build React
+                Native apps <em>for everyone</em>. Even now, years later, I
+                still feel like I'm playing catch-up to our technology stack. I
+                missed my chance to be there on the ground floor, and it's one
+                of my biggest professional regrets.
+              </p>
+            </Entry>
+
+            <Entry title="Mastodon">
+              <p>
+                Early in 2017,{' '}
+                <a href="/blog/mastodon/">I created a Mastodon instance</a>{' '}
+                called{' '}
+                <a href="https://mastodon.technology">mastodon.technology</a>.
+                I'm not going to go into detail here, about how Mastodon works
+                or what an instance is, but my experiences administrating
+                mastodon.technology have been pretty positive.
+              </p>
+              <p>
+                I moved to Mastodon because{' '}
+                <a href="https://www.vice.com/en_us/article/783akg/mastodon-is-like-twitter-without-nazis-so-why-are-we-not-using-it">
+                  Twitter has too many Nazis
+                </a>{' '}
+                and when I created my own instance, I got to establish a "no
+                Nazis" policy in our <a href="</a>">Code of Conduct</a>, which
+                felt nice. It felt nice to say "no" to fascists, but it also
+                made my instance (and by extension, made <em>me</em>) a target.
+              </p>
+              <p>
+                I would later{' '}
+                <a href="/blog/contributing-to-mastodon/">get involved</a>{' '}
+                deeper with Mastodon, contributing code fixes to its React and
+                Rails code, as well as documentation. It was a very different
+                kind of open source project than I was used to, and I learned a
+                lot.{' '}
+              </p>
+              <p>
+                I still remember when a serious, immediate problem with the
+                federation behaviour was uncovered and the creator of Mastodon
+                asked me on Discord for help (I was the only one around). "I'm
+                just an iOS developer", I said. "Whatever, you know code", he
+                responded. And I was like "huh, <em>yeah</em>." And we figured
+                out the problem together.
+              </p>
+            </Entry>
+
+            <Entry title="Stepping Back from Moya">
+              <p>
+                In 2017,{' '}
+                <a href="https://ashfurrow.com/blog/stepping-back-from-moya/">
+                  I stepped back from Moya
+                </a>
+                , which was a big deal. Moya had become a huge project – one of
+                the most popular open source iOS libraries – and I had
+                successfully deprecated my involvement in the project. Since my
+                departure, the project has continued to grow and evolve.
+              </p>
+              <p>
+                I can't think of a better success for an open source project
+                than setting it up to survive the end of your own interest in
+                it.
+              </p>
+            </Entry>
+
+            <Entry title="Learning React">
+              <p>
+                Weirdly enough, I started doing work in React (for the web)
+                before I ever touch React Native. Part of this is because of how{' '}
+                <a href="https://artsy.github.io/blog/2018/04/17/making-a-components-pod/">
+                  Artsy divided the React Native and native iOS parts of our app
+                </a>{' '}
+                – I just didn't need to know React Native to work in our app,
+                because components I worked in were all Objective-C or Swift.
+                Rather, I began contributing to web projects on the Auctions
+                team which were in React. Specifically, they were using React
+                and Redux, with GraphQL and websocket backends. Compared to the
+                sophisticated tooling I'm using to now, it was quite primitive.
+                But because it was so close to vanilla JavaScript, it was easy
+                to dive into. I enjoyed contributing to the Auctions team
+                software, whether it was in Scala or Rails or Swift, but
+                especially in React. It was so fun!
+              </p>
+              <p>
+                As an added bonus, when I <em>did</em> eventually start
+                contributing to our React Native app, I <em>really</em> noticed
+                all of the nice things that the tooling provided. Tools like
+                TypeScript and Relay seemed so obvious in hindsight.
+              </p>
+            </Entry>
+
+            <Entry title="Guitar Debut">
+              <p>
+                Late in 2016, I learned the Ukulele and later the guitar. At
+                Artsy's annual employee art show (the <em>Artsy Salon</em>),{' '}
+                <a href="/blog/guitar-debut/">
+                  I performed guitar in front of a live audience for the first
+                  time
+                </a>
+                .
+              </p>
+              <p>
+                I was used to performing music from back in high school, when I
+                played piano and saxophone. But this was different, mainly
+                because <em>I was signing</em> and I really hated my voice. If
+                you{' '}
+                <a href="https://www.youtube.com/watch?v=582iYsdMHjA&list=PLBygl72DbBTHb0kIkmmzOx9gUyNvEwaUO&index=2&t=0s">
+                  watch the recordings
+                </a>
+                , you can see my legs shaking.
+              </p>
+              <p>
+                Still, it was an amazing experience, and in the middle of a very
+                bad year, having a safe space to explore this new aspect of
+                myself was really important.
+              </p>
+            </Entry>
+
+            <Entry title="Coding in React Native">
+              <p>
+                By mid 2017, I had began contributing to{' '}
+                <a href="https://github.com/artsy/emission">
+                  Artsy's React Native code.
+                </a>{' '}
+                My fears and doubts persisted, but I pushed through them and
+                started enjoying writing React Native user interfaces{' '}
+                <em>way</em> more than I enjoyed writing similar UI in
+                Swift/Objective-C. I was hooked.
+              </p>
+            </Entry>
+
+            <Entry title="End of Therapy">
+              <p>
+                At the end of 2017, Artsy switched healthcare providers. My
+                therapist had never been that helpful for me – sure, he had
+                helped mitigate the day-to-day of my depression, but the
+                depression itself persisted. Since I had found a medication that
+                was working for me, I stopped going when he went out of network
+                for my new insurance.
+              </p>
+              <p>
+                This was probably a mistake, but would eventually work out okay.
+              </p>
+            </Entry>
+
+            <Entry title="Side Effects">
+              <p>
+                The medication I'd found that was helping manage my depression
+                has a rare, but serious (and often permanent) side-effect. A
+                neurological side-effect. I started exhibiting the symptoms and{' '}
+                <a href="/blog/some-updates/">
+                  had to stop taking my medication right away
+                </a>
+                .
+              </p>
+              <p>
+                That really sucked. Not only did I have to deal with depression
+                again, but had a whole new condition to deal with. It would take
+                six months before I got back to a stable place. My work
+                suffered. My home life suffered. I suffered.
+              </p>
+              <p>
+                To be honest, I don't really remember much from that six-month
+                time period.
+              </p>
+            </Entry>
+
+            <Event className="year" date="2018" />
 
             <Entry title="TOOD">
               <p>Do this.</p>
             </Entry>
+
+            <Event className="year" date="2019" />
 
             <Entry title="TOOD">
               <p>Do this.</p>
