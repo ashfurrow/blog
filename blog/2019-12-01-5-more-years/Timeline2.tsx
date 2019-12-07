@@ -14,8 +14,11 @@ import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { kebabCase, camelCase } from 'lodash'
 
+import buynow from './buynow.jpeg'
+import greencardstart from './greencardstart.jpg'
+import lifeatartsy from './lifeatartsy.jpg'
 import bidflow from './bidflow.png'
-import jamsesh from './jamsesh.jpeg'
+import jamsesh from './jamsesh.jpg'
 import dotSwift from './dotSwift.jpg'
 import leaving from './leaving.jpg'
 import cats from './cats.jpg'
@@ -274,7 +277,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Life at Artsy">
+            <Entry title="Life at Artsy" img={lifeatartsy}>
               <p>
                 After UIKonf uploaded the video recording of my{' '}
                 <em>Teaching &amp; Learning</em> talk, I shared it within Artsy.
@@ -468,7 +471,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Green Card Process Starts">
+            <Entry title="Green Card Process Starts" img={greencardstart}>
               <p>
                 So far, my wife and I had been living in the United States on a
                 TN-1 visa ("the NAFTA visa"). It had some restrictions that we
@@ -897,7 +900,8 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 To be honest, I don't really remember much from that six-month
-                time period.
+                time period. What I include in this timeline is largely
+                reconstructued from blog posts, git commits, and screenshots.
               </p>
             </Entry>
 
@@ -1114,6 +1118,10 @@ export class Timeline2 extends React.Component {
                 <a href="https://twitter.com/ashfurrow/status/1010889745398927361">
                   I played at a jam session my friend organized
                 </a>
+                . I even{' '}
+                <a href="/blog/just-play/">
+                  recorded myself playing music every day for a month
+                </a>
                 .
               </p>
               <p>
@@ -1192,6 +1200,30 @@ export class Timeline2 extends React.Component {
             </Entry>
 
             <Event className="year" date="2019" />
+
+            <Entry title="Buy Now" img={buynow}>
+              <p>
+                After the success of the Bid Flow project, the Purchase team
+                moved onto the next big challenge, and I decided to stay on the
+                team and help. This new feature would require <em>some</em> iOS
+                development work, but most of my contributions would be to the
+                web code. I'd learned enough React Native, and our tooling
+                shared so much in common, that I was able to jump in and be
+                productive right away.
+              </p>
+              <p>
+                Buy Now was a company-wide push to make buying art online{' '}
+                <em>way</em> easier. Being able to enter a credit card and just{' '}
+                <em>purchase</em> art was something unfamiliar to the art world,
+                and it took years of building up trust and relationships with
+                Artsy partners before were in a position to even try to do this.
+                As usual, technology was the easy part.{' '}
+              </p>
+              <p>
+                You can see the photo here of the launch celebration, and you
+                can see every department in Artsy.
+              </p>
+            </Entry>
 
             <Entry title="TOOD">
               <p>Do this.</p>
