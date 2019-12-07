@@ -977,8 +977,176 @@ export class Timeline2 extends React.Component {
 
             <Event className="year" date="2018" />
 
-            <Entry title="TOOD">
-              <p>Do this.</p>
+            <Entry title="Changes at Artsy">
+              <p>
+                2018 began with a re-organization of our Engineering team. There
+                were a lot of changes, and they weren't handled well. The{' '}
+                <em>way</em> the changes were handled were a lot more costly
+                than they needed to be, and introduced a lot of tension to the
+                team.
+              </p>
+              <p>
+                I'm putting this in the timeline at the beginning of the year,
+                but this affected most of 2018. It was a shame, but a lot of us
+                learned quite a bit. I{' '}
+                <a href="https://artsy.github.io/blog/2019/04/19/having-a-coffee-with-every-engineer/">
+                  played a small role in helping to remedy the tension
+                </a>
+                , but like any change, it had a permanent effect on our culture.
+              </p>
+              <p>
+                This was a pretty important lesson for me: Artsy is going to
+                change. It always <em>has</em> been changing, but as I'd grown
+                into a more senior role in the team, I was paying more
+                attention. I also learned that, while changes have costs, they
+                present some opportunities for personal and team growth, too.
+              </p>
+              <p>
+                In the end, we resolved our issues by living by three of our
+                core values: People are Paramount, Openness, Positive Energy. It
+                was still more costly than it had to be, but this might just be
+                the kind of lesson that every growing company's engineering team
+                has to learn.
+              </p>
+            </Entry>
+
+            <Entry title="BidFlow">
+              <p>
+                In 2018, I joined Artsy's Purchase team to help them build a new
+                "Bid Flow" on iOS. For some time, we were aware of a gap between
+                user behaviour on auctions through the web, and through our app,
+                and our hypothesis was that this gap was due to the iOS
+                experience being... pretty bad, actually. It's a satisfying
+                feeling to both build a new user experience while also remove
+                old code and migrating to a new framework. But that wasn't the
+                most important part of this project, for me.
+              </p>
+              <p>
+                I joined the Purchase team not to <em>build</em> the new Bid
+                Flow, but to <em>help the team</em> build it. My role was to
+                support the other engineers, who mostly had web backgrounds.
+                This was their first big React Native project, and they needed
+                some guidance. I was their guide.
+              </p>
+              <p>
+                This was the first time, explicitly and in a technical sense, my
+                job was to help other engineers be productive. I really enjoyed
+                my time on the Purchase team, and I'm proud of what we built. In
+                hindsight, this was a key turning point in my career, where I
+                started to apply those deep skills in a broad set of situations.
+              </p>
+            </Entry>
+
+            <Entry title="Buying into React Native">
+              <p>
+                Artsy's investments in React Native have always been motivated,
+                in part, by a desire to de-silo iOS development at the company.
+                The Purchase team Bid Flow project was the first time that I had
+                experienced the benefit of sharing an idiom (React) and tooling
+                across all our front ends. I was amazed at what we managed to
+                accomplish in a very short amount of time.
+              </p>
+              <p>
+                While I was learning, I wrote about my experiences. Since most
+                React Native developers come from a web background, I{' '}
+                <a href="/blog/react-native-starter-resources-for-native-developers/">
+                  tried to make React Native less intimidating
+                </a>{' '}
+                to native iOS developers
+              </p>
+              .{' '}
+              <p>
+                I{' '}
+                <a href="https://facebook.github.io/react-native/blog/2018/05/07/using-typescript-with-react-native">
+                  wrote a blog post on the official React Native blog
+                </a>
+                . Using my perspective with one foot in both the JavaScript and
+                iOS develop worlds, I looked at what made React Native hard to
+                approach, and wrote{' '}
+                <em>
+                  <a href="/blog/javascript-is-good-actually/">
+                    JavaScript is Good, Actually
+                  </a>
+                </em>
+                , a blog post which certainly didn't help my alienation from the
+                iOS developer community.
+              </p>
+              <p>
+                Or did it? I found that, as I've grown, so has the community.
+                There are certainly still curmudgeons who will always hate React
+                Native, but there's a growing number of people who are keen to
+                learn outside the bounds set by Apple. In staking my reputation
+                on an idea like "JavaScript is good", I discovered that many iOS
+                developers <em>were</em> interested in React Native.
+              </p>
+            </Entry>
+
+            <Entry title="Mission Accomplished. Kind of.">
+              <p>
+                In March, after months of ignoring my psychiatrist's advice, I
+                started seeing a specialist in Cognitive Behaviour Therapy. It
+                was the exact intervention that my depression needed, and in
+                only seven sessions,{' '}
+                <a href="/blog/all-i-can-say-is-im-excited/">
+                  I had the skills I needed to manage my emotions
+                </a>
+                .
+              </p>
+              <p>
+                It's easy to look back on this as the "end" of my depression,
+                but it remains a struggle even today. I have to constantly be
+                using those skills, refining them, practicing them. I stayed on
+                medication for a year afterward. I still have bad days. But I
+                have the skills to handle them, and I mostly do okay.
+              </p>
+            </Entry>
+
+            <Entry title="The Case for React Native">
+              <p>
+                The whole time I'd been writing about React Native, I realized
+                that I had been dancing around <em>why</em> to use it. Sure, I
+                could point to Artsy blog posts about why <em>we</em> used it,
+                but there wasn't a place to learn, from a native iOS developer's
+                perspective, why React Native was worth learning.
+              </p>
+              <p>
+                I wrote{' '}
+                <em>
+                  <a href="/blog/the-case-for-react-native/">
+                    The Case For React Native
+                  </a>
+                </em>{' '}
+                to explain why I thought React Native is a good fit for "a lot
+                of iOS apps (many? most?)". The tl;dr is that React itself is
+                worth it. Additionally, TypeScript is good enough to make any
+                Swift developer feel at home writing code that gets compiled
+                down to JavaScript.
+              </p>
+            </Entry>
+
+            <Entry title="My First JavaScript Meetup Talk">
+              <p>
+                A big part of my work in the iOS developer community has been
+                delivering talks at conferences and meetups.{' '}
+                <a href="/speaking/">My speaking page</a> lists dozens of talks
+                I've given over the years. In late 2018, I gave{' '}
+                <a href="/blog/first-js-meetup-talk/">
+                  my first talk at a JavaScript meetup
+                </a>
+                .
+              </p>
+              <p>
+                I live-coded a TypeScript linter plugin that used the TypeScript
+                AST to apply auto-fixits for{' '}
+                <a href="https://en.wikipedia.org/wiki/De_Morgan's_laws">
+                  De Morgan's Laws
+                </a>
+                . The exercise was pedagogical – only meant to teach how one can
+                build other, more useful tools. It was difficult, but I had a
+                blast, and came away with a richer appreciation of the
+                JavaScript community and their enviable relationship to their
+                own tools.
+              </p>
             </Entry>
 
             <Event className="year" date="2019" />
