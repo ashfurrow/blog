@@ -14,6 +14,8 @@ import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { kebabCase, camelCase } from 'lodash'
 
+import bidflow from './bidflow.png'
+import jamsesh from './jamsesh.jpeg'
 import dotSwift from './dotSwift.jpg'
 import leaving from './leaving.jpg'
 import cats from './cats.jpg'
@@ -988,9 +990,9 @@ export class Timeline2 extends React.Component {
               <p>
                 I'm putting this in the timeline at the beginning of the year,
                 but this affected most of 2018. It was a shame, but a lot of us
-                learned quite a bit. I{' '}
+                learned quite a bit.{' '}
                 <a href="https://artsy.github.io/blog/2019/04/19/having-a-coffee-with-every-engineer/">
-                  played a small role in helping to remedy the tension
+                  I played a small role in helping to remedy the tension
                 </a>
                 , but like any change, it had a permanent effect on our culture.
               </p>
@@ -999,7 +1001,7 @@ export class Timeline2 extends React.Component {
                 change. It always <em>has</em> been changing, but as I'd grown
                 into a more senior role in the team, I was paying more
                 attention. I also learned that, while changes have costs, they
-                present some opportunities for personal and team growth, too.
+                present some opportunities for personal and team growth.
               </p>
               <p>
                 In the end, we resolved our issues by living by three of our
@@ -1010,7 +1012,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="BidFlow">
+            <Entry title="BidFlow" img={bidflow}>
               <p>
                 In 2018, I joined Artsy's Purchase team to help them build a new
                 "Bid Flow" on iOS. For some time, we were aware of a gap between
@@ -1052,9 +1054,9 @@ export class Timeline2 extends React.Component {
                 <a href="/blog/react-native-starter-resources-for-native-developers/">
                   tried to make React Native less intimidating
                 </a>{' '}
-                to native iOS developers
+                to native iOS developers.
               </p>
-              .{' '}
+
               <p>
                 I{' '}
                 <a href="https://facebook.github.io/react-native/blog/2018/05/07/using-typescript-with-react-native">
@@ -1101,6 +1103,28 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
+            <Entry title="Guitar Progress" img={jamsesh}>
+              <p>
+                I continued learning the guitar. I took some private lessons,
+                eventually, but was mostly self-taught.{' '}
+                <a href="https://www.youtube.com/watch?v=1pIf5VPhmco&list=PLBygl72DbBTHIpDE63lPSvddwHs6FbgRQ">
+                  I performed at the Artsy Salon again
+                </a>
+                , and was a lot less nervous.{' '}
+                <a href="https://twitter.com/ashfurrow/status/1010889745398927361">
+                  I played at a jam session my friend organized
+                </a>
+                .
+              </p>
+              <p>
+                Guitar was a way for me to express myself, creatively, and it
+                replaced photography as my main way of expressing myself. It was
+                also a way for me to feel connected to home: most of the songs I
+                learn to play and sing on the guitar are by Canadian artists,
+                like John K Samson, Jim Bryson, and The Barenaked Ladies.
+              </p>
+            </Entry>
+
             <Entry title="The Case for React Native">
               <p>
                 The whole time I'd been writing about React Native, I realized
@@ -1121,6 +1145,24 @@ export class Timeline2 extends React.Component {
                 worth it. Additionally, TypeScript is good enough to make any
                 Swift developer feel at home writing code that gets compiled
                 down to JavaScript.
+              </p>
+            </Entry>
+
+            <Entry title="Artsy Engineering Guiding Principles">
+              <p>
+                At the end of 2018, after a lot of growth, Artsy Engineering{' '}
+                <a href="https://artsy.github.io/blog/2018/08/22/engineering-guiding-principles/">
+                  defined its guiding principles
+                </a>
+                . This was a collaborative effort, to define (and{' '}
+                <a href="https://github.com/artsy/README/blob/master/culture/engineering-principles.md">
+                  open source
+                </a>
+                ) a list of first principles that could be referred to. These
+                are useful for making decisions, giving feedback, building new
+                software, fixing old software, lots of stuff. I cite them often
+                in discussions at work – as a shared foundation of our culture,
+                they become more and more valuable the more they are used.
               </p>
             </Entry>
 
