@@ -783,7 +783,7 @@ export class Timeline2 extends React.Component {
               <p>
                 In 2017,{' '}
                 <a href="https://ashfurrow.com/blog/stepping-back-from-moya/">
-                  I stepped back from Moya
+                  Stepped back from Moya
                 </a>
                 , which was a big deal. Moya had become a huge project – one of
                 the most popular open source iOS libraries – and I had
@@ -896,6 +896,82 @@ export class Timeline2 extends React.Component {
               <p>
                 To be honest, I don't really remember much from that six-month
                 time period.
+              </p>
+            </Entry>
+
+            <Entry title="A Broadening Technical Perspective">
+              <p>
+                Late in 2017, I wrote{' '}
+                <em>
+                  <a href="/blog/perspective-of-the-polyglot">
+                    Perspective of the Polyglot
+                  </a>
+                </em>
+                , about my progression through Artsy's Engineering Ladder. The
+                post focused specifically on the technical aspects of that
+                progress. The "softer skills" were something that I was still
+                working on, too, but the technical aspects of my engineering
+                growth <em>was</em> a big focus for me in 2017.
+              </p>
+              <p>
+                What I realized was that, while I was a great iOS Developer,
+                what I wanted was to become a great <em>developer</em>.
+                Broadening my skillset had some implications, and I'll name a
+                few here.
+              </p>
+              <p>
+                First, the most emotionally impactful one: I lost some esteem
+                among the iOS developer community. That sucked. Some friends
+                said things about my broadening skills that really hurt my
+                feelings, though I don't think they intended to. Strangers were
+                a lot more candid with their feedback about Artsy's technology
+                choices – and my tacit endorsement of them. It was an isolating
+                experience.
+              </p>
+              <p>
+                Second, I had to learn to be comfortable being a beginner again.
+                I've aimed to be T-shaped: a deep set of specific skills that
+                can be broadly applied. I was deep enough and it was time to
+                focus on broadening those skills. After a long time as an
+                "expert" iOS developer, I had to learn to be okay not
+                necessarily knowing what I was doing all the time. All the time,
+                I had to keep my curiosity sharp, to relate my new skills back
+                to my current ones.
+              </p>
+              <p>
+                Third, but certainly not finally, I had to let go of Swift.
+                While I was busy learning Rails, Scala, TypeScript, and React,
+                Swift continued to evolve. I tried to stay abreast of the
+                changes, but I must confess that it's harder to care about a
+                language when it is only one of diverse set of languages you use
+                day-to-day. A consequence of this was that I kinda fell back in
+                love with Objective-C, and I still need to write a blog post
+                about that.
+              </p>
+            </Entry>
+
+            <Entry title="Steven Universe, omg">
+              <p>
+                Late in 2016, I was enjoying Steven Universe so much that I
+                bought a ukulele and started learning the songs from the show. A
+                year later, I decided to{' '}
+                <a href="/blog/so-steven-universe-eh/">
+                  distill what I loved about the show into a blog post
+                </a>
+                . My goal was to get as many people to watch it as possible;
+                this goal continues to motivate me, which is why I'm sharing it
+                now.
+              </p>
+              <p>
+                You might be wondering what an endorsement of a cartoon
+                television show is doing in a progression retrospective, but
+                that would only point to a lack of familiarity with my work. I
+                work at an <em>art</em> company, the show is about{' '}
+                <em>empathy</em>... I dunno, it seems obvious to me.
+              </p>
+              <p>
+                People keep finally taking my repeated suggestions, and they
+                keep thanking me for my persistence. Go watch it.
               </p>
             </Entry>
 
