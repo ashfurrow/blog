@@ -14,8 +14,12 @@ import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { kebabCase, camelCase } from 'lodash'
 
-import buynow from './buynow.jpeg'
-import greencardstart from './greencardstart.jpg'
+import cityguides from './cityguides.jpg'
+import elephantfriend from './elephantfriend.png'
+import peerlabcommunity from './peerlabscommunity.jpg'
+import inputoutput from './inputoutput.jpg'
+import buynow from './buynow.jpg'
+import greencardend from './greencardend.jpg'
 import lifeatartsy from './lifeatartsy.jpg'
 import bidflow from './bidflow.png'
 import jamsesh from './jamsesh.jpg'
@@ -356,7 +360,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="The Auctions Team">
+            <Entry title="The Auctions Team" img={inputoutput}>
               <p>
                 I ended 2015 by helping to form Artsy Engineering's{' '}
                 <em>Auctions Team</em>. My product work in 2015 hadn't been
@@ -471,7 +475,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Green Card Process Starts" img={greencardstart}>
+            <Entry title="Green Card Process Starts">
               <p>
                 So far, my wife and I had been living in the United States on a
                 TN-1 visa ("the NAFTA visa"). It had some restrictions that we
@@ -589,6 +593,13 @@ export class Timeline2 extends React.Component {
                 friends to pass out. I still have a complete set! And my mom
                 uses one of my pins as a keychain.
               </p>
+              <p>
+                At the time of writing, I still haven't been back to WWDC. I
+                don't miss it as much as I thought I would. However, ever since
+                I attended on a student scholarship in 2010 (which helped launch
+                my entire career), WWDC will always have a special place in my
+                heart.
+              </p>
             </Entry>
 
             <Entry title="Steven Universe" img={stevenuniverse}>
@@ -685,7 +696,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Peer Lab Community">
+            <Entry title="Peer Lab Community" img={peerlabcommunity}>
               <p>
                 After starting my own Peer Lab in 2014, I realized that I wanted
                 to expand the idea. I can only run one peer lab, so I started{' '}
@@ -713,8 +724,8 @@ export class Timeline2 extends React.Component {
                 2017 was a really difficult year for me. I was still suffering
                 from depression and that impacted my ability to form longterm
                 memories. If this section is shorter than the other years, I'll
-                blame it on that. I'm only grateful that I was able to write
-                down what had happened on this blog.
+                blame it on that. I'm grateful that I was able to write down
+                what had happened on this blog.
               </p>
             </Entry>
 
@@ -746,7 +757,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Mastodon">
+            <Entry title="Mastodon" img={elephantfriend}>
               <p>
                 Early in 2017,{' '}
                 <a href="/blog/mastodon/">I created a Mastodon instance</a>{' '}
@@ -759,12 +770,13 @@ export class Timeline2 extends React.Component {
               <p>
                 I moved to Mastodon because{' '}
                 <a href="https://www.vice.com/en_us/article/783akg/mastodon-is-like-twitter-without-nazis-so-why-are-we-not-using-it">
-                  Twitter has too many Nazis
+                  Twitter had too many Nazis
                 </a>{' '}
-                and when I created my own instance, I got to establish a "no
-                Nazis" policy in our <a href="</a>">Code of Conduct</a>, which
-                felt nice. It felt nice to say "no" to fascists, but it also
-                made my instance (and by extension, made <em>me</em>) a target.
+                (it still does) and when I created my own instance, I got to
+                establish a <a href="</a>">Code of Conduct</a>. I made sure to
+                include a "no Nazis" policy. Cool! It felt nice to say "no" to
+                fascists. But it also made my instance (and by extension, made{' '}
+                <em>me</em>) a target.
               </p>
               <p>
                 I would later{' '}
@@ -1199,6 +1211,10 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
+            <Entry title="Today I Learned...">
+              <p>TODO: Do this. https://github.com/ashfurrow/TIL/issues</p>
+            </Entry>
+
             <Event className="year" date="2019" />
 
             <Entry title="Buy Now" img={buynow}>
@@ -1209,7 +1225,12 @@ export class Timeline2 extends React.Component {
                 development work, but most of my contributions would be to the
                 web code. I'd learned enough React Native, and our tooling
                 shared so much in common, that I was able to jump in and be
-                productive right away.
+                productive right away. We worked on this throughout the latter
+                part of 2018 and used a phase rollout, culminating in{' '}
+                <a href="https://github.com/artsy/force/pull/3300">
+                  a January release
+                </a>
+                .
               </p>
               <p>
                 Buy Now was a company-wide push to make buying art online{' '}
@@ -1225,8 +1246,112 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="TOOD">
-              <p>Do this.</p>
+            <Entry title="Buying a Webcam">
+              <p>
+                TODO: talk about wanting to be seen by my colleagues when
+                working from home.
+              </p>
+            </Entry>
+
+            <Entry title="Discover Team">
+              <p>
+                TODO: Do this.
+                https://ashfurrow.com/blog/reflecting-on-5-years-at-artsy/
+              </p>
+            </Entry>
+
+            <Entry title="End of Medication">
+              <p>
+                TODO: talk about this.
+                https://twitter.com/ashfurrow/status/1124461096969097217
+              </p>
+            </Entry>
+
+            <Entry title="Mastodon Going Strong">
+              <p>
+                It's been nearly three years since I launched{' '}
+                <a href="https://mastodon.technology">mastodon.technology</a>,
+                and it's going really well! I'm more of a lurker than a poster
+                on the fediverse, but I do try to send out a "good morning" post
+                every day (TODO: here's the 2018 thread, and the 2019 thread). I
+                like it as a user: most of the time I spend on social media is
+                spent on Mastodon. But I also like it as an admin: I get to help
+                create the kind of online community that I'd like to see in the
+                world.
+              </p>
+              <p>
+                At time of writing, my instance has 19 344 users (many are
+                inactive, only 1 161 have logged in within the past two weeks).
+                Keeping up with software updates and server maintenance turned
+                out to be the easy part – I know my way around computeres, and
+                have{' '}
+                <a href="https://www.patreon.com/ashfurrow/posts">
+                  shared what I learn as I go
+                </a>
+                . The harder part was building the community.
+              </p>
+              <p>
+                I've succeeded only because I haven't worked to build a
+                community, but have built a <em>team</em> to help me. I noticed
+                when people were making positive contributions to the instance,
+                and invited them to help me moderate the instance. In 2019, I
+                made the big step of asking one of the mods to become another
+                admin. This would give them full administrative access to the
+                instance and its database. It's a huge level of trust, and it
+                was a lot of work to build it up, but it's been so worth it. The
+                team has created the exact kind of community I want to be a part
+                of. To my moderator team: thank you.
+              </p>
+            </Entry>
+
+            <Entry title="Coming Out">
+              <p>TODO: hooooboy do this again huh /blog/coming-out/</p>
+            </Entry>
+
+            <Entry title="City Guides" img={cityguides}>
+              <p>
+                TODO: Do this. Talk about joining in-progress project.
+                https://www.architecturaldigest.com/story/artsy-app-changing-the-game-for-art-and-design-lovers
+              </p>
+            </Entry>
+
+            <Entry title="Artsy Departures">
+              <p>TODO: Talk about Orta+dB.</p>
+            </Entry>
+
+            <Entry title="Purchase Team Redux">
+              <p>
+                TODO: Do this. Talk about getting used to in-progress projects.
+              </p>
+            </Entry>
+
+            <Entry title="Staff Engineer">
+              <p>TODO: Do this.</p>
+            </Entry>
+
+            <Entry title="Artsy Leadership Changes">
+              <p>
+                TODO: Do this. New CEO, VP of Engineering, others. Feels jaded,
+                but Ive gotten so used to change at Artsy that it didnt affect
+                me as much as I thought it might. 2018 was difficult so 2019
+                being difficult didnt bother me as much.
+              </p>
+            </Entry>
+
+            <Entry title="Green Card Process Completes" img={greencardend}>
+              <p>TODO: Do this.</p>
+            </Entry>
+
+            <Entry title="Stepping Up">
+              <p>
+                TODO: Talk about Eloy leaving, about being the last mobile
+                engineer left, and about stepping up to be a better cultural
+                leader while Artsy undergoes some difficult growing pains.
+              </p>
+            </Entry>
+
+            <Entry title="Mobile Experience Team">
+              <p>TODO: Do this.</p>
             </Entry>
           </Events>
         </ReactTimeline>
