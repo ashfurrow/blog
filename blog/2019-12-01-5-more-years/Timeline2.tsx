@@ -14,6 +14,7 @@ import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { kebabCase, camelCase } from 'lodash'
 
+import cultureamp from './cultureamp.png'
 import cityguides from './cityguides.jpg'
 import elephantfriend from './elephantfriend.png'
 import peerlabcommunity from './peerlabscommunity.jpg'
@@ -968,6 +969,39 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
+            <Entry title="Uncertain Identity" img={cultureamp}>
+              <p>
+                I don't remember exactly when it happened, but at some point, I
+                started getting uncomfortable when people identified me as
+                straight. It comes up in conversation more than you might think,
+                if the subject of your sexuality happens to be on your mind
+                enough.
+              </p>
+              <p>
+                Artsy uses a tool called Culture Amp to do regular, anonymous
+                surveys of its employees. This makes sure that the company, its
+                leadership, its various teams, etc, are all providing a
+                workplace that lives up to our company values. At the end of the
+                survey, there are some demographic questions – these are to get
+                a thorough picture of how Artsy is meeting its employees needs.
+              </p>
+              <p>
+                So anyway, the Culture Amp survey asked me what my sexuality
+                was. I was used to this question making me uncomfortable, but I
+                remember thinking "hey, this is just an anonymous survey, the
+                stakes are low, why not just <em>try</em> 'bisexual'?" And so I
+                did.
+              </p>
+              <p>
+                And I remember a few weeks later when the results were
+                distributed interally, seeing the breakdown of the company by
+                demographics. I saw the sexuality pie chart and I remember
+                thinking "there are more of us than I thought." <em>Us</em>. It
+                was the first time I'd admitted this to anyone – even myself –
+                and I remember it distinctly.
+              </p>
+            </Entry>
+
             <Entry title="Steven Universe, omg">
               <p>
                 Late in 2016, I was enjoying Steven Universe so much that I
@@ -1304,10 +1338,6 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Coming Out">
-              <p>TODO: hooooboy do this again huh /blog/coming-out/</p>
-            </Entry>
-
             <Entry title="City Guides" img={cityguides}>
               <p>
                 TODO: Do this. Talk about joining in-progress project.
@@ -1340,6 +1370,13 @@ export class Timeline2 extends React.Component {
 
             <Entry title="Green Card Process Completes" img={greencardend}>
               <p>TODO: Do this.</p>
+            </Entry>
+
+            <Entry title="Coming Out">
+              <p>
+                TODO: hooooboy do this again huh. also please notice how this is
+                _after_ the green card process completes yay /blog/coming-out/
+              </p>
             </Entry>
 
             <Entry title="Stepping Up">
