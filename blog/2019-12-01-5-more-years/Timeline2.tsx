@@ -918,6 +918,29 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
+            <Entry title="Staying in New York?">
+              <p>
+                My wife Ashley and I had always toyed with moving home to
+                Canada. Well, not "home" to Canada: we were from rural Canada
+                but had decidedly become "city people", so a move back to Canada
+                would be to a city. Vancouver, we were thinking.
+              </p>
+              <p>
+                All that changed when my sister had her first child. Something
+                in my brain switched on, and it was clear: we wouldn't be moving
+                even a single kilometer further from that baby. So Vancouver was
+                out of the picture.
+              </p>
+              <p>
+                We actually couldn't be there for our niece's birth because of
+                restrictions during our immigration process. The process made us
+                re-evaluate what we wanted out of life and where we could live
+                to get that. Since we had some roots put down into New York, and
+                it's relatively close to our family (compared to Amsterdam or
+                Vancouver), we decided to stay here for the time being.
+              </p>
+            </Entry>
+
             <Entry title="A Broadening Technical Perspective">
               <p>
                 Late in 2017, I wrote{' '}
@@ -966,39 +989,6 @@ export class Timeline2 extends React.Component {
                 day-to-day. A consequence of this was that I kinda fell back in
                 love with Objective-C, and I still need to write a blog post
                 about that.
-              </p>
-            </Entry>
-
-            <Entry title="Uncertain Identity" img={cultureamp}>
-              <p>
-                I don't remember exactly when it happened, but at some point, I
-                started getting uncomfortable when people identified me as
-                straight. It comes up in conversation more than you might think,
-                if the subject of your sexuality happens to be on your mind
-                enough.
-              </p>
-              <p>
-                Artsy uses a tool called Culture Amp to do regular, anonymous
-                surveys of its employees. This makes sure that the company, its
-                leadership, its various teams, etc, are all providing a
-                workplace that lives up to our company values. At the end of the
-                survey, there are some demographic questions – these are to get
-                a thorough picture of how Artsy is meeting its employees needs.
-              </p>
-              <p>
-                So anyway, the Culture Amp survey asked me what my sexuality
-                was. I was used to this question making me uncomfortable, but I
-                remember thinking "hey, this is just an anonymous survey, the
-                stakes are low, why not just <em>try</em> 'bisexual'?" And so I
-                did.
-              </p>
-              <p>
-                And I remember a few weeks later when the results were
-                distributed interally, seeing the breakdown of the company by
-                demographics. I saw the sexuality pie chart and I remember
-                thinking "there are more of us than I thought." <em>Us</em>. It
-                was the first time I'd admitted this to anyone – even myself –
-                and I remember it distinctly.
               </p>
             </Entry>
 
@@ -1220,6 +1210,39 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
+            <Entry title="Uncertain Identity" img={cultureamp}>
+              <p>
+                I don't remember exactly when it happened, but at some point, I
+                started getting uncomfortable when people identified me as
+                straight. It comes up in conversation more than you might think,
+                if the subject of your sexuality happens to be on your mind
+                enough.
+              </p>
+              <p>
+                Artsy uses a tool called Culture Amp to do regular, anonymous
+                surveys of its employees. This makes sure that the company, its
+                leadership, its various teams, etc, are all providing a
+                workplace that lives up to our company values. At the end of the
+                survey, there are some demographic questions – these are to get
+                a thorough picture of how Artsy is meeting its employees needs.
+              </p>
+              <p>
+                So anyway, the Culture Amp survey asked me what my sexuality
+                was. This question had been making me uncomfortable for a while,
+                but I remember finally thinking "hey, this is just an anonymous
+                survey, the stakes are low, why not just <em>try</em> putting{' '}
+                'bisexual'?" So I did.
+              </p>
+              <p>
+                And I remember a few weeks later when the results were
+                distributed internally, seeing the breakdown of the company by
+                demographics. I saw the sexuality pie chart and I remember
+                thinking "there are more of us than I thought." <em>Us</em>. It
+                was the first time I'd admitted this to anyone – even myself –
+                that I was't straight. I remember it distinctly.
+              </p>
+            </Entry>
+
             <Entry title="My First JavaScript Meetup Talk">
               <p>
                 A big part of my work in the iOS developer community has been
@@ -1246,7 +1269,37 @@ export class Timeline2 extends React.Component {
             </Entry>
 
             <Entry title="Today I Learned...">
-              <p>TODO: Do this. https://github.com/ashfurrow/TIL/issues</p>
+              <p>
+                As I moved more and more into my role as senior engineer, I was
+                doing less <em>deep</em> technical work. My job wasn't being
+                productive, it was helping <em>others</em> being productive. But
+                I wanted to make sure that I kept learning.{' '}
+              </p>
+              <p>
+                I started a{' '}
+                <a href="https://github.com/ashfurrow/TIL/issues">
+                  "Today I Learned" repository
+                </a>{' '}
+                to record at least one thing I've learned, everyday. It'
+                difficult and I don't always remember, but it's gotten me in the
+                habit of thinking about what I learn, and it's become a
+                repository of notes and links to useful reousrces for me.
+              </p>
+              <p>
+                Sometimes{' '}
+                <a href="https://github.com/ashfurrow/TIL/issues/53">
+                  I learn really specific technical things
+                </a>
+                . Sometimes{' '}
+                <a href="https://github.com/ashfurrow/TIL/issues/67">
+                  I learn about team management
+                </a>
+                . And sometimes I learn{' '}
+                <a href="https://github.com/ashfurrow/TIL/issues/125">
+                  really personal stuff
+                </a>
+                . It's all up for grabs.
+              </p>
             </Entry>
 
             <Event className="year" date="2019" />
@@ -1282,22 +1335,77 @@ export class Timeline2 extends React.Component {
 
             <Entry title="Buying a Webcam">
               <p>
-                TODO: talk about wanting to be seen by my colleagues when
-                working from home.
+                I have a desktop computer at home – it has no webcam. I'd work
+                from home and get my work done, and if I had to do a remote
+                call, it would be audio-only.
+              </p>
+              <p>
+                For a while, that was fine. But as I wanted to grow my influence
+                at Artsy, I realized that I was robbing myself and my colleagues
+                fromt he chance to <em>see</em> me. There's a huge difference on
+                a conference call on audio-only and one with visuals. So I
+                bought a webcam and have used it basically every day I work from
+                home.
               </p>
             </Entry>
 
             <Entry title="Discover Team">
               <p>
-                TODO: Do this.
-                https://ashfurrow.com/blog/reflecting-on-5-years-at-artsy/
+                Early in the year, my manager Eloy asked me if I was interested
+                in moving into a Technical Lead role on Artsy's Discover team.{' '}
+                <a href="https://ashfurrow.com/blog/reflecting-on-5-years-at-artsy/">
+                  I wrote about it at the time
+                </a>
+                , and things went well for a few months. Sadly, it wasn't to
+                last.
+              </p>
+              <p>
+                I won't go into details, but the team found itself without a
+                product manager. The rest of our PMs at Artsy were stretched
+                thin already, and we had some tradeoffs to make. Artsy's VP of
+                Engineering met with the team and we discussed those tradeoffs.
+                He trusted us to make the right call for the business, and we
+                decided to dissolve the Discover team and move its
+                responsibilities to other teams.
+              </p>
+              <p>
+                It kind of upset me. I'd been working towards this Tech Lead
+                role for a few months, and returning to individual contributor
+                work seemed like a step backward. It was not, but it felt like
+                it. The lesson I learned through this process is that technical
+                leadership is not a title, it's a way of doing engineering. I
+                had been doing technical leadership since before I was a "Tech
+                Lead", and I kept doing it even after going back to IC work. My
+                feelings had to run their course, but I learned a lot in the
+                process.
               </p>
             </Entry>
 
             <Entry title="End of Medication">
               <p>
-                TODO: talk about this.
-                https://twitter.com/ashfurrow/status/1124461096969097217
+                I had stabilized my mood through Cognitive Behavioural Therapy
+                in 2018, but I kept on my psychiatric medication. The idea was
+                to make sure I was stabilzed before adjusting anything.
+              </p>
+              <p>
+                I was keen to get off my medications. I didn't like being
+                dependent on them, and they had some unpleasant side-effects. I
+                hadn't been totally medication-free since 2011.
+              </p>
+              <p>
+                So I waited a year before starting to taper down. It was very
+                difficult. Every time I checked in with my psychiatrist, she
+                would remind me that having two major depressive episodes
+                already meant that I was statistically very likely to have them
+                again in my lifetime. I don't think she wanted me to stop my
+                medication, but she still helped me.
+              </p>
+              <p>
+                It took a few months,{' '}
+                <a href="https://twitter.com/ashfurrow/status/1124461096969097217">
+                  but I finally did it.
+                </a>
+                .
               </p>
             </Entry>
 
@@ -1346,17 +1454,67 @@ export class Timeline2 extends React.Component {
             </Entry>
 
             <Entry title="Artsy Departures">
-              <p>TODO: Talk about Orta+dB.</p>
+              <p>
+                2019 saw a lot of changes at Artsy, and one of the biggest
+                impacts on <em>me</em> was the departure of Orta (who had hired
+                me at Artsy) and dB (who had, more than anyway, established
+                Artsy Engineering's culture).
+              </p>
+              <p>
+                They each left for their own reasons – ready to move on to the
+                next challenge. (You can{' '}
+                <a href="https://orta.io/on/leaving/artsy">
+                  read Orta's reflections on leaving Artsy here
+                </a>
+                .) It all makes sense, but I can't help but feel a sense of
+                mourning for an Artsy that doesn't exist anymore. That won't
+                exist again.
+              </p>
+              <p>
+                That said, I'm also excited for the Artsy that is coming into
+                existence. It's easy to only see the downsides of change, but
+                2019 has been a crash course in seeing the opportunities, too.
+                Orta's not around anymore to own Artsy's iOS stack, but that's
+                given me space to step out of his shadow a bit. dB's not around
+                to maintain our engineering culture, but that's given me the
+                space to build the culture up even further.
+              </p>
             </Entry>
 
             <Entry title="Purchase Team Redux">
               <p>
-                TODO: Do this. Talk about getting used to in-progress projects.
+                Once the City Guides project was completed, I was asked which
+                team I'd like to join next. The Purchase Team was rebuilding the
+                artwork view in React Native, which was a perfect project for me
+                to help out as a multiplier. It would mean joining another
+                in-progress project, so it was a good learning experience for
+                me.
               </p>
             </Entry>
 
             <Entry title="Staff Engineer">
-              <p>TODO: Do this.</p>
+              <p>
+                I had been working towards a promotion to Staff Engineer for a
+                long time. The job title has no universally-agreed upon
+                definition (although{' '}
+                <a href="https://github.com/artsy/README/blob/master/careers/ladder.md">
+                  Artsy's Engineering Career Ladder is open source
+                </a>
+                ). My take on it is this: as a Senior Engineer, it was my
+                responsibility to be productive. As a Staff Engineer, it's my
+                responsibility to make <em>everyone</em> productive: my team,
+                the whole Artsy company, the entire software industry.
+              </p>
+              <p>
+                I mentioned{' '}
+                <a href="/blog/reflecting-on-5-years-at-artsy/">
+                  in this blog post
+                </a>{' '}
+                that I was excited to have the institutional authority to
+                execute on the cultural authority that I have accrued at Artsy.
+                It's a lot of responsibility and I'm growing in new and
+                challenging ways.
+              </p>
             </Entry>
 
             <Entry title="Artsy Leadership Changes">
@@ -1388,7 +1546,46 @@ export class Timeline2 extends React.Component {
             </Entry>
 
             <Entry title="Mobile Experience Team">
-              <p>TODO: Do this.</p>
+              <p>
+                When I returned from vacation in August, I found an{' '}
+                <a href="https://github.com/artsy/README/blob/master/playbooks/rfcs.md">
+                  RFC
+                </a>{' '}
+                in my inbox: should Artsy have a mobile team again? And I was{' '}
+                <em>very</em> excited.
+              </p>
+              <p>
+                Artsy <em>had</em> a Mobile team when I started, but it was
+                dissolved in 2016.{' '}
+                <a href="https://artsy.github.io/blog/2019/03/17/three-years-of-react-native/">
+                  We adopted React Native
+                </a>
+                , in part, to{' '}
+                <a href="https://github.com/artsy/README/blob/master/culture/engineering-principles.md#de-silo-engineers">
+                  "de-silo" our engineering teams
+                </a>
+                . It worked, but it had some consequences on the software we
+                built (see:{' '}
+                <a href="https://en.wikipedia.org/wiki/Conway%27s_law">
+                  Conway's Law
+                </a>
+                ). It was time to dedicate a team to making the app awesome.
+              </p>
+              <p>
+                We formed Artsy's Mobile Experience team in October. We've got
+                limited resources (don't all startups?) but have big goals and
+                are empowered by Artsy leadership to drive the product forward.
+              </p>
+              <p>
+                I was really excited to get to create a new team, become a Tech
+                Lead again, and work with iOS software again. I've gained a
+                really wide perspective on software development, and it's
+                rewarding to bring that back perspective back to a domain that I
+                have so much technical experience with. I'm a new Tech Lead, but
+                by all accounts, I'm doing <em>amazing</em> work. I feel proud
+                of what we've already accomplished, and excited about the future
+                of iOS/mobile at Artsy.
+              </p>
             </Entry>
           </Events>
         </ReactTimeline>
