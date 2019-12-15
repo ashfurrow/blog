@@ -111,7 +111,7 @@ export class Timeline2 extends React.Component {
         window.location.hash.replace('#', '')
       )
       if (element) {
-        setTimeout(() => (element as any).parentNode.scrollIntoView(true), 150)
+        setTimeout(() => (element as any).parentNode.scrollIntoView(true), 500)
       }
     }
   }
@@ -1798,7 +1798,7 @@ export class Timeline2 extends React.Component {
                 afraid anymore. I told my wife, who totally supported me, and
                 then waited for our immigration process to complete (our
                 marriage needed to be verified by the United States government,
-                and I wasn’t taking any changes). Finally,{' '}
+                and I wasn’t taking any chances). Finally,{' '}
                 <a href="/blog/coming-out/">I came out in a blog post</a>.
               </p>
               <p>
