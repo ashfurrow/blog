@@ -14,6 +14,7 @@ import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { kebabCase, camelCase } from 'lodash'
 
+import comingout from './comingout.png'
 import cultureamp from './cultureamp.png'
 import cityguides from './cityguides.jpg'
 import elephantfriend from './elephantfriend.png'
@@ -1415,11 +1416,19 @@ export class Timeline2 extends React.Component {
                 <a href="https://mastodon.technology">mastodon.technology</a>,
                 and it's going really well! I'm more of a lurker than a poster
                 on the fediverse, but I do try to send out a "good morning" post
-                every day (TODO: here's the 2018 thread, and the 2019 thread). I
-                like it as a user: most of the time I spend on social media is
-                spent on Mastodon. But I also like it as an admin: I get to help
-                create the kind of online community that I'd like to see in the
-                world.
+                every day: a meme, a photo I took on the walk to work, a selfie,
+                something to just say "good morning." (
+                <a href="https://mastodon.technology/@ashfurrow/101291161385779358">
+                  Here is my 2018 thread
+                </a>
+                , and{' '}
+                <a href="https://mastodon.technology/@ashfurrow/103300784680224031">
+                  here is the 2019 thread so far
+                </a>
+                ). I like it as a user: most of the time I spend on social media
+                is spent on Mastodon. But I also like it as an admin: I get to
+                help create the kind of online community that I'd like to see in
+                the world.
               </p>
               <p>
                 At time of writing, my instance has 19 344 users (many are
@@ -1448,8 +1457,32 @@ export class Timeline2 extends React.Component {
 
             <Entry title="City Guides" img={cityguides}>
               <p>
-                TODO: Do this. Talk about joining in-progress project.
-                https://www.architecturaldigest.com/story/artsy-app-changing-the-game-for-art-and-design-lovers
+                After the Discover team dissolved, I joined Artsy's Grow team to
+                help them complete{' '}
+                <a href="https://www.architecturaldigest.com/story/artsy-app-changing-the-game-for-art-and-design-lovers">
+                  City Guides
+                </a>
+                , a in-progress project. I wasn't used to joining in-prorgress
+                work; I prefer to be involved throughout the product development
+                process: brainstorming with stakeholders, providing early design
+                feedback, that kind of stuff. This was a new challenge.
+              </p>
+              <p>
+                City Guides also had a deadline, which was unusual for Artsy in
+                general. The LAI launch in 2016 had been quite an exception: we
+                typically build iteratively and release features when they're
+                done. But sometimes, you have an external deadline, and this was
+                one of those times. And, after I joined the project, it became
+                clear that we were actually quite behind schedule. We had to
+                hustle.
+              </p>
+              <p>
+                The experience reminded me of LAI, but mostly only in good ways.
+                We asked for help from the engineering team, and we got the
+                support we needed. Through hard work and open communication, we
+                got it done on time. Then we looked back and what we could learn
+                from the experience. I was involved on the project for about two
+                months and I learned so much.
               </p>
             </Entry>
 
@@ -1519,29 +1552,120 @@ export class Timeline2 extends React.Component {
 
             <Entry title="Artsy Leadership Changes">
               <p>
-                TODO: Do this. New CEO, VP of Engineering, others. Feels jaded,
-                but Ive gotten so used to change at Artsy that it didnt affect
-                me as much as I thought it might. 2018 was difficult so 2019
-                being difficult didnt bother me as much.
+                Artsy had some leadership changes this year. Our CTO dB made
+                sure to hire a VP of Engineering to set us up for success,
+                before{' '}
+                <a href="https://code.dblock.org/2019/11/17/the-pros-and-cons-of-going-from-management-back-to-ic.html">
+                  he returned to individual contributor work
+                </a>
+                . Artsy also{' '}
+                <a href="http://files.artsy.net/documents/artsy-names-new-ceo.pdf">
+                  hired a new CEO
+                </a>
+                . These changes are felt at every level of the company. After
+                the changes to the Product/Engineering organization in 2018, I
+                feel prepared to handle these changes at Artsy.
               </p>
             </Entry>
 
             <Entry title="Green Card Process Completes" img={greencardend}>
-              <p>TODO: Do this.</p>
+              <p>
+                Midway through 2019, Ashley and I became Permanent Residents of
+                the United States of America. We passed all the background
+                checks and interviews and medical exams and everything. Our
+                former visas, as well as the Green Card process itself, had some
+                restrictions that we'd been living with for years. They were
+                finally lifted.
+              </p>
+              <p>
+                I can't tell you how weird it feels. I never thought I'd{' '}
+                <em>live</em> in the United States. And yet, here I am. New York
+                feels like home. I miss Canada (some days a lot more than
+                others), but living outside my home country has also given me an
+                interesting perspective <em>on</em> that country. I really
+                appreciate that perspective. And with our Green Cards, we're now
+                able to visit easier than ever before.
+              </p>
             </Entry>
 
-            <Entry title="Coming Out">
+            <Entry title="Coming Out" img={comingout}>
               <p>
-                TODO: hooooboy do this again huh. also please notice how this is
-                _after_ the green card process completes yay /blog/coming-out/
+                So yeah. After coming out to myself as bisexual, I had to figure
+                out what to do next. The decision of whether to tell anyone else
+                – my wife, my family, or even the whole world. I didn't want to
+                for a long time, but I realized that I didn't want to because I
+                was afraid. And after years of hiding, I didn't want to be
+                afraid anymore, so{' '}
+                <a href="/blog/coming-out/">I came out in a blog post</a>.
+              </p>
+              <p>
+                I wrote the blog post at Peer Lab in the morning, but in my
+                head, I'd been writing it for months. I got my wife to read it
+                over for typos (she often helps me edit my posts, thank you
+                Ashley 🙏) and then pushed it into the world.
+                <a href="https://twitter.com/ashfurrow/status/1137463336235347969">
+                  I tweeted about it
+                </a>
+                . People responded with overwhelming support and positivity. It
+                felt (mostly) amazing.
+              </p>
+              <p>
+                <a href="https://thenib.com/i-came-out-late-and-that-s-okay">
+                  Coming out late in life
+                </a>{' '}
+                (the image credits for this comic) isn't a common coming-out
+                story, and it involves navigating a lot of emotions. But I'm not
+                alone, and I'm excited to be my whole self.
               </p>
             </Entry>
 
             <Entry title="Stepping Up">
               <p>
-                TODO: Talk about Eloy leaving, about being the last mobile
-                engineer left, and about stepping up to be a better cultural
-                leader while Artsy undergoes some difficult growing pains.
+                Near the end of 2019,{' '}
+                <a href="https://twitter.com/alloy/status/1203981302652899329">
+                  my manager Eloy{' '}
+                </a>
+                left Artsy. I miss working with him already, but I'm excited for
+                what's coming next for him.
+              </p>
+              <p>
+                Eloy's departure makes me the last remaining member of Artsy's
+                original Mobile Team. There's <em>a lot</em> of responsibility,
+                but I feel set up for it. When I look back on my early feelings
+                about React Native (I didn't like it <em>at all</em>), I really
+                regret keeping my head in the sand for so long. I missed my
+                chance to participate in decisions that formed the foundation of
+                Artsy's iOS architecture, and yet now I find myself responsible
+                for that architecture. I need to have opinions about what it
+                should look like in the future, to help Artsy meet its business
+                goals. It's challenging work, but I'm not doing it alone. (See
+                the next section.)
+              </p>
+              <p>
+                There is more responsibility to shoulder than just the technical
+                aspects of Artsy's products, though. The departures of dB, Orta,
+                and now Eloy, have left our engineering team short on
+                cheerleaders: people who guide and shape Artsy's culture by
+                empowering people to succeed <em>in</em> that culture.
+                Throughout the changes at Artsy (and the inevitable culture
+                turbulence that comes with <em>any</em> company change), I found
+                myself steping up.
+              </p>
+              <p>
+                I'm putting my principles into action. All my research into team
+                dynamics and so-called "soft skills" is paying off. I have both
+                the cultural and the institutional authority I need to have have{' '}
+                <em>huge</em> impact on the future of Artsy. I'm surrounded by
+                other leaders who want to help me succeed. I feel empowered. I
+                feel motivated. I feel excited.
+              </p>
+              <p>
+                I've spent nearly six years at Artsy, and that has taught me
+                that change is constant. Artsy's always been changing: growing,
+                making mistakes, and learning from them. Change is a constant,
+                in life. I'd by lying if I said some changes don't feel more
+                significant than others, but changes are opportunities, too. I'm
+                so excited take full advantage of those opportunities.
               </p>
             </Entry>
 
