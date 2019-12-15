@@ -3,17 +3,16 @@ import {
   Timeline as ReactTimeline,
   Events,
   Event,
-  UrlButton,
-  ImageEvent,
-  TextEvent,
-  YouTubeEvent,
   themes,
   createTheme
 } from '@merc/react-timeline'
 import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
-import { kebabCase, camelCase } from 'lodash'
+import { camelCase } from 'lodash'
 
+import artworkpage from './artworkpage.png'
+import pianocat from './pianocat.png'
+import moya from './moya.png'
 import comingout from './comingout.png'
 import cultureamp from './cultureamp.png'
 import cityguides from './cityguides.jpg'
@@ -32,7 +31,6 @@ import armory from './armory.jpg'
 import hamburg from './hamburg.jpg'
 import uikonf from './uikonf.jpg'
 import drawing from './drawing.jpg'
-import voting from './voting.jpg'
 import officeatnight from './officeatnight.jpg'
 import pragma from './pragma.jpg'
 import film from './film.jpg'
@@ -232,36 +230,6 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Voting" img={voting}>
-              <p>
-                Voting from abroad in 2015 was really important to me. I abhored
-                the tory government that I'd felt had bullied Canada and
-                tarnished its reputation. I wanted to feel connected to Canada.
-              </p>
-              <p>
-                Of course, Trudeau would go on to{' '}
-                <a href="https://trudeaumetre.polimeter.org">
-                  break a lot of promises
-                </a>
-                . Over the next few years, I would feel alienated by the
-                juxtaposition of my disappointment in his government and of the
-                world fawning over Trudeau.
-              </p>
-              <p>
-                When I tried to talk about this, online and in real life, my
-                fairly commonsense criticism of Trudeau was met with mild shock.
-                Non-Canadians are, I guess, just not accustomed to thinking
-                about Canada as a country with internal politics. Nor are they
-                aware of the many people to Trudeau's left who are pushing for
-                Canada to live up to the paragon everyone thinks it already is.
-              </p>
-              <p>
-                I voted to stay connected to my country, but it kind of ended up
-                pushing me away. This becomes important later, when Ashley and I
-                decide to become Permanent Residents of the United States.
-              </p>
-            </Entry>
-
             <Entry title="401 Broadway" img={officeatnight}>
               <p>
                 Artsy's HQ is located at 401 Broadway, beside Manhattan's
@@ -324,13 +292,39 @@ export class Timeline2 extends React.Component {
                 of leeway to decide what to work on, but I didn't always have
                 the business context I needed to make that decision.
               </p>
+              <p>
+                Looking back, I notice that I was a bit incurious about that
+                business context. I just wanted to make apps. Apps apps apps.
+                But apps aren't made in a vacuum, and I would spend the next few
+                years getting more and more interested in Artsy's business (and,
+                critically, how technology can help it thrive).
+              </p>
             </Entry>
 
             <Entry title="Loosely Held Strong Convictions" img={pragma}>
               <p>
-                TODO talk about how this was my most important talk so far.
-                Maybe use it as a way to talk about how I was speaking at fewer
-                and fewer conferenes over time.
+                I gave a talked titled{' '}
+                <a href="https://www.youtube.com/watch?v=hlLhtWLghGA">
+                  <em>Loosely Held Strong Convictions</em>
+                </a>{' '}
+                in Italy in 2015. I wanted to talk about something that was more
+                important than just programming computers. I spoke about why
+                humans believe the things we do, how we think about our own
+                beliefs, and why we divide ourselves into groups. Heavy stuff
+                for a tehcnology conference.
+              </p>
+              <p>
+                After the conference, I ran into some conference attendees at
+                the airport. They told me something I'll never forget: they told
+                me that my talk had made them think about the{' '}
+                <a href="https://en.wikipedia.org/wiki/European_migrant_crisis">
+                  migration crisis
+                </a>
+                with a new perspective.
+              </p>
+              <p>
+                As time went on, I gave fewer and fewer conference talks. But
+                each one became more and more important.
               </p>
             </Entry>
 
@@ -398,8 +392,15 @@ export class Timeline2 extends React.Component {
                 in New York.
               </p>
               <p>
-                TODO talk about how art relates to my career, paralleling the
-                note from 2015
+                My day-to-day photography is now{' '}
+                <a href="https://www.instagram.com/ashfurrow/">
+                  on my Instagram account
+                </a>{' '}
+                and{' '}
+                <a href="https://photos.ashfurrow.com">
+                  I also have a photo blog
+                </a>
+                .
               </p>
             </Entry>
 
@@ -798,7 +799,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Stepping Back from Moya">
+            <Entry title="Stepping Back from Moya" img={moya}>
               <p>
                 In 2017,{' '}
                 <a href="https://ashfurrow.com/blog/stepping-back-from-moya/">
@@ -1033,7 +1034,7 @@ export class Timeline2 extends React.Component {
                 but this affected most of 2018. It was a shame, but a lot of us
                 learned quite a bit.{' '}
                 <a href="https://artsy.github.io/blog/2019/04/19/having-a-coffee-with-every-engineer/">
-                  I played a small role in helping to remedy the tension
+                  I played a (small) role in helping to remedy the tension
                 </a>
                 , but like any change, it had a permanent effect on our culture.
               </p>
@@ -1045,15 +1046,15 @@ export class Timeline2 extends React.Component {
                 present some opportunities for personal and team growth.
               </p>
               <p>
-                In the end, we resolved our issues by living by three of our
-                core values: People are Paramount, Openness, Positive Energy. It
-                was still more costly than it had to be, but this might just be
-                the kind of lesson that every growing company's engineering team
-                has to learn.
+                In the end, we resolved our issues by living by our core company
+                values, in particular: People are Paramount, Openness, Positive
+                Energy. It was still more costly than it had to be, but this
+                might just be the kind of lesson that every growing company has
+                to learn.
               </p>
             </Entry>
 
-            <Entry title="BidFlow" img={bidflow}>
+            <Entry title="Bid Flow" img={bidflow}>
               <p>
                 In 2018, I joined Artsy's Purchase team to help them build a new
                 "Bid Flow" on iOS. For some time, we were aware of a gap between
@@ -1099,9 +1100,8 @@ export class Timeline2 extends React.Component {
               </p>
 
               <p>
-                I{' '}
                 <a href="https://facebook.github.io/react-native/blog/2018/05/07/using-typescript-with-react-native">
-                  wrote a blog post on the official React Native blog
+                  I wrote a blog post on the official React Native blog
                 </a>
                 . Using my perspective with one foot in both the JavaScript and
                 iOS develop worlds, I looked at what made React Native hard to
@@ -1303,6 +1303,30 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
+            <Event title="Physical Therapy">
+              <p>
+                Late in 2018, I finally took up a recommendation from some
+                colleagues to see their physical therapist. I'd been battling
+                wrist pain for years but after a doctor gave up on helping me, I
+                kind of gave up too. I'm glad I listened to them, because{' '}
+                <a href="/blog/learning-to-walk/">
+                  the physical therapy been very successful
+                </a>{' '}
+                and the therapist{' '}
+                <a href="/blog/learning-to-run/">
+                  has had a truly life-changing effect on me
+                </a>
+                .
+              </p>
+              <p>
+                Treatment is ongoing, but I feel like we're almost there. As a
+                programming, repitive stress injuries can be really frightening.
+                If you're struggling with pain, please seek treatment. And
+                before undergoing drastic interventions, make sure to get a
+                second opinion.
+              </p>
+            </Event>
+
             <Event className="year" date="2019" />
 
             <Entry title="Buy Now" img={buynow}>
@@ -1372,12 +1396,12 @@ export class Timeline2 extends React.Component {
               <p>
                 It kind of upset me. I'd been working towards this Tech Lead
                 role for a few months, and returning to individual contributor
-                work seemed like a step backward. It was not, but it felt like
-                it. The lesson I learned through this process is that technical
-                leadership is not a title, it's a way of doing engineering. I
+                work seemed like a step backward. It wasn't, but it felt like it
+                was. The lesson I learned through this process is that technical
+                leadership is not a title – it's a way of doing engineering. I
                 had been doing technical leadership since before I was a "Tech
                 Lead", and I kept doing it even after going back to IC work. My
-                feelings had to run their course, but I learned a lot in the
+                feelings had to run their course, and I learned a lot in the
                 process.
               </p>
             </Entry>
@@ -1404,13 +1428,13 @@ export class Timeline2 extends React.Component {
               <p>
                 It took a few months,{' '}
                 <a href="https://twitter.com/ashfurrow/status/1124461096969097217">
-                  but I finally did it.
+                  but I finally did it
                 </a>
                 .
               </p>
             </Entry>
 
-            <Entry title="Mastodon Going Strong">
+            <Entry title="Mastodon Going Strong" img={pianocat}>
               <p>
                 It's been nearly three years since I launched{' '}
                 <a href="https://mastodon.technology">mastodon.technology</a>,
@@ -1495,13 +1519,13 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 They each left for their own reasons – ready to move on to the
-                next challenge. (You can{' '}
+                next challenge. You can{' '}
                 <a href="https://orta.io/on/leaving/artsy">
                   read Orta's reflections on leaving Artsy here
                 </a>
-                .) It all makes sense, but I can't help but feel a sense of
-                mourning for an Artsy that doesn't exist anymore. That won't
-                exist again.
+                . It all makes sense, but I can't help but feel a sense of
+                mourning for an Artsy that doesn't exist anymore. That won't and
+                can't exist anymore.
               </p>
               <p>
                 That said, I'm also excited for the Artsy that is coming into
@@ -1514,7 +1538,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Purchase Team Redux">
+            <Entry title="Purchase Team Redux" img={artworkpage}>
               <p>
                 Once the City Guides project was completed, I was asked which
                 team I'd like to join next. The Purchase Team was rebuilding the
@@ -1595,7 +1619,10 @@ export class Timeline2 extends React.Component {
                 – my wife, my family, or even the whole world. I didn't want to
                 for a long time, but I realized that I didn't want to because I
                 was afraid. And after years of hiding, I didn't want to be
-                afraid anymore, so{' '}
+                afraid anymore. I told my wife, who totally supported me, and
+                then waited for our immigration process to complete (our
+                marriage needed to be verified by the United States government,
+                and I wasn't taking any changes). Finally,{' '}
                 <a href="/blog/coming-out/">I came out in a blog post</a>.
               </p>
               <p>
@@ -1702,13 +1729,14 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 I was really excited to get to create a new team, become a Tech
-                Lead again, and work with iOS software again. I've gained a
-                really wide perspective on software development, and it's
-                rewarding to bring that back perspective back to a domain that I
-                have so much technical experience with. I'm a new Tech Lead, but
-                by all accounts, I'm doing <em>amazing</em> work. I feel proud
-                of what we've already accomplished, and excited about the future
-                of iOS/mobile at Artsy.
+                Lead again, and return to working on iOS software every day.
+                I've gained a really wide perspective on software development,
+                and it's time to zoom back in on a technical domain that I am so
+                intimately familiar with. I'm still new to being a Tech Lead,
+                but by all accounts, I am <em>killing</em> it. I feel proud of
+                what we've already accomplished, I feel empowered by everyone
+                around me, and I am <em>so</em> excited for the future of
+                iOS/mobile at Artsy.
               </p>
             </Entry>
           </Events>
