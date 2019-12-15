@@ -9,6 +9,7 @@ import {
 import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { camelCase } from 'lodash'
+import Markdown from 'markdown-to-jsx'
 
 import purchase from './purchaseteam.jpg'
 import mxteam from './mxteam.png'
@@ -47,9 +48,14 @@ import stevenuniverse from './stevenuniverse.jpg'
 import election from './election.jpg'
 import posts from './posts.png'
 
+const markdown = (text: string) => <Markdown>{text}</Markdown>
+
 const customTheme = createTheme(themes.default, {
   card: {
-    backgroundColor: '#eee'
+    backgroundColor: '#eee',
+    a: {
+      color: Theme.colors.primary
+    }
   },
   date: {
     backgroundColor: Theme.colors.primary
@@ -479,23 +485,8 @@ export class Timeline2 extends React.Component {
                 and I got to chat over a few meals at the conference, and she
                 even attended my talk on functional reactive programming!
                 Meeting Danielle Feinberg had a big impact on me and my career.
-              </p>
-              <p>
-                Getting to speak on the same stage, I felt the difference in
-                scale of what we were presenting. She talked about lighting
-                Pixar films to achieve artistic and emotional affect. Like how
-                our WALL•E’s eyes have a subtle difference in lighting from the
-                other WALL•E robots, and how that difference gets taken away
-                briefly when our main character forgets who he is.
-              </p>
-              <p>
-                And I was talking about FRP. Important, I guess, but at a very
-                different scale. Danielle Feinberg inspired me because the
-                message she was telling was so much bigger than I was used to
-                thinking about in conference talks. Meeting her and watching her
-                talk, combining art and technology, resulted in a shift in how I
-                think the stories I want to tell. My conference talks would
-                never ne the same.
+                She inspired me to think harder about the topics that I talk
+                about at conferences, to tell stories at a larger scale.
               </p>
             </Entry>
 
@@ -1541,8 +1532,8 @@ export class Timeline2 extends React.Component {
               <p>
                 2019 saw a lot of changes at Artsy, and one of the biggest
                 impacts on <em>me</em> was the departure of Orta (who had hired
-                me at Artsy) and dB (who had, more than anyway, established
-                Artsy Engineering's culture).
+                me at Artsy) and dB (who had established Artsy Engineering's
+                culture).
               </p>
               <p>
                 They each left for their own reasons – ready to move on to the
