@@ -10,11 +10,11 @@ import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { camelCase } from 'lodash'
 
+import purchase from './purchaseteam.jpg'
 import mxteam from './mxteam.png'
 import greguniverse from './greguniverse.jpg'
 import ikea from './ikea.jpg'
 import eclipse from './eclipse.jpg'
-import artworkpage from './artworkpage.png'
 import pianocat from './pianocat.png'
 import moya from './moya.png'
 import comingout from './comingout.png'
@@ -249,9 +249,9 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 Attaching your personal sense of stability to your employer is
-                never a good idea – businesses are inherently unstable and
-                mooring your sense of self to them is a mistake. And, yet, I
-                seem to make this mistake every time.
+                never a great idea – businesses are inherently unstable, so
+                mooring your sense of self to them can lead to difficult
+                emotions. I've always struggled with this, and I still do.
               </p>
             </Entry>
 
@@ -322,13 +322,13 @@ export class Timeline2 extends React.Component {
                 the airport. They told me something I'll never forget: they told
                 me that my talk had made them think about the{' '}
                 <a href="https://en.wikipedia.org/wiki/European_migrant_crisis">
-                  migration crisis
+                  migration crisis{' '}
                 </a>
                 with a new perspective.
               </p>
               <p>
-                As time went on, I gave fewer and fewer conference talks. But
-                each one became more and more important.
+                As time went on, I gave fewer and fewer conference talks.
+                However, each one became more and more important.
               </p>
             </Entry>
 
@@ -503,8 +503,8 @@ export class Timeline2 extends React.Component {
               <p>
                 So far, my wife and I had been living in the United States on a
                 TN-1 visa ("the NAFTA visa"). It had some restrictions that we
-                were initial okay with, but grew tired of as we continued living
-                in the states. And border crossings were a consistently
+                were initially okay with, but grew tired of as we continued
+                living in the states. And border crossings were a consistently
                 stressful, as it's kind of a weird visa. Especially entering
                 from Europe, airlines get really fussy.
               </p>
@@ -811,12 +811,12 @@ export class Timeline2 extends React.Component {
                 lot.{' '}
               </p>
               <p>
-                I still remember when a serious, immediate problem with the
-                federation behaviour was uncovered and the creator of Mastodon
-                asked me on Discord for help (I was the only one around). "I'm
-                just an iOS developer", I said. "Whatever, you know code", he
-                responded. And I was like "huh, <em>yeah</em>." And we figured
-                out the problem together.
+                At one point, a vulnerability with Mastodon's federation
+                behaviour was uncovered. I was hanging out on the Discord server
+                when the creator of Mastodon asked me for help (I was the only
+                other developer around). I hesitated: "I'm just an iOS
+                developer." "Whatever, you know code." And I was like "huh,{' '}
+                <em>yeah</em>." And we figured out the problem together.
               </p>
             </Entry>
 
@@ -877,7 +877,7 @@ export class Timeline2 extends React.Component {
               <p>
                 I was used to performing music from back in high school, when I
                 played piano and saxophone. But this was different, mainly
-                because <em>I was signing</em> and I really hated my voice. If
+                because <em>I was singing</em> and I really hated my voice. If
                 you{' '}
                 <a href="https://www.youtube.com/watch?v=582iYsdMHjA&list=PLBygl72DbBTHb0kIkmmzOx9gUyNvEwaUO&index=2&t=0s">
                   watch the recordings
@@ -1389,10 +1389,15 @@ export class Timeline2 extends React.Component {
               <p>
                 For a while, that was fine. But as I wanted to grow my influence
                 at Artsy, I realized that I was robbing myself and my colleagues
-                fromt he chance to <em>see</em> me. There's a huge difference on
-                a conference call on audio-only and one with visuals. So I
-                bought a webcam and have used it basically every day I work from
-                home.
+                from the chance to actually <em>see</em> me. There's a huge
+                difference on a conference call on audio-only and one with
+                visuals. I wanted to connect to my colleagues, even when I was
+                working from home, so I bought a webcam.
+              </p>
+              <p>
+                I realized that seeing <em>myself</em> on the screen also
+                changed how I think about remoting meetings, and remote work in
+                general.
               </p>
             </Entry>
 
@@ -1489,15 +1494,15 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 I've succeeded only because I haven't worked to build a
-                community, but have built a <em>team</em> to help me. I noticed
+                community, but have built a <em>team</em> to build it. I noticed
                 when people were making positive contributions to the instance,
-                and invited them to help me moderate the instance. In 2019, I
-                made the big step of asking one of the mods to become another
-                admin. This would give them full administrative access to the
-                instance and its database. It's a huge level of trust, and it
-                was a lot of work to build it up, but it's been so worth it. The
-                team has created the exact kind of community I want to be a part
-                of. To my moderator team: thank you.
+                and invited them to help me moderate it. In 2019, I made the big
+                step of asking one of the mods to become co-admin. This would
+                give them full administrative access to the instance and its
+                database. It's a huge level of trust, and it was a lot of work
+                to build it up, but it's been so worth it. The team has created
+                the exact kind of community I want to be a part of. To my
+                moderator team: thank you.
               </p>
             </Entry>
 
@@ -1550,17 +1555,17 @@ export class Timeline2 extends React.Component {
                 can't exist anymore.
               </p>
               <p>
-                But I'm also excited for the Artsy that is coming into
-                existence. It's easy to only see the downsides of change, but
-                2019 has been a crash course in seeing the opportunities, too.
-                Orta's not around anymore to own Artsy's iOS stack, but that's
-                given me space to step out of his shadow a bit. dB's not around
-                to maintain our engineering culture, but that's given me the
-                space to build the culture up even further.
+                I am also excited for the Artsy that is coming into existence.
+                It's easy to only see the downsides of change, but 2019 has been
+                a crash course in seeing the opportunities, too. Orta isn't
+                around anymore to manage Artsy's iOS stack, but that's given me
+                space to step out of his shadow a bit and own it myself. dB
+                isn't around anymore to maintain our engineering culture, but
+                that's given me a chance to grow the culture myself.
               </p>
             </Entry>
 
-            <Entry title="Purchase Team Redux" img={artworkpage}>
+            <Entry title="Purchase Team Revisited" img={purchase}>
               <p>
                 Once the City Guides project was completed, I was asked which
                 team I'd like to join next. The Purchase Team was rebuilding the
@@ -1568,6 +1573,13 @@ export class Timeline2 extends React.Component {
                 to help out as a multiplier. It would mean joining another
                 in-progress project, so it was a good learning experience for
                 me.
+              </p>
+              <p>
+                It was fun, to work with the Purchase team for a while, leave
+                briefly, and then come back. Both the team and I had grown a
+                bit, changed a bit. The team felt different, but familiar. I
+                gained a deep appreciation for cultural continuity that Sarah,
+                the Purchase Tech Lead, had established.
               </p>
             </Entry>
 
@@ -1662,9 +1674,9 @@ export class Timeline2 extends React.Component {
                 <a href="https://thenib.com/i-came-out-late-and-that-s-okay">
                   Coming out late in life
                 </a>{' '}
-                (the image credits for this comic) isn't a common coming-out
-                story, and it involves navigating a lot of emotions. But I'm not
-                alone, and I'm excited to be my whole self.
+                isn't a common story you hear about, and it involves navigating
+                a lot of unfamiliar emotions. I'm having to figure things out,
+                but I'm not alone. And at last, I get to be my whole self.
               </p>
               <p>
                 Image credit:{' '}
@@ -1749,17 +1761,18 @@ export class Timeline2 extends React.Component {
                 ). It was time to dedicate a team to making the app awesome.
               </p>
               <p>
-                We formed Artsy's Mobile Experience team in October. We've got
-                limited resources (don't all startups?) but have big goals and
-                are empowered by Artsy leadership to drive the product forward.
+                We formed Artsy's Mobile Experience team in October. We started
+                with limited resources, but we're planning to grow and we have
+                big goals. Artsy's leadership has empowered us to drive our iOS
+                products forward, and I'm pumped to be leading this team.
               </p>
               <p>
                 I was really excited to get to create a new team, become a Tech
-                Lead again, and return to working on iOS software every day.
-                I've gained a really wide perspective on software development,
-                and it's time to zoom back in on a technical domain that I am so
+                Lead again, and return to working on iOS software every day. I
+                had gained a really wide perspective on software development,
+                and it was time to zoom back in on a technical domain that I am
                 intimately familiar with. I'm still new to being a Tech Lead,
-                but by all accounts, I am <em>killing</em> it. We have already
+                but by all accounts, I am <em>crushing</em> it. We have already
                 accomplished so much as a team. The future of iOS at Artsy is
                 very bright.
               </p>
