@@ -10,6 +10,10 @@ import Theme from '../../config/Theme'
 import Wide from '../../src/components/Wide'
 import { camelCase } from 'lodash'
 
+import mxteam from './mxteam.png'
+import greguniverse from './greguniverse.jpg'
+import ikea from './ikea.jpg'
+import eclipse from './eclipse.jpg'
 import artworkpage from './artworkpage.png'
 import pianocat from './pianocat.png'
 import moya from './moya.png'
@@ -439,6 +443,22 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
+            <Entry title="Coalition for Queens">
+              <p>
+                Around this time, Orta connected me to a non-profit coding
+                bootcamp called Coalition for Queens (they have since rebranded
+                as <a href="https://www.pursuit.org">Pursuit</a>). C4Q provides
+                education for underrepesented groups in tech, and Orta and I
+                started consulting on their iOS curriculum.
+              </p>
+              <p>
+                Over the years, I and other Artsy engineers have helped C4Q
+                through mentionship volunteering, judging hackathons, performing
+                mock job interviews, and more. It's been really rewarding and
+                I've made a lot of friends.
+              </p>
+            </Entry>
+
             <Entry title="SINFO" img={sinfo}>
               <p>
                 Early in the year, I took a trip around the world. First, to
@@ -455,10 +475,10 @@ export class Timeline2 extends React.Component {
                 <a href="https://www.imdb.com/name/nm0270665/">
                   Danielle Feinberg
                 </a>
-                , a lighting artist and director of photography at Pixar. We got
-                to chat over a few meals at the conference, she even attended my
-                talk on functional reactive programming. She had a big impact on
-                me and my career.
+                , a lighting artist and director of photography at Pixar. She
+                and I got to chat over a few meals at the conference, and she
+                even attended my talk on functional reactive programming!
+                Meeting Danielle Feinberg had a big impact on me and my career.
               </p>
               <p>
                 Getting to speak on the same stage, I felt the difference in
@@ -472,9 +492,10 @@ export class Timeline2 extends React.Component {
                 And I was talking about FRP. Important, I guess, but at a very
                 different scale. Danielle Feinberg inspired me because the
                 message she was telling was so much bigger than I was used to
-                thinking about, in a conference talk context. Looking back, I
-                can see a big turn in my own conference talks after I saw how
-                Danielle's talk on combing technology and art.
+                thinking about in conference talks. Meeting her and watching her
+                talk, combining art and technology, resulted in a shift in how I
+                think the stories I want to tell. My conference talks would
+                never ne the same.
               </p>
             </Entry>
 
@@ -920,7 +941,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Staying in New York?">
+            <Entry title="Staying in New York?" img={eclipse}>
               <p>
                 My wife Ashley and I had always toyed with moving home to
                 Canada. Well, not "home" to Canada: we were from rural Canada
@@ -937,13 +958,14 @@ export class Timeline2 extends React.Component {
                 We actually couldn't be there for our niece's birth because of
                 restrictions during our immigration process. The process made us
                 re-evaluate what we wanted out of life and where we could live
-                to get that. Since we had some roots put down into New York, and
-                it's relatively close to our family (compared to Amsterdam or
-                Vancouver), we decided to stay here for the time being.
+                to get that. New York is close enough to our family that, once
+                our immigration process completes, visiting home would be easy.
+                And to be honest? We have put down some roots here. Our friends
+                here mean a lot to us. New York was starting to feel like home.
               </p>
             </Entry>
 
-            <Entry title="A Broadening Technical Perspective">
+            <Entry title="A Broadening Technical Perspective" img={ikea}>
               <p>
                 Late in 2017, I wrote{' '}
                 <em>
@@ -994,7 +1016,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Steven Universe, omg">
+            <Entry title="Steven Universe, omg" img={greguniverse}>
               <p>
                 Late in 2016, I was enjoying Steven Universe so much that I
                 bought a ukulele and started learning the songs from the show. A
@@ -1303,7 +1325,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Event title="Physical Therapy">
+            <Entry title="Physical Therapy">
               <p>
                 Late in 2018, I finally took up a recommendation from some
                 colleagues to see their physical therapist. I'd been battling
@@ -1325,7 +1347,7 @@ export class Timeline2 extends React.Component {
                 before undergoing drastic interventions, make sure to get a
                 second opinion.
               </p>
-            </Event>
+            </Entry>
 
             <Event className="year" date="2019" />
 
@@ -1528,7 +1550,7 @@ export class Timeline2 extends React.Component {
                 can't exist anymore.
               </p>
               <p>
-                That said, I'm also excited for the Artsy that is coming into
+                But I'm also excited for the Artsy that is coming into
                 existence. It's easy to only see the downsides of change, but
                 2019 has been a crash course in seeing the opportunities, too.
                 Orta's not around anymore to own Artsy's iOS stack, but that's
@@ -1560,7 +1582,7 @@ export class Timeline2 extends React.Component {
                 ). My take on it is this: as a Senior Engineer, it was my
                 responsibility to be productive. As a Staff Engineer, it's my
                 responsibility to make <em>everyone</em> productive: my team,
-                the whole Artsy company, the entire software industry.
+                Artsy as a whole, and the entire software industry. Everyone.
               </p>
               <p>
                 I mentioned{' '}
@@ -1588,7 +1610,7 @@ export class Timeline2 extends React.Component {
                 </a>
                 . These changes are felt at every level of the company. After
                 the changes to the Product/Engineering organization in 2018, I
-                feel prepared to handle these changes at Artsy.
+                felt prepared to handle these changes at Artsy.
               </p>
             </Entry>
 
@@ -1629,12 +1651,12 @@ export class Timeline2 extends React.Component {
                 I wrote the blog post at Peer Lab in the morning, but in my
                 head, I'd been writing it for months. I got my wife to read it
                 over for typos (she often helps me edit my posts, thank you
-                Ashley 🙏) and then pushed it into the world.
+                Ashley 🙏) and then pushed it into the world.{' '}
                 <a href="https://twitter.com/ashfurrow/status/1137463336235347969">
                   I tweeted about it
                 </a>
                 . People responded with overwhelming support and positivity. It
-                felt (mostly) amazing.
+                felt amazing.
               </p>
               <p>
                 <a href="https://thenib.com/i-came-out-late-and-that-s-okay">
@@ -1643,6 +1665,10 @@ export class Timeline2 extends React.Component {
                 (the image credits for this comic) isn't a common coming-out
                 story, and it involves navigating a lot of emotions. But I'm not
                 alone, and I'm excited to be my whole self.
+              </p>
+              <p>
+                Image credit:{' '}
+                <a href="https://twitter.com/aliwilgus">Alison Wilgus</a>.
               </p>
             </Entry>
 
@@ -1670,13 +1696,13 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 There is more responsibility to shoulder than just the technical
-                aspects of Artsy's products, though. The departures of dB, Orta,
-                and now Eloy, have left our engineering team short on
-                cheerleaders: people who guide and shape Artsy's culture by
-                empowering people to succeed <em>in</em> that culture.
-                Throughout the changes at Artsy (and the inevitable culture
-                turbulence that comes with <em>any</em> company change), I found
-                myself steping up.
+                aspects of Artsy's products, though. Departures by dB, Orta, and
+                now Eloy, all left our engineering team short on cheerleaders.
+                Cheerleaders are people who guide and shape Artsy's culture by
+                empowering people to succeed <em>in</em> the culture they want
+                to build. Throughout the changes at Artsy this year (and the
+                inevitable culture turbulence that comes with <em>any</em>{' '}
+                company change), I found myself steping up.
               </p>
               <p>
                 I'm putting my principles into action. All my research into team
@@ -1696,7 +1722,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Mobile Experience Team">
+            <Entry title="Mobile Experience Team" img={mxteam}>
               <p>
                 When I returned from vacation in August, I found an{' '}
                 <a href="https://github.com/artsy/README/blob/master/playbooks/rfcs.md">
@@ -1733,10 +1759,9 @@ export class Timeline2 extends React.Component {
                 I've gained a really wide perspective on software development,
                 and it's time to zoom back in on a technical domain that I am so
                 intimately familiar with. I'm still new to being a Tech Lead,
-                but by all accounts, I am <em>killing</em> it. I feel proud of
-                what we've already accomplished, I feel empowered by everyone
-                around me, and I am <em>so</em> excited for the future of
-                iOS/mobile at Artsy.
+                but by all accounts, I am <em>killing</em> it. We have already
+                accomplished so much as a team. The future of iOS at Artsy is
+                very bright.
               </p>
             </Entry>
           </Events>
