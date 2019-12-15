@@ -64,19 +64,24 @@ const customTheme = createTheme(themes.default, {
     backgroundColor: Theme.colors.primary
   },
   timeline: {
-    fontSize: '1rem',
+    fontSize: 'inherit',
     fontFamily: 'ff-tisa-web-pro'
   }
 })
 
-const Entry: React.FC<{ img?: string; title: string }> = ({
+const Entry: React.FC<{ img?: string; imgAlt?: string; title: string }> = ({
   img,
+  imgAlt,
   title,
   children
 }) => {
   const anchorName = camelCase(title).toLowerCase()
   return (
-    <Event date={img && (() => <img src={img} className="eventImage" />)}>
+    <Event
+      date={
+        img && (() => <img src={img} className="eventImage" title={imgAlt} />)
+      }
+    >
       {title && (
         <>
           <h3 id={anchorName}>
@@ -113,12 +118,16 @@ export class Timeline2 extends React.Component {
 
   render() {
     return (
-      <Wide>
+      <Wide addBottom>
         <ReactTimeline theme={customTheme}>
           <Events>
             <Event className="year" date="2015" />
 
-            <Entry title="Spreading the Word about Swift" img={dotSwift}>
+            <Entry
+              title="Spreading the Word about Swift"
+              img={dotSwift}
+              imgAlt="Photo of me presenting at a conference about Swift."
+            >
               <p>
                 By 2015, Swift was public and gaining in popularity. I was an
                 early advocate for the language and based on my experience
@@ -138,7 +147,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Leaving Amsterdam" img={leaving}>
+            <Entry
+              title="Leaving Amsterdam"
+              img={leaving}
+              imgAlt="Photo of several suitcases and two cat carriers"
+            >
               <p>In February, my wife and I left Amsterdam.</p>
               <p>
                 It was bittersweet. We&apos;d lived there a year, and we always
@@ -156,7 +169,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Moving to New York" img={cats}>
+            <Entry
+              title="Moving to New York"
+              img={cats}
+              imgAlt="Photo of two cats in an office meeting room"
+            >
               <p>
                 I grew up in the &apos;90s, a 15-minute drive from the border of
                 the state of Maine. After 9/11 and the War on Terror, I stopped
@@ -191,7 +208,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Art" img={armory}>
+            <Entry
+              title="Art"
+              img={armory}
+              imgAlt="Photo of my silhouette against the words ART IMITATES ADS IMITATES ART repeatedly"
+            >
               <p>
                 Working at Artsy had already afforded me the opportunity to go
                 to art fairs and auctions, and I kept this up. Here you can see
@@ -201,21 +222,29 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Germany Tour" img={hamburg}>
+            <Entry
+              title="Germany Tour"
+              img={hamburg}
+              imgAlt="Photo of some trains"
+            >
               <p>
                 Quickly after moving to New York, my wife and I returned to
                 Europe so I could present at a few conferences. First to
                 Istanbul, then to Berlin. The conferences were a month apart and
                 so we spent a month touring around Germany, couch surfing with
-                friends. I{' '}
+                friends.{' '}
                 <a href="https://github.com/ashfurrow/EuroTrip-2015">
-                  planned the trip on GitHub
+                  I planned the trip on GitHub
                 </a>{' '}
                 and made a lot of friends along the way.
               </p>
             </Entry>
 
-            <Entry title="Teaching & Learning at UIKonf" img={uikonf}>
+            <Entry
+              title="Teaching &amp; Learning at UIKonf"
+              img={uikonf}
+              imgAlt="Photo of me presenting at a conference"
+            >
               <p>
                 In 2014, I attended UIKonf and had a great time. I returned the
                 following year to present a talk titled{' '}
@@ -230,7 +259,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Learning to Draw" img={drawing}>
+            <Entry
+              title="Learning to Draw"
+              img={drawing}
+              imgAlt="Drawing of a rabbit"
+            >
               <p>
                 Over the Summer, I decided to{' '}
                 <a href="https://ashfurrow.com/blog/drawing/">learn to draw</a>.
@@ -241,7 +274,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="401 Broadway" img={officeatnight}>
+            <Entry
+              title="401 Broadway"
+              img={officeatnight}
+              imgAlt="Photo of New York at night, shot from an office"
+            >
               <p>
                 Artsy’s HQ is located at 401 Broadway, beside Manhattan’s
                 Chinatown. I’d been working at the office 5 days a week, with
@@ -250,7 +287,7 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 My wife and I were renting one bedroom out of a two-bedroom
-                apartment; it never quite felt like home. In the absense of a{' '}
+                apartment; it never quite felt like home. In the absence of a{' '}
                 <em>real</em> home, I think I was drawn to the office as a place
                 of stability.
               </p>
@@ -262,7 +299,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Life at Artsy" img={lifeatartsy}>
+            <Entry
+              title="Life at Artsy"
+              img={lifeatartsy}
+              imgAlt="Photo of New York shot from the office"
+            >
               <p>
                 After UIKonf uploaded the video recording of my{' '}
                 <em>Teaching &amp; Learning</em> talk, I shared it within Artsy.
@@ -274,7 +315,6 @@ export class Timeline2 extends React.Component {
                 </a>
                 .
               </p>
-
               <p>
                 My colleague, Remy Ferber, worked on the initial post,{' '}
                 <a href="https://www.artsy.net/article/remy-ferber-open-sourcing-company-culture-at-artsy">
@@ -314,7 +354,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Loosely Held Strong Convictions" img={pragma}>
+            <Entry
+              title="Loosely Held Strong Convictions"
+              img={pragma}
+              imgAlt="Photo of me presenting at a conference"
+            >
               <p>
                 I gave a talked titled{' '}
                 <a href="https://www.youtube.com/watch?v=hlLhtWLghGA">
@@ -369,10 +413,14 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="The Auctions Team" img={inputoutput}>
+            <Entry
+              title="The Auctions Team"
+              img={inputoutput}
+              imgAlt="Photo of a group of people in what looks like an art gallery, with me in the back"
+            >
               <p>
-                I ended 2015 by helping to form Artsy Engineering's{' '}
-                <em>Auctions Team</em>. My product work in 2015 hadn't been
+                I ended 2015 by helping to form Artsy Engineering’s{' '}
+                <em>Auctions Team</em>. My product work in 2015 hadn’t been
                 terribly focused, and I was excited to begin the new year on a
                 new team, focused on building software for Artsy’s burgeoning
                 Auctions business.
@@ -385,7 +433,7 @@ export class Timeline2 extends React.Component {
               <p>
                 Our first big event was was{' '}
                 <a href="https://www.artsy.net/article/sotheby-s-sotheby-s-first-online-only-auction-input-output">
-                  Sotheby's Input/Output
+                  Sotheby’s Input/Output
                 </a>{' '}
                 auction. Sotheby’s is a big player in the auction world, so
                 working with them was a big deal for Artsy. This was kind of
@@ -396,16 +444,21 @@ export class Timeline2 extends React.Component {
 
             <Event className="year" date="2016" />
 
-            <Entry title="Film!" img={film}>
+            <Entry
+              title="Film!"
+              img={film}
+              imgAlt="Photo of me developing film"
+            >
               <p>
                 I love photography. And since moving to New York, I doubled-down
                 on my love of <em>film</em> photography, particularly. I was
                 shooting mainly black-and-white film so I could develop and scan
-                it myself. It had become an important part of my day-to-day life
-                in New York.
+                it myself. Even later, when I would stop shooting on film, I’ve
+                taken photos as a regular part of my day-to-day life in New
+                York.
               </p>
               <p>
-                My day-to-day photography is now{' '}
+                My everyday photography is now{' '}
                 <a href="https://www.instagram.com/ashfurrow/">
                   on my Instagram account
                 </a>{' '}
@@ -417,7 +470,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Live Auctions Integration" img={lai}>
+            <Entry
+              title="Live Auctions Integration"
+              img={lai}
+              imgAlt="Sceenshot of some app designs for an auctions interface"
+            >
               <p>If 2015 lacked focus, 2016 made up for it (and then some).</p>
               <p>
                 January kicked off six months of <em>intense</em> work on the
@@ -438,7 +495,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="A New Look" img={thumbsup}>
+            <Entry
+              title="A New Look"
+              img={thumbsup}
+              imgAlt="Photo of me giving a thumbs up"
+            >
               <p>
                 Artsy offered headshots for our internal team navigator, and I
                 took the opportunity to define a new, standardized avatar. This
@@ -468,7 +529,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="SINFO" img={sinfo}>
+            <Entry
+              title="SINFO"
+              img={sinfo}
+              imgAlt="Photo of a conference billing with my name next to several others"
+            >
               <p>
                 Early in the year, I took a trip around the world. First, to
                 Lisbon for the <a href="https://sinfo.org">SINFO</a> conference,
@@ -572,7 +637,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="LAI Launch" img={lailaunch}>
+            <Entry
+              title="LAI Launch"
+              img={lailaunch}
+              imgAlt="Photo of someone using software on an iPad, and the software resembles the designs from earlier in this post"
+            >
               <p>
                 We launched LAI in June. I only found out later, but{' '}
                 <em>a lot</em> was running on the success of this product. Alan,
@@ -602,7 +671,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Missing WWDC" img={buttons}>
+            <Entry
+              title="Missing WWDC"
+              img={buttons}
+              imgAlt="Photo of several buttons with my face on them, with the word FEELS"
+            >
               <p>
                 This was the first year that I didn’t go to WWDC. It felt sad, I
                 suppose. But mostly sad I didn’t get to see my friends.
@@ -621,7 +694,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Steven Universe" img={stevenuniverse}>
+            <Entry
+              title="Steven Universe"
+              img={stevenuniverse}
+              imgAlt="Cartoon of a character with stars in their eyes"
+            >
               <p>
                 In 2016, my wife recommended that I check out a show called{' '}
                 <em>Steven Universe</em>. I did, and was instantly hooked.
@@ -662,7 +739,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="The 2016 Election" img={election}>
+            <Entry
+              title="The 2016 Election"
+              img={election}
+              imgAlt="Dr Manhattan looking wistfully at the stars, saying I AM TIRED OF EARTH. THESE PEOPLE. I AM TIRED OF BEING CAUGHT IN THE TANGLE OF THEIR LIVES."
+            >
               <p>
                 I was in Switzerland during the 2016 election. I remember waking
                 up to the news and thinking &ldquo;well, maybe I just won’t go
@@ -680,6 +761,7 @@ export class Timeline2 extends React.Component {
             <Entry
               title="A Cohering Philosophy of Software Development"
               img={posts}
+              imgAlt="Screenshot of a GitHub pull request that is adding featured posts to this website"
             >
               <p>
                 When you go to my website’s homepage,{' '}
@@ -716,7 +798,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Peer Lab Community" img={peerlabcommunity}>
+            <Entry
+              title="Peer Lab Community"
+              img={peerlabcommunity}
+              imgAlt="Screenshot of a webpage that has the header Developers Helping Developers"
+            >
               <p>
                 After starting my own Peer Lab in 2014, I realized that I wanted
                 to expand the idea. I can only run one peer lab, so I started{' '}
@@ -744,8 +830,8 @@ export class Timeline2 extends React.Component {
                 2017 was a really difficult year for me. I was still suffering
                 from depression and that impacted my ability to form longterm
                 memories. If this section is shorter than the other years, I’ll
-                blame it on that. I’m grateful that I was able to write down
-                what had happened on this blog.
+                blame it on that. As I wrote this retrospective, I was grateful
+                for what I managed to write down.
               </p>
             </Entry>
 
@@ -777,7 +863,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Mastodon" img={elephantfriend}>
+            <Entry
+              title="Mastodon"
+              img={elephantfriend}
+              imgAlt="An elephant, Mastodon's logo"
+            >
               <p>
                 Early in 2017,{' '}
                 <a href="/blog/mastodon/">I created a Mastodon instance</a>{' '}
@@ -817,7 +907,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Stepping Back from Moya" img={moya}>
+            <Entry
+              title="Stepping Back from Moya"
+              img={moya}
+              imgAlt="An abstract logo"
+            >
               <p>
                 In 2017,{' '}
                 <a href="https://ashfurrow.com/blog/stepping-back-from-moya/">
@@ -938,7 +1032,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Staying in New York?" img={eclipse}>
+            <Entry
+              title="Staying in New York?"
+              img={eclipse}
+              imgAlt="Photo of me, sipping coffee, while looking up directly at the sun, and I'm wearing eclipse-watching glasses"
+            >
               <p>
                 My wife Ashley and I had always toyed with moving home to
                 Canada. Well, not &ldquo;home&rdquo; to Canada: we were from
@@ -963,7 +1061,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="A Broadening Technical Perspective" img={ikea}>
+            <Entry
+              title="A Broadening Technical Perspective"
+              img={ikea}
+              imgAlt="Photo of an IKEA instruction manual, where the little person looks confused"
+            >
               <p>
                 Late in 2017, I wrote{' '}
                 <em>
@@ -1014,7 +1116,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Steven Universe, omg" img={greguniverse}>
+            <Entry
+              title="Steven Universe, omg"
+              img={greguniverse}
+              imgAlt="Screencap from Steven Universe"
+            >
               <p>
                 Late in 2016, I was enjoying Steven Universe so much that I
                 bought a ukulele and started learning the songs from the show. A
@@ -1074,7 +1180,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Bid Flow" img={bidflow}>
+            <Entry
+              title="Bid Flow"
+              img={bidflow}
+              imgAlt="Screenshot of a GitHub pull request adding a feature to the Bid Flow"
+            >
               <p>
                 In 2018, I joined Artsy’s Purchase team to help them build a new
                 &ldquo;Bid Flow&rdquo; on iOS. For some time, we were aware of a
@@ -1118,7 +1228,6 @@ export class Timeline2 extends React.Component {
                 </a>{' '}
                 to native iOS developers.
               </p>
-
               <p>
                 <a href="https://facebook.github.io/react-native/blog/2018/05/07/using-typescript-with-react-native">
                   I wrote a blog post on the official React Native blog
@@ -1166,7 +1275,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Guitar Progress" img={jamsesh}>
+            <Entry
+              title="Guitar Progress"
+              img={jamsesh}
+              imgAlt="Photo of me in a backyard playing guitar in front of people"
+            >
               <p>
                 I continued learning the guitar. I took some private lessons,
                 eventually, but was mostly self-taught.{' '}
@@ -1233,7 +1346,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Uncertain Identity" img={cultureamp}>
+            <Entry
+              title="Uncertain Identity"
+              img={cultureamp}
+              imgAlt="Screenshot of a survey question inquring my sexuality, with Bisexual as the selected answer"
+            >
               <p>
                 I don’t remember exactly when it happened, but at some point, I
                 started getting uncomfortable when people identified me as
@@ -1351,7 +1468,11 @@ export class Timeline2 extends React.Component {
 
             <Event className="year" date="2019" />
 
-            <Entry title="Buy Now" img={buynow}>
+            <Entry
+              title="Buy Now"
+              img={buynow}
+              imgAlt="Photo of the Artsy office with people celebrating in front of ballons that spell out BUY NOW"
+            >
               <p>
                 After the success of the Bid Flow project, the Purchase team
                 moved onto the next big challenge, and I decided to stay on the
@@ -1404,7 +1525,7 @@ export class Timeline2 extends React.Component {
             <Entry title="Discover Team">
               <p>
                 Early in the year, my manager Eloy asked me if I was interested
-                in moving into a Technical Lead role on Artsy's Discover team.{' '}
+                in moving into a Technical Lead role on Artsy’s Discover team.{' '}
                 <a href="https://ashfurrow.com/blog/reflecting-on-5-years-at-artsy/">
                   I wrote about it at the time
                 </a>
@@ -1461,7 +1582,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Mastodon Going Strong" img={pianocat}>
+            <Entry
+              title="Mastodon Going Strong"
+              img={pianocat}
+              imgAlt="Screenshot of a post I made on Mastodon that says good morning and includes a photo of my cat on a piano"
+            >
               <p>
                 It’s been nearly three years since I launched{' '}
                 <a href="https://mastodon.technology">mastodon.technology</a>,
@@ -1494,7 +1619,7 @@ export class Timeline2 extends React.Component {
                 . The harder part was building the community.
               </p>
               <p>
-                I've succeeded only because I haven’t worked to build a
+                I’ve succeeded only because I haven’t worked to build a
                 community, but have built a <em>team</em> to build it. I noticed
                 when people were making positive contributions to the instance,
                 and invited them to help me moderate it. In 2019, I made the big
@@ -1507,7 +1632,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="City Guides" img={cityguides}>
+            <Entry
+              title="City Guides"
+              img={cityguides}
+              imgAlt="Screenshots of the Artsy app showing the City Guides feature"
+            >
               <p>
                 After the Discover team dissolved, I joined Artsy’s Grow team to
                 help them complete{' '}
@@ -1522,7 +1651,7 @@ export class Timeline2 extends React.Component {
               <p>
                 City Guides also had a deadline, which was unusual for Artsy in
                 general. The LAI launch in 2016 had been quite an exception: we
-                typically build iteratively and release features when they're
+                typically build iteratively and release features when they’re
                 done. But sometimes, you have an external deadline, and this was
                 one of those times. And, after I joined the project, it became
                 clear that we were actually quite behind schedule. We had to
@@ -1549,7 +1678,7 @@ export class Timeline2 extends React.Component {
                 They each left for their own reasons – ready to move on to the
                 next challenge.{' '}
                 <a href="https://orta.io/on/leaving/artsy">
-                  You can read Orta's reflections on leaving Artsy here
+                  You can read Orta’s reflections on leaving Artsy here
                 </a>
                 . It all makes sense, but I can’t help but feel a sense of
                 mourning for an Artsy that doesn’t exist anymore. That won’t and
@@ -1566,7 +1695,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Purchase Team Revisited" img={purchase}>
+            <Entry
+              title="Purchase Team Revisited"
+              img={purchase}
+              imgAlt="Photo of several of the Purchase team members apparently laughing at their sandwiches"
+            >
               <p>
                 Once the City Guides project was completed, I was asked which
                 team I’d like to join next. The Purchase Team was rebuilding the
@@ -1627,7 +1760,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Green Card Process Completes" img={greencardend}>
+            <Entry
+              title="Green Card Process Completes"
+              img={greencardend}
+              imgAlt="Photo of a courier envelope marked EXTREMEMLY URGENT"
+            >
               <p>
                 Midway through 2019, Ashley and I became Permanent Residents of
                 the United States of America. We passed all the background
@@ -1637,7 +1774,7 @@ export class Timeline2 extends React.Component {
                 finally lifted.
               </p>
               <p>
-                I can’t tell you how weird it feels. I never thought I'd{' '}
+                I can’t tell you how weird it feels. I never thought I’d{' '}
                 <em>live</em> in the United States. And yet, here I am. New York
                 feels like home. I miss Canada (some days a lot more than
                 others), but living outside my home country has also given me an
@@ -1647,7 +1784,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Coming Out" img={comingout}>
+            <Entry
+              title="Coming Out"
+              img={comingout}
+              imgAlt="A panel from a comic that says How do I feel? Oh you know. Relieved. Excited. Devastatingly embarassed by my own idiocy."
+            >
               <p>
                 So yeah. After coming out to myself as bisexual, I had to figure
                 out what to do next. The decision of whether to tell anyone else
@@ -1735,7 +1876,11 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Entry title="Mobile Experience Team" img={mxteam}>
+            <Entry
+              title="Mobile Experience Team"
+              img={mxteam}
+              imgAlt="Screenshot of Slack that shows me signing off for the weekend, and others reacting with waving hands emojis"
+            >
               <p>
                 When I returned from vacation in August, I found an{' '}
                 <a href="https://github.com/artsy/README/blob/master/playbooks/rfcs.md">
