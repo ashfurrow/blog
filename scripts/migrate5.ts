@@ -14,13 +14,15 @@ interface Entry {
 
 const main = async () => {
   const fileContents = await fs.readFile(
-    path.join(__dirname, '../blog/2014-12-21-5-years-of-ios/five_years.yml'),
+    path.join(
+      __dirname,
+      '../blog/2014-12-21-5-years-of-ios/five_more_years.yml'
+    ),
     'utf8'
   )
   const yaml = YAML.parse(fileContents)
   log({ yaml })
   // Generate the image imports
-  /*
   yaml.forEach((year: any) => {
     const yearString = Object.keys(year)[0]
     year[yearString].forEach((entry: Entry) => {
@@ -30,23 +32,22 @@ const main = async () => {
       }
     })
   })
-  */
 
-  yaml.forEach((year: any) => {
-    const yearString = Object.keys(year)[0]
-    year[yearString].forEach((entry: Entry) => {
-      let img: string | null = null
-      if (entry.img_url) {
-        const imageName = last(entry.img_url.split('/')) as string
-        img = imageName.split('.')[0]
-      }
+  //   yaml.forEach((year: any) => {
+  //     const yearString = Object.keys(year)[0]
+  //     year[yearString].forEach((entry: Entry) => {
+  //       let img: string | null = null
+  //       if (entry.img_url) {
+  //         const imageName = last(entry.img_url.split('/')) as string
+  //         img = imageName.split('.')[0]
+  //       }
 
-      console.log(`
-<Entry title="${entry.heading}"${img ? ` img={${img}}` : ''}>
-${map(entry.content, c => `  <p>${c}</p>`).join('\n')}
-</Entry>`)
-    })
-  })
+  //       console.log(`
+  // <Entry title="${entry.heading}"${img ? ` img={${img}}` : ''}>
+  // ${map(entry.content, c => `  <p>${c}</p>`).join('\n')}
+  // </Entry>`)
+  //     })
+  //   })
 }
 
 main()

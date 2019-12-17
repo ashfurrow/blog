@@ -26,8 +26,10 @@
     }
   },
   "devDependencies": {
+    "@types/dedent": "^0.7.0",
     "@types/elasticlunr": "^0.9.0",
     "@types/lodash": "^4.14.117",
+    "@types/markdown-to-jsx": "^6.9.1",
     "@types/moment": "^2.13.0",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
@@ -97,6 +99,7 @@
     "@merc/react-timeline": "^0.1.42",
     "@types/inflected": "^1.1.29",
     "@types/request-promise-native": "^1.0.17",
+    "dedent": "^0.7.0",
     "elasticlunr": "^0.9.5",
     "gatsby-plugin-feed": "^2.3.19",
     "gatsby-plugin-google-tagmanager": "^2.0.5",

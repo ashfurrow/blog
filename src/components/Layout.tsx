@@ -67,23 +67,47 @@ const GlobalStyle = createGlobalStyle`
   }
   .timeline {
     .event.year {
+      &:not(:first-child) {
+        .date-col {
+          margin-bottom: 2rem;
+          margin-top: 1rem;
+        }
+      }
+      .date-col {
+        time {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0; /* To fix font baseline offset */
+          padding-bottom: 8px;
+        }
+        margin-bottom: 2rem;
+      }
       .card-col {
+        time {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0; /* To fix font baseline offset */
+          padding-bottom: 8px;
+        }
         /* display: none will break the flow, so just make it less-than-visible instead. */
         .card {
           background: transparent;
+          border: none;
           box-shadow: none;
         }
       }
     }
     .card {
       margin-bottom: 1rem;
+      border: 1px solid #bbb;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
       a {
         color: ${theme.colors.primary};
       }
       h3 {
         a {
           margin-left: 0.3rem;
-          color: rgba(189, 189, 189, 0.25);
+          color: rgba(189, 189, 189, 0.5);
           font-weight: normal;
 
           &:hover {
