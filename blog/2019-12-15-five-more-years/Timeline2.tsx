@@ -162,7 +162,7 @@ export class Timeline2 extends React.Component {
                 into a new language and figure things out for the first time.
               </p>
               <p>
-                I didn’t realize it at the time, but the process of learning
+                I didn’t realize it at the time, but the process of learning{' '}
                 <em>one</em> language and its idioms would set me on a path to
                 learning yet more languages. Eventually, this path would lead me
                 to become a generalist.
