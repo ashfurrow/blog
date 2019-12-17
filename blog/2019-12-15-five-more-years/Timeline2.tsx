@@ -993,7 +993,7 @@ export class Timeline2 extends React.Component {
 
             <Entry title="Guitar Debut">
               <p>
-                Late in 2016, I learned the Ukulele and later the guitar. At
+                Late in 2016, I learned the ukulele and later the guitar. At
                 Artsy’s annual employee art show (the <em>Artsy Salon</em>),{' '}
                 <a href="/blog/guitar-debut/">
                   I performed guitar in front of a live audience for the first
