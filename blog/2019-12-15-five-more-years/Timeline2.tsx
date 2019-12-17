@@ -163,9 +163,9 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 I didn’t realize it at the time, but the process of learning a
-                new language and learning its idioms would prepare me for
-                learning yet more languages, on my path to becoming a
-                generalist.
+                <em>one</em> language and its idioms would set me on a path to
+                learning yet more languages. Eventually, this path would lead me
+                to become a generalist.
               </p>
             </Entry>
 
@@ -977,11 +977,11 @@ export class Timeline2 extends React.Component {
                 Rather, I began contributing to web projects on the Auctions
                 team which were in React. Specifically, they were using React
                 and Redux, with GraphQL and websocket backends. Compared to the
-                sophisticated tooling I’m using to now, it was quite primitive.
-                But because it was so close to vanilla JavaScript, it was easy
-                to dive into. I enjoyed contributing to the Auctions team
-                software, whether it was in Scala or Rails or Swift, but
-                especially in React. It was so fun!
+                sophisticated tooling I’m used to now, the front-end code was a
+                bit primitive. But because it was so close to vanilla JavaScript
+                and CSS, it was easy to dive into. I enjoyed contributing to the
+                Auctions team software, whether it was in Scala or Rails or
+                Swift, but especially in React. It was so fun!
               </p>
               <p>
                 As an added bonus, when I <em>did</em> eventually start
@@ -1415,7 +1415,7 @@ export class Timeline2 extends React.Component {
                 demographics. I saw the sexuality pie chart and I remember
                 thinking &ldquo;there are more of us than I thought.&rdquo;{' '}
                 <em>Us</em>. It was the first time I’d admitted this to anyone –
-                even myself – that I was’t straight. I remember it distinctly.
+                even myself – that I wasn’t straight. I remember it distinctly.
               </p>
             </Entry>
 
@@ -1495,7 +1495,7 @@ export class Timeline2 extends React.Component {
               </p>
               <p>
                 Treatment is ongoing, but I feel like we’re almost there. As a
-                programming, repitive stress injuries can be really frightening.
+                programmer, repitive stress injuries can be really frightening.
                 If you’re struggling with pain, please seek treatment. And
                 before undergoing drastic interventions, make sure to get a
                 second opinion.
@@ -1679,10 +1679,11 @@ export class Timeline2 extends React.Component {
                 <a href="https://www.architecturaldigest.com/story/artsy-app-changing-the-game-for-art-and-design-lovers">
                   City Guides
                 </a>
-                , a in-progress project. I wasn’t used to joining in-prorgress
-                work; I prefer to be involved throughout the product development
-                process: brainstorming with stakeholders, providing early design
-                feedback, that kind of stuff. This was a new challenge.
+                , as an in-progress project. I wasn’t used to joining
+                in-prorgress work; I prefer to be involved throughout the
+                product development process: brainstorming with stakeholders,
+                providing early design feedback, that kind of stuff. This was a
+                new challenge.
               </p>
               <p>
                 City Guides also had a deadline, which was unusual for Artsy in
@@ -1705,10 +1706,10 @@ export class Timeline2 extends React.Component {
 
             <Entry title="Artsy Departures">
               <p>
-                2019 saw a lot of changes at Artsy, and one of the biggest
-                impacts on <em>me</em> was the departure of Orta (who had hired
-                me at Artsy) and dB (who had established Artsy Engineering’s
-                culture).
+                2019 saw a lot of changes at Artsy, and some of the biggest
+                impacts on <em>me</em> were the departures of Orta (who had
+                hired me at Artsy) and dB (who had established Artsy
+                Engineering’s culture).
               </p>
               <p>
                 They each left for their own reasons – ready to move on to the
@@ -1903,10 +1904,10 @@ export class Timeline2 extends React.Component {
                 empowered. I feel motivated. I feel excited.
               </p>
               <p>
-                Nearly six at Artsy has taught me many things, chief among them
-                that <em>change is constant</em>. Artsy’s always been changing:
-                growing, making mistakes, and learning from them. Change has
-                always been constant.
+                Nearly six years at Artsy has taught me many things, chief among
+                them that <em>change is constant</em>. Artsy’s always been
+                changing: growing, making mistakes, and learning from them.
+                Change has always been constant.
               </p>
               <p>
                 While I’d by lying if I said some changes don’t feel more

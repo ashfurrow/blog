@@ -79,6 +79,7 @@ const GlobalStyle = createGlobalStyle`
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0; /* To fix font baseline offset */
+          padding-bottom: 8px;
         }
         margin-bottom: 2rem;
       }
@@ -87,6 +88,7 @@ const GlobalStyle = createGlobalStyle`
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0; /* To fix font baseline offset */
+          padding-bottom: 8px;
         }
         /* display: none will break the flow, so just make it less-than-visible instead. */
         .card {
