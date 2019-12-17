@@ -659,7 +659,7 @@ export class Timeline2 extends React.Component {
                 knew that we had to balance working hard with a sustainable
                 pace. Alan and Devang made sure that everyone on the team knew
                 that this was a one-off situation, that crunch time would{' '}
-                <em>not</em> become the norm. The would keep their word.
+                <em>not</em> become the norm. They would keep their word.
               </p>
               <p>
                 A nice side-effect of the intensity LAI development was the
