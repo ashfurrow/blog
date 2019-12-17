@@ -15,9 +15,9 @@ import mxteam from './mxteam.png'
 import greguniverse from './greguniverse.jpg'
 import ikea from './ikea.jpg'
 import eclipse from './eclipse.jpg'
-import pianocat from './pianocat.png'
+import pianocat from './pianocat.jpg'
 import moya from './moya.png'
-import comingout from './comingout.png'
+import comingout from './comingout.jpg'
 import cultureamp from './cultureamp.png'
 import cityguides from './cityguides.jpg'
 import elephantfriend from './elephantfriend.png'
@@ -140,7 +140,7 @@ export class Timeline2 extends React.Component {
 
   render() {
     return (
-      <Wide addBottom>
+      <Wide>
         <ReactTimeline theme={customTheme}>
           <Events>
             <Event className="year" date="🗓️ 2015" />
