@@ -7,7 +7,7 @@ import {
   createTheme
 } from '@merc/react-timeline'
 import Theme from '../../config/Theme'
-import Wide from '../../src/components/Wide'
+import styled from 'styled-components'
 import { camelCase } from 'lodash'
 
 import purchase from './purchaseteam.jpg'
@@ -46,16 +46,38 @@ import buttons from './buttons.jpg'
 import stevenuniverse from './stevenuniverse.jpg'
 import election from './election.jpg'
 import posts from './posts.png'
+import { media } from '../../src/utils/media'
+
+const Wide = styled.div`
+  margin: 0 auto 1.6rem;
+  position: relative;
+  width: 75vw;
+  margin-left: -37.5vw;
+  left: 50%;
+
+  @media ${media.tablet} {
+    width: 90vw;
+    margin-left: -45vw;
+    left: 50%;
+  }
+
+  @media ${media.phone} {
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+  }
+`
 
 const customTheme = createTheme(themes.default, {
   card: {
-    backgroundColor: '#eee',
+    backgroundColor: 'rgb(248, 248, 248)',
     a: {
       color: Theme.colors.primary
     }
   },
   date: {
-    backgroundColor: Theme.colors.primary
+    backgroundColor: Theme.colors.primary,
+    fontSize: '3rem'
   },
   marker: {
     borderColor: Theme.colors.primary
@@ -121,7 +143,7 @@ export class Timeline2 extends React.Component {
       <Wide addBottom>
         <ReactTimeline theme={customTheme}>
           <Events>
-            <Event className="year" date="2015" />
+            <Event className="year" date="🗓️ 2015" />
 
             <Entry
               title="Spreading the Word about Swift"
@@ -248,14 +270,18 @@ export class Timeline2 extends React.Component {
               <p>
                 In 2014, I attended UIKonf and had a great time. I returned the
                 following year to present a talk titled{' '}
-                <em>Teaching & Learning</em>. The thesis of my talk was that
-                sharing knowledge is good, and you should do it for both
-                altruistic and selfish reasons.
+                <a href="https://www.youtube.com/watch?v=SjjvnrqDjpM">
+                  <em>Teaching & Learning</em>
+                </a>
+                . The thesis of my talk was that sharing knowledge is good, it's
+                good for you, and you should do it.
               </p>
               <p>
-                In the years since my 2015 talk, I’ve only leaned harder into
-                this &ldquo;sharing knowledge is good&rdquo; position. But at
-                the time, this was as far as I had pushed into it.
+                I would spend the next half decade leaning further and further
+                into this idea, of sharing knowledge. It would come to define
+                the core of my practice as a professional. I can trace a lot of
+                how I approach my day-to-day to ideas I first expressed in{' '}
+                <em>this</em> talk.
               </p>
             </Entry>
 
@@ -404,7 +430,7 @@ export class Timeline2 extends React.Component {
                 After making this decision, I told Artsy’s CTO dB, who supported
                 me. I started spending Artsy time researching team dynamics and
                 skills to manage them. I had started down this path enough to
-                realize how little I knew, and i was hungry for more.
+                realize how little I knew, and I was hungry for more.
               </p>
               <p>
                 This was the very beginning of development of my philosophy of
@@ -442,7 +468,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Event className="year" date="2016" />
+            <Event className="year" date="🗓️ 2016" />
 
             <Entry
               title="Film!"
@@ -479,9 +505,13 @@ export class Timeline2 extends React.Component {
               <p>
                 January kicked off six months of <em>intense</em> work on the
                 nascent Auctions team, building Live Auctions Integration (LAI).
-                At the time, Artsy only supported <em>timed auctions</em>: the
-                auction had a pre-set end time and, when that time arrived,
-                whoever was the highest bidder on each lot won that lot.
+                At the time, Artsy only supported{' '}
+                <a href="https://artsy.github.io/blog/2014/04/17/building-an-english-auction-with-mongodb/">
+                  <em>timed auctions</em>
+                </a>
+                : the auction had a pre-set end time and, when that time
+                arrived, whoever was the highest bidder on each lot won that
+                lot.
               </p>
               <p>
                 LAI was different. We would be sending an Artsy employee to an
@@ -561,11 +591,13 @@ export class Timeline2 extends React.Component {
             <Entry title="Green Card Process Starts">
               <p>
                 So far, my wife and I had been living in the United States on a
-                TN-1 visa (&ldquo;the NAFTA visa&rdquo;). It had some
-                restrictions that we were initially okay with, but grew tired of
-                as we continued living in the states. And border crossings were
-                a consistently stressful, as it’s kind of a weird visa.
-                Especially entering from Europe, airlines get really fussy.
+                <a href="https://www.uscis.gov/working-united-states/temporary-workers/tn-nafta-professionals">
+                  TN-1 visa (&ldquo;the NAFTA visa&rdquo;)
+                </a>
+                . This visa had some restrictions that we were initially okay
+                with, but grew tired of as time went on. Border crossings were
+                consistently stressful, as it’s a weird kind of a weird visa.
+                Especially entering from Europe, airlines get really fussy. Etc.
               </p>
               <p>
                 Ashley and I decided to ask Artsy to look into our options.
@@ -658,8 +690,8 @@ export class Timeline2 extends React.Component {
               <p>
                 Looking back, as a more leadership-y engineer, I have a profound
                 appreciation for how Alan and Devang handled that stress, with
-                what seemed like unwavering grace. That’s a kind of grace I try
-                to imbue now.
+                what seemed like unwavering grace. That’s a kind of grace I aim
+                for now.
               </p>
               <p>
                 The launch was a total success.{' '}
@@ -734,8 +766,12 @@ export class Timeline2 extends React.Component {
               <p>
                 Our focus turned from building out LAI to scaling it, and
                 scaling tools for our colleagues in Auctions Ops. I found this
-                work really fulfilling. Something about making my colleague’s
-                jobs easier just felt satisfying in a new, fresh way to me.
+                work really fulfilling.{' '}
+                <a href="https://artsy.github.io/blog/2018/02/02/artsy-apogee/">
+                  There were lots of opportunities for my professional growth
+                </a>
+                . Something about making my colleague’s jobs easier just felt
+                satisfying in a new, fresh way to me.
               </p>
             </Entry>
 
@@ -823,7 +859,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Event className="year" date="2017" />
+            <Event className="year" date="🗓️ 2017" />
 
             <Entry title="Retrieval Errors">
               <p>
@@ -1042,7 +1078,7 @@ export class Timeline2 extends React.Component {
                 Canada. Well, not &ldquo;home&rdquo; to Canada: we were from
                 rural Canada but had decidedly become &ldquo;city people&rdquo;,
                 so a move back to Canada would be to a city. Vancouver, we were
-                thinking.
+                thinking. I'd keep working for Artsy, just remotely.
               </p>
               <p>
                 All that changed when my sister had her first child. Something
@@ -1090,8 +1126,8 @@ export class Timeline2 extends React.Component {
                 among the iOS developer community. That sucked. Some friends
                 said things about my broadening skills that really hurt my
                 feelings, though I don’t think they intended to. Strangers were
-                a lot more candid with their feedback about Artsy’s technology
-                choices – and my tacit endorsement of them. It was an isolating
+                a lot more candid, with their feedback about Artsy’s technology
+                choices (and my tacit endorsement of them). It was an isolating
                 experience.
               </p>
               <p>
@@ -1145,7 +1181,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Event className="year" date="2018" />
+            <Event className="year" date="🗓️ 2018" />
 
             <Entry title="Changes at Artsy">
               <p>
@@ -1466,7 +1502,7 @@ export class Timeline2 extends React.Component {
               </p>
             </Entry>
 
-            <Event className="year" date="2019" />
+            <Event className="year" date="🗓️ 2019" />
 
             <Entry
               title="Buy Now"
@@ -1867,12 +1903,15 @@ export class Timeline2 extends React.Component {
                 empowered. I feel motivated. I feel excited.
               </p>
               <p>
-                I’ve spent nearly six years at Artsy, and that has taught me
-                that change is constant. Artsy’s always been changing: growing,
-                making mistakes, and learning from them. Change is a constant,
-                in life. I’d by lying if I said some changes don’t feel more
-                significant than others, but changes are opportunities, too. I’m
-                so excited take full advantage of those opportunities.
+                Nearly six at Artsy has taught me many things, chief among them
+                that <em>change is constant</em>. Artsy’s always been changing:
+                growing, making mistakes, and learning from them. Change has
+                always been constant.
+              </p>
+              <p>
+                While I’d by lying if I said some changes don’t feel more
+                significant than others, changes are opportunities, too. I’m
+                excited take full advantage of them.
               </p>
             </Entry>
 
