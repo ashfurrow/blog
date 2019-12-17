@@ -1,7 +1,7 @@
 import YAML from 'yaml'
 import path from 'path'
 import { promises as fs } from 'fs'
-import { last, map } from 'lodash'
+import { last } from 'lodash'
 
 // const log = console.log
 const log = (thing: any) => thing && undefined
