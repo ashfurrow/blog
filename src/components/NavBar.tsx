@@ -160,9 +160,10 @@ const NavLinks = styled.ul<{ clear: boolean }>`
 `
 
 const BurgerWrapper = styled.div`
-  margin: auto 0;
+  display: none;
 
-  @media (min-width: 768px) {
-    display: none;
+  @media (max-width: 768px) {
+    display: initial;
+    margin: auto 0;
   }
 `
