@@ -13,6 +13,7 @@ import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import Data from '../models/Data'
 import styled from 'styled-components'
+import moment from 'moment'
 
 interface Props {
   data: Data
@@ -46,7 +47,7 @@ export default class HomePage extends React.Component<Props> {
       return {
         year: parseInt(year, 10),
         posts: groupBy(posts, ({ frontmatter: { date } }) => {
-          return new Date(date).getMonth()
+          return moment.utc(date).month()
         })
       }
     })
@@ -77,16 +78,19 @@ export default class HomePage extends React.Component<Props> {
                       })
                       .reverse()
                       .map(monthPosts => {
-                        const representativeDate = new Date(
+                        const representativeDate = moment.utc(
                           monthPosts[0].frontmatter.date
                         )
+                        //  new Date(
+                        //   monthPosts[0].frontmatter.date
+                        // )
                         return (
                           <div
-                            key={representativeDate.toDateString()}
+                            key={representativeDate.toString()}
                             style={{ marginBottom: '2rem' }}
                           >
                             <h2 style={{ marginBottom: '0.5rem' }}>
-                              {MONTHS[representativeDate.getMonth()]} {year}
+                              {MONTHS[representativeDate.month()]} {year}
                             </h2>
                             {monthPosts.map(post => (
                               <article key={post.fields.path}>
