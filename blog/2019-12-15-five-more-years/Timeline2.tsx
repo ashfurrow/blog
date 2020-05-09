@@ -1893,7 +1893,7 @@ export class Timeline2 extends React.Component {
                 empowering people to succeed <em>in</em> the culture they want
                 to build. Throughout the changes at Artsy this year (and the
                 inevitable culture turbulence that comes with <em>any</em>{' '}
-                company change), I found myself steping up.
+                company change), I found myself stepping up.
               </p>
               <p>
                 I’m putting my principles into action. All my research into team
