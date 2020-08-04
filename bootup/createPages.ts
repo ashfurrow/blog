@@ -1,4 +1,5 @@
 import Path from 'path'
+import { writeFileSync } from 'fs'
 import { GatsbyNode } from 'gatsby'
 import AllMarkdownRemark from '../src/models/AllMarkdownRemark'
 import { generatePath } from '../src/utils/paths'
@@ -23,12 +24,16 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
           }
         }
       }
+      siteSearchIndex {
+        index
+      }
     }
   `).then(result => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
     const allMdx = (result.data as any).allMdx as AllMarkdownRemark
+    const { siteSearchIndex } = result.data as any
     const posts = allMdx.edges
     posts.forEach(({ node }, index) => {
       const next = index === 0 ? null : posts[index - 1].node
@@ -44,6 +49,10 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
         }
       })
     })
+    writeFileSync(
+      Path.join('public', 'siteSearchIndex.json'),
+      JSON.stringify(siteSearchIndex)
+    )
   })
 }
 exports.createPages = createPages
