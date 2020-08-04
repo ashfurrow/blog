@@ -24,6 +24,7 @@ import {
   faYoutube
 } from '@fortawesome/free-brands-svg-icons'
 import { RightImage } from '../components/RightImage'
+import { Link } from 'gatsby'
 
 export default class Portfolio extends React.Component<any> {
   public render() {
@@ -53,43 +54,38 @@ export default class Portfolio extends React.Component<any> {
 const _Portfolio: React.FC = () => (
   <>
     <p>
-      My{' '}
-      <a href="https://ashfurrow.com/blog/5-years-of-ios/">
-        first 5 years of iOS development
-      </a>{' '}
-      are well-documented. However, I no longer consider myself an "iOS
-      developer" –{' '}
-      <a href="https://ashfurrow.com/blog/perspective-of-the-polyglot/">
-        I've grown
-      </a>
-      ,{' '}
-      <a href="https://ashfurrow.com/blog/building-better-software-by-building-better-teams/">
-        I've learned
-      </a>
-      ,{' '}
-      <a href="https://ashfurrow.com/blog/normalizing-struggle/">
-        I've struggled
-      </a>
-      . The problems I want to work on just can't be solved with iOS software
-      alone.
+      My <Link to="/blog/5-years-of-ios/">first 5 years</Link> and{' '}
+      <Link to="/blog/5-more-years-of-building-software/">
+        my second five years
+      </Link>{' '}
+      of professional software development are openly documented, if you want an
+      in-depth look. I began my career as an &ldquo;iOS developer&rdquo; but{' '}
+      <Link to="/blog/building-better-software-by-building-better-teams/">
+        I have learned
+      </Link>
+      , <Link to="/blog/normalizing-struggle/">I have struggled</Link>, and{' '}
+      <Link to="/blog/perspective-of-the-polyglot/">I have grown</Link>. The
+      problems I want to work on <em>now</em> simply cannot be solved with iOS
+      software alone. I am interested in building <em>teams</em> as much as I am
+      interested in building software.
     </p>
     <p>
-      A portfolio can only show you what I've done, but I hope this gives you a
-      sense of what I'm doing next.
+      A portfolio can only show you what I've done so far, but I hope this gives
+      you a sense of what I'm going to do next.
     </p>
 
     <SectionHeader banner="/assets/portfolio/community_header.jpg" dim>
       <TitleCaption
         title="Community"
-        subtitle="In my home region of Atlantic Canada, we have a saying: “rising tides lift
-      all boats.”"
+        subtitle="In my home region of Atlantic Canada, we have a saying: &ldquo;rising tides lift
+      all boats.&rdquo;"
       />
     </SectionHeader>
     <p>
-      Since I was a teenager, I’ve been fascinated with open source software.
-      Not just the software itself, but the communities surrounding different
-      projects. No one individual can accomplish what a community can – people
-      can always accomplish more if they work together.
+      Since I was a teenager, I&apos;ve been fascinated with open source
+      software. Not just the software itself, but the communities surrounding
+      different projects. No one individual can accomplish what a community can
+      – people can always accomplish more if they work together.
     </p>
     <p>
       Today, I practice a{' '}
@@ -100,14 +96,14 @@ const _Portfolio: React.FC = () => (
       then it should be shared.
     </p>
     <p>
-      At Artsy, we call it “open source by default.” At Teehan+Lax, we called it
-      “creating more value than you capture.” Before that, I didn’t really have
-      a name for it. It was just what I did.
+      At Artsy, we call it &ldquo;open source by default.&rdquo; At Teehan+Lax,
+      we called it &ldquo;creating more value than you capture.&rdquo; Before
+      that, I didn&apos;t really have a name for it. It was just what I did.
     </p>
     <blockquote>
       <p>
-        See, in all our searching, the only thing we’ve found that makes the
-        emptiness bearable is each other. —
+        See, in all our searching, the only thing we&apos;ve found that makes
+        the emptiness bearable is each other. —
         <a href="https://en.wikipedia.org/wiki/Contact_(1997_American_film)">
           Contact (1997)
         </a>
@@ -115,7 +111,7 @@ const _Portfolio: React.FC = () => (
     </blockquote>
     <p>
       I take a lot of pride in helping others and in contributing to the
-      developer community, and I’ve tried to set a higher standard for{' '}
+      developer community, and I&apos;ve tried to set a higher standard for{' '}
       <a href="https://ashfurrow.com/blog/minswan-for-ios/">my own behaviour</a>
       . In addition to building{' '}
       <a href="https://ashfurrow.com/blog/building-my-career/">
@@ -192,18 +188,18 @@ const _Portfolio: React.FC = () => (
       <RightImage src="/assets/portfolio/artsy.jpg" />
       <LeftDiv>
         <p>
-          Since 2014, I’ve worked for <a href="https://www.artsy.net">Artsy</a>:
-          a company working towards a future where everyone is moved by art
-          every day. I've worked on a variety of teams to realize Artsy's
-          business goals, starting with building iOS apps and now contributing
-          across many systems and teams.
+          Since 2014, I&apos;ve worked for{' '}
+          <a href="https://www.artsy.net">Artsy</a>: a company working towards a
+          future where everyone is moved by art every day. I've worked on a
+          variety of teams to realize Artsy's business goals, starting with
+          building iOS apps and now contributing across many systems and teams.
         </p>
         <p>
           Artsy encourages me to grow and learn, and to share what I learn with
           others; all of my work is{' '}
           <a href="https://github.com/ashfurrow">done in the open</a>, and I
           write articles for{' '}
-          <a href="http://artsy.github.io">Artsy’s engineering blog</a>. My
+          <a href="http://artsy.github.io">Artsy&apos;s engineering blog</a>. My
           current career goal at Artsy is to scale up my impact.
         </p>
       </LeftDiv>
@@ -250,8 +246,8 @@ const _Portfolio: React.FC = () => (
     </SectionHeader>
     <p>
       Since 2011, I have developed an increasingly intense interest in
-      photography. Working to improve my skills, I’ve explored the medium on
-      film and in the{' '}
+      photography. Working to improve my skills, I&apos;ve explored the medium
+      on film and in the{' '}
       <a href="https://ashfurrow.com/blog/darkroom-printing/">dark room</a>,
       using film as small as 35mm to as large as{' '}
       <a href="https://ashfurrow.com/blog/large-format-photography/">
@@ -325,12 +321,12 @@ const _Portfolio: React.FC = () => (
       <RightImage src="/assets/portfolio/blogging.jpg" />
       <LeftDiv>
         <p>
-          I’ve been writing a developer-focused blog since 2011, now hosted
+          I&apos;ve been writing a developer-focused blog since 2011, now hosted
           here. At{' '}
           <a href="http://www.teehanlax.com/blog/author/ash/">Teehan+Lax</a>, I
           began contributing to company blog as part of my job. I still do, now
-          on <a href="http://artsy.github.io">Artsy’s developer blog</a>. I’ve
-          also written posts for{' '}
+          on <a href="http://artsy.github.io">Artsy&apos;s developer blog</a>.
+          I&apos;ve also written posts for{' '}
           <a href="http://www.objc.io/contributors/">objc.io</a>.
         </p>
         <p>
@@ -353,9 +349,9 @@ const _Portfolio: React.FC = () => (
           guide students through using Core Data to build an iOS diary app.
         </p>
         <p>
-          I’ve given other, in-person workshops on subjects ranging from the
-          basics of iOS development to functional reactive programming in Swift,
-          beginning in 2011.
+          I&apos;ve given other, in-person workshops on subjects ranging from
+          the basics of iOS development to functional reactive programming in
+          Swift, beginning in 2011.
         </p>
       </LeftDiv>
       <h3>Speaking</h3>
@@ -363,9 +359,9 @@ const _Portfolio: React.FC = () => (
       <LeftDiv>
         <p>
           I began speaking in the Toronto CocoaHeads group. I soon began
-          submitting proposals to conferences. Today, I’ve spoken all over the
-          world on a variety of subjects relating to software development, team
-          development, and open source software.
+          submitting proposals to conferences. Today, I&apos;ve spoken all over
+          the world on a variety of subjects relating to software development,
+          team development, and open source software.
         </p>
         <p>
           Check out my <a href="/speaking">speaking page</a> for more.
@@ -375,11 +371,11 @@ const _Portfolio: React.FC = () => (
       <RightImage src="/assets/portfolio/books.jpg" />
       <LeftDiv>
         <p>
-          Beginning in 2012, I’ve written a number of books on iOS development
-          (both with publishers and self-published). Like with blogging, writing
-          is a very satisfying activity. I enjoy planning a route to take a
-          reader on, considering what to teach them (and when), and turning my
-          ideas into educational resources.
+          Beginning in 2012, I&apos;ve written a number of books on iOS
+          development (both with publishers and self-published). Like with
+          blogging, writing is a very satisfying activity. I enjoy planning a
+          route to take a reader on, considering what to teach them (and when),
+          and turning my ideas into educational resources.
         </p>
         <p>
           <a href="/books">Check out my books page</a> for more.
@@ -472,7 +468,7 @@ const TitleCaption: React.FC<{ title: string; subtitle: string }> = ({
 
 const Footer = styled.footer`
   text-align: center;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
 
   span {
     margin: 0 1rem;
