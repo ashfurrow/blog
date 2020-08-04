@@ -12,8 +12,9 @@ import { compact } from 'lodash'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import rgba from 'polished/lib/color/rgba'
+import theme from '../../config/Theme'
 import { Index } from 'elasticlunr'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 interface SearchResult {
   title: string
@@ -29,22 +30,27 @@ export default () => {
   const [results, setResults] = useState<any[]>([])
   const [index, setIndex] = useState<Index<SearchResult> | null>(null)
 
-  const search = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const search = (input: string) => {
+    if (!index) {
+      return
+    }
+    // Query the index with search string to get an [] of IDs
+    setResults(
+      compact(
+        index
+          .search(input, { expand: true } as any)
+          // Map over each ID and return the full document
+          .map(thing => {
+            return index && index.documentStore.getDoc(thing.ref)
+          })
+      )
+    )
+  }
+
+  const handleUserInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const userInput = event.target.value
     setQuery(userInput)
-    if (index) {
-      // Query the index with search string to get an [] of IDs
-      setResults(
-        compact(
-          index
-            .search(userInput, { expand: true } as any)
-            // Map over each ID and return the full document
-            .map(thing => {
-              return index && index.documentStore.getDoc(thing.ref)
-            })
-        )
-      )
-    }
+    search(userInput)
   }
 
   useEffect(() => {
@@ -52,6 +58,10 @@ export default () => {
       .then(result => result.json())
       .then(indexJSON => {
         setIndex(Index.load(indexJSON.index))
+        if (query) {
+          // User has already entered text, search for it.
+          search(query)
+        }
       })
   }, [])
 
@@ -60,17 +70,21 @@ export default () => {
       <Helmet title={`Search | ${config.siteTitle}`} />
       <SEO path={'/search/'} data={{ title: 'Search' }} />
       <Header banner="/assets/bg/search.jpg">
-        <SectionTitle>Search {!!index ? 'loaded' : 'loading'}</SectionTitle>
+        <SectionTitle>Search</SectionTitle>
       </Header>
       <Wrapper>
         <Content>
           <div style={{ marginTop: '1rem' }}>
-            <SearchInput
-              type="text"
-              value={query}
-              onChange={search}
-              ref={inputRef}
-            />
+            <div style={{ position: 'relative' }}>
+              <SearchInput
+                type="text"
+                value={query}
+                onChange={handleUserInput}
+                ref={inputRef}
+                style={{ boxSizing: 'border-box' }}
+              />
+              {!index && <Loader />}
+            </div>
             <ResultsList>
               {results.map(page => (
                 <SearchResultItem key={page.id}>
@@ -86,6 +100,38 @@ export default () => {
     </Layout>
   )
 }
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`
+
+const Spinner = styled.div`
+  border: 2px solid transparent;
+  border-top: 2px solid ${theme.colors.primary};
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  animation: ${rotate} 0.8s linear infinite;
+  position: relative;
+`
+
+const SpinnerContainer = styled.div`
+  position: absolute;
+  right: 0.5rem;
+  top: calc(50% - 1rem);
+`
+
+const Loader = () => (
+  <SpinnerContainer>
+    <Spinner />
+  </SpinnerContainer>
+)
 
 const SearchInput = styled.input`
   margin-bottom: 1rem;
