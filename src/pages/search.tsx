@@ -29,12 +29,12 @@ interface Props {
 }
 
 interface State {
+  index?: Index<SearchResult>
   query: string
   results: SearchResult[]
 }
 
 export default class Search extends React.Component<Props, State> {
-  index?: Index<SearchResult>
   input: HTMLInputElement | null
 
   constructor(props: Props) {
@@ -48,16 +48,17 @@ export default class Search extends React.Component<Props, State> {
 
   search = (event: React.ChangeEvent<HTMLInputElement>) => {
     const query = event.target.value
-    if (this.index) {
+    const { index } = this.state
+    if (index) {
       // Query the index with search string to get an [] of IDs
       this.setState({
         query,
         results: compact(
-          this.index
+          index
             .search(query, { expand: true } as any)
             // Map over each ID and return the full document
             .map(thing => {
-              return this.index && this.index.documentStore.getDoc(thing.ref)
+              return index && index.documentStore.getDoc(thing.ref)
             })
         )
       })
@@ -68,6 +69,12 @@ export default class Search extends React.Component<Props, State> {
     if (this.input) {
       this.input.focus()
     }
+
+    fetch('/siteSearchIndex.json')
+      .then(result => result.json())
+      .then(index => {
+        this.setState({ index: Index.load(index.index) })
+      })
   }
 
   public render() {
@@ -76,45 +83,33 @@ export default class Search extends React.Component<Props, State> {
         <Helmet title={`Search | ${config.siteTitle}`} />
         <SEO path={'/search/'} data={{ title: 'Search' }} />
         <Header banner="/assets/bg/search.jpg">
-          <SectionTitle>Search</SectionTitle>
+          <SectionTitle>
+            Search {!!this.state.index ? 'loaded' : 'loading'}
+          </SectionTitle>
         </Header>
         <Wrapper>
           <Content>
-            <StaticQuery
-              query={graphql`
-                query SearchIndexQuery {
-                  siteSearchIndex {
-                    index
-                  }
-                }
-              `}
-              render={data => {
-                this.index = Index.load(data.siteSearchIndex.index)
-                return (
-                  <div style={{ marginTop: '1rem' }}>
-                    <SearchInput
-                      type="text"
-                      value={this.state.query}
-                      onChange={this.search}
-                      ref={input => {
-                        this.input = input
-                      }}
-                    />
-                    <ResultsList>
-                      {this.state.results.map(page => (
-                        <SearchResultItem key={page.id}>
-                          <Link to={`/${page.path}`}>{page.title}</Link>
-                          &nbsp;&nbsp;
-                          <span style={{ color: rgba(0, 0, 0, 0.5) }}>
-                            {page.date}
-                          </span>
-                        </SearchResultItem>
-                      ))}
-                    </ResultsList>
-                  </div>
-                )
-              }}
-            />
+            <div style={{ marginTop: '1rem' }}>
+              <SearchInput
+                type="text"
+                value={this.state.query}
+                onChange={this.search}
+                ref={input => {
+                  this.input = input
+                }}
+              />
+              <ResultsList>
+                {this.state.results.map(page => (
+                  <SearchResultItem key={page.id}>
+                    <Link to={`/${page.path}`}>{page.title}</Link>
+                    &nbsp;&nbsp;
+                    <span style={{ color: rgba(0, 0, 0, 0.5) }}>
+                      {page.date}
+                    </span>
+                  </SearchResultItem>
+                ))}
+              </ResultsList>
+            </div>
           </Content>
         </Wrapper>
       </Layout>
