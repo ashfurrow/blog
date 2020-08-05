@@ -9,6 +9,7 @@ require('ts-node').register({
 const config = require('./config/SiteConfig').default
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 const { generatePath } = require('./src/utils/paths')
+const { removeStopwords } = require('stopword')
 
 const moment = require('moment')
 const _ = require('lodash')
@@ -132,13 +133,22 @@ module.exports = {
             title: node => node.frontmatter.title,
             path: node => generatePath(node.frontmatter.title),
             // We want to index the blog posts but we want to keep the search index small
-            // So let's index the HTML-less markdown text as a compromise
-            body: node => node.rawBody.replace(/<[^>]+>/g, ''),
+            // So let's do the following compromises:
+            // - use the raw markdown, no html
+            // - drop the yaml frontmatter
+            // - do stopword pre-filtering
+            // The plugin doesn't distinguish between including something in the index and making it accessible in the document store.
+            body: node => {
+              const htmlRemovedBody = node.rawBody.replace(/<[^>]+>/g, '')
+              // Remove yaml frontmatter
+              const body = _.drop(htmlRemovedBody.split('---'), 2).join(' ')
+              return removeStopwords(body.split(' ')).join(' ')
+            },
             date: node => moment(node.frontmatter.date).format('MMMM D, YYYY')
           }
         },
         // Optional filter to limit indexed nodes
-        filter: (node, getNode) => node.frontmatter.tags !== 'exempt'
+        filter: node => node.frontmatter.tags !== 'exempt'
       }
     },
     {

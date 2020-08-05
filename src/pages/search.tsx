@@ -57,7 +57,7 @@ export default () => {
     fetch('/siteSearchIndex.json')
       .then(result => result.json())
       .then(indexJSON => {
-        setIndex(Index.load(indexJSON.index))
+        setIndex(Index.load(indexJSON))
         if (query) {
           // User has already entered text, search for it.
           search(query)

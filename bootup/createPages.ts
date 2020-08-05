@@ -49,9 +49,10 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
         }
       })
     })
+    console.log('Writing search index.')
     writeFileSync(
       Path.join('public', 'siteSearchIndex.json'),
-      JSON.stringify(siteSearchIndex)
+      JSON.stringify(siteSearchIndex.index)
     )
   })
 }
