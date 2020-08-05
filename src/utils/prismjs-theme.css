@@ -4,6 +4,13 @@
  * @author ocodia
  */
 
+/* We need to keep links with inline code the same colour. */
+a > code[class*='language-'],
+a > pre[class*='language-'] {
+  color: #398ccc;
+  text-shadow: none;
+}
+
 code[class*='language-'],
 pre[class*='language-'] {
   color: #404040;
@@ -25,6 +32,11 @@ pre[class*='language-'] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+
+  font-size: 0.7rem;
+  @media (min-width: 768px) {
+    font-size: 0.85rem;
+  }
 }
 
 /* Code blocks */
