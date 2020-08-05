@@ -256,12 +256,7 @@ module.exports = {
         icon: config.favicon
       }
     },
-    {
-      resolve: 'gatsby-plugin-catch-links',
-      options: {
-        excludePattern: /search/
-      }
-    },
+    'gatsby-plugin-catch-links',
     'gatsby-plugin-netlify'
   ]
 }

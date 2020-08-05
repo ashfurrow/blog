@@ -33,9 +33,12 @@ pre[class*='language-'] {
   -ms-hyphens: none;
   hyphens: none;
 
-  font-size: 0.7rem;
-  @media (min-width: 768px) {
-    font-size: 0.85rem;
+  font-size: 0.6rem;
+}
+@media (min-width: 768px) {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    font-size: 0.8rem;
   }
 }
 
