@@ -54,12 +54,7 @@ export default class Portfolio extends React.Component<any> {
 const _Portfolio: React.FC = () => (
   <>
     <p>
-      My <Link to="/blog/5-years-of-ios/">first 5 years</Link> and{' '}
-      <Link to="/blog/5-more-years-of-building-software/">
-        my second five years
-      </Link>{' '}
-      of professional software development are openly documented, if you want an
-      in-depth look. I began my career as an &ldquo;iOS developer&rdquo; but{' '}
+      I began my career as an &ldquo;iOS developer&rdquo; but{' '}
       <Link to="/blog/building-better-software-by-building-better-teams/">
         I have learned
       </Link>
@@ -70,8 +65,53 @@ const _Portfolio: React.FC = () => (
       interested in building software.
     </p>
     <p>
-      A portfolio can only show you what I've done so far, but I hope this gives
-      you a sense of what I'm going to do next.
+      My <Link to="/blog/5-years-of-ios/">first five years</Link> and{' '}
+      <Link to="/blog/5-more-years-of-building-software/">
+        my second five years
+      </Link>{' '}
+      of professional software development are openly documented, if you want an
+      in-depth look.
+    </p>
+
+    <SectionHeader banner="/assets/portfolio/team.jpg" dim>
+      <TitleCaption
+        title="Team"
+        subtitle="I am at my best when I'm helping others reach their best."
+      />
+    </SectionHeader>
+    <p>
+      I&apos;ve been leading Artsy&apos;s Mobile Experience team since 2019, but
+      my technical leadership spans back much further. Artsy encouraged to
+      expand my impact so in 2015,{' '}
+      <a href="/blog/building-online-communities/">
+        I began learning about team dynamics
+      </a>{' '}
+      and applying what I learned in my team as an individual contributor. Over
+      the years,{' '}
+      <a href="/blog/perspective-of-the-polyglot/">
+        I expanded my technical impact
+      </a>{' '}
+      by learning new systems and technologies, and{' '}
+      <a href="/blog/building-better-software-by-building-better-teams/">
+        expanded my cultural impact
+      </a>{' '}
+      by learning how to foster healthy, empathetic, and productive work
+      environments.
+    </p>
+    <p>
+      My approach to guiding product development centres learning as its goal.
+      We are building new products in complicated business contexts, and we
+      don&apos;t know the answers upfront. I help the team learn <em>how</em> to
+      solve the problem effectively and efficiently. We end up building a great
+      product, but we do so not by focusing on the <em>building</em> but rather
+      on the <em>learning</em>.
+    </p>
+    <p>
+      This focus means creating a team environment where we are constantly
+      learning and then teaching what we have learned, often across disciplines.
+      This foundation of learning has helped me scale up Artsy&apos;s mobile
+      software expertise across many product teams, to become a genuinely
+      mobile-first product organization.
     </p>
 
     <SectionHeader banner="/assets/portfolio/community_header.jpg" dim>
@@ -93,12 +133,10 @@ const _Portfolio: React.FC = () => (
         fairly radical openness
       </a>
       : I believe that unless there is a good reason to keep something secret,
-      then it should be shared.
-    </p>
-    <p>
-      At Artsy, we call it &ldquo;open source by default.&rdquo; At Teehan+Lax,
-      we called it &ldquo;creating more value than you capture.&rdquo; Before
-      that, I didn&apos;t really have a name for it. It was just what I did.
+      then it should be shared. At Artsy, we call it &ldquo;open source by
+      default.&rdquo; At Teehan+Lax, we called it &ldquo;creating more value
+      than you capture.&rdquo; Before that, I didn&apos;t really have a name for
+      it. It was just what I did.
     </p>
     <blockquote>
       <p>
@@ -117,16 +155,15 @@ const _Portfolio: React.FC = () => (
       <a href="https://ashfurrow.com/blog/building-my-career/">
         open source communities online
       </a>
-      , I volunteer with <a href="http://c4q.nyc">Coalition for Queens</a>.
-    </p>
-    <p>
-      When I moved to New York in 2015, I started a{' '}
+      , I volunteer with <a href="https://www.pursuit.org">Pursuit</a>. When I
+      moved to New York in 2015, I started a{' '}
       <a href="http://artsy.github.io/blog/2015/08/10/peer-lab/">
-        Saturday morning peer lab
+        weekly Saturday morning peer lab
       </a>
-      ; I have since spread this idea around the world to{' '}
+      , which <a href="/blog/5-years-of-peer-lab/">ran for five years</a>. I
+      have since shared this idea around the world to{' '}
       <a href="https://peerlab.community">dozens of cities</a>, so there might
-      be a peer lab near you!
+      even be a peer lab near you!
     </p>
     <Footer>
       <FooterIcons>
@@ -176,12 +213,13 @@ const _Portfolio: React.FC = () => (
       />
     </SectionHeader>
     <p>
-      I've began writing iOS apps in 2009, when I was still in university. Since
-      then, I've expanded into{' '}
+      I&apos;ve began writing iOS apps in 2009, when I was still in university.
+      Since then, I&apos;ve expanded into{' '}
       <a href="https://ashfurrow.com/blog/perspective-of-the-polyglot/">
         many directions
       </a>
-      ; I now write software for whatever platform I need to solve a problem.
+      . I now write software for whichever platform would best solve the problem
+      at hand.
     </p>
     <div>
       <h3>Artsy</h3>
@@ -190,17 +228,17 @@ const _Portfolio: React.FC = () => (
         <p>
           Since 2014, I&apos;ve worked for{' '}
           <a href="https://www.artsy.net">Artsy</a>: a company working towards a
-          future where everyone is moved by art every day. I've worked on a
-          variety of teams to realize Artsy's business goals, starting with
-          building iOS apps and now contributing across many systems and teams.
+          future where everyone is moved by art every day. I&apos;ve worked on a
+          variety of teams to realize Artsy&apos;s business goals, starting with
+          building iOS apps, then contributing across many systems and teams,
+          and now leading Artsy&apos;s Mobile Experience team.
         </p>
         <p>
           Artsy encourages me to grow and learn, and to share what I learn with
           others; all of my work is{' '}
           <a href="https://github.com/ashfurrow">done in the open</a>, and I
           write articles for{' '}
-          <a href="http://artsy.github.io">Artsy&apos;s engineering blog</a>. My
-          current career goal at Artsy is to scale up my impact.
+          <a href="http://artsy.github.io">Artsy&apos;s engineering blog</a>.
         </p>
       </LeftDiv>
       <h3>35mm</h3>
@@ -211,29 +249,23 @@ const _Portfolio: React.FC = () => (
           others: a designer and an editor. We aimed to change the world for
           photography-lovers by providing curated photography without
           advertisements. Although the project was not a success from a
-          financial standpoint, I learnt a lot about writing Newsstand magazines
-          for iOS, including architecting our own backend server in Node.js.
+          financial standpoint, I learned a lot about writing Newsstand
+          magazines for iOS, including architecting our own backend server in
+          Node.js.
         </p>
-        <p>This project is no longer available.</p>
       </LeftDiv>
       <h3>500px</h3>
       <RightImage src="/assets/portfolio/500px.jpg" />
       <LeftDiv>
         <p>
-          In 2011, I began as the only iOS developer at 500px, architecting and
-          shipping the iPad app. I helped design new features, plan the product
-          roadmap, and respond to customer support inquiries, all while
-          continuing to ship an amazing product. I learned a lot about how
-          software serves the needs of the business, and collaborating towards
-          shared goals as a team.
-        </p>
-        <p>
-          Eventually, the team grew and I stepped up to become a team lead. From
-          there, I played a crucial role in the design and development of the
-          iPhone app, which shipped late 2012. 500px is still{' '}
-          <a href="https://500px.com/apps/ipad">available on the App Store</a>,
-          where it has been downloaded by hundreds of thousands of photography
-          lovers.
+          In 2011, I began as the only iOS developer at{' '}
+          <a href="https://500px.com">500px</a>, architecting and shipping the
+          iPad app. I helped design new features, plan the product roadmap, and
+          respond to customer support inquiries, all while continuing to ship an
+          amazing product. I learned a lot about how software serves the needs
+          of the business, and collaborating towards shared goals as a team. As
+          a team lead, I played a crucial role in the design and development of
+          the iPhone app, which shipped late 2012.
         </p>
       </LeftDiv>
     </div>
@@ -245,7 +277,7 @@ const _Portfolio: React.FC = () => (
       />
     </SectionHeader>
     <p>
-      Since 2011, I have developed an increasingly intense interest in
+      In 2011, I began developing an increasingly intense interest in
       photography. Working to improve my skills, I&apos;ve explored the medium
       on film and in the{' '}
       <a href="https://ashfurrow.com/blog/darkroom-printing/">dark room</a>,
@@ -266,8 +298,7 @@ const _Portfolio: React.FC = () => (
       <a href="https://ashfurrow.com/blog/music-is-back/">(re)discovering</a> my
       love of music ever since. My largest music project to date has been a{' '}
       <a href="https://ashfurrow.com/blog/just-play/">30-day challenge</a>. I'm
-      starting to explore songwriting, but it's still early. If you're in New
-      York and ever want to jam, please get in touch!
+      starting to explore songwriting, but it's still early.
     </p>
     <Footer>
       <FooterIcons>
@@ -337,28 +368,15 @@ const _Portfolio: React.FC = () => (
           <a href="https://www.youtube.com/watch?v=SjjvnrqDjpM">
             a better developer and a better writer
           </a>
-          .
-        </p>
-      </LeftDiv>
-      <h3>Workshops</h3>
-      <RightImage src="/assets/portfolio/treehouse.jpg" />
-      <LeftDiv>
-        <p>
-          In March, 2014, <a href="http://teamtreehouse.com">Treehouse</a>{' '}
-          invited me to Orlando to record a series of videos and screencasts to
-          guide students through using Core Data to build an iOS diary app.
-        </p>
-        <p>
-          I&apos;ve given other, in-person workshops on subjects ranging from
-          the basics of iOS development to functional reactive programming in
-          Swift, beginning in 2011.
+          . At Artsy, I host weekly writing office hours to help others achieve
+          their knowledge-sharing goals.
         </p>
       </LeftDiv>
       <h3>Speaking</h3>
       <RightImage src="/assets/portfolio/speaking.jpg" />
       <LeftDiv>
         <p>
-          I began speaking in the Toronto CocoaHeads group. I soon began
+          I began speaking in the Toronto CocoaHeads group in 2011. I soon began
           submitting proposals to conferences. Today, I&apos;ve spoken all over
           the world on a variety of subjects relating to software development,
           team development, and open source software.
@@ -371,14 +389,34 @@ const _Portfolio: React.FC = () => (
       <RightImage src="/assets/portfolio/books.jpg" />
       <LeftDiv>
         <p>
-          Beginning in 2012, I&apos;ve written a number of books on iOS
-          development (both with publishers and self-published). Like with
-          blogging, writing is a very satisfying activity. I enjoy planning a
-          route to take a reader on, considering what to teach them (and when),
-          and turning my ideas into educational resources.
+          I became a published author in 2012 and have since written a number of
+          books on iOS development (both with tradional publishers and
+          self-published). Like with blogging, writing is a very satisfying
+          activity. I enjoy planning a route to take a reader on, considering
+          what to teach them (and when), and turning my ideas into educational
+          resources.
         </p>
         <p>
+          My work in books extends to technical editing as well.{' '}
           <a href="/books">Check out my books page</a> for more.
+        </p>
+      </LeftDiv>
+      <h3>Workshops</h3>
+      <RightImage src="/assets/portfolio/treehouse.jpg" />
+      <LeftDiv>
+        <p>
+          I delivered my first workshop in 2011. In March, 2014,{' '}
+          <a href="https://teamtreehouse.com">Treehouse</a> invited me to
+          Orlando to record a series of videos and screencasts to guide students
+          through using Core Data to build an iOS diary app.
+        </p>
+        <p>
+          I&apos;ve also given in-person workshops on subjects ranging from the
+          basics of iOS development to functional reactive programming in Swift.{' '}
+          <a href="https://artsy.github.io/series/swift-at-artsy/">
+            I also led a workshop at Artsy
+          </a>{' '}
+          to teach non-engineers the fundamentals of programming.
         </p>
       </LeftDiv>
     </div>
