@@ -110,8 +110,8 @@ const _Portfolio: React.FC = () => (
       This focus means creating a team environment where we are constantly
       learning and then teaching what we have learned, often across disciplines.
       This foundation of learning has helped me scale up Artsy&apos;s mobile
-      software expertise across many product teams, to become a genuinely
-      mobile-first product organization.
+      software expertise across many product teams, <a href="https://artsy.github.io/blog/2020/09/29/becoming-mobile-first-at-artsy/">to become a genuinely
+      mobile-first product organization</a>.
     </p>
 
     <SectionHeader banner="/assets/portfolio/community_header.jpg" dim>
