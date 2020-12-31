@@ -111,7 +111,9 @@ Now that the new directory structure exists, we can point Docker to it. Here's t
      shm_size: 256mb
 ```
 
-Basically, Docker treats the container's `/var/lib/postgresql/data` as a special directory that _really_ exists in the host machine's `/mnt/volume_nyc1_01/postgres` directory. We're just updating it to the new mount point. Let's restart the Docker container.
+Basically, Docker treats the container's `/var/lib/postgresql/data` as a special directory that _really_ exists in the host machine's `/mnt/volume_nyc1_01/postgres` directory. We're just updating it to the new mount point. Complain as I might about Docker, this is really cool. If something goes wrong with the restore, all I need to do is revert this change and restart the containers. Docker made doing this restore non-destructively really easy.
+
+Let's restart the Docker container.
 
 ```sh
 docker compose down
