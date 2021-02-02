@@ -6,7 +6,8 @@ import {
   SectionTitle,
   Header,
   Content,
-  SectionSubTitle
+  SectionSubTitle,
+  SEO
 } from '../components'
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
@@ -25,12 +26,13 @@ export default class HomePage extends React.Component<Props> {
 
     return (
       <Layout>
-        <Helmet title={`Blog | ${config.siteTitle}`} />
+        <Helmet title={`Blog | ${config.siteTitle}`} />s
+        <SEO path="/" data={{ title: config.siteTitleAlt }} />
         <Header>
           <SectionTitle>
-            Ash Furrow
+            {config.siteTitle}
             <Line />
-            <SectionSubTitle>Compassionate Software Developer</SectionSubTitle>
+            <SectionSubTitle>{config.siteDescription}</SectionSubTitle>
           </SectionTitle>
         </Header>
         <Wrapper>
