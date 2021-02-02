@@ -16,7 +16,7 @@ export const SectionTitle = styled.div<{
   overflow-wrap: normal;
 
   margin: 4rem auto;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3rem;
   @media ${media.tablet} {
     margin: 1rem auto;
@@ -34,7 +34,7 @@ export const SectionTitle = styled.div<{
 // currently sits *within* a SectionTitle. Cleanup.
 export const SectionSubTitle = styled(SectionTitle)`
   margin: auto;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: initial;
 `
