@@ -122,7 +122,12 @@ export const SEO = (props: SEO) => {
       <meta name="twitter:url" content={config.siteUrl} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <link rel="alternate" type="application/rss+xml" title={config.siteTitle} href={ blogURL + "/feed.xml" }>
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title={config.siteTitleAlt}
+        href={`${blogURL}/feed.xml`}
+      />
     </Helmet>
   )
 }
