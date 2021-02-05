@@ -26,7 +26,7 @@ export default class HomePage extends React.Component<Props> {
 
     return (
       <Layout>
-        <Helmet title={`Blog | ${config.siteTitle}`} />s
+        <Helmet title={`Blog | ${config.siteTitle}`} />
         <SEO path="/" data={{ title: config.siteTitleAlt }} />
         <Header>
           <SectionTitle>
