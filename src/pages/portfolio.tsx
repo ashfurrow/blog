@@ -80,9 +80,9 @@ const _Portfolio: React.FC = () => (
       />
     </SectionHeader>
     <p>
-      I started leading Artsy&apos;s Mobile Experience team in 2019, but
-      my technical leadership spans back much further. Artsy encouraged to
-      expand my impact so in 2015,{' '}
+      I started leading Artsy&apos;s Mobile Experience team in 2019, but my
+      technical leadership spans back much further. Artsy encouraged to expand
+      my impact so in 2015,{' '}
       <a href="/blog/building-online-communities/">
         I began learning about team dynamics
       </a>{' '}
@@ -103,7 +103,8 @@ const _Portfolio: React.FC = () => (
       Developers build new products in complicated business contexts, and we
       don&apos;t know the answers upfront. I help teams learn <em>how</em> to
       solve the problem effectively and efficiently. We end up building a great
-      product, but we do so by focusing on the <em>learning</em> rather than the <em>building</em>.
+      product, but we do so by focusing on the <em>learning</em> rather than the{' '}
+      <em>building</em>.
     </p>
     <p>
       This focus means creating a team environment where we are constantly
@@ -136,8 +137,9 @@ const _Portfolio: React.FC = () => (
       </a>
       : I believe that unless there is a good reason to keep something secret,
       then it should be shared. Artsy called it &ldquo;open source by
-      default.&rdquo; Teehan+Lax called it &ldquo;creating more value
-      than you capture.&rdquo; These phrases gave names to the ideas that have always resonated with me.
+      default.&rdquo; Teehan+Lax called it &ldquo;creating more value than you
+      capture.&rdquo; These phrases gave names to the ideas that have always
+      resonated with me.
     </p>
     <blockquote>
       <p>
@@ -161,8 +163,10 @@ const _Portfolio: React.FC = () => (
       <a href="http://artsy.github.io/blog/2015/08/10/peer-lab/">
         weekly Saturday morning peer lab
       </a>
-      , which <a href="/blog/5-years-of-peer-lab/">ran for five years</a>. In the pre-pandemic times, I{" "}
-      shared this idea <a href="https://peerlab.community">around the world</a> where many peer labs flourished.
+      , which <a href="/blog/5-years-of-peer-lab/">ran for five years</a>. In
+      the pre-pandemic times, I shared this idea{' '}
+      <a href="https://peerlab.community">around the world</a> where many peer
+      labs flourished.
       {/* TODO: Once this whole pandemic business blows over, uncomment this out.
       I have since shared this idea around the world to{' '}
       <a href="https://peerlab.community">dozens of cities</a>, so there might
@@ -231,8 +235,8 @@ const _Portfolio: React.FC = () => (
         <p>
           From 2014 until 2021, I was at{' '}
           <a href="https://www.artsy.net">Artsy</a>: a company working towards a
-          future where everyone is moved by art every day. I worked on a
-          variety of teams to realize Artsy&apos;s business goals, starting with
+          future where everyone is moved by art every day. I worked on a variety
+          of teams to realize Artsy&apos;s business goals, starting with
           building iOS apps, then contributing across many systems and teams,
           and eventually leading Artsy&apos;s Mobile Experience team.
         </p>
@@ -371,8 +375,12 @@ const _Portfolio: React.FC = () => (
           <a href="https://www.youtube.com/watch?v=SjjvnrqDjpM">
             a better developer and a better writer
           </a>
-          . At Artsy, I hosted weekly writing office hours to help others achieve
-          their <a href="https://artsy.github.io/blog/2020/12/09/share-your-knowledge/">knowledge-sharing goals</a>.
+          . At Artsy, I hosted weekly writing office hours to help others
+          achieve their{' '}
+          <a href="https://artsy.github.io/blog/2020/12/09/share-your-knowledge/">
+            knowledge-sharing goals
+          </a>
+          .
         </p>
       </LeftDiv>
       <h3>Speaking</h3>
