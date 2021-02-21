@@ -80,7 +80,7 @@ const _Portfolio: React.FC = () => (
       />
     </SectionHeader>
     <p>
-      I&apos;ve been leading Artsy&apos;s Mobile Experience team since 2019, but
+      I started leading Artsy&apos;s Mobile Experience team in 2019, but
       my technical leadership spans back much further. Artsy encouraged to
       expand my impact so in 2015,{' '}
       <a href="/blog/building-online-communities/">
@@ -100,17 +100,16 @@ const _Portfolio: React.FC = () => (
     </p>
     <p>
       My approach to guiding product development centres learning as its goal.
-      We are building new products in complicated business contexts, and we
-      don&apos;t know the answers upfront. I help the team learn <em>how</em> to
+      Developers build new products in complicated business contexts, and we
+      don&apos;t know the answers upfront. I help teams learn <em>how</em> to
       solve the problem effectively and efficiently. We end up building a great
-      product, but we do so not by focusing on the <em>building</em> but rather
-      on the <em>learning</em>.
+      product, but we do so by focusing on the <em>learning</em> rather than the <em>building</em>.
     </p>
     <p>
       This focus means creating a team environment where we are constantly
       learning and then teaching what we have learned, often across disciplines.
       This foundation of learning has helped me scale up Artsy&apos;s mobile
-      software expertise across many product teams,{' '}
+      software expertise across many product teams{' '}
       <a href="https://artsy.github.io/blog/2020/09/29/becoming-mobile-first-at-artsy/">
         to become a genuinely mobile-first product organization
       </a>
@@ -136,10 +135,9 @@ const _Portfolio: React.FC = () => (
         fairly radical openness
       </a>
       : I believe that unless there is a good reason to keep something secret,
-      then it should be shared. At Artsy, we call it &ldquo;open source by
-      default.&rdquo; At Teehan+Lax, we called it &ldquo;creating more value
-      than you capture.&rdquo; Before that, I didn&apos;t really have a name for
-      it. It was just what I did.
+      then it should be shared. Artsy called it &ldquo;open source by
+      default.&rdquo; Teehan+Lax called it &ldquo;creating more value
+      than you capture.&rdquo; These phrases gave names to the ideas that have always resonated with me.
     </p>
     <blockquote>
       <p>
@@ -163,10 +161,12 @@ const _Portfolio: React.FC = () => (
       <a href="http://artsy.github.io/blog/2015/08/10/peer-lab/">
         weekly Saturday morning peer lab
       </a>
-      , which <a href="/blog/5-years-of-peer-lab/">ran for five years</a>. I
-      have since shared this idea around the world to{' '}
+      , which <a href="/blog/5-years-of-peer-lab/">ran for five years</a>. In the pre-pandemic times, I{" "}
+      shared this idea <a href="https://peerlab.community">around the world</a> where many peer labs flourished.
+      {/* TODO: Once this whole pandemic business blows over, uncomment this out.
+      I have since shared this idea around the world to{' '}
       <a href="https://peerlab.community">dozens of cities</a>, so there might
-      even be a peer lab near you!
+      even be a peer lab near you!*/}
     </p>
     <Footer>
       <FooterIcons>
@@ -229,18 +229,18 @@ const _Portfolio: React.FC = () => (
       <RightImage src="/assets/portfolio/artsy.jpg" />
       <LeftDiv>
         <p>
-          Since 2014, I&apos;ve worked for{' '}
+          From 2014 until 2021, I was at{' '}
           <a href="https://www.artsy.net">Artsy</a>: a company working towards a
-          future where everyone is moved by art every day. I&apos;ve worked on a
+          future where everyone is moved by art every day. I worked on a
           variety of teams to realize Artsy&apos;s business goals, starting with
           building iOS apps, then contributing across many systems and teams,
-          and now leading Artsy&apos;s Mobile Experience team.
+          and eventually leading Artsy&apos;s Mobile Experience team.
         </p>
         <p>
-          Artsy encourages me to grow and learn, and to share what I learn with
-          others; all of my work is{' '}
+          Artsy encouraged me to grow and learn, and to share what I learn with
+          others; all of my work there was{' '}
           <a href="https://github.com/ashfurrow">done in the open</a>, and I
-          write articles for{' '}
+          wrote articles for{' '}
           <a href="http://artsy.github.io">Artsy&apos;s engineering blog</a>.
         </p>
       </LeftDiv>
@@ -358,7 +358,7 @@ const _Portfolio: React.FC = () => (
           I&apos;ve been writing a developer-focused blog since 2011, now hosted
           here. At{' '}
           <a href="http://www.teehanlax.com/blog/author/ash/">Teehan+Lax</a>, I
-          began contributing to company blog as part of my job. I still do, now
+          began contributing to company blog as part of my job. I continued that
           on <a href="http://artsy.github.io">Artsy&apos;s developer blog</a>.
           I&apos;ve also written posts for{' '}
           <a href="http://www.objc.io/contributors/">objc.io</a>.
@@ -371,8 +371,8 @@ const _Portfolio: React.FC = () => (
           <a href="https://www.youtube.com/watch?v=SjjvnrqDjpM">
             a better developer and a better writer
           </a>
-          . At Artsy, I host weekly writing office hours to help others achieve
-          their knowledge-sharing goals.
+          . At Artsy, I hosted weekly writing office hours to help others achieve
+          their <a href="https://artsy.github.io/blog/2020/12/09/share-your-knowledge/">knowledge-sharing goals</a>.
         </p>
       </LeftDiv>
       <h3>Speaking</h3>
