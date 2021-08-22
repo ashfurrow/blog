@@ -2,9 +2,6 @@ import React from 'react'
 import { ReactResponsiveEmbed } from './ReactResponsiveEmbed'
 import Wide from './Wide'
 import Narrow from './Narrow'
-import InstagramEmbed, {
-  Props as InstagramEmbedProps
-} from 'react-instagram-embed'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
 
 export const YouTube: React.FC<{ videoID: string }> = ({ videoID }) => (
@@ -71,11 +68,5 @@ export const Toot: React.FC<{ src: string }> = ({ src }) => (
 export const Tweet: React.FC<{ tweetID: string }> = ({ tweetID }) => (
   <Narrow addBottom>
     <TwitterTweetEmbed tweetId={tweetID} />
-  </Narrow>
-)
-
-export const Instagram: React.FC<InstagramEmbedProps> = props => (
-  <Narrow addBottom>
-    <InstagramEmbed {...props} />
   </Narrow>
 )
