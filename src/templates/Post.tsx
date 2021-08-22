@@ -27,8 +27,7 @@ import {
   SoundCloud,
   Spotify,
   Toot,
-  Tweet,
-  Instagram
+  Tweet
 } from '../components/Embeds'
 import Theme from '../../config/Theme'
 import PageContext from '../models/PageContext'
@@ -40,7 +39,6 @@ const ShortCodes = {
   YouTube,
   Video,
   SpeakerDeck,
-  Instagram,
   Tweet,
   SoundCloud,
   Spotify,
