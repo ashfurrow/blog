@@ -40,7 +40,7 @@ export default () => {
         index
           .search(input, { expand: true } as any)
           // Map over each ID and return the full document
-          .map(thing => {
+          .map((thing) => {
             return index && index.documentStore.getDoc(thing.ref)
           })
       )
@@ -55,8 +55,8 @@ export default () => {
 
   useEffect(() => {
     fetch('/siteSearchIndex.json')
-      .then(result => result.json())
-      .then(indexJSON => {
+      .then((result) => result.json())
+      .then((indexJSON) => {
         setIndex(Index.load(indexJSON))
         if (query) {
           // User has already entered text, search for it.
@@ -86,9 +86,9 @@ export default () => {
               {!index && <Loader />}
             </div>
             <ResultsList>
-              {results.map(page => (
+              {results.map((page) => (
                 <SearchResultItem key={page.id}>
-                  <Link to={`/${page.path}`}>{page.title}</Link>
+                  <Link to={`${page.path}`}>{page.title}</Link>
                   &nbsp;&nbsp;
                   <span style={{ color: rgba(0, 0, 0, 0.5) }}>{page.date}</span>
                 </SearchResultItem>
