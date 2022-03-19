@@ -61,7 +61,7 @@
     "husky": "^3.0.9",
     "lint-staged": "^7.3.0",
     "lodash": "^4.17.11",
-    "node-sass": "^4.9.4",
+    "node-sass": "^7.0.0",
     "patch-package": "^6.2.0",
     "polished": "^2.2.0",
     "postinstall-postinstall": "^2.0.0",
