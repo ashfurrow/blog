@@ -14,6 +14,46 @@ const { removeStopwords } = require('stopword')
 const moment = require('moment')
 const _ = require('lodash')
 
+const rssQuery = `
+{
+  allMdx(
+    sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
+    limit: 10,
+  ) {
+    edges {
+      node {
+        excerpt
+        html
+        fields { path }
+        frontmatter {
+          title
+          date
+        }
+      }
+    }
+  }
+}
+`
+
+const feedSerializer = ({ query: { site, allMdx } }) => {
+  return allMdx.edges.map(edge => {
+    return Object.assign({}, edge.node.frontmatter, {
+      description: edge.node.excerpt,
+      date: edge.node.frontmatter.date,
+      url: site.siteMetadata.siteUrl + edge.node.fields.path,
+      guid: site.siteMetadata.siteUrl + edge.node.fields.path,
+      custom_elements: [{ 'content:encoded': edge.node.html }]
+    })
+  })
+}
+
+const feedTemplate = {
+  title: "Ash Furrow's Blog",
+  match: '^/blog/',
+  serialize: feedSerializer,
+  query: rssQuery
+}
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -22,6 +62,7 @@ module.exports = {
     siteUrl: config.siteUrl + pathPrefix
   },
   plugins: [
+    'gatsby-plugin-sharp',
     'gatsby-plugin-instagram-embed',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
@@ -33,6 +74,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-feed`,
       options: {
+        // NOTE: The feeds don't work in the development environment, only in the build env.
+        // See: https://github.com/gatsbyjs/gatsby/discussions/31484
         query: `
           {
             site {
@@ -46,78 +89,13 @@ module.exports = {
           }
         `,
         feeds: [
-          // Wish I knew a better way to duplicate the feed, haha.
           {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.path,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.path,
-                  custom_elements: [{ 'content:encoded': edge.node.html }]
-                })
-              })
-            },
-            query: `
-              {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
-                  limit: 10,
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { path }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
+            ...feedTemplate,
             output: '/feed.xml',
-            title: "Ash Furrow's Blog",
-            match: '^/blog/'
           },
           {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.path,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.path,
-                  custom_elements: [{ 'content:encoded': edge.node.html }]
-                })
-              })
-            },
-            query: `
-              {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] },
-                  limit: 10,
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { path }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
+            ...feedTemplate,
             output: '/feed.rss.xml',
-            title: "Ash Furrow's Blog",
-            match: '^/blog/'
           }
         ]
       }
