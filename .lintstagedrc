@@ -1,5 +1,5 @@
 {
   "*.{ts,tsx}": [/*"yarn eslint --fix", */"prettier --write", "git add"],
   "{*.{json,md}}": ["prettier --write", "git add"],
-  "*.scss": ["prettier --write", "yarn stylelint --fix", "git add"]
+  "*.scss": ["prettier --write", "git add"]
 }
