@@ -24,7 +24,7 @@ interface SearchResult {
   id: string
 }
 
-export default () => {
+const Search = () => {
   const inputRef = useRef<HTMLInputElement>(null)
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<any[]>([])
@@ -100,6 +100,7 @@ export default () => {
     </Layout>
   )
 }
+export default Search
 
 const rotate = keyframes`
   from {

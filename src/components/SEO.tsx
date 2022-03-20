@@ -9,7 +9,7 @@ interface GeneralPageProps {
   image?: string
 }
 
-interface SEO {
+interface SEOProps {
   data: Post | GeneralPageProps
   path: string
 }
@@ -18,7 +18,7 @@ function isPost(data: Post | GeneralPageProps): data is Post {
   return 'excerpt' in data
 }
 
-export const SEO = (props: SEO) => {
+export const SEO = (props: SEOProps) => {
   const { data, path } = props
   let title
   let description
@@ -40,7 +40,7 @@ export const SEO = (props: SEO) => {
   image = config.siteUrl + realPrefix + image
   const blogURL = config.siteUrl + config.pathPrefix
 
-  let schemaOrgJSONLD: Object[] = []
+  let schemaOrgJSONLD = []
   if (isPost(data)) {
     schemaOrgJSONLD = [
       {

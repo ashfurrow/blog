@@ -12,8 +12,8 @@ const dimmingEffect = `linear-gradient(${rgba(0, 0, 0, 0.2)},${rgba(
 )}), `
 const HeaderWrapper = styled.header<{ banner: string; dim: boolean }>`
   position: relative;
-  background: ${props => props.dim && dimmingEffect}
-    url(${props => props.banner}) no-repeat center center;
+  background: ${(props) => props.dim && dimmingEffect}
+    url(${(props) => props.banner}) no-repeat center center;
   background-size: cover;
   padding: 8rem 2rem 10rem;
   text-align: center;

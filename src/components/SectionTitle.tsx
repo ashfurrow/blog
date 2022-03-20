@@ -10,7 +10,7 @@ export const SectionTitle = styled.div<{
   font-weight: bold;
   text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'normal')};
   text-align: ${({ left }) => (left ? 'left' : 'center')};
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   position: relative;
   padding: 0;
   overflow-wrap: normal;

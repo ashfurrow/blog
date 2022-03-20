@@ -41,7 +41,7 @@ export default class HomePage extends React.Component<Props> {
             <FeaturedPosts />
             <h2 style={{ marginBottom: '1rem' }}>Recent Posts</h2>
             <ol style={{ margin: 0 }}>
-              {edges.map(post => (
+              {edges.map((post) => (
                 <li
                   key={post.node.frontmatter.title}
                   style={{ listStyleType: 'none', margin: 0 }}

@@ -20,7 +20,7 @@ const CollapseMenu: React.FC<{
               range: [0, 0.2, 0.3, 1],
               output: [0, 0, 0, -200]
             })
-            .interpolate(openValue => `translate3d(0, ${openValue}px, 0`)
+            .interpolate((openValue) => `translate3d(0, ${openValue}px, 0`)
         }}
       >
         <NavLinks>

@@ -535,7 +535,7 @@ const FooterLink = styled.a`
   }
 `
 
-const BigFAIcon: React.FC = props => (
+const BigFAIcon: React.FC = (props) => (
   <span className="fa-layers fa-fw fa-3x">{props.children}</span>
 )
 
