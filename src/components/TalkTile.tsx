@@ -106,7 +106,7 @@ interface Props {
 // Needs to be displayed in a list.
 export class TalkTile extends React.Component<Props> {
   render() {
-    if (!!this.props.talk.hidden) {
+    if (this.props.talk.hidden) {
       return null
     }
     const {
@@ -126,7 +126,7 @@ export class TalkTile extends React.Component<Props> {
     return (
       <ListItem>
         <ImageContainer>
-          {!!slides ? (
+          {slides ? (
             <>
               <a href={slides} className="mouseover-link">
                 <ImageIcon icon={faFile} />

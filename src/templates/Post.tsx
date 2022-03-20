@@ -130,7 +130,7 @@ const Date = styled.time`
 `
 
 export const postQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     mdx(id: { eq: $id }) {
       id
       body

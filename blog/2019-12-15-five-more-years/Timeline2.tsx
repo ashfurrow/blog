@@ -110,7 +110,7 @@ const Entry: React.FC<{ img?: string; imgAlt?: string; title: string }> = ({
             {title}
             <a
               href={`#${anchorName}`}
-              onClick={event => {
+              onClick={(event) => {
                 event.preventDefault()
                 ;(event.target as any).parentNode.scrollIntoView(true)
               }}

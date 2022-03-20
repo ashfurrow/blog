@@ -42,8 +42,8 @@ export default class HomePage extends React.Component<Props> {
     const years = groupBy(edges, ({ node }) => {
       return new Date(node.frontmatter.date).getFullYear()
     })
-    const months = Object.keys(years).map(year => {
-      const posts = years[year].map(y => y.node)
+    const months = Object.keys(years).map((year) => {
+      const posts = years[year].map((y) => y.node)
       return {
         year: parseInt(year, 10),
         posts: groupBy(posts, ({ frontmatter: { date } }) => {
@@ -68,7 +68,7 @@ export default class HomePage extends React.Component<Props> {
                 return (
                   <div key={year}>
                     {Object.keys(posts)
-                      .map(k => {
+                      .map((k) => {
                         return posts[k]
                       })
                       .sort((lhs, rhs) => {
@@ -77,7 +77,7 @@ export default class HomePage extends React.Component<Props> {
                         return lhsDate.getFullYear() - rhsDate.getFullYear()
                       })
                       .reverse()
-                      .map(monthPosts => {
+                      .map((monthPosts) => {
                         const representativeDate = moment.utc(
                           monthPosts[0].frontmatter.date
                         )
@@ -92,7 +92,7 @@ export default class HomePage extends React.Component<Props> {
                             <h2 style={{ marginBottom: '0.5rem' }}>
                               {MONTHS[representativeDate.month()]} {year}
                             </h2>
-                            {monthPosts.map(post => (
+                            {monthPosts.map((post) => (
                               <article key={post.fields.path}>
                                 <Link to={post.fields.path}>
                                   <Title>{post.frontmatter.title}</Title>
