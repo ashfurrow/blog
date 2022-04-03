@@ -26,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
       font-size: 14px;
     }
     font-variant-ligatures: common-ligatures;
+    pre {
+      font-variant-ligatures: no-common-ligatures;
+      font-feature-settings: normal;
+    }
   }
   a {
     color: ${theme.colors.primary};
