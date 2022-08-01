@@ -28,10 +28,10 @@ export const Navbar = (props: Props) => {
   })
 
   const { handleNavBar, navBarState } = props
-  const clear = scrolledAtTop && !navBarState
+  const transparent = scrolledAtTop && !navBarState
   return (
     <>
-      <Bar clear={clear}>
+      <Bar transparent={transparent}>
         <FlexContainer>
           <Link
             to="/"
@@ -42,11 +42,13 @@ export const Navbar = (props: Props) => {
           >
             <Image
               src={
-                clear ? '/assets/siteimage.png' : '/assets/siteimage_dark.png'
+                transparent
+                  ? '/assets/siteimage.png'
+                  : '/assets/siteimage_dark.png'
               }
             />
           </Link>
-          <NavLinks className="navbar" clear={clear}>
+          <NavLinks className="navbar" transparent={transparent}>
             <li>
               <Link to="/blog">Blog</Link>
             </li>
@@ -77,7 +79,7 @@ export const Navbar = (props: Props) => {
             <BurgerMenu
               navBarState={navBarState}
               handleNavBar={handleNavBar}
-              clear={clear}
+              transparent={transparent}
             />
           </BurgerWrapper>
         </FlexContainer>
@@ -92,12 +94,13 @@ const Image = styled.img`
   height: 75%;
 `
 
-const Bar = styled.nav<{ clear: boolean }>`
+const Bar = styled.nav<{ transparent: boolean }>`
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background: ${({ clear }) => (clear ? 'clear' : theme.colors.white)};
+  background: ${({ transparent }) =>
+    transparent ? 'clear' : theme.colors.white};
   z-index: 1000;
   font-size: 0.75rem;
 `
@@ -109,7 +112,7 @@ const FlexContainer = styled.div`
   justify-content: space-between;
 `
 
-const NavLinks = styled.ul<{ clear: boolean }>`
+const NavLinks = styled.ul<{ transparent: boolean }>`
   justify-self: stretch;
   vertical-align: center;
   vertical-align: middle;
@@ -129,8 +132,8 @@ const NavLinks = styled.ul<{ clear: boolean }>`
 
   a {
     display: inline-block;
-    color: ${({ clear }) =>
-      clear ? theme.colors.white : theme.colors.grey.dark};
+    color: ${({ transparent }) =>
+      transparent ? theme.colors.white : theme.colors.grey.dark};
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
