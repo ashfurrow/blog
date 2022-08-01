@@ -9,9 +9,9 @@ import {
   faPaperclip,
   faCode
 } from '@fortawesome/free-solid-svg-icons'
-import config from '../config/SiteConfig'
+import config from 'config/SiteConfig'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import theme from '../config/Theme'
+import theme from 'config/Theme'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const ListItem = styled.li`

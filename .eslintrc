@@ -31,7 +31,8 @@
       }
     ],
     "react/no-unescaped-entities": 0,
-    "import/no-default-export": "error"
+    "import/no-default-export": "error",
+    "import/no-relative-parent-imports": "warn"
   },
   "settings": {
     "react": {

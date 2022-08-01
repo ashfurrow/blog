@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-default-export
 export default {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
 

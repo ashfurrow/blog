@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import theme from '../../config/Theme'
-import config from '../../config/SiteConfig'
+import theme from 'config/Theme'
+import config from 'config/SiteConfig'
 import { Link } from 'gatsby'
 
 export const CollapseMenu: React.FC<{

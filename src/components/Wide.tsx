@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { media } from '../utils/media'
+import { media } from 'utils/media'
 
 // Most of the Wide usage is in paragraphs that deal with this. But for embeds,
 // we need to manually.

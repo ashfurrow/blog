@@ -1,9 +1,9 @@
 import * as React from 'react'
-import { Header, Wrapper, SectionTitle } from '../components'
+import { Header, Wrapper, SectionTitle } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from '../config/SiteConfig'
+import config from 'config/SiteConfig'
 
 // Gatsby needs this default export to work.
 // eslint-disable-next-line import/no-default-export

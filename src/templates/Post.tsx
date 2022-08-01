@@ -13,12 +13,12 @@ import {
 } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
-import config from '../config/SiteConfig'
-import '../utils/prismjs-theme.css'
-import Post from '../models/Post'
+import config from 'config/SiteConfig'
+import 'utils/prismjs-theme.css'
+import Post from 'models/Post'
 import { MDXProvider } from '@mdx-js/react'
 import { Narrow, Wide } from 'components'
-import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
+import { ReactResponsiveEmbed } from 'components/ReactResponsiveEmbed'
 import {
   YouTube,
   Video,
@@ -27,9 +27,9 @@ import {
   Spotify,
   Toot,
   Tweet
-} from '../components/Embeds'
-import Theme from '../config/Theme'
-import PageContext from '../models/PageContext'
+} from 'components/Embeds'
+import Theme from 'config/Theme'
+import PageContext from 'models/PageContext'
 
 const ShortCodes = {
   Narrow,

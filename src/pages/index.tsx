@@ -1,19 +1,13 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import {
-  Wrapper,
-  SectionTitle,
-  Header,
-  SectionSubTitle,
-  SEO
-} from '../components'
+import { Wrapper, SectionTitle, Header, SectionSubTitle, SEO } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from '../config/SiteConfig'
-import Data from '../models/Data'
+import config from 'config/SiteConfig'
+import Data from 'models/Data'
 import styled from 'styled-components'
-import { FeaturedPosts } from '../components/FeaturedPost'
+import { FeaturedPosts } from 'components/FeaturedPost'
 
 interface Props {
   data: Data

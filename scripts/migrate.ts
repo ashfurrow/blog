@@ -1,17 +1,20 @@
+// TODO: Remove migration scripts. That's what source control is for.
 import path from 'path'
 import { promises as fs } from 'fs'
 import YAML from 'yaml'
 // import { take, flatten, uniq, trim, last, kebabCase } from 'lodash'
 import { take, trim, last } from 'lodash'
 // import requestPromise from 'request-promise-native'
-// import { generateSlug } from '../src/utils/paths'
 
 const main = async () => {
   try {
     const oldPostsPath = path.join(__dirname, '../old/source/blog')
     const posts = await fs.readdir(oldPostsPath)
     await Promise.all(
-      take(posts.filter(p => p.endsWith('.html.markdown')), 30).map(migratePost)
+      take(
+        posts.filter((p) => p.endsWith('.html.markdown')),
+        30
+      ).map(migratePost)
     )
   } catch {
     console.log('OOP')

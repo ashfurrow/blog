@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { SEO, Header, SectionTitle, Wrapper } from 'components'
 import { Layout } from 'layouts/Layout'
 import { Content } from 'layouts/components'
-import { generatePath } from '../utils/paths'
+import { generatePath } from 'utils/paths'
 
 interface Props {
   pageContext: {

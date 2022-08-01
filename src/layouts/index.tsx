@@ -1,2 +1,2 @@
-export * from 'layouts/Layout'
-export * from 'layouts/MDXLayout'
+export * from './Layout'
+export * from './MDXLayout'

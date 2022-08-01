@@ -2,7 +2,7 @@ import Twitter, { AccessTokenOptions } from 'twitter'
 import { filter, first, last } from 'lodash'
 import http from 'http'
 import fs, { promises as fsPromises } from 'fs'
-import { generateSlug } from '../src/utils/paths'
+import { generateSlug } from 'utils/paths'
 import moment from 'moment'
 
 const main = async () => {
@@ -35,17 +35,19 @@ const main = async () => {
     count: 100,
     include_entities: true
   })) as Tweet[]
-  const filtered = filter(favourites, r =>
+  const filtered = filter(favourites, (r) =>
     ['CloudyConway', 'CrookedCosmos'].includes(r.user.screen_name)
   )
   // Grab the latest favourited tweet, or a first from CloudyConway
   const tweet =
     first(filtered) ||
-    first((await client.get('statuses/user_timeline', {
-      screen_name: 'CloudyConway',
-      include_entities: true,
-      count: 1
-    })) as Tweet[])
+    first(
+      (await client.get('statuses/user_timeline', {
+        screen_name: 'CloudyConway',
+        include_entities: true,
+        count: 1
+      })) as Tweet[]
+    )
 
   if (tweet) {
     const media = first(tweet.entities.media)
@@ -53,7 +55,7 @@ const main = async () => {
     await fsPromises.mkdir(`blog/${postPath}`, { recursive: true })
     const file = fs.createWriteStream(`blog/${postPath}/background.png`)
     if (media) {
-      http.get(media.media_url, response => response.pipe(file))
+      http.get(media.media_url, (response) => response.pipe(file))
     }
     const bannnerAttribution = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`
     const post = `---

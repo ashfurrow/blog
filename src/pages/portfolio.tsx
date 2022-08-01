@@ -1,18 +1,12 @@
 import * as React from 'react'
-import {
-  Header,
-  Wrapper,
-  SectionTitle,
-  SectionHeader,
-  SEO
-} from '../components'
+import { Header, Wrapper, SectionTitle, SectionHeader, SEO } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from '../config/SiteConfig'
-import theme from '../config/Theme'
+import config from 'config/SiteConfig'
+import theme from 'config/Theme'
 import styled from 'styled-components'
-import { media } from '../utils/media'
+import { media } from 'utils/media'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -23,7 +17,7 @@ import {
   faSoundcloud,
   faYoutube
 } from '@fortawesome/free-brands-svg-icons'
-import { RightImage } from '../components/RightImage'
+import { RightImage } from 'components/RightImage'
 import { Link } from 'gatsby'
 
 // Gatsby needs this default export to work.
