@@ -5,7 +5,8 @@ declare module '@mdx-js/react' {
   type MDXProps = {
     components: any
   }
-  export const MDXProvider: React.FC<MDXProps>
+
+  export class MDXProvider extends React.Component<MDXProps> {}
 }
 
 declare module 'react-twitter-embed' {

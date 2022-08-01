@@ -2,7 +2,7 @@ import Twitter, { AccessTokenOptions } from 'twitter'
 import { filter, first, last } from 'lodash'
 import http from 'http'
 import fs, { promises as fsPromises } from 'fs'
-import { generateSlug } from 'utils/paths'
+import { generateSlug } from '../src/utils/paths'
 import moment from 'moment'
 
 const main = async () => {

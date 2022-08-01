@@ -1,7 +1,7 @@
 import Path from 'path'
 import { writeFileSync } from 'fs'
 import { GatsbyNode } from 'gatsby'
-import AllMarkdownRemark from 'models/AllMarkdownRemark'
+import AllMarkdownRemark from '../src/models/AllMarkdownRemark'
 import { generatePath } from '../src/utils/paths'
 
 const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Wide} from 'components'
+import { Wide } from 'components'
 import styled from 'styled-components'
 import { take } from 'lodash'
 
