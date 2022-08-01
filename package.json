@@ -74,6 +74,7 @@
     "babel-plugin-styled-components": "^2.0.6",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "gatsby-plugin-catch-links": "^4.10.0",

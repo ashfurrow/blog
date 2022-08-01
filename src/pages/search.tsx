@@ -95,6 +95,9 @@ const Search = () => {
     </Layout>
   )
 }
+
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
 export default Search
 
 const rotate = keyframes`

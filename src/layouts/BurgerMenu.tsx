@@ -16,8 +16,6 @@ export const BurgerMenu: React.FC<{
   )
 }
 
-export default BurgerMenu
-
 const Wrapper = styled.div<{ clear: boolean }>`
   position: relative;
   cursor: pointer;

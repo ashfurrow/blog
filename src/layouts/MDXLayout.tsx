@@ -16,6 +16,8 @@ interface Props {
   }
 }
 
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
 export default class MDXLayout extends React.Component<Props> {
   public render() {
     const {

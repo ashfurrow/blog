@@ -3,7 +3,7 @@ import { media } from '../utils/media'
 
 // Most of the Wide usage is in paragraphs that deal with this. But for embeds,
 // we need to manually.
-const Wide = styled.div<{ addBottom?: boolean }>`
+export const Wide = styled.div<{ addBottom?: boolean }>`
   margin: 0 auto ${({ addBottom }) => (addBottom ? '1.66rem' : '')};
   position: relative;
   width: 75vw;
@@ -22,4 +22,3 @@ const Wide = styled.div<{ addBottom?: boolean }>`
     left: initial;
   }
 `
-export default Wide

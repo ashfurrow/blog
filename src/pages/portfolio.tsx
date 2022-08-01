@@ -26,6 +26,8 @@ import {
 import { RightImage } from '../components/RightImage'
 import { Link } from 'gatsby'
 
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
 export default class Portfolio extends React.Component<any> {
   public render() {
     return (

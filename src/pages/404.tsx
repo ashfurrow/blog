@@ -5,6 +5,8 @@ import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
 import config from '../config/SiteConfig'
 
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
 export default class NotFoundPage extends React.Component<any> {
   public render() {
     return (

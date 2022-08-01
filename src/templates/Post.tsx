@@ -17,8 +17,7 @@ import config from '../config/SiteConfig'
 import '../utils/prismjs-theme.css'
 import Post from '../models/Post'
 import { MDXProvider } from '@mdx-js/react'
-import Narrow from '../components/Narrow'
-import Wide from '../components/Wide'
+import { Narrow, Wide } from 'components'
 import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
 import {
   YouTube,
@@ -68,6 +67,8 @@ interface Props {
   pageContext: PageContext
 }
 
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
 export default class PostPage extends React.PureComponent<Props> {
   public render() {
     const { prev, next } = this.props.pageContext

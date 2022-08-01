@@ -3,7 +3,8 @@
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "import"
   ],
   "env": {
     "browser": true,
@@ -29,7 +30,8 @@
         ]
       }
     ],
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    "import/no-default-export": "error"
   },
   "settings": {
     "react": {

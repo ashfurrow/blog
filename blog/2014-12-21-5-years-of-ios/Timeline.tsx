@@ -35,8 +35,8 @@ import conferences from './conferences.jpg'
 import eidolon from './eidolon.jpg'
 import film from './film.jpg'
 
-import Theme from '../../src/config/Theme'
-import Wide from '../../src/components/Wide'
+import Theme from 'config/Theme'
+import { Wide } from 'components'
 import { camelCase } from 'lodash'
 
 const customTheme = createTheme(themes.default, {
