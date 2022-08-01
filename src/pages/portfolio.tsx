@@ -20,32 +20,32 @@ import {
 import { RightImage } from 'components/RightImage'
 import { Link } from 'gatsby'
 
+const Portfolio = () => {
+  return (
+    <Layout>
+      <Helmet title={`Portfolio | ${config.siteTitle}`} />
+      <SEO
+        path="/portfolio/"
+        data={{
+          title: 'Ash Furrow Portfolio',
+          description: "Ash Furrow's Professional Portfolio"
+        }}
+      />
+      <Header banner="/assets/bg/portfolio.jpg">
+        <SectionTitle>Portfolio</SectionTitle>
+      </Header>
+      <Wrapper>
+        <Content>
+          <_Portfolio />
+        </Content>
+      </Wrapper>
+    </Layout>
+  )
+}
+
 // Gatsby needs this default export to work.
 // eslint-disable-next-line import/no-default-export
-export default class Portfolio extends React.Component<any> {
-  public render() {
-    return (
-      <Layout>
-        <Helmet title={`Portfolio | ${config.siteTitle}`} />
-        <SEO
-          path="/portfolio/"
-          data={{
-            title: 'Ash Furrow Portfolio',
-            description: "Ash Furrow's Professional Portfolio"
-          }}
-        />
-        <Header banner="/assets/bg/portfolio.jpg">
-          <SectionTitle>Portfolio</SectionTitle>
-        </Header>
-        <Wrapper>
-          <Content>
-            <_Portfolio />
-          </Content>
-        </Wrapper>
-      </Layout>
-    )
-  }
-}
+export default Portfolio
 
 const _Portfolio: React.FC = () => (
   <>

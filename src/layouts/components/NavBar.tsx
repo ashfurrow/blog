@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import theme from 'config/Theme'
 import config from 'config/SiteConfig'
@@ -12,92 +12,79 @@ interface Props {
   navBarState: boolean
 }
 
-interface State {
-  scrolledAtTop: boolean
-}
+export const Navbar = (props: Props) => {
+  const [scrolledAtTop, setScrolledAtTop] = useState(true)
+  useEffect(() => {
+    const listenToScroll = () => {
+      setScrolledAtTop(
+        (document.body.scrollTop || document.documentElement.scrollTop) <= 0
+      )
+    }
+    window.addEventListener('scroll', listenToScroll)
 
-export class Navbar extends React.Component<Props, State> {
-  state = {
-    scrolledAtTop: true
-  }
+    return () => {
+      window.removeEventListener('scroll', listenToScroll)
+    }
+  })
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.listenToScroll)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.listenToScroll)
-  }
-
-  listenToScroll = () => {
-    const scrolledAtTop =
-      (document.body.scrollTop || document.documentElement.scrollTop) <= 0
-    this.setState({
-      scrolledAtTop
-    })
-  }
-
-  render() {
-    const { handleNavBar, navBarState } = this.props
-    const { scrolledAtTop } = this.state
-    const clear = scrolledAtTop && !navBarState
-    return (
-      <>
-        <Bar clear={clear}>
-          <FlexContainer>
-            <Link
-              to="/"
-              style={{
-                height: '1.5rem',
-                margin: '0.5rem 0'
-              }}
-            >
-              <Image
-                src={
-                  clear ? '/assets/siteimage.png' : '/assets/siteimage_dark.png'
-                }
-              />
-            </Link>
-            <NavLinks className="navbar" clear={clear}>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/books">Books</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Portfolio</Link>
-              </li>
-              <li>
-                <Link to="/speaking">Speaking</Link>
-              </li>
-              <li>
-                <a href="/search">
-                  <FontAwesomeIcon icon={faSearch} fixedWidth />
-                </a>
-              </li>
-              <li>
-                <Link to="/feed.xml">
-                  <FontAwesomeIcon icon={faRssSquare} fixedWidth />
-                </Link>
-              </li>
-            </NavLinks>
-            <BurgerWrapper>
-              <BurgerMenu
-                navBarState={navBarState}
-                handleNavBar={handleNavBar}
-                clear={clear}
-              />
-            </BurgerWrapper>
-          </FlexContainer>
-        </Bar>
-        <CollapseMenu navBarState={navBarState} handleNavBar={handleNavBar} />
-      </>
-    )
-  }
+  const { handleNavBar, navBarState } = props
+  const clear = scrolledAtTop && !navBarState
+  return (
+    <>
+      <Bar clear={clear}>
+        <FlexContainer>
+          <Link
+            to="/"
+            style={{
+              height: '1.5rem',
+              margin: '0.5rem 0'
+            }}
+          >
+            <Image
+              src={
+                clear ? '/assets/siteimage.png' : '/assets/siteimage_dark.png'
+              }
+            />
+          </Link>
+          <NavLinks className="navbar" clear={clear}>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/books">Books</Link>
+            </li>
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/speaking">Speaking</Link>
+            </li>
+            <li>
+              <a href="/search">
+                <FontAwesomeIcon icon={faSearch} fixedWidth />
+              </a>
+            </li>
+            <li>
+              <Link to="/feed.xml">
+                <FontAwesomeIcon icon={faRssSquare} fixedWidth />
+              </Link>
+            </li>
+          </NavLinks>
+          <BurgerWrapper>
+            <BurgerMenu
+              navBarState={navBarState}
+              handleNavBar={handleNavBar}
+              clear={clear}
+            />
+          </BurgerWrapper>
+        </FlexContainer>
+      </Bar>
+      <CollapseMenu navBarState={navBarState} handleNavBar={handleNavBar} />
+    </>
+  )
 }
 
 const Image = styled.img`

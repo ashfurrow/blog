@@ -104,67 +104,65 @@ interface Props {
 }
 
 // Needs to be displayed in a list.
-export class TalkTile extends React.Component<Props> {
-  render() {
-    if (this.props.talk.hidden) {
-      return null
-    }
-    const {
-      talk: {
-        image,
-        slides,
-        dates,
-        name,
-        url,
-        conference,
-        location,
-        blogPost,
-        code,
-        video
-      }
-    } = this.props
-    return (
-      <ListItem>
-        <ImageContainer>
-          {slides ? (
-            <>
-              <a href={slides} className="mouseover-link">
-                <ImageIcon icon={faFile} />
-              </a>
-              <a href={slides}>
-                <img
-                  src={`/assets/speaking/talks/${image}`}
-                  style={{ width: '100%' }}
-                />
-              </a>
-            </>
-          ) : (
-            <img
-              src={`/assets/speaking/talks/${image}`}
-              style={{ width: '100%' }}
-            />
-          )}
-        </ImageContainer>
-        <Details>
-          <h3>{name}</h3>
-          <DetailRow icon={faQuoteLeft} title={conference} link={url} />
-          <DetailRow icon={faMapMarkerAlt} title={location} />
-          <DetailRow icon={faCalendar} title={dates} />
-          {blogPost && (
-            <DetailRow
-              icon={faPaperclip}
-              title="Read the blog post"
-              link={blogPost}
-            />
-          )}
-          {code && (
-            <DetailRow icon={faCode} title="Check out the code" link={code} />
-          )}
-          {video && (
-            <DetailRow icon={faYoutube} title="Watch the video" link={video} />
-          )}
-        </Details>
-      </ListItem>
-    )
+export const TalkTile = (props: Props) => {
+  if (props.talk.hidden) {
+    return null
   }
+  const {
+    talk: {
+      image,
+      slides,
+      dates,
+      name,
+      url,
+      conference,
+      location,
+      blogPost,
+      code,
+      video
+    }
+  } = props
+  return (
+    <ListItem>
+      <ImageContainer>
+        {slides ? (
+          <>
+            <a href={slides} className="mouseover-link">
+              <ImageIcon icon={faFile} />
+            </a>
+            <a href={slides}>
+              <img
+                src={`/assets/speaking/talks/${image}`}
+                style={{ width: '100%' }}
+              />
+            </a>
+          </>
+        ) : (
+          <img
+            src={`/assets/speaking/talks/${image}`}
+            style={{ width: '100%' }}
+          />
+        )}
+      </ImageContainer>
+      <Details>
+        <h3>{name}</h3>
+        <DetailRow icon={faQuoteLeft} title={conference} link={url} />
+        <DetailRow icon={faMapMarkerAlt} title={location} />
+        <DetailRow icon={faCalendar} title={dates} />
+        {blogPost && (
+          <DetailRow
+            icon={faPaperclip}
+            title="Read the blog post"
+            link={blogPost}
+          />
+        )}
+        {code && (
+          <DetailRow icon={faCode} title="Check out the code" link={code} />
+        )}
+        {video && (
+          <DetailRow icon={faYoutube} title="Watch the video" link={video} />
+        )}
+      </Details>
+    </ListItem>
+  )
 }

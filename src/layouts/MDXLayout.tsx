@@ -16,28 +16,28 @@ interface Props {
   }
 }
 
+export const MDXLayout = (props: React.PropsWithChildren<Props>) => {
+  const {
+    children,
+    pageContext: {
+      frontmatter: { title, banner, bannerAttribution }
+    }
+  } = props
+
+  return (
+    <Layout>
+      <Helmet title={title} />
+      <SEO path={generatePath(title)} data={{ title }} />
+      <Header banner={banner} bannerAttribution={bannerAttribution}>
+        <SectionTitle>{title}</SectionTitle>
+      </Header>
+      <Wrapper>
+        <Content>{children}</Content>
+      </Wrapper>
+    </Layout>
+  )
+}
+
 // Gatsby needs this default export to work.
 // eslint-disable-next-line import/no-default-export
-export default class MDXLayout extends React.Component<Props> {
-  public render() {
-    const {
-      children,
-      pageContext: {
-        frontmatter: { title, banner, bannerAttribution }
-      }
-    } = this.props
-
-    return (
-      <Layout>
-        <Helmet title={title} />
-        <SEO path={generatePath(title)} data={{ title }} />
-        <Header banner={banner} bannerAttribution={bannerAttribution}>
-          <SectionTitle>{title}</SectionTitle>
-        </Header>
-        <Wrapper>
-          <Content>{children}</Content>
-        </Wrapper>
-      </Layout>
-    )
-  }
-}
+export default MDXLayout
