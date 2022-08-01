@@ -3,9 +3,9 @@ title: Speaking
 banner: /assets/bg/speaking.jpg
 bannerAttribution: https://example.com
 upcoming_talks:
-    
+
 past_talks:
-  - name: "Migrating to React Native: A Long-term Retrospective"
+  - name: 'Migrating to React Native: A Long-term Retrospective'
     conference: Mobius
     url: https://mobius-piter.ru/en/2020/spb/talks/5rurofsaorksrtqprfpqsm/
     location: St. Petersburg, Russia (Online)
@@ -380,10 +380,10 @@ past_talks:
     hidden: true
 ---
 
-import { SectionHeader } from '../components/SectionHeader.tsx'
-import { TalkTile } from '../components/TalkTile.tsx'
-import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed.tsx'
-import { SectionTitle } from '../components/SectionTitle.tsx'
+import { SectionHeader } from 'components/SectionHeader.tsx'
+import { TalkTile } from 'components/TalkTile.tsx'
+import { ReactResponsiveEmbed } from 'components/ReactResponsiveEmbed.tsx'
+import { SectionTitle } from 'components/SectionTitle.tsx'
 
 I love sharing knowledge – in the form of blog posts, podcasts, open source code,
 books – and over the past few years, I’ve grown really fond of speaking. I’ve
@@ -395,23 +395,25 @@ gotten good at it, too.
 />
 
 <SectionHeader banner="/assets/speaking/upcomingtalks.jpg" dim>
-  <SectionTitle>
-    Coming Soon to a Conference Near You
-  </SectionTitle>
+  <SectionTitle>Coming Soon to a Conference Near You</SectionTitle>
 </SectionHeader>
-{ !!props.pageContext.frontmatter.upcoming_talks ? 
-    (<ol style={{margin: 0}}>
-      { props.pageContext.frontmatter.upcoming_talks.map(t => <TalkTile talk={t} key={t.dates} />) }
-    </ol>) : 
-    "No upcoming talks at this time." }
+{!!props.pageContext.frontmatter.upcoming_talks ? (
+  <ol style={{ margin: 0 }}>
+    {props.pageContext.frontmatter.upcoming_talks.map((t) => (
+      <TalkTile talk={t} key={t.dates} />
+    ))}
+  </ol>
+) : (
+  'No upcoming talks at this time.'
+)}
 
 <SectionHeader banner="/assets/speaking/pasttalks.jpg" dim>
-  <SectionTitle>
-    Past Awesome Talks
-  </SectionTitle>
+  <SectionTitle>Past Awesome Talks</SectionTitle>
 </SectionHeader>
-<ol style={{margin: 0}}>
-  { props.pageContext.frontmatter.past_talks.map(t => <TalkTile talk={t} key={t.dates} />) }
+<ol style={{ margin: 0 }}>
+  {props.pageContext.frontmatter.past_talks.map((t) => (
+    <TalkTile talk={t} key={t.dates} />
+  ))}
 </ol>
 
 <SectionHeader banner="/assets/speaking/getintouch.jpg" dim>

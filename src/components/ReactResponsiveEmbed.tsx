@@ -2,7 +2,7 @@
 //       https://github.com/tableflip/react-responsive-embed/blob/master/src/index.js
 import _ReactResponsiveEmbed from 'react-responsive-embed'
 import React from 'react'
-import Wide from './Wide'
+import { Wide } from 'components'
 import styled from 'styled-components'
 
 const Normal = styled.div`

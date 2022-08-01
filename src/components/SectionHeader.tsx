@@ -1,6 +1,6 @@
 import React from 'react'
-import { media } from '../utils/media'
-import config from '../../config/SiteConfig'
+import { media } from 'utils/media'
+import config from 'config/SiteConfig'
 import rgba from 'polished/lib/color/rgba'
 import styled from 'styled-components'
 
@@ -49,17 +49,14 @@ const Content = styled.div`
 `
 
 interface Props {
-  children: any
   banner: string
   dim?: boolean
 }
-export class SectionHeader extends React.Component<Props> {
-  public render() {
-    const { banner, children, dim } = this.props
-    return (
-      <HeaderWrapper banner={banner} dim={dim || false}>
-        <Content>{children}</Content>
-      </HeaderWrapper>
-    )
-  }
+export const SectionHeader = (props: React.PropsWithChildren<Props>) => {
+  const { banner, children, dim } = props
+  return (
+    <HeaderWrapper banner={banner} dim={dim || false}>
+      <Content>{children}</Content>
+    </HeaderWrapper>
+  )
 }

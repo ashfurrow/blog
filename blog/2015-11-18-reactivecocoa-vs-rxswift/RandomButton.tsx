@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button } from '../../src/components/PrevNext'
+import { Button } from 'components/PrevNext'
 
 const goToRandomLibrary = () => {
   const libraries = [

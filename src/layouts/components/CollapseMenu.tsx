@@ -1,28 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import theme from '../../config/Theme'
-import { useSpring, animated } from 'react-spring'
-import config from '../../config/SiteConfig'
+import theme from 'config/Theme'
+import config from 'config/SiteConfig'
 import { Link } from 'gatsby'
 
-const CollapseMenu: React.FC<{
+export const CollapseMenu: React.FC<{
   navBarState: boolean
   handleNavBar: () => void
 }> = ({ navBarState, handleNavBar }) => {
-  const { open } = useSpring({ open: navBarState ? 0 : 1 })
-
   if (navBarState) {
     return (
-      <CollapseWrapper
-        style={{
-          transform: open
-            .interpolate({
-              range: [0, 0.2, 0.3, 1],
-              output: [0, 0, 0, -200]
-            })
-            .interpolate((openValue) => `translate3d(0, ${openValue}px, 0`)
-        }}
-      >
+      <CollapseWrapper>
         <NavLinks>
           <li>
             <Link to="/blog" onClick={handleNavBar}>
@@ -66,9 +54,7 @@ const CollapseMenu: React.FC<{
   return null
 }
 
-export default CollapseMenu
-
-const CollapseWrapper = styled(animated.div)`
+const CollapseWrapper = styled.div`
   background: ${theme.colors.white};
   position: fixed;
   top: 2.5rem;

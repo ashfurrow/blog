@@ -6,7 +6,7 @@ import {
   themes,
   createTheme
 } from '@merc/react-timeline'
-import Theme from '../../config/Theme'
+import Theme from 'config/Theme'
 import styled from 'styled-components'
 import { camelCase } from 'lodash'
 
@@ -46,7 +46,7 @@ import buttons from './buttons.jpg'
 import stevenuniverse from './stevenuniverse.jpg'
 import election from './election.jpg'
 import posts from './posts.png'
-import { media } from '../../src/utils/media'
+import { media } from 'utils/media'
 
 const Wide = styled.div`
   margin: 0 auto 1.6rem;

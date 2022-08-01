@@ -1,5 +1,5 @@
 import React from 'react'
-import Wide from '../../src/components/Wide'
+import { Wide } from 'components'
 import styled from 'styled-components'
 import { take } from 'lodash'
 
@@ -110,7 +110,7 @@ export class Chat extends React.Component<{}, State> {
 
 const appleBlue = '#2668d0'
 
-// TODO: This could be moved into styled-components. Meh.
+// TODO: This CSS could be moved into styled-components. Meh.
 const Wrapper = styled.div`
   width: 100%;
   height: 500px;

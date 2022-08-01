@@ -1,18 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { Link } from 'gatsby'
-import {
-  Layout,
-  Wrapper,
-  SectionTitle,
-  Header,
-  Content,
-  SEO
-} from '../components'
+import { Wrapper, SectionTitle, Header, SEO } from 'components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
 import { compact } from 'lodash'
 import Helmet from 'react-helmet'
-import config from '../../config/SiteConfig'
+import config from 'config/SiteConfig'
 import rgba from 'polished/lib/color/rgba'
-import theme from '../../config/Theme'
+import theme from 'config/Theme'
 import { Index } from 'elasticlunr'
 import styled, { keyframes } from 'styled-components'
 
@@ -100,6 +95,9 @@ const Search = () => {
     </Layout>
   )
 }
+
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
 export default Search
 
 const rotate = keyframes`

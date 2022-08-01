@@ -15,11 +15,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint . --ext .tsx",
-    "migrate": "ts-node scripts/migrate.ts",
-    "migrate5": "ts-node scripts/migrate5.ts",
     "article": "ts-node scripts/newPost.ts",
     "type-check": "tsc",
-    "format": "prettier --config .prettierrc 'src/**/*.{ts,tsx,scss}' 'blog/**/*.mdx' --write"
+    "format": "prettier --config .prettierrc 'src/**/*.{ts,tsx,scss}' --write"
   },
   "husky": {
     "hooks": {
@@ -37,6 +35,7 @@
     "@merc/react-timeline": "^0.1.42",
     "elasticlunr": "^0.9.5",
     "gatsby": "^4.10.1",
+    "gatsby-plugin-root-import": "^2.0.8",
     "lodash": "^4.17.11",
     "moment": "^2.29.1",
     "polished": "^4.1.4",
@@ -46,7 +45,6 @@
     "react-helmet": "^6.1.0",
     "react-is": "^16.8",
     "react-responsive-embed": "^2.1.0",
-    "react-spring": "npm:@react-spring/web@^9.4.4",
     "react-twitter-embed": "^4.0.4",
     "react-typography": "^0.16.20",
     "styled-components": "^5.3.3",
@@ -74,6 +72,7 @@
     "babel-plugin-styled-components": "^2.0.6",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "gatsby-plugin-catch-links": "^4.10.0",

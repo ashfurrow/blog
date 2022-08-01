@@ -1,18 +1,12 @@
 import * as React from 'react'
-import {
-  Content,
-  Header,
-  Layout,
-  Wrapper,
-  SectionTitle,
-  SectionHeader,
-  SEO
-} from '../components'
+import { Header, Wrapper, SectionTitle, SectionHeader, SEO } from 'components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from '../../config/SiteConfig'
-import theme from '../../config/Theme'
+import config from 'config/SiteConfig'
+import theme from 'config/Theme'
 import styled from 'styled-components'
-import { media } from '../utils/media'
+import { media } from 'utils/media'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -23,33 +17,35 @@ import {
   faSoundcloud,
   faYoutube
 } from '@fortawesome/free-brands-svg-icons'
-import { RightImage } from '../components/RightImage'
+import { RightImage } from 'components/RightImage'
 import { Link } from 'gatsby'
 
-export default class Portfolio extends React.Component<any> {
-  public render() {
-    return (
-      <Layout>
-        <Helmet title={`Portfolio | ${config.siteTitle}`} />
-        <SEO
-          path="/portfolio/"
-          data={{
-            title: 'Ash Furrow Portfolio',
-            description: "Ash Furrow's Professional Portfolio"
-          }}
-        />
-        <Header banner="/assets/bg/portfolio.jpg">
-          <SectionTitle>Portfolio</SectionTitle>
-        </Header>
-        <Wrapper>
-          <Content>
-            <_Portfolio />
-          </Content>
-        </Wrapper>
-      </Layout>
-    )
-  }
+const Portfolio = () => {
+  return (
+    <Layout>
+      <Helmet title={`Portfolio | ${config.siteTitle}`} />
+      <SEO
+        path="/portfolio/"
+        data={{
+          title: 'Ash Furrow Portfolio',
+          description: "Ash Furrow's Professional Portfolio"
+        }}
+      />
+      <Header banner="/assets/bg/portfolio.jpg">
+        <SectionTitle>Portfolio</SectionTitle>
+      </Header>
+      <Wrapper>
+        <Content>
+          <_Portfolio />
+        </Content>
+      </Wrapper>
+    </Layout>
+  )
 }
+
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
+export default Portfolio
 
 const _Portfolio: React.FC = () => (
   <>

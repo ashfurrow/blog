@@ -3,7 +3,11 @@
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": ["dom", "es2015", "es2017"],
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017"
+    ],
     "strict": true,
     "noEmit": true,
     // "isolatedModules": true,
@@ -12,7 +16,13 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "baseUrl": "src"
   },
-  "include": ["./src/**/*", "./bootup/**/*", "./scripts/**/*", "./blog/**/*"]
+  "include": [
+    "./src/**/*",
+    "./bootup/**/*",
+    "./scripts/**/*",
+    "./blog/**/*"
+  ]
 }

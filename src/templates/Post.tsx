@@ -4,22 +4,22 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import {
-  Layout,
   Wrapper,
   Header,
   SEO,
   PrevNext,
   SectionTitle,
   SectionSubTitle,
-  Content
-} from '../components'
-import config from '../../config/SiteConfig'
-import '../utils/prismjs-theme.css'
-import Post from '../models/Post'
+  Narrow,
+  Wide
+} from 'components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
+import config from 'config/SiteConfig'
+import 'utils/prismjs-theme.css'
+import Post from 'models/Post'
 import { MDXProvider } from '@mdx-js/react'
-import Narrow from '../components/Narrow'
-import Wide from '../components/Wide'
-import { ReactResponsiveEmbed } from '../components/ReactResponsiveEmbed'
+import { ReactResponsiveEmbed } from 'components/ReactResponsiveEmbed'
 import {
   YouTube,
   Video,
@@ -28,9 +28,9 @@ import {
   Spotify,
   Toot,
   Tweet
-} from '../components/Embeds'
-import Theme from '../../config/Theme'
-import PageContext from '../models/PageContext'
+} from 'components/Embeds'
+import Theme from 'config/Theme'
+import PageContext from 'models/PageContext'
 
 const ShortCodes = {
   Narrow,
@@ -68,6 +68,8 @@ interface Props {
   pageContext: PageContext
 }
 
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
 export default class PostPage extends React.PureComponent<Props> {
   public render() {
     const { prev, next } = this.props.pageContext

@@ -1,7 +1,6 @@
 import React from 'react'
 import { ReactResponsiveEmbed } from './ReactResponsiveEmbed'
-import Wide from './Wide'
-import Narrow from './Narrow'
+import { Narrow, Wide } from 'components'
 import { TwitterTweetEmbed } from 'react-twitter-embed'
 
 export const YouTube: React.FC<{ videoID: string }> = ({ videoID }) => (

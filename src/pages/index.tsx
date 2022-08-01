@@ -1,66 +1,61 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import {
-  Layout,
-  Wrapper,
-  SectionTitle,
-  Header,
-  Content,
-  SectionSubTitle,
-  SEO
-} from '../components'
+import { Wrapper, SectionTitle, Header, SectionSubTitle, SEO } from 'components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from '../../config/SiteConfig'
-import Data from '../models/Data'
+import config from 'config/SiteConfig'
+import Data from 'models/Data'
 import styled from 'styled-components'
-import { FeaturedPosts } from '../components/FeaturedPost'
+import { FeaturedPosts } from 'components/FeaturedPost'
 
 interface Props {
   data: Data
 }
 
-export default class HomePage extends React.Component<Props> {
-  public render() {
-    const { data } = this.props
-    const { edges } = data.allMdx
+const HomePage = (props: Props) => {
+  const { edges } = props.data.allMdx
 
-    return (
-      <Layout>
-        <Helmet title={`Blog | ${config.siteTitle}`} />
-        <SEO path="/" data={{ title: config.siteTitleAlt }} />
-        <Header>
-          <SectionTitle>
-            {config.siteTitle}
-            <Line />
-            <SectionSubTitle>{config.siteDescription}</SectionSubTitle>
-          </SectionTitle>
-        </Header>
-        <Wrapper>
-          <Content>
-            <h2 style={{ marginBottom: '1rem' }}>Get Started Here</h2>
-            <FeaturedPosts />
-            <h2 style={{ marginBottom: '1rem' }}>Recent Posts</h2>
-            <ol style={{ margin: 0 }}>
-              {edges.map((post) => (
-                <li
-                  key={post.node.frontmatter.title}
-                  style={{ listStyleType: 'none', margin: 0 }}
-                >
-                  <Link to={post.node.fields.path}>
-                    <Title>{post.node.frontmatter.title}</Title>
-                    <DateTag dateTime={post.node.frontmatter.standardDate}>
-                      {post.node.frontmatter.date}
-                    </DateTag>
-                  </Link>
-                </li>
-              ))}
-            </ol>
-          </Content>
-        </Wrapper>
-      </Layout>
-    )
-  }
+  return (
+    <Layout>
+      <Helmet title={`Blog | ${config.siteTitle}`} />
+      <SEO path="/" data={{ title: config.siteTitleAlt }} />
+      <Header>
+        <SectionTitle>
+          {config.siteTitle}
+          <Line />
+          <SectionSubTitle>{config.siteDescription}</SectionSubTitle>
+        </SectionTitle>
+      </Header>
+      <Wrapper>
+        <Content>
+          <h2 style={{ marginBottom: '1rem' }}>Get Started Here</h2>
+          <FeaturedPosts />
+          <h2 style={{ marginBottom: '1rem' }}>Recent Posts</h2>
+          <ol style={{ margin: 0 }}>
+            {edges.map((post) => (
+              <li
+                key={post.node.frontmatter.title}
+                style={{ listStyleType: 'none', margin: 0 }}
+              >
+                <Link to={post.node.fields.path}>
+                  <Title>{post.node.frontmatter.title}</Title>
+                  <DateTag dateTime={post.node.frontmatter.standardDate}>
+                    {post.node.frontmatter.date}
+                  </DateTag>
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </Content>
+      </Wrapper>
+    </Layout>
+  )
 }
+// Gatsby needs this default export to work.
+// eslint-disable-next-line import/no-default-export
+export default HomePage
+
 export const query = graphql`
   query {
     allMdx(

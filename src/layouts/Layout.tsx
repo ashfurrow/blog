@@ -1,8 +1,8 @@
 import React from 'react'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
-import theme from '../../config/Theme'
-import config from '../../config/SiteConfig'
-import { media } from '../utils/media'
+import theme from 'config/Theme'
+import config from 'config/SiteConfig'
+import { media } from 'utils/media'
 import './layout.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -12,7 +12,7 @@ import {
   faInstagram
 } from '@fortawesome/free-brands-svg-icons'
 import { faCircle, faImage } from '@fortawesome/free-solid-svg-icons'
-import Navbar from './NavBar'
+import { Navbar } from 'layouts/components'
 
 const GlobalStyle = createGlobalStyle`
   ::selection {

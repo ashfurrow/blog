@@ -28,7 +28,7 @@ const createPages: GatsbyNode['createPages'] = ({ actions, graphql }) => {
         index
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
