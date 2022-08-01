@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 require('source-map-support').install()
 require('ts-node').register({
   compilerOptions: {
@@ -53,6 +54,38 @@ const feedTemplate = {
   serialize: feedSerializer,
   query: rssQuery
 }
+
+const gatsbyRemarkPlugins = [
+  {
+    resolve: 'gatsby-remark-external-links',
+    options: {
+      target: '_blank',
+      rel: 'nofollow noopener noreferrer'
+    }
+  },
+  {
+    resolve: 'gatsby-remark-prismjs',
+    options: {
+      aliases: {
+        sh: 'shell'
+      }
+    }
+  },
+  'gatsby-remark-autolink-headers',
+  'gatsby-remark-smartypants',
+  {
+    resolve: 'gatsby-remark-images',
+    options: {
+      maxWidth: 1200
+    }
+  },
+  {
+    resolve: 'gatsby-remark-copy-linked-files',
+    options: {
+      ignoredFileExtensions: ['jpg', 'jpeg', 'png']
+    }
+  }
+]
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -145,30 +178,7 @@ module.exports = {
           blog: require.resolve('./src/templates/Post.tsx'),
           default: require.resolve('./src/layouts/MDXLayout.tsx')
         },
-        gatsbyRemarkPlugins: [
-          {
-            resolve: 'gatsby-remark-external-links',
-            options: {
-              target: '_blank',
-              rel: 'nofollow noopener noreferrer'
-            }
-          },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-autolink-headers',
-          'gatsby-remark-smartypants',
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1200
-            }
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              ignoredFileExtensions: ['jpg', 'jpeg', 'png']
-            }
-          }
-        ]
+        gatsbyRemarkPlugins
       }
     },
     {
@@ -191,30 +201,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-external-links',
-            options: {
-              target: '_blank',
-              rel: 'nofollow noopener noreferrer'
-            }
-          },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-autolink-headers',
-          'gatsby-remark-smartypants',
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1200
-            }
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              ignoredFileExtensions: ['jpg', 'jpeg', 'png']
-            }
-          }
-        ]
+        plugins: gatsbyRemarkPlugins
       }
     },
     {

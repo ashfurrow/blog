@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { onCreateWebpackConfig } = require('./bootup/onCreateWebpackConfig')
 const { onCreateNode } = require('./bootup/onCreateNode')
 const { createPages } = require('./bootup/createPages')
