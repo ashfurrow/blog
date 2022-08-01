@@ -17,9 +17,7 @@ declare module 'react-twitter-embed' {
   type TwitterTweetEmbedProps = {
     tweetId: string
   }
-  export class TwitterTweetEmbed extends React.Component<
-    TwitterTweetEmbedProps
-  > {}
+  export class TwitterTweetEmbed extends React.Component<TwitterTweetEmbedProps> {}
 }
 
 declare module '*.jpg'

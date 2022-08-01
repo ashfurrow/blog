@@ -17,7 +17,7 @@
     "lint": "eslint . --ext .tsx",
     "article": "ts-node scripts/newPost.ts",
     "type-check": "tsc",
-    "format": "prettier --config .prettierrc 'src/**/*.{ts,tsx,scss}' 'blog/**/*.mdx' --write"
+    "format": "prettier --config .prettierrc 'src/**/*.{ts,tsx,scss}' --write"
   },
   "husky": {
     "hooks": {

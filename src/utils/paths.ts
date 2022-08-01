@@ -6,10 +6,7 @@ export const generateSlug = (title: string) => {
   // This matches the old Middleman slugs
   const sep = '-'
   return parameterize(
-    title
-      .replace('&amp;', '-')
-      .replace(/[']/g, '')
-      .replace('&', '-')
+    title.replace('&amp;', '-').replace(/[']/g, '').replace('&', '-')
   )
     .replace(/[^a-z0-9\-_\?]+/, sep) // Remove non-alphanumberic characters
     .replace(/-{2,}/, sep) // No more than one of the separator in a row.
