@@ -46,7 +46,6 @@
     "react-helmet": "^6.1.0",
     "react-is": "^16.8",
     "react-responsive-embed": "^2.1.0",
-    "react-spring": "npm:@react-spring/web@^9.4.4",
     "react-twitter-embed": "^4.0.4",
     "react-typography": "^0.16.20",
     "styled-components": "^5.3.3",
