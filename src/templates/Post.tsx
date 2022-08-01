@@ -9,7 +9,9 @@ import {
   SEO,
   PrevNext,
   SectionTitle,
-  SectionSubTitle
+  SectionSubTitle,
+  Narrow,
+  Wide
 } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
@@ -17,7 +19,6 @@ import config from 'config/SiteConfig'
 import 'utils/prismjs-theme.css'
 import Post from 'models/Post'
 import { MDXProvider } from '@mdx-js/react'
-import { Narrow, Wide } from 'components'
 import { ReactResponsiveEmbed } from 'components/ReactResponsiveEmbed'
 import {
   YouTube,
