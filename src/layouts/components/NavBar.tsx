@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import theme from '../../config/Theme'
-import config from '../../config/SiteConfig'
-import BurgerMenu from './BurgerMenu'
-import CollapseMenu from './CollapseMenu'
+import theme from 'config/Theme'
+import config from 'config/SiteConfig'
+import { CollapseMenu, BurgerMenu } from 'layouts/components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faRssSquare } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
@@ -17,7 +16,7 @@ interface State {
   scrolledAtTop: boolean
 }
 
-class Navbar extends React.Component<Props, State> {
+export class Navbar extends React.Component<Props, State> {
   state = {
     scrolledAtTop: true
   }
@@ -100,8 +99,6 @@ class Navbar extends React.Component<Props, State> {
     )
   }
 }
-
-export default Navbar
 
 const Image = styled.img`
   margin: 0.1rem 0 auto 0;

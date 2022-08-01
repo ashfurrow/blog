@@ -6,7 +6,7 @@ import {
   themes,
   createTheme
 } from '@merc/react-timeline'
-import Theme from '../../config/Theme'
+import Theme from '../../src/config/Theme'
 import styled from 'styled-components'
 import { camelCase } from 'lodash'
 

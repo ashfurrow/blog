@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import {
-  Layout,
   Wrapper,
   SectionTitle,
   Header,
-  Content,
   SectionSubTitle,
   SEO
 } from '../components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from '../../config/SiteConfig'
+import config from '../config/SiteConfig'
 import Data from '../models/Data'
 import styled from 'styled-components'
 import { FeaturedPosts } from '../components/FeaturedPost'

@@ -37,6 +37,7 @@
     "@merc/react-timeline": "^0.1.42",
     "elasticlunr": "^0.9.5",
     "gatsby": "^4.10.1",
+    "gatsby-plugin-root-import": "^2.0.8",
     "lodash": "^4.17.11",
     "moment": "^2.29.1",
     "polished": "^4.1.4",

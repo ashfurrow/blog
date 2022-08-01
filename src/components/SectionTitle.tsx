@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import config from '../../config/SiteConfig'
+import config from '../config/SiteConfig'
 import { media } from '../utils/media'
 
 export const SectionTitle = styled.div<{

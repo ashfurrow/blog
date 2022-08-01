@@ -1,11 +1,9 @@
 import React from 'react'
-
-import { Layout, SEO } from '../components'
 import Helmet from 'react-helmet'
-import { Header } from './Header'
-import { SectionTitle } from './SectionTitle'
-import { Wrapper } from './Wrapper'
-import { Content } from './Content'
+
+import { SEO, Header, SectionTitle, Wrapper } from 'components'
+import { Layout } from 'layouts/Layout'
+import { Content } from 'layouts/components'
 import { generatePath } from '../utils/paths'
 
 interface Props {

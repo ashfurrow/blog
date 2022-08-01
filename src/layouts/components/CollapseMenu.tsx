@@ -4,7 +4,7 @@ import theme from '../../config/Theme'
 import config from '../../config/SiteConfig'
 import { Link } from 'gatsby'
 
-const CollapseMenu: React.FC<{
+export const CollapseMenu: React.FC<{
   navBarState: boolean
   handleNavBar: () => void
 }> = ({ navBarState, handleNavBar }) => {
@@ -53,8 +53,6 @@ const CollapseMenu: React.FC<{
   }
   return null
 }
-
-export default CollapseMenu
 
 const CollapseWrapper = styled.div`
   background: ${theme.colors.white};

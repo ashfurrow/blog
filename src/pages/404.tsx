@@ -1,7 +1,9 @@
 import * as React from 'react'
-import { Content, Header, Layout, Wrapper, SectionTitle } from '../components'
+import { Header, Wrapper, SectionTitle } from '../components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from '../../config/SiteConfig'
+import config from '../config/SiteConfig'
 
 export default class NotFoundPage extends React.Component<any> {
   public render() {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { media } from '../utils/media'
-import SiteConfig from '../../config/SiteConfig'
+import SiteConfig from '../config/SiteConfig'
 
 export const FeaturedPosts = () => (
   <FeaturedPostWrapper>

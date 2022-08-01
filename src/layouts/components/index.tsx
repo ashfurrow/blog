@@ -1,0 +1,5 @@
+export * from 'layouts/components/Article'
+export * from 'layouts/components/BurgerMenu'
+export * from 'layouts/components/CollapseMenu'
+export * from 'layouts/components/NavBar'
+export * from 'layouts/components/Content'

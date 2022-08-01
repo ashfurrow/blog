@@ -6,7 +6,7 @@ require('ts-node').register({
   }
 })
 
-const config = require('./config/SiteConfig').default
+const config = require('./src/config/SiteConfig').default
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 const { generatePath } = require('./src/utils/paths')
 const { removeStopwords } = require('stopword')
@@ -36,7 +36,7 @@ const rssQuery = `
 `
 
 const feedSerializer = ({ query: { site, allMdx } }) => {
-  return allMdx.edges.map(edge => {
+  return allMdx.edges.map((edge) => {
     return Object.assign({}, edge.node.frontmatter, {
       description: edge.node.excerpt,
       date: edge.node.frontmatter.date,
@@ -71,6 +71,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-lodash',
+    'gatsby-plugin-root-import',
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -91,11 +92,11 @@ module.exports = {
         feeds: [
           {
             ...feedTemplate,
-            output: '/feed.xml',
+            output: '/feed.xml'
           },
           {
             ...feedTemplate,
-            output: '/feed.rss.xml',
+            output: '/feed.rss.xml'
           }
         ]
       }
@@ -109,25 +110,25 @@ module.exports = {
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           Mdx: {
-            title: node => node.frontmatter.title,
-            path: node => generatePath(node.frontmatter.title),
+            title: (node) => node.frontmatter.title,
+            path: (node) => generatePath(node.frontmatter.title),
             // We want to index the blog posts but we want to keep the search index small
             // So let's do the following compromises:
             // - use the raw markdown, no html
             // - drop the yaml frontmatter
             // - do stopword pre-filtering
             // The plugin doesn't distinguish between including something in the index and making it accessible in the document store.
-            body: node => {
+            body: (node) => {
               const htmlRemovedBody = node.rawBody.replace(/<[^>]+>/g, '')
               // Remove yaml frontmatter
               const body = _.drop(htmlRemovedBody.split('---'), 2).join(' ')
               return removeStopwords(body.split(' ')).join(' ')
             },
-            date: node => moment(node.frontmatter.date).format('MMMM D, YYYY')
+            date: (node) => moment(node.frontmatter.date).format('MMMM D, YYYY')
           }
         },
         // Optional filter to limit indexed nodes
-        filter: node => node.frontmatter.tags !== 'exempt'
+        filter: (node) => node.frontmatter.tags !== 'exempt'
       }
     },
     {
@@ -142,7 +143,7 @@ module.exports = {
       options: {
         defaultLayouts: {
           blog: require.resolve('./src/templates/Post.tsx'),
-          default: require.resolve('./src/components/MDXLayout.tsx')
+          default: require.resolve('./src/layouts/MDXLayout.tsx')
         },
         gatsbyRemarkPlugins: [
           {

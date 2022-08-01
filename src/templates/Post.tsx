@@ -4,16 +4,16 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import {
-  Layout,
   Wrapper,
   Header,
   SEO,
   PrevNext,
   SectionTitle,
-  SectionSubTitle,
-  Content
-} from '../components'
-import config from '../../config/SiteConfig'
+  SectionSubTitle
+} from 'components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
+import config from '../config/SiteConfig'
 import '../utils/prismjs-theme.css'
 import Post from '../models/Post'
 import { MDXProvider } from '@mdx-js/react'
@@ -29,7 +29,7 @@ import {
   Toot,
   Tweet
 } from '../components/Embeds'
-import Theme from '../../config/Theme'
+import Theme from '../config/Theme'
 import PageContext from '../models/PageContext'
 
 const ShortCodes = {

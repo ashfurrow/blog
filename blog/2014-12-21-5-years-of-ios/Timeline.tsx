@@ -35,7 +35,7 @@ import conferences from './conferences.jpg'
 import eidolon from './eidolon.jpg'
 import film from './film.jpg'
 
-import Theme from '../../config/Theme'
+import Theme from '../../src/config/Theme'
 import Wide from '../../src/components/Wide'
 import { camelCase } from 'lodash'
 

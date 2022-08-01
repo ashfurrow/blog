@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import rgba from 'polished/lib/color/rgba'
 import { media } from '../utils/media'
-import config from '../../config/SiteConfig'
+import config from '../config/SiteConfig'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImage } from '@fortawesome/free-solid-svg-icons'
 

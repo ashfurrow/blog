@@ -1,16 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import {
-  Layout,
-  Wrapper,
-  SectionTitle,
-  Header,
-  Content,
-  SEO
-} from '../components'
+import { Wrapper, SectionTitle, Header, SEO } from '../components'
+import { Layout } from 'layouts'
+import { Content } from 'layouts/components'
 import { groupBy } from 'lodash'
 import Helmet from 'react-helmet'
-import config from '../../config/SiteConfig'
+import config from '../config/SiteConfig'
 import Data from '../models/Data'
 import styled from 'styled-components'
 import moment from 'moment'

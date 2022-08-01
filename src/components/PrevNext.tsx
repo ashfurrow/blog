@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Post from '../models/Post'
-import Theme from '../../config/Theme'
+import Theme from '../config/Theme'
 import { generatePath } from '../utils/paths'
 import { media } from '../utils/media'
-import config from '../../config/SiteConfig'
+import config from '../config/SiteConfig'
 
 const HR = styled.hr`
   margin-bottom: 0;
