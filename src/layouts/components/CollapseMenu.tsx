@@ -61,6 +61,13 @@ const CollapseWrapper = styled.div`
   left: 0;
   right: 0;
   z-index: 95;
+  border-bottom: ${Theme.colors.grey.light} solid 1px;
+  box-shadow: ${Theme.colors.grey.light} 0px 1px 8px;
+
+  @media ${media.tablet} {
+    border-bottom: ${Theme.colors.grey.light} solid 1px;
+    box-shadow: ${Theme.colors.grey.light} 0px 4px 12px;
+  }
 `
 
 const NavLinks = styled.ul`

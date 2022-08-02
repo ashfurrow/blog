@@ -105,6 +105,27 @@ const Bar = styled.nav<{ transparent: boolean; menuIsOpen: boolean }>`
     transparent ? 'clear' : theme.colors.white};
   z-index: 1000;
   font-size: 0.75rem;
+
+  @media ${media.tablet} {
+    box-shadow: ${({ transparent, menuIsOpen }) =>
+      transparent || menuIsOpen
+        ? 'none'
+        : `${Theme.colors.grey.extraLight} 0px 4px 12px`};
+    border-bottom: ${({ transparent, menuIsOpen }) =>
+      transparent || menuIsOpen
+        ? 'none'
+        : `${Theme.colors.grey.light} solid 1px`};
+  }
+
+  /* TODO: These shadows are shared in CollpaseMenu, so let's abstract them. */
+  box-shadow: ${({ transparent, menuIsOpen }) =>
+    transparent || menuIsOpen
+      ? 'none'
+      : `${Theme.colors.grey.extraLight} 0px 1px 8px`};
+  border-bottom: ${({ transparent, menuIsOpen }) =>
+    transparent || menuIsOpen
+      ? 'none'
+      : `${Theme.colors.grey.light} solid 1px`};
 `
 
 const FlexContainer = styled.div`
@@ -127,7 +148,7 @@ const NavLinks = styled.ul<{ transparent: boolean }>`
     margin: auto 0;
     line-height: 1.5rem;
 
-    @media (max-width: 768px) {
+    @media ${media.phone} {
       display: none;
     }
   }
@@ -151,7 +172,7 @@ const NavLinks = styled.ul<{ transparent: boolean }>`
 const BurgerWrapper = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media ${media.phone} {
     display: initial;
     margin: auto 0;
   }

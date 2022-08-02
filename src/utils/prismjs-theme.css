@@ -35,6 +35,7 @@ pre[class*='language-'] {
 
   font-size: 0.6rem;
 }
+/* TODO: This feels weird, rearrnage to @media ${media.something} */
 @media (min-width: 768px) {
   code[class*='language-'],
   pre[class*='language-'] {
