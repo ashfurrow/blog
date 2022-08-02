@@ -8,6 +8,7 @@ import { faSearch, faRssSquare } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
 import Theme from 'config/Theme'
 import { media } from 'utils/media'
+import { topBarStyle } from './topBarStyle'
 
 interface Props {
   toggleMenuOpen: () => void
@@ -117,15 +118,12 @@ const Bar = styled.nav<{ transparent: boolean; menuIsOpen: boolean }>`
         : `${Theme.colors.grey.light} solid 1px`};
   }
 
-  /* TODO: These shadows are shared in CollpaseMenu, so let's abstract them. */
-  box-shadow: ${({ transparent, menuIsOpen }) =>
-    transparent || menuIsOpen
-      ? 'none'
-      : `${Theme.colors.grey.extraLight} 0px 1px 8px`};
-  border-bottom: ${({ transparent, menuIsOpen }) =>
-    transparent || menuIsOpen
-      ? 'none'
-      : `${Theme.colors.grey.light} solid 1px`};
+  ${({ transparent, menuIsOpen }) =>
+    !transparent && !menuIsOpen && topBarStyle.default}
+  @media ${media.phone} {
+    ${({ transparent, menuIsOpen }) =>
+      !transparent && !menuIsOpen && topBarStyle.mobile}
+  }
 `
 
 const FlexContainer = styled.div`
