@@ -3,7 +3,6 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import theme from 'config/Theme'
 import config from 'config/SiteConfig'
 import { media } from 'utils/media'
-import './layout.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faMastodon,
