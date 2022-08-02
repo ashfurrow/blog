@@ -126,6 +126,7 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  /* TODO: This feels weird, rearrnage to @media ${media.something} */
   @media (min-width: 768px) {
     .timeline {
       .event {
