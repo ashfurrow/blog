@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import theme from 'config/Theme'
 import config from 'config/SiteConfig'
-import { CollapseMenu, BurgerMenu } from 'layouts/components'
+import { CollapseMenu, MenuButton } from 'layouts/components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faRssSquare } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
+import Theme from 'config/Theme'
+import { media } from 'utils/media'
 
 interface Props {
-  handleNavBar: () => void
-  navBarState: boolean
+  toggleMenuOpen: () => void
+  menuIsOpen: boolean
 }
 
 export const Navbar = (props: Props) => {
@@ -27,11 +29,11 @@ export const Navbar = (props: Props) => {
     }
   })
 
-  const { handleNavBar, navBarState } = props
-  const transparent = scrolledAtTop && !navBarState
+  const { toggleMenuOpen, menuIsOpen } = props
+  const transparent = scrolledAtTop && !menuIsOpen
   return (
     <>
-      <Bar transparent={transparent}>
+      <Bar transparent={transparent} menuIsOpen={menuIsOpen}>
         <FlexContainer>
           <Link
             to="/"
@@ -76,15 +78,15 @@ export const Navbar = (props: Props) => {
             </li>
           </NavLinks>
           <BurgerWrapper>
-            <BurgerMenu
-              navBarState={navBarState}
-              handleNavBar={handleNavBar}
+            <MenuButton
+              menuIsOpen={menuIsOpen}
+              toggleMenuOpen={toggleMenuOpen}
               transparent={transparent}
             />
           </BurgerWrapper>
         </FlexContainer>
       </Bar>
-      <CollapseMenu navBarState={navBarState} handleNavBar={handleNavBar} />
+      <CollapseMenu menuIsOpen={menuIsOpen} toggleMenuOpen={toggleMenuOpen} />
     </>
   )
 }
@@ -94,7 +96,7 @@ const Image = styled.img`
   height: 75%;
 `
 
-const Bar = styled.nav<{ transparent: boolean }>`
+const Bar = styled.nav<{ transparent: boolean; menuIsOpen: boolean }>`
   position: fixed;
   width: 100%;
   top: 0;

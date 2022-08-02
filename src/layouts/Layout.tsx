@@ -240,7 +240,7 @@ export class Layout extends React.PureComponent<{}, State> {
     })
   }
 
-  handleNavBar = () => {
+  toggleMenuOpen = () => {
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
 
@@ -251,8 +251,8 @@ export class Layout extends React.PureComponent<{}, State> {
       <ThemeProvider theme={theme}>
         <React.Fragment>
           <Navbar
-            navBarState={this.state.navbarOpen}
-            handleNavBar={this.handleNavBar}
+            menuIsOpen={this.state.navbarOpen}
+            toggleMenuOpen={this.toggleMenuOpen}
           />
           <GlobalStyle />
           {children}
