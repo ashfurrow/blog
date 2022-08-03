@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Post from 'models/Post'
-import Theme from 'config/Theme'
+import { theme } from 'config/theme'
 import { generatePath } from 'utils/paths'
 import { media } from 'utils/media'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 
 const HR = styled.hr`
   margin-bottom: 0;
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 `
 
 export const Button = styled.div`
-  border: 1px ${Theme.colors.grey.default} solid;
+  border: 1px ${theme.colors.grey.default} solid;
   width: 45%;
   padding: 0.5rem 1rem;
   font-family: ${config.headerFontFamily};
@@ -38,13 +38,13 @@ export const Button = styled.div`
     margin: 0.25rem auto;
   }
 
-  color: ${() => Theme.colors.grey.default};
+  color: ${() => theme.colors.grey.default};
   &:hover,
   &:focus {
     /* Color here is for the text colour of the link. */
-    color: ${() => Theme.colors.white};
-    border-color: ${Theme.colors.primary};
-    background-color: ${Theme.colors.primary};
+    color: ${() => theme.colors.white};
+    border-color: ${theme.colors.primary};
+    background-color: ${theme.colors.primary};
   }
 `
 

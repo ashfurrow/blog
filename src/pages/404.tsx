@@ -3,7 +3,7 @@ import { Header, Wrapper, SectionTitle } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 
 const NotFoundPage = () => {
   return (

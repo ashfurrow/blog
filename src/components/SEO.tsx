@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 import Post from 'models/Post'
 
 interface GeneralPageProps {

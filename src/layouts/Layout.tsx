@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
-import theme from 'config/Theme'
-import config from 'config/SiteConfig'
+import { theme } from 'config/theme'
+import config from 'config/siteConfig'
 import { media } from 'utils/media'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -126,7 +126,7 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
-  /* TODO: This feels weird, rearrnage to @media ${media.something} */
+  /* TODO: This feels weird, rearrnage to @media from media.ts */
   @media (min-width: 768px) {
     .timeline {
       .event {

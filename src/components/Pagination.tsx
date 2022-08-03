@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { media } from 'utils/media'
-import theme from 'config/Theme'
+import { theme } from 'config/theme'
 import curriedDarken from 'polished/lib/color/darken'
 
 export const PaginationContainer = styled.div`

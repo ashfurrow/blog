@@ -35,7 +35,7 @@ import conferences from './conferences.jpg'
 import eidolon from './eidolon.jpg'
 import film from './film.jpg'
 
-import Theme from 'config/Theme'
+import { theme } from 'config/theme'
 import { Wide } from 'components'
 import { camelCase } from 'lodash'
 
@@ -44,13 +44,13 @@ const customTheme = createTheme(themes.default, {
     backgroundColor: '#eee'
   },
   date: {
-    backgroundColor: Theme.colors.primary
+    backgroundColor: theme.colors.primary
   },
   marker: {
-    borderColor: Theme.colors.primary
+    borderColor: theme.colors.primary
   },
   timelineTrack: {
-    backgroundColor: Theme.colors.primary
+    backgroundColor: theme.colors.primary
   }
 })
 

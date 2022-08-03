@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import theme from 'config/Theme'
-import config from 'config/SiteConfig'
+import { theme } from 'config/theme'
+import config from 'config/siteConfig'
 import { Link } from 'gatsby'
 import { topBarStyle } from './topBarStyle'
 

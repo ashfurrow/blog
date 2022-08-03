@@ -6,7 +6,7 @@ import {
   themes,
   createTheme
 } from '@merc/react-timeline'
-import Theme from 'config/Theme'
+import { theme } from 'config/theme'
 import styled from 'styled-components'
 import { camelCase } from 'lodash'
 
@@ -72,18 +72,18 @@ const customTheme = createTheme(themes.default, {
   card: {
     backgroundColor: 'rgb(248, 248, 248)',
     a: {
-      color: Theme.colors.primary
+      color: theme.colors.primary
     }
   },
   date: {
-    backgroundColor: Theme.colors.primary,
+    backgroundColor: theme.colors.primary,
     fontSize: '3rem'
   },
   marker: {
-    borderColor: Theme.colors.primary
+    borderColor: theme.colors.primary
   },
   timelineTrack: {
-    backgroundColor: Theme.colors.primary
+    backgroundColor: theme.colors.primary
   },
   timeline: {
     fontSize: 'inherit',

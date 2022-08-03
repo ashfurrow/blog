@@ -15,7 +15,7 @@ import {
 } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 import 'utils/prismjs-theme.css'
 import Post from 'models/Post'
 import { MDXProvider } from '@mdx-js/react'
@@ -29,7 +29,7 @@ import {
   Toot,
   Tweet
 } from 'components/Embeds'
-import Theme from 'config/Theme'
+import { theme } from 'config/theme'
 import PageContext from 'models/PageContext'
 
 const ShortCodes = {
@@ -50,13 +50,13 @@ const PostContent = styled.div`
 `
 
 const TypoLink = styled.a`
-  color: ${Theme.colors.grey.default};
+  color: ${theme.colors.grey.default};
   margin: 0.5rem auto;
   display: block;
   font-size: 0.75rem;
   font-style: italic;
   &:hover {
-    color: ${Theme.colors.primary};
+    color: ${theme.colors.primary};
     text-decoration: underline;
   }
 `

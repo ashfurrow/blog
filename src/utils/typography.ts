@@ -1,5 +1,5 @@
 import Typography from 'typography'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 
 const typography = new Typography({
   baseFontSize: config.baseFontSize,

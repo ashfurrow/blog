@@ -19,8 +19,7 @@ const fontSize = {
   big: '2.9rem'
 }
 
-// TODO: Named export
-export default {
+export const theme = {
   colors,
   transitions,
   fontSize

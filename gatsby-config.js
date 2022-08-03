@@ -7,7 +7,7 @@ require('ts-node').register({
   }
 })
 
-const config = require('./src/config/SiteConfig').default
+const config = require('./src/config/siteConfig').default
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 const { generatePath } = require('./src/utils/paths')
 const { removeStopwords } = require('stopword')

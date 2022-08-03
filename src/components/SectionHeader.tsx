@@ -1,6 +1,6 @@
 import React from 'react'
 import { media } from 'utils/media'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 import rgba from 'polished/lib/color/rgba'
 import styled from 'styled-components'
 

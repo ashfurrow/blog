@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import theme from 'config/Theme'
-import config from 'config/SiteConfig'
+import { theme } from 'config/theme'
+import config from 'config/siteConfig'
 import { CollapseMenu, MenuButton } from 'layouts/components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faRssSquare } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
-import Theme from 'config/Theme'
 import { media } from 'utils/media'
 import { topBarStyle } from './topBarStyle'
 
@@ -113,11 +112,11 @@ const Bar = styled.nav<{ transparent: boolean; menuIsOpen: boolean }>`
     box-shadow: ${({ transparent, menuIsOpen }) =>
       transparent || menuIsOpen
         ? 'none'
-        : `${Theme.colors.grey.extraLight} 0px 4px 12px`};
+        : `${theme.colors.grey.extraLight} 0px 4px 12px`};
     border-bottom: ${({ transparent, menuIsOpen }) =>
       transparent || menuIsOpen
         ? 'none'
-        : `${Theme.colors.grey.light} solid 1px`};
+        : `${theme.colors.grey.light} solid 1px`};
   }
 
   ${({ transparent, menuIsOpen }) =>
