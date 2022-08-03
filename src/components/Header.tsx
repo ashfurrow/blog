@@ -83,20 +83,22 @@ interface Props {
   left?: boolean
 }
 
-export class Header extends React.PureComponent<Props> {
-  public render() {
-    const { banner, bannerAttribution, left, children } = this.props
-    return (
-      <HeaderWrapper banner={banner || config.defaultBg} left={left}>
-        {bannerAttribution && (
-          <AttributionLink href={bannerAttribution}>
-            <FontAwesomeIcon icon={faImage} />
-          </AttributionLink>
-        )}
-        <ContentWrapper left={left}>
-          <Content left={left}>{children}</Content>
-        </ContentWrapper>
-      </HeaderWrapper>
-    )
-  }
+export const Header = ({
+  banner,
+  bannerAttribution,
+  left,
+  children
+}: Props) => {
+  return (
+    <HeaderWrapper banner={banner || config.defaultBg} left={left}>
+      {bannerAttribution && (
+        <AttributionLink href={bannerAttribution}>
+          <FontAwesomeIcon icon={faImage} />
+        </AttributionLink>
+      )}
+      <ContentWrapper left={left}>
+        <Content left={left}>{children}</Content>
+      </ContentWrapper>
+    </HeaderWrapper>
+  )
 }

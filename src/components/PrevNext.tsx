@@ -70,29 +70,26 @@ interface Props {
   prev: Post
 }
 
-export class PrevNext extends React.PureComponent<Props> {
-  public render() {
-    const { prev, next } = this.props
-    return (
-      <>
-        <HR />
-        <Wrapper>
-          {prev && (
-            <Link to={generatePath(prev.frontmatter.title)}>
-              <Prev>
-                <LinkText>{prev.frontmatter.title}</LinkText>
-              </Prev>
-            </Link>
-          )}
-          {next && (
-            <Link to={generatePath(next.frontmatter.title)}>
-              <Next>
-                <LinkText>{next.frontmatter.title}</LinkText>
-              </Next>
-            </Link>
-          )}
-        </Wrapper>
-      </>
-    )
-  }
+export const PrevNext = ({ prev, next }: Props) => {
+  return (
+    <>
+      <HR />
+      <Wrapper>
+        {prev && (
+          <Link to={generatePath(prev.frontmatter.title)}>
+            <Prev>
+              <LinkText>{prev.frontmatter.title}</LinkText>
+            </Prev>
+          </Link>
+        )}
+        {next && (
+          <Link to={generatePath(next.frontmatter.title)}>
+            <Next>
+              <LinkText>{next.frontmatter.title}</LinkText>
+            </Next>
+          </Link>
+        )}
+      </Wrapper>
+    </>
+  )
 }
