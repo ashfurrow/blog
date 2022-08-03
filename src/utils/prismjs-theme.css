@@ -32,14 +32,14 @@ pre[class*='language-'] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 /* TODO: This feels weird, rearrnage to @media ${media.something} */
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
+  /* @media ${tablet} */
   code[class*='language-'],
   pre[class*='language-'] {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 

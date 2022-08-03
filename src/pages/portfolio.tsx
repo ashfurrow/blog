@@ -443,10 +443,10 @@ const FigCaption = styled.figcaption`
   padding: 0;
   text-align: left;
 
-  width: 40%;
+  width: 35%;
   max-width: 325px;
   position: relative;
-  right: -60%;
+  right: -65%;
   top: 2rem;
 
   &:before {
