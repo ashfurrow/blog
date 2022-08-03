@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import theme from 'config/Theme'
 import config from 'config/SiteConfig'
 import { Link } from 'gatsby'
-import Theme from 'config/Theme'
-import { media } from 'utils/media'
 import { topBarStyle } from './topBarStyle'
 
 export const CollapseMenu: React.FC<{

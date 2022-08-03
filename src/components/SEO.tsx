@@ -122,6 +122,11 @@ export const SEO = (props: SEOProps) => {
       <meta name="twitter:url" content={config.siteUrl} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      {/* This is duplicated from react-helmet but it still works so :shrug: See: https://github.com/gatsbyjs/gatsby/issues/25636 */}
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+      ></meta>
       <link
         rel="alternate"
         type="application/rss+xml"

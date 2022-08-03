@@ -37,8 +37,8 @@ const HeaderWrapper: any = styled.header<{
 
 const ContentWrapper = styled.div<{ left?: boolean }>`
   margin: 0 auto;
-
   width: 66.6%;
+
   @media ${media.tablet} {
     width: 83.3%;
   }
@@ -70,7 +70,7 @@ const AttributionLink = styled.a`
   text-decoration: none;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: env(safe-area-inset-right);
   color: rgba(255, 255, 255, 0.5);
   padding-right: 1.25em;
   padding-bottom: 1.25em;

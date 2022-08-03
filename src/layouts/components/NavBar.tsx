@@ -106,6 +106,8 @@ const Bar = styled.nav<{ transparent: boolean; menuIsOpen: boolean }>`
     transparent ? 'clear' : theme.colors.white};
   z-index: 1000;
   font-size: 0.75rem;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 
   @media ${media.tablet} {
     box-shadow: ${({ transparent, menuIsOpen }) =>
