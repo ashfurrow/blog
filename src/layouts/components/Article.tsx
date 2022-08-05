@@ -37,19 +37,16 @@ interface Props {
   timeToRead: number
 }
 
-export class Article extends React.PureComponent<Props> {
-  public render() {
-    const { title, excerpt, path } = this.props
-    const firstChar = title.charAt(0)
+export const Article = ({ title, excerpt, path }: Props) => {
+  const firstChar = title.charAt(0)
 
-    return (
-      <Post>
-        <Title>
-          <Initiale>{firstChar}</Initiale>
-          <Link to={path}>{title}</Link>
-        </Title>
-        <Excerpt>{excerpt}</Excerpt>
-      </Post>
-    )
-  }
+  return (
+    <Post>
+      <Title>
+        <Initiale>{firstChar}</Initiale>
+        <Link to={path}>{title}</Link>
+      </Title>
+      <Excerpt>{excerpt}</Excerpt>
+    </Post>
+  )
 }

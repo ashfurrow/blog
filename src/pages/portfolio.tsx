@@ -3,8 +3,8 @@ import { Header, Wrapper, SectionTitle, SectionHeader, SEO } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
 import Helmet from 'react-helmet'
-import config from 'config/SiteConfig'
-import theme from 'config/Theme'
+import config from 'config/siteConfig'
+import { theme } from 'config/theme'
 import styled from 'styled-components'
 import { media } from 'utils/media'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -443,10 +443,10 @@ const FigCaption = styled.figcaption`
   padding: 0;
   text-align: left;
 
-  width: 30%;
+  width: 35%;
   max-width: 325px;
   position: relative;
-  right: -70%;
+  right: -65%;
   top: 2rem;
 
   &:before {

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import rgba from 'polished/lib/color/rgba'
 import { media } from 'utils/media'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faImage } from '@fortawesome/free-solid-svg-icons'
 
@@ -37,8 +37,8 @@ const HeaderWrapper: any = styled.header<{
 
 const ContentWrapper = styled.div<{ left?: boolean }>`
   margin: 0 auto;
-
   width: 66.6%;
+
   @media ${media.tablet} {
     width: 83.3%;
   }
@@ -70,7 +70,7 @@ const AttributionLink = styled.a`
   text-decoration: none;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: env(safe-area-inset-right);
   color: rgba(255, 255, 255, 0.5);
   padding-right: 1.25em;
   padding-bottom: 1.25em;
@@ -83,20 +83,22 @@ interface Props {
   left?: boolean
 }
 
-export class Header extends React.PureComponent<Props> {
-  public render() {
-    const { banner, bannerAttribution, left, children } = this.props
-    return (
-      <HeaderWrapper banner={banner || config.defaultBg} left={left}>
-        {bannerAttribution && (
-          <AttributionLink href={bannerAttribution}>
-            <FontAwesomeIcon icon={faImage} />
-          </AttributionLink>
-        )}
-        <ContentWrapper left={left}>
-          <Content left={left}>{children}</Content>
-        </ContentWrapper>
-      </HeaderWrapper>
-    )
-  }
+export const Header = ({
+  banner,
+  bannerAttribution,
+  left,
+  children
+}: Props) => {
+  return (
+    <HeaderWrapper banner={banner || config.defaultBg} left={left}>
+      {bannerAttribution && (
+        <AttributionLink href={bannerAttribution}>
+          <FontAwesomeIcon icon={faImage} />
+        </AttributionLink>
+      )}
+      <ContentWrapper left={left}>
+        <Content left={left}>{children}</Content>
+      </ContentWrapper>
+    </HeaderWrapper>
+  )
 }

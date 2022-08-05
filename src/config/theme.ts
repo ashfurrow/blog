@@ -5,7 +5,8 @@ const colors = {
   grey: {
     dark: 'rgba(0, 0, 0, 0.9)',
     default: 'rgba(64, 64, 64)',
-    light: '#eee'
+    light: '#eee',
+    extraLight: 'rgba(0, 0, 0, 0.1)'
   }
 }
 
@@ -18,7 +19,7 @@ const fontSize = {
   big: '2.9rem'
 }
 
-export default {
+export const theme = {
   colors,
   transitions,
   fontSize

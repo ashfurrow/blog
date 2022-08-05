@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
-import theme from 'config/Theme'
-import config from 'config/SiteConfig'
+import { theme } from 'config/theme'
+import config from 'config/siteConfig'
 import { media } from 'utils/media'
-import './layout.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faMastodon,
@@ -127,6 +126,7 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  /* TODO: This feels weird, rearrnage to @media from media.ts */
   @media (min-width: 768px) {
     .timeline {
       .event {
@@ -215,129 +215,115 @@ const FooterIcons = styled.div`
   margin-bottom: 1.5rem;
 `
 
-interface State {
-  navbarOpen: boolean
-}
+export const Layout = (props: React.PropsWithChildren<{}>) => {
+  const [navBarOpen, setNavBarOpen] = useState(false)
 
-export class Layout extends React.PureComponent<{}, State> {
-  state = {
-    navbarOpen: false
-  }
+  useEffect(() => {
+    // If the window resizes, close the menu (prevents menu from opening when
+    // window is wide enough to be the full bar)
+    const listToResize = () => {
+      setNavBarOpen(false)
+    }
+    window.addEventListener('resize', listToResize)
 
-  componentDidMount() {
-    window.addEventListener('resize', this.listToResize)
-  }
+    return () => {
+      window.removeEventListener('resize', listToResize)
+    }
+  })
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.listToResize)
-  }
+  const toggleMenuOpen = useCallback(() => {
+    setNavBarOpen(!navBarOpen)
+  }, [])
 
-  // If the window resizes, close the menu (prevents menu from opening when
-  // window is wide enough to be the full bar)
-  listToResize = () => {
-    this.setState({
-      navbarOpen: false
-    })
-  }
+  const { children } = props
 
-  handleNavBar = () => {
-    this.setState({ navbarOpen: !this.state.navbarOpen })
-  }
-
-  public render() {
-    const { children } = this.props
-
-    return (
-      <ThemeProvider theme={theme}>
-        <React.Fragment>
-          <Navbar
-            navBarState={this.state.navbarOpen}
-            handleNavBar={this.handleNavBar}
-          />
-          <GlobalStyle />
-          {children}
-          <Footer>
-            <hr />
-            <FooterIcons>
-              <span className="fa-layers fa-fw fa-3x">
-                <FooterLink
-                  href="https://mastodon.technology/@ashfurrow"
-                  title="Mastodon"
-                  rel="me"
-                >
-                  <FontAwesomeIcon
-                    icon={faMastodon}
-                    transform="shrink-8"
-                    mask={faCircle}
-                  />
-                </FooterLink>
-              </span>
-              <span className="fa-layers fa-fw fa-3x">
-                <FooterLink
-                  href="https://twitter.com/ashfurrow"
-                  title="Twitter"
-                  rel="me"
-                >
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    transform="shrink-8"
-                    mask={faCircle}
-                  />
-                </FooterLink>
-              </span>
-              <span className="fa-layers fa-fw fa-3x">
-                <FooterLink
-                  href="https://github.com/ashfurrow"
-                  title="GitHub"
-                  rel="me"
-                >
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    transform="shrink-8"
-                    mask={faCircle}
-                  />
-                </FooterLink>
-              </span>
-              <span className="fa-layers fa-fw fa-3x">
-                <FooterLink
-                  href="https://photos.ashfurrow.com"
-                  title="Photo Blog"
-                  rel="me"
-                >
-                  <FontAwesomeIcon
-                    icon={faImage}
-                    transform="shrink-8"
-                    mask={faCircle}
-                  />
-                </FooterLink>
-              </span>
-              <span className="fa-layers fa-fw fa-3x">
-                <FooterLink
-                  href="http://instagram.com/ashfurrow"
-                  title="Instagram"
-                  rel="me"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    transform="shrink-8"
-                    mask={faCircle}
-                  />
-                </FooterLink>
-              </span>
-            </FooterIcons>
-            <span style={{ fontSize: '0.75rem' }}>
-              This site is{' '}
-              <a href="http://github.com/ashfurrow/blog">open source</a>.{' '}
-              <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed
-              under{' '}
-              <a href="http://creativecommons.org/licenses/by/4.0/">
-                Creative Commons Attribution 4.0
-              </a>
-              .
+  return (
+    <ThemeProvider theme={theme}>
+      <React.Fragment>
+        <Navbar menuIsOpen={navBarOpen} toggleMenuOpen={toggleMenuOpen} />
+        <GlobalStyle />
+        {children}
+        <Footer>
+          <hr />
+          <FooterIcons>
+            <span className="fa-layers fa-fw fa-3x">
+              <FooterLink
+                href="https://mastodon.technology/@ashfurrow"
+                title="Mastodon"
+                rel="me"
+              >
+                <FontAwesomeIcon
+                  icon={faMastodon}
+                  transform="shrink-8"
+                  mask={faCircle}
+                />
+              </FooterLink>
             </span>
-          </Footer>
-        </React.Fragment>
-      </ThemeProvider>
-    )
-  }
+            <span className="fa-layers fa-fw fa-3x">
+              <FooterLink
+                href="https://twitter.com/ashfurrow"
+                title="Twitter"
+                rel="me"
+              >
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  transform="shrink-8"
+                  mask={faCircle}
+                />
+              </FooterLink>
+            </span>
+            <span className="fa-layers fa-fw fa-3x">
+              <FooterLink
+                href="https://github.com/ashfurrow"
+                title="GitHub"
+                rel="me"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  transform="shrink-8"
+                  mask={faCircle}
+                />
+              </FooterLink>
+            </span>
+            <span className="fa-layers fa-fw fa-3x">
+              <FooterLink
+                href="https://photos.ashfurrow.com"
+                title="Photo Blog"
+                rel="me"
+              >
+                <FontAwesomeIcon
+                  icon={faImage}
+                  transform="shrink-8"
+                  mask={faCircle}
+                />
+              </FooterLink>
+            </span>
+            <span className="fa-layers fa-fw fa-3x">
+              <FooterLink
+                href="http://instagram.com/ashfurrow"
+                title="Instagram"
+                rel="me"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  transform="shrink-8"
+                  mask={faCircle}
+                />
+              </FooterLink>
+            </span>
+          </FooterIcons>
+          <span style={{ fontSize: '0.75rem' }}>
+            This site is{' '}
+            <a href="http://github.com/ashfurrow/blog">open source</a>.{' '}
+            <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed
+            under{' '}
+            <a href="http://creativecommons.org/licenses/by/4.0/">
+              Creative Commons Attribution 4.0
+            </a>
+            .
+          </span>
+        </Footer>
+      </React.Fragment>
+    </ThemeProvider>
+  )
 }

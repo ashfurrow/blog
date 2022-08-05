@@ -1,58 +1,70 @@
 import React from 'react'
 import styled from 'styled-components'
-import theme from 'config/Theme'
-import config from 'config/SiteConfig'
+import { theme } from 'config/theme'
+import config from 'config/siteConfig'
 import { Link } from 'gatsby'
+import { topBarStyle } from './topBarStyle'
 
 export const CollapseMenu: React.FC<{
-  navBarState: boolean
-  handleNavBar: () => void
-}> = ({ navBarState, handleNavBar }) => {
-  if (navBarState) {
+  menuIsOpen: boolean
+  toggleMenuOpen: () => void
+}> = ({ menuIsOpen, toggleMenuOpen }) => {
+  if (menuIsOpen) {
     return (
-      <CollapseWrapper>
-        <NavLinks>
-          <li>
-            <Link to="/blog" onClick={handleNavBar}>
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" onClick={handleNavBar}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/books" onClick={handleNavBar}>
-              Books
-            </Link>
-          </li>
-          <li>
-            <Link to="/portfolio" onClick={handleNavBar}>
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link to="/speaking" onClick={handleNavBar}>
-              Speaking
-            </Link>
-          </li>
-          <li>
-            <a href="/search" onClick={handleNavBar}>
-              Search
-            </a>
-          </li>
-          <li>
-            <a href="/feed.xml" onClick={handleNavBar}>
-              Blog Feed
-            </a>
-          </li>
-        </NavLinks>
-      </CollapseWrapper>
+      <TapIntercepter onClick={toggleMenuOpen}>
+        <CollapseWrapper>
+          <NavLinks>
+            <li>
+              <Link to="/blog" onClick={toggleMenuOpen}>
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={toggleMenuOpen}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/books" onClick={toggleMenuOpen}>
+                Books
+              </Link>
+            </li>
+            <li>
+              <Link to="/portfolio" onClick={toggleMenuOpen}>
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/speaking" onClick={toggleMenuOpen}>
+                Speaking
+              </Link>
+            </li>
+            <li>
+              <a href="/search" onClick={toggleMenuOpen}>
+                Search
+              </a>
+            </li>
+            <li>
+              <a href="/feed.xml" onClick={toggleMenuOpen}>
+                Blog Feed
+              </a>
+            </li>
+          </NavLinks>
+        </CollapseWrapper>
+      </TapIntercepter>
     )
   }
   return null
 }
+
+const TapIntercepter = styled.div`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+`
 
 const CollapseWrapper = styled.div`
   background: ${theme.colors.white};
@@ -61,6 +73,9 @@ const CollapseWrapper = styled.div`
   left: 0;
   right: 0;
   z-index: 95;
+
+  /* Since the CollapseMenu is onlu rendered on mobile, we can omit default styling. */
+  ${topBarStyle.mobile}
 `
 
 const NavLinks = styled.ul`

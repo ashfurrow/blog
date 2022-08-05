@@ -1,6 +1,6 @@
 import React from 'react'
 import { media } from 'utils/media'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 import rgba from 'polished/lib/color/rgba'
 import styled from 'styled-components'
 
@@ -15,7 +15,6 @@ const HeaderWrapper = styled.header<{ banner: string; dim: boolean }>`
   background: ${(props) => props.dim && dimmingEffect}
     url(${(props) => props.banner}) no-repeat center center;
   background-size: cover;
-  padding: 8rem 2rem 10rem;
   text-align: center;
   padding: 4rem 2rem;
   margin-top: 6rem;
@@ -32,6 +31,8 @@ const HeaderWrapper = styled.header<{ banner: string; dim: boolean }>`
 
 const Content = styled.div`
   position: relative;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   color: white;
   a {
     color: white;

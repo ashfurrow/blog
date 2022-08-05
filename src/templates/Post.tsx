@@ -15,7 +15,7 @@ import {
 } from 'components'
 import { Layout } from 'layouts'
 import { Content } from 'layouts/components'
-import config from 'config/SiteConfig'
+import config from 'config/siteConfig'
 import 'utils/prismjs-theme.css'
 import Post from 'models/Post'
 import { MDXProvider } from '@mdx-js/react'
@@ -29,7 +29,7 @@ import {
   Toot,
   Tweet
 } from 'components/Embeds'
-import Theme from 'config/Theme'
+import { theme } from 'config/theme'
 import PageContext from 'models/PageContext'
 
 const ShortCodes = {
@@ -50,13 +50,13 @@ const PostContent = styled.div`
 `
 
 const TypoLink = styled.a`
-  color: ${Theme.colors.grey.default};
+  color: ${theme.colors.grey.default};
   margin: 0.5rem auto;
   display: block;
   font-size: 0.75rem;
   font-style: italic;
   &:hover {
-    color: ${Theme.colors.primary};
+    color: ${theme.colors.primary};
     text-decoration: underline;
   }
 `
@@ -68,55 +68,54 @@ interface Props {
   pageContext: PageContext
 }
 
+const PostPage = (props: Props) => {
+  const { prev, next } = props.pageContext
+  const post = props.data.mdx
+  return (
+    <Layout>
+      {post ? (
+        <>
+          <SEO path={post.fields.path} data={post} />
+          <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
+          <Header
+            banner={
+              post.frontmatter.banner && post.frontmatter.banner.publicURL
+            }
+            bannerAttribution={post.frontmatter.bannerAttribution}
+            left
+          >
+            <SectionTitle left>
+              {post.frontmatter.title}
+              <Line />
+              <SectionSubTitle left>
+                <Date dateTime={post.frontmatter.standardDate}>
+                  {post.frontmatter.date}
+                </Date>
+              </SectionSubTitle>
+            </SectionTitle>
+          </Header>
+          <Wrapper>
+            <Content>
+              <PostContent>
+                <MDXProvider components={ShortCodes}>
+                  <MDXRenderer>{post.body}</MDXRenderer>
+                </MDXProvider>
+              </PostContent>
+              <hr style={{ margin: '0' }} />
+              <TypoLink href={post.fields.githubLink}>
+                Please submit typo corrections on GitHub
+              </TypoLink>
+              <PrevNext prev={prev} next={next} />
+            </Content>
+          </Wrapper>
+        </>
+      ) : null}
+    </Layout>
+  )
+}
 // Gatsby needs this default export to work.
 // eslint-disable-next-line import/no-default-export
-export default class PostPage extends React.PureComponent<Props> {
-  public render() {
-    const { prev, next } = this.props.pageContext
-    const post = this.props.data.mdx
-    return (
-      <Layout>
-        {post ? (
-          <>
-            <SEO path={post.fields.path} data={post} />
-            <Helmet title={`${post.frontmatter.title} | ${config.siteTitle}`} />
-            <Header
-              banner={
-                post.frontmatter.banner && post.frontmatter.banner.publicURL
-              }
-              bannerAttribution={post.frontmatter.bannerAttribution}
-              left
-            >
-              <SectionTitle left>
-                {post.frontmatter.title}
-                <Line />
-                <SectionSubTitle left>
-                  <Date dateTime={post.frontmatter.standardDate}>
-                    {post.frontmatter.date}
-                  </Date>
-                </SectionSubTitle>
-              </SectionTitle>
-            </Header>
-            <Wrapper>
-              <Content>
-                <PostContent>
-                  <MDXProvider components={ShortCodes}>
-                    <MDXRenderer>{post.body}</MDXRenderer>
-                  </MDXProvider>
-                </PostContent>
-                <hr style={{ margin: '0' }} />
-                <TypoLink href={post.fields.githubLink}>
-                  Please submit typo corrections on GitHub
-                </TypoLink>
-                <PrevNext prev={prev} next={next} />
-              </Content>
-            </Wrapper>
-          </>
-        ) : null}
-      </Layout>
-    )
-  }
-}
+export default PostPage
 
 const Line = styled.hr`
   color: white;

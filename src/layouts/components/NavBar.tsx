@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import theme from 'config/Theme'
-import config from 'config/SiteConfig'
-import { CollapseMenu, BurgerMenu } from 'layouts/components'
+import { theme } from 'config/theme'
+import config from 'config/siteConfig'
+import { CollapseMenu, MenuButton } from 'layouts/components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faRssSquare } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
+import { media } from 'utils/media'
+import { topBarStyle } from './topBarStyle'
 
 interface Props {
-  handleNavBar: () => void
-  navBarState: boolean
+  toggleMenuOpen: () => void
+  menuIsOpen: boolean
 }
 
 export const Navbar = (props: Props) => {
@@ -27,11 +29,11 @@ export const Navbar = (props: Props) => {
     }
   })
 
-  const { handleNavBar, navBarState } = props
-  const transparent = scrolledAtTop && !navBarState
+  const { toggleMenuOpen, menuIsOpen } = props
+  const transparent = scrolledAtTop && !menuIsOpen
   return (
     <>
-      <Bar transparent={transparent}>
+      <Bar transparent={transparent} menuIsOpen={menuIsOpen}>
         <FlexContainer>
           <Link
             to="/"
@@ -76,15 +78,15 @@ export const Navbar = (props: Props) => {
             </li>
           </NavLinks>
           <BurgerWrapper>
-            <BurgerMenu
-              navBarState={navBarState}
-              handleNavBar={handleNavBar}
+            <MenuButton
+              menuIsOpen={menuIsOpen}
+              toggleMenuOpen={toggleMenuOpen}
               transparent={transparent}
             />
           </BurgerWrapper>
         </FlexContainer>
       </Bar>
-      <CollapseMenu navBarState={navBarState} handleNavBar={handleNavBar} />
+      <CollapseMenu menuIsOpen={menuIsOpen} toggleMenuOpen={toggleMenuOpen} />
     </>
   )
 }
@@ -94,7 +96,7 @@ const Image = styled.img`
   height: 75%;
 `
 
-const Bar = styled.nav<{ transparent: boolean }>`
+const Bar = styled.nav<{ transparent: boolean; menuIsOpen: boolean }>`
   position: fixed;
   width: 100%;
   top: 0;
@@ -103,6 +105,26 @@ const Bar = styled.nav<{ transparent: boolean }>`
     transparent ? 'clear' : theme.colors.white};
   z-index: 1000;
   font-size: 0.75rem;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+
+  @media ${media.tablet} {
+    box-shadow: ${({ transparent, menuIsOpen }) =>
+      transparent || menuIsOpen
+        ? 'none'
+        : `${theme.colors.grey.extraLight} 0px 4px 12px`};
+    border-bottom: ${({ transparent, menuIsOpen }) =>
+      transparent || menuIsOpen
+        ? 'none'
+        : `${theme.colors.grey.light} solid 1px`};
+  }
+
+  ${({ transparent, menuIsOpen }) =>
+    !transparent && !menuIsOpen && topBarStyle.default}
+  @media ${media.phone} {
+    ${({ transparent, menuIsOpen }) =>
+      !transparent && !menuIsOpen && topBarStyle.mobile}
+  }
 `
 
 const FlexContainer = styled.div`
@@ -125,7 +147,7 @@ const NavLinks = styled.ul<{ transparent: boolean }>`
     margin: auto 0;
     line-height: 1.5rem;
 
-    @media (max-width: 768px) {
+    @media ${media.phone} {
       display: none;
     }
   }
@@ -149,7 +171,7 @@ const NavLinks = styled.ul<{ transparent: boolean }>`
 const BurgerWrapper = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media ${media.phone} {
     display: initial;
     margin: auto 0;
   }

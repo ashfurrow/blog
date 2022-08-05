@@ -1,5 +1,5 @@
 export * from './Article'
-export * from './BurgerMenu'
+export * from './MenuButton'
 export * from './CollapseMenu'
 export * from './NavBar'
 export * from './Content'

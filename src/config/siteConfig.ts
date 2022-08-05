@@ -10,7 +10,7 @@ export default {
   defaultBg: '/assets/bg/default.jpg', // default post background header
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'Compassionate Software Developer', // Your site description
-  author: 'Ash FUrrow', // Author for schemaORGJSONLD
+  author: 'Ash Furrow', // Author for schemaORGJSONLD
   siteLogo: '/assets/siteimage.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional

@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
-import theme from 'config/Theme'
+import { theme } from 'config/theme'
 
-export const BurgerMenu: React.FC<{
-  handleNavBar: () => void
-  navBarState: boolean
+export const MenuButton: React.FC<{
+  toggleMenuOpen: () => void
+  menuIsOpen: boolean
   transparent: boolean
-}> = ({ handleNavBar, navBarState, transparent }) => {
+}> = ({ toggleMenuOpen, menuIsOpen, transparent }) => {
   return (
-    <Wrapper onClick={handleNavBar} transparent={transparent}>
-      <FontAwesomeIcon icon={navBarState ? faTimesCircle : faBars} />
+    <Wrapper onClick={toggleMenuOpen} transparent={transparent}>
+      <FontAwesomeIcon icon={menuIsOpen ? faTimesCircle : faBars} />
     </Wrapper>
   )
 }
