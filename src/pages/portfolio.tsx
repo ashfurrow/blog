@@ -199,7 +199,7 @@ const _Portfolio: React.FC = () => (
         </BigFAIcon>
         <BigFAIcon>
           <FooterLink
-            href="https://mastodon.technology/@ashfurrow"
+            href="https://masto.ashfurrow.com/@ashfurrow"
             title="Mastodon"
             rel="me"
           >

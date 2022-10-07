@@ -68,7 +68,7 @@ export const SEO = (props: SEOProps) => {
           sameAs: [
             'https://twitter.com/ashfurrow',
             'https://instagram.com/ashfurrow',
-            'https://mastodon.technology/@ashfurrow',
+            'https://masto.ashfurrow.com/@ashfurrow',
             'https://github.com/ashfurrow'
           ]
         },
