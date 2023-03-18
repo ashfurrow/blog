@@ -64,7 +64,6 @@
     "@types/react-helmet": "^6.1.5",
     "@types/stopword": "^1.0.2",
     "@types/styled-components": "^5.1.24",
-    "@types/twitter": "^1.7.1",
     "@types/typography": "^0.16.4",
     "@types/yaml": "^1.9.7",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
@@ -110,7 +109,6 @@
     "source-map-support": "0.5.21",
     "stopword": "^2.0.1",
     "ts-node": "^10.7.0",
-    "twitter": "^1.7.1",
     "typescript": "^4.6.2",
     "webpack": "^5.2.0",
     "yaml": "^1.10.2"
