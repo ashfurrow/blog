@@ -60,3 +60,5 @@ public/
 bundle-stats.json
 
 .DS_Store
+# Local Netlify folder
+.netlify
