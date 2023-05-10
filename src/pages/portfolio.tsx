@@ -112,6 +112,21 @@ const _Portfolio: React.FC = () => (
       </a>
       .
     </p>
+    <p>
+      I excel at creating self-improving systems that distribute knowledge and
+      responsibility across teams. At Artsy,{' '}
+      <a href="https://artsy.github.io/blog/2018/05/07/fully-automated-standups/">
+        I gave away responsibility for the engineering-wide sync
+      </a>
+      . At Shopify, I built up our release management rotation so every shift
+      made things easier for the next one.
+    </p>
+    <p>
+      My approach to technical leadership keeps me hands-on. Sometimes I work
+      out ahead of the team, prototyping new ideas or helping avoid upcoming
+      problems. However, most of my work is leading from behind. My intuition
+      tells me what needs to be done most and I make sure it gets done.
+    </p>
 
     <SectionHeader banner="/assets/portfolio/community_header.jpg" dim>
       <TitleCaption
@@ -159,14 +174,10 @@ const _Portfolio: React.FC = () => (
       <a href="http://artsy.github.io/blog/2015/08/10/peer-lab/">
         weekly Saturday morning peer lab
       </a>
-      , which <a href="/blog/5-years-of-peer-lab/">ran for five years</a>. In
-      the pre-pandemic times, I shared this idea{' '}
-      <a href="https://peerlab.community">around the world</a> where many peer
-      labs flourished.
-      {/* TODO: Once this whole pandemic business blows over, uncomment this out.
-      I have since shared this idea around the world to{' '}
+      , which <a href="/blog/5-years-of-peer-lab/">ran for five years</a>. I
+      have since shared this idea around the world to{' '}
       <a href="https://peerlab.community">dozens of cities</a>, so there might
-      even be a peer lab near you!*/}
+      even be a peer lab near you!
     </p>
     <Footer>
       <FooterIcons>
@@ -177,6 +188,15 @@ const _Portfolio: React.FC = () => (
             rel="me"
           >
             <FontAwesomeIcon icon={faGithub} />
+          </FooterLink>
+        </BigFAIcon>
+        <BigFAIcon>
+          <FooterLink
+            href="https://masto.ashfurrow.com/@ashfurrow"
+            title="Mastodon"
+            rel="me"
+          >
+            <FontAwesomeIcon icon={faMastodon} />
           </FooterLink>
         </BigFAIcon>
         <BigFAIcon>
@@ -197,22 +217,13 @@ const _Portfolio: React.FC = () => (
             <FontAwesomeIcon icon={faTwitter} />
           </FooterLink>
         </BigFAIcon>
-        <BigFAIcon>
-          <FooterLink
-            href="https://masto.ashfurrow.com/@ashfurrow"
-            title="Mastodon"
-            rel="me"
-          >
-            <FontAwesomeIcon icon={faMastodon} />
-          </FooterLink>
-        </BigFAIcon>
       </FooterIcons>
     </Footer>
 
     <SectionHeader banner="/assets/portfolio/software_header.jpg" dim>
       <TitleCaption
         title="Software"
-        subtitle="Great software is software nobody notices. I write meaningful software with this in mind."
+        subtitle="Great software is software that gets out of the user's way."
       />
     </SectionHeader>
     <p>
@@ -225,6 +236,33 @@ const _Portfolio: React.FC = () => (
       at hand.
     </p>
     <div>
+      <h3>Shopify</h3>
+      <RightImage src="/assets/portfolio/shopify.jpg" />
+      <LeftDiv>
+        <p>
+          <a href="/blog/joining-shopify/">I joined Shopify in 2021</a> and
+          worked for two years on the <a href="https://shop.app/">Shop team</a>.
+          My role as Senior Staff Developer gave me a broad mandate to improve
+          our engineering organization and deliver product goals efficiently. I
+          met regularly with company leadership to keep our technical efforts
+          aligned with business goals. My job was to do what needed to get done,
+          from prototyping new product ideas to improving cross-team technical
+          leadership.
+        </p>
+        <p>
+          My largest contribution was{' '}
+          <a href="https://shop.app/minis">Shop Minis</a>, a React Native SDK
+          for third parties to build native-quality shopping experiences. First
+          I started building the SDK on my own, then I built up a team to
+          deliver an internal prototype, then finally I oversaw two teams
+          delivering a private alpha to launch partners. The SDK is{' '}
+          <a href="https://www.shopify.com/ca/editions/winter2023#shop-minis-sdk">
+            now publicly available
+          </a>
+          .
+        </p>
+      </LeftDiv>
+
       <h3>Artsy</h3>
       <RightImage src="/assets/portfolio/artsy.jpg" />
       <LeftDiv>
@@ -244,6 +282,7 @@ const _Portfolio: React.FC = () => (
           <a href="http://artsy.github.io">Artsy&apos;s engineering blog</a>.
         </p>
       </LeftDiv>
+
       <h3>35mm</h3>
       <RightImage src="/assets/portfolio/35mm.jpg" />
       <LeftDiv>
@@ -257,6 +296,7 @@ const _Portfolio: React.FC = () => (
           Node.js.
         </p>
       </LeftDiv>
+
       <h3>500px</h3>
       <RightImage src="/assets/portfolio/500px.jpg" />
       <LeftDiv>
@@ -299,9 +339,12 @@ const _Portfolio: React.FC = () => (
       </a>{' '}
       time and have been{' '}
       <a href="https://ashfurrow.com/blog/music-is-back/">(re)discovering</a> my
-      love of music ever since. My largest music project to date has been a{' '}
-      <a href="https://ashfurrow.com/blog/just-play/">30-day challenge</a>. I'm
-      starting to explore songwriting, but it's still early.
+      love of music ever since. I performed a{' '}
+      <a href="https://ashfurrow.com/blog/just-play/">30-day music challenge</a>{' '}
+      online. Just before the pandemic hit, my band was preparing for its first
+      performance: covers of The Weakerthans' music. Sadly, we never got to
+      perform before I{' '}
+      <a href="/blog/moving-home-to-new-brunswick/">left New York</a>.
     </p>
     <Footer>
       <FooterIcons>
@@ -397,7 +440,7 @@ const _Portfolio: React.FC = () => (
       <LeftDiv>
         <p>
           I became a published author in 2012 and have since written a number of
-          books on iOS development (both with tradional publishers and
+          books on iOS development (both with traditional publishers and
           self-published). Like with blogging, writing is a very satisfying
           activity. I enjoy planning a route to take a reader on, considering
           what to teach them (and when), and turning my ideas into educational
