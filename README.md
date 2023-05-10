@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ashfurrow/blog.svg?branch=master)](https://travis-ci.org/ashfurrow/blog) [![Netlify Status](https://api.netlify.com/api/v1/badges/73ec75b9-958c-4274-a66b-0c74a9a43925/deploy-status)](https://app.netlify.com/sites/ashfurrow-blog/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73ec75b9-958c-4274-a66b-0c74a9a43925/deploy-status)](https://app.netlify.com/sites/ashfurrow-blog/deploys)
 
 # My Blog
 
@@ -60,4 +60,4 @@ I'd like to thank the following contributors.
 
 ## Server Setup
 
-The site is served from [Netlify](https://www.netlify.com). The feeds are served from the `feed.ashfurrow.com` subdomain (aliased to the main domain, except everything that's not a feed URL will 404).
+The site is served from [Netlify](https://www.netlify.com). The feeds are served from the `feed.ashfurrow.com` subdomain (aliased to the main domain, except everything that's not a feed URL will 404). Currently, building the site exceeds Netlify's image constraints and has to be deployed locally.
