@@ -343,8 +343,8 @@ const _Portfolio: React.FC = () => (
       <a href="https://ashfurrow.com/blog/just-play/">30-day music challenge</a>{' '}
       online. Just before the pandemic hit, my band was preparing for its first
       performance: covers of The Weakerthans' music. Sadly, we never got to
-      perform before I{' '}
-      <a href="/blog/moving-home-to-new-brunswick/">left New York</a>.
+      perform before{' '}
+      <a href="/blog/moving-home-to-new-brunswick/">I left New York</a>.
     </p>
     <Footer>
       <FooterIcons>
