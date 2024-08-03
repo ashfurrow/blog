@@ -248,7 +248,7 @@ export const Layout = (props: React.PropsWithChildren<{}>) => {
           <FooterIcons>
             <span className="fa-layers fa-fw fa-3x">
               <FooterLink
-                href="https://masto.ashfurrow.com/@ashfurrow"
+                href="https://tenforward.social/@ashfurrow"
                 title="Mastodon"
                 rel="me"
               >
