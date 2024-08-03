@@ -10,6 +10,8 @@
   "main": "n/a",
   "scripts": {
     "build": "yarn gatsby build --log-pages",
+    "deploy-built": "netlify deploy --prod",
+    "deploy": "yarn build && yarn deploy-built",
     "postinstall": "patch-package",
     "start": "gatsby develop",
     "serve": "gatsby serve",

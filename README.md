@@ -60,4 +60,8 @@ I'd like to thank the following contributors.
 
 ## Server Setup
 
-The site is served from [Netlify](https://www.netlify.com). The feeds are served from the `feed.ashfurrow.com` subdomain (aliased to the main domain, except everything that's not a feed URL will 404). Currently, building the site exceeds Netlify's image constraints and has to be deployed locally.
+The site is served from [Netlify](https://www.netlify.com). The feeds are served from the `feed.ashfurrow.com` subdomain (aliased to the main domain, except everything that's not a feed URL will 404). Currently, building the site exceeds Netlify's image constraints and has to be deployed locally:
+
+```sh
+yarn deploy # alias for yarn build && yarn deploy-built
+```
