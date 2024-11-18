@@ -79,7 +79,6 @@
     "eslint-plugin-react": "^7.29.4",
     "gatsby-plugin-catch-links": "^4.10.0",
     "gatsby-plugin-feed": "^4.10.1",
-    "gatsby-plugin-google-tagmanager": "^4.10.1",
     "gatsby-plugin-instagram-embed": "4.0.0",
     "gatsby-plugin-lodash": "^5.10.0",
     "gatsby-plugin-manifest": "^4.10.1",

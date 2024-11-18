@@ -6781,14 +6781,6 @@ gatsby-plugin-feed@^4.10.1:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-tagmanager@^4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-4.10.1.tgz#bbffa323b33048c3b166fa95133070d9bffabbff"
-  integrity sha512-K/d7d8umqndddYai5s+ee/l/c8q6Y3VRnDvoZvZAer5cGNb2zpj4IPJZe3OqqasdyaxGzslYYuFxYwl3CQ112g==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    web-vitals "^1.1.2"
-
 gatsby-plugin-instagram-embed@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-instagram-embed/-/gatsby-plugin-instagram-embed-4.0.0.tgz#8cd67ca350c2d315bf05eebc6747385d035ff936"
@@ -14373,11 +14365,6 @@ web-namespaces@^1.0.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.3.tgz#9bbf5c99ff0908d2da031f1d732492a96571a83f"
   integrity sha512-r8sAtNmgR0WKOKOxzuSgk09JsHlpKlB+uHi937qypOu3PZ17UxPrierFKDye/uNHjNTTEshu5PId8rojIPj/tA==
-
-web-vitals@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
-  integrity sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==
 
 webfontloader@^1.6.28:
   version "1.6.28"
