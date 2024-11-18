@@ -40,64 +40,58 @@ export const SEO = (props: SEOProps) => {
   image = config.siteUrl + realPrefix + image
   const blogURL = config.siteUrl + config.pathPrefix
 
-  let schemaOrgJSONLD = []
+  let schemaOrgJSONLD = {}
   if (isPost(data)) {
-    schemaOrgJSONLD = [
-      {
-        url,
-        '@context': 'http://schema.org',
-        '@type': 'BlogPosting',
-        // @ts-ignore
-        '@id': url,
-        // @ts-ignore
-        name: title,
-        alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
-        headline: title,
-        image: {
+    schemaOrgJSONLD = {
+      '@context': 'http://schema.org',
+      url,
+      '@type': 'BlogPosting',
+      '@id': url,
+      name: title,
+      alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+      headline: title,
+      image: {
+        '@type': 'ImageObject',
+        url: image
+      },
+      description: config.siteDescription,
+      datePublished: data.frontmatter.date,
+      dateModified: data.frontmatter.date,
+      author: {
+        '@type': 'Person',
+        name: config.author,
+        url: config.siteUrl,
+        image: 'https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg',
+        sameAs: [
+          'https://twitter.com/ashfurrow',
+          'https://instagram.com/ashfurrow',
+          'https://tenforward.social/@ashfurrow',
+          'https://github.com/ashfurrow'
+        ]
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: config.author,
+        logo: {
           '@type': 'ImageObject',
-          url: image
-        },
-        description: config.siteDescription,
-        datePublished: data.frontmatter.date,
-        dateModified: data.frontmatter.date,
-        author: {
-          '@type': 'Person',
-          name: config.author,
-          url: config.siteUrl,
-          image: 'https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg',
-          sameAs: [
-            'https://twitter.com/ashfurrow',
-            'https://instagram.com/ashfurrow',
-            'https://tenforward.social/@ashfurrow',
-            'https://github.com/ashfurrow'
-          ]
-        },
-        publisher: {
-          '@type': 'Organization',
-          name: config.author,
-          logo: {
-            '@type': 'ImageObject',
-            url: config.siteUrl + realPrefix + config.siteLogo
-          }
-        },
-        isPartOf: blogURL,
-        mainEntityOfPage: {
-          '@type': 'WebSite',
-          '@id': blogURL
+          url: config.siteUrl + realPrefix + config.siteLogo
         }
-      }
-    ]
-  } else {
-    schemaOrgJSONLD = [
-      {
-        url,
-        '@context': 'http://schema.org',
+      },
+      isPartOf: blogURL,
+      mainEntityOfPage: {
         '@type': 'WebSite',
-        '@id': url,
-        name: title,
-        alternateName: config.siteTitleAlt ? config.siteTitleAlt : ''
+        '@id': blogURL
       }
-    ]
+    }
+  } else {
+    schemaOrgJSONLD = {
+      '@context': 'http://schema.org',
+      url,
+      '@type': 'WebSite',
+      '@id': url,
+      name: title,
+      alternateName: config.siteTitleAlt ? config.siteTitleAlt : ''
+    }
   }
 
   return (
