@@ -131,7 +131,7 @@ export const SEO = (props: SEOProps) => {
         rel="alternate"
         type="application/rss+xml"
         title={config.siteTitleAlt}
-        href={`${blogURL}/feed.xml`}
+        href={`${blogURL}feed.xml`}
       />
     </Helmet>
   )
