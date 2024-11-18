@@ -72,9 +72,10 @@ export const Navbar = (props: Props) => {
               </a>
             </li>
             <li>
-              <Link to="/feed.xml">
+              {/* Using a Link will cause Gatsby to attempt a preload, which will 404. */}
+              <a href="/feed.xml">
                 <FontAwesomeIcon icon={faRssSquare} fixedWidth />
-              </Link>
+              </a>
             </li>
           </NavLinks>
           <BurgerWrapper>
