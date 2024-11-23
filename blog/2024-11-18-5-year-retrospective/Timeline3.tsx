@@ -17,6 +17,12 @@ import ShelterRace from './shelterrace.jpeg'
 import Keyboard from './keyboard.jpeg'
 import Crossword from './crossword.jpeg'
 import Dave from './dave.jpeg'
+import UHaul from './uhaul.jpeg'
+import ArtsyOffice from './artsyoffice.jpeg'
+import Zoom from './zoom.jpeg'
+import Eclipse from './eclipse.jpeg'
+import ArtsyGoodbye from './artsygoodbye.png'
+import FirstRace from './firstrace.jpeg'
 
 import { media } from 'utils/media'
 
@@ -151,7 +157,11 @@ export class Timeline3 extends React.Component {
               </p>
             </Entry> */}
 
-            <Entry title="COVID-19 Pandemic">
+            <Entry
+              title="COVID-19 Pandemic"
+              img={ArtsyOffice}
+              imgAlt="Photo of the Manhattan skyline"
+            >
               <p>TODO:</p>
             </Entry>
 
@@ -181,15 +191,39 @@ export class Timeline3 extends React.Component {
               <p>My recovery didn't go the smoothest.</p>
             </Entry>
 
+            <Entry title="Avatar">
+              <p>TODO: explain and remember to foreshadow</p>
+            </Entry>
+
+            <Entry
+              title="Zoom Birthday"
+              img={Zoom}
+              imgAlt="Screenshot of Zoom with a lot of my friends"
+            >
+              <p>TODO:</p>
+            </Entry>
+
             <Entry title="Decision to Move Home">
               <p>TODO:</p>
             </Entry>
 
-            <Entry title="Moving Home to Canada">
+            <Entry title="Worsening Pandemic in New York">
               <p>TODO:</p>
             </Entry>
 
-            <Entry title="Leaving Artsy">
+            <Entry
+              title="Moving Home to Canada"
+              img={UHaul}
+              imgAlt="Photo of a U-Haul truck on a street in New York."
+            >
+              <p>TODO:</p>
+            </Entry>
+
+            <Entry
+              title="Leaving Artsy"
+              img={ArtsyGoodbye}
+              imgAlt="Screenshot of my last Slack message to Artsy, which is heartfelt but too small to be legible in the image."
+            >
               <p>TODO:</p>
             </Entry>
 
@@ -199,7 +233,11 @@ export class Timeline3 extends React.Component {
               <p>TODO:</p>
             </Entry>
 
-            <Entry title="First Race">
+            <Entry
+              title="First Race"
+              img={FirstRace}
+              imgAlt="Photo of me standing at a finish line."
+            >
               <p>TODO:</p>
             </Entry>
 
@@ -325,10 +363,18 @@ export class Timeline3 extends React.Component {
               <p>I was as stressed as I'd ever been in my life.</p>
             </Entry>
 
+            <Entry title="Avatar Again">
+              <p>TODO:</p>
+            </Entry>
+
             <Entry title="Shopify Layoff">
               <p>
                 On May 4th, my position with Shopify was terminated. Legally
                 speaking, I have nothing further to say on the issue.
+              </p>
+              <p>
+                Even if I never quite got the hang of a larger company, I
+                remember the people. I miss my colleagues.
               </p>
             </Entry>
 
@@ -387,13 +433,23 @@ export class Timeline3 extends React.Component {
               imgAlt="Photo of a completed hexoganal regex crossword"
             >
               <p>
-                I had surgery again, and things went well. It was a more
-                invasive procedure, but things generally went well. TODO: link
-                to blog post
+                <a href="http://localhost:8000/blog/year-of-recovery/">
+                  I had surgery again
+                </a>
+                , and things went well. It was a more invasive procedure, but
+                things generally went well. TODO: link to blog post
               </p>
               <p>
-                It was about three weeks before I went back to work TODO:
-                explain timing and the crossword
+                It was off work for about three weeks. I couldn't move too much
+                but I couldn't stay too still, either. What really helped pass
+                the time was this regular expression hexagonal crossword. I saw
+                someone post this image to social media, so I printed it out and
+                filled it in over about a week. I don't remember who posted
+                this, but thank you.{' '}
+                <a href="https://rampion.github.io/RegHex/">
+                  The original source is here
+                </a>
+                .
               </p>
               <p>
                 I will say that my manager, my team, and everyone at Float was
@@ -415,6 +471,27 @@ export class Timeline3 extends React.Component {
 
             <Entry title="Cultural Leadership at Float">
               <p>TODO:</p>
+            </Entry>
+
+            <Entry
+              title="Total Eclipse"
+              img={Eclipse}
+              imgAlt="Photo of two people wearing eclipse glasses"
+            >
+              <p>
+                I had never seen a total solar eclipse before. My wife and I saw
+                the "Great American Eclipse" in 2017, from New York where it
+                never reached totality. We were really fortunate to have another
+                one pass over our home in 2024!
+              </p>
+              <p>
+                I found the experience profoundly moving. The Earth, the Moon,
+                and the Sun had never felt so <em>real</em> before.
+              </p>
+            </Entry>
+
+            <Entry title="Something is Always Better Than Nothing">
+              <p>TODO: and more is more</p>
             </Entry>
 
             <Entry title="Running Again" img={ShelterRace}>
@@ -459,6 +536,3 @@ export class Timeline3 extends React.Component {
 }
 
 // TODO: Espresso
-// TODO: Eclipse
-// TODO: ATLA
-// TODO: worsening covid pandemic

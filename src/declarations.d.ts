@@ -17,6 +17,7 @@ declare module 'react-twitter-embed' {
 }
 
 declare module '*.jpg'
+declare module '*.jpeg'
 declare module '*.png'
 
 declare module '@merc/react-timeline' {
