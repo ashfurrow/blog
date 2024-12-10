@@ -69,12 +69,18 @@ const customTheme = createTheme(themes.default, {
   }
 })
 
-const Entry: React.FC<{ img?: string; imgAlt?: string; title: string }> = ({
-  img,
-  imgAlt,
-  title,
-  children
-}) => {
+type EntryProps = { title: string } & (
+  | {
+      img: string
+      imgAlt: string
+    }
+  | {
+      img?: never
+      imgAlt?: never
+    }
+)
+
+const Entry: React.FC<EntryProps> = ({ img, imgAlt, title, children }) => {
   const anchorName = camelCase(title).toLowerCase()
   return (
     <Event
@@ -89,8 +95,9 @@ const Entry: React.FC<{ img?: string; imgAlt?: string; title: string }> = ({
             <a
               href={`#${anchorName}`}
               onClick={(event) => {
-                event.preventDefault()
-                ;(event.target as any).parentNode.scrollIntoView(true)
+                // TODO: This is to account for the menu bar at the top of the site, but maybe there's a CSS way to handle that instead?
+                // event.preventDefault() // TODO: Need to still set the URL to the anhorName
+                // ;(event.target as any).parentNode.scrollIntoView(true)
               }}
             >
               #
@@ -233,12 +240,24 @@ export class Timeline3 extends React.Component {
               <p>TODO:</p>
             </Entry>
 
+            <Entry title="Family Death">
+              <p>TODO: grandfather</p>
+            </Entry>
+
             <Entry
               title="First Race"
               img={FirstRace}
               imgAlt="Photo of me standing at a finish line."
             >
               <p>TODO:</p>
+            </Entry>
+
+            <Entry title="Mastodon Co-Admin">
+              <p>
+                TODO: Not sure if the timing is quite right, but I got a
+                co-admin on the Mastodon instance. Maybe mention Brian by
+                name/link.
+              </p>
             </Entry>
 
             <Entry title="Building an SDK from Scratch">
@@ -249,7 +268,7 @@ export class Timeline3 extends React.Component {
               <p>TODO:</p>
             </Entry>
 
-            <Entry title="Shop Minis">
+            <Entry title="Shop Minis Internal Launch">
               <p>TODO:</p>
             </Entry>
 
@@ -267,7 +286,7 @@ export class Timeline3 extends React.Component {
               <p>TODO:</p>
             </Entry>
 
-            <Entry title="Taking Shop Minis Public">
+            <Entry title="Taking Shop Minis External">
               <p>
                 Around this time, two teams were assigned to work on the Shop
                 Minis SDK. I was going to continue leading the project in a
@@ -292,7 +311,18 @@ export class Timeline3 extends React.Component {
             </Entry>
 
             <Entry title="Depression">
-              <p>TODO:</p>
+              <p>TODO: some anxiety too</p>
+            </Entry>
+
+            <Entry title="Twitter Acquisition">
+              <p>
+                TODO: Elon Musk twitter stuff starts, causing a massive influx
+                of users to mastodon.technology. I have to deal with technical
+                scaling issues and community issues. Every morning i woke up and
+                immediately cleared the moderation queues. My co-admin and mods
+                did their best to help. We needed more help but there was never
+                time to slow down and find someone we trusted.
+              </p>
             </Entry>
 
             <Entry title="Work in Big Tech">
@@ -326,6 +356,11 @@ export class Timeline3 extends React.Component {
               imgAlt="Mastodon Elephant Logo TODO: find a more appropriate image here."
             >
               <p>TODO:</p>
+              <p>
+                I took seriously the role of community-builder. I believe that
+                is why the mastodon.technology instance became a thriving
+                community. But it's also why I had to shut it down.
+              </p>
             </Entry>
 
             <Entry title="Family Death">
@@ -358,7 +393,10 @@ export class Timeline3 extends React.Component {
                 the rug, that don't <em>need</em> attention immediately, but{' '}
                 <em>do need</em> attention eventually? Well, eventually happened
                 and I had to deal with my shit.
-                <p>Then, another family memberpassed away, suddenly.</p>
+                <p>
+                  In the midst of this, I had another family member pass away,
+                  suddenly.
+                </p>
               </p>
               <p>I was as stressed as I'd ever been in my life.</p>
             </Entry>
@@ -519,6 +557,10 @@ export class Timeline3 extends React.Component {
                 Running has taught me to do what I can, even if it's not "the
                 best."
               </p>
+            </Entry>
+
+            <Entry title="CSA Charity Boardgames Night">
+              <p>TODO: </p>
             </Entry>
 
             <Entry
