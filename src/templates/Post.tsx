@@ -31,6 +31,7 @@ import {
 } from 'components/Embeds'
 import { theme } from 'config/theme'
 import PageContext from 'models/PageContext'
+import { PersonalTimeline } from 'components/PersonalTimeline'
 
 const ShortCodes = {
   Narrow,
@@ -42,7 +43,8 @@ const ShortCodes = {
   Tweet,
   SoundCloud,
   Spotify,
-  Toot
+  Toot,
+  PersonalTimeline
 }
 
 const PostContent = styled.div`
