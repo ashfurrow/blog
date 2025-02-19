@@ -19,9 +19,10 @@ import wedding from './wedding.jpeg'
 import computers from './computer.jpeg'
 import guitar from './guitar.jpeg'
 import nyc from './nyc.jpeg'
-import unb from './unb.jpg'
+import programming from './programming.jpg'
 import float from './float.jpeg'
 import shopify from './shopify.jpeg'
+import speaking from './speaking.jpeg'
 
 <PersonalTimeline
   entries={[
@@ -34,16 +35,19 @@ import shopify from './shopify.jpeg'
     {
       title: 'Computers',
       description:
-        "If you've never played <em>Dark Ages</em> on a 486 then have you really lived?",
+        "If you've never played <em>Where in The World is Carmen Sandiego</em> on a 486 then have you really lived?",
       img: computers,
       imgAlt:
         'Photo of my sister and I looking at an old CRT computer monitor together.'
     },
     {
       title: 'University of New Brunswick',
-      description: 'I attended UNB from 2006–2011 for Computer Science.',
-      img: unb,
-      imgAlt: 'Stock photo of UNB campus'
+      description: [
+        "I attended UNB from 2006–2011 for Computer Science. It's a five-year co-op degree, something I always feel obliged to mention.",
+        'While at UNB, I participated in competitive computer programming competitions, eventually leading my team to North East North American regionals, where we tied for last place.'
+      ],
+      img: programming,
+      imgAlt: 'Photo of a computer lab where I am programming, with bad posture'
     },
     {
       title: 'First iOS App',
@@ -72,13 +76,13 @@ import shopify from './shopify.jpeg'
       title: 'Moved to Toronto',
       description: [
         "My wife and I moved to Toronto in 2011. I started working, mostly at startups and mostly at companies that weren't later exposed to be real estate scams.",
-        'My biggest contribution came as the 11th employee at 500px.'
+        'My biggest contribution were made as the 11th employee at 500px.'
       ],
       img: toronto,
       imgAlt: 'Photo of my 500px business cards'
     },
     {
-      title: 'First camera',
+      title: 'First Camera',
       description:
         'I bought my first camera, which made sense working at a photography software company. I got really into it, eventually developing my own film.',
       img: camera,
@@ -112,6 +116,15 @@ import shopify from './shopify.jpeg'
         "For five years, I organized a Saturday morning meetup at Artsy's office for software developers to work together on side projects. <a href='https://peerlab.community/'>I made it a whole thing</a>",
       img: peerlab,
       imgAlt: 'Photo of a long table with lots of laptops'
+    },
+    {
+      title: 'Speaking',
+      description: [
+        'Starting around 2013 and continuing until 2020, I frequently gave <a href="/speaking">conference presentations</a> about software development.',
+        "I've given talks in Australia, Belarus, Canada, the Czech Republic, Denmark, France, Germany, Italy, Japan, The Netherlands, Poland, Portugal, Russia, Spain, Switzerland, Turkey, and The United States."
+      ],
+      img: speaking,
+      imgAlt: 'Photo of me on a stage'
     },
     {
       title: 'Learned Guitar',
