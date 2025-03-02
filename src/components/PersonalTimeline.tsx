@@ -70,12 +70,11 @@ const Entry: React.FC<{ img?: string; imgAlt?: string; title: string }> = ({
     >
       {title && (
         <>
-          <h3 id={anchorName}>
+          <h3 id={anchorName} style={{ scrollMarginTop: '3em' }}>
             {title}
             <a
               href={`#${anchorName}`}
               onClick={(event) => {
-                event.preventDefault()
                 ;(event.target as any).parentNode.scrollIntoView(true)
               }}
             >
