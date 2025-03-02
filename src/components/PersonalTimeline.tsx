@@ -70,12 +70,11 @@ const Entry: React.FC<{ img?: string; imgAlt?: string; title: string }> = ({
     >
       {title && (
         <>
-          <h3 id={anchorName}>
+          <h3 id={anchorName} style={{ scrollMarginTop: '3em' }}>
             {title}
             <a
               href={`#${anchorName}`}
               onClick={(event) => {
-                event.preventDefault()
                 ;(event.target as any).parentNode.scrollIntoView(true)
               }}
             >
@@ -89,13 +88,25 @@ const Entry: React.FC<{ img?: string; imgAlt?: string; title: string }> = ({
   )
 }
 
-interface Props {
-  entries: Array<{
-    title: string
-    description: string
-    img: string
-    imgAlt: string
-  }>
+type MaybeImage =
+  | {
+      img: string
+      imgAlt: string
+    }
+  | { img?: never; imgAlt?: never }
+
+type Entry = {
+  title: string
+  description: string | string[]
+  date?: never // to not overlap with Year type
+} & MaybeImage
+
+type Year = {
+  date: string
+}
+
+type Props = {
+  entries: Array<Entry | Year>
 }
 
 export const PersonalTimeline = (props: Props) => {
@@ -114,15 +125,24 @@ export const PersonalTimeline = (props: Props) => {
     <Wide>
       <ReactTimeline theme={customTheme}>
         <Events>
-          {props.entries.map(({ title, img, imgAlt, description }) => (
-            <Entry title={title} img={img} imgAlt={imgAlt} key={title}>
-              {(Array.isArray(description) ? description : [description]).map(
-                (d, index) => (
-                  <p key={index} dangerouslySetInnerHTML={{ __html: d }} />
-                )
-              )}
-            </Entry>
-          ))}
+          {props.entries.map((entry) => {
+            if (typeof entry.date === 'undefined') {
+              const { title, img, imgAlt, description } = entry
+              return (
+                <Entry title={title} img={img} imgAlt={imgAlt} key={title}>
+                  {(Array.isArray(description)
+                    ? description
+                    : [description]
+                  ).map((d, index) => (
+                    <p key={index} dangerouslySetInnerHTML={{ __html: d }} />
+                  ))}
+                </Entry>
+              )
+            } else {
+              const { date } = entry
+              return <Event className="year" date={`🗓️ ${date}`} key={date} />
+            }
+          })}
         </Events>
       </ReactTimeline>
     </Wide>
