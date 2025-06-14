@@ -233,7 +233,7 @@ export const Layout = (props: React.PropsWithChildren<{}>) => {
 
   const toggleMenuOpen = useCallback(() => {
     setNavBarOpen(!navBarOpen)
-  }, [])
+  }, [navBarOpen])
 
   const { children } = props
 
