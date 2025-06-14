@@ -22,4 +22,13 @@ const Wrapper = styled.div<{ transparent: boolean }>`
   display: block;
   color: ${({ transparent }) =>
     transparent ? theme.colors.white : theme.colors.grey.default};
+  width: 1.5rem;
+  height: 1.5rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  overflow: hidden;
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 `
