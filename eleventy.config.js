@@ -4,6 +4,7 @@ import Image from "@11ty/eleventy-img";
 const  { eleventyImageTransformPlugin } = Image;
 
 import pluginFilters from "./src/_config/filters.js";
+import pluginShortcodes from "./src/_config/shortcodes.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -11,6 +12,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 	eleventyConfig.addPlugin(pluginFilters);
+	eleventyConfig.addPlugin(pluginShortcodes);
 
   eleventyConfig.addBundle("css", {
 		toFileDirectory: "dist",

@@ -8,6 +8,7 @@
 - [x] Rendering blog post images
 - [x] Decide: plain CSS? preprocessor? tailwind?
   - Plain CSS is actually enough, with grids and flexbox
+- [x] Import blog posts
 - [ ] Layout
   - [ ] Page titles and banners
   - [ ] FontAwesome
@@ -23,9 +24,8 @@
 - [ ] Favicon and Icons
 - [ ] Prettier
 - [ ] HTML head SEO stuff
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
 - [ ] Timeline posts
-- [ ] Import blog posts
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 

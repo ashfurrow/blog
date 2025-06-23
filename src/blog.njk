@@ -2,5 +2,21 @@
 title: Blog  
 ---
 
-{# TODO: Render titles of every post #}
-{# TODO: Group the posts by month #}
+{% set groupedPostsJson %}{% groupedPosts %}{% endset %}
+{% set groupedPosts = groupedPostsJson | fromJson  %}
+
+{# Debug - see the structure #}
+<pre>{{ groupedPosts | dump }}</pre>
+
+{%- for group in groupedPosts %}
+  <h2>year {{ group.year }}</h2>
+  <ol reversed>
+    {%- for post in group.posts %}
+      <li class="postlist-item">
+        <a href="{{ post.url }}" class="postlist-link">{{ post.title }}</a>
+        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date }}</time>
+      </li>
+    {%- endfor %}
+    </ol>
+  {%- endfor %}
+  

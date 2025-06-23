@@ -1,6 +1,11 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
+	eleventyConfig.addFilter("fromJson", function(str) {
+		console.log("[ASH] fromJson called with", str);
+		return JSON.parse(str);
+	});
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
