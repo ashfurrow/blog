@@ -1,5 +1,11 @@
-import { DateTime } from "luxon"
-
+/**
+ * Groups items in a collection by a key returned from the iteratee function.
+ * @template T
+ * @template K
+ * @param {T[]} collection
+ * @param {(item: T) => K} iteratee
+ * @returns {Object<K, T[]>}
+ */
 function groupBy(collection, iteratee) {
   const result = {}
   for (const item of collection) {
@@ -12,10 +18,16 @@ function groupBy(collection, iteratee) {
   return result
 }
 
+/**
+ * Adds custom shortcodes and filters to the Eleventy config.
+ * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig - The Eleventy configuration object.
+ */
 export default function (eleventyConfig) {
-  // Groups posts by month, with most recent months first and most recent posts within each month first.
-  // We need to use a shortcode here because we need to access the `collections` object, but shortcodes can only return strings. So we need to use a fromJson filter in the template. (And the parseDate filter.)
-  eleventyConfig.addShortcode("groupedPosts", function (one, two, three) {
+  /**
+   * Groups posts by month and year, returning a JSON string.
+   * @returns {string}
+   */
+  eleventyConfig.addShortcode("groupedPosts", function () {
     const collection = this.ctx.collections.posts
     const posts = collection.map((p) => ({
       title: p.data.title,
@@ -64,42 +76,4 @@ export default function (eleventyConfig) {
 
     return JSON.stringify(results)
   })
-
-  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-    // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-    return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy")
-  })
-
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd")
-  })
-
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter("head", (array, n) => {
-    if (!Array.isArray(array) || array.length === 0) {
-      return []
-    }
-    if (n < 0) {
-      return array.slice(n)
-    }
-
-    return array.slice(0, n)
-  })
-
-  // Return the smallest number argument
-  eleventyConfig.addFilter("min", (...numbers) => {
-    return Math.min.apply(null, numbers)
-  })
-
-  // Return the keys used in an object
-  eleventyConfig.addFilter("getKeys", (target) => {
-    return Object.keys(target)
-  })
-
-  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    return (tags || []).filter((tag) => ["all", "posts"].indexOf(tag) === -1)
-  })
-
-  eleventyConfig.addFilter("sortAlphabetically", (strings) => (strings || []).sort((b, a) => b.localeCompare(a)))
 }

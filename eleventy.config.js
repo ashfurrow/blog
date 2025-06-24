@@ -6,7 +6,11 @@ const { eleventyImageTransformPlugin } = Image
 import pluginFilters from "./src/_config/filters.js"
 import pluginShortcodes from "./src/_config/shortcodes.js"
 
-/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+/**
+ * Configure Eleventy with plugins, bundles, and shortcodes.
+ * @param {import("@11ty/eleventy").UserConfig} eleventyConfig - The Eleventy configuration object.
+ * @returns {Promise<void>}
+ */
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(IdAttributePlugin)
   eleventyConfig.addPlugin(HtmlBasePlugin)
