@@ -5,16 +5,15 @@ title: Blog
 {% set groupedPostsJson %}{% groupedPosts %}{% endset %}
 {% set groupedPosts = groupedPostsJson | fromJson  %}
 
-{# Debug - see the structure #}
-<pre>{{ groupedPosts | dump }}</pre>
+{# <pre>{{ groupedPosts | dump }}</pre> #}
 
 {%- for group in groupedPosts %}
-  <h2>year {{ group.year }}</h2>
   <ol reversed>
+    <h3>{{ group.name }}</h3>
     {%- for post in group.posts %}
       <li class="postlist-item">
         <a href="{{ post.url }}" class="postlist-link">{{ post.title }}</a>
-        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date }}</time>
+        <time class="postlist-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate("DDD") }}</time>
       </li>
     {%- endfor %}
     </ol>

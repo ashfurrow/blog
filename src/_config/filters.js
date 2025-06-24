@@ -1,8 +1,11 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
+	eleventyConfig.addFilter("parseDate", function(dateString) {
+    return new Date(dateString);
+  });
+  
 	eleventyConfig.addFilter("fromJson", function(str) {
-		console.log("[ASH] fromJson called with", str);
 		return JSON.parse(str);
 	});
 

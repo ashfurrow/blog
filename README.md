@@ -13,7 +13,8 @@
   - [ ] Page titles and banners
   - [ ] FontAwesome
   - [ ] 
-- [ ] Blog archive
+- [x] Blog archive grouping
+- [ ] Prettier
 - [ ] Speaking
 - [ ] Portfolio
 - [ ] Search
@@ -22,7 +23,6 @@
 - [ ] Image optimization (widths)
 - [ ] Code syntax highlighting
 - [ ] Favicon and Icons
-- [ ] Prettier
 - [ ] HTML head SEO stuff
 - [ ] Timeline posts
 - [ ] 
