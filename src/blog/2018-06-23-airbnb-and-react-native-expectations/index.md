@@ -5,11 +5,9 @@ banner: background.jpeg
 bannerAttribution: https://twitter.com/CloudyConway/status/1010127316805177344
 ---
 
-
 By now, most iOS developers have probably heard the news that [Airbnb is moving away from React Native][airbnb]. It's kind of weird to see the reaction online – people are acting jubilant, almost _celebrating_ the announcement. I see some iOS developers on twitter practically _rolling their eyes_ at Airbnb for even _trying_ React Native. But I'm not here to talk about insularity of the iOS developer community, I'm here to talk about Airbnb's (quite excellent) blog posts.
 
 These blog posts are excellent because Airbnb first lays out its expectations for React Native, and then explains how well the technology met (or failed to meet) those expectations. It's a thorough, honest discussion about how large teams evaluate technologies, as well as how those team live with the consequences of their decisions.
-
 
 So I really like these posts, but I wouldn't say that they're _complete_. More on that later. First, I want to discuss Airbnb's actual expectations. I'm going to summarize them here, but you really, really should [read the posts yourself][airbnb].
 
@@ -77,5 +75,3 @@ The reasons that Airbnb chose to move away from React Native are cultural as muc
 [eigen]: https://github.com/artsy/eigen
 [feels]: https://ashfurrow.com/blog/swift-vs-react-native-feels/
 [thread]: https://twitter.com/intelligibabble/status/1010948686501691393
-
-  

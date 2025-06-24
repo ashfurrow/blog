@@ -3,7 +3,6 @@ title: Dissecting the Usability of Internet Surveys
 date: 2011-04-09
 ---
 
-
 Ashley sent me a [survey](http://cup.ca/survey) for the Canadian University Press&nbsp;because she knew that I'd appreciate tearing it apart on my blog. I'm looking forward to our life together. First off, we have this gem:
 
 ![](4A26165F918F42A5A9A352D35FB4CD86.png)
@@ -27,6 +26,3 @@ It's a terrible way to get users to order things! It's confusing and doesn't beh
 I know it would take some intense javascript action to pull this off in a browser (jQuery?), but I think the results would be worth it.
 
 The survey bored me to tears and about the only redeeming quality I can discern is the fact that clicking anywhere in the div of a radio button would select it for you. Oh, and the iPad giveaway.
-
-
-  

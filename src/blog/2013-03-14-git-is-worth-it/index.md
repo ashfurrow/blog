@@ -3,7 +3,6 @@ title: Git is Worth It
 date: 2013-03-14
 ---
 
-
 I've been thinking a lot about git lately. Git is a pretty fabulous distributed source control system. It's awesome, but it's also a little complicated. Hopefully, I can convince you that using git is worth it.
 
 Learning git is an investment, don't get me wrong. If you're currently using some solution like SVN or Dropbox or (god forbid) nothing to do source control, you're used to your own workflow. Learning git is going to be a major disruption to that workflow. This disruption will temporarily reduce your productivity.
@@ -55,6 +54,3 @@ Finally, I'd be rue not to mention [GitHub](http://github.com). All the reasons 
 The hassle in learning a new skill often seems like it's not worth the dip in productivity. But how many times have you thought that way about some tool, then learnt it, and now can't imagine life without it? Once you develop an intuitive understanding of git, that's _exactly_ how you'll feel.
 
 I've been using git my entire career. I can't imagine not using it.
-
-
-  

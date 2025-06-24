@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CrookedCosmos/status/1286409082270883847
 
 When I studied algorithms and data structures in school, one of the first things I learned was that different types of problems were best suited to be solved by different types of approaches. It might sound obvious, but a huge part of being an effective programmer is developing an intuition for which types of problems are solved best by which types of solutions.
 
-Take sorting a list of numbers, for example. A "brute force" approach, like [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort), might work but is really inefficient. Instead, a "[divide and conquer](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)" approach like [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort) gives way better performance. 
+Take sorting a list of numbers, for example. A "brute force" approach, like [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort), might work but is really inefficient. Instead, a "[divide and conquer](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)" approach like [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort) gives way better performance.
 
 This is actually an illustrative example. Lots of software problems are actually quite similar to sorting numbers, and the result is that programmers reach for a "divide and conquer" solution a lot. Think about how teams often take a complex task and break it into smaller pieces, so that they can be worked on efficiently; this is divide and conquer. I think that how common this approach is might say something about programmers, but that's beside the point. We're not here to talk about divide and conquer as a problem solving technique, we're here to talk about _communication_ as a problem solving technique.
 
@@ -33,6 +33,6 @@ Here is my approach to communication-as-problem-solving:
 
 Communicating as a way to solve problems works well for solving "disagreement" problems. It doesn't work for every problem. Just like "divide and conquer" approaches are sometimes a bad solution, communication as a problem solving technique won't always work (or work the most efficiently).
 
-This technique also requires that you start from a place of shared understanding, which is sometimes the hardest part of using it. If you don't share common ground, or you can't find it, it will be difficult to communicate through your disagreement to find a solution. 
+This technique also requires that you start from a place of shared understanding, which is sometimes the hardest part of using it. If you don't share common ground, or you can't find it, it will be difficult to communicate through your disagreement to find a solution.
 
 I've been thinking more and more about communication as a way to solve problems. Maybe I'm getting older, or that it's the time I've spent as a tech lead, or maybe it's because I'm writing less code and more emails. But I really think there is something to thinking of communication as a way to solve a problem. It doesn't always work, but it often works for me.

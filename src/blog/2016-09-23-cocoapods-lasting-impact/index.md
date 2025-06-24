@@ -5,9 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/779002663765700608
 ---
 
-
 I've [written before](https://ashfurrow.com/blog/building-online-communities/) about how CocoaPods isn't a dependency manager, but rather that CocoaPods _makes_ a dependency manager.
-
 
 > CocoaPods is a dependency manager only in the sense that Apple is a cell phone manufacturer – it’s just one of their many projects.
 
@@ -22,4 +20,3 @@ CocoaPods was controversial – it still is, depending on who you ask – but th
 > CocoaPods’ message is really that while the [Cocoa Core Competencies](https://developer.apple.com/library/ios/documentation/General/Conceptual/DevPedia-CocoaCore/) are a necessary foundation, they aren’t sufficient to be a good iOS developer.
 
 I wrote this last year and I still think it's true. But it's not complete. I'm more and more convinced that being a good developer has less to do with what you know and more to do with your attitude. Good developers look both ways before crossing one-way streets, good developers don't easily give up, and good developers look for ways to improve their workflows.
-  

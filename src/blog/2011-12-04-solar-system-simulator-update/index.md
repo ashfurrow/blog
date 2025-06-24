@@ -3,7 +3,6 @@ title: Solar System Simulator Update
 date: 2011-12-04
 ---
 
-
 I've just [submitted an update](http://twitter.com/#!/ashfurrow/status/143108457879453697) to my iOS app, the [Solar System Simulator](http://itunes.apple.com/us/app/solar-system-simulation/id407799974?mt=8&ls=1). This update addresses a few minor issues (very minor - the last update was from March) as well as adding additional languages. Specifically, the app now supports English, German, Russian, Portuguese, Spanish, and Japanese.
 
 Finding translators for localizing the app turned out to be the easy part. I asked around on twitter and (with some retweet love - thank you all so much!), I got the following fabulous translators:
@@ -31,6 +30,3 @@ I removed the retina display pixel maps for Mercury and a few other, smaller, pl
 I'm hopeful that everything is going to work out. I've been seeing an increase in sales over the past 6 months, particularly among schools, and I wanted to update the app to reach a wider audience. It would really suck if that update limited the app to only being downloaded via iTunes or wifi - severely restricting who can download it and when.
 
 I'm hoping to integrate more educational components into the app and I've got some neat ideas I'd like to experiment with. In the mean time, however, I'll be finishing Storygram, the app my coworker and I wrote two weeks ago at [Pixel Hack Day](http://pixelhackday.com/).
-
-
-  

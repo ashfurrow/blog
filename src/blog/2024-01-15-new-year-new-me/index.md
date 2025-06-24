@@ -3,7 +3,7 @@ title: New Year, New Me
 date: 2024-01-15
 ---
 
-I've been reluctant to write this post. I have a history of [writing blog posts](/blog/therapys-end/) [where I announce](/blog/mood-improvements/) [my mental health](/blog/all-i-can-say-is-im-excited/) [has improved](/blog/metrics-for-the-unmeasurable-mood/). But it never quite sticks. 
+I've been reluctant to write this post. I have a history of [writing blog posts](/blog/therapys-end/) [where I announce](/blog/mood-improvements/) [my mental health](/blog/all-i-can-say-is-im-excited/) [has improved](/blog/metrics-for-the-unmeasurable-mood/). But it never quite sticks.
 
 The last 16 months have been the most challenging time of my life. Without going into detail, I faced a series of personal crises which compounded. My own personal Kepler Syndrome. It felt like every time I thought things were finished breaking, something new would go wrong.
 
@@ -19,7 +19,7 @@ I don't have solutions to all the problems, but I no longer need everything to _
 
 ---
 
-There is a growing pushback among my generation to New Year's Resolutions. The mantra of "New Year, new me" is being rightfully dismantled as unrealistic and self-defeating. 
+There is a growing pushback among my generation to New Year's Resolutions. The mantra of "New Year, new me" is being rightfully dismantled as unrealistic and self-defeating.
 
 And that's great, I fully support it.
 

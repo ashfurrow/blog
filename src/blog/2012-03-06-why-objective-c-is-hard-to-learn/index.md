@@ -3,7 +3,6 @@ title: Why Objective-C is Hard to Learn
 date: 2012-03-06
 ---
 
-
 As an active member of "The Internet" and vocal Objective-C coder, I get a lot of questions surrounding the language. They're often framed around thinking about learning the language or trying to write an app, but they also usually involve a phrase like "Objective-C looks really hard" or "what are all those minus signs about?" Both of these are pretty good questions, and I'd like to address why someone might be more hesitant to jump into iOS or OS X development compared to, say, Ruby or Java.
 
 ## Syntax
@@ -82,6 +81,3 @@ Objective-C, and the corresponding frameworks, runtime, and compiler, exist in a
 ## Future
 
 The evidence we've seen over the past 4 years or so indicates that Apple is attempting to reduce the size and complexity of the Objective-C language. They're attempting to make it easier to approach by doing away with manual memory management and classical C header files; they're also introducing modern programming language concepts like Automatic Reference Counting and dot-syntax for getter/setter access. But for now, Objective-C remains difficult to approach; only the appeal of writing hit iOS apps seems to be driving its popularity.
-
-
-  

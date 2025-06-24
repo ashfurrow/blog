@@ -3,7 +3,6 @@ title: Developers Should Learn Photography
 date: 2013-05-16
 ---
 
-
 Photography is the love-child of art and technology: you need a tasteful eye and skilled hands to get a great shot. Dipping your toes into photography, even without becoming a great photographer, will make you a _way_ better developer. Let's talk about why – I'll share some of my personal experiences with photography and how photography helped me improve as a software developer, then I'll help you out with getting started.
 
 Photography and development have a lot in common. So much so that I find it odd that more developers don't dabble in digital darkrooms. How are photography and programming alike? Good question.
@@ -41,6 +40,3 @@ Using Instagram is a great way to get started because the app places significant
 You don't need to spend thousands of dollars on gear to get good at taking photos. You only need a basic camera, like the one in your smartphone, and some patience.
 
 The biggest reason for developers to know to take and appreciate photographs is to grow, to become more well-rounded people. Our industry relies on growth for the rapid pace of progress it's seen in its short existence. If you stop growing, you'll be left behind.
-
-
-  

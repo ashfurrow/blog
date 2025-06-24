@@ -3,7 +3,6 @@ title: Classic Tradeoff of Space vs Speed vs Stupidity
 date: 2012-02-28
 ---
 
-
 I'm working on a Mac App that uses a series of png files as frames in an animation. Why not an animated gif? Because they have no alpha channel. I draw the appropriate frame in drawRect: and wanted to create a "drop shadow" effect behind each image that is the image, inverted and offset by 1 pixel downwards. My initial attempt looked like the following.
 
 [gist id=1935770]
@@ -19,6 +18,3 @@ Consider the following, where `shadowImage` is the same `CIImage` instances as o
 This saved each frame to my home directory. I ran the application and triggered the animation; after it was done one cycle, I copy and pasted the frames to replace the old ones. Now the animation is down to something like 1% of my CPU.
 
 My initial attempt was naive, but informative. I think this is the best approach in terms of how to approach this; it may be possible to find an more elegant solution using CoreAnimation with keyframe animations of some kind, but this solution is fast, not that CPU-intensive, and good enough.
-
-
-  

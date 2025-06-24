@@ -3,7 +3,6 @@ title: Up Wine Bar Impressions
 date: 2011-03-03
 ---
 
-
 Ashley and I found a deal on [Snaggit.ca](http://snaggit.ca/) last week for Up Wine Bar's ( [web](http://upwinebar.ca/) | [twitter](http://twitter.com/#!/upwinebar)) first wine tasting. We had a great time, and I thought I'd give my impressions of the evening. First, the space is great - it's a relaxing. The decor is modern with sort of French accents and brick. It only holds about 30 people, and all the surfaces are hard, so echoes were a problem. One group of guests were very noisy, and wouldn't be quiet so we could all hear what our host, Doug, was trying to tell us about the wines. Some drapes or other soft surfaces would help to dampen the noise.
 
 The prices were very attractive; since the portion sizes come as small as two ounces, it'd be easy for someone like myself with not a lot of money to drop in with some friends and try some nice wines.
@@ -27,6 +26,3 @@ Doug ended the evening with some port, which I didn't care for, but everyone els
 As a student, the wine I buy usually costs $12 or $13. Many of the wines we had last night were in the $50 range. I asked if there was anything worth buying in the $20-$30 range that would make the extra money worth it; in other words, is the difference between a $12 bottle and a $25 bottle worth it, or should I just save up for something extra nice?
 
 Doug answered that there were a lot of affordable wines. He said to avoid anything from Australia for less than $25 - an Aussie in the crowd took offense - and look into a&nbsp;Connoisseur Pinot Noir - I didn't copy down the country, unfortunately, so if anyone's hear of this, please let me know - any New Zealand Sauvignon Blanc, and any&nbsp;Argentinian&nbsp;Malbec. He also mentioned that Chile has everything going for it now in terms of wine making, so check out wines from that region.
-
-
-  

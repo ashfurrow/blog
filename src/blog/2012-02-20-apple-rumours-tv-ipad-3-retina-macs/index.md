@@ -3,7 +3,6 @@ title: Apple Rumours (TV, iPad 3, Retina Macs)
 date: 2012-02-20
 ---
 
-
 Last Summer I predicted that there would be no iPad 3 that Fall and that there would be no iPhone 5 - that any new iPhone would be only an incremental upgrade to the iPhone 4. I was right on both accounts and I attribute the rumours to wishful thinking by tech bloggers. Those same tech bloggers are back and this time, they're talking TV.
 
 Apple rumour sites seem to get so lost in the cycle of linking to one another that a cyclical, masturbatory frenzy really can't help itself from forming. They got so lost in [mystery case manufactures](http://www.geek.com/articles/mobile/iphone-5-case-leaks-show-3g-like-body-20110727/) and feeding off one another that it was no longer "will there be an iPhone 5?" but rather "what will the iPhone 5 be like?" Teardrop shape? Oval home button? 4" display? LTE?
@@ -25,6 +24,3 @@ What about Retina Macs? That's more of a grey area. I can see retina displays, b
 So we've got the iPad and MacBook Air lineup covered. However, this would introduce a significant schism in the product lineup, and Apple isn't into schisms. A 17" Retina display for a MacBook Pro would be stupidly expensive so I doubt we'll be seeing new Retina displays in anything but MacBook Air's and iPads.
 
 There's even some (arguable) [evidence](http://dcurt.is/retina) for this rumour: @2x Retina assets in the new Messages app beta and the OS X 10.7.3 update. I'm skeptical about the implications of this "solid" evidence, but I can see Retain MacBook Air's.
-
-
-  

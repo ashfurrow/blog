@@ -3,11 +3,9 @@ title: Crestfallen
 date: 2014-09-10
 ---
 
-
 So yesterday happened. [This](http://www.apple.com/watch/) happened. Ugh. Whatever. Apple’s made bad decisions before and they’ve survived.
 
 But this is not a post discussing the Watch. Well, it is, sort of. I want to talk about the event itself.
-
 
 Apple hyped the shit out of this. Their invitations were sent out indicating that this was going to be held at the Flint Center, where they announced the original Macintosh. It’s a bigger venue and it invokes bigger kinds of product announcements. OK, fine.
 
@@ -44,6 +42,3 @@ Those videos I mentioned earlier? The ones that make us feel good about being iO
 So yesterday happened. Apple showed its cards, the whole of Twitter exploded in one giant nerdgasm, and I realized that they’re just a company like any other.
 
 And it broke my heart a little.
-
-
-  

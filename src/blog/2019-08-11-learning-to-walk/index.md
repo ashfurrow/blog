@@ -5,19 +5,17 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1160640972507832320
 ---
 
-
 It's been a while since I've written an update about my wrist pain, so that's where this post starts. I've actually held off on writing this post for a while, preferring to wait until the story is "over" before sharing it. But... I'm trying to take [my own advice](/blog/contemporaneous-blogging/) and write about things _as_ I learn them, instead of just in retrospect.
 
 This post starts off with my wrist pain saga, but by the end, it goes in a kind of far-out direction. So, consider yourself hooked, I guess.
-
 
 ---
 
 To recap the past few years of dealing with this painful, scary thing:
 
-- I was [diagnosed with Carpal Tunnel Syndrome](https://twitter.com/ashfurrow/status/778229355956822016) in late 2016 and started a regimen of physical therapy. 
+- I was [diagnosed with Carpal Tunnel Syndrome](https://twitter.com/ashfurrow/status/778229355956822016) in late 2016 and started a regimen of physical therapy.
 - In late 2017, I hadn't seen results, and my employer switched health insurance. So I stopped going to that clinic and tried to find a new one.
-- Later that year, I was [re-diagnosed with ulnar nerve neuropathy](https://ashfurrow.com/blog/it-was-only-a-matter-of-time/) by a new doctor. "At last", I thought, "an end is within sight." 
+- Later that year, I was [re-diagnosed with ulnar nerve neuropathy](https://ashfurrow.com/blog/it-was-only-a-matter-of-time/) by a new doctor. "At last", I thought, "an end is within sight."
 - Six months of physical therapy and EMG's and X-Rays later, the doctor literally gave up on helping me. "The pain isn't severe, right? Just try to ignore it."
 - I just kind of tried to ignore it.
 
@@ -27,7 +25,7 @@ A few key things that made this PT different, right from the start. The first ap
 
 The other big difference has been an emphasis on what he calls "postural education." Sure, my other PT's had also focused on the importance of posture, but my new PT took it _way_ more seriously. He has played the role of a personal trainer, to help me figure out my body's deficiencies, to develop exercises to strengthen the muscles and train my brain to use them. He's never judged me for what I can't do – it's just a matter of helping me learn the bad habits my body has gotten into.
 
-Okay, so... other PT's have had me do exercises with resistance bands, right? And I'm still doing those, too. But more. 
+Okay, so... other PT's have had me do exercises with resistance bands, right? And I'm still doing those, too. But more.
 
 Early on, we identified a problem with how I walk. So we worked on foot control (because feet are pretty important for posture, turns out). It was amazing: as soon as I realized what I was doing wrong, I noticed it _all the time_. My 2.5km walk to work became a way for me to exercise control of my feet and proper form. It was a challenge, and I looked forward to it every day.
 
@@ -76,5 +74,3 @@ So what now? Well, I've really enjoyed becoming more active, and I've built up a
 I feel really fortunate to have found this PT, to learn how to appreciate working out, and to develop the skills I need to continue exercising. I really like the changes that strength training has made to my body, and I want to keep those changes going.
 
 And obviously, if you need a PT in New York, reach out to me because I have a strong recommendation. This person has treated, I think, half the Artsy Product team? He has his own Slack emoji. He's very good and I'd be happy to forward you his details.
-
-  

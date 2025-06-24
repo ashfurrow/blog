@@ -3,7 +3,6 @@ title: Hard Drive Woes
 date: 2012-09-05
 ---
 
-
 This is the third hard drive I've had fail on me in the last six weeks. Two of them have been SSD's and one was a backup drive. I've lost an entire morning's worth of work while OS X re-downloads to a new drive I just purchased.
 
 But the time I'm losing is nothing compared to the value of the data on those drives.
@@ -13,6 +12,3 @@ If you have an SSD, like in a MacBook Air, you might think that since there isn'
 I have everything backed up. My data is safe because I am a professional who cares about that data. I you don't have a good backup solution, ask yourself why not.
 
 ![](BAFDC6017B224CAF9274A0A92A97E9D9.jpeg)
-
-
-  

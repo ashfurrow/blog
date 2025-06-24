@@ -3,7 +3,6 @@ title: Think Twice, Publish once
 date: 2012-09-10
 ---
 
-
 Oh, look, a giant shit storm is brewing on the Internet. HP released a new, [obvious knock-off](http://www.engadget.com/2012/09/10/hp-spectre-one-all-in-one-envy-20-envy-23-pavilion-20/) of the iMac.
 
 Marco Arment is upset about the [coverage The Verge](http://www.marco.org/2012/09/10/elephant) is giving the computer because their article doesn't draw attention to its obviousness knock-offness:
@@ -35,6 +34,3 @@ What we say on the Internet _matters_. This is not an abstract space entirely wi
 People will take things personally, and I would have thought that everyone in this situation would have realized that. Maybe next time we can all just cool off before hitting the "Publish" and needlessly hurting someone's feelings.
 
 Or maybe I'm just being too Canadian. Can't we all be friends?
-
-
-  

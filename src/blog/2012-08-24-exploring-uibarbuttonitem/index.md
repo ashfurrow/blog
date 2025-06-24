@@ -3,7 +3,6 @@ title: Exploring UIBarButtonItem
 date: 2012-08-24
 ---
 
-
 Yesterday, I was going through the 500px iPad app looking to update some graphics used in our navigation bars. I think that the existing navigation bar is too boring.
 
 ![](36A0D5D3B0B24483B02E652F53987E58.png)
@@ -113,6 +112,3 @@ It would have been a lot easier if, say, `UIBarButtonItem` wasn't such a fucking
 ## Conclusion
 
 There are historical reasons for using this pattern to create standard icons, and it makes the job of developers easy if the look they're going for fits within the existing interface paradigm (ie: their app looks like it shipped with the user's device). However, for advanced customization, you'll have to break out some advanced techniques to convince `UIBarButtonItem` to behave.
-
-
-  

@@ -3,7 +3,6 @@ title: We Need to Grow
 date: 2013-03-21
 ---
 
-
 I'm over half way to my funding goal on my [Indiegogo project](http://indiegogo.com/projects/your-first-ios-app) to fund my next book. One of my primary goals in this project is to attract existing developers working with other languages and ecosystems into the iOS world. I believe that we are sitting at a crossroads between stagnation and evolution. We need diversification to continue growing.
 
 Why?
@@ -23,6 +22,3 @@ We'll get better tools. We'll get broader perspectives. We'll grow instead of dy
 Sounds good to me.
 
 This project isn't just a book&nbsp;– it's a tool for making us better. Please help [spread the word](http://indiegogo.com/projects/your-first-ios-app).
-
-
-  

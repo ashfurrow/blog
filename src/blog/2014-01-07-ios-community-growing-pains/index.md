@@ -3,7 +3,6 @@ title: iOS Community Growing Pains
 date: 2014-01-07
 ---
 
-
 I read a really interesting article this morning about [developing for iOS 7 and beyond](http://www.schukin.com/developing-for-ios-8/).
 
 > By the way, iOS 2.0 started with an assumption that only one view controller be displayed on the screen at a time. With iOS 3.2 (iPad), this obviously changed. iOS 4.0 sent developers & designers scrambling for retina assets. The iPhone 5 brought us a new screen size to support, once again causing developers to swim through their spaghetti nuking hard-coded layout values. And, despite a beta being given to them months before official launch, iOS 7 has left countless developers once again scrambling to come up to speed.
@@ -23,6 +22,3 @@ So far, we've left everything up to Apple, letting them dictate the best way to 
 - As the author of the post suggests, use categories to support multiple versions on iOS
 
 We're still a very young community that's finding its feet. We need to look at other communities who have been through this and see what they did right and wrong in order to develop our own set of best practices.
-
-
-  

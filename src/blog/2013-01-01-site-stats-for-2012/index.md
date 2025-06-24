@@ -3,7 +3,6 @@ title: Site Stats for 2012
 date: 2013-01-01
 ---
 
-
 2012 has seen a lot of change for this blog. I made the switch away from a self-hosted Wordpress installation to Squarespace. I joined the [Fusion Ad network](http://fusionads.net). And I started writing, like, a lot.
 
 With all these changes, I thought I might share some site stats. First, here are my daily numbers:
@@ -25,6 +24,3 @@ Thank you so much to everyone who has read this blog in 2012. I am so happy that
 Cheers, and Happy New Year,
 
 Ash
-
-
-  

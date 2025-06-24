@@ -3,7 +3,6 @@ title: iPad 2S (not the iPad HD)
 date: 2012-03-06
 ---
 
-
 There's a big Apple event tomorrow to announce the new iPad. From the [rumours](http://www.macrumors.com/2012/03/04/ipad-3-parts-put-together-on-video-ipad-2-smart-cover-still-works/), it'll be almost identical to the iPad 2 except with a "retina" display and possibly a better camera. Which is why I believe that it will be announced as the "iPad 2S"
 
 Apple has two types of product announcements: revolutionary, and evolutionary. Revolutionary products really shake things up; they are either all new products or vastly improved versions of older productions. Evolutionary products, on the other hand, are small, incremental improvements on existing offerings.
@@ -17,6 +16,3 @@ The iPad 2S will include a retina display and new graphics hardware to support t
 I'm not going to justify the "iPad 2S" name anymore - everyone else can justify the "iPad 3" name.
 
 <small>(As for "iPad HD", please. That's so crass - this is Apple, not Samsung.)</small>
-
-
-  

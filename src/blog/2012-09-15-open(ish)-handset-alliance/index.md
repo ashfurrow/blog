@@ -3,7 +3,6 @@ title: Open(ish) Handset Alliance
 date: 2012-09-15
 ---
 
-
 A storm's a brewin' over in the Android world. I don't typically get involved in disputes within the Android community because it's none of my business and because I mostly don't know what I'm talking about. However, [this is very interesting to me](http://www.androidcentral.com/acer-forced-halt-device-launch-over-android-compliance-here-s-why). And you know what? Sometimes it's the people who aren't afraid of being ridiculed for their ignorance of the facts that point out the really obvious questions that no one else thinks of.
 
 So here we go.
@@ -27,6 +26,3 @@ From outside of the Android community, it's really hard for me to see the benefi
 The OHA may be able to strong-arm OEMs with little-to-no offerings in the Android ecosystem like Acer, but with Samsung [surpassing two thirds of Android marketshare](http://www.theverge.com/2012/8/8/3227506/idc-q2-2012-mobile-os-market-share), it wouldn't surprise me to see Samsung pull out of the OHA soon. But we'll see.
 
 The OHA benefits consumers and hopefully Google has some teeth to enforce the rules on more than the likes of Acer. If Google wants Android to compete with iOS in the long-term, this is exactly the kind of strategy they need to maintain.
-
-
-  

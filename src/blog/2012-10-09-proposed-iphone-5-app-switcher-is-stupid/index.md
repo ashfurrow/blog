@@ -3,7 +3,6 @@ title: Proposed iPhone 5 App Switcher is Stupid
 date: 2012-10-09
 ---
 
-
 I saw [this article](http://www.theverge.com/2012/10/4/3451322/rethinking-the-app-switcher-for-the-iphone-5-mockups) tweeted by someone last week. The idea is that with the iPhone 5's taller screen, we can "fix" the multitask bar.
 
 > The goal is to offer extended functionality that takes advantage of the extended screen real-estate.
@@ -35,6 +34,3 @@ The existing app switcher isn't even an important part of iOS. This is evidenced
 Multitasking is a great feature of iOS, and the app switcher is a great tool for power users. But if you think clouding this tool by making it behave differently on different devices, and in a really complicated way, then you're dreaming.
 
 I like what the designer did with the playback controls; the designer obviously has talent. But they need to learn that just because you _can_ doesn't mean you _should_.
-
-
-  

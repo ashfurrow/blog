@@ -3,10 +3,7 @@ title: How to Host (Useful) Projects on GitHub
 date: 2012-02-10
 ---
 
-
 So you're some young hotshot developer who's written _the_ framework&nbsp;that's going to completely change the way everyone makes software. _Of course_&nbsp;you're going to host it on GitHub so everyone can find it, fork it, make pull requests, and you can be famous on the Internet. But it's not enough to just make a framework; you need an demo project showing off your stuff. It needs to use the framework you've written and demonstrate _how easy_ it is to use, how _performant_ it is, and how to _incorporate it into an existing project_. That last point is key and, in my experience, the deciding factor in the decision of developers to use your project.
-
-
 
 ![](D4737E7E92D84370862595FC1062F6D8.png)
 
@@ -29,6 +26,3 @@ It's incredibly difficult to divorce the framework from the demo project and cau
 An example of the perfect balance is [GMGridView](https://github.com/gmoledina/GMGridView), an alternative to KKGridView. Its demo project includes an easily labeled group (called "API") that you can drag into your existing project (or use a git submodule). It demonstrates how to use the framework in the way that most developers will use it: by just compiling the files as part of their main Xcode project.
 
 Hopefully this will help give some direction to framework developers on how to structure their projects. There are many amazing projects out there that offer some serious help to developers and I think it's a shame that many frameworks are likely overlooked by developers because their demo projects need improvement.
-
-
-  

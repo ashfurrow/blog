@@ -3,10 +3,7 @@ title: Optimizing Core Data Saves
 date: 2011-12-23
 ---
 
-
 I recently transitioned from keeping data models in memory to persisting them to disc using Core Data. [There are a lot of good reasons to do this](/blog/when-should-i-transition-to-core-data/). This article discusses the finer points of optimizing an application for important data from an external API, storing it in Core Data, and displaying it to the user without adversely affecting performance of the app.
-
-
 
 The existing set was fairly elegant; synchronous API fetches were performed in a background thread and invoked using another layer whose responsibility it was to make these calls asynchronous. View controllers accessed this middle layer and provided GCD blocks as callbacks to be executed when the API fetches were complete. The view controllers didn't touch any GCD code and the callbacks were all performed on the main queue.
 
@@ -43,6 +40,3 @@ The interface appears to be lagging only because the animation is jerky and the 
 This lets us delay saves until they won't be noticed by the user. While it breaks my architecture of MVC and strictly separating view controllers from data fetches, it makes the best user experience.
 
 The background MOC is now almost strictly used for accessing background instances of the data models. In fact, no parsing or mutating of data takes place in the background queue at all. I _could_ get rid of it altogether, but&nbsp;I'm going to keep the background MOC around since it might come in handy to perform long-running fetches or importing lots of data.
-
-
-  

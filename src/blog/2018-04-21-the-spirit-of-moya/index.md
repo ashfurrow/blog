@@ -5,11 +5,9 @@ banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/987251928706027520
 ---
 
-
 When Swift was released in 2014, I created one of the very first open source Swift libraries: [Moya][]. Moya became a fairly popular iOS project, driven by a motivated and kind community, and by its central goal: use Swift features to provide compile-time assurances to network requests.
 
 What a compelling idea! I would say that using computers (compilers, in this case) to automate the difficult and error-prone parts of network calls is the _spirit_ of Moya.
-
 
 In a nutshell, Moya has you encapsulate your network calls into an `enum`. Each `enum` case represents an API call, with associated values used as parameters. The compiler will produce an error if you try to use the API call without the required parameters. Since your `enum` has to conform to a specific protocol,the specifics of the network calls (HTTP verb, parameter encoding, path, headers) are centralized in one spot instead of strewn throughout your code.
 
@@ -25,7 +23,7 @@ Typical APIs are built on [REST][], which uses HTTP verbs connected to specific 
 
 </Narrow>
 
-Okay so let's examine this from an API perspective. The screenshot shows an art auction, a bid registration button, and a list of lots in the auction. So that's three requests so far: 
+Okay so let's examine this from an API perspective. The screenshot shows an art auction, a bid registration button, and a list of lots in the auction. So that's three requests so far:
 
 - Fetch the sale model.
 - Fetch the logged-in user's registration status.
@@ -91,5 +89,3 @@ But most of all, I feel so validated in my work on Moya. It was a pretty neat id
 [Relay]: https://facebook.github.io/relay/
 [belief]: /blog/coding-interview-take-home-challenges/
 [Apollo]: https://www.apollographql.com
-
-  

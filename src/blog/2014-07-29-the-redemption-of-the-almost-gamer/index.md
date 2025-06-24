@@ -3,9 +3,7 @@ title: The Redemption of the Almost-Gamer
 date: 2014-07-29
 ---
 
-
 A few years ago (Jesus – has it been that long?), I wrote a blog post about being an "[almost gamer](/blog/the-joys-and-sorrows-of-being-an-almost-gamer)", in which I discussed something that John Siracusa brought up on Hypercritical. In his followup on the [subsequent episode](http://5by5.tv/hypercritical/66), he actually read my post, in part, and replied on air.
-
 
 Basically, the idea is this: if you accept that video games are an art form, then it follows that they can be appreciated. However, due to limits skills necessary to gaming (like having good hand-eye coordination and a finely-developed 3D visuospatial sketchpad), there are many people in the world who can never appreciate this form of art. With practice, one can become a connoisseur of wines or films, because the skills necessary to appreciate those things – taste and sightedness/hearing – are very common.
 
@@ -26,6 +24,3 @@ Well, tonight, I've beaten it, stumbling only at the final boss.
 I don't know what's happened – two video games beaten in a row. Maybe John Siracusa was right when he insisted that I am a gamer. Maybe I had the skills all along, but my childhood self's short attention span or aversion to being defeated spoiled games for me at the time. Now as an adult, I'm finally able to keep going, even through the difficult parts, and complete them. On the other hand, though, maybe games have gotten easier. I retract that – games definitely have gotten easier. What I mean to say is that maybe I'm able to enjoy – and complete – video games now _because_ they're easier. I don't know.
 
 So that's it. Two video games beaten on a brand-new [gameboy](https://twitter.com/ashfurrow/status/490441171999936512). I don't know what I'll play next. Maybe it'll be super-difficult and crush my spirits again, or maybe it'll be like _Pokémon Y_ and _A Link Between Worlds_ – not particularly difficult, but still enjoyable. We'll have to wait and see.
-
-
-  

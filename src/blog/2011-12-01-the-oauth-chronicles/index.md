@@ -3,10 +3,7 @@ title: The OAuth Chronicles
 date: 2011-12-01
 ---
 
-
 I write iOS apps. Which is to say, I write native apps that run on, you know, actual hardware. iOS also implies Cocoa Touch and the Cocoa networking libraries (which suck). Not really awful, just really bad. Enter OAuth.
-
-
 
 OAuth is a a three-legged authentication framework that is designed to give users maximum control over what data third-party applications have access to without giving their password to anyone but the first-party service. Sounds awesome, right? It is! _If_ you're writing server applications.
 
@@ -37,6 +34,3 @@ So what's the solution?
 If you're not willing to settle for HTTP Basic Authentication, and there's every reason not to, then you're going to have to think a bit about security and write something appropriate. Instagram has a great API for client developers; I used it a few weekends ago at [Pixel Hack Day](http://pixelhackday.com/). It's easy to use and took 20 minutes to implement the sign-in logic. Another great solution is Facebook's OAuth support where they provide a wrapper for using screen-scraping-ish techniques to authenticate you. It works great, it's secure, and it'ss easy for third-party developers to use. This is why Facebook as a single-sign-on for iOS apps is so popular.
 
 If you're developing an API and actually want developers to use it, then consider not using standard OAuth and please, please, please, please write documentation that doesn't make assumptions about the framework and language I'm using.
-
-
-  

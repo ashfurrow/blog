@@ -11,7 +11,7 @@ So let's dive in a bit, into server logs and databases and, oh my! Docker contai
 
 Quick refresher on [`mastodon.technology`](https://mastodon.technology)'s tech stack. It runs [a slightly-modified version of the Mastodon source code](https://github.com/ashfurrow/mastodon), hosted within Docker images. Mastodon is a Rails app that uses Redis, Sidekiq, and Postgres, along with a streaming server written in Node.js. Each of these services are run in their own Docker containers (`web`, `redis`, `sidekiq`, `db`, and `streaming`, respectively). Mastodon doesn't really want you to be using Docker anymore, and frankly, I want to migrate away from it as soon as possible. But I've learned that you should only make one big change to your infrastructure at a time, and we had to make a pretty huge change today.
 
-Alright so we're experiencing intermittent problems. Every few weeks, HTTP requests to the instance would begin timing out. We have had to change our nginx configuration as the instance has scaled up, but we eventually ruled that out as the cause of this problem. There are a lot of different logs to sift through, and many only stay around as long as the server is running, so it's tricky. I eventually caught [PGHero](https://github.com/ankane/pghero) during one of these periods of unresponsiveness and it showed several long-running queries. I read the SQL queries and they really shouldn't have been taking as long as they were – upwards of 45 minutes! One of them was an account deletion query, for example. 
+Alright so we're experiencing intermittent problems. Every few weeks, HTTP requests to the instance would begin timing out. We have had to change our nginx configuration as the instance has scaled up, but we eventually ruled that out as the cause of this problem. There are a lot of different logs to sift through, and many only stay around as long as the server is running, so it's tricky. I eventually caught [PGHero](https://github.com/ankane/pghero) during one of these periods of unresponsiveness and it showed several long-running queries. I read the SQL queries and they really shouldn't have been taking as long as they were – upwards of 45 minutes! One of them was an account deletion query, for example.
 
 So we checked the Postgres logs and to my horror, we found this:
 
@@ -28,14 +28,13 @@ Like I said earlier. Yikes.
 
 But that's okay! I do have backups! What I needed next was a plan.
 
-It seemed from the Stack Overflow answer that the database itself was corrupted. I'm not a database administrator, but I know my way around SQL well enough. I figured if the database was corrupted, but still working, then we should dump its contents and re-create it from scratch. 
+It seemed from the Stack Overflow answer that the database itself was corrupted. I'm not a database administrator, but I know my way around SQL well enough. I figured if the database was corrupted, but still working, then we should dump its contents and re-create it from scratch.
 
 I tried this out on the staging Mastodon instance (pssh, _yeah_ I have a staging environment) and it worked! But staging is a far cry from production. I'm going to go over the individual steps in more detail below, but the important thing was that I had the experience of trying this out twice on staging at my back. I was pretty confident that the export-then-import solution would work.
 
 Once I knew what to do, the next step was to schedule a maintenance window. I don't like the instance to go offline for more than a few minutes, and I suspected that my plan would take all day. I announced the window a week in advance to make sure users could plan around it.
 
 <Toot src="https://mastodon.technology/@announcements/105421340427386358/embed" />
-
 
 So alright alright, we have a plan and we have a schedule. Nothing left to it but to do it.
 
@@ -66,7 +65,7 @@ Next up, tmux. Nothing is worse than the uncertainty of "is the command taking a
 
 ### Turn Off Everything But Postgres
 
-This is important. When we create a backup of the database, it's like a snapshot. I want _all_ the data to be in that backup so that when I restore it, all the data still exists. That means no one can edit or add anything while I'm running the backup/restore tasks. This sucks, but it's also straightforward. I don't operate at Facebook scale so I can afford to just take the instance down for a day. 
+This is important. When we create a backup of the database, it's like a snapshot. I want _all_ the data to be in that backup so that when I restore it, all the data still exists. That means no one can edit or add anything while I'm running the backup/restore tasks. This sucks, but it's also straightforward. I don't operate at Facebook scale so I can afford to just take the instance down for a day.
 
 Taking down the web server means local users can't access Mastodon, but it also means that federated content won't be processed either. That's okay – when a remote server tries to send us content and it fails because we're offline, it will re-enqueue that task with exponential backoff. The fediverse was built so that instances could go offline but data would still be federated _eventually_, which is really cool. We'll see later how this looks in our network bandwidth graphs.
 
@@ -122,14 +121,14 @@ docker-compose up -d db
 
 ### Restoring from the backup
 
-Okay, now let's copy the backup into the Postgres container and then use it with [the `pg_restore` command](https://www.postgresql.org/docs/9.6/app-pgrestore.html). 
+Okay, now let's copy the backup into the Postgres container and then use it with [the `pg_restore` command](https://www.postgresql.org/docs/9.6/app-pgrestore.html).
 
 ```sh
 # Copy the backup into the Docker container
 docker cp /home/ash/export.dump mastodon_db_1:/export.dump
 # Create an empty database
 docker exec -t mastodon_db_1 createdb -U postgres -T template0
-# Now perform the restore 
+# Now perform the restore
 docker exec -t mastodon_db_1 pg_restore -U postgres -n public --no-owner -d postgres --verbose /export.dump
 ```
 
@@ -185,7 +184,7 @@ One thing I find really neat about this graph is how the inbound network bandwid
 
 The consequence of this "exponential backoff" strategy was an increasing amount of inbound traffic as the day went on. Makes sense: there is a backlog of federated updates we're accruing. Notice too that both the CPU utilization and load averages spiked when the instance came back up – they were way higher than they had been before being taken offline. All that traffic caused a massive traffic jam internally, with 10-minute latencies for Sidekiq jobs. It actually broke local media uploads while the Sidekiq queues were being cleared, which took several hours.
 
-Okay so one other thing: let's revisit the big mistake I made, of terminating the `pg_restore` task for that foreign key. To my credit, I knew better than to ctrl-C the whole `pg_restore`, and instead only killed the task that _appeared_ to be stalled. I've highlighted below the regions where I saw the initial apparent stall, and when I tried again manually. You can see that compared with other parts of the `pg_restore` process, CPU utilization, load average, memory usage, and disk I/O appear negligable. 
+Okay so one other thing: let's revisit the big mistake I made, of terminating the `pg_restore` task for that foreign key. To my credit, I knew better than to ctrl-C the whole `pg_restore`, and instead only killed the task that _appeared_ to be stalled. I've highlighted below the regions where I saw the initial apparent stall, and when I tried again manually. You can see that compared with other parts of the `pg_restore` process, CPU utilization, load average, memory usage, and disk I/O appear negligable.
 
 ![Screenshot of graphs indicating reduced CPU usage, load average, and memory usage](./apparent_stall.png)
 
@@ -195,7 +194,7 @@ I'm still pondering why adding a foreign key would take so long on an otherwise 
 
 Overall, I'm very happy with how today went. I didn't really need to do much except check in now and then. In fact, the process benefited from some "benign neglect" and I only did harm by intervening.
 
-On disk, the old database was 96GB large. The new one is 63GB. Turns out that database vacuuming is important. 
+On disk, the old database was 96GB large. The new one is 63GB. Turns out that database vacuuming is important.
 
 ![Screenshot of PGHero, indicating a 63GB large database, with most tables and indexes having a decreased size over the past 7 days](./pghero.png)
 

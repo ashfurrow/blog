@@ -3,7 +3,6 @@ title: Google on iOS Sucks
 date: 2012-01-08
 ---
 
-
 ![](0183EA0B90D44155BA24D4F96382012C.png)
 
 Let's be honest: Google isn't known for making things really pretty. They're a company of academics who, it is my sincere belief, hire interns to do all of their design for them. There are a few basic things that they get wrong in their Mobile Safari web search that are frankly&nbsp;embarrassing&nbsp;for them.
@@ -23,6 +22,3 @@ Last point. If I'm on a phone, it's not a bad assumption that I might want to, y
 Now all I see is the "call" button. Which sucks because in my basement apartment, I have to use my landline to call people because I have no cell reception (just wifi for Internet access). Fantastic. Now I can't see the number of the business I'm calling.
 
 The fact that search with Google in Mobile Safar is so friction-y and has been so broken for so many months tells you exactly how much Google cares about your user experience: not at all.
-
-
-  

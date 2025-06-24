@@ -3,10 +3,7 @@ title: My Job Interview With Apple
 date: 2012-04-15
 ---
 
-
-5 weeks ago I was contacted by an Apple recruiter about a job opportunity working on the front-end of Siri. I love to my job at 500px and my life here in Toronto, but when the most valuable company in the history of economics asks if you'd like to chat, it's not really a question. It's a formality. 
-
-
+5 weeks ago I was contacted by an Apple recruiter about a job opportunity working on the front-end of Siri. I love to my job at 500px and my life here in Toronto, but when the most valuable company in the history of economics asks if you'd like to chat, it's not really a question. It's a formality.
 
 ## The Dream
 
@@ -39,6 +36,3 @@ Frankly, I was relieved. They had made a decision for me, lifting the burden of 
 In my mind, Apple has always been a dream. Visiting them allowed me to see from a new perspective: Apple is just another company. A company which does amazing things, granted, but a company nevertheless. Apple is no longer some magical, secretive entity to me, and I think I'm a more whole adult for believing in one less fairy tale.
 
 In my life, nothing has made me appreciate what I have, personally and professionally, more than facing the reality of giving it all up. This was a unique learning experience for me and I am convinced it will leave a visible impression on what I do with my life and who I do it with.
-
-
-  

@@ -3,7 +3,6 @@ title: Learning Lisp
 date: 2011-08-14
 ---
 
-
 ![](FE077BA4D21541C58237F58C6610E20F.png)
 
 When I was in second year of university, I took the "Programming Languages" course and learned the functional languages Oz and Haskell. Almost everyone in the class hated them and their weird syntax, but they grew on me. I haven't used them since but I remember when I went back to my co-op job at Chalk doing C#/ASP .Net, I felt inadequate. Well, I didn't feel&nbsp;inadequate - my tools did.
@@ -19,6 +18,3 @@ Fast forward to present day: I'm reading&nbsp;_Hackers and Painters_ by Paul Gra
 I feel the same way I did two years ago learning Objective-C. I was so used to static typing in Java and C# that using the dynamic typing in Objective-C seemed ... dangerous. Treating code like data seems the same way. My inner pragmatist - a C coder, no doubt - is terrified of buffer overflows and the difference between unsigned and signed integers.
 
 Trying to change the way you think is a challenge. I'm worried about having to readjust to not writing in such high-level code, but I can always willingly narrow my focus; I can't willingly broaden it without learning something new.
-
-
-  

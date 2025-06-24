@@ -5,11 +5,9 @@ banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/850365833448742913
 ---
 
-
 So I've been [running an instance](/blog/mastodon-administration/) of [Mastodon](https://github.com/tootsuite/mastodon) this week. It's be a fun adventure! I'm still not sure where it'll end up but I'm learning a tonne. So let's share some of what I've learned by running Mastodon on [Heroku](http://heroku.com).
 
 If you'd like to help out with some of the hosting costs, please head on over [to my Patreon](https://patreon.com/user?u=3581610).
-
 
 <Narrow>
 
@@ -17,14 +15,14 @@ If you'd like to help out with some of the hosting costs, please head on over [t
 
 </Narrow>
 
-First, a few things. I _love_ Heroku; it's server administration that's friendly to iOS developers like me who don't know anything about server administration. But! Heroku support for Mastodon is  e x p e r i m e n t a l . That's fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I've run into.
+First, a few things. I _love_ Heroku; it's server administration that's friendly to iOS developers like me who don't know anything about server administration. But! Heroku support for Mastodon is e x p e r i m e n t a l . That's fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I've run into.
 
 - [**~~Animated GIF upload doesn't work~~**](https://github.com/tootsuite/mastodon/issues/1007). GIFs are transcoded on the Mastodon server, and that requires ffmpeg to be in your buildpack. But that will put you _just_ over the 300MB slug size on Heroku.
 - [**~~Streaming API doesn't work~~**](https://github.com/tootsuite/mastodon/issues/1119). Not sure of the cause yet.
 
 (**Edit**: These are being addressed in more long-term ways, but for now I've gotten them to work. Check out the issues for more details.)
 
-Now to the good stuff: how to get Mastodon set up. 
+Now to the good stuff: how to get Mastodon set up.
 
 <Wide>
 
@@ -81,5 +79,3 @@ Even after all this configuration, I'm still running into performance issues. Th
 It leads me to wonder how long I can keep this up, but like I said, life is an experiment and I'm just rolling with it.
 
 Heroku support is experimental, and like Mastodon, it's continuing to evolve. If you have small needs, I'd say go for it. If you want to be the next big instance, you'll need to invest in a more sophisticated hosting solution. I looked at Digital Ocean for using the Docker image but quickly got in over my head; Heroku is it for me.
-
-  

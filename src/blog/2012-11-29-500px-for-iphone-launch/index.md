@@ -3,7 +3,6 @@ title: 500px for iPhone Launch
 date: 2012-11-29
 ---
 
-
 ![](B2CEC540C0804C9185F26A00B96923F5.jpg)
 
 Yesterday, the iOS team at 500px revealed [500px for iPhone](http://500px.com/iPhone), and we couldn't be prouder of it.
@@ -19,6 +18,3 @@ We also had the opportunity to do a Google Hangout and answer questions about th
 <YouTube videoID='ppMe_a_CDXg' />
 
 I love working at a place where the best interests of our users are our best interests. We aren't trying to make our site appealing to advertisers; we don't have ads. We make an awesome product and people pay us for it. We make it better so more people will pay. It's awesome.
-
-
-  

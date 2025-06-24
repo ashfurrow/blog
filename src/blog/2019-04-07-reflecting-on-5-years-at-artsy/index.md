@@ -5,11 +5,9 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1114519565143298049
 ---
 
-
 Time for a personal update! I've been off work the past week, and I was enjoying myself when my staycation was rudely interrupted by catching a cold. Boo. I'm nearly totally better, which is good because tomorrow, when I go back to work, I'll be moving to a new team within Artsy as its tech lead. I'm _very_ excited. In the week I've had at home, reading books on [team management](https://amzn.to/2WSp7qb), watching edutaining videos about [philosophy](https://www.youtube.com/channel/UC2PA-AKmVpU6NKCGtZq_rKQ), and shotgunning neti pots, I've had the opportunity to reflect on how I wound up in a tech lead role.
 
 This blog post is the result of my week of reflections, so it really is a _personal_ post. Feel free to close tab if you're not keen.
-
 
 This past week marked the fifth year that I have worked for [Artsy](https://www.artsy.net). I have a hard time wrapping my head around just how long a stretch of time that is, actually. _Five years_...
 
@@ -27,13 +25,12 @@ Being a _tech lead_, on the other hand...
 
 Like I said, I'm quite excited. My five years at Artsy gives me a level of credibility and, as I move into the tech lead role, I'm excited to get to _apply_ that credibility. Let me explain. See, there have been times when I have felt... on the outside of important cultural discussions that Artsy's engineering leaders are having. I was definitely getting my perspective represented by others, but I didn't ever get to represent it myself.
 
-It felt kind of weird. While I had *cultural credibility* of my peers, I didn't have *institutional authority* of the business. It was a weird kind of cognitive dissonance. I did some reflecting and realized how inappropriate it would actually be for me to *be* in those discussions: an individual contributor is only responsible for representing their own perspective, but everyone having these discussions is responsible for representing _others' perspectives_.
+It felt kind of weird. While I had _cultural credibility_ of my peers, I didn't have _institutional authority_ of the business. It was a weird kind of cognitive dissonance. I did some reflecting and realized how inappropriate it would actually be for me to _be_ in those discussions: an individual contributor is only responsible for representing their own perspective, but everyone having these discussions is responsible for representing _others' perspectives_.
 
-What I realized was that I had reached the perimeter of my sphere of influence, as one IC on a team of 30+ people. I took some time to get familiar with that perimeter and to learn how best to work within it as an individual. 
+What I realized was that I had reached the perimeter of my sphere of influence, as one IC on a team of 30+ people. I took some time to get familiar with that perimeter and to learn how best to work within it as an individual.
 
 (One way I did this was to [create a "practice" of iOS engineers at Artsy](https://github.com/artsy/README/blob/master/practices/front-end-ios.md) to manage collective, cross-team efforts in Artsy's iOS software. I [realized then](https://github.com/ashfurrow/TIL/issues/12), in hindsight, that institutional authority was just kind of _up for grabs_. So the credibility-vs-authority dichotomy ultimately turned out to be false, though it was a useful model for me.)
 
 A few months ago, my manager Eloy floated the possibility of me becoming the tech lead for the Discover team at Artsy. I expressed immediate interest and wasted no time meeting with Stephen, the product manager, to learn all about the team's goals. I got really excited: the team's job is to help people on Artsy to _discover_ art. "Help people find art they'll love" is a pretty kickass team goal, and aligns super-well with my reasons for even working at Artsy in the first place.
 
 So yeah! I'm pumped. I have a great team supporting me as I become a tech lead, too, so I feel really set up to learn how to be a great tech lead. Maybe this will eventually end up being the precursor to my subsequent career as an engineering manager – I'm open to the possibility, but I'm honestly too excited about becoming a tech lead to worry about that right now!
-  

@@ -3,7 +3,6 @@ title: Quality
 date: 2014-01-18
 ---
 
-
 I host an interview podcast called [Springboard](http://springboardshow.com) for beginning and aspiring iOS developers. I love doing it, but lately I had been feeling a little bit like I'm phoning it in. I didn't look forward to recording as much as I used to.
 
 ![](73B1AA1B5E8245D7AC8A02EF7E458725.jpg)
@@ -15,6 +14,3 @@ So, based on Dan Benjamin's [Podcasting Handbook](http://www.podcastinghandbook.
 I'm switching from GarageBand to Logic Pro X for my recording software. I'll probably be ditching Piezo in favour of Audio Hijack Pro for recording, since I don't want my files double-compressed.
 
 (By the way, next week will be the last episode recorded with my old [compressor mic](http://www.amazon.com/gp/product/B004MF39YS/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004MF39YS&linkCode=as2&tag=ashfur-20), so give it another episode for the difference in sound quality.)
-
-
-  

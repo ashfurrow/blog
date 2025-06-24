@@ -3,7 +3,6 @@ title: Skyfall
 date: 2012-11-11
 ---
 
-
 I went with some friends last night to see _Skyfall_, the latest 007 movie. It was _fantastic_ and you really need to go see it.
 
 Other than the bad habit Hollywood has of making the most random shit up about computers and [passing it off as realistic](http://worldofweirdthings.com/2012/11/11/why-hollywood-needs-to-leave-the-hacking-to-the-experts/?fb_source=pubv1) to an audience who mostly won't be able to tell, the movie was completely immersive. The writing, cinematography, acting, and score were all very well done.
@@ -17,6 +16,3 @@ That's why I was so impressed with _Skyfall_. The writers used technology to dri
 Finally, I want to talk about the score. Rather than just slap on some classic James Bond music, the composer did a fantastic job of using music that _reminded_ you of classic Bond soundtracks without blatantly copying them. When the movie makes some callbacks to the classic films, then they dive right into the classic music. It feels so natural - very well done.
 
 Altogether, _Skyfall_ is an immersive, well-written, and well-executed film. I think it's my favourite Bond film of the past two decades.
-
-
-  

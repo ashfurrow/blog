@@ -3,7 +3,6 @@ title: Moving to Amsterdam
 date: 2013-12-20
 ---
 
-
 My wife and I have always wanted to move to Europe. Always – as long as I can remember.
 
 This Summer, I attended 360|iDev in Denver, where I met [Mike Lee](https://twitter.com/bmf). Actually, I was sitting beside him at breakfast when someone turned to him and said "has anyone ever told you that you look a lot like Mike Lee?" To which he replied "all the time."
@@ -12,9 +11,9 @@ Mike lives in Amsterdam, and later that day he gave a compelling argument for mo
 
 Fast forward to Friday, December 6. I saw in the [iOS Dev Weekly newsletter](http://iosdevweekly.com) a sponsored link for a job posting in Amsterdam for Booking.com. In the span of a few hours, my thoughts progressed like this:
 
-1. I should apply for that job – they'll relocate me and we could live in Amsterdam. 
-2. If I should apply for that job, why not any other job? 
-3. If I want to move to Amsterdam soon, I should commit myself fully to that idea. Make a plan and execute on it. I don't like to half-ass anything. 
+1. I should apply for that job – they'll relocate me and we could live in Amsterdam.
+2. If I should apply for that job, why not any other job?
+3. If I want to move to Amsterdam soon, I should commit myself fully to that idea. Make a plan and execute on it. I don't like to half-ass anything.
 
 And so, in the space of a few hours, we had decided to move to Amsterdam.
 
@@ -35,6 +34,3 @@ That's my story. In the span of three days, I saw a job posting in Amsterdam, de
 Impulsive? Maybe. I've had a few moments like this in my life where I knew what I was doing was exactly the right thing to do, and it's always worked out for the best. Scary? Yes, but that's part of life. Excited? You bet I am.
 
 I have no idea what comes next, but it'll be an adventure.
-
-
-  

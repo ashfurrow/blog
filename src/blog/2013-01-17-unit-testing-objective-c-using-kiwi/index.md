@@ -3,7 +3,6 @@ title: Unit Testing Objective-C Using Kiwi
 date: 2013-01-17
 ---
 
-
 I have released [AFImageDownloader](https://github.com/AshFurrow/AFImageDownloader) to the open source community. It, asynchronously, downloads JPEGs from the Internet and decompresses them on a background queue.
 
 ```
@@ -31,9 +30,9 @@ describe(@"Image downloader", ^{
         });
 
         it (@"should create a new URL connection when started", ^{
-            [[imageDownloader should] 
+            [[imageDownloader should]
                 receive:@selector(urlRequestForURLString)];
-            [[imageDownloader should] 
+            [[imageDownloader should]
                 receive:@selector(urlConnectionForURLRequest:)];
             [imageDownloader start];
         });
@@ -65,6 +64,3 @@ describe(@"Image downloader", ^{
 ```
 
 I'm looking for any feedback you have about the code, the structure of the project, or the testing I've performed.
-
-
-  

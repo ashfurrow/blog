@@ -3,7 +3,6 @@ title: Home-Grown Fredericton Entrepreneur
 date: 2011-10-10
 ---
 
-
 Follow-up: [Start Up New Brunswick](/blog/start-up-new-brunswick/) I don't know Dylan Mitchell, third-year Kinesiology student at UNB, but I [read about him in a recent Daily Gleaner article](http://dailygleaner.canadaeast.com/rss/article/1446613). Basically, he had an idea for a coffee-related iPhone app and hired a few programmers from Bangladesh and India to write the code for him. (Forget the fact that the Gleaner never ran a story on _me_ when _I_ wrote my own coffee-related app.) Let's concentrate on what the article concludes with: "Mitchell is a home-grown Fredericton entrepreneur."
 
 He certainly is.
@@ -15,6 +14,3 @@ I once heard the owner of a home-grown Fredericton business (I won't say which o
 This is annoyingly typical of New Brunswick employers. Coming to Ontario and having a dozen job interviews, I've seen how differently members of the IT Industry are treated. Being a worker in a knowledge economy doesn't mean you're a disposable resource. I'm treated as a valuable asset to a company, and job interviews are used to assess my value, not assess how little I'm willing to be paid.
 
 As long as New Brunswick keeps reinforcing these principles, its going to lose talented young people to provinces willing to treat them as more than throwaway employees.
-
-
-  

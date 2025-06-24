@@ -3,7 +3,6 @@ title: Why I Don't Watch 'Big Bang Theory'
 date: 2012-01-05
 ---
 
-
 Matt Gemmell [tweeted](https://twitter.com/#!/mattgemmell/status/154934455969136641) a [link about why he can't bear to watch](http://inagist.com/mattgemmell/154934455969136641/) " _[Big Bang Theory](http://www.google.ca/url?sa=t&rct=j&q=imdb%20big%20bang%20theory&source=web&cd=1&ved=0CBwQFjAA&url=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F&ei=rd4FT9nLE-bz0gHR1aBT&usg=AFQjCNFrtMaa7gT6E-4qqWGs8AG8w0Q0SQ&sig2=3S1p55ndDsZaEX8T1tfrqA)_." It's certainly a valid criticism of the show, but to each their own. Some people might enjoy that kind of comedy; I won't call it an objectively _bad_&nbsp;show, but I can't stand to watch it, either.
 
 My friends and, often, my mother will encourage me to watch the show, since as a nerd, I must love humour about nerds. They even compare me to one of their favourite characters to persuade me to watch the show. Don't get me wrong - I love nerdy humour! When the MC at my wedding [dropped one of these](http://en.wikipedia.org/wiki/Mathematical_joke#Jokes_with_numeral_bases), I was laughing my ass off! Here's the problem ...
@@ -13,6 +12,3 @@ _Big Bang Theory_&nbsp;is a show about some (ostensibly) genius roommates and th
 The worst part is, to be perfectly honest, that I acknowledge that I can be a pedantic asshole at times, too. By definition of "nerd" I am immersed in a subculture that values depth of knowledge and enjoys arguments over the minutest of details. That self-recognition will always ruin a show like _Big Bang Theory_ for me.
 
 So no, thank you, I don't want to watch a show about how comical it is that pedantic and socially awkward people, you know, exist.
-
-
-  

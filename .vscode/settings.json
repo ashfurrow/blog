@@ -1,7 +1,5 @@
 {
-  "cSpell.words": [
-    "fortawesome"
-  ],
+  "cSpell.words": ["fortawesome"],
   "editor.wordWrap": "on",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "never"

@@ -6,13 +6,11 @@ bannerAttribution: https://twitter.com/CrookedCosmos/status/849109805079949312
 socialImage: background.jpg
 ---
 
-
 Yesterday I [wrote](/blog/mastodon/) about starting my own Mastodon instance. It's like a federated Twitter, and it's really fun.
 
 I wanted to create a place for tech folks to hang out, but I don't have a lot of experience with server administration. So I chose Heroku. Things have gone... okay. Mostly good, even.
 
-
-I've run into a number of scaling issues, 500 errors, questions I don't know the answer to, yikes. So I've spent time searching for answers, scaling up Heroku Dynos, configuring DNS settings, and upgrading Postgres databases. 
+I've run into a number of scaling issues, 500 errors, questions I don't know the answer to, yikes. So I've spent time searching for answers, scaling up Heroku Dynos, configuring DNS settings, and upgrading Postgres databases.
 
 <Wide>
 
@@ -36,7 +34,7 @@ At first I was really overwhelmed because things weren't always running perfectl
 
 Once I accepted that the instance won't be around forever, that at some point in the future it _will_ shut down (all websites will eventually), once I accepted that fact, things became a lot less stressful. So what if GIF uploads aren't work, or 2FA is broken? I'm opening GitHub issues to ask for help, and I'm getting helped. I'm contributing back documentation improvements. I'm learning a _tonne_ about how to administer websites through firsthand experience and experimentation. And I'm helping contribute to an entire community of online communities.
 
-So [join](https://mastodon.technology), if you like, in a social media experiment and experience. It might not last – but nothing does – and in the mean time, you can have fun and meet new friends. 
+So [join](https://mastodon.technology), if you like, in a social media experiment and experience. It might not last – but nothing does – and in the mean time, you can have fun and meet new friends.
 
 If you're keen, I'm going to need help. Things on my agenda are:
 
@@ -45,5 +43,3 @@ If you're keen, I'm going to need help. Things on my agenda are:
 - respond to reported abuses.
 
 If you're interested in helping, let's chat.
-
-  

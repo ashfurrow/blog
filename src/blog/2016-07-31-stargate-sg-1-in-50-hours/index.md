@@ -5,13 +5,11 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/759432930317967361
 ---
 
-
 I've written before about one of my favourite science fiction shows, [Star Trek Voyager](/blog/star-trek-voyager-in-40-hours/). I really liked the format of that post, where I break the show down into bitesized chunks, so I decided to do it again with _Stargate SG-1_.
 
-What I love about _SG-1_ is that the characters aren't from the 23rd century, and they're not from Kobol and the Twelve Colonies, and they're not from a galaxy far, far away. They're people _now_ with the strengths and flaws of _us_ as we exist _today_. Well technically as we existed in the late 90s, but still. It's so easy to relate to the characters because they're so much closer to us as an audience. 
+What I love about _SG-1_ is that the characters aren't from the 23rd century, and they're not from Kobol and the Twelve Colonies, and they're not from a galaxy far, far away. They're people _now_ with the strengths and flaws of _us_ as we exist _today_. Well technically as we existed in the late 90s, but still. It's so easy to relate to the characters because they're so much closer to us as an audience.
 
-One of the largest villains in the first season is a goddamn _US Senator_ who thinks the whole Stargate program is too expensive and wants to shut it down to save money. That would totally happen! 
-
+One of the largest villains in the first season is a goddamn _US Senator_ who thinks the whole Stargate program is too expensive and wants to shut it down to save money. That would totally happen!
 
 What damaged _SG-1_'s reputation more than anything was its timing. [Sci-fi isn't fun anymore](https://ashfurrow.com/blog/make-sci-fi-great-again/), and Stargate happened just as sci-fi was transitioning to the dystopian stories we have today. If Stargate had been a few years earlier, or Battlestar: Galactica had been a few years later, I think _SG-1_ would enjoy a much nicer reputation than it does today.
 
@@ -53,11 +51,11 @@ Find Season 2 on [Amazon Video](http://amzn.to/2aB121A).
 
 ## Season 3
 
-The next season really works on crafting the storytelling techniques, but episodes are still a bit hammy. This fades over the course of this season, but the show stays as fun. _Foothold_ is one of my favourite episodes, and _Urgo_ features Dom DeLuise playing opposite roles as a funny and serious character. 
+The next season really works on crafting the storytelling techniques, but episodes are still a bit hammy. This fades over the course of this season, but the show stays as fun. _Foothold_ is one of my favourite episodes, and _Urgo_ features Dom DeLuise playing opposite roles as a funny and serious character.
 
 Find Season 3 on [Amazon Video](http://amzn.to/2adWnjB).
 
-- **S03E02**: Seth 
+- **S03E02**: Seth
 - **S03E04**: Legacy
 - **S03E06**: Point of View
 - **S03E09**: Rules of Engagement
@@ -99,7 +97,7 @@ Find Season 5 on [Amazon Video](http://amzn.to/2a9KMGQ).
 
 ## Season 6
 
-Okay, so season six isn't too popular with _SG-1_ fans, probably because Daniel's gone and there's this new character. But it's a great season! The switch to the SciFi channel included a switch to HD widescreen format and better lighting/production. 
+Okay, so season six isn't too popular with _SG-1_ fans, probably because Daniel's gone and there's this new character. But it's a great season! The switch to the SciFi channel included a switch to HD widescreen format and better lighting/production.
 
 But this season is actually really good. _Redemption_ features Dr Rodney McKay, and you start to see him and Samantha become better frenemies. _Nightwalkers_ is a fantastic piece of storytelling and a strong Jonas episode, and _Abyss_ features a masterful performance by Richard Dean Anderson while introducing a great new villain: Ba'al.
 
@@ -126,7 +124,7 @@ Find Season 7 on [Amazon Video](http://amzn.to/2anXPCM).
 
 Season eight is a bit weird, since Jack isn't on the SG-1 team anymore, which fundamentally changes his relationship with the other characters. They portray this shift really well, and have a lot of fun with it, but Richard Dean Anderson does leave the show after this season.
 
-However! This is still a great season. _Threads_ ties up a lot of loose ends and _Moebius_ would have been a fantastic series finale. 
+However! This is still a great season. _Threads_ ties up a lot of loose ends and _Moebius_ would have been a fantastic series finale.
 
 Find Season 8 on [Amazon Video](http://amzn.to/2amFEjW).
 
@@ -151,7 +149,7 @@ Find Season 9 on [Amazon Video](http://amzn.to/2a9KJuo).
 
 ## Season 10
 
-The final season of the show is actually pretty good. The show hit its new groove and the characters show meaningful, believable friendships. _The Pegasus Project_ is a crossover with _SG-1_'s spinoff, _Stargate Atlantis_, which deserves its own blog post. 
+The final season of the show is actually pretty good. The show hit its new groove and the characters show meaningful, believable friendships. _The Pegasus Project_ is a crossover with _SG-1_'s spinoff, _Stargate Atlantis_, which deserves its own blog post.
 
 This is probably the _funniest_ season of _SG-1_. _200_ is the two hundredth episode of the show, and calls back to _Wormhole X-treme!_, while _The Road Not Taken_ and _Bad Guys_ both take an existing concept from the franchise and turn the idea on its head. _Unending_ is an... Interesting way to end a show. But they get away with it because there are two _SG-1_ straight-to-television movies.
 
@@ -168,10 +166,8 @@ Find Season 10 on [Amazon Video](http://amzn.to/2amXRaG).
 
 [_Ark of Truth_](http://amzn.to/2amG2P4) and [_Continuum_](http://amzn.to/2aB1D3a) are the two made-for-TV movies from the SciFi channel. They're pretty great, I enjoyed them each. _Ark of Truth_ wraps up the Ori storyline with a visit _to_ the Ori galaxy through the supergate. _Contiuum_ is a masterpiece of time-travel storytelling, featuring Ba'al, the series' best villain. The film wraps up his I-have-a-hundred-clones storyline by killing the last of them. It's a romp.
 
-As I mentioned before, _SG-1_ has a spinoff. Actually, it has two! Actually there's [also a terrible cartoon](https://en.wikipedia.org/wiki/Stargate_Infinity), but don't watch it. Seriously don't watch it. But _do_ go ahead and watch [_Stargate Atlantis_](http://amzn.to/2ae1W1r). It's not everyone's cup of tea, but there's just something about an international team of scrappy humans barely surviving in another galaxy that works for me. 
+As I mentioned before, _SG-1_ has a spinoff. Actually, it has two! Actually there's [also a terrible cartoon](https://en.wikipedia.org/wiki/Stargate_Infinity), but don't watch it. Seriously don't watch it. But _do_ go ahead and watch [_Stargate Atlantis_](http://amzn.to/2ae1W1r). It's not everyone's cup of tea, but there's just something about an international team of scrappy humans barely surviving in another galaxy that works for me.
 
 However, a scrappy bunch of barely surviving people is not sufficient to drive a plot. And unfortunately, the writers thought they could replace actual character development with sex appeal, and we got _Stargate 90210_. Er, _Stargate Universe_. Don't watch it.
 
 If you like what you watched in this guide, it’s worth going back to watch some of the episodes you skipped. I had a really hard time trimming this down to only 50 hours of television and had to leave out some great episodes.
-
-  

@@ -3,7 +3,6 @@ title: New Espresso Machine
 date: 2011-05-29
 ---
 
-
 This post entirely describes a [first-world problem](http://twitter.com/#!/search?q=%23firstworldproblem). I've been into espresso for about two years now; I'm pretty happy with where I am in terms of palette and equipment with one exception: my machine.
 
 The coffee grinder is more important than the espresso machine to make quality espresso, so when I had some money, I invested in a [Mazzer Mini](http://www.amazon.com/gp/product/B002U3DFNY/ref=as_li_ss_tl?ie=UTF8&tag=ashfur-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002U3DFNY). It has a few flaws, which I was aware of when I purchased it, but it's still one of my most prized&nbsp;possessions (MacBook Air not withstanding).
@@ -17,6 +16,3 @@ I asked Jonnie about the Silvia, and he said that the Silvia was a good machine.
 I'm not going into specifics, but there are some nice heat-exchange machines for only double what I was willing to pay for a Silvila. If my Computer Science degree has taught me anything, it's that multiplication by a constant factor is&nbsp;negligible&nbsp;in the grand scheme of things.
 
 We'll see. At least living in Toronto, I'll have the satisfaction of buying my machine in person. This means I'll save on shipping, too, which is pretty significant when some of the machines I'm looking at are 40+ pounds.
-
-
-  

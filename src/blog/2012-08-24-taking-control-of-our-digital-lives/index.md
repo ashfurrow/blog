@@ -3,7 +3,6 @@ title: Taking Control of our Digital Lives
 date: 2012-08-24
 ---
 
-
 Within a week's span of one another, my work backup drive and my home iMac's SSD drives failed. Completely and without warning. The backup drive isn't a big deal, since all my work is on git or dropbox. However, my home machine was rendered completely useless as I returned home to edit my vacation photos.
 
 Luckily, I use an external drive at home to store my photos and I use Time Machine to keep my main drive (only 120GB) backed up. All my data is safe (\*grammar nerds: fuck you).
@@ -25,6 +24,3 @@ As another example, I purchased [1Password](https://agilebits.com/onepassword) a
 In some ways, this is a financial burden. I'm paying a little bit of money each month, but the benefit is so worth it. Now I can spend that extra mental effort I was wasting on ways to enrich my life, including earning money. It's a net win.
 
 I'm taking control of my life online because it matters to me and because I'd rather spend time doing what I value than waste time to try and save what amounts to only a few dollars a month.
-
-
-  

@@ -3,7 +3,6 @@ title: How to Stop Shipping Code with TODO Comments
 date: 2012-08-27
 ---
 
-
 If you use Xcode, you've probably used or seen the `TODO` comment. It looks something like this:
 
 ```
@@ -52,6 +51,3 @@ Just copy and paste it into a new Build Script, added through the target detail 
 You'll never ship an accidental snaffoo again because your build _will break_ instead. While you're developing, you'll still have access to the `TODO`s as warnings, so you can navigate to them easily in the Issue Navigator.
 
 I'm integrating it into my work flow and I'll report back on how it works out.
-
-
-  

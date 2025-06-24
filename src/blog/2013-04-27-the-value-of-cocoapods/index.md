@@ -3,7 +3,6 @@ title: The Value of CocoaPods
 date: 2013-04-27
 ---
 
-
 Lately, I've been exploring more of the open source community and examining how it is interacted with by the Objective-C community. I think that iOS and OS X developers tend to be afflicted by the "not invented here" syndrome, which is ironic considering Objective-C's creators originally intended for compiled objects to be bought and sold as commodities.
 
 This tendency to eschew open source software comes from the top, though: just look at how hard it is to integrate open source software in Xcode projects.
@@ -17,6 +16,3 @@ Using CocoaPods means never having to worry about per-file compiler flags (e.g.:
 However, there are drawbacks. Using CocoaPods makes it difficult to contribute back to open source projects (when compared with git submodules). CocoaPods represents another step to follow when cloning a repository, and the initial setup can be nontrivial. It's also not perfect – the current version, 0.18.1, still has some bugs.&nbsp;
 
 CocoaPods is a maturing tool that's come a long way and shows a lot of promise. If you've previously looked at the tool but passed on it, I would encourage you to look again. It's a great way to easily incorporate lots of open source goodness into your project. As my friend [Jason](http://twitter.com/jasonbrennan) puts it, don't think of it as "not invented here", but rather "proudly discovered elsewhere."
-
-
-  

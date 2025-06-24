@@ -3,7 +3,6 @@ title: Coders Will Design
 date: 2013-01-30
 ---
 
-
 David Cole has a [good argument](https://medium.com/design-startups/6c423fc5ccef) for building better tools that enable designers to realize their ideas with code.
 
 > ... the ability to implement your vision is the hallmark of great craftsmanship. It teaches you both the limits and the possibilities of your medium.
@@ -21,6 +20,3 @@ The answer is "yes, they can." But just like designers learning to code takes pe
 I think the best developers already do this in their own way. I mean, what part of architecting a scalable codebase isn't design? It has a composition of elements and is expressed in a medium. Good developers will design.
 
 Personally, I'm interested in taking this to the next level. I want to understand the _why_ behind the vision I implement. _That_ is the hallmark of great craftsmanship
-
-
-  

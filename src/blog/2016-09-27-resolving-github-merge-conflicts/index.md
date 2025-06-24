@@ -5,9 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/779425582010490880
 ---
 
-
 So you've seen an opportunity to improve an open source project and you've submitted a pull request – awesome! Whether it's a typo fix, added documentation, or maybe some code, pull requests from the open source community are what keep a project alive.
-
 
 Sometimes, in the time between when you make your pull request, and when it's approved by the project maintainers, someone _else's_ pull request gets merged, and _their_ changes conflict with yours. You might recognize this greyed out interface in GitHub:
 
@@ -17,7 +15,7 @@ If this happens, don't worry. Let's walk through the steps to pull down the upda
 
 (I'm going to work from the command line, but you should be able to use these instructions for any git tool. I'm also going to assume that you've made your changes on a _fork_ of the project, basically a copy of the repository that you own.)
 
-The first thing we need to do is tell git where to find the changes. As a convention, we're going to call the original repository the _upstream_. This is the repository that your pull request is submitted on. To get the upstream git URL, go to the original GitHub repo page and click the "Clone or Download" button. 
+The first thing we need to do is tell git where to find the changes. As a convention, we're going to call the original repository the _upstream_. This is the repository that your pull request is submitted on. To get the upstream git URL, go to the original GitHub repo page and click the "Clone or Download" button.
 
 <Narrow>
 
@@ -78,7 +76,7 @@ let newEncodedRequest = try? newEndpoint.parameterEncoding.encode(newEndpoint.ur
 
 </Wide>
 
-After resolving conflicts, you need to `git add .` to add all the conflicting files and then `git commit`. This will open up a text editor, probably vim, with a pre-filled commit message. 
+After resolving conflicts, you need to `git add .` to add all the conflicting files and then `git commit`. This will open up a text editor, probably vim, with a pre-filled commit message.
 
 ```
 Merge remote-tracking branch 'upstream/master' into my_pr_branch
@@ -87,4 +85,3 @@ Merge remote-tracking branch 'upstream/master' into my_pr_branch
 In vim, type `:wq` and your commit is complete. Do a `git push` to add the commit to your pull request, and wait for someone to review.
 
 Resolving conflicts gets easier with experience. Using git gets easier, too, but it still trips me up sometimes. If you get stuck at some point in this process, don't worry. Do a Google search for your problem, and don't give up. If you can't figure it out, add a comment to the pull request asking for help. Make sure to [list what you've tried](http://mattgemmell.com/what-have-you-tried/). You're trying to improve the project and so is the maintainer. We've all got the same goals: to improve the code and to improve the community, but make sure to have fun!
-  

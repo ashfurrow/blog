@@ -1,5 +1,5 @@
 ---
-title: 'Earth: Final Conflict'
+title: "Earth: Final Conflict"
 date: 2018-01-17
 banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/952259699868667905

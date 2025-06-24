@@ -5,9 +5,7 @@ banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/916410007964483585
 ---
 
-
 The following is a hypothetical blog post, written by a version of me in a parallel universe. In this fictional world, Apple cares very much about software quality (ensured by unit testing), as well as the developer experience of building software for its platforms. The features I describe of Apple's new fictional test runner are all real features in the [Jest project][jest].
-
 
 ---
 
@@ -21,13 +19,13 @@ Jive's test runner is seriously impressive. Apple has examined the workflow that
 
 So let's say you check out a new branch to work on a feature. Jive is going to use git to determine which Swift files and which tests have changed since the last commit. Running fewer tests will speed up the test suite run time. And whenever you save a file, Jive examines the dependency graph and re-runs all related tests, giving you near instant feedback in your red/green/refactor cycle.
 
-Jive prioritizes running tests that failed the last time it ran because it assumes that you're trying to fix those tests first. It also keeps track of how long each test takes to run, in order to prioritize long-running tests _first_. This reduces overall test time. 
+Jive prioritizes running tests that failed the last time it ran because it assumes that you're trying to fix those tests first. It also keeps track of how long each test takes to run, in order to prioritize long-running tests _first_. This reduces overall test time.
 
 ![Before and after running long tests first](length.png)
 
 Apparently, the improved scheduling of long-running tests improved full test suite run times by 20% – wow! And because it can run tests in parallel simulator processes (from Xcode 9), parallelism is constrained only by the number of cores in your CPU.
 
-Overall, Jive provides a fast testing experience, using advanced dependency resolution techniques and aggressive caching so that incremental changes take less than a second to test. This near-instant feedback is a _huge_ change in how we can write code. Since tests take a very short time to run, developers run them more often (on file saves, in a pre-commit hook, etc). 
+Overall, Jive provides a fast testing experience, using advanced dependency resolution techniques and aggressive caching so that incremental changes take less than a second to test. This near-instant feedback is a _huge_ change in how we can write code. Since tests take a very short time to run, developers run them more often (on file saves, in a pre-commit hook, etc).
 
 On full test runs, Jive is still stunningly fast, reducing test suite run times with XCTest to about 15% of their original run times. Very impressive!
 
@@ -40,11 +38,11 @@ class MyTests: XCTestCase {
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
-    
+
     func testExample() {
         // TODO
     }
@@ -85,7 +83,7 @@ describe("prepopulated") {
     beforeEach {
         db.populateWithFakeData()
     }
-    
+
     it("can fetch rows from the db") {
     }
 }
@@ -127,23 +125,23 @@ expect(optional).not.to.beNil()
 
 You can write your own matchers, too, and leverage the power of the Swift type system. For example, it'd be pretty easy to write a custom matcher to check that collections are of a certain size. I'll likely port my [Nimble-Snapshots][ns] library over to Jive within the next few weeks.
 
-And of course Jive ships with a comprehensive mocking library. This makes mocking dependencies and injecting them into a subject under test _really_ easy. 
+And of course Jive ships with a comprehensive mocking library. This makes mocking dependencies and injecting them into a subject under test _really_ easy.
 
 ```swift
 it("invokes the callback") {
     let mock = Jive.mock()
-    
+
     testSubject.method(mock)
-    
+
     expect(mock).to.haveBeenCalledWith(.success)
 }
 
 it("calls the network") {
     let mock = Jive.mock(Alamofire)
     testSubject.networkModel = mock
-    
+
     testSubject.fetch()
-    
+
     expect(mock.request).to.haveBeenCalledWith("https://example.com")
 }
 ```
@@ -173,5 +171,3 @@ Until Apple cares more about writing modern unit tests, or until they get tired 
 [swift]: https://swift.org/blog/swift-local-refactoring/
 [radars]: /blog/due-diligence/
 [so]: https://stackoverflow.com/a/3623574/516359
-
-  

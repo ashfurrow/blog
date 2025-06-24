@@ -3,7 +3,6 @@ title: Amsterdam First Impressions
 date: 2014-02-23
 ---
 
-
 My wife and I landed in Amsterdam last Monday, so we've been here about a week. I thought it would be nice to do a "first impressions" of the city, the atmosphere, and the work environment.
 
 ## City
@@ -15,6 +14,7 @@ The city is gorgeous, even the shitty parts. We live outside the core of Amsterd
 Closer to the center of the city, we've explored neighbourhoods where the tall residential buildings lean toward the street, tourist areas where everyone was speaking English, Dam Square where the palace was located, and of course walked along some canals at night. Such a beautiful city.
 
 ![](BDF72123328044B68074DA57F494B8D2.jpg)
+
 ## Language
 
 One of my primary concerns about moving to Europe was language. We've always wanted to try living in Europe but our options are limited because we only speak English. OK, I can get by in French, but that's it. Amsterdam is great because everyone here speaks English which spoken in English to, and there is a large expat community. All software development here is done in English, so I didn't have a hard time finding a job. Ashley's still looking, but we're hopeful it won't be a problem.
@@ -52,6 +52,3 @@ I've heard that the Dutch people are direct, which is true. What I hadn't heard,
 Part of the reason I moved here was for the iOS community. Mike Lee, over the Summer, convinced me that there was no other place like Amsterdam to develop software. He was correct.
 
 On my second day here, I attended the largest CocoaHeads meeting I've ever attended in a nearby city. It was amazing. People are interested in learning and attending community events. Companies seem to be on the constant lookout for developers. It's a great combination.
-
-
-  

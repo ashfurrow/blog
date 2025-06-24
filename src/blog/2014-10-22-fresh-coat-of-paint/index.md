@@ -1,7 +1,7 @@
 ---
 title: Fresh Coat of Paint
 date: 2014-10-22
-banner: 'Fresh-Coat-of-Paint.jpg'
+banner: "Fresh-Coat-of-Paint.jpg"
 bannerAttribution: https://500px.com/photo/43500268/the-hurricane-iii-by-ash-furrow
 ---
 

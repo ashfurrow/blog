@@ -5,7 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1311240685396389888
 ---
 
-When I was in the eleventh grade, I had a horrible English class. My teacher was uninspiring and I was inattentive. It sucked. Meanwhile, my friend was in an Advanced Placement class and it sounded like _a lot_ more fun. He eventually convinced me to talk to the AP teacher to request transferring up for my senior year. 
+When I was in the eleventh grade, I had a horrible English class. My teacher was uninspiring and I was inattentive. It sucked. Meanwhile, my friend was in an Advanced Placement class and it sounded like _a lot_ more fun. He eventually convinced me to talk to the AP teacher to request transferring up for my senior year.
 
 I'm so glad I did because it's hard to overstate the impact that this decision has had on my career and my entire adult life. This is the story of how I learned to think critically.
 
@@ -15,13 +15,13 @@ The first essay I wrote was about a poem by Edwin Arlington Richardson titled [_
 
 I felt a bit humiliated, to be honest, but that taught me an important lesson: the importance of perspective. The truth is, I _hadn't_ read many poems (and since we're being honest, I still haven't). Re-reading my essay, it was suddenly, glaringly obvious that I didn't really have anything interesting to say at all about the poem. The point of writing the essay, I learned, was not to appraise the text but rather to deconstruct it. To tease it apart and figure out how it worked. To uncover the historical context the text was written in. To offer an explanation for the character motivations. And so on.
 
-My second attempt went a lot better – that's why they're called "essays" (_essayer_ is French for "to attempt"). 
+My second attempt went a lot better – that's why they're called "essays" (_essayer_ is French for "to attempt").
 
 Mrs. McLean gave me essays that the students in the past year had already written, students I'd be joining in the fall. I learned that the deconstruction was only a first step. When you deconstruct a text, you can figure it out. When you deconstruct _two_ texts next to each other, you can compare them and say something interesting. One of the other student essays I read deconstructed the Wall from _The Handmaid's Tale_ (where bodies of executed dissidents were put on display) and compared it with Pink Floyd's _The Wall_. I can't remember what the essay ultimately said but I remember feeling like this was a kind of magic trick – to take two things that aren't related at all, to break them down, and to connect them to each other and show how they're actually quite related after all.
 
 First you need to understand a thing, and then several things, and then you can compare them. Abstractly, this is what thinking critically means.
 
-So let's talk about computer programming. 
+So let's talk about computer programming.
 
 Programmers solve problems and the more types of problems you can solve, the more effective of a programmer you can be. Different problems are best solved by different tools, and so one way to have a successful career is to learn a variety of tools and to develop informed opinions about which tools are best suited to solve which types of problems.
 
@@ -29,7 +29,7 @@ Let's look at an example. Programming languages are probably the most important 
 
 (There are totally valid reasons to use Ruby to write an iPhone app, and to use Swift to write a server. My point is not that you can't or shouldn't do this, but only that these languages are generally _best_ suited for their respective problem domains.)
 
-You can kind of see where I'm going with this, right? If all I knew was Ruby, I'd face trouble with my iPhone app. If all I knew was Swift, writing a server would be a lot more difficult. 
+You can kind of see where I'm going with this, right? If all I knew was Ruby, I'd face trouble with my iPhone app. If all I knew was Swift, writing a server would be a lot more difficult.
 
 Generally, if all I knew was one tool, I'm going to encounter problems and miss opportunities that I would otherwise be able to navigate effectively around and towards, respectively. This "navigation", knowing several tools and using opinions to make decisions, is actually a form of critical thinking! First I have to understand Swift and Ruby (deconstruct them) and then I can compare them and say something interesting: "Ruby is great at servers and Swift isn't. Swift is great at iPhone apps and Ruby isn't."
 
@@ -39,7 +39,7 @@ Programming languages are an important part of your toolbox, but the skill of th
 
 From my experience, this message of "Hey programmers! You should learn other programming languages!" is a very tough sell. When I tell programmers this, they resist. "But programmers should be all about learning programming languages, right? That's their whole deal.", you might think. But from the perspective of programmers, it actually makes a lot of sense.
 
-There are two reasons that make programmers reluctant to learn new languages. 
+There are two reasons that make programmers reluctant to learn new languages.
 
 The first is that learning a new language is difficult. I mean, yeah! It is! If you're a new programmer, you're already inundated with learning your _first_ language, so the idea of learning _another_ language (and then another! another!) is going to feel completely overwhelming. If you're an experienced programmer, you'll face a similar problem: you are so used to being an expert with the tool you already know that learning a new language _feels_ bad. You aren't as productive as you were with the tool you already know. You get frustrated. It sucks feeling like a beginner!
 

@@ -3,7 +3,6 @@ title: What's Worth Unit Testing in Objective-C?
 date: 2013-01-09
 ---
 
-
 So the big question is, "what is worth Unit Testing in Objective-C?"
 
 Server guys will mock out entire databases just to test the "Hello, World" equivalent of a SQL statement. Do you need to be this meticulous? Probably not. Do you need to Unit Test every line of code in your iOS app? Definitely not. Let's take a look at how you can decide on your testing strategy.
@@ -29,6 +28,3 @@ The highlighted orange box above shows where Unit Tests will be the most effecti
 You can easily [test networking code](/blog/your-first-objective-c-unit-test-with-ocmock/) to verify and codify your assumptions about it when you first write it. If your models are thin, then you might get away without testing them at all. However, those models are created and modified somewhere, so make sure to test that code (which again, shouldn't really be in the view or controller).
 
 So that's it: Unit Test models and networking code. Use UAT to test the rest, if it's worth your time. Maybe manual testing the views and controllers would fit better into your work flow, especially for smaller apps. Finally, document whatever Unit Testing and UAT does _not_ test, so you can be sure to manually test it before you ship.
-
-
-  

@@ -3,7 +3,6 @@ title: Twitter Name Change
 date: 2011-12-01
 ---
 
-
 So I've pulled the trigger on changing my twitter handle. This hit me kind of hard, which I was honestly expecting.
 
 My wife, then fiancée, gave me my twitter name of "GreyEyes" because she liked my eyes.
@@ -13,6 +12,3 @@ My online identity, since 2008, has been defined by that name. That's always bee
 I really like that. I like being aloof and kiddish online. But I also understand that people are paying attention to me and I have control over their first impression of my online presence. I'd rather have my face be my face online; I'd also rather have my name as my name online, even if it means giving up a little of the fun I've had over the past 42 months.
 
 As for the nature of my tweets, they've never been anything but my honest opinions and that's not going to change.
-
-
-  

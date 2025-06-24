@@ -5,11 +5,9 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1006792849990602753
 ---
 
-
 It occurred to me that there is a missing piece to the conversations around React Native - the React abstraction itself! Rather than getting stuck in debates about [the quality of JavaScript][js_good], I'd like to talk about this aspect of the React Native choice. If you're open-minded, if you accept that the JavaScript language is as excellent as I say it is, and if you're curious about why some people just seem so excited to use JavaScript to write iOS apps, I would love to explain my perspective.
 
 Let's dive in.
-
 
 ## React Itself is Amazing
 
@@ -17,9 +15,9 @@ Okay so in order to understand React, it helps to understand the history of why 
 
 jQuery made it really easy to interact with the HTML elements on the web page (called the DOM). Many cool frontend JavaScript frameworks are built atop jQuery. The only problem was that the DOM API itself – the API that jQuery sits atop – is really slow.
 
-"Really slow" is a relative term, so let's unpack what that means. Certain changes to the DOM can trigger what's called a [reflow][] – basically, the layout of the website gets re-calculated by the browser. A reflow is a **synchronous** event that can be easily triggered inadvertently by programmers, and it's easy for web apps to have performance problems based on this bottleneck (you can [read more about layout thrashing here][thrash]). Browser makers go to great lengths to optimize their reflow algorithms, but the easiest win for web app performance is being smart about when to trigger a reflow. 
+"Really slow" is a relative term, so let's unpack what that means. Certain changes to the DOM can trigger what's called a [reflow][] – basically, the layout of the website gets re-calculated by the browser. A reflow is a **synchronous** event that can be easily triggered inadvertently by programmers, and it's easy for web apps to have performance problems based on this bottleneck (you can [read more about layout thrashing here][thrash]). Browser makers go to great lengths to optimize their reflow algorithms, but the easiest win for web app performance is being smart about when to trigger a reflow.
 
-A kind of arms race between frameworks for web performance has been going for years, and it's been really exciting!  And that brings us to React. React solves the slow DOM API problem by abstracting away the _state_ of the application. There are lots of implementation details (like, people usually mention the [Virtual DOM][] when explaining React) but the most important thing is that React is _declarative_.
+A kind of arms race between frameworks for web performance has been going for years, and it's been really exciting! And that brings us to React. React solves the slow DOM API problem by abstracting away the _state_ of the application. There are lots of implementation details (like, people usually mention the [Virtual DOM][] when explaining React) but the most important thing is that React is _declarative_.
 
 So what the heck is that? Well it takes a second to explain.
 
@@ -31,7 +29,7 @@ Because of the stateless nature of the components, aggressive optimizations can 
 
 I've always liked ([and advocated for][frp]) iOS functional reactive frameworks like [RxSwift][], [ReactiveSwift][], [Interstellar][], etc on iOS. However, I've never felt _entirely_ satisfied by them. They are an excellent way to handle state, but they themselves operate within and are built atop a stateful abstraction layer (UIKit). Subsequently, the complexity of these frameworks is fundamentally constrained on the lower bounds in a way that React isn't.
 
-There's just too much incidental complexity to how these frameworks need to integrate with the rest of the app. Contrast that complexity with React, where there are no observables or flat maps or signal transforms; you just write components in declarative way and you get all the benefits of reactive UIs for free.  
+There's just too much incidental complexity to how these frameworks need to integrate with the rest of the app. Contrast that complexity with React, where there are no observables or flat maps or signal transforms; you just write components in declarative way and you get all the benefits of reactive UIs for free.
 
 Yeah, for free.
 
@@ -53,7 +51,7 @@ People will validly complain about JavaScript developers relying on too many dep
 
 There are big culture differences in OSS between the iOS and JavaScript developer communities. I think that JavaScript developers go a little too far, but I also think that iOS developers don't go far enough. At Artsy, we see those differences on our engineering team. Sometimes, tensions surface between web and native developers contributing to the shared React Native codebase. It's so fascinating to see how we approach the same problems from different perspectives. Each one of these tensions is an opportunity for us to learn from each other.
 
-So yes, you'll have a lot of dependencies. But you'll also learn to see building software from a new perspective.  That learning experience alone, to me, is a worth a few hundred node modules.
+So yes, you'll have a lot of dependencies. But you'll also learn to see building software from a new perspective. That learning experience alone, to me, is a worth a few hundred node modules.
 
 ---
 
@@ -83,5 +81,3 @@ React Native isn't perfect, and it's not suitable for every app. But nothing is!
 [frp]: https://ashfurrow.com/blog/reactivecocoa-vs-rxswift/
 [React]: https://reactjs.org
 [codecamp]: https://medium.freecodecamp.org/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76
-
-  

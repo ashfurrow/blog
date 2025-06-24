@@ -31,9 +31,9 @@ Mirrorless cameras are smaller and weigh less than DSLRs – and their lenses to
 
 I was concerned about some of the downsides to mirrorless cameras, like shorter battery life and feeling more like a computer than a camera. But the thing I was most concerned about was having to use an electronic viewfinder. I'm used to being able to see, optically, the actual scene that I'm shooting. I was reluctant to give that up. So as an experiment, I started using my X100S with its electronic viewfinder. (In over ten years, I had barely used it.) The refresh rate was kind of laggy but I got used to it pretty quickly. I was actually enjoying the way the EVF gave me an exposure preview of the photo that the camera was actually going to record when I hit the shutter button – that's something that DSLRs just can't do. I figured that if the older X100S was usable, then a newer mirrorless camera would be great (spoilers I was right).
 
-So then the question was: which camera system to get? Usually when a photographer picks a camera system, they're either just getting started or they're experienced and switching systems. I was in a distinct position to knowing what I wanted _but also_ starting fresh. So let me outline my thinking. 
+So then the question was: which camera system to get? Usually when a photographer picks a camera system, they're either just getting started or they're experienced and switching systems. I was in a distinct position to knowing what I wanted _but also_ starting fresh. So let me outline my thinking.
 
-Cannon and Nikon had both initially missed the boat on mirrorless. Sony, FujiFilm, Olympus, and other manufacturers hadn't been caught in the same "innovator's dilemma" as the two market-leading DSLR makers, and so they had had a huge head start. Cannon was also being weird about letting third party lens manufacturers not build on its new mirrorless lens mount, which gave me a bad vibe. And to be honest, Nikon digital cameras have always given me a bad vibe. 
+Cannon and Nikon had both initially missed the boat on mirrorless. Sony, FujiFilm, Olympus, and other manufacturers hadn't been caught in the same "innovator's dilemma" as the two market-leading DSLR makers, and so they had had a huge head start. Cannon was also being weird about letting third party lens manufacturers not build on its new mirrorless lens mount, which gave me a bad vibe. And to be honest, Nikon digital cameras have always given me a bad vibe.
 
 So I ruled out the giants. I considered Micro Four Thirds but decided against it. That narrowed it down to Sony or FujiFilm. I spent a lot of time researching opinions online and thinking about what I actually wanted in a camera.
 
@@ -43,7 +43,7 @@ I tried some cameras out in-person. _By far_, the FujiFilm cameras I tried were 
 
 But before I bought anything, I hit a wall. I became preoccupied with anxiety that all this excitement was just Gear Acquisition Syndrome. When I first got into photography, I compulsively and continuously upgraded my gear. Over the years, I have bought cameras that I didn't really need and that I quickly moved on from. Nerds call this GAS, and I've worked hard to get it under control. Now I found myself worried that my renewed interest in photography was somehow GAS in disguise, that I wasn't authentically interested in photography at all. I wanted to make a responsible decision, both financially and creatively.
 
-Because gear doesn't matter. You can take great photos on bad cameras. And you can have a lot of fun doing it. Here is a photo I love, and the camera I used has an entire _two_ shutter speeds – plus bulb mode! 
+Because gear doesn't matter. You can take great photos on bad cameras. And you can have a lot of fun doing it. Here is a photo I love, and the camera I used has an entire _two_ shutter speeds – plus bulb mode!
 
 <Wide>
 
@@ -53,11 +53,11 @@ Because gear doesn't matter. You can take great photos on bad cameras. And you c
 
 It's the photographer that matters, not the camera. (Of course, it's easier to say "gear doesn't matter" when you have nice gear. And I do have a nice film kit.) I started questioning whether I should buy a new digital camera at all. Wasn't my X100S enough?
 
-I sat with this for some time. I talked this over with a few people who know me. And I kept taking photos with the X100S. I started editing those photos in Apple Photos, then tried some more sophisticated tools like Photomator and ON1 Photo Raw, before (reluctantly) reactivating my Lightroom subscription. I had really been enjoying editing photos, in a way that I hadn't for a long time. 
- 
-Not suddenly, but slowly, I realized that my anxiety over a possibly "inauthentic" interest in photography was unfounded. I wasn't trusting myself. It does make sense to sit on a big purchase decision like this, but I had. I _had_ thought it over. And I knew I didn't _need_ it; I _wanted_ it. (Confusing these two is an symptom of GAS.) I talked it over one last time with Ashley and then I hit the purchase button. 
+I sat with this for some time. I talked this over with a few people who know me. And I kept taking photos with the X100S. I started editing those photos in Apple Photos, then tried some more sophisticated tools like Photomator and ON1 Photo Raw, before (reluctantly) reactivating my Lightroom subscription. I had really been enjoying editing photos, in a way that I hadn't for a long time.
 
-That was a month ago. So which camera did I get? 
+Not suddenly, but slowly, I realized that my anxiety over a possibly "inauthentic" interest in photography was unfounded. I wasn't trusting myself. It does make sense to sit on a big purchase decision like this, but I had. I _had_ thought it over. And I knew I didn't _need_ it; I _wanted_ it. (Confusing these two is an symptom of GAS.) I talked it over one last time with Ashley and then I hit the purchase button.
+
+That was a month ago. So which camera did I get?
 
 "Gear doesn't matter."
 
@@ -67,5 +67,4 @@ That was a month ago. So which camera did I get?
 
 </Narrow>
 
-I'll be publishing more photo blog posts [over at my photo blog](https://photos.ashfurrow.com). I'm exploring some new editing styles and I plan to write about that process over there. I don't really know where people are sharing their photos online anymore, to get photo critique; let me know if you have suggestions. See you there! 
-
+I'll be publishing more photo blog posts [over at my photo blog](https://photos.ashfurrow.com). I'm exploring some new editing styles and I plan to write about that process over there. I don't really know where people are sharing their photos online anymore, to get photo critique; let me know if you have suggestions. See you there!

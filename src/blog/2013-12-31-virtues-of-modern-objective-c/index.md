@@ -3,7 +3,6 @@ title: Virtues of Modern Objective-C
 date: 2013-12-31
 ---
 
-
 Well, here we are again. Another New Year's Eve, another blog post list of changes to make in the new year. I thought I'd follow up [last year's post](/blog/seven-deadly-sins-of-modern-objective-c) with a little more positive one about virtuous habits that we should all endeavour to integrate into our routines.
 
 These are habits that anyone, whether you're a beginner or an expert, or a old-world C developer or a [third-wave Objective-C'ist](https://speakerdeck.com/mattt/third-wave-objective-c), can use to help themselves become a more proficient coder.
@@ -31,8 +30,9 @@ I use `#pragma mark -`, followed by protocol names in order to divide my code. B
 Using `#pragma mark -` takes nearly no effort and helps you keep your code straight. It'll also help other developers learn their way around your codebase. There's really no down side to this one.
 
 ## Exploration
+
 > The only constant in the world is change.
-> 
+>
 > — [Jeff Atwood](http://www.codinghorror.com/blog/2006/05/the-ten-commandments-of-egoless-programming.html)
 
 It's tempting to get comfortable as a developer –&nbsp;to rest on our laurels and stop learning. However, the world will move on, especially Objective-C. Code from even a few years ago already looks stale compared to the latest and greatest in Objective-C land. I'm not saying that you need to embrace all these improvements, but you owe it to yourself to explore and determine for yourself if these are worthwhile enhancements.
@@ -60,6 +60,3 @@ iOS and OS X applications actually ship with two interfaces. The first is the in
 The crux of the argument for accessibility on iOS and OS X is simply that it takes nearly no time to do. Knowing, they say, is half the battle, but with accessibility, it's more like 90% of the battle. You just need to know what to use, and when to use it. For example, a button using an image and no text will need an accessibility label.
 
 Check out [Matt Gemmell's excellent post](http://mattgemmell.com/accessibility-for-iphone-and-ipad-apps/) on iOS accessibility for an in-depth perspective on the topic. A lengthy read, it's well worth your time.
-
-
-  

@@ -5,11 +5,9 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/979035292308066304
 ---
 
-
 I was asked online for a list of resources for iOS developers looking to dip their toes into React Native. What a great question!
 
 React Native is a framework for building native apps (iOS and Android) on top of React, which is a JavaScript framework for writing user interfaces. There are many benefits (and drawbacks, of course) to using React Native. **Importantly**: React Native is just a tool. It's not a replacement to Swift or Objective-C; it's just a tool that you can add to your toolbox. The more tools you have, the more types of problems you can solve!
-
 
 ---
 
@@ -24,5 +22,3 @@ Naturally, Artsy's React Native codebase is open source. You can [download the c
 One more resource I found quite helpful, but assumes a bit of a web developer-y background, is [egghead.io](https://egghead.io). It contains excellent, short video screencasts explaining single topics at a time. It's a paid resource; if you can, ask your work to pay for it.
 
 So that's it! Hopefully you'll find these useful. One final note: it's easy to get frustrated and discouraged. Especially if you're trying this by yourself. But try not to give up – this stuff is new, and new stuff is always difficult. Try not to worry about understanding the full stack. There's going to be a lot of communal knowledge that "everybody knows" but no one specifically teaches. It sucks. The best suggestions I can give you is to find someone to learn this stuff with, together. Don't give up, you can do this.
-
-  

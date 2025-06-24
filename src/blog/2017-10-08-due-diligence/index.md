@@ -5,9 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/916849438982852608
 ---
 
-
 Okay so yesterday I wrote a [hypothetical blog post](/blog/apple-releases-jive/) about a new testing framework that Apple made. I've got a lot of feedback – more than I expected, honestly. Developers really care about their tools.
-
 
 One piece of criticism I received is that I hadn't filed any bug reports with Apple asking for these features. I did include a link to [Apple's bug reporter](http://bugreport.apple.com) and asked people to file radars, but I didn't provide any radars to duplicate. That was an oversight on my part.
 
@@ -23,10 +21,8 @@ So here's some due diligence: I have filed eleven radars with Apple asking for i
 - [34873674 Xcode should only run tests related to files changed since the last commit](http://www.openradar.me/radar?id=4959620246274048)
 - [34873507 Add a test-on-save feature](http://www.openradar.me/radar?id=6063405903380480)
 - [34873492 Unit tests always run in the same order, but should be randomized](http://www.openradar.me/radar?id=4937505996537856)
-- [34876469	Isolate global state between tests by isolating tests](http://www.openradar.me/radar?id=5001137547640832)
+- [34876469 Isolate global state between tests by isolating tests](http://www.openradar.me/radar?id=5001137547640832)
 
 These are _all_ feature requests that I'm bringing from other communities – mainly Ruby and JavaScript. I've been [asking developers to bring ideas from other communities since Swift was in beta](https://www.youtube.com/watch?v=LtrzZb5Jw0g). It's fair to ask me to follow my own advice.
 
 What features would make your day-to-day life as a developer easier, or more joyful?
-
-  

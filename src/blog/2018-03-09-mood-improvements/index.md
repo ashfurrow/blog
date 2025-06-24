@@ -5,9 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/969939894662565889
 ---
 
-
 Okay so it's been over a month since I [last checked in](/blog/progress-and-pianos/) about how my mood was doing. It's better! But I have this habit of believing that everything is improving because I feel good _at the moment_, despite continued problems in my mood. So I'll go to my psychiatrist and she'll say "how've you been this week?" and I'll say "great!" because I feel good _at that moment_, and it prevents me from acknowledging the problems.
-
 
 But this time, I have data! My friend Felix wrote a [small Telegram app](https://github.com/KrauseFx/mood) that texts you three times a day to ask how you're feeling. Nice.
 
@@ -34,5 +32,3 @@ But hey look! For the past week, my mood has been almost entirely 3 (good, alrig
 ---
 
 If you want to track your mood with software, you have a few options. There's the app I'm using that I linked to earlier, as well as [HWYD](https://expo.io/@kkemple/hwyd), detailed in [this awesome blog post](https://medium.com/@kurtiskemple/introducing-hwyd-an-app-for-graphing-depression-442a508c2016) and is [also open source](https://github.com/kkemple/hwyd).
-
-  

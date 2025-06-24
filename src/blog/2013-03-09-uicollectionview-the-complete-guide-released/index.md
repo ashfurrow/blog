@@ -1,5 +1,5 @@
 ---
-title: 'UICollectionView: The Complete Guide Released'
+title: "UICollectionView: The Complete Guide Released"
 date: 2013-03-09
 ---
 

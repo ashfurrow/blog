@@ -9,7 +9,7 @@ I've been using Cursor for coding tasks lately, trying to explore what kinds of 
 
 I ran into this last kind of problem recently, when I tried to prototype a large idea for this blog, my personal website. I told Cursor what we're doing and it started strong. It was making great progress when suddenly it got stuck, in a loop, on a _very_ simple change to a config file.
 
-My approach had been too much, too fast. To refine my approach, I tried using a conversational LLM instead of Cursor. I've generally not used conversational LLMs like ChatGPT until a few months ago, because I hadn't found them to be that useful and because it's rational to be skeptical of tech hype. But people _are_ using them, for all kinds of things. Conversational LLMs are replacing search, in terms of user behaviour. I had heard of developers using them to help think through ideas and plans, so why not try? 
+My approach had been too much, too fast. To refine my approach, I tried using a conversational LLM instead of Cursor. I've generally not used conversational LLMs like ChatGPT until a few months ago, because I hadn't found them to be that useful and because it's rational to be skeptical of tech hype. But people _are_ using them, for all kinds of things. Conversational LLMs are replacing search, in terms of user behaviour. I had heard of developers using them to help think through ideas and plans, so why not try?
 
 I talked my idea through with the LLM and... it was actually pretty helpful! It was a bit like "rubber duck debugging" if the rubber duck could answer you. And lookup GitHub issues, and quote documentation, etc. I was pretty impressed. It validated my idea was a good idea and suggested some alternatives.
 

@@ -3,11 +3,10 @@ title: On Heroes and Schedules
 date: 2013-11-27
 ---
 
-
 Yesterday I found myself reading a very interesting Twitter conversation between Steve Streza, Jordan Kay, and Jonathan Wright. I chimed in in response to this:
 
 > [@SteveStreza](https://twitter.com/SteveStreza) [@\_Jordan](https://twitter.com/_Jordan) I somewhat agree with Steve (odd feeling this) and have worked on team where working sane hours makes you feel guilty.
-> 
+>
 > — Jonathan Wight (@schwa) [November 26, 2013](https://twitter.com/schwa/statuses/405397906615595008)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 It struck a chord with me because I've been in a situation where I felt guilty about the (insane) hours everyone else was working around me and, eventually, the roles became reversed and I started working hours that made the others feel guilty.
@@ -23,6 +22,3 @@ This is a great segue into our next topic: flexible work hours. My previous poin
 These are two separate, yet intertwined topics. Heroes alienate other devs and brew a hostile work environment, flexible hours are great permitted employer expectations don't start to creep.
 
 Don't work yourself to death; communication is good. Get back to work.
-
-
-  

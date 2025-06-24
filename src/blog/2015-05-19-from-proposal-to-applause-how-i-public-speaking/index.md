@@ -1,5 +1,5 @@
 ---
-title: 'From Proposal to Applause: How I do Public Speaking'
+title: "From Proposal to Applause: How I do Public Speaking"
 date: 2015-05-19
 ---
 

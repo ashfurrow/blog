@@ -3,9 +3,7 @@ title: Photographic Rut
 date: 2014-09-05
 ---
 
-
 Lately, I've been feeling like I'm in a bit of a photographic rut. Not taking as many photos, not developing them as quickly, and not posting anything when I do. It's been going on since about April, which is a shame. This past week, though, I've made an effort to get out there and take some photos. It's been hard, since I've been sick for the past four days, but fresh air helps, even if it's just a ten-minute stroll around the block. And I always make sure I have a camera with me.
-
 
 There's a camera store nearby that has old film cameras. _Has_, not _sells_, because a lot of them aren't for sale. Old Leica IIIf's and the like. Prestine-condition. I often go in just to admire them.
 
@@ -24,6 +22,3 @@ New gear isn't a reliable way to get out of a rut. I know that from experience. 
 My first impressions of the digital Leica shooting experience are good. Better than my Fuji X100S. But different from shooting film. Not better or worse, but different. I'll probably continue to shoot 50/50 film and digital.
 
 I'm really looking forward to exploring new places with my new camera. We've got upcoming trips to Spain, Italy, and Russia, and I can't wait.
-
-
-  

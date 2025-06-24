@@ -5,9 +5,9 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1428035094468509698
 ---
 
-It's been over seven months since [I joined Shopify](https://ashfurrow.com/blog/joining-shopify/) and I am overdue on a blog post about my experiences so far. I want to give a little update on my time here: a Shopify Update or, "Shopifupdate", if you will. The tl;dr is that things are going very well! If you're interested in more detail, read on. 
+It's been over seven months since [I joined Shopify](https://ashfurrow.com/blog/joining-shopify/) and I am overdue on a blog post about my experiences so far. I want to give a little update on my time here: a Shopify Update or, "Shopifupdate", if you will. The tl;dr is that things are going very well! If you're interested in more detail, read on.
 
-Things at Shopify have been going well for me. I said in my original post that I wanted to work with good people, on interesting technologies, in a high-trust work environment. And Shopify has definitely checked all those boxes. 
+Things at Shopify have been going well for me. I said in my original post that I wanted to work with good people, on interesting technologies, in a high-trust work environment. And Shopify has definitely checked all those boxes.
 
 Beyond those criteria, the team I'm working on in particular (the [Shop](https://shop.app/) team) has a really great culture that I've found myself feeling at home in. I was surprised by how quickly I felt at ease, actually. As one small example, I know that the word "Shopifupdate" in the opening paragraph of this post is going to get a few laughs in Shop because _these are my kind of people_. Everyone in Shop (and Shopify, broadly) have been generous with their time which has helped me quickly gain the context I need to "do software leadership" within Shopify.
 
@@ -28,7 +28,3 @@ Beyond just "succeeding", though, I'm happy. I feel myself _beginning_ to thrive
 ---
 
 If you're interested in working together, [Shopify is hiring](https://www.shopify.ca/careers/2021). You can also reach out to me at [ash@ashfurrow.com](mailto:ash@ashfurrow.com) and we can chat.
-
-
-
-

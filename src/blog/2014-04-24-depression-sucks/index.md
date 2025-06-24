@@ -3,7 +3,6 @@ title: Depression Sucks
 date: 2014-04-24
 ---
 
-
 So yeah. I [blogged](/blog/amsterdam-update) earlier this week about a lot of things, including how I was tapering off my medication.
 
 Mmhmm.
@@ -27,6 +26,3 @@ I've never really talked about how bad my depression really got. In the Fall of 
 This past weekend has reminded me of that time. I find myself questioning weather or not I was ready to take this step. On the one hand, I wanted to stop taking medication because I felt that it had helped me get through the roughest patch – to get enough energy to fight depression using [self-talk](http://www.amazon.com/gp/product/0898621283/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0898621283&linkCode=as2&tag=ashfur-20) techniques and meditation. On the other hand, maybe halving my dose of the second drug came too soon. I haven't been diligent about meditating since moving to Amsterdam, so I really need to get back on that.
 
 I'm going to give it some more time, since I am getting better as time moves forward. However, going from my half dose down to nothing is going to be really, really hard. Since I have a lot of travelling in May and June, I might leave that next step for July. We'll see.
-
-
-  

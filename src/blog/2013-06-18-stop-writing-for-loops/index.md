@@ -3,7 +3,6 @@ title: Stop Writing For Loops
 date: 2013-06-18
 ---
 
-
 Most of the time, when we use a `for` loop, it's to iterate over some collection. Typically an array. We used to write things like this:
 
 ```
@@ -46,6 +45,3 @@ This abstracts away _how_ the computer is doing something and let's you focus so
 We used to have to use arrays because Objective-C didn't have blocks. We've left the dark ages and can now focus on what we're trying to accomplish instead of being mired in the minutia of how the computer works.
 
 EDIT: Several readers have pointed out the [performance](http://darkdust.net/writings/objective-c/nsarray-enumeration-performance) [gains](http://stackoverflow.com/questions/4486622/when-to-use-enumerateobjectsusingblock-vs-for) when using the different methods. Good point, and definitely worth a read.
-
-
-  

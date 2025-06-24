@@ -3,7 +3,6 @@ title: On Turning 26
 date: 2014-04-16
 ---
 
-
 My friend and colleague [Orta](http://twitter.com/orta) does a series of blog posts on his [site](https://orta.github.io) whenever his birthday rolls around. I haven't written anything self-reflective for a while, so I thought I'd do the same. This post isn't really _for_ you – I feel it's for me.
 
 Today I turn 26 years old.
@@ -49,6 +48,3 @@ In the next year, we'll very likely be moving to New York when our Dutch visas e
 I probably won't write another book for a while, since it's so exhausting, but I've got a great series of talks lined up, and I'm going to keep up at least [one](http://notificationcenter.tv) of my podcasts.
 
 Thanks again for reading.
-
-
-  

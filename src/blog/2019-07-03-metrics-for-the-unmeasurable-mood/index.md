@@ -5,19 +5,17 @@ banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1146480157336702976
 ---
 
-
-I need to preface this post with a disclaimer: what works in a business context will not necessarily work in a personal context. I'm always sceptical when I hear of people applying productivity tips or office interpersonal schemes to their personal lives, _especially_ as engineers. Engineers solve problems. When engineers deal with interpersonal _situations_, they tend to approach them as interpersonal _problems_. Problems that need solutions. 
+I need to preface this post with a disclaimer: what works in a business context will not necessarily work in a personal context. I'm always sceptical when I hear of people applying productivity tips or office interpersonal schemes to their personal lives, _especially_ as engineers. Engineers solve problems. When engineers deal with interpersonal _situations_, they tend to approach them as interpersonal _problems_. Problems that need solutions.
 
 And not everything in life is a problem that needs to be solved. Some things just are.
 
 Okay, now on to the post.
 
-
 Have you ever tried to measure something difficult? Something that defies measurement, even? The old saying goes that "what cannot be measured cannot be managed", and if you're trying to manage something like (for example) your mood, then measuring it becomes important. [In the past](https://ashfurrow.com/blog/all-i-can-say-is-im-excited/), I've been able to get away with rough approximations. These were super-useful at the time. But nowadays, my approach to mood management is more about supporting habits and routines that support a healthy mood (rather than managing my mood itself, which has been really stable, thanks for asking).
 
 It was about 6 months ago that I came across _[Metrics for the unmeasurable](https://lethain.com/metrics-for-the-unmeasurable/)_, a blog post that describes **synthetic metrics**. These can be placeholders for actual metrics that are too difficult or too expensive to measure directly. The post describes how to use synthetic metrics to "measure" really amorphous things like "is our company secure?" I encourage you to read it.
 
-A synthetic metric is a way to combine smaller, easier-to-measure natural metrics to give an approximation of a hard-to-measure value. 
+A synthetic metric is a way to combine smaller, easier-to-measure natural metrics to give an approximation of a hard-to-measure value.
 
 Like my mood. I knew that there are things that affect my mood, like whether I'd meditated that day or not. So I gathered a collection of these metrics in the form of yes/no questions into a spreadsheet. This yielded a single number that encapsulates _a lot_ of what goes into my day-to-day life. (Synthetic metrics, as defined in _Metrics for the unmeasurable_, are a bit more complex. I've found that simplifying them has worked best _for me_, and you should always find out what works _for you_.)
 
@@ -56,7 +54,3 @@ Something similar happens with my daily personal synthetic metrics. It's not rea
 These are all really useful observations and, while they may be obvious, they are only obvious once you _actually observe_ them. Having this record has helped me reflect on how my life has been going and where I want it to go next.
 
 Should you start keeping daily personal synthetic metrics? I don't know. The value of the synthetic metrics is really reflection and retrospection, which I _definitely_ recommend you do. Just make sure to do it in a way that works for you.
-
-
-
-  

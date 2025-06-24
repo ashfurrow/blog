@@ -3,11 +3,9 @@ title: Sharing is Selfish
 date: 2014-08-12
 ---
 
-
 OK, OK, not _all_ sharing is selfish, of course. A more accurate headline would have been _Sharing Can Be Selfish_, but I could have written _Four Mind-Blowing Reasons Why Sharing Makes You Rich_, so count your blessings.
 
 So let's talk about the selfish benefits of sharing knowledge. To do so, we'll have to define what that actually means.
-
 
 _Sharing knowledge_. Hmm.
 
@@ -72,7 +70,7 @@ Often, when I begin to write about a subject, I don't really know what I am talk
 This is the final benefit to sharing knowledge, and it's one that I used when writing this blog post. I had a few ideas about the benefits of sharing, but I wanted to verify those ideas and to get some more.
 
 > What do y'all consider the benefits of sharing knowledge via blog posts or open source software? I know what I think – what are your ideas?
-> 
+>
 > — Ash Furrow (@ashfurrow) [August 12, 2014](https://twitter.com/ashfurrow/statuses/499104489211985920)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I was able to just ask Twitter what they thought and get people to give me _their_ ideas, _for free_. Why would anyone answer some asshole on Twitter? Well, there is a concept in evolutionary biology called [_Reciprocal Altruism_](http://en.wikipedia.org/wiki/Reciprocal_altruism). The idea is simple: you scratch my back, I'll scratch yours.
@@ -84,6 +82,3 @@ People who know me know that I share knowledge, and are more likely to share kno
 I've laid out the four main selfish reasons that it makes sense for you to share what you learn. Of course, not only does it help _you_ when you share, it helps _everyone_. And if everyone gets better at this software development thingy, you'll get better, too. Rising tides lift all boats, after all.
 
 I've been a long-time advocate for sharing what we learn, _while we learn it_. The fact is that at the very moment you acquire some piece of knowledge, you have a unique state of mind. You are undergoing the mental process of transitioning from ignorance to understanding and, I believe, are uniquely qualified _in that moment_ to teach others what you have just learned. You remember the exact state of mind you had before it "clicked" and can share the mental process that lead to that revelation. _Every_ developer out there should have a blog where they write about things that they – until very recently – did not understand.
-
-
-  

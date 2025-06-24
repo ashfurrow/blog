@@ -1,5 +1,5 @@
 ---
-title: '500px for iPad: Behind The Scenes'
+title: "500px for iPad: Behind The Scenes"
 date: 2012-09-30
 ---
 

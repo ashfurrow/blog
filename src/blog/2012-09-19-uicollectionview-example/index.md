@@ -3,7 +3,6 @@ title: UICollectionView Example
 date: 2012-09-19
 ---
 
-
 We're going to take a look at the new `UICollectionView` class Apple introduced in iOS 6. It's used to display a grid of cells, and what better to display in those cells than some beautiful photos from 500px?
 
 I've got an example project completed and hosted [on github](https://github.com/AshFurrow/UICollectionViewExample) that you can check out and play with. Don't forget to [register yourself with 500px](http://developers.500px.com/settings/applications?from=developers) first to get a consumer key and consumer secret, or else the API won't work for you. Copy these into a text file because you'll need them later.
@@ -110,7 +109,7 @@ Creating the `NSFetchedResultsController` is almost the exact same as the projec
     NSError *error = nil;
     if (![self.fetchedResultsController performFetch:&error]) {
          // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
@@ -122,9 +121,9 @@ Creating the `NSFetchedResultsController` is almost the exact same as the projec
 Create two `NSMutableArray` instance variables and instantiate them in `viewDidLoad`. Implement the following `NSFetchedResultsControllerDelegate` methods.
 
 ```objc
-- (void)controller:(NSFetchedResultsController *)controller 
+- (void)controller:(NSFetchedResultsController *)controller
     didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
-    atIndex:(NSUInteger)sectionIndex 
+    atIndex:(NSUInteger)sectionIndex
     forChangeType:(NSFetchedResultsChangeType)type
 {
 
@@ -142,9 +141,9 @@ Create two `NSMutableArray` instance variables and instantiate them in `viewDidL
     [_sectionChanges addObject:change];
 }
 
-- (void)controller:(NSFetchedResultsController *)controller 
+- (void)controller:(NSFetchedResultsController *)controller
     didChangeObject:(id)anObject
-    atIndexPath:(NSIndexPath *)indexPath 
+    atIndexPath:(NSIndexPath *)indexPath
     forChangeType:(NSFetchedResultsChangeType)type
     newIndexPath:(NSIndexPath *)newIndexPath
 {
@@ -328,5 +327,3 @@ Run the app, tap on a photo, and you'll see the following:
 Looks great!
 
 If you have any questions, please let me know. Check out [the code](https://github.com/AshFurrow/UICollectionViewExample) from GitHub and have fun!
-
-  

@@ -3,13 +3,11 @@ title: Putting a UICollectionView in a UITableViewCell
 date: 2013-03-14
 ---
 
-
 **Update**: I've re-written this tutorial using storyboards and Swift – [check it out](/blog/putting-a-uicollectionview-in-a-uitableviewcell-in-swift/)!
 
 ---
 
 So you want to put a collection view inside of a table view cell, eh? Sounds easy, right? Well, to do it right requires a little bit of work. We want a clear separation of concerns so that the `UITableViewCell` isn't acting as the data source or delegate for the `UICollectionView` (because that would be very, very bad). You can follow along by downloading the [sample code](https://github.com/AshFurrow/AFTabledCollectionView).
-
 
 We're going to build a view hierarchy like the one below. Each `UITableViewCell` will contain a `UICollectionView` instead in its `contentView`. (For reasons we'll get into momentarily, this collection view needs to be a custom subclass.) Each collection view contains a certain number of cells, defined by its datasource.
 
@@ -26,7 +24,7 @@ Adding the collection view to the cell is very strait forward. We'll create an i
 <Wide>
 
 ```objc
-- (id)initWithStyle:(UITableViewCellStyle)style 
+- (id)initWithStyle:(UITableViewCellStyle)style
     reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (!(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) return nil;
@@ -69,7 +67,7 @@ This model is going to represent the table view _and_ each collection view. We'l
 <Wide>
 
 ```objc
--(NSInteger)tableView:(UITableView *)tableView 
+-(NSInteger)tableView:(UITableView *)tableView
     numberOfRowsInSection:(NSInteger)section
 {
     return self.colorArray.count;
@@ -83,16 +81,16 @@ Next we'll implement our `UICollectionViewDataSource` methods.
 <Wide>
 
 ```objc
--(NSInteger)collectionView:(AFIndexedCollectionView *)collectionView 
+-(NSInteger)collectionView:(AFIndexedCollectionView *)collectionView
     numberOfItemsInSection:(NSInteger)section
 {
     NSArray *collectionViewArray = self.colorArray[collectionView.index];
     return collectionViewArray.count;
 }
 
--(UICollectionViewCell *)collectionView:(AFIndexedCollectionView *)collectionView 
+-(UICollectionViewCell *)collectionView:(AFIndexedCollectionView *)collectionView
     cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{    
+{
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellIdentifier forIndexPath:indexPath];
 
     NSArray *collectionViewArray = self.colorArray[collectionView.index];
@@ -124,8 +122,8 @@ The only thing left to do is "remember" the content offset of each cell as we en
 <Wide>
 
 ```objc
--(void)tableView:(UITableView *)tableView 
-    willDisplayCell:(AFTableViewCell *)cell 
+-(void)tableView:(UITableView *)tableView
+    willDisplayCell:(AFTableViewCell *)cell
     forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell setCollectionViewDataSourceDelegate:self index:indexPath.row];
@@ -135,8 +133,8 @@ The only thing left to do is "remember" the content offset of each cell as we en
     [cell.collectionView setContentOffset:CGPointMake(horizontalOffset, 0)];
 }
 
--(void)tableView:(UITableView *)tableView 
-    didEndDisplayingCell:(AFTableViewCell *)cell 
+-(void)tableView:(UITableView *)tableView
+    didEndDisplayingCell:(AFTableViewCell *)cell
     forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat horizontalOffset = cell.collectionView.contentOffset.x;
@@ -152,5 +150,3 @@ The only thing left to do is "remember" the content offset of each cell as we en
 That's it. Not a lot of code, but to do it right, it requires a little bit of planning ahead. You can [download the entire sample code on GitHub](https://github.com/AshFurrow/AFTabledCollectionView).
 
 If you've enjoyed this tutorial, and I sincerely hope you have, then I'd recommend my ebook, [`UICollectionView`: The Complete Guide](http://click.linksynergy.com/fs-bin/click?id=3JVIZPzOhac&subid=&offerid=145238.1&type=10&tmpid=3559&RD_PARM1=http%253A%252F%252Fwww.informit.com%252Fstore%252Fios-uicollectionview-the-complete-guide-9780133410945). In the book, I go into far more detail on every aspect of using `UICollectionView`. You can pre-order it now and get access to all the draft chapters immediately.
-
-  

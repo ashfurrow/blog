@@ -3,7 +3,6 @@ title: Fuji X100S Review
 date: 2014-02-18
 ---
 
-
 So I bought a new camera the other day.
 
 Oops.
@@ -35,6 +34,7 @@ I'm really impressed with the image quality so far.
 Distortion from the lens is low-to-nonexistent. I'm really happy with that, since I'm used to wide-angle lenses I use either being zooms or ultra-wides, so distortion has historically been a thorn in my side.
 
 ![](A774C29D587C4F368216F844D15F14C9.jpg)
+
 ## Performance
 
 Performance is good, really good. Good dynamic range, average high-ISO noise. Not nearly as good as my 5D, but it's also a lot less expensive.
@@ -46,6 +46,7 @@ Autofocus is a bit finicky. I've lost a couple of shots to it. Oh, well. It seem
 At f/2, bokeh is nice. Not as creamy as my [Sigma 50mm f/1.4](http://500px.com/photo/49617434), but good for f/2 on a crop sensor.
 
 ![](55153F9C69E943F8B5B50F29D4A0117F.jpg)
+
 ## Conclusion
 
 Overall I'm really happy with the camera. A few quirks but otherwise a real performer. I bought this partially so I could stick it in my coat pocket while going about Amsterdam, and I'm really satisfied with it so far.
@@ -55,4 +56,3 @@ Overall I'm really happy with the camera. A few quirks but otherwise a real perf
 I'm still going to shoot on my M6 – I love that camera. However, the future of my 5D is in question. It's always been more camera than I strictly need, but I love to shoot with it. It's just so damn big. At this point, I'm going to see how my habits develop. If I'm not using my 5D at all, then I'll likely sell it. It would be a compromise on flexibility of a zoom lens and quality of bokey I can get from shots, but life is about compromises I suppose.
 
 ![](8D8EEC8BEBDD4033B0870633EB06BDFF.jpg)
-  

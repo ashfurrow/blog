@@ -3,7 +3,6 @@ title: iOS Concept Designs
 date: 2013-04-05
 ---
 
-
 Here is yet another iOS 7 concept video. I want to talk about it a little bit, so give it a watch (mute your speakers first).
 
 <YouTube videoID='JdW4qNeFkBk' />
@@ -19,6 +18,3 @@ Several of the tap targets I noticed throughout the video look far too small. Co
 Design doesn't exist in a vacuum. Think about how your design is going to fit within the technological ecosystem that it'll live in.
 
 Don't get me wrong – iOS is _not_ perfect. It has a lot of room to grow and is even being surpassed in some ways by other mobile operating systems. But don't go out and grab every feature from every OS you care to riff off – mobile _and_ desktop – and call it a good concept video. Let's be sensible about what we're asking for from Apple, because who knows –&nbsp;we might end up with it.
-
-
-  

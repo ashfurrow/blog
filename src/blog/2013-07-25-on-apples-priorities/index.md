@@ -3,7 +3,6 @@ title: On Apple's Priorities
 date: 2013-07-25
 ---
 
-
 So the Apple Developer portal continues to be [down](/blog/apple-dev-center-breach). The company has created a [status page](https://developer.apple.com/support/system-status/) where we can check when the individual systems come back online.
 
 I have a few issues with their strategy. It appears\* that they're rewriting the whole developer portal from scratch. Huh.
@@ -15,5 +14,3 @@ What's worse is that these developers rewriting the developer portal are working
 The real problem here is that Apple does what's best for Apple first, customers second, and developers last. That means that the developer portal was allowed to rot into a state where it became a security liability for Apple. Then when the company discovered that liability, they did what's best for them: they shut the whole thing down and did a rewrite. Awesome.
 
 - _Update_ I'm making a pretty big assumption here, to be fair.
-
-  

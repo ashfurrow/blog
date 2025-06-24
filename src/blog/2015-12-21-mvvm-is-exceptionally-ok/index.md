@@ -5,9 +5,7 @@ banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/678384591930048512
 ---
 
-
 Last week I saw a blog post float around called [MVVM is Not Very Good](http://khanlou.com/2015/12/mvvm-is-not-very-good/), and I specifically avoided reading it because I was having a not-great week and I was afraid I would take the blog post personally. Well, this morning I read the article and here I am writing a response to it.
-
 
 So let's break this down. The post levels a few criticisms of MVVM:
 
@@ -26,7 +24,7 @@ That's a great start, but it's _just_ a start. Here are a few definitions aimed 
 > A **view controller** _only_ binds user interaction and data display.
 >
 > A **view model** is everything that your view controller used to do, _except_ for anything that directly touches the views.
- 
+
 We could definitely strive for more precise definitions, but the reason these ones persist is to make MVVM approachable for beginners.
 
 Ok, so MVVM is poorly named and uses loose definitions, and that leads to some confusion. But that's fixable! Everything is fixable.
@@ -39,7 +37,7 @@ There's nothing inherent to MVVM that precludes one from following his advice. I
 
 So finally, the last claim is that MVVM doesn't change your structure. As evidence, Soroush links to [an article I wrote](https://www.objc.io/issues/13-architecture/mvvm/). My intention is to help readers understand that MVVM isn't unfamiliar, that it's a cousin of MVC. It's aimed at readers who need help taking the first step away from massive view controllers; the article's point was that MVC and MVVM essentially _are_ the same.
 
-Despite this, I argue that moving to MVVM (keeping the existing app structure, plus view models) is _still_ a great idea. Separating as much code from the view layer as possible makes it _way_ easier to further factor those components into smaller-yet objects. 
+Despite this, I argue that moving to MVVM (keeping the existing app structure, plus view models) is _still_ a great idea. Separating as much code from the view layer as possible makes it _way_ easier to further factor those components into smaller-yet objects.
 
 Separating out view models and view controllers isn't _just_ to make future work easier – it also provides you with an extremely important, immediate benefit: better testability. Now that view controllers are thin, you can use stubbed view models and [test your view controllers visually](https://cocoapods.org/pods/Nimble-Snapshots). Similarly, the logic in your view models is now far easier to test because it's not touching the views _at all_.
 
@@ -57,15 +55,12 @@ However, the iOS community is _so stationary_ that it's very difficult to get ev
 >
 > —Ancient MVVM Haiku
 
-When I read Soroush's post this morning, to be honest I felt a bit attacked. But after reflecting, it's pretty clear that we both want the same thing. I can't speak for him, but I suspect that we're both frustrated by the slow pace of the community. 
+When I read Soroush's post this morning, to be honest I felt a bit attacked. But after reflecting, it's pretty clear that we both want the same thing. I can't speak for him, but I suspect that we're both frustrated by the slow pace of the community.
 
-I hope that no one misinterprets my emphasis on MVVM as a belief that MVVM is the final destination. Far from it. I hope that by using MVVM, people are freed from the belief that they _must_ write software like Apple writes sample code, and we can keep the momentum up. 
+I hope that no one misinterprets my emphasis on MVVM as a belief that MVVM is the final destination. Far from it. I hope that by using MVVM, people are freed from the belief that they _must_ write software like Apple writes sample code, and we can keep the momentum up.
 
 (Side note: I think one of the most beneficial decisions that Apple's made recently, from a developer community perspective, is to _not_ release a large amount of Swift sample code. Instead, they've left it up to us. This has really helped the community realize that we are in control of our own destiny.)
 
-Is MVVM perfect? No of course not. Is it an improvement? I think so. And it makes other improvements a lot easier. 
+Is MVVM perfect? No of course not. Is it an improvement? I think so. And it makes other improvements a lot easier.
 
 I'd rather have a 50-line view controller and a 400-line view model than just a 450-line view controller. A view model that long is doing _way_ too much, but it's a step in the right direction. And it makes following Soroush's [great advice on reducing view controller complexity](http://khanlou.com/2014/09/8-patterns-to-help-you-destroy-massive-view-controller/) way easier.
-
-
-  

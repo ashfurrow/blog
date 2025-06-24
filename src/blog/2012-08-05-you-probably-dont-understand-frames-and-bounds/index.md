@@ -3,16 +3,11 @@ title: I Totally Didn't Understand Frames and Bounds
 date: 2012-08-05
 ---
 
-
 I was thinking about the overall architecture of iOS apps the other day, and it struck me just how much Cocoa Touch enforces use of the Model-View-Controller paradigm. Not just _encourages_, but actively enforces. A good example is your application delegate; by the time your app finishes launching, it's your app delegate's responsibility to make sure that the window your app is in has a root view controller.
 
 Not a view.
 
 A view _controller_.
-
-
-
-
 
 In iOS, a view controller is an object that controls a view hierarchy. Views are nested within one another to be rendered to the user, who can then interact with them. Those interactions represent changes the user wants to make to the data, stored in model objects. The view controller's responsibility is to mediate the interaction between the models and the views (it does so via different mechanisms, of which Cocoa and Cocoa Touch provide a healthy variety of). In essence, that's the MVC framework.
 
@@ -99,7 +94,7 @@ So what's the answer? How do you avoid this?
 
 Don't be lazy.
 
-Objective-C developers often use `self.view.frame` or `self.view.bounds` to create a new subview that takes up the entire visible space. Instead of just copying these `CGRect` values over wholesale, create your own  `CGRect`s.
+Objective-C developers often use `self.view.frame` or `self.view.bounds` to create a new subview that takes up the entire visible space. Instead of just copying these `CGRect` values over wholesale, create your own `CGRect`s.
 
 Let's review:
 
@@ -120,5 +115,3 @@ A little more typing, sure, but this is Objective-C. We don't eschew verbosity. 
 This problem is not really all that bad, since you'll mostly be OK. Mostly. And hey, we've all written code that's not great. I just looked through the 500px codebase and I've found several occurrences of this, mostly to get my view's size.
 
 So the takeaway is, know what you're doing. If you don't know, learn. View hierarchies are a _huge_ part of making amazing apps. Make sure that you completely understand [views](http://developer.apple.com/library/iOS/#documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/WindowsandViews/WindowsandViews.html) and their [coordinate systems](http://developer.apple.com/library/ios/#documentation/general/conceptual/Devpedia-CocoaApp/CoordinateSystem.html).
-
-  

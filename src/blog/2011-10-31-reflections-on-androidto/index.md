@@ -3,7 +3,6 @@ title: Reflections on AndroidTO
 date: 2011-10-31
 ---
 
-
 ![](EC27B3D9E44448A0B05F08D4C69E5AE7.jpg)
 
 My coworker Tom posted this morning on&nbsp; [what he learned from AndroidTO](http://tomcreighton.com/2011/10/antenna-headed-stepchild/)&nbsp;which forced me to finally write down my thoughts on the conference.
@@ -17,6 +16,3 @@ What I really took away from AndroidTO is that Android is a great platform for h
 Ironically, I checked out the Microsoft booth, and I'm _very_&nbsp;impressed with WinMo 7.5 "Mango" running Metro. Why was I impressed? Intuitive interface, meaningful apps, and, most importantly, a _responsive interface_. This is the one thing that I cannot forgive Android for. When I put my finger down on the screen and pan, I expect whatever is under my finger to move. _Immediately_. Anything less and you've broken every UI metaphor you've tried to create for the user.
 
 I think Apple has less to worry about from Android, and more to worry about from Microsoft. I'm even considering installing Visual Studio and having my hand at it - it looks like a fun platform to develop for.&nbsp;
-
-
-  

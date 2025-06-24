@@ -3,14 +3,9 @@ title: The Joys and Sorrows of Being an Almost-Gamer
 date: 2012-04-30
 ---
 
-
 John Siracusa of [Hypercritical](http://5by5.tv/hypercritical/) has spent the last two episodes, [64](http://5by5.tv/hypercritical/64) and [65](http://5by5.tv/hypercritical/65) discussing gaming as an art form. He draws the conclusion that hard-core video games (not, say, Angry Birds) are a form of art but are novel in that they require skill to appreciate. Unlike wine tasting or film appreciation, some people will never have the hand-eye coordination to appreciate games like Portal.
 
 It's an interesting argument, and I agree with him.
-
-
-
-
 
 I've played a lot of video games in my life, mostly as a kid. I've never really considered myself a gamer, though.
 
@@ -29,6 +24,3 @@ I still play some Mario games and Super Smash Brothers (mostly with my wife), an
 I think that marginal improvements in gamer skill at the high-end of the spectrum result in massive improvements to the joy experienced while playing the game. So if I was a little better at shooters, I'd enjoy them _way_ more.
 
 I'm right at the margin of skills where I know the joy of a really good game, but am incapable of experiencing it. It really sucks.
-
-
-  

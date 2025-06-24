@@ -3,7 +3,6 @@ title: Canada Isn't So Great
 date: 2012-10-15
 ---
 
-
 In the last year, I've made many American friends - mostly those who share a passion for mobile software development.
 
 I've also worked with people from all corners of the globe - China, Russia, England, and Brazil to name a few.
@@ -43,6 +42,3 @@ Since Stephen Harper, our Prime Minister, gained a majority government, we've in
 All while blantantly [flaunting democracy](http://www.thestar.com/opinion/editorialopinion/article/1255830--stephen-harper-s-democracy-award-a-sad-joke-on-canadians).
 
 The US has exported its conservatism to Canada. We're not better than the states; we're just a little behind the curve.
-
-
-  

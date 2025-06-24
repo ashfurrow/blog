@@ -3,7 +3,6 @@ title: Opening Brace Brackets on Their Own Line in Xcode 4
 date: 2012-09-10
 ---
 
-
 If you're like me, you like your brace backets on their own lines, like this:
 
 ```
@@ -29,13 +28,15 @@ What the hell, Xcode? Even the project templates have brace brackets on their ow
 
 Thanks to [some research](http://stackoverflow.com/questions/5324622/how-to-change-autocomplete-braces-in-xcode-4), I found the [file](http://forrst.com/posts/Put_that_where_it_might_belong_Xcode-PNL) you need to edit. The problem is, Xcode is now distributed through the Mac App Store, so the steps are a little different. Here's what you do.
 
-1. Open the terminal. 
+1. Open the terminal.
 2. Type `cd /Applications/Xcode.app/Contents/PlugIns/IDECodeSnippetLibrary.ideplugin/Contents/Resources` and hit Enter.
 3. We're editing `SystemCodeSnippets.codesnippets`, but let's make a backup first. Type `sudo cp SystemCodeSnippets.codesnippets SystemCodeSnippets.codesnippets.backup` and hit Enter.
 4. Use your text editor of choice to open the file as the root user.
-  - Using vim, the command is `sudo vim SystemCodeSnippets.codesnippets`
-  - Using anything else, like TextMake, it's `sudo open -a TextMate SystemCodeSnippets.codesnippets`
-5. 
+
+- Using vim, the command is `sudo vim SystemCodeSnippets.codesnippets`
+- Using anything else, like TextMake, it's `sudo open -a TextMate SystemCodeSnippets.codesnippets`
+
+5.
 
 Do a "Find" for the word "condition" and you should find almost all the instance of the snippets you want to modify. It'll look like this:
 
@@ -69,6 +70,3 @@ This will find all the if statements and most loops; search for the text "forin"
 Save the file and restart Xcode. That's it!
 
 **Update** : My friend Zev is maintaining an up-to-date version of `SystemCodeSnippets.codesnippets` for the latest Xcode version [on GitHub](https://github.com/sveinungkb/ios-convenience). Go check it out.
-
-
-  

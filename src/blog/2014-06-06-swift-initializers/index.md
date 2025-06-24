@@ -3,7 +3,6 @@ title: Swift Initializers
 date: 2014-06-06
 ---
 
-
 Swift, Apple's new programming language for iOS and OS X, makes several significant departures from Objective-C. What I found to be particularly interesting are the new semantics surrounding object lifecycles. Here are the key points:
 
 - Formalizing convenience and designated initializers.
@@ -158,8 +157,6 @@ class Image {
 }
 ```
 
-Inside the `init?`, you can `return nil` to define a failing initialization, or assign `self = whatever` to indicate success. 
+Inside the `init?`, you can `return nil` to define a failing initialization, or assign `self = whatever` to indicate success.
 
 Be careful about calling through to a failable initializer inside of a regular one – a non-failing initializer _must not fail_. The compiler will force you either to force-unwrap the call to `super.init()` or to change your initializer to _also_ be failable. Neat!
-
-  

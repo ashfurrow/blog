@@ -3,7 +3,6 @@ title: Obsession with JFK
 date: 2011-02-22
 ---
 
-
 So I've been doing research into men's style. I'm not talking trends or "what's in" (that's why I called it "style" and not "fashion"). I'm talking about basics: how to properly iron a shirt, take care of leather, the history of pocket square (it was the Greeks!), and so on.
 
 A _lot_ of online resources are out there, and most of them purport their own opinions as universal laws of style. Some common ones include:
@@ -26,6 +25,3 @@ I don't know why, but this realization made me feel a lot better. It made me thi
 My friend Alex insists that how you act is more important than what you're wearing; maybe the clothes don't make the man after all :P
 
 Photo credit: [Suit Society](http://www.suitsociety.com/jfk/)
-
-
-  

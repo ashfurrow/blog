@@ -3,7 +3,6 @@ title: Default Initializer Style
 date: 2013-01-25
 ---
 
-
 I just created a new class, subclassing `UITableViewCell`, and this is the initializer Xcode gave me:
 
 ```
@@ -33,6 +32,3 @@ Garbage. Never mind the fact that the brace bracket style isn't even consistent,
 Holy balls that's better.
 
 Am I crazy here? Or am I just the last sane developer left?
-
-
-  

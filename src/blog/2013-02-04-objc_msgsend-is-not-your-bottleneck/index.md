@@ -3,7 +3,6 @@ title: objc_msgSend Is Not Your Bottleneck
 date: 2013-02-04
 ---
 
-
 I got a lot of feedback from dot-syntax-haters over my [Seven Deadly Sins](/blog/seven-deadly-sins-of-modern-objective-c) post. They argued that, compared to direct instance variable access, dot syntax – and, implicitly, message-passing – are an order of magnitude slower.
 
 Well, they're right. Not that it matters much.
@@ -95,6 +94,3 @@ Generally, I reserve accessing instance variables backing properties only for ca
 The balancing act between cost of cycles on the CPU and cost for developers to read code does not have a one-size-fits-all answer. It's up to each team to decide what's more valuable to them and their product.
 
 tl;dr Don't waste time trying to diagnose problems associated with too many calls to `objc_msgSend`. You almost certainly have bigger performance problems your time would be better spent addressing.
-
-
-  

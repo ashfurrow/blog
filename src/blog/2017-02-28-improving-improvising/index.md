@@ -5,9 +5,7 @@ banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/835656365276299264
 ---
 
-
 I'm nearly three months in to [learning guitar](https://ashfurrow.com/blog/learning-guitar/) and it's going _awesome_. I'm still teaching myself through [Yousician](http://yousician.com) but I'm thinking of getting a teacher to help. I've also been supplementing their curriculum more and more with something even more important than a teacher: experimentation.
-
 
 After watching a tonne of videos and reading a tonne of material online, a core message started to emerge: experimenting makes you a better guitar player.
 
@@ -28,5 +26,3 @@ So I wonder: what does a backing track look like in code? Well in music, a backi
 Some backing tracks are simple, some are complicated. Some repeat themselves a lot, others change constantly. And different backing tracks lend themselves differently to different styles of music.
 
 I'm excited. To learn more guitar, to write more code, and to continue to explore the parallels between two of my favourite forms of expression.
-
-  

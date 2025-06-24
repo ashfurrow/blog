@@ -5,11 +5,9 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/706465122202603522
 ---
 
-
 We're seeing an explosion in the number of server-side Swift frameworks, which is _awesome_. The community needs to go in many directions to find out which ideas it should standardize on. Not all of these new libraries will be long-lived: some will fade out while others will become pillars of the server-side Swift community. _Which_ libraries the community centres around won't depend solely on code quality; it'll depend heavily on _community_ quality.
 
 So if you've recently created a server-side Swift library (or if you want to (and statistically, you _probably_ do)) then I have some suggestions on how to win the server-side Swift library arms race.
-
 
 Now, the longevity and popularity of your library depends on both the quality of its code and of its community. I won't tell you how to measure code, but here are some tips to create a quality community and increase the chances that _your_ library is the _the_ library the community chooses.
 
@@ -47,9 +45,9 @@ Remember, your goal is to create a community of people to contribute to the libr
 
 Whether or not _you_ think your library needs a code of conduct, it does.
 
-Why? 
+Why?
 
-Because your library need contributors (see above). 
+Because your library need contributors (see above).
 
 Prospective contributors will feel more comfortable if they know they won't be bullied for making a mistake (for example), so they'll be more likely to contribute.
 
@@ -83,8 +81,6 @@ You don't strictly _need_ these, but they help. I usually link to [Moya's contri
 
 ---
 
-These suggestions are focused on what your _library_ needs to be awesome; they're not focused on you. That may sound harsh, but I'd rather be honest than lead you on. The truth is, building an awesome library has a lot less to do with code than you might think. If you don't want to deal with building a community – if you just wanna code – that's totally cool, but you should consider finding a library already out there and contributing to it. 
+These suggestions are focused on what your _library_ needs to be awesome; they're not focused on you. That may sound harsh, but I'd rather be honest than lead you on. The truth is, building an awesome library has a lot less to do with code than you might think. If you don't want to deal with building a community – if you just wanna code – that's totally cool, but you should consider finding a library already out there and contributing to it.
 
 And sending the maintainers this blog post couldn't hurt either 😉
-
-  

@@ -3,12 +3,7 @@ title: "Leaving New Brunswick for Toronto: A Year Later"
 date: 2012-06-27
 ---
 
-
 It's now been a year to the day since my wife and I (and our two cats) packed everything we own into a Ford Explorer and drove 15 hours to Toronto. I think that it is important to look back at the move, examine our motivations and the consequences of moving to Toronto.
-
-
-
-
 
 (Note: this is a reflective piece and I switch between first-person singular _I_ and plural _we_ to delineate my perspective from that which I share with my wife.)
 
@@ -53,6 +48,3 @@ So the long and short of it was that we intended to live in a larger city for th
 So there you go. June 26th, 2011 was the date we left New Brunswick. For the immediate future, Ashley and I have decided to stay in Toronto. The reasons are as professional as they are personal, but we're not opposed to the idea of moving somewhere else in the future.
 
 A move back to the Maritimes isn't out of the question, but I personally think we're more likely to move to a whole new city, if we move at all. For now, anyway, Toronto is where we feel we belong, so that's where we are staying.
-
-
-  

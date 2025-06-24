@@ -1,5 +1,5 @@
 ---
-title: 'My First XOXO: Impressions, Thoughts, Feels'
+title: "My First XOXO: Impressions, Thoughts, Feels"
 date: 2019-09-10
 banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1171250124749778944

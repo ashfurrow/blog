@@ -3,7 +3,6 @@ title: Espresso Grinder Woes
 date: 2011-07-14
 ---
 
-
 Fact: [Coffee Geek](http://coffeegeek.com/) is an amazing website but a dangerous one.
 
 I've been less and less happy with my [Mazzer Mini](http://www.amazon.com/gp/product/B002U3DFNY/ref=as_li_ss_tl?ie=UTF8&tag=ashfur-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B002U3DFNY) since I got my new machine. I think it's partially because the new machine is capable of producing so much more amazing espresso that it's pointing out the flaws in my distribution/tamp technique.
@@ -19,6 +18,3 @@ It turns out that the Macap M4 suffers from a few flaws of its own that make "up
 I could sell my Mazzer for about the price of a new doserless M4, but I don't think it would fix my espresso. Instead, I tried a mod where you can remove the guts of the Mazzer doser and replace it with a paper cone or funnel that shoots the grinds into the centre of your basket. I tried this cheap alternative to paying $177 for a [aluminium funnel](http://www.espressoparts.com/cgi-bin/ep.pl?pgm=co_disp&func=displ&strfnbr=71&prrfnbr=2932&sesent=0,0&search_id=803458), but the doser on my Mazzer is too short; the coffee would only "avalanche" and clump. I actually ended up breaking one of the lower vanes from the doser, a $25 part, during the disassembly, too. You can take a look at my efforts in [here](https://picasaweb.google.com/ash.furrow/MazzerMiniDoserDisassembly?authuser=0&feat=embedwebsite).
 
 I'm going to keep my Mazzer and focus on improving my technique. I could look for a better grinder, but only a poor workman blames his tools, and the tools I have are good enough for some of the best baristas in the world. If there's an issue with my espresso setup, it's definitely on the, erm, handle side of the portafilter.
-
-
-  

@@ -3,7 +3,6 @@ title: My Podcast Loves Me
 date: 2012-01-08
 ---
 
-
 It's no small secret that I'm hilarious. Since starting at 500px, I've worked with people who are also hilarious, so we started a podcast! It's called " [--force](http://dashdashforce.me/)" (like you do on the command line) since it's ostensibly about what it takes to work at a startup. ( [iTunes link](http://itunes.apple.com/us/podcast//id486218686))
 
 The first two episodes suffer from poor audio quality. Episode three is where we really start to get good. The most recent episode is described by:
@@ -17,4 +16,3 @@ Each Friday afternoon, we sit in a soundproof-but-not-really room and record an 
 If you like us, you should rate us in iTunes. If you don't like us, then nevermind.
 
 ![](C0A05AB96EE7485889DB7A88C7FA6ED3.png)
-  

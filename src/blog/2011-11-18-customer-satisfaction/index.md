@@ -3,7 +3,6 @@ title: Customer Satisfaction
 date: 2011-11-18
 ---
 
-
 The first lesson I learned about business was to keep the customer happy. If the customer was happy, then you would get paid. Another lesson I learned, years later, was that when making software, your customers weren't necessarily your users. I've worked, among other places, for various businesses over the past few years: a .Net shop writing entreprise software for corporations as large as Thompson Reuters, a small contractor shop, a "disruptive, pre-revenue social media startup" (what a clustermess that turned out to be), and presently&nbsp; [500px](http://500px.com/), a startup that allows features photographers' best works. In working for such a variety of shops, the lesson I mentioned have a sort of&nbsp;corollary: in software development, you make decisions that are in the best interests of your customer, not necessarily the user.
 
 As I've talked about, before, [I'm in the business of making users happy](/blog/ash-furrows-holistic-software-development-agency/). I want to, above all else, make decisions that are in the _users'_&nbsp;best interests. The easiest way to do this in my professional life is to work for a company whose&nbsp;_users_ _are their customers_. That's what I love about work at 500px.
@@ -19,6 +18,3 @@ At the contractor agency, the clients were the people we were writing software f
 At 500px, our users are our customers. Those that aren't paying for us are potential customers, and it's my job as a software developer to _make people happy_. I love that. I never have competing interests distracting me from what I love to do. As a guy who has, for years, dreamed of being paid to just make cool stuff, I couldn't be happier.
 
 There are a few other niche products, but for the most part, if you're developing software, you're either selling to your users, writing software for clients, or selling to someone other than your users. Or you write software for the government, in which case, god help you.
-
-
-  

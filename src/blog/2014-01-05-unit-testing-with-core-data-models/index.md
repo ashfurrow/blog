@@ -3,7 +3,6 @@ title: Unit Testing with Core Data Models
 date: 2014-01-05
 ---
 
-
 I've been experimenting with [Model-View-ViewModel](https://github.com/ReactiveCocoa/ReactiveViewModel#model-view-viewmodel) lately; one of the benefits of using MVVM is that your code becomes more testable. In a nutshell, you take all of the presentation logic in view controllers, which are infamously hard to unit test, and put them in a _view model_ that is easy to unit test. Then you can test that logic.
 
 Great.
@@ -36,6 +35,3 @@ beforeEach(^{
 Now, instead of mocking `NSManagedObject`s, I can use them themselves and rely on the data they contain. A weakness of this approach is that relies on the data in the model instead of mocks, so if your tests just happen to pass because of that data, you might be getting false positives.
 
 I'm still completing the tests for this project, so I'm open to suggestions on how to improve the tests. Feel free to open an issue or pull request on the [GitHub project page](https://github.com/AshFurrow/C-41).
-
-
-  

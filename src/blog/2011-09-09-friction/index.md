@@ -3,7 +3,6 @@ title: Friction
 date: 2011-09-09
 ---
 
-
 One of the first things you learn in Human-Computer Interaction is that software is used by people to help them accomplish some task. That's why we call them users, because they're _using_&nbsp;software. That is the primary goal of any piece of software, to help complete a task. A word processor helps a user write a document. An mp3 player helps a user listen to their music. A web browser lets a user access the Internet. And so on.
 
 When I say "friction", I mean anything about a piece of software that prevents a user from completing their task. This could be anything from confusing menus to popups to extra, unnecessary steps to do something.
@@ -17,6 +16,3 @@ There are other types of this friction, too. Things like prompts to update softw
 The answer, most often, is laziness.
 
 As software creators, every time we add friction to the user experience, we're failing to do our job.
-
-
-  

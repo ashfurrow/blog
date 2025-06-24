@@ -3,7 +3,6 @@ title: Blog Theme Update
 date: 2012-01-08
 ---
 
-
 So I've updated my blog theme. It's been an incremental change since I began fiddling with the CSS a month ago. The biggest change, however, is turning commenting off.
 
 For reference, a stock install of this theme looks like this:&nbsp;
@@ -21,6 +20,3 @@ And she's right. If comments were disabled by default, I probably wouldn't have 
 She pointed out how this is the "default" mode for the web, and she's right again. The web is for serving _documents_, after all. It takes a fair bit of work to get comments working, compared to just serving documents. I feel like many blogs have comments enabled just because, like I did.
 
 I'm hoping, like my new CSS, that this change will bring a new look to this blog.
-
-
-  

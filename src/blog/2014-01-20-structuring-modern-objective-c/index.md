@@ -3,7 +3,6 @@ title: Structuring Modern Objective-C
 date: 2014-01-20
 ---
 
-
 When learning a new skill, like a programming language, we often just mash together whatever works in order to get it running. Later, we'll return to these habits and re-evaluate, adopting best practices from the community and making better, more well-structured code.
 
 Lately, the Objective-C language has received a plethora of new features, but the community's best practices hasn't consistently stayed up to date. This goes beyond just "style" and into "structure".
@@ -69,8 +68,9 @@ You've just defined a _public_ getter but a _private_ setter. Congrats! Now you 
 Schwa adds one more suggestion:
 
 > [@ashfurrow](https://twitter.com/ashfurrow) re: “Use Read-only Properties in Headers”. I’d also add do not expose mutable objects in headers too. Good article btw.
-> 
+>
 > — Jonathan Wight (@schwa) [January 24, 2014](https://twitter.com/schwa/statuses/426760500056047616)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Properly Define `BOOL` properties
 
 It's always been a good idea to follow [Apple's Guidelines](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CodingGuidelines/Articles/NamingMethods.html#//apple_ref/doc/uid/20001282-1004202-BCIGGFCC) when declaring properties. But I admit I haven't always been diligent. Remember that when declaring `BOOL` properties to define a custom getter.
@@ -131,8 +131,9 @@ Unless you're writing a framework or other third-party component, most `#import`
 _Update_: Steve Streza points out that the precompiled header really isn't [meant](http://clang.llvm.org/docs/PCHInternals.html) to be used like this. I'm not sure I completely agree, but wanted to let you all make an informed decision.
 
 > [@ashfurrow](https://twitter.com/ashfurrow) pch files are optimizations. Projects should build without them. So leave Foundation import in if your code depends on them.
-> 
+>
 > — Derpy Streza (@SteveStreza) [January 21, 2014](https://twitter.com/SteveStreza/statuses/425430707419103232)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Grouping `#import` statements
 
 Here's one we've all done from time-to-time. How often have you written a (probably) long implementation file only to have ten or twenty randomly-ordered `#import` statements at the top of your file? Tsk-tsk-tsk. That's ok! We're here to help.
@@ -181,6 +182,3 @@ Note: [Michael](http://twitter.com/italoarmstrong) points out that we should tec
 ## Properly Name Constants
 
 I don't care whether you prefix your constants with 'k' or a class name, or just a prefix, but _do_ be consistent. And descriptive. Otherwise, you'll run into naming conflicts when your codebase grows. Trust me on this one.
-
-
-  

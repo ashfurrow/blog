@@ -3,9 +3,7 @@ title: Lazy Property Setup in Swift
 date: 2014-07-05
 ---
 
-
 A few weeks ago, I was talking with my friend [Robert](http://twitter.com/ratkins) about Swift. He had a problem. He wanted to create a property of a class that is _not_ an optional, but depends on `self` for its creation.
-
 
 The issue revolves around [initializers in Swift](/blog/swift-initializers). If a property is not optional, it _must_ be set _before_ the super's initializer is called. However, in order to refer to `self`, the super initializer must be called _first_. It's a chicken-and-the-egg problem. I need to set my properties before calling `super.init()`, but in order to set my properties, I need to refer to `self`, which I can't do until I've already called `super.init()`.
 
@@ -21,6 +19,3 @@ I've come up with a pretty good solution. Consider a `UIDynamicAnimator` propert
 ```
 
 The downside, as I can see it, is that `@lazy` properties _must_ be `var` and not `let`, so you lose some Swift-ness there. Still, it's better than having an optional type.
-
-
-  

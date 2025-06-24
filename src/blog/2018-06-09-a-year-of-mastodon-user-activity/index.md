@@ -5,9 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1004754417994862592
 ---
 
-
 Oh hey, remember [Mastodon](https://joinmastodon.org)? Remember how I [started my own Mastodon instance](/blog/mastodon/)? How's that been going, anyway? Well it's been (over) a year so let's check in, shall we?
-
 
 Things have been going well on my instance, [mastodon.technology](https://mastodon.technology). I've learned a tonne, I've contributed here and there, and I've gotten to know some of the other instance admins (they rock!). I'm more of a lurker on Mastodon than on Twitter, but it's been nice.
 
@@ -33,6 +31,3 @@ The Fediverse was also recently hit by a wave of spam accounts, which _could_ be
 All in all, I'm pretty happy with things. Aside from the [occasional problem](https://github.com/tootsuite/mastodon/issues/6734) or [misconfigured database backups](https://gist.github.com/ashfurrow/abd1418399883b2bdfdd9a1f6120f139), running a Mastodon instance hasn't been particularly onerous. This is good, since I have a life and a job and running mastodon.technology can't be like a full-time commitment for me. Having the hosting costs [covered by donations](https://www.patreon.com/ashfurrow) also helps _a lot_, since it removes the financial burden from me. Of course, there are occasional moderation duties, but for the most part users on my instance have adhered to the [Code of Conduct](https://mastodon.technology/about/more). A healthy admin support network helps, too.
 
 It's not all roses. Some instances have been lost in the past year, some intentionally, some accidentally. But we're all figuring this out together and I've learned a lot running this service over the past year. Hopefully I can follow this post up in 2019 with updated stats.
-
-
-  

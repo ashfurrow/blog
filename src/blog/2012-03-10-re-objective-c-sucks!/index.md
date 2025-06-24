@@ -1,5 +1,5 @@
 ---
-title: 'RE: Objective-C Sucks!'
+title: "RE: Objective-C Sucks!"
 date: 2012-03-10
 ---
 
@@ -8,13 +8,9 @@ date: 2012-03-10
 > A few reasons why I think Objective C is not good enough:
 >
 > 1. Memory management got introduced in ios 5. In contrast, Java, C# have such concept a long time a ago.
->
 > 2. Objective c lacks a concept of package. It has a group concept, but the package concept comes with certain modifier access control. Such as protected or (default) in java.
->
 > 3. Objective c doesn’t support private very well. You can call it if you know the function exists.
->
 > 4. Mutable arrays and arrays. Can’t be transparently exchangeable. If you want to make the point bold of locking objects’ modification, at least be consistent and apply this principle to all objects. So we end up with double the quantity of classes.
->
 > 5. A mixture of dot and bracket. With the dot being supported recently by objective c, not all invocation could be done with it. Some you must use bracket. I find this align with my general impression on objective c’s being not very well consistent.
 
 Nice list. For a first-year Computer Science student. In response:

@@ -3,7 +3,6 @@ title: Expression Interpretation Problem with Swift Closures
 date: 2014-06-08
 ---
 
-
 I was working with [someone](http://twitter.com/nottombrown) on an [open-source testing framework for Swift](https://github.com/modocache/Quick) and we came across the following problem. If the last statement in a closure can be interpreted as an expression, then the Swift compiler will try and interpret that as the return value for that closure, which can conflict with an expected type.
 
 Let's take a look at an example.
@@ -63,6 +62,3 @@ b{
 ```
 
 Interesting. I've filed a radar about it and I expect it'll be fixed soon.
-
-
-  

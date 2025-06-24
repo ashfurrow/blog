@@ -5,9 +5,7 @@ banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/848140747723476993
 ---
 
-
 Some time ago I wrote about [Swift Playground Books](/blog/building-swift-playground-books/) and introduced [a tool](https://github.com/playgroundbooks/playgroundbook) to create them from a regular Xcode playground. There's been a lot of work done to the tool by our wonderful contributors, and it's time for an update.
-
 
 As a quick overview of [Swift Playground Books](https://developer.apple.com/swift/playgrounds/) (for iPad), let's explore what they look like on the file system.
 
@@ -41,5 +39,3 @@ Play around and see what you think! For more info, check out [the example reposi
 ---
 
 I love open source, and I'm glad I built this tool (even if I never did end up using it myself). Several students have contacted me for assistance when using it to apply for WWDC scholarships, and it makes my heart swell knowing that people are using my software to advance their own careers. I couldn't be happier with the small community that's growing around the tool.
-
-  

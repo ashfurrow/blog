@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1315971862640427009
 
 In 2013, [my wife and I announced that we would be leaving Canada](/blog/moving-to-amsterdam/) to "have an adventure", moving to Amsterdam. After our initial Dutch visas expired after a year, we found ourselves moving to New York in 2015. Well, after seven years outside Canada, we are both excited to announce that we'll be moving home to New Brunswick next month.
 
-This pandemic has been hell. [Dealing with surgery](/blog/search-for-certainty/), and then [a difficult recovery](/blog/runiversary/), would be hard enough without living in a democratically-backsliding America _while also_ surviving an unprecedented global pandemic. But the pandemic has had one major upshot for me: that I've grown a lot closer to my family. 
+This pandemic has been hell. [Dealing with surgery](/blog/search-for-certainty/), and then [a difficult recovery](/blog/runiversary/), would be hard enough without living in a democratically-backsliding America _while also_ surviving an unprecedented global pandemic. But the pandemic has had one major upshot for me: that I've grown a lot closer to my family.
 
 I now call home about every week, which is far more often than I ever have before. At first, I thought I was doing it for them. But pretty quickly, I realized that I was doing it for me too. When my recovery took a downward turn, I wished I were home. I wished that my wife and I had our families to lean on for help.
 

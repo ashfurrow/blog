@@ -3,7 +3,6 @@ title: Portafilter Baskets
 date: 2011-05-29
 ---
 
-
 ![](4CC31DC5F5574778BFDA66F452C06F17.jpg)
 
 When I got married, my wife and I asked our good friend [Lauren Vail](http://twitter.com/#!/laurenevail) to say a few words about her friendship with us. She took this opportunity to call me a coffee snob. Well-played.
@@ -15,6 +14,3 @@ It describes, essentially, a massive amount of effort that a company has put int
 The baskets are very important in the brewing process; I've gone to [some lengths](http://atteroignorantiam.blogspot.com/2010/10/new-portafilter-baskets-have-arrived.html) to make sure my baskets are up-to-snuff. Most sub-$500 machines today come with portafilter baskets "featuring" crema-enhancers which abide by the North American tradition of charging more for something that doesn't work. Anyways, these new filters have been designed _very_ accurately - using computer models to simulate how water moves from the grouphead, through the grinds, and out of the pores in the filter basket.
 
 They're everything Lauren was talking about when she said "coffee snob"; they're exclusive,&nbsp;unnecessary, expensive, and I want them.
-
-
-  

@@ -5,11 +5,11 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1296745170348781569
 ---
 
-Hey! So remember when [I started running](/blog/learning-to-run/)? Well it's actually been exactly a year since my first ever run! I'm pretty proud of that, of the training I had to do before I started, and of how I've ramped up my training responsibly. It's been super-rewarding. 
+Hey! So remember when [I started running](/blog/learning-to-run/)? Well it's actually been exactly a year since my first ever run! I'm pretty proud of that, of the training I had to do before I started, and of how I've ramped up my training responsibly. It's been super-rewarding.
 
 Right now, I'm stuck not running. I'm still recovering from [surgery a few months ago](https://ashfurrow.com/blog/recovering/) and it hasn't gone smoothly. Which, honestly? That sucks. Surgery, then a tougher-than-usual recovery, would be difficult in the best of times, but going through this during a global pandemic... while living in America... it's not great! Sometimes it's difficult to feel good about the progress I've made when I'm currently struggling with health issues. I'm choosing to stay positive. Or at least, I'm _trying_ to choose to stay positive 😅
 
-So that's why I'm writing this post: to celebrate! (This is, after all, _my_ blog.) My first run started out slow: thirty seconds of running and ninety seconds of walking, repeated for four kilometres. Over the months, I trained up to running for fifteen minutes at a time. My distance record is over ten kilometres! And even though I've had to stop for now, I'll get back there again. 
+So that's why I'm writing this post: to celebrate! (This is, after all, _my_ blog.) My first run started out slow: thirty seconds of running and ninety seconds of walking, repeated for four kilometres. Over the months, I trained up to running for fifteen minutes at a time. My distance record is over ten kilometres! And even though I've had to stop for now, I'll get back there again.
 
 In that time, I also lost a lot of weight. I'm happy to report that I've kept it off! I stopped running in April and then went through – you know – surgery and everything, so I'm pretty proud of that too.
 

@@ -12,9 +12,9 @@
 - [ ] Layout
   - [ ] Page titles and banners
   - [ ] FontAwesome
-  - [ ] 
+  - [ ]
 - [x] Blog archive grouping
-- [ ] Prettier
+- [x] Prettier
 - [ ] Speaking
 - [ ] Portfolio
 - [ ] Search
@@ -25,7 +25,7 @@
 - [ ] Favicon and Icons
 - [ ] HTML head SEO stuff
 - [ ] Timeline posts
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Import MDX shortcodes
+- [ ]
+- [ ]
+- [ ]

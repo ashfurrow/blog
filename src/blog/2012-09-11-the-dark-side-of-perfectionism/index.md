@@ -3,7 +3,6 @@ title: The Dark Side of Perfectionism
 date: 2012-09-11
 ---
 
-
 On a recent episode of [Back to Work](http://5by5.tv/b2w/83), our friend Merlin Mann made the following remark, and it struck me so deeply that I stopped walking to work and rewound just to listen to it a few more times.
 
 > The dark side of perfectionism is that you may not even start [your project] because you sense that it won't be perfect.
@@ -25,6 +24,3 @@ There are so many projects and pursuits that I have personally chosen - **chosen
 No artist ever created something a moving piece of art by first expecting it to be perfect. I suspect that many artists never create anything because perfection is their [expectation zero](http://5by5.tv/b2w/70).
 
 There is a difference between polish and perfection. I think that you can have a polished product that you feel personally invested in, even if you know it's less than perfect. Don't let obsessions with perfection stop you from doing _anything_.
-
-
-  

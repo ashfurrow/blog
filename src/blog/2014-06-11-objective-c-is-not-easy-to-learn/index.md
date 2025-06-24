@@ -3,11 +3,9 @@ title: Objective-C is Not Easy to Learn
 date: 2014-06-11
 ---
 
-
 I read [this blog post](http://www.bignerdranch.com/blog/ios-developers-need-to-know-objective-c/) by Aaron Hillegass this morning and was immediately disappointed.
 
 There are many things that I disagree with about this article, but there is one in particular that I took offence to.
-
 
 > Objective-C is easier to learn than Swift.
 
@@ -44,6 +42,3 @@ I'll tolerate people saying that "Swift is complex", either because it's unfamil
 As educators, it's our job to put ourselves in the shoes of a beginner and see things through a newcomer's eyes. I don't see that happening in this article.
 
 Aaron Hillegass is an amazing developer and business person. I have admired and looked up to him, and the Big nerd Ranch, for a long time now. However, this post feels like it was written out of fear. I think that it is a disservice to iOS newcomers.
-
-
-  

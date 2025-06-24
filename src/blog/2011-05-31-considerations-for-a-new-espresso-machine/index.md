@@ -3,7 +3,6 @@ title: Considerations for a New Espresso Machine
 date: 2011-05-31
 ---
 
-
 I'm considering my options for buying a [new espresso machine](/blog/new-espresso-machine/) when I move. There are two main factors weighing in on my decision: heating type and group head. I'm settled on a semi-auto machine; that is, unless my friend Nick convinces me to join the La Pavoni club. There are several different ways an espresso machine can heat the water before it pushes it through the portafilter to make espresso or to steam milk.
 
 ### Thermoblock
@@ -29,6 +28,3 @@ This is excessive for most homes; some dual broiler machines require two plugs o
 The other main consideration is the E61 Group, featured right. It's sort of a standard in the espresso world. The advantages include an expansion chamber to aide in pre-infusion, its popularity, and looking completely badass. If you were ever going to kill someone with part of an espresso machine, you'd pick an E61 Group.
 
 Their usually limited to Heat Exchange machines, but you can get some on single boilers. Their popularity means getting accessories like portafilter baskets, naked portafilters, and tampers would be a breeze. Not that I already don't have a new [Reg Barber](http://www.coffeetamper.com/store/pc/viewCategories.asp?idCategory=3) tamper picked out.
-
-
-  

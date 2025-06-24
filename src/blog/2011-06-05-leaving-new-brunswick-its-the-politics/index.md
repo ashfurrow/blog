@@ -3,7 +3,6 @@ title: "Leaving New Brunswick: It's the Politics"
 date: 2011-06-05
 ---
 
-
 A few weeks ago, I participated in Fredericton's [Super Mega Cybersocial](http://www.cybersocial.org/index.php?option=com_lyftenbloggie&view=entry&year=2011&month=05&day=26&id=8%3Alast-of-the-season&Itemid=5) discussing the IT industry in New Brunswick. I detailed a few things that companies should be doing to attract and retain young talent, but I side-stepped one issue altogether. You see, even before Ashley and I knew where she was going to grad school, we had already decided that we wouldn't be staying in New Brunswick at all. The politics of this province had a lot to do with that decision, and I thought I'd expand on those points here. Let's take three recent news stories I picked from the CBC completely non-randomly.
 
 ### [Lower minimum wage for tip earners possible](http://www.cbc.ca/news/canada/new-brunswick/story/2011/06/02/nb-labour-minimum-wage-plan-1008.html)
@@ -25,6 +24,3 @@ In February,&nbsp;the Conservative government cut access to sexual health clinic
 I can't speak directly to the Torries' motivations over this one, especially considering the widely&nbsp;publicized&nbsp;sexual health campaign _targetting_ 20-24 year-olds. However, I'm cynical about this government and hazard to say that more unplanned pregnancies means more long-term population growth, which was part of the party platform in September for the Progressive Conservatives. This wouldn't be the first time the [PC's have treated women like baby factories](https://www.facebook.com/topic.php?uid=2208211036&topic=15625), either.
 
 Ashley and I leave on a plane for Toronto tomorrow morning to look for an apartment and gainful employment. We can't be more excited to move to such an amazing city and away from such a regressive province. It's going to be nice to be able to vote in an election for a party that's not red or blue and have a chance of them actually winning.
-
-
-  

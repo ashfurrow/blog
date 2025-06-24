@@ -3,10 +3,7 @@ title: Apple Rejecting iOS Apps with Dropbox Integration
 date: 2012-05-02
 ---
 
-
-It looks like Apple is [rejecting](http://www.macstories.net/stories/11-13-and-the-dropbox-sdk/) some apps which contain Dropbox integration. Why? The mobile authentication page accessible from the app has a link to the normal authentication page, which has a link which eventually leads to a place you can buy a Dropbox subscription (not via Apple's In-App Purchase mechanism). This ostensibly violates Apple's rules, so the apps were rejected. 
-
-
+It looks like Apple is [rejecting](http://www.macstories.net/stories/11-13-and-the-dropbox-sdk/) some apps which contain Dropbox integration. Why? The mobile authentication page accessible from the app has a link to the normal authentication page, which has a link which eventually leads to a place you can buy a Dropbox subscription (not via Apple's In-App Purchase mechanism). This ostensibly violates Apple's rules, so the apps were rejected.
 
 This rule has been around for a while now and, at first glance, it looks like Apple is starting to enforce it more rigorously. Internet nerds are running around screaming about Walled Gardens and anticompetitiveness and iCloud lock-in.
 
@@ -23,6 +20,3 @@ Being an iOS developer is at once really awesome and really shitty. In the start
 Every once in a while, iOS nerds are reminded that, while the benefits of developing for iOS outweigh the costs of dealing with Apple, there _are still_ costs involved and you do have to live with them. If you personally find the costs too high, there are [plenty of companies looking to hire you](http://500px.com/jobs).
 
 S go ahead and make some noise; get Apple's App Review Team lead to slap the wrist of whoever overstepped the line. Just remember that no one is holding a gun to your head.
-
-
-  

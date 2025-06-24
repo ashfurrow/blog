@@ -3,7 +3,6 @@ title: Initial Thoughts on Swift
 date: 2014-06-03
 ---
 
-
 Yesterday, Apple announced a brand new programming language as a replacement for Objective-C called Swift.
 
 ![](256261AB37274AD2862C86F6D0F196E4.png)
@@ -21,6 +20,3 @@ It looks like everything except memory-management has been checked off, and I ha
 I'm very impressed with Apple's [book](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11) on Swift. It's great that this stuff isn't sealed under NDA.
 
 I'm planning on writing at least one book on Swift, which will be out in the coming months. While I'm impressed with the resources Apple has released, I think that there is room for some third-party resources, too.
-
-
-  

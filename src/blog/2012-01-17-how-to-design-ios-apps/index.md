@@ -3,7 +3,6 @@ title: How to Design iOS Apps
 date: 2012-01-17
 ---
 
-
 When designing iOS applications, there are two routes you can take: you can either strictly adhere to Apple's look-and-feel, or go out and do your own thing. In this post, I'm going to discuss each option, their pros and cons, and why you should adhere to either one or the other.
 
 App developers, I feel, tend to one of two extremes: a cookie-cutter Apple-y app or a Frankenstein mess of disjoint ideas shoved together (just because you _can_&nbsp;doesn't mean you _should_). Let's look at the first option and see how you can create a great app using all the built-in goodness of UIKit but diverge to make some unique interfaces.
@@ -69,6 +68,3 @@ Finally, don't half-ass your app's design. Don't just throw a drop shadow under 
 These are all things I've seen developers do in order to make unique apps. Well, they're unique alright, and for good reason.
 
 So that's it. If you're new to iOS development or have no graphic designer available to help, and probably even if you're experienced with designer assistance, go with the first option and use what Apple gave you. If you have a designer holding your hand ever step of the way, you can cross the highway to building your own interface conventions (or re-implementing someone else's). But only when you have a concrete vision of what your app is going to look like when it's finished.
-
-
-  

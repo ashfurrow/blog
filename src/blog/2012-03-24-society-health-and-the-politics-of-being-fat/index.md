@@ -3,7 +3,6 @@ title: Society, Health, and the Politics of Being Fat
 date: 2012-03-24
 ---
 
-
 **Update**: This article originally used a comparison to homophobia that I'm not proud of. I apologized [in this follow-up blog post](https://ashfurrow.com/blog/insensitive-sensationalism/) and have removed the reference below.
 
 First, let me state clearly and loudly: this is a reflective essay. If you disagree, fine, tweet at me, but nothing on this blog has ever been anything more than my opinion.
@@ -48,7 +47,7 @@ Besides, if shaming people into dieting to lose weight worked, then why are all 
 
 ## Thin is not the same as Healthy
 
-Most people recognize that it's possible, even plausible, for a thin person to be _un_healthy. In extreme cases of being too thin, it's even likely that incredibly thin people are unhealthy. So why do people have such a hard time accepting that fat people can be healthy?
+Most people recognize that it's possible, even plausible, for a thin person to be \_un_healthy. In extreme cases of being too thin, it's even likely that incredibly thin people are unhealthy. So why do people have such a hard time accepting that fat people can be healthy?
 
 It's a tricky concept, so I've made a little chart to describe how society relates healthiness to weight:
 
@@ -110,6 +109,3 @@ You may still have some questions. I'd recommend reading [Health At Every Size: 
 2. Forgetting about your weight and concentrating on a healthy lifestyle _does_&nbsp;make you healthy.
 
 The next time you think "that person is so fat - why don't they just exercise more?", remember that the reality of life is not that simple and it's wrong to judge and make assumptions about a person's appearances.
-
-
-  

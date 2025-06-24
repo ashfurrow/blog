@@ -3,11 +3,10 @@ title: Disquiet Developers
 date: 2012-10-12
 ---
 
-
 A fantastic article made the rounds this week discussing the [mindset of programmers](http://edu.mkrecny.com/thoughts/be-nice-to-programmers):
 
 > A list of what's broken and needs to be fixed. A list of ways in which I fucked up.
-> 
+>
 > ... programming builds an acutely negative mindset over time. I'm always asking the question "what's wrong with this?" Positive people are always focusing on "what's good about this?"
 
 It was chilling to read because it so accurately described a shift in my attitude that I wasn't completely aware of.
@@ -27,6 +26,3 @@ I never am.
 As I said, this is a shift I've noticed in myself and my attitude. That means I can shift back.
 
 Photography and writing are two huge aspects of my life that bring me happiness. I'm going to try and bring in aspects of what makes those activities joyful into my day-to-day life as a programmer. I'll let you know how it goes.
-
-
-  

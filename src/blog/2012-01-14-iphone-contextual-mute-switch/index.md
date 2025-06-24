@@ -3,13 +3,12 @@ title: iPhone Contextual Mute Switch
 date: 2012-01-14
 ---
 
-
 Andy Ihnatko has a fantastically thoughtful article on how [the iPhone's "mute" switch's behaviour is disingenuous](http://ihnatko.com/2012/01/14/daring-fireball-on-the-behavior-of-the-iphone-mute-switch/). It's a good read and, even though I disagree with him, I appreciate the thought he put into the argument: a mute button should, you know, mute sounds. All of the them. The iPhone's actually mutes all sounds _except_&nbsp;for Alarm Clock alarms.
 
 His argument uses two examples:
 
 > Case “A”: he Mutes his phone before a movie. He forgets to reset it afterward. His morning wakeup alarm vibrates instead of making air horn noises, so he oversleeps. He’s late for work, and misses an important meeting.
-> 
+>
 > Case “B”: he Unmutes his phone after the movie and gets to the meeting on time. His boss tells the 20 people present that she needs everyone’s full attention and she asks everybody to mute their phones and please close their laptops. Our man duly flips the switch. At 10:30 AM, just as his boss’ boss is about to make an important point, his iPhone starts quacking to remind him about an eBay auction that ends in 15 minutes. He had totally forgotten that alarm…he set it almost a week ago.
 
 Andy says that, in either case, users will always get tripped up and Apple had to decide which way; he argues that the proper solution is to give the user "more control over how they get tripped up". I'd agree; the problem is I think that the current iPhone behaviour gives the user more control while also delivering a good user experience. And here's why:&nbsp;There are, fundamentally, two sources of noises your phone makes. They are as follows:
@@ -33,6 +32,3 @@ Andy's examples fall short because he only considers them in the scope of the di
 I would not use the Alarm Clock feature of my iPhone if it wasn't excluded from the mute toggle because I _don't_&nbsp;want to receive push notifications throughout the night. My wife and I both use the Alarm Clock to wake up in the morning, but neither of us would if we had to be subjected to "new mail" notifications at night. The Alarm Clock app is much better than any $11 bedside alarm clock and I've never looked back since switching to use my iPhone full-time for alarms 6 months ago.
 
 Without the contextual mute, I'd never use the Alarm Clock app; Apple thought of this and I believe they made the right decision. I also believe the fact that it took almost five years, a Philharmonic Orchestra, and a New York Times article to bring this to the public's attention is &nbsp;justification of Apple's decision.
-
-
-  

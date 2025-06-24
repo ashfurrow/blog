@@ -1,5 +1,5 @@
 ---
-title: '2021: My Year of Closed Rings'
+title: "2021: My Year of Closed Rings"
 date: 2022-01-01
 banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1461404985615425547

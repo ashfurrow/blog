@@ -3,7 +3,6 @@ title: Drink Coffee to Slow Down
 date: 2012-10-28
 ---
 
-
 This week, I read an excellent article on [slowing down](http://www.goodbytes.be/blog/article/life-moves-pretty-fast.-here-are-5-things-you-can-do-to-slow-down). The author posits that life moves very quickly, especially when you're in the computer industry. Things never seem to slow down long enough to catch your breath.
 
 The article was very timely for me, since I'm under a lot of stress at work with a nigh-impossible deadline; the idea of slowing down, even while maintaining a fast pace of life really resonated with me.
@@ -31,6 +30,3 @@ This is how I begin each shot of espresso. I feed 18 grams of coffee beans into 
 It takes a few minutes to pull a shot and steam the milk for a latte, but it is so worth it. And every morning, I get to look forward to this ritual.
 
 So I'm going to take it a little easier and slow down in the ways I can. When I move fast, I want to move decisively, but when I can take time to enjoy life, I will.
-
-
-  

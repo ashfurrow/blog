@@ -3,15 +3,12 @@ title: How to Write iOS Apps
 date: 2011-09-01
 ---
 
-
 Well, how to write good ones, anyways. This article describes how _programmers_ can make good iOS apps. It kind of assumes they can design them, too. However, I recently realized two things:
 
 - Developers, even good ones, aren't necessarily good at design. In fact, most developers kind of probably suck at it. Get help from a friend.
 - _Reading_ the [HIG](http://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html) shouldn't be confused with _understanding_ the HIG. Anyone can read 90 pages of dense Applese but that doesn't mean a thing unless you understand _why_ they made the recommendations they did.
 
 Why should you listen to me? Well, I'm no expert in writing iOS apps. No, wait. Yes I am. I taught a course at my university on the topic. Let's carry on, then.
-
-
 
 ### Objective-C
 
@@ -60,6 +57,3 @@ Doing things like turning off a CALayer's opaque or masksToBounds properties mak
 At least _try_ to test your app. Give it to someone and see how they use it. Not someone who's used it before, someone new to it. Observe when/where they get frustrated or confused and fix those parts of your app.
 
 That's it! If anyone has any suggestions, please leave them in the comments!
-
-
-  

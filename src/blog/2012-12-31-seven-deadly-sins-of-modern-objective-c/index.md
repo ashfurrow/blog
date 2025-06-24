@@ -3,7 +3,6 @@ title: Seven Deadly Sins of Modern Objective-C
 date: 2012-12-31
 ---
 
-
 I've had this post cooking for a long time, and I think it's ready to unveil. If you code Objective-C, this is going to offend you and that's good. If you aren't offended, then you don't care, and that's bad.
 
 This list isn't about stylistic things like which line new braces go on (new ones, duh). This list is about potential problems with the code you're writing on an objective scale. So let's get started.
@@ -85,6 +84,3 @@ This is a serious problem with the Objective-C community. Unit testing is [total
 ## Conclusion
 
 That's my list. We're all guilty of some Objective-C sins, I'm sure, but the important thing is to improve. We're at the dawn of a new year. Why not take this opportunity to reflect on why you've been so sinful and find ways to code more virtuously in the new year?
-
-
-  

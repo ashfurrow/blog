@@ -5,13 +5,13 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1264537793105219584
 ---
 
-This post comes with a content warning for a medical discussion. 
+This post comes with a content warning for a medical discussion.
 
 I've been blogging recently about a problem with my body for which I needed surgery. [The problem got worse with an injury two months ago](/blog/pausing/) and after my surgery was cancelled due to the COVID-19 pandemic, [I've been struggling emotionally](/blog/search-for-certainty/). It's been a very difficult time for me.
 
 Last week I finally had my surgery. The hospital rescheduled surgeries based on a triage of which patients needed them most urgently; I was the second patient that my surgeon operated on since the COVID-19 lockdown, which gives you a sense of my condition.
 
-(As an aside: I was delayed fifteen minutes getting into the operating room because the team had trouble booting up the surgerical robot after it being turned off for so long. This is not something a software developer waiting in pre-op wanted to hear, if I'm being quite honest.) 
+(As an aside: I was delayed fifteen minutes getting into the operating room because the team had trouble booting up the surgerical robot after it being turned off for so long. This is not something a software developer waiting in pre-op wanted to hear, if I'm being quite honest.)
 
 Recovery has been painful, slow, and difficult, but thankfully I am progressing.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Weekend Hack Project: Twelease'
+title: "Weekend Hack Project: Twelease"
 date: 2017-10-01
 banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/914339934563127296
@@ -48,9 +48,9 @@ The JavaScript community moves at a blistering pace. That means I can't just lea
 Something I really dig about JavaScript is how you import all your dependencies explicitly; you import specifically "exported" functions and such from modules. Some modules export named functions, while other modules export a "default" function. Some do both. Here are a few examples of how to import stuff in JS:
 
 ```js
-import { info, error } from './lib/loggers'
-import * as auth from 'auth'
-import tweet from './twitter'
+import { info, error } from "./lib/loggers"
+import * as auth from "auth"
+import tweet from "./twitter"
 ```
 
 It all makes sense to read, but I still don't have the mechanics internalized enough to write the syntax right on the first try.

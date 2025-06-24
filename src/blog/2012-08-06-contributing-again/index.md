@@ -3,10 +3,7 @@ title: Contributing Again
 date: 2012-08-06
 ---
 
-
 I made my first sizeable contribution to the Open Source community over the past week or so. It's been interesting.
-
-
 
 Usually, I scheme ways to make money off the code I'm writing. Also, I need to believe in what I'm making or I won't be motivated.
 
@@ -19,6 +16,3 @@ I [hate OAuth](/blog/the-oauth-chronicles/) with the fiery and eternal hatred of
 So I [wrote one](https://github.com/AshFurrow/500px-iOS-api/).
 
 My goal was to make something I could be proud of, and I'm halfway there. Requests can be signed with OAuth, but still need to be loaded over the network. Now that I have the request creation taken care of, I'm going to write a layer to abstract the network requests away altogether. Oh, and it's completely tested, as well. (Maybe not with unit tests, more like integration tests, but tested nonetheless.)
-
-
-  

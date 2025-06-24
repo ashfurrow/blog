@@ -5,11 +5,9 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/918864977368412161
 ---
 
-
 In 2015, [I wrote][2015] about my next steps in [Artsy's engineering career ladder][ladder]. I laid out the steps that I would be focusing on, like multiplying effectiveness of cross-team work and having an obvious technical impact on the team's strategic trajectory. I've made progress on these points, to varying degrees, but that's not what I want to talk about.
 
 Back then, after listing all the things I wanted to focus on, I casually mention some other items that I'd skipped.
-
 
 > There are other, more technical things like "own a large scale and impact service" ...
 
@@ -50,5 +48,3 @@ The more I learn, the more I realize I have to learn. I make progress only to le
 [journey]: /blog/the-journey-is-the-reward/
 [jive]: /blog/apple-releases-jive/
 [nasa]: https://science.nasa.gov/science-news/science-at-nasa/2013/23jul_palebluedot
-
-  

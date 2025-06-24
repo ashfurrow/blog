@@ -3,7 +3,6 @@ title: 30 Days of Open Source
 date: 2014-01-19
 ---
 
-
 I don't make New Year's resolutions; they're pointless and only lead to disappointment. Instead, I like to challenge myself, and over the Christmas break, I did just that.
 
 I wanted to see how hard it would be to make at least one open source contribution to GitHub a day for a month.
@@ -15,6 +14,3 @@ As it turns out, it wasn't that difficult, though I admit some of my contributio
 In the process, I re-affirmed that I love to code. It's something I was afraid I might grow out of, or become bored by, but instead, it was itself and intrinsic motivator. I found that getting the first contribution was often a catalyst for even more coding.
 
 You can check out my [GitHub Profile](https://github.com/AshFurrow) for all the nitty gritty details.
-
-
-  

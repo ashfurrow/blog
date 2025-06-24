@@ -29,14 +29,11 @@ submitFinalSubmission = async () => {
   const submission = this.state as ConsignmentSetup
   let hasSubmittedSuccessfully = true
   try {
-    await updateSubmission(
-      { ...submission, state: 'SUBMITTED' },
-      this.state.submission_id
-    )
+    await updateSubmission({ ...submission, state: "SUBMITTED" }, this.state.submission_id)
     await AsyncStorage.removeItem(consignmentsStateKey)
     this.submissionDraftSubmitted()
   } catch (error) {
-    console.error('Overview final submission: ' + error)
+    console.error("Overview final submission: " + error)
     hasSubmittedSuccessfully = false
   }
 

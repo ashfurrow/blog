@@ -3,7 +3,6 @@ title: Fix iOS 6 SDK Linker Error
 date: 2012-09-19
 ---
 
-
 If you download the latest Xcode 4.5 with iOS 6 SDK, existing projects no longer compile. A common one might be the Google Analytics library; it will give the following error:
 
 ```
@@ -24,6 +23,3 @@ Double-click on "armv7 armv7s" and then select the "armv7s" row and click the mi
 ![](6E04343357884D05AFDC088AFF7039EF.png)
 
 That's it! Make a mental note to check back with your statically compiled libraries to see when they update to incorporate A6 support.
-
-
-  

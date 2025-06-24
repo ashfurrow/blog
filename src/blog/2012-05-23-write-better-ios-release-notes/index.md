@@ -3,12 +3,9 @@ title: Write Better iOS Release Notes
 date: 2012-05-23
 ---
 
-
 My boss [tweeted](https://twitter.com/oleggutsol/status/205413845114691584) a screenshot of the [Things](http://culturedcode.com/things/) 1.8.5 iOS update, which I have included below. I remarked on twitter to them that this is an example of why developers should not be the ones to write the "what's new in this version" copy for iOS app updates. They replied that the developers didn't write the release notes, but instead it was the testers that did.
 
 Let's talk about how we can improve the release notes for iOS apps.
-
-
 
 ![](3166C2DA16E943E78DF92507D5FB1012.jpg)
 
@@ -27,17 +24,17 @@ What does this message say to the user? That we care about their time. That we w
 The latest Cineplex update had some mediocre release notes:
 
 > What's New in Version 2.6
-> 
-> - 
-> 
+>
+> -
+>
 > iOS 5 Optimization
-> 
-> - 
-> 
+>
+> -
+>
 > UI Refinements
-> 
-> - 
-> 
+>
+> -
+>
 > Bug Fixes
 
 Users don't know what iOS 5 optimizations are, unless you tell them (like "runs faster"). They also don't know or care about UI refinements or bug fixes. Why are you even using the abbreviation "UI" in release notes that typical, non-developer users might see?
@@ -45,12 +42,9 @@ Users don't know what iOS 5 optimizations are, unless you tell them (like "runs 
 Another good example is the latest Instapaper update:
 
 > (a bunch of specific bullet points)
-> 
+>
 > On a personal note, my wife and I just had a baby. Your support lets me work at home and spend as much time with my family as possible during this great time. Thank you so much.
-> 
+>
 > —Marco
 
 I think that the release notes of iOS app updates are one of the most underused method of communicating with your users. Next time you submit an update, put yourself in the user's shoes and ask yourself how they're going to perceive your message.
-
-
-  

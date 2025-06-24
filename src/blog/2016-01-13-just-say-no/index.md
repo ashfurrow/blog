@@ -5,13 +5,11 @@ banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/687081303594897408
 ---
 
-
 In the autumn of 2009, a young undergraduate student named _me_ had taken on too many commitments. _Way_ too many. In addition to a full course load, I was working two part time jobs, tutoring, leading a student association, and was (no joke) the Research in Motion "campus ambassador." Too bad I was driving myself crazy. What was the problem? Well, whenever someone asked me if I was interested in doing something, I'd say "yes."
-
 
 Partially because I was interested in doing that thing, and partially because I didn't want to disappoint them.
 
-Too bad I literally drove myself crazy. By the end of the semester, my partner had to drag me to the university mental health centre because she was afraid I was going to kill myself. 
+Too bad I literally drove myself crazy. By the end of the semester, my partner had to drag me to the university mental health centre because she was afraid I was going to kill myself.
 
 I was afraid, too.
 
@@ -21,11 +19,11 @@ One of the most important things I took away from 16 months of counselling was t
 
 One of the biggest conceits of the modern world is [being busy](http://opinionator.blogs.nytimes.com/2012/06/30/the-busy-trap/?_r=0). To many people, being busy is a source of pride. It was for me, too. But that pride is misplaced.
 
-> Busyness serves as a kind of existential reassurance, a hedge against emptiness; obviously your life cannot possibly be silly or trivial or meaningless if you are so busy, completely booked, in demand every hour of the day. 
+> Busyness serves as a kind of existential reassurance, a hedge against emptiness; obviously your life cannot possibly be silly or trivial or meaningless if you are so busy, completely booked, in demand every hour of the day.
 
 I'm not here to talk about the zen of accepting yourself for who you are, I'm here to talk about saying no to people who ask you to do something.
 
-Your time and attention are finite resources. If someone asks you to do something, and it will take an hour of your time, then that's one hour you can't spend doing something else. Seems obvious, right? But it's astounding how often we ignore this simple  calculus in favour of overcommitting ourselves.
+Your time and attention are finite resources. If someone asks you to do something, and it will take an hour of your time, then that's one hour you can't spend doing something else. Seems obvious, right? But it's astounding how often we ignore this simple calculus in favour of overcommitting ourselves.
 
 The thing is, I want to do things _well_. I want to be proud in my work. I don't want to half-ass anything, I want to _whole-ass_ everything I do.
 
@@ -60,12 +58,10 @@ I love this phrase because it's honest: I _would_ like to do something, _but I c
 
 Saying no is harder in-person than in an email or tweet, so practice. Seriously, get in front of a mirror and look your beautiful self in the eyes and say no. Ask a friend for help, role play.
 
-At first, saying no might feel weird and uncomfortable, but with enough practice it becomes natural. 
+At first, saying no might feel weird and uncomfortable, but with enough practice it becomes natural.
 
 ---
 
 As an undergraduate, I struggled with saying no. I was stressed all the time, my grades suffered, I hated myself.
 
 After years of practice and thoughtfulness, the projects I agree to work on are meaningful, rewarding, and they never feel like obligations. Arguably, saying no is one of my most valuable professional skills.
-
-  

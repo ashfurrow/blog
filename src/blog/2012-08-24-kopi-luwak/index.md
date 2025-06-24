@@ -3,7 +3,6 @@ title: Kopi Luwak
 date: 2012-08-24
 ---
 
-
 ![](3535D310E659479F8D9AA05C2C592BBF.jpg)
 
 Recently, a coworker sent out an email to the office asking if anyone else was interested in buying some Kopi Luwak (aka "civet") coffee. It is the world's most expensive coffee, since it has been through the digestive tract of a type of Indonesian cat called a luwak, or civet.
@@ -18,9 +17,6 @@ If you're a coffee nerd, I would highly recommend giving it a shot at some point
 
 Buy the coffee on Amazon:
 
- [![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B0030IGUIK&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ashfur-20)](http://www.amazon.com/gp/product/B0030IGUIK/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0030IGUIK&linkCode=as2&tag=ashfur-20) [![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B001A4B8EM&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ashfur-20)](http://www.amazon.com/gp/product/B001A4B8EM/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B001A4B8EM&linkCode=as2&tag=ashfur-20) [![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B004JHIBV0&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ashfur-20)](http://www.amazon.com/gp/product/B004JHIBV0/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004JHIBV0&linkCode=as2&tag=ashfur-20)
+[![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B0030IGUIK&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ashfur-20)](http://www.amazon.com/gp/product/B0030IGUIK/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0030IGUIK&linkCode=as2&tag=ashfur-20) [![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B001A4B8EM&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ashfur-20)](http://www.amazon.com/gp/product/B001A4B8EM/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B001A4B8EM&linkCode=as2&tag=ashfur-20) [![](https://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&ASIN=B004JHIBV0&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ashfur-20)](http://www.amazon.com/gp/product/B004JHIBV0/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004JHIBV0&linkCode=as2&tag=ashfur-20)
 
 (Photo credit to this [Times Photo Essay](http://www.time.com/time/photogallery/0,29307,2048674,00.html)
-
-
-  

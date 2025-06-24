@@ -3,7 +3,6 @@ title: New Facebook iPhone App
 date: 2012-01-08
 ---
 
-
 Facebook had a decent iOS app. It wasn't great, and you couldn't do everything you could on the mobile site, but it worked reasonably well and it was nicely designed. They recently updated to a "better" version that lets you do everything you can on the mobile site, but it has the unfortunate distinction of &nbsp;completely sucking.&nbsp;
 
 Facebook apparently fell victim to one of the classic blunders, which is [Write Once, Run Everywhere](http://www.readwriteweb.com/mobile/2011/09/how-facebook-mobile-was-design.php). They got greedy and thought that they could stuff their entire app in a little UIWebView, write some fancy HTML5, and then no one would be the wiser. Well, they really fucked _that_ up.
@@ -23,6 +22,3 @@ Finally, for the _coup de grace_, Facebook at one point decided that it wanted r
 When the application finishes launching, there is a distracting visible change to the non-rounded corners of the app's nav bar.
 
 These are only a few of the worst visual problems with the app; they're not huge problems themselves but are indicative of a crappy user experience in general. It makes me sad that a company which pioneers a new and innovative way to display tabbed-content to the user can fuck the rest of their app up so extraordinarily.
-
-
-  

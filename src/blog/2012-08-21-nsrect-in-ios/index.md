@@ -3,7 +3,6 @@ title: NSRect in iOS?
 date: 2012-08-21
 ---
 
-
 So, Cocoa and Cocoa Touch are cousins and share a lot of the same underpinnings. You'll see the same type of C struct used for view geometry (a point with x and y, and a size with width and height). On iOS, this is CGRect and on OS X, this is NSRect. Same struct, different name.
 
 Imagine my surprise when I saw NSRect on iOS:
@@ -37,6 +36,3 @@ NSValue is this crazy wrapper for, well, values. It's heavily used in OS X devel
 On iOS, the NSValue methods or wrapping rects are stored in a category on NSValue, decalred in UIGeometry.h. On OS X, they're methods in the class definition itself and even have a spot in the documentation (iOS documentation makes no reference to these methods).
 
 What's more interesting is that the iOS methods are called things like "valueWithCGRect:" and the OS X methods are the likes of "valueWithRect:". It's probably a trick by Apple to get the compiler to not complain, but it is very curious why they chose to segregate the methods into a hard-to-find section of a related header file on iOS.
-
-
-  

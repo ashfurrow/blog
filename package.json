@@ -7,10 +7,15 @@
   "private": false,
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "format": "prettier --write",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.1",
-    "@11ty/eleventy-img": "^6.0.4"
+    "@11ty/eleventy-img": "^6.0.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.0"
   }
 }

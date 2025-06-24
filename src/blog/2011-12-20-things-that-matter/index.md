@@ -3,10 +3,7 @@ title: Things That Matter
 date: 2011-12-20
 ---
 
-
 I came across a job listing at [Tumblr for an iOS Engineer](http://tumblr.theresumator.com/apply/WnPaaV/IOS-Engineer.html?source=Tumblr+Jobs+Page). Tumblr can be really picky about what developers they choose to hire, and this is the criteria they've come up with.
-
-
 
 > - A history of shipping iOS software.
 > - Ability to write idiomatic Objective-C code.
@@ -30,6 +27,3 @@ They're looking for enthusiasm, not a willingness to work 14 hour days.
 They know that amazing products are written with amazing code by capable and experienced developers.
 
 If I'm ever in a position to hire developers, this is exactly the list I'm using on the job listing.
-
-
-  

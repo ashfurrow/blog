@@ -5,9 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/852301727407669248
 ---
 
-
-I've been [running Mastodon on Heroku](/blog/running-mastodon-on-heroku/) for about a week now, and it's been a blast! Heroku is really convenient, but it's also expensive. So I'm looking at an alternative hosting plan. Because I'm learning as I go along, I wanted to write a post about my migration plan, to hopefully get feedback from people who've done this kind of thing before. 
-
+I've been [running Mastodon on Heroku](/blog/running-mastodon-on-heroku/) for about a week now, and it's been a blast! Heroku is really convenient, but it's also expensive. So I'm looking at an alternative hosting plan. Because I'm learning as I go along, I wanted to write a post about my migration plan, to hopefully get feedback from people who've done this kind of thing before.
 
 Let's start with the current infrastructure: two Heroku apps, one for streaming and one for everything else. Estimated costs are ~$150/month. I don't know what to expect from AWS, but from my experience I'm guess that it'll be a lot less than I'm paying now. Additionally, as the community scales up, I'll be able to more easily scale my instance.
 
@@ -43,5 +41,3 @@ This is a learning experience for me. It seemed really scary at first but writin
 I reckon this will take a solid weekend of work, but I'm happy to do it because a) I really like Mastodon and contributing to a distributed community is rewarding, and b) I'll learn a tonne, which is its own reward.
 
 And again, any advice you have would be welcome. [Toot me](http://mastodon.technology/@ashfurrow) or [send me an email](mailto:ash@ashfurrow.com) if you have any advice, and I'll amend my post.
-
-  

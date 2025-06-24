@@ -3,7 +3,6 @@ title: Weak/Strong Dance
 date: 2013-10-23
 ---
 
-
 Reader Chad Zeluff wrote in to me about a practice I've been following [in my book](https://leanpub.com/iosfrp).
 
 When defining properties of a view, or view controller, which point to subviews of that view, or view controller's view, I'm using weak properties. This makes sense to me since the view referenced by that property will be added to a view hierarchy, and its parent view will hold a strong reference to it.
@@ -23,6 +22,3 @@ self.myView = myView;
 I still like the idea of referencing subviews weakly, since it maintains that ownership mechanic supported by ARC. However, I don't like the extra step taken in order to instantiate our properties.
 
 What do you think?
-
-
-  

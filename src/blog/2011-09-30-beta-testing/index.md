@@ -3,7 +3,6 @@ title: Beta Testing
 date: 2011-09-30
 ---
 
-
 ![](AF9EAE37AA0646C88547E14AD4F6E6ED.png)
 
 I'm working at [500px](http://500px.com/)&nbsp;as my first real, big project out of University. I've been given a lot of responsibility for making this app a success, which is one of the reasons I'm finding this such a rewarding workplace. One of things I've been responsible for is managing beta testers and beta feedback. Thank god for [TestFlight](http://testflightapp.com).&nbsp;
@@ -17,6 +16,3 @@ It's also making me a more mindful developer. I'm keenly aware of user expectati
 Lastly, it's really humanized users for me. It's hard to empathize with users when they're separated by an App Store review. Speaking of reviews, beta testing is a way better mechanism for getting feedback because now the developers are humanized, too. Users aren't writing all caps, 1-star, negative reviews; they're sending an email to me directly with helpful suggestions and contructive feedback.
 
 Maybe I just have awesome beta testers. At any rate, I've never been more fulfilled with my work; the interactions I have with users on a daily basis are a huge part of that.
-
-
-  
