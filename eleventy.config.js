@@ -18,6 +18,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginFilters)
   eleventyConfig.addPlugin(pluginShortcodes)
 
+  eleventyConfig.addPassthroughCopy("src/index.css")
   eleventyConfig.addPassthroughCopy("src/assets")
 
   eleventyConfig.addBundle("css", {
