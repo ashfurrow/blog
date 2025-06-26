@@ -18,12 +18,14 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginFilters)
   eleventyConfig.addPlugin(pluginShortcodes)
 
+  eleventyConfig.addPassthroughCopy("src/assets")
+
   eleventyConfig.addBundle("css", {
-    toFileDirectory: "dist"
+    toFileDirectory: "assets"
   })
 
   eleventyConfig.addBundle("js", {
-    toFileDirectory: "dist",
+    toFileDirectory: "assets",
     bundleHtmlContentFromSelector: "script"
   })
 
