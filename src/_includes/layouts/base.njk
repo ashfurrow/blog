@@ -6,16 +6,13 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		{# <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}"> #}
-		<!-- TODO: figure out the css situation, ugh -->
-		<style>
-			img {
-				max-width: 100%;
-				height: auto;
-			}
-		</style>
 
+		<link rel="stylesheet" href="/index.css" />
 		<style>{% getBundle "css" %}</style>
 
+		<script defer src="/assets/fontawesome/brands.js"></script>
+		<script defer src="/assets/fontawesome/solid.js"></script>
+		<script defer src="/assets/fontawesome/fontawesome.js"></script>
 	</head>
 	<body>
 
@@ -27,13 +24,29 @@
 			</heading-anchors>
 		</main>
 
+    <hr />
+
 		<footer>
-			<p>
-				<em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em>
-			</p>
+			<span class="fa-fw fa-4x">
+				<a href="https://tenforward.social/@ashfurrow" title="Mastodon" rel="me">  <i class="fa-brands fa-mastodon" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-4x">
+				<a href="https://twitter.com/@ashfurrow" title="Twitter" rel="me"><i class="fa-brands fa-twitter" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-4x">
+				<a href="https://github.com/ashfurrow" title="GitHub" rel="me">
+					<i class="fa-brands fa-github" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-4x">
+				<a href="https://photos.ashfurrow.com" title="Photo Blog" rel="me">
+					<i class="fa-solid fa-image" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-4x">
+				<a href="http://instagram.com/ashfurrow" title="Instagram" rel="me">
+					<i class="fa-brands fa-instagram" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
 		</footer>
 
-		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 	</body>
 </html>

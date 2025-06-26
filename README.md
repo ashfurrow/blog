@@ -11,7 +11,8 @@
 - [x] Import blog posts
 - [ ] Layout
   - [ ] Page titles and banners
-  - [ ] FontAwesome
+  - [x] FontAwesome
+  - [x] Footer
   - [ ]
 - [x] Blog archive grouping
 - [x] Prettier

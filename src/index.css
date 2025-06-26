@@ -2,3 +2,17 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+footer {
+  text-align: center;
+  padding: 0 1rem 3rem 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+/* TODO: Use colours from variables */
+footer a {
+  color: grey; 
+}
+footer a:hover {
+  color: black;
+}
