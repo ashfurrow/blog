@@ -1,8 +1,106 @@
+/* Theme Variables */
+:root {
+  /* Colours */
+  --primary: #398CCC;
+  --white: #fff;
+  --grey-dark: rgba(0, 0, 0, 0.9);
+  --grey-default: rgba(64, 64, 64);
+  --grey-light: #eee;
+  --grey-extra-light: rgba(0, 0, 0, 0.1);
+  
+  /* Typography */
+  --header-font-family: 'Futura';
+  --body-font-family: 'ff-tisa-web-pro';
+  --base-font-size: '20px';
+  --font-size-small: '0.9rem';
+  --font-size-big: '2.9rem';
+}
+
+/* Layout */
+body {
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  color: var(--white);
+  background: var(--primary);
+}
+body {
+  background: var(--white);
+  color: var(--grey--default);
+  /* @media var(media.phone});
+    font-size: 14px;
+  } */
+  font-variant-ligatures: common-ligatures;
+  pre {
+    font-variant-ligatures: no-common-ligatures;
+    font-feature-settings: normal;
+  }
+}
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all none;
+}
+h1, h2, h3, h4 {
+  color: var(--grey-default);
+}
+h1, h2, h3, h4 a {
+  color: var(--grey-dark);
+}
+/* Only h1's have the header font family. */
+h1 {
+  font-family: var(--header-font-family);
+}
+h2, h3, h4 {
+  font-family: var(--body-font-family);
+}
+h3 {
+  margin-bottom: 0.83rem;
+}
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* Header */
+header {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: block;
+  clear: both;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+  /* 
+    @media var(media.tablet});
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media var(media.phone});
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+     */
+}
+header.left {
+  text-align: left;
+}
+header h1 {
+  color: var(--white);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 0 1rem 3rem 1rem;
@@ -11,8 +109,10 @@ footer {
 }
 /* TODO: Use colours from variables */
 footer a {
-  color: grey; 
+  color: var(--grey-default); 
 }
 footer a:hover {
-  color: black;
+  color: var(--primary);
 }
+
+/* TODO: Port the rest over from https://github.com/ashfurrow/blog/blob/b8a778ad741f2bb663facfd58c2b435c80f4e626/src/layouts/Layout.tsx#L129 */

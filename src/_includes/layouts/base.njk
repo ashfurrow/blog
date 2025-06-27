@@ -15,12 +15,20 @@
 		<script defer src="/assets/fontawesome/fontawesome.js"></script>
 	</head>
 	<body>
-
-		<img src="/assets/bg/default.jpg" alt="Site banner"/>
+		{% set headerBackground = banner | default("/assets/bg/default.jpg") %}
+		<header 
+		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{{headerBackground}}'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+		  {% if subtitle is defined %}class="left"{% endif %}
+		>
+			<h1>{{title}}</h1>
+			{# TODO: Attribution links #}
+		</header>
 	
 		<main id="main">
 			<heading-anchors>
 				{{ content | safe }}
+				{# TODO: article banners aren't working yet #}
+				{# {{ collections.banners | dump}} #}
 			</heading-anchors>
 		</main>
 
