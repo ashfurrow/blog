@@ -10,7 +10,9 @@
   - Plain CSS is actually enough, with grids and flexbox
 - [x] Import blog posts
 - [ ] Layout
-  - [ ] Page titles and banners
+  - [x] Page titles and banners
+  - [ ] Main layout
+  - [ ] Banner attribution
   - [x] FontAwesome
   - [x] Footer
   - [ ]

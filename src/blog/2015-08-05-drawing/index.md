@@ -1,7 +1,7 @@
 ---
 title: Drawing
 date: 2015-08-05
-banner: /img/blog/drawing/drawing3_medium.jpg
+banner: drawing3_medium.jpg
 ---
 
 I've never been able to draw. When I was a kid, I would try but my drawings look terrible – nothing at all what I was trying to create. In middle school, I remember periodically checking a book out from the library titled "How to Draw Superheroes", but I gave up overtime. I just. Couldn't. Draw.

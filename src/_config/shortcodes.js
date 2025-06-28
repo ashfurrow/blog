@@ -1,3 +1,7 @@
+import * as path from "path"
+import Image from "@11ty/eleventy-img"
+const { eleventyImageTransformPlugin } = Image
+
 /**
  * Groups items in a collection by a key returned from the iteratee function.
  * @template T
@@ -75,5 +79,43 @@ export default function (eleventyConfig) {
       .flatMap(({ months }) => months)
 
     return JSON.stringify(results)
+  })
+
+  eleventyConfig.addNunjucksAsyncShortcode("bannerImage", async function () {
+    /** @type {string} */
+    const bannerPath = this.ctx.banner
+
+    if (!bannerPath) {
+      return "/assets/bg/default.jpg"
+    }
+    if (bannerPath.includes("/assets/")) {
+      return bannerPath
+    }
+
+    const markdownDir = path.dirname(this.ctx.page.inputPath)
+    const bannerImageSourcePath = path.resolve(markdownDir, bannerPath)
+    const outputDir = path.dirname(this.ctx.page.outputPath)
+    const urlPath = this.ctx.page.url
+    try {
+      let metadata = await Image(bannerImageSourcePath, {
+        widths: [null],
+        formats: ["auto"],
+        outputDir,
+        urlPath,
+        filenameFormat: function (_id, src, _width, format, _options) {
+          const extension = path.extname(src)
+          const name = path.basename(src, extension)
+          return `${name}.${format}`
+        }
+      })
+
+      const formats = Object.keys(metadata)
+      const firstFormat = formats[0]
+      const images = metadata[firstFormat]
+      return images[0].url
+    } catch (error) {
+      console.error(`Error processing banner image ${imagePath}:`, error)
+      return null
+    }
   })
 }

@@ -1,7 +1,5 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
 
-import * as path from "path"
-
 import Image from "@11ty/eleventy-img"
 const { eleventyImageTransformPlugin } = Image
 
@@ -34,26 +32,6 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addShortcode("currentBuildDate", () => {
     return new Date().toISOString()
-  })
-
-  eleventyConfig.addCollection("banners", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/**/*.md").map(async (post) => {
-      // Process front matter images here
-      if (post.data.banner) {
-        const markdownDir = path.dirname(post.inputPath)
-
-        // Resolve image path relative to markdown file
-        const imagePath = path.resolve(markdownDir, post.data.banner)
-        const relativeDir = path.relative("src/blog/", markdownDir)
-        const outputDir = path.join("./_site", relativeDir)
-        console.log({ imagePath, outputDir })
-
-        await Image(imagePath, {
-          outputDir: outputDir
-        })
-      }
-      return post
-    })
   })
 
   // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
