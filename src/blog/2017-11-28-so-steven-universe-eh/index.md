@@ -66,19 +66,19 @@ So fast forward: Steven is living with the gems and spends a lot of time with hi
 
 Each gem has their own distinct origins. Greg has a backstory too. These are all explored in really interesting and thoughtful ways. Side-characters too! You will never see a character only once, they _always_ reappear. Here's a very small (but very representative) example: in Season Two, we explore the origins of a side-character, and that origin story briefly features this gem in a flashback:
 
-<Wide>
+{% wide %}
 
 ![Lapis is poofed by Bismuth](lapis.jpg)
 
-</Wide>
+{% endwide %}
 
 Later, in Season Three, we meet the gem again learn more about her relationship to Rose and her role in the war.
 
-<Wide>
+{% wide %}
 
 ![Steven meets Bismuth](bismuth.jpg)
 
-</Wide>
+{% endwide %}
 
 I mean, what? I didn't see this coming at all – and these kinds of hints are scattered throughout the show's art.
 
@@ -86,7 +86,7 @@ I mean, what? I didn't see this coming at all – and these kinds of hints are s
 
 The art in the show is spectacular. _Steven Universe_ uses dedicated background artists to help create a cohesive palette of visuals that drive – and are driven by – the plot. It won't do it just to describe, so here are some examples.
 
-<Wide>
+{% wide %}
 
 ![A tree on a hill](tree.jpg)
 
@@ -96,7 +96,7 @@ The art in the show is spectacular. _Steven Universe_ uses dedicated background 
 
 ![Pearl clutching a sword](pearl.jpg)
 
-</Wide>
+{% endwide %}
 
 The dynamic nature of the show's artwork isn't really represented by still images. The distinctive animation plays a key role. I've mentioned music already, but music+art+animation combine synergistically to convey a really compelling story. Here's one representative example, with some cool glitchy body horror elements!
 

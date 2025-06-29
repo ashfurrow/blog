@@ -27,21 +27,21 @@ It's been challenging.
 
 I don't know how much I weighed at the beginning of the year, or when my weight even loss started. The last time I had a physical exam was 2017, and I know how much I weighed then. Since that exam, my weight had increased, but my current delta is a 65 pound weight loss. Since I bought a scale in June, when I started being more proactive about exercise outside of a strict physical therapy context, I've lost 40 pounds.
 
-<Narrow>
+{% narrow %}
 
 ![Graph of my weight, and the numbers along the axis are covered in Emojis](weight.png)
 
-</Narrow>
+{% endnarrow %}
 
 I wish I could be more excited, but it's difficult. There have been periods where I'm really happy about my progress, but even getting excited makes me anxious.
 
 This fall, when I got my winter clothes out of storage, none of them fit. Like, none at all. _That_ was an amazing feeling, if fleeting. I had to buy new clothes and felt excited about being shopping for smaller sizes, but also anxious because I was still shopping for large sizes. I felt guilty spending money on new clothes because they might not fit for very long... and then felt guilty for feeling hopeful... and finally recognizing _this is when I need those CBT skills_ and it was all okay! Phew.
 
-<Narrow>
+{% narrow %}
 
 ![Photo of a pile of shirts](shirts.jpg)
 
-</Narrow>
+{% endnarrow %}
 
 So we've covered my history with weight and its relationship to my mental health. It both reflects my mental health and is reflected _by_ my mental health. It's a sad topic that I'm still working through, but what about the happier stuff? If I've been focused on diet and exercise to the exclusion of weight or size, how have _those_ been going?
 
@@ -59,11 +59,11 @@ My wife, Ashley, does most of the grocery shopping. I told her the foods I was t
 
 It was difficult. I was still using food as a coping mechanism, so I had to become even more diligent with my mental health skills. My usual lunch had always been sushi, and I started buying smaller portions. Eventually, my usual lunch starting coming from a salad bar. My usual breakfast changed from a bagel to oatmeal. I got _really_ good at making overnight oats, but my current favourite breakfast is Swiss-style muesli. Here's a healthy dinner Ashley and I made together:
 
-<Narrow addBottom>
+{% narrow %}
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BxGUiTOliuU/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BxGUiTOliuU/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BxGUiTOliuU/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ash Furrow 🏳️‍🌈 (@ashfurrow)</a></p></div></blockquote>
 
-</Narrow>
+{% endnarrow %}
 
 Dealing with my depression was a necessary first step before dealing with my diet. My mood both reflected and created my diet deficiencies: I used food as a coping mechanism for my depression, which contributed to my weight gain, which gave my depression "rational" justification. It was a cycle, and Cognitive Behavioural Therapy was the only thing that managed to break it for me.
 
@@ -105,27 +105,27 @@ I learned a lot about running, but in line with _interleaved practice_, I learne
 
 I was in the middle of the country. A car would pass every ten minutes, but that was largely it. The scenery was beautiful and even though I'd grown up on these roads, I was appreciating my home from a whole new perspective. I left my phone at home, so I don't have pictures from my runs themselves, but here's the view:
 
-<Wide>
+{% wide %}
 
 [![View of an open field looking over a lake](lake.jpg)](https://web.500px.com/photo/12945691/Road-to-the-Lake-by-Ash-Furrow/)
 
-</Wide>
+{% endwide %}
 
 Returning to New York was hard because I was still self-conscious while running. But I was a little more confident. I began running along the East River near my apartment. Here's _that_ view:
 
-<Narrow addBottom>
+{% narrow %}
 
 <<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/B5FmVXiHyNR/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B5FmVXiHyNR/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B5FmVXiHyNR/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ash Furrow 🏳️‍🌈 (@ashfurrow)</a></p></div></blockquote>
 
-</Narrow>
+{% endnarrow %}
 
 [I hooked up my running activity](https://slava.playplay.io) to Artsy's #distance Slack channel. That first 💪 reaction meant a lot to me.
 
-<Narrow>
+{% narrow %}
 
 ![Slack channel reaction to my first run shared there](distance.png)
 
-</Narrow>
+{% endnarrow %}
 
 The motivation I got from my colleagues felt _amazing_, but I also learned the joy of _giving_ my colleagues motivation.
 
@@ -141,19 +141,19 @@ My self-consciousness is kicking in right about now, so please indulge me as I p
 
 I try to push past my self-consciousness. When I coworker congratulates me on a run, _I acknowledge the compliment_. When I'm feeling great after a workout, _I take a selfie_. When someone asks me how I've been, _I tell them I'm feeling amazing_. These are all difficult to do, but I'm pushing through that difficulty.
 
-<Narrow>
+{% narrow %}
 
 ![A post-gym selfie](selfie.jpg)
 
-</Narrow>
+{% endnarrow %}
 
 So anyway, my weight is down. My respiration health is trending well. My walking pace is up. My daily active calories spent are _way_ up. My resting heart rate has nearly crossed below 60bpms, which feels _ridiculous_. Between walking and running, I travel over 10km per day.
 
-<Narrow>
+{% narrow %}
 
 ![Graph of my daily walking and running average distance over the past year, which is way up](walking.png)
 
-</Narrow>
+{% endnarrow %}
 
 On top of all that data, I just feel physically so much better. I've had a really stressful few weeks at work, and I've actually relied on running as a way to help cope. Running has replaced food as my go-to coping mechanism. I'm pretty fucking proud of that.
 

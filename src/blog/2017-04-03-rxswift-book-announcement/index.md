@@ -8,11 +8,11 @@ socialImage: cover.png
 
 Well well well, look what we have here. After months of toiling in secret, I can finally announce that I've helped the [Ray Wenderlich team](https://raywenderlich.com) complete a brand new RxSwift book! [RxSwift: Reactive Programming in Swift](https://store.raywenderlich.com/products/rxswift).
 
-<Narrow>
+{% narrow %}
 
 [![Book cover](cover.png)](https://store.raywenderlich.com/products/rxswift)
 
-</Narrow>
+{% endnarrow %}
 
 I've been serving as a technical editor to help make sure the book is correct, awesome, and cohesive. I've had a blast working with Florent Pillet, Junior Bontognali, Marin Todorov, Scott Gardner, and Chris Belanger.
 

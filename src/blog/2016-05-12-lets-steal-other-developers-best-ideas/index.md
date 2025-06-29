@@ -11,11 +11,11 @@ Then yesterday happened.
 
 I’ve been working on a new feature for Artsy’s iOS app ([GitHub](https://github.com/artsy/eigen)) which accesses our API using [GraphQL](http://graphql.org). This is a pretty new technology that allows server APIs to be defined in such a way that makes writing queries expressive and type-safe. It’s _really_ cool.
 
-<Wide>
+{% wide %}
 
 ![An example GraphQL query and response.](example.png)
 
-</Wide>
+{% endwide %}
 
 But our GraphQL project ([GitHub](https://github.com/artsy/metaphysics)) was missing a feature we needed. Normally I might've just opened an issue or nudged another engineer to do it for me, but the rest of my team was at a conference. Orta and I were pairing at the time and he suggested we ought to just add the feature ourselves. This is exactly the kind of push I needed.
 

@@ -9,11 +9,11 @@ There are a bunch of things I do when I re-install macOS on a computer, or when 
 
 I used to keep these steps in Notes.app but figured they should be public anyway (open source by default, right?) so here we are.
 
-<Wide>
+{% wide %}
 
 <script src="https://gist.github.com/ashfurrow/3865eed417a5fbe8402708e2c706eea6.js"></script>
 
-</Wide>
+{% endwide %}
 
 One thing I've added recently, that's super-important to me, is to untrust a certain certificate. Blue Coat is a company that creates [internet surveillance and censorship software](https://en.wikipedia.org/wiki/Blue_Coat_Systems#Controversy) and Semantic gave them an intermediate CA certificate. That means they can sign arbitrary certificates that you're computer will trust (because your computer trusts Semantic, and Semantic trusts Blue Coat).
 

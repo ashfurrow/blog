@@ -1,6 +1,5 @@
 import * as path from "path"
 import Image from "@11ty/eleventy-img"
-const { eleventyImageTransformPlugin } = Image
 
 /**
  * Groups items in a collection by a key returned from the iteratee function.
@@ -117,5 +116,13 @@ export default function (eleventyConfig) {
       console.error(`Error processing banner image ${imagePath}:`, error)
       return null
     }
+  })
+
+  eleventyConfig.addPairedShortcode("wide", function (content) {
+    return `<div class="wide">${content}</div>`
+  })
+
+  eleventyConfig.addPairedShortcode("narrow", function (content) {
+    return `<div class="narrow">${content}</div>`
   })
 }

@@ -47,13 +47,13 @@ Personally, what makes these two distinctions (renting-vs-owning and native-iOS-
 
 Not to mix metaphors _too_ much, but I was reminded of [this Steve Jobs WWDC Fireside Chat (25:02)](https://youtu.be/6iACK-LNnzM?t=1502) from 1997. Jobs also used the metaphor of a building to describe how software gets developed:
 
-<Wide>
+{% wide %}
 
 > (With Apple's tools), you can build an app you couldn't build on any (other) platform. And, to me, this is the most exciting. (...) Because it's all about managing complexity. You're developers, you know that. It's all about managing complexity. It's like scaffolding, right? You erect some scaffolding, and if you keep going up and up and up, and eventually the scaffolding collapses under its own weight. That's what building software is. It's "how much scaffolding can you erect before the whole thing collapses under its own weight?" (...) We all know that. It's about managing complexity.
 >
 > (Apple's) tools allow you to not have to worry about 90% of the stuff you've worried about, so you can erect your five stories of scaffolding, but **you're starting on story number twenty three instead of story number six**. You can get a lot higher. (Emphasis added)
 
-</Wide>
+{% endwide %}
 
 Jobs is saying that a team can only really build an app that's so complex, but they can start building from a higher starting point to build a building/app that nets out to be higher/better. Those starting stories of the building are Apple's tools and platforms. When I first saw this video a few years ago, so much of Apple's behaviour "clicked" for me.
 
@@ -79,10 +79,10 @@ This isn't a compressive list, and my opinions are constantly evolving. I try to
 
 What's important is that when you see a difference between what you know and what someone else knows, you approach that with an open mind. Don't jump to conclusions. Be curious about differences and always look for something you can learn.
 
-<Wide>
+{% wide %}
 
 > In the beginner's mind there are many possibilities, in the expert's mind there are few. —Shunryu Suzuki, _Zen Mind, Beginner's Mind_, 1970
 
-</Wide>
+{% endwide %}
 
 If you're an expert in one thing, it's going to feel uncomfortable to branch out and become a beginner again. It was terrifying for me. But if you push through that discomfort, you can gain valuable perspective that will only help you be a better professional.

@@ -13,21 +13,21 @@ But, that camera has some limitations I was hitting. First, it's a fixed focal l
 
 Don't get me wrong – I've taken some of my favourite shots with the X100S. I have a large canvas print of [a long exposure of Tokyo taken from Roppongi Tower](https://photos.ashfurrow.com/losing-myself-in-tokyo/photos/2580931) hanging in my office, and I took that with the X100S. Back when I used to travel a lot, The X100S was exactly what I needed. But as I rediscover photography in Atlantic Canada, I started to feel its limitations. I kept shooting with it anyway.
 
-<Wide>
+{% wide %}
 
 ![Photo of Tokyo just after sunset](./tokyo.jpg)
 
-</Wide>
+{% endwide %}
 
 I started looking around and realized that you can buy really nice used DSLRs for not that much. I had a sick DSLR kit and I daydreamed about recreating that same setup. But it felt weird to invest in a DSLR kit when they are on their way out. And in the decade since I bought my last digital camera, the X100S, mirrorless cameras have gotten really good. They have some distinct advantages over DSLRs.
 
 Mirrorless cameras are smaller and weigh less than DSLRs – and their lenses too. They often have a tilting LCD screen and I was interesting in using it as a waste-level viewfinder (like my TLR camera). And unlike DSLRs, mirrorless cameras can be adapted to work with my film lenses. My (only) tattoo is an optical diagram of my favourite lens, the Leica Summicron 50mm f/2. The idea of using my Summicron lens on digital really tickled me.
 
-<Narrow>
+{% narrow %}
 
 ![Photo of my tattoo](./tattoo.jpeg)
 
-</Narrow>
+{% endnarrow %}
 
 I was concerned about some of the downsides to mirrorless cameras, like shorter battery life and feeling more like a computer than a camera. But the thing I was most concerned about was having to use an electronic viewfinder. I'm used to being able to see, optically, the actual scene that I'm shooting. I was reluctant to give that up. So as an experiment, I started using my X100S with its electronic viewfinder. (In over ten years, I had barely used it.) The refresh rate was kind of laggy but I got used to it pretty quickly. I was actually enjoying the way the EVF gave me an exposure preview of the photo that the camera was actually going to record when I hit the shutter button – that's something that DSLRs just can't do. I figured that if the older X100S was usable, then a newer mirrorless camera would be great (spoilers I was right).
 
@@ -45,11 +45,11 @@ But before I bought anything, I hit a wall. I became preoccupied with anxiety th
 
 Because gear doesn't matter. You can take great photos on bad cameras. And you can have a lot of fun doing it. Here is a photo I love, and the camera I used has an entire _two_ shutter speeds – plus bulb mode!
 
-<Wide>
+{% wide %}
 
 ![Black and white photo of Paris taken on a fold-out camera](./paris.jpg)
 
-</Wide>
+{% endwide %}
 
 It's the photographer that matters, not the camera. (Of course, it's easier to say "gear doesn't matter" when you have nice gear. And I do have a nice film kit.) I started questioning whether I should buy a new digital camera at all. Wasn't my X100S enough?
 
@@ -61,10 +61,10 @@ That was a month ago. So which camera did I get?
 
 "Gear doesn't matter."
 
-<Narrow>
+{% narrow %}
 
 ![Photo of me taking a photo with a tripod](./me.jpeg)
 
-</Narrow>
+{% endnarrow %}
 
 I'll be publishing more photo blog posts [over at my photo blog](https://photos.ashfurrow.com). I'm exploring some new editing styles and I plan to write about that process over there. I don't really know where people are sharing their photos online anymore, to get photo critique; let me know if you have suggestions. See you there!

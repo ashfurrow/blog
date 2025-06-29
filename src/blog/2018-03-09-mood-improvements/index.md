@@ -9,21 +9,21 @@ Okay so it's been over a month since I [last checked in](/blog/progress-and-pian
 
 But this time, I have data! My friend Felix wrote a [small Telegram app](https://github.com/KrauseFx/mood) that texts you three times a day to ask how you're feeling. Nice.
 
-<Narrow>
+{% narrow %}
 
 ![A screenshot of the app I'm using to track my mood](screenshot.png)
 
-</Narrow>
+{% endnarrow %}
 
 I've been particularly keen to see the data over the past week, since I just today have my second weekly session with a new therapist. Last Friday, she gave me some exercises to practice my observation skills, and encouraged me to begin meditating again. With the help of [Headspace](https://www.headspace.com), I've been meditating twice a day: once in the morning and once in mid-afternoon in Artsy's meditation room.
 
 Okay so on to the data. I started collecting it just over a month ago, so I've got a few weeks before starting therapy and meditation, and a week afterwards. I've marked on the image below when I started, and the data is available in plaintext format [here](https://gist.github.com/ashfurrow/752aab4da069076ad893a88cc2a983a0) for people with visual impairments.
 
-<Wide>
+{% wide %}
 
 ![A graph of my mood over the past month](mood.png)
 
-</Wide>
+{% endwide %}
 
 Okay, nice. So things were pretty turbulent there before begining therapy. Mostly bouncing around 3 (good, alright) and (down, worried). There are three dips down to 0 (miserable, nervous), which represent, uh, very very bad moods where I felt at my lowest. With all that is implied.
 

@@ -20,7 +20,7 @@ Oh wait, I'll explain now.
 
 JavaScript syntax is a joy to use. It's clear, concise, and tailored to the kinds of tasks that JavaScript developers tend to write code for. Here is an example, [taken from Artsy's React Native app][emission]:
 
-<Wide>
+{% wide %}
 
 ```ts
 submitFinalSubmission = async () => {
@@ -41,7 +41,7 @@ submitFinalSubmission = async () => {
 }
 ```
 
-</Wide>
+{% endwide %}
 
 If you've never worked with modern JavaScript before, it might look a little weird. But I would bet that you understand the _gist_ of what this code is and does. And that's pretty important, I think.
 

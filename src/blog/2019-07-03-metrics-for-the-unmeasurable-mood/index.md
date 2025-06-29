@@ -31,11 +31,11 @@ So you can see that these metrics not only reflect my day-to-day life, but also 
 
 Here's a snapshot of how my metrics have looked for the past few weeks. I've omitted a few because they're personal, as well as a section below where I make notes that help contextualize the metrics (example: did I get some bad news that day?).
 
-<Wide>
+{% wide %}
 
 ![Screenshot of my spreadsheet](metrics.png)
 
-</Wide>
+{% endwide %}
 
 My metrics have become more and more filled-in over time – I've just gotten better at hitting them. Since starting in January, I've continuously adjusted the metrics, too. When I decided I wanted to improve my diet, I added a metric of "≤ 1 junk food" and, when I was finished taking my anti-depressants, I removed the "took my medication on time" metric. This flexibility has been really helpful.
 

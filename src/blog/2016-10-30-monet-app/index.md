@@ -7,11 +7,11 @@ bannerAttribution: https://twitter.com/CloudyConway/status/792124334320082944
 
 I heard about a cool [website that can identify the species of bird from a photo](http://www.iflscience.com/plants-and-animals/website-helps-you-identify-birds-looking-your-photo/). It's an impressive feat of computer vision research, but it's not an entirely automated process.
 
-<Wide>
+{% wide %}
 
 > Once users have taken a photo, they draw a box around the bird, click its bill, eye and tail and tell [the website] where and when the photo was taken.
 
-</Wide>
+{% endwide %}
 
 This idea of automating tasks _just enough_ to augment human capabilities has been on my mind since I met [Joe Carrafa](https://twitter.com/joetastic), the Engineering Manager of Applied Research at Warby Parker. A lot of applied research in our field is interested in AI/machine learning and automation.
 

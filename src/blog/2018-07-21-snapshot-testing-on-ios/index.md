@@ -39,7 +39,7 @@ Snapshot testing sits right on that barrier between "did we build it right?" and
 
 So, with the testing pyramid in mind, let's return to the question: is it worth it? Well, let's run down some quick pros and cons.
 
-<Wide>
+{% wide %}
 
 - **Pro**: Reference image changes provide an opportunity for designers to give feedback on pull requests.
 - **Con**: Reference images have a large filesize and can change frequently, which can lead to a ballooning git repository size ([our repo](https://github.com/artsy/eigen) that makes the heaviest use of snapshot testing is 500MB on disk).
@@ -55,7 +55,7 @@ So, with the testing pyramid in mind, let's return to the question: is it worth 
 - **Con**: It's easy to overdo snapshot tests, _feel_ confident in your app's correctness, but not actually be testing the correct thing.
 - **Con**: Snapshot test failures on CI can't be reviewed, since the image files aren't accessible (it's [not difficult to get around this with an S3 bucket](https://github.com/ashfurrow/second_curtain)).
 
-</Wide>
+{% endwide %}
 
 I have no regrets about our snapshot testing strategy, but others will have different approaches. A lot of the cons that I've outlined above have workarounds (one could, for example, store reference images in a submodule to mitigate repo bloat). And snapshot testing is really an open field: if you have an idea for a tool, you could probably build it on top of tools that already exist.
 

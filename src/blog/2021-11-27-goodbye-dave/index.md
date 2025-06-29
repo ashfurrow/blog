@@ -12,11 +12,11 @@ Before that happened, I got a phone call from my dad. I still remember where I w
 
 Dad was right, about both points. We met Dave and we did fall in love with him. And he was a massive responsibility.
 
-<Wide>
+{% wide %}
 
 ![Photo of an orange cat with its mouth open, chirping after a light on the wall.](./chirp.jpg)
 
-</Wide>
+{% endwide %}
 
 Dave was beautiful. The softest fur I'd ever felt. He was playful, but gentle. Adventurous, but easily frightened. Willful, but clingy. He was perfect.
 
@@ -30,11 +30,11 @@ Every time I started a new job and had anxiety about fitting in, Dave and Bandit
 
 When I still worked in an office, Dave would wait by the door for me to come home, every day. He was the first thing I'd see when I got home.
 
-<Wide>
+{% wide %}
 
 ![Photo of an orange cat laying on a tv stand, where he isn't supposed to be.](./corner.jpg)
 
-</Wide>
+{% endwide %}
 
 Around when the pandemic started, Dave began having health problems. We took good care of him and nursed him back to health. When we moved home to Fredericton a year ago, he started having trouble breathing. We took care of him, and he seemed to bounce back. But his problems were recurrent, and the last few months became difficult.
 
@@ -48,10 +48,10 @@ My dad was right about how much work it was to take responsibility for another l
 
 Dave was put to sleep yesterday. The last thing he saw was the two of us, crying, and comforting him. I stroked his face, just the way I knew he liked it, as I made the sound that I'd found for him. We gave him the best life we could, and in return we'd had fourteen years with the perfect cat. A constant companion. A friend. A member of our family. He was a lucky cat, but we were luckier for having him.
 
-<Wide>
+{% wide %}
 
 ![Photo of an orange cat laying down, looking sleepy but mischievous.](./dave.jpg)
 
-</Wide>
+{% endwide %}
 
 We'll miss you, Dave. I'm glad your suffering is over. You'll always be loved.

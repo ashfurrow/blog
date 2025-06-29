@@ -24,11 +24,11 @@ There are two basic approaches here. You can store the information needed for th
 
 So our view controller is going to act as a datasource and delegate for both the table view, and _every_ collection view.
 
-<Narrow>
+{% narrow %}
 
 ![Code structure](diagram.png)
 
-</Narrow>
+{% endnarrow %}
 
 Often, a collection view's data source is its view controller. The problem is that we only have _one_ view controller but _many_ collection views. We need some way to distinguish between a collection view on the first row, and one on the second row, and third, and fourth...
 
@@ -48,31 +48,31 @@ Next, configure your table view cell: give it a reuse identifier (I used "Cell")
 
 Drag a collection view onto the cell (Xcode will make it a subview of the cell's content view). Resize it to fill the entire cell and hit "add missing constraints" to make autolayout do its magic. Your view hierarchy should be will look something like this:
 
-<Narrow>
+{% narrow %}
 
 ![Storyboard hierarchy](hierarchy.png)
 
-</Narrow>
+{% endnarrow %}
 
 All that's left to do is configure the collection view. I set its size, spacing, and content insets to make the cells vertically centred. I also set its scroll direction to "horizontal", unchecked "Shows Horizontal Indicator", and set its background colour to white.
 
-<Narrow>
+{% narrow %}
 
 ![Collection geometry view configuration](config.png)
 
-</Narrow>
+{% endnarrow %}
 
 Finally, I set the reuse identifier of the collection view cell to "Cell" (it needs to be something). And that's it for our storyboard configuration. On to the code!
 
-<Narrow>
+{% narrow %}
 
 ![Completed storyboard](viewController.png)
 
-</Narrow>
+{% endnarrow %}
 
 Now that we have our interface set up and configured, it's time for the code. Open the file with our `UITableViewCell` subclass. We're going to add one property: a reference to its collection view.
 
-<Wide>
+{% wide %}
 
 ```swift
 class TableViewCell: UITableViewCell {
@@ -82,7 +82,7 @@ class TableViewCell: UITableViewCell {
 }
 ```
 
-</Wide>
+{% endwide %}
 
 Make sure to connect this collection view outlet to the cell's collection view in the storyboard.
 
@@ -90,7 +90,7 @@ This is a standard `IBOutlet`, except I marked it as private. This is to create 
 
 Instead, we'll create a function to set the delegate, datasource, and row number on the collection view. Here, note how we can use [Protocol Composition](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID282), available [since Swift 3](https://github.com/apple/swift-evolution/blob/master/proposals/0095-any-as-existential.md).
 
-<Wide>
+{% wide %}
 
 ```swift
 func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forRow row: Int) {
@@ -101,7 +101,7 @@ func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDat
 }
 ```
 
-</Wide>
+{% endwide %}
 
 (**Update**: Thanks to [a reader's feedback](https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell/issues/1), I've added a call to `reloadData()` – take a look at their GitHub issue for a discussion why.)
 
@@ -109,7 +109,7 @@ The `D` type conforms to both the datasource and delegate protocols. Cool. And w
 
 OK so the next thing we need to do is set up our view controller and get it to display some of our becollectioned table view cells. I'm going to set a property on our view controller to be equal to some random generated data.
 
-<Wide>
+{% wide %}
 
 ```swift
 class ViewController: UITableViewController {
@@ -119,7 +119,7 @@ class ViewController: UITableViewController {
     ...
 ```
 
-</Wide>
+{% endwide %}
 
 The `model` property is an array of arrays of `UIColor`. This seems pretty weird at first, but let's think about it. Each table row has an entry in the outer array, and each row _also_ needs an array of things for the collection view cells. So we have an array of arrays. The `UIColor` part is used to set the background colour of the collection view cells.
 
@@ -127,7 +127,7 @@ The `model` property is an array of arrays of `UIColor`. This seems pretty weird
 
 Next we have the bare necessities to display some table view cells.
 
-<Wide>
+{% wide %}
 
 ```swift
 override func tableView(tableView: UITableView,
@@ -145,11 +145,11 @@ override func tableView(tableView: UITableView,
 }
 ```
 
-</Wide>
+{% endwide %}
 
 Very straightforward. Now we just need to set the collection view's delegate/datasource and row number. We can do this with a different `UITableViewDelegate` function, one that is called _just before_ the cell is about to be displayed.
 
-<Wide>
+{% wide %}
 
 ```swift
 override func tableView(tableView: UITableView,
@@ -162,11 +162,11 @@ override func tableView(tableView: UITableView,
 }
 ```
 
-</Wide>
+{% endwide %}
 
 OK awesome! But now we have a problem. We've told the collection view to use `self` as a delegate and datasource, but we don't conform to those protocols yet. No worry, let's add an extension to `ViewController`.
 
-<Wide>
+{% wide %}
 
 ```swift
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -189,7 +189,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 }
 ```
 
-</Wide>
+{% endwide %}
 
 Super! In both of these methods, we use the `collectionView.tag` property to determine which of the outer arrays to access. That gives us our list of colours for the collection view. Based on that list, we can return the number of items in the collection view, or a configured cell to display. Neat!
 
@@ -199,11 +199,11 @@ Super! In both of these methods, we use the `collectionView.tag` property to det
 
 OK cool. We can build and run our app and we see everything looks fine.
 
-<Narrow>
+{% narrow %}
 
 ![Working app](screenshot.png)
 
-</Narrow>
+{% endnarrow %}
 
 But does it _feel_ fine? Something is wrong, but what is it? Well, remember that the table view cells are being reused, so our collection views are being reused too. When they are, they're starting off already scrolled instead of at the beginning of the collection view.
 
@@ -211,7 +211,7 @@ What we want is to have our interface "remember" where each of the collection vi
 
 Let's use a computed property on the `TableViewCell` class.
 
-<Wide>
+{% wide %}
 
 ```swift
 var collectionViewOffset: CGFloat {
@@ -225,7 +225,7 @@ var collectionViewOffset: CGFloat {
 }
 ```
 
-</Wide>
+{% endwide %}
 
 Nice. OK, now we just need to use the property.
 
@@ -233,7 +233,7 @@ Returning to our view controller, we can modify the `willDisplayCell` function a
 
 First create a new dictionary to store the offests, corresponding to their rows.
 
-<Wide>
+{% wide %}
 
 ```swift
 class ViewController: UITableViewController {
@@ -244,11 +244,11 @@ class ViewController: UITableViewController {
     ...
 ```
 
-</Wide>
+{% endwide %}
 
 Now we can store and retrieve the offsets stored here. If an offset hasn't been recorded yet, we will use [Swift's coalesce](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID72) operator to default to `0`, the beginning of the collection view.
 
-<Wide>
+{% wide %}
 
 ```swift
 override func tableView(tableView: UITableView,
@@ -271,15 +271,15 @@ override func tableView(tableView: UITableView,
 }
 ```
 
-</Wide>
+{% endwide %}
 
 Awesome! Let's see how it looks in action.
 
-<Narrow>
+{% narrow %}
 
 ![Working app animation](animation.gif)
 
-</Narrow>
+{% endnarrow %}
 
 Of course, you can find all the code in a [demo project on GitHub](https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell). If you have suggestions or questions, just [open an issue](https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell/issues/new) on the repo and I'll get back to you.
 

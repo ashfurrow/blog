@@ -7,11 +7,11 @@ I didn’t realize it at the time, but the ultimate reason I decided to leave 50
 
 When I was interviewing at [Teehan+Lax](http://teehanlax.com), Jon Lax handed me a booklet he had designed which defined the company’s values. It was important enough to him as a leader, and to his company, that they have a canonical source of the company’s values. These values defined a framework through which decisions can be made. Consistently.
 
-<Narrow>
+{% narrow %}
 
 ![T+L Values Booklet](tl.jpg)
 
-</Narrow>
+{% endnarrow %}
 
 I still have my booklet. It defines the values and also explains why they’re important. Jon would regularly refer back to these values when making decisions.
 

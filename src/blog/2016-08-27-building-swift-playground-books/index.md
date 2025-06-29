@@ -15,11 +15,11 @@ I wanted in.
 
 I watched and re-watched [the Swift playground video][wwdc] to wrap my head around the capabilities of playground books, from an author's perspective, and a learner's too. Playground books are not complex in theory: a nested folder structure with `Manifest.plist` files with book metadata. But that structure needs to be precisely adhered to, or the book won't work on the iPad.
 
-<Wide>
+{% wide %}
 
 ![Structure of playground book](structure.png)
 
-</Wide>
+{% endwide %}
 
 It's easy to make a mistake when building these from hand, so a month ago or so I wrote a "linter" for playground books; it checks your folder structure and `Manifest.plist` contents to made sure everything is correct. My idea was to build my playground book by hand and lint it to make sure I didn't make any mistakes.
 

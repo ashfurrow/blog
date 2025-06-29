@@ -71,14 +71,14 @@ This means that relying on `self.view.bounds.size` will reliably get you the siz
 
 If you were in the blue view controller above and tried to add a subview to your view hierarchy, and you used frame to have the view take up the entire screen, you'd end up with weird results.
 
-<Wide>
+{% wide %}
 
 ```
 hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
 hotNewSubview.frame = self.view.bounds; //Better, but still not good
 ```
 
-</Wide>
+{% endwide %}
 
 Why is setting the subview's `frame` to the `bounds` rect still not a good idea?
 
@@ -98,7 +98,7 @@ Objective-C developers often use `self.view.frame` or `self.view.bounds` to crea
 
 Let's review:
 
-<Wide>
+{% wide %}
 
 ```
 hotNewSubview.frame = self.view.frame; //HORRIBLY, HORRIBLY WRONG
@@ -108,7 +108,7 @@ hotNewSubview.frame = CGRectMake(0, 0,
     CGRectGetHeight(self.view.bounds)); //Best
 ```
 
-</Wide>
+{% endwide %}
 
 A little more typing, sure, but this is Objective-C. We don't eschew verbosity. And it could literally save your life someday. (Editor's note: implausible, but not impossible.)
 

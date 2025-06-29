@@ -29,11 +29,11 @@ If you're interested in dipping your toes in, I'd encourage you to check out thi
 
 But just listening to a podcast doesn't really help anything. And I want to help. I've been reading books they mention, researching the topics they discuss, and have started getting involved in real-world organization in the socialist left. This action, too, comes from the show. From the _MacLean's_ article:
 
-<Wide>
+{% wide %}
 
 > As Chapo’s Frost sees it, the end goal of Left Twitter and catalyzing podcasts like hers is to help the left regain its footing, to organize—and ultimately unplug. "The most important thing social media can do politically has always been to get people off the internet," she says. "People need to get offline and plug into organizing and campaigns in the real world."
 
-</Wide>
+{% endwide %}
 
 The past few months of listening to the show, and the resulting challenges to my existing ideologies, have been tectonic shifts for my politics and even my sense of self (and I was already fairly left-leaning before). I'm not really sure where I'm going, and I'm a bit scared. That's okay – change is always scary.
 

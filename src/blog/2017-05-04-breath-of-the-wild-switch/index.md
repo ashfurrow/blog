@@ -13,7 +13,8 @@ So.
 
 In what's basically a [flawless product video](https://www.youtube.com/watch?v=f5uik5fgIaI), the Switch was announced six months ago. And I knew I would get one eventually. Because just look at that thing.
 
-<YouTube videoID="f5uik5fgIaI" />
+<!-- TODO: these unmigrated shortcodes are messing up the DOM. Until they are migrated, I have hidden this for testing -->
+<!-- <YouTube videoID="f5uik5fgIaI" /> -->
 
 I don't buy game consoles – and I certainly don't buy them early – because I Am Not A Gamer. But this time, it's different. Both _Breath of the Wild_, the new Zelda game, and the Switch had me so excited that I got one only a few months after it launched. And I'm blown away by both.
 
@@ -21,11 +22,11 @@ The Switch is amazing, hardware wise. It's basically a super-beefy tablet that p
 
 What I'm really excited for is _Breath of the Wild_. Everyone I know who has played it has been blown away, and based on the overwhelming positive response, I've been super-pumped.
 
-<Wide>
+{% wide %}
 
 ![More like Breath the Fresh Air amirite](botw.jpg)
 
-</Wide>
+{% endwide %}
 
 I'll spare you my review by saying I agree with [the spirit of this one](http://kotaku.com/the-legend-of-zelda-breath-of-the-wild-the-kotaku-rev-1792885174). I love that there are different ways to solve every puzzle, but more than that: I love that it's possible to beat the game without solving _every_ puzzle. If I get stuck, it's okay because I can come back later, or never.
 

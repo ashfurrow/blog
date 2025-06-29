@@ -9,11 +9,11 @@ So I've been [running an instance](/blog/mastodon-administration/) of [Mastodon]
 
 If you'd like to help out with some of the hosting costs, please head on over [to my Patreon](https://patreon.com/user?u=3581610).
 
-<Narrow>
+{% narrow %}
 
 ![Extended info](info.png)
 
-</Narrow>
+{% endnarrow %}
 
 First, a few things. I _love_ Heroku; it's server administration that's friendly to iOS developers like me who don't know anything about server administration. But! Heroku support for Mastodon is e x p e r i m e n t a l . That's fine, this whole thing is an experiment! Life is an experiment. And like life, there are some issues I've run into.
 
@@ -24,11 +24,11 @@ First, a few things. I _love_ Heroku; it's server administration that's friendly
 
 Now to the good stuff: how to get Mastodon set up.
 
-<Wide>
+{% wide %}
 
 ![Heroku Resources](resources.png)
 
-</Wide>
+{% endwide %}
 
 The initial deploy (use the "Deploy to Heroku" button [in the readme](https://github.com/tootsuite/mastodon#deployment-on-heroku-experimental) is going to install two dynos, Redis, and Postgres. You [only need the first Dyno](https://github.com/tootsuite/mastodon/blob/4e41cd9ab8f51120d558b70528b163c98993be53/config/puma.rb#L11-L13), the web one.
 
@@ -38,27 +38,27 @@ On Heroku, your limiting resource is going to be RAM. I'm using one 2x Dyno for 
 
 [Papertrail](https://elements.heroku.com/addons/papertrail) is logging service. I tried their free tier but exceeded my daily log limit the second day.
 
-<Wide>
+{% wide %}
 
 ![Postgres](postgres.png)
 
-</Wide>
+{% endwide %}
 
 I had to [upgrade my Postgres instance](https://devcenter.heroku.com/articles/upgrading-heroku-postgres-databases) almost immediately. It's not difficult to do, which was nice. Heroku makes a lot of this _super_ easy.
 
-<Wide>
+{% wide %}
 
 ![Redis](redis.png)
 
-</Wide>
+{% endwide %}
 
 I also needed to upgrade my Redis instance almost immediately, to avoid [500 errors](https://github.com/tootsuite/mastodon/issues/957). Redis was the first scaling problem I hit. It looks like a super-useful service, but is priced really aggressively on Heroku. I understand why – Heroku is a business trying to make money – but it's frustrating that costs double for a few extra megabytes of RAM. Or maybe I just don't understand how Redis works `¯\_(ツ)_/¯`.
 
-<Wide>
+{% wide %}
 
 ![Scheduler for cron jobs](scheduler.png)
 
-</Wide>
+{% endwide %}
 
 I added a [scheduler](https://elements.heroku.com/addons/scheduler) add-on for some of the [cron tasks](https://github.com/tootsuite/mastodon#tasks). I'm still experimenting with the task frequency, but you can see what works for you.
 
@@ -70,11 +70,11 @@ The worst part was just waiting for the DNS changes to propagate. I'm using Clou
 
 Even after all this configuration, I'm still running into performance issues. The site completely fell over this morning and I have no idea why.
 
-<Wide>
+{% wide %}
 
 ![Performance](perf.png)
 
-</Wide>
+{% endwide %}
 
 It leads me to wonder how long I can keep this up, but like I said, life is an experiment and I'm just rolling with it.
 

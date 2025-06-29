@@ -31,11 +31,11 @@ When I'm in an elevator with a colleague, my mind is constantly racing with ques
 
 I'm not even really aware of it, it just kind of happens on its own. And that's just an elevator ride.
 
-<Narrow>
+{% narrow %}
 
 [![](interacting.png)](http://hyperboleandahalf.blogspot.com/2013/05/depression-part-two.html)
 
-</Narrow>
+{% endnarrow %}
 
 This actually ties into something my therapist said to me. I've been trying to unpack it for a few weeks, because just like "not everything you do has to be perfect", it calls into question a lot of my assumptions about how being a person works. My therapist said:
 
@@ -67,10 +67,10 @@ That's not the same. Silly brain, who put you in charge?
 
 I've always wanted to not give a fuck but I secretly obsess over what people think of me. I'm tired of it. Not giving a fuck sounds like a great goal for 2016. Bring it on.
 
-<Narrow>
+{% narrow %}
 
 [![](spider.png)](http://hyperboleandahalf.blogspot.com/2011/10/adventures-in-depression.html)
 
-</Narrow>
+{% endnarrow %}
 
 (If you like the pictures in this post, [go buy this book](http://amzn.to/1Sueu7a)).

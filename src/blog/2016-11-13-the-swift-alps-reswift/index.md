@@ -33,11 +33,11 @@ We accomplished the first goal and made some progress towards the second. Sadly,
 
 Most of the work went into the first task: augmenting a simple counting application from being able to count one thing at a time to being able to count several things at once. This transition from one counter to many counters is commonly used in Redux web tutorials to graduate from simple to complex state; I wanted to repeat the process for ReSwift. By the end of the day, we had a full app that used ReSwift to full effect, including named counters, dynamic table view reloading based on LCS algorithms, Redux-style selectors, and state persistence.
 
-<Narrow>
+{% narrow %}
 
 ![Screenshot of finished app](screenshot.png)
 
-</Narrow>
+{% endnarrow %}
 
 We tried, failed, and tried again. When I ran out of ideas to augment the app, participants helped me out by coming up with their own goals and distributing work between groups. I was surprised and humbled by how quickly the participants – mostly strangers – were able to come together and form well-functioning teams.
 

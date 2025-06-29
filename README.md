@@ -18,6 +18,7 @@
   - [x] Menubar
   - [x] Footer text is missing
   - [x] Tapping menu link on mobile looks weird
+  - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
 - [x] Blog archive grouping
 - [x] Prettier
 - [x] Typography
@@ -34,5 +35,6 @@
 - [ ] Import MDX shortcodes
 - [x] Favicon
 - [ ] Corrections GitHub link on posts
+- [ ] Validate generated CSS and HTML
 - [ ]
-- [ ] ~Image optimization (widths) maybe? Maybe not lol~
+- [x] ~Image optimization (widths) maybe? Maybe not lol~

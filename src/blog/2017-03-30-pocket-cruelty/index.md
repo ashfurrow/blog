@@ -19,11 +19,11 @@ Ricky is a drunk genius who takes his adolescent grandson Morty on adventures th
 
 So the show, during a hiatus between seasons, released a game that parodied Pokémon: [Pocket Mortys](https://itunes.apple.com/us/app/rick-and-morty-pocket-mortys/id992640880?mt=8). You play as Rick to collect, train, and fight Mortys. Say again: the game is cockfighting, but with your grandson. And it's super fun.
 
-<Narrow>
+{% narrow %}
 
 ![Pocket Morty's Screenshot](pm.png)
 
-</Narrow>
+{% endnarrow %}
 
 No one on the Internet seems to have a problem with this uncomfortable truth, even though the game explicitly highlights the same truth that McIntosh did. During fights, Mortys will scream in pain, they'll whimper "this just seems really cruel", and they'll exclaim "I don't want to do this any more!" And it's all part of the fun.
 

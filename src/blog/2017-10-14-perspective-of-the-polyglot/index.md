@@ -35,11 +35,11 @@ So what? Well.
 
 There's perspective that comes with experience in different programming languages. Not just languages: systems, communities, and contexts. For example, when I step into another programming community, I have the opportunity to look back and see the iOS developer community from a distance. Sometimes I really like what I see. Sometimes I don't. I try to [bring that perspective back][jive] with me and improve things. Perspective makes you do that.
 
-<Wide>
+{% wide %}
 
 [![](bluedot.jpg)][nasa]
 
-</Wide>
+{% endwide %}
 
 The more I learn, the more I realize I have to learn. I make progress only to learn that the goal – my vision of an idealized developer – is even further away than I thought. Like Zeno, I'll never make it to a finish line. I don't think that feeling will ever change, but I'm learning to accept the fact that the finish line doesn't exist: [the journey is the reward][journey].
 

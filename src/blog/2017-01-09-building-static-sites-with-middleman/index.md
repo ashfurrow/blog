@@ -17,7 +17,7 @@ Optionally, follow the [GitHub Pages documentation](https://help.github.com/arti
 
 Now that we have deploys working, it's time to automate them. Set up a new CI project on Travis or Circle CI (I used Travis, but they're both awesome choices). CI is going to need to be able to push to your GitHub repo, so you'll need a GitHub personal access token with the necessary permissions, stored in a CI secure environment variable. Once you've done that, we need to tell `git` to use the token when pushing to GitHub. In your CI setup, add something like the following:
 
-<Wide>
+{% wide %}
 
 ```yaml
 before_install:
@@ -27,7 +27,7 @@ before_install:
   - git config --global user.name "Ash Furrow (via Travis)"
 ```
 
-</Wide>
+{% endwide %}
 
 Storing the access token in `.netrc` provides the login info for when `git` tries to push to GitHub, via the `middleman-gh-pages` gem. Nice.
 
@@ -35,7 +35,7 @@ Your CI needs some sort of script to test that the site generated successfully. 
 
 Ok, so in your CI config, after a successful build, we'll want to add the following line: `bundle exec rake travis ALLOW_DIRTY=true`. This executes the `travis` Rake task with `ALLOW_DIRTY`, needed for the GitHub Pages deploy gem. Let's create that Rake task to _only_ deploy on pushes to master. Here's what it looks like for Travis:
 
-<Wide>
+{% wide %}
 
 ```ruby
 task :travis do
@@ -58,7 +58,7 @@ task :travis do
 end
 ```
 
-</Wide>
+{% endwide %}
 
 This script will look different for Circle, check out [their documentation](https://circleci.com/docs/environment-variables/) for more details. Commit your changes and push them to GitHub. Watch your CI and – if everything goes right – your site should be deployed automatically, within minutes. Awesome!
 

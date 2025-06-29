@@ -53,7 +53,7 @@ main {
   max-width: 80rem;
 }
 main > * {
-  grid-column: 3 / 10;
+  grid-column: 3 / 11;
 }
 @media (max-width: 1200px) {
   main > * {
@@ -68,23 +68,38 @@ main > * {
     padding: 1rem 1rem;
   }
 }
-/* TODO: What is this even for? */
-/* form {
-  p {
-    label,
-    input {
-      display: block;
-    }
-    input {
-      min-width: 275px;
-    }
-    textarea {
-      resize: vertical;
-      min-height: 150px;
-      width: 100%;
-    }
+
+/* Shortcodes */
+.wide {
+  grid-column: 2 / 12;
+  margin: 0 auto 1.66rem auto; /* TODO: What is this styling? All the content spacing needs a review. */ 
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .wide {
+    grid-column: 2 / 12;
   }
-} */
+}
+@media (max-width: 600px) {
+  .wide {
+    grid-column: 1 / 13;
+  }
+}
+
+.narrow {
+  grid-column: 4 / 10;
+}
+@media (max-width: 1200px) {
+  .narrow {
+    grid-column: 3 / 11;
+  }
+}
+@media (max-width: 600px) {
+  .narrow {
+    grid-column: 1 / 13;
+  }
+}
+
 p {
   margin-block-end: 0;
   margin-block-start: 0;

@@ -7,11 +7,11 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1461404985615425547
 
 From its initial announcement, [I was skeptical about the Apple Watch](/blog/crestfallen/). But I've tried it now – a few times – and I've been a near-daily user since 2018. It's a great product, whose main appeal to me is activity tracking. Each day, the Apple Watch gives users three goals to meet, represented by rings to close.
 
-<Narrow>
+{% narrow %}
 
 ![Images taken from Apple's Human Interface Guidelines showing the three rings.](./watch_rings.png)
 
-</Narrow>
+{% endnarrow %}
 
 The goals are:
 
@@ -67,11 +67,11 @@ When covid hit and I started wearing a mask outdoors in New York, my V02 Max too
 
 The text in iOS also makes this data seem a lot more authoritative than it is, as we saw with the garbage-in-garbage-out problem from earlier. I've come to resent the Activity and Health apps for how accurate and valid they seem to think their data is.
 
-<Narrow>
+{% narrow %}
 
 ![Screenshot of VO2 Max from Apple's Health app, which describes the measurement and then reads "VO2 max is validated for users 20 and older."](./vo2_max.png)
 
-</Narrow>
+{% endnarrow %}
 
 The problem here is there is no user input to these algorithms at all. I can't tell my Apple Watch "hey I'm wearing a mask, so don't estimate V02 Max on this exercise." Lack of user input is a larger problem with the Apple Watch Activity tracking. There is no way for users to tell the watch "I'm home sick today" to stop it from pestering the user throughout the day to close their rings.
 
@@ -97,11 +97,11 @@ Trends are probably the worst feature of Apple's Activity app because they combi
 
 I'm sure Apple is well-meaning here, but personally I don't really care if my daily number of exercise minutes has decreased by two over the past month. Like, I literally do not care. And yet Apple's trends feature _wants_ me to care. It admonishes me. It gives me instructions on how to turn my trend around, as if slight fluctuations in activity over time aren't totally normal.
 
-<Narrow>
+{% narrow %}
 
 ![Screenshot of Activity's exercise daily average minutes trend, showing a decrease of two minutes. It reads "This is a good arrow to have pointed up. Start by averaging at least 73 Exercise minutes this week. Make steady progress and your arrow should take about 10 weeks to flip."](./exercise.png)
 
-</Narrow>
+{% endnarrow %}
 
 There is a ratcheting effect: Activity always wants you to do more, go faster, be better. But humans don't work that way. This sets up maladaptive behaviours. Let's look at an example.
 
@@ -115,11 +115,11 @@ Unfortunately, when I want to make myself hate myself, Apple's Activity app's tr
 
 There is always an arrow that's not pointing up, or is about to start pointing down. The text in trends is trying to encourage me, but it fails to ever validate me. It has no mechanism for me to contextualize this data with annotations.
 
-<Narrow>
+{% narrow %}
 
 ![Screenshot from Activity app's trends section showing my average running page has decreased slightly lately, even though it is overall still trending up.](./running.png)
 
-</Narrow>
+{% endnarrow %}
 
 It's that ratcheting effect again: Apple wants you to always, constantly be improving. That is not possible. So what I get is a part of my phone I can doomscroll through all of my failures.
 
@@ -140,11 +140,11 @@ What I've found to help me, instead, is [Strava](https://www.strava.com). I use 
 
 Strava encourages me to maintain a consistent training pace. I can increase my effort week-over-week, but it encourages doing so in reasonable increments. When I go way overboard in a week, Strava tells me so and gently encourages me to focus on consistency. When I have a week where I don't do as much activity in Strava, it tells me that these types of weeks are good for active recovery.
 
-<Narrow>
+{% narrow %}
 
 ![Screenshot from Strava app showing I exceeded the weekly average.](./strava_above.png)
 
-</Narrow>
+{% endnarrow %}
 
 This is great – I get actionable advice that matches what I've learned about fitness. A focus on longterm consistency is way more valuable to me than day-to-day streaks. And active recovery is really important for a healthy lifestyle, too.
 
@@ -154,11 +154,11 @@ When I go for runs, I often run in the same segment of trail. Strava keeps track
 
 Strava also uses the relative effort over time to estimate overall fitness, including rest days. And it is explicitly an _estimate_. Compared to the Apple Watch, Strava doesn't claim the same sense of authority on my fitness.
 
-<Narrow>
+{% narrow %}
 
 ![Screenshot from Strava app showing estimated fitness over the past month (down 3%).](./strava_fitness.png)
 
-</Narrow>
+{% endnarrow %}
 
 The Apple Watch was a great tool for helping me get started with physical activity. When I began taking exercise seriously, daily goals and streaks were really helpful. But now that I've developed those habits and I'm looking for help meeting my own goals, the Apple Watch has failed to grow with me.
 

@@ -7,19 +7,19 @@ bannerAttribution: https://twitter.com/CloudyConway/status/766250712091205632
 
 A few weeks ago, shortly after Pokemon Go launched, I saw a pretty messed up image get circulated 'round the internet, with comments to the effect of "haha, this is _so_ edgy!" But it made me pretty angry.
 
-<Narrow>
+{% narrow %}
 
 [![Bad satire](pikachu.jpg)](http://pawelkuczynski.com)
 
-</Narrow>
+{% endnarrow %}
 
 _Ohhhhhhh my goshhhhhh_ the pretension practically oozes off my screen. Pokemon Go became popular and despite benefits like spending more time outside, the game's popularity demanded snarky responses. Thinkpieces had to be written! Snarky comics had to be published! Ugh.
 
-<Narrow>
+{% narrow %}
 
 [![Worse satire](cliff.png)](http://wumo.com/wumo/2016/08/11)
 
-</Narrow>
+{% endnarrow %}
 
 I'm so tired of this. Pokemon Go entertains people, gets them outside, helps them make new friends, all kinds of awesome things. But it's an app, which is technology, and technology is bad, right? So we get this faux intellectual backlash coming from people who you'd think would know better: so called "satirists."
 

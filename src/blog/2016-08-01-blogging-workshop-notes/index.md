@@ -9,7 +9,7 @@ This week, at Artsy's offsite, Orta and I are leading a workshop named "Bootstra
 
 Here's the introductory email we sent participants.
 
-<Wide>
+{% wide %}
 
 > Hello team! Orta and I are super-excited you're coming to our "Bootstrap your Blog" workshop at Artsy's offsite! Here's a brief intro describing the workshop and a small bit of necessary preparation.
 >
@@ -21,7 +21,7 @@ Here's the introductory email we sent participants.
 >
 > We're really looking forward to this because we both believe in a world where everyone benefits when we all share our experiences. It's exciting and rewarding to be there as you take your first steps into that world, but remember that the most important thing is that you enjoy yourself. Have fun!
 
-</Wide>
+{% endwide %}
 
 The email is meant to be encouraging without applying too much pressure. People get caught up in the details of writing and that can be discouraging. Instead, I've tried to frame our introduction as a learning exercise so that making mistakes, or not completing a blog post, are totally acceptable. I write half blog posts all the time and they never get published, and that's okay.
 

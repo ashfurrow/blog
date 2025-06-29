@@ -9,11 +9,11 @@ So it's been a few months since I've [last blogged about my mood improvements](/
 
 To catch you up, I have completed my round of cognitive behavioural therapy (CBT) and am feeling great! My mood is consistent throughout the day, and usually hovers around "happy, excited." I even have a graph for you to prove it, which I'm still a bit awestruck by ([plaintext data available](https://gist.github.com/ashfurrow/406dfa25fa8aeba43abea5e52a81f2e8)).
 
-<Wide>
+{% wide %}
 
 ![Graph of my mood](graph.png)
 
-</Wide>
+{% endwide %}
 
 So what does this mean? Well, you can see things got better after starting CBT. The graph doesn't go back very far in time since I started keeping track of my mood shortly before starting CBT. But I was consistently feeling "down, worried", "sad, unhappy", or "miserable, nervous" (that last one indicates suicidal ideation, which you can see from the graph hasn't occurred since February).
 

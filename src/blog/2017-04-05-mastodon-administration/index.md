@@ -12,11 +12,11 @@ I wanted to create a place for tech folks to hang out, but I don't have a lot of
 
 I've run into a number of scaling issues, 500 errors, questions I don't know the answer to, yikes. So I've spent time searching for answers, scaling up Heroku Dynos, configuring DNS settings, and upgrading Postgres databases.
 
-<Wide>
+{% wide %}
 
 ![Resources](resources.png)
 
-</Wide>
+{% endwide %}
 
 My hope is that these resources will be sufficient for some time while the community scales. I'm planning on starting a Patreon to help cover the hosting costs, and maybe even a little of my time. But I don't want to start asking for help unless I'm certain that this is something I want to build in the long run.
 
@@ -24,11 +24,11 @@ Because this has taken time away from the rest of my life. If that cost is large
 
 If you're interested, here are the metrics for the Heroku app. The red numbers worry me. We'll see how things go. I'm thinking of migrating the whole instance over to a Digital Ocean instance, which would bring the costs down considerably, but the limiting factor is my time.
 
-<Wide>
+{% wide %}
 
 ![Metrics](metrics.png)
 
-</Wide>
+{% endwide %}
 
 At first I was really overwhelmed because things weren't always running perfectly. Then I realized that this is just a process, an experiment, and I should relax. People have been thanking me for setting up the instance, which has felt really nice. Even if this space turns out to be ephemeral, it's still its own community, and creating that community is really rewarding.
 

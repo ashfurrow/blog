@@ -25,11 +25,11 @@ Things changed a few weeks ago when, during follow-up on their episode about cit
 
 So I did, and through capitalizing on my newly rediscovered interesting in tinkering on things, I revived my Raspberry Pi and set off. Over the course of the past two weeks, I've been reading about gridcoin and playing with the related technologies. And while I have a good theoretical understanding of cryptocurrency technologies, I didn't have the experience of working with cryptocurrencies in practice. The past few weeks have therefore been a lot of learning new ideas and refining new skills.
 
-<Wide>
+{% wide %}
 
 ![BOINC on a Raspberry Pi](pi.png)
 
-</Wide>
+{% endwide %}
 
 Let's back up and define gridcoin. Other cryptocurrencies, like bitcoin, are mined by computers that compete to solve cryptographic hash functions. That computing power is wasted, in a very real sense: solving those hashes isn't useful _except_ to mining more bitcoins. On the other hand, gridcoin is a cryptocurrency mined using calculations that contribute towards scientific research. In fact, gridcoin is really just a layer on top of BOINC, which predates bitcoin and blockchains altogether. This was something I could be interested in!
 
@@ -43,21 +43,21 @@ So I've installed the BOINC client on my laptop and my pi, and I've been messing
 
 One stumbling block I've faced when starting has been that (for reasons that are still beyond me) you need to _have_ gridcoins to stake them. Seems kinda scam-y, but there's a small transaction fee to basically announce yourself on the blockchain. Okay, fine, but also: when and how often you stake gridcoins (get credit for your BOINC work) is determined in part by how many gridcoins you already have. So starting out is tricky, feels weird, and involves a lot of waiting. With a balance of 3 gridcoins (which I acquired by signing up for a newsletter, lol), my estimated time-to-stake was an estimated three thousands days.
 
-<Wide>
+{% wide %}
 
 ![Gridcoin wallet](wallet.png)
 
-</Wide>
+{% endwide %}
 
 Mmm. Mmhmmm.
 
 To build up an initial balance, I tried using a [gridcoin pool][grcpool] on an EC2 instance for a few days but wasn't really impressed. Using a pool is like solo mining except you don't need the upfront investment (and you don't get to keep all your earnings). Maybe I'm impatient – the calculations take longevity of contribution into account, and I only ran this server for like two days.
 
-<Wide>
+{% wide %}
 
 ![BOINC on EC2](ec2.png)
 
-</Wide>
+{% endwide %}
 
 (Lest my command-line hacker skills be called into question, yes I _did_ install a desktop environment on EC2 but I didn't _have_ to, it was just easier.)
 

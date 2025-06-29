@@ -17,11 +17,11 @@ Okay so a few years went by and then this cool new way to query an API came onto
 
 Typical APIs are built on [REST][], which uses HTTP verbs connected to specific URLs to encode state transfer. Creating a user? That would be a `POST` to the `/api/users` endpoint, for example. REST has its problems, though. In the context of mobile apps, the biggest problem with REST is the number of round trips to the server it can take to render a view. Let's look at an example from the Artsy app.
 
-<Narrow>
+{% narrow %}
 
 ![A screenshot of the Artsy iOS app](artsy.png)
 
-</Narrow>
+{% endnarrow %}
 
 Okay so let's examine this from an API perspective. The screenshot shows an art auction, a bid registration button, and a list of lots in the auction. So that's three requests so far:
 
@@ -63,11 +63,11 @@ GraphQL solves both of these problems. It provides a way to coalesce many networ
 
 Cool! And because the GraphQL server supplies a schema of available fields and queries, we get some really nice tooling on top of this. Here's what it looks like when I hit Artsy's GraphQL server ([which is open source][metaphysics]) with that query in a GraphQL IDE called [GraphiQL][]:
 
-<Wide>
+{% wide %}
 
 ![A screenshot of an Artsy GraphQL request](graphiql.png)
 
-</Wide>
+{% endwide %}
 
 Wow! Autocomplete for our network requests. Errors when a request doesn't adhere to the schema. Inline documentation. Types! This is really great!
 

@@ -7,11 +7,11 @@ bannerAttribution: https://twitter.com/CrookedCosmos/status/843233230874644482
 
 A few weeks ago, I wrote about [improvising on guitar](/blog/improving-improvising/), a follow-up from [when I started learning in December](/blog/learning-guitar/). I've been busy since then, practicing and playing every day. Time for another update.
 
-<Narrow>
+{% narrow %}
 
 ![Yousician screenshot](yousician.jpg)
 
-</Narrow>
+{% endnarrow %}
 
 I've been using [Yousician](http://yousician.com), and it's been a great tool to help develop skills. If you're on Yousician, or you join, please add me as a friend. I find competition for high scores really motivating 😄
 

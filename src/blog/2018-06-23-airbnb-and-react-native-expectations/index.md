@@ -20,14 +20,14 @@ Here are Airbnb's goals for React Native, which I'm interpreting as their expect
 
 Okay, so how did those four things go? Well, I'll summarize again:
 
-<Wide>
+{% wide %}
 
 1. _"Engineers were able to move at an unparalleled speed"_, but also there were also technical and cultural hurdles that mitigated this success.
 2. Again, a qualified success: _"we were able to accomplish a number of things that we weren’t sure were possible."_ But they point to the same technical challenges and a lack of internal engineering resources that frustrated their team sometimes.
 3. This was a failure(**\***): _"we wound up supporting code on three platforms instead of two"_, which sounds grim. But also, _"only a small percentage of our app was React Native"_, meaning they had a lot of overhead for not a lot benefit. I want to discuss this expectation in more detail, but more on that in a minute.
 4. A _"mixed bag"_, which some things being way easier and faster, while other things were worse.
 
-</Wide>
+{% endwide %}
 
 (**\*Note**: my characterization of #3 as a failure has been disputed; you should go read [Leland Richardson's thread][thread] responding to me to get a really great, nuanced clarification of Airbnb's experience sharing code between Android and iOS.)
 
@@ -47,11 +47,11 @@ And that kind of leads me back to culture. I think these blog posts do an excell
 
 What kind of barriers? Well, not to bring up the insularity of the iOS developer community again, but... iOS developers kind of have a reputation within the broader software industry. Charlie Cheever, [writing about this topic][charlie] from Expo's perspective, has this to say:
 
-<Wide>
+{% wide %}
 
 > [...] organizations where there are people who identify themselves strongly as iOS programmers and Android programmers have a really hard time being happy with React Native. **iOS programmers in particular are very unhappy** with it and generally **regard JS as an infestation** of the company’s codebase, while Android programmers have more mixed feelings.
 
-</Wide>
+{% endwide %}
 
 (Emphasis added.)
 

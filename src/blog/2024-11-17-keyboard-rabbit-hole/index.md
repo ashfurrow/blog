@@ -77,11 +77,11 @@ I opened my heart to the possibility.
 
 I started playing around with my ErgoDox EZ layout to simulate the Voyager. I added [home row mods](https://precondition.github.io/home-row-mods). I printed out to-scale outlines of both keyboards to compare. I thought really hard about what I wanted, and then [I took the plunge](/blog/new-keyboard/).
 
-<Narrow>
+{% narrow %}
 
 ![Photo of one half of the Voyager on a to-scale print-out of the ErgoDox EZ](./comparison.jpeg)
 
-</Narrow>
+{% endnarrow %}
 
 This turned out to be a bigger change that I had anticipated.
 
@@ -115,7 +115,7 @@ The worst part is, when I get out my ErgoDox, I don't even like the Cherry MX Bl
 
 It took a while to get the layout right. I'm actually putting together a tour of my layout right now, which will go into more details. I'll update this post once it's ready. You can see [the revisions I've gone through](https://configure.zsa.io/my_layout/view/NWX4X) so far. Here's the latest layout:
 
-<Wide>
+{% wide %}
 
 <div style="padding-top: 60%; position: relative;">
   <iframe
@@ -124,7 +124,7 @@ It took a while to get the layout right. I'm actually putting together a tour of
   ></iframe>
 </div>
 
-</Wide>
+{% endwide %}
 
 A few things that make this layout work well for me:
 
@@ -151,11 +151,11 @@ All of this has been preamble. Table-setting. Context you need to understand: I 
 
 I have fallen down a rabbit hole. I'm desperately trying to stop myself. My fingers – dug into the sides of this hole – can just barely slow my descent. But the deeper I fall, the less I really want to stop.
 
-<Narrow>
+{% narrow %}
 
 ![Reddit comment thread. "I'm worried I'll keep falling down the rabbit hole haha." "Let it happen! Switches are so personal"](./reddit.jpeg)
 
-</Narrow>
+{% endnarrow %}
 
 I've become a full-on weird keyboard person. Sure, I was using a split keyboard for a decade. And sure, I used a columnar stagger custom-programmable keyboard for years.
 
@@ -199,19 +199,19 @@ Yes.
 
 I removed the tray itself but kept the metal slide attached to the bottom of my desk. I then drilled out the existing holes to fit a tripod screw, and added a few new holes.
 
-<Narrow>
+{% narrow %}
 
 ![Keyboard tray with holes drilled out to fit a tripod mount.](./tray_holes.jpeg)
 
-</Narrow>
+{% endnarrow %}
 
 That allowed me to mount a cheeseplate to the keyboard tray slide.
 
-<Narrow>
+{% narrow %}
 
 ![Keyboard tray with holes with cheeseplate attached.](./tray_bolts.jpeg)
 
-</Narrow>
+{% endnarrow %}
 
 From there, the rest was just iterating until I found something that worked.
 
@@ -221,11 +221,11 @@ I have so much flexibility. I use the magic arms to position the keyboard and tr
 
 This took hours and hours of research and iteration, and took many attempts. As an engineering problem, getting the "best" ergonomic setup was a fun challenge. Intrinsically rewarding, if socially isolating.
 
-<Wide>
+{% wide %}
 
 ![Keyboard tray with Voyager and tripod attached, different angle.](./tray_tent_2.jpeg)
 
-</Wide>
+{% endwide %}
 
 This feels amazing to type on and use day-to-day. But I also feel like an idiot. A massive idiot.
 

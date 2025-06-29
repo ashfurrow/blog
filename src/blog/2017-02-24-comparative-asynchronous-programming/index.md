@@ -239,11 +239,11 @@ This is probably the most far-out approach we'll discuss today. [Actor-based pro
 
 This diagram is from [Akka's documentation](http://doc.akka.io/docs/akka/current/scala/actors.html), don't look at it – it's too complicated!
 
-<Narrow>
+{% narrow %}
 
 ![Akka actor lifecycle diagram](akka.png)
 
-</Narrow>
+{% endnarrow %}
 
 The actor model provides a number of constraints and conditions that make async robust, but more complicated.
 

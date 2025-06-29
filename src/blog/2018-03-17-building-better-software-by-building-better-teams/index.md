@@ -114,11 +114,11 @@ A useful framework for thinking about how to approach our colleagues when someth
 
 Imagine a graph with the vertical axis representing whether or not you care personally about a colleague, and the horizontal axis representing whether or not you’re willing to challenge the person directly.
 
-<Wide>
+{% wide %}
 
 ![A graph depicting two axes, representing caring for colleagues vs whether or not you're willing to challenge them directly](graph.png)
 
-</Wide>
+{% endwide %}
 
 Okay so now we have four possibilities on our graph, but today I want to focus on the top area of the chart, the area where you care personally about the other person. If you don’t care about the person, then... well I _could_ convince you about why you ought to care for your colleagues but I don't have time for it right now. So let's assume that you care.
 
@@ -132,11 +132,11 @@ This area of the graph is called “ruinous empathy” because you care about so
 
 (Side note: this is why I get so mad when people diminish non-technical skills as “soft” and imply they aren’t difficult – they are! These are all difficult conversations, but radical candour is a skill and habit you can get better at.)
 
-<Wide>
+{% wide %}
 
 ![A graph depicting two axes, representing caring for colleagues vs whether or not you're willing to challenge them directly, with labelled quadrants for radical candour and ruinous empathy](graph_filled_in.png)
 
-</Wide>
+{% endwide %}
 
 Psychological Safety is a really useful idea that is unfortunately being co-opted and misused by managers and CEOs.
 
@@ -257,11 +257,11 @@ The first is a book, [_Awakening Compassion at Work_][awaken], an excellent book
 
 [_Inclusion is a Captain’s Job_][inclusion] by [Danilo Campos][danilo] is a conference talk-turn-blog post about lessons of inclusion from the Star Trek canon. The _good_ Star Trek canon. And he 100% presented the talk in a Starfleet Engineering uniform:
 
-<Narrow>
+{% narrow %}
 
 ![A photo of Danilo Campos giving a presentation while wearing a Starfleet Engineering uniform](danilo.jpg)
 
-</Narrow>
+{% endnarrow %}
 
 ---
 

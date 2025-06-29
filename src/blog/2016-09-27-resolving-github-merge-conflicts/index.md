@@ -17,11 +17,11 @@ If this happens, don't worry. Let's walk through the steps to pull down the upda
 
 The first thing we need to do is tell git where to find the changes. As a convention, we're going to call the original repository the _upstream_. This is the repository that your pull request is submitted on. To get the upstream git URL, go to the original GitHub repo page and click the "Clone or Download" button.
 
-<Narrow>
+{% narrow %}
 
 ![GitHub merge interface](url.png)
 
-</Narrow>
+{% endnarrow %}
 
 Copy that URL. Now we need to tell git where the upstream is, and then tell git to fetch information from the upstream.
 
@@ -44,7 +44,7 @@ git pull upstream master
 
 At this point, you're probably going to have some conflicts. Let's take a look at a conflict I had to resolve recently.
 
-<Wide>
+{% wide %}
 
 ```swift
 <<<<<<< HEAD
@@ -58,7 +58,7 @@ let newEncodedRequest = try? newEndpoint.parameterEncoding.encode(newEndpoint.ur
 >>>>>>> 08b3dcbbc2a98d2b0c8ea04845681e04176fbd8f
 ```
 
-</Wide>
+{% endwide %}
 
 The changes from my pull request are on the top, and the changes that have been made to the upstream repo are on the bottom. We need to reconcile the two, which can be tricky. Ideally, we would find out why the changes on the top were made so we can incorporate them into our branch, so go check the GitHub history for that file. This process of resolving merge conflicts gets easier with experience.
 
@@ -66,7 +66,7 @@ Unit tests help a lot here, since they'll let you know if you've made a mistake 
 
 In my case, it ended up looking like this:
 
-<Wide>
+{% wide %}
 
 ```swift
 let newEndpoint = endpoint.adding(newParameterEncoding: parameterEncoding)
@@ -74,7 +74,7 @@ let encodedRequest = try? parameterEncoding.encode(newEndpoint.urlRequest!, with
 let newEncodedRequest = try? newEndpoint.parameterEncoding.encode(newEndpoint.urlRequest!, with: newEndpoint.parameters)
 ```
 
-</Wide>
+{% endwide %}
 
 After resolving conflicts, you need to `git add .` to add all the conflicting files and then `git commit`. This will open up a text editor, probably vim, with a pre-filled commit message.
 

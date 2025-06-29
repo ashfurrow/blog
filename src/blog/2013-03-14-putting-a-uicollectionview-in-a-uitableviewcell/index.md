@@ -21,7 +21,7 @@ The diagram should show you that the tricky part here is going to be getting the
 
 Adding the collection view to the cell is very strait forward. We'll create an instance of `AFCollectionView` using a standard `UICollectionViewFlowLayout` in our cell's designated initializer.
 
-<Wide>
+{% wide %}
 
 ```objc
 - (id)initWithStyle:(UITableViewCellStyle)style
@@ -43,11 +43,11 @@ Adding the collection view to the cell is very strait forward. We'll create an i
 }
 ```
 
-</Wide>
+{% endwide %}
 
 We'll adjust the side of the collection view to fill the cell in `layoutSubviews`.
 
-<Wide>
+{% wide %}
 
 ```objc
 -(void)layoutSubviews
@@ -58,13 +58,13 @@ We'll adjust the side of the collection view to fill the cell in `layoutSubviews
 }
 ```
 
-</Wide>
+{% endwide %}
 
 Next, we'll set up our model in the view controller. We'll use `UIColor`s because they're easy. Each cell will display a different, random colour.
 
 This model is going to represent the table view _and_ each collection view. We'll use an array; each object represents a table cell. These objects are themselves arrays, with each of their objects representing a collection view cell.
 
-<Wide>
+{% wide %}
 
 ```objc
 -(NSInteger)tableView:(UITableView *)tableView
@@ -74,11 +74,11 @@ This model is going to represent the table view _and_ each collection view. We'l
 }
 ```
 
-</Wide>
+{% endwide %}
 
 Next we'll implement our `UICollectionViewDataSource` methods.
 
-<Wide>
+{% wide %}
 
 ```objc
 -(NSInteger)collectionView:(AFIndexedCollectionView *)collectionView
@@ -100,13 +100,13 @@ Next we'll implement our `UICollectionViewDataSource` methods.
 }
 ```
 
-</Wide>
+{% endwide %}
 
 You'll see we're using the `index` property of the collection view to determine the appropriate model to use. Notice that the view controller doesn't retain references to any of the collection views – they belong to the `UITableViewCell`s only. This is great, since they'll be re-used and save memory.
 
 But where is the `index` getting set? We'll need to do that, too.
 
-<Wide>
+{% wide %}
 
 ```objc
 -(void)tableView:(UITableView *)tableView willDisplayCell:(AFTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -115,11 +115,11 @@ But where is the `index` getting set? We'll need to do that, too.
 }
 ```
 
-</Wide>
+{% endwide %}
 
 The only thing left to do is "remember" the content offset of each cell as we end displaying it to reset it when we begin displaying it again. I we don't do this, newly displayed collection views will have non-zero content offsets and returning collection views will be in different positions. We'll use an `NSMutableDictionary` to remember the content offsets.
 
-<Wide>
+{% wide %}
 
 ```objc
 -(void)tableView:(UITableView *)tableView
@@ -143,7 +143,7 @@ The only thing left to do is "remember" the content offset of each cell as we en
 }
 ```
 
-</Wide>
+{% endwide %}
 
 ![](1DA58865F87F4E9696A16088F491E04D.png)
 

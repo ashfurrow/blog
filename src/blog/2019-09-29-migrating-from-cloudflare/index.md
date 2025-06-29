@@ -35,11 +35,11 @@ Migrating to a new CDN provider turned out to be the easier part of this. Cloudf
 
 Here's what the infrastructure looked like before adding BunnyCDN. It includes a lot of detail around DNS lookups that will become relevant in the next section.
 
-<Wide>
+{% wide %}
 
 ![Diagram explaining infrastructure with DNS lookups](pre-migration-diagram.png)
 
-</Wide>
+{% endwide %}
 
 I could have changed the `static` subdomain to point to BunnyCDN, but that's risky. If something went wrong, I would have to wait for DNS propagation to fix it. I'd prefer to be able to rollback any changes quickly.
 
@@ -51,19 +51,19 @@ One thing that I really like about BunnyCDN is that I'm paying them. Weird, righ
 
 Here's what Cloudflare's bandwidth stats looked like after about a week:
 
-<Wide>
+{% wide %}
 
 ![Graphs of bandwidth served through Cloudflare, showing a precipitous drop](cloudlfare-traffic-diagram.png)
 
-</Wide>
+{% endwide %}
 
 And here's what BunnyCDN looked like:
 
-<Wide>
+{% wide %}
 
 ![Graphs of bandwidth served through BunnyCDN, showing both bandwidth and numbers of requests](bunnycdn-traffic-diagram.png)
 
-</Wide>
+{% endwide %}
 
 I noticed that Cloudflare was still serving a number of requests, even after switching the instance to point to the new subdomain. About 6000 requests and nearly 1GB of total traffic per day. This is probably remote instances, displaying federated toots from `mastodon.technology` that were made before I changed the environment variable. I hadn't considered this – I can reboot _my_ instance server with a new environment variable, but I can't control anyone else in the fediverse. This decentralization is both a feature of the fediverse, and a huge constraint.
 
@@ -83,11 +83,11 @@ My choices here were either to use a different nameserver (maybe [FreeDNS](https
 
 Here is roughly what happens when a user requests an upload (after introducing BunnyCDN into the infrastructure). First there's a DNS lookup that takes up steps 1, 2, and 3; then, there is the asset download itself in steps 4 and 5.
 
-<Wide>
+{% wide %}
 
 ![Diagram explaining infrastructure with DNS lookups](post-cdn-migration-diagram.png)
 
-</Wide>
+{% endwide %}
 
 Originally, I made this diagram to clarify at each step what gets cached and what doesn't, but it turns out that... it all gets cached. All of it. Every solid line in this diagram, and even one of the dashed lines, represents a cache.
 
@@ -101,21 +101,21 @@ My solution was to be ready to set the DNS records quickly.
 
 Unfortunately, I wasn't quick enough.
 
-<Wide>
+{% wide %}
 
 ![Diagram explaining infrastructure with DNS lookups](post-dns-migration-diagram.png)
 
-</Wide>
+{% endwide %}
 
 I used [an online `dig` tool](https://www.digwebinterface.com/) to track the nameserver and DNS record propagations, and watched in mild horror as incomplete records spread through the internet. I entered the A and AAAA records (the ones used by browsers) first, and they propagated really quickly. The problem was with the MX records, used for email. Without the MX records, I started seeing the follow error in my Maingun logs:
 
-<Wide>
+{% wide %}
 
 ```
 Failed: mastodon@mastodon.technology → USER@EXAMPLE.COM 'You were mentioned by USER@mastodon.social' Server response: 550 Requested action not taken: mailbox unavailable invalid DNS MX or A/AAAA resource record
 ```
 
-</Wide>
+{% endwide %}
 
 It seems like larger email providers, like Gmail, picked up the MX record change quickly. Smaller email servers, who probably have longer cached TTL's for DNS lookups, took longer to recover. The frustrating thing is that email servers are really particular, and I think this change will hurt the spam score for outbound emails from the instance.
 

@@ -31,11 +31,11 @@ The biggest existential threat to your library is this: you get burned out and s
 
 After watching [this talk](https://www.youtube.com/watch?v=e_-qV8waPVM), I became convinced of the idea that a project should add contributors as early as possible. What that means is up to you. My answer is this: After any pull request – any one at all – I offer an invitation to its author to join the library's contributors. This happens often enough that I have Text Expander snippets, like this one:
 
-<Wide>
+{% wide %}
 
 > Hey there! Thanks a lot for contributing to Moya! I've invited you to join the Moya GitHub organization – no pressure to accept! If you'd like more information on what that means, check out our [contributor guidelines](https://github.com/Moya/contributors) and feel free to reach out with any questions.
 
-</Wide>
+{% endwide %}
 
 You might be thinking "wow, contributor access after a _single_ merged PR sounds pretty risky", but you'd be wrong. What could possibly go awry? Are you're worried that something that shouldn't could get into `master`? Just protect the `master` branch from force pushes (in your repository's settings) so that you have a guaranteed-to-be-unbroken history on master, and then you can revert anything if it ever comes up. And you know what? It probably won't come up.
 
@@ -53,11 +53,11 @@ Prospective contributors will feel more comfortable if they know they won't be b
 
 I really like [the contributor covenant](http://contributor-covenant.org), which is written around this promise:
 
-<Wide>
+{% wide %}
 
 > In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-</Wide>
+{% endwide %}
 
 Amazing, that is an awesome pledge, count me in.
 

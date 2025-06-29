@@ -29,11 +29,11 @@ After a little break and some food, I went back and looked into a different exte
 
 Some fiddling with CSS and lining things up, [I had a ready PR](https://github.com/ashfurrow/blog/pull/233).
 
-<Wide>
+{% wide %}
 
 [![Screenshot of site search](screenshot.jpg)](/search)
 
-</Wide>
+{% endwide %}
 
 Site search stumped me for weeks. Distinct from search engines in general, server-side static site search is a very interesting problem in its own right. Ruby code uses Javascript to generate a search engine index of the content of my entire site. Then client-side Javascript downloads that index and uses lunrjs to run queries against it. It crosses the dynamic-to-static barrier, which isn't something many other features of static sites need to do.
 

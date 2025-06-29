@@ -14,11 +14,11 @@ I was reading [the book's follow-up on](http://amzn.to/1nH66FX) the subway here 
 
 The video discusses a practice related to wabi-sabi: [kintsugi](https://en.wikipedia.org/wiki/Kintsugi). This is art of repairing things in a way that actually enhances their aesthetic. The repaired is more beautiful than the pristine.
 
-<Wide>
+{% wide %}
 
 [![](kintsugi.jpg)](http://1000daysofinspiration.co/2015/07/20/day-761kintsugi/)
 
-</Wide>
+{% endwide %}
 
 The video explains that when an object is broken, that is not the end of its existence, but rather an important moment in its history. It is a moment of transformation.
 
@@ -26,11 +26,11 @@ The video explains that when an object is broken, that is not the end of its exi
 
 Wow, really cool. Beyond just Lacquerware, there are [artists](http://www.wired.co.uk/magazine/archive/2010/08/play/lego-patching-up-a-wall-near-you) around the world doing work with all kinds of mediums that embrace the transformation of repair.
 
-<Narrow>
+{% narrow %}
 
 [![](repair.jpg)](https://commons.wikimedia.org/wiki/File:LEGO_Repair_-_Arne_Hendriks.jpg)
 
-</Narrow>
+{% endnarrow %}
 
 The video also draws a parallel with people: we cannot mend ourselves without transformation, and we may choose to _embrace_ this change instead of avoiding it.
 

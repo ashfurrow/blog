@@ -39,11 +39,11 @@ That's okay, I'm a programmer, I can code around the walls. I ended up [writing 
 
 Once I had that defined, I started playing with colours a bit, too. I liked the blue and orange from the Steven Skollar robots and went down that path for a while.
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](sketch_robots.png)
 
-</Wide>
+{% endwide %}
 
 After modifying the code from earlier to save the generated images as PNGs, I started designing a title slide. I wasn't happy with the results. Something about the text effect seemed to feel imposing, totalitarian. Like, it was robotic but it was the _wrong kind_ of robotic.
 
@@ -53,19 +53,19 @@ The exploration wasn't entirely fruitless – I knew I wanted retro-futurism, an
 
 So, again like with code, I googled for someone who'd already solved this problem for me. With no apologies to my designer friends, I typed "retro-futuristic font" into google. Yup. And I'm glad I did that, because within twenty minutes of searching, I found [the perfect font](https://creativemarket.com/MehmetRehaTugcu/248705-Geist-Typeface). And it only cost \$15.
 
-<Narrow>
+{% narrow %}
 
 ![Screenshot of font](geist.jpg)
 
-</Narrow>
+{% endnarrow %}
 
 I loved the diagonal lines used as shadow, it reminded me almost of a comic book. And the image that the font creator used to show off the font was _exactly_ what I was looking for: it used a gradient overlay for the text's fill (which I stole for my talk), and it slanted the text upwards (which I also stole). The upward slant made the text feel extra hopeful, but it wasn't easy to replicate that effect, so I originally did a bunch of exploration to see what I could accomplish without the slant:
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](sketch_title_iteration.png)
 
-</Wide>
+{% endwide %}
 
 To achieve this text effect, I wrote out the words I wanted to stylize and converted them to their vector outlines, which made it easier to scale/skew/transform the text. However, this also made it impossible to _edit_ the text. That's fine – because I've already defined my structure, I was able to not have to redo things too often.
 
@@ -81,54 +81,54 @@ The format of the points became "step x:", then a high-impact word or phrase, an
 
 At first, it was kind of hard going. Each slide had to be designed from scratch, so I started each one with a rough sketch to verify that the proportions worked. I just rotated the text by 15º. Once I was happy with the words on the slide, I duplicated the slide to make a final version.
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot of initial work](sketch_slant_1.png)
 ![Sketch screenshot of final work](sketch_slant_2.png)
 
-</Wide>
+{% endwide %}
 
 I kept switching between colours – I couldn't decide which one I liked more. Eventually, once I got things into Keynote, I realized that having more than one colour at all was too much. I needed a single colour, but neither the blue nor the orange I had worked (they needed each other to balance). I decided to go with a deep, rich blue. The kind used in cyanotype photography prints and blueprints. Blueprints actually ended up being the metaphor I used, and I experimented in Sketch with different effects to make the slide backgrounds feel "blueprint-y". I did try a few [subtle patterns](http://subtlepatterns.com) to make the backgrounds look more like paper, but it was way too busy.
 
-<Narrow>
+{% narrow %}
 
 ![Sketch UI screenshot](sketch_ui.png)
 
-</Narrow>
+{% endnarrow %}
 
 For slides _within_ a section, I refrained from using the same variant of the font. The vintage, diagonal shadow is a really potent visual – it pops of the screen – and it's important not to overdo high-impact slides like this. I want my audience to feel like the title and section titles slides are special.
 
 After designing a few slides, I started getting into a rhythm. Most of the slides in the screenshot below were designed over a single weekend.
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](sketch_iteration.png)
 
-</Wide>
+{% endwide %}
 
 I started assembling the slides in Keynote. Since I'm telling the story of how Artsy automates its culture, I started trawling through GitHub and Slack for screenshots that I could include in my talk. At all costs, I wanted to avoid having a slide with a bunch of text. (I eventually did have _one_ slide with text: a comparison between Danger and Peril. But I made sure the font was huge and had lots of whitespace).
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](keynote_compare.png)
 
-</Wide>
+{% endwide %}
 
 My talk was going to discuss some code, but I quickly realized that the blue that I'd picked wasn't providing enough contrast with the text. I did a few things to mitigate this. First, I created a new version of my empty slide with a darker blue. By only adjusting the brightness of the colour, and not its hue or saturation, the two different empty slides look very similar to each other. Hopefully, the audience didn't even notice.
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](sketch_blue_compare.png)
 
-</Wide>
+{% endwide %}
 
 Next, I used a bold monospace font for the code. I used [Firacode](https://github.com/tonsky/FiraCode) because it's beautiful and free and it comes in a bold font weight. Finally, after a suggestion from Orta, I found a greyscale colour theme for Visual Studio Code and copied the code for my slides _from_ VSCode, which includes the colour. After some minor tweaks, like making comments more visible, I had code slides that were easy to read and visually interesting – if I only used white, it would be more difficult to read.
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](keynote_code.png)
 
-</Wide>
+{% endwide %}
 
 Since one of the feature I'm trying to highlight with Danger is how it's implemented in multiple languages, I sought out examples of Dangerfiles in Ruby, TypeScript, and Swift. I designed a little icon for each programming language and put it at the top right of each slide, to help orient the audience.
 
@@ -136,19 +136,19 @@ The last thing I designed for my slides was the upturned triangle that I used at
 
 It turns out that Sketch doesn't have a "draw an equilateral triangle" option so I had to do some math. I was initially happy with empty triangles, but they needed _something_ to give them more weight. After playing around for longer than I'll admit, I finally got what I wanted. It wasn't easy: I tiled one of Sketch's built-in pinstripe patterns, overlaid it with a white rectangle (the image was initially grey), rotated it to match the triangle sides, and masked it with a copy of the triangle layer.
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](sketch_triangle.png)
 
-</Wide>
+{% endwide %}
 
 I still don't understand the difference between "use as mask" and "mask with selected shape", but that's fine. Please don't tell me, actually. While we're discussing frustrations, I also hit a few issues with Sketch that _seemed_ like bugs _to me_ but I'm sure are working as intended for actual designers.
 
-<Wide>
+{% wide %}
 
 ![Sketch screenshot](so_yeah.png)
 
-</Wide>
+{% endwide %}
 
 So, yeah. While I'm sure I'm missing some of the finer details, this has been an overview of how I went from searching for visual inspiration to delivering a presentation to a live audience.
 
