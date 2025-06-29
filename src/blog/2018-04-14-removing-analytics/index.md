@@ -13,7 +13,7 @@ But that was a long time ago. I haven't actually checked my analytics in... gosh
 
 Then I saw this:
 
-<Tweet tweetID="980054309751676928" />
+{% tweet "980054309751676928" %}
 
 And it made me wonder: should I be collecting data on visitors to my blog? Does it help me? Who _does_ it help? Who might it hurt?
 

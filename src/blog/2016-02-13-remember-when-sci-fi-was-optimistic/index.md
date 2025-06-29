@@ -9,7 +9,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/698497319394738176
 
 When I was growing up, _Star Trek The Next Generation_ was in syndication, _Voyager_ was still new, and when I got home from school I could catch the final twenty minutes of _Stargate: SG-1_. I watched a lot of sci-fi TV growing up, and there was a good variety of it to watch. There were hopeful what-may-be shows like _TNG_, modern-day romps like _SG-1_, and exposés on humanity's undoing like _The X-Files_. I wasn't old enough to watch _The X-Files_ and other darker shows, and as a consequence, sci-fi always had a sort of optimism about it.
 
-<Tweet tweetID="653841429861527552" />
+{% tweet "653841429861527552" %}
 
 This tweet got me thinking about sci-fi and how far we've come since the turn of the millennium. When I look around now at sci-fi on TV and on the silver screen, things look a lot less optimistic.
 

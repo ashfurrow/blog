@@ -11,7 +11,7 @@ I've been running an instance for weeks now and it's been great! Some tensions, 
 
 [My Patreon](https://www.patreon.com/ashfurrow) to pay for server costs is fully funded, the [switch to Digital Ocean](/blog/moving-mastodon-to-digital-ocean/) has gone smoothly, and so I've begun looking for more ways to contribute.
 
-<Tweet tweetID="853645778463723520" />
+{% tweet "853645778463723520" %}
 
 See, the web is [something we create](/blog/the-web-and-mastodon/), and I want to help create Mastodon. Yeah I do that by hosting an instance, but I'm a software developer and I love to build things. So I've been picking off easy issues [on the repo](https://github.com/tootsuite/mastodon), gradually moving towards harder ones. I took a look at all [the issues/pull requests I've opened](https://github.com/tootsuite/mastodon/pulls?utf8=✓&q=%20author%3Aashfurrow%20), and wow. I'm getting to know the project better and better over time, including things outside the codebase. The creator granted me rights to manage GitHub issues, so I've been deduplicating bug reports, reviewing pull requests, and labelling issues. It's been great!
 

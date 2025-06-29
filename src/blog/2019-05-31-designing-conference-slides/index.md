@@ -27,7 +27,7 @@ To build this presentation, I gave myself extra time: the whole process took six
 
 I tried recreating the Tim Fishlock style in Sketch, but soon hit a wall.
 
-<Tweet tweetID="1127969847382618112" />
+{% tweet "1127969847382618112" %}
 
 That's okay, I'm a programmer, I can code around the walls. I ended up [writing this](https://editor.p5js.org/ashfurrow/sketches/auiS1yFQr) to mimic the style. Here's an embed of the live Processing sketch:
 

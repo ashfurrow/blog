@@ -18,7 +18,7 @@
   - [x] Menubar
   - [x] Footer text is missing
   - [x] Tapping menu link on mobile looks weird
-  - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
+- [ ] Double-check the layout for consistency, font sizes in menu bar, etc
 - [x] Blog archive grouping
 - [x] Prettier
 - [x] Typography
@@ -36,6 +36,14 @@
 - [x] Favicon
 - [ ] Corrections GitHub link on posts
 - [ ] Validate generated CSS and HTML
+- [ ] Article pagination
+- [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 - [ ]
 - [x] ~Image optimization (widths) maybe? Maybe not lol~
 

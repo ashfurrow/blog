@@ -317,7 +317,7 @@ This isn't code you might actually use – JavaScript developers don't often use
 
 We've covered a lot of ground today. We talked about what asynchronous programming is and why there's no single "best" solution. Then we discussed the asynchronous approaches built into Swift, the approaches we can build ourselves in Swift, and finally the approaches we can't yet build in Swift.
 
-<Tweet tweetID="834909007148036096" />
+{% tweet "834909007148036096" %}
 
 Hopefully you made this face a few times while reading. It's always a good idea to learn new things, even if they're not directly applicable to your job, just to know they're out there. If you see something cool you'd like in Swift, head over to [Swift Evolution](https://github.com/apple/swift-evolution) and talk to the language community. Together, we can help shape the future of Swift.
 

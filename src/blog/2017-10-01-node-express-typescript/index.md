@@ -39,7 +39,7 @@ In contrast, the JS tooling ecosystem is alive with a variety of linters, type-c
 
 More than just a variety of tools is the size of the community that builds them. Because JavaScript developers mainly use tools written _in JavaScript_, the initial barrier of contributing to those tools is enormously lowered. The community empowers its members to improve the shared tooling, and the results are spectacular.
 
-<Tweet tweetID="914247587984687104" />
+{% tweet "914247587984687104" %}
 
 The cycle of compiling Swift/Objective-C to run unit tests adds a lot of time to my iOS development process. It takes time to compile, install, and run tests. If you have to wait fifteen seconds to see if your code works, you won't check as often. In contrast, [VSCode][vscode] and [Jest][jest] make testing _unbelievably fast_. Using Jest to test fundamentally changed how I write code, and I miss the near-instant feedback cycle when I return to iOS native development.
 

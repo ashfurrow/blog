@@ -15,6 +15,6 @@ When I'd tell my team I was home sick, I would apologize – as if I'd done some
 
 For months, I'd been meaning to write a blog post about this, to reflect on the importance of setting a positive example in your relationship to your work. Then I saw this tweet, which explains things more succinctly than I ever could:
 
-<Tweet tweetID="1214983008517840898" />
+{% tweet "1214983008517840898" %}
 
 The only thing I'd expand on is: this advice isn't just for managers. This is applicable to anyone with institutional authority on a team: tech leads, senior engineers... basically anyone who cares about the culture of their team and has authority to act on that caring. Your actions set the barometer for acceptable and normal behaviour on your team. If you want people to take care of themselves, then you've got to take care of _your_ self, too.

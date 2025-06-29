@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CrookedCosmos/status/978793491122843648
 
 One of the junior developers I'm mentoring is applying for their first iOS developer job (if you're looking for devs in NYC and are open to junior folks, [hit me up](mailto:ash@ashfurrow.com)!) and after an initial interview at this one place, they got a take-home coding challenge. Nice! I like these types of challenges quite a lot – it's how Artsy interviewed me four years ago, actually.
 
-<Tweet tweetID="979355315085955072" />
+{% tweet "979355315085955072" %}
 
 Take-home challenges are better than evaluating coding skills during an interview because they more accurately reflect the environment a coder will be working in. In my opinion, the only valid in-person coding challenges are ones where the interviewer pairs with the candidate and they work together. But I digress.
 
@@ -24,7 +24,7 @@ At first, I was a really surprised. Indignant, even. But I took a look, and the 
 
 You might be angry that a candidate for an iOS developer role was asked to code in a different language. "Where is the Swift coding challenge?" you might think. And I'd understand those feelings. But developers solve problems, and sometimes those problems cross the barrier between languages and frameworks. I would argue that this is a perfect valid take-home challenge because it reflects a real-world development task, just as giving a Swift coding challenge might be a valid take-home challenge for a JavaScript candidate.
 
-<Tweet tweetID="979355702639710209" />
+{% tweet "979355702639710209" %}
 
 The barriers between programming languages, between app frameworks, and between developer communities – they are all artificial. All of them. Any two given programmers, no matter their backgrounds, have far more in common than they have differences.
 

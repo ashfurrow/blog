@@ -5,7 +5,7 @@ date: 2012-08-30
 
 After [yesterday's post](/blog/animating-views-with-nstimer-and-dispatch_after/) on animating views with `NSTimer` and `dispatch_after`, [Robin Senior](http://twitter.com/senior) responded on twitter with the following question:
 
-<Tweet tweetID="240990149893312512" />
+{% tweet "240990149893312512" %}
 
 Good question. The answer is that I didn't know that `CADisplayLink` existed. So I did some reading up.
 

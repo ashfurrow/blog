@@ -5,7 +5,7 @@ date: 2012-09-07
 
 A friend of mine tweeted an [article](http://sixrevisions.com/mobile/design-iphone-apps-better/) this morning that caught my eye:
 
-<Tweet tweetID="244055598981844992" />
+{% tweet "244055598981844992" %}
 
 I'm not a designer, but I've designed a few apps and feel I've got an eye for good design, so this really piqued my interested. What could these tips be?
 

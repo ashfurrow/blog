@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1485111184076546051
 
 Last month, in The Week Between, I found myself in a particularly contemplative mood. [I'd wrapped up my first calendar year at my new job](/blog/shopify-update/), [I'd just bought my first house](https://ashfurrow.com/blog/new-house/), and [I was reflecting back on my decision to move home to Canada](/blog/what-happens-next/). That's when I saw [a tweet from Matthew Bischoff linking to a blog post about learning](https://twitter.com/mb/status/1475226451100192769). Something about the quote from the post they chose really resonated with me.
 
-<Tweet tweetID="1475226451100192769" />
+{% tweet "1475226451100192769" %}
 
 The blog post (_[What to Learn](https://danluu.com/learn-what/)_ by [Dan Luu](https://twitter.com/danluu)) made a big impact on me, and has been on my mind as I've been setting career goals for 2022.
 

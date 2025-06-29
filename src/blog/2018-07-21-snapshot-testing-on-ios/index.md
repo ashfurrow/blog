@@ -13,11 +13,11 @@ tl;dr yeah it is totally worth it, but (like any technique) you want to be caref
 
 The idea to write this post came from a friend who shared this trick to display before and after screenshots in GitHub pull requests using Markdown tables.
 
-<Tweet tweetID="1019709696872087557" />
+{% tweet "1019709696872087557" %}
 
 The conversation turned to snapshot testing; a consequence of snapshot testing would be that you don't _need_ to include before/after shots in your PR description because they'd be included for you in the PR's changed files. Think about it: your reference images are essentially screenshots of your UI – and they're stored in your repository. So when you open a PR that changes the UI, your PR will necessarily include changes to those references images, showing the before and after of the UI changes. Neat!
 
-<Tweet tweetID="1020081618239668224" />
+{% tweet "1020081618239668224" %}
 
 Is it worth the time? Yes, for our team it was.
 

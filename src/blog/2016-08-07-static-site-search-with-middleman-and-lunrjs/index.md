@@ -45,6 +45,6 @@ Things checked out, and [search is here](/search).
 
 Writing new features into software can be overwhelming, and stepping back for a break is usually the right answer. It's okay to give up if things are getting frustrating, and it's okay to ask for help.
 
-<Tweet tweetID="722843678994219009" />
+{% tweet "722843678994219009" %}
 
 We're all in this together.

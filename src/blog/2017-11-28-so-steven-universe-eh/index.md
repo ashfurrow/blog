@@ -8,7 +8,7 @@ socialImage: greg.jpg
 
 There's a TV show called _Steven Universe_ that I highly recommend, to anyone. To everyone, actually. I'm rewatching it now and I've got some notes on what appeals to me in the show. Maybe it would appeal to you, too.
 
-<Tweet tweetID="925891391737143296" />
+{% tweet "925891391737143296" %}
 
 Even if you've never watched cartoons or did but didn't enjoy them, I encourage you to set that aside and give _Steven Universe_ a try anyways. It's obviously a cartoon and it's obviously aimed at kids, but the metaphors in the show make it inclusive to folks from all kinds of different backgrounds. Even adults. It's not a _kid's show_ as much as it is a show that is accessible _to_ kids.
 

@@ -11,7 +11,7 @@ Jeff Atwood wants to unify these flavours under one name with one spec and a tes
 
 Unfortunately, John Gruber has been less than receptive towards the plan.
 
-<Tweet tweetID="261650083689426945" />
+{% tweet "261650083689426945" %}
 
 What I find interesting about all this is that, until now, I didn't really have a problem with Gruber having complete control over Markdown. I mean, it'd be unlikely that he would make a change that would adversely effect my ability to access (and write) things like this blog, right?
 

@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1091721333883523072
 
 Hey, so the other day I retweeted [this post](https://twitter.com/gjtorikian/status/1091465574998249472) about what it means to be a senior engineer:
 
-<Tweet tweetID="1091465574998249472" />
+{% tweet "1091465574998249472" %}
 
 The tweet does _describe_ a senior engineer, but it isn't a _definition_ of what a senior engineer does (as much as it is a cluster of some behaviours that senior engineers should exhibit). It's not that it's _wrong_, it's just _incomplete_.
 

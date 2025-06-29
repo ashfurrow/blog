@@ -11,15 +11,15 @@ So Canada's been really excited, eh? We've got a new, dreamy prime minister and 
 
 We've got a welcome banner on the front-cover of the Toronto Star:
 
-<Tweet tweetID="675181922088275969" />
+{% tweet "675181922088275969" %}
 
 Heck, we've even got school kids writing letters to newly arrived refugees!
 
-<Tweet tweetID="672410015215566848" />
+{% tweet "672410015215566848" %}
 
 Even my own home province of New Brunswick – a province _not_ typically known for its progressive politics – is excited to welcome refugees:
 
-<Tweet tweetID="678334439521452032" />
+{% tweet "678334439521452032" %}
 
 Canada's recent election was [heavily influenced](http://globalelectioninsights.ca/federal/refugee-crisis-what-are-countries-doing-about-it/) by party leaders' stances on Syrian refugees. Trudeau's stance on accepting refugees played a role in his success at the polls.
 
@@ -35,7 +35,7 @@ Used? What does that mean? Well it means that other people are taking advantage 
 
 This isn't new, and it certainly shouldn't be news. Think about it: Trudeau has used their circumstances to gain political favour, news outlets have used photos and videos of refugees to make content, and as a country, Canada is using them (I believe) to soothe our collective guilt about ever having elected Harper.
 
-<Tweet tweetID="678312666335678465" />
+{% tweet "678312666335678465" %}
 
 Don't get me wrong – I really am ecstatic that Canada is welcoming refugees. And our society says that it's acceptable that Trudeau et al are using refugees to their advantage. Politicians use stunts like this all the time – instead of kissing babies, Trudeau is helping refugees' children into their new winter coats.
 

@@ -9,7 +9,7 @@ I've been struggling lately with political "feelpinions", political opinions mos
 
 I can handle this, even when my opinions come into conflict with someone else's. After all – their opinions are probably not more informed than mine. But when what _I_ believe conflicts with mainstream narratives, life becomes hard. Reading the news or talking with colleagues is oftentimes difficult.
 
-<Tweet tweetID="568056615355740160" />
+{% tweet "568056615355740160" %}
 
 Before I continue, I'd like to address the fact that that last paragraph probably sounded a bit conspiratorial. "Mainstream narratives" etc. My opinions aren't really that extreme – they're just outside the [Overton window][window]. For example, it's pretty obvious to me that capitalism is wholly incapable of dealing with climate change. However, I still need to survive my day-to-day life in a society built on capitalism; it's hard for me to motivate myself to work building tools for the art market when I know that that market exists inside a system that's thrusting our species towards its inescapable doom.
 

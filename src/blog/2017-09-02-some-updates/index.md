@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CrookedCosmos/status/901617293947437056
 
 Bit of a personal post, but wanted to updated after some tweets I made about my medication.
 
-<Tweet tweetID="901838857683038212" />
+{% tweet "901838857683038212" %}
 
 Things have been going really well for me (which I'd [recently written about](/blog/therapys-end/)) and this medication change kind of came out of the blue. It sucks to find a groove and then have it disrupted, but life is a journey and there are lots of other medications I can try. I'm hopeful that the adverse side-effect that required me to suddenly stop taking one of my meds aren't permanent (it's a neurological problem, so it might be).
 

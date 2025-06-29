@@ -17,7 +17,7 @@ The most important thing you need to know about XOXO is that it is a space creat
 
 I think you actually _need_ to provide that kind of atmosphere to get the kinds of presentations XOXO was hosting. The speakers were discussing really deep, personal topics. How they handled adversity, or didn't. How they're still picking themselves up. How they're dealing with other people's expectations about their art. You _need_ a safe space to discuss these topics.
 
-<Tweet tweetID="1170810696394625024" />
+{% tweet "1170810696394625024" %}
 
 At a few points between talks, I found myself talking about some of my _own_ difficult experiences with people that I'd just met. Not in like a weird way, in a kind of... they were being vulnerable so then we were vulnerable together. I was kind of surprised, to be honest, because I'm actually quite shy about discussing my own emotions in real life; I find it easier to write about things than talk about them. But XOXO created a space where we could be open to vulnerability. Everyone I met was supportive, which I reciprocated.
 
@@ -33,7 +33,7 @@ Emily and Amelia Nagoski [wrote a book together](https://amzn.to/34BSYrF) about 
 
 It's taken me over six months to get the point where I'm doing exercise regularly and, importantly, safely. If I had just one day signed up for a gym, with no direction, I'd probably have hurt myself. I needed to learn a lot about form, and develop very specific muscles groups. Not everyone has access to a physical therapist or person trainer. And not everyone has access to or is comfortable in a gym; I am mildly terrified. So exercise as a means to stress relief can also _cause_ stress.
 
-<Tweet tweetID="1170781794532093954" />
+{% tweet "1170781794532093954" %}
 
 There's a lot more they discussed, and I'm still processing it. I'm confident that I can balance work and life to avoid burnout again, but the more skills I have, the better.
 
@@ -43,7 +43,7 @@ I was flattered to get recognized by several other attendees. I've [mostly gotte
 
 But something remarkable happened. Each person who recognized me, every one of them, they all cited _my blog_ as the thing they've been following. Many of them thanked me for my blog posts. Not for my tweets, or my open source, but my writing. I wasn't expecting that, and I'm really humbled by it.
 
-<Tweet tweetID="1170423678363791361" />
+{% tweet "1170423678363791361" %}
 
 One of XOXO's co-founders, [Andy Baio](https://twitter.com/waxpancake), often talks about the importance of owning your own work online. And this really resonates here, because I've spent [nearly a decade writing here](/blog/). It hasn't all been good, but it's all been a journey.
 
@@ -55,7 +55,7 @@ I made a lot of new friends at XOXO. And I caught up with a lot of old friends w
 
 The experience relates to some reflection I've done recently, on how professional and personal connections change over time. I've been in the industry long enough to have worked very closely with people, and really gotten to know them over a long time, and then parted ways. It's a sad fact, I suppose, that connections tend to fade quickly. You really have to make an effort to maintain them, and you need the wisdom to figure out which connections need what maintenance. So I'd been thinking about how to do that lately, about the connections I want to maintain, and the ones I want to re-establish.
 
-<Tweet tweetID="1170794334406373377" />
+{% tweet "1170794334406373377" %}
 
 Anyway, I really appreciated getting to spend time with Tom and Elizabeth. Conferences you attend solo are a very different experience from conferences you attend with a group. I expected to have a solo experience. This being XOXO, I guess I should have known better.
 
@@ -69,7 +69,7 @@ And I was like "haha omg 😡": I realized just how contingent our tools really 
 
 Tools designed to break.
 
-<Tweet tweetID="1170484515866738688" />
+{% tweet "1170484515866738688" %}
 
 I'm still processing this, and I'm sure I will write a follow-up blog post. I'm angry about the state of developer tooling, but that anger is still inarticulate. The talk about the sailors, [Hundred Rabbits](https://100r.co), was fairly early in the conference schedule and remained in the back of my mind whenever I heard a speaker discuss their tools.
 
@@ -89,7 +89,7 @@ Those walls? The imprecise ones? They were there to cut myself off from the sexu
 
 I'm tearing down the walls, trying to be myself, and I have started to experience a kind of at-one-ness with myself and my own masculinity. I wasn't _dysphoric_ before, more like... _unphoric_, if that distinction makes sense. I never noticed its absence, which is making its sudden appearance so notable to me.
 
-<Tweet tweetID="1170501663897128960" />
+{% tweet "1170501663897128960" %}
 
 When I heard the term "gender euphoria", it really resonated with me. By learning more about trans experiences, I gained new vocabulary with which to understand and express myself. And I feel a new level of empathy for trans and non-binary people.
 
@@ -97,7 +97,7 @@ When I heard the term "gender euphoria", it really resonated with me. By learnin
 
 A conference for artists has obviously given me a lot to think about, specifically about creative expression. I feel an intense desire to be creative and express myself, but I also feel a strong sense that I'm not doing _enough_.
 
-<Tweet tweetID="1170952538973036544" />
+{% tweet "1170952538973036544" %}
 
 I set expectations for my creativity pretty high. As one speaker at XOXO put it, adults don't like to be bad at things. And the first song I write? It'll probably be bad. But it's more than just music – I'm not satisfied with my creative output. I've had ideas for [Processing](https://p5js.org) projects for months that I haven't touched. My contributions on Artsy's blog have fallen behind. It's been too long since I've made any new, original open source projects.
 

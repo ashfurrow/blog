@@ -135,7 +135,7 @@ I've mentioned the Apple Watch a few times, and it's worth bringing up. The watc
 
 The watch has also helped me track my progress. I don't do calorie counting, but it does hook up to my scale to track weight, and also tracks a bunch of health data: resting heart rate, average walking pace, oxygen absorption (somehow ???). Tracking these trends over time has become really exciting for me.
 
-<Tweet tweetID="1189269261811929094" />
+{% tweet "1189269261811929094" %}
 
 My self-consciousness is kicking in right about now, so please indulge me as I push through this difficulty. When I got my scale in June, I set a goal. This week, I hit that goal and had to set a new one. That new goal is to get under 30 on the BMI scale. I rightfully hate the BMI scale – like other types of medicalization of being fat, it is misused against vulnerable people. Nevertheless, my goal is to no longer be medically categorized as obese. I'm not far. It really kind of sucks to have "just be overweight" as a goal, but I've learned to simultaneously appreciate how far I've come while recognizing how far I still want to go.
 

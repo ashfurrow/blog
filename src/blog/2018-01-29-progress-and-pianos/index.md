@@ -51,11 +51,11 @@ Attendees would start trickling in soon. I had less than a half hour before [pee
 
 I sit down. I begin, slow at first. Then faster. Then I blink. I look down at my watch: a half hour had passed. How could a half hour had already passed? I had to stop, it was difficult.
 
-<Tweet tweetID="954809752239865858" />
+{% tweet "954809752239865858" %}
 
 The week went by. I got three more, quick sessions in on the piano and I was amazed by how much I remembered. I had bought some sheet music books of popular songs for the office. I picked _The Piano Man_ by Billy Joel and started sight-reading it – slow at first, then fster. I felt exhilarated.
 
-<Tweet tweetID="956666738933936128" />
+{% tweet "956666738933936128" %}
 
 I'm trying to have a better work/life balance in 2018, and part of that is getting to and leaving the office at strict times. That goal is orthogonal to my desire to immerse myself in playing piano.
 

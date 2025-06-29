@@ -9,7 +9,7 @@ There’s been a lot of discussion lately surrounding the efficacy of Swift. Bre
 
 However, I feel the need to point out that there are a lot of iOS developers out there who don’t use those tools, or may not even be aware of them. Consequently, they may not share Brent Simmons’ frustration at their absence.
 
-<Tweet tweetID="732051171498700800" />
+{% tweet "732051171498700800" %}
 
 Objective-C’s dynamic nature exists as an integral part of UIKit, and as Craig Hockenberry [has pointed out](http://furbo.org/2016/05/20/adulterated-swift/), your app is still built atop an Objective-C foundation even if the code you write is 100% Swift. However, I think there are a lot of Objective-C developers – many who have come to the language since the iPhone – who don’t use a lot of the features that make Objective-C a powerful, dynamic language.
 
@@ -30,6 +30,6 @@ I can’t fault iOS developers for not knowing how powerful dynamic Objective-C 
 
 I admire Brent Simmons, and Craig Hockenberry, and Aaron Hillegass, and many more Objective-C experts. The perspective they bring to Swift is invaluable. [Being reminded of our dependencies](http://artsy.github.io/blog/2015/09/18/Cocoa-Architecture-Dependencies/) is important. At the same time, though, maybe it’s not important to re-invent Objective-C’s dynamic runtime in Swift. The language is _far_ more static than Objective-C. And besides, a dynamic runtime is only a set of tools used to solve problems. In a different context, like Swift, different tools might be better suited.
 
-<Tweet tweetID="733159429391011841" />
+{% tweet "733159429391011841" %}
 
 We don’t need Objective-C to be pilloried, and we don’t need to pretend that Swift is a superior language in every way. At the end of the day, our job is to build software. Having a diverse set of tools means you can solve a diverse set of problems. Let’s keep sharing what we learn, and let’s keep learning from each other.

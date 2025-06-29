@@ -15,7 +15,7 @@ The song, _Stop Error_, is by my favourite artist John K Samson. The song tells 
 
 I learned to play the song two years ago, but this over-expressive emotion is new. Within the past month, maybe? Reflecting, I think this might be both [time that's passed](https://ashfurrow.com/blog/all-i-can-say-is-im-excited/) since I finished Cognitive Behavioural Therapy (CBT) and also maybe because it's been two weeks since I finished my anti-depressant prescription regimen.
 
-<Tweet tweetID="1124461096969097217" />
+{% tweet "1124461096969097217" %}
 
 The emotions that come through in my recording are anger and frustration. The way I over-emphasized "trying" and "execute" – really laying it on thick. I was initially a bit repulsed by what I heard on the recordings, but I decided to lean into it and I'm glad that I did. Taking time to reflect on this has helped me better understand where I am in my recovery.
 

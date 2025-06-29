@@ -23,11 +23,11 @@ This "we all have so much to learn from each other" idea is kind of my whole... 
 
 And so when I saw [SE-250](https://github.com/apple/swift-evolution/blob/master/proposals/0250-swift-style-guide-and-formatter.md), a request from the Swift community to have ~~Apple~~ Swift develop an "official" Swift style guide and tooling to enforce it, despite existing [community](https://github.com/nicklockwood/SwiftFormat) [options](https://github.com/realm/SwiftLint), a distinction crystallized in my mind. It kind of hit me, actually. A huge difference between the cultures of the two communities.
 
-<Tweet tweetID="1108692951348191232" />
+{% tweet "1108692951348191232" %}
 
 I did try to be value-neutral in my wording, though I admit that it's not obvious from what I wrote that I _do_ see value in both approaches. And this tweet _definitely_ generalizes both communities – there are folks with these attitudes in both camps. I followed up with this note:
 
-<Tweet tweetID="1108705766033276928" />
+{% tweet "1108705766033276928" %}
 
 This is really key: pointing out a difference _exists_ isn't the same thing as asserting "this is good" or "this is bad"; it's just "this exists." I'm endlessly fascinated by these differences and I've learned that you can only really learn from a difference if you approach it with an open mind and _genuine curiosity_. (This skill, of being interested while staying neutral, is something I learned in [cognitive behavioural therapy](https://ashfurrow.com/blog/all-i-can-say-is-im-excited/).)
 
@@ -35,7 +35,7 @@ Thank you to everyone who responded with their own perspectives; for the rest of
 
 My absolute favourite reply came from Reginald Braithwaite, who compared the difference between native iOS and JS to the difference between renting and owning your home:
 
-<Tweet tweetID="1108738516530298885" />
+{% tweet "1108738516530298885" %}
 
 The reason I love this response is because I think there are benefits to _both_ renting and owning your home. I _like_ renting, actually, because it keeps me mobile – I can pick up and move from one city or neighbourhood to wherever I want. It's not for everyone, but it's right for me at this point in my life. (And I couldn't afford to buy a house in Manhattan anyway, so.)
 

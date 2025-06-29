@@ -37,7 +37,7 @@ I also have my email set up through my own domain name (I host on [FastMail](/bl
 
 The problem was that, using a non-Amazon DNS service like Hover with S3 hosting, my site _must_ have a `www.` prefix, which is unacceptable to me. The problem is a combination of limitations on S3 and the DNS system: a DNS entry pointing to a “naked” domain (non-`www.` prefixed) _must_ use an IP address and not another domain name. My S3 bucket doesn’t have a necessarily fixed IP address. The only solution is to use Amazon’s Route53 service – it keeps DNS entries up-to-date with S3 endpoints’ IP addresses any time they change. Super cool.
 
-<Tweet tweetID="526423574039781376" />
+{% tweet "526423574039781376" %}
 
 Transitioning to Route53 was actually _very easy_. I felt totally confident after the first few records, and really dig AWS’ modern approach to DNS.
 

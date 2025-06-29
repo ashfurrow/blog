@@ -147,4 +147,13 @@ export default function (eleventyConfig) {
       ></iframe>
     </div>`
   })
+
+  eleventyConfig.addShortcode("tweet", function (tweetId) {
+    return `<div class="narrow">
+      <blockquote class="twitter-tweet">
+        <a href="https://twitter.com/twitter/status/${tweetId}"></a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>`
+  })
 }

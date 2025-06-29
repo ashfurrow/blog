@@ -9,13 +9,13 @@ I've been giving a lot of thought to community-building within the context of op
 
 The other day I tweeted this:
 
-<Tweet tweetID="664180055778660352" />
+{% tweet "664180055778660352" %}
 
 Haha, yeah, that's funny, but it's also kind of true, isn't it?
 
 I mean, like, [Linus Torvalds](http://arstechnica.com/business/2015/01/linus-torvalds-on-why-he-isnt-nice-i-dont-care-about-you/) would've been told to leave the CocoaPods community for violating its [Code of Conduct](http://cocoapods.org/legal). That tickles my brain a bit.
 
-<Tweet tweetID="664180152352509953" />
+{% tweet "664180152352509953" %}
 
 I've seen a lot of positive community-building while hanging out with the CocoaPods core team members. I've witnessed the organization, as a whole, promote and normalize online, team-based problem-solving in the iOS developer community.
 
@@ -23,10 +23,10 @@ CocoaPods is a dependency manager only in the sense that Apple is a cell phone m
 
 Watching the team work, I've realized that the role of an OSS leader doesn't necessarily have _anything_ to do with code. Good communities don't happen by accident, it takes purposeful work and planning.
 
-<Tweet tweetID='664180241942913025' />
+{% tweet "664180241942913025" %}
 In a broad sense, their goals are to get people to work together. After all, that's something like a core tenet of open source software. Making a dependency manager is just _one_ way to get people collaborating.
 
-<Tweet tweetID="664181353374724096" />
+{% tweet "664181353374724096" %}
 
 By "more decent," I really mean "better." Obviously, "better" is subjective, but I'd argue that (for example) good communication skills, unit testing, and documentation are all important parts of being a good developer.
 
@@ -57,7 +57,7 @@ After seeing this talk, I made a few big changes to a project I led.
 
 As a result of these changes, there are more people reviewing pull requests, planning features, and discussing how to write a better networking library in Swift. The [project](https://github.com/Moya/Moya) currently has 1541 stars on GitHub with 45 contributors, spanning 36 releases. It's been downloaded [over ten thousand times](https://cocoapods.org/pods/Moya).
 
-<Tweet tweetID="665222377425498112" />
+{% tweet "665222377425498112" %}
 
 These aren't radical or new ideas. I've believed in open source by default for some time. But believing in something isn't enough to make it happen. It takes planning and consistent action.
 

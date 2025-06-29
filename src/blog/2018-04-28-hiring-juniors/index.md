@@ -9,11 +9,11 @@ Okay let's dig into this.
 
 I tweeted this earlier this week, to some fanfare and a little pushback:
 
-<Tweet tweetID="988410309319843849" />
+{% tweet "988410309319843849" %}
 
 I should have expected the pushback; I followed up shortly afterward...
 
-<Tweet tweetID="988454390469193728" />
+{% tweet "988454390469193728" %}
 
 This blog post isn't really about fixing the problem that, at least in New York, it is really really hard to get your first job. Instead, it's a description of my understanding of the problem and how it's evolved.
 

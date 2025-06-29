@@ -59,7 +59,7 @@ It's really difficult for me to describe just how foundational a paradigm shift 
 
 One argument against JavaScript that exemplifies how developers who are unfamiliar with JavaScript complain about problems that are obviated by toolchains is the `==` operator. Ah yes, the humble equality check. Because of early design choices – I'd call them mistakes but I don't have the full context – equality in JavaScript is a bit bizarre.
 
-<Tweet tweetID="992755305426685952" />
+{% tweet "992755305426685952" %}
 
 (Note: Aaron is really really funny and you should give him a follow. He's not the kind of developer to make facile complaints against JavaScript, I really enjoyed his tweet.)
 
@@ -95,7 +95,7 @@ People who enjoy hating JavaScript tend to point to oddities in the language or 
 
 But here's the thing: every language is weird. And every language makes regrettable design choices early on that it has to reckon with. How and when these mistakes are dealt with is a part of the language, too. Just because you disagree with the decisions doesn't make the language _bad_. These choices by the language authors are also informed by the community, the environments the language is used in, and the constraints it has to operate under. That's a lot of context, and it's hard for outsiders to have a clear picture of why certain decisions were made.
 
-<Tweet tweetID="991723030702379009" />
+{% tweet "991723030702379009" %}
 
 _Tout comprendre c'est tout pardonner_. I understand JavaScript, so I forgive it. And in doing so, I give myself permission to _enjoy_ it. I hope you give it a shot.
 

@@ -14,11 +14,11 @@ First, there's our [Open Source by Default][ossbydefault] policy. We [generate a
 
 Second, there is our adherence to collaboration over disruption. The term "disruption" is such a cliché of Silicon Valley, and I'm really glad to focus more on collaborating with existing art market players than "disrupting" them. As time goes on, folks in the valley are starting to realize that disruption may not be the guaranteed path to business success they thought it was.
 
-<Tweet tweetID="887313271518375936" />
+{% tweet "887313271518375936" %}
 
 And I think these two paradigms – open source and collaboration – complement each other really nicely.
 
-<Tweet tweetID="887315061680766976" />
+{% tweet "887315061680766976" %}
 
 Artsy's success has always been intrinsically aligned with the company values and open source software. We couldn't build Artsy without open source, especially with such a small team, and we wouldn't be as successful as a business without contributing back to that community. Collaboration is intrinsically connected to that open source software as well.
 
@@ -39,7 +39,7 @@ So there are a lot of business upsides to working in the open. The risks are pre
 
 Our ideology is a feedback loop – a sort of flywheel that keeps gaining momentum. The more we contribute to open source, the more we benefit as a business, allowing us to contribute more back, and so on.
 
-<Tweet tweetID="887358284553912321" />
+{% tweet "887358284553912321" %}
 
 [Our values][values] are open source. They all contribute to our success. But openness, particularly in software, will always be close to my heart, and I'll see it reflected in our success all the time. I believe that this is how the whole software industry will work, eventually, and I'm proud to be ahead of the curve.
 

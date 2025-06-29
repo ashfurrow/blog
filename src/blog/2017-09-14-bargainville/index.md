@@ -33,4 +33,4 @@ Anyway. I kept listening, and kept hearing the same sort of left-wing anthems co
 
 Anyway, if you're interested in listening to 90's Canadian folk rock, you could do a lot worse than _Bargainville_.
 
-<Tweet tweetID="908311114685054976" />
+{% tweet "908311114685054976" %}

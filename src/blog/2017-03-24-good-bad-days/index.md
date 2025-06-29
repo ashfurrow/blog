@@ -13,11 +13,11 @@ A few weeks ago I was talking with my psychiatrist about my medication. It helps
 
 So, I began cross-tapering according to my doctor's notes.
 
-<Tweet tweetID="839504160882049024" />
+{% tweet "839504160882049024" %}
 
 Things have been up and down since then, but I'm beginning to really feel the effects of the new medication, and I'm hopeful that things are going to be on an upswing for a while.
 
-<Tweet tweetID="843893464043606016" />
+{% tweet "843893464043606016" %}
 
 One of the effects of the new meds is that I'm more able to recover from problems. And so today, when I couldn't go in to work, I was still able to recover and have a good day. It was a bad day – any day I can't go in to the office is generally bad – but it was a good bad day. I got a lot done and didn't feel as horrible about myself as I normally do on bad days.
 

@@ -66,7 +66,7 @@ If someone you follow is being a jerk, let them know. If they don't change, cons
 
 Think about how much happier you could be without a constant stream of negativity flowing into your brain!
 
-<Tweet tweetID="624158166830477312" />
+{% tweet "624158166830477312" %}
 
 [Orta](http://twitter.com/orta) has said that "[friction gets followers](https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/)" – and that's true, but only if we let it. He has some great specific suggestions here:
 
@@ -80,7 +80,7 @@ Addressing negativity can be hard. It takes courage to tell someone that they're
 
 Things like that. You can follow-up and ask if they're OK – maybe they just need someone to talk to.
 
-<Tweet tweetID="https://twitter.com/bontoJR/status/624207699090231297" />
+{% tweet "https://twitter.com/bontoJR/status/624207699090231297" %}
 
 If that fails, try muting them for a week. You probably won't miss them as much as you'd think. If, after a week, you like your timeline better without them, then you know what to do.
 

@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1018608204488564736
 
 Yesterday I tweeted a complaint I had about Apple's iOS SDK. My complaint highlighted one instance of a larger trend in Apple's behaviour towards their SDK design and documentation; I'm far more interested in the trend than I am in any given SDK issue.
 
-<Tweet tweetID="1019631126585978881" />
+{% tweet "1019631126585978881" %}
 
 Despite my request to not be replied to, people did. They really seemed to want to discuss the specifics of this issue. But, to repeat myself: I don't care about this specific complaint, I care about the larger trend.
 
@@ -15,11 +15,11 @@ So what is that trend? Well it's complicated and it involves critical thinking; 
 
 Apple designs its SDK based on how Apple wants the community to build software. However, sometimes the way Apple wants you to build things and the way you want to build things is going to differ.
 
-<Tweet tweetID="1004406015956221953" />
+{% tweet "1004406015956221953" %}
 
 This attitude Apple has ("you can either build how they want you to build, or get out") obviously has advantages and disadvantages. I'm not saying it's absolutely bad, I'm saying that _I_ am often frustrated by it. My complaints on twitter are not meant to deride Apple, but rather to draw the community's attention to how Apple's motivations and their own motivations are not the same. (This fact seems obvious to me but I often get pushback from community developers, which boggles my mind.)
 
-<Tweet tweetID="1004708649896435712" />
+{% tweet "1004708649896435712" %}
 
 Sometimes, when trying to define a problem with how you work, it's helpful to step outside your experience and get a different perspective. Let's contrast how Apple treats its SDK design with another platform: React.
 

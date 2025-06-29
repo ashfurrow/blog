@@ -37,7 +37,7 @@ So three new Ruby projects completed in as many days. Like I said, intense!
 
 I struggled. A lot. When I couldn't figure something out on my own, I [asked for help](https://twitter.com/ashfurrow/status/749367814369214464). Orta offered a lot of [proactive advice](https://github.com/Moya/Aeryn/pull/9#discussion_r69395068) and used metaphors from Objective-C development to help explain concepts. Automated tools like [Rubocop](https://github.com/bbatsov/rubocop) were really helpful at showing me how to write idiomatic Ruby.
 
-<Tweet tweetID="750844591331500032" />
+{% tweet "750844591331500032" %}
 
 It's been really fun diving into a different community, where I'm inexperienced. I've felt angry when things don't work the way I expect them to, and I've felt gleeful when some things work on the first try. It's all part of the learning process.
 

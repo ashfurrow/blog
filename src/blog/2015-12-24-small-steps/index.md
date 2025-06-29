@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/679989899114708992
 
 So the other night, I saw Steve Streza tweet about the new _Star Wars_ film, specifically about JJ Abrams' style in directing the film.
 
-<Tweet tweetID="679457433639628800" />
+{% tweet "679457433639628800" %}
 
 Awesome, I _love_ film grain. Before I could convince myself it was a bad idea, I looked up showtimes for a theatre here in the East Village and bought tickets for a showing a few hours later.
 

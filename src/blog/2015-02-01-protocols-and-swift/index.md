@@ -7,7 +7,7 @@ date: 2015-02-01
 
 The other day I posed this (somewhat cryptic) question to Twitter:
 
-<Tweet tweetID="560436119956115456" />
+{% tweet "560436119956115456" %}
 
 I heard back from a lot of different people with a lot of different opinions. Most were confused by my necessarily terse question (it may have been better to post a longer, more detailed question on a medium that provides more than 140 characters).
 
@@ -127,7 +127,7 @@ After playing around for a while, things seemed a bit hopeless. Eventually, I re
 
 Let’s revisit the high-level problem I’m trying to solve: I have two types and I want them to talk to each other _without coupling_. Justin Spahr-Summers, as usual, has an answer:
 
-<Tweet tweetID="560493854374113280" />
+{% tweet "560493854374113280" %}
 
 OK, cool. I can see that being really useful for table views, for example. He even later [pointed out](https://twitter.com/jspahrsummers/status/560498081162993665) that was the case. So let’s take a break from `Cat` and `Food` and look at table views. How might they look in pure Swift?
 

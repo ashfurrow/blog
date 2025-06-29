@@ -9,7 +9,7 @@ There's kind of an unwritten rule in startups, that you pretty much _have_ to fo
 
 So imagine my surprise when I saw them tweet this.
 
-<Tweet tweetID="696412200618037248" />
+{% tweet "696412200618037248" %}
 
 But but but! _I've_ started open source projects! And part of why I like open source is _because of_ the warmth and love I get from my fellow human beings. And maybe a little praise too I guess.
 

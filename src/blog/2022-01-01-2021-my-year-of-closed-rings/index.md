@@ -21,7 +21,7 @@ The goals are:
 
 Throughout 2021, I've closed these three rings, every day. I'm proud of that, but I also have some conflicting feelings. At the end of each month, [I would tweet out a screenshot of my month's activity](https://twitter.com/ashfurrow/status/1356044076991320070). Keeping this streak going was motivating to me, but I stopped making these tweets after October. I realized that there were toxic behaviours that I had adopted _because_ of the Apple Watch. A friend who has also filled his three rings every day this year told me something similar. Their streak has been motivating, but it's also been maladaptive.
 
-<Tweet tweetID="1356044076991320070" />
+{% tweet "1356044076991320070" %}
 
 In this blog post, I'm going to break down the toxic aspects of the Apple Watch activity tracking in three broad categories. I'll also show a countering example of how different software succeeds where Apple's Activity app fails. Then I'll let you know what I plan to do in 2022.
 

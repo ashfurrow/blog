@@ -51,7 +51,7 @@ It might not seem like a big deal, but this didn't take up hardly any extra time
 
 **Update** : Ryder Mackay points to another performance improvement:
 
-<Tweet tweetID="242393643154022400" />
+{% tweet "242393643154022400" %}
 
 Nice! We can create the predicate once and then save it for later to avoid having to parse the format string (a not-inexpensive operation).
 

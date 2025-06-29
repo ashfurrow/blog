@@ -25,11 +25,11 @@ It's the people who really dislike Electron that make the most noise. Different 
 
 It's tempting for me to refute the arguments with counter examples, but I really want to emphasize that the individual points people have about Electron are _not_ what I'm talking about right now. It's the _tone_ of the conversation that I find distasteful. People are complaining – loudly – about a technology they'll never use to build apps, as though _no one_ should use that technology.
 
-<Tweet tweetID="988974021453676550" />
+{% tweet "988974021453676550" %}
 
 I'm sure there are outsiders looking in on the Apple developer community right now. I wonder what they think of how we're behaving.
 
-<Tweet tweetID="988925582665768961" />
+{% tweet "988925582665768961" %}
 
 Finally, a note about Slack. Slack is an Electron app, probably the most popular Electron app. And Slack has bugs. It has memory leaks. But I [question][] the intellectual rigour of those who would infer or imply that Slack's bugs are the result of being built in Electron. I mean, come on. Lots of software has memory problems. Besides, there are Electron apps _without_ memory issues. [Visual Studio Code][code] is a shining example of an Electron app, a counterexample to anyone who tries to argue that Electron apps are necessarily poor user experiences. Frankly, blaming Electron for Slack's bugs let's Slack off the hook.
 
