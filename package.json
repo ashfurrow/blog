@@ -1,9 +1,13 @@
 {
   "name": "blog",
+  "description": "My blog",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "author": "Ash Furrow <ash@ashfurrow.com>",
+  "keywords": [
+    "blog"
+  ],
   "license": "MIT",
   "private": false,
   "scripts": {

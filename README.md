@@ -9,12 +9,9 @@
 - [ ] HTML head SEO stuff
 - [ ] Timeline posts
 - [x] Corrections GitHub link on posts
-- [ ] Validate generated CSS and HTML
 - [ ] Article pagination
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
-- [ ] Update package.json from old_site
-- [ ] Update README from the old_site
 - [ ]
 - [ ]
 - [ ]
@@ -59,3 +56,13 @@ Shortcodes:
 - [x] SoundCloud,
 - [x] Spotify,
 - [x] Toot,
+
+Prelaunch:
+
+- [x] Update package.json from old_site
+- [ ] Update README from the old_site
+- [ ] Validate generated CSS and HTML
+- [ ]
+- [ ]
+- [ ]
+- [ ]
