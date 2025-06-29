@@ -16,18 +16,17 @@
   - [x] FontAwesome
   - [x] Footer
   - [ ] Menubar
-  - [ ] Footer text is missing
+  - [x] Footer text is missing
   - [ ]
 - [x] Blog archive grouping
 - [x] Prettier
-- [ ] Typography
+- [x] Typography
 - [ ] Speaking
 - [ ] Portfolio
 - [ ] Search
 - [x] About
 - [x] Books
 - [x] 404
-- [ ] Image optimization (widths) maybe? Maybe not lol
 - [ ] Code syntax highlighting w/ prisma
 - [ ] Site Icon
 - [ ] HTML head SEO stuff
@@ -36,3 +35,4 @@
 - [ ] Favicon
 - [ ]
 - [ ]
+- [ ] ~Image optimization (widths) maybe? Maybe not lol~

@@ -210,9 +210,12 @@ footer {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
-footer a {
+footer a.icon {
   color: var(--grey-default); 
 }
-footer a:hover {
+footer a.icon:hover {
   color: var(--primary);
+}
+footer .attribution {
+  font-size: 0.75rem;
 }
