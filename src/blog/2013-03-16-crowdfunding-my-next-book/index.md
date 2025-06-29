@@ -10,5 +10,3 @@ It's going to be an in-depth, ground-up book on writing your first iOS app. I've
 Sample code is going to be available on GitHub. Backers at the "Assistant Editor" level are going to get early access to the code and chapters via GitHub.
 
 [Go back me](http://www.indiegogo.com/projects/your-first-ios-app/x/2700170)!
-
-<ReactResponsiveEmbed src="https://www.indiegogo.com/project/360741/widget/2700170?wmode=opaque" />

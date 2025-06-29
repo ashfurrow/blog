@@ -43,7 +43,7 @@ Shortcodes:
 
 - [x] Narrow,
 - [x] Wide,
-- [ ] ReactResponsiveEmbed,
+- [x] ReactResponsiveEmbed,
 - [x] YouTube,
 - [x] Video,
 - [ ] SpeakerDeck,
