@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1127237114771460102
 
 Artsy will hold its fifth annual Salon this July. The Salon is an art show for employees to share whatever they've made with each other, and this is the third year that I'll be performing guitar (see performances from [2017](https://ashfurrow.com/blog/guitar-debut/) and [2018](https://ashfurrow.com/blog/sad-sappy-songs/)). I'm preparing this year's set list and setting the practice goals, and as a yardstick for my progress, I decided to record one of the songs last night.
 
-<SoundCloud trackID="619052088" />
+{% soundcloud "619052088" %}
 
 What really struck me, upon listening to my first few takes, was how much more expressive I sounded. Over-expressive, almost. I stopped to reflect on it.
 

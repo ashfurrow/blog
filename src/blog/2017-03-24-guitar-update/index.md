@@ -21,6 +21,6 @@ After discussing with some friends, I started a Slack for musicians to collabora
 
 I've been recording myself as well. Mostly for my own sake and to share with the Slack, but I've also sent it to my mom (who is very proud of me).
 
-<SoundCloud trackID="312605091" />
+{% soundcloud "312605091" %}
 
 So yeah, pretty excited. Guitar has become a daily activity for me, something I look forward to doing and something that helps me relax. I'd highly recommend it 👍

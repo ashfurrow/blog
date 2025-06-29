@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/933322083030978561
 
 Humans are ridiculous bad a taxonomy. We look for patterns to group stuff together, even though most stuff is different from most other stuff. Nature defies any classification system we humans try to create, but it is our nature to try anyway. Our classification systems can _never_ be applied universally. Just look at how poorly we define _seasons_.
 
-{% YouTube "s0oX9YJ5XLo" %}
+{% youtube "s0oX9YJ5XLo" %}
 
 Drift between theoretical classification systems and the tangible stuff they try to classify isn't always a bad thing. Classifications are a kind of abstraction that hides _some_ details in order to make _others_ easier to reason about. For example, Linnaean taxonomy is good at grouping individuals into "species" because _we_ find it useful; even though nature is _far_ too messy to ever be accurately represented in a general taxonomy, having a taxonomy nonetheless helps us study biology.
 

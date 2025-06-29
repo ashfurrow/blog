@@ -29,7 +29,7 @@ But consider the last nugget: students who _only_ learned of the achievements of
 
 I'm growing more and more convinced that we need a complete social and educational reform that centres how we organize ourselves on empathy for our fellow humans. Anything less than that will lead us to our own extinction.
 
-{% YouTube "l7AWnfFRc7g " %}
+{% youtube "l7AWnfFRc7g " %}
 
 The challenges humanity is facing – the existential threat of a changing climate being chief among them – are challenges of such a scale that no former or current socio-political structure is capable of addressing. I'm so frequently frustrated because technology was _supposed_ to help us fix these problems, but it hasn't. It hasn't at all.
 

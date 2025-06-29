@@ -120,6 +120,13 @@ main > * {
   height: 100%;
 }
 
+.soundcloud-embed {
+  margin-bottom: 1.66rem;
+}
+.soundcloud-embed iframe {
+  border: none;
+}
+
 p {
   margin-block-end: 0;
   margin-block-start: 0;

@@ -27,7 +27,7 @@ Your time and attention are finite resources. If someone asks you to do somethin
 
 The thing is, I want to do things _well_. I want to be proud in my work. I don't want to half-ass anything, I want to _whole-ass_ everything I do.
 
-{% YouTube "zl-HalherjQ" %}
+{% youtube "zl-HalherjQ" %}
 
 When you agree to do something, you're making a commitment, and if you don't consider the consequences, one of two things will happen:
 

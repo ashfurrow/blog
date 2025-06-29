@@ -13,7 +13,7 @@ Well, Swift 2 has been in beta for a month now, and protocols are hot stuff.
 
 This brings up an important point that I've been yelling at you people for a year now: solving problems using Swift _is not_ the same as solving the same problems using Objective-C.
 
-{% YouTube "LtrzZb5Jw0g" %}
+{% youtube "LtrzZb5Jw0g" %}
 
 If all you're doing in Swift is writing Objective-C with Swift syntax, stop and reflect on your choices. Swift _isn't_ Objective-C – and thank god. The community has been dutifully exploring new ways to solve familiar problems – it's an exciting time!
 

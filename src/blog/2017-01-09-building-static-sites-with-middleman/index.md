@@ -88,4 +88,4 @@ The peer lab site is [open source](https://github.com/ashfurrow/peerlab.communit
 
 **Update**: I've since given a lunch & learn at work on this topic, you can check it out here:
 
-{% YouTube "yoGielteT64" %}
+{% youtube "yoGielteT64" %}

@@ -46,7 +46,7 @@ It seems like it's the very ideology of capitalism that prevents us from discuss
 
 That really sucks, and let me tell you why. You probably don't think the economy is perfect, right? I mean, no one does. So let's discuss how to improve it! Cool, except we aren't allowed to mention Marx or any of his ideas. Why? Because Stalin or something, I guess. We're missing out on what could turn out to be valuable ideas!
 
-{% YouTube "fSQgCy_iIcc" %}
+{% youtube "fSQgCy_iIcc" %}
 
 Maybe coming from Canada colours my view of socialism. Maybe I don't recognize the same dangers in socialism that my peers in Europe do. Maybe socialism is far too dangerous to consider at all, in any quantity or any context.
 
@@ -60,7 +60,7 @@ Well, fuck it.
 
 I believe that the dangers of considering socialist ideas (even in the abstract) are overblown by capitalists trying to protect their own profits. I believe that there are enough resources on this Earth to provide every human with a meaningful and dignified existence, but this vision is incompatible with capitalism. I believe that the broad and abstract topic of "socialism" is worth scrutinizing for any ideas that could save our species from extinction. That's what I believe, and if you're mad about any of this, ask yourself why that is.
 
-<SoundCloud trackID="344260297" />
+{% soundcloud "344260297" %}
 
 If this resonates with you, check out the above podcast from [Citations Needed][cn]. It's a great show that dissects (among other things) capitalist ideology without preaching socialism. Even if you're a staunch anti-socialist, check it out anyway, because the discussion they present is representative of the kinds of discussions we're _not_ having, but that we really _need_ to have.
 

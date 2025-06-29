@@ -19,7 +19,7 @@ We discussed the fascinating idea of _semi-autonomous_ programs. Like _almost_ a
 
 A lot has already been said on the topic of automation, like this awesome video, but I want to talk about automation from an artistic perspective.
 
-{% YouTube "7Pq-S557XQU" %}
+{% youtube "7Pq-S557XQU" %}
 
 Researchers have built [algorithms that transform photos into Van Gogh paintings](http://thenextweb.com/creativity/2015/08/31/machine-or-picasso-this-algorithm-can-transform-photos-into-fine-art/). Google has [created an AI that composes music](http://www.theverge.com/2016/6/1/11829678/google-magenta-melody-art-generative-artificial-intelligence). There are [open source projects that generate Monet paintings from MS-Paint](https://github.com/alexjc/neural-doodle). How cool is that!
 

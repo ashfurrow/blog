@@ -19,7 +19,7 @@ So learning has gotten easier because I've been doing it more, but there's more 
 
 What got me thinking about all this was this video below. It's a tutorial from a show I watch that teaches a song; it has a tonne of chords, most of which are new to me, and I would've been really intimidating to learn even a month ago. Instead, when I found it last weekend I was really excited to learn all the new skills because it means I can connect each one to each other one I already have.
 
-{% YouTube "LbKPWRxtok0" %}
+{% youtube "LbKPWRxtok0" %}
 
 This song has helped me get better at barre chords, descending baseline notes over chords, barre chord slides, muting, strumming speed, all kinds of stuff. It's a surprisingly challenging song, and it's been a tonne of fun.
 

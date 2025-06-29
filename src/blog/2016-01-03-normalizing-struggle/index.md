@@ -15,7 +15,7 @@ What [this article](http://www.huffingtonpost.com/entry/artists-sensitive-creati
 
 Struggling is normal, which is why I'm so frustrated that our society [dictates](http://jezebel.com/youre-not-adulting-youre-acting-your-fucking-age-1746878718) that we appear to have flawlessly arrived at our successes, that we hide our failures out of shame. The truly sad thing is that the world doesn't have to be this way. In fact, it wasn't always this way at all.
 
-{% YouTube "6IUj6jyoTl0" %}
+{% youtube "6IUj6jyoTl0" %}
 
 Struggle and failure are a part of all of our lives – and I'm tired of hiding it. So when I teach, I make sure to add comments like "this is tricky" or "a lot of people have a hard time with this." I've noticed others doing this, too.
 

@@ -15,6 +15,6 @@ Mark Shannon has a [terrific review of our app](http://mkshft.ca/blog/archives/a
 
 We also had the opportunity to do a Google Hangout and answer questions about the app. Everything from support questions, design considerations, implementation details, and future plans was discussed. It was great to get in front of our community and show off what we had worked on. I love it when users contact me directly, and for the first time, I was able to contact them.
 
-{% YouTube "ppMe_a_CDXg" %}
+{% youtube "ppMe_a_CDXg" %}
 
 I love working at a place where the best interests of our users are our best interests. We aren't trying to make our site appealing to advertisers; we don't have ads. We make an awesome product and people pay us for it. We make it better so more people will pay. It's awesome.

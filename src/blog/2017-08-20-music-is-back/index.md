@@ -11,7 +11,7 @@ Moreover, I was excited to bring my saxophone back to New York with me.
 
 I've not really talked online about my past as a musician; I studied piano and saxophone from ages 11 to 18. And I was, like, _really_ into it. Even after taking a half-time job at RadioShack (aww yeah) I kept up with both throughout high school. Here's a recording of the jazz band that I was a member of in high school. I played one of the saxophones, and take the first saxophone solo you hear (at the 1:50 mark).
 
-<SoundCloud trackID="338714156" />
+{% soundcloud "338714156" %}
 
 But shortly after starting university, I gave up. I had my saxophone with me, but I was working hard to maintain my scholarship and without a band to play along with, it was hard.
 
@@ -27,7 +27,7 @@ Okay so first of all it was _wild_ how quickly things came back to me. I picked 
 
 I wanted to record a cover of a great song from The Weakerthans; the song has two trumpets but I managed to recording a duet with myself near the end of the song. It's nothing complicated, a fun experiment with recording over myself on different instruments. I really like how it all turned out.
 
-<SoundCloud trackID="338298000" />
+{% soundcloud "338298000" %}
 
 I don't really know what's next – I have another week of vacation, I'm learning new songs, practicing the sax, and even picked up a old, used clarinet. I plan to keep recording covers of my favourite songs (sometimes [with assistance][cold_night]), develop my skills on vocals and reed-based woodwinds, and (primarily still) the guitar.
 

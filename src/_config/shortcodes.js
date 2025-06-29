@@ -126,7 +126,7 @@ export default function (eleventyConfig) {
     return `<div class="narrow">${content}</div>`
   })
 
-  eleventyConfig.addShortcode("YouTube", function (videoId) {
+  eleventyConfig.addShortcode("youtube", function (videoId) {
     return `<div class="youtube-embed">
       <iframe 
         src="https://www.youtube.com/embed/${videoId}" 
@@ -165,6 +165,21 @@ export default function (eleventyConfig) {
           src="https://speakerdeck.com/player/${deckId}" 
           frameborder="0"
           allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>`
+  })
+
+  eleventyConfig.addShortcode("soundcloud", function (trackId) {
+    return `<div class="wide">
+      <div class="soundcloud-embed">
+        <iframe 
+          width="100%" 
+          height="200"
+          scrolling="no"
+          frameborder="0"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackId}&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
           loading="lazy"
         ></iframe>
       </div>

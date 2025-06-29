@@ -25,7 +25,7 @@ _MacLean's_ had what is probably the most [level-headed analysis of the show][ma
 
 If you're interested in dipping your toes in, I'd encourage you to check out this episode that discusses a popular concept among the left: universal basic income.
 
-<SoundCloud trackID="332459247" />
+{% soundcloud "332459247" %}
 
 But just listening to a podcast doesn't really help anything. And I want to help. I've been reading books they mention, researching the topics they discuss, and have started getting involved in real-world organization in the socialist left. This action, too, comes from the show. From the _MacLean's_ article:
 

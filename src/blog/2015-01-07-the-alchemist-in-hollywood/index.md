@@ -5,7 +5,7 @@ date: 2015-01-07
 
 I was browsing through Youtube when I saw this amazing video from 1940 explaining the "modern marvel" of black and white motion picture production. The video covers the complete production of a motion picture, from capture in the camera to projection onto the silver screen, and describes not only the machines used to facilitate this process, but the actual chemistry by which photography is accomplished. It's a wonderful watch and I highly recommend it.
 
-{% YouTube "N0mraHHyBrA" %}
+{% youtube "N0mraHHyBrA" %}
 
 (Skip ahead to 1 minute if you don't like campy 1940's title credits music, but shame on you if you don't.)
 

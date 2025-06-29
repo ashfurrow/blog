@@ -5,7 +5,7 @@ date: 2015-06-28
 
 The [School of Life](https://www.youtube.com/channel/UC7IcJI8PUf5Z3zKxnZvTBog) has posted another [awesome video](https://www.youtube.com/watch?v=k1eHm0PNnjo) – this one, on photography.
 
-{% YouTube "k1eHm0PNnjo" %}
+{% youtube "k1eHm0PNnjo" %}
 
 (Side note: I love the way the English pronouncing "drawing.")
 

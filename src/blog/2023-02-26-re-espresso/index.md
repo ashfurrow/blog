@@ -15,7 +15,7 @@ For example.
 
 [The Spacedock YouTube channel](https://www.youtube.com/@Spacedock) has an ongoing [series on realistic sci-fi weapons](https://www.youtube.com/playlist?list=PLqOEDroJnZHwQmn3g8zLmLqMK2RIyejYh) and I enjoyed [their most recent video on macrons](https://www.youtube.com/watch?v=MPVhOy3mWQQ).
 
-{% YouTube "MPVhOy3mWQQ" %}
+{% youtube "MPVhOy3mWQQ" %}
 
 In the video, they mention [the square-cube law](https://en.wikipedia.org/wiki/Square–cube_law), which describes how the mass of an object increases at a much faster rate than its surface area. This relationship between size and surface area matters a lot when it comes to "dialing in" a coffee grinder to the right size coffee grind particle. The square-cube law situated itself effortlessly into my mental model of espresso.
 
@@ -25,7 +25,7 @@ Something that's uniquely fun about getting _back_ into a hobby is seeing how it
 
 I started paying attention to espresso again about four years ago, originally by watching YouTubers. At the time, I couldn't afford space for an espresso machine in my New York apartment but I enjoyed listening to weird coffee people talk about expresso.
 
-{% YouTube "45Ja8pJU73s" %}
+{% youtube "45Ja8pJU73s" %}
 
 The commonly-accepted "theory of espresso" was very different when I got into espresso originally around 2009. That theory of espresso was very... vibes-based. A lot of luck, a lot of inconsistency, a lot of things you do "because that's just how it's done."
 

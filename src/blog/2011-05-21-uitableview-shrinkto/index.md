@@ -3,7 +3,7 @@ title: UITableView ShrinkTo
 date: 2011-05-21
 ---
 
-{% YouTube "Xak3xqGKvqc" %}
+{% youtube "Xak3xqGKvqc" %}
 
 Consider a UISegmentedControl at the top of the table view that lets users list table view cells in either category. A user can switch which category a cell belongs to.
 

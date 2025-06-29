@@ -5,7 +5,7 @@ date: 2015-05-19
 
 Yesterday at [UIKonf](http://uikonf.com), I gave a presentation on Teaching and Learning, which described the beginning of my own career (surrounding blogging), reasons why you should blog, and some first steps to get started.
 
-{% speakerDeck "4471109de8c24a93a03fdbf549ad86eb" true %}
+{% speakerDeck "4471109de8c24a93a03fdbf549ad86eb", true %}
 
 It was well-received and after the talk, several people asked me to share how I prepare and present conferences talks. So here we are.
 

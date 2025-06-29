@@ -33,7 +33,7 @@ Learning how successful scientists struggle helped students when they inevitably
 
 When students see themselves and their own struggles represented in the history of science, they learn to _empathize_ with scientists. Empathy, the core of emotions, is the practice of sharing another person's point of view and feelings.
 
-{% YouTube "1Evwgu369Jw" %}
+{% youtube "1Evwgu369Jw" %}
 
 Empathy is a choice we make. In 1996, [Theresa Wiseman's work](http://onlinelibrary.wiley.com/doi/10.1046/j.1365-2648.1996.12213.x/full) ([PDF](https://www.researchgate.net/profile/Theresa_Wiseman/publication/227941757_A_concept_analysis_of_empathy/links/00b4951e409deac34f000000.pdf)) categorized four necessary components to empathy:
 
@@ -66,7 +66,7 @@ This is _Google_. They A/B test shades of blue to use on the Gmail "Send" button
 
 Remember, psychological safety is the belief that you won't be punished for saying something. That's fairly basic, but think about it: I'm sure you've worked in groups where this wasn't the case. Was that project a success, or a failure?
 
-{% YouTube "LhoLuui9gX8" %}
+{% youtube "LhoLuui9gX8" %}
 
 Developers – _people_ – need to be able to ask questions when they don't understand something. We need to feel free to suggest ideas or concerns, to be able to point out and admit mistakes. This is really necessary for development teams, and _especially_ necessary in resource-strained startups where missteps could cost the company.
 
@@ -137,6 +137,6 @@ We have the evidence that shows how an ideal team works, but we see our industry
 
 Like I said, I've had this topic on my mind for a long time, though I didn't have the vocabulary to discuss it or the evidence to support my theories. A few months ago, I attended the [Open Source & Feelings](http://www.osfeels.com) conference, and the talks there really helped frame a lot of my thoughts. I found the following talk particularly helpful, and led me to a lot of the points I discussed today.
 
-{% YouTube "OdHH5KWGTNo" %}
+{% youtube "OdHH5KWGTNo" %}
 
 I'm presenting on this topic at a [meetup here in New York](https://www.meetup.com/iOSoho/events/232809656/) in December. I'd love to see you there, hear what you think, and talk about how we can all help improve the industry together.

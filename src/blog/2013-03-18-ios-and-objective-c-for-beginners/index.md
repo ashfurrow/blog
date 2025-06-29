@@ -5,7 +5,7 @@ date: 2013-03-18
 
 My friend [Andrey](https://twitter.com/tochilin) helped me record this video for my [Indiegogo](http://www.indiegogo.com/projects/your-first-ios-app/x/2700170) campaign. Check it out.
 
-{% YouTube "oIc7Mh62e9U" %}
+{% youtube "oIc7Mh62e9U" %}
 
 I've been overwhelmed by the response online. In only a few days, we're 30% of the way to my goal.
 

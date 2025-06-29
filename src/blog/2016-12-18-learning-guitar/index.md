@@ -29,4 +29,4 @@ Guitar is a bit different. My left hand's finger tips have lost most of their se
 
 I turned to music as a way to cope with crappy world events, and it's worked: I'm feeling less stressed and more able to focus. The next two weeks off are gonna be jam-tastic.
 
-{% YouTube "hIoiyoo9W0Q" %}
+{% youtube "hIoiyoo9W0Q" %}

@@ -13,6 +13,6 @@ Their most recent episode is on the subject of the US national deficit. They dis
 
 The episode also provides some "talking points" for answering questions from angry relatives at Thanksgiving like "how can the government afford the THIRTY TWO TRILLION DOLLARS to pay for single-payer!?"
 
-<SoundCloud trackID="344260297" />
+{% soundcloud "344260297" %}
 
 If you like it, let me know 👍

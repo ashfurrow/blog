@@ -5,7 +5,7 @@ date: 2024-09-18
 
 A few months ago, I came across [this amazing video from Christian Selig detailing how he built his own keyboard](https://www.youtube.com/watch?v=7UXsD7nSfDY). And I mean _built_ it. Unknown to me up to that point, there exists both the tools and community such that anyone could design and build, from scratch, their own custom computer keyboard. The printed circuit board, the case, the microcontroller firmware – everything.
 
-{% YouTube "7UXsD7nSfDY" %}
+{% youtube "7UXsD7nSfDY" %}
 
 I had been using an [ErgoDox-EZ keyboard](https://ergodox-ez.com) since 2020 and so I was familiar with the concept of custom keyboard firmware. But I had no idea that the custom hardware was so accessible. Building something from scratch wasn't something I was interested in doing, but I did start tinkering with my ErgoDox layout. It was a tonne of fun!
 

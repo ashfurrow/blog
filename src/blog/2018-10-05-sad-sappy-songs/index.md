@@ -10,10 +10,10 @@ socialImage: opengraph.jpg
 
 So I present: [three sad and sappy songs](https://www.youtube.com/watch?v=1pIf5VPhmco&list=PLBygl72DbBTHIpDE63lPSvddwHs6FbgRQ), because it's 2018 and we need something else to feel sad about for just a few minutes of relief.
 
-{% YouTube "1pIf5VPhmco" %}
+{% youtube "1pIf5VPhmco" %}
 
-{% YouTube "gFIWrGecnH0" %}
+{% youtube "gFIWrGecnH0" %}
 
-{% YouTube "qMpcN0DaX9E" %}
+{% youtube "qMpcN0DaX9E" %}
 
 (This is my second year playing guitar at Artsy Salon, after [debuting on guitar](https://ashfurrow.com/blog/guitar-debut/) last year. I'm really happy with how far I've progressed since then – I feel so much more comfortable performing in front of people. "[Practice](https://www.instagram.com/p/Bka0O3mAtbu/), [practice](https://ashfurrow.com/blog/just-play/), [practice](https://ashfurrow.com/blog/progress-and-pianos/)", my piano teacher always used to say.)
