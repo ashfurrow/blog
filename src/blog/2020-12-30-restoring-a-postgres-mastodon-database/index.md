@@ -34,7 +34,7 @@ I tried this out on the staging Mastodon instance (pssh, _yeah_ I have a staging
 
 Once I knew what to do, the next step was to schedule a maintenance window. I don't like the instance to go offline for more than a few minutes, and I suspected that my plan would take all day. I announced the window a week in advance to make sure users could plan around it.
 
-<Toot src="https://mastodon.technology/@announcements/105421340427386358/embed" />
+{% toot "https://mastodon.technology/@announcements/105421340427386358/embed" %}
 
 So alright alright, we have a plan and we have a schedule. Nothing left to it but to do it.
 

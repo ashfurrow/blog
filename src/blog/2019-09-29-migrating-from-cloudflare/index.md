@@ -15,7 +15,7 @@ However, I don't really like Cloudflare. I don't like how they [protect hate for
 
 A local Mastodon user, [IzzyOnDroid](https://mastodon.technology/@IzzyOnDroid) reached out to me to ask about this. Migrating away from Cloudflare hadn't been high on my priority list, but IzzyOnDroid were really helpful, researching alternatives and asking the fediverse for suggestions. They did the hard work for me – getting enough context to make a decision – and brought back some options. I chose [BunnyCDN](https://bunnycdn.com).
 
-<Toot src="https://mastodon.technology/@IzzyOnDroid/102764663475108726/embed" />
+{% toot "https://mastodon.technology/@IzzyOnDroid/102764663475108726/embed" %}
 
 Why BunnyCDN? Well, I really liked it's upfront cost structure. BunnyCDN takes Cloudflare's approach of having two tiers of customers, but _both_ tiers are paid. Enterprise customers can still buy bandwidth per-petabyte, but smaller customers like me don't have to commit to prohibitively expensive plans. And they're very upfront about the costs (bandwidth in North American data centres costs less than Asia & Ocean, for example). Based on our bandwidth flowing through Cloudflare (500GB/month), I estimated that if all my bandwidth went only through the most expensive datacentres, it would cost about \$30/month. Realistically, far less than that, since most traffic comes through cheaper datacentres.
 
@@ -119,7 +119,7 @@ Failed: mastodon@mastodon.technology → USER@EXAMPLE.COM 'You were mentioned by
 
 It seems like larger email providers, like Gmail, picked up the MX record change quickly. Smaller email servers, who probably have longer cached TTL's for DNS lookups, took longer to recover. The frustrating thing is that email servers are really particular, and I think this change will hurt the spam score for outbound emails from the instance.
 
-<Toot src="https://mastodon.technology/@announcements/102875960419073268/embed" />
+{% toot "https://mastodon.technology/@announcements/102875960419073268/embed" %}
 
 I'm really disappointed in Namecheap for introducing this limitation, that other domain registrars / DNS providers don't force on you. As far as I can tell, there's no way to mitigate this problem with using Namecheap. I've contacted Namecheap support to let them know about the problem, and they've passed the feedback on to their product team. For now, I would probably recommend using a different domain registrar, but I'm sticking with them because things are working now, and migrating away would be even more work. No thanks.
 

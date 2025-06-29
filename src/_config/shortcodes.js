@@ -200,4 +200,19 @@ export default function (eleventyConfig) {
       </div>
     </div>`
   })
+
+  eleventyConfig.addShortcode("toot", function (src) {
+    return `<div class="narrow">
+      <div class="toot-embed">
+        <iframe 
+          src="${src}"
+          class="mastodon-embed"
+          width="100%"
+          style="min-height: 250px; border: 0;"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>`
+  })
 }

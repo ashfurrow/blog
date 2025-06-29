@@ -134,6 +134,13 @@ main > * {
   border: none;
 }
 
+.toot-embed {
+  margin-bottom: 1.66rem;
+}
+.toot-embed iframe.mastodon-embed {
+  border: none;
+}
+
 p {
   margin-block-end: 0;
   margin-block-start: 0;

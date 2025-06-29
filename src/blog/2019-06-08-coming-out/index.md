@@ -65,7 +65,7 @@ So how long could I go before talking about Mastodon? Well gosh.
 
 [Mastodon](https://joinmastodon.org) is an open source, federated social network. Don't worry about the techno-jargon, the point is this: I've been involved with the Mastodon community [for over two years](https://ashfurrow.com/blog/mastodon/), and Mastodon is a place of radical acceptance. Seeing people live as themselves and _be accepted_ as themselves by people who care about them has been transformational for me. People just... being themselves. What a concept, folks. Thank you, Mastodon.
 
-<Toot src="https://radical.town/@RobinHood/101943188965153472/embed" />
+{% toot "https://radical.town/@RobinHood/101943188965153472/embed" %}
 
 ---
 

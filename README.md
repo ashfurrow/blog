@@ -2,6 +2,26 @@
 
 ## TODO
 
+- [ ] Speaking
+- [ ] Portfolio
+- [ ] Search
+- [ ] Code syntax highlighting w/ prisma
+- [ ] HTML head SEO stuff
+- [ ] Timeline posts
+- [ ] Corrections GitHub link on posts
+- [ ] Validate generated CSS and HTML
+- [ ] Article pagination
+- [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
+- [ ] Double-check the layout for consistency, font sizes in menu bar, etc
+- [ ] Update package.json from old_site
+- [ ] Update README from the old_site
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [x] Import MDX shortcodes
+- [x] Favicon
 - [x] Pages structure
 - [x] Blog structure
 - [x] Blog post rendering
@@ -9,7 +29,14 @@
 - [x] Decide: plain CSS? preprocessor? tailwind?
   - Plain CSS is actually enough, with grids and flexbox
 - [x] Import blog posts
-- [ ] Layout
+- [x] Blog archive grouping
+- [x] Prettier
+- [x] Typography
+- [x] About
+- [x] Books
+- [x] 404
+- [x] Site Icon
+- [x] Layout
   - [x] Page titles and banners
   - [x] Main layout
   - [x] Banner attribution
@@ -18,33 +45,6 @@
   - [x] Menubar
   - [x] Footer text is missing
   - [x] Tapping menu link on mobile looks weird
-- [ ] Double-check the layout for consistency, font sizes in menu bar, etc
-- [x] Blog archive grouping
-- [x] Prettier
-- [x] Typography
-- [ ] Speaking
-- [ ] Portfolio
-- [ ] Search
-- [x] About
-- [x] Books
-- [x] 404
-- [ ] Code syntax highlighting w/ prisma
-- [x] Site Icon
-- [ ] HTML head SEO stuff
-- [ ] Timeline posts
-- [ ] Import MDX shortcodes
-- [x] Favicon
-- [ ] Corrections GitHub link on posts
-- [ ] Validate generated CSS and HTML
-- [ ] Article pagination
-- [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
 - [x] ~Image optimization (widths) maybe? Maybe not lol~
 
 Shortcodes:
@@ -57,5 +57,5 @@ Shortcodes:
 - [x] SpeakerDeck,
 - [x] Tweet,
 - [x] SoundCloud,
-- [ ] Spotify,
-- [ ] Toot,
+- [x] Spotify,
+- [x] Toot,
