@@ -64,3 +64,5 @@ bundle-stats.json
 .netlify
 
 _site/
+
+.claude/

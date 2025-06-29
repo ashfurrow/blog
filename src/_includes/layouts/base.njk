@@ -20,8 +20,12 @@
 		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{% bannerImage %}'); background-size: cover; background-position: center; background-repeat: no-repeat;"
 		  {% if subtitle is defined %}class="left"{% endif %}
 		>
+			{% if bannerAttribution %}
+				<a href="{{ bannerAttribution }}" class="banner-attribution">
+					<i class="fa-solid fa-image"></i>
+				</a>
+			{% endif %}
 			<h1>{{title}}</h1>
-			{# TODO: Attribution links #}
 		</header>
 	
 		<main>
