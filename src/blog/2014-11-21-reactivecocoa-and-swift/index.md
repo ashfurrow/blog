@@ -9,6 +9,6 @@ The talk for my [presentation at MBLTDev](/blog/reactivecocoa-with-swift/) is up
 
 Here are the slides if you'd like to follow along.
 
-<SpeakerDeck deckID="83497160404801324aa87a6501a1d9f8" />
+{% speakerDeck "83497160404801324aa87a6501a1d9f8" %}
 
 The [sample code](https://github.com/ashfurrow/mbltdev) is up on GitHub.

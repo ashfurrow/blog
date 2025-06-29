@@ -156,4 +156,18 @@ export default function (eleventyConfig) {
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>`
   })
+
+  eleventyConfig.addShortcode("speakerDeck", function (deckId, fourByThree = false) {
+    const aspectRatio = fourByThree ? "75%" : "56.25%" // 4:3 vs 16:9
+    return `<div class="narrow">
+      <div class="speakerdeck-embed" style="padding-bottom: ${aspectRatio}">
+        <iframe 
+          src="https://speakerdeck.com/player/${deckId}" 
+          frameborder="0"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>`
+  })
 }

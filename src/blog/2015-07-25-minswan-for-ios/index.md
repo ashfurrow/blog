@@ -70,7 +70,7 @@ Think about how much happier you could be without a constant stream of negativit
 
 [Orta](http://twitter.com/orta) has said that "[friction gets followers](https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/)" – and that's true, but only if we let it. He has some great specific suggestions here:
 
-<SpeakerDeck deckID="84143e0681d0483d8bdb6ecc94b75bbf" />
+{% speakerDeck "84143e0681d0483d8bdb6ecc94b75bbf" %}
 
 Addressing negativity can be hard. It takes courage to tell someone that they're being hurtful. What's important is to keep the feedback confined to what was said, and not to the person saying it.
 

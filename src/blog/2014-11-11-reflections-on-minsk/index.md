@@ -73,7 +73,7 @@ I wanted to fix both of these issues. I wanted to convince every developer that 
 
 My whole career is punctuated by sharing knowledge and it has lead me to where I am today. I felt that I owed it to the world to let everyone know how sharing has lead me to some amazing opportunities and places.
 
-<SpeakerDeck deckID="fcb3f5b0487c013239cd36e5e480a335" fourByThree />
+{% speakerDeck "fcb3f5b0487c013239cd36e5e480a335" true %}
 
 The talk was, I believe, a success. I got some great questions afterward and was able to provide compelling answers. People spoke with me after the talk about their plans to reconsider their approach to sharing at work.
 

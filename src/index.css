@@ -101,7 +101,8 @@ main > * {
 }
 
 .youtube-embed,
-.video-embed {
+.video-embed,
+.speakerdeck-embed {
   position: relative;
   height: 0;
   overflow: hidden;
@@ -110,7 +111,8 @@ main > * {
   margin-bottom: 1.66rem;
 }
 .youtube-embed iframe,
-.video-embed iframe {
+.video-embed iframe,
+.speakerdeck-embed iframe {
   position: absolute;
   top: 0;
   left: 0;
