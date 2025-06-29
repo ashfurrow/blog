@@ -5,7 +5,7 @@ date: 2012-09-19
 
 Great article on [The Verge](http://www.theverge.com/2012/9/19/3358132/samsung-mock-iphone-5-commercial) discussing Samsung's latest Galaxy S3 ad, which mocks Apple users.
 
-<YouTube videoID='nf5-Prx19ZM' />
+{% YouTube "nf5-Prx19ZM" %}
 
 Classy, guys.
 

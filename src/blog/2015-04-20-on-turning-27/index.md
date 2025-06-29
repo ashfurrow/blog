@@ -59,7 +59,7 @@ There was a lot of depression and self-doubt over the past year. Picturing mysel
 
 So, art. I've always felt that the arts are important, from a sort of "social good" standpoint. Art in public areas is good. Teaching kids art is good. Going to museums is good. But it's always been an abstract belief, as though "art is important, but mostly for the benefit of others." Well, that's kind of rubbish isn't it? Art is good for me, just like it's good for everyone.
 
-<YouTube videoID="sn0bDD4gXrE" />
+{% YouTube "sn0bDD4gXrE" %}
 
 Thanks to Artsy, I was able to [attend Art Basel](/blog/reflections-on-art-basel-2014/), one of the most important art fairs in the world. It was incredible – and importantly, they were giving away these awesome books.
 

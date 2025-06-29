@@ -52,7 +52,7 @@ The show weaves music into its narrative in a real thoughtful way. Both backgrou
 
 The voice actors are cast specifically with their singing voices in mind, and Rebecca Sugar (the show's creator) really emphasizes how important the music is by playing a lot of the songs herself.
 
-<YouTube videoID="usXTGY4anrQ" />
+{% YouTube "usXTGY4anrQ" %}
 
 Oh, and the soundtrack is [available on Spotify](https://open.spotify.com/album/3fNVnjSRQ3oW4PUIKvrThu).
 
@@ -100,7 +100,7 @@ The art in the show is spectacular. _Steven Universe_ uses dedicated background 
 
 The dynamic nature of the show's artwork isn't really represented by still images. The distinctive animation plays a key role. I've mentioned music already, but music+art+animation combine synergistically to convey a really compelling story. Here's one representative example, with some cool glitchy body horror elements!
 
-<YouTube videoID="Iqp0jlXkNQk" />
+{% YouTube "Iqp0jlXkNQk" %}
 
 ## Non-judgemental Narratives
 

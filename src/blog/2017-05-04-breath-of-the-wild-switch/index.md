@@ -13,8 +13,7 @@ So.
 
 In what's basically a [flawless product video](https://www.youtube.com/watch?v=f5uik5fgIaI), the Switch was announced six months ago. And I knew I would get one eventually. Because just look at that thing.
 
-<!-- TODO: these unmigrated shortcodes are messing up the DOM. Until they are migrated, I have hidden this for testing -->
-<!-- <YouTube videoID="f5uik5fgIaI" /> -->
+{% YouTube "f5uik5fgIaI" %}
 
 I don't buy game consoles – and I certainly don't buy them early – because I Am Not A Gamer. But this time, it's different. Both _Breath of the Wild_, the new Zelda game, and the Switch had me so excited that I got one only a few months after it launched. And I'm blown away by both.
 

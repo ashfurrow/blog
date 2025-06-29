@@ -77,7 +77,7 @@ Say I have an idea to improve a software community. Here's what I'll do:
 
 All while discussing it with team members and team leads. Getting an idea out into the world is difficult, but I'm working on getting better at it.
 
-<YouTube videoID="hlLhtWLghGA" />
+{% YouTube "hlLhtWLghGA" %}
 
 Software development is fun and rewarding, but lately I'm even _more_ excited to spend time planning and building online communities. Does that make sense for a career as a software engineer?
 

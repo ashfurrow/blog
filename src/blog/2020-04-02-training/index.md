@@ -17,7 +17,7 @@ That earlier blog post was called _Learning to Run_, but I was really learning _
 
 I've come to understand this by talking to my friends about their own training. Injury is just, like, something that happens. It's core to training, really. Take running: it has a huge impact on joints and connective tissue and whatnot, but then healing from that impact makes the body endure more next time. That's also how muscle strengthening works: microscopic tears in muscle fibres that get healed, making the muscle stronger.
 
-<YouTube videoID="6HnZnhwOuag" />
+{% YouTube "6HnZnhwOuag" %}
 
 Training, as I've come to understand it so far, is the combined motivations of pushing towards goals and of managing injury. Neat. The two components both oppose and build upon one another. Really cool.
 

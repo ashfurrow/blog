@@ -7,7 +7,7 @@ bannerAttribution: https://www.flickr.com/photos/97226415@N08/16300562689/in/fav
 
 Before I left Europe, I gave a talk at [dotSwift](http://www.dotswift.io), one of the first conferences focusing exclusively on Apple's new programming language. Well, the videos have bene posted, and I'm very happy with the results.
 
-<YouTube videoID="oMn4sspgrkQ" />
+{% YouTube "oMn4sspgrkQ" %}
 
 I'm very proud of this talk; I had planned and organized it weeks in advance, and I practice over and over. There are still some flaws with my delivery, but I'm very excited to have this as a new yardstick by which to measure my other presentations.
 

@@ -46,7 +46,7 @@ But this shift has also been absorbed via osmosis from my peers and mentors, a f
 
 One thing in particular that's had a large impact is Justin Searls' talk [_The Social Coding Contract_](https://www.youtube.com/watch?v=e_-qV8waPVM), which discusses the logistics of building OSS communities. I highly recommend it.
 
-<YouTube videoID="e_-qV8waPVM" />
+{% YouTube "e_-qV8waPVM" %}
 
 After seeing this talk, I made a few big changes to a project I led.
 

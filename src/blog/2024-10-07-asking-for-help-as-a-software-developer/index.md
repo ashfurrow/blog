@@ -79,7 +79,7 @@ The same person who told me, as an intern, that I ask for help too soon also sug
 
 As you can see, asking for help isn't something that you do _instead of_ trying to solve a problem yourself. It is just one tool in your problem-solving toolbox. It's often the best tool to reach for when you're unproductively stuck, but my friend Steve Hicks describes some other tools in this excellent talk:
 
-<YouTube videoID="3XscuivvUzI" />
+{% YouTube "3XscuivvUzI" %}
 
 A lot of developers get stuck in the trap of persistence as they grow in experience and responsibility. It might be one of those things that just naturally happens as we grow from one level of responsibly to the next. I'm not sure. It's a behaviour that I continue to look out for in myself.
 

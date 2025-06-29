@@ -19,7 +19,7 @@ Which sounds a lot like coding. You may have an idea of what you're going to do,
 
 Since picking up the guitar, I've been practicing my [blues scales](https://en.wikipedia.org/wiki/Blues_scale). Combined with a [twelve-bar blues progression](https://en.wikipedia.org/wiki/Twelve-bar_blues), that's all the theory you need. But it wasn't until I found a bunch of backing tracks on YouTube yesterday that I really got into it. They give you a beat and the chord progression to express yourself musically, either through improv or not. Rediscovering how fun it is to spontaneously play has been amazing.
 
-<YouTube videoID='8L2mqkk28sE' />
+{% YouTube "8L2mqkk28sE" %}
 
 So I wonder: what does a backing track look like in code? Well in music, a backing track provides a rhythm and progression around which you play your melody. I think there's a strong argument to be made that a backing track in coding is like a framework or library. Take RxSwift or UIKit, frameworks around which you write your code. Without frameworks, building apps would be really hard, just like improv in isolation would be. Not impossible, but difficult.
 

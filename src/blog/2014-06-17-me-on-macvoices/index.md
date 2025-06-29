@@ -5,4 +5,4 @@ date: 2014-06-17
 
 I was delighted to be interviewed by Chuck Joiner down in San Francisco to discuss Artsy, Swift, and other things. Check it out.
 
-<YouTube videoID="TmE_TPnGHlA" />
+{% YouTube "TmE_TPnGHlA" %}

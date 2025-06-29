@@ -125,4 +125,15 @@ export default function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("narrow", function (content) {
     return `<div class="narrow">${content}</div>`
   })
+
+  eleventyConfig.addShortcode("YouTube", function (videoId) {
+    return `<div class="youtube-embed">
+      <iframe 
+        src="https://www.youtube.com/embed/${videoId}" 
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>`
+  })
 }

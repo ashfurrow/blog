@@ -39,7 +39,7 @@ Thank you, Erik, for recommending this album. It changed my life.
 
 [hbomberguy](https://www.youtube.com/user/hbomberguy) is a video games YouTuber who covers left-wing politics, too. He's very funny, and despite not being much of a gamer, I found myself captivated by his essays about [video games that I will never, ever play](https://www.youtube.com/watch?v=AC3OuLU5XCw). He's just such a good video essayist, and one of his videos in particular really spoke to me.
 
-<YouTube videoID="l8u8wZ0WvxI" />
+{% YouTube "l8u8wZ0WvxI" %}
 
 This is an essay discussing HP Lovecraft, his stories, his racism, his homophobia... and how queer adaptations can appropriate his writing.
 

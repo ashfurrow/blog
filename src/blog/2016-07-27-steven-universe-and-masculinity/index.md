@@ -8,7 +8,7 @@ Discussion of masculinity in feminism forums online usually centres around [_tox
 
 If you need an introduction to toxic masculinity and its negative affects on society, check out the video below.
 
-<YouTube videoID="td1PbsV6B80" />
+{% YouTube "td1PbsV6B80" %}
 
 Everyone is society is affected by toxic masculinity, in very negative ways. Even men who exemplify toxic masculinity are hurt by it. It's really a bad, no-good thing that we need to do away with. And now that we have identified the problem, the next step is to fix it.
 
@@ -20,7 +20,7 @@ I was excited to hear that [Jonathan McIntosh](https://twitter.com/radicalbytes)
 
 The first episode deals with emotion expression on the show, including male characters. This is really important, because suppression of emotional expression is a large aspect of toxic masculinity. By providing positive masculine role models in all-ages media, _Steve Universe_ subverts toxic masculinity and helps steer all of society in a direction that benefits everyone.
 
-<YouTube videoID="5Z5ICVEIRIk" />
+{% YouTube "5Z5ICVEIRIk" %}
 
 Unfortunately, McIntosh has received quite a bit of backlash for his efforts. [He's written about it](http://popculturedetective.tumblr.com/post/147599643970/when-men-are-harassed-online), and points out that his harassers are expressing toxic masculinity by accusing him of being womanly, as if there were anything wrong with being a woman.
 

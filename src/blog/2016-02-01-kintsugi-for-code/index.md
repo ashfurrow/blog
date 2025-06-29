@@ -10,7 +10,7 @@ Have you ever heard of [wabi-sabi](https://en.wikipedia.org/wiki/Wabi-sabi)? It'
 
 I was reading [the book's follow-up on](http://amzn.to/1nH66FX) the subway here in New York, when someone approached and asked about wabi-sabi. We got chatting and he sent me the following video.
 
-<YouTube videoID="lT55_u8URU0" />
+{% YouTube "lT55_u8URU0" %}
 
 The video discusses a practice related to wabi-sabi: [kintsugi](https://en.wikipedia.org/wiki/Kintsugi). This is art of repairing things in a way that actually enhances their aesthetic. The repaired is more beautiful than the pristine.
 

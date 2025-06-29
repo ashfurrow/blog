@@ -7,7 +7,7 @@ So Canada's been really excited, eh? We've got a new, dreamy prime minister and 
 
 [Yay, welcoming refugees!](http://www.thestar.com/news/gta/2015/12/11/syrian-refugees-arriving-at-pearson-tonight-but-well-wishers-asked-to-stay-home.html) We've got Prime Minister Trudeau [greating refugees](http://www.huffingtonpost.ca/2015/12/11/first-flight-of-syrian-refugees-expected-to-arrive-today-in-toronto_n_8767700.html) with a great speech:
 
-<YouTube videoID="LQeaimHDcEU" />
+{% YouTube "LQeaimHDcEU" %}
 
 We've got a welcome banner on the front-cover of the Toronto Star:
 
