@@ -34,7 +34,7 @@ body {
   background: var(--white);
   color: var(--grey-default);
   font-family: var(--body-font-family);
-  line-height: 1.5;
+  line-height: 1.6;
   font-variant-ligatures: common-ligatures;
   font-variant: common-ligatures;
   margin: 0;
@@ -118,11 +118,15 @@ a {
 h2, h3 a {
   color: var(--grey-dark);
 }
+h1, h2, h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 h1 {
   font-family: var(--header-font-family);
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 h3 {
   font-size: 1.5rem;

@@ -2,20 +2,36 @@
 title: Blog  
 ---
 
+{# TODO: Migrate this to a filter instead so I don't need to deal with JSON serialization. #}
 {% set groupedPostsJson %}{% groupedPosts %}{% endset %}
 {% set groupedPosts = groupedPostsJson | fromJson  %}
 
-{# <pre>{{ groupedPosts | dump }}</pre> #}
-
 {%- for group in groupedPosts %}
-  <ol reversed>
-    <h3>{{ group.name }}</h3>
+  <div class="group">
+    <h2>{{ group.name }}</h2>
     {%- for post in group.posts %}
-      <li class="postlist-item">
-        <a href="{{ post.url }}" class="postlist-link">{{ post.title }}</a>
-        <time class="postlist-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate("DDD") }}</time>
+      <article>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate("DDD") }}</time>
       </li>
     {%- endfor %}
-    </ol>
-  {%- endfor %}
+  </div>
+{%- endfor %}
+
+<style>
+  .group {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .group h2 {
+    margin-bottom: 0.5rem; 
+    font-size: 1.5rem;
+  }
+  .group a {
+    margin-right: 0.5rem;
+  }
+  time {
+    color: rgba(0, 0, 0, 0.5);
+  }
+</style>
   
