@@ -16,13 +16,46 @@
 		<link rel="stylesheet" href="https://use.typekit.net/uhm7xdd.css">
 	</head>
 	<body>
+		<nav class="navbar" data-scrolled="false" data-menu-open="false">
+			<div class="navbar-container">
+				<a href="/" class="navbar-logo">
+					<img src="/assets/siteimage.png" alt="Ash Furrow" class="logo-light">
+					<img src="/assets/siteimage_dark.png" alt="Ash Furrow" class="logo-dark">
+				</a>
+				<ul class="navbar-links">
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/books">Books</a></li>
+					<li><a href="/portfolio">Portfolio</a></li>
+					<li><a href="/speaking">Speaking</a></li>
+					<li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+					<li><a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a></li>
+				</ul>
+				<button class="hamburger" aria-label="Toggle menu">
+					<i class="fa-solid fa-bars hamburger-icon hamburger-bars"></i>
+					<i class="fa-solid fa-xmark hamburger-icon hamburger-close"></i>
+				</button>
+			</div>
+			<div class="mobile-menu">
+				<ul class="mobile-links">
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/books">Books</a></li>
+					<li><a href="/portfolio">Portfolio</a></li>
+					<li><a href="/speaking">Speaking</a></li>
+					<li><a href="/search">Search</a></li>
+					<li><a href="/feed.xml">Blog Feed</a></li>
+				</ul>
+			</div>
+		</nav>
+
 		<header 
 		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{% bannerImage %}'); background-size: cover; background-position: center; background-repeat: no-repeat;"
 		  {% if subtitle is defined %}class="left"{% endif %}
 		>
 			{% if bannerAttribution %}
 				<a href="{{ bannerAttribution }}" class="banner-attribution">
-					<i class="fa-solid fa-image"></i>
+					<i class="fa-solid fa-image banner-icon"></i>
 				</a>
 			{% endif %}
 			<h1>{{title}}</h1>
@@ -61,5 +94,83 @@
 		</footer>
 
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+		<script>
+			// Navbar Controller - Vanilla JavaScript
+			class NavbarController {
+				constructor() {
+					this.navbar = document.querySelector('.navbar')
+					this.hamburger = document.querySelector('.hamburger')
+					this.mobileMenu = document.querySelector('.mobile-menu')
+					this.mobileLinks = document.querySelectorAll('.mobile-links a')
+					this.isMenuOpen = false
+					this.init()
+				}
+				
+				init() {
+					this.setupScrollListener()
+					this.setupMenuToggle()
+					this.setupMobileLinkClicks()
+					this.setupOutsideClick()
+				}
+				
+				setupScrollListener() {
+					// Set initial state immediately
+					const isScrolled = window.scrollY > 0
+					this.navbar.setAttribute('data-scrolled', isScrolled.toString())
+					
+					let ticking = false
+					const handleScroll = () => {
+						if (!ticking) {
+							requestAnimationFrame(() => {
+								const isScrolled = window.scrollY > 0
+								this.navbar.setAttribute('data-scrolled', isScrolled.toString())
+								ticking = false
+							})
+							ticking = true
+						}
+					}
+					
+					window.addEventListener('scroll', handleScroll)
+				}
+				
+				setupMenuToggle() {
+					this.hamburger.addEventListener('click', (e) => {
+						e.stopPropagation()
+						this.toggleMenu()
+					})
+				}
+				
+				setupMobileLinkClicks() {
+					this.mobileLinks.forEach(link => {
+						link.addEventListener('click', () => {
+							this.closeMenu()
+						})
+					})
+				}
+				
+				setupOutsideClick() {
+					document.addEventListener('click', (e) => {
+						if (this.isMenuOpen && !this.navbar.contains(e.target)) {
+							this.closeMenu()
+						}
+					})
+				}
+				
+				toggleMenu() {
+					this.isMenuOpen = !this.isMenuOpen
+					this.navbar.setAttribute('data-menu-open', this.isMenuOpen.toString())
+				}
+				
+				closeMenu() {
+					this.isMenuOpen = false
+					this.navbar.setAttribute('data-menu-open', 'false')
+				}
+			}
+
+			// Initialize when DOM is ready
+			document.addEventListener('DOMContentLoaded', () => {
+				new NavbarController()
+			})
+		</script>
 	</body>
 </html>

@@ -12,12 +12,12 @@
 - [ ] Layout
   - [x] Page titles and banners
   - [x] Main layout
-  - [ ] Banner attribution
+  - [x] Banner attribution
   - [x] FontAwesome
   - [x] Footer
-  - [ ] Menubar
+  - [x] Menubar
   - [x] Footer text is missing
-  - [ ]
+  - [ ] Tapping menu link on mobile looks weird
 - [x] Blog archive grouping
 - [x] Prettier
 - [x] Typography
@@ -28,11 +28,11 @@
 - [x] Books
 - [x] 404
 - [ ] Code syntax highlighting w/ prisma
-- [ ] Site Icon
+- [x] Site Icon
 - [ ] HTML head SEO stuff
 - [ ] Timeline posts
 - [ ] Import MDX shortcodes
 - [ ] Favicon
-- [ ]
+- [ ] Corrections GitHug link on posts
 - [ ]
 - [ ] ~Image optimization (widths) maybe? Maybe not lol~
