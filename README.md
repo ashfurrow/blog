@@ -17,7 +17,7 @@
   - [x] Footer
   - [x] Menubar
   - [x] Footer text is missing
-  - [ ] Tapping menu link on mobile looks weird
+  - [x] Tapping menu link on mobile looks weird
 - [x] Blog archive grouping
 - [x] Prettier
 - [x] Typography

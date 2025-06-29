@@ -50,7 +50,7 @@
 		</nav>
 
 		<header 
-		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{% bannerImage %}'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{% bannerImage %}'); background-size: cover; background-position: top; background-repeat: no-repeat no-repeat;"
 		  {% if subtitle is defined %}class="left"{% endif %}
 		>
 			{% if bannerAttribution %}
@@ -109,7 +109,6 @@
 				init() {
 					this.setupScrollListener()
 					this.setupMenuToggle()
-					this.setupMobileLinkClicks()
 					this.setupOutsideClick()
 				}
 				
@@ -137,14 +136,6 @@
 					this.hamburger.addEventListener('click', (e) => {
 						e.stopPropagation()
 						this.toggleMenu()
-					})
-				}
-				
-				setupMobileLinkClicks() {
-					this.mobileLinks.forEach(link => {
-						link.addEventListener('click', () => {
-							this.closeMenu()
-						})
 					})
 				}
 				
