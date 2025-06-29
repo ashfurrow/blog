@@ -32,7 +32,7 @@
 - [ ] HTML head SEO stuff
 - [ ] Timeline posts
 - [ ] Import MDX shortcodes
-- [ ] Favicon
-- [ ] Corrections GitHug link on posts
+- [x] Favicon
+- [ ] Corrections GitHub link on posts
 - [ ]
 - [ ] ~Image optimization (widths) maybe? Maybe not lol~
