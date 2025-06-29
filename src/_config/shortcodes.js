@@ -215,4 +215,11 @@ export default function (eleventyConfig) {
       </div>
     </div>`
   })
+
+  eleventyConfig.addShortcode("githubLink", function () {
+    const inputPath = this.ctx.page.inputPath
+    // Convert to relative path from current working directory
+    const relativePath = path.relative(".", inputPath)
+    return `https://github.com/ashfurrow/blog/tree/main/${relativePath}`
+  })
 }

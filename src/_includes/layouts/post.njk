@@ -4,6 +4,12 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
+<div class="typo-correction">
+  <hr>
+  <a href="{% githubLink %}" class="typo-link">Please submit typo corrections on GitHub</a>
+  <hr>
+</div>
+
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}

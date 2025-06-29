@@ -8,7 +8,7 @@
 - [ ] Code syntax highlighting w/ prisma
 - [ ] HTML head SEO stuff
 - [ ] Timeline posts
-- [ ] Corrections GitHub link on posts
+- [x] Corrections GitHub link on posts
 - [ ] Validate generated CSS and HTML
 - [ ] Article pagination
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
