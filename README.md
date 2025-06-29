@@ -38,3 +38,16 @@
 - [ ] Validate generated CSS and HTML
 - [ ]
 - [x] ~Image optimization (widths) maybe? Maybe not lol~
+
+Shortcodes:
+
+- [x] Narrow,
+- [x] Wide,
+- [ ] ReactResponsiveEmbed,
+- [x] YouTube,
+- [x] Video,
+- [ ] SpeakerDeck,
+- [ ] Tweet,
+- [ ] SoundCloud,
+- [ ] Spotify,
+- [ ] Toot,

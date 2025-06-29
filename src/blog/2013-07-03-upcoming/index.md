@@ -7,4 +7,4 @@ Some coworkers and I spent a few weeks exploring how to represent calendar data 
 
 And we love it so much we made a video.
 
-<Video src="https://player.vimeo.com/video/69623560?wmode=opaque&amp;api=1" />
+{% video "https://player.vimeo.com/video/69623560?wmode=opaque&amp;api=1" %}

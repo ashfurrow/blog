@@ -5,7 +5,7 @@ date: 2014-01-29
 
 I was reminded today by my friend [Eric](http://twitter.com/akaoka) of Ira Glass' advice on storytelling. I'll let it speak for itself.
 
-<Video src="//player.vimeo.com/video/24715531?wmode=opaque&amp;api=1" />
+{% video "//player.vimeo.com/video/24715531?wmode=opaque&amp;api=1" %}
 
 I've launched a few projects, many recently, and Ira Glass' advice really speaks to me.
 

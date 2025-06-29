@@ -9,7 +9,7 @@ I've done a lot of photography over the Christmas holiday – and I don't mean t
 
 The series was produced by the [George Eastman House](http://www.eastmanhouse.org) – as in George "I Founded Kodak" Eastman. It discusses humanity's centuries-old quest to make accurate, reproducible, and long-lasting depictions of events. There are twelve videos covering progress starting before photography's emergence in the 19th century to today's digital cameras.
 
-<Video src="//www.youtube.com/embed/videoseries?list=PL4F918844C147182A" />
+{% video "//www.youtube.com/embed/videoseries?list=PL4F918844C147182A" %}
 
 Photography is a very broad term, and the videos highlight some of the more significant advances in photographic technology, which include:
 

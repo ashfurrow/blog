@@ -8,7 +8,7 @@ socialImage: team.jpg
 
 On March 16, 2018, I delivered the opening keynote for [Appdevcon][], which was titled _Building Better Software by Building Better Teams_. Slides are [here][slides]. This post serves as a kind of pseudo-transcript of the talk. I also did [an interview](https://vimeo.com/270512268) with the conference organizers after my talk.
 
-<Video src="https://player.vimeo.com/video/270512761?title=0&amp;byline=0&amp;portrait=0" />
+{% video "https://player.vimeo.com/video/270512761?title=0&amp;byline=0&amp;portrait=0" %}
 
 Hello! I’m Ash Furrow, and I’ve been writing iOS apps since 2009. I’ve also helped build business-critical systems in Swift, Objective-C, Node, Scala, Rails, React – all kinds of stuff. And today we’re going to talk about how we can build better software by building better teams.
 

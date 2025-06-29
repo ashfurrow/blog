@@ -5,7 +5,7 @@ date: 2012-10-25
 
 Ira Glass discusses developing taste in this [kinetic tyopgraphy video](http://vimeo.com/24715531).
 
-<Video src="https://player.vimeo.com/video/24715531?wmode=opaque&amp;api=1" />
+{% video "https://player.vimeo.com/video/24715531?wmode=opaque&amp;api=1" %}
 
 I consider software development a creative process; writing code is like directing a play where you instruct different parts of your program on where to be, what to do, and when to do it.
 

@@ -9,7 +9,7 @@ People who follow this blog also know that I’m a fan of Leica. My favourite ca
 
 This year, the Leica turned 100. To celebrate, Leica has created numerous celebratory products and this advertisement.
 
-<Video src="//player.vimeo.com/video/107622839?wmode=opaque&amp;api=1" />
+{% video "//player.vimeo.com/video/107622839?wmode=opaque&amp;api=1" %}
 
 OK, fine, you watch it. And you probably think something like “jeez this company has its head up its own ass”, and you’re not wrong. But so does Apple, a company I suspect the majority of readers of this blog would defend. (I’m far from the first to make the Leica/Apple comparison.)
 

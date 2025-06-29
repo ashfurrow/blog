@@ -136,4 +136,15 @@ export default function (eleventyConfig) {
       ></iframe>
     </div>`
   })
+
+  eleventyConfig.addShortcode("video", function (src) {
+    return `<div class="video-embed">
+      <iframe 
+        src="${src}" 
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>`
+  })
 }

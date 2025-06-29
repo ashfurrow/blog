@@ -43,7 +43,7 @@ To help develop your critical reading skills, you should also be _reading_ a lot
 
 Being a beginner in any creative pursuit sucks because, at first, your taste exceeds your abilities. You know what you've written isn't good but you've not yet got the skills to improve it. _Lean into that discomfort_. Figure out what the delta is between your writing output and your taste, and then practice those skills.
 
-<Video src="//player.vimeo.com/video/24715531?wmode=opaque&amp;api=1" />
+{% video "//player.vimeo.com/video/24715531?wmode=opaque&amp;api=1" %}
 
 You should also be seeking out feedback on what you write from people you trust. If you have a blog post, send it to a friend or colleague and ask them for feedback. But _be specific_ about what kind of feedback you want. This is where developing your taste starts to pay dividends: tell your reviewer what you're trying to accomplish as a writer so they can help identify those deltas I mentioned earlier. If you're really close to the person, you can also tell them how you're trying to grow as a writer to get even more specific feedback.
 

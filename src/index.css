@@ -100,7 +100,8 @@ main > * {
   }
 }
 
-.youtube-embed {
+.youtube-embed,
+.video-embed {
   position: relative;
   height: 0;
   overflow: hidden;
@@ -108,7 +109,8 @@ main > * {
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   margin-bottom: 1.66rem;
 }
-.youtube-embed iframe {
+.youtube-embed iframe,
+.video-embed iframe {
   position: absolute;
   top: 0;
   left: 0;

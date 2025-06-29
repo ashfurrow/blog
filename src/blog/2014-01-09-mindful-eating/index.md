@@ -13,4 +13,4 @@ _Turns out_.
 
 It's a great way to spend 12 minutes.
 
-<Video src="//embed.ted.com/talks/sandra_aamodt_why_dieting_doesn_t_usually_work.html?wmode=opaque" />
+{% video "//embed.ted.com/talks/sandra_aamodt_why_dieting_doesn_t_usually_work.html?wmode=opaque" %}
