@@ -24,7 +24,8 @@
 - [ ] Speaking
 - [ ] Portfolio
 - [ ] Search
-- [ ] About
+- [x] About
+- [x] Books
 - [x] 404
 - [ ] Image optimization (widths) maybe? Maybe not lol
 - [ ] Code syntax highlighting w/ prisma
