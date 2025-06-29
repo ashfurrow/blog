@@ -11,6 +11,6 @@ Before I left Europe, I gave a talk at [dotSwift](http://www.dotswift.io), one o
 
 I'm very proud of this talk; I had planned and organized it weeks in advance, and I practice over and over. There are still some flaws with my delivery, but I'm very excited to have this as a new yardstick by which to measure my other presentations.
 
-{% speakerDeck "79a7ada323a74a029909d03d3639288d" %}
+{% speakerdeck "79a7ada323a74a029909d03d3639288d" %}
 
 At under twenty minutes, it's fair short. If you want more details, I'm giving a more in-depth talk in [Istanbul](http://www.istanbultechtalks.com) next month.

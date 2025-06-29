@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CrookedCosmos/status/834342450835636224
 
 So I'm in Australia to give my talk at [Playgrounds Conference](http://playgroundscon.com) about asynchronous programming. While we wait for the video to be edited and uploaded, I thought I could take you through the talk in blog post form. So let's dive in!
 
-{% speakerDeck "46f4ab568af449b8ac95aa4939f9e62e" %}
+{% speakerdeck "46f4ab568af449b8ac95aa4939f9e62e" %}
 
 Today we're going to be talking about asynchronous programming: what it is, why it's important, and what it can look like in Swift. The topic is quite complicated and I don't have enough time to go into a tonne of detail, but my goal isn't depth, it's breadth. I want to expose you to lots of ideas and give you hints about where to follow up to do your own research.
 

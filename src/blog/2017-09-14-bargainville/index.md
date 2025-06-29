@@ -7,7 +7,7 @@ bannerAttribution: https://twitter.com/CloudyConway/status/907699091513241600
 
 Some of my oldest memories are of riding in my father's 1998 red Toyota 4runner listening to a cassette tape of the Moxy Früvous album _Bargainville_ (1993). I was walking this morning and I put the album on and it still really speaks to me.
 
-<Spotify src="https://open.spotify.com/embed/album/6OGn8UPY9GnwhR1068nR7x" />
+{% spotify "https://open.spotify.com/embed/album/6OGn8UPY9GnwhR1068nR7x" %}
 
 I was always fond of _River Valley_ because it's a catchy tune, and I grew up in a river valley. Listening to it today, during the incipient climate collapse, is chilling.
 

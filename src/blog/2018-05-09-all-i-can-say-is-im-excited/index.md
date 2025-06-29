@@ -25,12 +25,12 @@ I can't begin to tell you how different this feels. Because like, I've _been_ he
 
 My favourite musician, John K Samson, also suffers from depression. He wrote a song about someone with mental illness – well, it's more of a poem set to music. It tells the story of someone who struggles with delusional thinking, which isn't depression, but it influences their mood, too. It's haunting.
 
-<Spotify src="https://open.spotify.com/embed/track/7jI7kdXqAgDpCq6Y6anYqc" />
+{% spotify "https://open.spotify.com/embed/track/7jI7kdXqAgDpCq6Y6anYqc" %}
 
 The nice thing about this song is that it's immediately followed on the record by what Samson calls "a happy ending, of sorts." It's not a resolution – the character still has delusions – but they find happiness.
 
-<Spotify src="https://open.spotify.com/embed/track/3GAoGRa1CilOHMQWb239Bm" />
-  
+{% spotify "https://open.spotify.com/embed/track/3GAoGRa1CilOHMQWb239Bm" %}
+
 This song really resonated with me. Because the fact is, mental illnesses don't really _have_ resolutions. Like, you can feel better, but it's not like a stomach flu or something that you fully recover from. It sticks with you, and it's going to stick with me, too. But you can live with it, which is what this character in the songs does. And it's what I'm going to do.
 
 All I can say is I'm excited.

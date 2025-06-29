@@ -9,7 +9,7 @@ Today I presented a talk at mDevCamp in Prague, titled _How Artsy Automates Team
 
 So often, when it comes to developers discussing something they've designed, they don't really discuss the nitty-gritty of _how_ they designed it. It just sort of, happens. I want to step through my entire creative process, with a focus on visual design. The [slide deck is available here](https://speakerdeck.com/ashfurrow/how-artsy-automates-team-culture). The talk was recorded and will be uploaded at a later date.
 
-{% speakerDeck "be3c20fecfbc4857b511c9aaa87f5eb4" %}
+{% speakerdeck "be3c20fecfbc4857b511c9aaa87f5eb4" %}
 
 Let's dive in.
 

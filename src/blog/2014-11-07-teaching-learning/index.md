@@ -5,7 +5,7 @@ date: 2014-11-07
 
 I just gave a well-received talk at the [Mobile Developer & Business Day](http://by.mdday.ru/) about teaching and learning here in Minsk. There were some great questions and interesting conversations following the presentation.
 
-{% speakerDeck "fcb3f5b0487c013239cd36e5e480a335", true %}
+{% speakerdeck "fcb3f5b0487c013239cd36e5e480a335", true %}
 
 I was a bit nervous about this presentation for a few reasons. First, it is completely new material; many of my presentations draw from existing talks that I've given before. Second, my audience is literally foreign to me. Finally, it was not a technical topic.
 

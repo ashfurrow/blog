@@ -56,6 +56,6 @@ Shortcodes:
 - [x] Video,
 - [x] SpeakerDeck,
 - [x] Tweet,
-- [ ] SoundCloud,
+- [x] SoundCloud,
 - [ ] Spotify,
 - [ ] Toot,

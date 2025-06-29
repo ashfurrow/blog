@@ -95,4 +95,4 @@ There's an [Xcode plugin](https://github.com/kattrali/cocoapods-xcode-plugin) fo
 
 I gave a talk this morning on effectively using open source software. The slides are below.
 
-{% speakerDeck "bb7fb4c0fc510130bc6b32c793acd495" %}
+{% speakerdeck "bb7fb4c0fc510130bc6b32c793acd495" %}

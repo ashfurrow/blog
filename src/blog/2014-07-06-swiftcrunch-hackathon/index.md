@@ -9,7 +9,7 @@ I accepted and am just finishing up the [SwiftCrunch](http://swiftcrunch.com) ha
 
 Here are my slides from the keynote. They don't give a _tonne_ of context, but it was recorded so I'll post the video later once it's up.
 
-{% speakerDeck "7150b350e5fe01314f761288f3080752" %}
+{% speakerdeck "7150b350e5fe01314f761288f3080752" %}
 
 There were some really cool projects that developers came up with – not just apps, but tools for developers to use to make their lives easier. One of the most interesting projects is [SwiftInFlux](https://github.com/ksm/SwiftInFlux), a community-based project for cataloguing the changes that Apple is probably going to make to Swift before 1.0 ships.
 

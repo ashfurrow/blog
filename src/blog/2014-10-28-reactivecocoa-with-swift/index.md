@@ -16,7 +16,7 @@ The hosts have been awesome, and the participants are also welcoming. This is my
 
 My slides are [available](https://speakerdeck.com/ashfurrow/functional-reactive-programming-in-swift), as well as a [sample project on GitHub](https://github.com/AshFurrow/MBLTDev).
 
-{% speakerDeck "83497160404801324aa87a6501a1d9f8" %}
+{% speakerdeck "83497160404801324aa87a6501a1d9f8" %}
 
 The talk focuses on practical uses of ReactiveCocoa instead of the philosophy, which was a difficult decision to make. I've give the same talk on ReactiveCocoa a bunch of times, and I didn't want to give it again. I went back to the drawing board about how a talk on ReactiveCocoa can be done. For instance, people rarely comment on my 10-minute description of the history of programming, but they always have questions about how to adopt ReactiveCocoa in their team, so I focused more on that.
 
