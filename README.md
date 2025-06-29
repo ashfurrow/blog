@@ -25,7 +25,7 @@
 - [ ] Portfolio
 - [ ] Search
 - [ ] About
-- [ ] 404
+- [x] 404
 - [ ] Image optimization (widths) maybe? Maybe not lol
 - [ ] Code syntax highlighting w/ prisma
 - [ ] Site Icon
