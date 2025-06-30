@@ -2,17 +2,17 @@
 
 ## TODO
 
+- [ ] Timeline posts
 - [ ] Speaking
 - [ ] Portfolio
 - [ ] Search
 - [ ] Code syntax highlighting w/ prisma
 - [ ] HTML head SEO stuff
-- [ ] Timeline posts
 - [x] Corrections GitHub link on posts
-- [ ] Article pagination
+- [x] Article pagination
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
-- [ ]
+- [ ] Unexpected EOF on fontawesome JS
 - [ ]
 - [ ]
 - [ ]
@@ -62,7 +62,7 @@ Prelaunch:
 - [x] Update package.json from old_site
 - [ ] Update README from the old_site
 - [ ] Validate generated CSS and HTML
-- [ ]
+- [ ] Double-check RSS feeds (contents' permalink, URLs)
 - [ ]
 - [ ]
 - [ ]

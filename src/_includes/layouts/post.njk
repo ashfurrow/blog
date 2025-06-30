@@ -11,12 +11,28 @@ layout: layouts/base.njk
 </div>
 
 {%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
-{%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
+	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+	{%- set nextPost = collections.posts | getNextCollectionItem %}
+	{%- if nextPost or previousPost %}
+		<div class="pagination">
+			{%- if previousPost %}
+				<a href="{{ previousPost.url }}">
+					<div class="pagination-button pagination-prev">
+						<div class="pagination-linktext">
+							{{ previousPost.data.title }}
+						</div>
+					</div>
+				</a>
+			{% endif %}
+			{%- if nextPost %}
+				<a href="{{ nextPost.url }}">
+					<div class="pagination-button pagination-next">
+						<div class="pagination-linktext">
+							{{ nextPost.data.title }}
+						</div>
+					</div>
+				</a>
+			{% endif %}
+		</div>
+	{%- endif %}
 {%- endif %}

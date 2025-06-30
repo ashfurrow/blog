@@ -156,8 +156,59 @@ main > * {
   display: block;
 }
 .typo-link:hover {
-  color: var(--purple);
+  color: var(--primary);
   text-decoration: underline;
+}
+.pagination {
+  margin: 0;
+  /* overflow: auto; */
+}
+.pagination a {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+}
+.pagination-button {
+  border: 1px solid var(--grey-default);
+  width: 45%;
+  padding: 0.5rem 0rem;
+  font-family: var(--header-font-family);
+  text-align: center;
+  color: var(--grey-default);
+  transition: background-color 0.3s ease;
+}
+.pagination-prev {
+  float: left;
+}
+.pagination-next {
+  float: right;
+}
+.pagination-linktext {
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.75rem;
+}
+@media (max-width: 1200px) {
+  .pagination-button  {
+    width: 100%;
+    margin: 0.5rem auto;
+    float: none;
+  }
+}
+@media (max-width: 600px) {
+  .pagination-button {
+    width: 100%;
+    margin: 0.25rem auto;
+    float: none;
+  }
+}
+.pagination a:hover .pagination-button,
+.pagination a:focus .pagination-button {
+  color: var(--white);
+  border-color: var(--primary);
+  background-color: var(--primary);
 }
 
 p {
