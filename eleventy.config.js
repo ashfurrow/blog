@@ -23,6 +23,12 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets")
   eleventyConfig.addPassthroughCopy({ "node_modules/lunr/lunr.js": "assets/lunr.js" })
 
+  // Copy static files that need to be served at root
+  eleventyConfig.addPassthroughCopy({ "src/static/robots.txt": "robots.txt" })
+  eleventyConfig.addPassthroughCopy({ "src/static/CNAME": "CNAME" })
+  eleventyConfig.addPassthroughCopy({ "src/static/_redirects": "_redirects" })
+  eleventyConfig.addPassthroughCopy({ "src/static/keybase.txt": "keybase.txt" })
+
   eleventyConfig.addBundle("css", {
     toFileDirectory: "assets"
   })
