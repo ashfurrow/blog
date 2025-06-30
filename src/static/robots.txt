@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-sitemap: https://ashfurrow/sitemap.xml
+sitemap: https://ashfurrow.com/sitemap.xml

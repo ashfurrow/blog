@@ -126,4 +126,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("rfc822Date", (dateObj) => {
     return new Date(dateObj).toUTCString()
   })
+
+  /**
+   * Formats a date object to ISO 8601 format for XML sitemaps.
+   * @param {Date} dateObj
+   * @returns {string}
+   */
+  eleventyConfig.addFilter("xmlDate", (dateObj) => {
+    return new Date(dateObj).toISOString()
+  })
 }
