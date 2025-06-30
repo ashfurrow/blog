@@ -1,5 +1,3 @@
-import { DateTime } from "luxon"
-
 /**
  * Adds custom filters to the Eleventy config.
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig - The Eleventy configuration object.
@@ -31,18 +29,24 @@ export default function (eleventyConfig) {
    * @returns {string}
    */
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-    // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-    return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy")
+    const date = new Date(dateObj)
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "2-digit",
+      timeZone: zone || "UTC"
+    }
+    return date.toLocaleDateString("en-US", options)
   })
 
   /**
-   * Formats a date object into an HTML date string (yyyy-LL-dd).
+   * Formats a date object into an HTML date string (yyyy-mm-dd).
    * @param {Date} dateObj
    * @returns {string}
    */
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd")
+    const date = new Date(dateObj)
+    return date.toISOString().split("T")[0]
   })
 
   /**

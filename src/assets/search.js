@@ -3,7 +3,6 @@ class SiteSearchApp {
     this.searchInput = document.getElementById("search-input")
     this.searchResults = document.getElementById("search-results")
     this.searchLoader = document.getElementById("search-loader")
-    this.searchStatus = document.getElementById("search-status")
     this.index = null
     this.documents = []
 
@@ -13,7 +12,13 @@ class SiteSearchApp {
   async init() {
     // Show loading indicator
     this.searchLoader.style.display = "block"
-    this.searchStatus.textContent = "Downloading search index..."
+
+    // Check for query parameter and set initial search value
+    const urlParams = new URLSearchParams(window.location.search)
+    const initialQuery = urlParams.get("q")
+    if (initialQuery) {
+      this.searchInput.value = initialQuery
+    }
 
     try {
       // Fetch search index
@@ -36,7 +41,6 @@ class SiteSearchApp {
 
       // Hide loading indicator
       this.searchLoader.style.display = "none"
-      this.searchStatus.textContent = ""
 
       // Auto-focus search input
       this.searchInput.focus()
@@ -46,14 +50,13 @@ class SiteSearchApp {
         this.search(e.target.value)
       })
 
-      // Check if there's already a query in the input
+      // Check if there's already a query in the input (from URL parameter or otherwise)
       if (this.searchInput.value) {
         this.search(this.searchInput.value)
       }
     } catch (error) {
       console.error("Failed to load search index:", error)
       this.searchLoader.style.display = "none"
-      this.searchStatus.textContent = "Failed to load search index. Please try again later."
     }
   }
 
@@ -78,8 +81,7 @@ class SiteSearchApp {
           return `
             <li class="search-result-item">
               <a href="${doc.url}">${doc.title}</a>
-              &nbsp;&nbsp;
-              <span style="color: rgba(0, 0, 0, 0.5);">${doc.date}</span>
+              <span class="search-result-date">${new Date(doc.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
             </li>
           `
         })
