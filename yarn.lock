@@ -81,6 +81,13 @@
     debug "^4.4.0"
     posthtml "^0.16.6"
 
+"@11ty/eleventy-plugin-syntaxhighlight@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-5.0.1.tgz#7af582e85ccf2a6b42a8c35736aaffcec0b51694"
+  integrity sha512-xDPF3Ay38XlmWZe9ER0SLtMmNah7olUBlGORhUiCUkPh3jYGVCDTDayi4tbFI9Dxha8NwKlfBZ2FXM/s3aZzAg==
+  dependencies:
+    prismjs "^1.30.0"
+
 "@11ty/eleventy-utils@^2.0.0", "@11ty/eleventy-utils@^2.0.1", "@11ty/eleventy-utils@^2.0.2", "@11ty/eleventy-utils@^2.0.7":
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-utils/-/eleventy-utils-2.0.7.tgz#40fa604864d64e98412f4f068a34379b471beddd"
@@ -1179,6 +1186,11 @@ prettier@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.6.0.tgz#18ec98d62cb0757a5d4eab40253ff3e6d0fc8dea"
   integrity sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==
+
+prismjs@^1.30.0:
+  version "1.30.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.30.0.tgz#d9709969d9d4e16403f6f348c63553b19f0975a9"
+  integrity sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==
 
 prr@~1.0.1:
   version "1.0.1"

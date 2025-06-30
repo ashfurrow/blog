@@ -1,6 +1,7 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
 import bundlePlugin from "@11ty/eleventy-plugin-bundle"
 import rssPlugin from "@11ty/eleventy-plugin-rss"
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
 
 import Image from "@11ty/eleventy-img"
 const { eleventyImageTransformPlugin } = Image
@@ -23,6 +24,34 @@ export default async function (eleventyConfig) {
 
   // RSS Plugin - provides filters like dateToRfc822, absoluteUrl, htmlToAbsoluteUrls
   eleventyConfig.addPlugin(rssPlugin)
+
+  // Syntax highlighting plugin with shell alias (matching old Gatsby config)
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    alwaysWrapLineHighlights: false,
+    lineSeparator: "\n",
+    preAttributes: {},
+    codeAttributes: {},
+    // Default to plaintext for code blocks without language specified
+    errorOnInvalidLanguage: false,
+    init: function ({ Prism }) {
+      // Add shell alias for sh (matching old Gatsby config)
+      Prism.languages.shell = Prism.languages.bash
+      // Add plaintext language (no highlighting, but gets the styling)
+      Prism.languages.plaintext = {}
+    }
+  })
+
+  // Transform code blocks without language to use plaintext
+  eleventyConfig.addTransform("plaintext-code-blocks", function (content, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+      // Replace <pre><code> (without language class) with <pre class="language-plaintext"><code class="language-plaintext">
+      return content.replace(
+        /<pre><code>([^]*?)<\/code><\/pre>/g,
+        '<pre class="language-plaintext"><code class="language-plaintext">$1</code></pre>'
+      )
+    }
+    return content
+  })
 
   eleventyConfig.addPassthroughCopy("src/assets")
   eleventyConfig.addPassthroughCopy({ "node_modules/lunr/lunr.js": "assets/lunr.js" })
