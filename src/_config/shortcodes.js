@@ -113,7 +113,7 @@ export default function (eleventyConfig) {
       const images = metadata[firstFormat]
       return images[0].url
     } catch (error) {
-      console.error(`Error processing banner image ${imagePath}:`, error)
+      console.error(`Error processing banner image ${bannerImageSourcePath}:`, error)
       return null
     }
   })

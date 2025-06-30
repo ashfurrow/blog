@@ -1,9 +1,29 @@
+/**
+ * @typedef {Object} SearchDocument
+ * @property {string} id - Unique identifier for the document
+ * @property {string} title - Document title
+ * @property {string} content - Document content
+ * @property {string} date - Document date
+ * @property {string} url - Document URL
+ */
+
+/**
+ * @typedef {Object} LunrSearchResult
+ * @property {string} ref - Reference to the document ID
+ * @property {number} score - Search relevance score
+ */
+
 class SiteSearchApp {
   constructor() {
+    /** @type {HTMLInputElement|null} */
     this.searchInput = document.getElementById("search-input")
+    /** @type {HTMLElement|null} */
     this.searchResults = document.getElementById("search-results")
+    /** @type {HTMLElement|null} */
     this.searchLoader = document.getElementById("search-loader")
+    /** @type {lunr.Index|null} */
     this.index = null
+    /** @type {SearchDocument[]} */
     this.documents = []
 
     this.init()
@@ -60,6 +80,7 @@ class SiteSearchApp {
     }
   }
 
+  /** @param {string} query */
   search(query) {
     if (!this.index || !query.trim()) {
       this.searchResults.innerHTML = ""

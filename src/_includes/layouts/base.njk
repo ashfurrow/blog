@@ -39,8 +39,8 @@
 					<li><a href="/books">Books</a></li>
 					<li><a href="/portfolio">Portfolio</a></li>
 					<li><a href="/speaking">Speaking</a></li>
-					<li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-					<li><a href="/feed.xml"><i class="fa-solid fa-square-rss"></i></a></li>
+					<li><a href="/search" aria-label="Search posts"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+					<li><a href="/feed.xml" aria-label="RSS Feed"><i class="fa-solid fa-square-rss"></i></a></li>
 				</ul>
 				<button class="hamburger" aria-label="Toggle menu">
 					<i class="fa-solid fa-bars hamburger-icon hamburger-bars"></i>
@@ -60,9 +60,7 @@
 			</div>
 		</nav>
 
-		<header 
-		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{% bannerImage %}'); background-size: cover; background-position: top; background-repeat: no-repeat no-repeat;"
-		>
+		<header class="site-header" style="--banner-image: url('{% bannerImage %}')">
 			<div class="header-content{% if layout == "layouts/post.njk" %} left{% endif %}">
 				<h1>{{title}}</h1>
 				{% if subtitle %}
@@ -113,13 +111,17 @@
 
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 		<script>
-			// Navbar Controller - Vanilla JavaScript
 			class NavbarController {
 				constructor() {
+					/** @type {HTMLElement|null} */
 					this.navbar = document.querySelector('.navbar')
+					/** @type {HTMLElement|null} */
 					this.hamburger = document.querySelector('.hamburger')
+					/** @type {HTMLElement|null} */
 					this.mobileMenu = document.querySelector('.mobile-menu')
+					/** @type {NodeListOf<HTMLAnchorElement>} */
 					this.mobileLinks = document.querySelectorAll('.mobile-links a')
+					/** @type {boolean} */
 					this.isMenuOpen = false
 					this.init()
 				}

@@ -5,8 +5,8 @@
 export default function (eleventyConfig) {
   /**
    * Parses a date string into a Date object.
-   * @param {string} dateString
-   * @returns {Date}
+   * @param {string} dateString - The date string to parse
+   * @returns {Date} The parsed Date object
    */
   eleventyConfig.addFilter("parseDate", function (dateString) {
     return new Date(dateString)
@@ -14,8 +14,8 @@ export default function (eleventyConfig) {
 
   /**
    * Parses a JSON string.
-   * @param {string} str
-   * @returns {any}
+   * @param {string} str - The JSON string to parse
+   * @returns {any} The parsed JSON object
    */
   eleventyConfig.addFilter("fromJson", function (str) {
     return JSON.parse(str)

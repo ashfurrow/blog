@@ -68,5 +68,5 @@ Prelaunch:
 - [ ] Validate generated CSS and HTML
 - [ ] Double-check RSS feeds (contents' permalink, URLs)
 - [ ] Review CSS, site.js to make sure I understand everything
-- [ ]
+- [ ] Re-apply any commits from `main` onto the migration branch (new articles, Ole's PR, etc)
 - [ ]

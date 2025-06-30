@@ -72,7 +72,7 @@ main > * {
 /* Shortcodes */
 .wide {
   grid-column: 2 / 12;
-  margin: 0 auto 1.66rem auto; /* TODO: What is this styling? All the content spacing needs a review. */ 
+  margin: 0 auto 1.66rem auto;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -184,7 +184,6 @@ main > * {
 }
 .pagination {
   margin: 0;
-  /* overflow: auto; */
 }
 .pagination a {
   text-decoration: none;
@@ -310,9 +309,7 @@ input, textarea {
   padding: .25rem 1rem;
 }
 input:focus, textarea:focus {
-  &:focus {
-    outline: none;
-  }
+  outline: none;
 }
 .textRight {
   text-align: right;
@@ -339,6 +336,30 @@ header {
   position: relative;
   text-align: center;
   z-index: 5;
+}
+
+.site-header {
+  background-image: var(--banner-image);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+.site-header > * {
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 1200px) {
   header {
