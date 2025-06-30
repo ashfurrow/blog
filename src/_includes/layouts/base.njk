@@ -1,11 +1,33 @@
+{% set isPost = layout == 'layouts/post.njk' %}
 <!doctype html>
 <html lang="{{ metadata.language }}">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
-		{# <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}"> #}
+		<meta name="image" content="{{ metadata.url }}{{ banner or metadata.banner }}">
+		<meta name="theme-color" content="{{ metadata.themeColor }}">
+		
+		<!-- Open Graph meta tags -->
+		<meta property="og:locale" content="{{ metadata.ogLanguage }}">
+		<meta property="og:site_name" content="{{ metadata.title }}">
+		<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+		<meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+		<meta property="og:title" content="{{ title or metadata.title }}">
+		<meta property="og:description" content="{{ description or metadata.description }}">
+		<meta property="og:image" content="{{ metadata.url }}{{ banner or metadata.banner }}">
+		
+		<!-- Twitter Card meta tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="{{ metadata.author.twitter }}">
+		<meta name="twitter:title" content="{{ title or metadata.title }}">
+		<meta name="twitter:url" content="{{ metadata.url }}">
+		<meta name="twitter:description" content="{{ description or metadata.description }}">
+		<meta name="twitter:image" content="{{ metadata.url }}{{ banner or metadata.banner }}">
+		
+		<!-- RSS Feed -->
+		<link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ metadata.titleAlt }}">
 
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
 		<link rel="manifest" href="/assets/manifest.webmanifest" crossorigin="anonymous">
@@ -25,6 +47,48 @@
 		<script defer src="/assets/fontawesome/solid.js"></script>
 		<script defer src="/assets/fontawesome/fontawesome.js"></script>
 		<link rel="stylesheet" href="https://use.typekit.net/uhm7xdd.css">
+		
+		<!-- Structured Data (JSON-LD) -->
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "{% if isPost %}BlogPosting{% else %}WebSite{% endif %}",
+			"@id": "{{ metadata.url }}{{ page.url }}",
+			"url": "{{ metadata.url }}{{ page.url }}",
+			"name": "{{ title or metadata.title }}",
+			"alternateName": "{{ metadata.titleAlt }}",
+			{% if isPost %}
+			"headline": "{{ title }}",
+			"image": {
+				"@type": "ImageObject",
+				"url": "{{ metadata.url }}{{ banner or metadata.banner }}"
+			},
+			"description": "{{ metadata.description }}",
+			"datePublished": "{{ date | htmlDateString }}",
+			"dateModified": "{{ date | htmlDateString }}",
+			"author": {
+				"@type": "Person",
+				"name": "{{ metadata.author.name }}",
+				"url": "{{ metadata.url }}",
+				"image": "{{ metadata.author.image }}",
+				"sameAs": {{ metadata.author.social | toJson }}
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "{{ metadata.author.name }}",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "{{ metadata.url }}{{ metadata.logo }}"
+				}
+			},
+			"isPartOf": "{{ metadata.url }}",
+			"mainEntityOfPage": {
+				"@type": "WebSite",
+				"@id": "{{ metadata.url }}"
+			}
+			{% endif %}
+		}
+		</script>
 	</head>
 	<body>
 		<nav class="navbar" data-scrolled="false" data-menu-open="false">
@@ -61,13 +125,13 @@
 		</nav>
 
 		<header class="site-header" style="--banner-image: url('{% bannerImage %}')">
-			<div class="header-content{% if layout == "layouts/post.njk" %} left{% endif %}">
+			<div class="header-content{% if isPost %} left{% endif %}">
 				<h1>{{title}}</h1>
 				{% if subtitle %}
 					<hr class="header-divider">
 					<div class="header-subtitle">{{subtitle}}</div>
 				{% endif %}
-				{% if layout == "layouts/post.njk" and date %}
+				{% if isPost and date %}
 					<hr class="header-divider">
 					<div class="header-date">{{ date | readableDate }}</div>
 				{% endif %}

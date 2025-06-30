@@ -12,7 +12,7 @@
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
 - [ ] RSS feeds
 - [ ] Sitemap
-- [ ]
+- [ ] Replace https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg with new image of myself
 - [ ]
 - [ ]
 - [ ]
