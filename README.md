@@ -12,9 +12,9 @@
 - [x] Article pagination
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
-- [ ] RightImage
+- [x] RightImage
 - [x] Footer icons too big
-- [ ]
+- [ ] Banner too short
 - [ ]
 - [ ]
 - [ ]
@@ -66,6 +66,6 @@ Prelaunch:
 - [ ] Update README from the old_site
 - [ ] Validate generated CSS and HTML
 - [ ] Double-check RSS feeds (contents' permalink, URLs)
-- [ ]
+- [ ] Review CSS, site.js to make sure I understand everything
 - [ ]
 - [ ]

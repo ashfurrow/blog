@@ -222,4 +222,12 @@ export default function (eleventyConfig) {
     const relativePath = path.relative(".", inputPath)
     return `https://github.com/ashfurrow/blog/tree/main/${relativePath}`
   })
+
+  eleventyConfig.addPairedShortcode("rightImage", function (content, src, alt) {
+    // Wrap in a container to overcome CSS grid layout that prevents floating
+    return `<div class="right-image-container">
+      <img src="${src}" alt="${alt}" class="right-image" loading="lazy" eleventy:ignore />
+      ${content}
+    </div>`
+  })
 }

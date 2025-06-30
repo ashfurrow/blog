@@ -41,11 +41,16 @@ export default async function (eleventyConfig) {
     // Output formats for each image.
     formats: ["auto"],
     failOnError: false,
-    htmlOptions: {
-      imgAttributes: {
-        loading: "lazy",
-        decoding: "async"
+    // Skip processing for images with data-no-transform attribute
+    transformOnRequest: (src, attributes) => {
+      if (attributes["data-no-transform"] !== undefined) {
+        return false
       }
+      return true
+    },
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async"
     },
     sharpOptions: {
       animated: true

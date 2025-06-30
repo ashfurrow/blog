@@ -100,6 +100,29 @@ main > * {
   }
 }
 
+/* RightImage */
+.right-image-container {
+  /* Create a block formatting context that allows floating to work within CSS grid */
+  overflow: hidden;
+}
+
+.right-image {
+  float: right;
+  padding-left: 1rem;
+  clear: both;
+  max-width: 30%; 
+}
+
+
+@media (max-width: 600px) {
+  .right-image {
+    float: initial;
+    max-width: 100% !important;
+    padding-left: 0;
+    margin: 1rem 0;
+  }
+}
+
 .youtube-embed,
 .video-embed,
 .speakerdeck-embed {
@@ -242,7 +265,7 @@ a {
   text-decoration: none;
   transition: all none;
 }
-h2, h3 a {
+h2 a, h3 a {
   color: var(--grey-dark);
 }
 h1, h2, h3 {
