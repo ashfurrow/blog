@@ -1,0 +1,44 @@
+{#
+  Talk Tile Partial
+  Usage: {% include "partials/talk-tile.njk", talk: talkObject %}
+#}
+<li class="talk-tile">
+  <div class="talk-details">
+    <h3 class="talk-title">
+      {%- if talk.url %}
+        <a href="{{ talk.url }}" class="talk-link">{{ talk.name }}</a>
+      {%- else %}
+        {{ talk.name }}
+      {%- endif %}
+    </h3>
+    
+    <div class="talk-meta">
+      <div class="talk-conference">{{ talk.conference }}</div>
+      <div class="talk-location">{{ talk.location }}</div>
+      <div class="talk-dates">{{ talk.dates }}</div>
+    </div>
+    
+    {%- if talk.slides or talk.video or talk.code or talk.blogPost %}
+      <div class="talk-links">
+        {%- if talk.slides %}
+          <a href="{{ talk.slides }}" class="talk-resource">Slides</a>
+        {%- endif %}
+        {%- if talk.video %}
+          <a href="{{ talk.video }}" class="talk-resource">Video</a>
+        {%- endif %}
+        {%- if talk.code %}
+          <a href="{{ talk.code }}" class="talk-resource">Code</a>
+        {%- endif %}
+        {%- if talk.blogPost %}
+          <a href="{{ talk.blogPost }}" class="talk-resource">Blog Post</a>
+        {%- endif %}
+      </div>
+    {%- endif %}
+  </div>
+  
+  {%- if talk.image %}
+    <div class="talk-image">
+      <img src="/assets/speaking/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
+    </div>
+  {%- endif %}
+</li>

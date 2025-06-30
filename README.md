@@ -3,19 +3,20 @@
 ## TODO
 
 - [ ] Timeline posts
-- [ ] Speaking
+- [x] Speaking
 - [ ] Portfolio
+- [ ] Speaking page attribution link is wrong
+- [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
+- [ ] Double-check the layout for consistency, font sizes in menu bar, etc
+- [ ] Chat post
+- [ ]
+- [ ]
 - [x] Home page
 - [x] Code syntax highlighting w/ prisma
 - [x] HTML head SEO stuff
-- [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
-- [ ] Double-check the layout for consistency, font sizes in menu bar, etc
 - [x] RSS feeds
 - [x] Sitemap
 - [x] Replace https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg with new image of myself
-- [ ]
-- [ ]
-- [ ]
 - [x] Search
 - [x] Corrections GitHub link on posts
 - [x] Article pagination
