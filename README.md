@@ -13,7 +13,7 @@
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
 - [ ] RightImage
-- [ ] Footer icons too big
+- [x] Footer icons too big
 - [ ]
 - [ ]
 - [ ]
