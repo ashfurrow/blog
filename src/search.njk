@@ -1,0 +1,27 @@
+---
+layout: layouts/page.njk
+title: Search
+banner: /assets/search.jpg
+---
+
+<div style="margin-top: 1rem;">
+  <div style="position: relative;">
+    <input 
+      type="text" 
+      id="search-input" 
+      class="search-input" 
+      placeholder="Search posts..."
+      style="box-sizing: border-box;"
+    >
+    <div id="search-loader" class="search-loader" style="display: none;">
+      <div class="search-spinner"></div>
+    </div>
+  </div>
+  <ul id="search-results" class="search-results-list">
+    <!-- Results will be populated here -->
+  </ul>
+  <div id="search-status" class="search-status"></div>
+</div>
+
+<script src="/assets/lunr.js"></script>
+<script src="/assets/search.js"></script>

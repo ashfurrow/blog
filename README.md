@@ -12,7 +12,10 @@
 - [x] Article pagination
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
-- [ ] Unexpected EOF on fontawesome JS
+- [ ] RightImage
+- [ ] Footer icons too big
+- [ ]
+- [ ]
 - [ ]
 - [ ]
 - [ ]
