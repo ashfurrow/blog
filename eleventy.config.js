@@ -1,5 +1,6 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
 import bundlePlugin from "@11ty/eleventy-plugin-bundle"
+import rssPlugin from "@11ty/eleventy-plugin-rss"
 
 import Image from "@11ty/eleventy-img"
 const { eleventyImageTransformPlugin } = Image
@@ -19,6 +20,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(bundlePlugin)
   eleventyConfig.addPlugin(pluginFilters)
   eleventyConfig.addPlugin(pluginShortcodes)
+
+  // RSS Plugin - provides filters like dateToRfc822, absoluteUrl, htmlToAbsoluteUrls
+  eleventyConfig.addPlugin(rssPlugin)
 
   eleventyConfig.addPassthroughCopy("src/assets")
   eleventyConfig.addPassthroughCopy({ "node_modules/lunr/lunr.js": "assets/lunr.js" })

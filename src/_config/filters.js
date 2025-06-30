@@ -117,4 +117,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("toJson", (content) => {
     return JSON.stringify(content)
   })
+
+  /**
+   * Formats a date object to RFC 822 format in GMT.
+   * @param {Date} dateObj
+   * @returns {string}
+   */
+  eleventyConfig.addFilter("rfc822Date", (dateObj) => {
+    return new Date(dateObj).toUTCString()
+  })
 }

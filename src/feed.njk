@@ -1,0 +1,26 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+layout: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ash Furrow's Blog</title>
+    <link>{{ metadata.url }}</link>
+    <atom:link href="{{ metadata.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    <description>{{ metadata.description }}</description>
+    <language>{{ metadata.language }}</language>
+    {%- for post in collections.posts | reverse | head(10) %}
+    {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ absolutePostUrl }}</link>
+      <description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+      <pubDate>{{ post.date | rfc822Date }}</pubDate>
+      <dc:creator>{{ metadata.author.name }}</dc:creator>
+      <guid>{{ absolutePostUrl }}</guid>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
