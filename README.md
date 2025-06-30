@@ -10,7 +10,7 @@
 - [x] HTML head SEO stuff
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
-- [ ] RSS feeds
+- [x] RSS feeds
 - [ ] Sitemap
 - [ ] Replace https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg with new image of myself
 - [ ]
@@ -68,7 +68,7 @@ Prelaunch:
 
 - [x] Update package.json from old_site
 - [ ] Update README from the old_site
-- [ ] Validate generated CSS and HTML
+- [ ] Validate generated CSS, HTML, and feeds
 - [ ] Double-check RSS feeds (contents' permalink, URLs)
 - [ ] Review CSS, site.js to make sure I understand everything
 - [ ] Re-apply any commits from `main` onto the migration branch (new articles, Ole's PR, etc)

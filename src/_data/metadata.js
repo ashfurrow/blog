@@ -9,7 +9,7 @@ export default {
   author: {
     name: "Ash Furrow",
     url: "https://ashfurrow.com/about/",
-    image: "https://static.ashfurrow.com/ashfurrow_thumbsup_square.jpeg",
+    image: "https://static.ashfurrow.com/ashfurrow.jpeg",
     twitter: "@ashfurrow",
     social: [
       "https://twitter.com/ashfurrow",
