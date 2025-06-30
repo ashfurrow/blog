@@ -33,7 +33,7 @@ export default function (eleventyConfig) {
     const options = {
       year: "numeric",
       month: "long",
-      day: "2-digit",
+      day: "numeric",
       timeZone: zone || "UTC"
     }
     return date.toLocaleDateString("en-US", options)

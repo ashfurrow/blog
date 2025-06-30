@@ -6,21 +6,21 @@
 - [ ] Speaking
 - [ ] Portfolio
 - [ ] Home page
-- [x] Search
 - [ ] Code syntax highlighting w/ prisma
 - [ ] HTML head SEO stuff
-- [x] Corrections GitHub link on posts
-- [x] Article pagination
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied
 - [ ] Double-check the layout for consistency, font sizes in menu bar, etc
+- [ ]
+- [ ]
+- [ ]
+- [x] Search
+- [x] Corrections GitHub link on posts
+- [x] Article pagination
 - [x] RightImage
 - [x] Footer icons too big
-- [ ] Banner too short
+- [x] Banner too short
 - [x] Titles
-- [ ] Grouped posts date formate and ordering is wrong
-- [ ]
-- [ ]
-- [ ]
+- [x] Grouped posts date formate and ordering is wrong
 - [x] Import MDX shortcodes
 - [x] Favicon
 - [x] Pages structure

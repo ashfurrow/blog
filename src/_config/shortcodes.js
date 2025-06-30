@@ -59,7 +59,7 @@ export default function (eleventyConfig) {
               posts: monthPosts.sort((a, b) => {
                 const dateA = new Date(a.date)
                 const dateB = new Date(b.date)
-                return dateA - dateB // Most recent posts come first within month
+                return dateB - dateA // Most recent posts come first within month
               })
             }
           })

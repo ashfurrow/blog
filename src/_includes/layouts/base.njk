@@ -62,21 +62,22 @@
 
 		<header 
 		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{% bannerImage %}'); background-size: cover; background-position: top; background-repeat: no-repeat no-repeat;"
-		  {% if layout == "layouts/post.njk" %}class="left"{% endif %}
 		>
+			<div class="header-content{% if layout == "layouts/post.njk" %} left{% endif %}">
+				<h1>{{title}}</h1>
+				{% if subtitle %}
+					<hr class="header-divider">
+					<div class="header-subtitle">{{subtitle}}</div>
+				{% endif %}
+				{% if layout == "layouts/post.njk" and date %}
+					<hr class="header-divider">
+					<div class="header-date">{{ date | readableDate }}</div>
+				{% endif %}
+			</div>
 			{% if bannerAttribution %}
 				<a href="{{ bannerAttribution }}" class="banner-attribution">
 					<i class="fa-solid fa-image banner-icon"></i>
 				</a>
-			{% endif %}
-			<h1>{{title}}</h1>
-			{% if subtitle %}
-				<hr class="header-divider">
-				<div class="header-subtitle">{{subtitle}}</div>
-			{% endif %}
-			{% if layout == "layouts/post.njk" and date %}
-				<hr class="header-divider">
-				<div class="header-date">{{ date | readableDate }}</div>
 			{% endif %}
 		</header>
 	

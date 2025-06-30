@@ -346,29 +346,33 @@ header {
     padding-bottom: 4rem;
   }
 }
-header.left {
+.header-content {
+  text-align: center;
+}
+
+.header-content.left {
   text-align: left;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
-header.left > * {
+.header-content.left > * {
   grid-column: 3 / 11;
 }
 
 @media (max-width: 1200px) {
-  header.left > * {
+  .header-content.left > * {
     grid-column: 2 / 12;
   }
 }
 
 @media (max-width: 600px) {
-  header.left > * {
+  .header-content.left > * {
     grid-column: 1 / 13;
   }
-  header.left {
+  .header-content.left {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -387,7 +391,7 @@ header h1 {
   border: none;
 }
 
-header.left .header-divider {
+.header-content.left .header-divider {
   margin: 0.5rem 0; /* Left-aligned for posts */
 }
 
@@ -414,6 +418,7 @@ header.left .header-divider {
   right: env(safe-area-inset-right);
   color: rgba(255, 255, 255, 0.5);
   padding: 1.25rem;
+  z-index: 10;
 }
 .banner-attribution:hover {
   color: rgba(255, 255, 255, 0.8);
