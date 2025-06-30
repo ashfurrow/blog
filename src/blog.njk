@@ -10,28 +10,13 @@ title: Blog Archive
   <div class="group">
     <h2>{{ group.name }}</h2>
     {%- for post in group.posts %}
-      <article>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <time datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate("DDD") }}</time>
-      </li>
+      <article class="post-item">
+        <a href="{{ post.url }}" class="post-link">
+          <span class="post-title">{{ post.title }}</span>
+          <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate("DDD") }}</time>
+        </a>
+      </article>
     {%- endfor %}
   </div>
 {%- endfor %}
-
-<style>
-  .group {
-    margin: 0;
-    margin-bottom: 2rem;
-  }
-  .group h2 {
-    margin-bottom: 0.5rem; 
-    font-size: 1.5rem;
-  }
-  .group a {
-    margin-right: 0.5rem;
-  }
-  time {
-    color: rgba(0, 0, 0, 0.5);
-  }
-</style>
   

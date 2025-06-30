@@ -814,31 +814,48 @@ footer .attribution {
   }
 }
 
-/* Homepage Recent Posts */
+/* Shared Post List Styling */
+.post-list,
 .recent-posts {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
+.post-item,
 .recent-post-item {
   margin: 0;
   padding: 0;
 }
 
+.post-link,
 .recent-post-link {
   text-decoration: none;
   color: var(--primary);
 }
 
+.post-link:hover,
 .recent-post-link:hover {
   text-decoration: underline;
 }
 
+.post-title,
 .recent-post-title {
   margin-right: 0.5rem;
 }
 
+.post-date,
 .recent-post-date {
   color: rgba(0, 0, 0, 0.5);
+}
+
+/* Archive Groups */
+.group {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.group h2 {
+  margin-bottom: 0.5rem; 
+  font-size: 1.5rem;
 }
