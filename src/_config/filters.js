@@ -95,4 +95,22 @@ export default function (eleventyConfig) {
    * @returns {string[]}
    */
   eleventyConfig.addFilter("sortAlphabetically", (strings) => (strings || []).sort((b, a) => b.localeCompare(a)))
+
+  /**
+   * Strips HTML tags from a string.
+   * @param {string} content
+   * @returns {string}
+   */
+  eleventyConfig.addFilter("striptags", (content) => {
+    return content.replace(/<[^>]*>/g, "")
+  })
+
+  /**
+   * Converts content to JSON properly.
+   * @param {any} content
+   * @returns {string}
+   */
+  eleventyConfig.addFilter("toJson", (content) => {
+    return JSON.stringify(content)
+  })
 }

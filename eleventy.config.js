@@ -1,4 +1,5 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
+import bundlePlugin from "@11ty/eleventy-plugin-bundle"
 
 import Image from "@11ty/eleventy-img"
 const { eleventyImageTransformPlugin } = Image
@@ -15,11 +16,13 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(IdAttributePlugin)
   eleventyConfig.addPlugin(HtmlBasePlugin)
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin)
+  eleventyConfig.addPlugin(bundlePlugin)
   eleventyConfig.addPlugin(pluginFilters)
   eleventyConfig.addPlugin(pluginShortcodes)
 
   eleventyConfig.addPassthroughCopy("src/index.css")
   eleventyConfig.addPassthroughCopy("src/assets")
+  eleventyConfig.addPassthroughCopy({ "node_modules/lunr/lunr.js": "assets/lunr.js" })
 
   eleventyConfig.addBundle("css", {
     toFileDirectory: "assets"

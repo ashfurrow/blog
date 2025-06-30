@@ -5,7 +5,7 @@
 - [ ] Timeline posts
 - [ ] Speaking
 - [ ] Portfolio
-- [ ] Search
+- [x] Search
 - [ ] Code syntax highlighting w/ prisma
 - [ ] HTML head SEO stuff
 - [x] Corrections GitHub link on posts
