@@ -5,7 +5,7 @@
 - [ ] Timeline posts
 - [ ] Speaking
 - [ ] Portfolio
-- [ ] Home page
+- [x] Home page
 - [x] Code syntax highlighting w/ prisma
 - [x] HTML head SEO stuff
 - [ ] Instagram embeds aren't working and the blockquote styling is being misapplied

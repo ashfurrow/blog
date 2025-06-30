@@ -757,3 +757,88 @@ footer a.icon:hover {
 footer .attribution {
   font-size: 0.75rem;
 }
+
+/* Homepage Sections */
+.section-title {
+  margin-bottom: 1rem;
+}
+
+/* Homepage Featured Posts */
+.featured-posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+  align-items: stretch;
+}
+
+.featured-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-post a {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--header-font-family);
+  font-weight: bold;
+}
+
+.featured-post-title {
+  display: block;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .featured-posts {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .featured-post-title {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+/* Homepage Recent Posts */
+.recent-posts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-post-item {
+  margin: 0;
+  padding: 0;
+}
+
+.recent-post-link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.recent-post-link:hover {
+  text-decoration: underline;
+}
+
+.recent-post-title {
+  margin-right: 0.5rem;
+}
+
+.recent-post-date {
+  color: rgba(0, 0, 0, 0.5);
+}
