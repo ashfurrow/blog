@@ -5,6 +5,7 @@
 - [ ] Timeline posts
 - [ ] Speaking
 - [ ] Portfolio
+- [ ] Home page
 - [x] Search
 - [ ] Code syntax highlighting w/ prisma
 - [ ] HTML head SEO stuff
@@ -15,8 +16,8 @@
 - [x] RightImage
 - [x] Footer icons too big
 - [ ] Banner too short
-- [ ]
-- [ ]
+- [x] Titles
+- [ ] Grouped posts date formate and ordering is wrong
 - [ ]
 - [ ]
 - [ ]

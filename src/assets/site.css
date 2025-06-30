@@ -348,10 +348,65 @@ header {
 }
 header.left {
   text-align: left;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+header.left > * {
+  grid-column: 3 / 11;
+}
+
+@media (max-width: 1200px) {
+  header.left > * {
+    grid-column: 2 / 12;
+  }
+}
+
+@media (max-width: 600px) {
+  header.left > * {
+    grid-column: 1 / 13;
+  }
+  header.left {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 header h1 {
   color: var(--white);
+  margin-bottom: 0;
 }
+
+.header-divider {
+  color: var(--white);
+  background: var(--white);
+  width: 5rem;
+  height: 3px;
+  margin: 0.5rem auto; /* Center-aligned by default */
+  border: none;
+}
+
+header.left .header-divider {
+  margin: 0.5rem 0; /* Left-aligned for posts */
+}
+
+.header-subtitle {
+  color: var(--white);
+  font-family: var(--header-font-family);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+
+.header-date {
+  color: var(--white);
+  font-family: var(--header-font-family);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+
 .banner-attribution {
   text-decoration: none;
   position: absolute;
@@ -407,6 +462,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   height: 2.5rem;
+  font-size: 0.75rem;
 }
 .navbar-logo {
   display: flex;

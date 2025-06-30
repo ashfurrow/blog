@@ -62,7 +62,7 @@
 
 		<header 
 		  style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 0% 0% / cover, url('{% bannerImage %}'); background-size: cover; background-position: top; background-repeat: no-repeat no-repeat;"
-		  {% if subtitle is defined %}class="left"{% endif %}
+		  {% if layout == "layouts/post.njk" %}class="left"{% endif %}
 		>
 			{% if bannerAttribution %}
 				<a href="{{ bannerAttribution }}" class="banner-attribution">
@@ -70,7 +70,14 @@
 				</a>
 			{% endif %}
 			<h1>{{title}}</h1>
-			{# TODO: Header for blog posts #}
+			{% if subtitle %}
+				<hr class="header-divider">
+				<div class="header-subtitle">{{subtitle}}</div>
+			{% endif %}
+			{% if layout == "layouts/post.njk" and date %}
+				<hr class="header-divider">
+				<div class="header-date">{{ date | readableDate }}</div>
+			{% endif %}
 		</header>
 	
 		<main>
