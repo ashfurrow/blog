@@ -1,5 +1,4 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
-import bundlePlugin from "@11ty/eleventy-plugin-bundle"
 import rssPlugin from "@11ty/eleventy-plugin-rss"
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
 
@@ -18,7 +17,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(IdAttributePlugin)
   eleventyConfig.addPlugin(HtmlBasePlugin)
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin)
-  eleventyConfig.addPlugin(bundlePlugin)
   eleventyConfig.addPlugin(pluginFilters)
   eleventyConfig.addPlugin(pluginShortcodes)
 
@@ -61,15 +59,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static/CNAME": "CNAME" })
   eleventyConfig.addPassthroughCopy({ "src/static/_redirects": "_redirects" })
   eleventyConfig.addPassthroughCopy({ "src/static/keybase.txt": "keybase.txt" })
-
-  eleventyConfig.addBundle("css", {
-    toFileDirectory: "assets"
-  })
-
-  eleventyConfig.addBundle("js", {
-    toFileDirectory: "assets",
-    bundleHtmlContentFromSelector: "script"
-  })
 
   eleventyConfig.addShortcode("currentBuildDate", () => {
     return new Date().toISOString()
