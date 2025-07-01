@@ -4,7 +4,7 @@
       {%- if talk.slides %}
         <a href="{{ talk.slides }}" class="talk-image-link">
           {# eleventy:ignore #}
-          <img src="/assets/speaking/talks/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
+          <img eleventy:ignore src="/assets/speaking/talks/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
           {# /eleventy:ignore #}
           <div class="talk-image-overlay">
             <i class="fa-solid fa-file"></i>
@@ -12,7 +12,7 @@
         </a>
       {%- else %}
         {# eleventy:ignore #}
-        <img src="/assets/speaking/talks/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
+        <img eleventy:ignore src="/assets/speaking/talks/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
         {# /eleventy:ignore #}
       {%- endif %}
     </div>
