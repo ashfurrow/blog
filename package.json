@@ -13,6 +13,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
+    "deploy": "yarn build && netlify deploy",
     "format": "prettier --write",
     "prepare": "husky"
   },
