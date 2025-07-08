@@ -744,9 +744,8 @@ header h1 {
 /* Footer */
 footer {
   text-align: center;
-  padding: 0 1rem 3rem 1rem;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+  margin: 3rem 0;
 }
 footer a.icon {
   color: var(--grey-default); 
@@ -756,6 +755,7 @@ footer a.icon:hover {
 }
 footer .attribution {
   font-size: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 /* Homepage Sections */
