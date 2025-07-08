@@ -27,7 +27,7 @@
 }
 html {
   font-size: var(--base-font-size);
-  font-weight: 100;
+  font-weight: normal;
   font-style: normal;
 }
 body {

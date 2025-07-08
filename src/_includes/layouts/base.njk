@@ -175,6 +175,10 @@
 			</div>
 		</footer>
 
+		{% if pageJavaScript %}
+		<script src="{{ pageJavaScript }}"></script>
+		{% endif %}
+		
 		<script>
 			class NavbarController {
 				constructor() {
