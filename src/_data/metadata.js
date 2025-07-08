@@ -18,6 +18,5 @@ export default {
       "https://github.com/ashfurrow"
     ]
   },
-  ogLanguage: "en_CA",
-  themeColor: "#398CCC"
+  ogLanguage: "en_CA"
 }
