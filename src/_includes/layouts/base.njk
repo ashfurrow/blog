@@ -41,6 +41,9 @@
 
 		<link rel="stylesheet" href="/assets/site.css" />
 		<link rel="stylesheet" href="/assets/prism-theme.css" />
+		{% if pageStylesheet %}
+		<link rel="stylesheet" href="{{ pageStylesheet }}" />
+		{% endif %}
 
 		<script defer src="/assets/fontawesome/brands.js"></script>
 		<script defer src="/assets/fontawesome/solid.js"></script>
