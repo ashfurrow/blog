@@ -10,7 +10,7 @@ The previous blog's readme is with the rest of the old blog in the old_blog dire
 
 ## Development Commands
 
-- `yarn start` - Start the development server with live reload
+- `yarn start` - Start the development server with live reload. Claude should not run this command, it should `yarn build` to chech the `_site` directory instead.
 - `yarn build` - Build the site for production (outputs to `_site/`)
 - `yarn format` - Format code with Prettier
 - `yarn prepare` - Install Husky pre-commit hooks
