@@ -39,7 +39,7 @@ form.chat .messages {
   position: relative;
   height: 85%;
   width: 100%;
-  padding: 2% 3%;
+  padding-left: 0.5rem;
   border-bottom: 1px solid #ecf0f1;
 }
 

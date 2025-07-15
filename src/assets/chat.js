@@ -30,7 +30,7 @@
       this.messagesContainer = document.querySelector(".messages")
       this.inputContainer = document.querySelector("#input")
       this.submitButton = document.querySelector('input[type="submit"]')
-      this.spinner = document.querySelector("span.spinner")
+      this.spinner = document.querySelector("#spinner")
 
       if (!this.messagesContainer || !this.inputContainer || !this.submitButton) {
         console.error("Chat: Required DOM elements not found")

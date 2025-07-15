@@ -173,7 +173,7 @@ Go ahead and hit "Send" to get started. (Note: if you prefer, you can read the [
 <div class="chat-wrapper">
   <div class="responsive-html5-chat">
     <form class="chat">
-      <span class=""></span>
+      <span id="spinner"></span>
       <div class="messages">
         <div class="message">
           <div class="ash">
