@@ -14,6 +14,7 @@
   --base-font-size: 20px;
   --font-size-small: 0.9rem;
   --font-size-big: 2.9rem;
+  --font-weight-bold: 700;
 
   /* Media queries don't support variables, apparently, lol */
   /* --mobile-breakpoint: 600px; */
@@ -283,7 +284,7 @@ h3 {
 h2, h3 {
   font-family: var(--body-font-family);
   color: var(--grey-default);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   margin-bottom: 1rem;
 }
 blockquote {
@@ -328,22 +329,19 @@ pre {
 }
 
 /* Header */
-header {
+header.site-header {
+  position: relative;
   padding-top: 6rem;
   padding-bottom: 6rem;
   display: block;
   clear: both;
-  position: relative;
   text-align: center;
   z-index: 5;
-}
 
-.site-header {
   background-image: var(--banner-image);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .site-header::before {
@@ -362,7 +360,7 @@ header {
   z-index: 2;
 }
 @media (max-width: 1200px) {
-  header {
+  header.site-header {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -532,7 +530,7 @@ header h1 {
   display: inline-block;
   color: var(--white);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   text-decoration: none;
   font-family: var(--header-font-family);
   padding: 0.5rem;
@@ -658,7 +656,7 @@ header h1 {
   color: var(--grey-default);
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   display: block;
   padding: 0.25rem 0;
   transition: color 0.3s ease;
@@ -788,7 +786,7 @@ footer .attribution {
   text-decoration: none;
   color: var(--white);
   font-family: var(--header-font-family);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .featured-post-title {
@@ -868,7 +866,6 @@ footer .attribution {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), var(--banner-image) no-repeat center center;
   background-size: cover;
   text-align: center;
-  padding: 4rem 2rem;
   margin: 6rem 0 2rem 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -878,12 +875,12 @@ footer .attribution {
 
 .section-banner-content {
   position: relative;
+  padding: 4rem 2rem;
   color: var(--white);
 }
 
 .section-banner-title {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: var(--font-weight-bold);
   color: var(--white);
   font-family: var(--header-font-family);
   margin: 0;
