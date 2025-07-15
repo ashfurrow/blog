@@ -34,3 +34,5 @@ I had no idea that there were pencils specifically for drawing. I had always use
 But a proper drawing pencil running across a piece of sketching paper feels _so_ much different. Just like I now take photos primarily for the experience – and only secondarily for the actual photograph – I've been enjoying the _experience_ of drawing far more than my finished works.
 
 My interest in sketching originally came from a desire to improve my photography, but in the process, I've found a whole new hobby and form of self-expression. It's fun! I never considered that sketching would be anything more than a means to the end of improving my photography. I'm so glad I was wrong.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

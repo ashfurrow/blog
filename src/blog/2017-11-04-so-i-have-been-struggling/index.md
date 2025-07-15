@@ -104,3 +104,5 @@ If you're struggling with the kinds of problems I'm having, I want you to try ta
 [flat]: /blog/depression-graphed/
 [blueapron]: https://www.blueapron.com
 [duck]: https://en.wikipedia.org/wiki/Rubber_duck_debugging
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

@@ -42,3 +42,5 @@ My point is, I enjoyed making both these photos, even though one sucks. Both are
 Everyone knows that art is about self-expression, but society rarely considers the value created when making art. In authoring books. In recording a song. In writing a stand-up comic routine.
 
 The emphasis that society places on art is only a byproduct of its original value. Art is only a side-effect of the artistic process: something that can be experienced but can never be sold.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

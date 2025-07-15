@@ -178,3 +178,5 @@ Well, that's what it _used to_ say. Now it says:
 A small, but important change. This is a phrase I borrowed from Orta because it so perfectly describes the sentiment I'm trying to convey. I've been happy at other jobs, but I've never felt the same compulsion to be doing what I do. I love it.
 
 [![Road](road.jpg)](https://500px.com/photo/103866177/how-we-got-here-by-ash-furrow)
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

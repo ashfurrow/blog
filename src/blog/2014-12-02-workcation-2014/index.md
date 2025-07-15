@@ -145,3 +145,5 @@ The next morning, we set off to the airport at 3am. We nearly missed our 7:40 fl
 It had been an amazing two week trip. Ashley and I spent half of it apart and half of it together. We spent half of our time together with family, and the other half by ourselves. We returned home refreshed, invigorated, and ready to face the problems facing us in the coming months: passport renewals, pet passports, visa applications, prescription transfers, etc etc etc. Everything you need to move to America.
 
 It was a fantastic journey filled with passion and longing, misery and triumphs. Our first real vacation in over a year lasted just a few days, but it was worth it. We hope to return to Iceland someday. Maybe someday soon.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

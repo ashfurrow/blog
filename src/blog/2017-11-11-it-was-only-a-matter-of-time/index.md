@@ -64,3 +64,5 @@ So it may have been premature for me to dump on the watch ([oops][ig]). But I ge
 [crestfallen]: /blog/crestfallen/
 [amazon]: http://amzn.to/2hlM5Do
 [ig]: https://www.instagram.com/p/st607cjBit/
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

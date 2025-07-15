@@ -74,3 +74,5 @@ Here's the playlist with all the songs I covered. The songs are ordered chronolo
 <Spotify url="https://open.spotify.com/embed/user/11136450582/playlist/0wgvEadEqdrHV9Mu8wnGyE" />
 
 Tomorrow, I turn thirty, and I can't think of a better way to wrap up my twenties than to take a snapshot of where I am right now, musically. I'm still learning new songs, but I know there's more out there. _Writing_. I dunno. It seems huge and intimidating, totally new, but I'm taking small steps. We'll see!
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

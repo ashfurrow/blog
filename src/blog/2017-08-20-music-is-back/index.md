@@ -36,3 +36,5 @@ I've got an itch to play with other musicians, but I'm also feeling pretty intro
 [embouchure]: https://en.wikipedia.org/wiki/Embouchure
 [cold_night]: https://soundcloud.com/ash-furrow/a-cold-night-close-to-the-end
 [uke]: /blog/learning-guitar/
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

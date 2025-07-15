@@ -101,3 +101,5 @@ There are other, more technical things like "own a large scale and impact servic
 That's what I want to do next with my career: become a community builder.
 
 So that's what I'm turning my job at Artsy into.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

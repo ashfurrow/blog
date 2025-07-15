@@ -836,11 +836,6 @@ footer .attribution {
   color: var(--primary);
 }
 
-.post-link:hover,
-.recent-post-link:hover {
-  text-decoration: underline;
-}
-
 .post-title,
 .recent-post-title {
   margin-right: 0.5rem;

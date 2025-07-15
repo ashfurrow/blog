@@ -162,3 +162,5 @@ On top of all that data, I just feel physically so much better. I've had a reall
 I'm fortunate to have a physical therapist, let alone one as amazing as this. I'm fortunate to have access to the technology to help me. I'm fortunate to have access to the mental healthcare I needed to get started. All that said, it's been a lot of hard work, and I'm proud of that.
 
 I'm learning to run. It's difficult, but just like learning a new programming skill, that difficulty is what has made it fun for me.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

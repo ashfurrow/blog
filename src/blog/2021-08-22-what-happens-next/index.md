@@ -72,3 +72,5 @@ My niece and nephew are growing up so quickly – it's equally amazing and terri
 My wife and I have bought a house! The sale closes in less than a week and we can't wait to move in. Buying a home in Fredericton would have seemed ridiculous to me, even a few years ago. But it seemed like the obvious next step for us. Longterm, we're still figuring our life plan out, but the contradiction between what we want from life and how we're living is gone.
 
 Whatever happens next, it will happen here.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

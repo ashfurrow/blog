@@ -49,3 +49,5 @@ Feel free to [@ me][twitter] with your favourite cooking thing that wasn't obvio
 [struggling]: /blog/so-i-have-been-struggling/
 [knife]: http://amzn.to/2ie9tDH
 [twitter]: https://twitter.com/ashfurrow
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

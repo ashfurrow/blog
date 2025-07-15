@@ -69,3 +69,5 @@ Let's check out the details on those flower petals...
 Beautiful.
 
 With large format, there are so many cool things you can do and so many more ways to screw up a photo. I've already made some really interesting mistakes! I feel a lot like I did when I got my first DSLR – just really excited for all the possibilities. I'm not sure any piece of gear has excited me as much since my first film camera.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>

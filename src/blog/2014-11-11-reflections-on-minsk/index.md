@@ -126,3 +126,5 @@ It was amazing. One act, a very short man and a very tall man ballet-fighting wh
 ## Departure
 
 The next morning, I had a great sandwich on traditional black bread. I quickly packed my bags and rushed downstairs to the taxi waiting to take me to the airport. As much as I had enjoyed my time in Minsk, I was eager to get home and rest for the remainder of the day. I was had nearly recovered from my cold despite my decidedly counterproductive lack of rest over the preceding week. I left Belarus with a broader perspective on the world, some great stories and photos, and plenty of new friends. Exhausted, I fell asleep on the plane while reading a new book, [The \$12 Million Stuffed Shark](http://www.amazon.com/gp/product/0230620590/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0230620590&linkCode=as2&tag=ashfur-20&linkId=56KCXPD65BBHUOSZ). After taking the train into Amsterdam, I slept. I had earned it.
+
+<script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
