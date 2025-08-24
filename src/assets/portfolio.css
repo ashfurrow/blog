@@ -5,38 +5,9 @@
   /* Animation durations */
   --transition-duration-standard: 0.3s;
   
-  /* Font sizes */
-  --font-size-icon-large: 3rem;
-  --font-size-section-title-desktop: 2.5rem;
-  --font-size-section-title-tablet: 1.5rem;
-  --font-size-section-subtitle-mobile: 0.75rem;
-  
   /* Spacing */
-  --spacing-section-vertical: 2rem;
   --spacing-section-horizontal: 2rem;
-  --spacing-section-padding-top: 6rem;
-  --spacing-section-padding-bottom: 4rem;
-  --spacing-section-padding-mobile: 3rem;
   --spacing-footer-icon: 1rem;
-  --spacing-footer-icon-mobile: 0.3rem;
-  --spacing-image-gap: 2rem;
-  
-  /* Layout dimensions */
-  --section-content-width: 35%;
-  --section-content-max-width: 325px;
-  --section-content-offset: -65%;
-  --image-width-default: 200px;
-  --image-width-mobile-max: 300px;
-  
-  /* Callout dimensions */
-  --callout-width-desktop: 357px;
-  --callout-height-desktop: 164px;
-  --callout-offset-desktop: 397px;
-  --callout-top-desktop: 3.6em;
-  --callout-width-tablet: 205px;
-  --callout-height-tablet: 94px;
-  --callout-offset-tablet: 235px;
-  --callout-top-tablet: 2em;
 }
 
 /* Social media footer styling */
@@ -51,7 +22,7 @@ footer a:hover {
 
 .portfolio-footer {
   text-align: center;
-  margin: var(--spacing-section-vertical) 0;
+  margin: 2rem 0;
 }
 
 .portfolio-footer span {
@@ -60,7 +31,7 @@ footer a:hover {
 
 .portfolio-footer a {
   color: var(--grey-default);
-  font-size: var(--font-size-icon-large);
+  font-size: 3rem;
   transition: color var(--transition-duration-standard) ease;
 }
 
@@ -70,7 +41,7 @@ footer a:hover {
 
 @media (max-width: 600px) {
   .portfolio-footer span {
-    margin: 0 var(--spacing-footer-icon-mobile);
+    margin: 0 0.3rem;
   }
 }
 
@@ -79,14 +50,15 @@ footer a:hover {
   position: relative;
 }
 
+/* TODO: these styles are duplicative of .section-banner-title. */
 .portfolio-section-banner figcaption {
   display: block;
-  padding: var(--spacing-section-padding-top) var(--spacing-section-horizontal) var(--spacing-section-padding-bottom) var(--spacing-section-horizontal);
+  padding: 6rem var(--spacing-section-horizontal) 4rem var(--spacing-section-horizontal);
   text-align: left;
-  width: var(--section-content-width);
-  max-width: var(--section-content-max-width);
+  width: 35%;
+  max-width: 325px;
   position: relative;
-  right: var(--section-content-offset);
+  right: -55%;
 }
 
 .portfolio-section-banner figcaption::before {
@@ -94,10 +66,10 @@ footer a:hover {
   display: block;
   color: white;
   position: relative;
-  width: var(--callout-width-desktop);
-  height: var(--callout-height-desktop);
-  right: var(--callout-offset-desktop);
-  top: var(--callout-top-desktop);
+  width: 357px;
+  height: 164px;
+  right: 397px;
+  top: 3.6em;
   background-image: url(/assets/portfolio/callout.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -105,7 +77,7 @@ footer a:hover {
 }
 
 .portfolio-section-banner .section-banner-title {
-  font-size: var(--font-size-section-title-desktop);
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -115,19 +87,19 @@ footer a:hover {
 
 @media (max-width: 1200px) {
   .portfolio-section-banner figcaption::before {
-    width: var(--callout-width-tablet);
-    height: var(--callout-height-tablet);
-    top: var(--callout-top-tablet);
-    right: var(--callout-offset-tablet);
+    width: 205px;
+    height: 94px;
+    top: 2em;
+    right: 235px;
     background-image: url(/assets/portfolio/callout_small.svg);
   }
   
   .portfolio-section-banner .section-banner-title {
-    font-size: var(--font-size-section-title-tablet);
+    font-size: 1.5rem;
   }
   
   .portfolio-section-banner figcaption p {
-    font-size: var(--font-size-section-subtitle-mobile);
+    font-size: 0.75rem;
   }
 }
 
@@ -137,49 +109,27 @@ footer a:hover {
   }
   
   .portfolio-section-banner figcaption {
-    padding: var(--spacing-section-padding-mobile) var(--spacing-footer-icon);
+    padding: 3rem var(--spacing-footer-icon);
     text-align: center;
     width: 100%;
     max-width: initial;
     position: initial;
     right: initial;
   }
-  
-  .portfolio-section-banner .section-banner-title {
-    font-size: var(--font-size-section-title-tablet);
-  }
-  
-  .portfolio-section-banner figcaption p {
-    font-size: var(--font-size-section-subtitle-mobile);
-  }
 }
 
 /* Right-aligned image styling for company entries */
-.right-image-container {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--spacing-image-gap);
-  margin-bottom: var(--spacing-section-vertical);
-}
 
 .right-image {
-  flex-shrink: 0;
-  width: var(--image-width-default);
-  height: auto;
   float: right;
-  margin-left: var(--spacing-image-gap);
+  /* display: table; */
 }
 
 @media (max-width: 600px) {
-  .right-image-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .right-image {
-    float: none;
-    margin-left: 0;
-    width: 100%;
-    max-width: var(--image-width-mobile-max);
+    float: initial;
+    max-width: 100%;
+    padding-left: 0;
+    margin: 1rem 0;
   }
 }

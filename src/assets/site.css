@@ -48,7 +48,8 @@ body {
   background: var(--white);
   color: var(--grey-default);
   font-family: var(--body-font-family);
-  line-height: 1.6;
+  line-height: 1.66;
+  font-weight: 400;
   font-variant-ligatures: common-ligatures;
   font-variant: common-ligatures;
   margin: 0;
@@ -117,14 +118,16 @@ main > * {
 /* RightImage */
 .right-image-container {
   /* Create a block formatting context that allows floating to work within CSS grid */
+  margin-bottom: 2rem;
   overflow: hidden;
 }
 
 .right-image {
   float: right;
-  padding-left: 1rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
   clear: both;
-  max-width: 30%; 
+  max-width: 40%; 
 }
 
 
@@ -132,8 +135,9 @@ main > * {
   .right-image {
     float: initial;
     max-width: 100% !important;
-    padding-left: 0;
-    margin: 1rem 0;
+    padding-left: initial;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -869,8 +873,6 @@ footer .attribution {
   margin-bottom: 0.5rem; 
   font-size: 1.5rem;
 }
-
-/* Speaking Page Styles */
 
 /* Section Banner */
 .section-banner {
