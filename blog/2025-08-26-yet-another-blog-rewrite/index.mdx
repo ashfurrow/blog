@@ -1,0 +1,32 @@
+---
+title: Yet Another Blog Rewrite
+date: 2025-08-26
+---
+
+[In 2019, I rewrote this blog with Gatsby](https://ashfurrow.com/blog/gatsby-for-great-good/). I outlined my reasons in that post, but basically I wanted to use similar technology to build my blog as I used day-to-day at work. Middleman, Bootstrap, and jQuery seemed old and busted. Gatsby, React, and TypeScript seemed so much more fun.
+
+When I launched the rewrite, someone on social media cautioned me "I hope you don't regret this." At the time, I resented it. But unfortunately I do regret the decision.
+
+Gatsby is large, cumbersome, and slow. Its dependencies constantly change. It breaks under the weight of my many posts, to the point that Netlify is no longer able to build the site without a timeout. 
+
+It turns out, you don't need GraphQL to turn markdown into markup.
+
+I looked into going back, to Middleman, but the dependencies are just so outdated and the code _is_ pretty janky, that it made more sense to move forward, to something new. 
+
+I chose [11ty](https://www.11ty.dev), which is a JavaScript-based static site generator with a focus on simplicity and API stability. I wrote the old blog in 2014 using Bootstrap and jQuery, with a CSS preprocessor; the progress of browser standards means I don't need any of that anymore. (CSS Grids are amazing!)
+
+Now, 11ty doesn't really do as much as Gatsby. But I value the simplicity of maintainence over the Gatsby's promises of client-side performance. My blog just doesn't need the powerful features that Gatsby can provide. 
+
+All I have to do is port the existing GraphQL implementation. Or, should I port the Middleman implementation? Why not both!
+
+So yeah. I'm using Claude Code for this project, and it's gone really well. It turns out AI coding assistants are really great at porting code between languages. I pointed Claude Code at the Gatsby and Middleman implementations, and have worked through an implementation plan piece by piece. This was actually a great project for me to really dive into the capabilities of agentic coding tools, since this is a project I've built twice before.
+
+I am concerned about code quality, especially plain CSS. AI is great at spewing out a lot of hard-to-maintain-code, and that seems extra true with CSS. To mitigate this, I'm running an experiment. I threw a weekend or two at the project two months ago to get it about 90% complete. Then, I just let it sit there. I wanted to forget the code so I can revisit it later, to dispassionately evaluate it without the thrill of "getting so much done with AI" clouding my judgement. 
+
+But honestly, the main site is only 1000 lines of CSS. That's for a fully responsive design. And I'm not that great at CSS, so the bar that Claude has to clear is pretty low. I've actually learned quite a bit about web standards, scrutinizing the code that Claude had spit out.
+
+Unlike previous rewrites, I'm blogging about this one ahead of time. [The pull request is here](https://github.com/ashfurrow/blog/pull/520), if you're interested. GitHub's UI shows this as a massive increase in lines of code, only because Prettier formatted seven hundred markdown posts for the first time. I'll have exact numbers once I've finished, but 11ty has a lot less configuration and coding to accomplish the same task. My entire site builds locally in about ten seconds, compared with minutes on Gatsby.
+
+I still have a ways to go. The PR has an open task list, but it's mostly "feature complete." Next steps are things like making sure the RSS feeds' permalinks match, validating the HTML and CSS, and testing. I know that the last twenty percent of a project tends to be eighty percent of the effort, but again, I've done this a few times before so I have a pretty good idea of what I'm doing.
+
+I just hope I don't regret this.
