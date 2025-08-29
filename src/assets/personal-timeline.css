@@ -118,54 +118,39 @@ html {
 }
 
 
-/* Desktop alternating layout */
+/* Desktop alternating layout with CSS Grid */
 @media (min-width: 768px) {
-  /* TODO: images that are taller than their desription block render "under" the next items */
-  /* Move the logid to match/oppose the nth child, instead of whatever it's doing now. */
-
-  .timeline-entry {
-    align-items: flex-start;
+  /* Timeline entries use 2-column grid for content-image layout */
+  .timeline-item:not(.timeline-year-marker) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
   }
 
-  /* Left-side entries (even items) */
+  .timeline-item:not(.timeline-year-marker) .timeline-content {
+    grid-area: content;
+    max-width: none;
+  }
+  
+  .timeline-item:not(.timeline-year-marker) .timeline-image-container {
+    grid-area: image;
+  }
+
+  /* Left-side entries (even items) - content left, image right */
   .timeline-item:nth-child(even):not(.timeline-year-marker) {
-    flex-direction: row;
-    justify-content: flex-start;
+    grid-template-areas: "content image";
   }
-  .timeline-item:nth-child(even):not(.timeline-year-marker) .timeline-content {
-    margin-right: 55%;
-  }
-  
-  /* Right-side entries (odd items) */
+    
+  /* Right-side entries (odd items) - image left, content right */
   .timeline-item:nth-child(odd):not(.timeline-year-marker) {
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-  }
-  .timeline-item:nth-child(odd):not(.timeline-year-marker) .timeline-content {
-    margin-left: 55%;
-  }
-
-  /* Image positioning */
-
-  /* Left entries - image on the right side */
-  .timeline-item:nth-child(even):not(.timeline-year-marker) .timeline-image-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    max-width: 45%;
+    grid-template-areas: "image content";
   }
   
-  /* Right entries - image on the left side */
-  .timeline-item:nth-child(odd):not(.timeline-year-marker) .timeline-image-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    max-width: 45%;
-  }
-  
+  /* Images in grid layout */
   .timeline-image-container .timeline-image {
     margin: 0;
-    max-width: 100%;
+    width: 100%;
   }
 }
 
