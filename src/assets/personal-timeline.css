@@ -123,12 +123,15 @@ html {
   /* TODO: images that are taller than their desription block render "under" the next items */
   /* Move the logid to match/oppose the nth child, instead of whatever it's doing now. */
 
+  .timeline-entry {
+    align-items: flex-start;
+  }
+
   /* Left-side entries (even items) */
   .timeline-item:nth-child(even):not(.timeline-year-marker) {
     flex-direction: row;
     justify-content: flex-start;
   }
-  
   .timeline-item:nth-child(even):not(.timeline-year-marker) .timeline-content {
     margin-right: 55%;
   }
@@ -138,17 +141,12 @@ html {
     flex-direction: row-reverse;
     justify-content: flex-start;
   }
-  
   .timeline-item:nth-child(odd):not(.timeline-year-marker) .timeline-content {
     margin-left: 55%;
   }
 
-  /* Desktop image positioning */
+  /* Image positioning */
 
-  .timeline-entry {
-    align-items: flex-start;
-  }
-  
   /* Left entries - image on the right side */
   .timeline-item:nth-child(even):not(.timeline-year-marker) .timeline-image-container {
     position: absolute;
@@ -169,8 +167,6 @@ html {
     margin: 0;
     max-width: 100%;
   }
-
-
 }
 
 /* Mobile layout - all items on the left */

@@ -198,7 +198,7 @@ timeline_entries:
       - "I also got to meet some of the CocoaPods team in-person that week, including [Eloy](http://twitter.com/alloy) and [Orta](http://twitter.com/orta)."
   - title: "Crowdfund New Book"
     description:
-      - "That Summer, I<a href='https://www.indiegogo.com/projects/your-first-ios-app'> crowdfunded a new book</a> about starting iOS development. It would feature everything from opening your first Xcode project to implementing code to submitting to the App Store. A new, Swift-based version is <a href='https://leanpub.com/yourfirstswiftapp'>being written now</a>."
+      - "That Summer, I [crowdfunded a new book](https://www.indiegogo.com/projects/your-first-ios-app) about starting iOS development. It would feature everything from opening your first Xcode project to implementing code to submitting to the App Store. A new, Swift-based version is [being written now](https://leanpub.com/yourfirstswiftapp)."
   - title: "35mm app"
     img: "./35mm.png"
     imgAlt: "Marketing image of a photo magazine with the title 'Compelling Collections'."
@@ -208,7 +208,7 @@ timeline_entries:
       - "But we had a great time, and I enjoyed working with my two friends."
   - title: "First Major conference Talk (360|iDev)"
     description:
-      - "A talk proposal I had submitted to <a href='http://360idev.com'>360|iDev</a> had been accepted and I flew down to Denver. It was there that I met Mike Lee, who told me about the really great developer community in Amsterdam."
+      - "A talk proposal I had submitted to [360|iDev](http://360idev.com) had been accepted and I flew down to Denver. It was there that I met Mike Lee, who told me about the really great developer community in Amsterdam."
   - title: "Teach Small Class in Toronto"
     description:
       - "I hadn't taught a workshop recently, but I was able to leverage code and content from my books to teach a small weekend workshop on iOS development. I realized that I had built up a small, but growing, repertoire of teaching material."
@@ -219,14 +219,14 @@ timeline_entries:
     img: "./notificationcenter.jpg"
     imgAlt: "Podcast icon that with the title 'Notification Center'."
     description:
-      - "That Fall, I wanted to produce a talk show about the iOS world. No set agenda, just me and a friend talking shop. <a href='http://notificationcenter.tv'>Notification Center</a> has covered topics ranging from complex Core Data issues to the legitimacy of moon-landing conspiracies."
+      - "That Fall, I wanted to produce a talk show about the iOS world. No set agenda, just me and a friend talking shop. [Notification Center](http://notificationcenter.tv) has covered topics ranging from complex Core Data issues to the legitimacy of moon-landing conspiracies."
   - title: "Decide to move to Amsterdam"
     description:
-      - "On the first Friday in December, my wife and I decided to move to Amsterdam. We spent the weekend in an frenzy to look into what would be required. One of the biggest reasons to stay in Toronto was that I loved my job. Leaving Toronto would mean leaving Teehan+Lax. But we decided there would always be reasons <em>not</em> to move and we ought to go for it."
+      - "On the first Friday in December, my wife and I decided to move to Amsterdam. We spent the weekend in an frenzy to look into what would be required. One of the biggest reasons to stay in Toronto was that I loved my job. Leaving Toronto would mean leaving Teehan+Lax. But we decided there would always be reasons *not* to move and we ought to go for it."
       - "On Monday, I spoke with Jon and told him of our plan to move to Europe and gave him more than 2 months' notice: Valentine's Day would be my last day."
   - title: "C-41"
     description:
-      - "Over the Christmas break, I designed and implemented an <a href='https://github.com/ashfurrow/C-41'>open source</a> app called <a href='https://itunes.apple.com/ca/app/c-41/id789924103?mt=8'>C-41</a>. It was largely an exercise in ReactiveCocoa and MVVM. It had no reason not to be open source, so it was."
+      - "Over the Christmas break, I designed and implemented an [open source](https://github.com/ashfurrow/C-41) app called [C-41](https://itunes.apple.com/ca/app/c-41/id789924103?mt=8). It was largely an exercise in ReactiveCocoa and MVVM. It had no reason not to be open source, so it was."
   - date: "2014"
   - title: "Leave Teehan+Lax"
     description:
@@ -241,17 +241,17 @@ timeline_entries:
       - "I spoke at the [mdevcon](http://mdevcon.com) conference here in Amsterdam. While hanging around, I bumped into Orta and we hung out at the apartment some of his friends had rented. We did some pair programming on some open source stuff he was working on – it was, as the Dutch say, 'pretty gezellig.' Orta mentioned if I was ever interested in working together at [Artsy](http://artsy.net) that I should get in touch."
   - title: "Treehouse Course"
     description:
-      - "I had been speaking with the fine folks at <a href='http://teamtreehouse.com/'>Treehouse</a> about teaching a course on Core Data. Shortly after arriving in Europe, I flew back to North America to record the course at Treehouse's Orlando studios."
+      - "I had been speaking with the fine folks at [Treehouse](http://teamtreehouse.com/) about teaching a course on Core Data. Shortly after arriving in Europe, I flew back to North America to record the course at Treehouse's Orlando studios."
   - title: "Dutch Job"
     description:
-      - "During my first week in Amsterdam, I went in to my soon-to-be employer to go over some details. As time went on, I reflected on our meeting. As my start date approached, I felt a greater and greater feeling of dread until I finally <a href='https://ashfurrow.com/blog/job-hunt/'>made the decision</a> to not start."
+      - "During my first week in Amsterdam, I went in to my soon-to-be employer to go over some details. As time went on, I reflected on our meeting. As my start date approached, I felt a greater and greater feeling of dread until I finally [made the decision](https://ashfurrow.com/blog/job-hunt/) to not start."
       - "This was a really difficult decision for me – when I make a commitment, I intend to keep it. But I had learnt to trust my feelings."
   - title: "Freelance at Mindsea"
     description:
-      - "In the meantime, I was able to do some freelance work for <a href='http://www.mindsea.com'>Mindsea</a>, a Canadian agency based in the region of Canada I grew up in. They were great to me and I learnt a lot from them and<a href='http://www.mindsea.com/2014/04/up-and-running-with-mindsea-doing-it-the-right-way/'> their approach</a> to iOS work."
+      - "In the meantime, I was able to do some freelance work for [Mindsea](http://www.mindsea.com), a Canadian agency based in the region of Canada I grew up in. They were great to me and I learnt a lot from them and [their approach](http://www.mindsea.com/2014/04/up-and-running-with-mindsea-doing-it-the-right-way/) to iOS work."
   - title: "DM Orta"
     description:
-      - "I didn't know what I was going to do. I was in a foreign country with no job and a quickly draining bank account. I remember Orta's offer, so I took a look at Artsy's <a href='https://artsy.net/job/mobile-engineer'> job description</a> and was absolutely floored. It's description fit me so well that I couldn't believe it. They had a fantastic <a href='http://artsy.github.io/'>engineering blog</a>, and I had used some of their <a href='http://artsy.github.io/open-source/#iOS'> open source</a> libraries in my own apps."
+      - "I didn't know what I was going to do. I was in a foreign country with no job and a quickly draining bank account. I remember Orta's offer, so I took a look at Artsy's [job description](https://artsy.net/job/mobile-engineer) and was absolutely floored. It's description fit me so well that I couldn't believe it. They had a fantastic [engineering blog](http://artsy.github.io/), and I had used some of their [open source](http://artsy.github.io/open-source/#iOS) libraries in my own apps."
       - "I DM'd Orta, had a few Skype calls, flew to London to meet with one of their developers, and got the green-light while I was in Paris with my wife for her birthday. I started in April."
   - title: "Start at Artsy"
     img: "./artsy.jpg"
@@ -261,34 +261,34 @@ timeline_entries:
       - "I've never felt like I fit-in as much as I do at Artsy."
   - title: "WWDC 2014"
     description:
-      - "I attended WWDC again this year and it was a blast. I gave a talk at AltConf and met so many awesome people. And I was <a href='https://ashfurrow.com/blog/whelp./'>recognized</a> by other developers – something that still kind of freaks me out sometimes."
+      - "I attended WWDC again this year and it was a blast. I gave a talk at AltConf and met so many awesome people. And I was [recognized](https://ashfurrow.com/blog/whelp./) by other developers – something that still kind of freaks me out sometimes."
       - "Most of my week was spent in Swift sessions or in Swift labs. I even got to meet Dave Addey."
   - title: "Art Basel"
     img: "./artbasel.jpg"
     imgAlt: "Photo of a red 3D arrow going up and down, mostly up."
     description:
-      - "Shortly after WWDC, I got the opportunity to attend Art Basel, one of the most important art fairs in the world. It was an amazing experience that I can't do justice here, but it was here that Artsy's goals <a href='https://ashfurrow.com/blog/reflections-on-art-basel-2014/'>really clicked</a> for me."
+      - "Shortly after WWDC, I got the opportunity to attend Art Basel, one of the most important art fairs in the world. It was an amazing experience that I can't do justice here, but it was here that Artsy's goals [really clicked](https://ashfurrow.com/blog/reflections-on-art-basel-2014/) for me."
   - title: "Depression"
     description:
       - "Things were hard over the Summer. Through a series of random doctors prescribing different prescriptions (my medication isn't available in The Netherlands), I was on an emotional roller coaster. I wouldn't leave the house for days and I didn't even touch my cameras. Only in the Fall would I finally find a psychiatrist that I could see regularly. I feel much better now."
   - title: "Blog Transition"
     description:
-      - "By now, I had gained a solid understanding of a variety of web technologies. I felt confident in building my own site,<a href='https://ashfurrow.com/blog/fresh-coat-of-paint/'> so I did</a>. It was an amazing learning experience from the perspective of a developer and a designer."
+      - "By now, I had gained a solid understanding of a variety of web technologies. I felt confident in building my own site, [so I did](https://ashfurrow.com/blog/fresh-coat-of-paint/). It was an amazing learning experience from the perspective of a developer and a designer."
   - title: "European Conference Tour"
     img: "./conferences.jpg"
     imgAlt: "Photo of me looking nonchalant on a large stage."
     description:
-      - "Since I arrived in Amsterdam, I've been contacted by a bunch of conferences and meetup groups all based in Europe. I accepted as many as possible. My wife accompanied me on a lot of trips, giving us a great reason to see new places. I am so grateful for the opportunity to<a href='https://ashfurrow.com/blog/lessons-learned-travelling-europe/'> travel</a> and meet so, so many new friends."
+      - "Since I arrived in Amsterdam, I've been contacted by a bunch of conferences and meetup groups all based in Europe. I accepted as many as possible. My wife accompanied me on a lot of trips, giving us a great reason to see new places. I am so grateful for the opportunity to [travel](https://ashfurrow.com/blog/lessons-learned-travelling-europe/) and meet so, so many new friends."
   - title: "Eidolon"
     img: "./eidolon.jpg"
     imgAlt: "Photo of an encased iPad at an art auction."
     description:
-      - "<a href='http://github.com/artsy/eidolon'>Eidolon</a> is Artsy's art auction kiosk application. It is completely open source, written in Swift, and built using the functional-reactive paradigm and ReactiveCocoa. I've got a<a href='http://artsy.github.io/blog/2014/11/13/eidolon-retrospective/'> write-up</a> describing the whole process, but sufficed to say that I had an <em>awesome</em> time building this."
+      - "[Eidolon](http://github.com/artsy/eidolon) is Artsy's art auction kiosk application. It is completely open source, written in Swift, and built using the functional-reactive paradigm and ReactiveCocoa. I've got a [write-up](http://artsy.github.io/blog/2014/11/13/eidolon-retrospective/) describing the whole process, but sufficed to say that I had an *awesome* time building this."
   - title: "Film Photography"
     img: "./film.jpg"
     imgAlt: "Photo of me holding a very old camera with bellows."
     description:
-      - "I really love photography, but I hadn't done much during the Summer, even though I was surrounded by the totally awesome Dutch countryside. Oddly enough, it was an<a href='https://ashfurrow.com/blog/100-years-ago/'> ad campaign</a> that re-sparked my hobby. I started shooting again – shooting <em>a lot</em>. Mostly <a href='https://ashfurrow.com/blog/price-of-film/'>on film</a>. I even started developing at home again."
+      - "I really love photography, but I hadn't done much during the Summer, even though I was surrounded by the totally awesome Dutch countryside. Oddly enough, it was an [ad campaign](https://ashfurrow.com/blog/100-years-ago/) that re-sparked my hobby. I started shooting again – shooting *a lot*. Mostly [on film](https://ashfurrow.com/blog/price-of-film/). I even started developing at home again."
       - "As a software developer, I spend so much of my time working on complex software problems and, I've often found taking a break to exercise my creativity helps me sort through problems. It's really gratifying to have a hobby that's not related to computers."
 ---
 
