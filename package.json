@@ -24,6 +24,7 @@
     "@11ty/eleventy-plugin-bundle": "^3.0.6",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
+    "@sindresorhus/slugify": "^2.2.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "prettier": "^3.6.0"
@@ -31,6 +32,7 @@
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "dependencies": {
     "lunr": "^2.3.9",
+    "markdown-it": "^14.1.0",
     "prismjs": "^1.30.0"
   }
 }

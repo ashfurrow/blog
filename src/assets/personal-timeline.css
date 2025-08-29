@@ -1,0 +1,205 @@
+/* Personal Timeline Styles - Alternating layout with centered markers */
+.personal-timeline {
+  margin: 2rem 0;
+  padding: 0 0;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+/* Main timeline line - centered */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary);
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-start;
+  min-height: 80px;
+}
+
+/* Timeline markers/dots - centered on the line */
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primary);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
+  z-index: 2;
+  transform: translateX(-50%);
+}t  
+
+/* Year markers get special styling */
+.timeline-year-marker .timeline-marker {
+  background: var(--primary);
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
+  width: 1.2rem;
+  height: 1.2rem;
+  top: -0.6rem;
+}
+
+/* Timeline content - base styles */
+.timeline-content {
+  background: var(--grey-light);
+  border-radius: 6px;
+  padding: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  color: var(--grey-default);
+  flex: 1;
+  max-width: 45%;
+}
+
+/* Year marker content - full width and centered */
+.timeline-year-marker {
+  justify-content: center;
+}
+
+.timeline-year-marker .timeline-content {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+
+/* Timeline images */
+.timeline-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+h2.timeline-year {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.timeline-anchor {
+  color: var(--grey-default);
+  text-decoration: none;
+}
+
+.timeline-anchor:hover {
+  color: var(--primary);
+}
+
+.timeline-anchor:hover::after {
+  content: ' #';
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Desktop alternating layout */
+@media (min-width: 768px) {
+  /* TODO: images that are taller than their desription block render "under" the next items */
+  /* Move the logid to match/oppose the nth child, instead of whatever it's doing now. */
+
+  /* Left-side entries (even items) */
+  .timeline-item:nth-child(even):not(.timeline-year-marker) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .timeline-item:nth-child(even):not(.timeline-year-marker) .timeline-content {
+    margin-right: 55%;
+  }
+  
+  /* Right-side entries (odd items) */
+  .timeline-item:nth-child(odd):not(.timeline-year-marker) {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  
+  .timeline-item:nth-child(odd):not(.timeline-year-marker) .timeline-content {
+    margin-left: 55%;
+  }
+
+  /* Desktop image positioning */
+
+  .timeline-entry {
+    align-items: flex-start;
+  }
+  
+  /* Left entries - image on the right side */
+  .timeline-item:nth-child(even):not(.timeline-year-marker) .timeline-image-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 45%;
+  }
+  
+  /* Right entries - image on the left side */
+  .timeline-item:nth-child(odd):not(.timeline-year-marker) .timeline-image-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 45%;
+  }
+  
+  .timeline-image-container .timeline-image {
+    margin: 0;
+    max-width: 100%;
+  }
+
+
+}
+
+/* Mobile layout - all items on the left */
+@media (max-width: 767px) {
+  .timeline-container::before {
+    left: 2rem;
+    transform: none;
+  }
+  
+  .timeline-marker {
+    left: 2rem;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    padding-left: 3rem;
+    flex-direction: column;
+  }
+  
+  .timeline-year-marker .timeline-content {
+    margin: 0.5rem;
+  }
+
+  .timeline-content {
+    max-width: none;
+    margin: 0 0.5rem;
+  }
+  
+  .timeline-image-container {
+    margin: 0 0.5rem;
+  }
+}
