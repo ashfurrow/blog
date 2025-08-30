@@ -386,27 +386,24 @@ past_talks:
 {% video "https://player.vimeo.com/video/270512761" %}
 </article>
 
+{%- if upcoming_talks and upcoming_talks.length > 0 %}
 <header class="section-banner section-banner-fullwidth" style="--banner-image: url('/assets/speaking/upcomingtalks.jpg')">
   <div class="section-banner-content">
     <h2 class="section-banner-title">Upcoming Talks</h2>
   </div>
 </header>
-
 <section>
-{%- if upcoming_talks and upcoming_talks.length > 0 %}
   <ol class="talks-list">
     {%- for talk in upcoming_talks %}
       {%- include "partials/talk-item.njk" %}
     {%- endfor %}
   </ol>
-{%- else %}
-  <p>No upcoming talks at this time.</p>
+</section> 
 {%- endif %}
-</section>
 
 <header class="section-banner section-banner-fullwidth" style="--banner-image: url('/assets/speaking/pasttalks.jpg')">
   <div class="section-banner-content">
-    <h2 class="section-banner-title">Past Awesome Talks</h2>
+    <h2 class="section-banner-title">Past Talks</h2>
   </div>
 </header>
 

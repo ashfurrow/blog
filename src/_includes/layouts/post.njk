@@ -3,38 +3,38 @@ layout: layouts/base.njk
 ---
 
 <article>
-{{ content | safe }}
+	{{ content | safe }}
 
-<div class="typo-correction">
-  <hr>
-  <a href="{% githubLink %}" class="typo-link">Please submit typo corrections on GitHub</a>
-  <hr>
-</div>
+	<div class="typo-correction">
+		<hr>
+		<a href="{% githubLink %}" class="typo-link">Please submit typo corrections on GitHub</a>
+		<hr>
+	</div>
 
-{%- if collections.posts %}
-	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-	{%- set nextPost = collections.posts | getNextCollectionItem %}
-	{%- if nextPost or previousPost %}
-		<div class="pagination">
-			{%- if previousPost %}
-				<a href="{{ previousPost.url }}">
-					<div class="pagination-button pagination-prev">
-						<div class="pagination-linktext">
-							{{ previousPost.data.title }}
+	{%- if collections.posts %}
+		{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+		{%- set nextPost = collections.posts | getNextCollectionItem %}
+		{%- if nextPost or previousPost %}
+			<div class="pagination">
+				{%- if previousPost %}
+					<a href="{{ previousPost.url }}">
+						<div class="pagination-button pagination-prev">
+							<div class="pagination-linktext">
+								{{ previousPost.data.title }}
+							</div>
 						</div>
-					</div>
-				</a>
-			{% endif %}
-			{%- if nextPost %}
-				<a href="{{ nextPost.url }}">
-					<div class="pagination-button pagination-next">
-						<div class="pagination-linktext">
-							{{ nextPost.data.title }}
+					</a>
+				{% endif %}
+				{%- if nextPost %}
+					<a href="{{ nextPost.url }}">
+						<div class="pagination-button pagination-next">
+							<div class="pagination-linktext">
+								{{ nextPost.data.title }}
+							</div>
 						</div>
-					</div>
-				</a>
-			{% endif %}
-		</div>
+					</a>
+				{% endif %}
+			</div>
+		{%- endif %}
 	{%- endif %}
-{%- endif %}
 </article>
