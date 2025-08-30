@@ -1,7 +1,9 @@
+import slugify from "@sindresorhus/slugify"
+
 export default {
   tags: ["posts"],
   layout: "layouts/post.njk",
   permalink: (data) => {
-    return `/blog/${data.page.fileSlug}/`
+    return `/blog/${slugify(data.title)}/`
   }
 }
