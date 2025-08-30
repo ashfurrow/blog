@@ -183,7 +183,7 @@ article, section {
 
 .typo-correction {
   width: 100%;
-  margin: 0.5rem auto;
+  margin: 2rem auto;
 }
 .typo-correction hr {
   margin: 0.5rem 0;
@@ -254,10 +254,8 @@ article, section {
 p {
   margin-block-end: 0;
   margin-block-start: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
-}
-p:last-child {
-  margin-bottom: 0;
 }
 img {
   display: block;
