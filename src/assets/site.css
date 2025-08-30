@@ -63,8 +63,7 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 2rem 0;
-  margin: 0 auto;
+  margin: 0;
   max-width: 80rem;
 }
 main > * {
@@ -79,9 +78,9 @@ main > * {
   main > * {
     grid-column: 1 / 13;
   }
-  main {
-    padding: 1rem 1rem;
-  }
+}
+article, section {
+  margin: 1rem;
 }
 
 /* Shortcodes */
@@ -881,10 +880,12 @@ footer .attribution {
   background-size: cover;
   text-align: center;
   margin: 6rem 0 2rem 0;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
   color: var(--white);
   overflow: hidden;
+}
+
+.section-banner-fullwidth {
+  grid-column: 1 / -1;
 }
 
 .section-banner-content {

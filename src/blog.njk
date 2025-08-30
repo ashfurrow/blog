@@ -2,6 +2,7 @@
 title: Blog Archive
 ---
 
+<article>
 {# TODO: Migrate this to a filter instead so I don't need to deal with JSON serialization. #}
 {% set groupedPostsJson %}{% groupedPosts %}{% endset %}
 {% set groupedPosts = groupedPostsJson | fromJson  %}
@@ -19,4 +20,4 @@ title: Blog Archive
     {%- endfor %}
   </div>
 {%- endfor %}
-  
+</article>
