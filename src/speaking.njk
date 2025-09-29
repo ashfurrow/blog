@@ -380,11 +380,11 @@ past_talks:
     hidden: true
 ---
 
-<article>
+<section class="normal-width">
 <p>I love sharing knowledge – in the form of blog posts, podcasts, open source code, books – and over the past few years, I've grown really fond of speaking. I've gotten good at it, too.</p>
 
 {% video "https://player.vimeo.com/video/270512761" %}
-</article>
+</section>
 
 {%- if upcoming_talks and upcoming_talks.length > 0 %}
 <header class="section-banner section-banner-fullwidth" style="--banner-image: url('/assets/speaking/upcomingtalks.jpg')">
@@ -392,7 +392,7 @@ past_talks:
     <h2 class="section-banner-title">Upcoming Talks</h2>
   </div>
 </header>
-<section>
+<section class="normal-width">
   <ol class="talks-list">
     {%- for talk in upcoming_talks %}
       {%- include "partials/talk-item.njk" %}
@@ -407,7 +407,7 @@ past_talks:
   </div>
 </header>
 
-<section>
+<section class="normal-width">
 <ol class="talks-list">
   {%- for talk in past_talks %}
     {%- if not talk.hidden %}
@@ -423,7 +423,7 @@ past_talks:
   </div>
 </header>
 
-<section>
+<section class="normal-width">
 <p>Usually I like to deliver a combination of technical knowledge and inspirational messages. Context for technical know-how is critical. Understanding <em>what</em> you're doing is pointless if you don't understand <em>why</em> you're doing it.</p>
 
 <p>If you're interested in having me speak, <a href="mailto:ash@ashfurrow.com">get in touch</a>.</p>
