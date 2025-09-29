@@ -63,8 +63,6 @@ bundle-stats.json
 # Local Netlify folder
 .netlify
 
-_site/
-
 .claude/
 
 # I want the old site removed from git but I'll keep it locally for now.

@@ -10,8 +10,8 @@ The previous blog's readme is with the rest of the old blog in the old_blog dire
 
 ## Development Commands
 
-- `yarn start` - Start the development server with live reload. Claude should not run this command, it should `yarn build` to chech the `_site` directory instead.
-- `yarn build` - Build the site for production (outputs to `_site/`)
+- `yarn start` - Start the development server with live reload. Claude should not run this command, it should `yarn build` to chech the `public` directory instead.
+- `yarn build` - Build the site for production (outputs to `public/`)
 - `yarn format` - Format code with Prettier
 - `yarn prepare` - Install Husky pre-commit hooks
 
@@ -26,7 +26,7 @@ The previous blog's readme is with the rest of the old blog in the old_blog dire
   - `_data/` - Global data files (metadata.js)
   - `assets/` - Static assets (images, fonts, etc.)
 - `eleventy.config.js` - Main Eleventy configuration
-- `_site/` - Generated output directory (not committed)
+- `public/` - Generated output directory (not committed)
 - `old_blog` - Previous blog (we are moving content from it as we port it over)
 
 ### Key Features
