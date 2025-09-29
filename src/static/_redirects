@@ -29,3 +29,6 @@ https://ashfurrow-blog.netlify.com/*	https://ashfurrow.com/:splat	301!
 /blog/breath-of-the-wild-switch/ /blog/breath-of-the-wild-the-switch/
 /blog/removing-google-analytics/ /blog/removing-analytics/
 /blog/from-proposal-to-applause-how-i-public-speaking/ /blog/from-proposal-to-applause-how-i-do-public-speaking/
+
+# Similar to the above, we need a few redirects for the 11ty migration
+/blog/index-card-q-a/ /blog/index-card-qa/

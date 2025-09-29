@@ -4,6 +4,14 @@ export default {
   tags: ["posts"],
   layout: "layouts/post.njk",
   permalink: (data) => {
-    return `/blog/${slugify(data.title)}/`
+    const slug = slugify(data.title, {
+      decamelize: false,
+      customReplacements: [
+        ["'", ""],
+        ["&", ""]
+      ],
+      preserveCharacters: ["_"]
+    })
+    return `/blog/${slug}/`
   }
 }
