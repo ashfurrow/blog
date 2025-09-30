@@ -30,6 +30,34 @@ function groupBy(collection, iteratee) {
   return result
 }
 
+async function transformImage(context, imagePath) {
+  const markdownDir = path.dirname(context.page.inputPath)
+  const imageSourcePath = path.resolve(markdownDir, imagePath)
+  try {
+    const outputDir = path.dirname(context.page.outputPath)
+    const urlPath = context.page.url
+    let metadata = await Image(imageSourcePath, {
+      widths: [null],
+      formats: ["auto"],
+      outputDir,
+      urlPath,
+      filenameFormat: function (_id, src, _width, format, _options) {
+        const extension = path.extname(src)
+        const name = path.basename(src, extension)
+        return `${name}.${format}`
+      }
+    })
+
+    const formats = Object.keys(metadata)
+    const firstFormat = formats[0]
+    const images = metadata[firstFormat]
+    return images[0].url
+  } catch (error) {
+    console.error(`Error processing image ${imageSourcePath}:`, error)
+    return null
+  }
+}
+
 /**
  * Adds custom shortcodes and filters to the Eleventy config.
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig - The Eleventy configuration object.
@@ -100,31 +128,7 @@ export default function (eleventyConfig) {
       return bannerPath
     }
 
-    const markdownDir = path.dirname(this.ctx.page.inputPath)
-    const bannerImageSourcePath = path.resolve(markdownDir, bannerPath)
-    const outputDir = path.dirname(this.ctx.page.outputPath)
-    const urlPath = this.ctx.page.url
-    try {
-      let metadata = await Image(bannerImageSourcePath, {
-        widths: [null],
-        formats: ["auto"],
-        outputDir,
-        urlPath,
-        filenameFormat: function (_id, src, _width, format, _options) {
-          const extension = path.extname(src)
-          const name = path.basename(src, extension)
-          return `${name}.${format}`
-        }
-      })
-
-      const formats = Object.keys(metadata)
-      const firstFormat = formats[0]
-      const images = metadata[firstFormat]
-      return images[0].url
-    } catch (error) {
-      console.error(`Error processing banner image ${bannerImageSourcePath}:`, error)
-      return null
-    }
+    return transformImage(this.ctx, bannerPath)
   })
 
   eleventyConfig.addPairedShortcode("wide", function (content) {
@@ -240,13 +244,14 @@ export default function (eleventyConfig) {
     </div>`
   })
 
-  eleventyConfig.addShortcode("personalTimeline", function (timelineEntries) {
+  eleventyConfig.addShortcode("personalTimeline", async function (timelineEntries) {
     if (!timelineEntries || !Array.isArray(timelineEntries)) {
       return ""
     }
+    const context = this.ctx
 
-    const timelineHtml = timelineEntries
-      .map((entry) => {
+    const timelineHtml = await Promise.all(
+      timelineEntries.map(async (entry) => {
         // Handle date-only entries (year markers)
         if (!entry.title && entry.date) {
           return `<div class="timeline-item timeline-year-marker">
@@ -265,7 +270,7 @@ export default function (eleventyConfig) {
           if (entry.img) {
             const imgAlt = entry.imgAlt || entry.title || "Timeline image"
             imageContainerHtml = `<div class="timeline-image-container">
-              <img src="${entry.img}" alt="${imgAlt}" class="timeline-image" loading="lazy" />
+              <img eleventy:ignore src="${await transformImage(context, entry.img)}" alt="${imgAlt}" class="timeline-image" loading="lazy" />
             </div>`
           }
 
@@ -299,12 +304,11 @@ export default function (eleventyConfig) {
 
         return ""
       })
-      .filter((html) => html.length > 0)
-      .join("")
+    )
 
     return `<div class="personal-timeline">
       <div class="timeline-container">
-        ${timelineHtml}
+        ${timelineHtml.filter((html) => html.length > 0).join("")}
       </div>
     </div>`
   })

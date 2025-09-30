@@ -23,8 +23,6 @@ So yeah. Photography is relaxing. After yesterday’s panic attack, I walked aro
 
 I’ve been stocking up on film. Ordered some [Bikkuri Cases](http://www.japancamerahunter.com/shop/bikkuri-film-cases/) of film to mix things up. I’m not concerned about the “discipline” of shooting only one film or with one lens – the way I do photography now – by exploring the medium with different techniques, films, and equipment – makes me happy.
 
-[![](https://photos-b.ak.instagram.com/hphotos-ak-prn/929243_285571764983745_1391595301_n.jpg)](http://photos-b.ak.instagram.com/hphotos-ak-prn/929243_285571764983745_1391595301_n.jpg)
-
 I’m hoping to shoot through all that before moving to New York in February. I’ll process a lot of the monochromatic film myself, but the lab does a better job of scanning than I do.
 
 I’m really happy that I’ve found something to help me. It’s a form of self-expression, a form of exercise, and for me, a form of therapy. If you’re struggling with depression, I can’t say that photography will help you. But I hope you find something that does.

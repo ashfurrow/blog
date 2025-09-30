@@ -13,6 +13,6 @@ I'm bringing the same contemplation I have on film back to my digital photograph
 
 I've been getting up early to photograph the sunrise over Lake Ontario. It's been wonderful – waking up at 4am and biking for an hour to see something no one else is seeing in quite the same way.
 
-[![Sunbeams by Ash Furrow on 500px.com](https://pcdn.500px.net/43453186/83d81bf6788364ebcfa7416494ce8c85d11de6b3/4.jpg)](http://500px.com/photo/43453186)
+[![Sunbeams by Ash Furrow on 500px.com](./sunbeams.jpg)](http://500px.com/photo/43453186)
 
 Admittedly, I've caught the gear-acquisition syndrome a bit. I've upgraded my digital camera and purchased a used Leica M6. (I have a very understanding wife.) My gadget budget for the rest of the year has been completely depleted, but I couldn't be happier – learning something new with each photo I take.

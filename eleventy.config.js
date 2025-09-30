@@ -66,15 +66,11 @@ export default async function (eleventyConfig) {
 
   // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // Output formats for each image.
     formats: ["auto"],
-    failOnError: false,
-    // Skip processing for images with data-no-transform attribute
-    transformOnRequest: (src, attributes) => {
-      if (attributes["data-no-transform"] !== undefined) {
-        return false
-      }
-      return true
+    filenameFormat: function (id, src, width, format, options) {
+      // It's almost like the plugin authors don't want you to use the original filename, which I think is silly.
+      const filename = src.split("/").slice(-1)[0].split(".")[0]
+      return `${filename}-${id}-${width}.${format}`
     },
     defaultAttributes: {
       loading: "lazy",
