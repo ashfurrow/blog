@@ -40,7 +40,7 @@ Being me, my mind drifted to my coding. I started thinking about how kintsugi an
 
 Take the wabe-sabi idea of incompleteness. Developers often lament that we never finish a project, we just kind of stop working on it. But is it inherently a sad thing that projects never complete? Or are there external factors driving us to feel sorrow and regret for the bugs we'll never get around to fixing and to the features we'll never complete?
 
-[![](https://www.commitstrip.com/wp-content/uploads/2014/11/Strip-Side-project-650-finalenglish.jpg)](https://www.commitstrip.com/en/2014/11/25/west-side-project-story/)
+[![](./side-project.jpg)](https://www.commitstrip.com/en/2014/11/25/west-side-project-story/)
 
 Consider the idea of impermanence. Sure, code can be safely stored "forever", but I've got plenty of Swift 1.2 code that I can't compile anymore. And jeez, what happens when an API you depend on goes away?
 

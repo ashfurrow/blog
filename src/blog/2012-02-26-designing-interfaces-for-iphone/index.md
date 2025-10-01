@@ -8,5 +8,3 @@ date: 2012-02-26
 I gave a presentation this morning at [Podcamp Toronto](http://2012.podcamptoronto.com/) about designing interfaces for iPhone. The talk was a high-level description of how to organize and structure content in iPhone apps. The slides are available [Here](https://speakerdeck.com/ashfurrow/designing-interfaces-for-iphone).
 
 Also, I release the slides under Creative Commons.
-
-[![Creative Commons License](https://licensebuttons.net/l/by/3.0/88x31.png)](http://creativecommons.org/licenses/by/3.0/)

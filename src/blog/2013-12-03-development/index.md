@@ -7,7 +7,7 @@ I've been developing my own film recently. I'm not great at it yet – still get
 
 Film fascinates me. I have these two little dark boxes that allow light in for very specific periods of time, and only through a complex arrangement of glass lenses. Light strikes an emulsion of chemicals that crystalizes an invisible image, later to be washed away by a chemical bath. It's all rather romatic.
 
-[![Cat's Eyes by Ash Furrow on 500px.com](https://ppcdn.500px.org/53774114/2fa691b358abdae27986d34d2070cf4d0b6cffe8/4.jpg)](http://500px.com/photo/53774114)
+[![Cat's Eyes by Ash Furrow on 500px.com](./cateyes.jpg)](http://500px.com/photo/53774114)
 
 There's really no one to blame but yourself – complete control means complete responsibility. This is one image in dozens that I've camptured and developed. One in dozens that I'm proud of.
 

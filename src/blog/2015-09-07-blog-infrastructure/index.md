@@ -13,7 +13,7 @@ Recently, I've been busy. I've [switched to using haml](https://github.com/ashfu
 
 This weekend has also been full of exciting changes to my blog ( ಠ*ಠ ). It started when I took a look at the CloudFlare dashboard and saw that my site barely had \_any* cache hits. Not a huge deal, since my S3 bill is pretty cheap anyway, but I wanted to fix it. It was a matter of principle or whatever.
 
-![Giphy](https://media4.giphy.com/media/14uycovNIQpFf2/giphy.gif)
+![Giphy](./lightbulb.webp)
 
 I started by [applying asset hashes](https://github.com/ashfurrow/blog/commit/77ae72d62b95d20055707f818a39b18715cab003) to individual resources, like javascript and CSS files. Middleman statically generates my site, which is then uploaded to S3. I'd _like_ to cache the CSS and javascript forever on the client's side, but that's difficult to do. By changing the filename to include a hash of the file itself, the filename changes when its contents do. By using a differently named file, I can bypass existing caches when I make changes. Nice.
 
@@ -21,7 +21,7 @@ Now that the files are uniquely named based on hashes, I need to tell clients to
 
 The next thing was to tell CloudFlare to cache _everything_. By default, it doesn't cache HTML. Since I'm trying to do things properly or whatever, [I also added documentation](https://github.com/ashfurrow/blog/commit/eba80f4be5d3e33b83550a9441a291bc7a01b3d3#diff-04c6e90faac2675aa89e2176d2eec7d8R62).
 
-![Thumbs up for documentation!](https://media1.giphy.com/media/vtVpHbnPi9TLa/giphy.gif)
+![Thumbs up for documentation!](./thumbsup.webp)
 
 So the site is now properly cached and stuff, very cool (since [verified](https://twitter.com/ashfurrow/status/640877854478217216)). I would've called it a day at this point, but in the process of setting up the cache, I came across [Google's PageSpeed tester](https://developers.google.com/speed/pagespeed/insights/). My site had a pretty respectable rating in general – CLoudFront helped a lot here – but it had only 74% on mobile. This really bothered me for some reason. I guess I always assumed since my site was statically served off of S3, and behind a CDN, that it would be fast.
 
