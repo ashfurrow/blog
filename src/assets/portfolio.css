@@ -51,7 +51,7 @@ footer a:hover {
 }
 
 /* TODO: these styles are duplicative of .section-banner-title. */
-.portfolio-section-banner figcaption {
+.portfolio-section-banner div {
   display: block;
   padding: 6rem var(--spacing-section-horizontal) 4rem var(--spacing-section-horizontal);
   text-align: left;
@@ -61,7 +61,7 @@ footer a:hover {
   right: -55%;
 }
 
-.portfolio-section-banner figcaption::before {
+.portfolio-section-banner div::before {
   content: '';
   display: block;
   color: white;
@@ -81,12 +81,12 @@ footer a:hover {
   margin: 0;
 }
 
-.portfolio-section-banner figcaption p {
+.portfolio-section-banner div p {
   margin: 0;
 }
 
 @media (max-width: 1200px) {
-  .portfolio-section-banner figcaption::before {
+  .portfolio-section-banner div::before {
     width: 205px;
     height: 94px;
     top: 2em;
@@ -98,17 +98,17 @@ footer a:hover {
     font-size: 1.5rem;
   }
   
-  .portfolio-section-banner figcaption p {
+  .portfolio-section-banner div p {
     font-size: 0.75rem;
   }
 }
 
 @media (max-width: 600px) {
-  .portfolio-section-banner figcaption::before {
+  .portfolio-section-banner div::before {
     display: none;
   }
   
-  .portfolio-section-banner figcaption {
+  .portfolio-section-banner div {
     padding: 3rem var(--spacing-footer-icon);
     text-align: center;
     width: 100%;

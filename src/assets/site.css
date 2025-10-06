@@ -284,7 +284,7 @@ iframe {
 a {
   color: var(--primary);
   text-decoration: none;
-  transition: all none;
+  transition: none;
 }
 h2 a, h3 a {
   color: var(--grey-dark);
@@ -455,7 +455,7 @@ header h1 {
   text-decoration: none;
   position: absolute;
   bottom: 0;
-  right: env(safe-area-inset-right);
+  right: env(safe-area-inset-right 0);
   color: rgba(255, 255, 255, 0.5);
   padding: 1.25rem;
   z-index: 10;
@@ -478,8 +478,8 @@ header h1 {
   background: transparent;
   z-index: 1000;
   font-size: 0.75rem;
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left 0);
+  padding-right: env(safe-area-inset-right 0);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .navbar[data-scrolled="false"] {
