@@ -8,6 +8,7 @@
   --grey-light: #eee;
   --grey-extra-light: rgba(0, 0, 0, 0.1);
   
+  /* TODO: Are we using all these? */
   /* Typography */
   --header-font-family: 'Futura', sans-serif;
   --body-font-family: 'ff-tisa-web-pro', serif;
@@ -77,6 +78,10 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .normal-width {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
   .normal-width > * {
     grid-column: 1 / 13;
   }
@@ -186,7 +191,7 @@ article, section {
 
 .typo-correction {
   width: 100%;
-  margin: 2rem auto;
+  margin: 2rem auto 0 auto;
 }
 .typo-correction hr {
   margin: 0.5rem 0;
@@ -253,7 +258,6 @@ article, section {
   background-color: var(--primary);
 }
 
-
 p {
   margin-block-end: 0;
   margin-block-start: 0;
@@ -296,8 +300,13 @@ h1, h2, h3 {
 h1 {
   font-family: var(--header-font-family);
 }
-h2 {
+h1, h2 {
   font-size: 2rem;
+}
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
 }
 h3 {
   font-size: 1.5rem;
@@ -352,8 +361,8 @@ pre {
 /* Header */
 header.site-header {
   position: relative;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   display: block;
   clear: both;
   text-align: center;
@@ -382,8 +391,14 @@ header.site-header {
 }
 @media (max-width: 1200px) {
   header.site-header {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  header.site-header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 .header-content {
@@ -455,7 +470,7 @@ header h1 {
   text-decoration: none;
   position: absolute;
   bottom: 0;
-  right: env(safe-area-inset-right 0);
+  right: env(safe-area-inset-right);
   color: rgba(255, 255, 255, 0.5);
   padding: 1.25rem;
   z-index: 10;
@@ -478,8 +493,8 @@ header h1 {
   background: transparent;
   z-index: 1000;
   font-size: 0.75rem;
-  padding-left: env(safe-area-inset-left 0);
-  padding-right: env(safe-area-inset-right 0);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .navbar[data-scrolled="false"] {
@@ -513,14 +528,13 @@ header h1 {
   display: flex;
   align-items: center;
   height: 1.5rem;
-  margin: 0.5rem 0;
+  margin: 0;
   text-decoration: none;
 }
 .navbar-logo img {
   height: 75%;
   width: auto;
   max-width: 1.5rem;
-  margin: 0.1rem 0 auto 0;
   object-fit: contain;
 }
 .navbar .logo-dark {
@@ -738,7 +752,7 @@ header h1 {
     display: block;
   }
   .navbar-container {
-    padding: 0 1rem 0 1rem;
+    padding: 0 0.5rem 0 0.5rem;
     width: 100%;
     max-width: none;
     display: flex;
@@ -813,7 +827,7 @@ footer .attribution {
 .featured-post-title {
   display: block;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  font-size: 2rem;
   line-height: 1.3;
   margin-bottom: 1rem;
   text-align: left;
@@ -828,7 +842,7 @@ footer .attribution {
   }
   
   .featured-post-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0;
   }
 }
@@ -891,7 +905,7 @@ footer .attribution {
 
 .section-banner-content {
   position: relative;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   color: var(--white);
 }
 
@@ -908,6 +922,9 @@ footer .attribution {
 }
 
 @media (max-width: 600px) {
+  .section-banner-content {
+    padding: 0;
+  }
   .section-banner {
     padding: 3rem 1rem;
   }

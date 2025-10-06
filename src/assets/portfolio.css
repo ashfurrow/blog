@@ -53,7 +53,7 @@ footer a:hover {
 /* TODO: these styles are duplicative of .section-banner-title. */
 .portfolio-section-banner div {
   display: block;
-  padding: 6rem var(--spacing-section-horizontal) 4rem var(--spacing-section-horizontal);
+  padding: 5rem 2rem 2rem 2rem;
   text-align: left;
   width: 35%;
   max-width: 325px;
