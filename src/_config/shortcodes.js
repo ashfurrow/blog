@@ -117,7 +117,22 @@ export default function (eleventyConfig) {
     return JSON.stringify(results)
   })
 
-  eleventyConfig.addNunjucksAsyncShortcode("bannerImage", async function () {
+  eleventyConfig.addNunjucksAsyncShortcode("socialImageURL", async function () {
+    // Fall back to banner if social image is not specified
+    /** @type {string} */
+    const imagePath = this.ctx.socialImage || this.ctx.banner
+
+    if (!imagePath) {
+      return "/assets/bg/default.jpg"
+    }
+    if (imagePath.includes("/assets/")) {
+      return imagePath
+    }
+
+    return transformImage(this.ctx, imagePath)
+  })
+
+  eleventyConfig.addNunjucksAsyncShortcode("bannerImageURL", async function () {
     /** @type {string} */
     const bannerPath = this.ctx.banner
 
@@ -128,7 +143,7 @@ export default function (eleventyConfig) {
       return bannerPath
     }
 
-    return transformImage(this.ctx, bannerPath)
+    return await transformImage(this.ctx, bannerPath)
   })
 
   eleventyConfig.addPairedShortcode("wide", function (content) {

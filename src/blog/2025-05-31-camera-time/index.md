@@ -1,6 +1,7 @@
 ---
 title: Camera Time
 date: 2025-05-31
+socialImage: fredericton.jpeg
 banner: fredericton.jpeg
 bannerAttribution: https://photos.ashfurrow.com/downtown-in-the-rain
 ---

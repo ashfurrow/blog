@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
-		<meta name="image" content="{{ metadata.url }}{{ banner or metadata.banner }}">
+		<meta name="image" content="{{ metadata.url }}{% socialImageURL %}">
 		
 		<!-- Open Graph meta tags -->
 		<meta property="og:locale" content="{{ metadata.ogLanguage }}">
@@ -15,7 +15,7 @@
 		<meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:description" content="{{ description or metadata.description }}">
-		<meta property="og:image" content="{{ metadata.url }}{{ banner or metadata.banner }}">
+		<meta property="og:image" content="{{ metadata.url }}{% socialImageURL %}">
 		
 		<!-- Twitter Card meta tags -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -23,7 +23,7 @@
 		<meta name="twitter:title" content="{{ title or metadata.title }}">
 		<meta name="twitter:url" content="{{ metadata.url }}">
 		<meta name="twitter:description" content="{{ description or metadata.description }}">
-		<meta name="twitter:image" content="{{ metadata.url }}{{ banner or metadata.banner }}">
+		<meta name="twitter:image" content="{{ metadata.url }}{% socialImageURL %}">
 		
 		<!-- RSS Feed -->
 		<link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ metadata.titleAlt }}">
@@ -63,7 +63,7 @@
 			"headline": "{{ title }}",
 			"image": {
 				"@type": "ImageObject",
-				"url": "{{ metadata.url }}{{ banner or metadata.banner }}"
+				"url": "{{ metadata.url }}{% socialImageURL %}"
 			},
 			"description": "{{ metadata.description }}",
 			"datePublished": "{{ date | htmlDateString }}",
@@ -80,7 +80,7 @@
 				"name": "{{ metadata.author.name }}",
 				"logo": {
 					"@type": "ImageObject",
-					"url": "{{ metadata.url }}{{ metadata.logo }}"
+					"url": "{{ metadata.url }}/{{ metadata.logo }}"
 				}
 			},
 			"isPartOf": "{{ metadata.url }}",
@@ -126,7 +126,7 @@
 			</div>
 		</nav>
 
-		<header class="site-header" style="--banner-image: url('{% bannerImage %}')">
+		<header class="site-header" style="--banner-image: url('{% bannerImageURL %}')">
 			<div class="header-content{% if isPost %} left{% endif %}">
 				<h1>{{title}}</h1>
 				{% if subtitle %}
