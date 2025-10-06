@@ -13,7 +13,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "deploy:headless": "netlify deploy",
+    "deploy:prod": "netlify deploy",
     "deploy:preview": "netlify deploy --context deploy-preview",
     "format": "prettier --write",
     "prepare": "husky"

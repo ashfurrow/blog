@@ -11,6 +11,7 @@ git clone https://github.com/ashfurrow/blog.git
 cd blog
 yarn install
 yarn start # This will take a few seconds the first time
+DEBUG=Eleventy* yarn start # To output console.log() statements from within 11ty
 ```
 
 Then navigate to [http://localhost:8080](http://localhost:8000).
@@ -59,6 +60,8 @@ I'd like to thank the following contributors.
 
 The site is served from [Netlify](https://www.netlify.com). The feeds are served from the `feed.ashfurrow.com` subdomain (aliased to the main domain, except everything that's not a feed URL will 404).
 
+Deploys happen automatically on pushes to the `main` branch. The site can also be deployed locally:
+
 ```sh
-yarn deploy # TODO:
+yarn deploy
 ```
