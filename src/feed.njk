@@ -16,9 +16,9 @@ layout: false
     <item>
       <title>{{ post.data.title }}</title>
       <link>{{ absolutePostUrl }}</link>
-      <description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+      <description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | truncate }}</description>
+      <content:encoded>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content:encoded>
       <pubDate>{{ post.date | rfc822Date }}</pubDate>
-      <dc:creator>{{ metadata.author.name }}</dc:creator>
       <guid>{{ absolutePostUrl }}</guid>
     </item>
     {%- endfor %}
