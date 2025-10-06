@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="543px" height="312px" viewBox="0 0 543 312" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>compared</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-120.000000, -74.000000)">
+            <g id="compared" transform="translate(120.000000, 74.000000)">
+                <path d="M200.712281,52.6189329 L174.096314,148.190058 L266.986283,172 L174.096314,195.809942 L200.712281,291.381067 L134.5,219.597625 L68.2877194,291.381067 L94.903686,195.809942 L2.01371677,172 L94.903686,148.190058 L68.2877194,52.6189329 L134.5,124.402375 L200.712281,52.6189329 Z" id="Star" stroke="#979797" fill="#D8D8D8"></path>
+                <path d="M482.668273,93.6945292 L497.511039,136.533109 L525.360792,171.5 L497.511039,206.466891 L482.668273,249.305471 L440,241.41442 L397.331727,249.305471 L382.488961,206.466891 L354.639208,171.5 L382.488961,136.533109 L397.331727,93.6945292 L440,101.58558 L482.668273,93.6945292 Z" id="Star-Copy" stroke="#979797" fill="#D8D8D8"></path>
+                <text id="“Well-Rounded”" font-family="AmericanTypewriter, American Typewriter" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="373.27" y="16">“Well-Rounded”</tspan>
+                </text>
+                <text id="“Spiky”" font-family="AmericanTypewriter, American Typewriter" font-size="18" font-weight="normal" fill="#000000">
+                    <tspan x="101.393" y="16">“Spiky”</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
