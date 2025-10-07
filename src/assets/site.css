@@ -8,27 +8,12 @@
   --grey-light: #eee;
   --grey-extra-light: rgba(0, 0, 0, 0.1);
   
-  /* TODO: Are we using all these? */
-  /* Typography */
   --header-font-family: 'Futura', sans-serif;
   --body-font-family: 'ff-tisa-web-pro', serif;
   --base-font-size: 20px;
-  --font-size-small: 0.9rem;
-  --font-size-big: 2.9rem;
   --font-weight-bold: 700;
   
-  /* Animation durations */
-  --transition-duration-fast: 0.2s;
   --transition-duration-standard: 0.3s;
-  
-  /* Common spacing */
-  --spacing-xs: 0.75rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-xxl: 4rem;
-  --spacing-xxxl: 6rem;
 
   /* Media queries don't support variables, apparently, lol */
   /* --mobile-breakpoint: 600px; */
@@ -938,5 +923,3 @@ footer .attribution {
     font-size: 1.8rem;
   }
 }
-
-

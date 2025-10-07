@@ -114,6 +114,7 @@ export default function (eleventyConfig) {
       .sort((lhs, rhs) => rhs.year - lhs.year)
       .flatMap(({ months }) => months)
 
+    // We need to marshal the data over JSON due to 11ty
     return JSON.stringify(results)
   })
 

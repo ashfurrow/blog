@@ -2,9 +2,6 @@
 
 /* Portfolio-specific CSS variables */
 :root {
-  /* Animation durations */
-  --transition-duration-standard: 0.3s;
-  
   /* Spacing */
   --spacing-section-horizontal: 2rem;
   --spacing-footer-icon: 1rem;
@@ -50,7 +47,6 @@ footer a:hover {
   position: relative;
 }
 
-/* TODO: these styles are duplicative of .section-banner-title. */
 .portfolio-section-banner div {
   display: block;
   padding: 5rem 2rem 2rem 2rem;
