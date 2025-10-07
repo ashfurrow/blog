@@ -833,9 +833,9 @@ footer .attribution {
 .featured-post-title {
   display: block;
   padding: 0.75rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.3;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
@@ -848,7 +848,6 @@ footer .attribution {
   }
   
   .featured-post-title {
-    font-size: 1.5rem;
     margin: 0;
   }
 }
