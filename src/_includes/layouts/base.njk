@@ -192,62 +192,45 @@
 					this.mobileLinks = document.querySelectorAll('.mobile-links a')
 					/** @type {boolean} */
 					this.isMenuOpen = false
-					this.init()
-				}
-				
-				init() {
-					this.setupScrollListener()
-					this.setupMenuToggle()
-					this.setupOutsideClick()
-				}
-				
-				setupScrollListener() {
-					// Set initial state immediately
-					const isScrolled = window.scrollY > 0
-					this.navbar.setAttribute('data-scrolled', isScrolled.toString())
+					/** @type {boolean} */
+					this.ticking = false
+
+					// Initial state setup
+					this.navbar.setAttribute('data-scrolled', (window.scrollY > 0).toString())
 					
-					let ticking = false
+					// Event listeners
 					const handleScroll = () => {
-						if (!ticking) {
+						if (!this.ticking) {
 							requestAnimationFrame(() => {
 								const isScrolled = window.scrollY > 0
 								this.navbar.setAttribute('data-scrolled', isScrolled.toString())
-								ticking = false
+								this.ticking = false
 							})
-							ticking = true
+							this.ticking = true
 						}
 					}
-					
 					window.addEventListener('scroll', handleScroll)
-				}
-				
-				setupMenuToggle() {
+
 					this.hamburger.addEventListener('click', (e) => {
 						e.stopPropagation()
 						this.toggleMenu()
 					})
-				}
-				
-				setupOutsideClick() {
+
 					document.addEventListener('click', (e) => {
 						if (this.isMenuOpen && !this.navbar.contains(e.target)) {
 							this.closeMenu()
 						}
 					})
 				}
-				
 				toggleMenu() {
 					this.isMenuOpen = !this.isMenuOpen
 					this.navbar.setAttribute('data-menu-open', this.isMenuOpen.toString())
 				}
-				
 				closeMenu() {
 					this.isMenuOpen = false
 					this.navbar.setAttribute('data-menu-open', 'false')
 				}
 			}
-
-			// Initialize when DOM is ready
 			document.addEventListener('DOMContentLoaded', () => {
 				new NavbarController()
 			})
