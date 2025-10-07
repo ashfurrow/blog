@@ -3,8 +3,14 @@
   width: 100%;
   height: 500px;
   background-size: 100% 100%;
-  margin: 0 auto;
   position: relative;
+  grid-column: 2 / 12;
+  margin: 0 auto 1.66rem auto;
+}
+@media (max-width: 600px) {
+  .chat-wrapper {
+    grid-column: 1 / 13;
+  }
 }
 
 /* Make everything animate because animations are cool. */

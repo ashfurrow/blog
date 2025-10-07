@@ -168,8 +168,6 @@ Go ahead and hit "Send" to get started. (Note: if you prefer, you can read the [
   window.chatScript = {{ chatScript | toJson | safe }};
 </script>
 
-{% wide %}
-
 <div class="chat-wrapper">
   <div class="responsive-html5-chat">
     <form class="chat">
@@ -186,7 +184,6 @@ Go ahead and hit "Send" to get started. (Note: if you prefer, you can read the [
     </form>
   </div>
 </div>
-{% endwide %}
 
 This isn't a compressive list, and my opinions are constantly evolving. I try to be aware of my biases and blindspots, and I try not to assume that my experiences apply universally. These observations are obviously based on my experience of moving between iOS and web, which isn't typical.
 
