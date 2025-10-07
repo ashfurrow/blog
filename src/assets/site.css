@@ -530,6 +530,12 @@ header h1 {
   height: 1.5rem;
   margin: 0;
   text-decoration: none;
+  padding-left: 0.25rem;
+}
+@media (max-width: 600px) {
+  .navbar-logo {
+    padding-left: initial;
+  }
 }
 .navbar-logo img {
   height: 75%;
