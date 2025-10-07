@@ -216,30 +216,6 @@ form.chat span.spinner {
 }
 
 /* Loading bar animation */
-@-moz-keyframes loading-bar {
-  0% {
-    width: 0%;
-  }
-  90% {
-    width: 90%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes loading-bar {
-  0% {
-    width: 0%;
-  }
-  90% {
-    width: 90%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 @keyframes loading-bar {
   0% {
     width: 0%;

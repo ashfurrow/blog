@@ -1,6 +1,3 @@
-/* Portfolio Page Styles */
-
-/* Portfolio-specific CSS variables */
 :root {
   /* Spacing */
   --spacing-section-horizontal: 2rem;
@@ -12,41 +9,34 @@ footer a {
   color: var(--grey-default);
   transition: color var(--transition-duration-standard) ease;
 }
-
 footer a:hover {
   color: var(--primary);
 }
-
 .portfolio-footer {
   text-align: center;
   margin: 2rem 0;
 }
-
 .portfolio-footer span {
   margin: 0 var(--spacing-footer-icon);
 }
-
 .portfolio-footer a {
   color: var(--grey-default);
   font-size: 3rem;
   transition: color var(--transition-duration-standard) ease;
 }
-
 .portfolio-footer a:hover {
   color: var(--primary);
 }
-
 @media (max-width: 600px) {
   .portfolio-footer span {
     margin: 0 0.3rem;
   }
 }
 
-/* Portfolio section callouts - artful positioning */
+/* Portfolio section callouts */
 .portfolio-section-banner {
   position: relative;
 }
-
 .portfolio-section-banner div {
   display: block;
   padding: 5rem 2rem 2rem 2rem;
@@ -56,7 +46,6 @@ footer a:hover {
   position: relative;
   right: -55%;
 }
-
 .portfolio-section-banner div::before {
   content: '';
   display: block;
@@ -71,16 +60,13 @@ footer a:hover {
   background-size: contain;
   pointer-events: none;
 }
-
 .portfolio-section-banner .section-banner-title {
   font-size: 2.5rem;
   margin: 0;
 }
-
 .portfolio-section-banner div p {
   margin: 0;
 }
-
 @media (max-width: 1200px) {
   .portfolio-section-banner div::before {
     width: 205px;
@@ -88,22 +74,18 @@ footer a:hover {
     top: 2em;
     right: 235px;
     background-image: url(/assets/portfolio/callout_small.svg);
-  }
-  
+  }  
   .portfolio-section-banner .section-banner-title {
     font-size: 1.5rem;
-  }
-  
+  } 
   .portfolio-section-banner div p {
     font-size: 0.75rem;
   }
 }
-
 @media (max-width: 600px) {
   .portfolio-section-banner div::before {
     display: none;
-  }
-  
+  } 
   .portfolio-section-banner div {
     padding: 3rem var(--spacing-footer-icon);
     text-align: center;
@@ -115,10 +97,8 @@ footer a:hover {
 }
 
 /* Right-aligned image styling for company entries */
-
 .right-image {
   float: right;
-  /* display: table; */
 }
 
 @media (max-width: 600px) {

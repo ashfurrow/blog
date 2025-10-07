@@ -1,9 +1,11 @@
-/* Personal Timeline Styles - Alternating layout with centered markers */
+html {
+  scroll-behavior: smooth;
+}
+
 .personal-timeline {
   margin: 2rem 0;
   padding: 0 0;
 }
-
 .timeline-container {
   position: relative;
 }
@@ -76,7 +78,6 @@
   margin: 0;
 }
 
-
 /* Timeline images */
 .timeline-image {
   width: 100%;
@@ -94,6 +95,7 @@ h2.timeline-year {
 .timeline-title {
   font-size: 1.2rem;
   margin: 0 0 0.5rem 0;
+  position: relative;
 }
 
 .timeline-anchor {
@@ -104,21 +106,19 @@ h2.timeline-year {
 .timeline-anchor:hover {
   color: var(--primary);
 }
-
 .timeline-anchor:hover::after {
-  content: ' #';
+  position: absolute;
+  visibility: hidden;
+  content: '#';
+  padding-left: 0.25rem;
   color: var(--primary);
-  font-weight: bold;
 }
-
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
+.timeline-anchor:hover::after {
+  visibility: visible;
 }
-
 
 /* Desktop alternating layout with CSS Grid */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   /* Timeline entries use 2-column grid for content-image layout */
   .timeline-item:not(.timeline-year-marker) {
     display: grid;
@@ -154,19 +154,19 @@ html {
 }
 
 /* Mobile layout - all items on the left */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .timeline-container::before {
-    left: 2rem;
+    left: 1rem;
     transform: none;
   }
   
   .timeline-marker {
-    left: 2rem;
+    left: 1rem;
     transform: translateX(-50%);
   }
   
   .timeline-item {
-    padding-left: 3rem;
+    padding-left: 2rem;
     flex-direction: column;
   }
   
