@@ -3,136 +3,86 @@
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig - The Eleventy configuration object.
  */
 export default function (eleventyConfig) {
-  /**
-   * Parses a date string into a Date object.
-   * @param {string} dateString - The date string to parse
-   * @returns {Date} The parsed Date object
-   */
-  eleventyConfig.addFilter("parseDate", function (dateString) {
-    return new Date(dateString)
-  })
-
-  /**
-   * Parses a JSON string.
-   * @param {string} str - The JSON string to parse
-   * @returns {any} The parsed JSON object
-   */
-  eleventyConfig.addFilter("fromJson", function (str) {
-    return JSON.parse(str)
-  })
-
-  /**
-   * Formats a date object into a readable string.
-   * @param {Date} dateObj
-   * @param {string} [format]
-   * @param {string} [zone]
-   * @returns {string}
-   */
-  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-    const date = new Date(dateObj)
-    const options = {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      timeZone: zone || "UTC"
+  eleventyConfig.addFilter(
+    "parseDate",
+    /**
+     * Parses a date string into a Date object.
+     * @param {string} dateString - The date string to parse
+     * @returns {Date} The parsed Date object
+     */
+    function (dateString) {
+      return new Date(dateString)
     }
-    return date.toLocaleDateString("en-US", options)
-  })
+  )
 
-  /**
-   * Formats a date object into an HTML date string (yyyy-mm-dd).
-   * @param {Date} dateObj
-   * @returns {string}
-   */
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    const date = new Date(dateObj)
-    return date.toISOString().split("T")[0]
-  })
-
-  /**
-   * Gets the first n elements of an array.
-   * @param {any[]} array
-   * @param {number} n
-   * @returns {any[]}
-   */
-  eleventyConfig.addFilter("head", (array, n) => {
-    if (!Array.isArray(array) || array.length === 0) {
-      return []
+  eleventyConfig.addFilter(
+    "fromJson",
+    /**
+     * @param {string} str - The JSON string to parse
+     */
+    function (str) {
+      return JSON.parse(str)
     }
-    if (n < 0) {
-      return array.slice(n)
+  )
+
+  eleventyConfig.addFilter(
+    "readableDate",
+    /**
+     * @param {Date} dateObj
+     */
+    function (dateObj) {
+      const date = new Date(dateObj)
+      const options = {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }
+      return date.toLocaleDateString("en-CA", options)
     }
+  )
 
-    return array.slice(0, n)
-  })
+  eleventyConfig.addFilter(
+    "htmlDateString",
+    /**
+     * Formats a date object into an HTML date string (yyyy-mm-dd).
+     * @param {Date} dateObj
+     * @returns {string}
+     */
+    function (dateObj) {
+      const date = new Date(dateObj)
+      return date.toLocaleDateString("en-CA") // Canada uses `YYYY-MM-DD`
+    }
+  )
 
-  /**
-   * Returns the smallest number argument.
-   * @param {...number} numbers
-   * @returns {number}
-   */
-  eleventyConfig.addFilter("min", (...numbers) => {
-    return Math.min.apply(null, numbers)
-  })
+  eleventyConfig.addFilter(
+    "head",
+    /**
+     * @param {any[]} array
+     * @param {number} n
+     */
+    function (array, n) {
+      if (!Array.isArray(array) || array.length === 0) {
+        return []
+      }
+      if (n < 0) {
+        return array.slice(n)
+      }
 
-  /**
-   * Returns the keys used in an object.
-   * @param {Object} target
-   * @returns {string[]}
-   */
-  eleventyConfig.addFilter("getKeys", (target) => {
-    return Object.keys(target)
-  })
+      return array.slice(0, n)
+    }
+  )
 
-  /**
-   * Filters out 'all' and 'posts' from a tag list.
-   * @param {string[]} tags
-   * @returns {string[]}
-   */
-  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    return (tags || []).filter((tag) => ["all", "posts"].indexOf(tag) === -1)
-  })
+  eleventyConfig.addFilter(
+    "min",
+    /**
+     * @param {...number} numbers
+     */
+    function (...numbers) {
+      return Math.min.apply(null, numbers)
+    }
+  )
 
-  /**
-   * Sorts an array of strings alphabetically.
-   * @param {string[]} strings
-   * @returns {string[]}
-   */
-  eleventyConfig.addFilter("sortAlphabetically", (strings) => (strings || []).sort((b, a) => b.localeCompare(a)))
-
-  /**
-   * Strips HTML tags from a string.
-   * @param {string} content
-   * @returns {string}
-   */
-  eleventyConfig.addFilter("striptags", (content) => {
-    return content.replace(/<[^>]*>/g, "")
-  })
-
-  /**
-   * Converts content to JSON properly.
-   * @param {any} content
-   * @returns {string}
-   */
-  eleventyConfig.addFilter("toJson", (content) => {
+  eleventyConfig.addFilter("toJson", function (content) {
     return JSON.stringify(content)
-  })
-
-  /**
-   * Formats a date object to RFC 822 format in GMT.
-   * @param {Date} dateObj
-   * @returns {string}
-   */
-  eleventyConfig.addFilter("rfc822Date", (dateObj) => {
-    return new Date(dateObj).toUTCString()
-  })
-
-  /**
-   * Formats a date object to ISO 8601 format for XML sitemaps.
-   * @param {Date} dateObj
-   * @returns {string}
-   */
-  eleventyConfig.addFilter("xmlDate", (dateObj) => {
-    return new Date(dateObj).toISOString()
   })
 }

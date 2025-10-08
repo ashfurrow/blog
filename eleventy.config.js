@@ -7,49 +7,45 @@ const { eleventyImageTransformPlugin } = Image
 
 import pluginFilters from "./src/_config/filters.js"
 import pluginShortcodes from "./src/_config/shortcodes.js"
+import pluginPersonalTimeline from "./src/_config/personaltimeline.js"
 
 /**
  * Configure Eleventy with plugins, bundles, and shortcodes.
  * @param {import("@11ty/eleventy").UserConfig} eleventyConfig - The Eleventy configuration object.
- * @returns {Promise<void>}
  */
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(IdAttributePlugin)
   eleventyConfig.addPlugin(HtmlBasePlugin)
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin)
+  eleventyConfig.addPlugin(rssPlugin)
   eleventyConfig.addPlugin(pluginFilters)
   eleventyConfig.addPlugin(pluginShortcodes)
+  eleventyConfig.addPlugin(pluginPersonalTimeline)
 
-  // RSS Plugin - provides filters like dateToRfc822, absoluteUrl, htmlToAbsoluteUrls
-  eleventyConfig.addPlugin(rssPlugin)
-
-  // Syntax highlighting plugin with shell alias (matching old Gatsby config)
   eleventyConfig.addPlugin(syntaxHighlight, {
-    alwaysWrapLineHighlights: false,
-    lineSeparator: "\n",
-    preAttributes: {},
-    codeAttributes: {},
-    // Default to plaintext for code blocks without language specified
-    errorOnInvalidLanguage: false,
     init: function ({ Prism }) {
-      // Add shell alias for sh (matching old Gatsby config)
-      Prism.languages.shell = Prism.languages.bash
-      // Add plaintext language (no highlighting, but gets the styling)
       Prism.languages.plaintext = {}
     }
   })
 
-  // Transform code blocks without language to use plaintext
-  eleventyConfig.addTransform("plaintext-code-blocks", function (content, outputPath) {
-    if (outputPath && outputPath.endsWith(".html")) {
-      // Replace <pre><code> (without language class) with <pre class="language-plaintext"><code class="language-plaintext">
-      return content.replace(
-        /<pre><code>([^]*?)<\/code><\/pre>/g,
-        '<pre class="language-plaintext"><code class="language-plaintext">$1</code></pre>'
-      )
+  eleventyConfig.addTransform(
+    "plaintext-code-blocks",
+    /**
+     * @param {string} content
+     * @param {string} outpugPath
+     */
+    function (content, outputPath) {
+      if (outputPath && outputPath.endsWith(".html")) {
+        // Replace <pre><code> (without language class) with <pre class="language-plaintext"><code class="language-plaintext">
+        // We need this for prism formatting.
+        return content.replace(
+          /<pre><code>([^]*?)<\/code><\/pre>/g,
+          '<pre class="language-plaintext"><code class="language-plaintext">$1</code></pre>'
+        )
+      }
+      return content
     }
-    return content
-  })
+  )
 
   eleventyConfig.addPassthroughCopy("src/assets")
   eleventyConfig.addPassthroughCopy({ "node_modules/lunr/lunr.js": "assets/lunr.js" })
@@ -60,18 +56,17 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/static/_redirects": "_redirects" })
   eleventyConfig.addPassthroughCopy({ "src/static/keybase.txt": "keybase.txt" })
 
-  eleventyConfig.addShortcode("currentBuildDate", () => {
-    return new Date().toISOString()
-  })
-
   // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["auto"],
-    filenameFormat: function (id, src, width, format, options) {
-      // It's almost like the plugin authors don't want you to use the original filename, which I think is silly.
-      const filename = src.split("/").slice(-1)[0].split(".")[0]
-      return `${filename}-${id}-${width}.${format}`
-    },
+    filenameFormat:
+      /** @type {import('@11ty/eleventy-img').ImageOptions['filenameFormat']} */
+      function (id, src, width, format, options) {
+        // It's almost like the plugin authors don't want you to use the original filename, which I think is silly.
+        const filename = src.split("/").slice(-1)[0].split(".")[0]
+        // We could be using `${filename}-${id}-${width}.${format}` or something more unique, but I prefer the plain filenames until we have mulitple widths
+        return `${filename}.${format}`
+      },
     defaultAttributes: {
       loading: "lazy",
       decoding: "async"

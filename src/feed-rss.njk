@@ -18,7 +18,7 @@ layout: false
       <link>{{ absolutePostUrl }}</link>
       <description>{{ post.templateContent | striptags | truncate }}</description>
       <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-      <pubDate>{{ post.date | rfc822Date }}</pubDate>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <guid>{{ absolutePostUrl }}</guid>
     </item>
     {%- endfor %}

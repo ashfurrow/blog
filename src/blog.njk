@@ -12,7 +12,7 @@ title: Blog Archive
       <article class="post-item">
         <a href="{{ post.url }}" class="post-link">
           <span class="post-title">{{ post.title }}</span>
-          <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate("DDD") }}</time>
+          <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate }}</time>
         </a>
       </article>
     {%- endfor %}
