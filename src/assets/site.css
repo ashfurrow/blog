@@ -175,6 +175,10 @@ hr {
   height: 1px;
   width: 100%;
 }
+hr.footer-rule {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 pre {
   font-variant-ligatures: no-common-ligatures;
   font-feature-settings: normal;
