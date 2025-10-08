@@ -7,10 +7,10 @@ banner: /assets/uicollectionview/background.jpg
 
 I show you how to use Apple's new user interface, [UICollectionView](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionView_class/Reference/Reference.html#//apple_ref/doc/uid/TP40012177), to efficiently display content in iOS applications. iOS developers of all levels will learn how to create intuitive, immersive experiences within their applications. In addition to demonstrating how UICollectionView works through sample code and examples, I'll guide you in detail through the proper application architecture, data retrieval over a network connection, and efficient content rendering.
 
-BEGIN_NARROW
+{% narrow %}
 
 ![Book cover](/assets/uicollectionview/cover.jpg)
 
-END_NARROW
+{% endnarrow %}
 
 All sample code is available [here](http://static.ashfurrow.com/uicollectionview_code.zip). Sample code for the second edition, iOS 7, is available [here](http://static.ashfurrow.com/uicollectionviewII_code.zip). All source code is released under the [MIT License](http://opensource.org/licenses/MIT).

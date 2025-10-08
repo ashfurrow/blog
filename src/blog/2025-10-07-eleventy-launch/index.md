@@ -70,3 +70,6 @@ In summary, _AI tools seem most useful in the middle of a project_. I needed to 
 [You can review the pull request here](https://github.com/ashfurrow/blog/pull/520) for insights into my process (ignore the lines-of-code count, as prettier formatted thes blog posts once they were migrated from MDX to markdown).
 
 I've taken pains to make sure the RSS feeds still work as expected, but I always worry with changes that might affect my favourite readers, the RSS nerds. If you see any problems, anywhere on the site, [please open an issue](https://github.com/ashfurrow/blog/issues/new).
+
+// TODO: Why no TS?
+// TODO: groupBy instead of lodash

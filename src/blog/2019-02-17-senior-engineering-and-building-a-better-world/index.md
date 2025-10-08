@@ -5,7 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1096785169569251328
 ---
 
-I wrote [this blog post](/blog/what-is-a-senior-engineer/) in response to [this tweet](https://twitter.com/gjtorikian/status/1091465574998249472) on what it means to be a senior engineer.
+I wrote [this blog post](/blog/what-is-a-senior-engineer-even/) in response to [this tweet](https://twitter.com/gjtorikian/status/1091465574998249472) on what it means to be a senior engineer.
 
 I think I muddled the point of my post somewhat by trying to express two ideas: an ongoing personal search to figure out how to be the best senior engineer _I_ can be, and a very subtle point about the role of a senior engineer. Let's explore that **latter** point in a little more depth.
 

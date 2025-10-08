@@ -119,7 +119,7 @@ Make mistakes. Learn from them. Make better mistakes tomorrow. Good luck!
 [my_blog]: /blog/blog-transition-retrospective/
 [labs]: /blog/building-static-sites-with-middleman/
 [bad]: /blog/dont-use-oauth-for-your-api/
-[versus]: /blog/learning-from-other-programming-communities/
+[versus]: /blog/ios-versus-javascript-how-to-learn-from-other-programming-communities/
 [arkit]: https://artsy.github.io/blog/2018/03/18/ar/
 [bret]: http://worrydream.com/MagicInk/
 [career]: /blog/5-years-of-ios/
