@@ -1,0 +1,239 @@
+{% set isPost = layout == 'layouts/post.njk' %}
+<!doctype html>
+<html lang="{{ metadata.language }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+		<title>{{ title or metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
+		<meta name="image" content="{{ metadata.url }}{% socialImageURL %}">
+		
+		<!-- Open Graph meta tags -->
+		<meta property="og:locale" content="{{ metadata.ogLanguage }}">
+		<meta property="og:site_name" content="{{ metadata.title }}">
+		<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+		<meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+		<meta property="og:title" content="{{ title or metadata.title }}">
+		<meta property="og:description" content="{{ description or metadata.description }}">
+		<meta property="og:image" content="{{ metadata.url }}{% socialImageURL %}">
+		
+		<!-- Twitter Card meta tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="{{ metadata.author.twitter }}">
+		<meta name="twitter:title" content="{{ title or metadata.title }}">
+		<meta name="twitter:url" content="{{ metadata.url }}">
+		<meta name="twitter:description" content="{{ description or metadata.description }}">
+		<meta name="twitter:image" content="{{ metadata.url }}{% socialImageURL %}">
+		
+		<!-- RSS Feed -->
+		<link rel="alternate" href="/feed.xml" type="application/rss+xml" title="{{ metadata.titleAlt }}">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+		<link rel="manifest" href="/assets/manifest.webmanifest" crossorigin="anonymous">
+		<link rel="apple-touch-icon" sizes="48x48" href="/assets/icons/icon-48x48.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="96x96" href="/assets/icons/icon-96x96.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="/assets/icons/icon-192x192.png">
+		<link rel="apple-touch-icon" sizes="256x256" href="/assets/icons/icon-256x256.png">
+		<link rel="apple-touch-icon" sizes="384x384" href="/assets/icons/icon-384x384.png">
+		<link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/icon-512x512.png">
+
+		<link rel="stylesheet" href="/assets/site.css" />
+		<link rel="stylesheet" href="/assets/prism-theme.css" />
+		{% if pageStylesheet %}
+		<link rel="stylesheet" href="{{ pageStylesheet }}" />
+		{% endif %}
+
+		<script defer src="/assets/fontawesome/brands.js"></script>
+		<script defer src="/assets/fontawesome/solid.js"></script>
+		<script defer src="/assets/fontawesome/fontawesome.js"></script>
+		<link rel="stylesheet" href="https://use.typekit.net/uhm7xdd.css">
+		
+		<!-- Structured Data (JSON-LD) -->
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "{% if isPost %}BlogPosting{% else %}WebSite{% endif %}",
+			"@id": "{{ metadata.url }}{{ page.url }}",
+			"url": "{{ metadata.url }}{{ page.url }}",
+			"name": "{{ title or metadata.title }}",
+			"alternateName": "{{ metadata.titleAlt }}",
+			{% if isPost %}
+			"headline": "{{ title }}",
+			"image": {
+				"@type": "ImageObject",
+				"url": "{{ metadata.url }}{% socialImageURL %}"
+			},
+			"description": "{{ metadata.description }}",
+			"datePublished": "{{ date | htmlDateString }}",
+			"dateModified": "{{ date | htmlDateString }}",
+			"author": {
+				"@type": "Person",
+				"name": "{{ metadata.author.name }}",
+				"url": "{{ metadata.url }}",
+				"image": "{{ metadata.author.image }}",
+				"sameAs": {{ metadata.author.social | toJson }}
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "{{ metadata.author.name }}",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "{{ metadata.url }}/{{ metadata.logo }}"
+				}
+			},
+			"isPartOf": "{{ metadata.url }}",
+			"mainEntityOfPage": {
+				"@type": "WebSite",
+				"@id": "{{ metadata.url }}"
+			}
+			{% endif %}
+		}
+		</script>
+	</head>
+	<body>
+		<nav class="navbar" data-scrolled="false" data-menu-open="false">
+			<div class="navbar-container">
+				<a href="/" class="navbar-logo">
+					<img src="/assets/siteimage.png" alt="Ash Furrow" class="logo-light" eleventy:ignore>
+					<img src="/assets/siteimage_dark.png" alt="Ash Furrow" class="logo-dark" eleventy:ignore>
+				</a>
+				<ul class="navbar-links">
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/books">Books</a></li>
+					<li><a href="/portfolio">Portfolio</a></li>
+					<li><a href="/speaking">Speaking</a></li>
+					<li><a href="/search" aria-label="Search posts"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+					<li><a href="/feed.xml" aria-label="RSS Feed"><i class="fa-solid fa-square-rss"></i></a></li>
+				</ul>
+				<button class="hamburger" aria-label="Toggle menu">
+					<i class="fa-solid fa-bars hamburger-icon hamburger-bars"></i>
+					<i class="fa-solid fa-xmark hamburger-icon hamburger-close"></i>
+				</button>
+			</div>
+			<div class="mobile-menu">
+				<ul class="mobile-links">
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/books">Books</a></li>
+					<li><a href="/portfolio">Portfolio</a></li>
+					<li><a href="/speaking">Speaking</a></li>
+					<li><a href="/search">Search</a></li>
+					<li><a href="/feed.xml">Blog Feed</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<header class="site-header" style="--banner-image: url('{% bannerImageURL %}')">
+			<div class="header-content{% if isPost %} left{% endif %}">
+				<h1>{{title}}</h1>
+				{% if subtitle %}
+					<hr class="header-divider">
+					<div class="header-subtitle">{{subtitle}}</div>
+				{% endif %}
+				{% if isPost and date %}
+					<hr class="header-divider">
+					<div class="header-date">{{ date | readableDate }}</div>
+				{% endif %}
+			</div>
+			{% if bannerAttribution %}
+				<a href="{{ bannerAttribution }}" class="banner-attribution">
+					<i class="fa-solid fa-image banner-icon"></i>
+				</a>
+			{% endif %}
+		</header>
+	
+		<main>
+			{{ content | safe }}
+		</main>
+
+    <hr class="footer-rule" />
+
+		<footer>
+			<span class="fa-fw fa-3x">
+				<a class="icon" href="https://tenforward.social/@ashfurrow" title="Mastodon" rel="me">  <i class="fa-brands fa-mastodon" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-3x">
+				<a class="icon" href="https://twitter.com/@ashfurrow" title="Twitter" rel="me"><i class="fa-brands fa-twitter" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-3x">
+				<a class="icon" href="https://github.com/ashfurrow" title="GitHub" rel="me">
+					<i class="fa-brands fa-github" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-3x">
+				<a class="icon" href="https://photos.ashfurrow.com" title="Photo Blog" rel="me">
+					<i class="fa-solid fa-image" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<span class="fa-fw fa-3x">
+				<a class="icon" href="http://instagram.com/ashfurrow" title="Instagram" rel="me">
+					<i class="fa-brands fa-instagram" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
+			</span>
+			<div class="attribution">
+				This site is <a href="http://github.com/ashfurrow/blog">open source</a>. <a href="http://purl.org/dc/dcmitype/Text">Content</a> licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
+			</div>
+		</footer>
+
+		{% if pageJavaScript %}
+		<script src="{{ pageJavaScript }}"></script>
+		{% endif %}
+		
+		<script>
+			class NavbarController {
+				constructor() {
+					/** @type {HTMLElement|null} */
+					this.navbar = document.querySelector('.navbar')
+					/** @type {HTMLElement|null} */
+					this.hamburger = document.querySelector('.hamburger')
+					/** @type {HTMLElement|null} */
+					this.mobileMenu = document.querySelector('.mobile-menu')
+					/** @type {NodeListOf<HTMLAnchorElement>} */
+					this.mobileLinks = document.querySelectorAll('.mobile-links a')
+					/** @type {boolean} */
+					this.isMenuOpen = false
+					/** @type {boolean} */
+					this.ticking = false
+
+					// Initial state setup
+					this.navbar.setAttribute('data-scrolled', (window.scrollY > 0).toString())
+					
+					// Event listeners
+					const handleScroll = () => {
+						if (!this.ticking) {
+							requestAnimationFrame(() => {
+								const isScrolled = window.scrollY > 0
+								this.navbar.setAttribute('data-scrolled', isScrolled.toString())
+								this.ticking = false
+							})
+							this.ticking = true
+						}
+					}
+					window.addEventListener('scroll', handleScroll)
+
+					this.hamburger.addEventListener('click', (e) => {
+						e.stopPropagation()
+						this.toggleMenu()
+					})
+
+					document.addEventListener('click', (e) => {
+						if (this.isMenuOpen && !this.navbar.contains(e.target)) {
+							this.closeMenu()
+						}
+					})
+				}
+				toggleMenu() {
+					this.isMenuOpen = !this.isMenuOpen
+					this.navbar.setAttribute('data-menu-open', this.isMenuOpen.toString())
+				}
+				closeMenu() {
+					this.isMenuOpen = false
+					this.navbar.setAttribute('data-menu-open', 'false')
+				}
+			}
+			document.addEventListener('DOMContentLoaded', () => {
+				new NavbarController()
+			})
+		</script>
+	</body>
+</html>

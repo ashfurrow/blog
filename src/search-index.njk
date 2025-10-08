@@ -1,0 +1,20 @@
+---
+permalink: /search-data.json
+eleventyExcludeFromCollections: true
+layout: false
+---
+{%- set searchData = [] -%}
+{%- for post in collections.posts -%}
+  {%- if not post.data.tags or 'exempt' not in post.data.tags -%}
+    {%- set content = post.content | striptags -%}
+    {%- set item = {
+      title: post.data.title,
+      url: post.url,
+      date: post.date | htmlDateString,
+      content: content,
+      id: post.url
+    } -%}
+    {%- set searchData = (searchData.push(item), searchData) -%}
+  {%- endif -%}
+{%- endfor -%}
+{{ searchData | toJson | safe }}

@@ -10,14 +10,15 @@ My [blog](https://ashfurrow.com/).
 git clone https://github.com/ashfurrow/blog.git
 cd blog
 yarn install
-yarn start # This will take a few minutes the first time
+yarn start # This will take a few seconds the first time
+DEBUG=Eleventy* yarn start # To output console.log() statements from within 11ty
 ```
 
-Then navigate to [http://localhost:8000](http://localhost:8000).
+Then navigate to [http://localhost:8080](http://localhost:8000).
 
 ## Contributing
 
-Contributions, such as typo corrections or bug reports, are very welcome! Feel free to [open an issue](https://github.com/ashfurrow/blog/issues/new) or make a pull request to the `master` branch. All blog posts are written in Markdown in the [`blog/`](https://github.com/ashfurrow/blog/tree/master/blog) directory, which gets deployed automatically by Netlify when a pull request is merged. See [Server Setup](#server-setup) below.
+Contributions, such as typo corrections or bug reports, are very welcome! Feel free to [open an issue](https://github.com/ashfurrow/blog/issues/new) or make a pull request to the `main` branch. All blog posts are written in Markdown in the [`src/blog/`](https://github.com/ashfurrow/blog/tree/main/src/blog) directory, which gets deployed automatically by Netlify when a pull request is merged. See [Server Setup](#server-setup) below.
 
 ## License
 
@@ -25,19 +26,16 @@ Contributions, such as typo corrections or bug reports, are very welcome! Feel f
 
 This [work](http://purl.org/dc/dcmitype/Text) by [Ash Furrow](https://ashfurrow.com/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-Code I've written is [licensed](/LICENSE) under MIT. Other components such as [Gatsby](https://www.gatsbyjs.org) or the [original blog start](https://github.com/mhadaily/gatsby-starter-typescript-power-blog) have their own licenses.
+Code I've written is [licensed](/LICENSE) under MIT. Other components such as FontAwesome icons have their own license.
 
 ## Thanks
 
 Thanks to the following people and projects:
 
-- [NavBar Tutorial](https://dev.to/nunocpnp/your-very-first-responsive-and-animated-navigation-bar-with-react-and-react-spring-17co)
-- [react-timeline](https://react-timeline.com)
-- [gatsby-starter-typescript-power-blog](https://github.com/mhadaily/gatsby-starter-typescript-power-blog)
 - [Orta Therox](https://twitter.com/orta) for coding and design help
 - [Katarina Batina](https://twitter.com/katarinabatina) for design help
 - [Tom Creighton](https://twitter.com/ashfurrow/status/523393606431019008) for design help
-- [Gatsby](https://www.gatsbyjs.org)
+- [11ty](https://www.11ty.dev)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/)
 - [This colour](http://www.colourlovers.com/color/398CCC/Walton)
 - [This colour scheme](http://www.colourlovers.com/palette/869489/Caribbean_Dusk)
@@ -60,8 +58,10 @@ I'd like to thank the following contributors.
 
 ## Server Setup
 
-The site is served from [Netlify](https://www.netlify.com). The feeds are served from the `feed.ashfurrow.com` subdomain (aliased to the main domain, except everything that's not a feed URL will 404). Currently, building the site exceeds Netlify's image constraints and has to be deployed locally:
+The site is served from [Netlify](https://www.netlify.com). The feeds are served from the `feed.ashfurrow.com` subdomain (aliased to the main domain, except everything that's not a feed URL will 404).
+
+Deploys happen automatically on pushes to the `main` branch. The site can also be deployed locally:
 
 ```sh
-yarn deploy # alias for yarn build && yarn deploy-built
+yarn deploy
 ```

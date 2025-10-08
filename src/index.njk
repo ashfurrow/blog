@@ -1,0 +1,57 @@
+---
+title: Ash Furrow
+subtitle: Compassionate Software Developer
+numberOfLatestPostsToShow: 10
+featuredPosts:
+  - url: "/blog/normalizing-struggle/"
+    title: "Normalizing Struggle"
+    image: "normaling_struggle.png"
+  - url: "/blog/asking-for-help-in-open-source/"
+    title: "Asking for Help in Open Source"
+    image: "asking-for-help-in-open-source.jpg"
+  - url: "/blog/empathetic-civilization/"
+    title: "Empathetic Civilization"
+    image: "empathetic_civilization.jpg"
+  - url: "/blog/building-compassionate-software/"
+    title: "Building Compassionate Software"
+    image: "building_compassionate_software.jpg"
+  - url: "/blog/building-better-software-by-building-better-teams/"
+    title: "Building Better Software by Building Better Teams"
+    image: "building_better_software.png"
+  - url: "/blog/perspective-of-the-polyglot/"
+    title: "Perspective of the Polyglot"
+    image: "perspective_of_the_polyglot.png"
+---
+
+<h2 class="section-title">Get Started Here</h2>
+
+<div class="featured-posts">
+  {%- for featured in featuredPosts %}
+  <div class="featured-post">
+    <a href="{{ featured.url }}" style="background-image: url('/assets/featured/{{ featured.image }}');">
+      <span class="featured-post-title">{{ featured.title }}</span>
+    </a>
+  </div>
+  {%- endfor %}
+</div>
+
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+
+<h2 class="section-title">Recent Posts</h2>
+
+{% set postslist = collections.posts | reverse %}
+
+<ol class="post-list recent-posts">
+  {%- for post in postslist %}
+    {%- if loop.index <= numberOfLatestPostsToShow %}
+    <li class="post-item recent-post-item">
+      <a href="{{ post.url }}" class="post-link recent-post-link">
+        <span class="post-title recent-post-title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</span>
+        <time class="post-date recent-post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | readableDate("LLLL dd, yyyy") }}</time>
+      </a>
+    </li>
+    {%- endif %}
+  {%- endfor %}
+</ol>
+  

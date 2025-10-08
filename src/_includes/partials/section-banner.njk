@@ -1,0 +1,11 @@
+{#
+  Section Banner Partial
+  Usage: {% include "partials/section-banner.njk", banner: "/path/to/image.jpg", dim: true %}
+    <h2>Section Title</h2>
+  {% endinclude %}
+#}
+<header class="section-banner" style="--banner-image: url('{{ banner }}')">
+  <div class="section-banner-content">
+    {{ caller() }}
+  </div>
+</header>

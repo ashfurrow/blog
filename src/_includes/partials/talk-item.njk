@@ -1,0 +1,65 @@
+<li class="talk-tile">
+  {%- if talk.image %}
+    <div class="talk-image">
+      {%- if talk.slides %}
+        <a href="{{ talk.slides }}" class="talk-image-link">
+          {# eleventy:ignore #}
+          <img eleventy:ignore src="/assets/speaking/talks/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
+          {# /eleventy:ignore #}
+          <div class="talk-image-overlay">
+            <i class="fa-solid fa-file"></i>
+          </div>
+        </a>
+      {%- else %}
+        {# eleventy:ignore #}
+        <img eleventy:ignore src="/assets/speaking/talks/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
+        {# /eleventy:ignore #}
+      {%- endif %}
+    </div>
+  {%- endif %}
+  
+  <div class="talk-details">
+    <h3 class="talk-title">
+      {{ talk.name }}
+    </h3>
+    
+    <div class="talk-meta">
+      <div class="talk-detail">
+        <i class="fa-solid fa-quote-left"></i>
+          {%- if talk.url %}
+            <a href="{{ talk.url }}">{{ talk.conference }}</a>
+          {%- else %}
+            {{ talk.conference }}
+          {%- endif %}
+      </div>
+      {%- if talk.location %}
+        <div class="talk-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          {{ talk.location }}
+        </div>
+      {%- endif %}
+      <div class="talk-detail">
+        <i class="fa-solid fa-calendar"></i>
+        {{ talk.dates }}
+      </div>
+      {%- if talk.video %}
+        <div class="talk-detail">
+          <i class="fa-brands fa-youtube"></i>
+          <a href="{{ talk.video }}">Watch the video</a>
+        </div>
+      {%- endif %}
+      {%- if talk.code %}
+        <div class="talk-detail">
+          <i class="fa-solid fa-code"></i>
+          <a href="{{ talk.code }}">Check out the code</a>
+        </div>
+      {%- endif %}
+      {%- if talk.blogPost %}
+        <div class="talk-detail">
+          <i class="fa-solid fa-paperclip"></i>
+          <a href="{{ talk.blogPost }}">Read the blog post</a>
+        </div>
+      {%- endif %}
+    </div>
+  </div>
+</li>

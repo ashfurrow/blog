@@ -1,0 +1,21 @@
+---
+title: Blog Archive
+---
+
+<article>
+{% set groupedPostsJson %}{% groupedPosts %}{% endset %}
+{% set groupedPosts = groupedPostsJson | fromJson  %}
+{%- for group in groupedPosts %}
+  <div class="group">
+    <h2>{{ group.name }}</h2>
+    {%- for post in group.posts %}
+      <article class="post-item">
+        <a href="{{ post.url }}" class="post-link">
+          <span class="post-title">{{ post.title }}</span>
+          <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate }}</time>
+        </a>
+      </article>
+    {%- endfor %}
+  </div>
+{%- endfor %}
+</article>

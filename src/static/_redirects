@@ -1,0 +1,34 @@
+# Netlify Redirects
+
+# The following config lines allow feed.xml and feed.rss.xml to be served, but
+# otherwise the URL is served as feed.rss.xml.
+https://feed.ashfurrow.com/	https://ashfurrow.com/feed.xml	200!
+https://feed.ashfurrow.com/feed.rss.xml	https://ashfurrow.com/feed.rss.xml	200!
+https://feed.ashfurrow.com/feed.xml	https://ashfurrow.com/feed.xml	200!
+https://feed.ashfurrow.com/*	https://ashfurrow.com/:splat 200!
+
+# This redirects the Netlify domain to the default one.
+https://ashfurrow-blog.netlify.com/*	https://ashfurrow.com/:splat	301!
+
+
+# This section is to deal with the old Middleman-generated slugs. Previously,
+# posts could specify their own slugs, but we want them consistly generated. So
+# let's just set up some Netlify redirects from the old URLs to the new ones.
+/blog/react-native-starter-resources/ /blog/react-native-starter-resources-for-native-developers/
+/blog/fastmaildreamhost-spf-dkim/ /blog/fastmail-dreamhost-spf-dkim/
+/blog/learning-from-other-programming-communities/ /blog/ios-versus-javascript-how-to-learn-from-other-programming-communities/
+/blog/the-future-of-androidios-doesnt-matter-the-present-does/ /blog/the-future-of-android-ios-doesnt-matter-the-present-does/
+/blog/uialertviewcontroller-example/ /blog/exploring-uialertcontroller/
+/blog/bittorrent-sync/ /blog/securing-a-bittorrent-sync-ec2-instance/
+/blog/node-express-typescript/ /blog/weekend-hack-project-twelease/
+/blog/you-probably-dont-understand-frames-and-bounds/ /blog/i-totally-didnt-understand-frames-and-bounds/
+/blog/running-xcode-on-an-ipad/ /blog/thoughts-on-the-macbook/
+/blog/what-is-a-senior-engineer/ /blog/what-is-a-senior-engineer-even/
+/blog/weakstrong-dance/ /blog/weak-strong-dance/
+/blog/copenhagenwarsaw-tour/ /blog/copenhagen-warsaw-tour/
+/blog/breath-of-the-wild-switch/ /blog/breath-of-the-wild-the-switch/
+/blog/removing-google-analytics/ /blog/removing-analytics/
+/blog/from-proposal-to-applause-how-i-public-speaking/ /blog/from-proposal-to-applause-how-i-do-public-speaking/
+
+# Similar to the above, we need a few redirects for the 11ty migration
+/blog/index-card-q-a/ /blog/index-card-qa/

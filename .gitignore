@@ -62,3 +62,8 @@ bundle-stats.json
 .DS_Store
 # Local Netlify folder
 .netlify
+
+.claude/
+
+# I want the old site removed from git but I'll keep it locally for now.
+old_blog/
