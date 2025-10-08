@@ -16,7 +16,8 @@
     "deploy:prod": "netlify deploy",
     "deploy:preview": "netlify deploy --context deploy-preview",
     "format": "prettier --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "article": "node scripts/article.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.1",
