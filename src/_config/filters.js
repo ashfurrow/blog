@@ -35,7 +35,8 @@ export default function (eleventyConfig) {
       const options = {
         year: "numeric",
         month: "long",
-        day: "numeric"
+        day: "numeric",
+        timeZone: "UTC"
       }
       return date.toLocaleDateString("en-CA", options)
     }
@@ -50,7 +51,7 @@ export default function (eleventyConfig) {
      */
     function (dateObj) {
       const date = new Date(dateObj)
-      return date.toLocaleDateString("en-CA") // Canada uses `YYYY-MM-DD`
+      return date.toLocaleDateString("en-CA", { timeZone: "UTC" }) // Canada uses `YYYY-MM-DD`
     }
   )
 

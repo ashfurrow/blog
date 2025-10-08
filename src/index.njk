@@ -48,7 +48,7 @@ featuredPosts:
     <li class="post-item recent-post-item">
       <a href="{{ post.url }}" class="post-link recent-post-link">
         <span class="post-title recent-post-title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</span>
-        <time class="post-date recent-post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL dd, yyyy") }}</time>
+        <time class="post-date recent-post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | readableDate("LLLL dd, yyyy") }}</time>
       </a>
     </li>
     {%- endif %}
