@@ -183,6 +183,9 @@ pre {
   font-variant-ligatures: no-common-ligatures;
   font-feature-settings: normal;
 }
+p code {
+  background: var(--grey-light);
+}
 
 /* Embeds/shortcodes */
 .twitter-tweet {
@@ -691,7 +694,7 @@ footer .attribution {
 
 .typo-correction {
   width: 100%;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 .typo-correction hr {
   margin: 0.5rem 0;
