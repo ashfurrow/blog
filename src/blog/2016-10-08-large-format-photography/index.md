@@ -46,15 +46,15 @@ Alright, onto the images! I've taken eight exposures so far, here are a few. Exc
 
 {% wide %}
 
-[![Lamps](lamps.jpg)](originals/lamps.jpg)
+[![Lamps](lamps.jpg)](https://static.ashfurrow.com/blog/large-format-originals/lamps.jpg)
 
-[![Ashley](ashley.jpg)](originals/ashley.jpg)
+[![Ashley](ashley.jpg)](https://static.ashfurrow.com/blog/large-format-originals/ashley.jpg)
 
-[![Thompkins Square Park](tree.jpg)](originals/tree.jpg)
+[![Thompkins Square Park](tree.jpg)](https://static.ashfurrow.com/blog/large-format-originals/tree.jpg)
 
-[![Flower 1](flower-1.jpg)](originals/flower-1.jpg)
+[![Flower 1](flower-1.jpg)](https://static.ashfurrow.com/blog/large-format-originals/flower-1.jpg)
 
-[![Flower 2](flower-2.jpg)](originals/flower-2.jpg)
+[![Flower 2](flower-2.jpg)](https://static.ashfurrow.com/blog/large-format-originals/flower-2.jpg)
 
 {% endwide %}
 
