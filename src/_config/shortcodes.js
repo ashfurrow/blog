@@ -1,5 +1,13 @@
 import * as path from "path"
+import MarkdownIt from "markdown-it"
 import { transformImage } from "./util/transformImage.js"
+import Metadata from "../_data/metadata.js"
+
+const md = new MarkdownIt({
+  html: true,
+  linkify: true,
+  typographer: true
+})
 
 /**
  * Groups items in a collection by a key returned from the iteratee function.
@@ -19,6 +27,21 @@ function groupBy(collection, iteratee) {
     result[key].push(item)
   }
   return result
+}
+
+/**
+ * Returns first item that passes the check
+ * @template T
+ * @param {T[]} collection
+ * @param {(item: T) => boolean} check
+ * @returns {K|undefined}
+ */
+function first(collection, check) {
+  for (const item of collection) {
+    if (check(item)) {
+      return item
+    }
+  }
 }
 
 /**
@@ -76,6 +99,19 @@ export default function (eleventyConfig) {
 
     // We need to marshal the data over JSON due to 11ty
     return JSON.stringify(results)
+  })
+
+  eleventyConfig.addShortcode("exceptOrDescription", function () {
+    // description or metadata.description
+    if (this.ctx.description) {
+      return this.ctx.description
+    }
+    if (this.ctx.layout === "layouts/post.njk") {
+      // Grab the first non-empty line of markdown and render it. (I never kick blog posts off with anything but a paragraph.)
+      const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => p.trim().length > 0)
+      return md.render(excerpt).trim()
+    }
+    return Metadata.description
   })
 
   // Transforms the socialImage frontmatter, falling back to banner or a site-wide default

@@ -277,7 +277,7 @@ header.site-header {
   z-index: 5;
   background-image: var(--banner-image);
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .site-header::before {

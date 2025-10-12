@@ -1,11 +1,13 @@
 {% set isPost = layout == 'layouts/post.njk' %}
+{% set exceptOrDescription %}{% exceptOrDescription %}{% endset %}
+{% set socialDescription = exceptOrDescription | striptags | safe %}
 <!doctype html>
 <html lang="{{ metadata.language }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
 		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
+		<meta name="description" content="{{ socialDescription }}">
 		<meta name="image" content="{{ metadata.url }}{% socialImageURL %}">
 		
 		<!-- Open Graph meta tags -->
@@ -14,7 +16,7 @@
 		<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
 		<meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
 		<meta property="og:title" content="{{ title or metadata.title }}">
-		<meta property="og:description" content="{{ description or metadata.description }}">
+		<meta property="og:description" content="{{ socialDescription }}">
 		<meta property="og:image" content="{{ metadata.url }}{% socialImageURL %}">
 		
 		<!-- Twitter Card meta tags -->
@@ -22,7 +24,7 @@
 		<meta name="twitter:creator" content="{{ metadata.author.twitter }}">
 		<meta name="twitter:title" content="{{ title or metadata.title }}">
 		<meta name="twitter:url" content="{{ metadata.url }}">
-		<meta name="twitter:description" content="{{ description or metadata.description }}">
+		<meta name="twitter:description" content="{{ exceptOrDescription | striptags | safe }}">
 		<meta name="twitter:image" content="{{ metadata.url }}{% socialImageURL %}">
 		
 		<!-- RSS Feed -->
