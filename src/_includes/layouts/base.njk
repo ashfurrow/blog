@@ -235,6 +235,14 @@
 			}
 			document.addEventListener('DOMContentLoaded', () => {
 				new NavbarController()
+
+					// Gatsby service workers are cached in browsers. This should hopefully remove them.
+					if (navigator && navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+					navigator.serviceWorker.getRegistrations().then((registrations) => {
+						for(let registration of registrations) {
+							registration.unregister()
+					})
+				}
 			})
 		</script>
 	</body>
