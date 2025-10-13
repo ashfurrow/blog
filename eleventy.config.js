@@ -75,6 +75,10 @@ export default async function (eleventyConfig) {
       animated: true
     }
   })
+
+  eleventyConfig.setServerOptions({
+    domDiff: false // Fontawesome icons loose their sizing when 11ty
+  })
 }
 
 export const config = {
