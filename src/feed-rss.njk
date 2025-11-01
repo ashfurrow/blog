@@ -19,7 +19,7 @@ layout: false
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <guid>{{ absolutePostUrl }}</guid>
       <description>{{ post.templateContent | striptags | truncate }}</description>
-      <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+      <content:encoded>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content:encoded>
     </item>
     {%- endfor %}
   </channel>
