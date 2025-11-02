@@ -421,6 +421,8 @@ ago, I called myself an "iOS Developer", but now I don't scope myself to a singl
 platform. I'm leading a team, and I'm helping lead Artsy through a critical part
 of its growth as a company and as a business.
 
-{% tweet "1179840250518134785" %}I don't know where I'll be, or who I'll
+{% tweet "1179840250518134785" %}
+
+I don't know where I'll be, or who I'll
 be, in another five years. But I'm so excited for the journey. Thanks for
 reading, and take care.
