@@ -98,7 +98,7 @@ img {
   padding-left: 3rem;
   padding-bottom: 2rem;
   clear: both;
-  max-width: 40%; 
+  max-width: 30%; 
 }
 @media (max-width: 600px) {
   .right-image {
@@ -141,7 +141,6 @@ h2, h3 {
   font-family: var(--body-font-family);
   color: var(--grey-default);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 1rem;
 }
 blockquote:not(.instagram-media) {
   font-style: italic;

@@ -4,6 +4,12 @@
   --spacing-footer-icon: 1rem;
 }
 
+/* Layout */
+.portfolio-subsection {
+  overflow: hidden; 
+  margin-bottom: 2rem
+}
+
 /* Social media footer styling */
 footer a {
   color: var(--grey-default);
@@ -44,7 +50,7 @@ footer a:hover {
   width: 35%;
   max-width: 325px;
   position: relative;
-  right: -55%;
+  right: -60%;
 }
 .portfolio-section-banner div::before {
   content: '';
