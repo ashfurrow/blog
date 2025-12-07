@@ -79,7 +79,7 @@ The `mastodon.technology` domain had always been registered with [Hover](https:/
 
 Hmm. So I couldn't use Hover as a nameserver after all.
 
-My choices here were either to use a different nameserver (maybe [FreeDNS](https://freedns.afraid.org)) or to migrate the domain registration itself from Hover to a new registrar that had better DNS services, which is what I did. I moved over [a different domain I manage](https://peerlab.community) to [Namecheap](https://www.namecheap.com), to get a sense of the process and prepare myself for migrating `mastodon.technology`. I picked Namecheap because it supported all the DNS record types I needed and seemed to have good support. I would end up regretting this choice. Read on for details.
+My choices here were either to use a different nameserver (maybe [FreeDNS](https://freedns.afraid.org)) or to migrate the domain registration itself from Hover to a new registrar that had better DNS services, which is what I did. I moved over [a different domain I manage](https://ashfurrow.github.io/peerlab.community) to [Namecheap](https://www.namecheap.com), to get a sense of the process and prepare myself for migrating `mastodon.technology`. I picked Namecheap because it supported all the DNS record types I needed and seemed to have good support. I would end up regretting this choice. Read on for details.
 
 Here is roughly what happens when a user requests an upload (after introducing BunnyCDN into the infrastructure). First there's a DNS lookup that takes up steps 1, 2, and 3; then, there is the asset download itself in steps 4 and 5.
 

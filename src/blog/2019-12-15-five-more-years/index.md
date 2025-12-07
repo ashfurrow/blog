@@ -179,7 +179,7 @@ timeline_entries:
     img: "./peerlabscommunity.jpg"
     imgAlt: "Screenshot of a webpage that has the header Developers Helping Developers"
     description:
-      - "After starting my own Peer Lab in 2014, I realized that I wanted to expand the idea. I can only run one peer lab, so I started [peerlab.community](https://peerlab.community) that I [built with Middleman](https://ashfurrow.com/blog/building-static-sites-with-middleman/). It includes a list of peer labs and instructions to start one."
+      - "After starting my own Peer Lab in 2014, I realized that I wanted to expand the idea. I can only run one peer lab, so I started [peerlab.community](https://ashfurrow.github.io/peerlab.community) that I [built with Middleman](https://ashfurrow.com/blog/building-static-sites-with-middleman/). It includes a list of peer labs and instructions to start one."
       - "We now have almost 40 peer labs worldwide, in many different countries. One of the cooler things to come out of this effort is that peer lab organizers are sharing ideas and improving the concept itself. For example, when a San Francisco peer lab organizer visited us in New York, they told us how a small standup helped attendees get to know one another. So now, we do a standup too."
   - date: "2017"
   - title: "Retrieval Errors"

@@ -5,7 +5,7 @@ banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/817193041161232385
 ---
 
-I recently launched this [Peer Lab website](http://peerlab.community) to list the peer labs around the world and to provide instructions on starting one. It's a small site with no need for a backend, so I decided to host it as static HTML. However, it was important that adding new labs would be easy for outside contributors. Since I had used the tool before to build a few static websites – including this blog – I turned to [Middleman](https://middlemanapp.com).
+I recently launched this [Peer Lab website](http://peerlab.community) (edit: new link is [here](https://ashfurrow.github.io/peerlab.community/)) to list the peer labs around the world and to provide instructions on starting one. It's a small site with no need for a backend, so I decided to host it as static HTML. However, it was important that adding new labs would be easy for outside contributors. Since I had used the tool before to build a few static websites – including this blog – I turned to [Middleman](https://middlemanapp.com).
 
 Let's explore the exact process I went through. I'm going to provide a series of high-level steps and link to actual code when I can, so you can replicate this for whatever site you need to build. However, every website is different, so "some assembly required" 😉
 

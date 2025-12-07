@@ -54,7 +54,7 @@ timeline_entries:
     img: ./nyc.jpeg
     imgAlt: Photo of my two cats stuck in an office meeting room.
   - title: Peer Labs
-    description: "For five years, I organized a Saturday morning meetup at Artsy's office for software developers to work together on side projects. [I made it a whole thing](https://peerlab.community/)"
+    description: "For five years, I organized a Saturday morning meetup at Artsy's office for software developers to work together on side projects. [I made it a whole thing](https://ashfurrow.github.io/peerlab.community/)"
     img: ./peerlab.jpeg
     imgAlt: Photo of a long table with lots of laptops
   - title: Speaking

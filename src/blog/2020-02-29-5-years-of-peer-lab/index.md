@@ -11,7 +11,7 @@ I really liked the peer lab. Working remotely for a company across the ocean lef
 
 When I moved to New York, one of the first things I did was [start a peer lab of my own](https://artsy.github.io/blog/2015/08/10/peer-lab/) out of the Artsy office. They provided the space, the wifi, and some pizza, and my colleague Orta and I ran the event. Every Saturday, still, but more because by then I was in the habbit of starting my weekend off with a productive start.
 
-[Eventually, I built a website](https://ashfurrow.com/blog/building-static-sites-with-middleman/) to help other people start their own peer labs: [peerlab.community](https://peerlab.community). Dozens of peer labs have been created in all kinds of countries: The United States, Canada, Russia, Hong Kong, India, Australia, Spain... all over! It's been really rewarding to take Samuel's idea, reproduce it in New York, and then help replicate that around the world.
+[Eventually, I built a website](https://ashfurrow.com/blog/building-static-sites-with-middleman/) to help other people start their own peer labs: [peerlab.community](https://ashfurrow.github.io/peerlab.community). Dozens of peer labs have been created in all kinds of countries: The United States, Canada, Russia, Hong Kong, India, Australia, Spain... all over! It's been really rewarding to take Samuel's idea, reproduce it in New York, and then help replicate that around the world.
 
 {% tweet "573250256630124545" %}
 
@@ -61,6 +61,6 @@ Not many people _leave_ stickers, but plenty of people take them. Over the years
 
 ---
 
-So there we go. That's been what I've learned from the last half-decade of running a peer lab. It's been an extraordinarily rewarding experience, and I highly recommend you [start your own](https://peerlab.community/start/).
+So there we go. That's been what I've learned from the last half-decade of running a peer lab. It's been an extraordinarily rewarding experience, and I highly recommend you [start your own](https://ashfurrow.github.io/peerlab.community/start/).
 
 I really have to emphasize here that you should _start_ your own. Don't worry if it doesn't take off, or you get busy, or whatever. If you run a peer lab for a few months and then stop, that means _you did a successful peer lab_, and I'm proud of you.

@@ -39,7 +39,7 @@ Part of the problem, I think, is that companies are unwilling to take risks. Thi
 
 If you're looking for your first iOS job, take a look at [Orta's blog post][post]. Try to stay positive, stay focused, and be patient. I wish things were better, that our industry was more inclusive, and I'm doing what I can to help. If you're in a position to help move the needle on this, even a little bit, I encourage you to help as well.
 
-[peer lab]: https://peerlab.community
+[peer lab]: https://ashfurrow.github.io/peerlab.community
 [c4q]: https://www.c4q.nyc
 [post]: http://artsy.github.io/blog/2016/01/30/iOS-Junior-Interviews/
 [trending]: https://github.com/trending/swift?since=daily

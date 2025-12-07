@@ -5,7 +5,7 @@ banner: /assets/bg/about.jpg
 
 I am a world-class software developer living in Atlantic Canada. [My early career](/blog/5-years-of-ios/) was focused on iOS development, but [my area of interest broadened](/blog/5-more-years-of-building-software/) until I could do many things. I'm interested in [TypeScript](/blog/javascript-is-good-actually/), [ReactNative](/blog/the-case-for-react-native/), and [GraphQL](/blog/the-spirit-of-moya/). I'm married with two cats. [I'm a prolific open source contributor](https://github.com/ashfurrow), I've [written books](/books), and I've [made photos](https://photos.ashfurrow.com).
 
-Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I owe it to the people who helped me to help others now, which is why I volunteered with [Coalition for Queens](https://www.c4q.nyc) and ran a [Peer Lab](https://peerlab.community) every week in New York [for five years](/blog/5-years-of-peer-lab/).
+Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I owe it to the people who helped me to help others now, which is why I volunteered with [Coalition for Queens](https://www.c4q.nyc) and ran a [Peer Lab](https://ashfurrow.github.io/peerlab.community) every week in New York [for five years](/blog/5-years-of-peer-lab/).
 
 If you want to get in touch, [Mastodon](https://tenforward.social/@ashfurrow) is probably the best way to reach me. You can also email [ash@ashfurrow.com](mailto:ash@ashfurrow.com).
 

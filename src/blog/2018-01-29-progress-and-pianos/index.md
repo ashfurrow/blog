@@ -71,7 +71,7 @@ Medication changes I started two months ago have finally stabilized, and have br
 
 [learning guitar]: /blog/learning-guitar/
 [struggling]: /blog/proprioception/
-[peer lab]: http://peerlab.community
+[peer lab]: https://ashfurrow.github.io/peerlab.community/
 [sheet music]: https://musescore.com/user/3471/scores/1352881
 [vicious circles]: https://en.wikipedia.org/wiki/Virtuous_circle_and_vicious_circle
 [lloyd]: http://thedowntownbluesband.com/bios/index.html#lloydbragdon

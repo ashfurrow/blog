@@ -41,7 +41,7 @@ The diagnosis that my PT eventually landed on was [Thoracic Outlet Syndrome](htt
 
 ---
 
-It had been about 4 months of doing regular exercise, and I was at my weekly [peer lab](https://peerlab.community). A regular attendee, who hadn't been around in a while, showed up.
+It had been about 4 months of doing regular exercise, and I was at my weekly [peer lab](https://ashfurrow.github.io/peerlab.community). A regular attendee, who hadn't been around in a while, showed up.
 
 "Wow, you've lost a lot of weight, congrats!"
 
