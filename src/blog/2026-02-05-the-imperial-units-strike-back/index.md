@@ -4,7 +4,7 @@ date: 2026-02-05
 banner: banner.jpg
 ---
 
-I lived in the United States for six years, during which time I resisted learning Fahrenheit. I was forced to give in to using inches because, unlike every tape measure I owned in Canada that had _both_ inches and centimetres, every measuring tape I could find at my local hardware store was _inches only_. For this and other reasons, it wasn't practical to resist.
+I lived in the United States for six years, during which time I refused to learn Fahrenheit. I was forced to give in to using inches because, unlike every tape measure I owned in Canada that had _both_ inches and centimetres, every measuring tape I could find at my local hardware store was _inches only_. For this and other reasons, it wasn't practical to resist.
 
 But I prided myself in my ignorance of Fahrenheit. It's odd to be proud of ignorance, but using Celsius exclusively helped me hang on to my Canadian identity while living in a foreign country. Sometimes, people would ask me what the forecast was, and you just _know_ that I made it _a whole thing_.
 
@@ -64,7 +64,14 @@ My American friends: most of you don't know the Metric System and so most of you
 
 This doesn't make Celsius a better system than Fahrenheit – it's just different tradeoffs.
 
+---
+
 While (I think) I do understand the value in going from zero to a hundred, I don't think Americans understand the value of the Metric _System_. This isn't a flaw or a shortcoming, in any way. It's just something that I don't think you all are aware of. An "unknown unknown." And if you care about measuring ambient air temperature as much as I do, I thought you might be interested to learn.
+
+The tl;dr here is:
+
+1. Fahrenheit _is_ convenient for ambient air temperature, but going from zero to one hundred didn't make it easier for me to learn.
+2. Celsius _becomes more valuable_ when it's used within the entire Metric System, leading most Americans to be unaware of that value. This is why no one will admit that you're right about the first point.
 
 I still prefer the tradeoffs that Celsius makes over the ones Fahrenheit does. But _I see you_. We can agree to disagree.
 
