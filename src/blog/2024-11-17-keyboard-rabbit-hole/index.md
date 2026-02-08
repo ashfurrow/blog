@@ -113,18 +113,11 @@ Oh my goodness do the Sunsets feel nice. Still a little scratchy, but they feel 
 
 The worst part is, when I get out my ErgoDox, I don't even like the Cherry MX Blues anymore. Too clicky. I think I'm just a tactile switch person.
 
-It took a while to get the layout right. I'm actually putting together a tour of my layout right now, which will go into more details. I'll update this post once it's ready. You can see [the revisions I've gone through](https://configure.zsa.io/my_layout/view/NWX4X) so far. Here's the latest layout:
+It took a while to get the layout right. I'm actually putting together a tour of my layout right now, which will go into more details. I'll update this post once it's ready. Here's the latest layout:
 
-{% wide %}
-
-<div style="padding-top: 60%; position: relative;">
-  <iframe
-    src="https://configure.zsa.io/embed/voyager/layouts/NWX4X/latest/0"
-    style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%"
-  ></iframe>
+<div style="padding-top: 70%; position: relative;">
+	<iframe src="https://configure.zsa.io/embed/voyager/layouts/6yzNl/latest/0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%"></iframe>
 </div>
-
-{% endwide %}
 
 A few things that make this layout work well for me:
 
