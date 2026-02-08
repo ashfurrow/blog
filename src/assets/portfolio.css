@@ -7,7 +7,7 @@
 /* Layout */
 .portfolio-subsection {
   overflow: hidden; 
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 /* Social media footer styling */
@@ -99,19 +99,5 @@ footer a:hover {
     max-width: initial;
     position: initial;
     right: initial;
-  }
-}
-
-/* Right-aligned image styling for company entries */
-.right-image {
-  float: right;
-}
-
-@media (max-width: 600px) {
-  .right-image {
-    float: initial;
-    max-width: 100%;
-    padding-left: 0;
-    margin: 1rem 0;
   }
 }

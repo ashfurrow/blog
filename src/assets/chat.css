@@ -17,8 +17,6 @@
 form.chat * {
   transition: all 0.5s;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 
 form.chat {
@@ -32,9 +30,7 @@ form.chat {
   top: 0;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
   -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE/Edge */
   user-select: none;
 }
 

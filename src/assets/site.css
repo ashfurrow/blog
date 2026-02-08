@@ -37,7 +37,6 @@ body {
   line-height: 1.66;
   font-weight: 400;
   font-variant-ligatures: common-ligatures;
-  font-variant: common-ligatures;
   margin: 0;
   padding: 0;
 }
@@ -197,13 +196,20 @@ p code {
 }
 .youtube-embed,
 .video-embed,
+.speakerdeck-embed,
+.soundcloud-embed,
+.spotify-embed,
+.toot-embed {
+  margin-bottom: 1.66rem;
+}
+.youtube-embed,
+.video-embed,
 .speakerdeck-embed {
   position: relative;
   height: 0;
   overflow: hidden;
   max-width: 100%;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  margin-bottom: 1.66rem;
 }
 .youtube-embed iframe,
 .video-embed iframe,
@@ -214,21 +220,8 @@ p code {
   width: 100%;
   height: 100%;
 }
-.soundcloud-embed {
-  margin-bottom: 1.66rem;
-}
-.soundcloud-embed iframe {
-  border: none;
-}
-.spotify-embed {
-  margin-bottom: 1.66rem;
-}
-.spotify-embed iframe {
-  border: none;
-}
-.toot-embed {
-  margin-bottom: 1.66rem;
-}
+.soundcloud-embed iframe,
+.spotify-embed iframe,
 .toot-embed iframe.mastodon-embed {
   border: none;
 }

@@ -108,13 +108,9 @@ h2.timeline-year {
 }
 .timeline-anchor:hover::after {
   position: absolute;
-  visibility: hidden;
   content: '#';
   padding-left: 0.25rem;
   color: var(--primary);
-}
-.timeline-anchor:hover::after {
-  visibility: visible;
 }
 
 /* Desktop alternating layout with CSS Grid */
