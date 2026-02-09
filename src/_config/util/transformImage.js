@@ -14,21 +14,22 @@ export async function transformImage(context, imagePath) {
     const outputDir = path.dirname(context.page.outputPath)
     const urlPath = context.page.url
     let metadata = await Image(imageSourcePath, {
-      widths: [null],
-      formats: ["auto"],
+      widths: [800, null],
+      formats: ["webp", "auto"],
       outputDir,
       urlPath,
-      filenameFormat: function (_id, src, _width, format, _options) {
+      filenameFormat: function (_id, src, width, format, _options) {
         const extension = path.extname(src)
         const name = path.basename(src, extension)
-        return `${name}.${format}`
+        return `${name}-${width}.${format}`
       }
     })
 
+    // Return the largest original-format image URL (for CSS backgrounds and meta tags)
     const formats = Object.keys(metadata)
-    const firstFormat = formats[0]
-    const images = metadata[firstFormat]
-    return images[0].url
+    const lastFormat = formats[formats.length - 1]
+    const images = metadata[lastFormat]
+    return images[images.length - 1].url
   } catch (error) {
     console.error(`Error processing image ${imageSourcePath}:`, error)
     return null
