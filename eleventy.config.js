@@ -91,6 +91,6 @@ export const config = {
   htmlTemplateEngine: "njk",
   dir: {
     input: "src",
-    output: "public"
+    output: "_site"
   }
 }
