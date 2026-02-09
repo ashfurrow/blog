@@ -86,4 +86,25 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("toJson", function (content) {
     return JSON.stringify(content)
   })
+
+  // Override the RSS plugin's dateToRfc822 to force UTC (fixes #530)
+  eleventyConfig.addNunjucksFilter("dateToRfc822", function (value) {
+    const date = new Date(value)
+    const options = {
+      weekday: "short",
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+      timeZone: "UTC",
+      timeZoneName: "short"
+    }
+    const formatted = new Intl.DateTimeFormat("en-US", options).format(date)
+    const [wkd, mmm, dd, yyyy, time, z] = formatted.replace(/([,\s+\-]+)/g, " ").split(" ")
+    const tz = `${z}`.replace(/UTC/, "GMT")
+    return `${wkd}, ${dd} ${mmm} ${yyyy} ${time} ${tz}`
+  })
 }
