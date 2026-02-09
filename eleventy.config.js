@@ -58,18 +58,18 @@ export default async function (eleventyConfig) {
 
   // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    formats: ["auto"],
+    formats: ["webp", "auto"],
+    widths: [400, 800, 1600, "auto"],
     filenameFormat:
       /** @type {import('@11ty/eleventy-img').ImageOptions['filenameFormat']} */
       function (id, src, width, format, options) {
-        // It's almost like the plugin authors don't want you to use the original filename, which I think is silly.
         const filename = src.split("/").slice(-1)[0].split(".")[0]
-        // We could be using `${filename}-${id}-${width}.${format}` or something more unique, but I prefer the plain filenames until we have mulitple widths
-        return `${filename}.${format}`
+        return `${filename}-${width}.${format}`
       },
     defaultAttributes: {
       loading: "lazy",
-      decoding: "async"
+      decoding: "async",
+      sizes: "auto"
     },
     sharpOptions: {
       animated: true
