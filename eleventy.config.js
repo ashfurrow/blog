@@ -76,6 +76,10 @@ export default async function (eleventyConfig) {
     }
   })
 
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    mdLib.set({ typographer: true })
+  })
+
   eleventyConfig.setServerOptions({
     domDiff: false // Fontawesome icons loose their sizing when 11ty
   })
