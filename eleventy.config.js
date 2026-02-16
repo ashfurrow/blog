@@ -1,6 +1,9 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
 import rssPlugin from "@11ty/eleventy-plugin-rss"
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
+import sharp from "sharp"
+import { readFile } from "node:fs/promises"
+import path from "node:path"
 
 import Image from "@11ty/eleventy-img"
 const { eleventyImageTransformPlugin } = Image
@@ -8,6 +11,8 @@ const { eleventyImageTransformPlugin } = Image
 import pluginFilters from "./src/_config/filters.js"
 import pluginShortcodes from "./src/_config/shortcodes.js"
 import pluginPersonalTimeline from "./src/_config/personaltimeline.js"
+
+const lqipCache = new Map()
 
 /**
  * Configure Eleventy with plugins, bundles, and shortcodes.
@@ -78,6 +83,69 @@ export default async function (eleventyConfig) {
     sharpWebpOptions: {
       quality: 90
     }
+  })
+
+  // LQIP: Low-Quality Image Placeholders with blur-up
+  eleventyConfig.addTransform("lqip", async function (content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) {
+      return content
+    }
+
+    const pictureRegex = /<picture>([\s\S]*?)<\/picture>/g
+    const imgSrcRegex = /<img[^>]+src="([^"]+)"/
+    const imgWidthRegex = /<img[^>]+width="(\d+)"/
+    const imgHeightRegex = /<img[^>]+height="(\d+)"/
+
+    const matches = [...content.matchAll(pictureRegex)]
+    if (matches.length === 0) {
+      return content
+    }
+
+    const replacements = []
+
+    for (const match of matches) {
+      const pictureHtml = match[0]
+      const srcMatch = pictureHtml.match(imgSrcRegex)
+      const widthMatch = pictureHtml.match(imgWidthRegex)
+      const heightMatch = pictureHtml.match(imgHeightRegex)
+
+      if (!srcMatch) continue
+
+      const imgSrc = srcMatch[1]
+      const filePath = path.join("_site", imgSrc)
+
+      try {
+        let base64
+
+        if (lqipCache.has(filePath)) {
+          base64 = lqipCache.get(filePath)
+        } else {
+          const fileBuffer = await readFile(filePath)
+          const thumbBuffer = await sharp(fileBuffer).resize(20).jpeg({ quality: 50 }).toBuffer()
+          base64 = `data:image/jpeg;base64,${thumbBuffer.toString("base64")}`
+          lqipCache.set(filePath, base64)
+        }
+
+        const width = widthMatch ? widthMatch[1] : ""
+        const height = heightMatch ? heightMatch[1] : ""
+        const aspectRatio = width && height ? `aspect-ratio: ${width} / ${height};` : ""
+
+        const wrapped =
+          `<div class="lqip-wrapper" style="background-image: url(${base64}); background-size: cover; ${aspectRatio}">` +
+          pictureHtml +
+          `</div>`
+
+        replacements.push({ original: pictureHtml, replacement: wrapped })
+      } catch {
+        // Image file not found or unprocessable — skip gracefully
+      }
+    }
+
+    for (const { original, replacement } of replacements) {
+      content = content.replace(original, replacement)
+    }
+
+    return content
   })
 
   eleventyConfig.amendLibrary("md", (mdLib) => {

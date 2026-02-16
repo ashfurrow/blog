@@ -87,6 +87,21 @@ img {
   height: auto;
 }
 
+/* LQIP: Low-Quality Image Placeholders */
+.lqip-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lqip-wrapper picture {
+  display: block;
+}
+.lqip-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* RightImage */
 .right-image-container {
   margin-bottom: 2rem;
