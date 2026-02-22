@@ -14,7 +14,7 @@ At the end of my day, after taking care of my responsibilities, I was left with 
 
 So. Last month. After playing _Hades II_ for so long that my thumbs hurt as much as my heart, I was doomscrolling. I came across some discussion about 3D printing. Something in my brain shifted. I felt it, like it was some physical mechanism. “Huh. 3D printing. Hmm.”
 
-I had been thinking of getting a 3D printer, off and on, since we bought our house. Usually, I let it go I had other responsibilities and other interests that were taking up my time. But not lately. Lately, I've had time but not any interest. So when I felt that spark, I encouraged myself to follow it.
+I had been thinking of getting a 3D printer, off and on, since we bought our house. Usually, I'd let it go. I had other responsibilities and other interests that were taking up my time. But not lately. Lately, I've had time but not any interest. So when I felt that spark, I encouraged myself to follow it.
 
 Sometimes it’s okay to impulse buy something to make yourself feel better. When the excitement of diving into a new hobby is the only joy you can remember feeling. When you’re actually _glad_ that the thing is backordered because it means you’ll have something (_anything_) to look forward _to_ for a bit longer. When _you do want_ to keep looking forward, even as you _also_ want time to slow down.
 
