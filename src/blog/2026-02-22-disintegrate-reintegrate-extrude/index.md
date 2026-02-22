@@ -12,7 +12,7 @@ The thing about taking care of a loved one while they die is that you still have
 
 At the end of my day, after taking care of my responsibilities, I was left with time but no energy. I know what depression feels like and I now notice when it starts creeping in. And I have skills to forestall it.
 
-So. Last month. After playing _Hades II_ for so long that my thumbs hurt as much as my heart, I was doom scrolling. I came across some discussion about 3D printing. Something in my brain shifted. I felt it, like it was some physical mechanism. “Huh. 3D printing. Hmm.”
+So. Last month. After playing _Hades II_ for so long that my thumbs hurt as much as my heart, I was doomscrolling. I came across some discussion about 3D printing. Something in my brain shifted. I felt it, like it was some physical mechanism. “Huh. 3D printing. Hmm.”
 
 I had been thinking of getting a 3D printer, off and on, since we bought our house. Usually, I let it go I had other responsibilities and other interests that were taking up my time. But not lately. Lately, I've had time but not any interest. So when I felt that spark, I encouraged myself to follow it.
 
@@ -20,4 +20,4 @@ Sometimes it’s okay to impulse buy something to make yourself feel better. Whe
 
 My wife and I have spent the last few weeks learning about 3D printers together, sharing models we want to print, and preparing a workspace for the printer. We’ve lived in the house for over four years now, which is longer than we’ve ever lived in a space. Preparing for the printer led to spring cleaning our basement, something we've been meaning to do. So we’ve built up some momentum, doing things, taking care of ourselves and our space and each other.
 
-The printer should arrive this week. I’m excited. It feels good, to be excited. I'm cautious, too: I’ve learned the hard way how unwise it can be to put my mental wellbeing into the acquisition of material things. But I’ve also learned how and when to work with my inclinations.
+The printer should arrive this week. I’m excited. It feels good, to be excited. I'm cautious, too: I’ve learned the hard way how unwise it can be to hitch my mental wellbeing to the acquisition of things. But I’ve also learned how and when to work with my inclinations.
