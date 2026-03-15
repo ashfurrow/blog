@@ -1,6 +1,7 @@
 ---
 title: The Over-Engineering Method
 date: 2026-03-15
+banner: banner.jpg
 ---
 
 In Canada, where "Engineer" is a protected term, I can't say that _I_ do Engineering. I'm a Software Developer, not a Software Engineer. Nevertheless, my job title _was_ "Software Engineer" for seven years while I worked in the US and I personally think that software development is done best when approached as an engineering problem.
