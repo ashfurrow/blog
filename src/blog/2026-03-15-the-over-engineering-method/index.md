@@ -6,7 +6,7 @@ banner: banner.jpg
 
 In Canada, "Engineer" is a protected term. I am a software _developer_, not a Software _Engineer_. There are valid reasons – _historical reasons_ – to restrict who is a capital-E Engineer, but these reasons are at odds with how the term is commonly used today. Nevertheless, my job title _was_ "Software Engineer" for seven years while I worked in the US, and I personally think that software development is best approached as an engineering problem.
 
-Bill Hammack (aka The Engineering Guy) as [an excellent playlist](https://www.youtube.com/playlist?list=PL0INsTTU1k2X4kCPqmi1eJBgmYJUth_2s) on "the engineering method", which he defines as:
+Bill Hammack (aka The Engineering Guy) has [an excellent playlist](https://www.youtube.com/playlist?list=PL0INsTTU1k2X4kCPqmi1eJBgmYJUth_2s) on "the engineering method", which he defines as:
 
 > Solving problems using rules of thumb that cause the best change in a poorly understood situation using available resources.
 
