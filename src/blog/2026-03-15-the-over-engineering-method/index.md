@@ -4,17 +4,19 @@ date: 2026-03-15
 banner: banner.jpg
 ---
 
-In Canada, where "Engineer" is a protected term, I can't say that _I_ do Engineering. I'm a Software Developer, not a Software Engineer. Nevertheless, my job title _was_ "Software Engineer" for seven years while I worked in the US and I personally think that software development is done best when approached as an engineering problem.
+In Canada, "Engineer" is a protected term. I am a software _developer_, not a Software _Engineer_. There are valid reasons – _historical reasons_ – to restrict who is a capital-E Engineer, but these reasons are at odds with how the term is commonly used today. Nevertheless, my job title _was_ "Software Engineer" for seven years while I worked in the US, and I personally think that software development is best approached as an engineering problem.
 
 Bill Hammack (aka The Engineering Guy) as [an excellent playlist](https://www.youtube.com/playlist?list=PL0INsTTU1k2X4kCPqmi1eJBgmYJUth_2s) on "the engineering method", which he defines as:
 
 > Solving problems using rules of thumb that cause the best change in a poorly understood situation using available resources.
 
-I had some time off recently and wanted to reconnect to this mentality, without _code_ specifically. My 3D printer arrived recently so I decided to apply the engineering method to my home office desk setup. My work-from-home setup is important to me, it's where I spend a lot of my time. Maybe I'm also still traumatized from working from a one-bedroom apartment with my wife and two cats for ten months in 2020, we'll never know. Regardless, I'm pretty proud of my setup.
+Hammack's videos describe the history of engineering, how it's inaccurate to only think of engineering as applied understanding. How engineering is something done at, and just beyond, the edge of scientific understanding _that advances_ that understanding.
+
+I had some time off recently and wanted to reconnect to this engineering mentality, absent from _code_ specifically. [My 3D printer](/blog/disintegrate-reintegrate-extrude/) arrived recently, so I decided to apply some engineering method to my home office desk setup. My work-from-home setup is important to me – it's where I spend a lot of my time. Maybe I'm also still traumatized from working in a one-bedroom apartment with my wife and two cats for ten months of 2020, maybe. Regardless, I've lived here for four years and I'm pretty proud of my setup.
 
 ![My current desk setup.](IMG_2441.jpeg)
 
-Over the past few years, I've tried multiple monitors but it's not a setup I work well with. I've settled on a laptop in clamshell mode on the desk, so it's easy to access. I use an Apple Studio Display but I route a USB hub from the monitor for everything to connect to. Unfortunately, I've run out of USB ports.
+I keep iterating. I recently tried multiple monitors, but it's not a setup I work well with. I've settled on a laptop in clamshell mode on the desk, so it's easy to access. I use an Apple Studio Display but I route a USB hub from the monitor for everything to connect to. The laptop just goes to the monitor. Unfortunately, I've run out of USB ports.
 
 {% narrow %}
 
@@ -22,11 +24,13 @@ Over the past few years, I've tried multiple monitors but it's not a setup I wor
 
 {% endnarrow %}
 
-Also, it's a bit messy. I've tried to make it tidy over the years, but I can see the mess when the desk is at the standing height. I don't mind cables but I don't like mess.
+Also, it's a bit messy. I've tried to make it tidier over the years, but I can still see the mess of wires under the desk. Especially at standing height. I don't mind cables but I do mind mess.
 
 ![The ugly underbelly of my desk.](IMG_2456.jpeg)
 
-I chose [openGrid](https://www.opengrid.world) with [UnderWare](https://www.opengrid.world/guides/quickstart/underware/) as a means to organize the cables under my desk. This is an area of active development in the 3D printer world, and there are more popular systems. But I like the idea of an grid system built _with desk organizing in mind_. And it's open source. I bought a new powered USB hub that [someone had already designed an openGrid mount for](https://makerworld.com/en/models/1699061-opengrid-tp-link-powered-usb-hub-uh700-uh720). I removed a few things I didn't need, like an unneeded light strip and a network switch. Instead of planning everthing up front, I tried to make individual changes to move in the right direction. I started printing single pieces that I needed to cover the desk in a grid, and proceeded from there.
+I chose [openGrid](https://www.opengrid.world) with [UnderWare](https://www.opengrid.world/guides/quickstart/underware/) as a means to organize the cables under my desk. This is actually an area of active development in the 3D printer world, and there are more popular systems than openGrid. But I like the idea of an grid system built _with desk organizing in mind_. And it's open source. I bought a new powered USB hub that [someone had already designed an openGrid mount for](https://makerworld.com/en/models/1699061-opengrid-tp-link-powered-usb-hub-uh700-uh720). (The hub is _powered_ so I can attach further hubs, if needed.) I removed a few things from the desk that I didn't need, like a light strip and a network switch.
+
+Instead of planning everything up front, I tried to make individual changes to move in the right direction. I started printing single pieces that I needed to cover the desk in a grid, and proceeded from there.
 
 {% narrow %}
 
@@ -34,7 +38,7 @@ I chose [openGrid](https://www.opengrid.world) with [UnderWare](https://www.open
 
 {% endnarrow %}
 
-I learned some TinkerCAD and Autodesk Fusion. Also 3D printer slicer, Bambu Studio. I have a working understanding of computer graphics and strong graphic design skills (for a programmer), so I wasn't starting from scratch.
+I learned some TinkerCAD and Autodesk Fusion. I learned that 3D printing "slicer" software is a whole different skill. I already had a working understanding of computer graphics and strong graphic design skills (for a programmer) so I wasn't starting from scratch. I would guess that a lot of people getting into 3D printing don't know what "world coordinates" are, for example.
 
 {% narrow %}
 
@@ -42,7 +46,7 @@ I learned some TinkerCAD and Autodesk Fusion. Also 3D printer slicer, Bambu Stud
 
 {% endnarrow %}
 
-I started to modify existing models to suit my needs. I wanted to mount a light under my desk as a bias light, so I modified an openGrid part to hold a random piece I had, with a 1/4" tripod mount.
+I started by printing other people's models, but soon started modifying them to suit my needs. I wanted to mount a light under my desk to use as a bias light (I didn't like it behind my monitor) so I modified an openGrid part to hold some random camera part I had lying around, which has a 1/4" tripod mount.
 
 {% narrow %}
 
@@ -50,7 +54,7 @@ I started to modify existing models to suit my needs. I wanted to mount a light 
 
 {% endnarrow %}
 
-The printer itself slowed down my interation loop, which made it easier to be more intentional.
+The printer itself slowed down my iteration loop, which made it easier to be more intentional.
 
 {% narrow %}
 
@@ -58,7 +62,7 @@ The printer itself slowed down my interation loop, which made it easier to be mo
 
 {% endnarrow %}
 
-I went overboard a bit, and that's okay. It felt great reconnecting to an engineering mindset, problem solving outside the context of coding.
+I confess that I went overboard a bit, and that's okay. It felt great reconnecting to that problem-solving feeling on an intrinsic level, outside the context of coding.
 
 {% narrow %}
 
@@ -72,7 +76,7 @@ I went overboard a bit, and that's okay. It felt great reconnecting to an engine
 
 {% endnarrow %}
 
-I have this amazing new tool that can solve a lot of problems. I'm kind of surveying the different areas of 3D printing now, following my interest.
+My 3D printer is this amazing new tool that can solve a lot of problems. An overwhelming amount, actually. I'm now kind of surveying the different areas of 3D printing, letting my interests guide me.
 
 {% narrow %}
 
@@ -80,7 +84,7 @@ I have this amazing new tool that can solve a lot of problems. I'm kind of surve
 
 {% endnarrow %}
 
-There are still some cables you can see, but I've reduced the mess to a minimum. The visible cables are the Thunderbolt cable for my laptop, and a Lightning and USB-C cable for test devices.
+There are still some cables you can see, but I've reduced this mess to its minimum. The remaining visible cables are the Thunderbolt cable for my laptop, and a Lightning and USB-C cable for connecting test devices.
 
 {% narrow %}
 
@@ -88,7 +92,7 @@ There are still some cables you can see, but I've reduced the mess to a minimum.
 
 {% endnarrow %}
 
-Back at Artsy, I kept a pretty tidy desk. My approach is to minimize distractions, without being overzealous about _eliminating_ distraction. My monitor arm has less wobble when it's not as extended, so I offset the monitor from centre. I don't love that it's off-centre from the desk, but I've done everything else I can to remove the wobble. And it _does_ create a drop zone on the right, where I can set things I've brought up or I need to take away (mostly coffee mugs).
+Back at Artsy, I kept a pretty tidy desk. My approach remains to _minimize_ distractions without being overzealous about _eliminating_ distractions. For instance, my monitor arm has less wobble when it's extended less, so the monitor is offset from the centre of the desk. I dislike that it's off-centre, but I've done everything else I can to remove the wobble. And this _does_ create a handy drop zone on the right, where I can set things as they come and go from the rest of the house (mostly coffee mugs).
 
 {% narrow %}
 
@@ -96,10 +100,10 @@ Back at Artsy, I kept a pretty tidy desk. My approach is to minimize distraction
 
 {% endnarrow %}
 
-I walked up the stairs the other night and found my office looking extra cozy. This is exactly what I wanted.
+The other night, I was walking up the stairs, and I found my office looking extra cozy. No cables, with softer light. This is exactly what I wanted.
 
 ![My cozy office.](IMG_2504.jpeg)
 
-Well, not _exactly_ what I wanted 😅 I'm thinking of 3D printing a cable chain to hide the mess of the power and ethernet cables going up to my desk.
+Well, maybe not _exactly_ what I wanted 😅 I'm thinking of 3D printing a cable chain to hide the mess of the power and ethernet cables going up to my desk. This project never ends.
 
-Designing a home office is a fun hobby, and I'm grateful to have the means to do it. I'm headed back to work tomorrow, ready to code.
+Designing a home office is a fun hobby, and I'm grateful to have the means to pursue it. I'm headed back to work tomorrow, and I'm feeling ready to code.
