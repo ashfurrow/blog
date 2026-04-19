@@ -14,13 +14,11 @@ I have always been curious about new tools and technology, that's why I chose th
 
 My approach to writing this blog has been to share things _as I learn them_: Since I still remember what it was like to not understand something, my explanations are helpful to others. Since it's so new in my understanding, it helps me solidify my own understanding. So, keep that in mind here.
 
-And, by way, no AI was used to write this blog post. Or any blog post. I wouldn't use AI to write blog posts because that would defeat my goals in writing them, as I described.
-
 ---
 
 I was working at Shopify when GitHub Co-Pilot was first announced in 2021. I was given access to the tool in VS Code, so I tried it out. I hated it immediately, viscerally. It was only impressive in a technical sense, that it was able to predict what I might type next. But as I wrote code, it would interrupt my train of thought with its suggestion if I paused typing too long. My brain would get distracted by that suggestion, flipping from thinking-to-reading modes. GitHub Co-Pilot slowed me down and kept me out of flow state. I turned it off.
 
-When I joined Float, a few years later, GitHub Co-Pilot was enabled on my new laptop. It had improved since, but only in terms of how quickly it generated its distracting suggestions. The only time I ever had luck with it was when I wrote a multiline comment describing a custom `groupBy` that I was too lazy to write, then started writing a function definition.
+When I joined Float, a few years later, GitHub Co-Pilot was enabled on my new laptop. It had improved since, but only in terms of how quickly it generated its distracting suggestions. The only time I ever had luck with it was when I wrote a multiline comment describing a custom `groupBy` that I was too lazy to write, started writing a function definition, and waited.
 
 ```tsx
 /*
@@ -45,7 +43,7 @@ Claude Code was the first tool that met me _where I was at_. It wasn't a new IDE
 
 Unlike other tools until then, Claude Code was functional, effective, and... it was cute. I think this last part is important: everyone at work loved the cute messaging Claude Code would give while it was running inference. It would give statuses like “Coding”, or “Spelunking”, or “Manifesting”, and I actually think this cuteness is important because it highlights that it's not just a tool, but a _product_.
 
-Co-Pilot is a tech demo. Claude Code is a product.
+GitHub Co-Pilot is a tech demo. Claude Code is a product.
 
 When I started really getting into using Claude Code at Float, a coworker told me it was like watching _Invasion of the Body Snatchers_. I had been so critical of these tools because they hadn't been working for me, that when I started enjoying them it felt like I had changed. But _I_ hadn't changed – the tools just finally got good enough.
 
@@ -59,9 +57,11 @@ If an AI coding tool has a unit test suite with a broken test, it can fix the im
 
 I never know if I’m ahead of the curve or behind the curve with these tools, but I _do_ think that there are a lot of developers out there who could get value from these tools but aren’t. The tools aren’t working for them and I blame the tools. GitHub Co-Pilot is _so bad_ that it has irreparably damaged the reputation of AI _generally_. AI coding tools are products; they need to meet developers where they are at, provide onramps, and show their value quickly.
 
-Using Claude Code, like any tool, is a skill. It has taken me time to learn and I’m still learning. The context window is a resource that needs to be managed, like any finite resource. The longer a conversation goes, the more likely Claude is to mess up. You have to know when to compact a conversation, when to use a subagent, and when to start over. AI coding agents makes other tasks harder, like pull request review: _you_ have to be the first reviewer of any pull request that you author with Claude Code.
+Using Claude Code, like any tool, is a skill. It has taken me time to learn and I’m still learning. [My CLAUDE.md](https://gist.github.com/ashfurrow/efd5b84e2700b23fda266f3de36409b6) file gets updated all the time. I've learned to managed the context window like any kind of finite resource. The longer a conversation goes, the more likely Claude is to mess up. You have to know when to compact a conversation, when to use a subagent, and when to start over. AI coding agents makes other parts of coding harder, like code review: _you_ have to be the first reviewer of any pull request that you author with Claude Code.
 
-I have to confess that my resistance to AI tools hasn’t _only_ been because they sucked until Claude Code. I resisted them because emotionally, I was conflicted. And while it's sad to see the craft of programming change like this, [I do not mourn it in the way that some do](https://nolanlawson.com/2026/02/07/we-mourn-our-craft/). After spending years as a technical lead who never feels he has enough time to code, I am _loving_ this. I can get _so much done_. And sure, part of that shift is my new job at Wealthsimple that brought me back to coding. But part of it is that I’m not fighting with compiler errors all the time. Claude Code is fixing them for me.
+I have to confess that my resistance to AI tools hasn’t _only_ been because they sucked until Claude Code. I resisted them because emotionally, I was conflicted. I'm still conflicted. But I'm glad I pushed myself to try them. I don't want to go back.
+
+While it's sad to see the craft of programming change like this, become mechanized like this, [I do not mourn it in the way that some do](https://nolanlawson.com/2026/02/07/we-mourn-our-craft/). After spending years as a technical lead who never feels he has enough time to code, I am _loving_ this. I can get _so much done_. And sure, part of that shift is [my new job at Wealthsimple](/blog/joining-wealthsimple/) that brought me back to coding. But part of it is that I’m not fighting with compiler errors all the time. Claude Code is fixing them for me.
 
 It’s fun. I wish I had stopped resisting sooner.
 
@@ -69,7 +69,7 @@ It’s fun. I wish I had stopped resisting sooner.
 
 Here’s my practical advice.
 
-First, you aren't going to get left behind if you haven't used these tools yet. I mostly skipped Cursor and that turned out to be great for me: a lot of developers are currently _un_ learning their Cursor workflows in order to use Claude Code more effectively. So you won't get left behind, but also, these tools _are_ becoming more widely used. An entire generation of programmers is starting their careers never _not_ having access to AI tools. You're allowed to feel however you want about that, it's okay.
+First, you aren't going to get left behind if you haven't used these tools yet. I mostly skipped Cursor and that turned out to be great for me: a lot of developers are currently _un_ learning their Cursor workflows in order to use Claude Code more effectively. So you won't get left behind, but also, these tools _are_ becoming more widely used. An entire generation of programmers is starting their careers never _not_ having access to AI tools. You're allowed to feel however you want about that.
 
 If you have access to AI coding tools as part of your job then try them. If you feel self-conscious about how slow you are when learning how to use the tool, just tell your boss that you’re investing in AI tooling and they’ll probably love it. Your workplace wouldn’t be paying for your subscription if they didn’t want you to use it. Share what you learn with your team. Figuring out what the tools _can't_ do is just as important to learn as what they _can_ do.
 
