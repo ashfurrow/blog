@@ -8,7 +8,7 @@ I started writing this blog post as an attempt to collect and distill all my var
 
 {% youtube "LACyqdAfnaw" %}
 
-I have a lot of problems with. and feelings about, generative AI. I'm conflicted about using these tools because I’m aware of both the benefits that AI coding tools can have and the harms that LLMs do at scale. My own copyrighted books were stolen and included in LLM training data. My open source contributions and this blog are almost certainly in LLM training data. If you're looking for a cohesive moral stance on AI, [I don't have one](/blog/foresight/).
+I have a lot of problems with, and feelings about, generative AI. I'm conflicted about using these tools because I’m aware of both the benefits that AI coding tools can have and the harms that LLMs do at scale. My own copyrighted books were stolen and included in LLM training data. My open source contributions and this blog are almost certainly in LLM training data. If you're looking for a cohesive moral stance on AI, [I don't have one](/blog/foresight/).
 
 I have always been curious about new tools and technology, that's why I chose this career. But I'm confused by the staunch rejection of AI coding tools by some coders. I see a kind of pride taken in their incuriosity, that I have a hard time relating to.
 
