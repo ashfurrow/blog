@@ -6,3 +6,4 @@
 # Need to set this explicitly because Netlify still uses an old value on local deploy previews
 [build]
   publish = "_site"
+  command = "pnpm run build"

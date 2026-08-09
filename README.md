@@ -9,9 +9,9 @@ My [blog](https://ashfurrow.com/).
 ```sh
 git clone https://github.com/ashfurrow/blog.git
 cd blog
-yarn install
-yarn start # This will take a few seconds the first time
-DEBUG=Eleventy* yarn start # To output console.log() statements from within 11ty
+pnpm install
+pnpm start # This will take a few seconds the first time
+DEBUG=Eleventy* pnpm start # To output console.log() statements from within 11ty
 ```
 
 Then navigate to [http://localhost:8080](http://localhost:8000).
@@ -63,5 +63,5 @@ The site is served from [Netlify](https://www.netlify.com). The feeds are served
 Deploys happen automatically on pushes to the `main` branch. The site can also be deployed locally:
 
 ```sh
-yarn deploy
+pnpm deploy
 ```
