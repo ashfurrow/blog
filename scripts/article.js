@@ -2,7 +2,7 @@
 
 import fs from "fs"
 import slugify from "@sindresorhus/slugify"
-import { exec } from "child_process"
+import { execFile } from "child_process"
 
 const main = async () => {
   const args = process.argv
@@ -39,8 +39,8 @@ date: ${date}
   })
 
   // Open the directory (to add images) and the post markdown (hopefully not in Xcode)
-  exec(`open ${postPath}`)
-  exec(`open ${markdownFile}`)
+  execFile("open", [postPath])
+  execFile("open", [markdownFile])
 }
 
 main()
