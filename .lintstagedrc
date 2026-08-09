@@ -1,4 +1,4 @@
 {
-  "*.js": "yarn format",
-  "*.md": "yarn format"
+  "*.js": "pnpm format",
+  "*.md": "pnpm format"
 }
