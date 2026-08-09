@@ -14,7 +14,7 @@ pnpm start # This will take a few seconds the first time
 DEBUG=Eleventy* pnpm start # To output console.log() statements from within 11ty
 ```
 
-Then navigate to [http://localhost:8080](http://localhost:8000).
+Then navigate to [http://localhost:8080](http://localhost:8080).
 
 ## Contributing
 
