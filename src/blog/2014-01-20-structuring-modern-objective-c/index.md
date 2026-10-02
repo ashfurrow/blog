@@ -128,11 +128,9 @@ A-ha! They're already _de facto_ `#import`ed by default, anyway, so there is no 
 
 Unless you're writing a framework or other third-party component, most `#import`s in header files are just unnecessary.
 
-_Update_: Steve Streza points out that the precompiled header really isn't [meant](http://clang.llvm.org/docs/PCHInternals.html) to be used like this. I'm not sure I completely agree, but wanted to let you all make an informed decision.
+_Update_: [Sarah Streza](https://twitter.com/SarahStreza) points out that the precompiled header really isn't [meant](http://clang.llvm.org/docs/PCHInternals.html) to be used like this. I'm not sure I completely agree, but wanted to let you all make an informed decision.
 
-> [@ashfurrow](https://twitter.com/ashfurrow) pch files are optimizations. Projects should build without them. So leave Foundation import in if your code depends on them.
->
-> — Derpy Streza (@SteveStreza) [January 21, 2014](https://twitter.com/SteveStreza/statuses/425430707419103232)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> @ashfurrow pch files are optimizations. Projects should build without them. So leave Foundation import in if your code depends on them.
 
 ## Grouping `#import` statements
 

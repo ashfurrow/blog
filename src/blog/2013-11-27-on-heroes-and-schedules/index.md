@@ -3,9 +3,9 @@ title: On Heroes and Schedules
 date: 2013-11-27
 ---
 
-Yesterday I found myself reading a very interesting Twitter conversation between Steve Streza, Jordan Kay, and Jonathan Wright. I chimed in in response to this:
+Yesterday I found myself reading a very interesting Twitter conversation between Sarah Streza, Jordan Kay, and Jonathan Wright. I chimed in in response to this:
 
-> [@SteveStreza](https://twitter.com/SteveStreza) [@\_Jordan](https://twitter.com/_Jordan) I somewhat agree with Steve (odd feeling this) and have worked on team where working sane hours makes you feel guilty.
+> [@SarahStreza](https://twitter.com/SarahStreza) [@\_Jordan](https://twitter.com/_Jordan) I somewhat agree with Sarah (odd feeling this) and have worked on team where working sane hours makes you feel guilty.
 >
 > — Jonathan Wight (@schwa) [November 26, 2013](https://twitter.com/schwa/statuses/405397906615595008)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
