@@ -3,15 +3,22 @@ title: My Slow Return to a Swift Career
 date: 2026-10-02
 ---
 
-_This is a transcript of a talk I gave recently in Calgary. I've lightly edited it for readability._
+I recently gave this talk at [the SwiftRockies conference in Calgary](https://swiftrockies.com). This blog post expands on a few points that I didn't have time for
+in the presentation, as well as some updates since then. [The talk is here](https://www.youtube.com/watch?v=UCimuzlrbcc).
 
-Because of the topic I'll be discussing, I feel the need to establish my bona fides up front. I started building my first iOS app in 2009, and eventually I turned it into a career. I found my way to Artsy in 2014 as a native iOS developer. I really liked Artsy. I still like Artsy. The company and product mean a lot to me.
+{% youtube "UCimuzlrbcc" %}
 
-And in 2016, after two or three years there, they said we're gonna move to React Native. And I said no thanks. But I liked the company more than I disliked JavaScript, so I stayed. And I worked on the native parts of our mobile app. Eventually I started working on some web apps in React, and that's when I realized that React is nice, and maybe React Native wouldn't be so bad. So I started investing in my skills in React Native. My skills became valuable, and some momentum built up, and without me really realizing it, my Swift skills started getting left behind as the language and community advanced. So I kept it React Native, I kept the momentum up. Something was missing.
+Because I'll be discussing my work with React Native for an audience of iOS developers, I feel the need to establish my bona fides up front. I started building my first iOS app in 2009, and grew into a career in native app development. I literally wrote a book on Objective-C (well, I co-authored it). I was in the room at WWDC when Swift was announced. I know my stuff.
 
-Fast forward to 2025, and found an opportunity with Wealthsimple to leverage my background as an iOS developer and to help the company elevate its mobile app experience. So I jumped at the chance.
+I found my way to Artsy as an iOS developer. I really liked Artsy. I still like Artsy. The company and product mean a lot to me.
 
-Today I want to talk about the reasons why teams choose React Native, why they often overlook the technical costs of doing so, and what happens when you try to make an actually great app with React Native.
+And in 2016, after two or three years there, they said we're going to move to React Native. And I said "no thanks." But I liked the company more than I disliked JavaScript, so I stayed. I kept working on the native parts of our mobile app. Eventually I started working on some web apps in React, and that's when I realized that React is nice! And, maybe, React Native wouldn't be so bad. So I started investing in React Native experience. My skills became valuable, and some momentum built up, and without me really realizing it, my Swift skills started getting left behind as the language and community advanced. I still used my native skills within React Native, they just weren't my focus. So I kept my React Native momentum up.
+
+But something was missing.
+
+Fast forward to 2025, and I found an opportunity with Wealthsimple to leverage my background as a native iOS developer to help the company elevate its mobile app experience. I jumped at the chance.
+
+Today I want to talk about the reasons why teams choose React Native, why they often overlook the technical costs of doing so, and what happens when they do earnestly try to make an _actually_ great app with React Native.
 
 ## Is it React? Is it native?
 
