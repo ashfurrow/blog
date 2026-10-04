@@ -23,25 +23,51 @@ Today I want to talk about the reasons why teams choose React Native, why they o
 
 ## Is it React? Is it native?
 
-So first — I'm sorry, I know this is a native iOS conference — we do need to talk about React Native under the hood. Is it React? Is it native? I'm going to make the case.
+So first, and I'm sorry but, we do need to talk about React Native under the hood. Is it React? Is it native? I'm going to make each case.
 
-So if you consider what I started my career building as a native application — Objective-C runtime, UIKit view hierarchy — this is a native app, right? This is not a controversial statement. And like the ship of Theseus, I can make small tweaks to it, and I can move some things over into a different thread, maybe it's a different programming language, and eventually we get to something that looks like React Native, and at every step along the way, it was still native. It can call UI events synchronously from UIKit over into JavaScript, and JavaScript can manage the UI hierarchy. So technically it's native. Technically.
+So if you consider what I started my career building as a "native" application(Objective-C runtime, UIKit view hierarchy) that is a native app, right? This is not a controversial statement. And like the ship of Theseus, I could make small tweaks to it, and I can move some things over into a different thread, maybe it's a different programming language, and eventually we could get to something that looks like React Native. And at every step along the way, it was still a "native" app. It could call UI events synchronously from UIKit over into JavaScript, and JavaScript could manage the UI hierarchy.
 
-On the other hand, there is something missing. There's a couple things missing. So the first thing I just want to highlight: apps are more than just a view hierarchy. There is a lot to mobile apps that elevate them above software, and that's why I enjoy building mobile apps so much — they're not just software. React Native was really written for the web, and so it's optimized for writing web software. And as a consequence, you're way more limited than you want to be if you're like me and you want to build a great app, unless you're comfortable writing native code. Unfortunately, most React Native developers aren't. And that's fine — they're trying to do what they're trying to do.
+So _technically_ React Native native.
 
-There's two examples I'm going to talk about. One I'm going to skip over, but it's huge: threading. Dispatch queue, Swift task — very basic concepts in native development. Totally out of the conversation with React Native. There's new work coming out, but if you want to do multi-threading, JavaScript's not really for you.
+Technically.
 
-So, fonts. At Wealthsimple, we care a lot about the design and the polish and the user experience of our application, and we had our own font made. This is Simple Sans, and one of the things it supports is case-sensitive layout — an OpenType font feature. By default, parentheses are aligned so they look correct with lowercase letters. Most fonts do this. Some fonts, like ours, support case-sensitive layouts that raise the parentheses and other punctuation so they're aligned with uppercase letters instead. Why would you want that? Most letters are lowercase, so you'd want them on the lower — but we render a lot of numbers in our application because we're a financial services app. So we made sure our font supported this OpenType feature in order to align the parentheses with the uppercase letters, and therefore the numbers. It's a very small distinction — I struggled to put this on a slide in a way that would be obvious — but the parentheses feel too low for numbers otherwise.
+On the other hand, there is something missing. There are a couple things missing.
 
-iOS supports this. Android supports it. React Native: no. But that's okay, because I know React Native, and I can just go in and patch it, add case-sensitive forms, and it all works. It's kind of an indictment of React Native that I've had to do this on other apps before. This is not an uncommon thing for me to have to do — to reach into React Native and compel it to do what I want. That is not native. You should be able to do things like this on the platform that supports it without all the faff.
+So the first thing I just want to highlight: apps are more than _just_ a view hierarchy. There is a lot to mobile apps that elevate them above software, and that's why I enjoy building mobile apps so much. My web developer peers are rolling their eyes right now, and I'm okay with that.
 
-## React Native is not React
+React Native was really written for the web, so it's optimized for writing web software. And as a consequence, you're way more limited than you'd want to be if you (like me) want to build a great app. _Unless_ you're comfortable writing native code. Unfortunately, most React Native developers aren't. And that's fine — there is still lots that can be done without writing native code. You'll just tend to fall short of a "great" app.
 
-I eventually started doing React Native at Artsy because I started doing React at Artsy, and React is — I think it's pretty cool. React basically keeps an in-memory store of what your user interface is supposed to look like, and then every so often it reconciles that to the actual browser DOM so you get the updated user interface. And if you squint, you can kind of say: okay, it's a JavaScript runtime, it's a virtual DOM, it's a UIKit view hierarchy. It's React, right? Well, kind of.
+There are two examples I'm going to talk about. One I'm going to mostly skip over, but it's huge: threading. Dispatch queues, Swift's `Task`, threads: very basic concepts in native development. Complicated to use effectively at scale, sure, but the building blocks are quite simple. These are all totally out of the conversation with React Native. There's new `worklets` coming out, but if you want to do multi-threading, JavaScript's not really for you.
 
-It's React to a fault. On the web, if there's a good reason to punch through the React abstraction to get to the underlying DOM elements, you can dangerously set HTML, or use a ref or an imperative handle, because React has to work with decades of HTML forms and other quirks of the web. On native, there really aren't the same escape hatches. There are reasons I want to reach through and do things directly to the UI views, but it's very difficult, because if it doesn't fit within the web paradigm, I can't do it. So with very few exceptions, it's hard to work with.
+So, the other example: fonts. At Wealthsimple, we care a lot about the design and the polish and the user experience of our application, and we had our own font made. This is Simple Sans, and one of the things it supports is case-sensitive layout — an OpenType font feature. By default, parentheses are aligned so they look correct with lowercase letters. Most fonts do this. Some fonts, like ours, support case-sensitive layouts that raise the parentheses and other punctuation so they're aligned with uppercase letters instead. The default is on the left, and case-sensitive layout is on the right.
 
-And maybe most controversially, I'm going to say React Native is not React. The slide I showed you earlier was a lie. The JavaScript runtimes are totally different. In a browser, JavaScript is run by just-in-time compilation — very fast. But on React Native apps, we precompile the JavaScript into bytecode and execute it on a very specific, mobile-optimized JavaScript execution engine called Hermes. Hermes is great, but it's not a web browser, and you have to know about some of its quirks because it's so specific. So if you're a React web developer thinking you can just use your React skills with React Native: no. You're going to bump into things eventually, and you have to know about these differences to make a great app. I don't even want to get into what a shadow tree is. A browser DOM is not a UIKit view hierarchy.
+[![Case sensitive forms example with letters](./case-sensitive-forms-letters.svg)](/assets/blog/case-sensitive-forms.pdf)
+
+Why would you want that? Most letters are lowercase, so you'd want parentheses and other punctuation lower to match those letters. But as a financial services app, we render a lot of numbers in our app. So we made sure our font supported this OpenType feature in order to align the parentheses with the uppercase letters, and therefore the numbers.
+
+[![Case sensitive forms example with numbers](./case-sensitive-forms-numbers.svg)](/assets/blog/case-sensitive-forms.pdf)
+
+It's a very small distinction (I struggled to put this on my slides in a way that would be obvious) but the parentheses feel too low for numbers otherwise.
+
+iOS supports this natively, no problem. Android supports it too. React Native does not. But that's okay, because I know React Native, and I can just go in and patch it, add case-sensitive forms, and it all works.
+
+It's kind of an indictment of React Native that I've had to add OpenType features so often that I could reasonable list this as a skill on my resume. This is not an uncommon need: to reach into React Native and compel it to do what I want. _That_ is not "native." The platforms support it and in my opinion, developers should be able to do things like this easily.
+
+But they can't. Because React Native is not native.
+
+I eventually started doing React Native at Artsy after I started doing React _web_ at Artsy, and React is... I think it's pretty cool, actually! React basically keeps an in-memory store of what your user interface is supposed to look like and then reconciles that to the actual browser DOM on-demand. And if you squint, you can kind of say: okay, React Native has a JavaScript runtime, it's a virtual DOM, it's a UIKit view hierarchy. It's React, right? Well, kind of.
+
+In one sense, React Native _is_ React... to a fault. On the web, there are sometimes good reasons to "punch through" the React abstraction to get to the underlying DOM elements, so you can `dangerouslySetHTML()`, or use a ref, or use an imperative handle, because React _has_ to work on the web with decades of HTML forms and other quirks. On native, there really aren't the same escape hatches because React wasn't built for native.
+
+There are valid reasons that I might want to "punch through" and do things directly to the `UIView` instances. But it's very difficult because if it doesn't fit within the web paradigm, then making it easy is not a priority for React. So with very few exceptions, it's hard to work with. And that has advantages too: fewer native-specific escape hatches mean that React Native is easier for React web develepors to use it.
+
+So React Native _is_ React. For better and worse.
+
+I've saved the most controversial take for last. The argument I just made was a lie! The JavaScript runtimes are totally different: in a browser, JavaScript is run by just-in-time compilation to be very fast. But in React Native apps, we _precompile_ the JavaScript into bytecode and execute it on a very specific, mobile-optimized JavaScript execution engine called Hermes. Hermes is great, but it's not a web browser, and you have to know about some of its quirks because it's so specific.
+
+So if you're a React web developer thinking you can just use your React skills with React Native: not exactly. You're going to bump into differences eventually, and you have to know about these differences to make a great app. I don't even want to get into the distinction between shadow trees and virtual DOMs.
+
+React Native is not actually React.
 
 ## The illusion of simplicity
 
