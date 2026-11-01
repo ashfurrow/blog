@@ -92,15 +92,18 @@ img {
   margin-bottom: 2rem;
   overflow: hidden;
 }
-.right-image {
+/* Markdown can't add a class to images, so the {% rightimage %} shortcode relies on the container selector */
+.right-image,
+.right-image-container img {
   float: right;
   padding-left: 3rem;
   padding-bottom: 2rem;
   clear: both;
-  max-width: 30%; 
+  max-width: 30%;
 }
 @media (max-width: 600px) {
-  .right-image {
+  .right-image,
+  .right-image-container img {
     float: initial;
     max-width: 100% !important;
     padding-left: initial;
@@ -152,6 +155,26 @@ blockquote:not(.instagram-media):before {
   height: 100%;
   width: 6px;
   margin-left: -1.6rem;
+}
+/* Pull quotes: upright, bold, and larger than body text, filling the normal text column. Keeps the blockquote's left bar. */
+blockquote.pullquote {
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.75rem; /* Keep this smaller than the h2 size (2rem) */
+  line-height: 1.4;
+  /* Equal space above and below (grid items' margins don't collapse). No side margins, so it fills the column instead of using the browser's default inset. */
+  margin: 1.66rem 0;
+}
+/* The font kit has no bold italic and browsers don't synthesize one here, so thicken the italic with a stroke. Remove this if a bold italic is added to the kit. */
+blockquote.pullquote em {
+  -webkit-text-stroke: 0.04em currentColor;
+}
+@media (max-width: 600px) {
+  /* The column is full width here, so make room for the bar inside the quote instead of hanging it in the margin */
+  blockquote.pullquote {
+    padding-left: 1.6rem;
+    font-size: 1.3rem; /* h2 is 1.5rem at this width */
+  }
 }
 label {
   margin-bottom: .5rem;

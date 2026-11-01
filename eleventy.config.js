@@ -73,6 +73,10 @@ export default async function (eleventyConfig) {
     },
     sharpOptions: {
       animated: true
+    },
+    // Sharp re-encodes webp images at quality 80 by default, which visibly degrades the animated screen recordings
+    sharpWebpOptions: {
+      quality: 90
     }
   })
 
