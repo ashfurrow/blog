@@ -25,9 +25,9 @@ Today I want to talk about the reasons why teams choose React Native, why they o
 
 So first, and I'm sorry but, we do need to talk about React Native under the hood. Is it React? Is it native? I'm going to make each case.
 
-So if you consider what I started my career building as a "native" application(Objective-C runtime, UIKit view hierarchy) that is a native app, right? This is not a controversial statement. And like the ship of Theseus, I could make small tweaks to it, and I can move some things over into a different thread, maybe it's a different programming language, and eventually we could get to something that looks like React Native. And at every step along the way, it was still a "native" app. It could call UI events synchronously from UIKit over into JavaScript, and JavaScript could manage the UI hierarchy.
+So if you consider what I started my career building as a "native" application (Objective-C runtime, UIKit view hierarchy) that is a native app, right? This is not a controversial statement. And like the ship of Theseus, I could make small tweaks to it, and I can move some things over into a different thread, maybe it's a different programming language, and eventually we could get to something that looks like React Native. And at every step along the way, it was still a "native" app. It could call UI events synchronously from UIKit over into JavaScript, and JavaScript could manage the UI hierarchy.
 
-So _technically_ React Native native.
+So _technically_ React Native _is_ native.
 
 Technically.
 
@@ -37,7 +37,9 @@ So the first thing I just want to highlight: apps are more than _just_ a view hi
 
 React Native was really written for the web, so it's optimized for writing web software. And as a consequence, you're way more limited than you'd want to be if you (like me) want to build a great app. _Unless_ you're comfortable writing native code. Unfortunately, most React Native developers aren't. And that's fine — there is still lots that can be done without writing native code. You'll just tend to fall short of a "great" app.
 
-There are two examples I'm going to talk about. One I'm going to mostly skip over, but it's huge: threading. Dispatch queues, Swift's `Task`, threads: very basic concepts in native development. Complicated to use effectively at scale, sure, but the building blocks are quite simple. These are all totally out of the conversation with React Native. There's new `worklets` coming out, but if you want to do multi-threading, JavaScript's not really for you.
+There are two examples I'm going to talk about. One I'm going to mostly skip over, but it's huge: threading. Dispatch queues, Swift's `Task`, threads: very basic concepts in native development. Complicated to use effectively at scale, sure, but the building blocks are quite simple. These are all totally out of the conversation with React Native. There's new [`worklets`](https://docs.swmansion.com/react-native-worklets/) coming out, but if you want to do multi-threading, JavaScript's not really for you.
+
+// TODO: "There's new `worklets` coming out" may be stale. The react-native-worklets docs now call the library production-ready. Check whether "coming out" is still accurate.
 
 So, the other example: fonts. At Wealthsimple, we care a lot about the design and the polish and the user experience of our application, and we had our own font made. This is Simple Sans, and one of the things it supports is case-sensitive layout — an OpenType font feature. By default, parentheses are aligned so they look correct with lowercase letters. Most fonts do this. Some fonts, like ours, support case-sensitive layouts that raise the parentheses and other punctuation so they're aligned with uppercase letters instead. The default is on the left, and case-sensitive layout is on the right.
 
@@ -51,7 +53,7 @@ It's a very small distinction (I struggled to put this on my slides in a way tha
 
 iOS supports this natively, no problem. Android supports it too. React Native does not. But that's okay, because I know React Native, and I can just go in and patch it, add case-sensitive forms, and it all works.
 
-It's kind of an indictment of React Native that I've had to add OpenType features so often that I could reasonable list this as a skill on my resume. This is not an uncommon need: to reach into React Native and compel it to do what I want. _That_ is not "native." The platforms support it and in my opinion, developers should be able to do things like this easily.
+It's kind of an indictment of React Native that I've had to add OpenType features so often that I could reasonably list this as a skill on my resume. This is not an uncommon need: to reach into React Native and compel it to do what I want. _That_ is not "native." The platforms support it and in my opinion, developers should be able to do things like this easily.
 
 But they can't. Because React Native is not native.
 
@@ -59,11 +61,11 @@ I eventually started doing React Native at Artsy after I started doing React _we
 
 In one sense, React Native _is_ React... to a fault. On the web, there are sometimes good reasons to "punch through" the React abstraction to get to the underlying DOM elements, so you can `dangerouslySetHTML()`, or use a ref, or use an imperative handle, because React _has_ to work on the web with decades of HTML forms and other quirks. On native, there really aren't the same escape hatches because React wasn't built for native.
 
-There are valid reasons that I might want to "punch through" and do things directly to the `UIView` instances. But it's very difficult because if it doesn't fit within the web paradigm, then making it easy is not a priority for React. So with very few exceptions, it's hard to work with. And that has advantages too: fewer native-specific escape hatches mean that React Native is easier for React web develepors to use it.
+There are valid reasons that I might want to "punch through" and do things directly to the `UIView` instances. But it's very difficult because if it doesn't fit within the web paradigm, then making it easy is not a priority for React. So with very few exceptions, it's hard to work with. And that has advantages too: fewer native-specific escape hatches mean that React Native is easier for React web developers to use.
 
 So React Native _is_ React. For better and worse.
 
-I've saved the most controversial take for last. The argument I just made was a lie! The JavaScript runtimes are totally different: in a browser, JavaScript is run by just-in-time compilation to be very fast. But in React Native apps, we _precompile_ the JavaScript into bytecode and execute it on a very specific, mobile-optimized JavaScript execution engine called Hermes. Hermes is great, but it's not a web browser, and you have to know about some of its quirks because it's so specific.
+I've saved the most controversial take for last. The argument I just made was a lie! The JavaScript runtimes are totally different: in a browser, JavaScript is run by just-in-time compilation to be very fast. But in React Native apps, we _precompile_ the JavaScript into bytecode and execute it on a very specific, mobile-optimized JavaScript execution engine called [Hermes](https://reactnative.dev/docs/hermes). Hermes is great, but it's not a web browser, and you have to know about some of its quirks because it's so specific.
 
 React is an active project that comes out with new features, but those features rarely launch on React Native alongside the web. When React hooks were released, I remember waiting excitedly for React Native support. Years later, when Suspense launched, I didn't bother getting excited because I knew I'd be waiting a long time.
 
@@ -101,7 +103,7 @@ But it's not all bad. Product teams _do_ like React Native. You get one codebase
 
 Testing JavaScript-only changes is really nice too, because you can open up a pull request and have a computer in the cloud generate a JavaScript bundle, post a QR code to the pull request, you scan it with your app, it downloads the bundle, and that's it. My coworker can test my changes on their phone directly. No provisioning profiles, no signing, nothing. It's incredible.
 
-Over-the-air updates are very common with React Native applications, and they're incredible. I cannot stress enough how amazing it is to have a production issue — you're in the middle of an incident, and I have resolved production incidents by pushing a CodePush bundle with fresh JavaScript that gets downloaded to all our clients, and it works. Everybody does it, and if you could do it on native mobile apps, I guarantee that you would.
+Over-the-air updates are very common with React Native applications, and they're incredible. I cannot stress enough how amazing it is to have a production issue — you're in the middle of an incident, and I have resolved production incidents by pushing a [CodePush](https://github.com/microsoft/react-native-code-push) bundle with fresh JavaScript that gets downloaded to all our clients, and it works. Everybody does it, and if you could do it on native mobile apps, I guarantee that you would.
 
 Startups and scale-ups really need to prioritize speed above all else – at least that's the prevailing wisdom – and that's okay. They can prioritize speed, as long as they know that someday, if the company survives and is successful enough, their needs are likely going to outgrow React Native. And that's okay too.
 
@@ -109,11 +111,13 @@ The real issue I have is that by smoothing out the differences between platforms
 
 ## The cost
 
-React Native has a huge cost. The dependency upgrade churn is intense. It often comes in lockstep: if you need to upgrade Expo, you'll need to upgrade React Native, and you'll also need to upgrade your TypeScript and your Babel and your Reanimated and all of these things. And they all have to be done at once, and they're all constantly moving. It's a nightmare. Honestly, I really dislike this part of building React Native more than most other parts.
+React Native has a huge cost. The dependency upgrade churn is intense. It often comes in lockstep: if you need to upgrade Expo, you'll need to upgrade React Native, and you'll also need to upgrade your TypeScript and your Babel and your Reanimated and all of these things. They all have to be done at once, and they're all constantly moving. It's a nightmare, and I dislike it more than any other part of building React Native.
 
-You also get a massively more complex runtime. Every React Native app tolerates a background radiation of random crashes that we can't explain, that are intractable to solve because the stack traces cross the JavaScript-to-C++ boundary, and you just kind of live with it. I really don't like it. It bothers me more and more every day.
+You also get a massively more complex runtime. Every React Native app tolerates a background radiation of random crashes that we can't explain, that are intractable to solve because the stack traces cross the JavaScript-to-C++ boundary, and you live with it. It bothers me more and more every day.
 
-The abstraction of React Native pushes you further away from the platform and the tools. If there's a user interface idiom or component that would be really great for your app, well, I hope you're willing to write some Objective-C++ to reach for it. And if there's a problem with your application, you're stuck using the React Native tools — unless you know how to use the better ones, honestly. The profiling tools with React Native have gotten better, but it's hard to hold a candle to Xcode's Instruments, and I use Instruments to profile React Native applications because I get better results from them. So teams really have to push harder to achieve the same quality. It's kind of like the speed of light — the closer you get, the harder you have to push to get even closer. That's true of native and Swift too, but it gets so much harder, so much earlier, with React Native.
+The abstraction of React Native pushes you further away from the platform and the tools. If there's a user interface idiom or component that would be really great for your app, well, I hope you're willing to write some Objective-C++ to reach for it. And if there's a problem with your application, you're stuck using the React Native tools — unless you know how to use the better ones, honestly. The profiling tools with React Native have gotten better, but it's hard to hold a candle to Xcode's Instruments, and I use Instruments to profile React Native applications because I get better results from them. So teams really have to push harder to achieve the same quality.
+
+It's kind of like the speed of light — the closer you get, the harder you have to push to get even closer. That's true of native and Swift too, but it gets so much harder, so much earlier, with React Native.
 
 And unfortunately, React Native has been trying to shrink the size of its core for several years, so some very basic things that you shouldn't have to use an external library for, you now do. React Native doesn't even have an ability to access the device's pasteboard anymore — you have to use a third-party library for that.
 
@@ -125,11 +129,17 @@ It's been difficult to feel like part of the iOS developer community. It's somet
 
 ## What it does to teams, what it does to apps
 
-I hope I've built up enough trust that I don't need to describe all the details, but I've compared React Native and native extensively. They have similar ceilings of performance and quality, but React Native has a much lower floor. What I mean is you can make an app in React Native as good as native if you try hard, but you can also easily make a mistake, and then your React Native app can get a lot worse than it can on native. You just have to accept that React Native is going to chew up 200 megabytes of RAM constantly, at least — that's the baseline before you even start showing anything in the app.
+I hope I've built up enough trust that I don't need to describe all the details, but I've compared React Native and native extensively. They have similar ceilings of performance and quality, but React Native has a much lower floor. What I mean is you can make an app in React Native as good as native if you try hard, but you can also easily make a mistake, and then your React Native app can get a lot worse than it can on native.
+
+You just have to accept that React Native is going to chew up 200 megabytes of RAM constantly, at least — that's the baseline before you even start showing anything in the app.
 
 In terms of CPU and graphics performance, you can get close. I've built similarly complex views in SwiftUI and React Native, with streaming data from the network and frequent updates, and tested scrolling performance. The React Native side can get within 5 to 10% of native. Native, I just can't quite reach — but 5%, if you squint, is close enough.
 
-So if we visualize this: native and React Native have the same ceiling, but native's floor is much higher. How bad your app can accidentally be is higher in React Native than in native. And if you think about an average team reaching an average of what they can accomplish — and I'm not trying to speak down about being average, that's just the way it is — if you look at the spread between the averages of native and React Native, it's possible to make a great app in React Native, but it's a matter of organizational priorities. Is the team using React Native always going to push for the extra effort it takes to make a great app, every time? The fact is, anyone can make a great app in React Native, but they probably won't. And that's okay. I think not every app needs to be exceptional. But I'm not okay with that anymore — I only want to work on exceptional software.
+So if we visualize this: native and React Native have the same ceiling, but native's floor is much higher. How bad your app can accidentally be is higher in React Native than in native.
+
+And if you think about an average team reaching an average of what they can accomplish — and I'm not trying to speak down about being average, that's just the way it is — if you look at the spread between the averages of native and React Native, it's possible to make a great app in React Native, but it's a matter of organizational priorities. Is the team using React Native always going to push for the extra effort it takes to make a great app, every time?
+
+The fact is, anyone can make a great app in React Native, but they probably won't. And that's okay. I think not every app needs to be exceptional. But I'm not okay with that anymore — I only want to work on exceptional software.
 
 Artsy's director, when I put up a big fuss and said no, no React Native, took me aside and told me they promised Artsy would never compromise the user experience for the sake of using React Native. And they kept that promise. And then they left the company. And I was in charge. So I kept the promise. And then I left.
 
@@ -139,17 +149,51 @@ I have a ton of respect for Artsy. I care about this company and its products a 
 
 So that was Artsy — my time there, my switch to React Native. What about my switch back?
 
-Well, I'm thrilled. I joined Wealthsimple in October, and one of the first projects we worked on was threading. Because JavaScript doesn't have the capability to put things on a background thread easily, so we built our own. We moved our WebSocket subscriptions into the native layer, with Swift and Kotlin on Android. We have a lot of this type of view in our application — data being updated from WebSockets in real time, and how fast we update the data to the user interface matters to our clients. When we rolled this change out, we saw an app-wide reduction, by half on both platforms, in how many frames were missing that 16-millisecond deadline. This wasn't a very complex project, honestly. In some sense it is, because you have to be familiar with all these different native programming languages, but on the other hand, it's just threading. Not just threading — we saw the Swift concurrency discussion yesterday, it's more complex than that — but honestly, just moving anything to the background thread is a huge step up for React Native.
+Well, I'm thrilled. [I joined Wealthsimple last year](/blog/one-year-at-wealthsimple/), and one of the first projects we worked on was threading. Because JavaScript doesn't have the capability to put things on a background thread easily, so we built our own. We moved our WebSocket subscriptions into the native layer, with Swift and Kotlin on Android. We have a lot of this type of view in our application — data being updated from WebSockets in real time, and how fast we update the data to the user interface matters to our clients. When we rolled this change out, we saw an app-wide reduction, by half on both platforms, in how many frames were missing that 16-millisecond deadline.
 
-I've got a couple more examples of ways I've integrated native underlying UI components into React Native. A straightforward context menu from a UI button, and a long-press UI context interaction. The wild thing is that the button is a React Native button, rendered in React Native, but it turns into a native context menu. And it all scrolls at 60 frames a second — 120 on my phone, whatever — it's performant now, and it has the long press, so we have those nice little touches that make the application feel like it belongs on iOS. Because it does. I was hired at Wealthsimple to care about our app like an iOS developer would, and it's been a thrill. I don't know for sure, but I'd bet I've struggled more with context menus than any developer in this room. If you disagree, I want to hear about it.
+This wasn't a very complex project. In some sense it is, because you have to be familiar with all these different native programming languages, but on the other hand, it's just threading. Not just threading — there was [a Swift concurrency talk](https://swiftrockies.com/recap-2026) the day before mine, it's more complex than that — but honestly, just moving anything to the background thread is a huge step up for React Native.
 
-Personally and professionally, I'm having a blast. Unfortunately, I've also never been more angry at React Native. After I patched our version to support case-sensitive layouts, I did the responsible thing as an open source contributor and opened a pull request to React Native. I tested it, got an Android phone, found a font with case-sensitive layout on the default system fonts, did the hard work — and it's been three months and I haven't heard anything.
+{% narrow %}
 
-In the fall, Apple is going to require us to upgrade to Xcode 27 and submit our apps with the new SDK. Happens every year, it's very normal. Part of linking against the iOS 27 SDK is that you have to migrate your app to a UIScene-based app. If you don't, your app crashes when you launch it. React Native has had a pending RFC to do this migration, and there have been no updates since January. That means any React Native application created today is not going to be UIScene-based, which just — it hurts. What are the chances React Native apps are going to support whatever folding phone, or whatever, Apple is expected to come up with this fall? What are the chances React Native apps out there are integrating with the new Siri AI features? I don't blame anyone at React Native — these are the same incentives that push teams to operate this way. I understand it. But it's not for me anymore.
+![Watchlist prices streaming in real time](./streaming.webp)
+
+{% endnarrow %}
+
+I've got a couple more examples of ways I've integrated native underlying UI components into React Native. A straightforward context menu from a UI button, and a long-press UI context interaction.
+
+The wild thing is that the button is a React Native button, rendered in React Native, but it turns into a native context menu. And it all scrolls at 60 frames a second — 120 on my phone — it's performant now, and it has the long press, so we have those nice little touches that make the application feel like it belongs on iOS. Because it does.
+
+{% narrow %}
+
+![A native context menu on a React Native button](./context-menu.webp)
+
+![A long-press context menu on a search result](./long-press-menu.webp)
+
+{% endnarrow %}
+
+I was hired at Wealthsimple to care about our app like an iOS developer would, and it's been a thrill. I don't know for sure, but I'd bet I've struggled more with context menus than any developer at the conference. If you disagree, I want to hear about it.
+
+Personally and professionally, I'm having a blast.
+
+Unfortunately, I've also never been more angry at React Native. After I patched our version to support case-sensitive layouts, I did the responsible thing as an open source contributor and opened [a pull request to React Native](https://github.com/react/react-native/pull/56766). I tested it, got an Android phone, found a font with case-sensitive layout on the default system fonts, did the hard work — and it's been nearly six months and I haven't heard anything.
+
+// TODO: update timing here
+
+In the fall, Apple is going to require us to upgrade to Xcode 27 and submit our apps with the new SDK. Happens every year, it's very normal. Part of linking against the iOS 27 SDK is that you have to migrate your app to a UIScene-based app. If you don't, your app crashes when you launch it. React Native has had [a pending RFC](https://github.com/react-native-community/discussions-and-proposals/pull/967) to do this migration, and there have been no updates since January. That means any React Native application created today is not going to be UIScene-based, which just — it hurts.
+
+What are the chances React Native apps are going to support whatever folding phone, or whatever, Apple is expected to come up with this fall? What are the chances React Native apps out there are integrating with the new Siri AI features? I don't blame anyone at React Native — these are the same incentives that push teams to operate this way. I understand it. But it's not for me anymore.
+
+// TODO: timing of Duo release
+
+// TODO: Update the RFC timeline. RFC had commits on June 26, 2026, just a few days after my talk lol. RN 0.88 release October 15, a full month after iOS 27.
+
+// TODO: Expo SDK 58 UIScene support: https://expo.dev/changelog/sdk-58 (migration guide: https://expo.fyi/ios-scene-lifecycle) Same dely as RN
+
+// TODO: Radek's 2019 UIWindowScene PR: https://github.com/react/react-native/pull/25425
 
 ## Wrapping up
 
-We talked about a lot today. React Native itself — I hope you have a greater understanding of how frustrated I am with it. We talked about the simplicity and the complexity, and how the most complex thing is how I feel about React Native. We talked about how React Native will tend towards average, because that's what it's good at. That's okay, but I'm not okay with that anymore.
+We talked about a lot here. React Native itself — I hope you have a greater understanding of how frustrated I am with it. We talked about the simplicity and the complexity, and how the most complex thing is how I feel about React Native. We talked about how React Native will tend towards average, because that's what it's good at. That's okay, but I'm not okay with that anymore.
 
 Similar to app quality, I think my career, in terms of professional satisfaction, has a similar ceiling, but React Native has a much lower floor — and I've decided to be more picky. I'm now only working with teams who want my help reaching that ceiling. Sometimes, because I have the skills, that means I'm going to be working with React Native. But more and more, it means I'm going to be working with Swift.
 
