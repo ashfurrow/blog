@@ -1,6 +1,6 @@
 ---
 title: My Slow Return to a Swift Career
-date: 2026-10-02
+date: 2026-11-01
 banner: banner.jpg
 ---
 
