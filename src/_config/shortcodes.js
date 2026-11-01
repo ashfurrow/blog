@@ -153,6 +153,16 @@ export default function (eleventyConfig) {
     return `<div class="narrow">${content}</div>`
   })
 
+  // A larger, upright blockquote that fills the normal text column. The blank lines let Markdown render the content.
+  eleventyConfig.addPairedShortcode("pullquote", function (content) {
+    return `<blockquote class="pullquote">\n\n${content}\n\n</blockquote>`
+  })
+
+  // Floats the images inside to the right so the paragraphs after them flow around. The blank lines let Markdown render the content.
+  eleventyConfig.addPairedShortcode("rightimage", function (content) {
+    return `<div class="right-image-container">\n\n${content}\n\n</div>`
+  })
+
   eleventyConfig.addShortcode("githubLink", function () {
     const inputPath = this.ctx.page.inputPath
     // Convert to relative path from current working directory
