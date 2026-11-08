@@ -279,8 +279,8 @@ p code {
 /* Full width of the window, whatever the column. 100vw includes the scrollbar, so clip the overflow it causes. */
 .bleed {
   grid-column: 1 / -1;
-  /* A percentage margin is relative to the grid area, so this makes the block exactly as wide as the window. (A fixed width of 100vw
-     would widen the grid's columns on narrow screens.) */
+  /* A percentage margin is relative to the grid area, so this makes the block exactly as wide as the window. (A fixed
+     width of 100vw would widen the grid's columns on narrow screens.) */
   margin: 0 calc(50% - 50vw) 1.66rem;
   position: relative;
 }
