@@ -8,6 +8,9 @@
   --grey-light: #eee;
   --grey-extra-light: rgba(0, 0, 0, 0.1);
   
+  /* The space between photos in a photo post and between the cards on /photos. */
+  --photo-gap: clamp(4px, 1vw, 12px);
+
   --header-font-family: 'Futura', sans-serif;
   --body-font-family: 'ff-tisa-web-pro', serif;
   --base-font-size: 20px;

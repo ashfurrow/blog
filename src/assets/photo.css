@@ -1,9 +1,5 @@
 /* Photo posts (layouts/photo.njk). A group of photos is a .wide block; a lone photo is the text column unless flagged. */
 
-:root {
-  --photo-gap: clamp(4px, 1vw, 12px);
-}
-
 /* Rows are decided at build time (src/_config/photo-rows.js); photos in a row grow by aspect ratio to share a height.
    On phones .row stops being a box and .mbreak spacers break the lines. */
 .photos {
