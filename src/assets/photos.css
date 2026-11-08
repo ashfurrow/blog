@@ -1,5 +1,5 @@
-/* The /photos page: a grid of the photo posts, each a banner with its title and date at the top left, like the featured
-   posts on the home page. */
+/* The /photos page: a grid of the photo posts, each a banner with its title and date at the bottom left, aligned like the
+   featured posts on the home page. */
 
 :root {
   --card-gap: clamp(4px, 1vw, 12px);
@@ -36,13 +36,13 @@
 
 .photo-card-text {
   position: absolute;
-  inset: 0 0 auto 0;
-  /* Left-aligned at the top, as in the featured posts, on a soft scrim so it reads over any photo. */
-  padding: 0.75rem 0.75rem 3rem;
+  inset: auto 0 0 0;
+  /* Left-aligned like the featured posts, at the bottom, on a soft scrim so it reads over any photo. */
+  padding: 3rem 0.75rem 0.75rem;
   text-align: left;
   font-family: var(--header-font-family);
   font-weight: var(--font-weight-bold);
-  background: linear-gradient(to bottom, rgb(0 0 0 / 0.65), rgb(0 0 0 / 0));
+  background: linear-gradient(to top, rgb(0 0 0 / 0.65), rgb(0 0 0 / 0));
 }
 
 .photo-card-text > * {
