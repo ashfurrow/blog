@@ -150,9 +150,31 @@ async function photoGroups(content, dir) {
 export default function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownImageFlags))
 
+  // The photo posts, newest first, for the /photos page.
+  eleventyConfig.addCollection("photoPosts", (api) =>
+    api
+      .getFilteredByTag("posts")
+      .filter((post) => post.data.layout === PHOTO_LAYOUT)
+      .reverse()
+  )
+
+  // {% photoCover post, sizes, loading %}: a photo post's banner as a <picture> (600 and 1200px) for a card.
+  eleventyConfig.addAsyncShortcode("photoCover", async function (post, sizes, loading = "lazy") {
+    const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), { widths: [600, 1200] })
+    return generateHTML(metadata, {
+      alt: "",
+      sizes,
+      class: "photo-card-image",
+      loading,
+      decoding: "async",
+      "eleventy:ignore": ""
+    })
+  })
+
   eleventyConfig.addTransform("photo-groups", async function (content) {
     const { inputPath, outputPath } = this.page
-    if (!outputPath?.endsWith(".html") || !content.includes("data-photo")) return content
+    if (!outputPath?.endsWith(".html") || !(content.includes("data-photo") || content.includes('eleventy:ignore=""')))
+      return content
     return photoGroups(content, path.dirname(inputPath))
   })
 }

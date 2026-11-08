@@ -1,22 +1,37 @@
 ---
 title: Photos
 description: Photo stories by Ash Furrow.
+layout: layouts/full_page.njk
+pageStylesheet: /assets/photos.css
 ---
 
-<article>
-{% set groupedPostsJson %}{% groupedPosts "photos" %}{% endset %}
-{% set groupedPosts = groupedPostsJson | fromJson  %}
-{%- for group in groupedPosts %}
-  <div class="group">
-    <h2>{{ group.name }}</h2>
-    {%- for post in group.posts %}
-      <article class="post-item">
-        <a href="{{ post.url }}" class="post-link">
-          <span class="post-title">{{ post.title }}{% if post.photo %} <i class="fa-solid fa-image photo-marker" title="Photo post" role="img" aria-label="Photo post"></i>{% endif %}</span>
-          <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate }}</time>
-        </a>
-      </article>
-    {%- endfor %}
-  </div>
-{%- endfor %}
-</article>
+<section class="photos-profile">
+  <img src="/assets/photos-avatar.jpg" alt="" width="96" height="96" class="avatar" eleventy:ignore>
+  <p class="profile-name">Ash Furrow</p>
+  <p class="bio">Hobby photographer. I was primarily shooting on film and used to travel a lot. I used to live in big cities too, but now I'm rediscovering photography in a less urban setting.</p>
+  <p class="links">
+    <a href="/">ashfurrow.com</a>
+  </p>
+  <p class="links minor">
+    <a href="https://x.com/ashfurrow" rel="me">X</a>
+    <a href="https://instagram.com/ashfurrow" rel="me">Instagram</a>
+    <a href="/feed.xml">RSS</a>
+  </p>
+</section>
+
+<ul class="photo-cards">
+  {%- for post in collections.photoPosts %}
+  <li class="photo-card">
+    <a href="{{ post.url }}" class="photo-card-frame">
+      {% photoCover post, "(min-width: 1100px) 460px, (min-width: 700px) 50vw, 100vw", ("eager" if loop.index0 < 3 else "lazy") %}
+      <span class="photo-card-text">
+        <span class="photo-card-title">{{ post.data.title }}</span>
+        {%- if post.data.subtitle %}
+        <span class="photo-card-subtitle">{{ post.data.subtitle }}</span>
+        {%- endif %}
+        <time class="photo-card-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </span>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>

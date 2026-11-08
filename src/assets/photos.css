@@ -1,0 +1,109 @@
+/* The /photos page: a short profile and a grid of the photo posts, each a banner with its title laid over the lower
+   edge. */
+
+:root {
+  --card-gap: clamp(4px, 1vw, 12px);
+}
+
+.photos-profile {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  max-width: 40rem;
+  margin: 3rem auto 2.5rem;
+  padding-inline: 1rem;
+}
+
+.photos-profile .avatar {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.photos-profile .profile-name {
+  margin: 0 0 1.25rem;
+  font: 700 2rem/1.2 var(--header-font-family);
+}
+
+.photos-profile .bio {
+  margin: 0 0 1.5rem;
+}
+
+.photos-profile .links {
+  margin: 0 0 0.75rem;
+  font: 700 0.85rem var(--header-font-family);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.photos-profile .links a {
+  margin-inline: 0.6rem;
+}
+
+.photos-profile .links.minor {
+  font-weight: 400;
+}
+
+.photo-cards {
+  list-style: none;
+  margin: 0 auto 3rem;
+  padding: 0 var(--card-gap);
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: var(--card-gap);
+}
+
+.photo-card-frame {
+  position: relative;
+  display: block;
+  color: #fff;
+  background: #000;
+  overflow: hidden;
+}
+
+.photo-card-frame picture,
+.photo-card-image {
+  display: block;
+}
+
+.photo-card-image {
+  width: 100%;
+  aspect-ratio: 10 / 9;
+  object-fit: cover;
+}
+
+.photo-card-text {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 3rem 1rem 1.25rem;
+  text-align: center;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0));
+}
+
+.photo-card-text > * {
+  display: block;
+}
+
+.photo-card-title {
+  font: 700 1.2rem/1.25 var(--header-font-family);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.photo-card-subtitle {
+  margin-top: 0.4rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.photo-card-date {
+  margin-top: 0.5rem;
+  font: 700 0.8rem var(--header-font-family);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.photo-card-frame:hover .photo-card-image {
+  opacity: 0.92;
+}
