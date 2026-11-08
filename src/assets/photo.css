@@ -1,31 +1,25 @@
-/* Photo posts (layouts/photo.njk). Widths come from the blog's grid in site.css: a group of photos is a .wide block, a
-   lone photo is the text column unless it is flagged #narrow, #wide or #bleed. */
+/* Photo posts (layouts/photo.njk). A group of photos is a .wide block; a lone photo is the text column unless flagged. */
 
 :root {
   --photo-gap: clamp(4px, 1vw, 12px);
 }
 
-/*
- * Photos sit in rows that are decided at build time (src/_config/photo-rows.js): one .row per desktop row, with every
- * photo in it growing in proportion to its aspect ratio so they share a height. A photo alone in its row (a #wide photo,
- * or the odd one out) spans the row, as on the original site. On phones (the blog's 600px breakpoint) the rows are
- * different: .row stops being a box, .mbreak spacers force the line breaks and supply the gap between rows.
- */
+/* Rows are decided at build time (src/_config/photo-rows.js); photos in a row grow by aspect ratio to share a height.
+   On phones .row stops being a box and .mbreak spacers break the lines. */
 .photos {
   /* Only the bottom: the sides belong to .wide, .narrow and .bleed in site.css. */
   margin-bottom: 1.66rem;
 }
 
-/* More room around text on a desktop screen: the same space above a text block, after the previous photos, as below it,
-   before the next photos. (A paragraph already has 1rem of its own margin on each side; margins of grid items don't
-   merge.) */
-@media (min-width: 601px) {
+/* More room around text above the phone breakpoint, the same above a text block as below it. (Written as "not a phone"
+   so the file breaks at the site's max-width: 600px.) */
+@media not all and (max-width: 600px) {
   .photos {
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
   }
 
-  /* The first block under the banner gets the same room above it as every text block gets below it. */
+  /* The first block under the banner. */
   article.normal-width > :first-child {
     margin-top: 3.2rem;
   }
@@ -39,7 +33,7 @@
     margin-top: 0;
   }
 
-  /* A heading that starts a text block gets the same room above it as a paragraph does (which has its own 1rem). */
+  /* A heading that starts a text block. */
   .photos + h2 {
     margin-top: 1rem;
   }
