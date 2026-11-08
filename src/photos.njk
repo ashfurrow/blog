@@ -3,7 +3,19 @@ title: Photos
 description: Photo stories by Ash Furrow.
 layout: layouts/full_page.njk
 pageStylesheet: /assets/photos.css
+banner: /assets/bg/default.jpg
 ---
+
+{#- A different photo post banner on every visit. Without JavaScript the page keeps the default banner. #}
+<script>
+  ;(function () {
+    var banners = {% photoBanners %}
+    var header = document.querySelector("header.site-header")
+    if (header && banners.length) {
+      header.style.setProperty("--banner-image", "url('" + banners[Math.floor(Math.random() * banners.length)] + "')")
+    }
+  })()
+</script>
 
 <ul class="photo-cards">
   {%- for post in collections.photoPosts %}

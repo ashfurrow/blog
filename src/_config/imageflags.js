@@ -19,6 +19,9 @@ import { rowsFor } from "./photo-rows.js"
 
 export const PHOTO_LAYOUT = "layouts/photo.njk"
 
+// Photo posts whose banner is not used for the /photos page's random banner.
+const NOT_RANDOM_BANNERS = ["guitar-rewire"]
+
 const FLAGS = ["wide", "narrow", "bleed"]
 
 const decode = (s) =>
@@ -157,6 +160,23 @@ export default function (eleventyConfig) {
       .filter((post) => post.data.layout === PHOTO_LAYOUT)
       .reverse()
   )
+
+  // {% photoBanners %}: a JSON list of banner image URLs (1600px) of the photo posts, for the /photos page to pick one
+  // from. A post that is a one-off in the set (a different kind of story) is left out.
+  eleventyConfig.addAsyncShortcode("photoBanners", async function () {
+    const included = this.ctx.collections.photoPosts.filter(
+      (post) => post.data.banner && !NOT_RANDOM_BANNERS.some((slug) => post.inputPath.includes(`-${slug}/`))
+    )
+    const urls = []
+    for (const post of included) {
+      const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), {
+        widths: [1600],
+        formats: ["jpeg"]
+      })
+      urls.push(metadata.jpeg[0].url)
+    }
+    return JSON.stringify(urls)
+  })
 
   // {% photoCover post, sizes, loading %}: a photo post's banner as a <picture> (600 and 1200px) for a card.
   eleventyConfig.addAsyncShortcode("photoCover", async function (post, sizes, loading = "lazy") {
