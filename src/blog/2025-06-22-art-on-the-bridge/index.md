@@ -14,17 +14,17 @@ I tried shooting in JPEG with a film simulation of my beloved, discontinued Pro 
 
 I'm out of practice shooting crowds. I didn't get close enough. The light was harsh. But I had a lot of fun.
 
-![Crowds walk along a rusty steel truss bridge over a river, past artwork displayed on easels and railings.](01.jpg)
-![A crowd of people walks along a shaded paved path, with a cyclist in a helmet riding in the foreground.](02.jpg)
-![Two people sit in folding chairs at an outdoor art stall on a wooden bridge, with paintings on the railing and a river behind them.](03.jpg#wide)
+![](01.jpg)
+![](02.jpg)
+![](03.jpg#wide)
 
-![Crowd walking along a wooden-deck steel truss bridge lined with artworks and paintings on display under green trees.](04.jpg#bleed)
+![](04.jpg#bleed)
 
-![Cyclists ride past artwork displayed on tables along a wooden-decked steel railway bridge over a river.](05.jpg#wide)
-![Dark steel beams with rusty uprights and small insulator-like fixtures in the foreground, overlooking a wide river with a distant bridge and green hills.](06.jpg)
-![A grey pigeon with green-purple neck sheen perches on a rusty metal ledge beside water and pipes.](07.jpg)
+![](05.jpg#wide)
+![](06.jpg)
+![](07.jpg)
 
-![Visitors stroll a wooden-decked old iron truss bridge past paintings of birds hung along the railing, with a small dog on a leash.](08.jpg#wide)
-![People walk across a wooden deck on a rusty steel truss bridge over a river on a sunny day.](09.jpg)
-![A pale green railing runs beside a paved path, with a rusted steel bridge girder and a wooden fence beyond, and a cyclist far ahead.](11.jpg#wide)
-![People walk and stand along a wooden-decked steel truss bridge, with artworks displayed on easels at the right and a river below.](10.jpg)
+![](08.jpg#wide)
+![](09.jpg)
+![](11.jpg#wide)
+![](10.jpg)

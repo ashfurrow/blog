@@ -13,8 +13,8 @@ Last week I received an old, beat-up Bronica ETRSi that I had found on eBay. The
 
 I managed some indoor shots of the cats at a wide aperture of f/4 and a low shutter speed of 1/30s. Quite impressed with how the window’s screen makes the rooftops behind the cats look pixelated. The cats have only recently started tolerating each other on the windowsill – glad I managed to capture what might be the dying breath of Dave’s power struggle against Bandita.
 
-![Black-and-white photo of two cats on a windowsill, one in front looking to the side and one behind it facing the bright window.](01.jpg)
-![Two cats in black and white touching noses on a windowsill, with a blurred city view behind them.](02.jpg)
+![](01.jpg)
+![](02.jpg)
 
 ## Manhattan Bridge
 
@@ -22,7 +22,7 @@ Since the camera doesn’t have a light metre, I used the Sunny 16 rule to guess
 
 The detail rendered from the lens is spectacular – I can see individual bricks, air conditioners, and windows from across the East River. The sky is a bit flat – I might try to find a yellow filter to add some dynamism.
 
-![Black-and-white aerial view of Manhattan rooftops with the Manhattan Bridge's suspension cables spanning the East River in the distance.](03.jpg#bleed)
+![](03.jpg#bleed)
 
 ## And more Manhattan
 
@@ -32,5 +32,5 @@ The details in the shadows when shooting directly into the Sun are remarkable �
 
 The second photo looks North, up Broadway, to expose the organized complexity of Manhattan. It reminds me why I really dig New York.
 
-![Black-and-white photo of a dense Manhattan skyline of tall buildings with the sun glaring over the river beyond.](04.jpg)
-![Black-and-white aerial view of dense Manhattan rooftops with the tall spire of One World Trade Center rising above the skyline.](05.jpg)
+![](04.jpg)
+![](05.jpg)
