@@ -80,6 +80,15 @@
   opacity: 1;
 }
 
+/* Touch screens have no hover, so captions are always shown, smaller so they take less of the photo. */
+@media (hover: none) {
+  .photo figcaption {
+    padding: 1.5rem 0.6rem 0.5rem;
+    font-size: 0.75rem;
+    opacity: 1;
+  }
+}
+
 /* Embeds sit above the text they go with, like any block in the column. */
 .instagram-media,
 .twitter-tweet {
