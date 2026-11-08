@@ -16,6 +16,24 @@
   margin-bottom: 1.66rem;
 }
 
+/* More room around text on a desktop screen, most below the last paragraph, before the next photo. (A paragraph already
+   has 1rem of its own margin on each side; margins of grid items don't merge.) */
+@media (min-width: 601px) {
+  .photos {
+    margin-top: 3.2rem;
+    margin-bottom: 2.2rem;
+  }
+
+  /* A heading belongs to the photos under it, and two groups in a row are one block of photos. */
+  h2 + .photos {
+    margin-top: 1rem;
+  }
+
+  .photos + .photos {
+    margin-top: 0;
+  }
+}
+
 .row {
   display: flex;
   gap: var(--photo-gap);
