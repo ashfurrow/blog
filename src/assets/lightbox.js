@@ -4,6 +4,11 @@ const image = dialog.querySelector("img")
 const links = [...document.querySelectorAll("a[data-lightbox]")]
 let index = 0
 
+// Safari colours its bars from the theme colour (or the page behind), so while the lightbox is open they match its dim.
+const themeColor = document.createElement("meta")
+themeColor.name = "theme-color"
+themeColor.content = "#0f0f0f"
+
 function show(i) {
   index = (i + links.length) % links.length
   const link = links[index]
@@ -16,8 +21,11 @@ for (const [i, link] of links.entries()) {
     event.preventDefault()
     show(i)
     dialog.showModal()
+    document.head.append(themeColor)
   })
 }
+
+dialog.addEventListener("close", () => themeColor.remove())
 
 dialog.addEventListener("click", (event) => {
   const action = event.target.dataset.lb

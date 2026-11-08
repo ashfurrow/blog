@@ -128,6 +128,12 @@
   place-items: center;
 }
 
+/* The page behind is the dim over white (#0f0f0f), so Safari's bars match it. */
+html:has(#lightbox[open]),
+html:has(#lightbox[open]) body {
+  background: #0f0f0f;
+}
+
 #lightbox img {
   max-width: 96vw;
   max-height: 94vh;
