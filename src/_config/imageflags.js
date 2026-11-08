@@ -99,7 +99,7 @@ async function figure(dir, { src, alt, flags }, { alone, layout }) {
   const classes = ["photo", flags.has("wide") && "wide", alone && "alone"].filter(Boolean).join(" ")
   return {
     ratio,
-    html: `<figure class="${classes}" style="--ar: ${ratio}"><a href="${largest.url}" data-lightbox>${picture}</a></figure>`
+    html: `<figure class="${classes}" style="--ar: ${ratio}"><a href="${largest.url}" data-lightbox${alt ? "" : ' aria-label="View photo"'}>${picture}</a></figure>`
   }
 }
 
