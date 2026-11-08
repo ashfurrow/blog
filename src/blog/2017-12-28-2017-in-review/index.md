@@ -8,7 +8,7 @@ location: Earth!
 
 So ever since I started making photos in 2012, I've got a book of my best photos printed each year to give to my parents for Christmas. I get a copy for me, too. And nowadays, I post them photos from that book online. And here we are! We begin in New York.
 
-You can look at photos from previous years in review [here](https://photos.ashfurrow.com/categories/years-in-review).
+You can look at photos from previous years in review [here](/photos/).
 
 ![](01.jpg)
 ![](02.jpg)

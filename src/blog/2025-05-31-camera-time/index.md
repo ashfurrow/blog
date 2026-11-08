@@ -52,4 +52,4 @@ That was a month ago. So which camera did I get?
 
 ![Photo of me taking a photo with a tripod](./me.jpeg#narrow)
 
-I'll be publishing more photo blog posts [over at my photo blog](https://photos.ashfurrow.com). I'm exploring some new editing styles and I plan to write about that process over there. I don't really know where people are sharing their photos online anymore, to get photo critique; let me know if you have suggestions. See you there!
+I'll be publishing more photo blog posts [over at my photo blog](/photos/). I'm exploring some new editing styles and I plan to write about that process over there. I don't really know where people are sharing their photos online anymore, to get photo critique; let me know if you have suggestions. See you there!
