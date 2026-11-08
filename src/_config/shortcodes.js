@@ -109,15 +109,15 @@ export default function (eleventyConfig) {
     if (this.ctx.description) {
       return this.ctx.description
     }
-    if (this.ctx.layout === "layouts/post.njk") {
-      // Grab the first non-empty line of markdown and render it. (I never kick blog posts off with anything but a paragraph.)
-      const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => p.trim().length > 0)
-      return md.render(excerpt).trim()
-    }
-    if (this.ctx.layout === PHOTO_LAYOUT) {
-      // Photo posts can start with a heading, a photo or an embed; the description is the first line of prose.
-      const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => /^[^#!{<\s]/.test(p))
+    const photo = this.ctx.layout === PHOTO_LAYOUT
+    if (photo || this.ctx.layout === "layouts/post.njk") {
+      // Grab the first line of markdown that is prose and render it. (I never kick blog posts off with anything but a
+      // paragraph, but photo posts can start with a heading, a photo or an embed.)
+      const isProse = photo ? (line) => /^[^#!{<\s]/.test(line) : (line) => line.trim().length > 0
+      const excerpt = first(this.ctx.page.rawInput.split("\n"), isProse)
       if (excerpt) return md.render(excerpt).trim()
+    }
+    if (photo) {
       if (this.ctx.subtitle) return this.ctx.subtitle
       return this.ctx.location ? `Photos from ${this.ctx.location}.` : `Photos by ${Metadata.author.name}.`
     }
