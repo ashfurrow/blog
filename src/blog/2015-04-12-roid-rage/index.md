@@ -9,7 +9,7 @@ footnotes: |
 
 ## Portraits
 
-We’ve continued to have a lot of fun with the SX-70 and Spirit 600 [from our last post](https://ashfurrow.exposure.co/integral-polaroid-instant-photography) on instant photography. We also got a [Polaroid 100 Land Camera](https://instagram.com/p/0vRziADBvL/), which produces peel-apart instant photos. With only a few packs of film through it, I can’t really evaluate its merit as an artistic medium, but my goodness is it ever fun.
+We’ve continued to have a lot of fun with the SX-70 and Spirit 600 [from our last post](/blog/integral-polaroid-instant-photography/) on instant photography. We also got a [Polaroid 100 Land Camera](https://instagram.com/p/0vRziADBvL/), which produces peel-apart instant photos. With only a few packs of film through it, I can’t really evaluate its merit as an artistic medium, but my goodness is it ever fun.
 
 ![Fun, if difficult to hold straight.](01.jpg#wide)
 ![From back in Amsterdam.](02.jpg)
