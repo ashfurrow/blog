@@ -909,13 +909,6 @@ footer .attribution {
     margin-left: 0.5rem;
   }
 }
-.photo-marker {
-  /* Photo posts get their own styling: an icon sized relative to the date it sits next to, right after the title's own
-     0.5rem margin. */
-  margin-right: 0;
-  font-size: 0.8em;
-  color: rgba(0, 0, 0, 0.4);
-}
 .post-date,
 .recent-post-date {
   color: rgba(0, 0, 0, 0.5);
