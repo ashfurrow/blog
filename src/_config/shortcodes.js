@@ -2,6 +2,7 @@ import * as path from "path"
 import MarkdownIt from "markdown-it"
 import { transformImage } from "./util/transformImage.js"
 import Metadata from "../_data/metadata.js"
+import { PHOTO_LAYOUT } from "./imageflags.js"
 
 const md = new MarkdownIt({
   html: true,
@@ -54,14 +55,12 @@ export default function (eleventyConfig) {
   // Groups posts by month and year, returning a JSON string.
   // `{% groupedPosts "photos" %}` lists only the photo posts.
   eleventyConfig.addShortcode("groupedPosts", function (only) {
-    const collection = this.ctx.collections.posts.filter(
-      (p) => only !== "photos" || p.data.layout === "layouts/photo.njk"
-    )
+    const collection = this.ctx.collections.posts.filter((p) => only !== "photos" || p.data.layout === PHOTO_LAYOUT)
     const posts = collection.map((p) => ({
       title: p.data.title,
       url: p.url,
       date: p.date,
-      photo: p.data.layout === "layouts/photo.njk"
+      photo: p.data.layout === PHOTO_LAYOUT
     }))
 
     const postsByYear = groupBy(posts, (post) => {
@@ -117,7 +116,7 @@ export default function (eleventyConfig) {
       const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => p.trim().length > 0)
       return md.render(excerpt).trim()
     }
-    if (this.ctx.layout === "layouts/photo.njk") {
+    if (this.ctx.layout === PHOTO_LAYOUT) {
       // Photo posts can start with a heading, a photo or an embed; the description is the first line of prose.
       const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => /^[^#!{<\s]/.test(p))
       if (excerpt) return md.render(excerpt).trim()

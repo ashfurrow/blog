@@ -1,4 +1,4 @@
-{% set isPost = layout == 'layouts/post.njk' or layout == 'layouts/photo.njk' %}
+{% set isPost = layout == 'layouts/post.njk' or layout == photoLayout %}
 {% set exceptOrDescription %}{% exceptOrDescription %}{% endset %}
 {% set socialDescription = exceptOrDescription | striptags | safe %}
 <!doctype html>
@@ -15,7 +15,7 @@
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
 		<meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
-		{% if layout == 'layouts/photo.njk' %}<meta property="article:published_time" content="{{ date | htmlDateString }}">
+		{% if layout == photoLayout %}<meta property="article:published_time" content="{{ date | htmlDateString }}">
 		<meta property="article:author" content="{{ metadata.author.url }}">{% endif %}
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:description" content="{{ socialDescription }}">
@@ -69,7 +69,7 @@
 				"@type": "ImageObject",
 				"url": "{{ metadata.url }}{% socialImageURL %}"
 			},
-			"description": "{% if layout == 'layouts/photo.njk' %}{{ socialDescription | replace('"', '\\"') }}{% else %}{{ metadata.description }}{% endif %}",
+			"description": "{% if layout == photoLayout %}{{ socialDescription | replace('"', '\\"') }}{% else %}{{ metadata.description }}{% endif %}",
 			"datePublished": "{{ date | htmlDateString }}",
 			"dateModified": "{{ date | htmlDateString }}",
 			"author": {
@@ -136,7 +136,7 @@
 			<div class="header-content{% if isPost %} left{% endif %}">
 				<h1>{{title}}</h1>
 				{% if subtitle %}
-					{% if layout != 'layouts/photo.njk' %}<hr class="header-divider">{% endif %}
+					{% if layout != photoLayout %}<hr class="header-divider">{% endif %}
 					<div class="header-subtitle">{{subtitle}}</div>
 				{% endif %}
 				{% if isPost and date %}

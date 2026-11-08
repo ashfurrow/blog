@@ -148,6 +148,7 @@ async function photoGroups(content, page) {
  */
 export default function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownImageFlags))
+  eleventyConfig.addGlobalData("photoLayout", PHOTO_LAYOUT) // for templates that tell photo posts apart
 
   eleventyConfig.addTransform("photo-groups", async function (content) {
     if (
