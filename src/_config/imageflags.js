@@ -62,7 +62,13 @@ export function markdownImageFlags(md) {
       const images = children.filter((child) => child.type === "image")
       if (images.length === 0) continue
       const flags = images.map((image) => takeFlags(image, photoPost))
-      if (photoPost) {
+      // Only a paragraph of nothing but images can become a photo group. Any other (a linked or inline image) is left to
+      // the blog's image transform like in a blog post, or its file would never be published.
+      const onlyImages = children.every(
+        (child) =>
+          child.type === "image" || child.type === "softbreak" || (child.type === "text" && !child.content.trim())
+      )
+      if (photoPost && onlyImages) {
         images.forEach((image, n) => {
           image.attrSet("data-photo", "")
           if (flags[n].length > 0) image.attrSet("data-flags", flags[n].join("+"))
@@ -70,7 +76,7 @@ export function markdownImageFlags(md) {
         })
         continue
       }
-      // Blog post: only a paragraph that is one image (maybe linked) gets the wrapper.
+      // Only a paragraph that is one image (maybe linked) gets the wrapper.
       const others = children.filter((child) => !["image", "link_open", "link_close"].includes(child.type))
       if (images.length !== 1 || others.length > 0 || flags[0].length === 0) continue
       const open = new state.Token("html_block", "", 0)
@@ -91,9 +97,7 @@ async function figure(page, { src, alt, flags }, { alone, layout }) {
     alt,
     sizes: alone ? SIZES[layout || "default"] : flags.has("wide") ? SIZES.wide : SIZES.grid,
     loading: "lazy",
-    decoding: "async",
-    // The blog's own image transform must leave these alone.
-    "eleventy:ignore": ""
+    decoding: "async"
   })
   const classes = ["photo", flags.has("wide") && "wide", alone && "alone"].filter(Boolean).join(" ")
   return {
@@ -138,9 +142,7 @@ async function photoGroups(content, page) {
     })
   )
   let i = 0
-  return content
-    .replace(groupPattern, () => groups[i++])
-    .replace(/ (eleventy:ignore|data-photo)=""| data-flags="[^"]*"/g, "")
+  return content.replace(groupPattern, () => groups[i++])
 }
 
 /**
@@ -151,11 +153,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData("photoLayout", PHOTO_LAYOUT) // for templates that tell photo posts apart
 
   eleventyConfig.addTransform("photo-groups", async function (content) {
-    if (
-      !this.page.outputPath?.endsWith(".html") ||
-      !(content.includes("data-photo") || content.includes('eleventy:ignore=""'))
-    )
-      return content
+    if (!this.page.outputPath?.endsWith(".html") || !content.includes("data-photo")) return content
     return photoGroups(content, this.page)
   })
 }

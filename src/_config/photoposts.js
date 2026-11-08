@@ -18,7 +18,7 @@ export default function (eleventyConfig) {
       .reverse()
   )
 
-  // {% photoBanners %}: a JSON list of banner image URLs (1600px) of the photo posts, for the /photos page to pick one
+  // {% photoBanners %}: a JSON list of banner image URLs (2000px) of the photo posts, for the /photos page to pick one
   // from. A post that is a one-off in the set (a different kind of story) is left out.
   eleventyConfig.addAsyncShortcode("photoBanners", async function () {
     const included = this.ctx.collections.photoPosts.filter(
@@ -26,20 +26,15 @@ export default function (eleventyConfig) {
     )
     const urls = []
     for (const post of included) {
-      const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), post, {
-        widths: [1600],
-        formats: ["jpeg"]
-      })
-      urls.push(metadata.jpeg[0].url)
+      const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), post)
+      urls.push(metadata.jpeg.at(-1).url)
     }
     return JSON.stringify(urls)
   })
 
-  // {% photoCover post, sizes, loading %}: a photo post's banner as a <picture> (600 and 1200px) for a card.
+  // {% photoCover post, sizes, loading %}: a photo post's banner as a <picture> for a card.
   eleventyConfig.addAsyncShortcode("photoCover", async function (post, sizes, loading = "lazy") {
-    const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), post, {
-      widths: [600, 1200]
-    })
+    const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), post)
     return generateHTML(metadata, {
       alt: "",
       sizes,

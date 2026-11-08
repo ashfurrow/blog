@@ -23,7 +23,7 @@ layout: false
 
   <url>
     <loc>{{ metadata.url }}/photos/</loc>
-    <lastmod>{{ (collections.posts | reverse)[0].date | dateToRfc822 }}</lastmod>
+    <lastmod>{{ collections.photoPosts[0].date | dateToRfc822 }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

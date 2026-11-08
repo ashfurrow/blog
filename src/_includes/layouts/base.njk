@@ -69,7 +69,7 @@
 				"@type": "ImageObject",
 				"url": "{{ metadata.url }}{% socialImageURL %}"
 			},
-			"description": "{% if layout == photoLayout %}{{ socialDescription | replace('"', '\\"') }}{% else %}{{ metadata.description }}{% endif %}",
+			"description": {{ (socialDescription if layout == photoLayout else metadata.description) | toJson | safe }},
 			"datePublished": "{{ date | htmlDateString }}",
 			"dateModified": "{{ date | htmlDateString }}",
 			"author": {

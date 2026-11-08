@@ -108,7 +108,8 @@ export default function (eleventyConfig) {
   )
 
   eleventyConfig.addFilter("toJson", function (content) {
-    return JSON.stringify(content)
+    // Nunjucks' SafeString (the result of `| safe`) would otherwise be serialized as an object.
+    return JSON.stringify(content instanceof String ? content.toString() : content)
   })
 
   // Override the RSS plugin's dateToRfc822 to force UTC (fixes #530)

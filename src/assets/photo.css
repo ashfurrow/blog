@@ -98,13 +98,6 @@
   width: 100%;
 }
 
-/* Embeds sit above the text they go with, like any block in the column. */
-.instagram-media,
-.twitter-tweet {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* End of the post */
 .footnotes {
   margin-top: 3rem;
