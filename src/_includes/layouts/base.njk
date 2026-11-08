@@ -132,7 +132,7 @@
 			<div class="header-content{% if isPost %} left{% endif %}">
 				<h1>{{title}}</h1>
 				{% if subtitle %}
-					<hr class="header-divider">
+					{% if layout != 'layouts/photo.njk' %}<hr class="header-divider">{% endif %}
 					<div class="header-subtitle">{{subtitle}}</div>
 				{% endif %}
 				{% if isPost and date %}
