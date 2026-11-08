@@ -21,14 +21,14 @@ export const PHOTO_LAYOUT = "layouts/photo.njk"
 
 const FLAGS = ["wide", "narrow", "bleed"]
 
-const decode = (s) =>
+export const decode = (s) =>
   s
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&amp;/g, "&")
-const attr = (tag, name) => (tag.match(new RegExp(`\\s${name}="([^"]*)"`)) ?? [])[1]
+export const attr = (tag, name) => (tag.match(new RegExp(`\\s${name}="([^"]*)"`)) ?? [])[1]
 
 // Sizes follow the grid in site.css: 12 columns, up to 80rem (1600px); text 3-11, .wide 2-12, .narrow 4-10, a full
 // column on phones (600px and under).
