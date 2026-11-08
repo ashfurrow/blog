@@ -3,9 +3,6 @@ import path from "node:path"
 import { PHOTO_LAYOUT } from "./imageflags.js"
 import { generateHTML, resize } from "./photo-images.js"
 
-// Photo posts whose banner is not used for the /photos page's random banner.
-const NOT_RANDOM_BANNERS = ["guitar-rewire"]
-
 /**
  * @param {import("@11ty/eleventy").UserConfig} eleventyConfig
  */
@@ -19,10 +16,10 @@ export default function (eleventyConfig) {
   )
 
   // {% photoBanners %}: a JSON list of banner image URLs (2000px) of the photo posts, for the /photos page to pick one
-  // from. A post that is a one-off in the set (a different kind of story) is left out.
+  // from. A post with `randomBanner: false` in its front matter (a one-off in the set) is left out.
   eleventyConfig.addAsyncShortcode("photoBanners", async function () {
     const included = this.ctx.collections.photoPosts.filter(
-      (post) => post.data.banner && !NOT_RANDOM_BANNERS.some((slug) => post.inputPath.includes(`-${slug}/`))
+      (post) => post.data.banner && post.data.randomBanner !== false
     )
     const urls = []
     for (const post of included) {

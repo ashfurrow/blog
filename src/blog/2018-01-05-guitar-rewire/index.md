@@ -2,6 +2,7 @@
 title: Guitar Rewire
 date: 2018-01-05
 banner: cover.jpg
+randomBanner: false
 layout: layouts/photo.njk
 location: New York, NY, United States
 footnotes: |
