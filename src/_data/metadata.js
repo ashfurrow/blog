@@ -12,7 +12,7 @@ export default {
     image: "https://static.ashfurrow.com/ashfurrow.jpeg",
     twitter: "@ashfurrow",
     social: [
-      "https://twitter.com/ashfurrow",
+      "https://x.com/ashfurrow",
       "https://instagram.com/ashfurrow",
       "https://tenforward.social/@ashfurrow",
       "https://github.com/ashfurrow"
