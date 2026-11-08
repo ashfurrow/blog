@@ -59,6 +59,9 @@
 .photo {
   position: relative;
   margin: 0;
+  /* A photo can't be selected, which would cover it in the theme colour. (Safari needs the prefix.) */
+  -webkit-user-select: none;
+  user-select: none;
   /* Scaled up: grow factors that add up to less than 1 (a lone portrait) would fill only part of the row. */
   flex: calc(var(--ar) * 1000) 1 0%;
   min-width: 0;
