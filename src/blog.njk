@@ -13,7 +13,7 @@ description: Blog archive of a compassionate software developer.
       <article class="post-item">
         <a href="{{ post.url }}" class="post-link">
           <span class="post-title">{{ post.title }}</span>
-          {% if post.photo %}<i class="fa-solid fa-image photo-marker" title="Photo post" role="img" aria-label="Photo post"></i>{% endif %}
+          {% if post.photo %}{% include "partials/photo-marker.njk" %}{% endif %}
           <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate }}</time>
         </a>
       </article>
