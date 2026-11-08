@@ -102,11 +102,7 @@ React is easier to hire for. The people making the decision – the directors an
 
 I have a hard time vilifying this trade-off, but I do think teams sometimes overlook the costs because they're dispersed throughout the organization and hard to measure.
 
-{% wide %}
-
-![Charts of organizational complexity and code complexity against product complexity, for native and React Native](./complexity-charts.svg)
-
-{% endwide %}
+![Charts of organizational complexity and code complexity against product complexity, for native and React Native](./complexity-charts.svg#wide)
 
 As your product gets more complex and you add more features, your organizational complexity with a React Native team grows roughly linearly – assuming you're architecting your app correctly. But if you have multiple native platforms, you have to coordinate between those teams, and the complexity scales higher.
 
@@ -176,11 +172,7 @@ You also just have to accept that React Native is going to chew up _at least_ 20
 
 In terms of CPU and graphics performance, you can get _close_. I've built similarly complex views in SwiftUI and React Native, with streaming data from the network and frequent updates, and tested scrolling performance. The React Native implementation can get within 5 to 10% of SwiftUI. (Even better if you use UIKit, actually, but I'm not here to pick another fight.) 5%, if you squint, is "close enough" to native to be a wash.
 
-{% wide %}
-
-![Native and React Native share the same ceiling, but React Native's floor is much lower](./ceiling-and-floor.svg)
-
-{% endwide %}
+![Native and React Native share the same ceiling, but React Native's floor is much lower](./ceiling-and-floor.svg#wide)
 
 So if we visualize this: native and React Native have the same ceiling, but native's floor is much higher. How bad your app can accidentally be is higher in React Native than in native.
 

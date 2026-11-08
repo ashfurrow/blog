@@ -16,11 +16,7 @@ I stayed in Lower Manhattan near Battery Park and walked twenty minutes up to Ar
 
 Because I was busy taking advantage of the opportunities to meet so many cool people, I didn’t have much time to take photos. However, the Artsy office has a great 360º view of Lower Manhattan, so I took some photos when I could.
 
-{% wide %}
-
-[![Manhattan Skyline](manhattan.jpg)](https://500px.com/photo/91488677/manhattan-skyline-by-ash-furrow)
-
-{% endwide %}
+[![Manhattan Skyline](manhattan.jpg#wide)](https://500px.com/photo/91488677/manhattan-skyline-by-ash-furrow)
 
 While I was excited to see Ashley and my family, I was admittedly sad to leave NYC. Working for Artsy is the first time I’ve ever worked remotely full-time, and I don’t think that it’s for me. It’s so easy to feel disconnected when working remotely, and as much as I feel that I’m an introvert, I genuinely feel energized when I’m around my coworkers.
 
@@ -70,11 +66,7 @@ We kept taking photos, travelling to a nearby settlement for some supplies and m
 
 We slept that afternoon, since I got very little sleep on the flight over (and Ashley got none at all). We left the cabin after sunset, which is at about 4pm, and took more photos. Using a tripod, we got some really slick long exposures, even in the cold rain.
 
-{% wide %}
-
-[![Tracks Home](tracks.jpg)](https://500px.com/photo/91467567/tracks-home-by-ash-furrow)
-
-{% endwide %}
+[![Tracks Home](tracks.jpg#wide)](https://500px.com/photo/91467567/tracks-home-by-ash-furrow)
 
 The next morning, we left before sunrise to get some cool photos from a road we had seen the previous night. All of the snow had melted from the 3º rain, so it was a completely different landscape.
 
@@ -100,11 +92,7 @@ When we were planning this vacation, there was one thing I wanted to see more th
 
 We spent all day travelling the 140km to the crash site. It took so long because we kept stopping for photos along the way, which was totally worth it.
 
-{% wide %}
-
-[![Waterfall](waterfall.jpg)](https://web.500px.com/photo/91467565)
-
-{% endwide %}
+[![Waterfall](waterfall.jpg#wide)](https://web.500px.com/photo/91467565)
 
 We overshot the coordinates on the highway but didn’t realize it at the time. We found a makeshift gate in the fence along the highway and got our SUV through in order to begin the trek across the volcanic sand to the plane, 3km away from the nearest highway. We arrived shortly after sunset; the light was slipping away fast, but I managed to get some decent shots. At least, I think I did. Most all of them are on film, so I haven’t gotten them back yet.
 
@@ -114,11 +102,7 @@ We travelled home, stopping for some more long exposures along the way. Snugglin
 
 The next day, we got up and took some more photos at sunrise, this time on the shores of the lake. We were headed for Gulfoss, another waterfall, but were going to stop at lots of places along the way.
 
-{% wide %}
-
-[![Pano of me](photographer.jpg)](https://500px.com/photo/91496049/photographer-in-iceland-by-ashley-krista)
-
-{% endwide %}
+[![Pano of me](photographer.jpg#wide)](https://500px.com/photo/91496049/photographer-in-iceland-by-ashley-krista)
 
 That afternoon, after some brief lunch at a rest stop, we were off to the waterfall about 40km away. It was our last day of our trip and we wanted to make the most of it. Driving along the chasm that separates the North American and European tectonic plates, I saw a really cool spot for some photos so we pulled over. We looked around together for about ten minutes and then split off. A few minutes later, I decided to get a closer look at a ravine. There was a clear path where others had gotten down into it a bit, and it was only about 4 metres deep in total, so I figured I’d be fine.
 
@@ -136,11 +120,7 @@ Earlier, I said that I had reflected on dying as part of my depression. In that 
 
 The next morning, we set off to the airport at 3am. We nearly missed our 7:40 flight because the GPS we had rented with the car returned us to the wrong airport. Ashley suggested that I use a wheelchair at the airport since I was having trouble walking, but we didn’t have time. We _just_ made it and were on a flight to Amsterdam to see our cats. They sure had missed us.
 
-{% narrow %}
-
-![](couch.jpg)
-
-{% endnarrow %}
+![](couch.jpg#narrow)
 
 It had been an amazing two week trip. Ashley and I spent half of it apart and half of it together. We spent half of our time together with family, and the other half by ourselves. We returned home refreshed, invigorated, and ready to face the problems facing us in the coming months: passport renewals, pet passports, visa applications, prescription transfers, etc etc etc. Everything you need to move to America.
 

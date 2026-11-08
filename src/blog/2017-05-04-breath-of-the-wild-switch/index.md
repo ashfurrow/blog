@@ -21,11 +21,7 @@ The Switch is amazing, hardware wise. It's basically a super-beefy tablet that p
 
 What I'm really excited for is _Breath of the Wild_. Everyone I know who has played it has been blown away, and based on the overwhelming positive response, I've been super-pumped.
 
-{% wide %}
-
-![More like Breath the Fresh Air amirite](botw.jpg)
-
-{% endwide %}
+![More like Breath the Fresh Air amirite](botw.jpg#wide)
 
 I'll spare you my review by saying I agree with [the spirit of this one](http://kotaku.com/the-legend-of-zelda-breath-of-the-wild-the-kotaku-rev-1792885174). I love that there are different ways to solve every puzzle, but more than that: I love that it's possible to beat the game without solving _every_ puzzle. If I get stuck, it's okay because I can come back later, or never.
 

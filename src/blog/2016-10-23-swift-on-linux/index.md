@@ -67,10 +67,6 @@ swift build
 
 Finally I went to a normal web browser and typed in `http://localhost:8000` to see the results.
 
-{% wide %}
-
-![Screenshot of app](screenshot.png)
-
-{% endwide %}
+![Screenshot of app](screenshot.png#wide)
 
 Thanks again for everyone who chimed in on Twitter! I'm going to keep poking around, I don't know if running Swift on Linux is something I want to explore more, but it was fun to get this far, so who knows 😄

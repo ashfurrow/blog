@@ -24,11 +24,7 @@ There are two basic approaches here. You can store the information needed for th
 
 So our view controller is going to act as a datasource and delegate for both the table view, and _every_ collection view.
 
-{% narrow %}
-
-![Code structure](diagram.png)
-
-{% endnarrow %}
+![Code structure](diagram.png#narrow)
 
 Often, a collection view's data source is its view controller. The problem is that we only have _one_ view controller but _many_ collection views. We need some way to distinguish between a collection view on the first row, and one on the second row, and third, and fourth...
 
@@ -48,27 +44,15 @@ Next, configure your table view cell: give it a reuse identifier (I used "Cell")
 
 Drag a collection view onto the cell (Xcode will make it a subview of the cell's content view). Resize it to fill the entire cell and hit "add missing constraints" to make autolayout do its magic. Your view hierarchy should be will look something like this:
 
-{% narrow %}
-
-![Storyboard hierarchy](hierarchy.png)
-
-{% endnarrow %}
+![Storyboard hierarchy](hierarchy.png#narrow)
 
 All that's left to do is configure the collection view. I set its size, spacing, and content insets to make the cells vertically centred. I also set its scroll direction to "horizontal", unchecked "Shows Horizontal Indicator", and set its background colour to white.
 
-{% narrow %}
-
-![Collection geometry view configuration](config.png)
-
-{% endnarrow %}
+![Collection geometry view configuration](config.png#narrow)
 
 Finally, I set the reuse identifier of the collection view cell to "Cell" (it needs to be something). And that's it for our storyboard configuration. On to the code!
 
-{% narrow %}
-
-![Completed storyboard](viewController.png)
-
-{% endnarrow %}
+![Completed storyboard](viewController.png#narrow)
 
 Now that we have our interface set up and configured, it's time for the code. Open the file with our `UITableViewCell` subclass. We're going to add one property: a reference to its collection view.
 
@@ -199,11 +183,7 @@ Super! In both of these methods, we use the `collectionView.tag` property to det
 
 OK cool. We can build and run our app and we see everything looks fine.
 
-{% narrow %}
-
-![Working app](screenshot.png)
-
-{% endnarrow %}
+![Working app](screenshot.png#narrow)
 
 But does it _feel_ fine? Something is wrong, but what is it? Well, remember that the table view cells are being reused, so our collection views are being reused too. When they are, they're starting off already scrolled instead of at the beginning of the collection view.
 
@@ -275,11 +255,7 @@ override func tableView(tableView: UITableView,
 
 Awesome! Let's see how it looks in action.
 
-{% narrow %}
-
-![Working app animation](animation.gif)
-
-{% endnarrow %}
+![Working app animation](animation.gif#narrow)
 
 Of course, you can find all the code in a [demo project on GitHub](https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell). If you have suggestions or questions, just [open an issue](https://github.com/ashfurrow/Collection-View-in-a-Table-View-Cell/issues/new) on the repo and I'll get back to you.
 

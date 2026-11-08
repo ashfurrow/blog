@@ -11,19 +11,11 @@ Let's start with the current infrastructure: two Heroku apps, one for streaming 
 
 I considered Digital Ocean, since it would probably be even cheaper, but I would have to do a lot more to administer Postgres and Redis instances, which seems boring and tedious. I'd rather use RDS and ElastiCache respectively for the convenience.
 
-{% narrow %}
-
-![Current Heroku Infrastructure](heroku.png)
-
-{% endnarrow %}
+![Current Heroku Infrastructure](heroku.png#narrow)
 
 What I'm thinking of is an AWS infrastructure that replaces Heroku Add-Ons for AWS services. I figure if I'm getting into AWS hosting I may as well dive right in, to get the most advantage from fully participating in their ecosystem.
 
-{% narrow %}
-
-![Proposed AWS Infrastructure](aws.png)
-
-{% endnarrow %}
+![Proposed AWS Infrastructure](aws.png#narrow)
 
 (Note that both infrastructures use S3 for static asset hosting, which is not shown.)
 

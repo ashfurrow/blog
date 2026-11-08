@@ -11,21 +11,13 @@ Literally, we closed on the house this one weekend, and the next weekend I ran m
 
 Hmm? Photos?
 
-{% wide %}
-
-![Photo from Zelda: Breath of the Wild of Link in front of his new house.](./botw.jpg)
-
-{% endwide %}
+![Photo from Zelda: Breath of the Wild of Link in front of his new house.](./botw.jpg#wide)
 
 Okay okay, so I didn't _actually_ move into this old house in Hateno village – I moved into an old house in Fredericton 😅 But I enjoy my privacy so I'm not going to post that many photos of my new home.
 
 It's a bit older of a house, which suits us perfectly – my wife and I both grew up in older homes. This house has obviously been cared for, and has been well-maintained over the years. Before we moved in, we had its main floor painted and it looks _so good_. We've also had a lot of fun getting the main areas set up.
 
-{% wide %}
-
-![Paint colour](paint.jpg)
-
-{% endwide %}
+![Paint colour](paint.jpg#wide)
 
 My home office is upstairs so I get a stronger division between my "work" area and my "living" area. We even have more than one bathroom, so gone are the days of conflicts between my meeting schedule and my wife's bathing schedule. I've set up the home gym in our basement. It's great that my office can be _just_ my office, instead of combination office-and-gym-and-also-that's-where-the-piano-goes-I-guess.
 
@@ -43,21 +35,13 @@ For example: the previous owners did not understand lightbulbs. You may already 
 
 Whatever. I got the main bulbs fixed, and I can live with the rest. When the back porch lightbulb dies, I'll deal with it then.
 
-{% wide %}
-
-![Photo of my living room](livingroom.jpg)
-
-{% endwide %}
+![Photo of my living room](livingroom.jpg#wide)
 
 The other morning, I woke up and went to the bathroom. As I looked out the window into the back garden, I saw a cat sniff around, dig a whole, squat, and "go to the bathroom" itself. For a brief moment I felt powerless – how dare this cat crap in my garden?! – but then I realized that the cat does not care _at all_ that this is "my" garden. It's a cat, and this garden is outdoors. The whole yard is outdoors, and so it's all up for grabs.
 
 The house itself is outdoors, actually. It feels obvious to say that, but the distinction between "indoors" and "outdoors" is becoming increasingly important to me. The house isn't just a building – it's a volume of low entropy. And the universe is doing everything it can to smear my beautiful low-entry artifice into disarray and chaos. It's motivating, in a way. The universe is trying to destroy my home, and given enough time, it will win. But there's no way in hell that it's happening while I own this place.
 
-{% wide %}
-
-![Photo of my back yard](backyard.jpg)
-
-{% endwide %}
+![Photo of my back yard](backyard.jpg#wide)
 
 I have a back yard – yay! The backyard also has a workshop – also yay! I haven't quite figured out exactly what to _do_ in the workshop, but I have years ahead of me to figure it out. Wood-working, probably. That seems to be what all experienced programmers do eventually. I'm keeping my eye out for a good deal on a used table saw.
 

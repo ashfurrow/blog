@@ -32,18 +32,10 @@ What I have to offer is an unbiased perspective. (Or at least, a less biased one
 
 My new role will have a narrower focus with more day-to-day coding and [I'm expecting a greater career satisfaction](/blog/work-at-your-spikes/). I've learned that I _can_ do anything, but if I try to do _everything_, then my work suffers. I suffer. It's time to specialize in mobile UX again.
 
-{% narrow %}
-
-![Photo of (a younger) me at WWDC 2010.](./wwdc2010.jpg)
-
-{% endnarrow %}
+![Photo of (a younger) me at WWDC 2010.](./wwdc2010.jpg#narrow)
 
 I'm also _really_ excited to be working in native technologies more often. I've followed every WWDC since I attended my first in 2010, but if I'm being completely honest, it's been hard to feel as immersed as I used to in Apple technology without working in native iOS day-to-day. My Swift skills are a little rusty and my SwiftUI skills... well, let's just say that I'm looking forward to sparring with Xcode again. In some ways, this will be a return to native iOS for me. But I'm not "going back", I'm using my experience to go forward.
 
-{% narrow %}
-
-![Photo of (a less younger) me speaking at mDevCamp.](./mdevcamp.jpg)
-
-{% endnarrow %}
+![Photo of (a less younger) me speaking at mDevCamp.](./mdevcamp.jpg#narrow)
 
 I'm really looking forward to ramping up with Wealthsimple. They have a great product for an underserved Canadian market. [Their stated culture](https://www.wealthsimple.com/en-ca/culture) describes the exact kind of environment where I can do my best work. Also, I've opened personal bank accounts in three countries so I also get to bring my experience banking in the US and Europe. When I moved home to Canada, I was surprised to see how little the big banks had changed in the seven years I lived away. Wealthsimple is pushing Canada forward here. They've built a quality app and have already done a lot to cover that last mile of React Native user experience – I can't wait to pitch in!

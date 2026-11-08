@@ -23,11 +23,7 @@ One of my favourite YouTube channels, [PBS Space Time](https://www.youtube.com/c
 
 But other stuff is hard too! Everyone struggles with difficult concepts, but people struggle with "normal" stuff, too. Has the following ever happened to you?
 
-{% narrow %}
-
-[![Adult tasks](sarah_scribbles.jpg)](http://sarahcandersen.com/post/129419169496/i-know-the-internet-is-rampant-with-jokes-about)
-
-{% endnarrow %}
+[![Adult tasks](sarah_scribbles.jpg#narrow)](http://sarahcandersen.com/post/129419169496/i-know-the-internet-is-rampant-with-jokes-about)
 
 It's happened to me for sure.
 
