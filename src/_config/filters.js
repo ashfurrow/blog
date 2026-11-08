@@ -3,6 +3,9 @@
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig - The Eleventy configuration object.
  */
 export default function (eleventyConfig) {
+  // The text before a photo post's first heading or photo, for the feed (its photos are not at URLs a reader can load).
+  eleventyConfig.addFilter("photoIntro", (html) => String(html).split(/<h2|<p><img /)[0])
+
   eleventyConfig.addFilter(
     "parseDate",
     /**
