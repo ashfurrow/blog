@@ -19,9 +19,6 @@ import { rowsFor } from "./photo-rows.js"
 
 export const PHOTO_LAYOUT = "layouts/photo.njk"
 
-// Photo posts whose banner is not used for the /photos page's random banner.
-const NOT_RANDOM_BANNERS = ["guitar-rewire"]
-
 const FLAGS = ["wide", "narrow", "bleed"]
 
 const decode = (s) =>
@@ -31,7 +28,6 @@ const decode = (s) =>
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&amp;/g, "&")
-const escapeHtml = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
 const attr = (tag, name) => (tag.match(new RegExp(`\\s${name}="([^"]*)"`)) ?? [])[1]
 
 // Sizes follow the grid in site.css: 12 columns, up to 80rem (1600px); text 3-11, .wide 2-12, .narrow 4-10, a full
@@ -152,44 +148,6 @@ async function photoGroups(content, dir) {
  */
 export default function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownImageFlags))
-
-  // The photo posts, newest first, for the /photos page.
-  eleventyConfig.addCollection("photoPosts", (api) =>
-    api
-      .getFilteredByTag("posts")
-      .filter((post) => post.data.layout === PHOTO_LAYOUT)
-      .reverse()
-  )
-
-  // {% photoBanners %}: a JSON list of banner image URLs (1600px) of the photo posts, for the /photos page to pick one
-  // from. A post that is a one-off in the set (a different kind of story) is left out.
-  eleventyConfig.addAsyncShortcode("photoBanners", async function () {
-    const included = this.ctx.collections.photoPosts.filter(
-      (post) => post.data.banner && !NOT_RANDOM_BANNERS.some((slug) => post.inputPath.includes(`-${slug}/`))
-    )
-    const urls = []
-    for (const post of included) {
-      const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), {
-        widths: [1600],
-        formats: ["jpeg"]
-      })
-      urls.push(metadata.jpeg[0].url)
-    }
-    return JSON.stringify(urls)
-  })
-
-  // {% photoCover post, sizes, loading %}: a photo post's banner as a <picture> (600 and 1200px) for a card.
-  eleventyConfig.addAsyncShortcode("photoCover", async function (post, sizes, loading = "lazy") {
-    const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), { widths: [600, 1200] })
-    return generateHTML(metadata, {
-      alt: "",
-      sizes,
-      class: "photo-card-image",
-      loading,
-      decoding: "async",
-      "eleventy:ignore": ""
-    })
-  })
 
   eleventyConfig.addTransform("photo-groups", async function (content) {
     const { inputPath, outputPath } = this.page
