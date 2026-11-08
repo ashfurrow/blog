@@ -1,4 +1,4 @@
-import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
+import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin, RenderPlugin } from "@11ty/eleventy"
 import rssPlugin from "@11ty/eleventy-plugin-rss"
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
 
@@ -20,6 +20,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin)
   eleventyConfig.addPlugin(rssPlugin)
   eleventyConfig.addPlugin(pluginFilters)
+  eleventyConfig.addPlugin(RenderPlugin) // the renderContent filter renders photo post footnotes (Markdown)
   eleventyConfig.addPlugin(pluginShortcodes)
   eleventyConfig.addPlugin(pluginImageFlags) // #wide/#narrow/#bleed on images
   eleventyConfig.addPlugin(pluginPersonalTimeline)
