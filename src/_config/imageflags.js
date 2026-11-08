@@ -11,7 +11,7 @@
 //     make, and the image still goes through the blog's image transform. In a photo post (layout PHOTO_LAYOUT) every
 //     image is tagged data-photo, with its flags in data-flags, and told to be ignored by that transform.
 //  2. A transform (below) turns each paragraph of data-photo images into a photo group: rows of figures, with resized
-//     files from eleventy-img, a link for the lightbox and the caption (the image title) as a hover overlay.
+//     files from eleventy-img, a link for the lightbox.
 //     Dimensions come from the image files, so they are not stored anywhere.
 import path from "node:path"
 import { generateHTML, resize } from "./photo-images.js"
@@ -84,7 +84,7 @@ export function markdownImageFlags(md) {
   })
 }
 
-async function figure(dir, { src, alt, caption, flags }, { alone, layout }) {
+async function figure(dir, { src, alt, flags }, { alone, layout }) {
   const metadata = await resize(path.join(dir, src))
   const largest = metadata.jpeg.at(-1)
   const ratio = Math.round((largest.width / largest.height) * 1000) / 1000
@@ -97,10 +97,9 @@ async function figure(dir, { src, alt, caption, flags }, { alone, layout }) {
     "eleventy:ignore": ""
   })
   const classes = ["photo", flags.has("wide") && "wide", alone && "alone"].filter(Boolean).join(" ")
-  const figcaption = caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ""
   return {
     ratio,
-    html: `<figure class="${classes}" style="--ar: ${ratio}"><a href="${largest.url}" data-lightbox>${picture}</a>${figcaption}</figure>`
+    html: `<figure class="${classes}" style="--ar: ${ratio}"><a href="${largest.url}" data-lightbox>${picture}</a></figure>`
   }
 }
 
@@ -114,7 +113,6 @@ async function photoGroups(content, dir) {
         return {
           src: decode(attr(tag, "src")),
           alt: decode(attr(tag, "alt") ?? ""),
-          caption: decode(attr(tag, "title") ?? ""),
           flags
         }
       })

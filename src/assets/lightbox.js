@@ -1,7 +1,6 @@
 // Opens photo links in a <dialog>. Without JS the links just open the image.
 const dialog = document.getElementById("lightbox")
 const image = dialog.querySelector("img")
-const caption = dialog.querySelector(".lb-caption")
 const links = [...document.querySelectorAll("a[data-lightbox]")]
 let index = 0
 
@@ -10,7 +9,6 @@ function show(i) {
   const link = links[index]
   image.src = link.href
   image.alt = link.querySelector("img")?.alt ?? ""
-  caption.textContent = link.closest("figure")?.querySelector("figcaption")?.textContent ?? ""
 }
 
 for (const [i, link] of links.entries()) {

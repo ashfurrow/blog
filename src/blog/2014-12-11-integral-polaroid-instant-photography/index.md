@@ -14,7 +14,7 @@ We bought a Polaroid Spirit 600 that had been refurbished by the [The Impossible
 
 Photography has become ubiquitous in our society thanks to the smartphone revolution. But you never hold a photograph anymore. With analogue instant photography, you touch the photograph. It is a physical object, not a collection of bytes in a computer somewhere. In a world where photography is ubiquitous but photographs are increasingly rare, handing someone a memento of your interaction imbues that moment with a sense of permanence.
 
-![Two smiling people in winter coats with cameras stand in front of the colorful onion domes of Saint Basil's Cathedral in Moscow.](01.jpg#wide "Taken by friend and colleague Orta Therox in Moscow.")
+![Two smiling people in winter coats with cameras stand in front of the colorful onion domes of Saint Basil's Cathedral in Moscow. Caption: Taken by friend and colleague Orta Therox in Moscow.](01.jpg#wide)
 
 ## A Camera for the Street
 
@@ -24,8 +24,8 @@ But when you approach someone with a Polaroid camera, it’s different. You’re
 
 Still, I’ve used the Polaroid system for my softer form of cityscape street photography, and I love it.
 
-![Blue vintage sedan parked on a city sidewalk beside a red classic car, with a figure in dark clothing in the blurred background.](02.jpg "This is a scene of a movie being filmed in Minsk.")
-![Wet cobblestone street at night, glowing street lamps blurred in the distance along a river bank.](03.jpg "Taken along the banks of the Amstel River in Amsterdam.")
+![Blue vintage sedan parked on a city sidewalk beside a red classic car, with a figure in dark clothing in the blurred background. Caption: This is a scene of a movie being filmed in Minsk.](02.jpg)
+![Wet cobblestone street at night, glowing street lamps blurred in the distance along a river bank. Caption: Taken along the banks of the Amstel River in Amsterdam.](03.jpg)
 
 ## A Camera for Landscapes
 
@@ -42,8 +42,8 @@ Still, we learnt through trial and error. Mostly error, but it was alway fun. Th
 
 We bought a refurbished SX-70 folding camera (Disco Edition!) because after using the Spirit 600 for a few months, I was ready to explore the artistic capabilities of the medium. The SX-70 has a tripod socket and is capable of long exposures and manual focusing. Perfect. At the same time, I decided to try B&W film, too.
 
-![Faded, blurry Polaroid of a rooftop water tower on a snowy or misty city roof, with tall buildings behind it.](08.jpg "Taken during a heavy rainstorm in Lower Manhattan.")
-![Night view of a river lined with lit buildings and street lamps, their golden reflections stretching down the dark water.](09.jpg "Long exposure of the Amstel River in Amsterdam")
+![Faded, blurry Polaroid of a rooftop water tower on a snowy or misty city roof, with tall buildings behind it. Caption: Taken during a heavy rainstorm in Lower Manhattan.](08.jpg)
+![Night view of a river lined with lit buildings and street lamps, their golden reflections stretching down the dark water. Caption: Long exposure of the Amstel River in Amsterdam](09.jpg)
 ![Night view of a lit skyscraper with a tall spire rising above surrounding city towers, shown in a Polaroid-style print.](10.jpg)
 ![Night aerial view of a city street lined with lit buildings, with a skyline of tall towers glowing in the distance.](11.jpg)
 
@@ -51,9 +51,9 @@ We bought a refurbished SX-70 folding camera (Disco Edition!) because after usin
 
 Every photographic medium I am aware of has been used to capture the humanity’s feline friends. We make a point to keep a Polaroid around the couch for when they behave particularly adorable.
 
-![Ginger cat lying on a cream tufted leather sofa beside a folded orange knit blanket.](12.jpg "Dave the Cat")
-![A black-and-white cat lies on a sunlit windowsill beside a green toy, with a blurred city building behind the window.](13.jpg "Bandita, Dave's friend")
-![A blurry instant photo of a black and white cat with long whiskers resting on a soft gray surface.](14.jpg "Panda, my parent's cat")
+![Ginger cat lying on a cream tufted leather sofa beside a folded orange knit blanket. Caption: Dave the Cat](12.jpg)
+![A black-and-white cat lies on a sunlit windowsill beside a green toy, with a blurred city building behind the window. Caption: Bandita, Dave's friend](13.jpg)
+![A blurry instant photo of a black and white cat with long whiskers resting on a soft gray surface. Caption: Panda, my parent's cat](14.jpg)
 
 ## A Camera for the Country
 
@@ -78,4 +78,4 @@ In this eerie self-portrait, I set the camera on a tripod and composed, leaving 
 
 Our trip to Spain was wrapping up and our friends began to leave. I was fortunate enough to spend time with a great team of open source developers, and we got a group shot – a token of our time together and a reminder of our friendship.
 
-![Seven people crowd together at night, most giving thumbs-up under a ceiling light, in a Polaroid-style photo.](19.jpg#wide "Thanks to Eloy, Marius, Michele, Boris, Kyle, Orta, and others not pictured for having a great time together.")
+![Seven people crowd together at night, most giving thumbs-up under a ceiling light, in a Polaroid-style photo. Caption: Thanks to Eloy, Marius, Michele, Boris, Kyle, Orta, and others not pictured for having a great time together.](19.jpg#wide)

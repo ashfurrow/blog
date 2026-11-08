@@ -13,7 +13,7 @@ footnotes: |
 
 My wife, Ashley, and I arrived in Iceland on separate flights. She got there first and had already picked up my luggage. We punched in the address on the GPS of our rental car and headed for our cabin near Thingvellir Park at 6:30am. We had a two-hour drive to get there and the sun would not rise for another five hours.
 
-![Black-and-white view of a few small wooden cabins in a snowy field, with a calm lake and snow-covered mountains behind them.](001.jpg#wide "Here is the view from our cabin.")
+![Black-and-white view of a few small wooden cabins in a snowy field, with a calm lake and snow-covered mountains behind them. Caption: Here is the view from our cabin.](001.jpg#wide)
 
 ## Day One
 

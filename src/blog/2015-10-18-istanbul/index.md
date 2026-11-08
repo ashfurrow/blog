@@ -7,9 +7,9 @@ layout: layouts/photo.njk
 location: Istanbul, Turkey
 ---
 
-![Looking up at a domed church ceiling with gold-haloed religious figures painted in medieval mosaic-style frescoes.](01.jpg#wide "Chora Church, 4th Century BCE")
+![Looking up at a domed church ceiling with gold-haloed religious figures painted in medieval mosaic-style frescoes. Caption: Chora Church, 4th Century BCE](01.jpg#wide)
 
-![Black-and-white view down a row of illuminated stone columns reflected in still water, with a few small figures far off in the Basilica Cistern.](02.jpg#bleed "Long exposure at the Basilica Cistern.")
+![Black-and-white view down a row of illuminated stone columns reflected in still water, with a few small figures far off in the Basilica Cistern. Caption: Long exposure at the Basilica Cistern.](02.jpg#bleed)
 
 ![Long underground hall with rows of columns and brick arches, lit warmly, with still water reflecting the arches on the floor.](03.jpg)
 ![Stone columns with carved capitals support rows of brick vaulted arches in a dimly lit underground cistern.](04.jpg)
@@ -32,6 +32,6 @@ location: Istanbul, Turkey
 
 ![Sunset over dark, wooded hills across calm water, with a tall building silhouetted on the ridge.](15.jpg#wide)
 ![Orange waterfront buildings with green awnings line a sunlit strait, with hillside houses and a church spire behind them.](16.jpg)
-![Two smiling people stand together by a waterfront at sunset, with a hillside of buildings and trees across the water.](17.jpg "Photo taken by our host.")
+![Two smiling people stand together by a waterfront at sunset, with a hillside of buildings and trees across the water. Caption: Photo taken by our host.](17.jpg)
 
 ![A long, golden-lit palace facade with a central dome along the water's edge at night, seen across dark rippling waves.](18.jpg#bleed)

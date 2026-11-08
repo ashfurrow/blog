@@ -22,7 +22,7 @@ Tokyo is a juxtaposition: an industrial city that moves with a subtle breath, li
 
 ![Black-and-white view of a utility pole with a transformer among tangled power lines, beside apartment buildings with exterior staircases and balconies.](05.jpg#bleed)
 
-![Black-and-white photo of a narrow concrete staircase with stained walls, a metal railing at the top, and dark moss streaks.](06.jpg "I've never seen such beautiful moss.")
+![Black-and-white photo of a narrow concrete staircase with stained walls, a metal railing at the top, and dark moss streaks. Caption: I've never seen such beautiful moss.](06.jpg)
 ![Black-and-white street photo of a wet, narrow road curving past a brick wall, with a lone pedestrian walking uphill in the distance.](07.jpg)
 
 ![Black-and-white photo of crowds walking past shop stalls on a busy market street lined with cherry blossom trees.](08.jpg)

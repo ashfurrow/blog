@@ -11,15 +11,15 @@ footnotes: |
 
 We’ve continued to have a lot of fun with the SX-70 and Spirit 600 [from our last post](https://ashfurrow.exposure.co/integral-polaroid-instant-photography) on instant photography. We also got a [Polaroid 100 Land Camera](https://instagram.com/p/0vRziADBvL/), which produces peel-apart instant photos. With only a few packs of film through it, I can’t really evaluate its merit as an artistic medium, but my goodness is it ever fun.
 
-![A woman in a gray belted coat and glasses stands before a colorful abstract mural with a polka-dot bag, on a graffiti-marked wall.](01.jpg#wide "Fun, if difficult to hold straight.")
-![A person with long pink hair in a striped top and orange skirt sits on a white chair by a window, typing on an open laptop.](02.jpg "From back in Amsterdam.")
-![Two hands in a plaid shirt slide a strip of brown film negative into a sleeve of plastic photo protectors.](03.jpg "Staged shot; whatevs.")
+![A woman in a gray belted coat and glasses stands before a colorful abstract mural with a polka-dot bag, on a graffiti-marked wall. Caption: Fun, if difficult to hold straight.](01.jpg#wide)
+![A person with long pink hair in a striped top and orange skirt sits on a white chair by a window, typing on an open laptop. Caption: From back in Amsterdam.](02.jpg)
+![Two hands in a plaid shirt slide a strip of brown film negative into a sleeve of plastic photo protectors. Caption: Staged shot; whatevs.](03.jpg)
 
 ## Astor Place
 
 Compare with the [other instant photography method](https://instagram.com/p/1LRuZyjBtd/). I like them both. Something about ISO 3000 film just seems so cool.
 
-![Black-and-white photo of a curved subway platform with a tactile yellow edge strip, columns, and a sign reading "Astor Place."](04.jpg#wide "Again, try to see past the photographer's apparent inability to hold a camera straight.")
+![Black-and-white photo of a curved subway platform with a tactile yellow edge strip, columns, and a sign reading "Astor Place." Caption: Again, try to see past the photographer's apparent inability to hold a camera straight.](04.jpg#wide)
 
 ## Unsuspecting subjects
 
@@ -27,9 +27,9 @@ So we take a lot of photos of our cats. And I take a lot of photos of Ashley.
 
 Not many photos exist of me at all – I like to be behind the camera more than in front of it.
 
-![A tabby cat with white chest lying on a dark couch beside a floral cushion, in a sepia instant photo.](05.jpg "If you look closely, you'll notice he's sleeping in my jeans.")
+![A tabby cat with white chest lying on a dark couch beside a floral cushion, in a sepia instant photo. Caption: If you look closely, you'll notice he's sleeping in my jeans.](05.jpg)
 ![A blurry, warm-toned instant photo of a tabby cat lying curled on a reddish-brown couch beside a patterned cushion.](06.jpg)
-![Black-and-white instant photo of a smiling person lying in a bunk bed, with a white pillow and a metal rail in the foreground.](07.jpg "This was taken on a boat. She got the top bunk.")
+![Black-and-white instant photo of a smiling person lying in a bunk bed, with a white pillow and a metal rail in the foreground. Caption: This was taken on a boat. She got the top bunk.](07.jpg)
 
 ## Colour Shifts
 
