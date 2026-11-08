@@ -14,6 +14,7 @@ description: Blog archive of a compassionate software developer.
         <a href="{{ post.url }}" class="post-link">
           <span class="post-title">{{ post.title }}</span>
           <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate }}</time>
+          {% if post.photo %}<i class="fa-solid fa-image photo-marker" title="Photo post" role="img" aria-label="Photo post"></i>{% endif %}
         </a>
       </article>
     {%- endfor %}
