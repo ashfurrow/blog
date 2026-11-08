@@ -60,8 +60,8 @@
 			"@id": "{{ metadata.url }}{{ page.url }}",
 			"url": "{{ metadata.url }}{{ page.url }}",
 			"name": "{{ title or metadata.title }}",
-			"alternateName": "{{ metadata.titleAlt }}",
-			{% if isPost %}
+			"alternateName": "{{ metadata.titleAlt }}"
+			{% if isPost %},
 			"headline": "{{ title }}",
 			"image": {
 				"@type": "ImageObject",
@@ -75,7 +75,7 @@
 				"name": "{{ metadata.author.name }}",
 				"url": "{{ metadata.url }}",
 				"image": "{{ metadata.author.image }}",
-				"sameAs": {{ metadata.author.social | toJson }}
+				"sameAs": {{ metadata.author.social | toJson | safe }}
 			},
 			"publisher": {
 				"@type": "Organization",
