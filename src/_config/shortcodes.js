@@ -204,10 +204,12 @@ export default function (eleventyConfig) {
       ></iframe>
     </div>`
   })
-  // A tweet's id, or (as in photo posts) its URL.
+  // A post's id, or (as in photo posts) its URL. Twitter is X now, but the shortcode keeps its name.
   eleventyConfig.addShortcode("tweet", function (tweet) {
     const isUrl = /^https?:/.test(tweet)
-    const url = isUrl ? escapeAttr(tweet) : `https://twitter.com/twitter/status/${tweet}`
+    const url = isUrl
+      ? escapeAttr(tweet.replace(/^https?:\/\/(www\.)?twitter\.com\//, "https://x.com/"))
+      : `https://x.com/x/status/${tweet}`
     return `<div class="narrow">
       <blockquote class="twitter-tweet"${isUrl ? ' data-dnt="true"' : ""}>
         <a href="${url}"></a>
