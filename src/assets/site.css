@@ -859,7 +859,8 @@ footer .attribution {
   margin-right: 0.5rem;
 }
 .photo-marker {
-  margin-left: 0.2rem;
+  /* Sits between the title and the date; the title's own 0.5rem margin is the gap before it. */
+  margin-right: 0.5rem;
   font-size: 0.8em;
   color: rgba(0, 0, 0, 0.4);
 }

@@ -25,6 +25,11 @@
     margin-bottom: 3.2rem;
   }
 
+  /* The first block under the banner gets the same room above it as every text block gets below it. */
+  article.normal-width > :first-child {
+    margin-top: 3.2rem;
+  }
+
   /* A heading belongs to the photos under it, and two groups in a row are one block of photos. */
   h2 + .photos {
     margin-top: 1rem;
