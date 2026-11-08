@@ -27,21 +27,13 @@ It's been challenging.
 
 I don't know how much I weighed at the beginning of the year, or when my weight even loss started. The last time I had a physical exam was 2017, and I know how much I weighed then. Since that exam, my weight had increased, but my current delta is a 65 pound weight loss. Since I bought a scale in June, when I started being more proactive about exercise outside of a strict physical therapy context, I've lost 40 pounds.
 
-{% narrow %}
-
-![Graph of my weight, and the numbers along the axis are covered in Emojis](weight.png)
-
-{% endnarrow %}
+![Graph of my weight, and the numbers along the axis are covered in Emojis](weight.png#narrow)
 
 I wish I could be more excited, but it's difficult. There have been periods where I'm really happy about my progress, but even getting excited makes me anxious.
 
 This fall, when I got my winter clothes out of storage, none of them fit. Like, none at all. _That_ was an amazing feeling, if fleeting. I had to buy new clothes and felt excited about being shopping for smaller sizes, but also anxious because I was still shopping for large sizes. I felt guilty spending money on new clothes because they might not fit for very long... and then felt guilty for feeling hopeful... and finally recognizing _this is when I need those CBT skills_ and it was all okay! Phew.
 
-{% narrow %}
-
-![Photo of a pile of shirts](shirts.jpg)
-
-{% endnarrow %}
+![Photo of a pile of shirts](shirts.jpg#narrow)
 
 So we've covered my history with weight and its relationship to my mental health. It both reflects my mental health and is reflected _by_ my mental health. It's a sad topic that I'm still working through, but what about the happier stuff? If I've been focused on diet and exercise to the exclusion of weight or size, how have _those_ been going?
 
@@ -105,11 +97,7 @@ I learned a lot about running, but in line with _interleaved practice_, I learne
 
 I was in the middle of the country. A car would pass every ten minutes, but that was largely it. The scenery was beautiful and even though I'd grown up on these roads, I was appreciating my home from a whole new perspective. I left my phone at home, so I don't have pictures from my runs themselves, but here's the view:
 
-{% wide %}
-
-[![View of an open field looking over a lake](lake.jpg)](https://web.500px.com/photo/12945691/Road-to-the-Lake-by-Ash-Furrow/)
-
-{% endwide %}
+[![View of an open field looking over a lake](lake.jpg#wide)](https://web.500px.com/photo/12945691/Road-to-the-Lake-by-Ash-Furrow/)
 
 Returning to New York was hard because I was still self-conscious while running. But I was a little more confident. I began running along the East River near my apartment. Here's _that_ view:
 
@@ -121,11 +109,7 @@ Returning to New York was hard because I was still self-conscious while running.
 
 [I hooked up my running activity](https://slava.playplay.io) to Artsy's #distance Slack channel. That first 💪 reaction meant a lot to me.
 
-{% narrow %}
-
-![Slack channel reaction to my first run shared there](distance.png)
-
-{% endnarrow %}
+![Slack channel reaction to my first run shared there](distance.png#narrow)
 
 The motivation I got from my colleagues felt _amazing_, but I also learned the joy of _giving_ my colleagues motivation.
 
@@ -141,19 +125,11 @@ My self-consciousness is kicking in right about now, so please indulge me as I p
 
 I try to push past my self-consciousness. When I coworker congratulates me on a run, _I acknowledge the compliment_. When I'm feeling great after a workout, _I take a selfie_. When someone asks me how I've been, _I tell them I'm feeling amazing_. These are all difficult to do, but I'm pushing through that difficulty.
 
-{% narrow %}
-
-![A post-gym selfie](selfie.jpg)
-
-{% endnarrow %}
+![A post-gym selfie](selfie.jpg#narrow)
 
 So anyway, my weight is down. My respiration health is trending well. My walking pace is up. My daily active calories spent are _way_ up. My resting heart rate has nearly crossed below 60bpms, which feels _ridiculous_. Between walking and running, I travel over 10km per day.
 
-{% narrow %}
-
-![Graph of my daily walking and running average distance over the past year, which is way up](walking.png)
-
-{% endnarrow %}
+![Graph of my daily walking and running average distance over the past year, which is way up](walking.png#narrow)
 
 On top of all that data, I just feel physically so much better. I've had a really stressful few weeks at work, and I've actually relied on running as a way to help cope. Running has replaced food as my go-to coping mechanism. I'm pretty fucking proud of that.
 

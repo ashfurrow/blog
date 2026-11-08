@@ -8,11 +8,7 @@ Today marks five years since my wife and I moved away from New York and back to 
 
 About a year ago, [I started taking photos again](https://photos.ashfurrow.com/downtown-in-the-rain). It started on my phone, but then I got out my old film cameras which _still had film in them from New York_. I finished the rolls and sent them off to be developed. When they came back, I found this:
 
-{% wide %}
-
-![Double-exposure photo with New York on the left and Fredericton on the right](./photo.jpg)
-
-{% endwide %}
+![Double-exposure photo with New York on the left and Fredericton on the right](./photo.jpg#wide)
 
 This is a double exposuree, with half the frame being taken in New York and the other half being taken here in Fredericton. _Five years apart!_ From what I can piece together, what happened is:
 
@@ -28,11 +24,7 @@ Something I love about film photography – and digital, too – is the unexpect
 
 In this case, I've _edited_ the photo to look good. Without those edits, the original was kind of bleh:
 
-{% wide %}
-
-![The same photo, but less contrasty and not cropped. I looks faded.](./original.jpg)
-
-{% endwide %}
+![The same photo, but less contrasty and not cropped. I looks faded.](./original.jpg#wide)
 
 This is not what I envisioned, but I love what I made of it. This is probably my favourite photo that I've ever taken _ever_, and it was an accident.
 

@@ -7,6 +7,7 @@ const { eleventyImageTransformPlugin } = Image
 
 import pluginFilters from "./src/_config/filters.js"
 import pluginShortcodes from "./src/_config/shortcodes.js"
+import pluginImageFlags from "./src/_config/imageflags.js"
 import pluginPersonalTimeline from "./src/_config/personaltimeline.js"
 
 /**
@@ -20,6 +21,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(rssPlugin)
   eleventyConfig.addPlugin(pluginFilters)
   eleventyConfig.addPlugin(pluginShortcodes)
+  eleventyConfig.addPlugin(pluginImageFlags) // #wide/#narrow/#bleed on images
   eleventyConfig.addPlugin(pluginPersonalTimeline)
 
   eleventyConfig.addPlugin(syntaxHighlight, {

@@ -18,11 +18,7 @@ User.where('last_sign_in_at > ?', 2.weeks.ago).count
 
 All the data is [available in plaintext](https://gist.github.com/ashfurrow/1954350316c180affa879ac3e74caba9), but here's a pretty graph:
 
-{% wide %}
-
-![Graph of Mastodon login counts over a year](graph.png)
-
-{% endwide %}
+![Graph of Mastodon login counts over a year](graph.png#wide)
 
 So that's cool! Let's contextualize things a bit. The spike in April came in light of the Cambridge Analytica and Facebook controversy. People were angry about Facebook and surveillance capitalism, and they took to Mastodon for an alternative social network. Cool! I was curious to see if that surge of popularity would last, and it _seems_ to have, so far anyway.
 

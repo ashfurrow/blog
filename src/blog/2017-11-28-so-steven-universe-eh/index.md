@@ -66,19 +66,11 @@ So fast forward: Steven is living with the gems and spends a lot of time with hi
 
 Each gem has their own distinct origins. Greg has a backstory too. These are all explored in really interesting and thoughtful ways. Side-characters too! You will never see a character only once, they _always_ reappear. Here's a very small (but very representative) example: in Season Two, we explore the origins of a side-character, and that origin story briefly features this gem in a flashback:
 
-{% wide %}
-
-![Lapis is poofed by Bismuth](lapis.jpg)
-
-{% endwide %}
+![Lapis is poofed by Bismuth](lapis.jpg#wide)
 
 Later, in Season Three, we meet the gem again learn more about her relationship to Rose and her role in the war.
 
-{% wide %}
-
-![Steven meets Bismuth](bismuth.jpg)
-
-{% endwide %}
+![Steven meets Bismuth](bismuth.jpg#wide)
 
 I mean, what? I didn't see this coming at all – and these kinds of hints are scattered throughout the show's art.
 

@@ -21,11 +21,7 @@ This post is a story of how collection views helped me implement a really challe
 
 Orta and I were looking over the design spec for a major new feature of the Artsy app, but we had a problem. Our designer had an awesome design that we didn’t know how to implement. The idea was that the user is looking at a list of lots in an auction, and we want to make sure that the _current_ lot is always visible. When the user scrolled, the current lot would stick to the top or bottom of the view as the rest of the lots scrolled beneath it. Kind of like UITableView section headers, but in both directions.
 
-{% narrow %}
-
-![Implemented design](implemented.gif)
-
-{% endnarrow %}
+![Implemented design](implemented.gif#narrow)
 
 We weren't quite sure how to implement this, so we let the team know it was a big question mark. But in our haste to estimate how long it would take to build this feature, we jumped to the conclusion that this would be built atop a UITableView. It didn’t occur to either of us that there might be a better, non-UITableView option. For a minimal viable auctions app, it wasn’t strictly needed, and was a big question mark in terms of time, so we put it at the end, if we had time.
 
@@ -37,11 +33,7 @@ Orta was impressed with the simplicity of the solution and asked if collection v
 
 On the main auction view, iPhone users swipe left and right to traverse forward and backwards through the auction's lots. On larger screens, we have space to show a preview of the next (and reminder of the previous) lot.
 
-{% narrow %}
-
-![Design spec gif](spec.gif)
-
-{% endnarrow %}
+![Design spec gif](spec.gif#narrow)
 
 Our efforts so far had been frustrating – this kind of interface is difficult to build from scratch with UIScrollView. Complicating things was how the lot view controllers themselves were displayed: UIPageViewController, an infamously opaque API.
 
@@ -80,11 +72,7 @@ I can calculate the percentage that the user has scrolled based on the collectio
 
 Oh, I forgot to mention that the whole thing _also_ has to resize in a neat animation that squishes the centre cell and pushes the previous and next ones away. Since we had the existing infrastructure of the layout pipeline, adding in an additional variable was straightforward ([PR](https://github.com/artsy/eigen/pull/1506)).
 
-{% narrow %}
-
-![Finished product gif](finished.gif)
-
-{% endnarrow %}
+![Finished product gif](finished.gif#narrow)
 
 I wanted to make sure that the layout was easy to maintain for my team, so I laid things out logically and added comments to explain everything. Understanding the file's [current version](https://github.com/artsy/eigen/blob/7ac7620c77b4aff306853d13c0cecf4044b4f4d2/Artsy/View_Controllers/Live_Auctions/Views/LiveAuctionFancyLotCollectionViewLayout.swift) doesn't require anything more than a basic familiarity with collection view flow layouts.
 

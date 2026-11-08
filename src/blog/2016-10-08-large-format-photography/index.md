@@ -60,11 +60,7 @@ Alright, onto the images! I've taken eight exposures so far, here are a few. Exc
 
 Let's check out the details on those flower petals...
 
-{% wide %}
-
-![Flower 2 closeup](flower-2-closeup.jpg)
-
-{% endwide %}
+![Flower 2 closeup](flower-2-closeup.jpg#wide)
 
 Beautiful.
 

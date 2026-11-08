@@ -17,11 +17,7 @@ If this happens, don't worry. Let's walk through the steps to pull down the upda
 
 The first thing we need to do is tell git where to find the changes. As a convention, we're going to call the original repository the _upstream_. This is the repository that your pull request is submitted on. To get the upstream git URL, go to the original GitHub repo page and click the "Clone or Download" button.
 
-{% narrow %}
-
-![GitHub merge interface](url.png)
-
-{% endnarrow %}
+![GitHub merge interface](url.png#narrow)
 
 Copy that URL. Now we need to tell git where the upstream is, and then tell git to fetch information from the upstream.
 
