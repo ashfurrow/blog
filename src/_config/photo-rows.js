@@ -11,9 +11,11 @@
 //    the budget, the longest such runs, starting from the last, are split in two.
 // Every row then takes the full width with all its photos at one height (flex-grow by aspect ratio, in the CSS).
 
+import { columnsWidth, SPANS } from "./grid.js"
+
 export const WINDOWS = {
   // width of the photo grid, window height, divisor for the target row height
-  desktop: { width: 1200, height: 900, divisor: 2.618 }, // Euclid WHAT IS UP
+  desktop: { width: columnsWidth(SPANS.wide[0], 1440), height: 900, divisor: 2.618 }, // Euclid WHAT IS UP
   phone: { width: 372, height: 844, divisor: 4.8 }
 }
 

@@ -16,6 +16,7 @@
 import path from "node:path"
 import { generateHTML, resize } from "./photo-images.js"
 import { rowsFor } from "./photo-rows.js"
+import { sizes } from "./grid.js"
 
 export const PHOTO_LAYOUT = "layouts/photo.njk"
 
@@ -29,16 +30,6 @@ const decode = (s) =>
     .replace(/&gt;/g, ">")
     .replace(/&amp;/g, "&")
 const attr = (tag, name) => (tag.match(new RegExp(`\\s${name}="([^"]*)"`)) ?? [])[1]
-
-// Sizes follow the grid in site.css: 12 columns, up to 80rem (1600px); text 3-11, .wide 2-12, .narrow 4-10, a full
-// column on phones (600px and under).
-const SIZES = {
-  bleed: "100vw",
-  wide: "(min-width: 1600px) 1333px, (min-width: 601px) 83vw, 100vw",
-  default: "(min-width: 1600px) 1067px, (min-width: 1201px) 67vw, (min-width: 601px) 83vw, 100vw",
-  narrow: "(min-width: 1600px) 800px, (min-width: 1201px) 50vw, (min-width: 601px) 67vw, 100vw",
-  grid: "(min-width: 1600px) 667px, (min-width: 601px) 42vw, 100vw"
-}
 
 /** Strips the known flags from an image token's src and returns them. */
 function takeFlags(image, photoPost) {
@@ -95,7 +86,7 @@ async function figure(page, { src, alt, flags }, { alone, layout }) {
   const ratio = Math.round((largest.width / largest.height) * 1000) / 1000
   const picture = generateHTML(metadata, {
     alt,
-    sizes: alone ? SIZES[layout || "default"] : flags.has("wide") ? SIZES.wide : SIZES.grid,
+    sizes: alone ? sizes(layout || "default") : flags.has("wide") ? sizes("wide") : sizes("grid"),
     loading: "lazy",
     decoding: "async"
   })
