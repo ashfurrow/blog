@@ -1,0 +1,22 @@
+---
+title: Photos
+description: Photo stories by Ash Furrow.
+---
+
+<article>
+{% set groupedPostsJson %}{% groupedPosts "photos" %}{% endset %}
+{% set groupedPosts = groupedPostsJson | fromJson  %}
+{%- for group in groupedPosts %}
+  <div class="group">
+    <h2>{{ group.name }}</h2>
+    {%- for post in group.posts %}
+      <article class="post-item">
+        <a href="{{ post.url }}" class="post-link">
+          <span class="post-title">{{ post.title }}{% if post.photo %} <i class="fa-solid fa-image photo-marker" title="Photo post" role="img" aria-label="Photo post"></i>{% endif %}</span>
+          <time class="post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | parseDate | readableDate }}</time>
+        </a>
+      </article>
+    {%- endfor %}
+  </div>
+{%- endfor %}
+</article>

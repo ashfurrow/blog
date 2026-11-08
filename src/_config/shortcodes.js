@@ -52,8 +52,11 @@ function first(collection, check) {
  */
 export default function (eleventyConfig) {
   // Groups posts by month and year, returning a JSON string.
-  eleventyConfig.addShortcode("groupedPosts", function () {
-    const collection = this.ctx.collections.posts
+  // `{% groupedPosts "photos" %}` lists only the photo posts.
+  eleventyConfig.addShortcode("groupedPosts", function (only) {
+    const collection = this.ctx.collections.posts.filter(
+      (p) => only !== "photos" || p.data.layout === "layouts/photo.njk"
+    )
     const posts = collection.map((p) => ({
       title: p.data.title,
       url: p.url,
