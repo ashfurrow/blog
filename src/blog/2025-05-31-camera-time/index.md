@@ -3,16 +3,16 @@ title: Camera Time
 date: 2025-05-31
 socialImage: fredericton.jpeg
 banner: fredericton.jpeg
-bannerAttribution: https://photos.ashfurrow.com/downtown-in-the-rain
+bannerAttribution: /blog/downtown-in-the-rain/
 ---
 
-Recently, I published [my first photo blog post since 2018](https://photos.ashfurrow.com/downtown-in-the-rain). (Yes I have a separate photo blog, because of course I do.) So what's up with that? Nothing better than a blog post about another blog post.
+Recently, I published [my first photo blog post since 2018](/blog/downtown-in-the-rain/). (Yes I have a separate photo blog, because of course I do.) So what's up with that? Nothing better than a blog post about another blog post.
 
 I haven't really been doing a lot of photography since the pandemic, but I had been increasingly drawn to it over the past six months. Creativity is actually something I've found to be missing in my life – when I found a renewed interest in photography, I decided to follow it. I started taking more photos on my iPhone, then I got out my film cameras since that's what I _had_ been mainly shooting. But film wasn't working for me, so I got out my digital camera, a FujiFilm X100S from 2014. And I loved it.
 
 But, that camera has some limitations I was hitting. First, it's a fixed focal length and I felt myself wanting something with more reach. I've only used prime lenses since 2014 and I enjoyed their limitations. Prime lenses helped me improve my composition skills, but now I'm ready for a zoom. The X100S is also from 2014, which means it's from near the _very beginning_ of the industry's transition to mirrorless. So, it's fiddly.
 
-Don't get me wrong – I've taken some of my favourite shots with the X100S. I have a large canvas print of [a long exposure of Tokyo taken from Roppongi Tower](https://photos.ashfurrow.com/losing-myself-in-tokyo/photos/2580931) hanging in my office, and I took that with the X100S. Back when I used to travel a lot, The X100S was exactly what I needed. But as I rediscover photography in Atlantic Canada, I started to feel its limitations. I kept shooting with it anyway.
+Don't get me wrong – I've taken some of my favourite shots with the X100S. I have a large canvas print of [a long exposure of Tokyo taken from Roppongi Tower](/blog/losing-myself-in-tokyo/) hanging in my office, and I took that with the X100S. Back when I used to travel a lot, The X100S was exactly what I needed. But as I rediscover photography in Atlantic Canada, I started to feel its limitations. I kept shooting with it anyway.
 
 ![Photo of Tokyo just after sunset](./tokyo.jpg#wide)
 

@@ -6,7 +6,7 @@ banner: ./social.jpg
 
 Today marks five years since my wife and I moved away from New York and back to New Brunswick. [When I wrote about this last time](/blog/four-years-in-new-brunswick/), I seemed unhappy. I guess things hadn't worked out the way that I had envisioned them when we moved home – even if I didn't have a really clear vision for how things would go. I have a more optimistic view now.
 
-About a year ago, [I started taking photos again](https://photos.ashfurrow.com/downtown-in-the-rain). It started on my phone, but then I got out my old film cameras which _still had film in them from New York_. I finished the rolls and sent them off to be developed. When they came back, I found this:
+About a year ago, [I started taking photos again](/blog/downtown-in-the-rain/). It started on my phone, but then I got out my old film cameras which _still had film in them from New York_. I finished the rolls and sent them off to be developed. When they came back, I found this:
 
 ![Double-exposure photo with New York on the left and Fredericton on the right](./photo.jpg#wide)
 

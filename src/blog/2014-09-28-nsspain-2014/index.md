@@ -1,7 +1,7 @@
 ---
 title: NSSpain 2014
 subtitle: A journey to Spain
-date: 2014-09-27
+date: 2014-09-28
 banner: cover.jpg
 layout: layouts/photo.njk
 location: Logroño, Spain
