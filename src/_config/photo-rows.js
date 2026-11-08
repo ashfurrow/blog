@@ -1,22 +1,19 @@
-// Which photos share a row. The original site decides this in the browser, and the answer depends on the window; here
-// it is decided once at build time for two reference windows and written into the HTML (see imageflags.js and
-// photo.css). The widths are those of the blog's `.wide` column: 10 of 12 columns at a 1440px window, and the full
+// Which photos share a row. The widths are those of the blog's `.wide` column: 10 of 12 columns at a 1440px window, and the full
 // width less the .normal-width margins (0.5rem each side) on a 390px phone.
 //
-// The rule, as observed on the original site:
+// The rule:
 //  - The number of rows is how many rows the photos would fill at a target height: the sum of each photo's
-//    width-at-that-height, divided by the row width, rounded (at least 1, at most one per photo). The target height is the
-//    window height divided by 2.618 (divided by 4.8 on phones), at most 500px.
+//    width-at-that-height, divided by the row width, rounded. The target height is the
+//    window height divided by 2.618 on desktop / 4.8 on phones. Max 500px (lol).
 //  - Photos without #wide are split into that many consecutive rows with an even number of photos each (3 photos in 2
 //    rows is 2 + 1); the rows are not packed by width.
 //  - A #wide photo is a row of its own, and the photos between fills form their own rows. If that makes fewer rows than
-//    the budget, the longest such runs, starting from the last, are split in two (a run longer than 5 absorbs the whole
-//    remainder instead).
+//    the budget, the longest such runs, starting from the last, are split in two.
 // Every row then takes the full width with all its photos at one height (flex-grow by aspect ratio, in the CSS).
 
 export const WINDOWS = {
   // width of the photo grid, window height, divisor for the target row height
-  desktop: { width: 1200, height: 900, divisor: 1.618 ** 2 },
+  desktop: { width: 1200, height: 900, divisor: 2.618 }, // Euclid WHAT IS UP
   phone: { width: 372, height: 844, divisor: 4.8 }
 }
 
