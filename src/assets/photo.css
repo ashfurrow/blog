@@ -16,12 +16,13 @@
   margin-bottom: 1.66rem;
 }
 
-/* More room around text on a desktop screen, most below the last paragraph, before the next photo. (A paragraph already
-   has 1rem of its own margin on each side; margins of grid items don't merge.) */
+/* More room around text on a desktop screen: the same space above a text block, after the previous photos, as below it,
+   before the next photos. (A paragraph already has 1rem of its own margin on each side; margins of grid items don't
+   merge.) */
 @media (min-width: 601px) {
   .photos {
     margin-top: 3.2rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 3.2rem;
   }
 
   /* A heading belongs to the photos under it, and two groups in a row are one block of photos. */
@@ -31,6 +32,15 @@
 
   .photos + .photos {
     margin-top: 0;
+  }
+
+  /* A heading that starts a text block gets the same room above it as a paragraph does (which has its own 1rem). */
+  .photos + h2 {
+    margin-top: 1rem;
+  }
+
+  .photos:has(+ .photos) {
+    margin-bottom: 2.2rem;
   }
 }
 
