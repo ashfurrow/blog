@@ -28,6 +28,7 @@
     "@sindresorhus/slugify": "^2.2.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
+    "posthtml": "^0.16.7",
     "prettier": "^3.6.0"
   },
   "packageManager": "pnpm@11.20.0",

@@ -1,6 +1,7 @@
 // Photo posts (layout PHOTO_LAYOUT): the photo groups in a post, and what the /photos page needs from them, a collection
 // and the shortcodes that render their banners.
 import path from "node:path"
+import posthtml from "posthtml"
 import { FLAGS, PHOTO_LAYOUT } from "./imageflags.js"
 import { sizes } from "./grid.js"
 import { generateHTML, resize } from "./photo-images.js"
@@ -13,7 +14,6 @@ const decode = (s) =>
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&amp;/g, "&")
-const attr = (tag, name) => (tag.match(new RegExp(`\\s${name}="([^"]*)"`)) ?? [])[1]
 
 async function figure(page, { src, alt, flags }, { alone, layout }) {
   const metadata = await resize(path.join(path.dirname(page.inputPath), src), page)
@@ -32,43 +32,59 @@ async function figure(page, { src, alt, flags }, { alone, layout }) {
   }
 }
 
+/** The photos of a paragraph made only of images from a photo post, or null for any other node. */
+function photosOf(node) {
+  if (node.tag !== "p") return null
+  const children = (node.content ?? []).filter((child) => typeof child !== "string" || child.trim())
+  if (children.length === 0 || !children.every((child) => child.tag === "img" && "data-photo" in (child.attrs ?? {}))) {
+    return null
+  }
+  return children.map(({ attrs }) => ({
+    src: decode(attrs.src),
+    alt: decode(attrs.alt ?? ""),
+    flags: new Set((attrs["data-flags"] ?? "").split("+").filter(Boolean))
+  }))
+}
+
+/** The HTML of a photo group: rows of figures. */
+async function photoGroup(page, photos) {
+  const alone = photos.length === 1
+  // A lone photo's width comes from its flag only; a group is always the .wide column.
+  const layout = alone ? (FLAGS.find((f) => photos[0].flags.has(f)) ?? "") : "wide"
+  const figures = []
+  for (const photo of photos) figures.push(await figure(page, photo, { alone, layout }))
+  const items = figures.map((f, i) => ({ ratio: f.ratio, fill: photos[i].flags.has("wide") }))
+  const rows = alone ? [[0]] : rowsFor(items, "desktop")
+  // On phones the rows are different. The row wrappers stop being boxes there and a spacer before the first photo
+  // of each phone row breaks the line, so each photo is in the page once.
+  const phoneStarts = new Map()
+  if (!alone) rowsFor(items, "phone").forEach((row, n) => phoneStarts.set(row[0], n))
+  const html = rows
+    .map(
+      (row) =>
+        `<div class="row">${row
+          .map((i) => (phoneStarts.get(i) > 0 ? '<span class="mbreak"></span>' : "") + figures[i].html)
+          .join("")}</div>`
+    )
+    .join("")
+  return `<div class="photos ${layout}">${html}</div>`
+}
+
 /** Photo post: every paragraph made only of images becomes a photo group. */
 async function photoGroups(content, page) {
-  const groupPattern = /<p>((?:<img [^>]*\bdata-photo[^>]*>\s*)+)<\/p>/g
-  const groups = await Promise.all(
-    [...content.matchAll(groupPattern)].map(async ([, imgs]) => {
-      const photos = [...imgs.matchAll(/<img [^>]*>/g)].map(([tag]) => {
-        const flags = new Set((attr(tag, "data-flags") ?? "").split("+").filter(Boolean))
-        return {
-          src: decode(attr(tag, "src")),
-          alt: decode(attr(tag, "alt") ?? ""),
-          flags
-        }
+  const { html } = await posthtml([
+    async (tree) => {
+      const groups = new Map()
+      tree.walk((node) => {
+        const photos = photosOf(node)
+        if (photos) groups.set(node, photoGroup(page, photos))
+        return node
       })
-      const alone = photos.length === 1
-      // A lone photo's width comes from its flag only; a group is always the .wide column.
-      const layout = alone ? (FLAGS.find((f) => photos[0].flags.has(f)) ?? "") : "wide"
-      const figures = []
-      for (const photo of photos) figures.push(await figure(page, photo, { alone, layout }))
-      const items = figures.map((f, i) => ({ ratio: f.ratio, fill: photos[i].flags.has("wide") }))
-      const rows = alone ? [[0]] : rowsFor(items, "desktop")
-      // On phones the rows are different. The row wrappers stop being boxes there and a spacer before the first photo
-      // of each phone row breaks the line, so each photo is in the page once.
-      const phoneStarts = new Map()
-      if (!alone) rowsFor(items, "phone").forEach((row, n) => phoneStarts.set(row[0], n))
-      const html = rows
-        .map(
-          (row) =>
-            `<div class="row">${row
-              .map((i) => (phoneStarts.get(i) > 0 ? '<span class="mbreak"></span>' : "") + figures[i].html)
-              .join("")}</div>`
-        )
-        .join("")
-      return `<div class="photos ${layout}">${html}</div>`
-    })
-  )
-  let i = 0
-  return content.replace(groupPattern, () => groups[i++])
+      const built = new Map(await Promise.all([...groups].map(async ([node, group]) => [node, await group])))
+      tree.walk((node) => built.get(node) ?? node)
+    }
+  ]).process(content)
+  return html
 }
 
 /**
