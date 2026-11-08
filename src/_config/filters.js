@@ -1,32 +1,8 @@
-import path from "node:path"
-import { attr, decode } from "./imageflags.js"
-import { resize } from "./photo-images.js"
-
 /**
  * Adds custom filters to the Eleventy config.
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig - The Eleventy configuration object.
  */
 export default function (eleventyConfig) {
-  // What a feed shows for a post. `templateContent` is the post's HTML from before the build's image transforms, so its
-  // images still have their source names, and those are not what gets published:
-  //  - the blog's image transform writes JPEGs as .jpeg, not .jpg;
-  //  - a photo post's photos are never published under their own names, only as resized files next to the post, so each
-  //    is pointed at its 1200px JPEG instead.
-  eleventyConfig.addAsyncFilter("feedContent", async (post) => {
-    let html = String(post.templateContent)
-    const sources = [...html.matchAll(/<img [^>]*\bdata-photo[^>]*>/g)].map(([tag]) => tag)
-    const replacements = new Map()
-    for (const tag of sources) {
-      const file = path.join(path.dirname(post.inputPath), decode(attr(tag, "src")))
-      const { jpeg } = await resize(file, post)
-      const photo = jpeg.find((size) => size.width === 1200) ?? jpeg.at(-1)
-      const alt = attr(tag, "alt") ?? ""
-      replacements.set(tag, `<img src="${photo.url}" alt="${alt}" width="${photo.width}" height="${photo.height}">`)
-    }
-    html = html.replace(/<img [^>]*\bdata-photo[^>]*>/g, (tag) => replacements.get(tag))
-    return html.replace(/(<img\s[^>]*?\bsrc="(?![a-z][a-z0-9+.-]*:|\/\/)[^"]*)\.jpe?g(?=["#?])/gi, "$1.jpeg")
-  })
-
   eleventyConfig.addFilter(
     "parseDate",
     /**
