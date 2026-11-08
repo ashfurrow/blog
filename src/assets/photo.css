@@ -68,6 +68,11 @@
 }
 
 @media (max-width: 600px) {
+  /* The gap between photos is the column's margin from the edge of the screen. */
+  :root {
+    --photo-gap: 0.5rem;
+  }
+
   .photos {
     display: flex;
     flex-wrap: wrap;
