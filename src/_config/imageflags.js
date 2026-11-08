@@ -83,8 +83,8 @@ export function markdownImageFlags(md) {
   })
 }
 
-async function figure(dir, { src, alt, flags }, { alone, layout }) {
-  const metadata = await resize(path.join(dir, src))
+async function figure(page, { src, alt, flags }, { alone, layout }) {
+  const metadata = await resize(path.join(path.dirname(page.inputPath), src), page)
   const largest = metadata.jpeg.at(-1)
   const ratio = Math.round((largest.width / largest.height) * 1000) / 1000
   const picture = generateHTML(metadata, {
@@ -103,7 +103,7 @@ async function figure(dir, { src, alt, flags }, { alone, layout }) {
 }
 
 /** Photo post: every paragraph made only of images becomes a photo group. */
-async function photoGroups(content, dir) {
+async function photoGroups(content, page) {
   const groupPattern = /<p>((?:<img [^>]*\bdata-photo[^>]*>\s*)+)<\/p>/g
   const groups = await Promise.all(
     [...content.matchAll(groupPattern)].map(async ([, imgs]) => {
@@ -119,7 +119,7 @@ async function photoGroups(content, dir) {
       // A lone photo's width comes from its flag only; a group is always the .wide column.
       const layout = alone ? (FLAGS.find((f) => photos[0].flags.has(f)) ?? "") : "wide"
       const figures = []
-      for (const photo of photos) figures.push(await figure(dir, photo, { alone, layout }))
+      for (const photo of photos) figures.push(await figure(page, photo, { alone, layout }))
       const items = figures.map((f, i) => ({ ratio: f.ratio, fill: photos[i].flags.has("wide") }))
       const rows = alone ? [[0]] : rowsFor(items, "desktop")
       // On phones the rows are different. The row wrappers stop being boxes there and a spacer before the first photo
@@ -150,9 +150,11 @@ export default function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownImageFlags))
 
   eleventyConfig.addTransform("photo-groups", async function (content) {
-    const { inputPath, outputPath } = this.page
-    if (!outputPath?.endsWith(".html") || !(content.includes("data-photo") || content.includes('eleventy:ignore=""')))
+    if (
+      !this.page.outputPath?.endsWith(".html") ||
+      !(content.includes("data-photo") || content.includes('eleventy:ignore=""'))
+    )
       return content
-    return photoGroups(content, path.dirname(inputPath))
+    return photoGroups(content, this.page)
   })
 }

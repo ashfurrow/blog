@@ -26,7 +26,7 @@ export default function (eleventyConfig) {
     )
     const urls = []
     for (const post of included) {
-      const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), {
+      const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), post, {
         widths: [1600],
         formats: ["jpeg"]
       })
@@ -37,7 +37,9 @@ export default function (eleventyConfig) {
 
   // {% photoCover post, sizes, loading %}: a photo post's banner as a <picture> (600 and 1200px) for a card.
   eleventyConfig.addAsyncShortcode("photoCover", async function (post, sizes, loading = "lazy") {
-    const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), { widths: [600, 1200] })
+    const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), post, {
+      widths: [600, 1200]
+    })
     return generateHTML(metadata, {
       alt: "",
       sizes,
