@@ -6,7 +6,7 @@ layout: layouts/photo.njk
 location: Algonquin Highlands, ON, Canada
 ---
 
-I have been to [summer camps in the woods for a corporate retreat before](https://photos.ashfurrow.com/artsy-offsite-2017), [a few times](https://photos.ashfurrow.com/artsy-offsite-2016), [okay a lot](https://photos.ashfurrow.com/artsy-offsite-2015). But this was a first for me in in a long time, in Canada, at this stage of my career, with _this_ team. It was special. There were surprising, unexpected parts. I have a feeling of pride from this event that is distinct from any I can remember.
+I have been to [summer camps in the woods for a corporate retreat before](/blog/artsy-offsite-2017/), [a few times](/blog/artsy-offsite-2016/), [okay a lot](/blog/artsy-offsite-2015/). But this was a first for me in in a long time, in Canada, at this stage of my career, with _this_ team. It was special. There were surprising, unexpected parts. I have a feeling of pride from this event that is distinct from any I can remember.
 
 ![A Canadian flag flies above a wooden dock over a calm lake, with forested hills behind.](02.jpg)
 ![Wooden docks on a calm lake with sailboats and a covered motorboat moored alongside, backed by a dense green forest.](01.jpg)

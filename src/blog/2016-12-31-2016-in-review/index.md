@@ -6,7 +6,7 @@ layout: layouts/photo.njk
 location: Earth
 ---
 
-My 2016 photography started off a bit ominously: a [blizzard](https://photos.ashfurrow.com/snowed-in) hit NYC so my wife and I headed out into the streets. I had a blast, met some other photographers, and got the new year off to a great start despite the weather.
+My 2016 photography started off a bit ominously: a [blizzard](/blog/snowed-in/) hit NYC so my wife and I headed out into the streets. I had a blast, met some other photographers, and got the new year off to a great start despite the weather.
 
 ![Yellow taxi driving fast through falling snow on a city street lined with bare trees.](01.jpg)
 ![Smiling woman in pink glasses and a dark hood dusted with snow, wearing a blue scarf, on a snowy street.](02.jpg)
@@ -21,7 +21,7 @@ My 2016 photography started off a bit ominously: a [blizzard](https://photos.ash
 ![Black-and-white view up a brick apartment building facade with rows of windows, several fitted with window air conditioning units.](10.jpg)
 ![Black-and-white photo of a snowy brick apartment building with iron fire escapes and snow falling between the windows.](11.jpg)
 
-Next up was my around-the-world trip from NYC to Lisbon ([colour](https://photos.ashfurrow.com/lisbon-in-springtime), [black&white](https://photos.ashfurrow.com/lisbon-in-monochrome)) to Tokyo, and back to NYC. I spoke at conferences in Lisbon and Tokyo on iOS development, and made sure to make time for photography. The trip was two weeks long, so I made sure to bring an adequate and varied supply of film.
+Next up was my around-the-world trip from NYC to Lisbon ([colour](/blog/lisbon-in-springtime/), [black&white](/blog/lisbon-in-monochrome/)) to Tokyo, and back to NYC. I spoke at conferences in Lisbon and Tokyo on iOS development, and made sure to make time for photography. The trip was two weeks long, so I made sure to bring an adequate and varied supply of film.
 
 ![Rooftops of a hillside city with red-tiled roofs, pastel buildings, cypress trees and a tall apartment block under a cloudy sky.](12.jpg)
 ![Curved glass cafe terrace with orange chairs and white umbrellas, overlooking a still pond and bare trees.](13.jpg)
@@ -34,7 +34,7 @@ Who says a six-hour layover in Dubai has to be boring?
 
 ![Several white airliners with green, black and red tail fins parked in a row on an airport apron at sunset.](17.jpg#wide)
 
-Tokyo was amazing ([colour](https://photos.ashfurrow.com/losing-myself-in-tokyo), [black&white](https://photos.ashfurrow.com/tokyo-on-film)) – though I didn't have enough time to see everything I wanted to, I still had a great time with friends. I had been looking forward to visiting some camera shops, and indeed I ended up buying a Rollei 35 compact film camera.
+Tokyo was amazing ([colour](/blog/losing-myself-in-tokyo/), [black&white](/blog/tokyo-on-film/)) – though I didn't have enough time to see everything I wanted to, I still had a great time with friends. I had been looking forward to visiting some camera shops, and indeed I ended up buying a Rollei 35 compact film camera.
 
 ![Aerial view of a dense city of high-rise towers and low buildings stretching to the bay under a pale blue sky.](18.jpg)
 ![Aerial view of a dense city skyline at sunset, with a bright low sun and tall towers silhouetted against an orange haze.](19.jpg)
@@ -61,13 +61,13 @@ Back in New York, I struggled to shoot. Things just weren't inspiring, and I was
 ![Black-and-white photo of a street lamp beside a building wrapped in dark scaffolding netting and mesh.](36.jpg)
 ![Four white delivery trucks parked side by side in a dim, black-and-white garage bay, each with a numbered windshield.](37.jpg#wide)
 
-A quick trip to [Warsaw](https://photos.ashfurrow.com/warsaw) for a conference, and the first trip I've done on film alone – black and white only!
+A quick trip to [Warsaw](/blog/warsaw/) for a conference, and the first trip I've done on film alone – black and white only!
 
 ![Black-and-white view looking up at a tall glass skyscraper with a pointed, angled top, beside a rounded building and clouds.](38.jpg)
 ![Black-and-white view up a building facade with rows of windows, some with shutters, and bare tree branches in the foreground.](39.jpg)
 ![Black-and-white photo of a tall apartment block seen from below, with rows of windows, small balconies and railings angled diagonally.](40.jpg#wide)
 
-The fair weather of Summer helped me get over my photo rut back home, as did getting out to see [Manhattanhenge](https://photos.ashfurrow.com/manahattanhenge) with some friends. I started focusing less on a scene and more on leading lines.
+The fair weather of Summer helped me get over my photo rut back home, as did getting out to see [Manhattanhenge](/blog/manhattanhenge/) with some friends. I started focusing less on a scene and more on leading lines.
 
 ![Tall brick building facade with black iron fire escapes zigzagging across multiple floors, lit by sunlight and shadow.](41.jpg)
 ![Yellow taxis driving down a city street at sunset, with the low sun glowing at the far end of the road.](42.jpg)
@@ -88,18 +88,18 @@ Here's where I noticed I was playing with... non-conventional photos. Some had n
 ![Pink rose bush in sunlight, with a small blue glass ball hanging among the blooms and green trees behind.](53.jpg)
 ![Suspension bridge towers over the East River, with a ferry and a sailboat on the water and a city skyline beyond.](54.jpg)
 
-[Artsy's offsite](https://photos.ashfurrow.com/artsy-offsite-2016) is always a fun time to bring a camera – the change of pace from the city helps shake things up.
+[Artsy's offsite](/blog/artsy-offsite-2016/) is always a fun time to bring a camera – the change of pace from the city helps shake things up.
 
 ![Black and white photo of a man in a Pikachu-style cap with ears and a face, standing outdoors on grass.](55.jpg)
 ![Three people sit cross-legged on grass by a lake, talking in the sunlight under tall trees.](56.jpg)
 
-Ashley and I visited the [Brooklyn Navy Shipyard](https://photos.ashfurrow.com/brooklyn-navy-yard) with a friend. A lot of my photos didn't come out as planned, but I still had a great time.
+Ashley and I visited the [Brooklyn Navy Shipyard](/blog/brooklyn-navy-yard/) with a friend. A lot of my photos didn't come out as planned, but I still had a great time.
 
 ![Black-and-white view looking up at curved steel girders with rivets arching across the underside of a bridge, with trees visible at the left edge.](57.jpg)
 ![Black-and-white photo of two tall steel lattice cranes angled against a pale sky, with cables stretching between them.](58.jpg)
 ![Black-and-white photo of a long brick factory building with iron fire escapes, and two tall smokestacks rising behind it.](59.jpg)
 
-I visited [Seattle](https://photos.ashfurrow.com/seattle) for the first time in August to attend a conference. I had a few days of sunny weather to traipse around the city and visit some cool cafes and markets. Seattle felt like a mix between Toronto and Vancouver; it's the most I've felt at home in a foreign city.
+I visited [Seattle](/blog/seattle/) for the first time in August to attend a conference. I had a few days of sunny weather to traipse around the city and visit some cool cafes and markets. Seattle felt like a mix between Toronto and Vancouver; it's the most I've felt at home in a foreign city.
 
 ![Black-and-white photo looking up at a metal fire escape staircase with grated landings against a building wall and pale sky.](60.jpg)
 ![Black-and-white low-angle view of a security camera mounted on a brick wall, with tree branches and leaves overhead.](61.jpg)
@@ -109,7 +109,7 @@ I visited [Seattle](https://photos.ashfurrow.com/seattle) for the first time in 
 ![Black-and-white photo of water cascading down stepped concrete ledges into a pool covered in foam.](65.jpg)
 ![Black-and-white photo, rotated sideways, of a tree with bare, twisting branches beside a brick wall.](66.jpg)
 
-I hadn't realized how homesick I was until I [flew back home](https://photos.ashfurrow.com/the-lake) for my sister's wedding. I miss my family a lot, and I'm looking forward to seeing them again early in the new year.
+I hadn't realized how homesick I was until I [flew back home](/blog/the-lake/) for my sister's wedding. I miss my family a lot, and I'm looking forward to seeing them again early in the new year.
 
 ![Silver airplane wing with a winglet and engine nacelle against a blue sky and large white clouds.](67.jpg)
 ![Dried grass stalks with feathery seed heads in sunlight, with tall birch trunks and green trees behind them.](68.jpg)

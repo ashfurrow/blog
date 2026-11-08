@@ -43,7 +43,7 @@ Another thing you might notice are the different... tones, I guess? of these pho
 
 ![White church with a tall steeple beside a two-lane road, surrounded by green trees and autumn foliage under cloudy sky.](10.jpg#wide)
 
-I also tried "Vivid" (which is based on Velvia slide film) and "Pro Hi" (which is based on Pro 400H). I actually _have_ shot on both of these films, but _mostly_ Pro 400H. [I once (accidentally) brought slide film with me to Verona](/verona/), and I found it very difficult to expose for. But, when I got the exposure right, the results were stunning.
+I also tried "Vivid" (which is based on Velvia slide film) and "Pro Hi" (which is based on Pro 400H). I actually _have_ shot on both of these films, but _mostly_ Pro 400H. [I once (accidentally) brought slide film with me to Verona](/blog/verona/), and I found it very difficult to expose for. But, when I got the exposure right, the results were stunning.
 
 Pro 400H was actually my favourite film stock, before Fujifilm discontinued it. It was saturated but only in ways that complimented my photography – I don't think it'd be great at portraiture.
 
@@ -192,7 +192,7 @@ My only goal in my time off was to take _one_ really great photo, nice enough to
 ![Large gnarled tree roots spread over the ground in front of a trunk, with yellow autumn leaves overhead and a river beyond.](62.jpg)
 ![A calm river curves through a forest of trees with yellow, orange and green autumn leaves.](63.jpg)
 
-I've also started experimenting more with "intentional camera movements." I've made some nice photos _accidentally_ while moving my camera during the exposure ([example from Melbourne](/australia/photos/3600220)). But this is more intentional. _Mostly_ I want to use these as background banners on my personal blog. But I have to admit, it's pretty fun! Get weird with it.
+I've also started experimenting more with "intentional camera movements." I've made some nice photos _accidentally_ while moving my camera during the exposure ([example from Melbourne](/blog/australia/)). But this is more intentional. _Mostly_ I want to use these as background banners on my personal blog. But I have to admit, it's pretty fun! Get weird with it.
 
 ![Blurred spiral view of green and yellow trees and branches, shot with motion and rotation.](64.jpg#wide)
 

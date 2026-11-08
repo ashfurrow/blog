@@ -6,7 +6,7 @@ layout: layouts/photo.njk
 location: Cedar Lakes Estate, Team Usa Way, Port Jervis, NY, United States
 ---
 
-Artsy returned to the same location as [last year’s offsite](https://photos.ashfurrow.com/artsy-offsite-2015), and I had a great time. I brought lots of film and made sure to have my camera with me everywhere, I got some great shots.
+Artsy returned to the same location as [last year’s offsite](/blog/artsy-offsite-2015/), and I had a great time. I brought lots of film and made sure to have my camera with me everywhere, I got some great shots.
 
 ![Two young women laugh as they swing side by side on playground swings in a park with trees and picnic tables.](01.jpg)
 ![Two smiling people stand arm in arm outdoors, a woman in a Pokémon t-shirt in front of a man in a flat cap, with others around them.](02.jpg#wide)

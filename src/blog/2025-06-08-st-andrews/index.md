@@ -7,7 +7,7 @@ layout: layouts/photo.njk
 location: St. Andrews, New Brunswick, Canada
 ---
 
-Since [my last photo blog post](https://photos.ashfurrow.com/downtown-in-the-rain), I have [bought a new camera](https://ashfurrow.com/blog/camera-time/) and taken a small vacation. I needed to recharge and wanted to take some photos, so Ashley and I went down to St Andrews for a few days. This was during the _very first week_ of the summer tourist season and we had the town basically to ourselves.
+Since [my last photo blog post](/blog/downtown-in-the-rain/), I have [bought a new camera](https://ashfurrow.com/blog/camera-time/) and taken a small vacation. I needed to recharge and wanted to take some photos, so Ashley and I went down to St Andrews for a few days. This was during the _very first week_ of the summer tourist season and we had the town basically to ourselves.
 
 ![Orange post on a wharf with a sign reading "Permit Holders Only, No Fishing," a small boat and outboard motor beside it, harbor water behind.](01.jpg)
 ![A metal dock with railings runs beside small boats, with a white lighthouse and houses across the calm bay.](02.jpg)

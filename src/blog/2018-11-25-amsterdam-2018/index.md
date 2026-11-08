@@ -9,7 +9,7 @@ location: Amsterdam, The Netherlands
 
 I returned to Amsterdam for just a few days to [present at a conference](https://ashfurrow.com/blog/building-better-software-by-building-better-teams/) back in April. These photos of are the spring, so hopefully it will remind you what is at the end of the incipient winter.
 
-My wife and I [moved to Amsterdam](https://photos.ashfurrow.com/amsterdam) in 2014, and I hadn't been back since we left to move to New York. My flights and the conference schedule only afforded me a few hours to walk around the city, so I did some quick wandering through my old neighbourhood.
+My wife and I [moved to Amsterdam](/blog/amsterdam/) in 2014, and I hadn't been back since we left to move to New York. My flights and the conference schedule only afforded me a few hours to walk around the city, so I did some quick wandering through my old neighbourhood.
 
 ![A black iron bandstand stands beside a canal in a park, with bare trees, a tall brick-and-glass tower, and people walking on the grass.](01.jpg#wide)
 

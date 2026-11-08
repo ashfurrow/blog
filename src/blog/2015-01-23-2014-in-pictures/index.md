@@ -11,7 +11,7 @@ footnotes: |
 
 ## "Oh my god, amsterdam"
 
-Amsterdam is, as far as I can tell, the most beautiful city in the world. [Arriving in mid-February](https://photos.ashfurrow.com/moving-to-amsterdam), the city was already alive and waiting to be shot. I tried to avoid the obvious tourist shots to give mine something meaningful, but in a few instances, I [couldn’t help myself](https://photos.ashfurrow.com/amsterdam).
+Amsterdam is, as far as I can tell, the most beautiful city in the world. [Arriving in mid-February](/blog/moving-to-amsterdam-photos/), the city was already alive and waiting to be shot. I tried to avoid the obvious tourist shots to give mine something meaningful, but in a few instances, I [couldn’t help myself](/blog/amsterdam/).
 
 ![Night view down a cobblestone street with tram tracks, lit shop fronts, and pedestrians walking along the sidewalks.](01.jpg)
 ![Narrow Amsterdam canal at dusk, lined with tall brick houses, lit windows and street lamps reflected in the water.](02.jpg)
@@ -34,7 +34,7 @@ So Spring happens in the Netherlands _really_ early. Like, it’s already happen
 
 ## "This baguette is amazing."
 
-Shortly after moving to Amsterdam, I returned to North America to teach a course at [Treehouse](http://teamtreehouse.com) in [Orlando](https://photos.ashfurrow.com/analogue-orlando). My host, Amit, showed me around to some awesome food, including the best baguette sandwich I’ve had to date.
+Shortly after moving to Amsterdam, I returned to North America to teach a course at [Treehouse](http://teamtreehouse.com) in [Orlando](/blog/analogue-orlando/). My host, Amit, showed me around to some awesome food, including the best baguette sandwich I’ve had to date.
 
 ![City skyline at dusk across a calm lake, with a lit illuminated fountain in the water and tall glass towers behind it.](09.jpg)
 ![A white swan with a yellow and black bill sits on green grass in a sunlit park lined with palm trees.](10.jpg)
@@ -57,7 +57,7 @@ Booking a trip to Paris was kind of a gamble, since I was unemployed. I had been
 
 ## "What do you mean 'The wrong airport'?"
 
-Some friends were gathering in [Innsbruck, Austria](https://photos.ashfurrow.com/innsbruck-austria) for a weekend of gezelligheid. We enjoyed amazing vistas, jazz brunch, and Mario Kart-ing down the face of a mountain.
+Some friends were gathering in [Innsbruck, Austria](/blog/innsbruck-austria/) for a weekend of gezelligheid. We enjoyed amazing vistas, jazz brunch, and Mario Kart-ing down the face of a mountain.
 
 ![Dense green forest covering a steep mountainside, with mist drifting over the upper slopes.](15.jpg)
 ![Green meadow with yellow wildflowers, pine trees, and a town in a valley below clouds over mountains.](16.jpg)
@@ -101,7 +101,7 @@ We lived in Transvaalbuurt for months before we noticed this peculiar anachronis
 
 ## "Vino tinto, por favor"
 
-Our trip to [Spain](https://photos.ashfurrow.com/nsspain-2014) would be one of our most fun – as you might expect during a wine festival. We stayed with friends, ate delicious food and drank an altogether impossible amount of wine.
+Our trip to [Spain](/blog/nsspain-2014/) would be one of our most fun – as you might expect during a wine festival. We stayed with friends, ate delicious food and drank an altogether impossible amount of wine.
 
 ![Young musicians in white shirts and red sashes play brass and woodwind instruments in a street band on a sunny plaza.](25.jpg#wide)
 ![Street musicians playing trumpet and saxophone among a crowd of people in a narrow city street.](26.jpg)
@@ -116,14 +116,14 @@ Our visit to Milan was all too short, but things were starting to get very busy 
 
 ## "Is moscow traffic. What can do?"
 
-We took a cab from the airport to the hotel and my goodness I have never seen traffic that bad. Our cab driver explained in broken English that it does, in fact, get much worse. Nevertheless, we had an [amazing time in this city](https://photos.ashfurrow.com/moscow). And we took the subway back to the airport.
+We took a cab from the airport to the hotel and my goodness I have never seen traffic that bad. Our cab driver explained in broken English that it does, in fact, get much worse. Nevertheless, we had an [amazing time in this city](/blog/moscow/). And we took the subway back to the airport.
 
 ![Colorful onion domes with gold crosses atop a brick cathedral against a clear blue sky.](30.jpg)
 ![Black-and-white view of a wide river with a domed cathedral on the left, a bridge, and a tall tower with a red star on the right.](31.jpg)
 
 ## "Happy revolution day! right?"
 
-I was fortunate enough to be in [Minsk in November](https://photos.ashfurrow.com/minsk), on the one hundredth anniversary of the October Revolution of 1914. I was at a conference where everyone spoke Russian, so I spent most of my day reading Wikipedia articles on the rich and complex history of Belarus, Russia, and the Soviet Union.
+I was fortunate enough to be in [Minsk in November](/blog/minsk/), on the one hundredth anniversary of the October Revolution of 1914. I was at a conference where everyone spoke Russian, so I spent most of my day reading Wikipedia articles on the rich and complex history of Belarus, Russia, and the Soviet Union.
 
 ![Aerial view of a city at sunset, with a winding river, residential blocks and green fields under a hazy orange sky.](32.jpg)
 ![Black-and-white night photo of a large illuminated stone building with tall columns and glass walls, set on a stepped plaza.](33.jpg)
@@ -131,7 +131,7 @@ I was fortunate enough to be in [Minsk in November](https://photos.ashfurrow.com
 
 ## "Pass me the film camera. No, the other film camera."
 
-Arriving back in late [Autumn](https://photos.ashfurrow.com/autumn-in-amsterdam), I was shooting mostly film. I didn’t know it, but I would continue to use more and more black and white than colour film. I was mainly shooting on a Leica M3 with a 50mm Summicron.
+Arriving back in late [Autumn](/blog/autumn-in-amsterdam/), I was shooting mostly film. I didn’t know it, but I would continue to use more and more black and white than colour film. I was mainly shooting on a Leica M3 with a 50mm Summicron.
 
 ![Black-and-white street scene of two people walking along a tree-lined brick path past a parked cargo bicycle and rows of townhouses.](35.jpg#bleed)
 
@@ -159,7 +159,7 @@ I wanted to go to Vondelpark to catch the sunrise, so Ashley and I got up early 
 
 ## "Nice polaroid."
 
-I was in New York for a week of meetings at Artsy, and I had ordered a folding Polaroid SX-70 camera delivered to the office. I had a great time – my Polaroid shots from 2014 are [also online](https://photos.ashfurrow.com/integral-polaroid-instant-photography).
+I was in New York for a week of meetings at Artsy, and I had ordered a folding Polaroid SX-70 camera delivered to the office. I had a great time – my Polaroid shots from 2014 are [also online](/blog/integral-polaroid-instant-photography/).
 
 ![Black-and-white city street with a large American flag hanging over the road between tall office towers, with a bus advertising Call of Duty in the foreground.](43.jpg)
 ![Black-and-white aerial view of a hazy city skyline with tall buildings fading into fog.](44.jpg)
@@ -173,7 +173,7 @@ On my way back from New York, I stopped in Atlantic Canada where I joined my wif
 
 ## "Can we stop to take a photo?" "Yes – stop asking for permission."
 
-On our way back from Atlantic Canada, we had a three-day stopover in [Iceland](https://photos.ashfurrow.com/iceland). We rented a small cottage a few hours outside of Reykjavik and spent all our waking time seeing the countryside and making photos.
+On our way back from Atlantic Canada, we had a three-day stopover in [Iceland](/blog/iceland/). We rented a small cottage a few hours outside of Reykjavik and spent all our waking time seeing the countryside and making photos.
 
 ![A snow-covered road running straight toward a distant horizon under an orange and pink sunset sky.](47.jpg#bleed)
 

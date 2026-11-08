@@ -8,7 +8,7 @@ footnotes: |
   Shot on TMax 400, developed in my sink and scanned at home.
 ---
 
-I’ve [previously posted photos](https://photos.ashfurrow.com/losing-myself-in-tokyo) from my trip to Tokyo but this post is something new: my film shots. I didn’t know what kind of photos I was going to make in Tokyo before I arrived, so I took a walk around Shinagawa. After a while, I started to get a feel for how to frame the city.
+I’ve [previously posted photos](/blog/losing-myself-in-tokyo/) from my trip to Tokyo but this post is something new: my film shots. I didn’t know what kind of photos I was going to make in Tokyo before I arrived, so I took a walk around Shinagawa. After a while, I started to get a feel for how to frame the city.
 
 ![Two people in dark coats walk away down a sunlit city sidewalk, following a tactile paving strip, past a blue parking sign and bare street trees.](01.jpg)
 ![Black-and-white street scene of a narrow city lane with a lone pedestrian in a face mask walking past shop fronts, with large painted road markings in the foreground.](02.jpg)

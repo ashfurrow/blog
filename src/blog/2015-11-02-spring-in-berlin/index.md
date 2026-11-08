@@ -6,7 +6,7 @@ layout: layouts/photo.njk
 location: Berlin, Germany
 ---
 
-My wife and I spent May touring through Germany, couch-surfing at our friends’ places. We had two weeks in Berlin, with [Hamburg](https://photos.ashfurrow.com/hamburg) sandwiched in the middle.
+My wife and I spent May touring through Germany, couch-surfing at our friends’ places. We had two weeks in Berlin, with [Hamburg](/blog/hamburg/) sandwiched in the middle.
 
 ![Yellow pompom-shaped blossoms on green branches of a shrub, with more yellow flowers blurred in the background.](01.jpg#bleed)
 

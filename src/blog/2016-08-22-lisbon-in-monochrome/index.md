@@ -8,7 +8,7 @@ footnotes: |
   Shots taken on TMax 400.
 ---
 
-I’ve [posted before about my trip to Portugal](https://photos.ashfurrow.com/lisbon-in-springtime), but I’m back now that my film shots have been developed, scanned, and edited. It’s been really fun to revisit my trip from a different perspective – in black and white film – and with more hindsight.
+I’ve [posted before about my trip to Portugal](/blog/lisbon-in-springtime/), but I’m back now that my film shots have been developed, scanned, and edited. It’s been really fun to revisit my trip from a different perspective – in black and white film – and with more hindsight.
 
 ![Black-and-white view over rooftops and apartment blocks under large cumulus clouds, with a distant construction crane.](01.jpg)
 ![Black-and-white view over a hillside city of white buildings, a curving road with a few cars in the foreground, and dark clouds above.](02.jpg)

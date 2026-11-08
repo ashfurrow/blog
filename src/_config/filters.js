@@ -3,8 +3,15 @@
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig - The Eleventy configuration object.
  */
 export default function (eleventyConfig) {
-  // The text before a photo post's first heading or photo, for the feed (its photos are not at URLs a reader can load).
-  eleventyConfig.addFilter("photoIntro", (html) => String(html).split(/<h2|<p><img /)[0])
+  // What a feed shows for a post. A photo post's photos are not at URLs a reader can load, so its feed item is its intro
+  // (the paragraphs before the first heading or photo, else the first paragraph) and a link.
+  eleventyConfig.addFilter("feedContent", (post, url) => {
+    const html = String(post.templateContent)
+    if (post.data.layout !== "layouts/photo.njk") return html
+    const paragraphs = (text) => text.match(/<p>(?!<img )[\s\S]*?<\/p>/g) ?? []
+    const intro = paragraphs(html.split(/<h2|<p><img /)[0])
+    return `${(intro.length > 0 ? intro : paragraphs(html).slice(0, 1)).join("\n")}<p><a href="${url}">See the photos</a></p>`
+  })
 
   eleventyConfig.addFilter(
     "parseDate",

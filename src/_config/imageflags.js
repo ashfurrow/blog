@@ -42,11 +42,13 @@ const SIZES = {
 }
 
 /** Strips the known flags from an image token's src and returns them. */
-function takeFlags(image) {
+function takeFlags(image, photoPost) {
   const [file, fragment = ""] = image.attrGet("src").split("#")
   const parts = fragment.split("+").filter(Boolean)
   const flags = parts.filter((part) => FLAGS.includes(part))
-  if (flags.length > 0) image.attrSet("src", [file, ...parts.filter((part) => !FLAGS.includes(part))].join("#"))
+  // In a photo post the file is read from disk, so any fragment goes; in a blog post only the flags do.
+  if (photoPost && fragment) image.attrSet("src", file)
+  else if (flags.length > 0) image.attrSet("src", [file, ...parts.filter((part) => !FLAGS.includes(part))].join("#"))
   return flags
 }
 
@@ -60,7 +62,7 @@ export function markdownImageFlags(md) {
       const children = tokens[i + 1].children ?? []
       const images = children.filter((child) => child.type === "image")
       if (images.length === 0) continue
-      const flags = images.map(takeFlags)
+      const flags = images.map((image) => takeFlags(image, photoPost))
       if (photoPost) {
         images.forEach((image, n) => {
           image.attrSet("data-photo", "")
@@ -139,7 +141,9 @@ async function photoGroups(content, dir) {
     })
   )
   let i = 0
-  return content.replace(groupPattern, () => groups[i++]).replaceAll(' eleventy:ignore=""', "")
+  return content
+    .replace(groupPattern, () => groups[i++])
+    .replace(/ (eleventy:ignore|data-photo)=""| data-flags="[^"]*"/g, "")
 }
 
 /**

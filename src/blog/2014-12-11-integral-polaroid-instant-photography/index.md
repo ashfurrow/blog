@@ -10,7 +10,7 @@ footnotes: |
 
 ## A Camera For Travel
 
-We bought a Polaroid Spirit 600 that had been refurbished by the [The Impossible Project](https://www.the-impossible-project.com), who have saved integral Polaroid instant photography from fading into the history books. Initially the camera was just for a trip: we were staying in a house in [Logroño, Spain](https://photos.ashfurrow.com/nsspain-2014) with friends. There was even going to be a big party, so we would need lots of film. Everyone would leave with a physical artefact of our time together.
+We bought a Polaroid Spirit 600 that had been refurbished by the [The Impossible Project](https://www.the-impossible-project.com), who have saved integral Polaroid instant photography from fading into the history books. Initially the camera was just for a trip: we were staying in a house in [Logroño, Spain](/blog/nsspain-2014/) with friends. There was even going to be a big party, so we would need lots of film. Everyone would leave with a physical artefact of our time together.
 
 Photography has become ubiquitous in our society thanks to the smartphone revolution. But you never hold a photograph anymore. With analogue instant photography, you touch the photograph. It is a physical object, not a collection of bytes in a computer somewhere. In a world where photography is ubiquitous but photographs are increasingly rare, handing someone a memento of your interaction imbues that moment with a sense of permanence.
 

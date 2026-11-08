@@ -117,7 +117,9 @@ export default function (eleventyConfig) {
     if (this.ctx.layout === "layouts/photo.njk") {
       // Photo posts can start with a heading, a photo or an embed; the description is the first line of prose.
       const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => /^[^#!{<\s]/.test(p))
-      return excerpt ? md.render(excerpt).trim() : this.ctx.subtitle || Metadata.description
+      if (excerpt) return md.render(excerpt).trim()
+      if (this.ctx.subtitle) return this.ctx.subtitle
+      return this.ctx.location ? `Photos from ${this.ctx.location}.` : `Photos by ${Metadata.author.name}.`
     }
     return Metadata.description
   })

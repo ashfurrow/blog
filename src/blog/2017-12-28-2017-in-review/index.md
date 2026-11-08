@@ -46,7 +46,7 @@ This is actually one of the very few large format photos I took. I really need t
 
 ## Melbourne, Australia
 
-More photos from Australia are available [here](https://photos.ashfurrow.com/australia).
+More photos from Australia are available [here](/blog/australia/).
 
 ![A woman in a denim jacket crouches in a wooded area, offering food to a wallaby.](20.jpg#bleed)
 
@@ -73,7 +73,7 @@ This photo was actually an accident! I was resting my camera on a balcony railin
 
 ## Washington, D.C.
 
-More photos are available [here](https://photos.ashfurrow.com/dc).
+More photos are available [here](/blog/d-c/).
 
 ![The Washington Monument rises above a reflecting pool, with cherry trees in pale pink bloom along the shore and people gathered on stone steps below.](34.jpg)
 ![Two pale pink cherry blossoms open on a thin branch, with more blossoming trees blurred behind them.](35.jpg)
@@ -127,7 +127,7 @@ Starting with this photo which, again, was an accident that turned out really co
 
 ## The Artsy Offsite
 
-More photos available [here](https://photos.ashfurrow.com/artsy-offsite-2017).
+More photos available [here](/blog/artsy-offsite-2017/).
 
 ![Calm forest pond with tall pine trees along the bank, their reflections mirrored in still green water.](60.jpg#wide)
 ![Sunlight filters through morning mist over a calm river, with leafy trees and green grass along the bank.](61.jpg)
