@@ -279,9 +279,9 @@ p code {
 /* Full width of the window, whatever the column. 100vw includes the scrollbar, so clip the overflow it causes. */
 .bleed {
   grid-column: 1 / -1;
-  justify-self: center;
-  width: 100vw;
-  margin: 0 0 1.66rem 0;
+  /* A percentage margin is relative to the grid area, so this makes the block exactly as wide as the window. (A fixed width of 100vw
+     would widen the grid's columns on narrow screens.) */
+  margin: 0 calc(50% - 50vw) 1.66rem;
   position: relative;
 }
 body:has(.bleed) {
@@ -857,6 +857,11 @@ footer .attribution {
 .post-title,
 .recent-post-title {
   margin-right: 0.5rem;
+}
+.photo-marker {
+  margin-left: 0.2rem;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.4);
 }
 .post-date,
 .recent-post-date {

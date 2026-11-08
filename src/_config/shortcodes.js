@@ -9,6 +9,8 @@ const md = new MarkdownIt({
   typographer: true
 })
 
+const escapeAttr = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;")
+
 /**
  * Groups items in a collection by a key returned from the iteratee function.
  * @template T
@@ -55,7 +57,8 @@ export default function (eleventyConfig) {
     const posts = collection.map((p) => ({
       title: p.data.title,
       url: p.url,
-      date: p.date
+      date: p.date,
+      photo: p.data.layout === "layouts/photo.njk"
     }))
 
     const postsByYear = groupBy(posts, (post) => {
@@ -110,6 +113,11 @@ export default function (eleventyConfig) {
       // Grab the first non-empty line of markdown and render it. (I never kick blog posts off with anything but a paragraph.)
       const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => p.trim().length > 0)
       return md.render(excerpt).trim()
+    }
+    if (this.ctx.layout === "layouts/photo.njk") {
+      // Photo posts can start with a heading, a photo or an embed; the description is the first line of prose.
+      const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => /^[^#!{<\s]/.test(p))
+      return excerpt ? md.render(excerpt).trim() : this.ctx.subtitle || Metadata.description
     }
     return Metadata.description
   })
@@ -191,12 +199,24 @@ export default function (eleventyConfig) {
       ></iframe>
     </div>`
   })
-  eleventyConfig.addShortcode("tweet", function (tweetId) {
+  // A tweet's id, or (as in photo posts) its URL.
+  eleventyConfig.addShortcode("tweet", function (tweet) {
+    const isUrl = /^https?:/.test(tweet)
+    const url = isUrl ? escapeAttr(tweet) : `https://twitter.com/twitter/status/${tweet}`
     return `<div class="narrow">
-      <blockquote class="twitter-tweet">
-        <a href="https://twitter.com/twitter/status/${tweetId}"></a>
+      <blockquote class="twitter-tweet"${isUrl ? ' data-dnt="true"' : ""}>
+        <a href="${url}"></a>
       </blockquote>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>`
+  })
+  eleventyConfig.addShortcode("instagram", function (url) {
+    const href = escapeAttr(url)
+    return `<div class="narrow">
+      <blockquote class="instagram-media" data-instgrm-permalink="${href}" data-instgrm-version="14" data-instgrm-captioned>
+        <a href="${href}">View this post on Instagram</a>
+      </blockquote>
+      <script async src="https://www.instagram.com/embed.js"></script>
     </div>`
   })
   eleventyConfig.addShortcode("speakerdeck", function (deckId, fourByThree = false) {

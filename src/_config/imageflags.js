@@ -139,7 +139,7 @@ async function photoGroups(content, dir) {
     })
   )
   let i = 0
-  return content.replace(groupPattern, () => groups[i++])
+  return content.replace(groupPattern, () => groups[i++]).replaceAll(' eleventy:ignore=""', "")
 }
 
 /**

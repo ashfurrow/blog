@@ -1,4 +1,4 @@
-{% set isPost = layout == 'layouts/post.njk' %}
+{% set isPost = layout == 'layouts/post.njk' or layout == 'layouts/photo.njk' %}
 {% set exceptOrDescription %}{% exceptOrDescription %}{% endset %}
 {% set socialDescription = exceptOrDescription | striptags | safe %}
 <!doctype html>
