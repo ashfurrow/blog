@@ -102,7 +102,7 @@
   margin-top: 3rem;
   padding-top: 1rem;
   border-top: 1px solid var(--grey-extra-light);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -116,7 +116,7 @@
 .location {
   margin: 2rem 0;
   text-align: center;
-  font: 700 0.85rem/1.4 var(--header-font-family);
+  font: 700 0.75rem/1.4 var(--header-font-family);
 }
 
 /* Lightbox */
@@ -144,6 +144,7 @@
   object-fit: contain;
 }
 
+/* Photo posts get their own styling here: the controls are bigger than anything else on the site. */
 #lightbox button {
   position: absolute;
   background: none;

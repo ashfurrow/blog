@@ -859,7 +859,8 @@ footer .attribution {
   margin-right: 0.5rem;
 }
 .photo-marker {
-  /* Sits right next to the date (just the space between them), after the title's own 0.5rem margin. */
+  /* Photo posts get their own styling: an icon sized relative to the date it sits next to, right after the title's own
+     0.5rem margin. */
   margin-right: 0;
   font-size: 0.8em;
   color: rgba(0, 0, 0, 0.4);
