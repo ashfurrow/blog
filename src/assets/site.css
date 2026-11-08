@@ -23,6 +23,13 @@
   /* --table-breakpoint: 1200px; */
 }
 
+/* On phones the gap between photos is the column's margin from the edge of the screen. */
+@media (max-width: 600px) {
+  :root {
+    --photo-gap: 0.5rem;
+  }
+}
+
 /* Layout */
 ::selection {
   color: var(--white);
