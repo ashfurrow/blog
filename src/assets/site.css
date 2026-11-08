@@ -284,6 +284,14 @@ p code {
   margin: 0 calc(50% - 50vw) 1.66rem;
   position: relative;
 }
+/* On phones the only space to cancel is the column's own margin. Computing it from 100vw left hairlines at the edges in
+   mobile Safari. */
+@media (max-width: 600px) {
+  .bleed {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
 body:has(.bleed) {
   overflow-x: clip;
 }
