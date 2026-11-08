@@ -88,6 +88,15 @@ async function photoGroups(content, page) {
 }
 
 /**
+ * The URL of a photo post's banner image (its largest size), also used as the header and social image so each banner is
+ * only processed once. `page` is the post or its page data (inputPath, outputPath, url).
+ */
+export async function coverURL(page, banner) {
+  const metadata = await resize(path.join(path.dirname(page.inputPath), banner), page)
+  return metadata.jpeg.at(-1).url
+}
+
+/**
  * @param {import("@11ty/eleventy").UserConfig} eleventyConfig
  */
 export default function (eleventyConfig) {
@@ -113,12 +122,7 @@ export default function (eleventyConfig) {
     const included = this.ctx.collections.photoPosts.filter(
       (post) => post.data.banner && post.data.randomBanner !== false
     )
-    const urls = []
-    for (const post of included) {
-      const metadata = await resize(path.join(path.dirname(post.inputPath), post.data.banner), post)
-      urls.push(metadata.jpeg.at(-1).url)
-    }
-    return JSON.stringify(urls)
+    return JSON.stringify(await Promise.all(included.map((post) => coverURL(post, post.data.banner))))
   })
 
   // {% photoCover post, sizes, loading %}: a photo post's banner as a <picture> for a card.

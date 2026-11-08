@@ -3,12 +3,17 @@ import MarkdownIt from "markdown-it"
 import { transformImage } from "./util/transformImage.js"
 import Metadata from "../_data/metadata.js"
 import { PHOTO_LAYOUT } from "./imageflags.js"
+import { coverURL } from "./photoposts.js"
 
 const md = new MarkdownIt({
   html: true,
   linkify: true,
   typographer: true
 })
+
+// A photo post's banner is the same file the /photos page uses; any other post's is processed by the blog's transform.
+const bannerURL = (ctx, imagePath) =>
+  ctx.layout === PHOTO_LAYOUT ? coverURL(ctx.page, imagePath) : transformImage(ctx, imagePath)
 
 const escapeAttr = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;")
 
@@ -133,11 +138,11 @@ export default function (eleventyConfig) {
     if (!imagePath) {
       return "/assets/bg/default.jpg"
     }
-    if (imagePath.includes("/assets/")) {
+    if (imagePath.startsWith("/")) {
       return imagePath
     }
 
-    return transformImage(this.ctx, imagePath)
+    return bannerURL(this.ctx, imagePath)
   })
 
   // Transforms the bannerImage, falling back to a site-wide default.
@@ -148,11 +153,11 @@ export default function (eleventyConfig) {
     if (!bannerPath) {
       return "/assets/bg/default.jpg"
     }
-    if (bannerPath.includes("/assets/")) {
+    if (bannerPath.startsWith("/")) {
       return bannerPath
     }
 
-    return await transformImage(this.ctx, bannerPath)
+    return bannerURL(this.ctx, bannerPath)
   })
 
   eleventyConfig.addPairedShortcode("wide", function (content) {
