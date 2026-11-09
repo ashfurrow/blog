@@ -872,6 +872,13 @@ footer .attribution {
   text-decoration: none;
   color: var(--primary);
 }
+.read-more-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+.read-more-link:hover {
+  color: var(--primary);
+}
 .post-title,
 .recent-post-title {
   margin-right: 0.5rem;
