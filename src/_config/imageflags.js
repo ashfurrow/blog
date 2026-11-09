@@ -9,8 +9,10 @@
 //  1. A markdown-it rule (here) strips the flags while the Markdown is rendered. In a blog post a paragraph with one
 //     flagged image (optionally inside a link) is wrapped in the same <div> the {% wide %} and {% narrow %} shortcodes
 //     make, and the image still goes through the blog's image transform. In a photo post (layout PHOTO_LAYOUT) every
-//     image is tagged data-photo, with its flags in data-flags, and told to be ignored by that transform.
-//  2. A transform (photoposts.js) turns each paragraph of data-photo images into a photo group.
+//     image is tagged data-photo, with its flags in data-flags, and told to be ignored by that transform. In a blog post
+//     a paragraph of only images (no blank line between them) is tagged data-group, and a lone image data-lightbox.
+//  2. A transform (photoposts.js) turns each paragraph of data-photo or data-group images into a photo group, and wraps
+//     each lone data-lightbox image in a link to itself that opens the lightbox.
 
 export const PHOTO_LAYOUT = "layouts/photo.njk"
 
@@ -51,6 +53,18 @@ export function markdownImageFlags(md) {
           image.attrSet("eleventy:ignore", "")
         })
         continue
+      }
+      // In a blog post the images stay in the blog's image transform (they keep their format and size); the tags tell
+      // photoposts.js to turn two or more of them into a photo group, or to make a lone image open in the lightbox.
+      if (!photoPost && onlyImages) {
+        if (images.length > 1) {
+          images.forEach((image, n) => {
+            image.attrSet("data-group", "")
+            if (flags[n].length > 0) image.attrSet("data-flags", flags[n].join("+"))
+          })
+          continue
+        }
+        images[0].attrSet("data-lightbox", "")
       }
       // Only a paragraph that is one image (maybe linked) gets the wrapper.
       const others = children.filter((child) => !["image", "link_open", "link_close"].includes(child.type))

@@ -1,4 +1,5 @@
-/* Photo posts (layouts/photo.njk). A group of photos is a .wide block; a lone photo is the text column unless flagged. */
+/* Photo groups and the lightbox, in every post. A group of photos is a .wide block; a lone photo is the text column
+   unless flagged. Photo posts (layouts/photo.njk, article.photo-layout) get more room around the photos. */
 
 /* Rows are decided at build time (src/_config/photo-rows.js); photos in a row grow by aspect ratio to share a height.
    On phones .row stops being a box and .mbreak spacers break the lines. */
@@ -10,31 +11,31 @@
 /* More room around text above the phone breakpoint, the same above a text block as below it. (Written as "not a phone"
    so the file breaks at the site's max-width: 600px.) */
 @media not all and (max-width: 600px) {
-  .photos {
+  .photo-layout .photos {
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
   }
 
   /* The first block under the banner. */
-  article.normal-width > :first-child {
+  article.photo-layout > :first-child {
     margin-top: 3.2rem;
   }
 
   /* A heading belongs to the photos under it, and two groups in a row are one block of photos. */
-  h2 + .photos {
+  .photo-layout h2 + .photos {
     margin-top: 1rem;
   }
 
-  .photos + .photos {
+  .photo-layout .photos + .photos {
     margin-top: 0;
   }
 
   /* A heading that starts a text block. */
-  .photos + h2 {
+  .photo-layout .photos + h2 {
     margin-top: 1rem;
   }
 
-  .photos:has(+ .photos) {
+  .photo-layout .photos:has(+ .photos) {
     margin-bottom: 2.2rem;
   }
 }
