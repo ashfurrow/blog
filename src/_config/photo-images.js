@@ -4,8 +4,8 @@ import path from "node:path"
 import Image from "@11ty/eleventy-img"
 
 export const options = {
-  widths: [600, 1200, 2000],
-  formats: ["webp", "jpeg"],
+  widths: [1200, 2000],
+  formats: ["jpeg"],
   filenameFormat: (id, src, width, format) => `${path.parse(src).name}-${width}.${format}`
 }
 
