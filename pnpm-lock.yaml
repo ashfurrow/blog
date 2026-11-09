@@ -14,9 +14,6 @@ importers:
       markdown-it:
         specifier: ^14.1.0
         version: 14.3.0
-      prismjs:
-        specifier: ^1.30.0
-        version: 1.30.0
     devDependencies:
       '@11ty/eleventy':
         specifier: ^3.1.1
@@ -24,9 +21,6 @@ importers:
       '@11ty/eleventy-img':
         specifier: ^6.0.4
         version: 6.0.4
-      '@11ty/eleventy-plugin-bundle':
-        specifier: ^3.0.6
-        version: 3.0.7(posthtml@0.16.7)
       '@11ty/eleventy-plugin-rss':
         specifier: ^2.0.4
         version: 2.0.4
