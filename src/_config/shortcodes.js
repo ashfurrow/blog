@@ -1,15 +1,9 @@
 import * as path from "path"
-import MarkdownIt from "markdown-it"
+import md from "./util/markdown.js"
 import { transformImage } from "./util/transformImage.js"
 import Metadata from "../_data/metadata.js"
 import { PHOTO_LAYOUT } from "./imageflags.js"
 import { coverURL } from "./photoposts.js"
-
-const md = new MarkdownIt({
-  html: true,
-  linkify: true,
-  typographer: true
-})
 
 // A photo post's banner is the same file the /photos page uses; any other post's is processed by the blog's transform.
 const bannerURL = (ctx, imagePath) =>

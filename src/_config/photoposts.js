@@ -15,7 +15,23 @@ const decode = (s) =>
     .replace(/&gt;/g, ">")
     .replace(/&amp;/g, "&")
 
-async function figure(page, { src, alt, flags }, { alone, layout }) {
+const DATA_ATTRS = ["data-photo", "data-group", "data-flags", "data-lightbox"]
+
+/** A blog post's image, already processed by the blog's image transform: the page's own file, at its own size. */
+function blogFigure({ blog, flags }) {
+  const ratio = Math.round((Number(blog.width) / Number(blog.height)) * 1000) / 1000
+  const attrs = Object.entries(blog)
+    .filter(([name]) => !DATA_ATTRS.includes(name))
+    .map(([name, value]) => (value === true || value === "" ? name : `${name}="${value}"`))
+  return {
+    ratio,
+    html: `<figure class="photo${flags.has("wide") ? " wide" : ""}" style="--ar: ${ratio}"><a href="${blog.src}" data-lightbox><img ${attrs.join(" ")}></a></figure>`
+  }
+}
+
+async function figure(page, photo, { alone, layout }) {
+  if (photo.blog) return blogFigure(photo)
+  const { src, alt, flags } = photo
   const metadata = await resize(path.join(path.dirname(page.inputPath), src), page)
   const largest = metadata.jpeg.at(-1)
   const ratio = Math.round((largest.width / largest.height) * 1000) / 1000
@@ -32,17 +48,24 @@ async function figure(page, { src, alt, flags }, { alone, layout }) {
   }
 }
 
-/** The photos of a paragraph made only of images from a photo post, or null for any other node. */
+/**
+ * The photos of a paragraph made only of images from a photo post (data-photo) or a group of images in a blog post
+ * (data-group, which must have been given their size), or null for any other node.
+ */
 function photosOf(node) {
   if (node.tag !== "p") return null
   const children = (node.content ?? []).filter((child) => typeof child !== "string" || child.trim())
-  if (children.length === 0 || !children.every((child) => child.tag === "img" && "data-photo" in (child.attrs ?? {}))) {
-    return null
-  }
+  const isImage = (child, marker) => child.tag === "img" && marker in (child.attrs ?? {})
+  const photoPost = children.length > 0 && children.every((child) => isImage(child, "data-photo"))
+  const blogGroup =
+    children.length > 1 &&
+    children.every((child) => isImage(child, "data-group") && child.attrs.width && child.attrs.height)
+  if (!photoPost && !blogGroup) return null
   return children.map(({ attrs }) => ({
     src: decode(attrs.src),
     alt: decode(attrs.alt ?? ""),
-    flags: new Set((attrs["data-flags"] ?? "").split("+").filter(Boolean))
+    flags: new Set((attrs["data-flags"] ?? "").split("+").filter(Boolean)),
+    blog: blogGroup ? attrs : null
   }))
 }
 
@@ -81,7 +104,15 @@ async function photoGroups(content, page) {
         return node
       })
       const built = new Map(await Promise.all([...groups].map(async ([node, group]) => [node, await group])))
-      tree.walk((node) => built.get(node) ?? node)
+      tree.walk((node) => {
+        const group = built.get(node)
+        if (group) return group
+        if (node.tag !== "img" || !node.attrs) return node
+        // A lone image in a blog post opens in the lightbox. (A group that couldn't be built has no use for its tags.)
+        const lightbox = "data-lightbox" in node.attrs
+        for (const name of DATA_ATTRS) delete node.attrs[name]
+        return lightbox ? { tag: "a", attrs: { href: node.attrs.src, "data-lightbox": "" }, content: [node] } : node
+      })
     }
   ]).process(content)
   return html
@@ -104,7 +135,7 @@ export default function (eleventyConfig) {
 
   // Dimensions come from the image files, so they are not stored anywhere.
   eleventyConfig.addTransform("photo-groups", async function (content) {
-    if (!this.page.outputPath?.endsWith(".html") || !content.includes("data-photo")) return content
+    if (!this.page.outputPath?.endsWith(".html") || !/data-(photo|group|lightbox)/.test(content)) return content
     return photoGroups(content, this.page)
   })
 

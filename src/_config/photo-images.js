@@ -5,7 +5,7 @@ import Image from "@11ty/eleventy-img"
 
 export const options = {
   widths: [600, 1200, 2000],
-  formats: ["webp", "jpeg"],
+  formats: ["jpeg"],
   filenameFormat: (id, src, width, format) => `${path.parse(src).name}-${width}.${format}`
 }
 

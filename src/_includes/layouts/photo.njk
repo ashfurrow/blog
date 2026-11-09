@@ -1,7 +1,5 @@
 ---
 layout: layouts/post.njk
-pageStylesheet: /assets/photo.css
-pageJavaScript: /assets/lightbox.js
 ---
 {{ content | safe }}
 
@@ -13,10 +11,3 @@ pageJavaScript: /assets/lightbox.js
 {% endif %}
 
 {% if location %}<p class="location">{{ location }}</p>{% endif %}
-
-<dialog id="lightbox" aria-label="Photo viewer">
-	<img alt="">
-	<button class="lb-close" aria-label="Close" data-lb="close">×</button>
-	<button class="lb-prev" aria-label="Previous photo" data-lb="prev">‹</button>
-	<button class="lb-next" aria-label="Next photo" data-lb="next">›</button>
-</dialog>

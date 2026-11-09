@@ -1,14 +1,7 @@
-import MarkdownIt from "markdown-it"
 import slugify from "@sindresorhus/slugify"
 
+import md from "./util/markdown.js"
 import { transformImage } from "./util/transformImage.js"
-
-// Initialize markdown parser
-const md = new MarkdownIt({
-  html: true,
-  linkify: true,
-  typographer: true
-})
 
 export default function (eleventyConfig) {
   eleventyConfig.addShortcode("personalTimeline", async function (timelineEntries) {
