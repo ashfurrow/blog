@@ -1,8 +1,3 @@
-{#
-  One post in a list of posts.
-  Usage: {% set post = ... %}{% include "partials/post-list-item.njk" %}
-  Photo posts get a marker when markPhotos is set.
-#}
 <li class="post-item{% if markPhotos and post.photo %} photo-post{% endif %}">
   <a href="{{ post.url }}" class="post-link">
     <span class="post-title">{% if post.title %}{{ post.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</span>
