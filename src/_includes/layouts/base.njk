@@ -15,7 +15,7 @@
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
 		<meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
-		{% if layout == photoLayout %}<meta property="article:published_time" content="{{ date | htmlDateString }}">
+		{% if isPost %}<meta property="article:published_time" content="{{ date | htmlDateString }}">
 		<meta property="article:author" content="{{ metadata.author.url }}">{% endif %}
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:description" content="{{ socialDescription }}">
@@ -26,7 +26,7 @@
 		<meta name="twitter:creator" content="{{ metadata.author.twitter }}">
 		<meta name="twitter:title" content="{{ title or metadata.title }}">
 		<meta name="twitter:url" content="{{ metadata.url }}{{ page.url }}">
-		<meta name="twitter:description" content="{{ exceptOrDescription | striptags | safe }}">
+		<meta name="twitter:description" content="{{ socialDescription }}">
 		<meta name="twitter:image" content="{{ metadata.url }}{% socialImageURL %}">
 		
 		<!-- RSS Feed -->
@@ -69,7 +69,7 @@
 				"@type": "ImageObject",
 				"url": "{{ metadata.url }}{% socialImageURL %}"
 			},
-			"description": {{ (socialDescription if layout == photoLayout else metadata.description) | toJson | safe }},
+			"description": {{ socialDescription | toJson | safe }},
 			"datePublished": "{{ date | htmlDateString }}",
 			"dateModified": "{{ date | htmlDateString }}",
 			"author": {
