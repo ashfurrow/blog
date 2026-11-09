@@ -387,13 +387,7 @@ header h1 {
 .header-content.left .header-divider {
   margin: 0.5rem 0; /* Left-aligned for posts */
 }
-.header-subtitle {
-  color: var(--white);
-  font-family: var(--header-font-family);
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: normal;
-}
+.header-subtitle,
 .header-date {
   color: var(--white);
   font-family: var(--header-font-family);
