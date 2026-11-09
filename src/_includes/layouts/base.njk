@@ -104,30 +104,20 @@
 					<img src="/assets/siteimage_dark.png" alt="Ash Furrow" class="logo-dark" eleventy:ignore>
 				</a>
 				<ul class="navbar-links">
-					<li><a href="/blog">Blog</a></li>
-					<li><a href="/photos">Photos</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/books">Books</a></li>
-					<li><a href="/portfolio">Portfolio</a></li>
-					<li><a href="/speaking">Speaking</a></li>
-					<li><a href="/search" aria-label="Search posts"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-					<li><a href="/feed.xml" aria-label="RSS Feed"><i class="fa-solid fa-square-rss"></i></a></li>
+					{%- for item in metadata.navigation %}
+					<li><a href="{{ item.href }}"{% if item.ariaLabel %} aria-label="{{ item.ariaLabel }}"{% endif %}>{% if item.icon %}<i class="fa-solid {{ item.icon }}"></i>{% else %}{{ item.label }}{% endif %}</a></li>
+					{%- endfor %}
 				</ul>
-				<button class="hamburger" aria-label="Toggle menu">
+				<button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
 					<i class="fa-solid fa-bars hamburger-icon hamburger-bars"></i>
 					<i class="fa-solid fa-xmark hamburger-icon hamburger-close"></i>
 				</button>
 			</div>
 			<div class="mobile-menu">
 				<ul class="mobile-links">
-					<li><a href="/blog">Blog</a></li>
-					<li><a href="/photos">Photos</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/books">Books</a></li>
-					<li><a href="/portfolio">Portfolio</a></li>
-					<li><a href="/speaking">Speaking</a></li>
-					<li><a href="/search">Search</a></li>
-					<li><a href="/feed.xml">Blog Feed</a></li>
+					{%- for item in metadata.navigation %}
+					<li><a href="{{ item.href }}">{{ item.mobileLabel or item.label }}</a></li>
+					{%- endfor %}
 				</ul>
 			</div>
 		</nav>
@@ -230,10 +220,12 @@
 				toggleMenu() {
 					this.isMenuOpen = !this.isMenuOpen
 					this.navbar.setAttribute('data-menu-open', this.isMenuOpen.toString())
+					this.hamburger.setAttribute('aria-expanded', this.isMenuOpen.toString())
 				}
 				closeMenu() {
 					this.isMenuOpen = false
 					this.navbar.setAttribute('data-menu-open', 'false')
+					this.hamburger.setAttribute('aria-expanded', 'false')
 				}
 			}
 			document.addEventListener('DOMContentLoaded', () => {
