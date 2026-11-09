@@ -116,10 +116,9 @@ export default function (eleventyConfig) {
     }
     const photo = this.ctx.layout === PHOTO_LAYOUT
     if (photo || this.ctx.layout === "layouts/post.njk") {
-      // Grab the first line of markdown that is prose and render it. (I never kick blog posts off with anything but a
-      // paragraph, but photo posts can start with a heading, a photo or an embed.)
-      const isProse = photo ? (line) => /^[^#!{<\s]/.test(line) : (line) => line.trim().length > 0
-      const excerpt = first(this.ctx.page.rawInput.split("\n"), isProse)
+      // Grab the first line of markdown that is prose and render it. (Posts can start with a heading, an image, a
+      // shortcode or some HTML.)
+      const excerpt = first(this.ctx.page.rawInput.split("\n"), (line) => /^[^#!{<\s]/.test(line))
       if (excerpt) return md.render(excerpt).trim()
     }
     if (photo) {
