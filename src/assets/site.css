@@ -426,11 +426,6 @@ header h1 {
   padding-right: env(safe-area-inset-right);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.navbar[data-scrolled="false"] {
-  background: transparent;
-  box-shadow: none;
-  border-bottom: none;
-}
 .navbar[data-scrolled="false"][data-menu-open="true"] {
   background: var(--white);
   box-shadow: none;
@@ -506,9 +501,6 @@ header h1 {
   padding: 0.5rem;
   transition: color 0.3s ease;
 }
-.navbar[data-scrolled="false"] .navbar-links a {
-  color: var(--white);
-}
 .navbar[data-scrolled="false"][data-menu-open="true"] .navbar-links a {
   color: var(--grey-dark);
 }
@@ -528,9 +520,6 @@ header h1 {
   height: 1.5rem;
   position: relative;
   transition: color 0.3s ease;
-}
-.navbar[data-scrolled="false"] .hamburger {
-  color: var(--white);
 }
 .navbar[data-scrolled="false"][data-menu-open="true"] .hamburger {
   color: var(--grey-default);
@@ -585,9 +574,6 @@ header h1 {
 .navbar[data-menu-open="true"] .hamburger svg[data-icon="xmark"] {
   opacity: 1;
   transform: translate(-52%, -48%) rotate(0deg);
-  font-size: 1.1rem;
-  width: 1.1rem;
-  height: 1.1rem;
 }
 .mobile-menu {
   position: fixed;
@@ -646,59 +632,21 @@ header h1 {
     height: 0;
     overflow: hidden;
   }
-  /* Force show hamburger in both scroll states */
+  /* Show the hamburger */
   .hamburger {
     display: block;
-    visibility: visible;
     font-size: 1.25rem;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .navbar[data-scrolled="false"] .hamburger {
-    color: var(--white);
-  }
-  .navbar[data-scrolled="true"] .hamburger {
-    color: var(--grey-default);
   }
   .navbar-logo {
-    display: flex;
-    visibility: visible;
     flex-shrink: 0;
-    width: auto;
-    height: 1.5rem;
-  }
-  .navbar[data-scrolled="false"] .logo-light {
-    display: block;
-  }
-  .navbar[data-scrolled="false"] .logo-dark {
-    display: none;
-  }
-  .navbar[data-scrolled="false"][data-menu-open="true"] .logo-light {
-    display: none;
-  }
-  .navbar[data-scrolled="false"][data-menu-open="true"] .logo-dark {
-    display: block;
-  }
-  .navbar[data-scrolled="true"] .logo-light {
-    display: none;
-  }
-  .navbar[data-scrolled="true"] .logo-dark {
-    display: block;
   }
   .navbar-container {
-    padding: 0 0.5rem 0 0.5rem;
     width: 100%;
     max-width: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-sizing: border-box;
   }
   .navbar-logo img {
     height: 1.5rem;
-    width: auto;
-    max-width: 1.5rem;
-    display: block;
     margin: 0;
   }
 }
