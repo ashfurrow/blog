@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import fs from "fs"
-import slugify from "@sindresorhus/slugify"
+import slugify from "../src/_config/util/slugify.js"
 import { exec } from "child_process"
 
 const main = async () => {
@@ -13,14 +13,7 @@ const main = async () => {
 
   const title = args.at(-1)
   // Note that while this matches slugs in blog.11ty.data.js the directory name itself doesn't affect the build output.
-  const slug = slugify(title, {
-    decamelize: false,
-    customReplacements: [
-      ["'", ""],
-      ["&", ""]
-    ],
-    preserveCharacters: ["_"]
-  })
+  const slug = slugify(title)
   const date = new Date().toLocaleDateString("en-CA")
 
   const post = `---
