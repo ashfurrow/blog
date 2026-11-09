@@ -3,7 +3,7 @@ title: About
 banner: /assets/bg/about.jpg
 ---
 
-I am a world-class software developer living in Atlantic Canada. [My early career](/blog/5-years-of-ios/) was focused on iOS development, but [my area of interest broadened](/blog/5-more-years-of-building-software/) until I could do many things. I'm interested in [TypeScript](/blog/javascript-is-good-actually/), [ReactNative](/blog/the-case-for-react-native/), and [GraphQL](/blog/the-spirit-of-moya/). I'm married with two cats. [I'm a prolific open source contributor](https://github.com/ashfurrow), I've [written books](/books), and I've [made photos](/photos/).
+I am a world-class software developer living in Atlantic Canada. [My early career](/blog/5-years-of-ios/) was focused on iOS development, but [my area of interest broadened](/blog/5-more-years-of-building-software/) until I could do many things. I became an expert in React Native, TypeScript, and other technologies. Then, [I returned to Swift](/blog/my-slow-return-to-a-swift-career/). I'm married with two cats. [I have prolific open source contributions](https://github.com/ashfurrow), have [written books](/books), and I'm a [photographer](/photos/).
 
 Community is incredibly important to me; I’ve only been able to accomplish what I have because of the kindness and generosity of others. I owe it to the people who helped me to help others now, which is why I volunteered with [Coalition for Queens](https://www.c4q.nyc) and ran a [Peer Lab](https://ashfurrow.github.io/peerlab.community) every week in New York [for five years](/blog/5-years-of-peer-lab/).
 
@@ -15,7 +15,7 @@ Over my career, I’ve been fortunate to work at some amazing places.
 
 ### Wealthsimple
 
-[I joined Wealthsimple](/blog/joining-wealthsimple/) in late 2025 to [leverage my deepest specialty](/blog/work-at-your-spikes/), crafting high-quality mobile user experiences. This is still early days, but you can expect big things.
+[I joined Wealthsimple](/blog/joining-wealthsimple/) in late 2025 to [leverage my deepest specialty](/blog/work-at-your-spikes/), crafting high-quality mobile user experiences. I'm working on [something great](/blog/wealthsimple-native-app-rebuild/) at the moment.
 
 ### Float
 
