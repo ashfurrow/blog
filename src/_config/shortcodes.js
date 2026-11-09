@@ -135,7 +135,7 @@ export default function (eleventyConfig) {
     const imagePath = this.ctx.socialImage || this.ctx.banner
 
     if (!imagePath) {
-      return "/assets/bg/default.jpg"
+      return Metadata.banner
     }
     if (imagePath.startsWith("/")) {
       return imagePath
@@ -150,7 +150,7 @@ export default function (eleventyConfig) {
     const bannerPath = this.ctx.banner
 
     if (!bannerPath) {
-      return "/assets/bg/default.jpg"
+      return Metadata.banner
     }
     if (bannerPath.startsWith("/")) {
       return bannerPath
