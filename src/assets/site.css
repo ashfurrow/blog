@@ -501,6 +501,9 @@ header h1 {
   padding: 0.5rem;
   transition: color 0.3s ease;
 }
+.navbar[data-scrolled="false"] .navbar-links a {
+  color: var(--white);
+}
 .navbar[data-scrolled="false"][data-menu-open="true"] .navbar-links a {
   color: var(--grey-dark);
 }
