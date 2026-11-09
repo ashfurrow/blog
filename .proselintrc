@@ -2,7 +2,6 @@
   "checks": {
     "typography.exclamation": false,
     "misc.but": false,
-    "typography.symbols": false,
-    "typography.exclamation": false
+    "typography.symbols": false
   }
 }

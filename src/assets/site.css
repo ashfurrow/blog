@@ -263,11 +263,6 @@ p code {
   margin: 0 auto 1.66rem auto;
   position: relative;
 }
-@media (max-width: 1200px) {
-  .wide {
-    grid-column: 2 / 12;
-  }
-}
 @media (max-width: 600px) {
   .wide {
     grid-column: 1 / 13;
@@ -392,13 +387,7 @@ header h1 {
 .header-content.left .header-divider {
   margin: 0.5rem 0; /* Left-aligned for posts */
 }
-.header-subtitle {
-  color: var(--white);
-  font-family: var(--header-font-family);
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: normal;
-}
+.header-subtitle,
 .header-date {
   color: var(--white);
   font-family: var(--header-font-family);
@@ -436,11 +425,6 @@ header h1 {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.navbar[data-scrolled="false"] {
-  background: transparent;
-  box-shadow: none;
-  border-bottom: none;
 }
 .navbar[data-scrolled="false"][data-menu-open="true"] {
   background: var(--white);
@@ -540,9 +524,6 @@ header h1 {
   position: relative;
   transition: color 0.3s ease;
 }
-.navbar[data-scrolled="false"] .hamburger {
-  color: var(--white);
-}
 .navbar[data-scrolled="false"][data-menu-open="true"] .hamburger {
   color: var(--grey-default);
 }
@@ -596,9 +577,6 @@ header h1 {
 .navbar[data-menu-open="true"] .hamburger svg[data-icon="xmark"] {
   opacity: 1;
   transform: translate(-52%, -48%) rotate(0deg);
-  font-size: 1.1rem;
-  width: 1.1rem;
-  height: 1.1rem;
 }
 .mobile-menu {
   position: fixed;
@@ -657,59 +635,21 @@ header h1 {
     height: 0;
     overflow: hidden;
   }
-  /* Force show hamburger in both scroll states */
+  /* Show the hamburger */
   .hamburger {
     display: block;
-    visibility: visible;
     font-size: 1.25rem;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .navbar[data-scrolled="false"] .hamburger {
-    color: var(--white);
-  }
-  .navbar[data-scrolled="true"] .hamburger {
-    color: var(--grey-default);
   }
   .navbar-logo {
-    display: flex;
-    visibility: visible;
     flex-shrink: 0;
-    width: auto;
-    height: 1.5rem;
-  }
-  .navbar[data-scrolled="false"] .logo-light {
-    display: block;
-  }
-  .navbar[data-scrolled="false"] .logo-dark {
-    display: none;
-  }
-  .navbar[data-scrolled="false"][data-menu-open="true"] .logo-light {
-    display: none;
-  }
-  .navbar[data-scrolled="false"][data-menu-open="true"] .logo-dark {
-    display: block;
-  }
-  .navbar[data-scrolled="true"] .logo-light {
-    display: none;
-  }
-  .navbar[data-scrolled="true"] .logo-dark {
-    display: block;
   }
   .navbar-container {
-    padding: 0 0.5rem 0 0.5rem;
     width: 100%;
     max-width: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-sizing: border-box;
   }
   .navbar-logo img {
     height: 1.5rem;
-    width: auto;
-    max-width: 1.5rem;
-    display: block;
     margin: 0;
   }
 }
@@ -793,9 +733,7 @@ footer .attribution {
 }
 @media (max-width: 600px) {
   .pagination-button {
-    width: 100%;
     margin: 0.25rem auto;
-    float: none;
   }
 }
 .pagination a:hover .pagination-button,
@@ -856,19 +794,16 @@ footer .attribution {
 }
 
 /* Shared Post List Styling */
-.post-list,
-.recent-posts {
+.post-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.post-item,
-.recent-post-item {
+.post-item {
   margin: 0;
   padding: 0;
 }
-.post-link,
-.recent-post-link {
+.post-link {
   text-decoration: none;
   color: var(--primary);
 }
@@ -879,8 +814,7 @@ footer .attribution {
 .read-more-link:hover {
   color: var(--primary);
 }
-.post-title,
-.recent-post-title {
+.post-title {
   margin-right: 0.5rem;
 }
 /* In the archive the photo marker hangs in the left margin of the list. On phones there is no margin to hang in, so it
@@ -902,8 +836,7 @@ footer .attribution {
     margin: 0 0 0 0.5rem;
   }
 }
-.post-date,
-.recent-post-date {
+.post-date {
   color: rgba(0, 0, 0, 0.5);
 }
 

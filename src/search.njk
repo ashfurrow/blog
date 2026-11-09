@@ -2,11 +2,9 @@
 layout: layouts/page.njk
 title: Search
 description: Search Ash Furrow's blog.
-banner: /assets/search.jpg
+banner: /assets/bg/search.jpg
+pageStylesheet: /assets/search.css
 ---
-
-<article>
-<link rel="stylesheet" href="/assets/search.css">
 
 <div class="search-container">
   <div class="search-input-container">
@@ -23,9 +21,7 @@ banner: /assets/search.jpg
   <ul id="search-results" class="search-results-list">
     <!-- Results will be populated here -->
   </ul>
-  <div id="search-status" class="search-status"></div>
 </div>
 
 <script src="/assets/lunr.js"></script>
 <script src="/assets/search.js"></script>
-</article>

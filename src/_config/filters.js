@@ -4,28 +4,6 @@
  */
 export default function (eleventyConfig) {
   eleventyConfig.addFilter(
-    "parseDate",
-    /**
-     * Parses a date string into a Date object.
-     * @param {string} dateString - The date string to parse
-     * @returns {Date} The parsed Date object
-     */
-    function (dateString) {
-      return new Date(dateString)
-    }
-  )
-
-  eleventyConfig.addFilter(
-    "fromJson",
-    /**
-     * @param {string} str - The JSON string to parse
-     */
-    function (str) {
-      return JSON.parse(str)
-    }
-  )
-
-  eleventyConfig.addFilter(
     "readableDate",
     /**
      * @param {Date} dateObj
@@ -73,20 +51,27 @@ export default function (eleventyConfig) {
     }
   )
 
+  eleventyConfig.addFilter("toJson", function (content) {
+    // Nunjucks' SafeString (the result of `| safe`) would otherwise be serialized as an object. The output goes into a
+    // <script> element, so a "<" must not be able to start a closing tag.
+    return JSON.stringify(content instanceof String ? content.toString() : content).replace(/</g, "\\u003c")
+  })
+
   eleventyConfig.addFilter(
-    "min",
+    "decodeEntities",
     /**
-     * @param {...number} numbers
+     * Turns the entities that Markdown and Nunjucks escape text with back into characters, for text that is not HTML.
+     * @param {string} text
      */
-    function (...numbers) {
-      return Math.min.apply(null, numbers)
+    function (text) {
+      return String(text)
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&amp;/g, "&")
     }
   )
-
-  eleventyConfig.addFilter("toJson", function (content) {
-    // Nunjucks' SafeString (the result of `| safe`) would otherwise be serialized as an object.
-    return JSON.stringify(content instanceof String ? content.toString() : content)
-  })
 
   // Override the RSS plugin's dateToRfc822 to force UTC (fixes #530)
   eleventyConfig.addNunjucksFilter("dateToRfc822", function (value) {

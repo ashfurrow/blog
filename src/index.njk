@@ -35,24 +35,11 @@ featuredPosts:
   {%- endfor %}
 </div>
 
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-
 <h2 class="section-title">Recent Posts</h2>
 
-{% set postslist = collections.posts | reverse %}
-
-<ol class="post-list recent-posts">
-  {%- for post in postslist %}
-    {%- if loop.index <= numberOfLatestPostsToShow %}
-    <li class="post-item recent-post-item">
-      <a href="{{ post.url }}" class="post-link recent-post-link">
-        <span class="post-title recent-post-title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</span>
-        <time class="post-date recent-post-date" datetime="{{ post.date | parseDate | htmlDateString }}">{{ post.date | readableDate("LLLL dd, yyyy") }}</time>
-      </a>
-    </li>
-    {%- endif %}
+<ol class="post-list">
+  {%- for post in collections.postSummaries | head(numberOfLatestPostsToShow) %}
+  {% include "partials/post-list-item.njk" %}
   {%- endfor %}
 </ol>
 <a href="/blog" class="read-more-link">Read more</a>
-  

@@ -1,0 +1,9 @@
+<li class="post-item{% if markPhotos and post.photo %} photo-post{% endif %}">
+  <a href="{{ post.url }}" class="post-link">
+    <span class="post-title">{% if post.title %}{{ post.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</span>
+    <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    {%- if markPhotos and post.photo %}
+    <i class="fa-solid fa-image photo-marker" title="Photo post" role="img" aria-label="Photo post"></i>
+    {%- endif %}
+  </a>
+</li>

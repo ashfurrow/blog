@@ -102,7 +102,7 @@ class SiteSearchApp {
           return `
             <li class="search-result-item">
               <a href="${doc.url}">${doc.title}</a>
-              <span class="search-result-date">${new Date(doc.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+              <span class="search-result-date">${new Date(doc.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })}</span>
             </li>
           `
         })
