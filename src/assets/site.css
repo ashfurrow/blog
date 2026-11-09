@@ -8,6 +8,9 @@
   --grey-light: #eee;
   --grey-extra-light: rgba(0, 0, 0, 0.1);
   
+  /* The space between photos in a photo post and between the cards on /photos. */
+  --photo-gap: clamp(4px, 1vw, 12px);
+
   --header-font-family: 'Futura', sans-serif;
   --body-font-family: 'ff-tisa-web-pro', serif;
   --base-font-size: 20px;
@@ -18,6 +21,13 @@
   /* Media queries don't support variables, apparently, lol */
   /* --mobile-breakpoint: 600px; */
   /* --table-breakpoint: 1200px; */
+}
+
+/* On phones the gap between photos is the column's margin from the edge of the screen. */
+@media (max-width: 600px) {
+  :root {
+    --photo-gap: 0.5rem;
+  }
 }
 
 /* Layout */
@@ -283,6 +293,14 @@ p code {
      width of 100vw would widen the grid's columns on narrow screens.) */
   margin: 0 calc(50% - 50vw) 1.66rem;
   position: relative;
+}
+/* On phones the only space to cancel is the column's own margin. Computing it from 100vw left hairlines at the edges in
+   mobile Safari. */
+@media (max-width: 600px) {
+  .bleed {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
 }
 body:has(.bleed) {
   overflow-x: clip;
@@ -857,6 +875,25 @@ footer .attribution {
 .post-title,
 .recent-post-title {
   margin-right: 0.5rem;
+}
+/* In the archive the photo marker hangs in the left margin of the list. On phones there is no margin to hang in, so it
+   follows the date. */
+.photo-post {
+  position: relative;
+}
+.photo-marker {
+  position: absolute;
+  right: 100%;
+  top: 0.69em;
+  margin-right: 0.5rem;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 600px) {
+  .photo-marker {
+    position: static;
+    margin: 0 0 0 0.5rem;
+  }
 }
 .post-date,
 .recent-post-date {

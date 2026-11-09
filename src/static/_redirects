@@ -32,3 +32,28 @@ https://ashfurrow-blog.netlify.com/*	https://ashfurrow.com/:splat	301!
 
 # Similar to the above, we need a few redirects for the 11ty migration
 /blog/index-card-q-a/ /blog/index-card-qa/
+
+# Redirects for photos.ashfurrow.com. Rules apply top to bottom, so the specific ones come first. A story whose slug is
+# the same here (/blog/<slug>/) is covered by the two placeholder rules below; the six whose slug changed are listed
+# before them. Those two are not forced (no `!`), so a path that exists on this site, like /robots.txt, is still served.
+https://photos.ashfurrow.com/feed.rss https://ashfurrow.com/feed.xml 301!
+https://photos.ashfurrow.com/search https://ashfurrow.com/search 301!
+https://photos.ashfurrow.com/site/subscribe https://ashfurrow.com/feed.xml 301!
+https://photos.ashfurrow.com/categories https://ashfurrow.com/blog/ 301!
+https://photos.ashfurrow.com/categories/* https://ashfurrow.com/blog/ 301!
+https://photos.ashfurrow.com/moving-to-amsterdam https://ashfurrow.com/blog/moving-to-amsterdam-photos/ 301!
+https://photos.ashfurrow.com/moving-to-amsterdam/photos/* https://ashfurrow.com/blog/moving-to-amsterdam-photos/ 301!
+https://photos.ashfurrow.com/manahattanhenge https://ashfurrow.com/blog/manhattanhenge/ 301!
+https://photos.ashfurrow.com/manahattanhenge/photos/* https://ashfurrow.com/blog/manhattanhenge/ 301!
+https://photos.ashfurrow.com/cransmontana https://ashfurrow.com/blog/crans-montana/ 301!
+https://photos.ashfurrow.com/cransmontana/photos/* https://ashfurrow.com/blog/crans-montana/ 301!
+https://photos.ashfurrow.com/dc https://ashfurrow.com/blog/d-c/ 301!
+https://photos.ashfurrow.com/dc/photos/* https://ashfurrow.com/blog/d-c/ 301!
+https://photos.ashfurrow.com/lakecation-2018 https://ashfurrow.com/blog/lake-cation-2018/ 301!
+https://photos.ashfurrow.com/lakecation-2018/photos/* https://ashfurrow.com/blog/lake-cation-2018/ 301!
+https://photos.ashfurrow.com/st-john-container-village https://ashfurrow.com/blog/saint-john-container-village/ 301!
+https://photos.ashfurrow.com/st-john-container-village/photos/* https://ashfurrow.com/blog/saint-john-container-village/ 301!
+# The stories whose slug stayed the same.
+https://photos.ashfurrow.com/:slug/photos/* https://ashfurrow.com/blog/:slug/ 301
+https://photos.ashfurrow.com/:slug https://ashfurrow.com/blog/:slug/ 301
+https://photos.ashfurrow.com/ https://ashfurrow.com/photos/ 301!

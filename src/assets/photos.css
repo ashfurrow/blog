@@ -1,0 +1,60 @@
+/* The /photos page: a grid of the photo posts, each a banner with its title and date at the bottom left, aligned like the
+   featured posts on the home page. */
+
+.photo-cards {
+  list-style: none;
+  margin: 2rem auto 3rem;
+  padding: 0 var(--photo-gap);
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: var(--photo-gap);
+}
+
+.photo-card-frame {
+  position: relative;
+  display: block;
+  color: #fff;
+  background: #000;
+  overflow: hidden;
+}
+
+.photo-card-frame picture,
+.photo-card-image {
+  display: block;
+}
+
+.photo-card-image {
+  width: 100%;
+  aspect-ratio: 10 / 9;
+  object-fit: cover;
+}
+
+.photo-card-text {
+  position: absolute;
+  inset: auto 0 0 0;
+  /* Left-aligned like the featured posts, at the bottom, on a soft scrim so it reads over any photo. */
+  padding: 3rem 0.75rem 0.75rem;
+  text-align: left;
+  font-family: var(--header-font-family);
+  font-weight: var(--font-weight-bold);
+  background: linear-gradient(to top, rgb(0 0 0 / 0.65), rgb(0 0 0 / 0));
+}
+
+.photo-card-text > * {
+  display: block;
+}
+
+.photo-card-title {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.photo-card-date {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.photo-card-frame:hover .photo-card-image {
+  opacity: 0.92;
+}

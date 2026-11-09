@@ -1,0 +1,32 @@
+---
+title: Photos
+description: Photo stories by Ash Furrow.
+layout: layouts/full_page.njk
+pageStylesheet: /assets/photos.css
+banner: /assets/bg/default.jpg
+---
+
+{#- A different photo post banner on every visit. Without JavaScript the page keeps the default banner. #}
+<script>
+  ;(function () {
+    var banners = {% photoBanners %}
+    var header = document.querySelector("header.site-header")
+    if (header && banners.length) {
+      header.style.setProperty("--banner-image", "url('" + banners[Math.floor(Math.random() * banners.length)] + "')")
+    }
+  })()
+</script>
+
+<ul class="photo-cards">
+  {%- for post in collections.photoPosts %}
+  <li class="photo-card">
+    <a href="{{ post.url }}" class="photo-card-frame">
+      {% photoCover post, "(min-width: 1100px) 460px, (min-width: 700px) 50vw, 100vw", ("eager" if loop.index0 < 3 else "lazy") %}
+      <span class="photo-card-text">
+        <span class="photo-card-title">{{ post.data.title }}</span>
+        <time class="photo-card-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </span>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>

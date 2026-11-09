@@ -1,4 +1,4 @@
-{% set isPost = layout == 'layouts/post.njk' %}
+{% set isPost = layout == 'layouts/post.njk' or layout == photoLayout %}
 {% set exceptOrDescription %}{% exceptOrDescription %}{% endset %}
 {% set socialDescription = exceptOrDescription | striptags | safe %}
 <!doctype html>
@@ -15,6 +15,8 @@
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
 		<meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+		{% if layout == photoLayout %}<meta property="article:published_time" content="{{ date | htmlDateString }}">
+		<meta property="article:author" content="{{ metadata.author.url }}">{% endif %}
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:description" content="{{ socialDescription }}">
 		<meta property="og:image" content="{{ metadata.url }}{% socialImageURL %}">
@@ -23,7 +25,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:creator" content="{{ metadata.author.twitter }}">
 		<meta name="twitter:title" content="{{ title or metadata.title }}">
-		<meta name="twitter:url" content="{{ metadata.url }}">
+		<meta name="twitter:url" content="{{ metadata.url }}{{ page.url }}">
 		<meta name="twitter:description" content="{{ exceptOrDescription | striptags | safe }}">
 		<meta name="twitter:image" content="{{ metadata.url }}{% socialImageURL %}">
 		
@@ -67,7 +69,7 @@
 				"@type": "ImageObject",
 				"url": "{{ metadata.url }}{% socialImageURL %}"
 			},
-			"description": "{{ metadata.description }}",
+			"description": {{ (socialDescription if layout == photoLayout else metadata.description) | toJson | safe }},
 			"datePublished": "{{ date | htmlDateString }}",
 			"dateModified": "{{ date | htmlDateString }}",
 			"author": {
@@ -103,6 +105,7 @@
 				</a>
 				<ul class="navbar-links">
 					<li><a href="/blog">Blog</a></li>
+					<li><a href="/photos">Photos</a></li>
 					<li><a href="/about">About</a></li>
 					<li><a href="/books">Books</a></li>
 					<li><a href="/portfolio">Portfolio</a></li>
@@ -118,6 +121,7 @@
 			<div class="mobile-menu">
 				<ul class="mobile-links">
 					<li><a href="/blog">Blog</a></li>
+					<li><a href="/photos">Photos</a></li>
 					<li><a href="/about">About</a></li>
 					<li><a href="/books">Books</a></li>
 					<li><a href="/portfolio">Portfolio</a></li>
@@ -132,7 +136,7 @@
 			<div class="header-content{% if isPost %} left{% endif %}">
 				<h1>{{title}}</h1>
 				{% if subtitle %}
-					<hr class="header-divider">
+					{% if layout != photoLayout %}<hr class="header-divider">{% endif %}
 					<div class="header-subtitle">{{subtitle}}</div>
 				{% endif %}
 				{% if isPost and date %}
@@ -163,10 +167,6 @@
 			<span class="fa-fw fa-3x">
 				<a class="icon" href="https://github.com/ashfurrow" title="GitHub" rel="me">
 					<i class="fa-brands fa-github" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
-			</span>
-			<span class="fa-fw fa-3x">
-				<a class="icon" href="https://photos.ashfurrow.com" title="Photo Blog" rel="me">
-					<i class="fa-solid fa-image" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i></a>
 			</span>
 			<span class="fa-fw fa-3x">
 				<a class="icon" href="http://instagram.com/ashfurrow" title="Instagram" rel="me">

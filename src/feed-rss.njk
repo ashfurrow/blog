@@ -13,13 +13,17 @@ layout: false
     <language>{{ metadata.language }}</language>
     {%- for post in collections.posts | reverse | head(10) %}
     {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+    {%- set summary = post.templateContent | striptags | truncate | trim %}
+    {%- if not summary and post.data.layout == photoLayout %}
+      {%- set summary = post.data.subtitle or ("Photos from " + post.data.location + "." if post.data.location else "Photos by " + metadata.author.name + ".") %}
+    {%- endif %}
     <item>
       <title><![CDATA[{{ post.data.title }}]]></title>
       <link>{{ absolutePostUrl }}</link>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <guid>{{ absolutePostUrl }}</guid>
-      <description><![CDATA[{{ post.templateContent | striptags | truncate }}]]></description>
-      <content:encoded>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content:encoded>
+      <description><![CDATA[{{ summary }}]]></description>
+      <content:encoded>{{ post.templateContent | renderTransforms(post.data.page) | htmlToAbsoluteUrls(absolutePostUrl) }}</content:encoded>
     </item>
     {%- endfor %}
   </channel>

@@ -1,0 +1,181 @@
+/* Photo posts (layouts/photo.njk). A group of photos is a .wide block; a lone photo is the text column unless flagged. */
+
+/* Rows are decided at build time (src/_config/photo-rows.js); photos in a row grow by aspect ratio to share a height.
+   On phones .row stops being a box and .mbreak spacers break the lines. */
+.photos {
+  /* Only the bottom: the sides belong to .wide, .narrow and .bleed in site.css. */
+  margin-bottom: 1.66rem;
+}
+
+/* More room around text above the phone breakpoint, the same above a text block as below it. (Written as "not a phone"
+   so the file breaks at the site's max-width: 600px.) */
+@media not all and (max-width: 600px) {
+  .photos {
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  /* The first block under the banner. */
+  article.normal-width > :first-child {
+    margin-top: 3.2rem;
+  }
+
+  /* A heading belongs to the photos under it, and two groups in a row are one block of photos. */
+  h2 + .photos {
+    margin-top: 1rem;
+  }
+
+  .photos + .photos {
+    margin-top: 0;
+  }
+
+  /* A heading that starts a text block. */
+  .photos + h2 {
+    margin-top: 1rem;
+  }
+
+  .photos:has(+ .photos) {
+    margin-bottom: 2.2rem;
+  }
+}
+
+.row {
+  display: flex;
+  gap: var(--photo-gap);
+}
+
+.row + .row {
+  margin-top: var(--photo-gap);
+}
+
+.mbreak {
+  display: none;
+}
+
+.photo {
+  position: relative;
+  margin: 0;
+  /* A photo can't be selected, which would cover it in the theme colour. (Safari needs the prefix.) */
+  -webkit-user-select: none;
+  user-select: none;
+  /* Scaled up: grow factors that add up to less than 1 (a lone portrait) would fill only part of the row. */
+  flex: calc(var(--ar) * 1000) 1 0%;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--photo-gap);
+  }
+
+  .row {
+    display: contents;
+  }
+
+  .mbreak {
+    display: block;
+    flex: 0 0 100%;
+    height: var(--photo-gap);
+  }
+}
+
+.photo a {
+  display: block;
+}
+
+.photo img {
+  width: 100%;
+}
+
+/* End of the post */
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--grey-extra-light);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.footnotes h2 {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.location {
+  margin: 2rem 0;
+  text-align: center;
+  font: 700 0.75rem/1.4 var(--header-font-family);
+}
+
+/* Lightbox */
+#lightbox {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  background: rgb(0 0 0 / 0.94);
+}
+
+#lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+
+/* The page behind is the dim over white (#0f0f0f), so Safari's bars match it. */
+html:has(#lightbox[open]),
+html:has(#lightbox[open]) body {
+  background: #0f0f0f;
+}
+
+#lightbox img {
+  max-width: 96vw;
+  max-height: 94vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Photo posts get their own styling here: the controls are bigger than anything else on the site. */
+#lightbox button {
+  position: absolute;
+  background: none;
+  border: 0;
+  color: #fff;
+  font:
+    2.5rem/1 system-ui,
+    sans-serif;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#lightbox button:hover,
+#lightbox button:focus-visible {
+  opacity: 1;
+}
+
+.lb-close {
+  top: 0;
+  right: 0;
+}
+
+.lb-prev,
+.lb-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lb-prev {
+  left: 0;
+}
+
+.lb-next {
+  right: 0;
+}

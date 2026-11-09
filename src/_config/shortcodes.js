@@ -2,12 +2,20 @@ import * as path from "path"
 import MarkdownIt from "markdown-it"
 import { transformImage } from "./util/transformImage.js"
 import Metadata from "../_data/metadata.js"
+import { PHOTO_LAYOUT } from "./imageflags.js"
+import { coverURL } from "./photoposts.js"
 
 const md = new MarkdownIt({
   html: true,
   linkify: true,
   typographer: true
 })
+
+// A photo post's banner is the same file the /photos page uses; any other post's is processed by the blog's transform.
+const bannerURL = (ctx, imagePath) =>
+  ctx.layout === PHOTO_LAYOUT ? coverURL(ctx.page, imagePath) : transformImage(ctx, imagePath)
+
+const escapeAttr = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;")
 
 /**
  * Groups items in a collection by a key returned from the iteratee function.
@@ -51,11 +59,11 @@ function first(collection, check) {
 export default function (eleventyConfig) {
   // Groups posts by month and year, returning a JSON string.
   eleventyConfig.addShortcode("groupedPosts", function () {
-    const collection = this.ctx.collections.posts
-    const posts = collection.map((p) => ({
+    const posts = this.ctx.collections.posts.map((p) => ({
       title: p.data.title,
       url: p.url,
-      date: p.date
+      date: p.date,
+      photo: p.data.layout === PHOTO_LAYOUT
     }))
 
     const postsByYear = groupBy(posts, (post) => {
@@ -106,10 +114,17 @@ export default function (eleventyConfig) {
     if (this.ctx.description) {
       return this.ctx.description
     }
-    if (this.ctx.layout === "layouts/post.njk") {
-      // Grab the first non-empty line of markdown and render it. (I never kick blog posts off with anything but a paragraph.)
-      const excerpt = first(this.ctx.page.rawInput.split("\n"), (p) => p.trim().length > 0)
-      return md.render(excerpt).trim()
+    const photo = this.ctx.layout === PHOTO_LAYOUT
+    if (photo || this.ctx.layout === "layouts/post.njk") {
+      // Grab the first line of markdown that is prose and render it. (I never kick blog posts off with anything but a
+      // paragraph, but photo posts can start with a heading, a photo or an embed.)
+      const isProse = photo ? (line) => /^[^#!{<\s]/.test(line) : (line) => line.trim().length > 0
+      const excerpt = first(this.ctx.page.rawInput.split("\n"), isProse)
+      if (excerpt) return md.render(excerpt).trim()
+    }
+    if (photo) {
+      if (this.ctx.subtitle) return this.ctx.subtitle
+      return this.ctx.location ? `Photos from ${this.ctx.location}.` : `Photos by ${Metadata.author.name}.`
     }
     return Metadata.description
   })
@@ -123,11 +138,11 @@ export default function (eleventyConfig) {
     if (!imagePath) {
       return "/assets/bg/default.jpg"
     }
-    if (imagePath.includes("/assets/")) {
+    if (imagePath.startsWith("/")) {
       return imagePath
     }
 
-    return transformImage(this.ctx, imagePath)
+    return bannerURL(this.ctx, imagePath)
   })
 
   // Transforms the bannerImage, falling back to a site-wide default.
@@ -138,11 +153,11 @@ export default function (eleventyConfig) {
     if (!bannerPath) {
       return "/assets/bg/default.jpg"
     }
-    if (bannerPath.includes("/assets/")) {
+    if (bannerPath.startsWith("/")) {
       return bannerPath
     }
 
-    return await transformImage(this.ctx, bannerPath)
+    return bannerURL(this.ctx, bannerPath)
   })
 
   eleventyConfig.addPairedShortcode("wide", function (content) {
@@ -191,12 +206,26 @@ export default function (eleventyConfig) {
       ></iframe>
     </div>`
   })
-  eleventyConfig.addShortcode("tweet", function (tweetId) {
+  // A post's id, or (as in photo posts) its URL. Twitter is X now, but the shortcode keeps its name.
+  eleventyConfig.addShortcode("tweet", function (tweet) {
+    const isUrl = /^https?:/.test(tweet)
+    const url = isUrl
+      ? escapeAttr(tweet.replace(/^https?:\/\/(www\.)?twitter\.com\//, "https://x.com/"))
+      : `https://x.com/x/status/${tweet}`
     return `<div class="narrow">
-      <blockquote class="twitter-tweet">
-        <a href="https://twitter.com/twitter/status/${tweetId}"></a>
+      <blockquote class="twitter-tweet"${isUrl ? ' data-dnt="true"' : ""}>
+        <a href="${url}"></a>
       </blockquote>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>`
+  })
+  eleventyConfig.addShortcode("instagram", function (url) {
+    const href = escapeAttr(url)
+    return `<div class="narrow">
+      <blockquote class="instagram-media" data-instgrm-permalink="${href}" data-instgrm-version="14" data-instgrm-captioned>
+        <a href="${href}">View this post on Instagram</a>
+      </blockquote>
+      <script async src="https://www.instagram.com/embed.js"></script>
     </div>`
   })
   eleventyConfig.addShortcode("speakerdeck", function (deckId, fourByThree = false) {

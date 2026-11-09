@@ -1,4 +1,4 @@
-import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy"
+import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin, RenderPlugin } from "@11ty/eleventy"
 import rssPlugin from "@11ty/eleventy-plugin-rss"
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
 
@@ -8,6 +8,7 @@ const { eleventyImageTransformPlugin } = Image
 import pluginFilters from "./src/_config/filters.js"
 import pluginShortcodes from "./src/_config/shortcodes.js"
 import pluginImageFlags from "./src/_config/imageflags.js"
+import pluginPhotoPosts from "./src/_config/photoposts.js"
 import pluginPersonalTimeline from "./src/_config/personaltimeline.js"
 
 /**
@@ -20,8 +21,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin)
   eleventyConfig.addPlugin(rssPlugin)
   eleventyConfig.addPlugin(pluginFilters)
+  eleventyConfig.addPlugin(RenderPlugin) // the renderContent filter renders photo post footnotes (Markdown)
   eleventyConfig.addPlugin(pluginShortcodes)
   eleventyConfig.addPlugin(pluginImageFlags) // #wide/#narrow/#bleed on images
+  eleventyConfig.addPlugin(pluginPhotoPosts) // the photoPosts collection and banner shortcodes for /photos
   eleventyConfig.addPlugin(pluginPersonalTimeline)
 
   eleventyConfig.addPlugin(syntaxHighlight, {

@@ -94,7 +94,7 @@ timeline_entries:
     imgAlt: "Photo of me developing film"
     description:
       - "I love photography. And since moving to New York, I doubled-down on my love of *film* photography, particularly. I was shooting mainly black-and-white film so I could develop and scan it myself. Even later, when I would stop shooting on film, I've taken photos as a regular part of my day-to-day life in New York."
-      - "My everyday photography is now [on my Instagram account](https://www.instagram.com/ashfurrow/) and [I also have a photo blog](https://photos.ashfurrow.com)."
+      - "My everyday photography is now [on my Instagram account](https://www.instagram.com/ashfurrow/) and [I also have a photo blog](/photos/)."
   - title: "Live Auctions Integration"
     img: "./lai.png"
     imgAlt: "Sceenshot of some app designs for an auctions interface"
