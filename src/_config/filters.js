@@ -4,28 +4,6 @@
  */
 export default function (eleventyConfig) {
   eleventyConfig.addFilter(
-    "parseDate",
-    /**
-     * Parses a date string into a Date object.
-     * @param {string} dateString - The date string to parse
-     * @returns {Date} The parsed Date object
-     */
-    function (dateString) {
-      return new Date(dateString)
-    }
-  )
-
-  eleventyConfig.addFilter(
-    "fromJson",
-    /**
-     * @param {string} str - The JSON string to parse
-     */
-    function (str) {
-      return JSON.parse(str)
-    }
-  )
-
-  eleventyConfig.addFilter(
     "readableDate",
     /**
      * @param {Date} dateObj
@@ -70,16 +48,6 @@ export default function (eleventyConfig) {
       }
 
       return array.slice(0, n)
-    }
-  )
-
-  eleventyConfig.addFilter(
-    "min",
-    /**
-     * @param {...number} numbers
-     */
-    function (...numbers) {
-      return Math.min.apply(null, numbers)
     }
   )
 

@@ -856,19 +856,16 @@ footer .attribution {
 }
 
 /* Shared Post List Styling */
-.post-list,
-.recent-posts {
+.post-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.post-item,
-.recent-post-item {
+.post-item {
   margin: 0;
   padding: 0;
 }
-.post-link,
-.recent-post-link {
+.post-link {
   text-decoration: none;
   color: var(--primary);
 }
@@ -879,8 +876,7 @@ footer .attribution {
 .read-more-link:hover {
   color: var(--primary);
 }
-.post-title,
-.recent-post-title {
+.post-title {
   margin-right: 0.5rem;
 }
 /* In the archive the photo marker hangs in the left margin of the list. On phones there is no margin to hang in, so it
@@ -902,8 +898,7 @@ footer .attribution {
     margin: 0 0 0 0.5rem;
   }
 }
-.post-date,
-.recent-post-date {
+.post-date {
   color: rgba(0, 0, 0, 0.5);
 }
 
