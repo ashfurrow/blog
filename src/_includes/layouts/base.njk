@@ -69,7 +69,7 @@
 				"@type": "ImageObject",
 				"url": "{{ metadata.url }}{% socialImageURL %}"
 			},
-			"description": {{ socialDescription | toJson | safe }},
+			"description": {{ socialDescription | decodeEntities | toJson | safe }},
 			"datePublished": "{{ date | htmlDateString }}",
 			"dateModified": "{{ date | htmlDateString }}",
 			"author": {

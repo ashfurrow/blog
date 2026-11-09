@@ -52,9 +52,26 @@ export default function (eleventyConfig) {
   )
 
   eleventyConfig.addFilter("toJson", function (content) {
-    // Nunjucks' SafeString (the result of `| safe`) would otherwise be serialized as an object.
-    return JSON.stringify(content instanceof String ? content.toString() : content)
+    // Nunjucks' SafeString (the result of `| safe`) would otherwise be serialized as an object. The output goes into a
+    // <script> element, so a "<" must not be able to start a closing tag.
+    return JSON.stringify(content instanceof String ? content.toString() : content).replace(/</g, "\\u003c")
   })
+
+  eleventyConfig.addFilter(
+    "decodeEntities",
+    /**
+     * Turns the entities that Markdown and Nunjucks escape text with back into characters, for text that is not HTML.
+     * @param {string} text
+     */
+    function (text) {
+      return String(text)
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&amp;/g, "&")
+    }
+  )
 
   // Override the RSS plugin's dateToRfc822 to force UTC (fixes #530)
   eleventyConfig.addNunjucksFilter("dateToRfc822", function (value) {
