@@ -782,9 +782,7 @@ footer .attribution {
 }
 @media (max-width: 600px) {
   .pagination-button {
-    width: 100%;
     margin: 0.25rem auto;
-    float: none;
   }
 }
 .pagination a:hover .pagination-button,
