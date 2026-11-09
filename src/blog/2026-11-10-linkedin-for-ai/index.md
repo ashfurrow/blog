@@ -15,6 +15,8 @@ So. I'm _guessing_ that the people who have rejoined X felt the same way. They d
 
 X is LinkedIn for AI.
 
+And I mean that derisively. LinkedIn is widely, correctly seen as a fake place. Somewhere to aura farm professional success points. "What doing the dishes taught me about B2B sales." There is _technically_ community on LinkedIn, but, not in the sense that a lot of people are looking for. It's inauthentic. I tried scrolling on X the other day, and I felt that inauthenticity. Not every post, not as uniformly. But it just feels... fake. Like LinkedIn feels fake.
+
 ...but LinkedIn can be useful. I post to LinkedIn and no one gets mad at me. If the people rejoining X had been upfront about joining to discuss AI, maybe everyone wouldn't have gotten mad. Or, maybe they've have gotten even madder; people _do_ hate AI.
 
 And not for no reason, either.
@@ -27,8 +29,8 @@ Some friends of mine would put the genie back in the bottle, so to speak. If the
 
 I avoid X because it's felt _icky_ ever since Twitter's acquisition. And especially because its owner sucks. However, I must admit that any time I've logged onto X over the past two years, one first recommended posts I see has had some tip or technique that _significantly_ improved how I used agentic coding tools. Like, it's not even funny. I'd log in to look at something a coworker sent me (you have to log in these days) and I'd inadvertently see the home screen, and I'd stop in my tracks. "Holy shit, that's a good idea."
 
-The cost I pay to avoid X is having to seek out secondary sources for AI tips and tricks on Slack or YouTube. Doesn't seem so bad right? Well, like I said, I'm excited about these tools. Everything I see has been filtered. I don't get to see the ideas _as they're forming_. I only see the ideas that get notoriety, never the weird experiments. Never the failures. Getting all my information second-hand means I don't have as clear a picture of where the tools are going.
+The cost I pay to avoid X is having to seek out secondary sources for AI tips and tricks on Slack or YouTube. Doesn't seem so bad right? Well, like I said, I'm excited about these tools. Everything I see has been filtered. I don't get to see the ideas _as they're forming_. I only see the ideas that get notoriety, never the weird experiments. Never the failures. Getting all my information second-hand means I don't have as clear a picture of where the tools are going. That's not the end of the world, but it is an opportunity cost.
 
 Recently, someone shared the [herdr Desktop](https://herdr.dev) app on Slack just after it was released. It looked so cool! So I tried it out right away. I'd been planning to build myself some custom tooling anyway and herdr turned out to be the _perfect_ platform to start from. I was one of the first people at work to try it out and I shared what I learned. Other developers got excited by what I'd built with it so we got together to exchange workflows. It was the first time I _felt_ ahead of the curve with agentic coding tools.
 
-You can be excited for AI. I am. You can avoid X. I do. The more closely I follow the advancements in agentic coding, the more that choice costs me. I've had to find better secondary sources.
+You can be excited for AI. I am. You can avoid X. I do. The more closely I follow the advancements in agentic coding, the more that choice costs me. I've had to find better secondary sources. But it's not insurmountable. And on those community Slacks and YouTube comments, you'll find something: community.
