@@ -72,6 +72,7 @@ At first, it was kind of hard going. Each slide had to be designed from scratch,
 {% wide %}
 
 ![Sketch screenshot of initial work](sketch_slant_1.png)
+
 ![Sketch screenshot of final work](sketch_slant_2.png)
 
 {% endwide %}
