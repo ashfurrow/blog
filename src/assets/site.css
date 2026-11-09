@@ -263,11 +263,6 @@ p code {
   margin: 0 auto 1.66rem auto;
   position: relative;
 }
-@media (max-width: 1200px) {
-  .wide {
-    grid-column: 2 / 12;
-  }
-}
 @media (max-width: 600px) {
   .wide {
     grid-column: 1 / 13;
