@@ -1,6 +1,6 @@
 ---
 title: LinkedIn for AI
-date: 2026-11-08
+date: 2026-11-10
 ---
 
 My corner of the web has been atwitter lately, as a [few](https://marco.org/2026/10/24/community) prominent [members](https://daringfireball.net/2026/10/x_once_again_marks_the_spot) of the Apple/iOS developer community decided to spend time on X again; [people got mad](https://lexontech.org/i-cant-believe-were-still-arguing-over-whether-x-is-for-jerks). And it's kind of bothering me how people seem to be talking past each other about it.
