@@ -7,7 +7,7 @@
           <img eleventy:ignore src="/assets/speaking/talks/{{ talk.image }}" alt="{{ talk.conference }}" loading="lazy">
           {# /eleventy:ignore #}
           <div class="talk-image-overlay">
-            <i class="fa-solid fa-file"></i>
+            {% icon "solid/file" %}
           </div>
         </a>
       {%- else %}
@@ -25,7 +25,7 @@
     
     <div class="talk-meta">
       <div class="talk-detail">
-        <i class="fa-solid fa-quote-left"></i>
+        {% icon "solid/quote-left" %}
           {%- if talk.url %}
             <a href="{{ talk.url }}">{{ talk.conference }}</a>
           {%- else %}
@@ -34,29 +34,29 @@
       </div>
       {%- if talk.location %}
         <div class="talk-detail">
-          <i class="fa-solid fa-location-dot"></i>
+          {% icon "solid/location-dot" %}
           {{ talk.location }}
         </div>
       {%- endif %}
       <div class="talk-detail">
-        <i class="fa-solid fa-calendar"></i>
+        {% icon "solid/calendar" %}
         {{ talk.dates }}
       </div>
       {%- if talk.video %}
         <div class="talk-detail">
-          <i class="fa-brands fa-youtube"></i>
+          {% icon "brands/youtube" %}
           <a href="{{ talk.video }}">Watch the video</a>
         </div>
       {%- endif %}
       {%- if talk.code %}
         <div class="talk-detail">
-          <i class="fa-solid fa-code"></i>
+          {% icon "solid/code" %}
           <a href="{{ talk.code }}">Check out the code</a>
         </div>
       {%- endif %}
       {%- if talk.blogPost %}
         <div class="talk-detail">
-          <i class="fa-solid fa-paperclip"></i>
+          {% icon "solid/paperclip" %}
           <a href="{{ talk.blogPost }}">Read the blog post</a>
         </div>
       {%- endif %}

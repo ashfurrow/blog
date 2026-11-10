@@ -25,8 +25,8 @@ export default {
     { href: "/books", label: "Books" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/speaking", label: "Speaking" },
-    { href: "/search", label: "Search", icon: "fa-magnifying-glass", ariaLabel: "Search posts" },
-    { href: "/feed.xml", label: "RSS Feed", mobileLabel: "Blog Feed", icon: "fa-square-rss", ariaLabel: "RSS Feed" }
+    { href: "/search", label: "Search", icon: "magnifying-glass", ariaLabel: "Search posts" },
+    { href: "/feed.xml", label: "RSS Feed", mobileLabel: "Blog Feed", icon: "square-rss", ariaLabel: "RSS Feed" }
   ],
   ogLanguage: "en_CA"
 }

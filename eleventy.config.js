@@ -9,6 +9,7 @@ import pluginFilters from "./src/_config/filters.js"
 import pluginShortcodes from "./src/_config/shortcodes.js"
 import pluginImageFlags from "./src/_config/imageflags.js"
 import pluginPhotoPosts from "./src/_config/photoposts.js"
+import pluginIcons from "./src/_config/icons.js"
 import pluginArchive from "./src/_config/archive.js"
 import pluginPersonalTimeline from "./src/_config/personaltimeline.js"
 
@@ -26,6 +27,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginShortcodes)
   eleventyConfig.addPlugin(pluginImageFlags) // #wide/#narrow/#bleed on images
   eleventyConfig.addPlugin(pluginPhotoPosts) // the photoPosts collection and banner shortcodes for /photos
+  eleventyConfig.addPlugin(pluginIcons)
   eleventyConfig.addPlugin(pluginArchive) // the postSummaries and postMonths collections for the home page and archive
   eleventyConfig.addPlugin(pluginPersonalTimeline)
 

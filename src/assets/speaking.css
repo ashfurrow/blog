@@ -76,6 +76,8 @@
   flex-shrink: 0;
   color: var(--grey-default);
   text-align: center;
+  /* The text's visual centre sits a little below its line box's centre. */
+  transform: translateY(1px);
 }
 @media (max-width: 600px) {
   .talk-tile {

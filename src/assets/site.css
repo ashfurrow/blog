@@ -305,6 +305,18 @@ iframe {
   margin: 0 auto;
 }
 
+/* Icons (src/_config/icons.js). These are the rules Font Awesome's script used to add to the page. */
+.svg-inline--fa {
+  display: inline-block;
+  box-sizing: content-box;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.footer-icon {
+  font-size: 3em;
+}
+
 /* Header */
 header.site-header {
   position: relative;
