@@ -28,7 +28,7 @@ Bill Hammack (aka The Engineering Guy) [describes the Engineering Method as](htt
 
 We have this situation where suddenly code generation has become far faster than it has ever been. If we put on our Engineering Method hats here, we can intuit that the best change we can make in this system is to improve software verifiability. If you've been on rapidly expanding engineering teams, then this should sound familiar. You have more code getting written, faster, and you need a way to make sure it's actually good: automated testing, CI, linters, etc.
 
-One of the mental frameworks that's been helpful here, for myself and many others, is the ["Trust Ladder"](https://barnabyrobson.org/on-pstack/#earned-trust). This is one of those ideas I talked about [here](/blog/linkedin-for-ai/), and I realized that it might not have broken into the software mainstream. That's why I'm writing this post.
+One of the mental frameworks that's been helpful here, for myself and many others, is the ["Trust Ladder"](https://barnabyrobson.org/on-pstack/#earned-trust). This is one of those ideas I talked about [in this post](/blog/linkedin-for-ai/) and I realized after that it might not be commonly known. That's why I'm writing this post; I think it's that important.
 
 The trust ladder encapsulates a common (but not universal!) progression that developers tend to move through as they adopt agentic coding tools. I'm modifying [the original explanation](https://x.com/poteto/status/2102050467505430555) a bit here, but basically:
 
