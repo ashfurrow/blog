@@ -36,7 +36,7 @@ Not only are you making a call here, but you're being specific with your solutio
 
 > "Next week has a holiday, should we get on-call coverage?" -> "Next week has a holiday and I think we need on-call coverage. I'll let the exec team know that we plan to cover it, and I'll make sure whoever volunteers knows our lieu-time policy."
 
-People-based decisions like this can be tricky. Maybe this wasn't the right move! Maybe _no one_ needs to be on-call during a holiday! You team can tell you. Or, the exec team will since you'll be radiating intent to them, too.
+People-based decisions like this can be tricky. Maybe this wasn't the right move! Maybe _no one_ needs to be on-call during a holiday! Your team can tell you. Or, the exec team will since you'll be radiating intent to them, too.
 
 Radiating intent works well in small startups and large companies. I know because I've used it in both settings.
 
