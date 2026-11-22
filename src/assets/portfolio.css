@@ -10,6 +10,14 @@
   margin-bottom: 2rem;
 }
 
+.portfolio-subsection .right-image {
+  --device-rim: light-dark(transparent, rgba(255, 255, 255, 0.35));
+  --device-shadow: light-dark(rgba(0, 0, 0, 0.25), transparent);
+  filter: drop-shadow(0 0 1px var(--device-rim)) drop-shadow(0 1px 3px var(--device-shadow));
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
 /* Social media footer styling */
 footer a {
   color: var(--text);
