@@ -725,6 +725,7 @@ footer .attribution {
   font-family: var(--header-font-family);
   text-align: center;
   color: var(--grey-default);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 .pagination-prev {
   float: left;
