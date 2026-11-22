@@ -93,7 +93,7 @@ footer a:hover {
     display: none;
   } 
   .portfolio-section-banner div {
-    padding: 3rem var(--spacing-footer-icon);
+    padding: 3rem 0;
     text-align: center;
     width: 100%;
     max-width: initial;
