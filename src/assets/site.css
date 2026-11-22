@@ -1,13 +1,21 @@
 /* Theme Variables */
 :root {
-  /* Colours */
+  color-scheme: light dark;
   --primary: #398CCC;
-  --white: #fff;
-  --grey-dark: rgba(0, 0, 0, 0.9);
-  --grey-default: rgba(64, 64, 64);
-  --grey-light: #eee;
-  --grey-extra-light: rgba(0, 0, 0, 0.1);
-  
+  --on-image: #fff;
+  --background: light-dark(#fff, #121212);
+  --surface: light-dark(#eee, #2c2c2e);
+  --surface-edge: light-dark(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.08));
+  --border: light-dark(#eee, rgba(255, 255, 255, 0.07));
+  --shadow: light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  --text-strong: light-dark(rgba(0, 0, 0, 0.9), rgb(222, 222, 227));
+  --text: light-dark(rgb(64, 64, 64), rgb(205, 205, 210));
+  --text-secondary: light-dark(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.8));
+  --text-muted: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  --field-background: light-dark(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.08));
+  --field-background-focus: light-dark(rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.12));
+  --field-focus-ring: light-dark(transparent, rgba(255, 255, 255, 0.12));
+
   /* The space between photos in a photo post and between the cards on /photos. */
   --photo-gap: clamp(4px, 1vw, 12px);
 
@@ -23,6 +31,13 @@
   /* --table-breakpoint: 1200px; */
 }
 
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 /* On phones the gap between photos is the column's margin from the edge of the screen. */
 @media (max-width: 600px) {
   :root {
@@ -32,7 +47,7 @@
 
 /* Layout */
 ::selection {
-  color: var(--white);
+  color: var(--on-image);
   background: var(--primary);
 }
 html {
@@ -41,8 +56,8 @@ html {
   font-style: normal;
 }
 body {
-  background: var(--white);
-  color: var(--grey-default);
+  background: var(--background);
+  color: var(--text);
   font-family: var(--body-font-family);
   line-height: 1.66;
   font-weight: 400;
@@ -129,7 +144,7 @@ a {
   transition: none;
 }
 h2 a, h3 a {
-  color: var(--grey-dark);
+  color: var(--text-strong);
 }
 h1, h2, h3 {
   margin-block-start: 0;
@@ -151,7 +166,7 @@ h3 {
 }
 h2, h3 {
   font-family: var(--body-font-family);
-  color: var(--grey-default);
+  color: var(--text);
   font-weight: var(--font-weight-bold);
 }
 blockquote:not(.instagram-media) {
@@ -188,19 +203,20 @@ blockquote.pullquote em {
 }
 label {
   margin-bottom: .5rem;
-  color: var(--grey-dark);
+  color: var(--text-strong);
 }
 input, textarea {
   border-radius: .5rem;
   border: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--field-background);
   padding: .25rem 1rem;
 }
 input:focus, textarea:focus {
   outline: none;
+  box-shadow: 0 0 0 1px var(--field-focus-ring);
 }
 hr {
-  background: var(--grey-light);
+  background: var(--border);
   border: none;
   clear: both;
   height: 1px;
@@ -215,7 +231,7 @@ pre {
   font-feature-settings: normal;
 }
 :not(pre) > code {
-  background: var(--grey-light);
+  background: var(--surface);
   font-size: 0.85em;
   padding: 0.1em 0.25em;
   border-radius: 0.3em;
@@ -388,12 +404,12 @@ header.site-header {
   }
 }
 header h1 {
-  color: var(--white);
+  color: var(--on-image);
   margin-bottom: 0;
 }
 .header-divider {
-  color: var(--white);
-  background: var(--white);
+  color: var(--on-image);
+  background: var(--on-image);
   width: 5rem;
   height: 3px;
   margin: 0.5rem auto; /* Center-aligned by default */
@@ -404,7 +420,7 @@ header h1 {
 }
 .header-subtitle,
 .header-date {
-  color: var(--white);
+  color: var(--on-image);
   font-family: var(--header-font-family);
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -442,14 +458,14 @@ header h1 {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .navbar[data-scrolled="false"][data-menu-open="true"] {
-  background: var(--white);
+  background: var(--background);
   box-shadow: none;
-  border-bottom: var(--grey-light) solid 1px;
+  border-bottom: var(--border) solid 1px;
 }
 .navbar[data-scrolled="true"] {
-  background: var(--white);
-  box-shadow: var(--grey-extra-light) 0px 4px 12px;
-  border-bottom: var(--grey-light) solid 1px;
+  background: var(--background);
+  box-shadow: var(--shadow) 0px 4px 12px;
+  border-bottom: var(--border) solid 1px;
 }
 .navbar[data-scrolled="true"][data-menu-open="true"] {
   box-shadow: none;
@@ -476,22 +492,20 @@ header h1 {
     padding-left: initial;
   }
 }
-.navbar-logo img {
-  height: 75%;
-  width: auto;
-  max-width: 1.5rem;
-  object-fit: contain;
+.navbar {
+  --logo-color: var(--on-image);
 }
-.navbar .logo-dark {
-  display: none;
+.navbar[data-scrolled="true"],
+.navbar[data-scrolled="false"][data-menu-open="true"] {
+  --logo-color: var(--text-strong);
 }
-.navbar[data-scrolled="true"] .logo-light,
-.navbar[data-scrolled="false"][data-menu-open="true"] .logo-light {
-  display: none;
-}
-.navbar[data-scrolled="true"] .logo-dark,
-.navbar[data-scrolled="false"][data-menu-open="true"] .logo-dark {
+.navbar-logo .logo {
   display: block;
+  height: 75%;
+  aspect-ratio: 283 / 335;
+  background-color: var(--logo-color);
+  -webkit-mask: url(/assets/siteimage.png) center / contain no-repeat;
+  mask: url(/assets/siteimage.png) center / contain no-repeat;
 }
 .navbar-links {
   justify-self: stretch;
@@ -508,7 +522,7 @@ header h1 {
 }
 .navbar-links a {
   display: inline-block;
-  color: var(--white);
+  color: var(--on-image);
   text-transform: uppercase;
   font-weight: var(--font-weight-bold);
   text-decoration: none;
@@ -517,13 +531,13 @@ header h1 {
   transition: color 0.3s ease;
 }
 .navbar[data-scrolled="false"] .navbar-links a {
-  color: var(--white);
+  color: var(--on-image);
 }
 .navbar[data-scrolled="false"][data-menu-open="true"] .navbar-links a {
-  color: var(--grey-dark);
+  color: var(--text-strong);
 }
 .navbar[data-scrolled="true"] .navbar-links a {
-  color: var(--grey-dark);
+  color: var(--text-strong);
 }
 .navbar-links a:hover {
   color: var(--primary);
@@ -533,17 +547,17 @@ header h1 {
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--white);
+  color: var(--on-image);
   width: 1.5rem;
   height: 1.5rem;
   position: relative;
   transition: color 0.3s ease;
 }
 .navbar[data-scrolled="false"][data-menu-open="true"] .hamburger {
-  color: var(--grey-default);
+  color: var(--text);
 }
 .navbar[data-scrolled="true"] .hamburger {
-  color: var(--grey-default);
+  color: var(--text);
 }
 .hamburger-icon {
   position: absolute;
@@ -598,12 +612,12 @@ header h1 {
   top: 2.5rem;
   left: 0;
   right: 0;
-  background: var(--white);
+  background: var(--background);
   transform: translateY(-100%);
   transition: transform 0.3s ease, visibility 0s ease 0.3s, opacity 0.3s ease;
   z-index: 999;
-  border-bottom: var(--grey-light) solid 1px;
-  box-shadow: var(--grey-extra-light) 0px 4px 12px;
+  border-bottom: var(--border) solid 1px;
+  box-shadow: var(--shadow) 0px 4px 12px;
   visibility: hidden;
   opacity: 0;
 }
@@ -626,7 +640,7 @@ header h1 {
   font-size: 0.75rem;
   font-family: var(--header-font-family);
   line-height: 1rem;
-  color: var(--grey-default);
+  color: var(--text);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: var(--font-weight-bold);
@@ -663,9 +677,8 @@ header h1 {
     max-width: none;
     box-sizing: border-box;
   }
-  .navbar-logo img {
+  .navbar-logo .logo {
     height: 1.5rem;
-    margin: 0;
   }
 }
 @media (min-width: 601px) {
@@ -681,7 +694,7 @@ footer {
   margin: 3rem 0;
 }
 footer a.icon {
-  color: var(--grey-default); 
+  color: var(--text); 
 }
 footer a.icon:hover {
   color: var(--primary);
@@ -699,7 +712,7 @@ footer .attribution {
   margin: 0.5rem 0;
 }
 .typo-link {
-  color: var(--grey-default);
+  color: var(--text);
   font-size: 0.75rem;
   font-style: italic;
   text-decoration: none;
@@ -722,12 +735,12 @@ footer .attribution {
 }
 .pagination-button {
   box-sizing: border-box;
-  border: 1px solid var(--grey-default);
+  border: 1px solid var(--text);
   width: 45%;
   padding: 0.5rem 1rem;
   font-family: var(--header-font-family);
   text-align: center;
-  color: var(--grey-default);
+  color: var(--text);
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 .pagination-prev {
@@ -758,7 +771,7 @@ footer .attribution {
 .pagination a:hover .pagination-button,
 .pagination a:focus-visible .pagination-button,
 .pagination a:active .pagination-button {
-  color: var(--white);
+  color: var(--on-image);
   border-color: var(--primary);
   background-color: var(--primary);
 }
@@ -789,7 +802,7 @@ footer .attribution {
   background-position: center;
   background-repeat: no-repeat;
   text-decoration: none;
-  color: var(--white);
+  color: var(--on-image);
   font-family: var(--header-font-family);
   font-weight: var(--font-weight-bold);
 }
@@ -828,7 +841,7 @@ footer .attribution {
   color: var(--primary);
 }
 .read-more-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--text-muted);
   font-style: italic;
 }
 .read-more-link:hover {
@@ -848,7 +861,7 @@ footer .attribution {
   top: 0.69em;
   margin-right: 0.5rem;
   font-size: 0.8em;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--text-muted);
 }
 @media (max-width: 600px) {
   .photo-marker {
@@ -857,7 +870,7 @@ footer .attribution {
   }
 }
 .post-date {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--text-muted);
 }
 
 /* Archive Groups */
@@ -877,7 +890,7 @@ footer .attribution {
   background-size: cover;
   text-align: center;
   margin: 6rem 0 2rem 0;
-  color: var(--white);
+  color: var(--on-image);
   overflow: hidden;
 }
 .section-banner-fullwidth {
@@ -886,11 +899,11 @@ footer .attribution {
 .section-banner-content {
   position: relative;
   padding: 5rem 2rem;
-  color: var(--white);
+  color: var(--on-image);
 }
 .section-banner-title {
   font-weight: var(--font-weight-bold);
-  color: var(--white);
+  color: var(--on-image);
   font-family: var(--header-font-family);
   margin: 0;
   max-width: 80rem;
