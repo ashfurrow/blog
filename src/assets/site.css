@@ -520,7 +520,8 @@ header h1 {
   margin: auto 0;
   line-height: 1.5rem;
 }
-.navbar-links a {
+.navbar-links a,
+.navbar-links .theme-toggle {
   display: inline-block;
   color: var(--on-image);
   text-transform: uppercase;
@@ -530,16 +531,20 @@ header h1 {
   padding: 0.5rem;
   transition: color 0.3s ease;
 }
-.navbar[data-scrolled="false"] .navbar-links a {
+.navbar[data-scrolled="false"] .navbar-links a,
+.navbar[data-scrolled="false"] .navbar-links .theme-toggle {
   color: var(--on-image);
 }
-.navbar[data-scrolled="false"][data-menu-open="true"] .navbar-links a {
+.navbar[data-scrolled="false"][data-menu-open="true"] .navbar-links a,
+.navbar[data-scrolled="false"][data-menu-open="true"] .navbar-links .theme-toggle {
   color: var(--text-strong);
 }
-.navbar[data-scrolled="true"] .navbar-links a {
+.navbar[data-scrolled="true"] .navbar-links a,
+.navbar[data-scrolled="true"] .navbar-links .theme-toggle {
   color: var(--text-strong);
 }
-.navbar-links a:hover {
+.navbar-links a:hover,
+.navbar-links .theme-toggle:hover {
   color: var(--primary);
 }
 .hamburger {
@@ -648,8 +653,66 @@ header h1 {
   padding: 0.25rem 0;
   transition: color 0.3s ease;
 }
-.mobile-links a:hover {
+.mobile-links a:hover,
+.mobile-links .theme-toggle:hover {
   color: var(--primary);
+}
+
+.theme-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.has-theme-toggle .theme-toggle {
+  display: inline-block;
+}
+.theme-toggle .theme-icon,
+.theme-toggle .theme-label {
+  display: none;
+}
+:root:not([data-theme]) .theme-toggle .theme-auto,
+:root[data-theme="light"] .theme-toggle .theme-light,
+:root[data-theme="dark"] .theme-toggle .theme-dark {
+  display: inline-block;
+}
+.theme-toggle .theme-icon {
+  width: 1.25em;
+  text-align: center;
+  vertical-align: -0.125em;
+}
+.theme-toggle .theme-icon .fa {
+  height: 1em;
+  width: auto;
+}
+.navbar-links .theme-icon {
+  text-align: right;
+}
+/* The crescent's tips stop short of its box. */
+.navbar-links .theme-dark .fa {
+  margin-right: -0.17em;
+}
+.navbar-links .theme-label {
+  display: none !important;
+}
+.mobile-links .theme-toggle {
+  display: none;
+  font-size: 0.75rem;
+  font-family: var(--header-font-family);
+  line-height: 1rem;
+  color: var(--text);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  padding: 0.25rem 0;
+  transition: color 0.3s ease;
+}
+.has-theme-toggle .mobile-links .theme-toggle {
+  display: block;
+}
+.mobile-links .theme-icon {
+  margin-right: 0.5rem;
 }
 @media (max-width: 600px) {
   .navbar {
