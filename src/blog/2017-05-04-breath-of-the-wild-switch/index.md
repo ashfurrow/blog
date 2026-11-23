@@ -1,7 +1,6 @@
 ---
 title: Breath of the Wild & The Switch
 date: 2017-05-04
-banner: background.jpg
 bannerAttribution: https://wall.alphacoders.com/by_sub_category.php?id=242233
 ---
 

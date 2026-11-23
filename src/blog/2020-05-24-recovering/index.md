@@ -1,7 +1,6 @@
 ---
 title: Recovering
 date: 2020-05-24
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1264537793105219584
 ---
 

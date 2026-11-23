@@ -1,7 +1,6 @@
 ---
 title: Photography Workflows
 date: 2016-07-24
-banner: background.jpg
 bannerAttribution: https://www.instagram.com/p/lkPbtOjBqt/
 ---
 

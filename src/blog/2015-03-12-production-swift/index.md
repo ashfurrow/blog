@@ -1,7 +1,6 @@
 ---
 title: Production Swift
 date: 2015-03-12
-banner: header.jpg
 bannerAttribution: https://www.flickr.com/photos/97226415@N08/16300562689/in/faves-56453286@N04/
 ---
 

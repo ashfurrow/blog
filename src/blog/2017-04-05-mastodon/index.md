@@ -1,7 +1,6 @@
 ---
 title: Mastodon
 date: 2017-04-05
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/848303160548577280
 ---
 

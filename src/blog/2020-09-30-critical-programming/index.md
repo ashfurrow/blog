@@ -1,7 +1,6 @@
 ---
 title: Critical Programming
 date: 2020-09-30
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1311240685396389888
 ---
 

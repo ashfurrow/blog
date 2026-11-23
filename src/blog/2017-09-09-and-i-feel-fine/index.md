@@ -1,7 +1,6 @@
 ---
 title: And I Feel Fine
 date: 2017-09-09
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/905938563820376064
 ---
 

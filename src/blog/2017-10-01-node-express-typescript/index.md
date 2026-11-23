@@ -1,7 +1,6 @@
 ---
 title: "Weekend Hack Project: Twelease"
 date: 2017-10-01
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/914339934563127296
 ---
 

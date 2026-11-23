@@ -1,7 +1,6 @@
 ---
 title: Just Say No
 date: 2016-01-13
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/687081303594897408
 ---
 

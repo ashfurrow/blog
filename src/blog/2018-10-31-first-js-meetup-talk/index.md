@@ -1,7 +1,6 @@
 ---
 title: First JS Meetup Talk
 date: 2018-10-31
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1057682538645389312
 ---
 

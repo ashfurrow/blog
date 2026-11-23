@@ -1,7 +1,6 @@
 ---
 title: Wealthsimple Native App Rebuild
 date: 2026-11-07
-banner: ./banner.jpg
 ---
 
 Last week, at Wealthsimple Presents, my employer announced the project I've been working on: a new native app! [Here's a timestamped link](https://youtu.be/MReTQMhB-FA?list=PLH2ZY82du82RJbqcBZih9lfNkqvSOqOIE&t=2150).

@@ -1,7 +1,6 @@
 ---
 title: Swift vs. React Native Feels
 date: 2017-02-11
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/828776172255338497
 ---
 

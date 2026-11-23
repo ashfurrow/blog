@@ -1,7 +1,6 @@
 ---
 title: Second-Mover Advantage
 date: 2026-11-17
-banner: ./banner.jpg
 ---
 
 I’m very excited about agentic coding and the future of software development, but that doesn’t mean that I endorse the attitude of loud AI boosters. When I hear things like “get on board with AI coding now! or you’ll get left behind!!”, to me it rhymes with the “have fun staying poor!” taunts from NFT bros. It’s the same presumptive importance of being first, the same FOMO-driven in-group signalling. I don’t like it, and it’s just factually not true that developers will get left behind.

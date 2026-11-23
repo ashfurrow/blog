@@ -1,7 +1,6 @@
 ---
 title: Depresso
 date: 2022-09-12
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/754193224789549056/
 ---
 

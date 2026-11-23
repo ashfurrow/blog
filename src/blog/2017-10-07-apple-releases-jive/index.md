@@ -1,7 +1,6 @@
 ---
 title: Apple Releases Jive
 date: 2017-10-07
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/916410007964483585
 ---
 

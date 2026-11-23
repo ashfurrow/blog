@@ -1,7 +1,6 @@
 ---
 title: Adulterated Objective-C
 date: 2016-05-20
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/698282495708676097
 ---
 

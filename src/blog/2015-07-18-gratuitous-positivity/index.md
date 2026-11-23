@@ -1,7 +1,6 @@
 ---
 title: Gratuitous Positivity
 date: 2015-07-18
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/622099424156778497
 ---
 

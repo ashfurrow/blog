@@ -1,7 +1,6 @@
 ---
 title: mastodon.technology Shutdown
 date: 2022-10-06
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1577986330566529024
 ---
 

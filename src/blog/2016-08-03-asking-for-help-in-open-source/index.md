@@ -1,7 +1,6 @@
 ---
 title: Asking for Help in Open Source
 date: 2016-08-03
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/760207993040502786
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Pausing
 date: 2020-04-07
-banner: ./background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1246809005139333121
 ---
 

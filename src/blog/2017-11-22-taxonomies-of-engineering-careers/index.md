@@ -1,7 +1,6 @@
 ---
 title: Taxonomies of Engineering Careers
 date: 2017-11-22
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/933322083030978561
 ---
 

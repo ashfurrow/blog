@@ -1,7 +1,6 @@
 ---
 title: Lessons Learned Travelling Europe
 date: 2014-11-16
-banner: tower.jpg
 bannerAttribution: https://500px.com/photo/66654595/tour-by-ash-furrow
 ---
 

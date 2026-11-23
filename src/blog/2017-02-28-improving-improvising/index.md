@@ -1,7 +1,6 @@
 ---
 title: Improving / Improvising
 date: 2017-02-28
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/835656365276299264
 ---
 

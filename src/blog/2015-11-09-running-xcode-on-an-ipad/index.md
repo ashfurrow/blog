@@ -1,7 +1,6 @@
 ---
 title: Thoughts on the MacBook
 date: 2015-11-09
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/659154558044786688
 socialImage: bag.jpg
 ---

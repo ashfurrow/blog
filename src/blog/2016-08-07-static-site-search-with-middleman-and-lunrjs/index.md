@@ -1,7 +1,6 @@
 ---
 title: Static Site Search with Middleman and lunrjs
 date: 2016-08-07
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/749304932835155968
 ---
 

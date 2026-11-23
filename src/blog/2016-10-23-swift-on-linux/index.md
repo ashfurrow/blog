@@ -1,7 +1,6 @@
 ---
 title: Swift on Linux
 date: 2016-10-23
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/789255492803715074
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: Mastodon Administration
 date: 2017-04-05
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/849109805079949312
-socialImage: background.jpg
 ---
 
 Yesterday I [wrote](/blog/mastodon/) about starting my own Mastodon instance. It's like a federated Twitter, and it's really fun.

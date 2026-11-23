@@ -1,7 +1,6 @@
 ---
 title: Guitar Debut
 date: 2017-07-28
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/890678919917121537
 ---
 

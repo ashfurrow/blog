@@ -1,7 +1,6 @@
 ---
 title: Swift Playground Books
 date: 2017-04-01
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/848140747723476993
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Joining Shopify
 date: 2021-02-01
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1353292777447186432
 ---
 

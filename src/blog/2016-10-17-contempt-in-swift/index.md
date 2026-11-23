@@ -1,7 +1,6 @@
 ---
 title: Contempt in Swift
 date: 2016-10-17
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/787277341793869824
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: One Year at Wealthsimple
 date: 2026-10-14
-banner: banner.jpg
 ---
 
 One year ago, after [reflecting on what I really wanted from my career](/blog/work-at-your-spikes/) (and what I _didn't_ want), [I joined Wealthsimple](/blog/joining-wealthsimple/). Time has absolutely flown by! And you know me, I can't help but blog about it.

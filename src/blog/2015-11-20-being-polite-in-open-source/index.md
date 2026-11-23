@@ -1,7 +1,6 @@
 ---
 title: Being Polite in Open Source
 date: 2015-11-20
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/667425825248145409
 ---
 

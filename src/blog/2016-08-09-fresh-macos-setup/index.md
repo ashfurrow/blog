@@ -1,7 +1,6 @@
 ---
 title: Fresh macOS Setup
 date: 2016-08-09
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/762788174955413505
 ---
 

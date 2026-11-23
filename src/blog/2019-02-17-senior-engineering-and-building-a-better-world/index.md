@@ -1,7 +1,6 @@
 ---
 title: Senior Engineering and Building a Better World
 date: 2019-02-17
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1096785169569251328
 ---
 

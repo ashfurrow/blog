@@ -1,7 +1,6 @@
 ---
 title: Good Bad Days
 date: 2017-03-24
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/845095494338691077
 ---
 

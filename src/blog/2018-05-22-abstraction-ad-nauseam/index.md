@@ -1,7 +1,6 @@
 ---
 title: Abstraction Ad Nauseam
 date: 2018-05-22
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/997948621592068097
 ---
 

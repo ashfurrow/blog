@@ -1,7 +1,6 @@
 ---
 title: Securing a BitTorrent Sync EC2 Instance
 date: 2016-05-30
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/737279203532541952
 socialImage: dashboard.png
 ---

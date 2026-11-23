@@ -1,7 +1,6 @@
 ---
 title: Joining Wealthsimple
 date: 2025-10-14
-banner: banner.jpg
 ---
 
 I'm excited to announce that today is my first day working at [Wealthsimple](https://www.wealthsimple.com/)! I'll be working as a staff developer on their mobile app. [In a previous blog post](/blog/floating-on/), I teased that this role was a perfect fit for me. Today, I'm excited to share some details.

@@ -1,7 +1,6 @@
 ---
 title: Drywall Repair
 date: 2022-03-31
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1509572365533028357
 ---
 

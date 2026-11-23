@@ -1,7 +1,6 @@
 ---
 title: Reflections on Minsk
 date: 2014-11-11
-banner: header.jpg
 socialImage: library.jpg
 ---
 

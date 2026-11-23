@@ -1,7 +1,6 @@
 ---
 title: Five Years in New Brunswick
 date: 2025-10-31
-banner: ./social.jpg
 ---
 
 Today marks five years since my wife and I moved away from New York and back to New Brunswick. [When I wrote about this last time](/blog/four-years-in-new-brunswick/), I seemed unhappy. I guess things hadn't worked out the way that I had envisioned them when we moved home – even if I didn't have a really clear vision for how things would go. I have a more optimistic view now.

@@ -1,7 +1,6 @@
 ---
 title: Art for Your Own Sake
 date: 2015-05-24
-banner: header.jpg
 bannerAttribution: https://500px.com/photo/109691453/at-the-beach-by-ash-furrow
 ---
 

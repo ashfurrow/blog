@@ -1,7 +1,6 @@
 ---
 title: Specializing in Being a Generalist
 date: 2021-04-15
-banner: background.jpeg
 bannerAttribution: https://twitter.com/CloudyConway/status/1382736614573670402
 ---
 

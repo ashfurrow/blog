@@ -1,7 +1,6 @@
 ---
 title: 5 More Years of Building Software
 date: 2019-12-15
-banner: pairing.jpg
 pageStylesheet: /assets/personal-timeline.css
 timeline_entries:
   - date: "2015"

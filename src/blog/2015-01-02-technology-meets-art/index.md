@@ -1,7 +1,6 @@
 ---
 title: Technology Meets Art
 date: 2015-01-02
-banner: header.jpg
 bannerAttribution: https://500px.com/photo/51931684/the-moment-by-ash-furrow
 ---
 

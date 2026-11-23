@@ -1,7 +1,6 @@
 ---
 title: Proprioception
 date: 2017-11-19
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/931833781409013760
 ---
 

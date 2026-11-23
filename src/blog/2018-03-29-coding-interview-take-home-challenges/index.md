@@ -1,7 +1,6 @@
 ---
 title: Coding Interview Take-Home Challenges
 date: 2018-03-29
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/978793491122843648
 ---
 

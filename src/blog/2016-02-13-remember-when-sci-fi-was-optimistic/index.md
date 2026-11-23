@@ -1,7 +1,6 @@
 ---
 title: Remember When Sci-fi Was Optimistic?
 date: 2016-02-13
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/698497319394738176
 ---
 

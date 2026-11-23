@@ -1,7 +1,6 @@
 ---
 title: The Case for React Native
 date: 2018-06-15
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1006792849990602753
 ---
 

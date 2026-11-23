@@ -1,7 +1,6 @@
 ---
 title: Hitting a Guitar Stride
 date: 2017-05-27
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/868459829144190976
 ---
 

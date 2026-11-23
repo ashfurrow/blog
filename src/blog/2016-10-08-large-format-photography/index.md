@@ -1,7 +1,6 @@
 ---
 title: Large Format Photography
 date: 2016-10-08
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/783623380792668160
 socialImage: lamps.jpg
 ---

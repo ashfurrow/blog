@@ -1,8 +1,6 @@
 ---
 title: 5 Years of iOS
 date: 2014-12-21
-socialImage: header.jpg
-banner: header.jpg
 pageStylesheet: /assets/personal-timeline.css
 timeline_entries:
   - date: "2009"

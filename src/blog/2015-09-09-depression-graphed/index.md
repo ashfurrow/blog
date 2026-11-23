@@ -1,7 +1,6 @@
 ---
 title: Depression, Graphed
 date: 2015-09-09
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/641574774423089152
 socialImage: graph7.png
 ---

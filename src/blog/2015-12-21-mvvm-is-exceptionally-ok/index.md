@@ -1,7 +1,6 @@
 ---
 title: MVVM is Exceptionally OK
 date: 2015-12-21
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/678384591930048512
 ---
 

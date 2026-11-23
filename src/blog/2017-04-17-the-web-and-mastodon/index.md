@@ -1,7 +1,6 @@
 ---
 title: The Web and Mastodon
 date: 2017-04-17
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/854104942742777856
 ---
 

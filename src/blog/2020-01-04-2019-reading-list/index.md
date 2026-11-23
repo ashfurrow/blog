@@ -1,7 +1,6 @@
 ---
 title: 2019 Reading List
 date: 2020-01-04
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1213486933445369859
 ---
 

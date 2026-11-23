@@ -1,7 +1,6 @@
 ---
 title: The Spirit of Moya
 date: 2018-04-21
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/987251928706027520
 ---
 

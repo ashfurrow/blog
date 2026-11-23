@@ -1,7 +1,6 @@
 ---
 title: Emotions Matter
 date: 2017-09-30
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/913761780010283008
 ---
 

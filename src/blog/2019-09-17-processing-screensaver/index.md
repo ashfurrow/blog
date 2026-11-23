@@ -1,7 +1,6 @@
 ---
 title: Processing Screensaver
 date: 2019-09-17
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1171401123695091712
 ---
 

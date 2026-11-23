@@ -1,7 +1,6 @@
 ---
 title: Migrating From Cloudflare
 date: 2019-09-29
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1178317194922471426
 ---
 

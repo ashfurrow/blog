@@ -1,7 +1,6 @@
 ---
 title: 5 Years of Peer Lab
 date: 2020-02-29
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1231485534368866304
 ---
 

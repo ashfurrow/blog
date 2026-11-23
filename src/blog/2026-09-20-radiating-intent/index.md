@@ -1,7 +1,6 @@
 ---
 title: Radiating Intent
 date: 2026-09-20
-banner: banner.jpg
 ---
 
 I had a new member of my team join recently and, when I met with them one-on-one for the first time, they complimented me on my standup updates. My team works remotely so standups are an important touchpoint. My colleague and I talked a bit more about what made my updates helpful and I realized that I've never actually written a public blog post about this.

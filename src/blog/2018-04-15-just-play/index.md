@@ -1,7 +1,6 @@
 ---
 title: Just Play
 date: 2018-04-15
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/985322901485359104
 ---
 

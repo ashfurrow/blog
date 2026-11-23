@@ -1,7 +1,6 @@
 ---
 title: Mastodon Hosting Migration Plan
 date: 2017-04-13
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/852301727407669248
 ---
 

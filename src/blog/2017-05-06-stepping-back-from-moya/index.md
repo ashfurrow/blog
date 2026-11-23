@@ -1,7 +1,6 @@
 ---
 title: Stepping Back from Moya
 date: 2017-05-06
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/860569876821311488
 ---
 

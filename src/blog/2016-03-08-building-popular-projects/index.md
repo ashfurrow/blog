@@ -1,7 +1,6 @@
 ---
 title: Building Popular Projects
 date: 2016-03-08
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/706465122202603522
 ---
 

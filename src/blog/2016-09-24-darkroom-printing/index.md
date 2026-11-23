@@ -1,7 +1,6 @@
 ---
 title: Darkroom Printing
 date: 2016-09-24
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/777372009730834432
 ---
 

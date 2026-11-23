@@ -1,7 +1,6 @@
 ---
 title: Leaving Artsy
 date: 2021-01-04
-banner: background.jpg
 bannerAttribution: https://www.instagram.com/p/B5vT-A0HO3b/
 ---
 

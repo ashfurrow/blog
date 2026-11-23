@@ -1,7 +1,6 @@
 ---
 title: Productive Anger
 date: 2019-05-11
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1127237114771460102
 ---
 

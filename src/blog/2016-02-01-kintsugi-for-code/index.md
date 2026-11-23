@@ -1,7 +1,6 @@
 ---
 title: Kintsugi for Code
 date: 2016-02-01
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/693472561968058369
 socialImage: kintsugi.jpg
 ---

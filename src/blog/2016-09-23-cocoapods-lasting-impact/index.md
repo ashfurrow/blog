@@ -1,7 +1,6 @@
 ---
 title: CocoaPods' Lasting Impact
 date: 2016-09-23
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/779002663765700608
 ---
 

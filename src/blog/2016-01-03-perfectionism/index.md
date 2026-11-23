@@ -1,7 +1,6 @@
 ---
 title: Perfectionism
 date: 2016-01-03
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/682821645908766720
 ---
 

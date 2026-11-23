@@ -1,7 +1,6 @@
 ---
 title: Getting Happy with Email
 date: 2015-10-31
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/659744137206480896
 ---
 

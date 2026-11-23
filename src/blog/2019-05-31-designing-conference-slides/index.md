@@ -1,7 +1,6 @@
 ---
 title: Designing Conference Slides
 date: 2019-05-31
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1134545523111841792
 ---
 

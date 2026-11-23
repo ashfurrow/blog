@@ -1,7 +1,6 @@
 ---
 title: My Slow Return to a Swift Career
 date: 2026-11-01
-banner: banner.jpg
 ---
 
 I recently gave this talk at [the SwiftRockies conference in Calgary](https://swiftrockies.com). This blog post expands on a few points that I didn't have time for in the presentation, as well as some updates since then. [The talk is here](https://www.youtube.com/watch?v=UCimuzlrbcc).

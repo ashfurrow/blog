@@ -1,7 +1,6 @@
 ---
 title: Building Online Communities
 date: 2015-11-16
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/665704240350932992
 ---
 

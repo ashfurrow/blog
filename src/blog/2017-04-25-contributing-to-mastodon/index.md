@@ -1,7 +1,6 @@
 ---
 title: Contributing to Mastodon
 date: 2017-04-25
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/856780230551363584
 ---
 

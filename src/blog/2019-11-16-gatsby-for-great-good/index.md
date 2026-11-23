@@ -1,7 +1,6 @@
 ---
 title: Gatsby For Great Good
 date: 2019-11-16
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1195084434170687511
 ---
 

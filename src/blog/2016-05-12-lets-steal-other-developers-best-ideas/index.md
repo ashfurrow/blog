@@ -1,7 +1,6 @@
 ---
 title: Let's Steal Other Developers' Best Ideas
 date: 2016-05-12
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/728333617999564800
 ---
 

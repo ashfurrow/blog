@@ -1,7 +1,6 @@
 ---
 title: Rotating Mastodon Log Files
 date: 2017-07-23
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/887967073560932352
 ---
 

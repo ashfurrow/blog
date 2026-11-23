@@ -1,7 +1,6 @@
 ---
 title: Electrodynamics
 date: 2018-04-25
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/987893658748899328
 ---
 

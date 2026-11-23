@@ -1,7 +1,6 @@
 ---
 title: Due Diligence
 date: 2017-10-08
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/916849438982852608
 ---
 

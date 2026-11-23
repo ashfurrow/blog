@@ -1,7 +1,6 @@
 ---
 title: Update on Medication Changes
 date: 2017-04-06
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/847463971418525696
 ---
 

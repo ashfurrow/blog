@@ -1,7 +1,6 @@
 ---
 title: Letting Things Lapse
 date: 2016-02-09
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/696628912013623296
 ---
 

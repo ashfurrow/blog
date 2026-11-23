@@ -1,7 +1,6 @@
 ---
 title: Downloading Gatsby Static Search Index Asynchronously
 date: 2020-08-05
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1290897133474844673
 ---
 

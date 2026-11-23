@@ -1,7 +1,6 @@
 ---
 title: Four Years in New Brunswick
 date: 2024-10-31
-banner: background.jpg
 ---
 
 Today – Halloween – marks four years since my wife and I [returned to live in New Brunswick](/blog/moving-home-to-new-brunswick/). I feel compelled to reflect and share.

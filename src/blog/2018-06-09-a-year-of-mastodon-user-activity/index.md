@@ -1,7 +1,6 @@
 ---
 title: A Year of Mastodon User Activity
 date: 2018-06-09
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1004754417994862592
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: My First Team (Working Agreement)
 date: 2021-01-08
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1347046057356759041
 ---
 

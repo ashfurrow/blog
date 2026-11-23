@@ -1,7 +1,6 @@
 ---
 title: Agency
 date: 2026-11-09
-banner: ./banner.jpg
 ---
 
 I’ve been writing more lately, as I work through my feelings about changes to the software development industry. After Cory Doctorow was eviscerated about [his use of a local for spellcheck](https://pluralistic.net/2026/02/19/now-we-are-six/) I shut my mouth about them. And I'm tired of that. This post is for my `#neverAI` peers, when they eventually catch up on my RSS feed and realize that I’ve been using LLMs this whole time. It's an explanation of why I’ve leaned into agentic coding tools and why I think they should, too. I'm not likely to convince anyone, but I'm tired of shying away from it.

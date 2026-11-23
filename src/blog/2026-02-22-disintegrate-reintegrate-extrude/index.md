@@ -1,7 +1,6 @@
 ---
 title: Disintegrate, Reintegrate, Extrude
 date: 2026-02-22
-banner: banner.jpg
 ---
 
 [I wrote last week](/blog/goodbye-clementine/) how my wife and I had to say goodbye to Clementine. Without going into detail, caring for our sick cat took a lot out of us. Since last summer, Clem needed _some_ kind of daily medical care: ear drops, pills, special food, eye lube. Yes, _eye lube_. We wanted to help her get better. We only learned in November that she had cancer and only learned in January that there was nothing we could do.

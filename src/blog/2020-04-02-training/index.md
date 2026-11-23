@@ -1,7 +1,6 @@
 ---
 title: Training
 date: 2020-04-02
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1245487801082273792
 ---
 

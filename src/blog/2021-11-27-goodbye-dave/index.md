@@ -1,7 +1,6 @@
 ---
 title: Goodbye Dave
 date: 2021-11-27
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1461404985615425547
 socialImage: dave.jpg
 ---

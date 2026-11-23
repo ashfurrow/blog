@@ -1,7 +1,6 @@
 ---
 title: Runiversary!
 date: 2020-08-22
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1296745170348781569
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: On Turning 27
 date: 2015-04-20
-banner: background.jpg
 bannerAttribution: https://500px.com/photo/91467567/tracks-home-by-ash-furrow
 ---
 

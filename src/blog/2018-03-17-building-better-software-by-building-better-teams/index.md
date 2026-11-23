@@ -1,7 +1,6 @@
 ---
 title: Building Better Software by Building Better Teams
 date: 2018-03-17
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/974908318815793152
 socialImage: team.jpg
 ---

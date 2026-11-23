@@ -1,7 +1,6 @@
 ---
 title: Building Compassionate Software
 date: 2016-08-21
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/767029232140779520
 ---
 

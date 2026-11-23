@@ -1,7 +1,6 @@
 ---
 title: What is a Senior Engineer, Even?
 date: 2019-02-08
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1091721333883523072
 ---
 

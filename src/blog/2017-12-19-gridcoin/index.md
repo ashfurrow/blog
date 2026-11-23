@@ -1,7 +1,6 @@
 ---
 title: Gridcoin
 date: 2017-12-19
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/942724035376566272
 ---
 

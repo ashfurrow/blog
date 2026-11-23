@@ -1,7 +1,6 @@
 ---
 title: Not Immediately Obvious
 date: 2017-11-13
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/929783439548715009
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Photography Retrospective
 date: 2016-08-17
-banner: background.jpg
 bannerAttribution: https://www.instagram.com/p/w3-Q92SObJ/
 socialImage: og.jpg
 ---

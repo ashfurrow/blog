@@ -1,7 +1,6 @@
 ---
 title: Canadian Survival Guide for Manhattan
 date: 2015-08-15
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/632528646847209472
 ---
 

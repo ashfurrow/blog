@@ -1,7 +1,6 @@
 ---
 title: Learning to Walk
 date: 2019-08-11
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1160640972507832320
 ---
 

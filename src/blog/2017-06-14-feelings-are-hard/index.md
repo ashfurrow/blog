@@ -1,7 +1,6 @@
 ---
 title: Feelings are Hard
 date: 2017-06-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/873362805671514112
 ---
 

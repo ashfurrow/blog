@@ -1,7 +1,6 @@
 ---
 title: Upcoming Conference Talk
 date: 2025-12-21
-banner: banner.jpg
 ---
 
 I'm very excited to announce that I'll be speaking at the [Swift Rockies](https://swiftrockies.com) conference for iOS developers next July in Calgary. This will be my first conference presentation in over five years!

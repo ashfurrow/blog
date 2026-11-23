@@ -1,3 +1,4 @@
+import * as fs from "fs"
 import * as path from "path"
 import md from "./util/markdown.js"
 import { transformImage } from "./util/transformImage.js"
@@ -8,6 +9,12 @@ import { coverURL } from "./photoposts.js"
 // A photo post's banner is the same file the /photos page uses; any other post's is processed by the blog's transform.
 const bannerURL = (ctx, imagePath) =>
   ctx.layout === PHOTO_LAYOUT ? coverURL(ctx.page, imagePath) : transformImage(ctx, imagePath)
+
+// A post's banner is its banner.jpg (or .png, etc.) if it has one. Front matter can still set it explicitly, which photo
+// posts do.
+const BANNER_FILE = /^banner\.(jpg|jpeg|png|webp)$/
+const bannerPath = (ctx) =>
+  ctx.banner || fs.readdirSync(path.dirname(ctx.page.inputPath)).find((name) => BANNER_FILE.test(name))
 
 const escapeAttr = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;")
 
@@ -54,7 +61,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("socialImageURL", async function () {
     // Fall back to banner if social image is not specified
     /** @type {string} */
-    const imagePath = this.ctx.socialImage || this.ctx.banner
+    const imagePath = this.ctx.socialImage || bannerPath(this.ctx)
 
     if (!imagePath) {
       return Metadata.banner
@@ -69,16 +76,16 @@ export default function (eleventyConfig) {
   // Transforms the bannerImage, falling back to a site-wide default.
   eleventyConfig.addNunjucksAsyncShortcode("bannerImageURL", async function () {
     /** @type {string} */
-    const bannerPath = this.ctx.banner
+    const banner = bannerPath(this.ctx)
 
-    if (!bannerPath) {
+    if (!banner) {
       return Metadata.banner
     }
-    if (bannerPath.startsWith("/")) {
-      return bannerPath
+    if (banner.startsWith("/")) {
+      return banner
     }
 
-    return bannerURL(this.ctx, bannerPath)
+    return bannerURL(this.ctx, banner)
   })
 
   eleventyConfig.addPairedShortcode("wide", function (content) {

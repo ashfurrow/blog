@@ -1,7 +1,6 @@
 ---
 title: Music is Back
 date: 2017-08-20
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/898629967377907713
 ---
 

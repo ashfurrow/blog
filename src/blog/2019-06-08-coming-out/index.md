@@ -1,7 +1,6 @@
 ---
 title: Coming Out
 date: 2019-06-08
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1137101112383873029
 ---
 

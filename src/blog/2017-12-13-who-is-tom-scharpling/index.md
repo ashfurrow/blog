@@ -1,7 +1,6 @@
 ---
 title: Who is Tom Scharpling?
 date: 2017-12-13
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/939771120886210560
 ---
 
