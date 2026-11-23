@@ -1,7 +1,6 @@
 ---
 title: Learning to Run
 date: 2019-11-23
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1196491952927203328
 ---
 

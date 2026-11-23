@@ -1,7 +1,6 @@
 ---
 title: Steven Universe and Masculinity
 date: 2016-07-27
-banner: background.jpg
 ---
 
 Discussion of masculinity in feminism forums online usually centres around [_toxic masculinity_](http://geekfeminism.wikia.com/wiki/Toxic_masculinity), defined as "the socially-constructed attitudes that describe the masculine gender role as violent, unemotional, sexually aggressive, and so forth." It's important to discuss toxic masculinity, and a lot has been said on the topic. But I'm _really_ excited about a [new web series](https://www.youtube.com/channel/UCHiwtz2tCEfS17N9A-WoSSw) that analyzes positive expressions of masculinity in pop culture.

@@ -1,7 +1,6 @@
 ---
 title: Restoring a Postgres Mastodon Database
 date: 2020-12-30
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1343159251687059464
 ---
 

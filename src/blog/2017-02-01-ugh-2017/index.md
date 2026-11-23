@@ -1,7 +1,6 @@
 ---
 title: Ugh 2017
 date: 2017-02-01
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/826383027328712704
 ---
 

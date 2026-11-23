@@ -1,7 +1,6 @@
 ---
 title: JavaScript is Good, Actually
 date: 2018-05-05
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/992763019968045056
 ---
 

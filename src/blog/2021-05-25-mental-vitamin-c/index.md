@@ -1,7 +1,6 @@
 ---
 title: Mental Vitamin C
 date: 2021-05-25
-banner: bg.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1397232127608041473
 ---
 

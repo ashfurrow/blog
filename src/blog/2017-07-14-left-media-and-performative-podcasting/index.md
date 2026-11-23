@@ -1,7 +1,6 @@
 ---
 title: Left Media and Performative Podcasting
 date: 2017-07-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/885270453371236354
 ---
 

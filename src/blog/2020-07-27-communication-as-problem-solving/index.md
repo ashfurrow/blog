@@ -1,7 +1,6 @@
 ---
 title: Communication As Problem Solving
 date: 2020-07-27
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1286409082270883847
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: MINSWAN for iOS
 date: 2015-07-25
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/623429079748972544
 ---
 

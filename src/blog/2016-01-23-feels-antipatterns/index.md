@@ -1,7 +1,6 @@
 ---
 title: Feels Antipatterns
 date: 2016-01-23
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/689973022514638851
 ---
 

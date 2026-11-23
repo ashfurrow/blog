@@ -1,7 +1,6 @@
 ---
 title: Expectations for Open Source
 date: 2016-02-08
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/696114194584899584
 ---
 

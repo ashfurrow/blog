@@ -1,7 +1,6 @@
 ---
 title: 'iOS "versus" JavaScript: How to Learn From Other Programming Communities'
 date: 2019-03-25
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1106940840491081728
 pageStylesheet: /assets/chat.css
 pageJavaScript: /assets/chat.js

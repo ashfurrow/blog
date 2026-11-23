@@ -1,7 +1,6 @@
 ---
 title: Shopify Update
 date: 2021-08-18
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1428035094468509698
 ---
 

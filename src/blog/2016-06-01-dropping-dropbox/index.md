@@ -1,7 +1,6 @@
 ---
 title: Dropping Dropbox
 date: 2016-06-01
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/737620064803934208
 ---
 

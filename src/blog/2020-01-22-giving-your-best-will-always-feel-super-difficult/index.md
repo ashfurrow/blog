@@ -1,7 +1,6 @@
 ---
 title: Giving Your Best Will Always Feel Super Difficult
 date: 2020-01-22
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1217979162784342016
 ---
 

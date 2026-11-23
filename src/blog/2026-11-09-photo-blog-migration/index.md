@@ -1,7 +1,6 @@
 ---
 title: Photo Blog Migration
 date: 2026-11-09
-banner: ./banner.jpg
 ---
 
 In 2013, when it was still in beta, I signed up for [Exposure](https://www.exposure.co). This is a web publishing tool for photographers, to organize their work into photo blog posts. It does _a lot_ more than that, especially as they've added new features over the years, but I've only used its simpler options.

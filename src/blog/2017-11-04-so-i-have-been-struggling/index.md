@@ -1,7 +1,6 @@
 ---
 title: So I Have Been Struggling
 date: 2017-11-04
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/925914833626771456
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: React Native Starter Resources for Native Developers
 date: 2018-03-29
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/979035292308066304
 ---
 

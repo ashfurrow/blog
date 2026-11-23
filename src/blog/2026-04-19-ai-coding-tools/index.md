@@ -1,7 +1,6 @@
 ---
 title: AI Coding Tools
 date: 2026-04-19
-banner: ./banner.jpg
 ---
 
 I started writing this blog post as an attempt to collect and distill all my various thoughts and feelings about AI and AI coding tools. But the longer I took to write it, the more things kept changing, and the harder it became to fulfill that scope. So I'm just going to give a history of my own use of AI coding tools. [This video](https://www.youtube.com/watch?v=LACyqdAfnaw) tries to describe why Claude Code specifically has taken off in popularity, but I don't think the creator was specific enough. I'll cut to the chase: Claude Code was the first AI coding tool to _meet me_ where _I_ was at.

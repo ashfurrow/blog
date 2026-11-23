@@ -1,7 +1,6 @@
 ---
 title: How I'm Thinking About My Career in 2022
 date: 2022-01-23
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1485111184076546051
 ---
 

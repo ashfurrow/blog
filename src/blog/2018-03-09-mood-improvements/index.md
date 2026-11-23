@@ -1,7 +1,6 @@
 ---
 title: Mood Improvements
 date: 2018-03-09
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/969939894662565889
 ---
 

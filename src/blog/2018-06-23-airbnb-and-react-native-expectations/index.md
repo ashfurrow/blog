@@ -1,7 +1,6 @@
 ---
 title: Airbnb and React Native Expectations
 date: 2018-06-23
-banner: background.jpeg
 bannerAttribution: https://twitter.com/CloudyConway/status/1010127316805177344
 ---
 

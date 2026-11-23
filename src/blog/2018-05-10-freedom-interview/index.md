@@ -1,7 +1,6 @@
 ---
 title: Freedom Interview
 date: 2018-05-10
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/994318611828367360
 ---
 

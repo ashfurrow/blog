@@ -1,7 +1,6 @@
 ---
 title: The Imperial Units Strike Back
 date: 2026-02-05
-banner: banner.jpg
 ---
 
 I lived in the United States for six years, during which time I refused to learn Fahrenheit. I was forced to give in to using inches because, unlike every tape measure I owned in Canada that had _both_ inches and centimetres, every measuring tape I could find at my local hardware store was _inches only_. For this and other reasons, it wasn't practical to resist.

@@ -1,7 +1,6 @@
 ---
 title: Normalizing Struggle
 date: 2016-01-03
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/682934079445188608
 ---
 

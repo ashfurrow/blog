@@ -1,7 +1,6 @@
 ---
 title: Ambiversion
 date: 2015-07-13
-banner: background.jpg
 ---
 
 My sister posted [this Buzzfeed listicle](http://www.buzzfeed.com/lukebailey/ambiverts-for-the-silver#.qnmeb9ynLZ) on Facebook. Normally these aren't my bag, but the headline caught me:

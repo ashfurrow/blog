@@ -1,7 +1,6 @@
 ---
 title: Naming Things in Swift
 date: 2017-01-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/817193041161232385
 ---
 

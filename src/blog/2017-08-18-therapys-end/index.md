@@ -1,7 +1,6 @@
 ---
 title: Therapy's End
 date: 2017-08-18
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/897772409260048384
 ---
 

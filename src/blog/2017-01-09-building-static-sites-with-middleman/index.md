@@ -1,7 +1,6 @@
 ---
 title: Building Static Sites with Middleman
 date: 2017-01-09
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/817193041161232385
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Thinking Critically About Apple
 date: 2018-07-19
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1018608204488564736
 ---
 

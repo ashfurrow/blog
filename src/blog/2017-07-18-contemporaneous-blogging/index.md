@@ -1,7 +1,6 @@
 ---
 title: Contemporaneous Blogging
 date: 2017-07-18
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/886976250375491584
 ---
 

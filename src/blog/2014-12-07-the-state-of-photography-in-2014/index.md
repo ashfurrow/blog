@@ -1,7 +1,6 @@
 ---
 title: The State of Photography in 2014
 date: 2014-12-07
-banner: background.jpg
 bannerAttribution: https://500px.com/photo/63919867/leica-lady-by-ash-furrow
 socialImage: og.jpg
 ---

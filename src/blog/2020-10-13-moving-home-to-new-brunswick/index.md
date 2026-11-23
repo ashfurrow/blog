@@ -1,7 +1,6 @@
 ---
 title: Moving Home to New Brunswick
 date: 2020-10-13
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1315971862640427009
 ---
 

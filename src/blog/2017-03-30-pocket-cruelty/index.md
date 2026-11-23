@@ -1,7 +1,6 @@
 ---
 title: Pocket Cruelty
 date: 2017-03-30
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/846775591613468673
 ---
 

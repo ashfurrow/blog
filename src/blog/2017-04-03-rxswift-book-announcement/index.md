@@ -1,7 +1,6 @@
 ---
 title: RxSwift Book Announcement
 date: 2017-04-03
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/846434957195128833
 socialImage: cover.png
 ---

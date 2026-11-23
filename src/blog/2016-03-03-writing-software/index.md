@@ -1,7 +1,6 @@
 ---
 title: Writing Software
 date: 2016-03-03
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/705122483943432197
 socialImage: hamilton.jpg
 ---

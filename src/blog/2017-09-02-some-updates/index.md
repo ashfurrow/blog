@@ -1,7 +1,6 @@
 ---
 title: Some Updates
 date: 2017-09-02
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/901617293947437056
 ---
 

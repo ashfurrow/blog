@@ -1,7 +1,6 @@
 ---
 title: Citations Needed
 date: 2017-09-30
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/913627263803052032
 ---
 

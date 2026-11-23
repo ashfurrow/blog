@@ -1,7 +1,6 @@
 ---
 title: What Happens Next
 date: 2021-08-22
-banner: background.jpg
 socialImage: og_background.jpg
 ---
 

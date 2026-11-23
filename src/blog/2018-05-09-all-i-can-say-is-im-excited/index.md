@@ -1,7 +1,6 @@
 ---
 title: All I Can Say is I'm Excited
 date: 2018-05-09
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/993580901203435521
 ---
 

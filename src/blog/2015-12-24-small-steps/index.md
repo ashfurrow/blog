@@ -1,7 +1,6 @@
 ---
 title: Small Steps
 date: 2015-12-24
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/679989899114708992
 ---
 

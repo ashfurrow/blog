@@ -1,7 +1,6 @@
 ---
 title: Perspective of the Polyglot
 date: 2017-10-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/918864977368412161
 ---
 

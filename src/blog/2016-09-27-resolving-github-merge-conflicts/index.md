@@ -1,7 +1,6 @@
 ---
 title: Resolving GitHub Merge Conflicts
 date: 2016-09-27
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/779425582010490880
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Removing Analytics
 date: 2018-04-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/984559192647307264
 ---
 

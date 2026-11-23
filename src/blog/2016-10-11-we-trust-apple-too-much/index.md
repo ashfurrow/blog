@@ -1,7 +1,6 @@
 ---
 title: We Trust Apple Too Much
 date: 2016-10-11
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/785254024673198080
 ---
 

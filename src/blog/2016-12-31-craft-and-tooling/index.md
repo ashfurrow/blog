@@ -1,7 +1,6 @@
 ---
 title: Craft and Tooling
 date: 2016-12-31
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/811656253650911232
 ---
 

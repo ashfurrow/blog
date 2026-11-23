@@ -1,7 +1,6 @@
 ---
 title: Twitter Anger
 date: 2016-09-24
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/779425582010490880
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Guitar Update
 date: 2017-03-24
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/843233230874644482
 ---
 

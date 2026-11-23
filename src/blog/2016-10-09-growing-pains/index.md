@@ -1,7 +1,6 @@
 ---
 title: Growing Pains
 date: 2016-10-09
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/785148328971468801
 ---
 

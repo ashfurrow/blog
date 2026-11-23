@@ -1,7 +1,6 @@
 ---
 title: Building My Career
 date: 2015-11-22
-banner: background.jpg
 bannerAttribution: https://500px.com/photo/85057949/up-and-up-by-ash-furrow
 ---
 

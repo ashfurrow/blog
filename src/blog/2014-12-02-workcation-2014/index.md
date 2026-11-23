@@ -1,7 +1,6 @@
 ---
 title: Workcation 2014
 date: 2014-12-02
-banner: background.jpg
 ---
 
 As I mentioned in a [previous post](/blog/lessons-learned-travelling-europe/), I’ve travelled a lot this year, and I’ve just returned home with my wife from our last trip of 2014. It was a whopper: a two-week jaunt starting and ending in Amsterdam and stretching through three other countries. It started a bit over two weeks ago when I left for New York and my wife Ashley left for Nova Scotia to visit her family. We met up a week later in Halifax, drove to my hometown in New Brunswick for a few days’ visit with my family, then back to Halifax for a flight to Reykjavik for a three-day vacation in Iceland. Phew!

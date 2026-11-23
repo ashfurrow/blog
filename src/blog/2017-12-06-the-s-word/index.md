@@ -1,7 +1,6 @@
 ---
 title: The S Word
 date: 2017-12-06
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/938494921304104965
 ---
 

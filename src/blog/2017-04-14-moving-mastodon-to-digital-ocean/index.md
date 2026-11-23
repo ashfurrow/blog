@@ -1,7 +1,6 @@
 ---
 title: Moving Mastodon to Digital Ocean
 date: 2017-04-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/852268664825008130
 ---
 

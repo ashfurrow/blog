@@ -1,7 +1,6 @@
 ---
 title: Bargainville
 date: 2017-09-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/907699091513241600
 ---
 

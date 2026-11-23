@@ -1,7 +1,6 @@
 ---
 title: Sad & Sappy Songs
 date: 2018-10-05
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1048006375232753664
 socialImage: opengraph.jpg
 ---

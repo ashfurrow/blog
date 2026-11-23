@@ -1,7 +1,6 @@
 ---
 title: The Wrong Binary
 date: 2016-02-11
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/697609940140224513
 ---
 

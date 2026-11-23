@@ -1,7 +1,6 @@
 ---
 title: "UICollectionView: Unjustly Maligned"
 date: 2016-06-19
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/743938332758056961
 ---
 

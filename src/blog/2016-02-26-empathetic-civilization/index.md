@@ -1,7 +1,6 @@
 ---
 title: Empathetic Civilization
 date: 2016-02-26
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/702573726831927297
 ---
 

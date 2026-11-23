@@ -1,7 +1,6 @@
 ---
 title: Learning Guitar
 date: 2016-12-18
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/809229987731701760
 ---
 

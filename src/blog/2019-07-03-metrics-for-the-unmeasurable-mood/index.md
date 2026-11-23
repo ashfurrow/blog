@@ -1,7 +1,6 @@
 ---
 title: Metrics for the Unmeasurable Mood
 date: 2019-07-03
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1146480157336702976
 ---
 

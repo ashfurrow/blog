@@ -1,7 +1,6 @@
 ---
 title: Coming to Terms
 date: 2018-03-24
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/976481184820678657
 ---
 

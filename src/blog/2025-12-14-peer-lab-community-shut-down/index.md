@@ -1,7 +1,6 @@
 ---
 title: Peer Lab Community Shut Down
 date: 2025-12-14
-banner: banner.jpg
 ---
 
 When I lived in Amsterdam, a friend ran a weekly meetup for programmers. He held it on Saturday mornings, to discourage people who only had ideas for apps. The idea was to spend time in a café working on projects around other coders who were working on their projects, to exchange ideas and make connections. I enjoyed the Peer Lab so much that [I started my own](https://artsy.github.io/blog/2015/08/10/peer-lab/) when I moved to New York and [ran it for five years](/blog/5-years-of-peer-lab/). It was only stopped by the novel coronavirus pandemic.

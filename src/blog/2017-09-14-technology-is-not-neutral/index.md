@@ -1,7 +1,6 @@
 ---
 title: Technology is not Neutral
 date: 2017-09-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/908411683353350144
 ---
 

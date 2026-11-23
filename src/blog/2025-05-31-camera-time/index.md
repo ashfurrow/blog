@@ -1,8 +1,6 @@
 ---
 title: Camera Time
 date: 2025-05-31
-socialImage: fredericton.jpeg
-banner: fredericton.jpeg
 bannerAttribution: /blog/downtown-in-the-rain/
 ---
 

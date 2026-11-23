@@ -1,7 +1,6 @@
 ---
 title: Status Update
 date: 2016-06-29
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/747614405211336704
 ---
 

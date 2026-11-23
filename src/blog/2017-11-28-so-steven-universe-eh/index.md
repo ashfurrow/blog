@@ -1,7 +1,6 @@
 ---
 title: So Steven Universe, eh?
 date: 2017-11-28
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/930765727736451072
 socialImage: greg.jpg
 ---

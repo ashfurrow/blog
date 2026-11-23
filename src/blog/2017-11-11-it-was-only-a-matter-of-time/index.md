@@ -1,7 +1,6 @@
 ---
 title: It Was Only a Matter of Time
 date: 2017-11-11
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/929027797355565057
 ---
 

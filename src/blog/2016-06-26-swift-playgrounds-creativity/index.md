@@ -1,7 +1,6 @@
 ---
 title: Swift Playgrounds & Creativity
 date: 2016-06-26
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/747033594598678528
 socialImage: playground.jpg
 ---

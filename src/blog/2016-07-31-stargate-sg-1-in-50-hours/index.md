@@ -1,7 +1,6 @@
 ---
 title: Stargate SG-1 in 50 Hours
 date: 2016-07-31
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/759432930317967361
 ---
 

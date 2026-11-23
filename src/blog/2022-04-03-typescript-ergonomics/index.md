@@ -1,7 +1,6 @@
 ---
 title: TypeScript Ergonomics
 date: 2022-04-03
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1509723366646759435
 ---
 

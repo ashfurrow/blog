@@ -1,7 +1,6 @@
 ---
 title: Mastodon Interview
 date: 2017-07-02
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/880903499059519489
 ---
 

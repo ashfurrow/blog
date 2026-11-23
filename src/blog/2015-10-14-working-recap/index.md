@@ -1,7 +1,6 @@
 ---
 title: Working Recap
 date: 2015-10-14
-banner: background.jpg
 bannerAttribution: https://twitter.com/Oshianna2U/status/653655660949733376
 ---
 

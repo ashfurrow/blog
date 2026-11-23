@@ -1,7 +1,6 @@
 ---
 title: Hiring Juniors
 date: 2018-04-28
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/989743351497801728
 ---
 

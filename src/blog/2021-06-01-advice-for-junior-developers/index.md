@@ -1,7 +1,6 @@
 ---
 title: Advice for Junior Developers
 date: 2021-06-01
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1399497051264667649
 ---
 

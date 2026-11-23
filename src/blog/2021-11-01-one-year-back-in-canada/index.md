@@ -1,7 +1,6 @@
 ---
 title: One Year Back in Canada
 date: 2021-11-01
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1453704238937292802
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Blogging Workshop Notes
 date: 2016-08-01
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/760122178721484800
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Comparative Asynchronous Programming
 date: 2017-02-24
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/834342450835636224
 ---
 

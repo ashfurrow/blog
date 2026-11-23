@@ -1,7 +1,6 @@
 ---
 title: Engineering with Agents
 date: 2026-11-15
-banner: ./banner.jpg
 ---
 
 I think it's healthy to have scepticism. Extraordinary claims require extraordinary evidence, etc etc. And I also think it's important to change your mind when new evidence arises. That's why I'm totally comfortable with saying that [I was _very_ sceptical of AI-driven coding tools until early 2025](/blog/ai-coding-tools/). It's not that I didn't _believe_ they couldn't work; it's that I tried them and _they didn't work_, at least for me.

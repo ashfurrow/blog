@@ -1,7 +1,6 @@
 ---
 title: The Over-Engineering Method
 date: 2026-03-15
-banner: banner.jpg
 ---
 
 In Canada, "Engineer" is a protected term. I am a software _developer_, not a Software _Engineer_. There are valid reasons – _historical reasons_ – to restrict who is a capital-E Engineer, but these reasons are at odds with how the term is commonly used today. Nevertheless, my job title _was_ "Software Engineer" for seven years while I worked in the US, and I personally think that software development is best approached as an engineering problem.

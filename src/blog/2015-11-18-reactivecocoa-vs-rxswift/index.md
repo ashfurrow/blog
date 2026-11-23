@@ -1,7 +1,6 @@
 ---
 title: ReactiveCocoa vs RxSwift
 date: 2015-11-18
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/660238972912803841
 ---
 

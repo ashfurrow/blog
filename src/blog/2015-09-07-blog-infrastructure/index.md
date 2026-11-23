@@ -1,7 +1,6 @@
 ---
 title: Blog Infrastructure
 date: 2015-09-07
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/640181721326059520
 ---
 

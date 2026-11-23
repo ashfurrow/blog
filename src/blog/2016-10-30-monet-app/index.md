@@ -1,7 +1,6 @@
 ---
 title: Monet.app
 date: 2016-10-30
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/792124334320082944
 ---
 

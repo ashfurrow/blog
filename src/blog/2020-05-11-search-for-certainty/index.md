@@ -1,7 +1,6 @@
 ---
 title: Search For Certainty
 date: 2020-05-11
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1256199878981664771
 ---
 

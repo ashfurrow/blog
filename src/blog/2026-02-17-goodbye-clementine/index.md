@@ -1,7 +1,6 @@
 ---
 title: Goodbye Clementine
 date: 2026-02-17
-banner: banner.jpg
 socialImage: xmas.jpeg
 ---
 

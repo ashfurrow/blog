@@ -1,7 +1,6 @@
 ---
 title: Summer Fam Jam
 date: 2022-07-28
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1551523033449435140
 ---
 

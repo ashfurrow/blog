@@ -1,7 +1,6 @@
 ---
 title: Audiobooks are Back
 date: 2019-05-04
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1124624647297884162
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Running Mastodon on Heroku
 date: 2017-04-07
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/850365833448742913
 ---
 

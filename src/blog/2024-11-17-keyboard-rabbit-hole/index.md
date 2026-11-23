@@ -1,7 +1,6 @@
 ---
 title: Keyboard Rabbit Hole
 date: 2024-11-17
-banner: banner.jpeg
 socialImage: switching.jpeg
 ---
 

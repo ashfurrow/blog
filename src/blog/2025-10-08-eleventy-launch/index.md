@@ -1,7 +1,6 @@
 ---
 title: Eleventy Launch
 date: 2025-10-08
-banner: ./banner.jpeg
 ---
 
 [As I discussed previously](/blog/yet-another-blog-rewrite/), I've been rewriting this blog in a new tool called [11ty](https://www.11ty.dev) (aka Eleventy - the project's devs aren't consistent so I won't be either). _This_ is the first blog post written in the new blog engine, and the migration is complete!

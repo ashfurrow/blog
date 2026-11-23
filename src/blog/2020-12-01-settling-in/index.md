@@ -1,7 +1,6 @@
 ---
 title: Settling In
 date: 2020-12-01
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1333827007638016002
 ---
 

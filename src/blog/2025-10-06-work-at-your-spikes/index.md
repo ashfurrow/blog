@@ -1,8 +1,6 @@
 ---
 title: Work At Your Spikes
 date: 2025-10-06
-banner: ./banner.jpeg
-socialImage: ./banner.jpeg
 ---
 
 I want to discuss my career trajectory and a chronic issue I've identified with my job satisfaction since becoming a staff developer. It's been subtle and I didn't notice it for years. Maybe this will resonate with you.

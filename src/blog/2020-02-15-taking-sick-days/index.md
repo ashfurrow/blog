@@ -1,7 +1,6 @@
 ---
 title: Taking Sick Days
 date: 2020-02-15
-banner: background.png
 bannerAttribution: https://twitter.com/CrookedCosmos/status/1226468092651413504
 ---
 

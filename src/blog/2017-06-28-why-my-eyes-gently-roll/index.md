@@ -1,7 +1,6 @@
 ---
 title: Why My Eyes Gently Roll
 date: 2017-06-28
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/879381228998320128
 ---
 

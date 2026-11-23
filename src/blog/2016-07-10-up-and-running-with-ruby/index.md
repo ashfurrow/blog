@@ -1,7 +1,6 @@
 ---
 title: Up and Running with Ruby
 date: 2016-07-10
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/748397745938010112
 ---
 

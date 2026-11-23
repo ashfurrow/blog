@@ -1,7 +1,6 @@
 ---
 title: Learning with Side Projects
 date: 2016-05-06
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/727959731785113602
 ---
 

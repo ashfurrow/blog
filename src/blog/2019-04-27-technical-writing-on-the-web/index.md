@@ -1,7 +1,6 @@
 ---
 title: Technical Writing on the Web
 date: 2019-04-27
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1120994984952500224
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Open Source Ideology
 date: 2017-07-18
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/887323948932886529
 ---
 

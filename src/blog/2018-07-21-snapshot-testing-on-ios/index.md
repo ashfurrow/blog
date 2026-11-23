@@ -1,7 +1,6 @@
 ---
 title: Snapshot Testing on iOS
 date: 2018-07-21
-banner: background.png
 bannerAttribution: https://twitter.com/CloudyConway/status/1020634048438460416
 ---
 

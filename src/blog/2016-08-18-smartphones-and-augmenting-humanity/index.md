@@ -1,7 +1,6 @@
 ---
 title: Smartphones and Augmenting Humanity
 date: 2016-08-18
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/766250712091205632
 ---
 

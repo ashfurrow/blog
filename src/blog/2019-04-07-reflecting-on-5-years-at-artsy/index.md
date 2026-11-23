@@ -1,7 +1,6 @@
 ---
 title: Reflecting on 5 Years at Artsy
 date: 2019-04-07
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1114519565143298049
 ---
 

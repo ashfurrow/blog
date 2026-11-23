@@ -1,7 +1,6 @@
 ---
 title: Now, and Forever?
 date: 2015-09-03
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/639227005922361344
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Progress and Pianos
 date: 2018-01-29
-banner: background.jpg
 bannerAttribution: https://twitter.com/CrookedCosmos/status/954163199254855680
 ---
 

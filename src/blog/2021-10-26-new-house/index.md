@@ -1,7 +1,6 @@
 ---
 title: New House!
 date: 2021-10-26
-banner: background.jpg
 bannerAttribution: https://twitter.com/CloudyConway/status/1453100262332174340
 ---
 
