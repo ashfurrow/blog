@@ -415,16 +415,21 @@ header h1 {
   position: absolute;
   bottom: 0;
   right: env(safe-area-inset-right);
-  color: rgba(255, 255, 255, 0.5);
-  padding: 1.25rem;
+  color: var(--white);
+  padding: 1rem;
+  padding-bottom: calc(1rem - 0.0625em); /* the image glyph has 1/16em of empty space below it */
   z-index: 10;
 }
+.banner-attribution svg {
+  display: block;
+}
 .banner-attribution:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--primary);
 }
 @media (max-width: 600px) {
   .banner-attribution {
-    padding: 0.75rem;
+    padding: 0.7rem;
+    padding-bottom: calc(0.7rem - 0.0625em);
   }
 }
 
