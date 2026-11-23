@@ -475,12 +475,14 @@ header h1 {
   margin: auto;
   padding: 0 0.5rem;
   justify-content: space-between;
+  gap: 1rem;
   align-items: center;
   height: 2.5rem;
   font-size: 0.75rem;
 }
 .navbar-logo {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   height: 1.5rem;
   margin: 0;
@@ -513,12 +515,17 @@ header h1 {
   margin: auto 0 auto auto;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+  overflow: hidden;
 }
 .navbar-links li {
   display: inline-block;
+  flex-shrink: 0;
   padding: 0;
   margin: auto 0;
   line-height: 1.5rem;
+  white-space: nowrap;
 }
 .navbar-links a,
 .navbar-links .theme-toggle {
@@ -542,6 +549,9 @@ header h1 {
 .navbar[data-scrolled="true"] .navbar-links a,
 .navbar[data-scrolled="true"] .navbar-links .theme-toggle {
   color: var(--text-strong);
+}
+.navbar-links li:first-child a {
+  padding-left: 0.25rem;
 }
 .navbar-links a:hover,
 .navbar-links .theme-toggle:hover {
