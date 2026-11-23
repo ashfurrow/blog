@@ -169,6 +169,53 @@ h2, h3 {
   color: var(--text);
   font-weight: var(--font-weight-bold);
 }
+/* List markers are drawn by hand (::marker can't take margins) so the gap is controlled.
+   On phones the marker sits flush with the text column and the item text is indented past it; wider screens have a
+   margin, so the markers hang outside the text grid instead. */
+article.normal-width > :is(ul, ol) {
+  --marker-gap: 0.5rem;
+  list-style: none;
+  padding-left: calc(var(--marker-width) + var(--marker-gap));
+}
+article.normal-width > ul {
+  --marker-width: 0.9rem;
+}
+article.normal-width > ol {
+  --marker-width: 1.2rem;
+}
+article.normal-width > :is(ul, ol) > li {
+  position: relative;
+}
+article.normal-width > :is(ul, ol) > li::before {
+  position: absolute;
+  right: calc(100% + var(--marker-gap));
+}
+/* The bullet is a drawn circle rather than a glyph, so it is centred on the first line without font-dependent nudging. */
+article.normal-width > ul > li::before {
+  --bullet-size: 0.45rem;
+  content: "";
+  width: var(--bullet-size);
+  height: var(--bullet-size);
+  border-radius: 50%;
+  background: currentColor;
+  top: calc(0.83rem - var(--bullet-size) / 2); /* Half the 1.66 body line height */
+}
+article.normal-width > ol > li::before {
+  content: counter(list-item) ".";
+  font-weight: var(--font-weight-bold);
+}
+@media (max-width: 600px) {
+  /* Centre the bullet in its slot so it isn't jammed against the screen edge. */
+  article.normal-width > ul > li::before {
+    right: calc(100% + var(--marker-gap) + (var(--marker-width) - var(--bullet-size)) / 2);
+  }
+}
+@media (min-width: 601px) {
+  article.normal-width > :is(ul, ol) {
+    --marker-gap: 0.75rem;
+    padding-left: 0;
+  }
+}
 blockquote:not(.instagram-media) {
   font-style: italic;
   position: relative;
