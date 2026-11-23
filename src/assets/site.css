@@ -214,8 +214,11 @@ pre {
   font-variant-ligatures: no-common-ligatures;
   font-feature-settings: normal;
 }
-p code {
+:not(pre) > code {
   background: var(--grey-light);
+  font-size: 0.85em;
+  padding: 0.1em 0.25em;
+  border-radius: 0.3em;
 }
 
 /* Embeds/shortcodes */
