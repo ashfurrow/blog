@@ -1,5 +1,15 @@
 /* Chat Interface Styles */
 .chat-wrapper {
+  --chat-background: var(--background);
+  --chat-divider: light-dark(#ecf0f1, #2c2c2e);
+  --chat-scroll-thumb: light-dark(#bec4c8, #48484a);
+  --chat-my-bubble: light-dark(#2668d0, #4d95f7);
+  --chat-their-bubble: light-dark(#e5e5ea, #3b3b3d);
+  --chat-their-text: light-dark(#000, #fff);
+  --chat-input-text: light-dark(#000, #fff);
+  --chat-send: light-dark(#0072c6, #4d95f7);
+}
+.chat-wrapper {
   width: 100%;
   height: 500px;
   background-size: 100% 100%;
@@ -42,7 +52,7 @@ form.chat .messages {
   height: 85%;
   width: 100%;
   padding-left: 0.5rem;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid var(--chat-divider);
 }
 
 /* Customize the scrollbar to look like Messages.app */
@@ -54,11 +64,11 @@ form.chat ::-webkit-scrollbar {
 }
 
 form.chat ::-webkit-scrollbar-track {
-  background-color: white;
+  background-color: var(--chat-background);
 }
 
 form.chat ::-webkit-scrollbar-thumb {
-  background-color: #bec4c8;
+  background-color: var(--chat-scroll-thumb);
   border-radius: 3px;
 }
 
@@ -91,7 +101,7 @@ form.chat .ash {
 
 /* Formatting specific to "my" messages. */
 form.chat .reader {
-  background: #2668d0;
+  background: var(--chat-my-bubble);
   color: white;
   float: right;
   clear: both;
@@ -105,7 +115,7 @@ form.chat .reader:before {
   bottom: -2px;
   right: -8px;
   height: 19px;
-  border-right: 20px solid #2668d0;
+  border-right: 20px solid var(--chat-my-bubble);
   border-bottom-left-radius: 16px 14px;
   -webkit-transform: translate(0, -2px);
   transform: translate(0, -2px);
@@ -121,7 +131,7 @@ form.chat .reader:after {
   right: -42px;
   width: 12px;
   height: 20px;
-  background: white;
+  background: var(--chat-background);
   border-bottom-left-radius: 10px;
   -webkit-transform: translate(-30px, -2px);
   transform: translate(-30px, -2px);
@@ -129,8 +139,8 @@ form.chat .reader:after {
 
 /* Formatting specific to "their" messages */
 form.chat .ash {
-  background: #e5e5ea;
-  color: black;
+  background: var(--chat-their-bubble);
+  color: var(--chat-their-text);
   float: left;
   clear: both;
   border-bottom-left-radius: 30px 0px;
@@ -143,7 +153,7 @@ form.chat .ash:before {
   bottom: -2px;
   left: -7px;
   height: 19px;
-  border-left: 20px solid #e5e5ea;
+  border-left: 20px solid var(--chat-their-bubble);
   border-bottom-right-radius: 16px 14px;
   -webkit-transform: translate(0, -2px);
   transform: translate(0, -2px);
@@ -159,7 +169,7 @@ form.chat .ash:after {
   left: 4px;
   width: 26px;
   height: 20px;
-  background: white;
+  background: var(--chat-background);
   border-bottom-right-radius: 10px;
   -webkit-transform: translate(-30px, -2px);
   transform: translate(-30px, -2px);
@@ -179,7 +189,7 @@ form.chat #input {
 }
 
 form.chat #input p {
-  color: black;
+  color: var(--chat-input-text);
   display: table-cell;
   vertical-align: middle;
   line-height: 20px;
@@ -195,7 +205,7 @@ form.chat input[type="submit"] {
   outline: 0;
   width: 60px;
   background: transparent;
-  color: #0072c6;
+  color: var(--chat-send);
   font-weight: 700;
   text-align: right;
   float: right;
@@ -208,7 +218,7 @@ form.chat span.spinner {
   animation: loading-bar 0.5s 1;
   display: block;
   height: 2px;
-  background-color: #2668d0;
+  background-color: var(--chat-my-bubble);
   transition: width 0.2s;
   position: absolute;
   top: 0;

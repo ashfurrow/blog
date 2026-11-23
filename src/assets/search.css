@@ -9,7 +9,7 @@
   width: 100%;
   border-radius: 0.5rem;
   border: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--field-background);
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-family: var(--body-font-family);
@@ -17,7 +17,8 @@
 }
 .search-input:focus {
   outline: none;
-  background: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 1px var(--field-focus-ring);
+  background: var(--field-background-focus);
 }
 .search-loader {
   position: absolute;
@@ -61,6 +62,6 @@
   text-decoration: underline;
 }
 .search-result-date {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--text-muted);
   margin-left: 0.25rem;
 }

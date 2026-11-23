@@ -1,4 +1,5 @@
 {% set isPost = layout == 'layouts/post.njk' or layout == photoLayout %}
+{% set themeToggle %}<button class="theme-toggle" type="button" data-theme-toggle aria-label="Change theme"><span class="theme-icon theme-auto" aria-hidden="true">{% icon "solid/circle-half-stroke", "fa" %}</span><span class="theme-icon theme-light" aria-hidden="true">{% icon "solid/sun", "fa" %}</span><span class="theme-icon theme-dark" aria-hidden="true">{% icon "solid/moon", "fa" %}</span><span class="theme-label theme-auto">Auto mode</span><span class="theme-label theme-light">Light mode</span><span class="theme-label theme-dark">Dark mode</span></button>{% endset %}
 {% set exceptOrDescription %}{% exceptOrDescription %}{% endset %}
 {% set socialDescription = exceptOrDescription | striptags | safe %}
 <!doctype html>
@@ -42,6 +43,45 @@
 		<link rel="apple-touch-icon" sizes="256x256" href="/assets/icons/icon-256x256.png">
 		<link rel="apple-touch-icon" sizes="384x384" href="/assets/icons/icon-384x384.png">
 		<link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/icon-512x512.png">
+
+		<script>
+			// Auto means no data-theme attribute. The first tap from Auto picks the opposite of the system theme.
+			(function () {
+				var root = document.documentElement
+				var systemDark = window.matchMedia("(prefers-color-scheme: dark)")
+				try {
+					var saved = localStorage.getItem("theme")
+					if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved)
+				} catch (e) {}
+				root.classList.add("has-theme-toggle")
+
+				function describe() {
+					var theme = root.getAttribute("data-theme")
+					var name = theme === "light" ? "Light" : theme === "dark" ? "Dark" : "Auto"
+					var label = "Theme: " + name + (theme ? "" : " (follows system)") + ". Change theme"
+					document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
+						button.setAttribute("aria-label", label)
+						button.setAttribute("title", label)
+					})
+				}
+
+				document.addEventListener("DOMContentLoaded", describe)
+				document.addEventListener("click", function (event) {
+					if (!event.target.closest || !event.target.closest("[data-theme-toggle]")) return
+					var current = root.getAttribute("data-theme")
+					var opposite = systemDark.matches ? "light" : "dark"
+					var same = systemDark.matches ? "dark" : "light"
+					var next = current === null ? opposite : current === opposite ? same : null
+					if (next) root.setAttribute("data-theme", next)
+					else root.removeAttribute("data-theme")
+					try {
+						if (next) localStorage.setItem("theme", next)
+						else localStorage.removeItem("theme")
+					} catch (e) {}
+					describe()
+				})
+			})()
+		</script>
 
 		<link rel="stylesheet" href="/assets/site.css" />
 		<link rel="stylesheet" href="/assets/prism-theme.css" />
@@ -97,13 +137,13 @@
 		<nav class="navbar" data-scrolled="false" data-menu-open="false">
 			<div class="navbar-container">
 				<a href="/" class="navbar-logo">
-					<img src="/assets/siteimage.png" alt="Ash Furrow" class="logo-light" eleventy:ignore>
-					<img src="/assets/siteimage_dark.png" alt="Ash Furrow" class="logo-dark" eleventy:ignore>
+					<span class="logo" role="img" aria-label="Home page"></span>
 				</a>
 				<ul class="navbar-links">
 					{%- for item in metadata.navigation %}
 					<li><a href="{{ item.href }}"{% if item.ariaLabel %} aria-label="{{ item.ariaLabel }}"{% endif %}>{% if item.icon %}{% icon "solid/" ~ item.icon %}{% else %}{{ item.label }}{% endif %}</a></li>
 					{%- endfor %}
+					<li class="theme-item">{{ themeToggle | safe }}</li>
 				</ul>
 				<button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
 					{% icon "solid/bars", "hamburger-icon hamburger-bars" %}
@@ -115,6 +155,7 @@
 					{%- for item in metadata.navigation %}
 					<li><a href="{{ item.href }}">{{ item.mobileLabel or item.label }}</a></li>
 					{%- endfor %}
+					<li class="theme-item">{{ themeToggle | safe }}</li>
 				</ul>
 			</div>
 		</nav>
