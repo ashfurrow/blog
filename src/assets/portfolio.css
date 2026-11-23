@@ -10,6 +10,7 @@
   margin-bottom: 2rem;
 }
 
+/* The mockups' black bezels vanish on the dark page, so they get a faint light rim (a soft shadow in light mode). */
 .portfolio-subsection .right-image {
   --device-rim: light-dark(transparent, rgba(255, 255, 255, 0.35));
   --device-shadow: light-dark(rgba(0, 0, 0, 0.25), transparent);
