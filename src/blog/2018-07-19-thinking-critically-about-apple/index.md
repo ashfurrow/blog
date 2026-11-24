@@ -7,6 +7,10 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1018608204488564736
 Yesterday I tweeted a complaint I had about Apple's iOS SDK. My complaint highlighted one instance of a larger trend in Apple's behaviour towards their SDK design and documentation; I'm far more interested in the trend than I am in any given SDK issue.
 
 {% tweet "1019631126585978881" %}
+Apple's stubborn refusal to provide a simple API to determine if you're on an iPhone X causes developers to check for hardcoded screen dimensions, which is worse than developers making device-specific layouts. Don't @ me.
+
+— Ash Furrow (@ashfurrow) July 18, 2018
+{% endtweet %}
 
 Despite my request to not be replied to, people did. They really seemed to want to discuss the specifics of this issue. But, to repeat myself: I don't care about this specific complaint, I care about the larger trend.
 
@@ -15,10 +19,18 @@ So what is that trend? Well it's complicated and it involves critical thinking; 
 Apple designs its SDK based on how Apple wants the community to build software. However, sometimes the way Apple wants you to build things and the way you want to build things is going to differ.
 
 {% tweet "1004406015956221953" %}
+I really wish "you should think critically about Apple" weren't such a hot take in the iOS developer community, but here we are.
+
+— Ash Furrow (@ashfurrow) June 6, 2018
+{% endtweet %}
 
 This attitude Apple has ("you can either build how they want you to build, or get out") obviously has advantages and disadvantages. I'm not saying it's absolutely bad, I'm saying that _I_ am often frustrated by it. My complaints on twitter are not meant to deride Apple, but rather to draw the community's attention to how Apple's motivations and their own motivations are not the same. (This fact seems obvious to me but I often get pushback from community developers, which boggles my mind.)
 
 {% tweet "1004708649896435712" %}
+Thinking critically about Apple would involve asking questions about their decisions. Let’s take how they deprecated OpenGL for example. Who does this benefit? Who does it harm? What are the implications? Those sorts of questions need to get asked.
+
+— Ash Furrow (@ashfurrow) June 7, 2018
+{% endtweet %}
 
 Sometimes, when trying to define a problem with how you work, it's helpful to step outside your experience and get a different perspective. Let's contrast how Apple treats its SDK design with another platform: React.
 

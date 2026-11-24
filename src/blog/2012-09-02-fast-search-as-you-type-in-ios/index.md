@@ -52,6 +52,10 @@ It might not seem like a big deal, but this didn't take up hardly any extra time
 **Update** : Ryder Mackay points to another performance improvement:
 
 {% tweet "242393643154022400" %}
+@ashfurrow consider using -predicateWithSubstitutionVariables: to avoid expensive format string parsing: https://stackoverflow.com/a/7713512/1034477
+
+— Ryder Mackay (@rydermackay) September 2, 2012
+{% endtweet %}
 
 Nice! We can create the predicate once and then save it for later to avoid having to parse the format string (a not-inexpensive operation).
 

@@ -39,6 +39,10 @@ I've been gaining Twitter followers at a more-or-less constant rate for a while.
 Another effect of having people follow me is that they often read my tweets. For example, there was a period of time that I'd meet someone at an event who would introduce themselves by asking "hey, have you got you toilet fixed yet?"
 
 {% tweet "457095589046792192" %}
+I have running water, a toilet, and almost a shower. Almost.
+
+— Ash Furrow (@ashfurrow) April 18, 2014
+{% endtweet %}
 
 In real life, I [shy away](http://ashfurrow.com/blog/whelp./) from being recognized. When someone does recognize me, I try and downplay my significance. It's actually a bit self-flagellant – I'm afraid that people will I'm a braggart. I've been trying to find a good balance between "I don't matter at all" and "I'm actually the greatest thing since venture capitalism."
 

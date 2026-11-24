@@ -17,6 +17,10 @@ My early career was so wrapped up the identity of being an "iOS developer" that 
 Anyway. I was browsing YouTube the other day and came across Adam Savage's channel. I had been a fan of Mythbusters, and a fan of Adam Savage specifically ever since [he tweeted this](https://twitter.com/donttrythis/status/405174155760267265) about the work I was contributing to at the time:
 
 {% tweet "405174155760267265" %}
+These guys do cool stuff. I want some of the things they build. Tho I suspect they're not for sale. https://labs.teehanlax.com/projects
+
+— Adam Savage (@donttrythis) November 26, 2013
+{% endtweet %}
 
 (What a flashback! Teehan+Lax was such a magical place. Looks like the link is broken, though. Anyway.)
 

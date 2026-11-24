@@ -13,7 +13,11 @@ At times, I've told an iOS developer that Wealthsimple's app is written in React
 
 Wealthsimple has millions of clients who all deserve an experience that _feels_ native.
 
-{%tweet "2118414771221664178" %}
+{% tweet "2118414771221664178" %}
+Sneak peek:
+
+— T. Costa (@tcosta) November 5, 2026
+{% endtweet %}
 
 The reasons to move to native aren't new. [Airbnb did it in 2018](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a). What changed are the economics of shipping and maintaining two codebases, for iOS and Android. Agentic coding changes the economics of cross-platform development, and companies are re-evaluating their tech stacks.
 

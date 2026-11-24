@@ -11,6 +11,18 @@ I think I muddled the point of my post somewhat by trying to express two ideas: 
 To reiterate, I fully agree with everything in the initial tweet:
 
 {% tweet "1091465574998249472" %}
+A Sr. Engineer’s responsibility isn’t to make puns, work on whatever they want, & fly around the world giving talks.
+
+MENTOR others to become better than you.
+DENOUNCE toxic culture.
+CRITICIZE decisions that hurt others.
+
+Programming is EASY.
+
+Being a decent human is still hard.
+
+— Garen 🥀 Torikian (@gjtorikian) February 1, 2019
+{% endtweet %}
 
 I'd like to take a moment to build upon what Garen Torikian says here, and what being senior engineer _is_ – what "being a decent human being" actually _means_.
 

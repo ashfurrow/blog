@@ -136,6 +136,10 @@ The technical definition of psychological safety is "a measure of the comfort of
 Instead, I like to think of psychological safety as "the degree to which your team feels safe learning from its mistakes.” A psychologically safe environment is one where people feel safe asking questions, pointing out and admitting mistakes, and take risks without fear of being ridiculed by their teammates. Only a psychologically safe team is able to examine and learn from their mistakes, without needlessly judging themselves.
 
 {% tweet "970012685797556225" %}
+Picard management tip: If you never fail, you aren't going boldly enough.
+
+— Picard Tips (@PicardTips) March 3, 2018
+{% endtweet %}
 
 Every person makes mistakes, and every team makes mistakes. They happen, in every setting imaginable, even on high-stakes medical teams. Like suffering, we can try to avoid and minimize mistakes, but they are inevitable.
 
@@ -224,11 +228,23 @@ All of these judgements shut down our ability to empathize, to care, and to be c
 One really common form of these barriers manifesting themselves on software team is what people call "brutal honesty." There's this idea that as long as what you're saying is true, it doesn't matter how you say it. In fact, how you say something matters just as much as what you're saying.
 
 {% tweet "956321955778650112" %}
+Quick note: your brutal honesty? Ain't nobody asking for that.
+
+Where is you clever honesty? Your compassionate honesty? Your insightful honesty? Uplifting? Poetic? Empowering?
+
+Take your brutal honesty and go sit in the back with all the devil's advocates.
+
+— Quinn Murphy (@qh_murphy) January 25, 2018
+{% endtweet %}
 
 Compassionate honesty. What an amazing idea! A form of honesty that tries to minimize suffering. Radical candour doesn't mean you have to hurt someone's feelings to tell them a truth – radical candour is only radical because you care, so make sure that your honesty conveys that sense of caring for others.
 Synergy is when a group behaves in a way not predicted by the behaviour of its constituent components. We foster synergy in software teams by being compassionate, by caring for each other, by staying non-judgemental.
 
 {% tweet "761569569802551300" %}
+Code is never the challenge. Well-rested comfortable people who feel emotionally safe have solved every problem I’ve put in front of them.
+
+— C J Silverio can deadlift you (@ceejbot) August 5, 2016
+{% endtweet %}
 
 In the absence of obstacles, humans _will_ care.
 

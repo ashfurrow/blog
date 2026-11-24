@@ -51,10 +51,22 @@ Attendees would start trickling in soon. I had less than a half hour before [pee
 I sit down. I begin, slow at first. Then faster. Then I blink. I look down at my watch: a half hour had passed. How could a half hour had already passed? I had to stop, it was difficult.
 
 {% tweet "954809752239865858" %}
+I was there for peer lab this morning and snuck away for about a half hour of piano. Had some trouble remembering the bass clef notation, but it came back to me pretty quickly! I am excited.
+
+— The SI Unit Respecter (@ashfurrow) January 20, 2018
+{% endtweet %}
 
 The week went by. I got three more, quick sessions in on the piano and I was amazed by how much I remembered. I had bought some sheet music books of popular songs for the office. I picked _The Piano Man_ by Billy Joel and started sight-reading it – slow at first, then fster. I felt exhilarated.
 
 {% tweet "956666738933936128" %}
+Other things they’ve helped:
+
+\- staying off twitter at work, unless it’s to complain about work
+\- getting to the office by 9:00, and forcing myself to leave at 5:00
+\- motivation: I’m leading a well-defined and interesting project, an internal tool to help out my colleagues
+
+— The SI Unit Respecter (@ashfurrow) January 25, 2018
+{% endtweet %}
 
 I'm trying to have a better work/life balance in 2018, and part of that is getting to and leaving the office at strict times. That goal is orthogonal to my desire to immerse myself in playing piano.
 

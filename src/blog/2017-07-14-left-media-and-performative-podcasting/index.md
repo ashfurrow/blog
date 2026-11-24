@@ -9,6 +9,10 @@ So there's the podcast, right? It's by a bunch of hard left folks and they discu
 But here's the thing: they're a bit problematic. They don't adhere to the usual political correctness typical of the left. The language they use – calling people "retarded" for example – makes me uncomfortable. They walk a fine line between critique of sexism and sexist critique. Of course, I'm talking about [_Chapo Traphouse_][chapo].
 
 {% tweet "851320439896850432" %}
+when the new @CHAPOTRAPHOUSE drops
+
+— 🌴 illy bocean™ 🌴 (@IllyBocean) April 10, 2017
+{% endtweet %}
 
 As the show gains popularity as a tentpole of radical left culture, it's come under increasing scrutiny (largely from liberals). And while I agree with some of the criticisms lobbed at the show, hating it has become a sort of signifier among liberals that _yes, I too think Chapo is problematic_. The liberals that somehow managed to lose to Donald Trump(!) think it in vogue to hate _Chapo Traphouse_ and its fans, and to consider the show to be the _real_ enemy of progress.
 
@@ -19,6 +23,10 @@ Our capitalist society is so completely imbued with the ideology that _you are w
 And, as the hosts of _Chapo Traphouse_ themselves point out: the show is not politics, it is entertainment. Listening to _Chapo Traphouse_ is about as effective at fighting fascism as watching Stephen Colbert.
 
 {% tweet "885845764655763456" %}
+I'm clearly not saying you can't criticize Chapo. I pretty strongly disagree with a lot of the language they use.
+
+— Donald (@Boringstein) July 14, 2017
+{% endtweet %}
 
 _MacLean's_ had what is probably the most [level-headed analysis of the show][macleans] and it's emerging popularity. It kind of examines the origins of the show in a roundabout but thoughtful way, interviewing show guest and author Angela Nagle.
 

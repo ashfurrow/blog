@@ -421,6 +421,10 @@ platform. I'm leading a team, and I'm helping lead Artsy through a critical part
 of its growth as a company and as a business.
 
 {% tweet "1179840250518134785" %}
+The more engineering experience I get, the more and more my job is communicating effectively, and the more and more powerful I become.
+
+— Ash Furrow (@ashfurrow) October 3, 2019
+{% endtweet %}
 
 I don't know where I'll be, or who I'll
 be, in another five years. But I'm so excited for the journey. Thanks for

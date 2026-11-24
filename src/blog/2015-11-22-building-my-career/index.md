@@ -60,8 +60,16 @@ In particular, I've been working with Orta on the [Moya contributor guidelines](
 I mean, you _could_ argue that all that matters in software engineering is the quality of your code. I mean, _I guess_. But how do you get there? Open source code relies on a community, and I'd argue that fostering a good community leads to productive coding.
 
 {% tweet "667785301276798976" %}
+One of the underrated features of PHP is its openness to terrible programmers
+
+— GonzoHacker (@GonzoHacker) November 20, 2015
+{% endtweet %}
 
 {% tweet "667787890445844481" %}
+In contrast to communities like Ruby that are hostile to terrible programmers while remaining inclusive toward terrible people
+
+— GonzoHacker (@GonzoHacker) November 20, 2015
+{% endtweet %}
 
 [As I wrote recently](/blog/being-polite-in-open-source/), being inclusive in open source isn't just something you should do because you have a heart, it's something you should do if you want a successful community. The quality of a project's code can _come from_ the quality of its culture.
 

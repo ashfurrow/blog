@@ -54,5 +54,9 @@ Not everyone who learns math becomes John Conway, not everyone who learns guitar
 Different people learn different ways, and the Swift Playgrounds educational tools can _only broaden_ access to programming education. Immersive educational resources built atop Swift Playgrounds can be distributed by educators, and learners can share or live stream their experiences with friends. And of course, the blank canvas of fresh playgrounds isn't going away.
 
 {% tweet "742751104224645121" %}
+Apple showing Swift Playgrounds used side-by-side with Messages. What a neat idea!
+
+— Ash Furrow (@ashfurrow) June 14, 2016
+{% endtweet %}
 
 As a developer, I'm really excited to see the impact that Swift Playgrounds will make in programming education. As an author, I'm even more excited to participate in it.

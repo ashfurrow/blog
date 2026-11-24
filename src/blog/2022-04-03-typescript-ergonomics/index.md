@@ -9,6 +9,12 @@ One of the things I really enjoy about working with React Native is that I get t
 An important thing to understand about TypeScript is that its goal has been to [add a strong type system on top of an _existing_ language: JavaScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html). Because JavaScript is loosely typed, TypeScript needed to meet JavaScript where it was at, with all its weird APIs and patterns. As a consequence, TypeScript has a really fun and flexible type system. TypeScript structural types, whereas Swift uses nominal types. Both are fine approaches, but structural typing has become my go-to way to think about types, generally.
 
 {% tweet "1322285852492550147" %}
+Okay! I've wrapped up the final #TypeOrTreat @typescript challenge! These challenges have really engaged me to think about types more, which was a lot of fun!
+
+Here is my answer: https://t.co/4d9pw2IKpW
+
+— Ash Furrow (@ashfurrow) October 30, 2020
+{% endtweet %}
 
 Let's consider a function that looks for a number in an array and returns its index if found. I'll implement the function in both languages. We could get fancy with these functions, but I'm going to keep them simple so we can focus on comparing unions and enums with associated values.
 

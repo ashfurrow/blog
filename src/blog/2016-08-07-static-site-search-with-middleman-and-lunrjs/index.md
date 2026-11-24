@@ -41,5 +41,9 @@ Things checked out, and [search is here](/search).
 Writing new features into software can be overwhelming, and stepping back for a break is usually the right answer. It's okay to give up if things are getting frustrating, and it's okay to ask for help.
 
 {% tweet "722843678994219009" %}
+PARTY TIP: At the end of the day, just try your hardest to be nice.
+
+— ANDREW W.K. (@AndrewWK) April 20, 2016
+{% endtweet %}
 
 We're all in this together.

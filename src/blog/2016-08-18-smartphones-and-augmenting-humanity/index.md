@@ -16,7 +16,11 @@ I'm so tired of this. Pokemon Go entertains people, gets them outside, helps the
 
 The reason this has me so frustrated is something I read back in January:
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">It&#39;s not actually edgy to call folk with smart phones drones, it IS actually edgy to admit that some ppl need them to communicate w world</p>&mdash; Sook Moon (@doloresonthedot) <a href="https://twitter.com/doloresonthedot/status/701369715621502980">February 21, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "701369715621502980" %}
+It's not actually edgy to call folk with smart phones drones, it IS actually edgy to admit that some ppl need them to communicate w world
+
+— Sook Moon (@doloresonthedot) February 21, 2016
+{% endtweet %}
 
 The internet – and technology in general – is at its best when it helps people lead fulfilling lives. By many measures, smartphones do that. All the thinkpieces criticizing people for using smartphones, all the comics mocking people for using apps, they're all intellectually lazy, designed to satisfy one group of people by othering another. And we all act like it's normal to mock people for relying on technology.
 

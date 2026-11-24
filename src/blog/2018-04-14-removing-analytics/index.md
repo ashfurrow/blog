@@ -13,6 +13,12 @@ But that was a long time ago. I haven't actually checked my analytics in... gosh
 Then I saw this:
 
 {% tweet "980054309751676928" %}
+We’ve been using Google Analytics on the @CocoaPods website for 6 years, but we stopped getting much value from it a few years ago.
+
+As of today, there is no more tracking on the site: https://github.com/CocoaPods/cocoapods.org/pull/354
+
+— let {orta} = therox (@orta) March 31, 2018
+{% endtweet %}
 
 And it made me wonder: should I be collecting data on visitors to my blog? Does it help me? Who _does_ it help? Who might it hurt?
 

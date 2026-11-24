@@ -13,10 +13,26 @@ tl;dr yeah it is totally worth it, but (like any technique) you want to be caref
 The idea to write this post came from a friend who shared this trick to display before and after screenshots in GitHub pull requests using Markdown tables.
 
 {% tweet "1019709696872087557" %}
+🔥 Pull Request Description Tip
+
+Using tables is useful for showing before/after screenshots in PRs touching the UI.
+
+— Gio 💻🔧📚 (@mokagio) July 18, 2018
+{% endtweet %}
 
 The conversation turned to snapshot testing; a consequence of snapshot testing would be that you don't _need_ to include before/after shots in your PR description because they'd be included for you in the PR's changed files. Think about it: your reference images are essentially screenshots of your UI – and they're stored in your repository. So when you open a PR that changes the UI, your PR will necessarily include changes to those references images, showing the before and after of the UI changes. Neat!
 
 {% tweet "1020081618239668224" %}
+That’s awesome!
+
+I was considering a spike to set up some snapshot testing at work too.
+
+Would you say it’s worh the time?
+
+Does it often reveal defects like that? False positive?
+
+— Gio 💻🔧📚 (@mokagio) July 19, 2018
+{% endtweet %}
 
 Is it worth the time? Yes, for our team it was.
 

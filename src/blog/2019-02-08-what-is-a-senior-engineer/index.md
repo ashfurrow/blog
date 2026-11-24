@@ -7,6 +7,18 @@ bannerAttribution: https://twitter.com/CloudyConway/status/1091721333883523072
 Hey, so the other day I retweeted [this post](https://twitter.com/gjtorikian/status/1091465574998249472) about what it means to be a senior engineer:
 
 {% tweet "1091465574998249472" %}
+A Sr. Engineer’s responsibility isn’t to make puns, work on whatever they want, & fly around the world giving talks.
+
+MENTOR others to become better than you.
+DENOUNCE toxic culture.
+CRITICIZE decisions that hurt others.
+
+Programming is EASY.
+
+Being a decent human is still hard.
+
+— Garen 🥀 Torikian (@gjtorikian) February 1, 2019
+{% endtweet %}
 
 The tweet does _describe_ a senior engineer, but it isn't a _definition_ of what a senior engineer does (as much as it is a cluster of some behaviours that senior engineers should exhibit). It's not that it's _wrong_, it's just _incomplete_.
 

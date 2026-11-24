@@ -9,6 +9,10 @@ All the cool kids are experimenting with Swift on Linux and I've always meant to
 At first I tried to use Vagrant and download one of the pre-built Swift binaries for Linux. But the configuration was difficult, and I ultimately couldn't get it to work. Then I tried Docker.
 
 {% tweet "789879904925921280" %}
+@NeoNacho @ashfurrow the easiest s way to start is with something like swiftdocker, then you know versions are right
+
+— Daniel Dunbar (@daniel_dunbar) October 22, 2016
+{% endtweet %}
 
 I don't know the finer points of how Vagrant and Docker differ – but as far as I can tell they're both tools for managing virtual machines, or VMs. A VM is like a computer that runs inside your computer.
 

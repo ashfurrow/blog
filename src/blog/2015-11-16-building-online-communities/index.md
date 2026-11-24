@@ -9,12 +9,22 @@ I've been giving a lot of thought to community-building within the context of op
 The other day I tweeted this:
 
 {% tweet "664180055778660352" %}
+I was writing a message and accidentally called CocoaPods a “decency manager.“
+
+I’m not entirely wrong.
+
+— Ash Furrow (@ashfurrow) November 10, 2015
+{% endtweet %}
 
 Haha, yeah, that's funny, but it's also kind of true, isn't it?
 
 I mean, like, [Linus Torvalds](http://arstechnica.com/business/2015/01/linus-torvalds-on-why-he-isnt-nice-i-dont-care-about-you/) would've been told to leave the CocoaPods community for violating its [Code of Conduct](http://cocoapods.org/legal). That tickles my brain a bit.
 
 {% tweet "664180152352509953" %}
+CocoaPods isn’t a dependency manager, CocoaPods \_makes\_ a dependency manager in addition to all the other stuff.
+
+— Ash Furrow (@ashfurrow) November 10, 2015
+{% endtweet %}
 
 I've seen a lot of positive community-building while hanging out with the CocoaPods core team members. I've witnessed the organization, as a whole, promote and normalize online, team-based problem-solving in the iOS developer community.
 
@@ -23,9 +33,17 @@ CocoaPods is a dependency manager only in the sense that Apple is a cell phone m
 Watching the team work, I've realized that the role of an OSS leader doesn't necessarily have _anything_ to do with code. Good communities don't happen by accident, it takes purposeful work and planning.
 
 {% tweet "664180241942913025" %}
+https://blog.cocoapods.org/archives/ shows hackathons, bug jams, automated online documentation, meetups, test jams, pechakuchas, and more.
+
+— Ash Furrow (@ashfurrow) November 10, 2015
+{% endtweet %}
 In a broad sense, their goals are to get people to work together. After all, that's something like a core tenet of open source software. Making a dependency manager is just _one_ way to get people collaborating.
 
 {% tweet "664181353374724096" %}
+I’d argue CocoaPods is making us all more decent developers and more decent human beings.
+
+— Ash Furrow (@ashfurrow) November 10, 2015
+{% endtweet %}
 
 By "more decent," I really mean "better." Obviously, "better" is subjective, but I'd argue that (for example) good communication skills, unit testing, and documentation are all important parts of being a good developer.
 
@@ -57,6 +75,10 @@ After seeing this talk, I made a few big changes to a project I led.
 As a result of these changes, there are more people reviewing pull requests, planning features, and discussing how to write a better networking library in Swift. The [project](https://github.com/Moya/Moya) currently has 1541 stars on GitHub with 45 contributors, spanning 36 releases. It's been downloaded [over ten thousand times](https://cocoapods.org/pods/Moya).
 
 {% tweet "665222377425498112" %}
+The project should be able to function entirely without me.
+
+— Ash Furrow (@ashfurrow) November 13, 2015
+{% endtweet %}
 
 These aren't radical or new ideas. I've believed in open source by default for some time. But believing in something isn't enough to make it happen. It takes planning and consistent action.
 

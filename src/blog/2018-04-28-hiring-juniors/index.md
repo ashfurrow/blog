@@ -9,10 +9,26 @@ Okay let's dig into this.
 I tweeted this earlier this week, to some fanfare and a little pushback:
 
 {% tweet "988410309319843849" %}
+sorry, we're looking for someone
+○
+く|)へ
+〉
+￣￣┗┓ with more experience
+┗┓　 ヾ○ｼ
+┗┓ ヘ/
+┗┓ノ
+┗┓
+
+— Ash Furrow (or is it?) (it is.) (@ashfurrow) April 23, 2018
+{% endtweet %}
 
 I should have expected the pushback; I followed up shortly afterward...
 
 {% tweet "988454390469193728" %}
+I am reminded of this other time I complained about companies not hiring juniors. Hmm. When will I learn.https://x.com/ashfurrow/status/962361263509725190
+
+— Ash Furrow (or is it?) (it is.) (@ashfurrow) April 23, 2018
+{% endtweet %}
 
 This blog post isn't really about fixing the problem that, at least in New York, it is really really hard to get your first job. Instead, it's a description of my understanding of the problem and how it's evolved.
 

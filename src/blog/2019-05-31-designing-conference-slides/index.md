@@ -27,6 +27,10 @@ To build this presentation, I gave myself extra time: the whole process took six
 I tried recreating the Tim Fishlock style in Sketch, but soon hit a wall.
 
 {% tweet "1127969847382618112" %}
+Surprised and disappointed to learn that Sketch lacks a "long shadow" button, which is going to make emulating the look of this Tim Fishlock artwork (on the left) a bit tricky 🤔
+
+— Ash "IV-I-V-vi" Furrow (@ashfurrow) May 13, 2019
+{% endtweet %}
 
 That's okay, I'm a programmer, I can code around the walls. I ended up [writing this](https://editor.p5js.org/ashfurrow/sketches/auiS1yFQr) to mimic the style. Here's an embed of the live Processing sketch:
 

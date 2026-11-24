@@ -13,6 +13,10 @@ When I moved to New York, one of the first things I did was [start a peer lab of
 [Eventually, I built a website](https://ashfurrow.com/blog/building-static-sites-with-middleman/) to help other people start their own peer labs: [peerlab.community](https://ashfurrow.github.io/peerlab.community). Dozens of peer labs have been created in all kinds of countries: The United States, Canada, Russia, Hong Kong, India, Australia, Spain... all over! It's been really rewarding to take Samuel's idea, reproduce it in New York, and then help replicate that around the world.
 
 {% tweet "573250256630124545" %}
+Inspired by @Appsterdam, @CocoaPods and @Artsy will host Saturday-morning peer labs! 🎉 Details here: https://www.meetup.com/CocoaPods-NYC/events/220930010/
+
+— Ash Furrow (@ashfurrow) March 4, 2015
+{% endtweet %}
 
 Last month marks five years since I started the peer lab in New York. It's been a rewarding journey – I've made a lot of friends, and I've had a positive impact on a lot of people's lives. But in this post, I wanted to focus on what I've learned running the same weekly meetup for five years. These are lessons that _I_ have learned, but they might be applicable for other meetups, too.
 
@@ -45,6 +49,10 @@ Saying "no" has been a lifelong struggle of mine. If you struggle to say "no" yo
 Finally, I try to imbue the meetup with a sense of _Ash Furrow_-ness. This is a meetup that I run with other engineers, but since I created it I am very happy to give it a distinctly _me_ feeling.
 
 {% tweet "863400007642337281" %}
+Folks, it’s peer lab. Which means devs come to learn from each other and incidentally get exposed to Canadian indie rock (I will never stop)
+
+— Ash Furrow (@ashfurrow) May 13, 2017
+{% endtweet %}
 
 Within software engineering, there exists a culture of decorating one's laptop lid with stickers. Stickers can show people the kind of technologies you're into, which podcasts you like, what teams you respect, etc. I've heard it described as "flagging for nerds", which, yeah that's pretty accurate.
 
@@ -53,10 +61,20 @@ I love this. I love this aspect of my professional culture. In the records of me
 Beginner engineers can have a hard time getting started. That's why I added a sticker exchange to the peer lab.
 
 {% tweet "1188889050423402498" %}
+Tech companies! I run a weekly meetup for programmers in NYC, and we have a sticker exchange so newcomers can deck out their laptops. But as you can see, we're starting to run low.
+
+Does anyone want to mail me some stickers? DM for deets, thanks! 🎃😋
+
+— Ash Furrow (@ashfurrow) October 28, 2019
+{% endtweet %}
 
 Not many people _leave_ stickers, but plenty of people take them. Over the years, I've grabbed extra stickers from conferences and meetups that I'm at. I also periodically contact companies and teams I respect to get stickers directly.
 
 {% tweet "980089002769440768" %}
+Peer labs about to kick off this morning! We’ve got stickers from @artsy @glitch @realm @npmjs @digitalocean @DangerSystems @bufferdevs @C4QNYC @appsterdam and more! And zines from @limedaring and @b0rk.
+
+— Ash Furrow (@ashfurrow) March 31, 2018
+{% endtweet %}
 
 ---
 

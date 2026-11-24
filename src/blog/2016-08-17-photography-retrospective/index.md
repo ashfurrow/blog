@@ -22,6 +22,12 @@ Buying gear didn't help, but actually using the gear I had _did_. And eventually
 Today, a camera accompanies me everywhere I go. Every time I leave my apartment, I have my camera in my bag, and the camera is already in my hand by the time my feet hit the sidewalk.
 
 {% tweet "695643794922934272" %}
+Walk to work: 30 minutes of Spotify.
+
+Walk to work, carrying a camera: 45 minutes of “wow, everything is amazing!” … and Spotify.
+
+— Ash Furrow (@ashfurrow) February 5, 2016
+{% endtweet %}
 
 Photography taught me to [learn from my mistakes](https://ashfurrow.com/blog/developers-should-learn-photography/); if a photo didn't turn out the way I wanted, I figured out why. Once I found out what went wrong, I tried not to do it again.
 

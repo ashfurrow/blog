@@ -50,6 +50,10 @@ This is how someone empathizes, which is core to feelings, which matter. Feeling
 So you want to be a 10x developer, eh? You may have heard that the 10x developer is a myth, but that's not true: a 10x developer is someone who makes the ten developers around them each twice as productive.
 
 {% tweet "512615519934230528" %}
+How to be a 10x engineer: help ten other engineers be twice as good.
+
+— Peter Seibel (@peterseibel) September 18, 2014
+{% endtweet %}
 
 You can be a 10x developer by making sure that your team has psychological safety.
 
