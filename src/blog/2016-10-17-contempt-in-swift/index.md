@@ -16,7 +16,11 @@ There's a lot of damage caused by hating on Objective-C and Objective-C develope
 
 Objective-C isn't the only target of our contempt. I regularly see developers bash JavaScript, despite the fact that it runs a significant portion of the web.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/BenjaminCoe">@BenjaminCoe</a> You heard correctly, and yes we do.</p>&mdash; Collin Estes (@CollinEstes) <a href="https://twitter.com/CollinEstes/status/">June 3, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "738765249407504384" %}
+@BenjaminCoe You heard correctly, and yes we do.
+
+— Collin Estes (@CollinEstes) June 3, 2016
+{% endtweet %}
 
 And of course, what iOS developer doesn't love to hate on Android (even though it's marketshare outstrips iOS by a mile).
 

@@ -9,7 +9,11 @@ Dropbox is a jewel of the Y-Combinator industrial complex: a successful company 
 
 From my perspective, the company has been acting suspiciously for a while. Appointing [George W. Bush's Secretary of State to their Board](http://bits.blogs.nytimes.com/2014/04/18/protests-continue-against-dropbox-after-appointing-condoleezza-rice-to-board/) was a big red flag. It inspired a whole [Drop Dropbox](http://www.drop-dropbox.com/) movement. I've been uneasy about Dropbox, but when they announced they'd be integrating in with my [operating system's kernel](https://blogs.dropbox.com/tech/2016/05/going-deeper-with-project-infinite/), I decided to move away from them.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Things I don&#39;t want: <a href="https://twitter.com/hashtag/Dropbox?src=hash">#Dropbox</a> up in my kernel. <a href="https://t.co/p4LV87cKYy">pic.twitter.com/p4LV87cKYy</a></p>&mdash; Dusty (@duspom) <a href="https://twitter.com/duspom/status/735263193497505792">May 25, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "735263193497505792" %}
+Things I don't want: #Dropbox up in my kernel.
+
+— Dusty (@duspom) May 25, 2016
+{% endtweet %}
 
 I've been trying to move away from online services that allow easy mass surveillance. For example, I started in 2012, when I [moved off of Gmail](https://ashfurrow.com/blog/switching-from-gmail-to-fastmail/). It's not been easy, I think in part because services that are popular are typically ad-supported – viewing your data is how they sell ads to you – this implies a lack of end-to-end encryption, and security in general. I've been tolerating Dropbox because it's so _damm_ convenient, but the kernel extension was the last straw, so I [asked for alternatives](https://twitter.com/ashfurrow/status/736936037876895744).
 

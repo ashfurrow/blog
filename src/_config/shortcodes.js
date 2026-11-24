@@ -1,10 +1,15 @@
 import * as fs from "fs"
 import * as path from "path"
+import MarkdownIt from "markdown-it"
 import md from "./util/markdown.js"
 import { transformImage } from "./util/transformImage.js"
 import Metadata from "../_data/metadata.js"
 import { PHOTO_LAYOUT } from "./imageflags.js"
 import { coverURL } from "./photoposts.js"
+
+// Tweets are quoted as plain text, copy/pasted
+const tweetMarkdown = new MarkdownIt({ linkify: true, breaks: true })
+tweetMarkdown.linkify.set({ fuzzyLink: false })
 
 // A photo post's banner is the same file the /photos page uses; any other post's is processed by the blog's transform.
 const bannerURL = (ctx, imagePath) =>
@@ -134,16 +139,30 @@ export default function (eleventyConfig) {
       ></iframe>
     </div>`
   })
-  // A post's id, or (as in photo posts) its URL. Twitter is X now, but the shortcode keeps its name.
-  eleventyConfig.addShortcode("tweet", function (tweet) {
-    const isUrl = /^https?:/.test(tweet)
-    const url = isUrl
-      ? escapeAttr(tweet.replace(/^https?:\/\/(www\.)?twitter\.com\//, "https://x.com/"))
-      : `https://x.com/x/status/${tweet}`
+  // A tweet embed, given the tweet's id. The body (plain Markdown) is the tweet's text and attribution, kept as a
+  // blockquote in case the tweet is deleted.
+  //
+  //   {% tweet "123" %}
+  //   Tweet text.
+  //
+  //   — Name @handle Month D, YYYY
+  //   {% endtweet %}
+  //
+  // The last paragraph must be the attribution, as the shortcode adds a link to the tweet itself. With an empty body, only that link is rendered:
+  // {% tweet "123" %}{% endtweet %}.
+  // Twitter is X now, but the shortcode keeps its name.
+  eleventyConfig.addPairedShortcode("tweet", function (content, tweet) {
+    const text = content.trim()
+    const split = text.lastIndexOf("\n\n")
+    const quote = split < 0 ? text : text.slice(0, split)
+    const attribution = split < 0 ? "" : text.slice(split + 2)
+    const url = `https://x.com/x/status/${tweet}`
+    const link = attribution
+      ? `<p><a href="${url}">${tweetMarkdown.renderInline(attribution)}</a></p>`
+      : `<a href="${url}"></a>`
+    const body = (quote ? tweetMarkdown.render(quote).trim() : "") + link
     return `<div class="narrow">
-      <blockquote class="twitter-tweet"${isUrl ? ' data-dnt="true"' : ""}>
-        <a href="${url}"></a>
-      </blockquote>
+      <blockquote class="twitter-tweet" data-dnt="true">${body}</blockquote>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>`
   })

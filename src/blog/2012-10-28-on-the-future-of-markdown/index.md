@@ -12,6 +12,10 @@ Jeff Atwood wants to unify these flavours under one name with one spec and a tes
 Unfortunately, John Gruber has been less than receptive towards the plan.
 
 {% tweet "261650083689426945" %}
+@briandigital If you liked the original, which I created dictatorially, what makes you think you’d like a sequel from by a committee?
+
+— John Gruber (@gruber) October 26, 2012
+{% endtweet %}
 
 What I find interesting about all this is that, until now, I didn't really have a problem with Gruber having complete control over Markdown. I mean, it'd be unlikely that he would make a change that would adversely effect my ability to access (and write) things like this blog, right?
 

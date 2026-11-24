@@ -14,6 +14,10 @@ People died after being turned away from the border, but all I suffered was a sm
 
 2017 sucks. But I saw something the other day that profoundly changed my outlook on things, and my view of myself in this political climate.
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Resistance requires intersectionality. It requires that you know and live Lilla Watson&#39;s principle. Know your freedom is bound up w mine. <a href="https://t.co/CqFgayDm9p">pic.twitter.com/CqFgayDm9p</a></p>&mdash; Brittany Packnett (@MsPackyetti) <a href="https://twitter.com/MsPackyetti/status/825723153519353856">January 29, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "825723153519353856" %}
+Resistance requires intersectionality. It requires that you know and live Lilla Watson's principle. Know your freedom is bound up w mine.
+
+— Brittany Packnett (@MsPackyetti) January 29, 2017
+{% endtweet %}
 
 I'm going to keep working, keep volunteering in New York to help others, and keep writing for myself. This is the only life I'll ever have and I refuse to spend it in fear.

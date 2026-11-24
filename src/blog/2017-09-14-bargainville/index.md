@@ -33,3 +33,7 @@ Anyway. I kept listening, and kept hearing the same sort of left-wing anthems co
 Anyway, if you're interested in listening to 90's Canadian folk rock, you could do a lot worse than _Bargainville_.
 
 {% tweet "908311114685054976" %}
+(giant pile of filth Jian Ghomeshi notwithstanding)
+
+— javascript apologist (@ashfurrow) September 14, 2017
+{% endtweet %}

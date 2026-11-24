@@ -7,6 +7,10 @@ bannerAttribution: https://twitter.com/CloudyConway/status/846775591613468673
 Last year when Pokémon Go came out, cultural critic Jonathan McIntosh did what cultural critics do: he pointed out an uncomfortable truth.
 
 {% tweet "754147540149219329" %}
+Surprisingly unpopular opinion of the day: I find it unsettling that the ultimate goal of Pokémon Go is to train your cute pets to fight.
+
+— Jonathan McIntosh (@radicalbytes) July 16, 2016
+{% endtweet %}
 
 Pokémon was a huge part of my childhood – augmented by the nominal determinism of being named "Ash" – but I don't deny that it's cruel to capture animals and force them to fight. I mean, come on people. It's a bit obvious, if (as McIntosh points out) surprisingly unpopular.
 

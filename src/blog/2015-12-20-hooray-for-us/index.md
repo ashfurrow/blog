@@ -12,14 +12,27 @@ So Canada's been really excited, eh? We've got a new, dreamy prime minister and 
 We've got a welcome banner on the front-cover of the Toronto Star:
 
 {% tweet "675181922088275969" %}
+Thursday's cover on Toronto Star "Welcome to Canada"
+@TorontoStar #WelcomeToCanada
+
+— Everett Coldwell (@EverettColdwell) December 11, 2015
+{% endtweet %}
 
 Heck, we've even got school kids writing letters to newly arrived refugees!
 
 {% tweet "672410015215566848" %}
+"Welcome to Canada!" Kids' handwritten cards for Syrian refugees will warm your heart: https://on.thestar.com/1Sz9PhX
+
+— TorontoStar (@TorontoStar) December 3, 2015
+{% endtweet %}
 
 Even my own home province of New Brunswick – a province _not_ typically known for its progressive politics – is excited to welcome refugees:
 
 {% tweet "678334439521452032" %}
+It's an honour to welcome our newest NBers to the province today. #WelcomeRefugeesNB
+
+— Government of NB (@Gov_NB) December 19, 2015
+{% endtweet %}
 
 Canada's recent election was [heavily influenced](http://globalelectioninsights.ca/federal/refugee-crisis-what-are-countries-doing-about-it/) by party leaders' stances on Syrian refugees. Trudeau's stance on accepting refugees played a role in his success at the polls.
 
@@ -36,6 +49,10 @@ Used? What does that mean? Well it means that other people are taking advantage 
 This isn't new, and it certainly shouldn't be news. Think about it: Trudeau has used their circumstances to gain political favour, news outlets have used photos and videos of refugees to make content, and as a country, Canada is using them (I believe) to soothe our collective guilt about ever having elected Harper.
 
 {% tweet "678312666335678465" %}
+I share the pride of our community as we welcomed refugees from Syria to Fredericton @fredairport #WelcomeRefugees
+
+— Matt DeCourcey (@MattDeCourcey) December 19, 2015
+{% endtweet %}
 
 Don't get me wrong – I really am ecstatic that Canada is welcoming refugees. And our society says that it's acceptable that Trudeau et al are using refugees to their advantage. Politicians use stunts like this all the time – instead of kissing babies, Trudeau is helping refugees' children into their new winter coats.
 

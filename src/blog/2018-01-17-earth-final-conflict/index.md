@@ -9,6 +9,12 @@ What I love about art, and mass media in particular, is how it is shaped by the 
 So I was on a roll the other morning, talking about old sci-fi shows I'd watched. I mentioned one that I'd like to discuss today: _Gene Roddenberry's Earth: Final Conflict_.
 
 {% tweet "952949071911800837" %}
+Earth: Final Conflict is really good at examining the implications of radical technological advancement, the secondary implications, the tertiary ones, etc.
+
+Like how does FTL travel affect your commute to work? That kind of stuff.
+
+— Person who tells you to write more blog posts (@ashfurrow) January 15, 2018
+{% endtweet %}
 
 _Earth: Final Conflict_ hit TV in the late nineties, and I watched it via Canadian TV syndication during my early teenage years. The show tells the story of humanity, set roughly in the 2020's, who are visited by ostensibly peaceful aliens (called "companions", the show is full of poignant euphemisms).
 

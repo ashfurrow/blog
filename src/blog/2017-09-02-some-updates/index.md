@@ -7,6 +7,10 @@ bannerAttribution: https://twitter.com/CrookedCosmos/status/901617293947437056
 Bit of a personal post, but wanted to updated after some tweets I made about my medication.
 
 {% tweet "901838857683038212" %}
+Recently found the perfect Rx combo to help me with depression. Works really well for me. Tuesday, I had to stop b/c a serious side-effect 😔
+
+— the javascript lover (@ashfurrow) August 27, 2017
+{% endtweet %}
 
 Things have been going really well for me (which I'd [recently written about](/blog/therapys-end/)) and this medication change kind of came out of the blue. It sucks to find a groove and then have it disrupted, but life is a journey and there are lots of other medications I can try. I'm hopeful that the adverse side-effect that required me to suddenly stop taking one of my meds aren't permanent (it's a neurological problem, so it might be).
 

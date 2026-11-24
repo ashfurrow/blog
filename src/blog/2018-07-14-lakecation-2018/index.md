@@ -97,7 +97,13 @@ I was looking forward to leaving New York, but the thought of spending two weeks
 ![](20.jpg)
 ![](21.jpg#wide)
 
-{% tweet "https://twitter.com/ashfurrow/status/1015637069656412161" %}
+{% tweet "1015637069656412161" %}
+\[walking around downtown Fredericton\]
+
+“Computer… zoom and enhance.”
+
+— Ash Furrow (@ashfurrow) July 7, 2018
+{% endtweet %}
 
 ## Reunion
 
@@ -122,7 +128,11 @@ That's right! My grandfather Ashley! I'm named after him, but also I'm also marr
 ![](23.jpg)
 ![](24.jpg)
 
-{% tweet "https://twitter.com/ashfurrow/status/1017209880543887361" %}
+{% tweet "1017209880543887361" %}
+okay so here’s a photo of me when I was really young next to a photo of my dad at the same age haha omg
+
+— Ash Furrow (@ashfurrow) July 12, 2018
+{% endtweet %}
 
 I, uh, closely resemble my father. Growing up, it was a _constant_ thing I heard from adults: "oh! you look so much like Peter! Re-Pete!" Well I certainly can't fault their logic, here's a photo of me and my dad around the same childhood age.
 

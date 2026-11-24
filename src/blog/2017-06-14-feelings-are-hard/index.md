@@ -9,6 +9,10 @@ Things have been getting to me lately. Big things, little things, all kinds of t
 Aaaaaand because I insist on spending so much of my life on Twitter (I need to stop that...) everyone gets to see me get upset at things. The latest problems in my life are bringing the wrong computer cable and the LEGO store being sold out of something I want. Pretty childish stuff.
 
 {% tweet "875051392515403784" %}
+Hey Ash, sounds like you’re not having the best day. Here’s a box of fucking adorable goddamn kittens. It’ll help you on your way.
+
+— Aaron Vegh 📎 (@aaronvegh) June 14, 2017
+{% endtweet %}
 
 See, things were going great until about six weeks ago when my doctor suggested going off one of my medications. I'm on a very small dose, and we wanted to see if I needed it. Turns out I desperately do. Within a week I was miserable, flat, depressed. I finally got back on the medication, and as soon as it kicked in, I caught a cold. So I'm back to feeling miserable.
 

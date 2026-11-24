@@ -17,6 +17,10 @@ Second, I want to talk about the difference between _leaving_ New York and _movi
 I even clarified this on Twitter:
 
 {% tweet "1316053676100911107" %}
+I really want to emphasize that this is a \_move home\_ and not an \_escape from New York\_ situation 😅
+
+— Ash Furrow (@ashfurrow) October 13, 2020
+{% endtweet %}
 
 But I need to set the record straight. What my wife and I realized, as our moving day approached, was that this statement wasn't accurate. Yes, we were motivated _primarily_ by our desire to move home. But also, we needed to get out of America. I don't want to say any more about it other than to acknowledge the privilege we have to just leave, especially during the pandemic.
 

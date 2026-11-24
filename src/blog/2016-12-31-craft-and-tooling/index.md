@@ -9,6 +9,10 @@ You may have heard the idiom "it's a poor craftsperson who blames their tools", 
 Hi, I'm the Internet's Ash Furrow and today we're going to talk about a problematic tweet I saw today.
 
 {% tweet "813904788702183425" %}
+When you overhear people complaining that their tools are the root cause of failure send them this video of Kelly Slater on a table.
+
+— Jesse Hanley (@jessethanley) December 28, 2016
+{% endtweet %}
 
 Okay so first off I just need to say _that looks awesome_. That surfer is kicking ass at making upturned-furniture surfing look cool and fun. But just like our idiom earlier, there's a danger in taking away the wrong message: that tools don't matter at all. Tools definitely matter.
 
@@ -25,5 +29,10 @@ When we focus on skills to the exclusion of tools, we risk falling victim to [su
 As developers, we need tools that support experts, and beginners, and everyone in between. And we need to recognize that while skills matter, tools play a really important role in how we acquire those skills.
 
 {% tweet "814858687642763268" %}
+a) ✨ survivorship bias ✨
+b) man surfboards don’t have technical debt, own up and maintain your stuff https://x.com/jessethanley/status/813904788702183425
+
+— Melissa 🕯 (@0xabad1dea) December 30, 2016
+{% endtweet %}
 
 So enjoy a hearty laugh at that fellow who can surf on an upturned coffee table – it's pretty cool! But keep in mind that it took skill to do so – skills acquired with better tools. The longer you've been working in a field, the less tools will matter to you. Just be aware of your bias when your talking to beginners and you'll do great!

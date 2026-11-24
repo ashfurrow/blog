@@ -67,9 +67,11 @@ You've just defined a _public_ getter but a _private_ setter. Congrats! Now you 
 
 Schwa adds one more suggestion:
 
-> [@ashfurrow](https://twitter.com/ashfurrow) re: “Use Read-only Properties in Headers”. I’d also add do not expose mutable objects in headers too. Good article btw.
->
-> — Jonathan Wight (@schwa) [January 24, 2014](https://twitter.com/schwa/statuses/426760500056047616)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "426760500056047616" %}
+@ashfurrow re: “Use Read-only Properties in Headers”. I’d also add do not expose mutable objects in headers too. Good article btw.
+
+— Jonathan Wight (@schwa) January 24, 2014
+{% endtweet %}
 
 ## Properly Define `BOOL` properties
 

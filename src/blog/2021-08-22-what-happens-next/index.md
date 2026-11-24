@@ -47,6 +47,10 @@ Everything we'd been thinking about came to the surface. Our life priorities and
 This contradiction between what we wanted from life and where we lived was heightened by the pandemic. While I think that we would have moved home to Canada _eventually_, the pandemic accelerated things significantly. In an odd way, I'm glad it did.
 
 {% tweet "1409238088224755718" %}
+After a certain but undefined amount of time living abroad, you belong fully to nowhere. You can’t relate fully to your home country anymore nor your adopted home.
+
+— Liza Dixon ⚡️ (@lizadixon) June 27, 2021
+{% endtweet %}
 
 [We decided to move back to Fredericton](/blog/moving-home-to-new-brunswick/) in the summer of 2020. I'm not sure our families believed us until we were actually on the road. Some lingering health issues following a surgery in May forced me to wait until the fall to move. This indefinite waiting was brutal.
 

@@ -31,6 +31,12 @@ Obviously the logs are still growing, but the instance could now run for months 
 And I think Docker has this kind of functionality built in now, but this is working so I'm running with it.
 
 {% tweet "889102904023539712" %}
+simple and helpful
+my disk space woes are over
+logrotate.d
+
+— the javascript lover (@ashfurrow) July 23, 2017
+{% endtweet %}
 
 So yeah, logrotate.d is another [minor skill][xkcd] I've added to my tool belt that's come from working on and administering Mastodon.
 

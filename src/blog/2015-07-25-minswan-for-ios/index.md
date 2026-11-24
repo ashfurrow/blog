@@ -66,6 +66,10 @@ If someone you follow is being a jerk, let them know. If they don't change, cons
 Think about how much happier you could be without a constant stream of negativity flowing into your brain!
 
 {% tweet "624158166830477312" %}
+For the last months I’ve been muting people who are too negative on Twitter, and it’s been great. Highly recommended.
+
+— Chris Eidhof (@chriseidhof) July 23, 2015
+{% endtweet %}
 
 [Orta](http://twitter.com/orta) has said that "[friction gets followers](https://realm.io/news/altconf-orta-therox-being-nice-in-open-source/)" – and that's true, but only if we let it. He has some great specific suggestions here:
 
@@ -79,7 +83,12 @@ Addressing negativity can be hard. It takes courage to tell someone that they're
 
 Things like that. You can follow-up and ask if they're OK – maybe they just need someone to talk to.
 
-{% tweet "https://twitter.com/bontoJR/status/624207699090231297" %}
+{% tweet "624207699090231297" %}
+@ashfurrow Negativity is definitely contagious, but a small action can also change somebody's attitude.
+You never know :)
+
+— looking for the sun (@0xFF_overflow) July 23, 2015
+{% endtweet %}
 
 If that fails, try muting them for a week. You probably won't miss them as much as you'd think. If, after a week, you like your timeline better without them, then you know what to do.
 

@@ -13,10 +13,18 @@ A few weeks ago I was talking with my psychiatrist about my medication. It helps
 So, I began cross-tapering according to my doctor's notes.
 
 {% tweet "839504160882049024" %}
+Cross-tapering from old to new antidepressants. Worst of both worlds: withdrawal plus new side-effects :\\
+
+— Ash Furrow (@ashfurrow) March 8, 2017
+{% endtweet %}
 
 Things have been up and down since then, but I'm beginning to really feel the effects of the new medication, and I'm hopeful that things are going to be on an upswing for a while.
 
 {% tweet "843893464043606016" %}
+When the SSRI’s are out of your system but the SNRI’s are still kicking in.
+
+— Ash Furrow (@ashfurrow) March 20, 2017
+{% endtweet %}
 
 One of the effects of the new meds is that I'm more able to recover from problems. And so today, when I couldn't go in to work, I was still able to recover and have a good day. It was a bad day – any day I can't go in to the office is generally bad – but it was a good bad day. I got a lot done and didn't feel as horrible about myself as I normally do on bad days.
 

@@ -7,6 +7,10 @@ bannerAttribution: https://twitter.com/CloudyConway/status/929027797355565057
 Oh hey remember that time that I went to a doctor for wrist pain, and they diagnosed me with Carpal Tunnel Syndrome?
 
 {% tweet "778229355956822016" %}
+Saw a doctor yesterday and they confirmed: carpal tunnel syndrome 😩 Got some physical therapy lined up.
+
+— Ashley Alonzo Hale Furrow (@ashfurrow) September 20, 2016
+{% endtweet %}
 
 Well. Artsy changed insurance at the end of August, so I had to find a new physiotherapist. I made an appointment with a new clinic because, while I made some progress, my wrists still hurt. I saw a doctor for an exam and they were... dubious of my diagnosis. They were especially surprised at how long I'd been on a physiotherapy regimen without feeling totally better.
 
@@ -41,6 +45,10 @@ So after upgrading the device to watchOS 4 (which was it's own thing) I started 
 I was pretty happy with the first-gen watch but I could definitely see it strain under the weight of, well, of anything. And I discovered that I need to wear it on my right wrist, at least for now, because my left one is still recovering and the watch irritated it. I also discovered I'd been wearing wristwatches wrong my whole life:
 
 {% tweet "928283229068644353" %}
+\[poll\] So I may have been wearing wristwatches wrong my whole life. They apparently go above the wrist bone and not on top of this wrist where it flexes? Sound of in the comments hey
+
+— Ashley Alonzo Hale Furrow (@ashfurrow) November 8, 2017
+{% endtweet %}
 
 Folks on Twitter told me to get a contemporary model but I wanted to get a feel for it first. Well I finally did get one of my own, a Series 3 (without cellular, you monsters), and it's great! A [knockoff watchband from Amazon][amazon] helped it look snazzy and provide more granular adjustments, which I really like.
 
@@ -53,6 +61,10 @@ There are some games even designed specifically with the watch in mind, like _Po
 Getting a watch has also stirred within me something I haven't felt towards native apps for a long time: a desire to build something new and the resulting search for a good idea.
 
 {% tweet "929340577291923458" %}
+I wanna make an apple watch app that uses the accelerator etc to do like an exercise monitor but for petting cats 😹
+
+— Ashley Alonzo Hale Furrow (@ashfurrow) November 11, 2017
+{% endtweet %}
 
 The search continues.
 

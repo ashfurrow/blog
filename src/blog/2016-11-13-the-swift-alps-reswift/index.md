@@ -16,6 +16,10 @@ My friend Junior decided to run an experimental, workshop-based, collaborative l
 - Discover friction points involved in using non-UIKit inspired abstractions for managing state.
 
 {% tweet "797007786047639553" %}
+"UIKit is very opinionated and those opinions are often not very good" @ashfurrow #swiftalps
+
+— Roy Marmelstein (@marmelroy) November 11, 2016
+{% endtweet %}
 
 Importantly, my goal was not to _convince_ people to use ReSwift or Redux style state management in Swift; instead, I only wanted to use ReSwift as a way to explore what was possible in terms of state management and demonstrate how software teams can work together to accomplish common goals. In that spirit, I reached out to ReSwift core maintainer [Benjamin Encz][‪benjaminencz‬] to see what sorts of ideas they might have, or chores we could accomplish for them. I distilled their wishlist down to three main goals:
 

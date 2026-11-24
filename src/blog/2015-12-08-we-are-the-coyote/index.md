@@ -6,6 +6,10 @@ date: 2015-12-08
 I saw [this](https://twitter.com/andrey_butov/status/674237455911006209) tweeted earlier, and it really resonated with me.
 
 {% tweet "674237455911006209" %}
+Chuck Jones’ original rules for the Wile E. Coyote and The Road Runner cartoon.
+
+— Andrey Butov (@andrey_butov) December 8, 2015
+{% endtweet %}
 
 It's been [bouncing around the Internet](http://mentalfloss.com/article/62035/chuck-jones-rules-writing-road-runner-cartoons) for some time now, but I only saw it today. It's quite interesting – let's break it down a bit.
 

@@ -23,16 +23,11 @@ Software engineers, at least at my university, learnt a lot more about how to bu
 
 Software developers make code. Software engineers make products.
 
-<blockquote class="twitter-tweet" lang="en">
-  <p lang="en" dir="ltr">
-    Apple seems to be pushing us from developing iOS apps to engineering them.
-    Really exciting times.
-  </p>
-  &mdash; Ash Furrow (@ashfurrow){' '}
-  <a href="https://twitter.com/ashfurrow/status/608049688760197122">
-    June 8, 2015
-  </a>
-</blockquote>
+{% tweet "608049688760197122" %}
+Apple seems to be pushing us from developing iOS apps to engineering them. Really exciting times.
+
+— Ash Furrow (@ashfurrow) June 8, 2015
+{% endtweet %}
 
 With their announcements of the tools and language features, Apple has shown an awareness of this distinction. For example, new Xcode projects include _two_ testing targets: one for unit tests, and one for UI tests. They've provided UI testing tools that are _freaking amazing_ and miles ahead of anything else I've seen for iOS.
 
@@ -48,29 +43,19 @@ Apple has recognized this tradeoff, and has thankfully provided helpful tools. T
 
 This keynote featured two women presenting important news from their respective departments in Apple. These are capable professionals who have been working hard at Apple, and were able to present products they helped create.
 
-<blockquote class="twitter-tweet" lang="en">
-  <p lang="en" dir="ltr">
-    Two women, and now a Canadian. A truly inclusive WWDC.
-  </p>
-  &mdash; Dave Wiskus (@dwiskus){' '}
-  <a href="https://twitter.com/dwiskus/status/607986303297200128">
-    June 8, 2015
-  </a>
-</blockquote>
+{% tweet "607986303297200128" %}
+Two women, and now a Canadian. A truly inclusive WWDC.
+
+— Dave Wiskus (@dwiskus) June 8, 2015
+{% endtweet %}
 
 Drake's lack of apparent preparation aside, it was refreshing to see more non-whitedudes on stage. And [Eliza Block](http://twitter.com/elizablock) presented the cool new Watch things in the State of the Union.
 
-<blockquote class="twitter-tweet" lang="en">
-  <p lang="en" dir="ltr">
-    Next step is to get to a point where we’re not like “OMG A WOMAN” cause
-    it’ll be so normal.{' '}
-    <a href="https://twitter.com/hashtag/WWDC?src=hash">#WWDC</a>
-  </p>
-  &mdash; Ayaka Nonaka (@ayanonagon){' '}
-  <a href="https://twitter.com/ayanonagon/status/607973285779763201">
-    June 8, 2015
-  </a>
-</blockquote>
+{% tweet "607973285779763201" %}
+Next step is to get to a point where we’re not like “OMG A WOMAN” cause it’ll be so normal. #WWDC
+
+— Ayaka Nonaka (@ayanonagon) June 8, 2015
+{% endtweet %}
 
 I'm not saying things are perfect or that Apple has fixed diversity in tech. The videos, really, still catered to a heteronormative male gaze and had characters fulfilling stereotypical roles. But I am excited that, from the very top levels of leadership, Apple are [acknowledging the problem](http://mashable.com/2015/06/08/tim-cook-apple-diversity-women-future/) and seem to actually be doing things to help.
 
