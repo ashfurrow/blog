@@ -25,7 +25,7 @@ sorry, we're looking for someone
 I should have expected the pushback; I followed up shortly afterward...
 
 {% tweet "988454390469193728" %}
-I am reminded of this other time I complained about companies not hiring juniors. Hmm. When will I learn.https://x.com/ashfurrow/status/962361263509725190
+I am reminded of this other time I complained about companies not hiring juniors. Hmm. When will I learn. https://x.com/ashfurrow/status/962361263509725190
 
 — Ash Furrow (or is it?) (it is.) (@ashfurrow) April 23, 2018
 {% endtweet %}

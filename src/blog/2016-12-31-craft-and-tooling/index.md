@@ -30,7 +30,7 @@ As developers, we need tools that support experts, and beginners, and everyone i
 
 {% tweet "814858687642763268" %}
 a) ✨ survivorship bias ✨
-b) man surfboards don’t have technical debt, own up and maintain your stuffhttps://x.com/jessethanley/status/813904788702183425
+b) man surfboards don’t have technical debt, own up and maintain your stuff https://x.com/jessethanley/status/813904788702183425
 
 — Melissa 🕯 (@0xabad1dea) December 30, 2016
 {% endtweet %}
