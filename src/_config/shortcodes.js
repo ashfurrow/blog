@@ -148,12 +148,12 @@ export default function (eleventyConfig) {
   //   — Name @handle Month D, YYYY
   //   {% endtweet %}
   //
-  // The embed script finds the tweet by the last link in the blockquote, so the shortcode links the attribution to the
-  // tweet itself. With an empty body, only that link is rendered: {% tweet "123" %}{% endtweet %}.
+  // The last paragraph must be the attribution, as the shortcode adds a link to the tweet itself. With an empty body, only that link is rendered:
+  // {% tweet "123" %}{% endtweet %}.
   // Twitter is X now, but the shortcode keeps its name.
   eleventyConfig.addPairedShortcode("tweet", function (content, tweet) {
     const text = content.trim()
-    const split = text.lastIndexOf("\n\n— ")
+    const split = text.lastIndexOf("\n\n")
     const quote = split < 0 ? text : text.slice(0, split)
     const attribution = split < 0 ? "" : text.slice(split + 2)
     const url = `https://x.com/x/status/${tweet}`
