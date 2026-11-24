@@ -9,7 +9,7 @@ There's kind of an unwritten rule in startups, that you pretty much _have_ to fo
 So imagine my surprise when I saw them tweet this.
 
 {% tweet "696412200618037248" %}
-"Do not start an open source project if you need praise, warmth and love from your fellow human beings."https://taskwarrior.org/docs/advice.html
+"Do not start an open source project if you need praise, warmth and love from your fellow human beings." https://taskwarrior.org/docs/advice.html
 
 — Daniel Doubrovkine (@dblockdotorg) February 7, 2016
 {% endtweet %}
