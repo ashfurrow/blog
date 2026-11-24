@@ -11,10 +11,16 @@ The other day, _I_ asked a question on Stackoverflow about a topic that I am a b
 
 I put myself in the shoes of a beginner asking their first question online and imagined the kind of attitude that they'd get from developers. A friend on Twitter pointed out that it's even worse for women. And I got thinking. Wouldn't it be awesome if there were a place that provided resources for how to ask good questions? For how to answer questions with respect? And just generally how to make being a software developer a more awesome experience?
 
-> Can I, knowing they might be mocked for inexperience, suggest that beginners ask question on stack overflow? not sure anymore.
->
-> — Ash Furrow (@ashfurrow) [September 10, 2014](https://twitter.com/ashfurrow/status/509666451410935808)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>> What I had forgotten is that our community is vindictive. It is sadistic. It makes itself feel good by making others feel bad.
->
-> — Ash Furrow (@ashfurrow) [September 10, 2014](https://twitter.com/ashfurrow/status/509666163799113728)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "509666451410935808" %}
+Can I, knowing they might be mocked for inexperience, suggest that beginners ask question on stack overflow? not sure anymore.
+
+— Ash Furrow (@ashfurrow) September 10, 2014
+{% endtweet %}
+
+{% tweet "509666163799113728" %}
+What I had forgotten is that our community is vindictive. It is sadistic. It makes itself feel good by making others feel bad.
+
+— Ash Furrow (@ashfurrow) September 10, 2014
+{% endtweet %}
 
 After talking it over with my wife and some friends, I decided to pull the trigger. Maybe this will be a flash in the can and fizzle out, but I really do hope that it becomes something that helps learners and teachers contribute to their communities in more positive ways.

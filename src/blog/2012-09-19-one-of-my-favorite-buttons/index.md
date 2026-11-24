@@ -19,8 +19,4 @@ Half-baked idea: iOS apps that display a photo-picking sheet, "Take Photo", "Cho
 — Neven Mrgan (@mrgan) November 6, 2011
 {% endtweet %}
 
-> Half-baked idea: iOS apps that display a photo-picking sheet, "Take Photo", "Choose Existing"? Add 3rd option, "Last Photo Taken". 95% case.
->
-> — Neven Mrgan (@mrgan) [November 6, 2011](https://twitter.com/mrgan/status/133311995125575681)<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 I guess in addition to giving a damn, it also helps to listen to your users. Turn out.

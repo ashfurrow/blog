@@ -5,15 +5,19 @@ date: 2014-02-04
 
 Brent Simmons has a [write up](http://inessential.com/2014/02/03/apology) apologizing for a tweet he wrote the other night, which I retweeted.
 
-> “Xcode cannot handle our scale” is the new day and night phones.
->
-> — Brent Simmons (@brentsimmons) [February 2, 2014](https://twitter.com/brentsimmons/statuses/429790796397547521)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "429790796397547521" %}
+“Xcode cannot handle our scale” is the new day and night phones.
+
+— Brent Simmons (@brentsimmons) February 2, 2014
+{% endtweet %}
 
 I undid the retweet and made the following remark, partly in jest and partly earnestly.
 
-> To be fair, Xcode barely scales to one developer …
->
-> — Ash Furrow (@ashfurrow) [February 2, 2014](https://twitter.com/ashfurrow/statuses/429794299052822528)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "429794299052822528" %}
+To be fair, Xcode barely scales to one developer …
+
+— Ash Furrow (@ashfurrow) February 2, 2014
+{% endtweet %}
 
 I would also like to apologize to the Facebook team on my snark. Negativity got the better of me, and I'm sorry.
 

@@ -5,9 +5,11 @@ date: 2013-11-27
 
 Yesterday I found myself reading a very interesting Twitter conversation between Sarah Streza, Jordan Kay, and Jonathan Wright. I chimed in in response to this:
 
-> [@SarahStreza](https://twitter.com/SarahStreza) [@\_Jordan](https://twitter.com/_Jordan) I somewhat agree with Sarah (odd feeling this) and have worked on team where working sane hours makes you feel guilty.
->
-> — Jonathan Wight (@schwa) [November 26, 2013](https://twitter.com/schwa/statuses/405397906615595008)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "405397906615595008" %}
+@SarahStreza @_Jordan I somewhat agree with Sarah (odd feeling this) and have worked on team where working sane hours makes you feel guilty.
+
+— Jonathan Wight (@schwa) November 26, 2013
+{% endtweet %}
 
 It struck a chord with me because I've been in a situation where I felt guilty about the (insane) hours everyone else was working around me and, eventually, the roles became reversed and I started working hours that made the others feel guilty.
 

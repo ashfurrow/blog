@@ -69,9 +69,11 @@ Often, when I begin to write about a subject, I don't really know what I am talk
 
 This is the final benefit to sharing knowledge, and it's one that I used when writing this blog post. I had a few ideas about the benefits of sharing, but I wanted to verify those ideas and to get some more.
 
-> What do y'all consider the benefits of sharing knowledge via blog posts or open source software? I know what I think – what are your ideas?
->
-> — Ash Furrow (@ashfurrow) [August 12, 2014](https://twitter.com/ashfurrow/statuses/499104489211985920)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% tweet "499104489211985920" %}
+What do y'all consider the benefits of sharing knowledge via blog posts or open source software? I know what I think – what are your ideas?
+
+— Ash Furrow (@ashfurrow) August 12, 2014
+{% endtweet %}
 
 I was able to just ask Twitter what they thought and get people to give me _their_ ideas, _for free_. Why would anyone answer some asshole on Twitter? Well, there is a concept in evolutionary biology called [_Reciprocal Altruism_](http://en.wikipedia.org/wiki/Reciprocal_altruism). The idea is simple: you scratch my back, I'll scratch yours.
 
